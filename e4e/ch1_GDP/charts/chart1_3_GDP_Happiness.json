@@ -2,9 +2,9 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "",
   "title": {
-    "text": "GDP and Life Expectancy",
+    "text": "GDP and happiness",
     "subtitle": [
-      "Life expectancy: source: UN Population Prospects 2022",
+      "Happiness: 3-year average 2019-21, source: World Happiness Report 2022",
       "GDP: per capita PPP (international $), source: World Bank",
       ""
     ],
@@ -15,7 +15,7 @@
     "fontSize": 16
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_1_GDP_LifeExpectancy.csv",
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/explainer_gdp_world.csv",
     "format": {
       "type": "csv"
     }
@@ -27,6 +27,9 @@
   },
   "height": 300,
   "width": 500,
+  "view": {
+    "stroke": "transparent"
+  },
   "encoding": {
     "x": {
       "field": "GDP per capita (PPP)",
@@ -51,31 +54,29 @@
         ],
         "format": "$,",
         "gridOpacity": 0.3,
-        "tickSize": 3,
-        "labelFontSize": 11,
         "ticks": false,
+        "labelFontSize": 11,
         "labelPadding": 5,
         "titleFontWeight": "normal",
         "titlePadding": 6
       }
     },
     "y": {
-      "field": "Life Expectancy",
+      "field": "Happiness score",
       "type": "quantitative",
-      "title": "Life Expectancy",
+      "title": "Happiness",
       "scale": {
         "domain": [
-          50,
-          87
+          2,
+          8
         ]
       },
       "axis": {
-        "values": [55, 60, 65, 70, 75, 80, 85],
+        "gridOpacity": 0.3,
         "ticks": false,
         "labelFontSize": 11,
         "labelPadding": 5,
         "titleFontWeight": "normal",
-        "gridOpacity": 0.3,
         "titlePadding": 6
       }
     },
@@ -85,12 +86,12 @@
       "scale": {
         "scheme": "set1"
       },
-      "title": null,
       "legend": {
         "orient": "top",
         "offset": 7,
         "labelFontSize": 11
-      }
+      },
+      "title": null
     },
     "size": {
       "field": "Population",
@@ -117,14 +118,9 @@
         "format": "$,d"
       },
       {
-        "field": "Life Expectancy",
-        "format": "d"
+        "field": "Happiness score",
+        "format": ",.3"
       }
     ]
-  },
-  "config": {
-    "view": {
-      "stroke": "transparent"
-    }
   }
 }
