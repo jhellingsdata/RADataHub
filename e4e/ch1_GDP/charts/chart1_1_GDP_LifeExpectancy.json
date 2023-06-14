@@ -15,7 +15,7 @@
     "fontSize": 16
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_1_GDP_LifeExpectancy.csv",
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_1-3_GDP_multi.csv",
     "format": {
       "type": "csv"
     }
