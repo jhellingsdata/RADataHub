@@ -1,0 +1,174 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": null,
+    "description": "CPI contribution",
+    "data": {
+      "name": "myData",
+      "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDP_timeSeries.csv"
+    },
+    "height": 300,
+    "width": 500,
+    "layer": [
+      {
+        "mark": {"type": "line", "color": "rgb(128,0,0)"},
+        "params": [
+          {
+            "name": "pickSeries",
+            "value": {"measure": "GDP"},
+            "select": {"type": "point", "fields": ["measure"], "toggle": false},
+            "bind": {
+              "input": "select",
+              "options": [
+                "GDP",
+                "GDP - Log",
+                "GDP - Annual Growth",
+                "GDP - Growth (5 Year Average)"
+              ],
+              "name": "Pick a series:"
+            }
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "DATE",
+            "type": "temporal",
+            "title": "",
+            "axis": {
+              "ticks": false,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "grid": false
+            }
+          },
+          "y": {
+            "field": "value",
+            "type": "quantitative",
+            "title": "",
+            "axis": {
+              "ticks": false,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "gridOpacity": 0.6,
+              "grid": true
+            }
+          }
+        }
+      },
+      {
+        "mark": "rule",
+        "encoding": {
+          "x": {
+            "field": "DATE",
+            "type": "temporal",
+            "title": "",
+            "axis": {
+              "ticks": false,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "grid": false
+            }
+          },
+          "y": null,
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {
+              "field": "GDP",
+              "type": "quantitative",
+              "title": "GDP (Billions)",
+              "format": "$,.2f"
+            },
+            {
+              "field": "lnGDP",
+              "type": "quantitative",
+              "title": "Log GDP",
+              "format": ".3"
+            },
+            {
+              "field": "gGDP",
+              "type": "quantitative",
+              "title": "Annual Growth",
+              "format": ".1%"
+            },
+            {
+              "field": "gGDP_5y",
+              "type": "quantitative",
+              "title": "5 Year Growth",
+              "format": ".1%"
+            }
+          ]
+        },
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["DATE"],
+              "nearest": true,
+              "on": "mouseover",
+              "clear": "mouseout"
+            }
+          }
+        ]
+      },
+      {
+        "data": {"values": [{"z": 1}]},
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "size": 16,
+          "fontStyle": "bold",
+          "baseline": "bottom"
+        },
+        "encoding": {
+          "x": {"value": -45},
+          "y": {"value": -45},
+          "text": {"value": "GDP - Different Perspectives"}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "size": 12,
+          "fontStyle": "italic",
+          "align": "left",
+          "baseline": "bottom"
+        },
+        "encoding": {
+          "x": {"value": -45},
+          "y": {"value": -29},
+          "text": {"field": "subtitle_text"}
+        },
+        "transform": [{"filter": "datum.DATE==-725846400000"}]
+      },
+      {
+        "data": {"values": [{"z": 1}]},
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "size": 12,
+          "fontStyle": "italic",
+          "baseline": "bottom"
+        },
+        "encoding": {
+          "x": {"value": -45},
+          "y": {"value": -15},
+          "text": {"value": "Data: FRED"}
+        }
+      }
+    ],
+    "transform": [
+      {"fold": ["GDP", "lnGDP", "gGDP", "gGDP_5y"], "as": ["measure", "value"]},
+      {
+        "calculate": "{'GDP': 'GDP', 'lnGDP' : 'GDP - Log', 'gGDP' : 'GDP - Annual Growth', 'gGDP_5y':'GDP - Growth (5 Year Average)'}[datum.measure]",
+        "as": "measure"
+      },
+      {
+        "calculate": "{ 'GDP': 'Nominal GDP (USD Billions)', 'GDP - Log' : 'Natural Log of Nominal GDP', 'GDP - Annual Growth' : 'Nominal GDP Annual Growth Rate (%)', 'GDP - Growth (5 Year Average)': 'Nominal GDP Annual Growth Rate (5 Year Average)'}[pickSeries.measure[0]]",
+        "as": "subtitle_text"
+      },
+      {"filter": {"param": "pickSeries", "empty": true}}
+    ]
+  }

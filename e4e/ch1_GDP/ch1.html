@@ -27,8 +27,43 @@
         <figure id="life_expec"></figure>
     </section>
 
+    <section>
+        <h3><a href="charts/chart1_1_GDP_LifeExpectancy.json"> World GDP - Unformatted </a></h3>
+        <figure id="world_map_gdp"></figure>
+    </section>
+
+    <section>
+        <h3><a href="charts/chart1_5_us_map_gdp.json"> US GDP - Unformatted </a></h3>
+        <figure id="us_map_gdp"></figure>
+    </section>
+
+    <section>
+        <h3><a href="charts/chart1_5_us_gdp_line.json"> US GDP - Different Perspectives </a></h3>
+        <p> Changed: Self explanatory drop down options, selected series updates subtitle, bar tooltip, formatting</p>
+        <figure id="us_line_gdp"></figure>
+    </section>
+
+    <section>
+        <h3><a href="charts/chart1_6_us_gdp_line.json"> US GDP Donuts - Unformatted + Need to Merge </a></h3>
+        <figure id="donut_expend"></figure>
+        <figure id="donut_production"></figure>
+
+    </section>
+
     <script>
         vegaEmbed('#life_expec', "charts/chart1_1_GDP_LifeExpectancy.json");
+        
+        vegaEmbed('#world_map_gdp', "charts/chart1_4_world_map_gdp.json");
+        vegaEmbed('#us_map_gdp', "charts/chart1_5_us_map_gdp.json");
+        
+        vegaEmbed('#us_line_gdp', "charts/chart1_6_us_gdp_line.json");
+        
+        vegaEmbed('#donut_expend', "charts/chart1_7_expend_donut.json");
+        vegaEmbed('#donut_production', "charts/chart1_8_production_donut.json");
+
+
+        
+
     </script>
 </body>
 
