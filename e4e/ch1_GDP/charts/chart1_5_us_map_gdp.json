@@ -62,7 +62,7 @@
             "Real GDP per capita"
           ],
           "data": {
-            "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/explainer_usStates_gdp.csv"
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_5_us_map_gdp.csv"
           }
         }
       },
