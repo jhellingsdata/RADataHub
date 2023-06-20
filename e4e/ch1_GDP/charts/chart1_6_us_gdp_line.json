@@ -5,7 +5,7 @@
   "config": {"style": {"cell": {"stroke": "transparent"}}},
   "data": {
     "name": "myData",
-    "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDP_timeSeries.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_6_us_gdp_line.csv"
   },
   "height": 300,
   "width": 500,
