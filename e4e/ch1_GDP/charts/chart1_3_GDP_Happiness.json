@@ -1,3 +1,4 @@
+
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "",
@@ -86,8 +87,12 @@
       "scale": {
         "scheme": "set1"
       },
-      "legend": {
-        "orient": "top",
+        "legend": {
+        "orient": "none",
+        "direction": "horizontal",
+        "legendX": -40,
+        "legendY": -25,
+        "title": null,
         "offset": 7,
         "labelFontSize": 11
       },
@@ -124,3 +129,4 @@
     ]
   }
 }
+  
