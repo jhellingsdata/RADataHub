@@ -28,7 +28,7 @@
   "concat": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDPsimple.csv"
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_7-8_productiondonuts_multi.csv"
       },
       "title": {
         "text": "Expenditure Approach",
