@@ -57,7 +57,7 @@
         "key": "ISO3",
         "fields": ["GDP per capita (PPP)"],
         "data": {
-          "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/world_GDPpc.csv"
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_4_world_map_gdp.csv"
         }
       }
     },
