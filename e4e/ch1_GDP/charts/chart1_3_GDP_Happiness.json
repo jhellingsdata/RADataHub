@@ -5,8 +5,8 @@
   "title": {
     "text": "GDP and happiness",
     "subtitle": [
-      "Happiness: 3-year average 2019-21, source: World Happiness Report 2022",
-      "GDP: per capita PPP (international $), source: World Bank",
+      "Happiness: 3-year average 2019-21. Data: World Happiness Report 2022",
+      "GDP: per capita PPP (international $). Data: World Bank",
       ""
     ],
     "subtitleFontStyle": "italic",
