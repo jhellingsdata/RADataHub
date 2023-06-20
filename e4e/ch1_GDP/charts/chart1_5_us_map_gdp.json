@@ -5,7 +5,7 @@
     "height": 360,
     "config": {"view": {"stroke": null}, "padding": 0},
     "data": {
-      "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/US_States_5m.json",
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_5_us_map_gdp_US_States_5m.json",
       "format": {"property": "features"}
     },
     "title": {
