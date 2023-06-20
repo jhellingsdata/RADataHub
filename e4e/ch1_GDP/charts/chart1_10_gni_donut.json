@@ -14,7 +14,7 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDP_GNIbyType.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_10_gni_donut.csv"
   },
   "mark": {
     "type": "arc",
