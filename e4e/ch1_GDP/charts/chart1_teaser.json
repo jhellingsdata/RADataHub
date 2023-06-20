@@ -27,7 +27,7 @@
   "width": 500,
   "height": 300,
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/US_Rand_DrugExpenditures.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_teaser.csv"
   },
   "mark": {"type": "bar", "width": 25},
   "encoding": {
