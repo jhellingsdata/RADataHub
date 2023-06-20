@@ -4,7 +4,7 @@
   "width": 600,
   "height": 350,
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/world_countries.geojson",
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_4_world_map_gdp_world_countries.geojson",
     "format": {"property": "features"}
   },
   "config": {"view": {"stroke": null}, "padding": 0},
