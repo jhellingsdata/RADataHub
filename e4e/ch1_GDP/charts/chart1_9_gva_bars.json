@@ -1,0 +1,85 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A simple donut chart with embedded data.",
+    "height": 300,
+    "width": 500,
+    "view": {"stroke": "transparent"},
+    "config": {
+      "style": {"cell": {"stroke": "transparent"}},
+      "locale": {
+        "number": {
+          "decimal": ".",
+          "thousands": ",",
+          "grouping": [3],
+          "currency": ["$", "B"]
+        }
+      }
+    },
+    "title": {
+      "text": "US GVA by sector",
+      "fontSize": 16,
+      "subtitle": ["2022 Q3. USD billions.", " Data: BEA", ""],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDP_GVAbyIndustry.csv"
+    },
+    "mark": {"type": "bar", "color": "rgb(128,0,0)"},
+    "encoding": {
+      "x": {
+        "field": "Value",
+        "type": "quantitative",
+        "axis": {
+          "title": null,
+          "grid": false,
+          "format": "$2f",
+          "ticks": false,
+          "labelPadding": 5,
+          "labelFontSize": 11
+        }
+      },
+      "y": {
+        "field": "shortName",
+        "type": "nominal",
+        "sort": {"field": "Value", "order": "descending"},
+        "axis": {
+          "title": null,
+          "grid": false,
+          "ticks": false,
+          "labelPadding": 5,
+          "labelFontSize": 11
+        }
+      },
+      "color": {
+        "field": "privatePublic",
+        "legend": {
+          "orient": "none",
+          "direction": "horizontal",
+          "title": null,
+          "legendX": -80,
+          "legendY": -15
+        },
+        "sort": {"field": "Number", "order": "ascending"},
+        "scale": {"range": ["rgb(118,118,118)", "rgb(128,0,0)"]}
+      },
+      "tooltip": [
+        {"field": "Item", "title": "Industry", "type": "nominal"},
+        {"field": "Value", "title": "GVA", "format": "$.1f"}
+      ]
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "Number",
+          "oneOf": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18]
+        }
+      },
+      {
+        "calculate": " (datum.privatePublic=='Private')*10000+datum.Value",
+        "as": "sortField"
+      }
+    ]
+  }

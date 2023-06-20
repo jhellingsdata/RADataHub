@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Is this $150 billion of missing GDP?",
+    "fontSize": 16,
+    "subtitle": [
+      "Estimates of illegal drug spending by Americans, USD billions.",
+      "Data: RAND",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "style": {"cell": {"stroke": "transparent"}},
+    "locale": {
+      "number": {
+        "decimal": ".",
+        "thousands": ",",
+        "grouping": [3],
+        "currency": ["$", "B"]
+      }
+    }
+  },
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/US_Rand_DrugExpenditures.csv"
+  },
+  "mark": {"type": "bar", "width": 25},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0,
+        "grid": false,
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      }
+    },
+    "y": {
+      "field": "val",
+      "title": null,
+      "type": "quantitative",
+      "axis": {
+        "grid": true,
+        "format": "$2f",
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      }
+    },
+    "color": {
+      "field": "var",
+      "type": "nominal",
+      "legend": {
+        "orient": "none",
+        "legendX": -37,
+        "legendY": -22,
+        "direction": "horizontal"
+      },
+      "scale": {"range": ["#D9CF96", "#508484", "#4D5359", "#800000"]},
+      "title": null
+    },
+    "tooltip": [
+      {"field": "Year"},
+      {"field": "var", "title": "Drug"},
+      {"field": "val", "title": "Spending", "format": "$.2s"}
+    ]
+  },
+  "transform": [
+    {
+      "fold": ["Cocaine", "Heroin", "Marijuana", "Methamphetamine"],
+      "as": ["var", "val"]
+    }
+  ]
+}
