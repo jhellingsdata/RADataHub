@@ -25,7 +25,7 @@
       "color": "black"
     },
     "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDP_GVAbyIndustry.csv"
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_9_gva_bars.csv"
     },
     "mark": {"type": "bar", "color": "rgb(128,0,0)"},
     "encoding": {
