@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart with embedded data.",
+  "height": 280,
+  "width": 200,
+  "config": {
+    "style": {"cell": {"stroke": "transparent"}},
+    "locale": {
+      "number": {
+        "decimal": ".",
+        "thousands": ",",
+        "grouping": [3],
+        "currency": ["$", "B"]
+      }
+    }
+  },
+  "view": {"stroke": "transparent"},
+  "title": {
+    "text": "US GDP - Two Ways",
+    "subtitle": ["2022 Q3, Components of GDP ", " Data: BEA"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "fontSize": 16,
+    "anchor": "start",
+    "color": "black"
+  },
+  "resolve": {"scale": {"color": "independent"}},
+  "concat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDPsimple.csv"
+      },
+      "title": {
+        "text": "Expenditure Approach",
+        "subtitle": "(Excluding Net Trade)",
+        "subtitleFontSize": 10,
+        "fontSize": 12,
+        "dy": 10,
+        "orient": "bottom",
+        "fontWeight": "normal"
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 60,
+        "outerRadius": 120,
+        "cornerRadius": 0,
+        "padAngle": 0.02,
+        "XthetaOffset": 2.65
+      },
+      "encoding": {
+        "theta": {"field": "Value", "type": "quantitative"},
+        "color": {
+          "field": "Item",
+          "type": "nominal",
+          "legend": {
+            "title": null,
+            "legendX": -20,
+            "legendY": -35,
+            "orient": "none",
+            "columns": 3
+          },
+          "scale": {"range": ["#800000", "#4D5359", "#508484"]}
+        },
+        "tooltip": [
+          {"field": "Item", "title": "Component"},
+          {"field": "Value", "title": "Amount", "format": "$,"},
+          {"field": "Share", "title": "Share", "format": ".0%"}
+        ]
+      },
+      "transform": [{"filter": "datum.Item != 'Net exports'"}]
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDP_GNIbyType.csv"
+      },
+      "title": {
+        "text": "Income Approach",
+        "fontSize": 12,
+        "dy": 10,
+        "orient": "bottom",
+        "fontWeight": "normal"
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 60,
+        "outerRadius": 120,
+        "cornerRadius": 0,
+        "padAngle": 0.02
+      },
+      "encoding": {
+        "theta": {"field": "Value", "type": "quantitative"},
+        "color": {
+          "field": "shortName",
+          "type": "nominal",
+          "legend": {
+            "title": null,
+            "direction": "horizontal",
+            "columns": 3,
+            "orient": "none",
+            "legendX": -20,
+            "legendY": -50
+          },
+          "sort": {"field": "pieNumber", "order": "ascending"},
+          "scale": {
+            "range": ["#800000", "#4D5359", "#508484", "#D9CF96", "#BFB6BB"]
+          }
+        },
+        "order": {
+          "field": "pieNumber",
+          "type": "quantitative",
+          "sort": "ascending"
+        },
+        "tooltip": [
+          {"field": "Item", "title": "Component"},
+          {"field": "Value", "title": "Amount", "format": "$,"},
+          {"field": "Share", "title": "Share", "format": ".0%"}
+        ]
+      },
+      "transform": [
+        {"filter": {"field": "Line", "oneOf": [3, 6, 7, 9, 21]}},
+        {"calculate": "datum.Value/25844.7", "as": "Share"}
+      ]
+    }
+  ]
+}
