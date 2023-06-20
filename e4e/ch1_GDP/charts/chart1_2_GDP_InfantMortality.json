@@ -4,8 +4,8 @@
   "title": {
     "text": "GDP and Infant Mortality",
     "subtitle": [
-      "Infant mortality: per 1,000 live births, source: UN Population prospects 2022",
-      "GDP: per capita PPP (international $), source: World Bank",
+      "Infant mortality per 1,000 live births. Data: UN Population prospects 2022",
+      "GDP per capita PPP (international $). Data: World Bank",
       ""
     ],
     "subtitleFontStyle": "italic",
