@@ -12,10 +12,7 @@
       "text": "GDP in the United States",
       "fontSize": 16,
       "dx": 10,
-      "subtitle": [
-        "Current GDP per capita, source: BEA; Census Bureau, 2022",
-        ""
-      ],
+      "subtitle": ["Current GDP per capita 2022", "Data: BEA; Census Bureau", ""],
       "align": "left",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 12,
