@@ -4,7 +4,7 @@
     "text": "Is this $150 billion of missing GDP?",
     "fontSize": 16,
     "subtitle": [
-      "Estimates of illegal drug spending by Americans, USD billions.",
+      "Estimates of illegal drug spending by Americans.",
       "Data: RAND",
       ""
     ],
@@ -64,7 +64,7 @@
         "legendY": -22,
         "direction": "horizontal"
       },
-      "scale": {"range": ["#D9CF96", "#508484", "#4D5359", "#800000"]},
+      "scale": {"range": ["#D9CF96", "#508484", "#4D5359", "#993333"]},
       "title": null
     },
     "tooltip": [

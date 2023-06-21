@@ -33,7 +33,7 @@
         "format": "$,d"
       },
       "type": "quantitative",
-      "scale": {"scheme": "viridis", "reverse": true}
+      "scale": {"scheme": "yellowgreenblue", "reverse": false}
     },
     "tooltip": [
       {"field": "properties.NAME", "title": "State"},

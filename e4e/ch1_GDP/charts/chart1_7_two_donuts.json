@@ -17,7 +17,7 @@
   "view": {"stroke": "transparent"},
   "title": {
     "text": "US GDP - Two Ways",
-    "subtitle": ["2022 Q3, Components of GDP ", " Data: BEA"],
+    "subtitle": ["2022 Q3, Components of GDP ", " Data: BEA", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "fontSize": 16,
@@ -55,11 +55,11 @@
           "legend": {
             "title": null,
             "legendX": -20,
-            "legendY": -35,
+            "legendY": -55,
             "orient": "none",
             "columns": 3
           },
-          "scale": {"range": ["#800000", "#4D5359", "#508484"]}
+          "scale": {"range": ["rgb(117,20,12)", "#4D5359", "#508484"]}
         },
         "tooltip": [
           {"field": "Item", "title": "Component"},
@@ -98,11 +98,11 @@
             "columns": 3,
             "orient": "none",
             "legendX": -20,
-            "legendY": -50
+            "legendY": -55
           },
           "sort": {"field": "pieNumber", "order": "ascending"},
           "scale": {
-            "range": ["#800000", "#4D5359", "#508484", "#D9CF96", "#BFB6BB"]
+            "range": ["rgb(117,20,12)", "#4D5359", "#508484", "#D9CF96", "#BFB6BB"]
           }
         },
         "order": {
