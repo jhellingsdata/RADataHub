@@ -55,7 +55,7 @@
         "labelFontSize": 11,
         "ticks": false,
         "labelPadding": 5,
-        "titleFontWeight": "normal",
+        "titleFontWeight": "bold",
         "titlePadding": 6
       }
     },
@@ -70,11 +70,19 @@
         ]
       },
       "axis": {
-        "values": [55, 60, 65, 70, 75, 80, 85],
+        "values": [
+          55,
+          60,
+          65,
+          70,
+          75,
+          80,
+          85
+        ],
         "ticks": false,
         "labelFontSize": 11,
         "labelPadding": 5,
-        "titleFontWeight": "normal",
+        "titleFontWeight": "bold",
         "gridOpacity": 0.3,
         "titlePadding": 6
       }
@@ -87,7 +95,7 @@
       },
       "title": null,
       "legend": {
-        "orient": "none",
+        "orient": "top",
         "direction": "horizontal",
         "legendX": -30,
         "legendY": -25,

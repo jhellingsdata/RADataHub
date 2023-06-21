@@ -1,0 +1,17 @@
+# Ignore Python virtual environments
+venv/
+
+# Ignore the __pycache__ directory
+__pycache__/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore the .vscode directory
+.vscode/
+
+# Ignore any compiled Python files
+*.pyc
+
+# Ignore system-specific temporary files or backups
+*~
