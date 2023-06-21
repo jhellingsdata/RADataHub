@@ -6,7 +6,7 @@
   "view": {"stroke": "transparent"},
   "title": {
     "text": "US GDP - income",
-    "subtitle": ["2022 Q3, GNI Decomposition. ", " Data: BEA", ""],
+    "subtitle": ["2022 Q3, GNI Decomposition.", "Source: BEA", ""],
     "subtitleFontStyle": "italic",
     "fontSize": 16,
     "subtitleFontSize": 12,

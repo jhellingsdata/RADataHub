@@ -17,7 +17,7 @@
   "view": {"stroke": "transparent"},
   "title": {
     "text": "US GDP - Two Ways",
-    "subtitle": ["2022 Q3, Components of GDP ", " Data: BEA", ""],
+    "subtitle": ["2022 Q3, Components of GDP", "Source: BEA", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "fontSize": 16,

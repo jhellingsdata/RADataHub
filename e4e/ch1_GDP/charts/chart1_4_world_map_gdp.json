@@ -11,7 +11,7 @@
   "title": {
     "text": "Global GDP",
     "fontSize": 16,
-    "subtitle": ["Per capita, PPP, current USD", "Data: World Bank", ""],
+    "subtitle": ["Per capita, PPP, current USD", "Source: World Bank", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",

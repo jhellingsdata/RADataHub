@@ -4,8 +4,8 @@
   "title": {
     "text": "GDP and Life Expectancy",
     "subtitle": [
-      "Life expectancy: in years. Data: UN Population Prospects 2022",
-      "GDP: per capita PPP (international $). Data: World Bank",
+      "Life expectancy: in years. Source: UN Population Prospects 2022",
+      "GDP: per capita PPP (international $). Source: World Bank",
       ""
     ],
     "subtitleFontStyle": "italic",

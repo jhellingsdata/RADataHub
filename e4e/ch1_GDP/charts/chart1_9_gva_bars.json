@@ -18,7 +18,7 @@
   "title": {
     "text": "US GVA by sector",
     "fontSize": 16,
-    "subtitle": ["Gross Value Added, 2022 Q3", "Data: BEA", ""],
+    "subtitle": ["Gross Value Added, 2022 Q3", "Source: BEA", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",

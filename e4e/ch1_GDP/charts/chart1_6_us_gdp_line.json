@@ -193,7 +193,7 @@
       "encoding": {
         "x": {"value": -45},
         "y": {"value": -15},
-        "text": {"value": "Data: FRED"}
+        "text": {"value": "Source: FRED"}
       }
     }
   ],

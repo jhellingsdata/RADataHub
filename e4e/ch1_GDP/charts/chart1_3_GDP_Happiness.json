@@ -3,10 +3,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "",
   "title": {
-    "text": "GDP and happiness",
+    "text": "GDP and Happiness",
     "subtitle": [
-      "Happiness: 3-year average 2019-21. Data: World Happiness Report 2022",
-      "GDP: per capita PPP (international $). Data: World Bank",
+      "Happiness: 3-year average 2019-21. Source: World Happiness Report 2022",
+      "GDP: per capita PPP (international $). Source: World Bank",
       ""
     ],
     "subtitleFontStyle": "italic",
