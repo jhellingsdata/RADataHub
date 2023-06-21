@@ -126,7 +126,7 @@
       "encoding": {
         "x": {"value": -45},
         "y": {"value": -45},
-        "text": {"value": "GDP - Different Perspectives"}
+        "text": {"value": "US GDP - Different Perspectives"}
       }
     },
     {
@@ -143,6 +143,43 @@
         "text": {"field": "subtitle_text"}
       },
       "transform": [{"filter": "datum.DATE==-725846400000"}]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "rgb(128,0,0)",
+        "size": 12,
+        "fontStyle": "italic",
+        "align": "right",
+        "baseline": "bottom"
+      },
+      "encoding": {
+        "x": {
+          "field": "DATE",
+          "type": "temporal",
+          "title": "",
+          "axis": {
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11,
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11,
+            "gridOpacity": 0.6,
+            "grid": true
+          }
+        },
+        "text": {"field": "measure"}
+      },
+      "transform": [{"filter": "datum.DATE==1656633600000"}]
     },
     {
       "data": {"values": [{"z": 1}]},
