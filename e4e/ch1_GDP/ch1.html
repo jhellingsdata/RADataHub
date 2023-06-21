@@ -23,12 +23,7 @@
     <h1>Section 1 Charts</h1>
 
     <section>
-        <h3><a href="charts/chart1_1_GDP_LifeExpectancy.json"> World GDP - Unformatted </a></h3>
-        <figure id="world_map_gdp"></figure>
-    </section>
-
-    <section>
-        <h3><a href="charts/chart1_1_GDP_LifeExpectancy.json"> Life Expectency</a></h3>
+        <h3><a href="charts/chart1_1_GDP_LifeExpectancy.json">Why is GDP important?</a></h3>
         <figure id="life_expec"></figure>
 
         <figure id="c2"></figure>
@@ -41,17 +36,21 @@
         <figure id="maternal"></figure>
     </section>
 
+    <section>
+        <h3><a href="charts/chart1_4_map_GDP_global.json"> World GDP</a></h3>
+        <figure id="c4map"></figure>
+    </section>
 
+    <section>
+        <h3><a href="charts/chart1_5_map_GDP_US.json"> US GDP</a></h3>
+        <figure id="c5map"></figure>
+    </section>
 
     <section>
         <h3><a href="charts/chart1_6_us_gdp_line.json"> Missing GDP?  </a></h3>
         <figure id="teaser"></figure>
     </section>
 
-    <section>
-        <h3><a href="charts/chart1_5_us_map_gdp.json"> US GDP - Unformatted </a></h3>
-        <figure id="us_map_gdp"></figure>
-    </section>
 
     <section>
         <h3><a href="charts/chart1_5_us_gdp_line.json"> US GDP - Different Perspectives </a></h3>
@@ -75,7 +74,7 @@
     <script>
         vegaEmbed('#life_expec', "charts/chart1_1_GDP_LifeExpectancy.json");
         
-        vegaEmbed('#world_map_gdp', "charts/chart1_4_world_map_gdp.json");
+        
         vegaEmbed('#us_map_gdp', "charts/chart1_5_us_map_gdp.json");
         
         vegaEmbed('#us_line_gdp', "charts/chart1_6_us_gdp_line.json");
@@ -83,11 +82,11 @@
         vegaEmbed('#two_donuts', "charts/chart1_7_two_donuts.json");
         vegaEmbed('#donut_production', "charts/chart1_8_production_donut.json");
 
-
-        
-
         vegaEmbed('#c2', "charts/chart1_2_GDP_InfantMortality.json");
         vegaEmbed('#c3', "charts/chart1_3_GDP_Happiness.json");
+
+        vegaEmbed('#c4map', "charts/chart1_4_map_GDP_global.json");
+        vegaEmbed('#c5map', "charts/chart1_5_map_GDP_US.json");
 
         vegaEmbed('#gva_bars', "charts/chart1_9_gva_bars.json");
 

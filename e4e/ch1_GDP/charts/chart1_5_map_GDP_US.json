@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "GDP data from BEA, Q3 2022. Population estimate from Census Bureau, Mid-2022. District of Columbia filtered out as distorts relative differences",
-  "width": 550,
-  "height": 360,
+  "width": 600,
+  "height": 330,
   "config": {"view": {"stroke": null}, "padding": 0},
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_5_us_map_gdp_US_States_5m.json",
@@ -12,24 +12,22 @@
     "text": "GDP in the United States",
     "fontSize": 16,
     "dx": 10,
-    "subtitle": ["Current GDP per capita 2022", "Source: BEA; Census Bureau", ""],
+    "subtitle": ["Current GDP per capita, 2022", "Source: BEA; Census Bureau", ""],
     "align": "left",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
     "color": "black"
   },
-  "projection": {"type": "albersUsa", "translate": [260, 190], "scale": 700},
+  "projection": {"type": "albersUsa", "translate": [270, 160], "scale": 700},
   "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
   "encoding": {
     "color": {
       "field": "Current GDP per capita",
       "legend": {
         "title": "",
-        "orient": "none",
-        "legendX": 12,
-        "legendY": -5,
-        "direction": "horizontal",
+        "orient": "bottom-right",
+        "direction": "vertical",
         "format": "$,d"
       },
       "type": "quantitative",
