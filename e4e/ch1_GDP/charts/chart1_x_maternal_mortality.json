@@ -1,0 +1,121 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/mortality_gdp.json"
+  },
+  "title": {
+    "anchor": "start",
+    "align": "left",
+    "text": "GDP and Maternal Mortality",
+    "subtitle": [
+      "GDP Per Capita (2022 PPP USD), and Maternal Mortality per Million Live Births",
+      "Both Log Scales, Data: World Health Organization, World Bank",
+      ""
+    ],
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "font": "Arial",
+    "subtitleFont": "Arial",
+    "subtitleFontWeight": 400,
+    "fontWeight": 600
+  },
+  "width": 500,
+  "height": 300,
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2000,
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 2017,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "leg_region",
+          "select": {"type": "point", "fields": ["Region"]},
+          "bind": "legend"
+        }
+      ],
+      "mark": {"type": "circle"},
+      "encoding": {
+        "x": {
+          "field": "GDP pc",
+          "type": "quantitative",
+          "scale": {"type": "log", "domain": [400, 150000]},
+          "axis": {"gridOpacity": 0.3}
+        },
+        "tooltip": [
+          {"field": "Country"},
+          {"field": "Maternal Mortality"},
+          {"field": "GDP pc", "format": "$,.2f", "title": "GDP Per Capita"}
+        ],
+        "y": {
+          "field": "Maternal Mortality",
+          "type": "quantitative",
+          "axis": {"gridOpacity": 0.3},
+          "scale": {"type": "log"}
+        },
+        "color": {
+          "field": "Region",
+          "type": "nominal",
+          "legend": {
+            "titleFontSize": 16,
+            "title": null,
+            "direction": "horizontal",
+            "orient": "none",
+            "legendY": -20,
+            "legendX": -55
+          }
+        },
+        "size": {
+          "field": "Population",
+          "type": "quantitative",
+          "legend": null,
+          "scale": {"type": "linear", "range": [10, 2500]}
+        },
+        "opacity": {
+          "condition": {"param": "leg_region", "value": 1},
+          "value": 0.2
+        }
+      }
+    },
+    {
+      "mark": {"type": "text", "fontWeight": "bold", "fontSize": 11},
+      "encoding": {
+        "text": {"field": "ISO3_flag"},
+        "x": {
+          "field": "GDP pc",
+          "type": "quantitative",
+          "title": "GDP Per Capita",
+          "axis": {
+            "labelFontSize": 12,
+            "labelPadding": 5,
+            "ticks": false,
+            "format": "$,"
+          },
+          "scale": {"type": "log", "domain": [400, 150000]}
+        },
+        "y": {
+          "field": "Maternal Mortality",
+          "type": "quantitative",
+          "axis": {"labelFontSize": 12, "labelPadding": 5, "ticks": false},
+          "scale": {"type": "log"}
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.ISO3 == 'USA' | datum.ISO3 == 'CHN' | datum.ISO3 == 'IND' | datum.ISO3 == 'SLE' | datum.ISO3 == 'NGA' | datum.ISO3 == 'TJK'"
+        }
+      ]
+    }
+  ],
+  "transform": [{"filter": "datum.Year == yearSelector"}]
+}
