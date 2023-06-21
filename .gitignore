@@ -15,3 +15,5 @@ __pycache__/
 
 # Ignore system-specific temporary files or backups
 *~
+
+.DS_Store
