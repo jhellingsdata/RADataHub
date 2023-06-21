@@ -80,6 +80,10 @@
     {
       "calculate": " (datum.privatePublic=='Private')*10000+datum.Value",
       "as": "sortField"
+    },
+    {
+      "calculate": "datum.shortName == 'Reail' ? 'Retail' : datum.shortName",
+      "as": "shortName"
     }
   ]
 }
