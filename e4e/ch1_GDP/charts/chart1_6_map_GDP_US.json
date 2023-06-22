@@ -28,10 +28,15 @@
         "title": "",
         "orient": "bottom-right",
         "direction": "vertical",
-        "format": "$,d"
+        "format": "$,d",
+        "tickCount": 3
       },
       "type": "quantitative",
-      "scale": {"scheme": "yellowgreenblue", "reverse": false}
+      "scale": {
+        "scheme": "viridis",
+        "reverse": false,
+        "domain": [50000,100000]
+      }
     },
     "tooltip": [
       {"field": "properties.NAME", "title": "State"},

@@ -40,7 +40,7 @@
         "offset": 5
       },
       "type": "quantitative",
-      "scale": {"type": "log", "scheme": "viridis", "reverse": true}
+      "scale": {"type": "log", "scheme": "viridis", "reverse": false}
     },
     "tooltip": [
       {"field": "properties.COUNTRY", "title": "Country"},
