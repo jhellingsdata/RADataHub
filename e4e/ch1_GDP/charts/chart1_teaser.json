@@ -66,7 +66,7 @@
         "legendY": -22,
         "direction": "horizontal"
       },
-      "scale": {"range": ["#D9CF96", "#508484", "#4D5359", "#993333"]},
+      "scale": {"scheme": "inferno"},
       "title": null
     },
     "tooltip": [
