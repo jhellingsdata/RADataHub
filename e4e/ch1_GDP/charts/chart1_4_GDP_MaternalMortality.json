@@ -130,27 +130,6 @@
           "value": 0.2
         }
       }
-    },
-    {
-      "mark": {"type": "text", "fontWeight": "bold", "fontSize": 11},
-      "encoding": {
-        "text": {"field": "ISO3_flag"},
-        "x": {
-          "field": "GDP pc",
-          "type": "quantitative",
-          "scale": {"type": "log", "domain": [400, 150000]}
-        },
-        "y": {
-          "field": "Maternal Mortality",
-          "type": "quantitative",
-          "scale": {"type": "log"}
-        }
-      },
-      "transform": [
-        {
-          "filter": "datum.ISO3 == 'USA' | datum.ISO3 == 'CHN' | datum.ISO3 == 'IND' | datum.ISO3 == 'SLE' | datum.ISO3 == 'NGA' | datum.ISO3 == 'TJK'"
-        }
-      ]
     }
   ],
   "transform": [{"filter": "datum.Year == yearSelector"}]
