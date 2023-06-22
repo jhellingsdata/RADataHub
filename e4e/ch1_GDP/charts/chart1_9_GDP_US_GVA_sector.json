@@ -16,7 +16,7 @@
     }
   },
   "title": {
-    "text": "US GVA by sector",
+    "text": "US GVA by Sector",
     "fontSize": 16,
     "subtitle": ["Gross Value Added, 21Q3 - 22Q3", "Source: BEA", ""],
     "subtitleFontStyle": "italic",
