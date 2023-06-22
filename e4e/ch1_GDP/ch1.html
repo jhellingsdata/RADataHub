@@ -23,22 +23,20 @@
     <h1>Section 1 Charts</h1>
 
     <section>
-        <h3><a href="charts/chart1_1_GDP_LifeExpectancy.json">Why is GDP important?</a></h3>
+        <h3><a href="charts/chart1_1_GDP_LifeExpectancy.json">GDP and Life Expectancy</a></h3>
         <figure id="life_expec"></figure>
 
         <figure id="c2"></figure>
         <figure id="c3"></figure>
     </section>
 
-    
-    <section>
-        <h3><a href="charts/chart1_6_us_gdp_line.json"> Maternal Morality  </a></h3>
-        <figure id="maternal"></figure>
-    </section>
 
     <section>
         <h3><a href="charts/chart1_4_map_GDP_global.json"> World GDP</a></h3>
         <figure id="c4map"></figure>
+
+        <p>Alternative:</p>
+        <figure id="c4map_alt"></figure>
     </section>
 
     <section>
@@ -46,14 +44,9 @@
         <figure id="c5map"></figure>
     </section>
 
-    <section>
-        <h3><a href="charts/chart1_6_us_gdp_line.json"> Missing GDP?  </a></h3>
-        <figure id="teaser"></figure>
-    </section>
-
 
     <section>
-        <h3><a href="charts/chart1_5_us_gdp_line.json"> US GDP - Different Perspectives </a></h3>
+        <h3><a href="charts/chart1_6_GDP_US_selector.json"> US GDP - Different Perspectives </a></h3>
         <p> Changed: Self explanatory drop down options, selected series updates subtitle, bar tooltip, formatting</p>
         <figure id="us_line_gdp"></figure>
     </section>
@@ -70,28 +63,38 @@
 
     </section>
 
+    <section>
+        <h3><a href="charts/chart1_teaser.json"> Missing GDP?  </a></h3>
+        <figure id="teaser"></figure>
+    </section>
+
+
+    <section>
+        <h3><a href="charts/chart1_x_maternal_mortality.json"> Maternal Morality  </a></h3>
+        <figure id="maternal"></figure>
+    </section>
+
 
     <script>
         vegaEmbed('#life_expec', "charts/chart1_1_GDP_LifeExpectancy.json");
-        
-        
-        vegaEmbed('#us_map_gdp', "charts/chart1_5_us_map_gdp.json");
-        
-        vegaEmbed('#us_line_gdp', "charts/chart1_6_us_gdp_line.json");
-        
-        vegaEmbed('#two_donuts', "charts/chart1_7_two_donuts.json");
-        vegaEmbed('#donut_production', "charts/chart1_8_production_donut.json");
-
         vegaEmbed('#c2', "charts/chart1_2_GDP_InfantMortality.json");
         vegaEmbed('#c3', "charts/chart1_3_GDP_Happiness.json");
 
         vegaEmbed('#c4map', "charts/chart1_4_map_GDP_global.json");
+        vegaEmbed('#c4map_alt', "charts/chart1_4_world_map_gdp_2.json");
+
         vegaEmbed('#c5map', "charts/chart1_5_map_GDP_US.json");
+
+        vegaEmbed('#us_line_gdp', "charts/chart1_6_GDP_US_selector.json");
+
+        vegaEmbed('#us_map_gdp', "charts/chart1_5_us_map_gdp.json");
+        vegaEmbed('#two_donuts', "charts/chart1_7_two_donuts.json");
+        vegaEmbed('#donut_production', "charts/chart1_8_production_donut.json");
+
 
         vegaEmbed('#gva_bars', "charts/chart1_9_gva_bars.json");
 
         vegaEmbed('#teaser', "charts/chart1_teaser.json");
-
         vegaEmbed('#maternal', "charts/chart1_x_maternal_mortality.json");
 
 
