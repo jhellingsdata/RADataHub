@@ -60,7 +60,8 @@
       "field": "var",
       "type": "nominal",
       "legend": {
-        "orient": "none",
+        "orient": "top",
+        "offset": 10,
         "legendX": -37,
         "legendY": -22,
         "direction": "horizontal"
