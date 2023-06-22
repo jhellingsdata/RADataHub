@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 1. GDP</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        #charts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        #charts div {
+            margin: 20px;
+            padding-top: 20px;
+        }
+        hr.solid {
+            border: none; /* remove existing border */
+            border-top: 1.5px solid #727171;
+            width: 680px; /* adjust width as needed */
+        }
+        .vega-embed.has-actions {
+            padding: 0px !important;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Chapter 1. GDP</h1>
+    <div id="charts"></div>
+
+    <script>
+    const chartsContainer = document.getElementById('charts');
+
+    // Assuming you have an array of JSON file names in 'charts' folder
+    const chartFiles = [
+        'chart1_1_GDP_LifeExpectancy.json',
+        'chart1_2_GDP_InfantMortality.json',
+        'chart1_3_GDP_Happiness.json',
+        'chart1_4_map_GDP_global.json',
+        'chart1_4_world_map_gdp_2.json',
+        'chart1_5_map_GDP_US.json',
+        'chart1_6_GDP_US_selector.json',
+        'chart1_7_two_donuts.json',
+        'chart1_8_production_donut.json',
+        'chart1_9_gva_bars.json',
+        'chart1_10_gni_donut.json',
+        'chart1_teaser.json',
+        'chart1_x_maternal_mortality.json'
+    ];
+
+    chartFiles.forEach(file => {
+        fetch(`charts/${file}`)
+            .then(response => response.json())
+            .then(spec => {
+                const chartDiv = document.createElement('div');
+                chartDiv.classList.add('chart');
+                chartsContainer.appendChild(chartDiv);
+                vegaEmbed(chartDiv, spec);
+
+                // Add a <hr> element after the chart
+                const hr = document.createElement('hr');
+                hr.classList.add('solid');
+                chartsContainer.appendChild(hr);
+            });
+        });
+    </script>
+</body>
+</html>
