@@ -52,6 +52,7 @@
           "type": "quantitative",
           "scale": {"type": "log", "domain": [400, 150000]},
           "axis": {
+            "title": "GDP (log scale)",
             "values": [
               400,
               1000,
@@ -62,7 +63,12 @@
               40000,
               100000
             ],
-            "gridOpacity": 0.3
+            "gridOpacity": 0.3,
+            "labelFontSize": 12,
+            "labelPadding": 5,
+            "titlePadding": 6,
+            "ticks": false,
+            "format": "$,"
           }
         },
         "tooltip": [
@@ -75,6 +81,7 @@
           "field": "Maternal Mortality",
           "type": "quantitative",
           "axis": {
+            "title": "Mortality (log scale)",
             "values": [
               1,
               2,
@@ -87,9 +94,15 @@
               10000
             ],
             "gridOpacity": 0.3,
-            "tickCount": 10
+            "tickCount": 10,
+            "labelFontSize": 11,
+            "labelPadding": 5,
+            "ticks": false,
+            "titlePadding": -4
           },
-          "scale": {"type": "log"}
+          "scale": {
+            "type": "log"
+          }
         },
         "color": {
           "field": "Region",
@@ -99,10 +112,11 @@
             "direction": "horizontal",
             "orient": "top",
             "offset": 10,
-            "labelFontSize": 10,
+            "labelFontSize": 11,
             "labelPadding":10,
             "legendY": -20,
-            "legendX": -55
+            "legendX": -55,
+            "labelOffset": 2
           }
         },
         "size": {
@@ -124,19 +138,11 @@
         "x": {
           "field": "GDP pc",
           "type": "quantitative",
-          "title": "GDP Per Capita",
-          "axis": {
-            "labelFontSize": 12,
-            "labelPadding": 5,
-            "ticks": false,
-            "format": "$,"
-          },
           "scale": {"type": "log", "domain": [400, 150000]}
         },
         "y": {
           "field": "Maternal Mortality",
           "type": "quantitative",
-          "axis": {"labelFontSize": 12, "labelPadding": 5, "ticks": false},
           "scale": {"type": "log"}
         }
       },
