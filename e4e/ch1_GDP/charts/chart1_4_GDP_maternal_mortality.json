@@ -4,13 +4,14 @@
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/mortality_gdp.json"
   },
+  "view": {"stroke": "transparent"},
   "title": {
     "anchor": "start",
     "align": "left",
     "text": "GDP and Maternal Mortality",
     "subtitle": [
-      "GDP Per Capita (2022 PPP USD), and Maternal Mortality per Million Live Births",
-      "Log Scales, Sources: World Health Organization, World Bank",
+      "Maternal mortality per million live births. Source: World Health Organization",
+      "GDP: per capita PPP (2022 $). Source: World Bank",
       ""
     ],
     "fontSize": 16,
@@ -31,7 +32,7 @@
         "min": 2000,
         "max": 2017,
         "step": 1,
-        "name": "Year:"
+        "name": "Select year:"
       }
     }
   ],
@@ -50,27 +51,56 @@
           "field": "GDP pc",
           "type": "quantitative",
           "scale": {"type": "log", "domain": [400, 150000]},
-          "axis": {"gridOpacity": 0.3}
+          "axis": {
+            "values": [
+              400,
+              1000,
+              2000,
+              4000,
+              10000,
+              20000,
+              40000,
+              100000
+            ],
+            "gridOpacity": 0.3
+          }
         },
         "tooltip": [
+          {"field": "Year"},
           {"field": "Country"},
-          {"field": "Maternal Mortality"},
-          {"field": "GDP pc", "format": "$,.2f", "title": "GDP Per Capita"}
+          {"field": "Maternal Mortality", "format": ","},
+          {"field": "GDP pc", "format": "$,d", "title": "GDP Per Capita"}
         ],
         "y": {
           "field": "Maternal Mortality",
           "type": "quantitative",
-          "axis": {"gridOpacity": 0.3},
+          "axis": {
+            "values": [
+              1,
+              2,
+              10,
+              20,
+              100,
+              200,
+              1000,
+              2000,
+              10000
+            ],
+            "gridOpacity": 0.3,
+            "tickCount": 10
+          },
           "scale": {"type": "log"}
         },
         "color": {
           "field": "Region",
           "type": "nominal",
           "legend": {
-            "titleFontSize": 16,
             "title": null,
             "direction": "horizontal",
-            "orient": "none",
+            "orient": "top",
+            "offset": 10,
+            "labelFontSize": 10,
+            "labelPadding":10,
             "legendY": -20,
             "legendX": -55
           }
@@ -79,7 +109,7 @@
           "field": "Population",
           "type": "quantitative",
           "legend": null,
-          "scale": {"type": "linear", "range": [10, 2500]}
+          "scale": {"type": "linear", "range": [10, 1200]}
         },
         "opacity": {
           "condition": {"param": "leg_region", "value": 1},

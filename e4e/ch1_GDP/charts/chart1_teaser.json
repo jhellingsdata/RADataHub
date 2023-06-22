@@ -49,6 +49,7 @@
       "type": "quantitative",
       "axis": {
         "grid": true,
+        "gridOpacity": 0.6,
         "format": "$2f",
         "ticks": false,
         "labelPadding": 5,

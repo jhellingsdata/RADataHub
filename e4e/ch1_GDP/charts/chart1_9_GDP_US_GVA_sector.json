@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A simple donut chart with embedded data.",
+  "description": "A bar chart with embedded data for US gross valued added by sector.",
   "height": 300,
-  "width": 500,
+  "width": 450,
   "view": {"stroke": "transparent"},
   "config": {
     "style": {"cell": {"stroke": "transparent"}},
@@ -18,7 +18,7 @@
   "title": {
     "text": "US GVA by sector",
     "fontSize": 16,
-    "subtitle": ["Gross Value Added, 2022 Q3", "Source: BEA", ""],
+    "subtitle": ["Gross Value Added, 21Q3 - 22Q3", "Source: BEA", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
@@ -34,11 +34,16 @@
       "type": "quantitative",
       "axis": {
         "title": null,
-        "grid": false,
-        "format": "$2f",
+        "grid": true,
+        "gridOpacity": 0.6,
+        "format": "$2,f",
         "ticks": false,
         "labelPadding": 5,
-        "labelFontSize": 11
+        "labelFontSize": 11,
+        "tickCount": 5
+      },
+      "scale": {
+        "domain": [1, 5400]
       }
     },
     "y": {
@@ -56,18 +61,20 @@
     "color": {
       "field": "privatePublic",
       "legend": {
-        "orient": "none",
+        "orient": "top",
         "direction": "horizontal",
         "title": null,
         "legendX": -80,
-        "legendY": -15
+        "legendY": -15,
+        "offset": 10,
+        "labelFontSize": 11
       },
       "sort": {"field": "Number", "order": "ascending"},
       "scale": {"range": ["rgb(118,118,118)", "rgb(128,0,0)"]}
     },
     "tooltip": [
       {"field": "Item", "title": "Industry", "type": "nominal"},
-      {"field": "Value", "title": "GVA", "format": "$,.1f"}
+      {"field": "Value", "title": "GVA", "format": "$,d"}
     ]
   },
   "transform": [

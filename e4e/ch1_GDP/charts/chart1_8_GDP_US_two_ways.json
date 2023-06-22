@@ -1,8 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple donut chart with embedded data.",
-  "height": 280,
-  "width": 200,
   "config": {
     "style": {"cell": {"stroke": "transparent"}},
     "locale": {
@@ -12,12 +10,14 @@
         "grouping": [3],
         "currency": ["$", "B"]
       }
+    },
+    "concat": {
+      "spacing": 50
     }
   },
-  "view": {"stroke": "transparent"},
   "title": {
     "text": "US GDP - Two Ways",
-    "subtitle": ["2022 Q3, Components of GDP", "Source: BEA", ""],
+    "subtitle": ["Components of current $ GDP, 21Q3 - 22Q3", "Source: BEA", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "fontSize": 16,
@@ -25,11 +25,13 @@
     "color": "black"
   },
   "resolve": {"scale": {"color": "independent"}},
-  "concat": [
+  "hconcat": [
     {
       "data": {
         "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_7-8_productiondonuts_multi.csv"
       },
+      "height": 210,
+      "width": 200,
       "title": {
         "text": "Expenditure Approach",
         "subtitle": "(Excluding Net Trade)",
@@ -57,14 +59,15 @@
             "legendX": -20,
             "legendY": -55,
             "orient": "none",
-            "columns": 3
+            "columns": 3,
+            "labelFontSize": 11
           },
           "scale": {"range": ["rgb(117,20,12)", "#4D5359", "#508484"]}
         },
         "tooltip": [
           {"field": "Item", "title": "Component"},
-          {"field": "Value", "title": "Amount", "format": "$,"},
-          {"field": "Share", "title": "Share", "format": ".0%"}
+          {"field": "Value", "title": "Amount", "format": "$,d"},
+          {"field": "Share", "title": "GDP Share", "format": ".0%"}
         ]
       },
       "transform": [{"filter": "datum.Item != 'Net exports'"}]
@@ -73,6 +76,8 @@
       "data": {
         "url": "https://raw.githubusercontent.com/RDeconomist/classes/main/E4E_macro/US_BEA_GDP_GNIbyType.csv"
       },
+      "height": 210,
+      "width": 200,
       "title": {
         "text": "Income Approach",
         "fontSize": 12,
@@ -98,7 +103,8 @@
             "columns": 3,
             "orient": "none",
             "legendX": -20,
-            "legendY": -55
+            "legendY": -55,
+            "labelFontSize": 11
           },
           "sort": {"field": "pieNumber", "order": "ascending"},
           "scale": {
@@ -112,8 +118,8 @@
         },
         "tooltip": [
           {"field": "Item", "title": "Component"},
-          {"field": "Value", "title": "Amount", "format": "$,"},
-          {"field": "Share", "title": "Share", "format": ".0%"}
+          {"field": "Value", "title": "Amount", "format": "$,d"},
+          {"field": "Share", "title": "GDP Share", "format": ".0%"}
         ]
       },
       "transform": [
