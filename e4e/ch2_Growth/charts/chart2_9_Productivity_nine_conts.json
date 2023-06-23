@@ -1,0 +1,79 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/OECD_output_per_worker.csv"
+    },
+    "title": {
+      "text": "Productivity: nine countries compared",
+      "fontSize": 16,
+      "anchor": "start",
+      "subtitle": [
+        "Output per worker, GDP:  PPP (constant 2015 $) source: World Bank"
+  
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12
+    },
+    "height": 300,
+    "width": 500,
+    "transform": [
+      {
+        "filter": {
+          "field": "ISO3",
+          "oneOf": ["USA", "GBR", "AUS", "DEU", "FRA", "KOR", "JPN", "ITA", "CHL"]
+        }
+      },
+      {"calculate": "year(datum.Year)", "as": "year"}
+    ],
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal", "axis": {"title": null, "format": "%Y", "ticks": false, "grid": false}, "scale": {"domain": ["1990", "2021"]} },
+      "y": {
+        "field": "Output per worker ($)",
+        "type": "quantitative",
+        "title": "Output per worker",
+        "scale": {"domain": [28000, 140000]},
+        "axis": {"title": null, "format": "$,.0f"}
+      },
+      "color": {
+        "condition": {
+          "param": "hover",
+          "field": "ISO3",
+          "type": "nominal",
+          "legend": null
+          
+        },
+        "value": "grey"
+      },
+      "opacity": {"condition": {"param": "hover", "value": 0.8}, "value": 0.2}
+    },
+    "layer": [
+      {
+        "params": [
+          {
+            "name": "hover",
+            "value": [{"ISO3": "USA"}],
+            "select": {"type": "point", "fields": ["ISO3"], "on": "mouseover"}
+          }
+        ],
+        "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+      },
+      {"mark": "line"},
+      {
+        "encoding": {
+          "x": {"aggregate": "max", "field": "Year", "scale": {"domain": ["1990", "2021"]}},
+          "y": {"aggregate": {"argmax": "year"}, "field": "Output per worker ($)"}
+        },
+        "layer": [
+          {"mark": {"type": "circle"}},
+          {
+            "mark": {"type": "text", "align": "left", "dx": 4},
+            "encoding": {
+              "text": {"field": "Country", "type": "nominal"}
+            }
+          }
+        ]
+      }
+    ],
+    "config": {"view": {"stroke": null}}
+  }
