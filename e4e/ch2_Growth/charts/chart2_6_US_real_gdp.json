@@ -1,12 +1,29 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {"text": "Real GDP: Annual Percentage Change Q2-Q3 2022", "anchor": "start", "subtitle": ["Source: Bureau of Economic Analysis", ""], "subtitleFontSize": 12, "fontSize": 16, "subtitleFontStyle": "italic"},
+    "title": {
+      "text": "Real GDP: Annual Percentage Change Q2-Q3 2022",
+      "anchor": "start",
+      "subtitle": ["Source: Bureau of Economic Analysis", ""],
+      "subtitleFontSize": 12,
+      "fontSize": 16,
+      "subtitleFontStyle": "italic"
+    },
     "width": 500,
     "height": 300,
     "data": {
       "url": "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json",
       "format": {"type": "topojson", "feature": "states"}
     },
+    "params": [
+          {
+                    "name": "hover",
+                    "select": {
+                      "type": "point",
+                      "fields": ["State"],
+                      "toggle": true,
+                      "on": "mouseover"
+                    }
+        }],
     "transform": [
       {
         "lookup": "id",
@@ -21,15 +38,24 @@
       }
     ],
     "projection": {"type": "albersUsa"},
-    "mark": "geoshape",
+    "mark": {"type": "geoshape", "stroke": "white", "strokeOpacity": 0.6},
     "encoding": {
       "color": {
         "field": "2022:Q3-:Q4",
         "type": "quantitative",
-        "scale": {
-          "range": ["white",   "rgb(128,0,0)"]
-        }, "legend": { "title": null, "orient": "top", "format": "%"}
+        "scale": {"scheme": "redyellowgreen"},
+        "legend": {"title": null, "orient": "top", "format": "%"}
       },
-      "tooltip": [{"field": "State"}, {"field": "2022:Q3-:Q4", "title": "Real GDP: Annual Percentage Change Q2-Q3 2022", "format": ".1%"}]
+      "opacity": {"condition": {"test": {"param": "hover"}, "value": 1},
+                    "value": 0.6
+                  },
+      "tooltip": [
+        {"field": "State"},
+        {
+          "field": "2022:Q3-:Q4",
+          "title": "Real GDP: Annual Percentage Change Q2-Q3 2022",
+          "format": ".1%"
+        }
+      ]
     }
   }
