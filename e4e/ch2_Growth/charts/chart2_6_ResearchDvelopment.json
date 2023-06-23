@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Gross domestic expenditure on R&D (GERD) as a percentage of GDP. Data contains most recent available value for each country, along with the GDP per capita (PPP international $) and population values for that respective year, both from the World Bank",
+  "title": {
+    "text": "Research & Development",
+    "fontSize": 16,
+    "anchor": "start",
+    "subtitle": ["Expenditure as a percentage of GDP, source: UNESCO UIS", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12
+  },
+   "params": [
+      {
+                "name": "hover",
+                "select": {
+                  "type": "point",
+                  "fields": ["R&D Expenditure (% of GDP)"],
+                  "toggle": true,
+                  "on": "mouseover"
+                }
+    }],
+  "height": 500,
+  "width": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/data/global_research_output_p21.csv"
+  },
+ "transform": [{"calculate": "datum['R&D Expenditure (% of GDP)']/100", "as": "pct"}],
+  "mark": {"type": "bar", "color": "rgb(128,0,0)", "height": 15},
+  
+  "encoding": {
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {"ticks": false, "labelFontSize": 11},
+      "scale": { "padding": 0, "paddingInner": 0}
+      
+    },
+    "x": {
+      "field": "pct",
+      "type": "quantitative",
+      "axis": {"titleFontWeight": "normal", "gridOpacity": 0.6, "labelFontSize": 11, "format": ".0%", "title":null}
+    },
+    "size": {"value": 16},
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "Year", "type": "nominal"},
+      {
+        "field": "pct",
+        "type": "quantitative",
+        "title": "Expenditure as % of GDP",
+        "format": ".2%"
+      },
+      {"field": "GDP per capita (PPP)", "type": "quantitative", "format": "$,d"}
+    ],
+        "opacity": {"condition": {"test": {"param": "hover"}, "value": 1},
+                "value": 0.6
+              }
+              
+
+  }
+}
