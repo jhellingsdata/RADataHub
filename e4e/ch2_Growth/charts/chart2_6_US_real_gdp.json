@@ -43,7 +43,7 @@
       "color": {
         "field": "2022:Q3-:Q4",
         "type": "quantitative",
-        "scale": {"scheme": "redyellowgreen"},
+        "scale": {"range": ["darkred", "gold", "green"], "domain": [-0.043, 0, 0.07]},
         "legend": {"title": null, "orient": "top", "format": "%"}
       },
       "opacity": {"condition": {"test": {"param": "hover"}, "value": 1},

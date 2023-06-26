@@ -40,7 +40,7 @@
     "x": {
       "field": "pct",
       "type": "quantitative",
-      "axis": {"titleFontWeight": "normal", "gridOpacity": 0.6, "labelFontSize": 11, "format": ".1%", "title":null}
+      "axis": {"titleFontWeight": "normal", "gridOpacity": 0, "labelFontSize": 11, "format": ".1%", "title":null, "ticks": false}
     },
     "size": {"value": 10},
     "tooltip": [
@@ -59,5 +59,12 @@
               }
               
 
+  },
+  "config": {
+  "style": {
+    "cell": {
+      "stroke": "transparent"
+    }
   }
+}
 }

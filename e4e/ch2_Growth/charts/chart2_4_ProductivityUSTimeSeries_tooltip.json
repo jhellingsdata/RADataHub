@@ -23,7 +23,7 @@
       "field": "Year",
       "type": "temporal",
       "title": null,
-      "axis": {"grid": false}
+      "axis": {"grid": false, "ticks": false}
     }
   },
   "layer": [

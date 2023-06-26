@@ -4,6 +4,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/OECD_output_per_worker.csv"
   },
+  
   "title": {
     "text": "Productivity: nine countries compared",
     "fontSize": 16,
@@ -26,7 +27,9 @@
     },
     {"calculate": "year(datum.Year)", "as": "year"}
   ],
+ 
   "encoding": {
+    
     "x": {
       "field": "Year",
       "type": "temporal",
@@ -37,8 +40,13 @@
       "field": "Output per worker ($)",
       "type": "quantitative",
       "title": "Output per worker",
-      "scale": {"domain": [28000, 140000]},
-      "axis": {"title": null, "format": "$,.0f", "labelFontSize": 11}
+      "scale": {"domain": [20000, 140000]},
+      "axis": {
+        "title": null,
+        "format": "$,.0f",
+        "labelFontSize": 11,
+        "ticks": false
+      }
     },
     "color": {
       "condition": {
@@ -76,12 +84,18 @@
     "opacity": {"condition": {"param": "hover", "value": 0.8}, "value": 0.2}
   },
   "layer": [
-    {
+    { 
       "params": [
         {
           "name": "hover",
-          "value": [{"ISO3": "USA"}],
+          "value": null,
           "select": {"type": "point", "fields": ["ISO3"], "on": "mouseover"}
+          
+        },
+        {
+          "name": "hover3",
+          "value": [{"ISO3": "USA"}],
+          "select": {"type": "point", "fields": ["ISO3"], "on": "mouseout"}
         }
       ],
       "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
@@ -103,6 +117,68 @@
           "encoding": {"text": {"field": "Country", "type": "nominal"}}
         }
       ]
+    },
+    {
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "title": null,
+          "axis": {"grid": false, "ticks": false}
+        }
+      },
+      "layer": [
+        {
+          "encoding": {
+            "y": {
+              "field": "Output per worker ($)",
+              "type": "quantitative",
+              "title": null,
+              "scale": {"domain": [20000, 140000]}
+            }
+          },
+          "layer": [
+            {"mark": "line"},
+            {
+              "transform": [{"filter": {"param": "hover2", "empty": false}}],
+              "mark": "point",
+              "encoding": {"opacity": {"value": 0}}
+            }
+          ]
+        },
+        {
+          
+          "mark": "rule",
+          "encoding": {
+            "opacity": {
+              "condition": {"value": 0, "param": "hover2", "empty": true},
+              "value": 0
+            },
+            "tooltip": [
+              {
+                "field": "Country",
+                "type": "nominal",
+                
+                "title": "Country"
+              }, {"field": "Output per worker ($)", "format": "$,.0f"}, {"field": "Year", "type": "temporal", "format": "%Y"}
+              
+            ]
+          },
+          "params": [
+            {
+              "name": "hover2",
+              "select": {
+                "type": "point",
+                "fields": ["year"],
+                "nearest": true,
+                "on": "mouseover",
+                "clear": "mouseout"
+              }
+            }
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "config": {"style": {"cell": {"stroke": "transparent"}}}
 }
