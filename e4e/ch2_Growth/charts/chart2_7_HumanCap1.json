@@ -44,7 +44,7 @@
       "axis":{
         "values":[1000, 2000, 5000, 10000, 20000, 40000, 100000],
         "format": "$,",
-        "gridOpacity": 0.3, "titleFontWeight": "bold",
+        "gridOpacity": 0.3, "titleFontWeight": "normal",
         "labelPadding": 5, "labelFontSize": 11, "ticks": false
       }
     },
@@ -55,7 +55,7 @@
       "scale": {
         "domain": [0.25, 0.9]
       },
-      "axis": {"gridOpacity": 0.3, "titleFontWeight": "bold", "labelPadding": 5, "labelFontSize": 11, "ticks": false}
+      "axis": {"gridOpacity": 0.3, "titleFontWeight": "normal", "labelPadding": 5, "labelFontSize": 11, "ticks": false}
     },
 
     "color": {
@@ -79,5 +79,5 @@
       {"field": "Population", "format": ",d"},
       {"field": "GDP per capita (PPP)", "title":"GDP per capita", "format": "$,d"}
     ]
-  }
+  },"config": {"style": {"cell": {"stroke": "transparent"}}}
 }
