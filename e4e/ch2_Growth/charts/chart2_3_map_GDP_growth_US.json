@@ -1,19 +1,24 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "config": {"view": {"stroke": null}, "padding": 5},
+  "width": 600,
+  "height": 330,
+
   "title": {
     "text": "GDP Growth in the United States",
     "anchor": "start",
-    "subtitle": ["Real GDP: Annual Percentage Change Q2-Q3 2022", "Source: BEA", ""],
+    "subtitle": ["Real GDP: Percent change at annual rate, Q2-Q3 2022", "Source: BEA", ""],
     "subtitleFontSize": 12,
     "fontSize": 16,
     "subtitleFontStyle": "italic"
   },
-  "width": 500,
-  "height": 300,
+
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_5_us_map_gdp_US_States_5m.json",
     "format": {"property": "features"}
   },
+
   "params": [
     {
       "name": "hover",
@@ -30,7 +35,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/data/state_real_q_gdp3.csv"
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/chart2_3_map_GDP_growth_US.csv"
         },
         "key": "State",
         "fields": ["2022:Q3-:Q4"]
@@ -38,7 +43,7 @@
       "default": "-0.00"
     }
   ],
-  "projection": {"type": "albersUsa"},
+  "projection": {"type": "albersUsa", "translate": [270, 160], "scale": 700},
   "mark": {
     "type": "geoshape", "stroke": "white", "strokeOpacity": 0.6
   },
@@ -53,14 +58,12 @@
       },
       "legend": {
         "title": null,
-        "orient": "top",
         "format": "%",
+        "labelFontSize": 11,
+        "orient": "bottom-right",
+        "direction": "vertical",
         "labelOffset": 3
       }
-    },
-    "opacity": {
-      "condition": {"test": {"param": "hover"}, "value": 1},
-      "value": 0.6
     },
     "tooltip": [
       {"field": "properties.NAME", "title": "State"},

@@ -18,7 +18,7 @@
   "height": 300,
  
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/chart2_x_GDP_growth_global.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/chart2_1_GDP_growth_global.csv"
   },
 
   "transform": [
