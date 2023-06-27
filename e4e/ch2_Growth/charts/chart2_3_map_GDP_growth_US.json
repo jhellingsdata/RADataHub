@@ -69,7 +69,7 @@
       {"field": "properties.NAME", "title": "State"},
       {
         "field": "2022:Q3-:Q4",
-        "title": "Real GDP: Annual Percentage Change Q2-Q3 2022",
+        "title": "GDP growth, annual rate",
         "format": ".1%"
       }
     ]

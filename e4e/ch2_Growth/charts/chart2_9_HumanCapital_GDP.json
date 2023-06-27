@@ -4,7 +4,7 @@
 
   "title": {
     "text": "Human Capital Index",
-    "subtitle": ["Distance to optimal education and full health, source: World Bank", "GDP: per capita PPP (international $) source: World Bank", ""],
+    "subtitle": ["Distance to optimal education and full health, source: World Bank", "GDP: per capita PPP (international $)", ""],
     "fontSize": 16,
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
@@ -30,7 +30,8 @@
 
   "height": 300,
   "width": 500,
-  "view":{"stroke":"aliceblue"},
+
+  "view":{"stroke":"transparent"},
 
   "encoding": {
     "y": {
@@ -39,12 +40,12 @@
       "title": "GDP (log scale)",
       "scale": {
         "type":  "log",
-        "domain": [1000, 100000]
+        "domain": [1000, 140000]
       },
       "axis":{
         "values":[1000, 2000, 5000, 10000, 20000, 40000, 100000],
         "format": "$,",
-        "gridOpacity": 0.3, "titleFontWeight": "normal",
+        "gridOpacity": 0.3,
         "labelPadding": 5, "labelFontSize": 11, "ticks": false
       }
     },
@@ -55,7 +56,14 @@
       "scale": {
         "domain": [0.25, 0.9]
       },
-      "axis": {"gridOpacity": 0.3, "titleFontWeight": "normal", "labelPadding": 5, "labelFontSize": 11, "ticks": false}
+      "axis": {
+        "gridOpacity": 0.3,
+        "labelPadding": 5,
+        "labelFontSize": 11,
+        "ticks": false,
+        "tickCount": 8,
+        "titlePadding": 6
+      }
     },
 
     "color": {
@@ -63,14 +71,15 @@
       "type": "nominal",
       "scale": {"scheme": "set1"},
       "legend": {
-        "orient": "top"
+        "orient": "top",
+        "offset": 10
       },
       "title": null
     },
     "size": {
       "field": "Population",
       "type": "quantitative",
-      "scale": {"range": [12, 600]},
+      "scale": {"range": [12, 1000]},
       "legend": null
     },
     "tooltip": [
