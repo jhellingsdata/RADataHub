@@ -18,7 +18,7 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/growth-patents_equivalent_applications_2021.csv",
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/chart2_8_Patents_GDP.csv",
     "format": {"type": "csv"}
   },
   "mark": {"type": "circle", "size": 150, "opacity": 0.8},

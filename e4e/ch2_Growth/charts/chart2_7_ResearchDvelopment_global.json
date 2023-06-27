@@ -23,7 +23,7 @@
   "height": 300,
   "width": 400,
   "data": {
-    "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/data/global_research_output_p21.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/chart2_7_ResearchDevelopment_global.csv"
   },
   "transform": [
     {"calculate": "datum['R&D Expenditure (% of GDP)']/100", "as": "pct"}

@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/OECD_output_per_worker.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/chart2_6_Productivity_9countries.csv"
   },
   "title": {
     "text": "Productivity: nine countries compared",
