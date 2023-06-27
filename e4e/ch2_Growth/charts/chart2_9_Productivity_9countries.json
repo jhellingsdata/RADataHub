@@ -4,20 +4,19 @@
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/OECD_output_per_worker.csv"
   },
-  
   "title": {
     "text": "Productivity: nine countries compared",
     "fontSize": 16,
     "anchor": "start",
     "subtitle": [
-      "Output per worker, GDP:  PPP (constant 2015 $) source: World Bank",
+      "Output per worker, GDP: PPP (constant 2015 $)", "Source: World Bank",
       ""
     ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12
   },
   "height": 300,
-  "width": 500,
+  "width": 450,
   "transform": [
     {
       "filter": {
@@ -27,13 +26,18 @@
     },
     {"calculate": "year(datum.Year)", "as": "year"}
   ],
- 
   "encoding": {
-    
     "x": {
       "field": "Year",
       "type": "temporal",
-      "axis": {"title": null, "format": "%Y", "ticks": false, "grid": false},
+      "axis": {
+        "title": null,
+        "format": "%Y",
+        "ticks": false,
+        "grid": false,
+        "labelFontSize": 11,
+        "labelPadding": 5
+      },
       "scale": {"domain": ["1990", "2021"]}
     },
     "y": {
@@ -45,7 +49,8 @@
         "title": null,
         "format": "$,.0f",
         "labelFontSize": 11,
-        "ticks": false
+        "ticks": false,
+        "labelPadding": 5
       }
     },
     "color": {
@@ -84,13 +89,12 @@
     "opacity": {"condition": {"param": "hover", "value": 0.8}, "value": 0.2}
   },
   "layer": [
-    { 
+    {
       "params": [
         {
           "name": "hover",
           "value": null,
           "select": {"type": "point", "fields": ["ISO3"], "on": "mouseover"}
-          
         },
         {
           "name": "hover3",
@@ -147,7 +151,6 @@
           ]
         },
         {
-          
           "mark": "rule",
           "encoding": {
             "opacity": {
@@ -155,13 +158,9 @@
               "value": 0
             },
             "tooltip": [
-              {
-                "field": "Country",
-                "type": "nominal",
-                
-                "title": "Country"
-              }, {"field": "Output per worker ($)", "format": "$,.0f"}, {"field": "Year", "type": "temporal", "format": "%Y"}
-              
+              {"field": "Country", "type": "nominal", "title": "Country"},
+              {"field": "Output per worker ($)", "format": "$,.0f"},
+              {"field": "Year", "type": "temporal", "format": "%Y"}
             ]
           },
           "params": [

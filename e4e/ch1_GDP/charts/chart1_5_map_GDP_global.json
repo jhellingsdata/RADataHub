@@ -37,7 +37,8 @@
         "direction": "vertical",
         "format": "$,d",
         "fillColor": null,
-        "offset": 5
+        "offset": 5,
+        "labelFontSize": 11
       },
       "type": "quantitative",
       "scale": {"type": "log", "scheme": "viridis", "reverse": false}

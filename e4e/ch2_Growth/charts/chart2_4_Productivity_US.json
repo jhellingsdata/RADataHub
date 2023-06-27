@@ -1,5 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "view":{"stroke":"transparent"},
+  
   "title": {
     "text": "US Output per worker",
     "subtitle": [
@@ -23,7 +25,13 @@
       "field": "Year",
       "type": "temporal",
       "title": null,
-      "axis": {"grid": false, "ticks": false}
+      "axis": {
+        "grid": false,
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11,
+        "tickCount": 8
+      }
     }
   },
   "layer": [
@@ -49,6 +57,7 @@
               130000,
               140000
             ],
+            "format": "$,d",
             "gridOpacity": 0.6,
             "ticks": false,
             "labelPadding": 5,
@@ -72,11 +81,12 @@
           "value": 0
         },
         "tooltip": [
+          {"field": "Year", "type":"temporal", "timeUnit": "year", "title": "Year"},
           {
             "field": "Output per worker ($)",
             "type": "quantitative",
             "format": "$,.0f",
-            "title": "Output per worker (USD)"
+            "title": "Output per worker"
           }
         ]
       },

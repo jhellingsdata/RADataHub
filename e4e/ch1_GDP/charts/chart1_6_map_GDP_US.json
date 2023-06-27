@@ -29,7 +29,8 @@
         "orient": "bottom-right",
         "direction": "vertical",
         "format": "$,d",
-        "tickCount": 3
+        "tickCount": 3,
+        "labelFontSize": 11
       },
       "type": "quantitative",
       "scale": {

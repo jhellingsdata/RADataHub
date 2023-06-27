@@ -1,0 +1,102 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Growth: levels and rates",
+      "subtitle": ["Growth of GDP per capita, 2023 vs 2022. World's 21 most populous countries",  "Source: World Bank",""],
+      "fontSize": 16,
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "view":{"stroke":"transparent"},
+  
+    "width": 400,
+    "height": 300,
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/chart2_x_GDP_growth_global.csv"
+    },
+  
+    "transform": [
+      {"filter":"datum.p21==1"},
+      {
+        "calculate": "(datum[2023] - datum[yearSelector]) / datum[2022]",
+        "as": "Growth"
+      },
+      {
+        "calculate": "pow(datum[2023] / datum[yearSelector], 1/(2023-yearSelector)) - 1",
+        "as": "AnnualisedGrowth"
+      }
+    ],
+  
+    "params": [
+      {
+        "name": "yearSelector",
+        "value": 2022,
+        "bind": {
+          "input": "range",
+          "min": 2000,
+          "max": 2022,
+          "step": 1,
+          "name": "Select year:"
+        }
+      }
+    ],
+     
+  
+    "layer":[
+      {
+        "mark": {
+          "type":"point",
+          "color":"rgb(128,0,0)",
+          "size":50
+        },
+        "encoding": {
+  
+          "x": {
+            "field": "2023",
+            "title": "GDP per capita",
+            "type": "quantitative",
+            "axis": {
+              "grid": false,
+              "labelFontSize": 11,
+              "ticks": false,
+              "labelPadding": 5,
+              "titlePadding": 5
+            },
+            "scale": {
+              "type": "linear"
+            }
+          },
+          
+          "y": {
+            "field": "AnnualisedGrowth",
+            "type": "quantitative", 
+            "title": "Growth",
+            "axis":{
+              "gridOpacity": 0.3,
+              "labelFontSize": 11,
+              "ticks": false,
+              "labelPadding": 5,
+              "titlePadding": 5,
+              "format":".0%"
+            },
+            "scale": {
+              "padding": 5
+            }
+          }
+        }
+      },
+      {
+        "mark": {"type": "rule", "color": "#676A86", "size": 2},
+        "encoding": {
+          "y": {
+            "type": "quantitative",
+            "datum": 0
+          }
+        }
+      }
+    ]
+  }

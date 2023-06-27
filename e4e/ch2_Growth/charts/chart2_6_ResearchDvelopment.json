@@ -1,48 +1,61 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Gross domestic expenditure on R&D (GERD) as a percentage of GDP. Data contains most recent available value for each country, along with the GDP per capita (PPP international $) and population values for that respective year, both from the World Bank",
+  "description": "Gross domestic expenditure on R&D (GERD) as a percentage of GDP. Data contains most recent available value for each country, along with the GDP per capita (PPP international $) and population values for that respective year, both from the World Bank, R&D data researched by UNESCO.",
   "title": {
     "text": "Research & Development",
     "fontSize": 16,
     "anchor": "start",
-    "subtitle": ["Expenditure as a percentage of GDP, source: UNESCO UIS", ""],
+    "subtitle": ["Expenditure as a percentage of GDP, most recent data available", "Source: UNESCO, World Bank", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12
   },
-   "params": [
-      {
-                "name": "hover",
-                "select": {
-                  "type": "point",
-                  "fields": ["R&D Expenditure (% of GDP)"],
-                  "toggle": true,
-                  "on": "mouseover"
-                }
-    }],
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": ["R&D Expenditure (% of GDP)"],
+        "toggle": true,
+        "on": "mouseover"
+      }
+    }
+  ],
   "height": 300,
-  "width": 500,
+  "width": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/data/global_research_output_p21.csv"
   },
- "transform": [{"calculate": "datum['R&D Expenditure (% of GDP)']/100", "as": "pct"}],
-  "mark": {"type": "bar", "color": "rgb(128,0,0)" },
-  
+  "transform": [
+    {"calculate": "datum['R&D Expenditure (% of GDP)']/100", "as": "pct"}
+  ],
+  "mark": {"type": "bar", "color": "rgb(128,0,0)"},
   "encoding": {
     "y": {
       "field": "Country",
       "type": "nominal",
       "title": null,
       "sort": "-x",
-      "axis": {"ticks": false, "labelFontSize": 11},
-      "scale": { "padding": 0, "paddingInner": 0}
+      "axis": {
+        "ticks": false,
+        "labelFontSize": 11,
+        "labelPadding": 5
+      }
       
     },
     "x": {
       "field": "pct",
       "type": "quantitative",
-      "axis": {"titleFontWeight": "normal", "gridOpacity": 0, "labelFontSize": 11, "format": ".1%", "title":null, "ticks": false}
+      "axis": {
+        "titleFontWeight": "normal",
+        "gridOpacity": 0.6,
+        "labelFontSize": 11,
+        "format": ".1%",
+        "title": null,
+        "ticks": false,
+        "labelPadding":5
+      }
     },
-    "size": {"value": 10},
+    
     "tooltip": [
       {"field": "Country", "type": "nominal"},
       {"field": "Year", "type": "nominal"},
@@ -54,17 +67,10 @@
       },
       {"field": "GDP per capita (PPP)", "type": "quantitative", "format": "$,d"}
     ],
-        "opacity": {"condition": {"test": {"param": "hover"}, "value": 1},
-                "value": 0.6
-              }
-              
-
-  },
-  "config": {
-  "style": {
-    "cell": {
-      "stroke": "transparent"
+    "opacity": {
+      "condition": {"test": {"param": "hover"}, "value": 1},
+      "value": 0.8
     }
-  }
-}
+  },
+  "config": {"style": {"cell": {"stroke": "transparent"}}}
 }

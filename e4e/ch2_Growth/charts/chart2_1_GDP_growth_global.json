@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+
+  "title": {
+    "text": "GDP Growth - 21 countries",
+    "subtitle": ["Recent growth of real GDP per capita, 2023 vs selected input year ",  "Source: IMF (GDP estimates)",""],
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "view":{"stroke":"transparent"},
+
+  "width": 400,
+  "height": 300,
+ 
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/chart2_x_GDP_growth_global.csv"
+  },
+
+  "transform": [
+    {"filter":"datum.p21==1"},
+    {
+      "calculate": "(datum[2023] - datum[yearSelector]) / datum[2022]",
+      "as": "Growth"
+    },
+    {
+      "calculate": "yearSelector",
+      "as": "selectedYear"
+    },
+    {
+      "calculate": "datum.selectedYear + ' to 2023'",
+      "as": "YearRange"
+    }
+  ],
+
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 2022,
+        "step": 1,
+        "name": "Growth since:"
+      }
+    },
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": ["Growth"],
+        "toggle": true,
+        "on": "mouseover"
+      }
+    }
+  ],
+  
+  "mark": {
+    "type":"bar",
+    "color":"rgb(128,0,0)"},
+     
+    "encoding": {
+    
+    "x": {
+      "field": "Growth",
+      "type": "quantitative", 
+      "title": null,
+      "axis":{
+        "zindex": 0,
+        "gridOpacity": 0.6,
+        "format":".0%",
+        "ticks": false,
+        "labelAngle":0,
+        "labelFontSize": 11,
+        "labelPadding": 5,
+        "titlePadding": 5,
+        "tickCount": 8
+      }
+    },
+    
+    "y": {
+      "field": "ISO3",
+      "title": null,
+      "type": "nominal",
+      "sort":"-x",
+      "axis": {
+        "labelFontSize": 11,
+        "ticks": false,
+        "tickSize": 3,
+        "tickOpacity": 0.6,
+        "labelPadding": 5
+      }
+    },
+
+    "tooltip": [
+      {"field": "Country"},
+      {"field": "2023", "title": "GDP per capita (2023)", "format": "$,d"},
+      {"field": "YearRange", "title": "Growth period"},
+      {"field": "Growth", "title": "GDP growth", "format":".2%"}
+    ],
+    "opacity": {
+      "condition": {"test": {"param": "hover"}, "value": 1},
+      "value": 0.8
+    }
+  }
+}

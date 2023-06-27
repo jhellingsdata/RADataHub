@@ -39,33 +39,40 @@
     <div id="charts"></div>
 
     <script>
-    const chartsContainer = document.getElementById('charts');
-
-    // Assuming you have an array of JSON file names in 'charts' folder
-    const chartFiles = [
-        'chart2_4_ProductivityUSTimeSeries_tooltip.json',
-        'chart2_6_ResearchDvelopment.json',
-        'chart2_6_US_real_gdp.json',
-        'chart2_7_HumanCap1.json',
-        'chart2_8_Patents1.json',
-        'chart2_9_Productivity_nine_conts.json'
-    ];
-
-    chartFiles.forEach(file => {
-        fetch(`charts/${file}`)
-            .then(response => response.json())
-            .then(spec => {
-                const chartDiv = document.createElement('div');
-                chartDiv.classList.add('chart');
-                chartsContainer.appendChild(chartDiv);
-                vegaEmbed(chartDiv, spec);
-
-                // Add a <hr> element after the chart
-                const hr = document.createElement('hr');
-                hr.classList.add('solid');
-                chartsContainer.appendChild(hr);
-            });
-        });
+        const chartsContainer = document.getElementById('charts');
+      
+        // JSON file names in 'charts' folder
+        const chartFiles = [
+          'chart2_1_GDP_growth_global.json',
+          'chart2_4_Productivity_US.json',
+          'chart2_6_map_GDP_growth_US.json',
+          'chart2_x6_map_GDP_growth_US.json',
+          'chart2_6_ResearchDvelopment.json',
+          'chart2_6_US_real_gdp.json',
+          'chart2_7_HumanCap1.json',
+          'chart2_8_Patents_GDP.json',
+          'chart2_9_Productivity_nine_conts.json'
+        ];
+      
+        async function loadCharts() {
+          for (const file of chartFiles) {
+            const response = await fetch(`charts/${file}`);
+            const spec = await response.json();
+      
+            const chartDiv = document.createElement('div');
+            chartDiv.classList.add('chart');
+            chartsContainer.appendChild(chartDiv);
+            vegaEmbed(chartDiv, spec);
+      
+            // Add a <hr> element after the chart
+            const hr = document.createElement('hr');
+            hr.classList.add('solid');
+            chartsContainer.appendChild(hr);
+          }
+        }
+      
+        loadCharts();
     </script>
+      
 </body>
 </html>
