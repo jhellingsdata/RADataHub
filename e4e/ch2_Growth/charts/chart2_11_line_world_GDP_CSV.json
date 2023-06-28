@@ -5,8 +5,8 @@
     "format": {"type": "csv"}
   },
   "title": {
-    "text": "GDP",
-    "subtitle": ["US Dollars (Trillions)",  "Data: OWID",""],
+    "text": "Growth Trajectories",
+    "subtitle": ["GDP per capita, 1960=1, logs",  "Data: World Bank",""],
     "fontSize": 16,
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
@@ -142,7 +142,7 @@
       "axis": {
         "grid": true,
         "gridOpacity": 0.6,
-        "format": "$2f",
+        "format": ".0f",
         "ticks": false,
         "labelPadding": 5,
         "labelFontSize": 11
