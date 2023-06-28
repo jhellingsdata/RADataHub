@@ -19,9 +19,11 @@
    "transform": [
     {"calculate": "year(datum.Year)", "as": "year"},
     {"filter": "datum.year>=minYear"},
-    {"filter": "datum.year<=maxYear"}
+    {"filter": "datum.year<=maxYear"},
+    {"filter": {"selection": "Country"}}
   ],
-  "selection": {
+
+"selection": {
     "Country": {
       "type": "single",
       "fields": ["Country"],
@@ -30,7 +32,7 @@
         "options": [
           null,
           "CHN",
-                    "KOR",
+          "KOR",
                     "SGP",
                     "BWA",
                     "THA",
@@ -123,13 +125,29 @@
       }
     }
   },
+
   "encoding": {
-    "x": {"field": "Year", "type": "temporal", "title": "Year"},
+    "x": {"field": "Year", "type": "temporal", "title": "Year", "axis": {
+        "labelAngle": 0,
+        "grid": false,
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      }},
     "y": {
       "field": "Value",
       "type": "quantitative",
       "title": "GDP",
-      "scale": {"domain": [1, 50]}
+      "scale": {"domain": [1, 50]},
+      "axis": {
+        "grid": true,
+        "gridOpacity": 0.6,
+        "format": "$2f",
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      }
+      
     },
     "color": {
       "field": "Country",
