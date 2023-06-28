@@ -55,8 +55,21 @@
     },
 
   "encoding": {
-    "x": {"field": "Year", "type": "temporal", "title": null},
-    "y": {"field": "GDP", "type": "quantitative", "title": null},
+    "x": {"field": "Year", "type": "temporal", "title": null, "axis": {
+        "labelAngle": 0,
+        "grid": false,
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      }},
+    "y": {"field": "GDP", "type": "quantitative", "title": null, "axis": {
+        "grid": true,
+        "gridOpacity": 0.6,
+        "format": "$2f",
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      }},
 
     "tooltip": [
       {"field": "Year", "formatType": "time", "format": "%Y"},
