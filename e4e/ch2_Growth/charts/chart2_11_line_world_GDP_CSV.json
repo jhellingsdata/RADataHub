@@ -1,0 +1,172 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/line_world_GDP_CSV.csv",
+    "format": {"type": "csv"}
+  },
+  "title": {
+    "text": "GDP",
+    "subtitle": ["US Dollars (Trillions)",  "Data: OWID",""],
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 400,
+  "mark": {"type": "line", "width": 10},
+   "transform": [
+    {"calculate": "year(datum.Year)", "as": "year"},
+    {"filter": "datum.year>=minYear"},
+    {"filter": "datum.year<=maxYear"}
+  ],
+  "selection": {
+    "Country": {
+      "type": "single",
+      "fields": ["Country"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "CHN",
+                    "KOR",
+                    "SGP",
+                    "BWA",
+                    "THA",
+                    "MYS",
+                    "IDN",
+                    "IND",
+                    "MIC",
+                    "DOM",
+                    "JPN",
+                    "TUR",
+                    "PRT",
+                    "EGY",
+                    "SYC",
+                    "PAN",
+                    "PRI",
+                    "CHL",
+                    "LUX",
+                    "ESP",
+                    "VCT",
+                    "PRY",
+                    "FIN",
+                    "NOR",
+                    "GUY",
+                    "PAK",
+                    "BGD",
+                    "GRC",
+                    "AUT",
+                    "LSO",
+                    "BLZ",
+                    "BEL",
+                    "CRI",
+                    "FRA",
+                    "NLD",
+                    "BRA",
+                    "TTO",
+                    "COL",
+                    "SWE",
+                    "ITA",
+                    "USA",
+                    "DNK",
+                    "NPL",
+                    "WLD",
+                    "BFA",
+                    "PHL",
+                    "GBR",
+                    "AUS",
+                    "BMU",
+                    "RWA",
+                    "URY",
+                    "MEX",
+                    "BOL",
+                    "PER",
+                    "GTM",
+                    "IRN",
+                    "ECU",
+                    "KEN",
+                    "MWI",
+                    "FJI",
+                    "HND",
+                    "GAB",
+                    "TGO",
+                    "DZA",
+                    "BEN",
+                    "PNG",
+                    "GHA",
+                    "SUR",
+                    "ARG",
+                    "NGA",
+                    "CIV",
+                    "CMR",
+                    "ZAF",
+                    "BHS",
+                    "COG",
+                    "SDN",
+                    "NIC",
+                    "SLE",
+                    "SEN",
+                    "ZWE",
+                    "TCD",
+                    "ZMB",
+                    "BDI",
+                    "HTI",
+                    "NER",
+                    "CAF",
+                    "MDG",
+                    "COD",
+                    "SYR"
+        ],
+        "name": "Country:"
+      }
+    }
+  },
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title": "Year"},
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "GDP",
+      "scale": {"domain": [1, 50]}
+    },
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "scale": {"range":["rgba(128,0,0.2)"]},
+      "legend": null,
+      "title": null
+    },
+    "strokeDash": {"field": "dash", "legend": null},
+    "tooltip": [
+      {"field": "Year", "type": "temporal", "title": "Year"},
+      {"field": "Country", "type": "nominal", "title": "Country"},
+      {"field": "Value", "type": "quantitative", "title": "GDP", "format": ".2f"}
+    ]
+  },
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1960,
+      "bind": {
+        "input": "range",
+        "min": 1960,
+        "max": 2020,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1961,
+        "max": 2021,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ]
+}
