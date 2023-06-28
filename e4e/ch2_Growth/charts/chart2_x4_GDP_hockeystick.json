@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/chart2_4_GDP_hockeystick.csv"
+  },
+ "title": {
+    "text": "World GDP - The Hockeystick",
+    "subtitle": ["US Dollars (Trillions)",  "Data: OWID",""],
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "width": 400,
+  "height": 300,
+
+  "transform": [
+    {"calculate": "year(datum.Year)", "as": "year"},
+    {"filter": "datum.year>=minYear"},
+    {"filter": "datum.year<=maxYear"}
+  ],
+
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1,
+      "bind": {
+        "input": "range",
+        "min": 1,
+        "max": 2014,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2015,
+      "bind": {
+        "input": "range",
+        "min": 2,
+        "max": 2015,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+
+        "mark": {
+      "type": "line",
+      "point": false,
+      "interpolate": "linear",
+      "color":"indianred"
+    },
+
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title": null, "axis": {
+        "labelAngle": 0,
+        "grid": false,
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      }},
+    "y": {"field": "GDP", "type": "quantitative", "title": null, "axis": {
+        "grid": true,
+        "gridOpacity": 0.6,
+        "format": "$2f",
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      }},
+
+    "tooltip": [
+      {"field": "Year", "formatType": "time", "format": "%Y"},
+      {"field": "GDP", "format": ".5"}    ]
+  }
+}
