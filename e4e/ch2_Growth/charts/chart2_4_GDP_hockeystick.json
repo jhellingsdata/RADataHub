@@ -15,93 +15,130 @@
     }
   },
   "title": {
-    "text": "World GDP - The Hockeystick",
-    "subtitle": ["US Dollars (Trillions)", "Data: OWID", ""],
+    "text": "World GDP - Hockey stick growth",
+    "subtitle": ["Total output across the last millenium, constant 2011 prices (international $)", "Source: OWID, World Bank & Maddison (2017)", ""],
     "fontSize": 16,
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
     "color": "black"
   },
-  "width": 500,
+  "width": 450,
   "height": 300,
 
-  "layer": [{
-    "mark": {
-      "type": "line",
-      "point": {
-        "color": "rgb(128,0,0)",
-        "size": 20,
-        "fillOpacity": 0.5
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "point": {
+          "color": "rgb(128,0,0)",
+          "size": 20,
+          "fillOpacity": 0.5
+        },
+        "interpolate": "linear",
+        "color": "rgb(128,0,0)"
       },
-      "interpolate": "linear",
-      "color": "rgb(128,0,0)"
-    },
-    "encoding": {
-      "x": {
-        "field": "Year",
-        "type": "temporal",
-        "title": null,
-        "axis": {
-          "labelAngle": 0,
-          "grid": false,
-          "ticks": false,
-          "labelPadding": 5,
-          "labelFontSize": 11
-        }
-      },
-      "y": {
-        "field": "GDP",
-        "type": "quantitative",
-        "title": null,
-        "axis": {
-          "grid": true,
-          "gridOpacity": 0.6,
-          "format": "$2f",
-          "ticks": false,
-          "labelPadding": 5,
-          "labelFontSize": 11,
-          "tickCount": 7
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "title": null,
+          "axis": {
+            "labelAngle": 0,
+            "grid": false,
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11
+          },
+          "scale": {
+            "domain": ["1000", "2015"]
+          }
+        },
+        "y": {
+          "field": "GDP",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
+            "grid": true,
+            "gridOpacity": 0.6,
+            "format": "$2f",
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11,
+            "tickCount": 7
+          }
         }
       }
-    }
-  }, 
-  {
-    "mark": "rule",
-    "encoding": {
-      "x": {"field": "Year", "type": "temporal"},
-      "opacity": {
-        "condition": {"value": 0.3, "param": "hover", "empty": false},
-        "value": 0
+    }, 
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Year", "formatType": "time", "format": "%Y"},
+          {"field": "GDP", "title": "World GDP", "format": "$.5"}
+        ]
       },
-      "tooltip": [
-        {"field": "Year", "formatType": "time", "format": "%Y"},
-        {"field": "GDP", "title": "World GDP", "format": "$.5"}
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
       ]
+
     },
-    "params": [
-      {
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Year"],
-          "nearest": true,
-          "on": "mouseover",
-          "clear": "mouseout"
+    {
+      "mark": {
+        "type": "point",
+        "filled": false,
+        "color": "rgb(128,0,0)",
+        "size": 40
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {"field": "GDP", "type": "quantitative"},
+        "opacity": {
+          "condition": {"value": 0.7, "param": "hover", "empty": false},
+          "value": 0
         }
       }
-    ]
+    },
+    {
+      "transform": [
+        {
+          "sort": [{"field": "Year"}], "window": [{"op": "last_value", "field": "Year", "as": "last_year"}], "frame": [null, null]
+        },
+        {
+          "calculate": "datum.Year + ''", "as": "Year_string"
+        }
 
-  },
-  {
-    "mark": {"type": "point", "filled": false, "color": "rgb(128,0,0)"},
-    "encoding": {
-      "x": {"field": "Year", "type": "temporal"},
-      "y": {"field": "GDP", "type": "quantitative"},
-      "opacity": {
-        "condition": {"value": 0.7, "param": "hover", "empty": false},
-        "value": 0
+      ],
+      "mark": {"type": "point", "filled": true, "color": "rgb(128,0,0)", "size": 40},
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {"field": "GDP", "type": "quantitative"},
+        "opacity": {"condition": {"test": "datum.Year === datum.last_year", "value": 1}, "value": 0}
+      }
+    },
+    {
+      "transform": [{"sort": [{"field": "Year"}], "window": [{"op": "last_value", "field": "Year", "as": "last_year"}], "frame": [null, null]}],
+      "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5, "color": "rgb(128,0,0)"},
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {"field": "GDP", "type": "quantitative"},
+        "text": {"field": "GDP", "format": "$"},
+        "opacity": {"condition": {"test": "datum.Year === datum.last_year", "value": 1}, "value": 0}
       }
     }
-  }]
+  ]
 }

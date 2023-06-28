@@ -1,0 +1,104 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/line_world_GDP_CSV.csv",
+      "format": {"type": "csv", "parse": {"Year": "date"}}
+    },
+    "config": {
+      "padding": 10
+    },
+    "title": {
+      "text": "Growth Trajectories",
+      "subtitle": ["GDP per capita, 1960=1, logs",  "Source: World Bank",""],
+      "fontSize": 16,
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "start"
+    },
+    "height": 300,
+    "width": 400,
+  
+    "transform": [
+      {
+        "filter": "datum.Country != 'WLD'"
+      },
+      {"calculate": "log(datum.Value)", "as": "logGDP"}
+    ],
+  
+    "layer": [
+      {
+        "params": [{
+          "name": "index",
+          "value": [{"x": {"year": 1960, "month": 1, "date": 1}}],
+          "select": {
+            "type": "point",
+            "encodings": ["x"],
+            "on": "mouseover",
+            "nearest": true
+          }
+        }],
+        "mark": "point",
+        "encoding": {
+          "x": {"field": "Year", "type": "temporal", "axis": null},
+          "opacity": {"value": 0}
+        }
+      },
+      {
+        "transform": [
+          {
+            "lookup": "Country",
+            "from": {"param": "index", "key": "Country"}
+          },
+          {
+            "calculate": "datum.index && datum.index.Value > 0 ? ((datum.Value - datum.index.Value)/datum.index.Value): 0",
+            "as": "indexed_Value"
+          }
+        ],
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "Year", "type": "temporal", "title": null
+          },
+          "y": {
+            "field": "indexed_Value", 
+            "type": "quantitative",
+            "title": null,
+            "scale": {
+              "type": "linear"
+            },
+            "axis": {
+              "ticks": false,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "tickCount": 6,
+              "gridOpacity": 0.3
+            }
+          },
+          "color": {
+            "field": "Country", "type": "nominal",
+            "scale":{"range":["rgba(128,0,0,0.2)"]},
+            "legend": null
+          },
+          "strokeDash": {"field": "dash", "legend": null}
+        }
+      },
+      {
+        "transform": [{"filter": {"param": "index"}}],
+        "encoding": {
+          "x": {"field": "Year", "type": "temporal", "axis": null},
+          "color": {"value": "rgb(128,0,0)"}
+        },
+        "layer": [
+          {"mark": {"type": "rule", "strokeWidth": 1, "opacity": 0.3}},
+          {
+            "mark": {"type": "text", "align": "center", "fontWeight": 100},
+            "encoding": {
+              "text": {"field": "Year", "timeUnit": "year"},
+              "y": {"value": 310}
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
