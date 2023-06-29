@@ -1,0 +1,179 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/OECD_output_per_worker.csv"
+    },
+    "title": {
+      "text": "Productivity: nine countries compared",
+      "fontSize": 16,
+      "anchor": "start",
+      "subtitle": [
+        "Output per worker, GDP: PPP (constant 2017 $)", "Source: World Bank",
+        ""
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12
+    },
+    "view": {"stroke": "transparent"},
+    "height": 300,
+    "width": 450,
+    "transform": [
+      {
+        "filter": {
+          "field": "ISO3",
+          "oneOf": ["USA", "GBR", "AUS", "DEU", "FRA", "KOR", "JPN", "ITA", "CHL"]
+        }
+      }
+    ],
+    "layer": [
+      {
+        "mark": {
+          "type": "rule",
+          "color": "darkgray",
+          "size": 1.5,
+          "strokeDash": [4, 1]
+        },
+        "encoding": {"y": {"datum": 100}}
+      },
+      {
+        "params": [{
+          "name": "index",
+          "value": [{"x": {"year": 2000}}],
+          "select": {
+            "type": "point",
+            "encodings": ["x"],
+            "on": "mouseover",
+            "nearest": true
+          }
+        }],
+        "mark": "point",
+        "encoding": {
+          "x": {
+            "field": "Year", "type": "temporal", "axis": null
+          },
+          "opacity": {"value": 0}
+        }
+      },
+      {
+        "transform": [
+          {
+            "lookup": "ISO3",
+            "from": {"param": "index", "key": "ISO3"}
+          },
+          {
+            "calculate": "datum.index && datum.index['Output per worker ($)'] > 0 ? (datum['Output per worker ($)']/datum.index['Output per worker ($)']) *100 : 0",
+            "as": "indexed_Output"
+          }
+        ],
+        "mark": {"type": "line", "point": "transparent", "strokeWidth": 1.8, "opacity": 0.7},
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "temporal",
+            "title": "Year"
+          },
+          "y": {
+            "field": "indexed_Output", 
+            "type": "quantitative",
+            "title": null,
+            "scale": {
+              "type": "linear",
+              "zero": false
+            },
+            "axis": {
+              "ticks": false,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "tickCount": 6
+            }
+          },
+          "color": {
+            "field": "ISO3", 
+            "type": "nominal",
+            "legend": {
+              "title": null,
+              "orient": "top",
+              "offset": 15,
+              "columns": 9
+            },
+            "scale": {
+              "range": [
+                "rgb(128,0,0)",
+                "#ff9933",
+                "#d16002",
+                "#486453",
+                "#3a4a35",
+                "#0a7491",
+                "#0d91b6",
+                "#55b2cb",
+                "#86c8da"
+              ],
+              "domain": [
+                "USA",
+                "AUS",
+                "CHL",
+                "KOR",
+                "JPN",
+                "DEU",
+                "FRA",
+                "GBR",
+                "ITA"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "transform": [{"filter": {"param": "index"}}],
+        "encoding": {
+          "x": {"field": "Year", "type": "temporal", "axis": null}
+        },
+        "layer": [
+          {"mark": {"type": "rule", "opacity": 0.2}},
+          {
+            "mark": {
+              "type": "text",
+              "align": "center",
+              "fontSize": 11
+            },
+            "encoding": {
+              "text": {"field": "Year", "timeUnit": "year"},
+              "y": {"value": 310}
+            }
+          }
+        ]
+      },
+      {
+        "transform": [
+          {"filter": "datum.ISO3 == 'USA'"},
+          {"aggregate": [{"op": "max", "field": "Year", "as": "max_Year"}], "groupby": ["ISO3", "indexed_Output"]}
+  
+        ],
+        "layer": [
+          {
+            "mark": {"type": "point", "filled": true},
+            "encoding": {
+              "x": {"field": "max_Year", "type": "temporal"},
+              "y": {
+                "field": "indexed_Output",
+                "type": "quantitative"
+              },
+              "color": {"field": "ISO3", "type": "nominal"}
+            }
+          },
+          {
+            "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+            "encoding": {
+              "x": {"field": "max_Year", "type": "temporal"},
+              "y": {
+                "field": "indexed_Output",
+                "type": "quantitative"
+              },
+              "text": {"field": "ISO3", "type": "nominal"}
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
