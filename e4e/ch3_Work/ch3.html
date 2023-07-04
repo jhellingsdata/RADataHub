@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Section 3 Charts</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: auto;
+            width: 700px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <h1>Section 3 Charts</h1>
+
+    <section>
+        <h3><a href="charts/chart1_1_GDP_LifeExpectancy.json">GDP and Life Expectancy</a></h3>
+        <figure id="life_expec"></figure>
+
+        <figure id="c2"></figure>
+        <figure id="c3"></figure>
+    </section>
+
+
+    <section>
+        <h3><a href="charts/chart1_4_map_GDP_global.json"> World GDP</a></h3>
+        <figure id="c4map"></figure>
+
+        <p>Alternative:</p>
+        <figure id="c4map_alt"></figure>
+    </section>
+
+
+
+    <section>
+        <h3><a href="charts/chart1_6_GDP_US_selector.json"> US GDP - Different Perspectives </a></h3>
+        <p> Changed: Self explanatory drop down options, selected series updates subtitle, bar tooltip, formatting</p>
+        <figure id="us_line_gdp"></figure>
+    </section>
+
+
+    <section>
+        <h3><a href="charts/chart1_x_maternal_mortality.json"> Maternal Morality  </a></h3>
+        <figure id="maternal"></figure>
+    </section>
+
+
+    <script>
+
+        vegaEmbed('#c1', 'chart2_1_GDP_growth_global.json');
+        vegaEmbed('#c2', 'chart2_2_GDP_trajectory_global.json');
+        vegaEmbed('#c3', 'chart2_3_map_GDP_growth_US.json',);
+        vegaEmbed('#c4', "charts/chart1_2_GDP_InfantMortality.json");
+        vegaEmbed('#c5', "charts/chart1_2_GDP_InfantMortality.json");
+        vegaEmbed('#c6', "charts/chart1_2_GDP_InfantMortality.json");
+        vegaEmbed('#c7', "charts/chart1_2_GDP_InfantMortality.json");
+        vegaEmbed('#c8', "charts/chart1_2_GDP_InfantMortality.json");
+        vegaEmbed('#c9', "charts/chart1_2_GDP_InfantMortality.json");
+        vegaEmbed('#c10', "charts/chart1_2_GDP_InfantMortality.json");
+     
+       
+          
+          
+          'chart2_x3_map_GDP_growth_US.json', 
+          'chart2_4_GDP_hockeystick.json',
+          'chart2_5_Productivity_US.json',
+          'chart2_6_Productivity_9countries.json',
+          'chart2_7_ResearchDvelopment_global.json',
+          'chart2_8_Patents_GDP.json',
+          'chart2_9_HumanCapital_GDP.json',
+
+    </script>
+</body>
+
+</html>
