@@ -8,7 +8,7 @@
   "title": {
     "text": "GDP Growth in the United States",
     "anchor": "start",
-    "subtitle": ["Real GDP: Percent change at annual rate, Q2-Q3 2022", "Source: BEA", ""],
+    "subtitle": ["Real GDP: Percent change at annual rate, Q3-2022 to Q1-2023", "Source: BEA", ""],
     "subtitleFontSize": 12,
     "fontSize": 16,
     "subtitleFontStyle": "italic"
@@ -38,7 +38,7 @@
           "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch2_Growth/data/chart2_3_map_GDP_growth_US.csv"
         },
         "key": "State",
-        "fields": ["2022:Q3-:Q4"]
+        "fields": ["2022:Q4-2023:Q1"]
       },
       "default": "-0.00"
     }
@@ -49,7 +49,7 @@
   },
   "encoding": {
     "color": {
-      "field": "2022:Q3-:Q4",
+      "field": "2022:Q4-2023:Q1",
       "type": "quantitative",
       "scale": {
         "scheme": "blueOrange",
@@ -68,7 +68,7 @@
     "tooltip": [
       {"field": "properties.NAME", "title": "State"},
       {
-        "field": "2022:Q3-:Q4",
+        "field": "2022:Q4-2023:Q1",
         "title": "GDP growth, annual rate",
         "format": ".1%"
       }
