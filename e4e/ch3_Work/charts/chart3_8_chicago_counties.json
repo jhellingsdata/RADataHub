@@ -1,0 +1,341 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/chart3_8_Chicago_counties_incomes.json"
+  },
+  "config": {
+  "style": {
+    "cell": {
+      "stroke": "transparent"
+    }
+  }
+},
+  "title": {
+    "text": "Chicago Area Median Incomes",
+    "subtitle": [
+      "Real Income in Chicago and its Collar Counties,",
+      " Workers Only, 2021 Prices, Data: US Census Bureau",
+      " "
+    ],
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "hconcat": [
+    {
+      "projection": {
+        "type": "mercator"
+      },
+      "width": 270,
+      "height": 400,
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/chart3_8_Chicago_wards_incomes.json"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "index"
+              }
+            },
+            {
+              "lookup": "tract",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/chart3_8_chicago_tracts.topojson",
+                  "format": {
+                    "type": "topojson",
+                    "feature": "chicago_tracts"
+                  }
+                },
+                "key": "properties.TRACTCE",
+                "fields": [
+                  "properties",
+                  "type",
+                  "geometry"
+                ]
+              }
+            }
+          ],
+          "mark": "geoshape",
+          "encoding": {
+            "color": {
+              "field": "Real Income",
+              "scale": {
+                "scheme": "yellowgreenblue",
+                "domain": [
+                  0,
+                  130000
+                ]
+              },
+              "type": "quantitative",
+              "legend": {
+                "direction": "horizontal",
+                "gradientLength" : 200,
+                "format": "$s",
+                "orient": "none",
+                "title": null,
+                "legendX": 0,
+                "legendY": -35
+              }
+            },
+            "tooltip": [
+              {
+                "field": "County_Name",
+                "type": "nominal",
+                "title": "County"
+              },
+              {
+                "field": "Real Income",
+                "type": "nominal",
+                "format": "$,.2f",
+                "title": "Median Income"
+              },
+              {
+                "field": "tract",
+                "title": "Census Tract"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": " indexof(['Cook', 'Dupage', 'Lake', 'Will', 'Mchenry', 'Kane' ],datum.properties.name)>-1 "
+            }
+          ],
+          "data": {
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/illinois-counties.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "illinois-counties"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "white",
+            "strokeWidth": 2
+          }
+        },
+        {
+            "transform": [
+            {
+              "filter": " indexof(['Cook', 'DuPage', 'Lake', 'Will', 'McHenry', 'Kane' ],datum.name)>-1 "
+            },
+            {
+              "calculate": "datum.lat + {'Cook' : -0.08 , 'DuPage' : -0.03 , 'Lake' :0, 'Will' : 0, 'McHenry' : 0, 'Kane': 0}[datum.name] ",
+              "as" : "lat"
+            },
+            {
+              "calculate": "datum.lon + {'Cook' : -0.12 , 'DuPage' : 0 , 'Lake' : -0.38, 'Will' : 0, 'McHenry' : 0, 'Kane': 0}[datum.name] ",
+              "as" : "lon"
+            }
+          ],
+          "data": {
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/illinois_counties_centeroids.json"
+          },
+          "mark": {"type": "text", "fontWeight":"bold", "color":"white", "size":16
+          
+          },
+                "encoding": {
+                  "text":{
+                    "field": "name"
+                  },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        }
+      }
+
+        }
+      ]
+    },
+    {
+      "width": 500,
+      "height": 400,
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "index",
+              "value": [
+                {
+                  "x": 2012
+                }
+              ],
+              "select": {
+                "type": "point",
+                "encodings": [
+                  "x"
+                ],
+                "on": "mouseover",
+                "nearest": true
+              }
+            }
+          ],
+          "transform": [
+            {
+              "filter": "datum.Year > 2009 & datum.Year != 2015 & datum.Year<2021"
+            }
+          ],
+          "mark": "point",
+          "encoding": {
+            "x": {
+              "field": "Year"
+            },
+            "opacity": {
+              "value": 0
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "point": true
+          },
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "axis":{
+                "labelAngle": 0,
+                "labelAlign":"center",
+                "ticks": false,
+                "labelPadding":12
+              }
+            },
+            "y": {
+              "field": "Real Income",
+              "type": "quantitative",
+              "axis": {
+                "tickOpacity": 0,
+                "gridOpacity":0.6
+              },
+              "scale": {
+                "zero": false
+              }
+            },
+            "color": {
+              "condition": [
+                {
+                  "test": "datum['NAME'] == 'Cook County'",
+                  "value": "rgb(81,157,188)"
+                }
+              ],
+              "field": "NAME",
+              "scale": {
+                "range": [
+                  "rgb(200,200,200)"
+                ]
+              },
+              "legend": null
+            },
+            "opacity": {
+              "value": 1
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "index"
+              }
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "Year"
+            },
+            "color": {
+              "value": "black"
+            }
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "rule",
+                "strokeWidth": 0.5
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "center",
+                "fontWeight": 100
+              },
+              "encoding": {
+                "text": {
+                  "field": "Year"
+                },
+                "y": {
+                  "value": -10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.Year==2021"
+            }
+          ],
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "axis": {
+                "title": null
+              }
+            },
+            "y": {
+              "field": "Real Income",
+              "type": "quantitative",
+              "scale": {
+                "zero": false
+              },
+              "axis": {
+                "title": null,
+                "format": "$s"
+              }
+            },
+            "color": {
+              "condition": [
+                {
+                  "test": "datum['NAME'] == 'Cook County'",
+                  "value": "rgb(81,157,188)"
+                }
+              ],
+              "field": "Region name",
+              "scale": {
+                "range": [
+                  "rgb(200,200,200)"
+                ]
+              },
+              "legend": null
+            },
+            "opacity": {
+              "value": 1
+            },
+            "text": {
+              "field": "NAME"
+            }
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 5
+          }
+        }
+      ]
+    }
+  ],
+  "description": "A chart titled 'Chicago Area Median Incomes' with subtitle 'Median Individual Income, Workers Only   2021 Prices, source: Census  "
+}
