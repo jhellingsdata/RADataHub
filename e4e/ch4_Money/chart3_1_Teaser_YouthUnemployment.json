@@ -1,0 +1,87 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Tufte inspired chart, with white grid lines over the bars",
+
+  "title": {
+    "text": "Millions without work",
+    "subtitle": [
+      "Youth Unemployment (15-24 year olds). World's 21 most populous countries",
+      "Data: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16
+  },
+
+  "view":{"stroke":"transparent"},
+
+  "width": 500,
+  "height": 300,
+ 
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/Global_WB_YouthUnemployment.csv"
+  },
+
+  "transform": [
+    {"filter":"datum.p21==1"},
+    {"calculate": "datum.value2021/100", "as": "unempPercent"},
+    {"calculate": "datum.unempPercent / 100", "as": "UnempPer2"}
+  ],
+
+  
+  "mark": {
+    "type":"bar",
+    "color":"rgb(128,0,0)"},
+     
+
+    "encoding": {
+    
+"tooltip": [
+      {
+        "field": "value2021", "title": "Unemployment Rate (%)", 
+        "format": ".2f"  
+      },
+      {
+        "field": "UnempPer2", "title": " (%)", 
+        "format": "~%"  
+      }
+    ],
+
+    "x": {
+      "field": "unempPercent",
+      "type": "quantitative", 
+      "title": null,
+      "axis":{
+        "zindex":1,
+        "gridColor":"white",
+        "gridWidth":0.5,
+        "labelAngle":0,
+        "format":".0%",
+        "grid": false,
+        "gridOpacity": 0.6,
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      }},
+
+    "y": {
+      "field": "nameSimple",
+      "title": null,
+      "type": "nominal",
+      "sort":"-x",
+      "axis": {
+        "grid": false,
+        "gridOpacity": 0.6,
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      }
+      }
+  }
+
+}
