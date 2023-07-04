@@ -24,7 +24,7 @@
  
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/Global_WB_YouthUnemployment.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/Global_WB_YouthUnemployment.csv"
   },
 
   "transform": [
