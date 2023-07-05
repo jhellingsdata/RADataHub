@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/ONS_UK_unemployment.csv"
   },
   "config": {"view": {"stroke": "transparent"}},
-  "width": 400,
+  "width": 500,
   "height": 300,
   "title": {
     "text": "Employment by gender, UK",
