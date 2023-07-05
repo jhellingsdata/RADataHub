@@ -1,71 +1,118 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/us_incomes_pctile_race_region.csv"
-    },
-    "title": {
-      "text": "US Incomes Over Time",
-      "subtitle": [
-        "Real Household Incomes by Percentile, Race, and Region, over time (2021 USD)",
-        "source: US Census Bureau",
-        ""
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/chart3_6_Income_US_selection.csv"
+  },
+  "title": {
+    "text": "US Incomes Over Time",
+    "subtitle": [
+      "Real Household Incomes by Percentile, Race, and Region, over time (2021 USD)",
+      "source: US Census Bureau",
+      ""
+    ],
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 500,
+
+  "params": [
+    {
+      "name": "viewToggle",
+      "bind": {
+        "input": "checkbox",
+        "name": "Toggle Indexing"
+      },
+      "value": false
+    }
+  ],
+
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "selected_view",
+          "select": {"type": "point", "fields": ["View"]},
+          "bind": {
+            "input": "select",
+            "labels": ["Percentile", "Race", "Region"],
+            "options": ["by Percentile", "by Race", "by Region"],
+            "name": "View"
+          },
+          "value": "by Percentile"
+        }
       ],
-      "fontSize": 16,
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 12,
-      "anchor": "start",
-      "color": "black"
-    },
-    "height": 300,
-    "width": 500,
-    "layer": [
-      {
-        "params": [
-          {
-            "name": "selected_view",
-            "select": {"type": "point", "fields": ["View"]},
-            "bind": {
-              "input": "select",
-              "options": ["by Percentile", "by Race", "by Region"],
-              "name": "View"
-            },
-            "value": "by Percentile"
+      "transform": [
+        {"filter": {"param": "selected_view"}},
+        {
+          "window": [{"op": "last_value", "field": "Income", "as": "startIncome"}],
+          "frame": [null, null],
+          "groupby": ["Series"]
+        },
+        {
+          "calculate": "if(viewToggle, (datum.Income - datum.startIncome) / datum.startIncome, datum.Income)",
+          "as": "conditionalIncome"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "point": {
+          "size": 30,
+          "fillOpacity": 0
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "axis": {
+            "title": null,
+            "grid": false,
+            "labelFontSize": 11,
+            "tickOpacity": 0
           }
-        ],
-        "transform": [{"filter": {"param": "selected_view"}}],
-        "mark": {"type": "line", "point": true},
-        "encoding": {
-          "x": {
-            "field": "Year",
-            "type": "temporal",
-            "axis": {
-              "title": null,
-              "grid": false,
-              "labelFontSize": 11,
-              "tickOpacity": 0
+        },
+        "y": {
+          "field": "conditionalIncome",
+          "type": "quantitative",
+          "scale": {
+            "zero": false,
+            "type": "linear"
+          },
+          "axis": {
+            "title": "",
+            "format": "$,d",
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11,
+            "gridOpacity": 0.6,
+            "grid": true
             }
+        },
+        "color": {
+          "field": "Series",
+          "scale": {
+            "range": [
+              "#539165",
+              "#A84448",
+              "#F7C04A",
+              "#3F497F",
+              "#E9A178",
+              "#B4E4FF"
+            ]
+          }
+        },
+        "strokeDash": {
+          "condition": {
+            "test": "datum.stroke == 1",
+            "value": [5, 5] 
           },
-          "y": {
-            "field": "Income",
-            "type": "quantitative",
-            "scale": {"zero": false},
-            "axis": {
-              "title": "",
-              "format": "$,d",
-              "ticks": false,
-              "labelPadding": 5,
-              "labelFontSize": 11,
-              "gridOpacity": 0.6,
-              "grid": true
-              }
-          },
-          "tooltip": [
-            {"title": "Series", "field": "Series"},
-            {"title": "Income", "field": "Income", "format": "$,"},
-            {"title": "Year", "field": "Year", "type": "temporal", "format": "%Y"}
-          ],
-          "color": {"field": "Series"}
+          "value": []
         }
       }
-    ]
-  }
+    }
+  ]
+}
