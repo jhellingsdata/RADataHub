@@ -45,10 +45,6 @@
       {
         "field": "value2021", "title": "Unemployment Rate (%)", 
         "format": ".2f"  
-      },
-      {
-        "field": "UnempPer2", "title": " (%)", 
-        "format": "~%"  
       }
     ],
 
