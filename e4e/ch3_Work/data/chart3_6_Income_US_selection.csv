@@ -336,62 +336,57 @@ Year,Series,Income,View,stroke
 1974,All Races,55636,by Race,1
 1973,All Races,57456,by Race,1
 1972,All Races,56319,by Race,1
-1971,All Races,54006,by Race,1
-1970,All Races,54536,by Race,1
-1969,All Races,54962,by Race,1
-1968,All Races,52992,by Race,1
-1967,All Races,50803,by Race,1
-2021,"White, Not Hispanic",77999,by Race,0
-2020,"White, Not Hispanic",78912,by Race,0
-2019,"White, Not Hispanic",80602,by Race,0
-2018,"White, Not Hispanic",76220,by Race,0
-2017,"White, Not Hispanic",75367,by Race,0
-2017,"White, Not Hispanic",75318,by Race,0
-2016,"White, Not Hispanic",73433,by Race,0
-2015,"White, Not Hispanic",71989,by Race,0
-2014,"White, Not Hispanic",69027,by Race,0
-2013,"White, Not Hispanic",70281,by Race,0
-2013,"White, Not Hispanic",67882,by Race,0
-2012,"White, Not Hispanic",67397,by Race,0
-2011,"White, Not Hispanic",66897,by Race,0
-2010,"White, Not Hispanic",67820,by Race,0
-2009,"White, Not Hispanic",68940,by Race,0
-2008,"White, Not Hispanic",70049,by Race,0
-2007,"White, Not Hispanic",71941,by Race,0
-2006,"White, Not Hispanic",70617,by Race,0
-2005,"White, Not Hispanic",70627,by Race,0
-2004,"White, Not Hispanic",70325,by Race,0
-2003,"White, Not Hispanic",70552,by Race,0
-2002,"White, Not Hispanic",70829,by Race,0
-2001,"White, Not Hispanic",71033,by Race,0
-2000,"White, Not Hispanic",71979,by Race,0
-1999,"White, Not Hispanic",72030,by Race,0
-1998,"White, Not Hispanic",70702,by Race,0
-1997,"White, Not Hispanic",68516,by Race,0
-1996,"White, Not Hispanic",66909,by Race,0
-1995,"White, Not Hispanic",65841,by Race,0
-1994,"White, Not Hispanic",63706,by Race,0
-1993,"White, Not Hispanic",63272,by Race,0
-1992,"White, Not Hispanic",63191,by Race,0
-1991,"White, Not Hispanic",62881,by Race,0
-1990,"White, Not Hispanic",64407,by Race,0
-1989,"White, Not Hispanic",65710,by Race,0
-1988,"White, Not Hispanic",65302,by Race,0
-1987,"White, Not Hispanic",64547,by Race,0
-1986,"White, Not Hispanic",63352,by Race,0
-1985,"White, Not Hispanic",61326,by Race,0
-1984,"White, Not Hispanic",60119,by Race,0
-1982,"White, Not Hispanic",58081,by Race,0
-1981,"White, Not Hispanic",58642,by Race,0
-1980,"White, Not Hispanic",59693,by Race,0
-1979,"White, Not Hispanic",61096,by Race,0
-1978,"White, Not Hispanic",60977,by Race,0
-1977,"White, Not Hispanic",59442,by Race,0
-1976,"White, Not Hispanic",58873,by Race,0
-1975,"White, Not Hispanic",57086,by Race,0
-1974,"White, Not Hispanic",58682,by Race,0
-1973,"White, Not Hispanic",60746,by Race,0
-1972,"White, Not Hispanic",59926,by Race,0
+2021,White,77999,by Race,0
+2020,White,78912,by Race,0
+2019,White,80602,by Race,0
+2018,White,76220,by Race,0
+2017,White,75367,by Race,0
+2017,White,75318,by Race,0
+2016,White,73433,by Race,0
+2015,White,71989,by Race,0
+2014,White,69027,by Race,0
+2013,White,70281,by Race,0
+2013,White,67882,by Race,0
+2012,White,67397,by Race,0
+2011,White,66897,by Race,0
+2010,White,67820,by Race,0
+2009,White,68940,by Race,0
+2008,White,70049,by Race,0
+2007,White,71941,by Race,0
+2006,White,70617,by Race,0
+2005,White,70627,by Race,0
+2004,White,70325,by Race,0
+2003,White,70552,by Race,0
+2002,White,70829,by Race,0
+2001,White,71033,by Race,0
+2000,White,71979,by Race,0
+1999,White,72030,by Race,0
+1998,White,70702,by Race,0
+1997,White,68516,by Race,0
+1996,White,66909,by Race,0
+1995,White,65841,by Race,0
+1994,White,63706,by Race,0
+1993,White,63272,by Race,0
+1992,White,63191,by Race,0
+1991,White,62881,by Race,0
+1990,White,64407,by Race,0
+1989,White,65710,by Race,0
+1988,White,65302,by Race,0
+1987,White,64547,by Race,0
+1986,White,63352,by Race,0
+1985,White,61326,by Race,0
+1984,White,60119,by Race,0
+1982,White,58081,by Race,0
+1981,White,58642,by Race,0
+1980,White,59693,by Race,0
+1979,White,61096,by Race,0
+1978,White,60977,by Race,0
+1977,White,59442,by Race,0
+1976,White,58873,by Race,0
+1975,White,57086,by Race,0
+1974,White,58682,by Race,0
+1973,White,60746,by Race,0
+1972,White,59926,by Race,0
 2021,Black,48815,by Race,0
 2020,Black,48936,by Race,0
 2019,Black,48827,by Race,0
@@ -473,58 +468,58 @@ Year,Series,Income,View,stroke
 1989,Asian,76377,by Race,0
 1988,Asian,71248,by Race,0
 1987,Asian,73728,by Race,0
-2021,Hispanic (any race),57981,by Race,0
-2020,Hispanic (any race),58015,by Race,0
-2019,Hispanic (any race),59467,by Race,0
-2018,Hispanic (any race),55513,by Race,0
-2017,Hispanic (any race),55448,by Race,0
-2017,Hispanic (any race),55800,by Race,0
-2016,Hispanic (any race),53827,by Race,0
-2015,Hispanic (any race),51631,by Race,0
-2014,Hispanic (any race),48676,by Race,0
-2013,Hispanic (any race),46234,by Race,0
-2013,Hispanic (any race),47720,by Race,0
-2012,Hispanic (any race),46113,by Race,0
-2011,Hispanic (any race),46629,by Race,0
-2010,Hispanic (any race),46863,by Race,0
-2009,Hispanic (any race),48152,by Race,0
-2008,Hispanic (any race),47826,by Race,0
-2007,Hispanic (any race),50666,by Race,0
-2006,Hispanic (any race),50893,by Race,0
-2005,Hispanic (any race),50020,by Race,0
-2004,Hispanic (any race),49276,by Race,0
-2003,Hispanic (any race),48726,by Race,0
-2002,Hispanic (any race),49993,by Race,0
-2001,Hispanic (any race),51490,by Race,0
-2000,Hispanic (any race),52329,by Race,0
-1999,Hispanic (any race),50154,by Race,0
-1998,Hispanic (any race),47197,by Race,0
-1997,Hispanic (any race),44962,by Race,0
-1996,Hispanic (any race),42964,by Race,0
-1995,Hispanic (any race),40484,by Race,0
-1994,Hispanic (any race),42477,by Race,0
-1993,Hispanic (any race),42374,by Race,0
-1992,Hispanic (any race),42893,by Race,0
-1991,Hispanic (any race),44143,by Race,0
-1990,Hispanic (any race),45021,by Race,0
-1989,Hispanic (any race),46376,by Race,0
-1988,Hispanic (any race),44954,by Race,0
-1987,Hispanic (any race),44238,by Race,0
-1986,Hispanic (any race),43431,by Race,0
-1985,Hispanic (any race),42055,by Race,0
-1984,Hispanic (any race),42321,by Race,0
-1983,Hispanic (any race),41265,by Race,0
-1982,Hispanic (any race),41058,by Race,0
-1981,Hispanic (any race),43887,by Race,0
-1980,Hispanic (any race),42854,by Race,0
-1979,Hispanic (any race),45527,by Race,0
-1978,Hispanic (any race),45109,by Race,0
-1977,Hispanic (any race),43482,by Race,0
-1976,Hispanic (any race),41545,by Race,0
-1975,Hispanic (any race),40704,by Race,0
-1974,Hispanic (any race),44253,by Race,0
-1973,Hispanic (any race),44513,by Race,0
-1972,Hispanic (any race),44587,by Race,0
+2021,Hispanic,57981,by Race,0
+2020,Hispanic,58015,by Race,0
+2019,Hispanic,59467,by Race,0
+2018,Hispanic,55513,by Race,0
+2017,Hispanic,55448,by Race,0
+2017,Hispanic,55800,by Race,0
+2016,Hispanic,53827,by Race,0
+2015,Hispanic,51631,by Race,0
+2014,Hispanic,48676,by Race,0
+2013,Hispanic,46234,by Race,0
+2013,Hispanic,47720,by Race,0
+2012,Hispanic,46113,by Race,0
+2011,Hispanic,46629,by Race,0
+2010,Hispanic,46863,by Race,0
+2009,Hispanic,48152,by Race,0
+2008,Hispanic,47826,by Race,0
+2007,Hispanic,50666,by Race,0
+2006,Hispanic,50893,by Race,0
+2005,Hispanic,50020,by Race,0
+2004,Hispanic,49276,by Race,0
+2003,Hispanic,48726,by Race,0
+2002,Hispanic,49993,by Race,0
+2001,Hispanic,51490,by Race,0
+2000,Hispanic,52329,by Race,0
+1999,Hispanic,50154,by Race,0
+1998,Hispanic,47197,by Race,0
+1997,Hispanic,44962,by Race,0
+1996,Hispanic,42964,by Race,0
+1995,Hispanic,40484,by Race,0
+1994,Hispanic,42477,by Race,0
+1993,Hispanic,42374,by Race,0
+1992,Hispanic,42893,by Race,0
+1991,Hispanic,44143,by Race,0
+1990,Hispanic,45021,by Race,0
+1989,Hispanic,46376,by Race,0
+1988,Hispanic,44954,by Race,0
+1987,Hispanic,44238,by Race,0
+1986,Hispanic,43431,by Race,0
+1985,Hispanic,42055,by Race,0
+1984,Hispanic,42321,by Race,0
+1983,Hispanic,41265,by Race,0
+1982,Hispanic,41058,by Race,0
+1981,Hispanic,43887,by Race,0
+1980,Hispanic,42854,by Race,0
+1979,Hispanic,45527,by Race,0
+1978,Hispanic,45109,by Race,0
+1977,Hispanic,43482,by Race,0
+1976,Hispanic,41545,by Race,0
+1975,Hispanic,40704,by Race,0
+1974,Hispanic,44253,by Race,0
+1973,Hispanic,44513,by Race,0
+1972,Hispanic,44587,by Race,0
 2021,United States,70784,by Region,1
 2020,United States,71186,by Region,1
 2019,United States,72808,by Region,1
