@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapter 3. Jobs & Work</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        #charts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        #charts div {
+            margin: 20px;
+            padding-top: 20px;
+        }
+        hr.solid {
+            border: none; /* remove existing border */
+            border-top: 1.5px solid #727171;
+            width: 680px; /* adjust width as needed */
+        }
+        .vega-embed.has-actions {
+            padding: 0px !important;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Chapter 3. Jobs & Work</h1>
+    <div id="charts"></div>
+
+    <script>
+        const chartsContainer = document.getElementById('charts');
+      
+        // JSON file names in 'charts' folder
+        const chartFiles = [
+          'chart3_6_Income_US_selection.json',
+
+        ];
+      
+        async function loadCharts() {
+          for (const file of chartFiles) {
+            const response = await fetch(`charts/${file}`);
+            const spec = await response.json();
+      
+            const chartDiv = document.createElement('div');
+            chartDiv.classList.add('chart');
+            chartsContainer.appendChild(chartDiv);
+            vegaEmbed(chartDiv, spec);
+      
+            // Add a <hr> element after the chart
+            const hr = document.createElement('hr');
+            hr.classList.add('solid');
+            chartsContainer.appendChild(hr);
+          }
+        }
+      
+        loadCharts();
+    </script>
+      
+</body>
+</html>
