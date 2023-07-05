@@ -1,127 +1,127 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A chart titled 'America's Beveridge Curve' with subtitle 'Job Openings and Unemployment Rate by Month, Both Seasonally Adjusted Source: Bureau of Labour Statistics ",
-    "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/US_beveridge_data.csv"
-    },
-    "title": {
-      "text": "America's Beveridge Curve",
-      "subtitle": [
-        "Job Openings and Unemployment Rate by Month, Both Seasonally Adjusted",
-        "Source: Bureau of Labour Statistics",
-        ""
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A chart titled 'America's Beveridge Curve' with subtitle 'Job Openings and Unemployment Rate by Month, Both Seasonally Adjusted Source: Bureau of Labour Statistics ",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/US_beveridge_data.csv"
+  },
+  "title": {
+    "text": "America's Beveridge Curve",
+    "subtitle": [
+      "Job Openings and Unemployment Rate by Month, Both Seasonally Adjusted",
+      "Source: Bureau of Labour Statistics",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16
+  },
+  "width": 500,
+  "height": 300,
+  "layer": [
+    {
+      "mark": "circle",
+      "params": [
+        {
+          "name": "hovered",
+          "select": {
+            "type": "point",
+            "fields": ["Period"],
+            "toggle": false,
+            "on": "mouseover"
+          }
+        },
+        {"name": "clicked", "select": {"type": "point", "fields": ["Period"]}}
       ],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 12,
-      "anchor": "start",
-      "color": "black",
-      "fontSize": 16
-    },
-    "width": 500,
-    "height": 350,
-    "layer": [
-      {
-        "mark": "circle",
-        "params": [
-          {
-            "name": "hovered",
-            "select": {
-              "type": "point",
-              "fields": ["Period"],
-              "toggle": false,
-              "on": "mouseover"
-            }
-          },
-          {"name": "clicked", "select": {"type": "point", "fields": ["Period"]}}
-        ],
-        "encoding": {
-          "x": {
-            "field": "Unemployment rate",
-            "type": "quantitative",
-            "scale": {"zero": false},
-            "axis": {
-              "title": "Unemployment rate (%)",
-              "gridOpacity": 0.3,
-              "ticks": false,
-              "labelPadding": 5,
-              "titleFontWeight": "normal",
-              "format": "%"
-            }
-          },
-          "y": {
-            "field": "Job openings rate",
-            "type": "quantitative",
-            "scale": {"zero": false},
-            "axis": {
-              "title": "Job Opening rate (%)",
-              "gridOpacity": 0.3,
-              "ticks": false,
-              "labelPadding": 5,
-              "titleFontWeight": "normal",
-              "format": "%"
-            }
-          },
-          "tooltip": [{"title": "Date", "field": "Month"}],
-          "color": {"field": "Period", "type": "nominal"}
-        }
-      },
-      {
-        "mark": "line",
-        "encoding": {
-          "x": {
-            "field": "Unemployment rate",
-            "type": "quantitative",
-            "scale": {"zero": false}
-          },
-          "y": {
-            "field": "Job openings rate",
-            "type": "quantitative",
-            "scale": {"zero": false}
-          },
-          "opacity": {
-            "condition": {
-              "test": {
-                "or": [
-                  {"param": "hovered", "empty": false},
-                  {"param": "clicked", "empty": false}
-                ]
-              },
-              "value": 0.8
-            },
-            "value": 0
-          },
-          "color": {"field": "Period", "type": "nominal"},
-          "order": {"field": "Date"}
-        }
-      },
-      {
-        "mark": "line",
-        "encoding": {
-          "x": {
-            "field": "Unemployment rate",
-            "type": "quantitative",
-            "scale": {"zero": false}
-          },
-          "y": {
-            "field": "Job openings rate",
-            "type": "quantitative",
-            "scale": {"zero": false}
-          },
-          "order": {"field": "Date"},
-          "opacity": {
-            "condition": {
-              "test": {
-                "or": [
-                  {"param": "hovered", "empty": false},
-                  {"param": "clicked", "empty": false}
-                ]
-              },
-              "value": 0.8
-            },
-            "value": 0
-          },
-          "color": {"field": "Period", "type": "nominal"}
-        }
+      "encoding": {
+        "x": {
+          "field": "Unemployment rate",
+          "type": "quantitative",
+          "scale": {"zero": false},
+          "axis": {
+            "title": "Unemployment rate (%)",
+            "gridOpacity": 0.3,
+            "ticks": false,
+            "labelPadding": 5,
+            "titleFontWeight": "bold",
+            "format": "%"
+          }
+        },
+        "y": {
+          "field": "Job openings rate",
+          "type": "quantitative",
+          "scale": {"zero": false},
+          "axis": {
+            "title": "Job Opening rate (%)",
+            "gridOpacity": 0.3,
+            "ticks": false,
+            "labelPadding": 5,
+            "titleFontWeight": "bold",
+            "format": "%"
+          }
+        },
+        "tooltip": [{"title": "Date", "field": "Month"}],
+        "color": {"field": "Period", "type": "nominal"}
       }
-    ]
-  }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Unemployment rate",
+          "type": "quantitative",
+          "scale": {"zero": false}
+        },
+        "y": {
+          "field": "Job openings rate",
+          "type": "quantitative",
+          "scale": {"zero": false}
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "or": [
+                {"param": "hovered", "empty": false},
+                {"param": "clicked", "empty": false}
+              ]
+            },
+            "value": 0.8
+          },
+          "value": 0
+        },
+        "color": {"field": "Period", "type": "nominal"},
+        "order": {"field": "Date"}
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "Unemployment rate",
+          "type": "quantitative",
+          "scale": {"zero": false}
+        },
+        "y": {
+          "field": "Job openings rate",
+          "type": "quantitative",
+          "scale": {"zero": false}
+        },
+        "order": {"field": "Date"},
+        "opacity": {
+          "condition": {
+            "test": {
+              "or": [
+                {"param": "hovered", "empty": false},
+                {"param": "clicked", "empty": false}
+              ]
+            },
+            "value": 0.8
+          },
+          "value": 0
+        },
+        "color": {"field": "Period", "type": "nominal"}
+      }
+    }
+  ]
+}
