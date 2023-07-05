@@ -62,7 +62,11 @@
           }
         },
         "tooltip": [{"title": "Date", "field": "Month"}],
-        "color": {"field": "Period", "type": "nominal"}
+        "color": {
+          "field": "Period",
+          "type": "nominal",
+          "legend": {"orient": "top", "title": null, "offset": 5, }
+        }
       }
     },
     {
