@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/underemployment_1_CSV.csv"
+  },
+
+"title": {
+    "text": "Underemployment, US and UK",
+    "subtitle": [
+      "% of Labour Force Underemployed",
+      "Data: FRED & ONS",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16
+  },
+
+  "width": 500,
+  "height": 300,
+  "params": [
+    {
+      "name": "View",
+      "select": {"type": "point", "fields": ["cont"]},
+      "bind": {"input": "select", "options": ["UK", "US"], "name": "Country:"},
+      "value": "US"
+    },
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": ["type"],
+        "toggle": true,
+        "on": "mouseover"
+      }
+    }
+  ],
+  "transform": [{"filter": {"param": "View"}}],
+
+
+  "mark": {"type": "line", "point": false},
+  "encoding": {
+    "x": {"field": "DATE", "type": "temporal",
+    "axis": {
+      "grid": false,
+            "gridOpacity": 0.6, 
+            "labelAngle":0,
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11
+            }
+            },
+    "y": {
+      "field": "underpct",
+      "type": "quantitative",
+      "title": "% of Workers Underemployed",
+      "axis": {
+      "format": "%",  
+      "grid": true,
+        "labelAngle":0,
+        "gridOpacity": 0.6,
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11}},
+    
+    
+    "color": {"field": "type", "scale": {"range": ["#a12800", "#290c03"]}, "legend": null},
+    "tooltip": [{"field": "underpct", "title": " Underemplyed workers %", "format": "0.2f"}, {"field": "DATE", "title": " Year", "type": "temporal"}]
+  }
+  
+}
