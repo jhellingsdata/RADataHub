@@ -1,0 +1,211 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "US Unemployment rate over time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/chart3_2_us_emp_race_age_educ.json"
+  },
+  "layer": [
+    {
+      "data": {"values": [{"can be anything - unused": 1}]},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "size": 12,
+        "fontWeight": "normal",
+        "fontStyle": "italic",
+        "baseline": "bottom"
+      },
+      "encoding": {
+        "text": {
+          "value": "Monthly Rate, 16+ Years, Seasonally Adjusted"
+        },
+        "x": {"value": -45},
+        "y": {"value": -64}
+
+      }
+    },
+        {
+      "data": {"values": [{"can be anything - unused": 1}]},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "size": 12,
+        "fontWeight": "normal",
+        "fontStyle": "italic",
+        "baseline": "bottom"
+      },
+      "encoding": {
+        "text": {
+          "value": "Data: FRED"
+        },
+        "x": {"value": -45},
+        "y": {"value": -50}
+
+      }
+    },
+    {
+      "data": {"values": [{"can be anything - unused": 1}]},
+      "transform": [
+        {"calculate": "'US Unemployment Rate by ' + pickSeries_View", "as": "subtitle"}
+      ],
+
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "size": 16,
+        "fontWeight": "bold",
+        "baseline": "bottom"
+      },
+      "encoding": {
+        "x": {"value": -45},
+        "y": {"value": -80},
+        "text": {"field": "subtitle"}
+      }
+    },
+    {
+      "layer": [
+        {
+          "transform": [
+            {
+              "calculate": "toString(round(datum.Value*100000)/1000)", "as": "Value"
+            },
+            {
+              "pivot": "Series",
+              "groupby": ["Date"],
+              "value": "Value"
+            }
+          ],
+          "mark": {"type": "rule", "tooltip":{"expr": " merge(datum.datum, {'Date': year(toNumber(hover.Date))} ) "}},
+                    "params": [
+          {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+          ],
+          "encoding": {
+        "opacity": {
+          "condition": {"value": 0.2, 
+          "param": "hover", "empty": false},
+          "value": 0
+        },
+            "y": {"field":null, "type": "quantitative"}
+          }
+        },
+        {
+          "mark": {"type":"circle", "size":50},
+                      "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+
+          "encoding": {
+            "color": {
+              "field": "Series",
+              "type": "nominal",
+              "legend": {
+                "orient": "none",
+                "title": null,
+                "direction": "horizontal",
+                "columns": 3,
+                "legendX": -40,
+                "legendY": -35
+
+              }
+            }
+          }
+        
+        },
+        {
+          "mark": "line",
+          "encoding": {
+            "color": {
+              "field": "Series",
+              "type": "nominal",
+              "legend": {
+                "orient": "none",
+                "title": null,
+                "direction": "horizontal",
+                "columns": 3,
+                "legendX": -40,
+                "legendY": -35
+
+              }
+            }
+          },
+          "params": [
+            {
+              "name": "pickSeries",
+              "value": {
+                "View": "Education"
+              },
+              "select": {
+                "type": "point",
+                "fields": [
+                  "View"
+                ],
+                "toggle": false
+              },
+              "bind": {
+                "input": "select",
+                "options": [
+                  "Education",
+                  "Race",
+                  "Age"
+                ],
+                "name": "View By:"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "width": 500,
+  "height": 350,
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11,
+            "grid": false
+          }
+    },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "title": false,
+          "axis": {
+            "format" : "%",
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11,
+            "gridOpacity": 0.6,
+            "grid": true
+          }
+        }
+  },
+  "transform": [
+    {
+      "calculate": "(datum.View == 'Overall' && datum.Series == 'Unemployment') ? 'Overall' : datum.Series  ", "as": "Series"
+    },
+    {
+      "filter" : " ((pickSeries_View == 'Education' && (datum.Date > datetime(1991,0)))) | (datum.View != 'Education' && pickSeries_View != 'Education' ) "
+    },
+    {
+      "filter": "datum.View == pickSeries_View | datum.View == 'Overall'"
+    }
+  ]
+}
