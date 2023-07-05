@@ -1,0 +1,58 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "State minimum wages as of Feb 2023 for DoL. Federal rate of $7.25 applies where there is no state law or min wage rate is below $7.25.",
+    "width": 600,
+    "height": 330,
+    "config": {"view": {"stroke": null}, "padding": 0},
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/US_States_5m.json",
+      "format": {"property": "features"}
+    },
+    "title": {
+      "text": "Shortfall of minimum to living wage",
+      "subtitle": [
+        "Legislated state minimum wage against estimated state liveable wage", "Sources: MIT Living Wage Calculator 2023; Department of Labor",
+        ""
+      ],
+      "fontSize": 16,
+      "dx": 10,
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black"
+    },
+    "transform": [
+      {
+        "lookup": "properties.NAME",
+        "from": {
+          "key": "State",
+          "fields": ["Wage", "Living Wage", "Shortfall", "Info"],
+          "data": {
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/chart3_12_map_WageShortfall_US.csv"
+          }
+        }
+      }
+    ],
+    "projection": {"type": "albersUsa", "translate": [270, 160], "scale": 700},
+    "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+    "encoding": {
+      "color": {
+        "field": "Shortfall",
+        "legend": {
+          "title": "",
+          "orient": "bottom-right",
+          "direction": "vertical",
+          "format": "$s",
+          "labelFontSize": 11
+        },
+        "type": "quantitative",
+        "scale": {"scheme": "yelloworangered", "reverse": true}
+      },
+      "tooltip": [
+        {"field": "properties.NAME", "title": "State"},
+        {"field": "Wage", "title": "Minimum Hourly", "format": "$.2f"},
+        {"field": "Living Wage", "title": "Liveable Wage", "format": "$.2f"},
+        {"field": "Shortfall", "title": "Shortfall", "format": "$.2f"}
+      ]
+    }
+  }
