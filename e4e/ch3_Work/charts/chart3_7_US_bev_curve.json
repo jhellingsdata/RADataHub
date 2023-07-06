@@ -4,6 +4,9 @@
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/US_beveridge_data.csv"
   },
+    "config": {
+    "style": {"cell": {"stroke": "transparent"}}
+},
   "title": {
     "text": "America's Beveridge Curve",
     "subtitle": [
@@ -65,7 +68,7 @@
         "color": {
           "field": "Period",
           "type": "nominal",
-          "legend": {"orient": "top", "title": null, "offset": 5 }
+          "legend": {"orient": "top", "title": null, "offset": 5}
         }
       }
     },

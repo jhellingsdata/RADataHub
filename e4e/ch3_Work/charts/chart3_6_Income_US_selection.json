@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/chart3_6_Income_US_selection.csv"
   },
-    "config": {
+  "config": {
     "style": {"cell": {"stroke": "transparent"}},
     "locale": {
       "number": {
@@ -14,17 +14,12 @@
       }
     }
   },
-  "transform": [
-    {
-      "calculate": "datum.Income/1000",
-      "as": "Income"
-    }
-  ],
+  "transform": [{"calculate": "datum.Income/1000", "as": "Income"}],
   "title": {
     "text": "US Incomes Over Time",
     "subtitle": [
       "Real Household Incomes by Percentile, Race, and Region, over time (2021 USD)",
-      "Data: US Census Bureau",
+      "Source: US Census Bureau",
       ""
     ],
     "fontSize": 16,
@@ -38,36 +33,20 @@
   "params": [
     {
       "name": "viewToggle",
-      "bind": {
-        "input": "checkbox",
-        "name": "Toggle Indexing"
-      },
+      "bind": {"input": "checkbox", "name": "Toggle Indexing"},
       "value": false
     }
   ],
   "layer": [
     {
       "transform": [
-        {
-          "filter": {
-            "param": "selected_view"
-          }
-        },
+        {"filter": {"param": "selected_view"}},
         {
           "window": [
-            {
-              "op": "last_value",
-              "field": "Income",
-              "as": "startIncome"
-            }
+            {"op": "last_value", "field": "Income", "as": "startIncome"}
           ],
-          "frame": [
-            null,
-            null
-          ],
-          "groupby": [
-            "Series"
-          ]
+          "frame": [null, null],
+          "groupby": ["Series"]
         },
         {
           "calculate": "if(viewToggle, (datum.Income - datum.startIncome) / datum.startIncome, datum.Income)",
@@ -83,27 +62,14 @@
             }
           },
           "transform": [
-            {
-              "calculate": "datum.Income",
-              "as": "Income"
-            },
-                          {
-                "pivot": "Series",
-                "groupby": ["Year"],
-                "value": "Income"
-              }
+            {"calculate": "datum.Income", "as": "Income"},
+            {"pivot": "Series", "groupby": ["Year"], "value": "Income"}
           ],
           "encoding": {
             "y": null,
-            "color": {
-              "value": "rgb(204,204,204)"
-            },
+            "color": {"value": "rgb(204,204,204)"},
             "opacity": {
-              "condition": {
-                "value": 1,
-                "param": "hover",
-                "empty": false
-              },
+              "condition": {"value": 1, "param": "hover", "empty": false},
               "value": 0
             }
           },
@@ -121,34 +87,15 @@
           ]
         },
         {
-          "mark": {
-            "type": "line",
-            "point": {
-              "size": 30,
-              "fillOpacity": 0
-            }
-          },
+          "mark": {"type": "line", "point": {"size": 30, "fillOpacity": 0}},
           "params": [
             {
               "name": "selected_view",
-              "select": {
-                "type": "point",
-                "fields": [
-                  "View"
-                ]
-              },
+              "select": {"type": "point", "fields": ["View"]},
               "bind": {
                 "input": "select",
-                "labels": [
-                  "Percentile",
-                  "Race",
-                  "Region"
-                ],
-                "options": [
-                  "by Percentile",
-                  "by Race",
-                  "by Region"
-                ],
+                "labels": ["Percentile", "Race", "Region"],
+                "options": ["by Percentile", "by Race", "by Region"],
                 "name": "View"
               },
               "value": "by Percentile"
@@ -170,10 +117,7 @@
         "y": {
           "field": "conditionalIncome",
           "type": "quantitative",
-          "scale": {
-            "zero": false,
-            "type": "linear"
-          },
+          "scale": {"zero": false, "type": "linear"},
           "axis": {
             "title": "",
             "format": "$,d",
@@ -190,8 +134,8 @@
             "orient": "none",
             "title": null,
             "direction": "horizontal",
-            "legendX": -35,
-            "legendY": -25
+            "legendX": 0,
+            "legendY": -20
           },
           "scale": {
             "range": [
@@ -205,13 +149,7 @@
           }
         },
         "strokeDash": {
-          "condition": {
-            "test": "datum.stroke == 1",
-            "value": [
-              5,
-              5
-            ]
-          },
+          "condition": {"test": "datum.stroke == 1", "value": [5, 5]},
           "value": []
         }
       }

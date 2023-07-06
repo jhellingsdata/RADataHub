@@ -3,71 +3,120 @@
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/underemployment_1_CSV_new.csv"
   },
-
-"title": {
+  "title": {
     "text": "Underemployment, US and UK",
-    "subtitle": [
-      "% of Labour Force Underemployed",
-      "Data: FRED & ONS",
-      ""
-    ],
+    "subtitle": ["% of Labour Force Underemployed", "Source: FRED and ONS", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
     "color": "black",
     "fontSize": 16
   },
+    "config": {"view": {"stroke": "transparent"}},
 
   "width": 500,
   "height": 300,
-  "params": [
+  "layer": [
     {
-      "name": "View",
-      "select": {"type": "point", "fields": ["cont"]},
-      "bind": {"input": "select", "options": ["UK", "US"], "name": "Country:"},
-      "value": "US"
-    },
-    {
-      "name": "hover",
-      "select": {
-        "type": "point",
-        "fields": ["type"],
-        "toggle": true,
-        "on": "mouseover"
-      }
-    }
-  ],
-  "transform": [{"filter": {"param": "View"}}],
-
-
-  "mark": {"type": "line", "point": false},
-  "encoding": {
-    "x": {"field": "DATE", "type": "temporal",
-    "axis": {
-      "grid": false,
-            "gridOpacity": 0.6, 
-            "labelAngle":0,
+      "mark": {"type": "line", "point": false},
+      "encoding": {
+        "x": {
+          "field": "DATE",
+          "type": "temporal",
+          "axis": {
+            "grid": false,
+            "title": false,
+            "gridOpacity": 0.6,
+            "labelAngle": 0,
             "ticks": false,
             "labelPadding": 5,
             "labelFontSize": 11
-            }
-            },
-    "y": {
-      "field": "underpct",
-      "type": "quantitative",
-      "title": "% of Workers Underemployed",
-      "axis": {
-      "format": "%",  
-      "grid": true,
-        "labelAngle":0,
-        "gridOpacity": 0.6,
-        "ticks": false,
-        "labelPadding": 5,
-        "labelFontSize": 11}},
-    
-    
-    "color": {"field": "type", "scale": {"range": ["#a12800", "#290c03"]}, "legend": null},
-    "tooltip": [{"field": "underpct", "title": " Underemplyed workers %", "format": "0.2f"}, {"field": "DATE", "title": " Year", "type": "temporal"}]
-  }
-  
+          }
+        },
+        "y": {
+          "field": "underpct",
+          "type": "quantitative",
+          "title": "% of Workers Underemployed",
+          "axis": {
+            "format": "%",
+            "title": null,
+            "grid": true,
+            "labelAngle": 0,
+            "gridOpacity": 0.6,
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11
+          }
+        },
+        "color": {
+          "field": "type",
+          "scale": {"range": ["#a12800", "#290c03"]},
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "underpct",
+            "title": " Underemplyed workers %",
+            "format": "0.2f"
+          },
+          {"field": "DATE", "title": " Year", "type": "temporal"}
+        ]
+      }
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {
+          "field": "DATE",
+          "type": "temporal",
+          "axis": {
+            "grid": false,
+            "title": false,
+            "gridOpacity": 0.6,
+            "labelAngle": 0,
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11
+          }
+        },
+        "y": null,
+        "color": {"value": "rgb(224,224,224)"},
+        "tooltip": [
+          {
+            "field": "underpct",
+            "type": "quantitative",
+            "title": "Underemployed",
+            "format": ".2%"
+          }
+        ],
+        "opacity": {
+          "condition": {"value": 1, "param": "hover", "empty": false},
+          "value": 0
+        }
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["DATE"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        },
+        {
+          "name": "View",
+          "select": {"type": "point", "fields": ["cont"]},
+          "bind": {
+            "input": "select",
+            "options": ["UK", "US"],
+            "name": "Country:"
+          },
+          "value": "US"
+        }
+      ]
+    }
+  ],
+  "transform": [{"filter": {"param": "View"}}]
 }

@@ -28,23 +28,42 @@
 
         // loop over #C1 - #C9
         // for each, append a div with id = c1, c2, etc.
-        for (let i = 1; i < 13; i++) {
+
+            specs = ['charts/chart3_1_Teaser_YouthUnemployment.json',
+                'charts/chart3_2_us_unemp_educ_race_age.json',
+                'charts/chart3_4_employment_US_UK_Gender.json',
+                //"charts/chart3_5_emplUKgender.json", #merged into 3.4
+                "charts/chart3_6_Income_US_selection.json",
+                "charts/chart3_7_US_bev_curve.json",
+                "charts/chart3_8_chicago_counties.json",
+                "charts/chart3_9_underemployed.json",
+                "charts/chart3_10_OECD_benefit_replacement2022.json",
+                "charts/chart3_11_inequalityp20bar.json",
+                "charts/chart3_12_map_WageShortfall_US.json"]
+        
+        for (const [i, spec] of specs.entries()) {
+            console.log("//////////////" + spec + "///////////////////")
+
             const section = document.createElement('section');
-            section.id = 'section' + i;
+            section.id = `section${i}`;
             document.body.appendChild(section);
 
             const title = document.createElement('h3');
-            title.innerHTML = `Chart ${i}`;
+            title.innerHTML = `${spec.split("/")[1].split(".")[0]}`;
             section.appendChild(title);
 
             const figure = document.createElement('figure');
-            figure.id = 'c' + i;
+            figure.id = `fig${i+1}`
             section.appendChild(figure);
-        }
+            vegaEmbed(`#fig${i+1}`, spec);
 
-        vegaEmbed('#c1', 'charts/chart3_1_Teaser_YouthUnemployment.json');
+        };
+
+    
+
+/*         vegaEmbed('#c1', 'charts/chart3_1_Teaser_YouthUnemployment.json');
         vegaEmbed('#c2', 'charts/chart3_2_us_unemp_educ_race_age.json');
-        vegaEmbed('#c4', 'charts/chart3_4_employmentUSGender.json',);
+        vegaEmbed('#c4', 'charts/chart3_4_employment_US_UK_Gender.json',);
         vegaEmbed('#c5', "charts/chart3_5_emplUKgender.json");
         vegaEmbed('#c6', "charts/chart3_6_Income_US_selection.json");
         vegaEmbed('#c7', "charts/chart3_7_US_bev_curve.json");
@@ -53,7 +72,7 @@
         vegaEmbed('#c10', "charts/chart3_10_OECD_benefit_replacement2022.json");
         vegaEmbed('#c11', "charts/chart3_11_inequalityp20bar.json");
         vegaEmbed('#c12', "charts/chart3_12_map_WageShortfall_US.json");
-
+ */
        
           
           
