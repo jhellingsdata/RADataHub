@@ -10,11 +10,15 @@
         "decimal": ".",
         "thousands": ",",
         "grouping": [3],
-        "currency": ["$", "K"]
+        "currency": ["", ""]
       }
     }
   },
-  "transform": [{"calculate": "datum.Income/1000", "as": "Income"}],
+  "transform": [
+    {"calculate": "datum.Income/1000", "as": "Income"},
+    {"calculate": "selected_view_View == 'by Percentile'", "as": "foo"}
+  
+  ],
   "title": {
     "text": "US Incomes Over Time",
     "subtitle": [
@@ -38,6 +42,67 @@
     }
   ],
   "layer": [
+    {
+      "data" : {"values": [
+        {"label": "$    K",  "Income": 50, "View": "by Percentile"},
+        {"label": "$      K", "Income": 100, "View": "by Percentile"},
+        {"label": "$      K", "Income": 150, "View": "by Percentile"},
+        {"label": "$      K", "Income": 200, "View": "by Percentile"},
+        {"label": "$      K", "Income": 250, "View": "by Percentile"},
+        {"label": "$      K", "Income": 300, "View": "by Percentile"},
+        {"label": "$    K", "Income": 30, "View": "by Race"},
+        {"label": "$    K", "Income": 40, "View": "by Race"},
+        {"label": "$    K", "Income": 50, "View": "by Race"},
+        {"label": "$    K", "Income": 60, "View": "by Race"},
+        {"label": "$    K", "Income": 70, "View": "by Race"},
+        {"label": "$    K", "Income": 80, "View": "by Race"},
+        {"label": "$    K", "Income": 90, "View": "by Race"},
+        {"label": "$      K", "Income": 100, "View": "by Race"},
+        {"label": "$      K", "Income": 110, "View": "by Race"},
+        {"label": "$    K", "Income": 45, "View": "by Region"},
+        {"label": "$    K", "Income": 50, "View": "by Region"},
+        {"label": "$    K", "Income": 55, "View": "by Region"},
+        {"label": "$    K", "Income": 60, "View": "by Region"},
+        {"label": "$    K", "Income": 65, "View": "by Region"},
+        {"label": "$    K", "Income": 70, "View": "by Region"},
+        {"label": "$    K", "Income": 75, "View": "by Region"},
+        {"label": "$    K", "Income": 80, "View": "by Region"},
+        {"label": "$    K", "Income": 85, "View": "by Region"}
+      ]},
+      "transform": [
+        {"filter": {"param": "selected_view"}},
+        {"filter": "!viewToggle"}
+
+      ],
+      "mark" : {"type": "text", "dy":0.5, "align":"left"},
+      "encoding": {
+        "x": {
+          "value": -38
+          
+          },
+          "opacity":{
+            "condition": [
+              {"test": "viewToggle", "value":0}
+            ],
+            "value":1
+          },
+                "y": {
+          "field": "Income",
+          "type": "quantitative",
+          "scale": {"zero": false, "type": "linear"},
+          "axis": {
+            "title": "",
+            "labelAlign": "left",
+            "ticks": false,
+            "labelPadding": {"expr": "viewToggle ? ( selected_view_View == 'by Percentile' ? 6 : selected_view_View == 'by Race' ? 35 : 30 ) : selected_view_View == 'by Percentile' ? 32 : selected_view_View == 'by Race' ? 32 : 32"},
+            "labelFontSize": 11,
+            "gridOpacity": 0.6,
+            "grid": true
+          }
+        },
+        "text": {"field": "label"}
+      }
+    },
     {
       "transform": [
         {"filter": {"param": "selected_view"}},
@@ -120,9 +185,8 @@
           "scale": {"zero": false, "type": "linear"},
           "axis": {
             "title": "",
-            "format": "$,d",
             "ticks": false,
-            "labelPadding": 5,
+            "labelPadding": 6,
             "labelFontSize": 11,
             "gridOpacity": 0.6,
             "grid": true
