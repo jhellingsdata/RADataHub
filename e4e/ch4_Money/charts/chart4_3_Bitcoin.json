@@ -6,8 +6,8 @@
     },
     "view": {"stroke": "transparent"},
     "title": {
-      "text": "Bitcoin Price History",
-      "subtitle": ["Daily price, current US Dollars", "Source: Investing.com", ""],
+      "text": "Bitcoin: long run",
+      "subtitle": ["Daily BTC price, current US Dollars", "Source: Investing.com", ""],
       "fontSize": 16,
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 12,
