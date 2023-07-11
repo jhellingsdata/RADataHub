@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/teaching2/main/mpFrameworks.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_9_monetary_regimes.csv"},
 
   "description": "Inflation UK",
 
