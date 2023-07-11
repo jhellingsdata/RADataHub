@@ -1,207 +1,593 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_6_us_cpi_longrun.csv"
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_8_ny_ch_prices.csv"
   },
-  "width": 500,
-  "height": 300,
-  "config": {"view": {"stroke": "transparent"}},
-  "title": {
-    "text": "US Inflation",
-    "subtitle": [
-      "Year-on-Year change in Consumer Price Index",
-      "Recessions Shaded, Source: FRED",
-      ""
-    ],
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 12,
-    "anchor": "start",
-    "color": "black",
-    "fontSize": 16
-  },
-  "encoding": {
-    "x": {
-      "field": "Date",
-      "type": "temporal",
-      "title": null,
-      "axis": {
-        "grid": false,
-        "labelAngle": 0,
-        "gridOpacity": 0.6,
-        "ticks": false,
-        "labelPadding": 5,
-        "labelFontSize": 11
+  "config": {
+      "view": {
+          "stroke": "transparent"
+      },
+      "axisY": {
+          "minExtent": 40
       }
-    }
   },
-  "transform": [
-    {"calculate": "year(datum.Date)", "as": "year"},
-    {"filter": "datum.year>=minYear"},
-    {"filter": "datum.year<=maxYear"}
+  "title": {
+      "text": "Inflation in Chicago and New York",
+      "subtitle": [
+          "Change in CPI, yearly (left) and cumulative (right) ",
+          "Source: FRED",
+          " "
+      ],
+      "fontSize": 16,
+      "dx": 40
+  },
+  "concat": [
+      {
+          "encoding": {
+              "x": {
+                  "field": "Date",
+                  "type": "temporal",
+                  "axis": {
+                      "ticks": false,
+                      "labelPadding": 6,
+                      "title": null,
+                      "grid": false,
+                      "gridOpacity": 0.3
+                  }
+              }
+          },
+          "height": 300,
+          "width": 400,
+          "transform": [
+              {
+                  "filter": "year(datum.Date) > 1941"
+              },
+              {
+                  "calculate": "(datum.Series == 'NY_Change' | datum.Series == 'Chicago_Change') ? datum.Value / 100 : datum.Value ",
+                  "as": "Value"
+              }
+          ],
+          "layer": [
+              {
+                  "data": {
+                      "values": [
+                          {
+                              "can be ": "anything (compare rule)"
+                          }
+                      ]
+                  },
+                  "mark": {
+                      "type": "rule",
+                      "opacity": 0.6
+                  },
+                  "transform": [
+                      {
+                          "calculate": "datetime(toNumber(compareYear),1,1)",
+                          "as": "Date"
+                      }
+                  ]
+              },
+              {
+                  "mark": {
+                      "type": "rect",
+                      "color": "black",
+                      "opacity": 0.05
+                  },
+                  "data": {
+                      "values": [
+                          {
+                              "can be ": "anything (area chart layer)"
+                          }
+                      ]
+                  },
+                  "transform": [
+                      {
+                          "calculate": "datetime(toNumber(compareYear),1,1)",
+                          "as": "Date"
+                      },
+                      {
+                          "calculate": "toNumber(hover.Date)",
+                          "as": "Date_End"
+                      }
+                  ],
+                  "encoding": {
+                      "y": null,
+                      "x": {
+                          "field": "Date"
+                      },
+                      "x2": {
+                          "field": "Date_End"
+                      }
+                  }
+              },
+              {
+                  "data": {
+                      "values": [
+                          {
+                              "can be ": "anything"
+                          }
+                      ]
+                  },
+                  "transform": [
+                      {
+                          "calculate": "toNumber(hover.Date)",
+                          "as": "Date"
+                      }
+                  ],
+                  "mark": {
+                      "type": "text",
+                      "text": {
+                          "expr": "year(toNumber(hover.Date))"
+                      },
+                      "dx": {
+                          "expr": " year(toNumber(hover.Date))>2004 ? -4 : 4 "
+                      },
+                      "fontWeight": "bold",
+                      "opacity": 0.5,
+                      "size": 15,
+                      "baseline": "line-top",
+                      "align": {
+                          "expr": " year(toNumber(hover.Date))>2004 ? 'right' : 'left' "
+                      }
+                  },
+                  "encoding": {
+                      "x": {
+                          "field": "Date"
+                      },
+                      "y": {
+                          "value": 0
+                      }
+                  }
+              },
+              {
+                  "transform": [
+                      {
+                          "filter": "datum.Date == hover.Date"
+                      },
+                      {
+                          "calculate": " { 'NY_Change':'NYC', 'Chicago_Change':'Chicago'}[datum.Series] + ': ' +format(datum.Value, '.1%') ",
+                          "as": "text"
+                      },
+                      {
+                          "calculate": "{'NY_Change':0.213,'Chicago_Change':0.225}[datum.Series]",
+                          "as": "Value"
+                      }
+                  ],
+                  "mark": {
+                      "type": "text",
+                      "text": {
+                          "expr": "year(toNumber(hover.Date))"
+                      },
+                      "dx": {
+                          "expr": " year(toNumber(hover.Date))>2004 ? -4 : 4 "
+                      },
+                      "fontWeight": "normal",
+                      "opacity": 0.7,
+                      "size": 12,
+                      "baseline": "line-top",
+                      "align": {
+                          "expr": " year(toNumber(hover.Date))>2004 ? 'right' : 'left' "
+                      }
+                  },
+                  "encoding": {
+                      "text": {
+                          "field": "text"
+                      },
+                      "x": {
+                          "field": "Date"
+                      },
+                      "y": {
+                          "field": "Value",
+                          "type": "quantitative",
+                          "axis": {
+                              "format": "%",
+                              "ticks": false,
+                              "labelPadding": 6,
+                              "title": null
+                          }
+                      },
+                                              "color": {
+                          "condition": [
+                              {
+                                  "test": "datum.Series == 'Chicago_Change'",
+                                  "value": "rgb(231,145,67)"
+                              },
+                              {
+                                  "test": "datum.Series == 'NY_Change'",
+                                  "value": "rgb(92,124,167)"
+                              }
+                          ]
+                      }
+                  }
+              },
+              {
+                  "transform": [
+                      {
+                          "filter": "datum.Series == 'NY_Change' | datum.Series == 'Chicago_Change'"
+                      },
+                      {
+                          "calculate": "year(datum.Date)",
+                          "as": "year"
+                      },
+                      {
+                          "calculate": "{'NY_Change': 'New York', 'Chicago_Change':'Chicago'}[datum.Series]",
+                          "as": "Series"
+                      }
+                  ],
+                  "encoding": {
+                      "color": {
+                          "field": "Series",
+                          "type": "nominal",
+                          "scale": {
+                              "domain": [
+                                  "New York",
+                                  "Chicago"
+                              ]
+                          },
+                          "legend": {
+                              "orient": "top",
+                              "title": null
+                          }
+                      },
+                      "y": {
+                          "field": "Value",
+                          "type": "quantitative",
+                          "axis": {
+                              "ticks": false,
+                              "labelPadding": 6,
+                              "title": null
+                          }
+                      }
+                  },
+                  "layer": [
+                      {
+                          "mark": {
+                              "type": "line",
+                              "strokeWidth": 1
+                          }
+                      },
+                      {
+                          "transform": [
+                              {
+                                  "filter": {
+                                      "param": "hover",
+                                      "empty": false
+                                  }
+                              }
+                          ],
+                          "mark": "circle"
+                      }
+                  ]
+              },
+              {
+                  "transform": [
+                      {
+                          "pivot": "Series",
+                          "value": "Value",
+                          "groupby": [
+                              "Date"
+                          ]
+                      },
+                      {
+                          "calculate": "year(datum.Date)",
+                          "as": "year"
+                      },
+                      {"filter": "year(datum.Date) > compareYear"}
+                  ],
+                  "mark": "rule",
+                  "encoding": {
+                      "opacity": {
+                          "condition": {
+                              "value": 0.4,
+                              "param": "hover",
+                              "empty": false
+                          },
+                          "value": 0
+                      }
+                  },
+                  "params": [
+                      {
+                          "name": "hover",
+                          "value": {
+                              "Date": 189302400000
+                          },
+                          "select": {
+                              "type": "point",
+                              "fields": [
+                                  "Date"
+                              ],
+                              "nearest": true,
+                              "on": "mouseover",
+                              "clear": "none"
+                          }
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "width": 100,
+          "height": 300,
+          "layer": [
+              {
+                  "data": {
+                      "values": [
+                          {
+                              "can be ": "anything (first line)"
+                          }
+                      ]
+                  },
+                  "mark": {
+                      "type": "text",
+                      "align": "left"
+                  },
+                  "encoding": {
+                      "x": {
+                          "value": -40
+                      },
+                      "y": {
+                          "value": 340
+                      },
+                      "text": {
+                          "value": "In 　 　 prices were "
+                      }
+                  }
+              },
+              {
+                  "data": {
+                      "values": [
+                          {
+                              "can be ": "anything (second line)"
+                          }
+                      ]
+                  },
+                  "mark": {
+                      "type": "text",
+                      "align": "left"
+                  },
+                  "encoding": {
+                      "x": {
+                          "value": -40
+                      },
+                      "y": {
+                          "value": 353
+                      },
+                      "text": {
+                          "value": "higher in Chicago and"
+                      }
+                  }
+              },
+              {
+                  "data": {
+                      "values": [
+                          {
+                              "can be ": "anything (second line)"
+                          }
+                      ]
+                  },
+                  "mark": {
+                      "type": "text",
+                      "align": "left"
+                  },
+                  "encoding": {
+                      "x": {
+                          "value": -40
+                      },
+                      "y": {
+                          "value": 366
+                      },
+                      "text": {
+                          "value": "higher in New York than in "
+                      }
+                  }
+              },
+              {
+                  "data": {
+                      "values": [
+                          {
+                              "can be ": "anything (first year)"
+                          }
+                      ]
+                  },
+                  "transform": [
+                      {
+                          "calculate": " year(toNumber(hover.Date))",
+                          "as": "text"
+                      }
+                  ],
+                  "mark": {
+                      "type": "text",
+                      "align": "left"
+                  },
+                  "encoding": {
+                      "x": {
+                          "value": -28
+                      },
+                      "y": {
+                          "value": 340
+                      },
+                      "text": {
+                          "field": "text"
+                      }
+                  }
+              },
+              {
+                  "data": {
+                      "values": [
+                          {
+                              "can be ": "anything (first year)"
+                          }
+                      ]
+                  },
+                  "transform": [
+                      {
+                          "calculate": " compareYear",
+                          "as": "text"
+                      }
+                  ],
+                  "mark": {
+                      "type": "text",
+                      "align": "left"
+                  },
+                  "encoding": {
+                      "x": {
+                          "value": 88
+                      },
+                      "y": {
+                          "value": 366
+                      },
+                      "text": {
+                          "field": "text"
+                      }
+                  }
+              },
+              {
+                  "mark": {
+                      "type": "text",
+                      "fontWeight": "bold",
+                      "color": "rgb(231,145,67)",
+                      "align": "left"
+                  },
+                  "transform": [
+                      {
+                          "filter": "datum.Location == 'New York'"
+                      },
+                      {
+                          "calculate": " format(datum.Value, '.1%')",
+                          "as": "text"
+                      }
+                  ],
+                  "encoding": {
+                      "x": {
+                          "value": 68
+                      },
+                      "y": {
+                          "value": 354
+                      },
+                      "text": {
+                          "field": "text"
+                      }
+                  }
+              },
+              {
+                  "mark": {
+                      "type": "text",
+                      "fontWeight": "bold",
+                      "color": "rgb(92,124,167)",
+                      "align": "left"
+                  },
+                  "transform": [
+                      {
+                          "filter": "datum.Location == 'Chicago'"
+                      },
+                      {
+                          "calculate": " format(datum.Value, '.1%')",
+                          "as": "text"
+                      }
+                  ],
+                  "encoding": {
+                      "x": {
+                          "value": 62
+                      },
+                      "y": {
+                          "value": 340
+                      },
+                      "text": {
+                          "field": "text"
+                      }
+                  }
+              },
+              {
+                  "mark": {
+                      "type": "bar"
+                  },
+                  "encoding": {
+                      "color": {
+                          "condition": [
+                              {
+                                  "test": "datum.Series == 'NY_Index'",
+                                  "value": "rgb(92,124,167)"
+                              },
+                              {
+                                  "test": "datum.Series == 'Chicago_Index'",
+                                  "value": "rgb(231,145,67)"
+                              }
+                          ]
+                      }
+                  }
+              }
+          ],
+          "transform": [
+              {
+                  "filter": "datum.Series != 'NY_Change' & datum.Series != 'Chicago_Change'"
+              },
+              {
+                  "calculate": "datum.Value",
+                  "as": "Index"
+              },
+              {
+                  "filter": "datum.Date==hover.Date"
+              },
+              {
+                  "calculate": "{'Chicago_Index_1936': 14.6, 'Chicago_Index_1941': 14.7, 'Chicago_Index_1942': 16.1, 'Chicago_Index_1943': 17.5, 'Chicago_Index_1944': 18.2, 'Chicago_Index_1945': 18.6, 'Chicago_Index_1946': 19.2, 'Chicago_Index_1947': 22.6, 'Chicago_Index_1948': 24.4, 'Chicago_Index_1949': 24.7, 'Chicago_Index_1950': 24.0, 'Chicago_Index_1951': 25.9, 'Chicago_Index_1952': 26.8, 'Chicago_Index_1953': 26.9, 'Chicago_Index_1954': 27.3, 'Chicago_Index_1955': 27.1, 'Chicago_Index_1956': 27.1, 'Chicago_Index_1957': 27.9, 'Chicago_Index_1958': 29.0, 'Chicago_Index_1959': 29.4, 'Chicago_Index_1960': 30.0, 'Chicago_Index_1961': 30.4, 'Chicago_Index_1962': 30.7, 'Chicago_Index_1963': 31.2, 'Chicago_Index_1964': 31.9, 'Chicago_Index_1965': 32.2, 'Chicago_Index_1966': 33.0, 'Chicago_Index_1967': 34.1, 'Chicago_Index_1968': 35.1, 'Chicago_Index_1969': 37.2, 'Chicago_Index_1970': 39.8, 'Chicago_Index_1971': 42.4, 'Chicago_Index_1972': 44.5, 'Chicago_Index_1973': 46.3, 'Chicago_Index_1974': 50.8, 'Chicago_Index_1975': 56.0, 'Chicago_Index_1976': 59.7, 'Chicago_Index_1977': 62.4, 'Chicago_Index_1978': 65.7, 'Chicago_Index_1979': 70.2, 'Chicago_Index_1980': 78.2, 'Chicago_Index_1981': 86.3, 'Chicago_Index_1982': 92.9, 'Chicago_Index_1983': 97.8, 'Chicago_Index_1984': 102.8, 'Chicago_Index_1985': 106.7, 'Chicago_Index_1986': 111.8, 'Chicago_Index_1987': 114.7, 'Chicago_Index_1988': 121.3, 'Chicago_Index_1989': 127.0, 'Chicago_Index_1990': 135.1, 'Chicago_Index_1991': 143.0, 'Chicago_Index_1992': 147.3, 'Chicago_Index_1993': 153.0, 'Chicago_Index_1994': 156.0, 'Chicago_Index_1995': 159.9, 'Chicago_Index_1996': 164.8, 'Chicago_Index_1997': 169.1, 'Chicago_Index_1998': 172.1, 'Chicago_Index_1999': 175.0, 'Chicago_Index_2000': 179.3, 'Chicago_Index_2001': 184.9, 'Chicago_Index_2002': 188.5, 'Chicago_Index_2003': 194.7, 'Chicago_Index_2004': 199.9, 'Chicago_Index_2005': 208.1, 'Chicago_Index_2006': 215.9, 'Chicago_Index_2007': 221.767, 'Chicago_Index_2008': 229.869, 'Chicago_Index_2009': 233.402, 'Chicago_Index_2010': 238.97, 'Chicago_Index_2011': 242.639, 'Chicago_Index_2012': 249.322, 'Chicago_Index_2013': 254.807, 'Chicago_Index_2014': 259.596, 'Chicago_Index_2015': 258.376, 'Chicago_Index_2016': 260.342, 'Chicago_Index_2017': 266.917, 'Chicago_Index_2018': 270.771, 'Chicago_Index_2019': 275.144, 'Chicago_Index_2020': 282.02, 'Chicago_Index_2021': 285.525, 'Chicago_Index_2022': 300.164, 'Chicago_Index_2023': 318.151, 'NY_Index_1936': 13.4, 'NY_Index_1941': 13.9, 'NY_Index_1942': 15.4, 'NY_Index_1943': 16.4, 'NY_Index_1944': 16.8, 'NY_Index_1945': 17.3, 'NY_Index_1946': 17.6, 'NY_Index_1947': 21.1, 'NY_Index_1948': 23.5, 'NY_Index_1949': 24.0, 'NY_Index_1950': 23.7, 'NY_Index_1951': 25.5, 'NY_Index_1952': 26.6, 'NY_Index_1953': 26.7, 'NY_Index_1954': 27.2, 'NY_Index_1955': 27.3, 'NY_Index_1956': 27.6, 'NY_Index_1957': 28.3, 'NY_Index_1958': 29.5, 'NY_Index_1959': 29.7, 'NY_Index_1960': 30.1, 'NY_Index_1961': 30.5, 'NY_Index_1962': 30.6, 'NY_Index_1963': 31.0, 'NY_Index_1964': 31.2, 'NY_Index_1965': 31.4, 'NY_Index_1966': 32.0, 'NY_Index_1967': 32.9, 'NY_Index_1968': 34.1, 'NY_Index_1969': 35.8, 'NY_Index_1970': 38.0, 'NY_Index_1971': 39.9, 'NY_Index_1972': 40.9, 'NY_Index_1973': 42.3, 'NY_Index_1974': 46.4, 'NY_Index_1975': 51.3, 'NY_Index_1976': 53.7, 'NY_Index_1977': 56.7, 'NY_Index_1978': 61.1, 'NY_Index_1979': 66.8, 'NY_Index_1980': 77.1, 'NY_Index_1981': 86.7, 'NY_Index_1982': 92.2, 'NY_Index_1983': 98.4, 'NY_Index_1984': 102.2, 'NY_Index_1985': 105.5, 'NY_Index_1986': 109.2, 'NY_Index_1987': 111.9, 'NY_Index_1988': 115.3, 'NY_Index_1989': 121.5, 'NY_Index_1990': 128.1, 'NY_Index_1991': 135.1, 'NY_Index_1992': 138.9, 'NY_Index_1993': 143.2, 'NY_Index_1994': 146.5, 'NY_Index_1995': 151.8, 'NY_Index_1996': 154.6, 'NY_Index_1997': 160.4, 'NY_Index_1998': 162.8, 'NY_Index_1999': 166.1, 'NY_Index_2000': 170.2, 'NY_Index_2001': 178.1, 'NY_Index_2002': 177.9, 'NY_Index_2003': 182.7, 'NY_Index_2004': 185.4, 'NY_Index_2005': 189.9, 'NY_Index_2006': 197.5, 'NY_Index_2007': 199.401, 'NY_Index_2008': 208.757, 'NY_Index_2009': 207.616, 'NY_Index_2010': 212.104, 'NY_Index_2011': 215.155, 'NY_Index_2012': 219.585, 'NY_Index_2013': 222.251, 'NY_Index_2014': 225.027, 'NY_Index_2015': 225.852, 'NY_Index_2016': 227.977, 'NY_Index_2017': 232.155, 'NY_Index_2018': 236.267, 'NY_Index_2019': 238.218, 'NY_Index_2020': 244.361, 'NY_Index_2021': 246.008, 'NY_Index_2022': 262.73, 'NY_Index_2023': 276.982}[datum.Series + '_'+ compareYear]",
+                  "as": "compareIndex"
+              },
+              {
+                  "calculate": " year(toNumber(hover.Date))==compareYear ? 0: (toNumber(datum.Index) - datum.compareIndex)/datum.Index ",
+                  "as": "Value"
+              },
+              {
+                  "calculate": "{'Chicago_Index': 'Chicago', 'NY_Index':'New York'}[datum.Series]",
+                  "as": "Location"
+              }
+          ],
+          "encoding": {
+              "x": {
+                  "field": "Location",
+                  "axis": {
+                      "ticks": false,
+                      "labelAngle": 0,
+                      "labelPadding": 6,
+                      "title": null
+                  }
+              },
+              "y": {
+                  "field": "Value",
+                  "type": "quantitative",
+                  "axis": {
+                      "format": "%",
+                      "ticks": false,
+                      "labelPadding": 6,
+                      "title": null
+                  }
+              },
+              "color": {
+                  "legend": null,
+                  "condition": [
+                      {
+                          "test": "datum.Series == 'NY_Index'",
+                          "value": "rgb(236,173,106)"
+                      },
+                      {
+                          "test": "datum.Series == 'Chicago_Index'",
+                          "value": "rgb(136,159,191)"
+                      }
+                  ]
+              }
+          }
+      }
   ],
   "params": [
-    {
-      "name": "minYear",
-      "value": 1948,
-      "bind": {
-        "input": "range",
-        "min": 1948,
-        "max": 2022,
-        "step": 1,
-        "name": "Start year:"
+      {
+          "name": "compareYear",
+          "value": 1966,
+          "bind": {
+              "input": "range",
+              "min": 1941,
+              "name": "Compare to Year",
+              "max": 2022,
+              "step": 1
+          }
       }
-    },
-    {
-      "name": "maxYear",
-      "value": 2023,
-      "bind": {
-        "input": "range",
-        "min": 1949,
-        "max": 2023,
-        "step": 1,
-        "name": "End year:"
-      }
-    }
-  ],
-  "layer": [
-    {
-      "data":{"values":[{"can be": "anything"}]},
-      "mark": {"type": "rule"},
-      "encoding": {
-        "x": null,
-        "y": {"datum": 0}
-      }
-    },
-    {
-      "mark": {"type": "rect"},
-      "data": {
-        "values": [
-          {"Start": -5823705600000, "End": -5713200000000},
-          {"Start": -5697475200000, "End": -5555433600000},
-          {"Start": -5602780800000, "End": -5586969600000},
-          {"Start": -5476550400000, "End": -5366131200000},
-          {"Start": -5287334400000, "End": -5208364800000},
-          {"Start": -5129568000000, "End": -5019062400000},
-          {"Start": -4971715200000, "End": -4955904000000},
-          {"Start": -4877107200000, "End": -4671907200000},
-          {"Start": -4656182400000, "End": -4608835200000},
-          {"Start": -4561488000000, "End": -4514140800000},
-          {"Start": -4466793600000, "End": -4419446400000},
-          {"Start": -4309027200000, "End": -4261680000000},
-          {"Start": -4214332800000, "End": -4135449600000},
-          {"Start": -4119724800000, "End": -3977683200000},
-          {"Start": -3930336000000, "End": -3882988800000},
-          {"Start": -3857932800000, "End": -3821126400000},
-          {"Start": -3679084800000, "End": -3629145600000},
-          {"Start": -3552854400000, "End": -3505507200000},
-          {"Start": -3447619200000, "End": -3426624000000},
-          {"Start": -3305664000000, "End": -3221510400000},
-          {"Start": -3174163200000, "End": -3126816000000},
-          {"Start": -3037392000000, "End": -2866579200000},
-          {"Start": -2771884800000, "End": -2671920000000},
-          {"Start": -2614118400000, "End": -2579817600000},
-          {"Start": -2508883200000, "End": -2482617600000},
-          {"Start": -2429827200000, "End": -2385244800000},
-          {"Start": -2337897600000, "End": -2290550400000},
-          {"Start": -2227478400000, "End": -2180131200000},
-          {"Start": -2124921600000, "End": -2064441600000},
-          {"Start": -1977782400000, "End": -1943481600000},
-          {"Start": -1893456000000, "End": -1830384000000},
-          {"Start": -1798761600000, "End": -1738368000000},
-          {"Start": -1622678400000, "End": -1604361600000},
-          {"Start": -1577923200000, "End": -1530662400000},
-          {"Start": -1472860800000, "End": -1435968000000},
-          {"Start": -1364947200000, "End": -1330732800000},
-          {"Start": -1275523200000, "End": -1162512000000},
-          {"Start": -1031011200000, "End": -996796800000},
-          {"Start": -786240000000, "End": -765331200000},
-          {"Start": -667958400000, "End": -639100800000},
-          {"Start": -520819200000, "End": -494553600000},
-          {"Start": -391910400000, "End": -370915200000},
-          {"Start": -307756800000, "End": -281318400000},
-          {"Start": -2678400000, "End": 26265600000},
-          {"Start": 120960000000, "End": 162864000000},
-          {"Start": 315532800000, "End": 331257600000},
-          {"Start": 362793600000, "End": 404956800000},
-          {"Start": 646790400000, "End": 667785600000},
-          {"Start": 983404800000, "End": 1004572800000},
-          {"Start": 1196467200000, "End": 1243814400000},
-          {"Start": 1580515200000, "End": 1585699200000}
-        ]
-      },
-      "encoding": {
-        "x": {
-          "field": "Start",
-          "type": "temporal",
-          "axis": {
-            "title": null,
-            "grid": false,
-            "ticks": false,
-            "labelSeparation": 10
-          }
-        },
-        "x2": {"field": "End"},
-        "color": {"value": "rgb(240,240,240)"}
-      },
-      "transform": [
-        {"filter": "datum.Start > -1136069939000"},
-        {"filter": "year(datum.End)<=maxYear"},
-        {"filter": "year(datum.Start)>=minYear"}
-      ]
-    },
-    {
-      "encoding": {
-        "y": {
-          "field": "Value",
-          "type": "quantitative",
-          "title": null,
-          "axis": {
-            "gridOpacity": 0.6,
-            "format": "%",
-            "labelAngle": 0,
-            "ticks": false,
-            "labelPadding": 5,
-            "labelFontSize": 11
-          }
-        }
-      },
-      "layer": [
-        {"mark": {"type": "line", "color": "rgb(128,0,0)"}},
-        {
-          "transform": [{"filter": {"param": "hover", "empty": false}}],
-          "mark": "point"
-        }
-      ]
-    },
-    {
-      "mark": "rule",
-      "encoding": {
-        "opacity": {
-          "condition": {"value": 0.3, "param": "hover", "empty": false},
-          "value": 0
-        },
-        "tooltip": [
-          {"field": "Date", "type": "temporal", "format": "%b %Y"},
-          {
-            "field": "Value",
-            "type": "quantitative",
-            "format": ".1%",
-            "title": "Inflation"
-          }
-        ]
-      },
-      "params": [
-        {
-          "name": "hover",
-          "select": {
-            "type": "point",
-            "fields": ["Date"],
-            "nearest": true,
-            "on": "mouseover",
-            "clear": "mouseout"
-          }
-        }
-      ]
-    }
   ]
 }
