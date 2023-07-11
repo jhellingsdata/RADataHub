@@ -1,125 +1,125 @@
-Year,Unemployment,UE Source,Inflation,Inflation Source
-1900,0.05,NBER,0,Cost of Living Index by Albert Rees
-1901,0.024,NBER,0,Cost of Living Index by Albert Rees
-1902,0.027,NBER,0.04,Cost of Living Index by Albert Rees
-1903,0.026,NBER,0.038,Cost of Living Index by Albert Rees
-1904,0.048,NBER,0,Cost of Living Index by Albert Rees
-1905,0.031,NBER,0,Cost of Living Index by Albert Rees
-1906,0.008,NBER,0,Cost of Living Index by Albert Rees
-1907,0.018,NBER,0.037,Cost of Living Index by Albert Rees
-1908,0.085,NBER,-0.036,Cost of Living Index by Albert Rees
-1909,0.052,NBER,0,Cost of Living Index by Albert Rees
-1910,0.059,NBER,0.037,Cost of Living Index by Albert Rees
-1911,0.062,NBER,0,Cost of Living Index by Albert Rees
-1912,0.052,NBER,0.036,Cost of Living Index by Albert Rees
-1913,0.044,NBER,0.024,Consumer Price Index (CPI)
-1914,0.08,NBER,0.013,Consumer Price Index (CPI)
-1915,0.097,NBER,0.009,Consumer Price Index (CPI)
-1916,0.048,NBER,0.077,Consumer Price Index (CPI)
-1917,0.048,NBER,0.178,Consumer Price Index (CPI)
-1918,0.014,NBER,0.173,Consumer Price Index (CPI)
-1919,0.023,NBER,0.152,Consumer Price Index (CPI)
-1920,0.04,NBER,0.156,Consumer Price Index (CPI)
-1921,0.119,NBER,-0.109,Consumer Price Index (CPI)
-1922,0.076,NBER,-0.062,Consumer Price Index (CPI)
-1923,0.032,NBER,0.018,Consumer Price Index (CPI)
-1924,0.055,NBER,0.004,Consumer Price Index (CPI)
-1925,0.04,NBER,0.024,Consumer Price Index (CPI)
-1926,0.019,NBER,0.009,Consumer Price Index (CPI)
-1927,0.041,NBER,-0.019,Consumer Price Index (CPI)
-1928,0.044,NBER,-0.012,Consumer Price Index (CPI)
-1929,0.032,NBER,0,Consumer Price Index (CPI)
-1930,0.089,NBER,-0.027,Consumer Price Index (CPI)
-1931,0.159,NBER,-0.089,Consumer Price Index (CPI)
-1932,0.236,NBER,-0.103,Consumer Price Index (CPI)
-1933,0.249,NBER,-0.052,Consumer Price Index (CPI)
-1934,0.217,NBER,0.035,Consumer Price Index (CPI)
-1935,0.201,NBER,0.026,Consumer Price Index (CPI)
-1936,0.17,NBER,0.01,Consumer Price Index (CPI)
-1937,0.143,NBER,0.037,Consumer Price Index (CPI)
-1938,0.19,NBER,-0.02,Consumer Price Index (CPI)
-1939,0.172,NBER,-0.013,Consumer Price Index (CPI)
-1940,0.146,NBER,0.007,Consumer Price Index (CPI)
-1941,0.099,NBER,0.051,Consumer Price Index (CPI)
-1942,0.047,NBER,0.109,Consumer Price Index (CPI)
-1943,0.019,NBER,0.06,Consumer Price Index (CPI)
-1944,0.012,NBER,0.016,Consumer Price Index (CPI)
-1945,0.019,NBER,0.023,Consumer Price Index (CPI)
-1946,0.039,NBER,0.085,Consumer Price Index (CPI)
-1947,0.036,NBER,0.144,Consumer Price Index (CPI)
-1948,0.0375,BLS ,0.077,Consumer Price Index (CPI)
-1949,0.0605,BLS,-0.01,Consumer Price Index (CPI)
-1950,0.052083333,BLS,0.011,Consumer Price Index (CPI)
-1951,0.032833333,BLS,0.079,Consumer Price Index (CPI)
-1952,0.03025,BLS,0.023,Consumer Price Index (CPI)
-1953,0.02925,BLS,0.008,Consumer Price Index (CPI)
-1954,0.055916667,BLS,0.003,Consumer Price Index (CPI)
-1955,0.043666667,BLS,-0.003,Consumer Price Index (CPI)
-1956,0.04125,BLS,0.015,Consumer Price Index (CPI)
-1957,0.043,BLS,0.033,Consumer Price Index (CPI)
-1958,0.068416667,BLS,0.027,Consumer Price Index (CPI)
-1959,0.0545,BLS,0.01,Consumer Price Index (CPI)
-1960,0.055416667,BLS,0.015,Consumer Price Index (CPI)
-1961,0.066916667,BLS,0.011,Consumer Price Index (CPI)
-1962,0.055666667,BLS,0.012,Consumer Price Index (CPI)
-1963,0.056416667,BLS,0.012,Consumer Price Index (CPI)
-1964,0.051583333,BLS,0.013,Consumer Price Index (CPI)
-1965,0.045083333,BLS,0.016,Consumer Price Index (CPI)
-1966,0.037916667,BLS,0.03,Consumer Price Index (CPI)
-1967,0.038416667,BLS,0.028,Consumer Price Index (CPI)
-1968,0.035583333,BLS,0.043,Consumer Price Index (CPI)
-1969,0.034916667,BLS,0.055,Consumer Price Index (CPI)
-1970,0.049833333,BLS,0.058,Consumer Price Index (CPI)
-1971,0.0595,BLS,0.043,Consumer Price Index (CPI)
-1972,0.056,BLS,0.033,Consumer Price Index (CPI)
-1973,0.048583333,BLS,0.062,Consumer Price Index (CPI)
-1974,0.056416667,BLS,0.111,Consumer Price Index (CPI)
-1975,0.08475,BLS,0.091,Consumer Price Index (CPI)
-1976,0.077,BLS,0.057,Consumer Price Index (CPI)
-1977,0.0705,BLS,0.065,Consumer Price Index (CPI)
-1978,0.060666667,BLS,0.076,Consumer Price Index for all Urban Consumers (CPI-U)
-1979,0.0585,BLS,0.113,Consumer Price Index for all Urban Consumers (CPI-U)
-1980,0.07175,BLS,0.135,Consumer Price Index for all Urban Consumers (CPI-U)
-1981,0.076166667,BLS,0.103,Consumer Price Index for all Urban Consumers (CPI-U)
-1982,0.097083333,BLS,0.061,Consumer Price Index for all Urban Consumers (CPI-U)
-1983,0.096,BLS,0.032,Consumer Price Index for all Urban Consumers (CPI-U)
-1984,0.075083333,BLS,0.043,Consumer Price Index for all Urban Consumers (CPI-U)
-1985,0.071916667,BLS,0.035,Consumer Price Index for all Urban Consumers (CPI-U)
-1986,0.07,BLS,0.019,Consumer Price Index for all Urban Consumers (CPI-U)
-1987,0.06175,BLS,0.037,Consumer Price Index for all Urban Consumers (CPI-U)
-1988,0.054916667,BLS,0.041,Consumer Price Index for all Urban Consumers (CPI-U)
-1989,0.052583333,BLS,0.048,Consumer Price Index for all Urban Consumers (CPI-U)
-1990,0.056166667,BLS,0.054,Consumer Price Index for all Urban Consumers (CPI-U)
-1991,0.0685,BLS,0.042,Consumer Price Index for all Urban Consumers (CPI-U)
-1992,0.074916667,BLS,0.03,Consumer Price Index for all Urban Consumers (CPI-U)
-1993,0.069083333,BLS,0.03,Consumer Price Index for all Urban Consumers (CPI-U)
-1994,0.061,BLS,0.026,Consumer Price Index for all Urban Consumers (CPI-U)
-1995,0.055916667,BLS,0.028,Consumer Price Index for all Urban Consumers (CPI-U)
-1996,0.054083333,BLS,0.029,Consumer Price Index for all Urban Consumers (CPI-U)
-1997,0.049416667,BLS,0.023,Consumer Price Index for all Urban Consumers (CPI-U)
-1998,0.045,BLS,0.016,Consumer Price Index for all Urban Consumers (CPI-U)
-1999,0.042166667,BLS,0.022,Consumer Price Index for all Urban Consumers (CPI-U)
-2000,0.039666667,BLS,0.034,Consumer Price Index for all Urban Consumers (CPI-U)
-2001,0.047416667,BLS,0.028,Consumer Price Index for all Urban Consumers (CPI-U)
-2002,0.057833333,BLS,0.016,Consumer Price Index for all Urban Consumers (CPI-U)
-2003,0.059916667,BLS,0.023,Consumer Price Index for all Urban Consumers (CPI-U)
-2004,0.055416667,BLS,0.027,Consumer Price Index for all Urban Consumers (CPI-U)
-2005,0.050833333,BLS,0.034,Consumer Price Index for all Urban Consumers (CPI-U)
-2006,0.046083333,BLS,0.032,Consumer Price Index for all Urban Consumers (CPI-U)
-2007,0.046166667,BLS,0.029,Consumer Price Index for all Urban Consumers (CPI-U)
-2008,0.058,BLS,0.038,Consumer Price Index for all Urban Consumers (CPI-U)
-2009,0.092833333,BLS,-0.004,Consumer Price Index for all Urban Consumers (CPI-U)
-2010,0.096083333,BLS,0.016,Consumer Price Index for all Urban Consumers (CPI-U)
-2011,0.089333333,BLS,0.032,Consumer Price Index for all Urban Consumers (CPI-U)
-2012,0.08075,BLS,0.021,Consumer Price Index for all Urban Consumers (CPI-U)
-2013,0.073583333,BLS,0.015,Consumer Price Index for all Urban Consumers (CPI-U)
-2014,0.061583333,BLS,0.016,Consumer Price Index for all Urban Consumers (CPI-U)
-2015,0.05275,BLS,0.001,Consumer Price Index for all Urban Consumers (CPI-U)
-2016,0.04875,BLS,0.013,Consumer Price Index for all Urban Consumers (CPI-U)
-2017,0.043583333,BLS,0.021,Consumer Price Index for all Urban Consumers (CPI-U)
-2018,0.038916667,BLS,0.024,Consumer Price Index for all Urban Consumers (CPI-U)
-2019,0.036833333,BLS,0.018,Consumer Price Index for all Urban Consumers (CPI-U)
-2020,0.080916667,BLS,0.012,Consumer Price Index for all Urban Consumers (CPI-U)
-2021,0.053666667,BLS,0.047,Consumer Price Index for all Urban Consumers (CPI-U)
-2022,0.036416667,BLS,0.08,Consumer Price Index for all Urban Consumers (CPI-U)
-2023,0.035333333,BLS,0.058,Consumer Price Index for all Urban Consumers (CPI-U)
+Year,Unemployment,UE Source,Inflation,Inflation Source,Period
+1900,0.05,NBER,0,Cost of Living Index by Albert Rees,1900-1930
+1901,0.024,NBER,0,Cost of Living Index by Albert Rees,1900-1930
+1902,0.027,NBER,0.04,Cost of Living Index by Albert Rees,1900-1930
+1903,0.026,NBER,0.038,Cost of Living Index by Albert Rees,1900-1930
+1904,0.048,NBER,0,Cost of Living Index by Albert Rees,1900-1930
+1905,0.031,NBER,0,Cost of Living Index by Albert Rees,1900-1930
+1906,0.008,NBER,0,Cost of Living Index by Albert Rees,1900-1930
+1907,0.018,NBER,0.037,Cost of Living Index by Albert Rees,1900-1930
+1908,0.085,NBER,-0.036,Cost of Living Index by Albert Rees,1900-1930
+1909,0.052,NBER,0,Cost of Living Index by Albert Rees,1900-1930
+1910,0.059,NBER,0.037,Cost of Living Index by Albert Rees,1900-1930
+1911,0.062,NBER,0,Cost of Living Index by Albert Rees,1900-1930
+1912,0.052,NBER,0.036,Cost of Living Index by Albert Rees,1900-1930
+1913,0.044,NBER,0.024,Consumer Price Index (CPI),1900-1930
+1914,0.08,NBER,0.013,Consumer Price Index (CPI),1900-1930
+1915,0.097,NBER,0.009,Consumer Price Index (CPI),1900-1930
+1916,0.048,NBER,0.077,Consumer Price Index (CPI),1900-1930
+1917,0.048,NBER,0.178,Consumer Price Index (CPI),1900-1930
+1918,0.014,NBER,0.173,Consumer Price Index (CPI),1900-1930
+1919,0.023,NBER,0.152,Consumer Price Index (CPI),1900-1930
+1920,0.04,NBER,0.156,Consumer Price Index (CPI),1900-1930
+1921,0.119,NBER,-0.109,Consumer Price Index (CPI),1900-1930
+1922,0.076,NBER,-0.062,Consumer Price Index (CPI),1900-1930
+1923,0.032,NBER,0.018,Consumer Price Index (CPI),1900-1930
+1924,0.055,NBER,0.004,Consumer Price Index (CPI),1900-1930
+1925,0.04,NBER,0.024,Consumer Price Index (CPI),1900-1930
+1926,0.019,NBER,0.009,Consumer Price Index (CPI),1900-1930
+1927,0.041,NBER,-0.019,Consumer Price Index (CPI),1900-1930
+1928,0.044,NBER,-0.012,Consumer Price Index (CPI),1900-1930
+1929,0.032,NBER,0,Consumer Price Index (CPI),1900-1930
+1930,0.089,NBER,-0.027,Consumer Price Index (CPI),1900-1930
+1931,0.159,NBER,-0.089,Consumer Price Index (CPI),1931-1960
+1932,0.236,NBER,-0.103,Consumer Price Index (CPI),1931-1960
+1933,0.249,NBER,-0.052,Consumer Price Index (CPI),1931-1960
+1934,0.217,NBER,0.035,Consumer Price Index (CPI),1931-1960
+1935,0.201,NBER,0.026,Consumer Price Index (CPI),1931-1960
+1936,0.17,NBER,0.01,Consumer Price Index (CPI),1931-1960
+1937,0.143,NBER,0.037,Consumer Price Index (CPI),1931-1960
+1938,0.19,NBER,-0.02,Consumer Price Index (CPI),1931-1960
+1939,0.172,NBER,-0.013,Consumer Price Index (CPI),1931-1960
+1940,0.146,NBER,0.007,Consumer Price Index (CPI),1931-1960
+1941,0.099,NBER,0.051,Consumer Price Index (CPI),1931-1960
+1942,0.047,NBER,0.109,Consumer Price Index (CPI),1931-1960
+1943,0.019,NBER,0.06,Consumer Price Index (CPI),1931-1960
+1944,0.012,NBER,0.016,Consumer Price Index (CPI),1931-1960
+1945,0.019,NBER,0.023,Consumer Price Index (CPI),1931-1960
+1946,0.039,NBER,0.085,Consumer Price Index (CPI),1931-1960
+1947,0.036,NBER,0.144,Consumer Price Index (CPI),1931-1960
+1948,0.0375,BLS ,0.077,Consumer Price Index (CPI),1931-1960
+1949,0.0605,BLS,-0.01,Consumer Price Index (CPI),1931-1960
+1950,0.052083333,BLS,0.011,Consumer Price Index (CPI),1931-1960
+1951,0.032833333,BLS,0.079,Consumer Price Index (CPI),1931-1960
+1952,0.03025,BLS,0.023,Consumer Price Index (CPI),1931-1960
+1953,0.02925,BLS,0.008,Consumer Price Index (CPI),1931-1960
+1954,0.055916667,BLS,0.003,Consumer Price Index (CPI),1931-1960
+1955,0.043666667,BLS,-0.003,Consumer Price Index (CPI),1931-1960
+1956,0.04125,BLS,0.015,Consumer Price Index (CPI),1931-1960
+1957,0.043,BLS,0.033,Consumer Price Index (CPI),1931-1960
+1958,0.068416667,BLS,0.027,Consumer Price Index (CPI),1931-1960
+1959,0.0545,BLS,0.01,Consumer Price Index (CPI),1931-1960
+1960,0.055416667,BLS,0.015,Consumer Price Index (CPI),1931-1960
+1961,0.066916667,BLS,0.011,Consumer Price Index (CPI),1961-1990
+1962,0.055666667,BLS,0.012,Consumer Price Index (CPI),1961-1990
+1963,0.056416667,BLS,0.012,Consumer Price Index (CPI),1961-1990
+1964,0.051583333,BLS,0.013,Consumer Price Index (CPI),1961-1990
+1965,0.045083333,BLS,0.016,Consumer Price Index (CPI),1961-1990
+1966,0.037916667,BLS,0.03,Consumer Price Index (CPI),1961-1990
+1967,0.038416667,BLS,0.028,Consumer Price Index (CPI),1961-1990
+1968,0.035583333,BLS,0.043,Consumer Price Index (CPI),1961-1990
+1969,0.034916667,BLS,0.055,Consumer Price Index (CPI),1961-1990
+1970,0.049833333,BLS,0.058,Consumer Price Index (CPI),1961-1990
+1971,0.0595,BLS,0.043,Consumer Price Index (CPI),1961-1990
+1972,0.056,BLS,0.033,Consumer Price Index (CPI),1961-1990
+1973,0.048583333,BLS,0.062,Consumer Price Index (CPI),1961-1990
+1974,0.056416667,BLS,0.111,Consumer Price Index (CPI),1961-1990
+1975,0.08475,BLS,0.091,Consumer Price Index (CPI),1961-1990
+1976,0.077,BLS,0.057,Consumer Price Index (CPI),1961-1990
+1977,0.0705,BLS,0.065,Consumer Price Index (CPI),1961-1990
+1978,0.060666667,BLS,0.076,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1979,0.0585,BLS,0.113,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1980,0.07175,BLS,0.135,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1981,0.076166667,BLS,0.103,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1982,0.097083333,BLS,0.061,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1983,0.096,BLS,0.032,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1984,0.075083333,BLS,0.043,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1985,0.071916667,BLS,0.035,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1986,0.07,BLS,0.019,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1987,0.06175,BLS,0.037,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1988,0.054916667,BLS,0.041,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1989,0.052583333,BLS,0.048,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1990,0.056166667,BLS,0.054,Consumer Price Index for all Urban Consumers (CPI-U),1961-1990
+1991,0.0685,BLS,0.042,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+1992,0.074916667,BLS,0.03,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+1993,0.069083333,BLS,0.03,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+1994,0.061,BLS,0.026,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+1995,0.055916667,BLS,0.028,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+1996,0.054083333,BLS,0.029,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+1997,0.049416667,BLS,0.023,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+1998,0.045,BLS,0.016,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+1999,0.042166667,BLS,0.022,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2000,0.039666667,BLS,0.034,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2001,0.047416667,BLS,0.028,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2002,0.057833333,BLS,0.016,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2003,0.059916667,BLS,0.023,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2004,0.055416667,BLS,0.027,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2005,0.050833333,BLS,0.034,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2006,0.046083333,BLS,0.032,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2007,0.046166667,BLS,0.029,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2008,0.058,BLS,0.038,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2009,0.092833333,BLS,-0.004,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2010,0.096083333,BLS,0.016,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2011,0.089333333,BLS,0.032,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2012,0.08075,BLS,0.021,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2013,0.073583333,BLS,0.015,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2014,0.061583333,BLS,0.016,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2015,0.05275,BLS,0.001,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2016,0.04875,BLS,0.013,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2017,0.043583333,BLS,0.021,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2018,0.038916667,BLS,0.024,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2019,0.036833333,BLS,0.018,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2020,0.080916667,BLS,0.012,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2021,0.053666667,BLS,0.047,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2022,0.036416667,BLS,0.08,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
+2023,0.035333333,BLS,0.058,Consumer Price Index for all Urban Consumers (CPI-U),1991-2023
