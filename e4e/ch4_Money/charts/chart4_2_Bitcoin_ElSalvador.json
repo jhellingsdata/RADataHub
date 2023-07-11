@@ -1,0 +1,109 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_2_Bitcoin_ElSalvador.csv",
+      "format": {"type": "csv"}
+    },
+    "view": {"stroke": "transparent"},
+    "title": {
+      "text": "Bitcoin & El Salvador",
+      "subtitle": ["Average USD price of BTC purchased by El Salvador against daily BTC price", "Source: Investing.com", ""],
+      "fontSize": 16,
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black"
+    },
+    "height": 300,
+    "width": 500,
+    "transform": [
+      {"filter": "datum.Date > 1630886400000"}
+    ],
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "axis": {
+          "labelAngle": 0,
+          "grid": false,
+          "ticks": false,
+          "format": "%b %Y",
+          "tickCount": 5,
+          "labelPadding": 5,
+          "labelFontSize": 11
+        }
+      }
+    },
+  
+    "layer": [
+      {
+        "mark": {
+          "type": "area",
+          "color": {
+            "gradient": "linear",
+            "stops": [
+              {"color": "#f4134bcb", "offset": 0.1},
+              {"color": "#97e0ff0d", "offset": 0.8}
+            ],
+            "x1": 1,
+            "y1": 1,
+            "x2": 1,
+            "y2": 0
+          },
+          "interpolate": "monotone",
+          "line": {"color": "rgb(128,0,0,0.5)", "size":1.4}
+        },
+        "encoding": {
+          "y": {
+            "field": "Price",
+            "type": "quantitative",
+            "title": "",
+            "axis": {
+              "grid": true,
+              "gridOpacity": 0.6,
+              "format": "$,.0f",
+              "ticks": false,
+              "labelPadding": 5,
+              "labelFontSize": 11
+            }
+          },
+  
+          "y2": {
+            "field": "MA Cost"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "interpolate": "step-after",
+          "color": "#feb90c",
+          "size": 2.3
+        },
+        "encoding": {
+          "y": {
+            "field": "MA Cost",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": {"type": "line", "size": 1.4, "color": "rgb(128,0,0,0.5)"},
+        "encoding": {
+          "y": {
+            "field": "Price",
+            "type": "quantitative",
+            "title": "",
+            "axis": {
+              "grid": true,
+              "gridOpacity": 0.6,
+              "format": "$,.0f",
+              "ticks": false,
+              "labelPadding": 5,
+              "labelFontSize": 11
+            }
+          }
+        }
+      }
+    ]
+  }

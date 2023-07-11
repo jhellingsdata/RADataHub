@@ -1,0 +1,111 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+      "style": {"cell": {"stroke": "transparent"}},
+      "locale": {
+        "number": {
+          "decimal": ".",
+          "thousands": ",",
+          "grouping": [3],
+          "currency": ["$", " bn"]
+        }
+      },
+      "concat": {
+        "spacing": 50
+      }
+    },
+    "title": {
+      "text": "Crypto: Stablecoins",
+      "subtitle": [
+        "Pegged cryptocurrencies with market capitalisations over $1bn, 10th July 2023",
+        "Source: CoinGecko.com",
+        ""
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black",
+      "fontSize": 16
+    },
+  
+    "view":{"stroke":"transparent"},
+  
+    "width": 500,
+    "height": 300,
+   
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_4_Stablecoins.csv"
+    },
+    "params": [
+      {
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "fields": ["Market Capitalisation"],
+          "toggle": true,
+          "on": "mouseover"
+        }
+      }
+    ],
+    "mark": {
+      "type":"bar",
+      "color":"rgb(128,0,0)"
+    },
+  
+    "transform": [
+      {
+        "calculate": "datum['Market Capitalisation'] / 1000000000", "as": "MCap"
+      },
+      {"filter": "datum['MCap'] > 1"}
+    ],
+    "encoding": {
+      
+      "tooltip": [
+        {
+          "field": "Ticker"
+        },
+        {
+          "field": "MCap", "title": "Market Capitalisation", 
+          "format": "$,.3f"  
+        }
+      ],
+  
+      "x": {
+        "field": "MCap",
+        "type": "quantitative", 
+        "title": null,
+        "axis":{
+          "zindex":0,
+          "gridWidth":0.5,
+          "labelAngle":0,
+          "format":"$,d",
+          "grid": true,
+          "gridOpacity": 0.6,
+          "ticks": false,
+          "labelPadding": 5,
+          "labelFontSize": 11,
+          "tickCount": 5
+        }},
+  
+      "y": {
+        "field": "Cryptocurrency",
+        "title": null,
+        "type": "nominal",
+        "sort":"-x",
+        "axis": {
+          "grid": false,
+          "gridOpacity": 0.6,
+          "ticks": false,
+          "labelPadding": 5,
+          "labelFontSize": 11
+        }
+      },
+      "opacity": {
+        "condition": {"test": {"param": "hover"}, "value": 1},
+        "value": 0.8
+      }
+    }
+  
+  }
+  
