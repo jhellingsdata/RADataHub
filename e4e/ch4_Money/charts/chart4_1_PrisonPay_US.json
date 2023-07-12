@@ -1,96 +1,111 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "config": {
-      "style": {"cell": {"stroke": "transparent"}}
-    },
-    "title": {
-      "text": "Pay in US Prisons",
-      "subtitle": [
-        "Hourly Minimum Pay",
-        "Source: PrisonPolicy.org",
-        ""
-      ],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 12,
-      "anchor": "start",
-      "color": "black",
-      "fontSize": 16
-    },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "title": {
+    "text": "Pay in US Prisons",
+    "subtitle": ["Hourly Minimum Pay", "Source: PrisonPolicy.org", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16
+  },
+  "transform": [
+    {
+      "filter": "datum.State != 'Washington'"
+    }
+  ],
+  "view": {"stroke": "transparent"},
+  "width": 350,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_1_PrisonPay_US.csv"
+  },
   
-    "view":{"stroke":"transparent"},
-  
-    "width": 350,
-    "height": 450,
-   
-    
-    "data": {
-      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_1_PrisonPay_US.csv"
-    },
-    "params": [
-      {
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Hourly Minimum", "State"],
-          "toggle": true,
-          "on": "mouseover"
-        }
+  "layer":[
+    {
+      "mark": {"type": "text"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": 115},
+        "y": {"value": 40},
+        "text": {"value": "8 States Have No Minimum or Do Not Pay"}
+
       }
-    ],
-    "mark": {
-      "type":"bar",
-      "color":"rgb(128,0,0)"
+
+
     },
-  
-    "encoding": {
-      
-      "tooltip": [
-        {
-          "field": "State"
-        },
-        {
-          "field": "Hourly Minimum", 
-          "format": "$,.2f"  
-        }
-      ],
-  
-      "x": {
-        "field": "Hourly Minimum",
-        "type": "quantitative", 
-        "title": null,
-        "axis":{
-          "zindex":0,
-          "gridWidth":0.5,
-          "labelAngle":0,
-          "format":"$.2f",
-          "grid": true,
-          "gridOpacity": 0.6,
-          "ticks": false,
-          "labelPadding": 5,
-          "labelFontSize": 11,
-          "tickCount": 5
-        }},
-  
-      "y": {
-        "field": "State",
-        "title": null,
-        "type": "nominal",
-        "sort":"x",
-        "axis": {
-          "grid": false,
-          "gridOpacity": 0.6,
-          "ticks": true,
-          "tickSize": 3,
-          "tickOpacity": 0.6,
-          "labelPadding": 2,
-          "labelFontSize": 10
-        }
-      },
-      "opacity": {
-        "condition": {"test": {"param": "hover"}, "value": 1},
-        "value": 0.8
+    {
+      "mark": {"type": "rule"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": 5},
+        "y": {"value": 0},
+        "y2": {"value": 85}
+
+
+
+      }
+
+    },
+    {
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": ["Hourly Minimum", "State"],
+        "toggle": true,
+        "on": "mouseover"
       }
     }
-  
+  ],
+  "mark": {"type": "bar", "color": "rgb(128,0,0)"},
+  "encoding": {
+    "tooltip": [
+      {"field": "State"},
+      {"field": "Hourly Minimum", "format": "$,.2f"}
+    ],
+    "x": {
+      "field": "Hourly Minimum",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "zindex": 0,
+        "gridWidth": 0.5,
+        "labelAngle": 0,
+        "format": "$.2f",
+        "grid": true,
+        "gridOpacity": 0.6,
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11,
+        "tickCount": 5
+      }
+    },
+    "y": {
+      "field": "State",
+      "title": null,
+      "type": "nominal",
+      "sort": "x",
+      "axis": {
+        "grid": false,
+        "gridOpacity": 0.6,
+        "ticks": true,
+        "tickSize": 3,
+        "tickOpacity": 0.6,
+        "labelPadding": 2,
+        "labelFontSize": 10
+      }
+    },
+    "opacity": {
+      "condition": {"test": {"param": "hover"}, "value": 1},
+      "value": 0.8
+    }
   }
-  
+  }]
+}
