@@ -17,6 +17,8 @@
       {"calculate": "(datum.Value-100)/100", "as": "Value"},
       {"filter": "datum.Series != 'Apparel'"},
       {"calculate": "datum.Series == 'All_Items' ? 'All Prices' : datum.Series", "as": "Series"},
+      {"calculate": "datum.Series == 'Tuition' ? 'College Tuition' : datum.Series", "as": "Series"},
+  
       {"calculate": "datum.Series == 'All Prices'", "as": "dash"}
   
       
