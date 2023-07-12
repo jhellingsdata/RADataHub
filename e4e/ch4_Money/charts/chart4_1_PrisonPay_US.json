@@ -1,19 +1,16 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {"style": {"cell": {"stroke": "transparent"}}},
-  "title": {
-    "text": "Pay in US Prisons",
-    "subtitle": ["Hourly Minimum Pay", "Source: PrisonPolicy.org", ""],
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 12,
-    "anchor": "start",
-    "color": "black",
-    "fontSize": 16
-  },
   "transform": [
     {
-      "filter": "datum.State != 'Washington'"
+      "calculate": "toNumber(datum['Hourly Maximum'])",
+      "as": "Hourly Maximum"
+    },
+    {
+      "calculate": "indexof(['Utah', 'Missouri'], datum.State) != -1 ? 0: indexof(['Delaware', 'Maine', 'Mississippi', 'Nevada', 'Alabahma', 'Arkansas', 'South Carolina', 'Texas'], datum.State) != -1 ? -1 : datum['Hourly Maximum']",
+      "as": "customOrder"
     }
+
   ],
   "view": {"stroke": "transparent"},
   "width": 350,
@@ -23,19 +20,110 @@
   },
   
   "layer":[
+      {
+      "mark": {"type": "text", "align":"left", "fontSize":16, "fontStyle":"bold"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": -145},
+        "y": {"value": -62},
+        "text": {"value": "US Prisoner Pay "}
+      }
+    },
+    {
+      "mark": {"type": "text", "align":"left", "fontSize":12, "fontStyle":"italic"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": -145},
+        "y": {"value": -45},
+        "text": {"value": "Hourly                 and                  Pay "}
+      }
+    },
+    {
+      "mark": {"type": "text", "color": "rgb(218,153,157)", "align":"left", "fontSize":12, "fontStyle":"italic"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": -107},
+        "y": {"value": -45},
+        "text": {"value": "Minimum"}
+      }
+    },
+        {
+      "mark": {"type": "text", "color": "rgb(133,38,40)", "align":"left", "fontSize":12, "fontStyle":"italic"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": -30},
+        "y": {"value": -45},
+        "text": {"value": "Maximum"}
+      }
+    },
+        {
+      "mark": {"type": "text", "align":"left", "fontSize":12, "fontStyle":"italic"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": -145},
+        "y": {"value": -30},
+        "text": {"value": "Source: PrisonPolicy.org "}
+      }
+    },
     {
       "mark": {"type": "text"},
       "data" : {"values": [
         {"unused":"text"}
       ]},
       "encoding": {
-        "x": {"value": 115},
+        "x": {"value": 102},
         "y": {"value": 40},
-        "text": {"value": "10 States Have No Minimum or Do Not Pay"}
+        "text": {"value": "Prisoners Cannot Be Paid in 10 States "},
+        "opacity": {"value":0.5}
+      }
+    },
+    {
+      "mark": {"type": "text"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": 182},
+        "y": {"value": 85},
+        "text": {"value": "Missouri and Utah Have Only Minimums"},
+        "opacity": {"value":0.5}
+      }
+    },
+    {
+      "mark": {"type": "rule"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": 5},
+        "y": {"value": 75},
+        "x2": {"value": 80},
+
+        "opacity":{"value":0}
+      }
+    },
+    {
+      "mark": {"type": "rule"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": 80},
+        "y": {"value": 75},
+        "y2": {"value": 95},
+        "opacity": {"value":0.5}
 
       }
-
-
     },
     {
       "mark": {"type": "rule"},
@@ -45,15 +133,42 @@
       "encoding": {
         "x": {"value": 5},
         "y": {"value": 0},
-        "y2": {"value": 85}
-
+        "y2": {"value": 75},
+        "opacity": {"value":0.5}
 
 
       }
-
     },
     {
-  "params": [
+  "layer":[
+    {
+      "transform": [
+        {"fold": ["Hourly Maximum", "Hourly Minimum"], "as": ["Series", "Value"]},
+        {"calculate": "'foo'", "as": "foo"}
+      ],
+      "mark": {"type": "circle", "color": "rgb(128,0,0)"},
+      "encoding": {
+        "x": {"field": "Value"},
+        "color": {
+          "field": "Series",
+          "scale" : {
+              "range": ["#911a24", "#e6959c"]
+          },
+          "legend": null,
+          "condition": {"value": "dimgrey", "test": "datum['Non-state'] == 1"}}
+      }
+    },
+    {  
+      "transform": [
+        {"filter":"datum.State != 'Utah' & datum.State != 'Missouri'"}
+      ],
+      "mark": {"type": "rule", "strokeWidth":1.5, "color": "rgb(128,0,0)"},
+      "encoding": {
+            "color": {
+                "condition": {"value": "dimgrey", "test": "datum['Non-state'] == 1"}
+    }
+      },
+        "params": [
     {
       "name": "hover",
       "select": {
@@ -63,12 +178,15 @@
         "on": "mouseover"
       }
     }
+  ]
+    }
   ],
-  "mark": {"type": "bar", "color": "rgb(128,0,0)"},
   "encoding": {
     "tooltip": [
       {"field": "State"},
-      {"field": "Hourly Minimum", "format": "$,.2f"}
+      {"field": "Hourly Minimum", "format": "$,.2f"},
+      {"field": "Hourly Maximum", "format": "$,.2f"},
+      {"field": "customOrder"}
     ],
     "x": {
       "field": "Hourly Minimum",
@@ -87,11 +205,14 @@
         "tickCount": 5
       }
     },
+    "x2":{
+      "field":"Hourly Maximum"
+    },
     "y": {
       "field": "State",
       "title": null,
       "type": "nominal",
-      "sort": "x",
+      "sort": {"field": "customOrder", "order":"ascending"},
       "axis": {
         "grid": false,
         "gridOpacity": 0.6,
