@@ -86,7 +86,7 @@
         "color": {
           "gradient": "linear",
           "stops": [
-            {"color": "#30c1e6", "offset": 0.8},
+            {"color": "#00c060d5", "offset": 0.8},
             {"color": "#97e0ff0d", "offset": 0.1}
           ],
           "x1": 1,
