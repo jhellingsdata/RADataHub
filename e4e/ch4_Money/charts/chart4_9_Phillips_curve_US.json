@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Phillips Curve: Long Run",
+    "subtitle": ["Unemployment and Inflation, 1900-present", "Source: BLS, NBER", ""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":12,
+    "fontSize": 16,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "view": {"stroke": "transparent"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_9_Phillips_curve_US.csv"
+  },
+
+  "height": 400,
+
+  "width": 400,
+
+  "config": {"background": "#ffFfFf"},
+
+
+  "mark": {"type": "point", "size":25},
+
+  "selection": {
+    "region": {"type": "multi", "fields": ["Period"], "bind": "legend"}
+  },
+  
+  "encoding": {
+ 
+    "x": {
+      "field": "Unemployment",
+      "type": "quantitative",
+      "title": "Unemployment",
+      "axis": {
+        "gridOpacity": 0.3,
+        "tickOpacity": 0,
+        "labelFontSize": 11,
+        "titlePadding": 4,
+        "format": "%"
+      }
+    },
+  
+    "y": {
+      "field": "Inflation",
+      "type": "quantitative",
+      "title": "Inflation",
+      "axis": {
+        "gridOpacity": 0.3,
+        "tickOpacity": 0,
+        "labelFontSize": 11,
+        "titlePadding": 4,
+        "format": "%"
+      }
+    },
+
+    "color":{
+      "field":"Period",
+      "type": "ordinal",
+      "title": null,
+      "scale": {"scheme": "reds"},
+      "legend":{
+        "orient":"top",
+        "offset": 10,
+        "labelFontSize": 11
+      }
+    },
+
+  "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1},
+
+    "tooltip": [
+      {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
+      {
+        "field": "Unemployment",
+        "type": "quantitative",
+        "title": "Unemployment",
+        "format": ",.1%"
+      },
+      {
+        "field": "Inflation",
+        "type": "quantitative",
+        "title": "Inflation",
+        "format": ",.1%"
+      }
+    ]
+  }
+}
