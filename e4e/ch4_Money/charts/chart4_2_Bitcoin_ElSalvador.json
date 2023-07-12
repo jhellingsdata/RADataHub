@@ -134,6 +134,8 @@
     {
       "mark": {
         "type": "text",
+        "fontSize": 11,
+        "fontWeight": "lighter",
         "align": "left",
         "baseline": "middle",
         "dx": 5,
