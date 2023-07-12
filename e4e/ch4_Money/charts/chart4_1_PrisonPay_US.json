@@ -3,7 +3,7 @@
   "config": {"style": {"cell": {"stroke": "transparent"}}},
   "title": {
     "text": "Pay in US Prisons",
-    "subtitle": ["Hourly Minimum Pay", "Source: PrisonPolicy.org", ""],
+    "subtitle": ["Hourly Minimum Pay, 2017", "Source: PrisonPolicy.org", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start",
@@ -11,9 +11,7 @@
     "fontSize": 16
   },
   "transform": [
-    {
-      "filter": "datum.State != 'Washington'"
-    }
+    {"filter": "datum.State != 'Washington'"}
   ],
   "view": {"stroke": "transparent"},
   "width": 350,
@@ -30,12 +28,9 @@
       ]},
       "encoding": {
         "x": {"value": 115},
-        "y": {"value": 40},
-        "text": {"value": "10 States Have No Minimum or Do Not Pay"}
-
+        "y": {"value": 43},
+        "text": {"value": "10 States have no minimum or do not pay"}
       }
-
-
     },
     {
       "mark": {"type": "rule"},
@@ -45,12 +40,8 @@
       "encoding": {
         "x": {"value": 5},
         "y": {"value": 0},
-        "y2": {"value": 85}
-
-
-
+        "y2": {"value": 88}
       }
-
     },
     {
   "params": [
@@ -68,7 +59,8 @@
   "encoding": {
     "tooltip": [
       {"field": "State"},
-      {"field": "Hourly Minimum", "format": "$,.2f"}
+      {"field": "Hourly Minimum", "format": "$,.2f"},
+      {"field": "Hourly Maximum", "format": "$,.2f"}
     ],
     "x": {
       "field": "Hourly Minimum",
@@ -105,6 +97,13 @@
     "opacity": {
       "condition": {"test": {"param": "hover"}, "value": 1},
       "value": 0.8
+    },
+    "color": {
+      "condition": {
+        "value": "dimgrey",
+        "test": "datum['Non-state'] == 1"
+      },
+      "value": "rgb(128,0,0)"
     }
   }
   }]
