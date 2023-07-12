@@ -1,137 +1,140 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_7_baumol.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_7_baumol.csv"
+  },
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "title": {
+    "text": "The Baumol effect",
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitle": ["Nominal price change since 1980", "Source: FRED", ""]
+  },
+  "width": 500,
+  "height": 350,
+  "transform": [
+    {"calculate": "(datum.Value-100)/100", "as": "Value"},
+    {"filter": "datum.Series != 'Apparel'"},
+    {
+      "calculate": "datum.Series == 'All_Items' ? 'All Prices' : datum.Series",
+      "as": "Series"
     },
-    "config": {"style": {"cell": {"stroke": "transparent"}}},
-    "title": {
-      "text": "The Baumol effect",
-      "anchor": "start",
-      "fontSize": 16,
-      "subtitleFontStyle": "italic",
-      "subtitle": ["Nominal price change since 1980", "Source: FRED", ""]
+    {
+      "calculate": "datum.Series == 'Tuition' ? 'College Tuition' : datum.Series",
+      "as": "Series"
     },
-    "width": 500,
-    "height": 350,
-    "transform": [
-      {"calculate": "(datum.Value-100)/100", "as": "Value"},
-      {"filter": "datum.Series != 'Apparel'"},
-      {"calculate": "datum.Series == 'All_Items' ? 'All Prices' : datum.Series", "as": "Series"},
-      {"calculate": "datum.Series == 'Tuition' ? 'College Tuition' : datum.Series", "as": "Series"},
-  
-      {"calculate": "datum.Series == 'All Prices'", "as": "dash"}
-  
-      
-      
-      ],
-    "encoding": {
-      "x": {
-        "field": "Date",
-        "type": "temporal",
-        "axis": {"grid": false, "labelPadding": 6, "ticks": false, "title": null}
-      }
-    },
-    "layer": [
-      {"mark": {"type": "rule"}, "encoding": {"x": null, "y": {"datum": 0}}},
-      {
-        "encoding": {
-          "strokeDash": {
-            "field": "dash",
-            "type": "nominal",
-            "legend": null
-  
-          },
-          "color": {
-            "condition": [
-              {
-                "test":"datum.Series == 'All Prices'",
-                "value": "rgb(100,100,100)"
-              }
-            ],
-            "field": "Series", "type": "nominal", "legend": null},
-          "y": {
-            "field": "Value",
-            "type": "quantitative",
-            "scale": {"zero": false}
-          }
+    {"calculate": "datum.Series == 'All Prices'", "as": "dash"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {"grid": false, "labelPadding": 6, "ticks": false, "title": null}
+    }
+  },
+  "layer": [
+    {"mark": {"type": "rule"}, "encoding": {"x": null, "y": {"datum": 0}}},
+    {
+      "encoding": {
+        "strokeDash": {"field": "dash", "type": "nominal", "legend": null},
+        "color": {
+          "condition": [
+            {
+              "test": "datum.Series == 'All Prices'",
+              "value": "rgb(100,100,100)"
+            }
+          ],
+          "field": "Series",
+          "type": "nominal",
+          "legend": null
         },
-        "layer": [
-          {"mark": "line"},
-          {
-            "transform": [{"filter": {"param": "hover", "empty": false}}],
-            "mark": "point"
-          }
-        ]
-      },
-      {
-        "transform": [{"filter": "datum.Date==1682899200000"}],
-        "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 4},
-        "encoding": {
-          "text": {"field": "Series"},
-          "y": {
-            "field": "Value",
-            "axis": {
-              "labelPadding": 6,
-              "ticks": false,
-              "title": null,
-              "format": "%"
-            },
-            "type": "quantitative",
-            "scale": {"zero": false}
-          },
-          "color": {
-            "condition": [
-              {
-                "test":"datum.Series == 'All Prices'",
-                "value": "rgb(100,100,100)"
-              }
-            ],
-            "field": "Series", "type": "nominal", "legend": null}
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"zero": false}
         }
       },
-      {
-        "transform": [
-          {"pivot": "Series", "value": "Value", "groupby": ["Date"]},
-          {"filter": "month(datum.Date)==1"}
-        ],
-        "mark": "rule",
-        "encoding": {
-          "opacity": {
-            "condition": {"value": 0.3, "param": "hover", "empty": false},
-            "value": 0
+      "layer": [
+        {"mark": "line"},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [{"filter": "datum.Date==1682899200000"}],
+      "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 4},
+      "encoding": {
+        "text": {"field": "Series"},
+        "y": {
+          "field": "Value",
+          "axis": {
+            "labelPadding": 6,
+            "ticks": false,
+            "title": null,
+            "format": "%"
           },
-          "tooltip": [
-            {
-              "field": "Date",
-              "type": "temporal",
-              "format": "%Y",
-              "title": "Year "
-            },
-            {"format": ".0%", "field": "Tuition", "type": "quantitative"},
-            {"format": ".0%", "field": "Medical Care", "type": "quantitative"},
-            {"format": ".0%", "field": "Shelter", "type": "quantitative"},
-            {
-              "format": ".0%",
-              "field": "Food Away from Home",
-              "type": "quantitative"
-            },
-            {"format": ".0%", "field": "Food at Home", "type": "quantitative"},
-            {"format": ".0%", "field": "New Vehicles", "type": "quantitative"},
-            {"format": ".0%", "field": "Toys", "type": "quantitative"}
-          ]
+          "type": "quantitative",
+          "scale": {"zero": false}
         },
-        "params": [
-          {
-            "name": "hover",
-            "select": {
-              "type": "point",
-              "fields": ["Date"],
-              "nearest": true,
-              "on": "mouseover",
-              "clear": "mouseout"
+        "color": {
+          "condition": [
+            {
+              "test": "datum.Series == 'All Prices'",
+              "value": "rgb(100,100,100)"
             }
-          }
-        ]
+          ],
+          "field": "Series",
+          "type": "nominal",
+          "legend": null
+        }
       }
-    ]
-  }
+    },
+    {
+      "transform": [
+        {"pivot": "Series", "value": "Value", "groupby": ["Date"]},
+        {"filter": "month(datum.Date)==1"}
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "format": "%Y",
+            "title": "Year"
+          },
+          {"format": ".0%", "field": "College Tuition", "type": "quantitative"},
+          {"format": ".0%", "field": "Medical Care", "type": "quantitative"},
+          {"format": ".0%", "field": "Shelter", "type": "quantitative"},
+          {
+            "format": ".0%",
+            "field": "Food Away from Home",
+            "type": "quantitative"
+          },
+          {"format": ".0%", "field": "Food at Home", "type": "quantitative"},
+          {"format": ".0%", "field": "New Vehicles", "type": "quantitative"},
+          {"format": ".0%", "field": "Toys", "type": "quantitative"}
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ]
+}
