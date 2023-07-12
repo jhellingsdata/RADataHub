@@ -1,68 +1,79 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-  "data": {"url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_9_monetary_regimes.csv"},
-
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_9_monetary_regimes.csv"
+  },
   "description": "Inflation UK",
-
   "title": {
     "text": "Monetary frameworks, 1974-2017",
-    "subtitle":["Target variables, 25 advanced economies.", " Source: monetaryframeworks.org and Richard Davies", " "],
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":12,
+    "subtitle": [
+      "Target variables, 25 advanced economies.",
+      " Source: monetaryframeworks.org and Richard Davies",
+      " "
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
     "fontSize": 16,
     "anchor": "start",
     "color": "black"
   },
-
-  "width": 550, "height": 350,
-    
+  "width": 550,
+  "height": 350,
   "mark": "area",
-  
   "encoding": {
     "x": {
-      "timeUnit": "year", 
+      "timeUnit": "year",
       "field": "Year",
-      "axis": {"format": "%Y", "grid": false, "ticks": false, "labelPadding":6},
-      "title":null
+      "axis": {
+        "format": "%Y",
+        "grid": false,
+        "ticks": false,
+        "labelPadding": 6
+      },
+      "title": null
     },
-
     "y": {
-      "field": "Share", 
+      "field": "Share",
       "type": "quantitative",
-      "axis": {"format": ".0%", "grid": false, "ticks": false, "labelPadding":6},
-      "title":null
+      "axis": {
+        "format": ".0%",
+        "grid": false,
+        "ticks": false,
+        "labelPadding": 6
+      },
+      "title": null
     },
-
+    "opacity": {"value":0.88},
     "color": {
       "field": "Series",
-      "title":"Target",
+      "title": "Target",
       "legend": {
         "orient": "none",
-        "legendX":0,
-        "legendY":-15,
+        "legendX": 0,
+        "legendY": -15,
         "direction": "horizontal",
         "padding": 0,
         "title": null
       },
       "scale": {
-                    "range": [
-                                    "rgb(117,20,12)",
-              "#508484",
-              "#4D5359",
-              "#D9CF96",
-              "#BFB6BB"
-            ]
-
+        "range": ["rgb(117,20,12)", "#508484", "#4D5359", "#D9CF96", "#BFB6BB"]
       }
     },
-    
-    "tooltip":[
-      {"timeUnit": "year", "field": "Year", "title":"Year"},
-      {"field": "Series","type": "nominal","title":"Target"},
-      {"field": "Value","type": "quantitative","format": ".0f","title":"# Countries"},
-      {"field": "Share","type": "quantitative","format": ".0%","title":"Share"}
+    "tooltip": [
+      {"timeUnit": "year", "field": "Year", "title": "Year"},
+      {"field": "Series", "type": "nominal", "title": "Target"},
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "format": ".0f",
+        "title": "# Countries"
+      },
+      {
+        "field": "Share",
+        "type": "quantitative",
+        "format": ".0%",
+        "title": "Share"
+      }
     ]
-  
   }
 }

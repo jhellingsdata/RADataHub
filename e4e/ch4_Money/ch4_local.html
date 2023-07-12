@@ -48,11 +48,24 @@
             'chart4_xx2_Bitcoin_ElSalvador.json',
             'chart4_3_Bitcoin.json',
             'chart4_4_Stablecoins.json',
-            'chart4_6_us_cpi_longrun.json'
+            'chart4_6_us_cpi_longrun.json',
+            'chart4_7_baumol.json',
+            'chart4_8_ny_ch_prices.json',
+            'chart4_9_monetary_regimes.json',
+            'chart4_11_cbi.json',
+
         ];
       
         async function loadCharts() {
           for (const file of chartFiles) {
+            console.log("https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/charts/" + file)
+
+            // Add a title
+            const title = document.createElement('h2');
+            title.innerHTML = file;
+            chartsContainer.appendChild(title);
+
+
             const response = await fetch(`charts/${file}`);
             const spec = await response.json();
       
