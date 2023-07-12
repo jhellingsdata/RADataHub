@@ -23,7 +23,12 @@
   "transform": [
     {"calculate": "year(datum.Date)", "as": "year"},
     {"filter": "datum.year>=minYear"},
-    {"filter": "datum.year<=maxYear"}
+    {"filter": "datum.year<=maxYear"},
+    {
+    "sort": [{"field": "Date"}],
+    "window": [{"op": "last_value", "field": "Price", "as": "lastPrice"}],
+    "frame": [null, null]
+    }
   ],
   "encoding": {
     "x": {
@@ -85,6 +90,7 @@
     },
     {
       "encoding": {
+        "color": {"value": "rgb(128,0,0)"},
         "y": {
           "field": "Low",
           "type": "quantitative",
@@ -100,7 +106,7 @@
         }
       },
       "layer": [
-        {"mark": {"type": "line", "size": 1.4, "color": "rgb(128,0,0)"}},
+        {"mark": {"type": "line", "size": 1.4}},
         {
           "transform": [{"filter": {"param": "hover", "empty": false}}],
           "mark": "point"
@@ -110,7 +116,11 @@
     {
       "mark": "rule",
       "transform": [
-        {"filter": "(maxYear-minYear)>5? date(datum.Date) == 1 : day(datum.Date) == 1"}
+        {"filter": "(maxYear-minYear)>5? date(datum.Date) == 1 : day(datum.Date) == 1"},
+        {
+          "calculate": "(datum.lastPrice - datum.Price) / datum.Price",
+          "as": "priceChange"
+        }
       ],
       "encoding": {
         "opacity": {
@@ -126,7 +136,8 @@
             "title": "Price"
           },
           {"field": "High", "type": "quantitative", "format": "$,d"},
-          {"field": "Low", "type": "quantitative", "format": "$,d"}
+          {"field": "Low", "type": "quantitative", "format": "$,d"},
+          {"field": "priceChange", "type": "quantitative", "format": ".0%", "title": "Returns since this day"}
         ]
       },
       "params": [
