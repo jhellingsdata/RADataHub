@@ -206,8 +206,7 @@
             "tooltip": [
               {"field": "State"},
               {"field": "Hourly Minimum", "format": "$,.2f"},
-              {"field": "Hourly Maximum", "format": "$,.2f"},
-              {"field": "customOrder"}
+              {"field": "Hourly Maximum", "format": "$,.2f"}
             ],
             "x": {
               "field": "Hourly Minimum",
