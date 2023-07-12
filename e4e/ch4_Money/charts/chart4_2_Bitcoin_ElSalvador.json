@@ -23,6 +23,7 @@
     "x": {
       "field": "Date",
       "type": "temporal",
+      "title": null,
       "axis": {
         "labelAngle": 0,
         "grid": false,
@@ -128,6 +129,21 @@
           "field": "MA Cost",
           "type": "quantitative"
         }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "dy": -5,
+        "color": "#feb90c"
+      },
+      "encoding": {
+        "x": {"value": 325},
+        "y": {"value": 110},
+        "text": {"value": "El Salvador, average cost per BTC"}
       }
     },
     {

@@ -25,6 +25,7 @@
       "x": {
         "field": "Date",
         "type": "temporal",
+        "title": null,
         "axis": {
           "labelAngle": 0,
           "grid": false,
