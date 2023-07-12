@@ -1,16 +1,19 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "title": {
+    "text": "Pay in US Prisons",
+    "subtitle": ["Hourly Minimum Pay", "Source: PrisonPolicy.org", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16
+  },
   "transform": [
     {
-      "calculate": "toNumber(datum['Hourly Maximum'])",
-      "as": "Hourly Maximum"
-    },
-    {
-      "calculate": "indexof(['Utah', 'Missouri'], datum.State) != -1 ? 0: indexof(['Delaware', 'Maine', 'Mississippi', 'Nevada', 'Alabahma', 'Arkansas', 'South Carolina', 'Texas'], datum.State) != -1 ? -1 : datum['Hourly Maximum']",
-      "as": "customOrder"
+      "filter": "datum.State != 'Washington'"
     }
-
   ],
   "view": {"stroke": "transparent"},
   "width": 350,
@@ -133,8 +136,8 @@
       "encoding": {
         "x": {"value": 5},
         "y": {"value": 0},
-        "y2": {"value": 75},
-        "opacity": {"value":0.5}
+        "y2": {"value": 85}
+
 
 
       }
@@ -184,9 +187,7 @@
   "encoding": {
     "tooltip": [
       {"field": "State"},
-      {"field": "Hourly Minimum", "format": "$,.2f"},
-      {"field": "Hourly Maximum", "format": "$,.2f"},
-      {"field": "customOrder"}
+      {"field": "Hourly Minimum", "format": "$,.2f"}
     ],
     "x": {
       "field": "Hourly Minimum",
@@ -226,6 +227,13 @@
     "opacity": {
       "condition": {"test": {"param": "hover"}, "value": 1},
       "value": 0.8
+    },
+    "color": {
+      "condition": {
+        "value": "dimgrey",
+        "test": "datum['Non-state'] == 1"
+      },
+      "value": "rgb(128,0,0)"
     }
   }
   }]

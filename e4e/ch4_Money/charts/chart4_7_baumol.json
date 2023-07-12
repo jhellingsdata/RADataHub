@@ -9,7 +9,7 @@
       "anchor": "start",
       "fontSize": 16,
       "subtitleFontStyle": "italic",
-      "subtitle": ["Change in Nominal Prices Since 1980", "Data: FRED", ""]
+      "subtitle": ["Nominal price change since 1980", "Source: FRED", ""]
     },
     "width": 500,
     "height": 350,
