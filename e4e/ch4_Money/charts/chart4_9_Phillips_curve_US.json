@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "Phillips Curve: Long Run",
+    "text": "US Phillips Curve",
     "subtitle": ["Unemployment and Inflation, 1900-present", "Source: BLS, NBER", ""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":12,
@@ -11,24 +11,62 @@
     "color": "black"
   },
 
+  "transform": [
+    {"filter": "isValid(periodSelect.Period) ? datum.Period == periodSelect.Period : true"}
+  ],
   "view": {"stroke": "transparent"},
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_9_Phillips_curve_US.csv"
   },
 
-  "height": 400,
+  "height": 350,
 
-  "width": 400,
+  "width": 500,
 
   "config": {"background": "#ffFfFf"},
 
-
-  "mark": {"type": "point", "size":25},
-
-  "selection": {
-    "region": {"type": "multi", "fields": ["Period"], "bind": "legend"}
+  "layer" : [
+    {  "mark": {"type": "circle", "size":25},
+    "encoding": {
+      "opacity":{
+        "condition":[
+          {"test": "isValid(hover.Period) & datum.Period != hover.Period", "value":0.1}
+        ],
+        "value":1
+      }
+    },
+    
+      "params": [{
+    "name": "periodSelect",
+    "select": {"type": "point", "fields": ["Period"]},
+    "bind": "legend"
   },
-  
+      {
+      "name": "hover",
+      "select": {"type": "point","fields": ["Period"], "on": "mouseover"}
+    }
+]
+
+},
+    {
+      "mark" : {"type": "rule"},
+        "transform": [
+  ],
+      "data": {"values":[{"Period": "1900-1930", "Unemployment": 0, "Inflation": 0.08269044672885338, "Unemployment_End": 0.12, "Inflation_End": -0.06323569071641603}, {"Period": "1931-1960", "Unemployment": 0, "Inflation": 0.055763644387192515, "Unemployment_End": 0.12, "Inflation_End": 0.009700464700813288}, {"Period": "1961-1990", "Unemployment": 0, "Inflation": 0.021191391444621385, "Unemployment_End": 0.12, "Inflation_End": 0.0803657434711381}, {"Period": "1991-2023", "Unemployment": 0, "Inflation": 0.047163832605489585, "Unemployment_End": 0.12, "Inflation_End": 0.0043159665601663275}]
+      },
+      "encoding": {
+        "x2": {"field":"Unemployment_End"},
+        "y2": {"field":"Inflation_End"},
+      "opacity":{
+        "condition":[
+          {"test": "datum.Period == hover.Period | datum.Period == periodSelect.Period", "value":0.8}
+        ],
+        "value":0.1
+      }
+      }
+    }
+  ],
+
   "encoding": {
  
     "x": {
@@ -61,15 +99,16 @@
       "field":"Period",
       "type": "ordinal",
       "title": null,
-      "scale": {"scheme": "reds"},
+      "scale": {"scheme": "set1"},
       "legend":{
         "orient":"top",
         "offset": 10,
         "labelFontSize": 11
       }
     },
+    
 
-  "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1},
+  
 
     "tooltip": [
       {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
