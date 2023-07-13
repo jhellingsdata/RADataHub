@@ -8,7 +8,7 @@
     "text": "Monetary frameworks, 1974-2017",
     "subtitle": [
       "Target variables, 25 advanced economies.",
-      "Source: monetaryframeworks.org and Richard Davies",
+      "Source: monetaryframeworks.org and richarddavies.io",
       " "
     ],
     "subtitleFontStyle": "italic",
@@ -28,7 +28,8 @@
         "format": "%Y",
         "grid": false,
         "ticks": false,
-        "labelPadding": 6
+        "labelPadding": 6,
+        "labelFontSize": 11
       },
       "title": null
     },
@@ -39,22 +40,24 @@
         "format": ".0%",
         "grid": false,
         "ticks": false,
-        "labelPadding": 6
+        "labelPadding": 5,
+        "labelFontSize": 11
+
       },
       "title": null
     },
-    "opacity": {"value":0.88},
+    "opacity": {"value": 0.88},
     "color": {
       "field": "Series",
       "title": "Target",
       "legend": {
-        "orient": "none",
-        "legendX": 0,
-        "legendY": -15,
+        "orient": "top",
+        "offset": 10,
         "direction": "horizontal",
         "padding": 0,
         "title": null,
         "labelFontSize": 11
+
       },
       "scale": {
         "range": ["rgb(117,20,12)", "#508484", "#4D5359", "#D9CF96", "#BFB6BB"]
