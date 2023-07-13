@@ -30,7 +30,7 @@
     "x": {
       "field": "Date",
       "type": "temporal",
-      "axis": {"grid": false, "labelPadding": 6, "ticks": false, "title": null}
+      "axis": {"grid": false, "labelPadding": 6, "ticks": false, "title": null, "labelFontSize": 11}
     }
   },
   "layer": [
@@ -71,10 +71,11 @@
         "y": {
           "field": "Value",
           "axis": {
-            "labelPadding": 6,
+            "labelPadding": 5,
             "ticks": false,
             "title": null,
-            "format": "%"
+            "format": "%",
+            "labelFontSize": 11
           },
           "type": "quantitative",
           "scale": {"zero": false}
