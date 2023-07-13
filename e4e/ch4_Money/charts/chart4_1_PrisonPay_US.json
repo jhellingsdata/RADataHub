@@ -17,9 +17,9 @@
       },
       "data": {"values": [{"unused": "text"}]},
       "encoding": {
-        "x": {"value": -145},
+        "x": {"value": -90},
         "y": {"value": -62},
-        "text": {"value": "US Prisoner Pay "}
+        "text": {"value": "US Prisoner Pay"}
       }
     },
     {
@@ -31,7 +31,7 @@
       },
       "data": {"values": [{"unused": "text"}]},
       "encoding": {
-        "x": {"value": -145},
+        "x": {"value": -90},
         "y": {"value": -45},
         "text": {"value": "Hourly                 and                  Pay "}
       }
@@ -46,7 +46,7 @@
       },
       "data": {"values": [{"unused": "text"}]},
       "encoding": {
-        "x": {"value": -107},
+        "x": {"value": -51},
         "y": {"value": -45},
         "text": {"value": "Minimum"}
       }
@@ -61,7 +61,7 @@
       },
       "data": {"values": [{"unused": "text"}]},
       "encoding": {
-        "x": {"value": -30},
+        "x": {"value": 26},
         "y": {"value": -45},
         "text": {"value": "Maximum"}
       }
@@ -75,7 +75,7 @@
       },
       "data": {"values": [{"unused": "text"}]},
       "encoding": {
-        "x": {"value": -145},
+        "x": {"value": -90},
         "y": {"value": -30},
         "text": {"value": "Source: PrisonPolicy.org "}
       }
@@ -84,9 +84,9 @@
       "mark": {"type": "text"},
       "data": {"values": [{"unused": "text"}]},
       "encoding": {
-        "x": {"value": 102},
+        "x": {"value": 97},
         "y": {"value": 40},
-        "text": {"value": "Prisoners Cannot Be Paid in 10 States "},
+        "text": {"value": "Prisoner jobs are unpaid in 9 states "},
         "opacity": {"value": 0.5}
       }
     },
@@ -94,9 +94,9 @@
       "mark": {"type": "text"},
       "data": {"values": [{"unused": "text"}]},
       "encoding": {
-        "x": {"value": 182},
+        "x": {"value": 187},
         "y": {"value": 85},
-        "text": {"value": "Missouri and Utah Have Only Minimums"},
+        "text": {"value": "Missouri and Utah only set a minimum pay"},
         "opacity": {"value": 0.5}
       }
     },
@@ -114,7 +114,7 @@
       "mark": {"type": "rule"},
       "data": {"values": [{"unused": "text"}]},
       "encoding": {
-        "x": {"value": 80},
+        "x": {"value": 78},
         "y": {"value": 75},
         "y2": {"value": 95},
         "opacity": {"value": 0.5}
@@ -124,22 +124,88 @@
       "mark": {"type": "rule"},
       "data": {"values": [{"unused": "text"}]},
       "encoding": {
-        "x": {"value": 5},
-        "y": {"value": 0},
-        "y2": {"value": 75},
+        "x": {"value": 6},
+        "y": {"value": 1},
+        "y2": {"value": 76},
         "opacity": {"value": 0.5}
       }
     },
     {
       "layer": [
         {
+          "mark": {"type": "rule", "strokeWidth": 1.5, "color": "#caa2a6"},
+          "encoding": {
+            "tooltip": [
+              {"field": "State"},
+              {"field": "Hourly Minimum", "format": "$,.2f"},
+              {"field": "Hourly Maximum", "format": "$,.2f"}
+            ],
+            "x": {
+              "field": "Hourly Minimum",
+              "type": "quantitative",
+              "title": null,
+              "axis": {
+                "zindex": 0,
+                "gridWidth": 0.5,
+                "labelAngle": 0,
+                "format": "$.2f",
+                "grid": true,
+                "gridOpacity": 0.6,
+                "ticks": false,
+                "labelPadding": 5,
+                "labelFontSize": 11,
+                "tickCount": 5
+              }
+            },
+            "x2": {"field": "Hourly Maximum"},
+            "y": {
+              "field": "State",
+              "title": null,
+              "type": "nominal",
+              "sort": {"field": "customOrder", "order": "ascending"},
+              "axis": {
+                "grid": false,
+                "gridOpacity": 0.6,
+                "ticks": true,
+                "tickSize": 3,
+                "tickOpacity": 0.6,
+                "labelPadding": 2,
+                "labelFontSize": 10
+              }
+            },
+            "opacity": {
+              "condition": {"value": 1, "test": {"param": "hover"}},
+              "value": 0.8
+            },
+            "color": {
+              "condition": {
+                "value": "grey",
+                "test": "datum['Non-state'] == 1"
+              }
+            }
+          },
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "fields": ["Hourly Minimum", "State"],
+                "toggle": true,
+                "on": "mouseover"
+              }
+            }
+          ],
+          "transform": [
+            {"filter": "datum.State != 'Utah' & datum.State != 'Missouri'"}
+          ]
+        },
+        {
           "mark": {"type": "circle", "color": "rgb(128,0,0)"},
           "encoding": {
             "tooltip": [
               {"field": "State"},
               {"field": "Hourly Minimum", "format": "$,.2f"},
-              {"field": "Hourly Maximum", "format": "$,.2f"},
-              {"field": "customOrder"}
+              {"field": "Hourly Maximum", "format": "$,.2f"}
             ],
             "x": {
               "field": "Value",
@@ -186,6 +252,14 @@
                 "value": "dimgrey",
                 "test": "datum['Non-state'] == 1"
               }
+            },
+            "size": {
+              "condition": {
+                "param": "hover",
+                "empty": false,
+                "value": 80
+              },
+              "value": 40
             }
           },
           "transform": [
@@ -194,77 +268,6 @@
               "as": ["Series", "Value"]
             },
             {"calculate": "'foo'", "as": "foo"}
-          ]
-        },
-        {
-          "mark": {
-            "type": "rule",
-            "strokeWidth": 1.5,
-            "color": "rgb(128,0,0)"
-          },
-          "encoding": {
-            "tooltip": [
-              {"field": "State"},
-              {"field": "Hourly Minimum", "format": "$,.2f"},
-              {"field": "Hourly Maximum", "format": "$,.2f"}
-            ],
-            "x": {
-              "field": "Hourly Minimum",
-              "type": "quantitative",
-              "title": null,
-              "axis": {
-                "zindex": 0,
-                "gridWidth": 0.5,
-                "labelAngle": 0,
-                "format": "$.2f",
-                "grid": true,
-                "gridOpacity": 0.6,
-                "ticks": false,
-                "labelPadding": 5,
-                "labelFontSize": 11,
-                "tickCount": 5
-              }
-            },
-            "x2": {"field": "Hourly Maximum"},
-            "y": {
-              "field": "State",
-              "title": null,
-              "type": "nominal",
-              "sort": {"field": "customOrder", "order": "ascending"},
-              "axis": {
-                "grid": false,
-                "gridOpacity": 0.6,
-                "ticks": true,
-                "tickSize": 3,
-                "tickOpacity": 0.6,
-                "labelPadding": 2,
-                "labelFontSize": 10
-              }
-            },
-            "opacity": {
-              "condition": {"value": 1, "test": {"param": "hover"}},
-              "value": 0.8
-            },
-            "color": {
-              "condition": {
-                "value": "dimgrey",
-                "test": "datum['Non-state'] == 1"
-              }
-            }
-          },
-          "params": [
-            {
-              "name": "hover",
-              "select": {
-                "type": "point",
-                "fields": ["Hourly Minimum", "State"],
-                "toggle": true,
-                "on": "mouseover"
-              }
-            }
-          ],
-          "transform": [
-            {"filter": "datum.State != 'Utah' & datum.State != 'Missouri'"}
           ]
         }
       ]

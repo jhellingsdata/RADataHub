@@ -1,140 +1,143 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_11_cbi.csv"
-    },
-    "config": {"style": {"cell": {"stroke": "transparent"}}},
-    "title": {
-      "text": "Estimates of Central Bank Independence",
-      "anchor": "start",
-      "fontSize": 16,
-      "subtitleFontStyle": "italic",
-      "subtitle": ["100=Fully Independent", "Source: Garriga, 2016", ""]
-    },
-    "width": 500,
-    "height": 350,
-    "layer": [
-      {
-        "layer": [
-          {
-            "mark": "line",
-            "encoding": {
-              "x": {
-                "field": "Date",
-                "type": "temporal",
-                "axis": {
-                  "grid": false,
-                  "labelPadding": 6,
-                  "ticks": false,
-                  "title": null
-                }
-              },
-              "color": {"field": "Series", "type": "nominal"},
-              "y": {
-                "field": "Value",
-                "type": "quantitative",
-                "scale": {"zero": false}
-              }
-            }
-          },
-          {
-            "mark": "point",
-            "transform": [{"filter": {"param": "hover", "empty": false}}],
-            "encoding": {
-              "x": {
-                "field": "Date",
-                "type": "temporal",
-                "axis": {
-                  "grid": false,
-                  "labelPadding": 6,
-                  "ticks": false,
-                  "title": null
-                }
-              },
-              "color": {"field": "Series", "type": "nominal"},
-              "y": {
-                "field": "Value",
-                "type": "quantitative",
-                "scale": {"zero": false}
-              }
-            }
-          }
-        ]
-      },
-      {
-        "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 4},
-        "encoding": {
-          "x": {
-            "field": "Date",
-            "type": "temporal",
-            "axis": {
-              "grid": false,
-              "labelPadding": 6,
-              "ticks": false,
-              "title": null
-            }
-          },
-          "text": {"field": "Series"},
-          "y": {
-            "field": "Value",
-            "axis": {
-              "labelPadding": 6,
-              "ticks": false,
-              "title": null,
-              "format": "d"
-            },
-            "type": "quantitative",
-            "scale": {"zero": false, "domain": [20, 80]}
-          },
-          "color": {"field": "Series", "type": "nominal", "legend": null}
-        },
-        "transform": [{"filter": "datum.Date==1325376000000"}]
-      },
-      {
-        "mark": "rule",
-        "encoding": {
-          "x": {
-            "field": "Date",
-            "type": "temporal",
-            "axis": {
-              "grid": false,
-              "labelPadding": 6,
-              "ticks": false,
-              "title": null
-            }
-          },
-          "opacity": {
-            "condition": {"value": 0.3, "param": "hover", "empty": false},
-            "value": 0
-          },
-          "tooltip": [
-            {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_11_cbi.csv"
+  },
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "title": {
+    "text": "Central Bank Independence",
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitle": ["Average CBI by continent, 100=fully independent", "Source: Garriga, 2016", ""]
+  },
+  "width": 500,
+  "height": 350,
+  "layer": [
+    {
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
               "field": "Date",
               "type": "temporal",
-              "format": "%Y",
-              "title": "Year "
+              "axis": {
+                "grid": false,
+                "labelPadding": 6,
+                "ticks": false,
+                "title": null
+              }
             },
-            {"format": ".0d", "field": "Europe", "type": "quantitative"},
-            {"format": ".0d", "field": "Africa", "type": "quantitative"},
-            {"format": ".0d", "field": "Asia", "type": "quantitative"},
-            {"format": ".0d", "field": "Americas", "type": "quantitative"},
-            {"format": ".0d", "field": "Oceania", "type": "quantitative"}
-          ]
-        },
-        "params": [
-          {
-            "name": "hover",
-            "select": {
-              "type": "point",
-              "fields": ["Date"],
-              "nearest": true,
-              "on": "mouseover",
-              "clear": "mouseout"
+            "color": {"field": "Series", "type": "nominal"},
+            "y": {
+              "field": "Value",
+              "type": "quantitative",
+              "scale": {"zero": false}
             }
           }
-        ],
-        "transform": [{"pivot": "Series", "value": "Value", "groupby": ["Date"]}]
-      }
-    ],
-    "transform": [{"calculate": "datum.Value*100", "as": "Value"}]
-  }
+        },
+        {
+          "mark": "point",
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "encoding": {
+            "x": {
+              "field": "Date",
+              "type": "temporal",
+              "axis": {
+                "grid": false,
+                "labelPadding": 6,
+                "ticks": false,
+                "title": null
+              }
+            },
+            "color": {"field": "Series", "type": "nominal"},
+            "y": {
+              "field": "Value",
+              "type": "quantitative",
+              "scale": {"zero": false}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 4},
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "grid": false,
+            "labelPadding": 6,
+            "ticks": false,
+            "title": null
+          }
+        },
+        "text": {"field": "Series"},
+        "y": {
+          "field": "Value",
+          "axis": {
+            "labelPadding": 5,
+            "ticks": false,
+            "title": null,
+            "format": "d",
+            "labelFontSize": 11,
+            "gridOpacity": 0.6
+          },
+          "type": "quantitative",
+          "scale": {"zero": false, "domain": [20, 80]}
+        },
+        "color": {"field": "Series", "type": "nominal", "legend": null}
+      },
+      "transform": [{"filter": "datum.Date==1325376000000"}]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "grid": false,
+            "labelPadding": 5,
+            "ticks": false,
+            "title": null,
+            "labelFontSize": 11
+          }
+        },
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "format": "%Y",
+            "title": "Year"
+          },
+          {"format": ".0d", "field": "Europe", "type": "quantitative"},
+          {"format": ".0d", "field": "Africa", "type": "quantitative"},
+          {"format": ".0d", "field": "Asia", "type": "quantitative"},
+          {"format": ".0d", "field": "Americas", "type": "quantitative"},
+          {"format": ".0d", "field": "Oceania", "type": "quantitative"}
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "transform": [{"pivot": "Series", "value": "Value", "groupby": ["Date"]}]
+    }
+  ],
+  "transform": [{"calculate": "datum.Value*100", "as": "Value"}]
+}
