@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "title": {
+    "text": "Pay in US Prisons",
+    "subtitle": ["Hourly Minimum Pay, 2017", "Source: PrisonPolicy.org", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16
+  },
+  "transform": [
+    {"filter": "datum.State != 'Washington'"}
+  ],
+  "view": {"stroke": "transparent"},
+  "width": 350,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_1_PrisonPay_US.csv"
+  },
+  
+  "layer":[
+    {
+      "mark": {"type": "text"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": 115},
+        "y": {"value": 43},
+        "text": {"value": "10 States have no minimum or do not pay"}
+      }
+    },
+    {
+      "mark": {"type": "rule"},
+      "data" : {"values": [
+        {"unused":"text"}
+      ]},
+      "encoding": {
+        "x": {"value": 5},
+        "y": {"value": 0},
+        "y2": {"value": 88}
+      }
+    },
+    {
+  "params": [
+    {
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": ["Hourly Minimum", "State"],
+        "toggle": true,
+        "on": "mouseover"
+      }
+    }
+  ],
+  "mark": {"type": "bar", "color": "rgb(128,0,0)"},
+  "encoding": {
+    "tooltip": [
+      {"field": "State"},
+      {"field": "Hourly Minimum", "format": "$,.2f"},
+      {"field": "Hourly Maximum", "format": "$,.2f"}
+    ],
+    "x": {
+      "field": "Hourly Minimum",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "zindex": 0,
+        "gridWidth": 0.5,
+        "labelAngle": 0,
+        "format": "$.2f",
+        "grid": true,
+        "gridOpacity": 0.6,
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11,
+        "tickCount": 5
+      }
+    },
+    "y": {
+      "field": "State",
+      "title": null,
+      "type": "nominal",
+      "sort": "x",
+      "axis": {
+        "grid": false,
+        "gridOpacity": 0.6,
+        "ticks": true,
+        "tickSize": 3,
+        "tickOpacity": 0.6,
+        "labelPadding": 2,
+        "labelFontSize": 10
+      }
+    },
+    "opacity": {
+      "condition": {"test": {"param": "hover"}, "value": 1},
+      "value": 0.8
+    },
+    "color": {
+      "condition": {
+        "value": "dimgrey",
+        "test": "datum['Non-state'] == 1"
+      },
+      "value": "rgb(128,0,0)"
+    }
+  }
+  }]
+}

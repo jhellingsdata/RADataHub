@@ -1,0 +1,568 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "background": "white",
+    "padding": 5,
+    "width": 500,
+    "height": 300,
+    "style": "cell",
+    "data": [
+      {
+        "name": "maxYear_store",
+        "values": [
+          {
+            "unit": "layer_4",
+            "fields": [{"type": "E", "field": "Timestamp"}],
+            "values": [2022]
+          }
+        ]
+      },
+      {
+        "name": "minYear_store",
+        "values": [
+          {
+            "unit": "layer_4",
+            "fields": [{"type": "E", "field": "Timestamp"}],
+            "values": [1971]
+          }
+        ]
+      },
+      {
+        "name": "country_select_store",
+        "values": [
+          {
+            "unit": "layer_4",
+            "fields": [{"type": "E", "field": "Country"}],
+            "values": ["US"]
+          }
+        ]
+      },
+      {"name": "hover_store"},
+      {
+        "name": "source_1",
+        "values": [{"can be anything - unused": 1}],
+        "format": {}
+      },
+      {
+        "name": "source_0",
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/chart3_3_US_UK_Male_Female_Employment.csv",
+        "format": {"type": "csv", "delimiter": ","},
+        "transform": [
+          {"type": "formula", "expr": "datum.Timestamp *1000", "as": "Timestamp"},
+          {
+            "type": "formula",
+            "expr": "datum.Value > 1 ? datum.Value/100 : datum.Value",
+            "as": "Value"
+          },
+          {
+            "type": "formula",
+            "expr": "datum.Timestamp > utc(minYear.Timestamp, '01')",
+            "as": "foo"
+          },
+          {"type": "filter", "expr": "datum.Country == country_select.Country"},
+          {
+            "type": "filter",
+            "expr": "datum.Timestamp > utc(minYear.Timestamp, '01') & datum.Timestamp < utc(maxYear.Timestamp, '01')"
+          }
+        ]
+      },
+      {
+        "name": "data_0",
+        "source": "source_0",
+        "transform": [
+          {
+            "type": "filter",
+            "expr": "length(data(\"hover_store\")) && vlSelectionTest(\"hover_store\", datum)"
+          },
+          {
+            "type": "filter",
+            "expr": "(isDate(datum[\"Timestamp\"]) || (isValid(datum[\"Timestamp\"]) && isFinite(+datum[\"Timestamp\"]))) && isValid(datum[\"Value\"]) && isFinite(+datum[\"Value\"])"
+          }
+        ]
+      },
+      {
+        "name": "data_1",
+        "source": "source_0",
+        "transform": [
+          {
+            "type": "pivot",
+            "field": "Gender",
+            "value": "Value",
+            "groupby": ["Timestamp"]
+          },
+          {
+            "type": "filter",
+            "expr": "(isDate(datum[\"Timestamp\"]) || (isValid(datum[\"Timestamp\"]) && isFinite(+datum[\"Timestamp\"])))"
+          }
+        ]
+      },
+      {
+        "name": "data_3",
+        "source": "source_1",
+        "transform": [
+          {
+            "type": "formula",
+            "expr": "country_select.Country=='US' ? 'Monthly Rate, Prime Age 25-54'  : 'Monthly Rate, Age 16-64' ",
+            "as": "subtitle"
+          }
+        ]
+      },
+      {
+        "name": "data_4",
+        "source": "source_1",
+        "transform": [
+          {
+            "type": "formula",
+            "expr": "country_select.Country=='US' ? 'Source: FRED'  : 'Source: ONS' ",
+            "as": "subtitle"
+          }
+        ]
+      },
+      {
+        "name": "data_5",
+        "source": "source_1",
+        "transform": [
+          {
+            "type": "formula",
+            "expr": "country_select.Country + ' Male and Female Employment Rate'",
+            "as": "subtitle"
+          }
+        ]
+      }
+    ],
+    "signals": [
+      {
+        "name": "unit",
+        "value": {},
+        "on": [
+          {"events": "mousemove", "update": "isTuple(group()) ? group() : unit"}
+        ]
+      },
+      {
+        "name": "country_select_Country",
+        "init": "\"US\"",
+        "bind": {"input": "select", "options": ["US", "UK"], "name": "Country:"}
+      },
+      {
+        "name": "minYear_Timestamp",
+        "init": "1971",
+        "bind": {
+          "input": "range",
+          "min": 1977,
+          "max": 2021,
+          "step": 1,
+          "name": "Start year:"
+        }
+      },
+      {
+        "name": "maxYear_Timestamp",
+        "init": "2022",
+        "bind": {
+          "input": "range",
+          "min": 1978,
+          "max": 2022,
+          "step": 1,
+          "name": "End year:"
+        }
+      },
+      {
+        "name": "maxYear",
+        "update": "vlSelectionResolve(\"maxYear_store\", \"union\", true, true)"
+      },
+      {
+        "name": "minYear",
+        "update": "vlSelectionResolve(\"minYear_store\", \"union\", true, true)"
+      },
+      {
+        "name": "country_select",
+        "update": "vlSelectionResolve(\"country_select_store\", \"union\", true, true)"
+      },
+      {
+        "name": "hover",
+        "update": "vlSelectionResolve(\"hover_store\", \"union\", true, true)"
+      },
+      {
+        "name": "maxYear_tuple",
+        "update": "maxYear_Timestamp !== null ? {fields: maxYear_tuple_fields, values: [maxYear_Timestamp]} : null"
+      },
+      {
+        "name": "maxYear_tuple_fields",
+        "value": [{"type": "E", "field": "Timestamp"}]
+      },
+      {
+        "name": "maxYear_modify",
+        "on": [
+          {
+            "events": {"signal": "maxYear_tuple"},
+            "update": "modify(\"maxYear_store\", maxYear_tuple, true)"
+          }
+        ]
+      },
+      {
+        "name": "minYear_tuple",
+        "update": "minYear_Timestamp !== null ? {fields: minYear_tuple_fields, values: [minYear_Timestamp]} : null"
+      },
+      {
+        "name": "minYear_tuple_fields",
+        "value": [{"type": "E", "field": "Timestamp"}]
+      },
+      {
+        "name": "minYear_modify",
+        "on": [
+          {
+            "events": {"signal": "minYear_tuple"},
+            "update": "modify(\"minYear_store\", minYear_tuple, true)"
+          }
+        ]
+      },
+      {
+        "name": "country_select_tuple",
+        "update": "country_select_Country !== null ? {fields: country_select_tuple_fields, values: [country_select_Country]} : null"
+      },
+      {
+        "name": "country_select_tuple_fields",
+        "value": [{"type": "E", "field": "Country"}]
+      },
+      {
+        "name": "country_select_modify",
+        "on": [
+          {
+            "events": {"signal": "country_select_tuple"},
+            "update": "modify(\"country_select_store\", country_select_tuple, true)"
+          }
+        ]
+      },
+      {
+        "name": "hover_tuple",
+        "on": [
+          {
+            "events": [
+              {
+                "source": "scope",
+                "type": "mouseover",
+                "markname": "layer_4_voronoi"
+              }
+            ],
+            "update": "datum && item().mark.marktype !== 'group' && indexof(item().mark.role, 'legend') < 0 ? {unit: \"layer_4\", fields: hover_tuple_fields, values: [(item().isVoronoi ? datum.datum : datum)[\"Timestamp\"]]} : null",
+            "force": true
+          },
+          {"events": [{"source": "view", "type": "mouseout"}], "update": "null"}
+        ]
+      },
+      {
+        "name": "hover_tuple_fields",
+        "value": [{"type": "E", "field": "Timestamp"}]
+      },
+      {
+        "name": "hover_toggle",
+        "value": false,
+        "on": [
+          {
+            "events": [
+              {
+                "source": "scope",
+                "type": "mouseover",
+                "markname": "layer_4_voronoi"
+              }
+            ],
+            "update": "event.shiftKey"
+          },
+          {"events": [{"source": "view", "type": "mouseout"}], "update": "false"}
+        ]
+      },
+      {
+        "name": "hover_modify",
+        "on": [
+          {
+            "events": {"signal": "hover_tuple"},
+            "update": "modify(\"hover_store\", hover_toggle ? null : hover_tuple, hover_toggle ? null : true, hover_toggle ? hover_tuple : null)"
+          }
+        ]
+      }
+    ],
+    "marks": [
+      {
+        "name": "layer_0_marks",
+        "type": "text",
+        "style": ["text"],
+        "interactive": false,
+        "from": {"data": "data_3"},
+        "encode": {
+          "update": {
+            "align": {"value": "left"},
+            "baseline": {"value": "bottom"},
+            "fontWeight": {"value": "normal"},
+            "fontStyle": {"value": "italic"},
+            "fill": {"value": "black"},
+            "description": {
+              "signal": "\"subtitle: \" + (isValid(datum[\"subtitle\"]) ? datum[\"subtitle\"] : \"\"+datum[\"subtitle\"])"
+            },
+            "x": {"value": -45},
+            "y": {"value": -45},
+            "text": {
+              "signal": "isValid(datum[\"subtitle\"]) ? datum[\"subtitle\"] : \"\"+datum[\"subtitle\"]"
+            },
+            "fontSize": {"value": 12}
+          }
+        }
+      },
+      {
+        "name": "layer_1_marks",
+        "type": "text",
+        "style": ["text"],
+        "interactive": false,
+        "from": {"data": "data_4"},
+        "encode": {
+          "update": {
+            "align": {"value": "left"},
+            "baseline": {"value": "bottom"},
+            "fontWeight": {"value": "normal"},
+            "fontStyle": {"value": "italic"},
+            "fill": {"value": "black"},
+            "description": {
+              "signal": "\"subtitle: \" + (isValid(datum[\"subtitle\"]) ? datum[\"subtitle\"] : \"\"+datum[\"subtitle\"])"
+            },
+            "x": {"value": -45},
+            "y": {"value": -30},
+            "text": {
+              "signal": "isValid(datum[\"subtitle\"]) ? datum[\"subtitle\"] : \"\"+datum[\"subtitle\"]"
+            },
+            "fontSize": {"value": 12}
+          }
+        }
+      },
+      {
+        "name": "layer_2_marks",
+        "type": "text",
+        "style": ["text"],
+        "interactive": false,
+        "from": {"data": "data_5"},
+        "encode": {
+          "update": {
+            "align": {"value": "left"},
+            "baseline": {"value": "bottom"},
+            "fontWeight": {"value": "bold"},
+            "fill": {"value": "black"},
+            "description": {
+              "signal": "\"subtitle: \" + (isValid(datum[\"subtitle\"]) ? datum[\"subtitle\"] : \"\"+datum[\"subtitle\"])"
+            },
+            "x": {"value": -45},
+            "y": {"value": -60},
+            "text": {
+              "signal": "isValid(datum[\"subtitle\"]) ? datum[\"subtitle\"] : \"\"+datum[\"subtitle\"]"
+            },
+            "fontSize": {"value": 16}
+          }
+        }
+      },
+      {
+        "name": "layer_3_layer_0_pathgroup",
+        "type": "group",
+        "from": {
+          "facet": {
+            "name": "faceted_path_layer_3_layer_0_main",
+            "data": "source_0",
+            "groupby": ["Gender"]
+          }
+        },
+        "encode": {
+          "update": {
+            "width": {"field": {"group": "width"}},
+            "height": {"field": {"group": "height"}}
+          }
+        },
+        "marks": [
+          {
+            "name": "layer_3_layer_0_marks",
+            "type": "line",
+            "style": ["line"],
+            "sort": {"field": "datum[\"Timestamp\"]"},
+            "interactive": false,
+            "from": {"data": "faceted_path_layer_3_layer_0_main"},
+            "encode": {
+              "update": {
+                "stroke": {"scale": "color", "field": "Gender"},
+                "description": {
+                  "signal": "\"Timestamp: \" + (timeFormat(datum[\"Timestamp\"], '%b %d, %Y')) + \"; Value: \" + (format(datum[\"Value\"], \"%\")) + \"; Gender: \" + (isValid(datum[\"Gender\"]) ? datum[\"Gender\"] : \"\"+datum[\"Gender\"])"
+                },
+                "x": {"scale": "x", "field": "Timestamp"},
+                "y": {"scale": "y", "field": "Value"},
+                "defined": {
+                  "signal": "isValid(datum[\"Timestamp\"]) && isFinite(+datum[\"Timestamp\"]) && isValid(datum[\"Value\"]) && isFinite(+datum[\"Value\"])"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "layer_3_layer_1_marks",
+        "type": "symbol",
+        "style": ["point"],
+        "interactive": false,
+        "from": {"data": "data_0"},
+        "encode": {
+          "update": {
+            "opacity": {"value": 0.7},
+            "fill": {"value": "transparent"},
+            "stroke": {"scale": "color", "field": "Gender"},
+            "ariaRoleDescription": {"value": "point"},
+            "description": {
+              "signal": "\"Timestamp: \" + (timeFormat(datum[\"Timestamp\"], '%b %d, %Y')) + \"; Value: \" + (format(datum[\"Value\"], \"%\")) + \"; Gender: \" + (isValid(datum[\"Gender\"]) ? datum[\"Gender\"] : \"\"+datum[\"Gender\"])"
+            },
+            "x": {"scale": "x", "field": "Timestamp"},
+            "y": {"scale": "y", "field": "Value"}
+          }
+        }
+      },
+      {
+        "name": "layer_4_marks",
+        "type": "rule",
+        "style": ["rule"],
+        "interactive": true,
+        "from": {"data": "data_1"},
+        "encode": {
+          "update": {
+            "stroke": {"value": "black"},
+            "opacity": [
+              {
+                "test": "length(data(\"hover_store\")) && vlSelectionTest(\"hover_store\", datum)",
+                "value": 0.3
+              },
+              {"value": 0}
+            ],
+            "tooltip": {
+              "signal": "{\"Date\": timeFormat(datum[\"Timestamp\"], '%b %Y'), \"Female\": format(datum[\"Female\"], \".2%\"), \"Male\": format(datum[\"Male\"], \".2%\")}"
+            },
+            "description": {
+              "signal": "\"Timestamp: \" + (timeFormat(datum[\"Timestamp\"], '%b %d, %Y')) + \"; Date: \" + (timeFormat(datum[\"Timestamp\"], '%b %Y')) + \"; Female: \" + (format(datum[\"Female\"], \".2%\")) + \"; Male: \" + (format(datum[\"Male\"], \".2%\"))"
+            },
+            "x": {"scale": "x", "field": "Timestamp"},
+            "y": {"value": 0},
+            "y2": {"field": {"group": "height"}}
+          }
+        }
+      },
+      {
+        "name": "layer_4_voronoi",
+        "type": "path",
+        "interactive": true,
+        "from": {"data": "layer_4_marks"},
+        "encode": {
+          "update": {
+            "fill": {"value": "transparent"},
+            "strokeWidth": {"value": 0.35},
+            "stroke": {"value": "transparent"},
+            "isVoronoi": {"value": true},
+            "tooltip": {
+              "signal": "{\"Date\": timeFormat(datum.datum[\"Timestamp\"], '%b %Y'), \"Female\": format(datum.datum[\"Female\"], \".2%\"), \"Male\": format(datum.datum[\"Male\"], \".2%\")}"
+            }
+          }
+        },
+        "transform": [
+          {
+            "type": "voronoi",
+            "x": {"expr": "datum.datum.x || 0"},
+            "y": {"expr": "datum.datum.y || 0"},
+            "size": [{"signal": "width"}, {"signal": "height"}]
+          }
+        ]
+      }
+    ],
+    "scales": [
+      {
+        "name": "x",
+        "type": "time",
+        "domain": {
+          "fields": [
+            {"data": "source_0", "field": "Timestamp"},
+            {"data": "data_0", "field": "Timestamp"},
+            {"data": "data_1", "field": "Timestamp"}
+          ]
+        },
+        "range": [0, {"signal": "width"}]
+      },
+      {
+        "name": "y",
+        "type": "linear",
+        "domain": [0.4, 1],
+        "range": [{"signal": "height"}, 0],
+        "zero": false
+      },
+      {
+        "name": "color",
+        "type": "ordinal",
+        "domain": {
+          "fields": [
+            {"data": "source_0", "field": "Gender"},
+            {"data": "data_0", "field": "Gender"}
+          ],
+          "sort": true
+        },
+        "range": ["rgb(128,0,0)", "#008080"]
+      }
+    ],
+    "axes": [
+      {
+        "scale": "y",
+        "orient": "left",
+        "gridOpacity": 0.6,
+        "gridScale": "x",
+        "grid": true,
+        "tickCount": {"signal": "ceil(height/40)"},
+        "domain": false,
+        "labels": false,
+        "aria": false,
+        "maxExtent": 0,
+        "minExtent": 0,
+        "ticks": false,
+        "zindex": 0
+      },
+      {
+        "scale": "x",
+        "orient": "bottom",
+        "grid": false,
+        "labelAngle": 0,
+        "labelFontSize": 11,
+        "labelPadding": 5,
+        "ticks": false,
+        "labelBaseline": "top",
+        "labelFlush": true,
+        "labelOverlap": true,
+        "tickCount": {"signal": "ceil(width/40)"},
+        "zindex": 0
+      },
+      {
+        "scale": "y",
+        "orient": "left",
+        "grid": false,
+        "format": "%",
+        "labelAngle": 0,
+        "labelFontSize": 11,
+        "labelPadding": 5,
+        "ticks": false,
+        "labelAlign": "right",
+        "labelOverlap": true,
+        "tickCount": {"signal": "ceil(height/40)"},
+        "zindex": 0
+      }
+    ],
+    "legends": [
+      {
+        "direction": "horizontal",
+        "legendX": 0,
+        "legendY": -15,
+        "orient": "none",
+        "stroke": "color",
+        "symbolType": "circle",
+        "encode": {
+          "symbols": {
+            "update": {
+              "fill": {"value": "transparent"},
+              "opacity": {"value": 0.7}
+            }
+          }
+        }
+      }
+    ],
+    "config": {"style": {"cell": {"stroke": "transparent"}}}
+  }

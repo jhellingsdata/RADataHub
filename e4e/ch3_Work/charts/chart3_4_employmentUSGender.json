@@ -1,16 +1,16 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/FRED_employRate.csv"
-    },
-    "config": {"view": {"stroke": "transparent"}},
-    "width": 500,
-    "height": 300,
-    "title": {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/FRED_employRate.csv"
+  },
+  "config": {"view": {"stroke": "transparent"}},
+  "width": 500,
+  "height": 300,
+  "title": {
     "text": "Employment by gender, US",
     "subtitle": [
       "Prime working age (25-54 yrs), seasonally adjusted",
-      "Data: FRED",
+      "Source: FRED",
       ""
     ],
     "subtitleFontStyle": "italic",
@@ -19,88 +19,87 @@
     "color": "black",
     "fontSize": 16
   },
-  
-    "encoding": {
-      "x": {
-        "field": "Date",
-        "type": "temporal",
-        "title": null,
-        "axis": {
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
         "grid": false,
-        "labelAngle":0,
+        "labelAngle": 0,
         "gridOpacity": 0.6,
         "ticks": false,
         "labelPadding": 5,
         "labelFontSize": 11
-        }
       }
-    },
-    "layer": [
-      {
-        "encoding": {
-          "color": {
-            "field": "Gender",
-            "type": "nominal",
-            "legend": {
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "legend": {
             "orient": "none",
             "direction": "horizontal",
-            "legendX": -35,
-            "legendY": -30,
+            "legendX": 0,
+            "legendY": -15,
             "title": null
-            },
-            "scale": {"range": ["rgb(128,0,0)", "#008080"]}
           },
-          "y": {
-            "field": "Employment",
-            "type": "quantitative",
-            "title": null,
-            "axis": {
+          "scale": {"range": ["rgb(128,0,0)", "#008080"]}
+        },
+        "y": {
+          "field": "Employment",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
             "format": "%",
-            "gridOpacity": 0.6, 
-            "format": "%", "labelAngle":0,
+            "gridOpacity": 0.6,
+            "labelAngle": 0,
             "ticks": false,
             "labelPadding": 5,
             "labelFontSize": 11
-            },
-            "scale": {"domain": [0.4, 1]}
-          }
+          },
+          "scale": {"domain": [0.4, 1]}
+        }
+      },
+      "layer": [
+        {"mark": "line"},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {"pivot": "Gender", "value": "Employment", "groupby": ["Date"]}
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
         },
-        "layer": [
-          {"mark": "line"},
-          {
-            "transform": [{"filter": {"param": "hover", "empty": false}}],
-            "mark": "point"
-          }
+        "tooltip": [
+          {"field": "Date", "type": "temporal", "format": "%b %Y"},
+          {"field": "Female", "type": "quantitative", "format": ".2%"},
+          {"field": "Male", "type": "quantitative", "format": ".2%"}
         ]
       },
-      {
-        "transform": [
-          {"pivot": "Gender", "value": "Employment", "groupby": ["Date"]}
-        ],
-        "mark": "rule",
-        "encoding": {
-          "opacity": {
-            "condition": {"value": 0.3, "param": "hover", "empty": false},
-            "value": 0
-          },
-          "tooltip": [
-            {"field": "Date", "type": "temporal", "format": "%b %Y"},
-            {"field": "Female", "type": "quantitative", "format": ".2%"},
-            {"field": "Male", "type": "quantitative", "format": ".2%"}
-          ]
-        },
-        "params": [
-          {
-            "name": "hover",
-            "select": {
-              "type": "point",
-              "fields": ["Date"],
-              "nearest": true,
-              "on": "mouseover",
-              "clear": "mouseout"
-            }
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
           }
-        ]
-      }
-    ]
-  }
+        }
+      ]
+    }
+  ]
+}

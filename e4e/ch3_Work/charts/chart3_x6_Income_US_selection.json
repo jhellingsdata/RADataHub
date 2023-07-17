@@ -1,0 +1,105 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch3_Work/data/chart3_6_Income_US_selection.csv"
+    },
+    "title": {
+      "text": "US Incomes Over Time",
+      "subtitle": [
+        "Real Household Incomes by Percentile, Race, and Region, over time (2021 USD)",
+        "source: US Census Bureau",
+        ""
+      ],
+      "fontSize": 16,
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black"
+    },
+    "height": 300,
+    "width": 500,
+    "transform": [
+      {
+        "calculate": "datum.Series == '20th' ? 'Scheme1' : datum.Series == '40th' ? 'Scheme2' : datum.Series == '60th' ? 'Scheme3' : 'Scheme4'",
+        "as": "colorScheme"
+      },
+      {
+        "calculate": "datum.View == 'by Percentile' ? ['20th', '40th', 'Median', '60th', '80th', '95th'] : datum.colorScheme == '40th' ? 'Scheme2' : datum.colorScheme == '60th' ? 'Scheme3' : 'Scheme4'",
+        "as": "colorDomain"
+      },
+      {
+        "calculate": "datum.View == 'by Percentile' ? ['#07576d', '#0a7491', 'grey', '#0d91b6', '#55b2cb', '#86c8da'] : datum.colorScheme == '40th' ? 'Scheme2' : datum.colorScheme == '60th' ? 'Scheme3' : 'Scheme4'",
+        "as": "colorRange"
+      }
+    ],
+    "layer": [
+      {
+        "params": [
+          {
+            "name": "selected_view",
+            "select": {"type": "point", "fields": ["View"]},
+            "bind": {
+              "input": "select",
+              "labels": ["Percentile", "Race", "Region"],
+              "options": [["#07576d", "#0a7491", "grey", "#0d91b6", "#55b2cb", "#86c8da"], "by Race", "by Region"],
+              "name": "View"
+            },
+            "value": "Percentile"
+          }
+        ],
+        "transform": [
+          {
+            "calculate": "selected_view === ['#07576d', '#0a7491', 'grey', '#0d91b6', '#55b2cb', '#86c8da'] ? 'by Percentile' : selected_view === '40th' ? 'by Race' : selected_view === '60th' ? 'by Region' : 'by Percentile'",
+            "as": "filter_type"
+          },
+          {"filter": "datum.View == datum.filter_type"}
+        ],
+        "mark": {
+          "type": "line",
+          "point": {
+            "size": 30,
+            "fillOpacity": 0
+          }
+        },
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "temporal",
+            "axis": {
+              "title": null,
+              "grid": false,
+              "labelFontSize": 11,
+              "tickOpacity": 0
+            }
+          },
+          "y": {
+            "field": "Income",
+            "type": "quantitative",
+            "scale": {
+              "zero": false,
+              "type": "linear"
+            },
+            "axis": {
+              "title": "",
+              "format": "$,d",
+              "ticks": false,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "gridOpacity": 0.6,
+              "grid": true
+              }
+          },
+          "color": {
+            "field": "Series"
+          },
+          "strokeDash": {
+            "condition": {
+              "test": "datum.stroke == 1",
+              "value": [5, 5] 
+            },
+            "value": []
+          }
+        }
+      }
+    ]
+  }

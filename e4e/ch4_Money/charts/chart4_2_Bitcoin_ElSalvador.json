@@ -1,0 +1,234 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_2_Bitcoin_ElSalvador.csv",
+    "format": {"type": "csv"}
+  },
+  "view": {"stroke": "transparent"},
+  "title": {
+    "text": "Bitcoin & El Salvador",
+    "subtitle": ["Average USD price of BTC purchased by El Salvador against daily BTC price", "Source: Investing.com", ""],
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 500,
+  "transform": [
+    {"filter": "datum.Date > 1630886400000"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0,
+        "grid": false,
+        "ticks": false,
+        "format": "%b %Y",
+        "tickCount": 5,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      }
+    }
+  },
+
+  "layer": [
+    {
+      "transform": [
+        {"filter": "time(datum['Date']) > datetime(2021, 11, 4)"}
+      ],
+      "mark": {
+        "type": "area",
+        "color": {
+          "gradient": "linear",
+          "stops": [
+            {"color": "#f4134bcb", "offset": 0.1},
+            {"color": "#97e0ff0d", "offset": 0.95}
+          ],
+          "x1": 1,
+          "y1": 1,
+          "x2": 1,
+          "y2": 0
+        },
+        "interpolate": "monotone",
+        "line": {"color": "rgb(128,0,0,0.5)", "size":1.4}
+      },
+      "encoding": {
+        "y": {
+          "field": "Price",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": true,
+            "gridOpacity": 0.6,
+            "format": "$,.0f",
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11
+          }
+        },
+
+        "y2": {
+          "field": "MA Cost"
+        }
+      }
+    },
+    {
+      "transform": [
+        {"filter": "time(datum['Date']) < datetime(2021, 11, 4)"}
+      ],
+      "mark": {
+        "type": "area",
+        "color": {
+          "gradient": "linear",
+          "stops": [
+            {"color": "#00c060d5", "offset": 0.8},
+            {"color": "#97e0ff0d", "offset": 0.1}
+          ],
+          "x1": 1,
+          "y1": 1,
+          "x2": 1,
+          "y2": 0
+        },
+        "interpolate": "monotone",
+        "line": {"color": "rgb(128,0,0,0.5)", "size":1.4}
+      },
+      "encoding": {
+        "y": {
+          "field": "Price",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": true,
+            "gridOpacity": 0.6,
+            "format": "$,.0f",
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11
+          }
+        },
+
+        "y2": {
+          "field": "MA Cost"
+        }
+      }
+    },
+    {
+
+      "encoding": {
+        "color": {"value": "#feb90c"},
+        "y": {
+          "field": "MA Cost",
+          "type": "quantitative"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "step-after",
+            "color": "#feb90c",
+            "size": 2.3
+          }
+        },
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "lighter",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "dy": -5,
+        "color": "#feb90c"
+      },
+      "encoding": {
+        "x": {"value": 325},
+        "y": {"value": 110},
+        "text": {"value": "El Salvador, average cost per BTC"}
+      }
+    },
+    {
+      "encoding": {
+        "color": {"value": "rgb(128,0,0)"},
+        "y": {
+          "field": "Price",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": true,
+            "gridOpacity": 0.6,
+            "format": "$,.0f",
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11
+          }
+        }
+      },
+      "layer": [
+        {"mark": {"type": "line", "size": 1.4, "color": "rgb(128,0,0,0.5)"}},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": "point"
+        }
+      ]
+
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "title": "Date"
+          },
+          {
+            "field": "Bitcoin Total",
+            "type": "quantitative",
+            "format": ",d",
+            "title": "El Salvador-owned BTC"
+          },
+          {
+            "field": "MA Cost",
+            "type": "quantitative",
+            "format": "$,d",
+            "title": "Average Purchase Price"
+          },
+          {
+            "field": "Price",
+            "type": "quantitative",
+            "format": "$,d",
+            "title": "BTC Price"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ]
+}
