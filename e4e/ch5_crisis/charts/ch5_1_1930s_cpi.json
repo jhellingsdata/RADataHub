@@ -1,192 +1,260 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch5_crisis/data/ch5_X_inflation_1920sv2.csv"
-    },
-    "transform": [
-      {
-        "calculate": "datum['Annual Percent Change']/100",
-        "as": "Annual Percent Change"
-      }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch5_crisis/data/ch5_X_inflation_1920sv2.csv"
+  },
+  "config": {"view": {"stroke": "transparent"}},
+  "title": {
+    "text": "US Prices, 1900-1930",
+    "subtitle": [
+      "Consumer Price Index, level (top) and annual change (bottom)",
+      " Base year 1967, Source: Minneapolis Fed.",
+      " "
     ],
-    "title": {
-      "text": "US Prices, 1900-1930",
-      "subtitle": [
-        "Consumer Price Index, and its annual change. Base year 1967.",
-        "Source: Minneapolis Fed."
-      ],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 12,
-      "fontSize": 16
-    },
-    "vconcat": [
-      {
-        "height": 200,
-        "width": 500,
-        "layer": [
-          {
-            "encoding": {
-              "x": {
-                "field": "Year",
-                "type": "temporal",
-                "axis": {
-                  "domain": false,
-                  "ticks": false,
-                  "grid": false,
-                  "title": null,
-                  "labelPadding": 5,
-                  "labelFontSize": 11,
-                  "tickCount": {"interval": "year", "step": 2}
-                }
-              },
-              "y": {
-                "field": "Annual Average Index",
-                "type": "quantitative",
-                "axis": {
-                  "domain": false,
-                  "ticks": false,
-                  "labelPadding": 5,
-                  "labelFontSize": 11,
-                  "titlePadding": 5,
-                  "title": null,
-                  "gridOpacity": 0.3,
-                  "labelAngle": 0
-                }
-              },
-              "color": {"value": "rgb(128,0,0)", "legend": null}
-            },
-            "layer": [
-              {"mark": "line"},
-              {
-                "params": [
-                  {
-                    "name": "label",
-                    "select": {
-                      "type": "point",
-                      "encodings": ["x"],
-                      "nearest": true,
-                      "on": "mouseover"
-                    }
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "fontSize": 16
+  },
+  "vconcat": [
+    {
+      "height": 200,
+      "width": 500,
+      "layer": [
+        {
+          "layer": [
+            {
+              "mark": "line",
+              "encoding": {
+                "x": {
+                  "field": "Year",
+                  "type": "temporal",
+                  "axis": {
+                    "domain": true,
+                    "ticks": false,
+                    "grid": false,
+                    "title": null,
+                    "labelPadding": 5,
+                    "labelFontSize": 11,
+                    "tickCount": {"interval": "year", "step": 2}
                   }
-                ],
-                "mark": "point",
-                "encoding": {
-                  "opacity": {
-                    "condition": {"param": "label", "empty": false, "value": 1},
-                    "value": 0
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "transform": [{"filter": {"param": "label", "empty": false}}],
-            "layer": [
-              {
-                "mark": {"type": "rule", "color": "gray"},
-                "encoding": {
-                  "x": {"type": "temporal", "field": "Year", "aggregate": "min"}
-                }
-              },
-              {
-                "encoding": {
-                  "text": {
-                    "type": "quantitative",
-                    "field": "Annual Average Index"
-                  },
-                  "x": {"type": "temporal", "field": "Year"},
-                  "y": {"type": "quantitative", "field": "Annual Average Index"}
                 },
-                "layer": [
-                  {
-                    "mark": {
-                      "type": "text",
-                      "stroke": "white",
-                      "strokeWidth": 2,
-                      "align": "left",
-                      "dx": 5,
-                      "dy": -5
-                    }
-                  },
-                  {
-                    "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
-                    "encoding": {
-                      "color": {"value": "rgb(128,0,0)", "legend": null}
-                    }
+                "y": {
+                  "field": "Annual Average Index",
+                  "type": "quantitative",
+                  "axis": {
+                    "domain": true,
+                    "ticks": false,
+                    "labelPadding": 5,
+                    "labelFontSize": 11,
+                    "titlePadding": 5,
+                    "title": null,
+                    "gridOpacity": 0.3,
+                    "labelAngle": 0
                   }
-                ]
+                },
+                "color": {"value": "rgb(128,0,0)", "legend": null}
               }
-            ]
-          }
-        ]
-      },
-      {
-        "height": 100,
-        "width": 500,
-        "layer": [
-          {
-            "mark": {"type": "bar", "color": "rgb(128,0,0)"},
-            "encoding": {
-              "x": {
-                "field": "Year",
-                "type": "temporal",
-                "axis": {
-                  "domain": false,
-                  "ticks": false,
-                  "grid": false,
-                  "title": null,
-                  "labelPadding": 5,
-                  "labelFontSize": 11,
-                  "tickCount": {"interval": "year", "step": 2}
+            },
+            {
+              "params": [
+                {
+                  "name": "label",
+                  "select": {
+                    "type": "point",
+                    "encodings": ["x"],
+                    "nearest": true,
+                    "on": "mouseover"
+                  }
                 }
-              },
-              "y": {
-                "field": "Annual Percent Change",
-                "type": "quantitative",
-                "axis": {
-                  "domain": false,
-                  "ticks": false,
-                  "labelPadding": 5,
-                  "labelFontSize": 11,
-                  "titlePadding": 5,
-                  "format": ".0%",
-                  "title": null,
-                  "gridOpacity": 0.3
+              ],
+              "mark": "point",
+              "encoding": {
+                "x": {
+                  "field": "Year",
+                  "type": "temporal",
+                  "axis": {
+                    "domain": true,
+                    "ticks": false,
+                    "grid": false,
+                    "title": null,
+                    "labelPadding": 5,
+                    "labelFontSize": 11,
+                    "tickCount": {"interval": "year", "step": 2}
+                  }
+                },
+                "y": {
+                  "field": "Annual Average Index",
+                  "type": "quantitative",
+                  "axis": {
+                    "domain": true,
+                    "ticks": false,
+                    "labelPadding": 5,
+                    "labelFontSize": 11,
+                    "titlePadding": 5,
+                    "title": null,
+                    "gridOpacity": 0.3,
+                    "labelAngle": 0
+                  }
+                },
+                "color": {"value": "rgb(128,0,0)", "legend": null},
+                "opacity": {
+                  "condition": {"param": "label", "empty": false, "value": 1},
+                  "value": 0
                 }
               }
             }
-          },
-          {
-            "params": [
-              {
-                "name": "hover",
-                "select": {
-                  "type": "point",
-                  "on": "mouseover",
-                  "clear": "mouseout"
-                }
+          ]
+        },
+        {
+          "layer": [
+            {
+              "mark": {"type": "rule", "color": "gray"},
+              "encoding": {
+                "x": {"type": "temporal", "field": "Year", "aggregate": "min"}
               }
-            ],
-            "mark": {"type": "bar", "color": "#eee"},
-            "encoding": {
-              "x": {"field": "Year", "type": "temporal"},
-              "opacity": {
-                "condition": {
-                  "test": {"param": "hover", "empty": false},
-                  "value": 0.7
-                },
-                "value": 0
-              },
-              "tooltip": [
+            },
+            {
+              "layer": [
                 {
-                  "field": "Annual Percent Change",
-                  "format": ".0%",
-                  "title": "Change in Inflation"
+                  "mark": {
+                    "type": "text",
+                    "stroke": "white",
+                    "strokeWidth": 2,
+                    "align": "left",
+                    "dx": 5,
+                    "dy": -5
+                  },
+                  "encoding": {
+                    "text": {
+                      "type": "quantitative",
+                      "field": "Annual Average Index"
+                    },
+                    "x": {"type": "temporal", "field": "Year"},
+                    "y": {
+                      "type": "quantitative",
+                      "field": "Annual Average Index"
+                    }
+                  }
+                },
+                {
+                  "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+                  "encoding": {
+                    "text": {
+                      "type": "quantitative",
+                      "field": "Annual Average Index"
+                    },
+                    "x": {"type": "temporal", "field": "Year"},
+                    "y": {
+                      "type": "quantitative",
+                      "field": "Annual Average Index"
+                    },
+                    "color": {"value": "rgb(128,0,0)", "legend": null}
+                  }
                 }
               ]
             }
+          ],
+          "transform": [{"filter": {"param": "label", "empty": false}}]
+        }
+      ]
+    },
+    {
+      "height": 100,
+      "width": 500,
+      "layer": [
+        {
+          "layer": [
+            {
+              "mark": {"type": "bar", "color": "rgb(128,0,0)"},
+              "encoding": {
+                "x": {
+                  "field": "Year",
+                  "type": "temporal",
+                  "axis": {
+                    "domain": true,
+                    "ticks": false,
+                    "grid": false,
+                    "title": null,
+                    "labelPadding": 5,
+                    "labelFontSize": 11,
+                    "tickCount": {"interval": "year", "step": 2}
+                  }
+                },
+                "y": {
+                  "field": "Annual Percent Change",
+                  "type": "quantitative",
+                  "axis": {
+                    "domain": true,
+                    "ticks": false,
+                    "labelPadding": 5,
+                    "labelFontSize": 11,
+                    "titlePadding": 5,
+                    "format": ".0%",
+                    "title": null,
+                    "gridOpacity": 0.3
+                  }
+                }
+              }
+            },
+            {
+              "mark": {"type": "rule"},
+              "encoding": {
+                "x": {
+                  "field": "Year",
+                  "type": "temporal",
+                  "axis": {
+                    "domain": true,
+                    "ticks": false,
+                    "grid": false,
+                    "title": null,
+                    "labelPadding": 5,
+                    "labelFontSize": 11,
+                    "tickCount": {"interval": "year", "step": 2}
+                  }
+                },
+                "y": null
+              },
+              "transform": [{"filter": {"param": "label", "empty": false}}]
+            }
+          ]
+        },
+        {
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "on": "mouseover",
+                "clear": "mouseout"
+              }
+            }
+          ],
+          "mark": {"type": "bar", "color": "#eee"},
+          "encoding": {
+            "x": {"field": "Year", "type": "temporal"},
+            "opacity": {
+              "condition": {
+                "value": 0.7,
+                "test": {"param": "hover", "empty": false}
+              },
+              "value": 0
+            },
+            "tooltip": [
+              {
+                "field": "Annual Percent Change",
+                "format": ".0%",
+                "title": "Change in Inflation"
+              }
+            ]
           }
-        ]
-      }
-    ]
-  }
+        }
+      ]
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "datum['Annual Percent Change']/100",
+      "as": "Annual Percent Change"
+    }
+  ]
+}
