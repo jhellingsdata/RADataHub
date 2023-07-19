@@ -1,0 +1,163 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch5_crisis/data/ch5_X_trade_gdo_set1.csv",
+      "name": "a"
+    },
+    "title": {
+      "text": "Change in Trade Volume",
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitle": ["2000-18, Annual Change","Source: OECD", ""],
+      "subtitleFontSize": 12,
+      "subtitleFontStyle": "italic"
+    },
+    "width": 500,
+    "height": 350,
+        "transform": [
+          {
+            "calculate": "datum.Trade/100",
+            "as": "Trade"
+          },
+          {
+            "calculate": "{'Jan' : 0, 'Feb': 1, 'Mar': 2, 'Apr': 3, 'May': 4, 'Jun': 5, 'Jul': 6, 'Aug': 7, 'Sep': 8, 'Oct': 9, 'Nov': 10, 'Dec':11}[substring(datum.TIME,5,8)]",
+            "as": "month"
+          },
+          {
+            "calculate": "datetime(substring(datum.TIME,0,4),datum.month)",
+            "as": "TIME"
+          },
+                          {
+            "calculate": "hover.LOCATION == null",
+            "as": "foo"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "TIME",
+            "type": "temporal",
+            "title": null,
+            "axis": {
+              "ticks": false,
+              "grid": false,
+              "title": null,
+              "labelPadding": 5,
+              "labelFontSize": 11
+            }
+          },
+          "y": {
+            "field": "Trade",
+            "type": "quantitative",
+            "axis": {
+              "ticks": false,
+              "gridOpacity": 0.6,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "format": ".0%"
+            }
+          },
+          "color": {
+            "condition": 
+              [{
+                "test": "hover.LOCATION != null?(datum.LOCATION == hover.LOCATION):(datum.LOCATION == 'USA')",
+                "value": "rgb(128,0,0)"
+              }],
+            "field": "LOCATION",
+            "legend": false,
+            "scale":{"range":  ["rgb(200,200,200)"]}
+          },
+          "opacity": {
+            "condition": {
+                "test": "hover.LOCATION != null?(datum.LOCATION == hover.LOCATION):(datum.LOCATION == 'USA')"
+            },
+            "value": 0.175
+          }
+        },
+        "layer": [
+          {
+            "description": "transparent layer to make it easier to trigger selection",
+            "params": [
+              {
+                
+                "name": "hover",
+                "value": [
+                  {
+                    "LOCATION": "USA"
+                  }
+                ],
+                "select": {
+                  "type": "point",
+                  "fields": [
+                    "LOCATION"
+                  ],
+                  "on": "mouseover",
+                  "clear":true
+                }
+              }
+            ],
+            "mark": {
+              "type": "line",
+              "strokeWidth": 8,
+              "stroke": "transparent"
+            }
+          },
+          {
+            "mark": "line"
+          },
+          {
+            "encoding": {
+              "x": {
+                "aggregate": "max",
+                "field": "TIME",
+                "axis": {
+                  "ticks": false,
+                  "gridOpacity": 0.6,
+                  "title": null,
+                  "labelPadding": 5,
+                  "labelFontSize": 11
+                }
+              },
+              "y": {
+                "aggregate": {
+                  "argmax": "TIME"
+                },
+                "field": "Trade",
+                "axis": {
+                  "ticks": false,
+                  "title": "",
+                  "gridOpacity": 0.6,
+                  "labelPadding": 5,
+                  "labelFontSize": 11
+                }
+              }
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "circle"
+                }
+              },
+              {
+                "mark": {
+                  "type": "text",
+                  "align": "left",
+                  "dx": 2
+                },
+                "encoding": {
+                  "text": {
+                    "field": "LOCATION",
+                    "type": "nominal"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+  
+    "config": {
+      "view": {
+        "stroke": null
+      }
+    }
+  }
