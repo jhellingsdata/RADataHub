@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+    "text": "The Roaring Twenties & The Crash",
+    "subtitle": ["Dow Jones Industrial Average, Dollars per Share, 1930-1933 recession is highlighted.", "Source: NBER (via FRED)",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":12,
+    "fontSize": 16,
+    "anchor": "start",
+    "frame": "group",
+    "color": "black",
+    "zindex": 1,
+    "orient": "bottom",
+    "dx": -30,
+    "angle": 0,
+    "dy": -360
+
+  },
+  "view": {"stroke": "transparent"},
+  "width":500,
+  "height":280,
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch5_crisis/data/ch5_6_DowJones.csv"
+  },
+  
+  "params": [
+    {
+      "name": "slider",
+      "value": 1927,
+      "bind": {
+        "input": "range",
+        "min": 1925,
+        "max": 1955,
+        "step": 1,
+        "name": "Slide to reveal:"
+      }
+    }
+  ],
+  "transform": [
+    {"calculate": "year(datum.DATE)", "as": "year"},
+    {"filter": "datum.year < slider"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "rect"},
+      "data": {
+        "values": [
+          {"Start": -1275523200000, "End": -1162512000000}
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "Start",
+          "type": "temporal"
+        },
+        "x2": {"field": "dynamic_End"},
+        "color": {"value": "rgb(240,240,240, 0.9)"}
+      },
+      "transform": [
+        {"calculate": "year(datum.Start)", "as": "start_year"},
+        {"calculate": "year(datum.End)", "as": "end_year"},
+        {"calculate": "datum.end_year < slider ? datum.End : datetime(slider, 1, 1)", "as": "dynamic_End"},
+        {"filter": "datum.start_year < slider"}
+
+    
+      ]
+    },
+    {
+      "mark":{
+        "type": "line",
+        "color":"rgb(128,0,0)",
+        "strokeWidth":2,
+        "opacity":1
+      },
+      "encoding": {
+        "x": {
+          "field": "DATE",
+          "type": "temporal",
+          "title":null,
+          "axis": {
+            "tickCount": {"interval": "year", "step": 1},
+            "labelExpr": "(year(datum.value) <= slider) && (year(datum.value) % 5 === 0) ? datum.label : ''",
+            "ticks": true,
+            "tickSize": 4,
+            "tickOpacity": 0.6,
+            "labelFontSize": 11,
+            "labelPadding": 3, 
+            "grid": false
+          },
+          "scale":{
+            "domain":[
+              {"year": 1914, "month":6, "day":1},
+              {"year": 1955, "month":12, "day":1}
+            ]
+          }
+        },
+        
+        "y": {
+          "field": "DJIA",
+          "type": "quantitative",
+          "title":null,
+          "axis": {
+            "gridOpacity": 0.6,
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11
+          },
+          "scale":{
+            "domain":[0,370]
+          }
+        }
+      }
+    }
+  ]
+}
