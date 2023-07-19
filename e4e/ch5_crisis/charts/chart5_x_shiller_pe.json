@@ -18,7 +18,7 @@
   "transform": [
     
     {"calculate": "datetime(datum.year, datum.month)", "as": "Date"},
-    {"filter": "minYear < maxYear ? (year(datum.Date)>=minYear & year(datum.Date)<=maxYear):  (year(datum.Date)<=minYear & year(datum.Date)>=maxYear)"},
+    {"filter": "minYear < maxYear ? (year(datum.Date)>=minYear & year(datum.Date)<=maxYear):  (year(datum.Date)<=minYear & year(datum.Date)>=maxYear)"}
 
     
       ],
@@ -99,7 +99,7 @@
           "y":null
         },
         "transform": [
-          {"filter": "minYear < maxYear ? (year(datum.Start)>=minYear & year(datum.End)<=maxYear):  (year(datum.Start)<=minYear & year(datum.End)>=maxYear)"},
+          {"filter": "minYear < maxYear ? (year(datum.Start)>=minYear & year(datum.End)<=maxYear):  (year(datum.Start)<=minYear & year(datum.End)>=maxYear)"}
         ]
       },
   {
@@ -133,7 +133,7 @@
           "opacity": {
             "condition": {"value": 0.3, "param": "hover", "empty": false},
             "value": 0
-          },
+          }
     }
   }
   
@@ -172,6 +172,6 @@
           "name": "End year:"
         }
       }
-    ],
+    ]
     
 }

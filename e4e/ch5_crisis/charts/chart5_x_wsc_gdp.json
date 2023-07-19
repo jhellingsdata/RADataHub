@@ -1,7 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {"url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch5_crisis/data/chart5_x_wsc_gdp.csv"},
-    "width": 400,
+    "width": 500,
+    "height": 350,
     "title": {
       "text": "GDP Per Capita Through the Great Depression",
       "subtitle" : ["Gross Domestic Product Per Capita, 2011 PPP USD", "Source: OWID", ""],
@@ -57,7 +58,7 @@
     "layer": [
       {
         "transform": [
-          {"filter": "year(datum.Year) >= minYear & year(datum.Year) < maxYear & (maxYear-minYear < 35)"}
+          {"filter": "year(datum.Year) >= minYear & year(datum.Year) < maxYear & (maxYear-minYear < 37)"}
         ],
         "data" : {"values":[{"Year": -1293840000000}]},
         "mark": {"type": "text", "dy":-5, "dx":1,"fontWeight":"bold","color":"rgba(128,0,0,0.5)", "align":"left","text": "No Full Recovery Until 1940"},
@@ -138,7 +139,7 @@
           "color": {"value": "rgba(0,0,0,0.05)"}
         },
         "transform": [
-          {"filter": "minYear < maxYear ? (year(datum.Start)>=minYear & year(datum.End)<=maxYear):  (year(datum.Start)<=minYear & year(datum.End)>=maxYear)"},
+          {"filter": "minYear < maxYear ? (year(datum.Start)>=minYear & year(datum.End)<=maxYear):  (year(datum.Start)<=minYear & year(datum.End)>=maxYear)"}
         ]
       },
       {
@@ -179,7 +180,7 @@
           },
           "tooltip": [
             {"field": "Year", "type": "temporal", "format":"%Y"},
-            {"field": "Value", "format":"$.0d", "title":"GDP pc" ,"type": "quantitative"},
+            {"field": "Value", "format":"$.0d", "title":"GDP pc" ,"type": "quantitative"}
           ]
         },
         "params": [{

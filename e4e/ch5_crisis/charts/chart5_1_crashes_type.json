@@ -1,5 +1,5 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   "title": {
       "text": "Panics, crashes and manias",
@@ -46,7 +46,7 @@
           }
       }
       },
-        "selection": {
+    "selection": {
       "crashType": {
         "type": "single",
         "fields": ["Type"],
@@ -66,7 +66,7 @@
       },
           {
         "transform": [{"pivot": "Type", "value": "Value", "groupby": ["Year"]},
-        {"calculate": "datum.Banking + datum.Currency + datum.Inflation + datum.Systemic", "as": "Total"},
+        {"calculate": "datum.Banking + datum.Currency + datum.Inflation + datum.Systemic", "as": "Total"}
         ],
   
         "mark" : {"type": "bar", "fill":"black", "opacity":0.001},
@@ -104,9 +104,7 @@
   
   
     "transform": [
-      {"filter": "isDefined(crashType.Type) ? (crashType.Type == 'All'? true : datum.Type == crashType.Type) : true"},
-      {"calculate": "isDefined(crashType.Type)", "as": "foo"}
-      
+      {"filter": "isDefined(crashType.Type) ? (crashType.Type == 'All'? true : datum.Type == crashType.Type) : true"}      
       ],
   
   
