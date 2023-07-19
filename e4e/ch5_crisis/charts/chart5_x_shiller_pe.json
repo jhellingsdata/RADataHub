@@ -1,0 +1,152 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+ "title": {
+  "text": "The Great Crash - Price to Earnings Ratio",
+  "subtitle":["Cyclically adjusted PE (P/E10), Recessions Shaded", " Source: Rober Shiller, FRED",""],
+  "subtitleFontStyle":"italic",
+  "subtitleFontSize":12,
+  "fontSize":16,
+  "anchor": "start"},
+
+  "width":500,
+  "height":350,
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/US_Shiller_CAPE.csv"},
+
+
+  "transform": [
+    
+    {"calculate": "datetime(datum.year, datum.month)", "as": "Date"},
+    {"filter": "minYear < maxYear ? (year(datum.Date)>=minYear & year(datum.Date)<=maxYear):  (year(datum.Date)<=minYear & year(datum.Date)>=maxYear)"},
+
+    
+      ],
+
+"layer":[
+                {
+        "mark": {"type": "rect"},
+        "data": {
+           "values": [
+            {"Start": -5823705600000, "End": -5713200000000},
+            {"Start": -5697475200000, "End": -5555433600000},
+            {"Start": -5602780800000, "End": -5586969600000},
+            {"Start": -5476550400000, "End": -5366131200000},
+            {"Start": -5287334400000, "End": -5208364800000},
+            {"Start": -5129568000000, "End": -5019062400000},
+            {"Start": -4971715200000, "End": -4955904000000},
+            {"Start": -4877107200000, "End": -4671907200000},
+            {"Start": -4656182400000, "End": -4608835200000},
+            {"Start": -4561488000000, "End": -4514140800000},
+            {"Start": -4466793600000, "End": -4419446400000},
+            {"Start": -4309027200000, "End": -4261680000000},
+            {"Start": -4214332800000, "End": -4135449600000},
+            {"Start": -4119724800000, "End": -3977683200000},
+            {"Start": -3930336000000, "End": -3882988800000},
+            {"Start": -3857932800000, "End": -3821126400000},
+            {"Start": -3679084800000, "End": -3629145600000},
+            {"Start": -3552854400000, "End": -3505507200000},
+            {"Start": -3447619200000, "End": -3426624000000},
+            {"Start": -3305664000000, "End": -3221510400000},
+            {"Start": -3174163200000, "End": -3126816000000},
+            {"Start": -3037392000000, "End": -2866579200000},
+            {"Start": -2771884800000, "End": -2671920000000},
+            {"Start": -2614118400000, "End": -2579817600000},
+            {"Start": -2508883200000, "End": -2482617600000},
+            {"Start": -2429827200000, "End": -2385244800000},
+            {"Start": -2337897600000, "End": -2290550400000},
+            {"Start": -2227478400000, "End": -2180131200000},
+            {"Start": -2124921600000, "End": -2064441600000},
+            {"Start": -1977782400000, "End": -1943481600000},
+            {"Start": -1893456000000, "End": -1830384000000},
+            {"Start": -1798761600000, "End": -1738368000000},
+            {"Start": -1622678400000, "End": -1604361600000},
+            {"Start": -1577923200000, "End": -1530662400000},
+            {"Start": -1472860800000, "End": -1435968000000},
+            {"Start": -1364947200000, "End": -1330732800000},
+            {"Start": -1275523200000, "End": -1162512000000},
+            {"Start": -1031011200000, "End": -996796800000},
+            {"Start": -786240000000, "End": -765331200000},
+            {"Start": -667958400000, "End": -639100800000},
+            {"Start": -520819200000, "End": -494553600000},
+            {"Start": -391910400000, "End": -370915200000},
+            {"Start": -307756800000, "End": -281318400000},
+            {"Start": -2678400000, "End": 26265600000},
+            {"Start": 120960000000, "End": 162864000000},
+            {"Start": 315532800000, "End": 331257600000},
+            {"Start": 362793600000, "End": 404956800000},
+            {"Start": 646790400000, "End": 667785600000},
+            {"Start": 983404800000, "End": 1004572800000},
+            {"Start": 1196467200000, "End": 1243814400000},
+            {"Start": 1580515200000, "End": 1585699200000}
+          ]
+        },
+        "encoding": {
+          "x": {
+            "field": "Start",
+            "type": "temporal",
+            "axis": {
+              "title": null,
+              "tickOpacity":0,
+              "labelPadding":5,
+              "grid": false,
+              "ticks": false,
+              "labelSeparation": 10
+            }
+          },
+          "x2": {"field": "End"},
+          "color": {"value": "rgba(0,0,0,0.05)"},
+          "y":null
+        },
+        "transform": [
+          {"filter": "minYear < maxYear ? (year(datum.Start)>=minYear & year(datum.End)<=maxYear):  (year(datum.Start)<=minYear & year(datum.End)>=maxYear)"},
+        ]
+      },
+  {
+      "mark": {
+            "type": "line",
+            "point": false,
+            "strokeWidth":2,
+            "color":"rgb(0,67,127)"} 
+  },
+  
+],
+  
+  "encoding": {
+    "x": {"field": "Date","title":null,"type": "temporal"},
+    "y":{
+      "field":"CAPE", "title":null, "type":"quantitative",
+      "axis":{
+                      "tickOpacity":0,
+              "labelPadding":0, "grid": false
+
+      }}},
+
+          "params": [
+      {
+        "name": "minYear",
+        "value": 1900,
+        "bind": {
+          "input": "range",
+          "min": 1882,
+          "max": 2022,
+          "step": 1,
+          "name": "Start year:"
+        }
+      },
+      {
+        "name": "maxYear",
+        "value": 1940,
+        "bind": {
+          "input": "range",
+          "min": 1882,
+          "max": 2018,
+          "step": 1,
+          "name": "End year:"
+        }
+      }
+    ]
+
+
+    
+}
