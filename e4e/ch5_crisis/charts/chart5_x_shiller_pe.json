@@ -1,7 +1,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
  "title": {
-  "text": "The Great Crash - Price to Earnings Ratio",
+  "text": "The Wall Street Crash - Price to Earnings Ratio",
   "subtitle":["Cyclically adjusted PE (P/E10), Recessions Shaded", " Source: Rober Shiller, FRED",""],
   "subtitleFontStyle":"italic",
   "subtitleFontSize":12,
@@ -107,8 +107,35 @@
             "type": "line",
             "point": false,
             "strokeWidth":2,
-            "color":"rgb(0,67,127)"} 
+            "color":"rgb(128,0,0)"} 
   },
+  {
+    "mark": {"type": "rule"},
+    "transform": [
+      {"filter": "datum.month%4 == 0 "}
+    ],
+            "params": [{
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }],
+    "encoding": {
+      "tooltip": [
+        {"field": "Date", "type":"temporal", "format":"%B %Y" },
+        {"field": "CAPE", "format":".2d"}
+      ],
+      "y": null,
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+    }
+  }
   
 ],
   
@@ -145,8 +172,6 @@
           "name": "End year:"
         }
       }
-    ]
-
-
+    ],
     
 }
