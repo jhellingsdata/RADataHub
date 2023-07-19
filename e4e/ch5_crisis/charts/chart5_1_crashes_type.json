@@ -1,129 +1,129 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-
-"title": {
-    "text": "Panics, crashes and manias",
-    "subtitle":["Economic Crises by type, 1800-2016 ", " Number each Year, Source: HBR (2021)", ""],
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":12,
-    "fontSize": 16,
-    "anchor": "start",
-    "color": "black"
-  },
-
-  "description": "Crashes over time",
-
-  "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch5_crisis/data/chart5_1_crashes_type.csv",
-   "format": {"type": "csv"}
-  },
-
-  "config": {
-    "view": {
-      "strokeOpacity":0
-    }
-  },
-
-  "height": 350,
-  "width": 500,
-
-  "layer":[
-    {  "mark": {"type": "bar", "point": false},
-
-    "encoding": {
-          "color": {
-      "field": "Type",
-      "type": "nominal",
-      "scale": {"scheme": "goldred"},
-      "title": "Crisis type",
-      "legend": {
-        "legendX": 0,
-        "values": ["Banking", "Currency", "Inflation", "Systemic"],
-        "legendY": -15,
-        "direction": "horizontal",
-        "title": null,
-        "orient": "none"
-        }
-    }
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+  "title": {
+      "text": "Panics, crashes and manias",
+      "subtitle":["Economic Crises by type, 1800-2016 ", " Number each Year, Source: HBR (2021)", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":12,
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "black"
     },
-      "selection": {
-    "crashType": {
-      "type": "single",
-      "fields": ["Type"],
-      "bind": {
-        "input": "select",
-        "options": [
-          "All",
-          "Banking",
-          "Currency",
-          "Inflation",
-          "Systemic"
-        ],
-        "name": "Type: "
+  
+    "description": "Crashes over time",
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch5_crisis/data/chart5_1_crashes_type.csv",
+     "format": {"type": "csv"}
+    },
+  
+    "config": {
+      "view": {
+        "strokeOpacity":0
       }
-    }
-  } 
     },
-        {
-      "transform": [{"pivot": "Type", "value": "Value", "groupby": ["Year"]},
-      {"calculate": "datum.Banking + datum.Currency + datum.Inflation + datum.Systemic", "as": "Total"},
-      ],
-
-      "mark" : {"type": "bar", "fill":"black", "opacity":0.001},
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Year"],
-          "nearest": true,
-          "on": "mouseover",
-          "clear": "mouseout"
-        }
-      }],
+  
+    "height": 350,
+    "width": 500,
+  
+    "layer":[
+      {  "mark": {"type": "bar", "point": false},
+  
       "encoding": {
-       "y": null,
-       "opacity":{
-        "condition":[
-          {"test": "datum.Year == hover.Year", "value":0.05}
-        ]
-
-       },
-       "tooltip": [
-        {"field":"Year", "type": "temporal", "format":"%Y"},
-        {"field": "Total"},
-        {"field": "Banking"},
-        {"field": "Currency"},
-        {"field": "Inflation"},
-        {"field": "Systemic"}
-       ]
+            "color": {
+        "field": "Type",
+        "type": "nominal",
+        "scale": {"scheme": "goldred"},
+        "title": "Crisis type",
+        "legend": {
+          "legendX": 0,
+          "values": ["Banking", "Currency", "Inflation", "Systemic"],
+          "legendY": -15,
+          "direction": "horizontal",
+          "title": null,
+          "orient": "none"
+          }
       }
-    },
-  ],
-
-
-
-
-  "transform": [
-    {"filter": "isDefined(crashType.Type) ? (crashType.Type == 'All'? true : datum.Type == crashType.Type) : true"},
-    {"calculate": "isDefined(crashType.Type)", "as": "foo"}
-    
+      },
+        "selection": {
+      "crashType": {
+        "type": "single",
+        "fields": ["Type"],
+        "bind": {
+          "input": "select",
+          "options": [
+            "All",
+            "Banking",
+            "Currency",
+            "Inflation",
+            "Systemic"
+          ],
+          "name": "Type: "
+        }
+      }
+    } 
+      },
+          {
+        "transform": [{"pivot": "Type", "value": "Value", "groupby": ["Year"]},
+        {"calculate": "datum.Banking + datum.Currency + datum.Inflation + datum.Systemic", "as": "Total"},
+        ],
+  
+        "mark" : {"type": "bar", "fill":"black", "opacity":0.001},
+        "params": [{
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }],
+        "encoding": {
+         "y": null,
+         "opacity":{
+          "condition":[
+            {"test": "datum.Year == hover.Year", "value":0.05}
+          ]
+  
+         },
+         "tooltip": [
+          {"field":"Year", "type": "temporal", "format":"%Y"},
+          {"field": "Total"},
+          {"field": "Banking"},
+          {"field": "Currency"},
+          {"field": "Inflation"},
+          {"field": "Systemic"}
+         ]
+        }
+      }
     ],
-
-
-  "encoding": {
-    "x": {
-      "field": "Year",
-      "type": "temporal",
-      "title": "Year",
-      "axis": {"grid": false, "tickOpacity":0, "title":null}
-    },
-
-    "y": {
-      "field": "Value",
-      "type": "quantitative",
-      "title": "Number of countries",
-      "axis": {"grid": true, "title": null, "gridOpacity":0.6, "tickOpacity":0}
-    },
-         
+  
+  
+  
+  
+    "transform": [
+      {"filter": "isDefined(crashType.Type) ? (crashType.Type == 'All'? true : datum.Type == crashType.Type) : true"},
+      {"calculate": "isDefined(crashType.Type)", "as": "foo"}
+      
+      ],
+  
+  
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Year",
+        "axis": {"grid": false, "tickOpacity":0, "title":null}
+      },
+  
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Number of countries",
+        "axis": {"grid": true, "title": null, "gridOpacity":0.6, "tickOpacity":0}
+      }
+           
+    }
   }
-}
