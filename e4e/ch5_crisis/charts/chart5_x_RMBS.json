@@ -1,0 +1,147 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch5_crisis/data/chart5_x_RMBS.csv"},
+  
+    "title":{
+      "text": "Residential Mortgage-Backed Securities",
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleFontStyle": "italic",
+      "anchor": "start",
+      "subtitle": ["Issuance of RMBS by Period and Issuer", "Source: Bank of England", ""]
+  
+    },
+        "config": {
+        "style": {"cell": {"stroke": "transparent"}},
+        "locale": {
+          "number": {
+            "decimal": ".",
+            "thousands": ",",
+            "grouping": [3],
+            "currency": ["$", "B"]
+          }
+        }
+      },
+    "layer":[
+      {
+        "data": {"values":[{"doesn't":"matter"}]},
+        "mark": {"type": "rule", "strokeDash":[8,8]},
+        "encoding": {
+          "x": {"value": 350},
+          "color": {"value": "rgba(0,0,0,0.4"},
+          "y": null
+        }
+      },
+          {
+        "transform": [
+          {
+            "pivot": "Series",
+            "value": "Value",
+            "groupby": [
+              "Date"
+            ]
+          },
+          {
+            "calculate": "datum['European LCFIs'] + datum['UK LCFIs'] + datum['US Commercial Banks'] + datum['US Securities Houses']",
+            "as": "Total"
+          }
+        ],
+        "mark": {
+          "type": "bar",
+          "fill": "black",
+          "opacity": 0.001
+        },
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": [
+                "Date"
+              ],
+              "nearest": true,
+              "on": "mouseover",
+              "clear": "mouseout"
+            }
+          }
+        ],
+        "encoding": {
+          "y": null,
+          "opacity": {
+            "condition": [
+              {
+                "test": "datum.Date == hover.Date",
+                "value": 0.05
+              }
+            ]
+          },
+          "tooltip": [
+            {
+              "field": "Year",
+              "type": "temporal",
+              "format": "%Y"
+            },
+            {
+              "field": " European LCFIs",
+              "type": "quantitative",
+              "format" : "$.0d"
+            },
+            {
+              "field": " UK LCFIs",
+                "format" : "$.0d"
+  
+            },
+            {
+              "field": " US Commercial Banks",
+                          "format" : "$.0d"
+  
+            },
+            {
+              "field": " US Securities Houses",
+                          "format" : "$.0d"
+  
+            }
+          ]
+        }
+      },
+      {
+          "mark": "bar"
+      }
+    ],
+    
+    "width": 500,
+    "height": 350,
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "nominal",
+        "axis": {
+          "title":null,
+          "tickOpacity":0,
+          "labelAngle":0
+        }
+      },
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "axis": {
+          "format": "$.0d",
+          "gridOpacity":0.6,
+          "tickOpacity":0,
+          "title": null
+        }
+      },
+      "color": {
+        "field": "Series",
+        "type": "nominal",
+        "legend":{
+          "values": [" US Securities Houses", " US Commercial Banks", " European LCFIs", " UK LCFIs"],
+          "title":null,
+          "direction": "horizontal",
+          "orient": "none",
+          "legendY":-18
+        }
+      }
+    }
+  }
+  

@@ -1,323 +1,338 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "Change in Trade Volume by Country Against Change in GDP",
-      "anchor": "start",
-      "fontSize": 16,
-      "subtitle": [
-        "Drag to move, scroll to zoom, click to interact. Dotted lines represent yearly means.",
-        "Source: OECD."
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Change in Trade Volume and GDP",
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitle": [
+      "Drag to move, scroll to zoom, click to interact", " Dotted lines show yearly means.",
+      "Source: OECD.", ""
+    ],
+    "subtitleFontSize": 12,
+    "subtitleFontStyle": "italic"
+  },
+  "params": [
+    {
+      "name": "year",
+      "value": 2004,
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 2019,
+        "step": 1,
+        "name": "Year"
+      }
+    },
+    {"name": "Names", "bind": {"input": "checkbox"}}
+  ],
+  "height": 300,
+  "width": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/ch5_X_gdp_tradev2.csv"
+  },
+  "transform": [
+    {"calculate": "datum.Trade/100", "as": "Trade"},
+    {"calculate": "datum.GDP/100", "as": "GDP"}
+  ],
+  "layer": [{
+      "transform": [
+        {"calculate": "toNumber(year)", "as": "yearS"},
+        {"filter": "datum.yearS == datum.TIME"}
       ],
-      "subtitleFontSize": 12,
-      "subtitleFontStyle": "italic"
-    },
-    "params": [
-      {
-        "name": "year",
-        "value": 2004,
-        "bind": {
-          "input": "range",
-          "min": 2000,
-          "max": 2019,
-          "step": 1,
-          "name": "Year"
-        }
-      },
-      {"name": "Names", "bind": {"input": "checkbox"}}
-    ],
-    "height": 300,
-    "width": 500,
-    "data": {
-      "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/ch5_X_gdp_tradev2.csv"
-    },
-    "transform": [
-      {"calculate": "datum.Trade/100", "as": "Trade"},
-      {"calculate": "datum.GDP/100", "as": "GDP"}
-    ],
-    "layer": [{
-        "transform": [
-          {"calculate": "toNumber(year)", "as": "yearS"},
-          {"filter": "datum.yearS == datum.TIME"}
-        ],
-        "mark": {"type": "rule", "strokeDash": [8, 4], "strokeCap": "butt"},
-        "encoding": {
-          "x": {
-            "aggregate": "mean",
-            "field": "GDP",
-            "title": "Change in Energy Consumption"
-          },
-          "color": {"value": "black"}, "opacity": {"value": 0.4},
-         
-          "tooltip": {
-            "field": "chng_eng",
-            "aggregate": "mean",
-            "format": "%",
-            "title": "mean"
-          }
-        }
-      },{
-        "transform": [
-          {"calculate": "toNumber(year)", "as": "yearS"},
-          {"filter": "datum.yearS == datum.TIME"}
-        ],
-        "mark": {"type": "rule", "strokeDash": [8, 4], "strokeCap": "butt"},
-        "encoding": {
-          "y": {
-            "aggregate": "mean",
-            "field": "Trade",
-            "title": "Change in GDP"
-          },
-          "color": {"value": "black"}, "opacity": {"value": 0.4}
-        }
-      },
-      {
-        "params": [{"name": "grid", "select": "interval", "bind": "scales"}],
-        "transform": [
-          {"calculate": "toNumber(year)", "as": "yearS"},
-          {"filter": "datum.yearS == datum.TIME"}
-        ],
-        "mark": "circle",
-        "encoding": {
-          "x": {
-            "field": "GDP",
-            "type": "quantitative",
-            "axis": {
-              "format": "%",
-              "gridOpacity": {
-                "condition": {"test": "datum.GDP == 0", "value": 0.3},
-                "value": 1
-              },
-              "ticks": false,
-              "title": null,
-              "labelPadding": 5,
-              "labelFontSize": 11
-            }
-          },
-          "y": {
-            "field": "Trade",
-            "type": "quantitative",
-            "axis": {
-              "format": "%",
-              "gridOpacity": {
-                "condition": {"test": "datum.GDP !== 0", "value": 0.3},
-                "value": 1
-              },
-              "ticks": false,
-              "title": null,
-              "labelPadding": 5,
-              "labelFontSize": 11
-            }
-          },
-          "color": {
-            "field": "Continent",
-            "type": "nominal",
-            "scale": {
-              "domain": [
-                "Europe",
-                "Africa",
-                "South America",
-                "Asia",
-                "Oceania",
-                "North America"
-              ],
-              "range": [
-                "Orange",
-                "darkorange",
-                "#7C521F",
-                "#997C2E",
-                "#B5A437",
-                "#A46C4C"
-              ]
-            },
-            "legend": {
-              "orient": "top-left",
-              "direction": "horizontal",
-              "offset": -49,
-              "title": null
-            }
-          },
-          "tooltip": [
-            {"field": "LOCATION", "type": "nominal"},
-            {"field": "TIME", "type": "quantitative"},
-            {
-              "field": "GDP",
-              "type": "quantitative",
-              "format": "0.3f",
-              "title": "Change in Energy Consumption"
-            },
-            {
-              "field": "Trade",
-              "type": "quantitative",
-              "format": "0.3f",
-              "title": "Change in GDP"
-            }
-          ]
-        }
-      },
-      {
-        "layer": [
-          {
-            "params": [
-              {
-                "name": "hover",
-                "select": {
-                  "type": "point",
-                  "fields": ["LOCATION"],
-                  "toggle": true,
-                  "on": "mouseover"
-                }
-              },
-              {
-                "name": "click",
-                "select": {"type": "point", "fields": ["LOCATION"], "on": "click"}
-              }
-            ],
-            "transform": [
-              {
-                "filter": {
-                  "and": [
-                    {"param": "year"},
-                    {
-                      "or": [
-                        {"param": "click", "empty": false},
-                        {"param": "hover", "empty": false}
-                      ]
-                    }
-                  ]
-                }
-              }
-            ],
-            "mark": {"type": "line", "point": true, "interpolate": "natural"},
-            "encoding": {
-              "x": {"field": "GDP", "type": "quantitative"},
-              "y": {"field": "Trade", "type": "quantitative"},
-              "color": {
-                "condition": {"test": {"param": "hover"}, "value": "grey"}
-              },
-              "detail": {"field": "LOCATION"},
-              "order": {"field": "TIME"},
-              "opacity": {
-                "condition": {"test": {"param": "hover"}, "value": 0.4},
-                "value": 0
-              },
-              "tooltip": [
-                {"field": "LOCATION", "type": "nominal"},
-                {"field": "Year", "type": "quantitative"},
-                {
-                  "field": "GDP",
-                  "type": "quantitative",
-                  "format": "0.3f",
-                  "title": "Change in Energy Consumption"
-                },
-                {
-                  "field": "Trade",
-                  "type": "quantitative",
-                  "format": "0.3f",
-                  "title": "Change in GDP"
-                }
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "layer": [
-          {
-            "params": [
-              {
-                "name": "hovered",
-                "select": {
-                  "type": "point",
-                  "fields": ["LOCATION"],
-                  "toggle": true,
-                  "on": "mouseover"
-                }
-              },
-              {
-                "name": "clicked",
-                "select": {"type": "point", "fields": ["LOCATION"]}
-              }
-            ],
-            "transform": [
-              {
-                "filter": {
-                  "and": [
-                    {"param": "year"},
-                    {
-                      "or": [
-                        {"param": "click", "empty": false},
-                        {"param": "hover", "empty": false}
-                      ]
-                    }
-                  ]
-                }
-              }
-            ],
-            "mark": {"type": "text", "fontWeight": "bold"},
-            "encoding": {
-              "x": {"field": "GDP", "type": "quantitative"},
-              "y": {"field": "Trade", "type": "quantitative"},
-              "color": {
-                "condition": {"test": {"param": "hovered"}, "value": "black"}
-              },
-              "text": {"field": "TIME", "type": "quantitative"},
-              "detail": {"field": "LOCATION"},
-              "order": {"field": "TIME"},
-              "opacity": {
-                "condition": {"test": {"param": "hovered"}, "value": 0.8},
-                "value": 0
-              }, "tooltip": [{"field": "LOCATION", "title": "Country"}]
-            }
-          }
-        ]
-      },
-      {
-        "transform": [
-          {"calculate": "toNumber(year)", "as": "yearS"},
-          {"filter": "datum.yearS == datum.TIME"}
-        ],
-        "mark": {"type": "text", "yOffset": -12, "xOffset": -12},
-        "encoding": {
-          "x": {
-            "field": "GDP",
-            "type": "quantitative",
-            "scale": {"domain": [-0.02, 0.11]},
-            "axis": {"format": "%"}
-          },
-          "y": {
-            "field": "Trade",
-            "type": "quantitative",
-            "axis": {"format": "%"},
-            "scale": {"domain": [-0.04, 0.16]}
-          },
-          "text": {"field": "LOCATION"},
-          "color": {"value": "red"},
-          "opacity": {"value": 0}
-        }
-      },
-      {
-        "transform": [
-          {"calculate": "toNumber(year)", "as": "yearS"},
-          {"filter": "datum.yearS == datum.TIME"}
-        ],
-        "mark": {"type": "text", "yOffset": -5, "xOffset": -5, "size": 10},
-        "encoding": {
-          "x": {
-            "field": "GDP",
-            "type": "quantitative",
-            "axis": {"format": "%"},
-            "scale": {"domain": [-0.02, 0.11]}
-          },
-          "y": {
-            "field": "Trade",
-            "type": "quantitative",
-            "scale": {"domain": [-0.04, 0.16]},
-            "axis": {"format": "%"}
-          },
-          "text": {"field": "LOCATION"},
-          "color": {"value": "black"},
-          "opacity": {"condition": {"test": {"param": "Names"}}, "value": 0}
+      "mark": {"type": "rule", "strokeDash": [8, 4], "strokeCap": "butt"},
+      "encoding": {
+        "x": {
+          "aggregate": "mean",
+          "field": "GDP",
+          "title": "GDP Growth"
+        },
+        "color": {"value": "black"}, "opacity": {"value": 0.4},
+       
+        "tooltip": {
+          "field": "chng_eng",
+          "aggregate": "mean",
+          "format": "%",
+          "title": "mean"
         }
       }
-    ]
-  }
+    },
+      {
+      "transform": [
+        {"calculate": "toNumber(year)", "as": "yearS"},
+        {"filter": "datum.yearS == datum.TIME"}
+      ],
+      "mark": {"type": "point", "color": "gray", "size":150},
+      "encoding": {
+        "y": {
+          "aggregate": "mean",
+          "field": "Trade",
+          "title": "Trade Growth"
+        },
+                  "x": {
+          "aggregate": "mean",
+          "field": "GDP",
+          "title": "GDP Growth"
+        },
+        "color": {"value": "black"}, "opacity": {"value": 0.4}
+      }
+    },
+    
+    {
+      "transform": [
+        {"calculate": "toNumber(year)", "as": "yearS"},
+        {"filter": "datum.yearS == datum.TIME"}
+      ],
+      "mark": {"type": "rule", "strokeDash": [8, 4], "strokeCap": "butt"},
+      "encoding": {
+        "y": {
+          "aggregate": "mean",
+          "field": "Trade",
+          "title": "Trade Growth"
+        },
+        "color": {"value": "black"}, "opacity": {"value": 0.4}
+      }
+    },
+    {
+      "params": [{"name": "grid", "select": "interval", "bind": "scales"}],
+      "transform": [
+        {"calculate": "toNumber(year)", "as": "yearS"},
+        {"filter": "datum.yearS == datum.TIME"}
+      ],
+      "mark": "circle",
+      "encoding": {
+        "x": {
+          "field": "GDP",
+          "type": "quantitative",
+          "axis": {
+            "format": "%",
+            "gridOpacity": {
+              "condition": {"test": "datum.GDP == 0", "value": 0.3},
+              "value": 1
+            },
+            "ticks": false,
+            "title": "GDP Growth",
+            "labelPadding": 5,
+            "labelFontSize": 11
+          }
+        },
+        "y": {
+          "field": "Trade",
+          "type": "quantitative",
+          "axis": {
+            "format": "%",
+            "gridOpacity": {
+              "condition": {"test": "datum.GDP !== 0", "value": 0.3},
+              "value": 1
+            },
+            "ticks": false,
+            "title": "Trade Growth",
+            "labelPadding": 5,
+            "labelFontSize": 11
+          }
+        },
+        "color": {
+          "field": "Continent",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Europe",
+              "Africa",
+              "South America",
+              "Asia",
+              "Oceania",
+              "North America"
+            ]
+          },
+          "legend": {
+            "orient": "none",
+            "direction": "horizontal",
+            "legendX": 0,
+            "legendY": -18,
+            "title": null
+          }
+        },
+        "tooltip": [
+          {"field": "LOCATION", "type": "nominal"},
+          {"field": "TIME", "type": "quantitative"},
+          {
+            "field": "GDP",
+            "type": "quantitative",
+            "format": "0.3f",
+            "title": "GDP Growth"
+          },
+          {
+            "field": "Trade",
+            "type": "quantitative",
+            "format": "0.3f",
+            "title": "Change in GDP"
+          }
+        ]
+      }
+    },
+    {
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "fields": ["LOCATION"],
+                "toggle": true,
+                "on": "mouseover"
+              }
+            },
+            {
+              "name": "click",
+              "select": {"type": "point", "fields": ["LOCATION"], "on": "click"}
+            }
+          ],
+          "transform": [
+            {
+              "filter": {
+                "and": [
+                  {"param": "year"},
+                  {
+                    "or": [
+                      {"param": "click", "empty": false},
+                      {"param": "hover", "empty": false}
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "mark": {"type": "line", "point": true, "interpolate": "natural"},
+          "encoding": {
+            "x": {"field": "GDP", "type": "quantitative"},
+            "y": {"field": "Trade", "type": "quantitative"},
+            "color": {
+              "condition": {"test": {"param": "hover"}, "value": "grey"}
+            },
+            "detail": {"field": "LOCATION"},
+            "order": {"field": "TIME"},
+            "opacity": {
+              "condition": {"test": {"param": "hover"}, "value": 0.4},
+              "value": 0
+            },
+            "tooltip": [
+              {"field": "LOCATION", "type": "nominal"},
+              {"field": "Year", "type": "quantitative"},
+              {
+                "field": "GDP",
+                "type": "quantitative",
+                "format": "0.3f",
+                "title": "GDP Growth"
+              },
+              {
+                "field": "Trade",
+                "type": "quantitative",
+                "format": "0.3f",
+                "title": "Change in GDP"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "hovered",
+              "select": {
+                "type": "point",
+                "fields": ["LOCATION"],
+                "toggle": true,
+                "on": "mouseover"
+              }
+            },
+            {
+              "name": "clicked",
+              "select": {"type": "point", "fields": ["LOCATION"]}
+            }
+          ],
+          "transform": [
+            {
+              "filter": {
+                "and": [
+                  {"param": "year"},
+                  {
+                    "or": [
+                      {"param": "click", "empty": false},
+                      {"param": "hover", "empty": false}
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "mark": {"type": "text", "fontWeight": "bold"},
+          "encoding": {
+            "x": {"field": "GDP", "type": "quantitative"},
+            "y": {"field": "Trade", "type": "quantitative"},
+            "color": {
+              "condition": {"test": {"param": "hovered"}, "value": "black"}
+            },
+            "text": {"field": "TIME", "type": "quantitative"},
+            "detail": {"field": "LOCATION"},
+            "order": {"field": "TIME"},
+            "opacity": {
+              "condition": {"test": {"param": "hovered"}, "value": 0.8},
+              "value": 0
+            }, "tooltip": [{"field": "LOCATION", "title": "Country"}]
+          }
+        }
+      ]
+    },
+    {
+      "transform": [
+        {"calculate": "toNumber(year)", "as": "yearS"},
+        {"filter": "datum.yearS == datum.TIME"}
+      ],
+      "mark": {"type": "text", "yOffset": -12, "xOffset": -12},
+      "encoding": {
+        "x": {
+          "field": "GDP",
+          "type": "quantitative",
+          "scale": {"domain": [-0.02, 0.11]},
+          "axis": {"format": "%"}
+        },
+        "y": {
+          "field": "Trade",
+          "type": "quantitative",
+          "axis": {"format": "%"},
+          "scale": {"domain": [-0.04, 0.16]}
+        },
+        "text": {"field": "LOCATION"},
+        "color": {"value": "red"},
+        "opacity": {"value": 0}
+      }
+    },
+    {
+      "transform": [
+        {"calculate": "toNumber(year)", "as": "yearS"},
+        {"filter": "datum.yearS == datum.TIME"}
+      ],
+      "mark": {"type": "text", "yOffset": -5, "xOffset": -5, "size": 10},
+      "encoding": {
+        "x": {
+          "field": "GDP",
+          "type": "quantitative",
+          "axis": {"format": "%"},
+          "scale": {"domain": [-0.02, 0.11]}
+        },
+        "y": {
+          "field": "Trade",
+          "type": "quantitative",
+          "scale": {"domain": [-0.04, 0.16]},
+          "axis": {"format": "%"}
+        },
+        "text": {"field": "LOCATION"},
+        "color": {"value": "black"},
+        "opacity": {"condition": {"test": {"param": "Names"}}, "value": 0}
+      }
+    }
+  ]
+}
