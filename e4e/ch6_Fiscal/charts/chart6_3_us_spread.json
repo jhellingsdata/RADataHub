@@ -1,0 +1,141 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_Fiscal/data/chart6_3_us_spread.csv"
+    },
+    "config": {
+    "view": {
+       "stroke": "transparent"
+    }
+  },
+    "width": 500,
+    "height": 350,
+    "title": {
+      "text": "US Yield Spread",
+      "subtitle": [
+        "10 Year - 2 year Spread, Recessions Shaded",
+        "Source: US Treasury",
+        ""
+      ],
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleFontStyle": "italic",
+      "anchor": "start",
+      "color": "black"
+    },
+    "transform": [{"filter": "datum.Date>646794061000"},
+    {"calculate": "datum.Value/100", "as": "Value"}],
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "axis": {
+          "labelPadding":6,
+          "tickOpacity":0,
+          "title": null,
+          "grid": false,
+          "ticks": false,
+          "labelSeparation": 10
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": {"type": "rect"},
+        "data": {
+          "values": [
+            {
+              "name": "Great Recession",
+              "start": 1196520540000,
+              "end": 1243864140000
+            },
+            {
+              "name": "COVID Recession",
+              "start": 1580568540000,
+              "end": 1585748940000
+            },
+            {
+              "name": "Early 1990s Recession",
+              "start": 646794061000,
+              "end": 667789261000
+            },
+            {
+              "name": "Early 2000s Recession",
+              "start": 983408461000,
+              "end": 1004576461000
+            }
+          ]
+        },
+        "encoding": {
+          "x": {"field": "start", "type": "temporal"},
+          "x2": {"field": "end"},
+          "color": {"value": "rgba(0,0,0, 0.05)"}
+        }
+      },
+      {"mark": "rule", 
+      "encoding": {"y": {"datum": 0.00005}, "size": {"value": 1}}},
+      {
+        "data": {"values": [{"data": "used"}]},
+        "mark": {"type": "text", "align":"left", "dy":10, "dx":5, "color": "rgba(0,0,0,0.47", "fontWeight": "bold"},
+        "encoding": {
+          "text": {"value": "↓ Inversion"},
+          "x" : {"value": 0},
+          "y": {"datum": 0}
+        }
+      },
+      {
+        "encoding": {
+          "y": {
+            "field": "Value",
+            "type": "quantitative",
+            "axis": {"title": null, "grid": false, 
+            "tickOpacity":0,
+            "format": "%"}
+          },
+          "color": {"value": "rgb(128,0,0)"}
+        },
+        "layer": [
+          {"mark": {"type": "line", "interpolate": "step-after", "size":1.25, "smooth":true}},
+          {
+            "transform": [{"filter": {"param": "hover", "empty": false}}],
+            "mark": "point"
+          }
+        ]
+      },
+      {
+        "transform": [
+          {"pivot": "Measure", "value": "Value", "groupby": ["Date"]},
+          {"filter": "month(datum.Date) == 0 | month(datum.Date) == 5"}
+        ],
+        "mark": "rule",
+        "encoding": {
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {
+              "field": "Date",
+              "type": "temporal",
+              "format": "%B %Y",
+              "title": null
+            },
+            {"field": "Spread", "type": "quantitative", "format": ".2%"}
+          ]
+        },
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["Date"],
+              "nearest": true,
+              "on": "mouseover",
+              "clear": "mouseout"
+            }
+          }
+        ]
+      }
+    ],
+    "description": "A chart titled 'US Yield Curve' with subtitle '10 Year - 2 year Spread, Recessions Shaded Source: US Treasury "
+  }
