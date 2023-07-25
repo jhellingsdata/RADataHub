@@ -11,7 +11,7 @@
   },
   "width": 320,
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/Global_bondYields.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_9_global_bonds.csv"
   },
   "mark": {"type": "bar", "color": "rgb(128,0,0)"},
   "transform": [
