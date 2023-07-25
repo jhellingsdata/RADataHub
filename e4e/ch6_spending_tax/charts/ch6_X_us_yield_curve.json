@@ -1,0 +1,136 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/ch6_X_yield_curve_yr2.csv",
+      "format": {"type": "csv"}
+    },
+    "title": {
+      "text": "US Yield Curve 2004-2023",
+      "subtitle": [
+        "Yield for contracts of different maturity (months) at the start of each year. Source: US Treasury",
+        ""
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12,
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "black"
+    },
+    "params": [
+      {
+        "name": "Dates",
+        "value": 2004,
+        "bind": {
+          "input": "range",
+          "min": 2004,
+          "max": 2023,
+          "step": 1,
+          "name": "Year:"
+        }
+      }
+    ],
+    "transform": [{"filter": "datum.Date == Dates"}],
+    "width": 500,
+    "height": 300,
+    "layer": [
+            {
+              "encoding": {
+                "x": {
+                  "field": "maturity",
+                  "type": "quantitative",
+                  "axis": {
+                    "domain": false,
+                    "ticks": false,
+                    "grid": false,
+                    "title": "Months",
+                    "labelPadding": 5,
+                    "labelFontSize": 11
+                  },
+                  "scale": {"domain": [1, 375]}
+                },
+                "y": {
+                  "field": "yield",
+                  "type": "quantitative",
+                  "axis": {
+                    "domain": false,
+                    "ticks": false,
+                    "labelPadding": 5,
+                    "labelFontSize": 11,
+                    "titlePadding": 5,
+                    "title": null,
+                    "gridOpacity": 0.3,
+                    "labelAngle": 0,
+                    "format": ".1%"
+                  }
+                },
+                "color": {"value": "rgb(128,0,0)", "legend": null}
+              },
+              "layer": [
+                {"mark":{"type": "line", "point": true}},
+                {
+                  "params": [
+                    {
+                      "name": "label",
+                      "select": {
+                        "type": "point",
+                        "encodings": ["x"],
+                        "nearest": true,
+                        "on": "mouseover"
+                      }
+                    }
+                  ],
+                  "mark": "point",
+                  "encoding": {
+                    "opacity": {
+                      "condition": {"param": "label", "empty": false, "value": 1},
+                      "value": 0
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "transform": [{"filter": {"param": "label", "empty": false}}],
+              "layer": [
+                {
+                  "mark": {"type": "rule", "color": "gray", "opacity": 0.3},
+                  "encoding": {
+                    "x": {"type": "quantitative", "field": "maturity", "aggregate": "min",
+                  "scale": {"domain": [1, 375]}}
+                  }
+                },
+                {
+                  "encoding": {
+                    "text": {
+                      "type": "quantitative",
+                      "field": "yield"
+                    },
+                    "x": {"type": "quantitative", "field": "maturity",
+                  "scale": {"domain": [1, 375]}},
+                    "y": {"type": "quantitative", "field": "yield"}
+                  },
+                  "layer": [
+                    {
+                      "mark": {
+                        "type": "text",
+                        "stroke": "white",
+                        "strokeWidth": 2,
+                        "align": "left",
+                        "dx": 5,
+                        "dy": -5
+                        
+                      },
+                      "encoding": {"color": {"value": "#880000"}, "text": {"format": "0.2%"}}
+                    },
+                    {
+                      "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+                      "encoding": {
+                        "color": {"value": "#880000", "legend": null}
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+  }
