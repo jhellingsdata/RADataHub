@@ -1,0 +1,113 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_5_il_debt.csv"
+  },
+    "config": {
+    "style": {"cell": {"stroke": "transparent"}},
+    "locale": {
+      "number": {
+        "decimal": ".",
+        "thousands": ",",
+        "grouping": [3],
+        "currency": ["$", " B"]
+      }
+    }
+  },
+
+  "width": 500,
+  "height": 350,
+  "title": {
+    "text": "Illinois Public Debt",
+    "subtitle": [
+      "State and Local Debt, Billions of USD",
+      "Date: US Census Bureau ",
+      ""
+    ],
+    "fontSize": 14,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "layer": [
+    {
+      "layer": [
+        {
+          "mark": {"type": "area", "interpolate": "linear"},
+          "encoding": {
+            "x": {
+              "field": "Date",
+              "type": "temporal",
+              "axis": {
+                "title": null,
+                "grid": false,
+                "ticks": false,
+                "labelSeparation": 10
+              }
+            },
+            "color": {
+              "field": "Series",
+              "scale":{"range":["rgb(124, 54, 45)", "rgb(99,104,108)"]},
+              "legend": {
+                "orient": "none",
+                "title": null,
+                "columns": 99,
+                "legendX": 0,
+                "legendY": -18
+              }
+            },
+            "y": {
+              "field": "Value",
+              "type": "quantitative",
+              "axis": {"title": null, "format":"$.0d", "gridOpacity":0.6, "tickOpacity":0}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "labelPadding":6,
+            "title": null,
+            "grid": false,
+            "ticks": false,
+            "labelSeparation": 10
+          }
+        },
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "format": " %Y",
+            "title": "Year"
+          },
+          {"field": "Local", "type": "quantitative", "format": "$.0d"},
+          {"field": "State", "type": "quantitative", "format": "$.0d"}
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "transform": [{"pivot": "Series", "value": "Value", "groupby": ["Date"]}]
+    }
+  ]}

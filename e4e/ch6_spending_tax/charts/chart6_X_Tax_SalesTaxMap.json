@@ -4,7 +4,7 @@
       {
         "title": {
           "text": "Sales Taxes",
-          "subtitle": ["Standard VAT rate. Source: IMF", ""],
+        "subtitle": ["Standard VAT rate.", "Source: IMF"],
           "subtitleFontStyle": "italic",
           "subtitleFontSize": 12,
           "anchor": "start",
