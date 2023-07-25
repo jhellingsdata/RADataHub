@@ -33,7 +33,7 @@
               "field": "Revenues",
               "type": "quantitative",
               "title": "Revenue in Millions",
-              "axis": {"gridOpacity": 0.6, "format": "$.0f", "title": null}
+              "axis": {"gridOpacity": 0.6, "format": "$.0f", "title": null, "ticks": false, "labelPadding": 5, "labelFontSize": 11}
             },
             "y": {
               "field": "State and Local Taxes",
@@ -42,7 +42,8 @@
               "axis": {
                 "gridOpacity": 0.5,
                 "labelFontSize": 11,
-                "labelFontWeight": "bold"
+                "labelFontWeight": "bold",
+                "ticks": true
               }
             },
             "color": {"value": "#880000"},
@@ -89,7 +90,7 @@
             "x": {
               "field": "Rate",
               "type": "quantitative",
-              "axis": {"format": "%", "gridOpacity": 0.4},
+              "axis": {"format": "%", "gridOpacity": 0.4, "ticks": false, "labelPadding": 5, "labelFontSize": 11},
               "title": null
             },
             "y": {
