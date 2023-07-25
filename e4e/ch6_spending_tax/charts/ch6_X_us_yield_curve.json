@@ -117,7 +117,7 @@
                         "strokeWidth": 2,
                         "align": "left",
                         "dx": 5,
-                        "dy": -5,
+                        "dy": -5
                         
                       },
                       "encoding": {"color": {"value": "#880000"}, "text": {"format": ".2%", "field": "yield"}}

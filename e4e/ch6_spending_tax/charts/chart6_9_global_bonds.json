@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "title": {
+    "text": "Global Bond Yields",
+    "fontSize": 16,
+    "anchor": "start",
+    "subtitle": ["Major 10 Year Bonds" , "Source: Trading Economics", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12
+  },
+  "width": 320,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/Global_bondYields.csv"
+  },
+  "mark": {"type": "bar", "color": "rgb(128,0,0)"},
+  "transform": [
+    {"calculate": "datum['Major10Y Yield'] / 100", "as": "Yield"}
+  ],
+  "encoding": {
+    "y": {"field": "Country", "type": "nominal", "title": null, "sort": "-x"},
+    "x": {
+      "field": "Yield",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "format": "%"
+      }
+    },
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "Record Time", "type": "temporal"},
+      {
+        "field": "Yield",
+        "type": "quantitative",
+        "title": "Yield",
+        "format": ".2%"
+      },
+      {"field": "Yearly Change", "type": "nominal"}
+    ]
+  }
+}
