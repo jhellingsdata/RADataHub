@@ -5,7 +5,7 @@
       "format": {"type": "csv"}
     },
     "title": {
-      "text": "US Yield Curve",
+      "text": "US Yield Curve 2004-2023",
       "subtitle": [
         "Yield for contracts of different maturity (months) at the start of each year. Source: US Treasury",
         ""
@@ -117,7 +117,7 @@
                         "strokeWidth": 2,
                         "align": "left",
                         "dx": 5,
-                        "dy": -5,
+                        "dy": -5
                         
                       },
                       "encoding": {"color": {"value": "#880000"}, "text": {"format": "0.2%"}}
@@ -125,7 +125,7 @@
                     {
                       "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
                       "encoding": {
-                        "color": {"value": "#880000", "legend": null},
+                        "color": {"value": "#880000", "legend": null}
                       }
                     }
                   ]
