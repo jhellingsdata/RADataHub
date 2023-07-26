@@ -1,141 +1,141 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_4_us_maturity.csv"
-    },
-    "title": {
-      "text": "Treasury Debt by Maturity",
-      "anchor": "start",
-      "subtitle": ["Proportion US Treasury securities at face value by maturity date", "Source: FRED", ""],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 12,
-      "fontSize": 16
-    },
-    "width": 500,
-    "height": 350,
-    "transform": [
-      {"calculate": "year(datum.date)", "as": "year"},
-      {"filter": "datum.year>=minYear"},
-      {"filter": "datum.year<=maxYear"},
-    ],
-    "params": [
-      {
-        "name": "minYear",
-        "value": 2002,
-        "bind": {
-          "input": "range",
-          "min": 2002,
-          "max": 2021,
-          "step": 1,
-          "name": "Start year:"
-        }
-      },
-      {
-        "name": "maxYear",
-        "value": 2023,
-        "bind": {
-          "input": "range",
-          "min": 2003,
-          "max": 2023,
-          "step": 1,
-          "name": "End year:"
-        }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_4_us_maturity.csv"
+  },
+  "title": {
+    "text": "Treasury Debt by Maturity",
+    "anchor": "start",
+    "subtitle": ["Proportion US Treasury securities at face value by maturity date", "Source: FRED", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "fontSize": 16
+  },
+  "width": 500,
+  "height": 350,
+  "transform": [
+    {"calculate": "year(datum.date)", "as": "year"},
+    {"filter": "datum.year>=minYear"},
+    {"filter": "datum.year<=maxYear"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2002,
+      "bind": {
+        "input": "range",
+        "min": 2002,
+        "max": 2021,
+        "step": 1,
+        "name": "Start year:"
       }
-    ],
-    "layer":[
-      {
-            "mark": {"type": "area", "interpolate":"step"},
-            "encoding": {
-              "opacity": {"value":1}
-            }
-      },
-      {
-        "transform": [
-          {"filter": "month(datum.date)==0|month(datum.date)==3|month(datum.date)==6|month(datum.date)==9"},
-          {"pivot": "Series", "value": "value", "groupby": ["date"]},
-          {"calculate": "datum['Within 15 days']+datum['16-90 days']+datum['91-365 days']+datum['1-5 years']+datum['5-10 years']+datum['Over 10 years']", "as": "Total"},
-          {"calculate": "datum['Within 15 days']/datum.Total", "as": "Within 15 days"},
-          {"calculate": "datum['16-90 days']/datum.Total", "as": "16-90 days"},
-          {"calculate": "datum['91-365 days']/datum.Total", "as": "91-365 days"},
-          {"calculate": "datum['1-5 years']/datum.Total", "as": "1-5 years"},
-          {"calculate": "datum['5-10 years']/datum.Total", "as": "5-10 years"},
-          {"calculate": "datum['Over 10 years']/datum.Total", "as": "Over 10 years"},
-          
-          ],
-
-        "mark": {"type": "rule", "size":1.5},
-        "encoding": {
-          "color": {"value": "white"},
-          "y": null,
-          "opacity": {
-          "condition": {"value": 1, "param": "hover", "empty": false},
-            "value": 0
-          },
-          "tooltip":[
-            {"field": "date",  "type":"temporal", "format" :"%B %Y"},
-            {"field": "Within 15 days", "format":".1%"},
-            {"field": "16-90 days", "format":".1%"},
-            {"field": "91-365 days", "format":".1%"},
-            {"field": "1-5 years", "format":".1%"},
-            {"field": "5-10 years", "format":".1%"},
-            {"field": "Over 10 years", "format":".1%"},
-
-
-          ]
-        },
-        "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["date"],
-          "nearest": true,
-          "on": "mouseover",
-          "clear": "mouseout"
-        }
-      }]
-      },
-
-    ],
-    "encoding": {
-      "x": {"field": "date", "type": "temporal", "title": null},
-      "y": {
-        "field": "value",
-        "type": "quantitative",
-        "title": null,
-        "stack": "normalize",
-        "axis": {
-          "format": "%"
-        }
-      },
-      "color": {
-        "field": "Series",
-        "scale": {
-          "range": [
-            "rgb(255, 232, 199)",
-            "rgb(255, 203, 171)",
-            "rgb(255, 147, 119)",
-            "rgb(220, 93, 70)",
-            "rgb(128,0,0)",
-            "rgb(69, 0, 0)"
-          ]
-        },
-        "sort": [
-          "Within 15 Days",
-          "16-90 Days",
-          "91-365 Days",
-          "1-5 Years",
-          "5-10 Years",
-          "Over 10 Years"
-        ],
-        "legend": {
-          "orient": "none", "title": null, "direction": "horizontal", "legendX":0, "legendY":-15
-        }
-      },
-      "order": {"field": "order", "type": "ordinal"},
-      "tooltip": [
-        {"field": "date", "type": "temporal", "format": "%b %Y", "title": "Record Date"},
-        {"field": "Series", "type": "nominal", "title": "Maturity"},
-        {"field": "value", "format": ",", "title": "Debt Value ($m)"}
-      ]
+    },
+    {
+      "name": "maxYear",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 2003,
+        "max": 2023,
+        "step": 1,
+        "name": "End year:"
+      }
     }
+  ],
+  "layer":[
+    {
+          "mark": {"type": "area", "interpolate":"step"},
+          "encoding": {
+            "opacity": {"value":1}
+          }
+    },
+    {
+      "transform": [
+        {"filter": "month(datum.date)==0|month(datum.date)==3|month(datum.date)==6|month(datum.date)==9"},
+        {"pivot": "Series", "value": "value", "groupby": ["date"]},
+        {"calculate": "datum['Within 15 days']+datum['16-90 days']+datum['91-365 days']+datum['1-5 years']+datum['5-10 years']+datum['Over 10 years']", "as": "Total"},
+        {"calculate": "datum['Within 15 days']/datum.Total", "as": "Within 15 days"},
+        {"calculate": "datum['16-90 days']/datum.Total", "as": "16-90 days"},
+        {"calculate": "datum['91-365 days']/datum.Total", "as": "91-365 days"},
+        {"calculate": "datum['1-5 years']/datum.Total", "as": "1-5 years"},
+        {"calculate": "datum['5-10 years']/datum.Total", "as": "5-10 years"},
+        {"calculate": "datum['Over 10 years']/datum.Total", "as": "Over 10 years"}
+        
+        ],
+
+      "mark": {"type": "rule", "size":1.5},
+      "encoding": {
+        "color": {"value": "white"},
+        "y": null,
+        "opacity": {
+        "condition": {"value": 1, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip":[
+          {"field": "date",  "type":"temporal", "format" :"%B %Y"},
+          {"field": "Within 15 days", "format":".1%"},
+          {"field": "16-90 days", "format":".1%"},
+          {"field": "91-365 days", "format":".1%"},
+          {"field": "1-5 years", "format":".1%"},
+          {"field": "5-10 years", "format":".1%"},
+          {"field": "Over 10 years", "format":".1%"}
+
+
+        ]
+      },
+      "params": [{
+      "name": "hover",
+      "select": {
+        "type": "point",
+        "fields": ["date"],
+        "nearest": true,
+        "on": "mouseover",
+        "clear": "mouseout"
+      }
+    }]
+    }
+
+  ],
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": null},
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "stack": "normalize",
+      "axis": {
+        "format": "%"
+      }
+    },
+    "color": {
+      "field": "Series",
+      "scale": {
+        "range": [
+          "rgb(255, 232, 199)",
+          "rgb(255, 203, 171)",
+          "rgb(255, 147, 119)",
+          "rgb(220, 93, 70)",
+          "rgb(128,0,0)",
+          "rgb(69, 0, 0)"
+        ]
+      },
+      "sort": [
+        "Within 15 Days",
+        "16-90 Days",
+        "91-365 Days",
+        "1-5 Years",
+        "5-10 Years",
+        "Over 10 Years"
+      ],
+      "legend": {
+        "orient": "none", "title": null, "direction": "horizontal", "legendX":0, "legendY":-15
+      }
+    },
+    "order": {"field": "order", "type": "ordinal"},
+    "tooltip": [
+      {"field": "date", "type": "temporal", "format": "%b %Y", "title": "Record Date"},
+      {"field": "Series", "type": "nominal", "title": "Maturity"},
+      {"field": "value", "format": ",", "title": "Debt Value ($m)"}
+    ]
   }
+}
