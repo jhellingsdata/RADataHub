@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "vconcat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/chicago_taxes2v2.csv"
+      },
+      "width": 300,
+      "height": 200,
+      "title": {
+        "text": "Tax Revenues and Rates by type for the City of Chicago",
+        "anchor": "start",
+        "subtitle": ["Source: Chicago.gov"],
+        "subtitleFontStyle": "italic",
+        "fontSize": 16,
+        "subtitleFontSize": 12
+      },
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "on": "mouseover",
+                "clear": "mouseout"
+              }
+            }
+          ],
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "Revenues",
+              "type": "quantitative",
+              "title": "Revenue in Millions",
+              "axis": {"gridOpacity": 0.6, "format": "$.0f", "title": null, "ticks": false, "labelPadding": 5, "labelFontSize": 11}
+            },
+            "y": {
+              "field": "State and Local Taxes",
+              "sort": {"field": "Revenues", "order": "descending"},
+              "title": "",
+              "axis": {
+                "gridOpacity": 0.5,
+                "labelFontSize": 11,
+                "labelFontWeight": "bold",
+                "ticks": true
+              }
+            },
+            "color": {"value": "#880000"},
+            "tooltip": [
+              {
+                "field": "Revenues",
+                "title": "Revenues in Millions",
+                "format": "$.1f"
+              },
+              {"field": "State and Local Taxes", "title": "Tax type"}
+            ]
+          }
+        },
+        {
+          "mark": {"type": "bar", "color": "#eee"},
+          "encoding": {
+            "y": {
+              "type": "nominal",
+              "field": "State and Local Taxes",
+              "sort": {"field": "Revenues", "order": "descending"}
+            },
+            "opacity": {
+              "condition": {
+                "test": {"param": "hover", "empty": false},
+                "value": 0.7
+              },
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/chicago_taxes1.csv"
+      },
+      "title": null,
+      "width": 300,
+      "height": 100,
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "x": {
+              "field": "Rate",
+              "type": "quantitative",
+              "axis": {"format": "%", "gridOpacity": 0.4, "ticks": false, "labelPadding": 5, "labelFontSize": 11},
+              "title": null
+            },
+            "y": {
+              "field": "State Taxes",
+              "title": "",
+              "sort": {"field": "Rate", "order": "descending"},
+              "axis": {"labelFontSize": 11, "labelFontWeight": "bold"}
+            },
+            "color": {"value": "#880000"}
+          }
+        },
+        {
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "on": "mouseover",
+                "clear": "mouseout"
+              }
+            }
+          ],
+          "mark": {"type": "bar", "color": "#eee"},
+          "encoding": {
+            "y": {
+              "type": "nominal",
+              "field": "State Taxes",
+              "sort": {"field": "Rate", "order": "descending"}
+            },
+            "opacity": {
+              "condition": {
+                "test": {"param": "hover", "empty": false},
+                "value": 0.7
+              },
+              "value": 0
+            },
+            "tooltip": [
+              {"field": "Rate", "title": "Tax Rate", "format": ".0%"},
+              {"field": "State Taxes", "title": "Tax type"}
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "style": {"cell": {"stroke": "transparent"}},
+    "locale": {
+      "number": {
+        "decimal": ".",
+        "thousands": ",",
+        "grouping": [3],
+        "currency": ["$", " M"]
+      }
+    }
+  }
+}
