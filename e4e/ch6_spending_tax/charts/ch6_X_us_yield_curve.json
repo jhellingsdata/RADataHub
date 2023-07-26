@@ -42,7 +42,7 @@
                     "domain": false,
                     "ticks": false,
                     "grid": false,
-                    "title": "Months",
+                    "title": "Months to Maturity",
                     "labelPadding": 5,
                     "labelFontSize": 11
                   },
