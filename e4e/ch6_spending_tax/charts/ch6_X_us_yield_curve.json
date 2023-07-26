@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/ch6_X_yield_curve_yr2.csv",
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/ch6_2_yield_curve_yr2.csv",
       "format": {"type": "csv"}
     },
     "title": {
