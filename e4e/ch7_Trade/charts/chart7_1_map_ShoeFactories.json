@@ -1,0 +1,248 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {"background": "white", "concat": {"spacing": 10}},
+  "hconcat": [
+    {
+      "title": {
+        "text": "Mapping the garment supply chain",
+        "subtitle": ["25 Largest Shoe Factories", "Source: WageIndicator.org", "", ""],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 12,
+        "fontSize": 16,
+        "anchor": "start",
+        "color": "black"
+      },
+      "projection": {
+        "type": "naturalEarth1",
+        "translate": [-630, 230],
+        "scale": 500
+      },
+      "width": 350,
+      "height": 330,
+      "layer": [
+        {
+          "data": {
+            "name": "map",
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/map_Global_countries.geojson",
+            "format": {"property": "features"}
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "lightgray",
+            "stroke": "white",
+            "strokeWidth": 0.5
+          },
+          "encoding": {"tooltip": {"field": "properties.COUNTRY"}}
+        },
+        {
+          "data": {
+            "name": "locations",
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/chart7_1_map_ShoeFactories.csv"
+          },
+          "mark": {"type": "circle"},
+          "encoding": {
+            "longitude": {"field": "Longitude", "type": "quantitative"},
+            "latitude": {"field": "Latitude", "type": "quantitative"},
+            "size": {
+              "field": "workers",
+              "type": "quantitative",
+              "legend": null,
+              "scale": {"range": [20, 110]}
+            },
+            "color": {
+              "field": "brand",
+              "type": "nominal",
+              "legend": {
+                "title": null,
+                "labelFontSize": 12,
+                "orient": "none",
+                "legendX": 3,
+                "legendY": -17,
+                "direction": "horizontal"
+              },
+              "scale": {"range": ["#c41e3a", "#005147"]}
+            },
+            "tooltip": [
+              {"field": "country", "title": "Country"},
+              {"field": "location2", "title": "Region"},
+              {"field": "workers", "format": ",", "title": "Workers"},
+              {"field": "brand", "title": "Brand"}
+            ]
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "label": "South",
+                "longitude": 87.5,
+                "latitude": 9.5
+              },
+              {
+                "label": "-East",
+                "longitude": 87,
+                "latitude": 6.5
+              },
+              {
+                "label": "Asia",
+                "longitude": 86.2,
+                "latitude": 3.5
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "fontWeight": "bold",
+            "fontSize": 22,
+            "fill": "dimgrey",
+            "opacity": 0.4
+          },
+          "encoding": {
+            "text": {"field": "label", "type": "nominal"},
+            "longitude": {"field": "longitude", "type": "quantitative"},
+            "latitude": {"field": "latitude", "type": "quantitative"}
+          }
+        }
+      ]
+    },
+    {
+      "vconcat": [
+        {
+          "width": 230,
+          "height": 170,
+          "title": {"text": "Vietnam", "fontSize": 12, "fontWeight": 400},
+          "projection": {
+            "type": "mercator",
+            "center": [103.5, 14.5],
+            "scale": 1900
+          },
+          "layer": [
+            {
+              "data": {
+                "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/map_VNM_regions.geojson",
+                "format": {"property": "features"}
+              },
+              "mark": {
+                "type": "geoshape",
+                "fill": "slategrey",
+                "fillOpacity": 0.6,
+                "stroke": "white",
+                "strokeWidth": 0.5
+              },
+              "encoding": {
+                "tooltip": [{"field": "properties.Name", "title": "Province"}]
+              }
+            },
+            {
+              "data": {
+                "name": "map",
+                "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/map_Global_countries.geojson",
+                "format": {"property": "features"}
+              },
+              "transform": [
+                {
+                  "filter": {
+                    "field": "properties.ISO3",
+                    "oneOf": ["LAO", "KHM", "THA"]
+                  }
+                }
+              ],
+              "mark": {
+                "type": "geoshape",
+                "fill": "lightgray",
+                "stroke": "white",
+                "strokeWidth": 0.5
+              },
+              "encoding": {"tooltip": {"field": "properties.COUNTRY"}}
+            },
+            {
+              "data": {"name": "locations"},
+              "transform": [{"filter": "datum.ISO3 == 'VNM'"}],
+              "mark": {"type": "circle", "fillOpacity": 1},
+              "encoding": {
+                "longitude": {"field": "Longitude", "type": "quantitative"},
+                "latitude": {"field": "Latitude", "type": "quantitative"},
+                "size": {
+                  "field": "workers",
+                  "type": "quantitative",
+                  "legend": null,
+                  "scale": {"range": [10, 100]}
+                },
+                "color": {"field": "brand", "type": "nominal", "legend": null},
+                "tooltip": [
+                  {"field": "country", "title": "Country"},
+                  {"field": "location2", "title": "Region"},
+                  {"field": "workers", "format": ",", "title": "Workers"},
+                  {"field": "brand", "title": "Brand"}
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "width": 230,
+          "height": 130,
+          "title": {
+            "text": "Indonesia",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "offset": -5
+          },
+          "layer": [
+            {
+              "data": {
+                "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/map_IDN_regions.geojson",
+                "format": {"property": "features"}
+              },
+              "projection": {
+                "type": "identity",
+                "reflectY": true,
+                "translate": [-5690, -300],
+                "scale": 54
+              },
+              "mark": {
+                "type": "geoshape",
+                "fill": "slategray",
+                "fillOpacity": 0.6,
+                "stroke": "white",
+                "strokeWidth": 0.5
+              },
+              "encoding": {
+                "tooltip": [
+                  {"field": "properties.Propinsi", "title": "Province"}
+                ]
+              }
+            },
+            {
+              "data": {"name": "locations"},
+              "transform": [{"filter": "datum.ISO3 == 'IDN'"}],
+              "projection": {
+                "type": "identity",
+                "reflectY": true,
+                "scale": 100
+              },
+              "mark": {"type": "circle"},
+              "encoding": {
+                "longitude": {"field": "Longitude", "type": "quantitative"},
+                "latitude": {"field": "Latitude", "type": "quantitative"},
+                "size": {
+                  "field": "workers",
+                  "type": "quantitative",
+                  "legend": null,
+                  "scale": {"range": [10, 100]}
+                },
+                "color": {"field": "brand", "type": "nominal", "legend": null},
+                "tooltip": [
+                  {"field": "country", "title": "Country"},
+                  {"field": "location2", "title": "Region"},
+                  {"field": "workers", "format": ",", "title": "Workers"},
+                  {"field": "brand", "title": "Brand"}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
