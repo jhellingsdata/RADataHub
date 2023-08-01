@@ -5,7 +5,12 @@
     {
       "title": {
         "text": "Mapping the garment supply chain",
-        "subtitle": ["25 Largest Shoe Factories", "Source: WageIndicator.org", "", ""],
+        "subtitle": [
+          "25 Largest Shoe Factories",
+          "Source: WageIndicator.org",
+          "",
+          ""
+        ],
         "subtitleFontStyle": "italic",
         "subtitleFontSize": 12,
         "fontSize": 16,
@@ -73,21 +78,9 @@
         {
           "data": {
             "values": [
-              {
-                "label": "South",
-                "longitude": 87.5,
-                "latitude": 9.5
-              },
-              {
-                "label": "-East",
-                "longitude": 87,
-                "latitude": 6.5
-              },
-              {
-                "label": "Asia",
-                "longitude": 86.2,
-                "latitude": 3.5
-              }
+              {"label": "South", "longitude": 87.5, "latitude": 9.5},
+              {"label": "-East", "longitude": 87, "latitude": 6.5},
+              {"label": "Asia", "longitude": 86.2, "latitude": 3.5}
             ]
           },
           "mark": {
@@ -119,7 +112,7 @@
           "layer": [
             {
               "data": {
-                "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/map_VNM_regions.geojson",
+                "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/map_VNM_regions.geojson",
                 "format": {"property": "features"}
               },
               "mark": {
@@ -135,15 +128,15 @@
             },
             {
               "data": {
-                "name": "map",
-                "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/map_Global_countries.geojson",
+                "name": "Asia",
+                "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/map_Asia.geojson",
                 "format": {"property": "features"}
               },
               "transform": [
                 {
                   "filter": {
-                    "field": "properties.ISO3",
-                    "oneOf": ["LAO", "KHM", "THA"]
+                    "field": "properties.ISO",
+                    "oneOf": ["LA", "KH", "TH"]
                   }
                 }
               ],
@@ -166,7 +159,7 @@
                   "field": "workers",
                   "type": "quantitative",
                   "legend": null,
-                  "scale": {"range": [10, 100]}
+                  "scale": {"range": [20, 110]}
                 },
                 "color": {"field": "brand", "type": "nominal", "legend": null},
                 "tooltip": [
@@ -191,7 +184,7 @@
           "layer": [
             {
               "data": {
-                "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/map_IDN_regions.geojson",
+                "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/map_IDN_regions.geojson",
                 "format": {"property": "features"}
               },
               "projection": {
@@ -229,7 +222,7 @@
                   "field": "workers",
                   "type": "quantitative",
                   "legend": null,
-                  "scale": {"range": [10, 100]}
+                  "scale": {"range": [20, 110]}
                 },
                 "color": {"field": "brand", "type": "nominal", "legend": null},
                 "tooltip": [
