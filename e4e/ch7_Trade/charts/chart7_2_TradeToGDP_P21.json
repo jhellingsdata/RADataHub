@@ -67,6 +67,7 @@
       "opacity": {"condition": {"test": {"param": "highlight" },"value": 1}, "value": 0.8 },
       "tooltip": [
         {"field": "Country"},
+        {"field": "Year"},
         {"field": "TradeToGDP", "type": "quantitative", "format": ".2%", "title": "Openness"}
       ]
     }
