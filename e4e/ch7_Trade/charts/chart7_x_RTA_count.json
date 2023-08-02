@@ -13,7 +13,7 @@
   "transform": [
             {"calculate": "pad(datum.Country_ID, 3, '0')", "as": "filledID"},
             {"lookup": "Country_ISO3", "from":{
-              "data": {"url":"https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv"},
+              "data": {"url":"https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/chart7_ISO.csv"},
               "key": "alpha-3",
               "fields": ["name"]
             }},
@@ -23,7 +23,7 @@
           "lookup": "Country_ID",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/vega/vega/main/packages/vega-loader/test/data/world-110m.json",
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/world-110m.json",
               "format": {"type": "topojson", "feature": "countries"}
             },
             "key": "id",
@@ -34,12 +34,12 @@
 
   ],
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/Summer/RTA_Counts.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/chart7_x_RTA_counts.csv"
   },
   "layer":[
      { 
             "data": {
-              "url": "https://raw.githubusercontent.com/vega/vega/main/packages/vega-loader/test/data/world-110m.json",
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/world-110m.json",
               "format": {"type": "topojson", "feature": "countries"}
             },      "mark": {"type": "geoshape", "fill": "rgba(0,0,0,0.01)", "stroke": "gray"},
             "transform": [
