@@ -1,0 +1,74 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/chart7_2_TradeToGDP_P21.csv"
+    },
+    "height": 300,
+    "width": 450,
+    "title": {
+      "text": "Openness to trade",
+      "anchor": "start",
+      "subtitle": ["Trade as percent of GDP, 21 most populous countries","Source: World Bank", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":12,
+      "fontSize": 16
+    },
+    "view": {"stroke": "transparent"},
+    "params": [
+      {
+        "name": "year",
+        "value": 2021,
+        "bind": {
+          "input": "range",
+          "min": 1970,
+          "max": 2021,
+          "step": 1,
+          "name": "Select Year:"
+        }
+      },
+      {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
+    ],
+    "transform": [
+      {"calculate": "toNumber(year)", "as": "yearS"},
+      {"filter": "datum.yearS == datum.Year"}
+    ],
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "Country",
+        "type": "nominal",
+        "sort": {"field": "rank", "order": "descending"},
+        "axis": {
+          "title": null,
+          "labelFontSize": 11,
+          "ticks": false,
+          "labelPadding": 5
+        }
+      },
+      "x": {
+        "field": "TradeToGDP",
+        "type": "quantitative",
+        "axis": {
+          "format": "%",
+          "gridOpacity": 0.5,
+          "title": null,
+          "labelFontSize": 11,
+          "labelPadding": 5,
+          "tickCount": 6,
+          "ticks": false
+        }
+      },
+      "color": {
+        "field": "rank2",
+        "type": "quantitative",
+        "legend": null,
+        "scale": {"range": ["#000", "rgb(128,0,0)"]}
+      },
+      "opacity": {"condition": {"test": {"param": "highlight" },"value": 1}, "value": 0.8 },
+      "tooltip": [
+        {"field": "Country"},
+        {"field": "Year"},
+        {"field": "TradeToGDP", "type": "quantitative", "format": ".2%", "title": "Openness"}
+      ]
+    }
+  }
