@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
+  "height": 340,
+  "title":{
+    "text": "The Growth of Regional Trade Agreements",
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "subtitleFontStyle": "italic",
+    "anchor": "start",
+    "subtitle": ["Number of Other Countries each Country is in Regional ", "Trade Agreements with, Source: WTO", ""]
+  },
+  "transform": [
+            {"calculate": "pad(datum.Country_ID, 3, '0')", "as": "filledID"},
+            {"lookup": "Country_ISO3", "from":{
+              "data": {"url":"https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv"},
+              "key": "alpha-3",
+              "fields": ["name"]
+            }},
+            {"calculate": "replace(datum['country-code'], /^0+/, '')", "as": "parsed_id"},
+            {"calculate": "year(datum['Entry Date'])", "as": "foo"},
+            {
+          "lookup": "Country_ID",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/vega/vega/main/packages/vega-loader/test/data/world-110m.json",
+              "format": {"type": "topojson", "feature": "countries"}
+            },
+            "key": "id",
+            "fields": ["properties", "id", "type", "geometry"]
+          }
+        }
+
+
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/Summer/RTA_Counts.csv"
+  },
+  "layer":[
+     { 
+            "data": {
+              "url": "https://raw.githubusercontent.com/vega/vega/main/packages/vega-loader/test/data/world-110m.json",
+              "format": {"type": "topojson", "feature": "countries"}
+            },      "mark": {"type": "geoshape", "fill": "rgba(0,0,0,0.01)", "stroke": "gray"},
+            "transform": [
+              {"filter": "datum.id != 10"}
+            ]
+    },
+    { 
+      "mark": {"type": "geoshape", "strokeWidth":0.1, "stroke": "gray", "tooltip":{
+        "expr": "datum.name + ' is in Regional Trade Agreements with ' + datum.RTA_count + ' Other Countries'"
+        
+        }},
+      "transform": [
+        {"filter": "datum.Year == compareYear"}
+      ],
+      "encoding": {
+        "color": {"field": "RTA_count", 
+        "legend": {"direction": "horizontal",
+        "legendY": 0,
+        "orient": "none",
+        "gradientLength":150,
+        "title": null},
+        "type": "quantitative",
+        "scale":{"domainMax":105}}
+      }
+    }
+    
+  ],
+  "projection": {"type": "naturalEarth1", "translate": [252,220], "scale":120},
+          "params": [
+    {
+      "name": "compareYear",
+      "value": 1961,
+      "bind": {
+        "input": "range",
+        "min": 1950,
+        "name": "Year",
+        "max": 2022,
+        "step": 1
+      }
+    }
+  ]
+}
