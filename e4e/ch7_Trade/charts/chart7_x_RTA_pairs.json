@@ -1,0 +1,120 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 550,
+  "height": 340,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/world-110m.json",
+    "format": {"type": "topojson", "feature": "countries"}
+  }, 
+  "config": {
+  "style": {
+    "cell": {
+      "stroke": "transparent"
+    }
+  }
+},
+  "transform": [
+    {"calculate": "pad(datum.id, 3, '0', 'left')", "as": "id_zfilled"},
+    {"calculate": "select.id", "as": "foo"}
+  ],
+  
+   "layer":[
+    {
+      "data": {"values":{"label":null}},
+      "transform": [
+        {"calculate": "select.Short_Name + ': Regional Trade Agreements'", "as": "label"}
+      ],
+      "mark": {"type": "text", "align":"left", "size": 16, "fontWeight":"bold"},
+      "encoding": {
+        "text": {"field":"label"},
+        "x": {"value": 0},
+        "y": {"value": 0}
+      }
+    },
+    {
+      "data": {"values":{"label":null}},
+      "transform": [
+        {"calculate": "'This country is in RTAs with ' + select.RTA_count + ' others. Click to Select another.'", "as": "label"}
+      ],
+      "mark": {"type": "text", "align":"left", "size": 12, "fontWeight":"normal", "fontStyle":"italic"},
+      "encoding": {
+        "text": {"field":"label"},
+        "x": {"value": 0},
+        "y": {"value": 15}
+      }
+    },
+        {
+      "data": {"values":{"label":null}},
+      "transform": [
+        {"calculate": "'Source: WTO'", "as": "label"}
+      ],
+      "mark": {"type": "text", "align":"left", "size": 12, "fontWeight":"normal", "fontStyle":"italic"},
+      "encoding": {
+        "text": {"field":"label"},
+        "x": {"value": 0},
+        "y": {"value": 28}
+      }
+    },
+     { 
+            "mark": {"type": "geoshape", "strokeWidth":0.5, "stroke": "gray", "fill":null}
+    },
+    { 
+
+      "mark": {"type": "geoshape", "strokeWidth":0.1, "stroke": "gray", "tooltip":{
+        "expr": "(datum.Short_Name==null) ? '' : select.Short_Name == datum.Short_Name ? datum.Short_Name:  select.Short_Name + ' and '+datum.Short_Name + (datum.has_rta ==1 ? ' are' : ' are not' )  + ' in Regional Trade Agreements together'"
+        
+        }},
+        "params": [
+              {"name": "select", 
+              "value": [{"id":826,"country_ids_str":"'*702* *780* *670* *234* *214* *882* *288* *052* *716* *404* *690* *332* *498* *188* *352* *376* *090* *508* *008* *826* *598* *410* *710* *438* *120* *392* *659* *688* *275* *578* *308* *662* *384* *788* *218* *170* *480* *400* *212* *242* *792* *504* *028* *604* *044* *484* *804* *756* *268* *422* *740* *320* *340* *558* *124* *222* *388* *807* *152* *704* *084* *328* *591* *818*'", "Short_Name": "United Kingdom", "RTA_count": 66}],
+              "select": {"type":"point", "fields": ["id", "country_ids_str", "Short_Name", "RTA_count"]}
+              }
+        ],
+      "transform": [
+          {"lookup": "id", "from":{
+              "data": {"url":"https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/chart7_x_RTAs_2023.csv"},
+              "key": "Country_ID",
+              "fields": ["RTA_count", "country_ids_str", "Short_Name"]
+            }},
+                        {"lookup": "id_zfilled", "from":{
+              "data": {"url":"https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/chart7_ISO.csv"},
+              "key": "country-code",
+              "fields": ["name"]
+            }},
+        {
+          "calculate": "'*'+datum.id_zfilled+'*'",
+          "as": "foo1"
+        },
+                {
+          "calculate": "(select.country_ids_str[0])",
+          "as": "foo2"
+        },
+        {
+          "calculate": "'*'+datum.id_zfilled+'*'",
+          "as": "star_padded"
+        },
+
+        {
+          "calculate": "indexof(select.country_ids_str[0], datum.star_padded) >0 ? 1 : 0",
+          "as": "has_rta"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "condition":[
+            {"test":"datum.has_rta > 0", "value": "rgb(128,0,0)"}
+          ],
+          "value": "rgba(0,0,0,0.05)",
+          
+        "legend": {"direction": "horizontal",
+        "legendY": 0,
+        "orient": "none",
+        "gradientLength":150,
+        "title": null},
+        "type": "quantitative"}
+      }
+    }
+    
+  ],
+  "projection": {"type": "naturalEarth1", "translate": [252,220], "scale":120}
+}
