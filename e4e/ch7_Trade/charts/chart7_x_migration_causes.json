@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+
+  "width": 600, "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/world_countries.geojson",
+    "format": {"property": "features"}
+  },
+  "config": {
+    "view": {"stroke": null},
+    "padding": 0
+  },
+
+  "title": {
+    "text": "Causes of Migration",
+    "fontSize": 16,
+    "subtitle": ["Global rankings for indexes on human development, passport access, global peace, state fragility.", "Latest available data, multiple sources.", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "projection": {
+    "type": "naturalEarth1",
+    "translate": [
+      275,
+      175
+    ],
+    "scale": 120
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+
+  "params": [
+    {
+      "name": "Select",
+      "value": "Human Development",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Human Development",
+          "Passport Access",
+          "Global Peace",
+          "Fragile States"
+        ],
+        "name": "Select Index:"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "lookup": "properties.ISO3",
+      "from": {
+        "key": "ISO3",
+        "fields": [
+          "HDI Rank",
+          "Human Development",
+          "HPI Rank",
+          "Passport Access",
+          "GPI Rank",
+          "Global Peace",
+          "FSI Rank",
+          "Fragile States"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/Global_migrationCauses_wide.csv",
+          "format": {"type": "csv"}
+        }
+      }
+    },
+    {"calculate": "datum[Select]", "as": "varSelected"},
+    {"filter": "datum['properties.COUNTRY'] != 'Antarctica'"},
+
+    {"calculate": "toNumber(datum.varSelected)", "as": "varSelected"},
+    {
+      "calculate": "Select === 'Human Development' ? datum['HDI Rank'] : (Select === 'Passport Access' ? datum['HPI Rank'] : (Select === 'Global Peace' ? datum['GPI Rank'] : datum['FSI Rank']))",
+      "as": "varSelectedRank"
+    },
+    {
+      "calculate": "Select",
+      "as": "selectedParameter"
+    },
+    {
+      "calculate": "Select === 'Human Development' ? 'United Nations, 2021' : (Select === 'Passport Access' ? 'Henley & Partners, 2023' : (Select === 'Global Peace' ? 'IEP, 2022' : 'The Fund for Peace, 2022'))",
+      "as": "sourceName"
+    }
+  ],
+
+  "encoding": {
+    "color": {
+      "condition": [
+        {
+          "test": "datum['varSelected'] == null",
+          "value": "lightgrey"
+        }
+      ],
+      "field": "varSelectedRank",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "yellowgreenblue",
+        "reverse": false
+      },
+      "legend": {
+        "title": "",
+        "orient": "bottom-left",
+        "direction": "vertical",
+        "fillColor": null
+      }
+    },
+    "tooltip": [
+      {"field": "selectedParameter", "title": "Index", "type": "nominal"},
+      {"field": "sourceName", "title": "Source", "type": "nominal"},
+      {"field": "properties.COUNTRY", "title": "Country"},
+      {"field": "varSelectedRank", "title": "Rank", "format": "d"},
+      {
+        "field": "varSelected",
+        "title": "Value",
+        "format": ",.2f"
+      }
+    ]
+  }
+}
