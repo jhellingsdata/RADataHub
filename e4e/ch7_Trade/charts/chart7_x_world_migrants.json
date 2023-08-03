@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e8/world_migrants.csv",
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/chart7_x_world_migrants.csv",
     "format": {"type": "csv"}
   },
   "view": {"stroke": "transparent"},

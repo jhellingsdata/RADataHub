@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch7_Trade/Global_TradeCostsAirFrieghtEtc.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch7_Trade/data/chart7_x_transport_communication.csv"
   },
   "config": {"style": {"cell": {"stroke": "transparent"}}},
   "title": {
