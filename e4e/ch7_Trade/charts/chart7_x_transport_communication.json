@@ -1,0 +1,131 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch7_Trade/Global_TradeCostsAirFrieghtEtc.csv"
+  },
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "title": {
+    "text": "Transport and Communication Costs",
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitle": ["Change in Costs Since 1930", "Source: OECD (2007)", ""]
+  },
+  "width": 500,
+  "height": 350,
+  "transform": [
+    {"calculate": "(datum.Value-100)/100", "as": "Value"},
+    {"filter": "datum.Series != 'Apparel'"},
+    {
+      "calculate": "datum.Series == 'All_Items' ? 'All Prices' : datum.Series",
+      "as": "Series"
+    },
+    {
+      "calculate": "datum.Series == 'Tuition' ? 'College Tuition' : datum.Series",
+      "as": "Series"
+    },
+    {"calculate": "datum.Series == 'All Prices'", "as": "dash"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "grid": false,
+        "labelPadding": 6,
+        "ticks": false,
+        "title": null,
+        "labelFontSize": 11
+      }
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "strokeDash": {"field": "dash", "type": "nominal", "legend": null},
+        "color": {
+          "field": "Var",
+          "type": "nominal",
+          "legend": null
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"zero": false}
+        }
+      },
+      "layer": [
+        {"mark": "line"},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [{"filter": "datum.Year==1041379200000"}],
+      "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 18},
+      "encoding": {
+        "text": {"field": "Var"},
+        "y": {
+          "field": "Value",
+          "axis": {
+            "labelPadding": 5,
+            "ticks": false,
+            "title": null,
+            "format": "%",
+            "labelFontSize": 11
+          },
+          "type": "quantitative",
+          "scale": {"zero": false}
+        },
+        "color": {
+          "condition": [
+            {
+              "test": "datum.Series == 'All Prices'",
+              "value": "rgb(100,100,100)"
+            }
+          ],
+          "field": "Var",
+          "type": "nominal",
+          "legend": null
+        }
+      }
+    },
+    {
+      "transform": [
+        {"pivot": "Var", "value": "Value", "groupby": ["Year"]},
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "temporal",
+            "format": "%Y",
+            "title": "Year"
+          },
+          {"format": ".0%", "field": "Sea Freight", "type": "quantitative"},
+          {"format": ".0%", "field": "Air Transport", "type": "quantitative"},
+          {"format": ".0%", "field": "Calling Costs", "type": "quantitative"}
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ]
+}

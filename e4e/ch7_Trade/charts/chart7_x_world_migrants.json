@@ -1,0 +1,110 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e8/world_migrants.csv",
+    "format": {"type": "csv"}
+  },
+  "view": {"stroke": "transparent"},
+  "title": {
+    "text": "Migrants relative to World Population",
+    "subtitle": [
+      "Number of Migrants/World Population",
+      " Source: UN",
+      ""
+    ],
+    "fontSize": 16,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 500,
+  "layer": [
+    
+    {
+      "transform": [{"filter":"datum.Series=='Percentage'"}],
+      "mark": {"opacity": 1, "type": "area", "color": "rgb(128,0,0)"},
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "title": null,
+          "axis": {
+            "labelAngle": 0,
+            "grid": false,
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "title": "",
+          "axis": {
+            "grid": true,
+            "gridOpacity": 0.6,
+            "format": "%",
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11
+          }
+        }      }
+    },
+    {
+      "transform": [{"pivot": "Series", "value": "Value", "groupby": ["Year"]}],
+
+      "mark": "rule",
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "title": null,
+          "axis": {
+            "labelAngle": 0,
+            "grid": false,
+            "ticks": false,
+            "labelPadding": 5,
+            "labelFontSize": 11
+          }
+        },
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Year", "type": "temporal", "format": "%Y"},
+            {
+            "field": "Number",
+            "type": "quantitative",
+            "format": ",.2r",
+            "title": "Migrants"
+          },
+          {
+            "field": "Percentage",
+            "type": "quantitative",
+            "format": ".1%",
+            "title": "% of Population"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ],
+  "transform": [
+    {"calculate": "datum.Series == 'Percentage' ? datum.Value/100 : datum.Value", "as": "Value"}
+
+  ]
+}
