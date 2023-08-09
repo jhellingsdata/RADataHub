@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_5_il_debt.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_7_Illinois_Debt.csv"
   },
   "config": {
     "style": {
@@ -26,10 +26,10 @@
   "width": 500,
   "height": 350,
   "title": {
-    "text": "Illinois Public Debt",
+    "text": "Illinois: Public Debt",
     "subtitle": [
-      "State and Local Debt, Billions of USD",
-      "Date: US Census Bureau ",
+      "State and local debt, US$ billions",
+      "Source: US Census Bureau ",
       ""
     ],
     "fontSize": 16,
@@ -54,7 +54,8 @@
                 "title": null,
                 "grid": false,
                 "ticks": false,
-                "labelSeparation": 10
+                "labelSeparation": 10,
+                "labelFontSize": 11
               }
             },
             "color": {
@@ -66,11 +67,10 @@
                 ]
               },
               "legend": {
-                "orient": "none",
+                "orient": "top",
                 "title": null,
-                "columns": 99,
-                "legendX": 0,
-                "legendY": -18
+                "offset": 7,
+                "labelFontSize": 11
               }
             },
             "y": {
@@ -80,7 +80,15 @@
                 "title": null,
                 "format": "$.0d",
                 "gridOpacity": 0.6,
-                "tickOpacity": 0
+                "tickOpacity": 0,
+                "labelFontSize": 11,
+                "tickCount": 8
+              },
+              "scale": {
+                "domain": [
+                  0,
+                  205
+                ]
               }
             }
           }
