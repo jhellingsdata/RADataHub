@@ -107,6 +107,7 @@
               "type": "quantitative",
               "axis": {
                 "gridOpacity": 0.3,
+                "format": "%",
                 "title": "Average Education (12-Point Scale)",
                 "titleFontWeight": "normal",
                 "tickOpacity": 0
