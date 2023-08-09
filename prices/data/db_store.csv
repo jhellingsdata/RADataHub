@@ -1,11 +1,10 @@
-store_id,store_name
-1,Tesco
-2,Sainsbury's
-3,Asda
-4,Morrisons
-5,Aldi
-6,Lidl
-7,Co-op
-8,Waitrose
-9,Iceland
-10,Ocado
+""1" : "Tesco"
+"2" : "Sainsbury's"
+"3" : "Asda"
+"4" : "Morrisons"
+"5" : "Aldi"
+"6" : "Lidl"
+"7" : "Co-op"
+"8" : "Waitrose"
+"9" : "Iceland"
+"10" : "Ocado"
