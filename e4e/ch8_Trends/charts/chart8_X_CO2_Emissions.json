@@ -13,7 +13,7 @@
         "anchor": "start",
         "color": "black",
         "subtitle": [
-            "Tonnes per capita.",
+            "Tonnes per capita, from fossil fuels & industry",
             "Source: Global Carbon Project",
             ""
         ],
@@ -103,7 +103,8 @@
             "mark": {
                 "type": "text",
                 "align": "left",
-                "dx": 5
+                "dx": 5,
+                "dy": 2
             },
             "description": "Carbon per capita by country",
             "encoding": {
@@ -131,7 +132,8 @@
                     {
                         "type": "quantitative",
                         "field": "CO2 pc (production)",
-                        "title": "CO2 per capita (t)"
+                        "title": "CO2 per capita (t)",
+                        "format": ".3f"
                     },
                     {
                         "type": "nominal",
@@ -159,7 +161,7 @@
             },
             "transform": [
                 {
-                    "filter": "year(datum.Year)==2018"
+                    "filter": "year(datum.Year)==2021"
                 },
                 {
                     "filter": "datum.Country!='Brazil'"
@@ -171,7 +173,7 @@
                 "type": "text",
                 "align": "left",
                 "dx": 5,
-                "dy": -10
+                "dy": -7
             },
             "description": "Carbon per capita by country",
             "encoding": {
@@ -199,7 +201,8 @@
                     {
                         "type": "quantitative",
                         "field": "CO2 pc (production)",
-                        "title": "CO2 per capita (t)"
+                        "title": "CO2 per capita (t)",
+                        "format": ".3f"
                     },
                     {
                         "type": "nominal",
@@ -229,7 +232,7 @@
             },
             "transform": [
                 {
-                    "filter": "year(datum.Year)==2018"
+                    "filter": "year(datum.Year)==2021"
                 },
                 {
                     "filter": "datum.Country=='Brazil'"
