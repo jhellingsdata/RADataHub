@@ -5,38 +5,84 @@
     "text": "Global Bond Yields",
     "fontSize": 16,
     "anchor": "start",
-    "subtitle": ["Major 10 Year Bonds" , "Source: Trading Economics", ""],
+    "subtitle": [
+      "Major 10 Year Bonds",
+      "Source: Trading Economics",
+      ""
+    ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12
   },
   "width": 400,
+  "height": 400,
+  "view": {
+    "stroke": "transparent"
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_9_global_bonds.csv"
   },
-  "mark": {"type": "bar", "color": "rgb(128,0,0)"},
+  "mark": {
+    "type": "bar",
+    "color": "rgb(128,0,0)"
+  },
   "transform": [
-    {"calculate": "datum['Major10Y Yield'] / 100", "as": "Yield"}
+    {
+      "calculate": "datum['Major10Y Yield'] / 100",
+      "as": "Yield"
+    }
   ],
   "encoding": {
-    "y": {"field": "Country", "type": "nominal", "title": null, "sort": "-x"},
+    "y": {
+      "field": "Country",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {
+        "ticks": true,
+        "tickSize": 4,
+        "tickOpacity": 0.6,
+        "labelPadding": 3,
+        "labelFontSize": 11
+      }
+    },
     "x": {
       "field": "Yield",
       "type": "quantitative",
       "title": null,
       "axis": {
-        "format": "%"
+        "format": "%",
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11,
+        "gridOpacity": 0.6,
+        "tickCount": 8
+      },
+      "scale": {
+        "domain": [
+          0,
+          0.125
+        ]
       }
     },
     "tooltip": [
-      {"field": "Country", "type": "nominal"},
-      {"field": "Record Time", "type": "temporal"},
+      {
+        "field": "Country",
+        "type": "nominal"
+      },
+      {
+        "field": "Record Date",
+        "type": "temporal"
+      },
       {
         "field": "Yield",
         "type": "quantitative",
         "title": "Yield",
         "format": ".2%"
       },
-      {"field": "Yearly Change", "type": "nominal"}
+      {
+        "field": "Yearly Change",
+        "type": "nominal"
+      }
     ]
   }
 }
