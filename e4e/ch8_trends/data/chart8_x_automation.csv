@@ -1,6 +1,5 @@
 Occupation,Median,Employment,Value,Employment_Rank
 Recreational Therapists,51330,15920.0,0.0028,407.0
-"FirstLine Supervisors of Mechanics, Installers, and Repairers",,,0.003,
 Emergency Management Directors,79180,11290.0,0.003,455.0
 Mental Health and Substance Abuse Social Workers,51240,107940.0,0.0031,179.0
 Audiologists,82680,13940.0,0.0033,428.0
@@ -8,41 +7,32 @@ Occupational Therapists,93180,134980.0,0.0035,151.0
 Orthotists and Prosthetists,77070,9150.0,0.0035,471.0
 Healthcare Social Workers,60280,182420.0,0.0035,121.0
 Oral and Maxillofacial Surgeons,#,4290.0,0.0036,516.0
-FirstLine Supervisors of Fire Fighting and Prevention Workers,,,0.0036,
 Dietitians and Nutritionists,66450,69880.0,0.0039,234.0
 Lodging Managers,61910,39870.0,0.0039,301.0
 Choreographers,50990,5400.0,0.004,508.0
 Sales Engineers,108530,59700.0,0.0041,248.0
-Physicians and Surgeons,,,0.0042,
 Instructional Coordinators,66490,198660.0,0.0042,116.0
 "Psychologists, All Other",106420,13900.0,0.0043,429.0
-FirstLine Supervisors of Police and Detectives,,,0.0044,
 "Dentists, General",155040,120740.0,0.0044,163.0
 "Elementary School Teachers, Except Special Education",61690,1394200.0,0.0044,14.0
 "Medical Scientists, Except Epidemiologists",99930,110550.0,0.0045,175.0
-"Education Administrators, Elementary and Secondary School",,,0.0046,
 Podiatrists,148720,9320.0,0.0046,470.0
-"Clinical, Counseling, and School Psychologists",,,0.0047,
-Mental Health Counselors,,,0.0048,
 Fabric and Apparel Patternmakers,60320,3070.0,0.0049,532.0
 Set and Exhibit Designers,59990,9490.0,0.0055,465.0
 Human Resources Managers,130000,181360.0,0.0055,123.0
 Recreation Workers,31680,270380.0,0.0061,92.0
 Training and Development Managers,120000,39550.0,0.0063,302.0
-SpeechLanguage Pathologists,,,0.0064,
 Computer Systems Analysts,102240,505210.0,0.0065,43.0
 Social and Community Service Managers,74240,162880.0,0.0067,132.0
 Curators,60380,11620.0,0.0068,450.0
 Athletic Trainers,53840,29720.0,0.0071,334.0
 Medical and Health Services Managers,104830,476750.0,0.0073,45.0
 "Preschool Teachers, Except Special Education",35330,415360.0,0.0074,58.0
-Farm and Home Management Advisors,,,0.0075,
 Anthropologists and Archeologists,63940,7350.0,0.0077,487.0
 "Special Education Teachers, Secondary School",63560,152490.0,0.0077,140.0
 "Secondary School Teachers, Except Special and Career/Technical Education",62360,1042090.0,0.0078,19.0
 Clergy,55550,53140.0,0.0081,263.0
 Foresters,64220,9430.0,0.0081,467.5
-"Educational, Guidance, School, and Vocational Counselors",,,0.0085,
 "Career/Technical Education Teachers, Secondary School",62500,88280.0,0.0088,207.0
 Registered Nurses,81220,3072700.0,0.009,4.0
 Rehabilitation Counselors,39990,82420.0,0.0094,214.0
@@ -55,7 +45,6 @@ Mechanical Engineers,96310,277560.0,0.011,90.0
 Pharmacists,132750,325480.0,0.012,79.0
 Logisticians,77520,202970.0,0.012,113.0
 Microbiologists,81990,19710.0,0.012,383.0
-IndustrialOrganizational Psychologists,,,0.012,
 Coaches and Scouts,44890,218970.0,0.013,105.0
 Sales Managers,130600,536390.0,0.013,41.0
 Hydrologists,85990,6270.0,0.014,500.0
@@ -63,15 +52,10 @@ Marketing Managers,140040,328570.0,0.014,76.0
 Marriage and Family Therapists,56570,62080.0,0.014,244.0
 "Engineers, All Other",104600,150420.0,0.014,142.0
 Training and Development Specialists,63080,367180.0,0.014,67.0
-FirstLine Supervisors of Office and Administrative Support Workers,,,0.014,
 "Biological Scientists, All Other",87300,55300.0,0.015,256.0
-Public Relations and Fundraising Managers,,,0.015,
-Multimedia Artists and Animators,,,0.015,
 Computer and Information Research Scientists,136620,33780.0,0.015,315.0
 Chief Executives,189520,199240.0,0.015,115.0
-"Education Administrators, Preschool and Childcare Center/Program",,,0.015,
 Music Directors and Composers,62940,11690.0,0.015,449.0
-FirstLine Supervisors of Production and Operating Workers,,,0.016,
 "Securities, Commodities, and Financial Services Sales Agents",67480,443220.0,0.016,50.0
 Conservation Scientists,64460,22880.0,0.016,365.0
 "Special Education Teachers, Middle School",62990,82970.0,0.016,212.0
@@ -83,7 +67,6 @@ Environmental Engineers,96530,45440.0,0.018,285.0
 "Architects, Except Landscape and Naval",82840,107490.0,0.018,182.0
 Physical Therapist Assistants,62770,97740.0,0.018,197.0
 Civil Engineers,89940,307570.0,0.019,84.0
-"Health Diagnosing and Treating Practitioners, All Other",,,0.02,
 Soil and Plant Scientists,65730,16010.0,0.021,406.0
 Materials Scientists,104380,7620.0,0.021,483.0
 Materials Engineers,100140,21510.0,0.021,370.0
@@ -94,7 +77,6 @@ Producers and Directors,85320,153770.0,0.022,139.0
 Interior Designers,61590,64290.0,0.022,237.0
 Orthodontists,174360,6310.0,0.023,499.0
 Art Directors,105180,54470.0,0.023,257.0
-FirstLine Supervisors of Correctional Officers,,,0.025,
 "Directors, Religious Activities and Education",49380,24030.0,0.025,361.0
 "Electronics Engineers, Except Computer",108170,106640.0,0.025,186.0
 Biochemists and Biophysicists,103810,32500.0,0.027,321.0
@@ -103,22 +85,17 @@ Occupational Therapy Assistants,64250,43810.0,0.028,288.0
 "Child, Family, and School Social Workers",50820,344770.0,0.028,75.0
 "Health and Safety Engineers, Except Mining Safety Engineers and Inspectors",100660,21520.0,0.028,369.0
 Industrial Engineers,96350,321400.0,0.029,82.0
-FirstLine Supervisors of Transportation and MaterialMoving Machine and Vehicle Operators,,,0.029,
 Veterinary Technologists and Technicians,38240,118750.0,0.029,169.0
 Industrial Production Managers,107560,211710.0,0.03,110.0
-Industrial Engineering Technicians,,,0.03,
 Network and Computer Systems Administrators,90520,325930.0,0.03,78.0
 Database Administrators,99890,80520.0,0.03,219.0
 Purchasing Managers,131350,75070.0,0.03,226.0
-Postsecondary Teachers,,,0.032,
 "Environmental Scientists and Specialists, Including Health",76480,77270.0,0.033,224.0
-Substance Abuse and Behavioral Disorder Counselors,,,0.033,
 Lawyers,135740,707160.0,0.035,31.0
 Craft Artists,38150,4760.0,0.035,513.0
 Operations Research Analysts,85720,105080.0,0.035,190.0
 Computer and Information Systems Managers,164070,533220.0,0.035,42.0
 Commercial and Industrial Designers,75910,30450.0,0.037,332.0
-Biomedical Engineers,,,0.037,
 "Meeting, Convention, and Event Planners",52560,112070.0,0.037,173.0
 Veterinarians,103260,78810.0,0.038,220.0
 Writers and Authors,73150,54010.0,0.038,260.0
@@ -128,20 +105,15 @@ Credit Counselors,47320,29090.0,0.04,337.0
 "Social Scientists and Related Workers, All Other",88900,33210.0,0.04,317.0
 Astronomers,128330,2160.0,0.041,542.0
 Ship Engineers,87300,8650.0,0.041,475.0
-"Software Developers, Applications",,,0.042,
 "Fine Artists, Including Painters, Sculptors, and Illustrators",57560,12080.0,0.042,446.0
 Psychiatric Technicians,37380,100950.0,0.043,193.0
 Landscape Architects,73210,18120.0,0.045,391.0
-Health Educators,,,0.045,
 Mathematicians,112110,2070.0,0.047,544.5
 Floral Designers,33160,42840.0,0.047,291.0
 "Farmers, Ranchers, and Other Agricultural Managers",75760,6250.0,0.047,501.0
 Forest Fire Inspectors and Prevention Specialists,48110,2290.0,0.048,539.0
-Emergency Medical Technicians and Paramedics,,,0.049,
 Editors,73080,101430.0,0.055,192.0
-Prosthodontists,,,0.055,
 "Healthcare Practitioners and Technical Workers, All Other",60160,41130.0,0.055,296.0
-Travel Guides,,,0.057,
 Licensed Practical and Licensed Vocational Nurses,54620,632020.0,0.058,36.0
 Sociologists,98590,2980.0,0.059,533.0
 "Arbitrators, Mediators, and Conciliators",64030,7780.0,0.06,482.0
@@ -149,42 +121,30 @@ Animal Scientists,69390,2520.0,0.061,537.0
 Residential Advisors,35720,86770.0,0.064,209.0
 Aircraft Cargo Handling Supervisors,53490,7950.0,0.066,480.0
 Respiratory Therapists,70540,129910.0,0.066,158.0
-Broadcast News Analysts,,,0.067,
 Financial Managers,139790,740780.0,0.069,29.0
 Nuclear Engineers,122480,12250.0,0.07,442.0
 Construction Managers,101480,303220.0,0.071,85.0
 Musicians and Singers,*,31750.0,0.074,325.0
-FirstLine Supervisors of NonRetail Sales Workers,,,0.075,
-FirstLine Supervisors of Personal Service Workers,,,0.076,
 Food Scientists and Technologists,79860,14720.0,0.077,419.0
 Compliance Officers,71690,359640.0,0.08,70.0
 Fish and Game Wardens,59500,6530.0,0.08,495.0
 Graphic Designers,57990,211890.0,0.082,109.0
 Food Service Managers,61310,231100.0,0.083,101.0
 Childcare Workers,28520,459460.0,0.084,47.0
-Fitness Trainers and Aerobics Instructors,,,0.085,
-Gaming Managers,,,0.091,
-Electrical PowerLine Installers and Repairers,,,0.097,
-Police and Sheriffs Patrol Officers,,,0.098,
 Travel Agents,46400,53180.0,0.099,262.0
 Chefs and Head Cooks,56520,160190.0,0.1,134.0
 Animal Trainers,35620,17710.0,0.1,392.0
-Radio and Television Announcers,,,0.1,
 Electrical Engineers,103320,182210.0,0.1,122.0
 Chemists,80670,83940.0,0.1,211.0
-Respiratory Therapy Technicians,,,0.1,
 Physicists,142850,18840.0,0.1,388.0
 "Hairdressers, Hairstylists, and Cosmetologists",33290,298050.0,0.11,86.0
-Reporters and Correspondents,,,0.11,
 Air Traffic Controllers,132250,21250.0,0.11,371.0
 Dancers,*,8930.0,0.13,473.0
 Nuclear Medicine Technologists,85300,16910.0,0.13,399.0
-"Software Developers, Systems Software",,,0.13,
 Management Analysts,95290,808860.0,0.13,24.0
 Dietetic Technicians,33960,19690.0,0.13,384.0
 Urban and Regional Planners,79540,39880.0,0.13,300.0
 Social and Human Service Assistants,38520,399560.0,0.13,61.0
-SelfEnrichment Education Teachers,,,0.13,
 Sound Engineering Technicians,60670,13420.0,0.13,434.0
 Optometrists,125590,40640.0,0.14,299.0
 "Mining and Geological Engineers, Including Mining Safety Engineers",97490,7390.0,0.14,486.0
@@ -197,16 +157,12 @@ General and Operations Managers,98100,3376680.0,0.16,2.0
 Occupational Health and Safety Specialists,78570,109430.0,0.17,176.0
 Firefighters,51680,321450.0,0.17,81.0
 Financial Examiners,82210,63370.0,0.17,241.0
-FirstLine Supervisors of Construction Trades and Extraction Workers,,,0.17,
 "Middle School Teachers, Except Special and Career/Technical Education",61810,611120.0,0.17,38.0
 Public Relations Specialists,67440,264750.0,0.18,93.0
 Commercial Divers,68300,3860.0,0.18,522.0
 Manufactured Building and Mobile Home Installers,36820,3630.0,0.18,526.0
 "Airline Pilots, Copilots, and Flight Engineers",211790,89580.0,0.18,206.0
-Adult Basic and Secondary Education and Literacy Teachers and Instructors,,,0.19,
 Epidemiologists,78520,9430.0,0.2,467.5
-"Funeral Service Managers, Directors, Morticians, and Undertakers",,,0.2,
-"Information Security Analysts, Web Developers, and Computer Network Architects",,,0.21,
 Actuaries,113990,25010.0,0.21,357.0
 Animal Control Workers,39320,11490.0,0.21,451.0
 Concierges,35560,37600.0,0.21,307.0
@@ -215,15 +171,12 @@ Statisticians,98920,30780.0,0.22,330.0
 Computer Hardware Engineers,132360,74640.0,0.22,227.0
 Survey Researchers,60410,7880.0,0.23,481.0
 "Business Operations Specialists, All Other",75990,1081230.0,0.23,18.0
-Financial Analysts,,,0.23,
 Radiologic Technologists and Technicians,65140,215820.0,0.23,106.0
 Cardiovascular Technologists and Technicians,63020,55750.0,0.23,254.0
 "Agents and Business Managers of Artists, Performers, and Athletes",82530,13130.0,0.24,437.0
-"Engineering Technicians, Except Drafters, All Other",,,0.24,
 Geographers,88900,1360.0,0.25,550.0
 Occupational Health and Safety Technicians,57970,23670.0,0.25,363.0
 Probation Officers and Correctional Treatment Specialists,59860,89920.0,0.25,205.0
-Environmental Engineering Technicians,,,0.25,
 "Managers, All Other",128620,543290.0,0.25,40.0
 "Ambulance Drivers and Attendants, Except Emergency Medical Technicians",30380,9910.0,0.25,463.0
 "Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",97710,290830.0,0.25,87.0
@@ -231,16 +184,12 @@ Environmental Engineering Technicians,,,0.25,
 "Captains, Mates, and Pilots of Water Vessels",95210,34940.0,0.27,313.0
 Occupational Therapy Aides,37060,3710.0,0.27,524.0
 Medical Equipment Repairers,57860,58830.0,0.27,250.0
-FirstLine Supervisors of Retail Sales Workers,,,0.28,
 Athletes and Sports Competitors,94270,11930.0,0.28,448.0
-Gaming Supervisors,,,0.28,
 Skincare Specialists,38060,61990.0,0.29,245.0
-"Wholesale and Retail Buyers, Except Farm Products",,,0.29,
 Biological Technicians,49650,73710.0,0.3,229.0
 Medical Assistants,38270,752460.0,0.3,28.0
 Zoologists and Wildlife Biologists,67430,17410.0,0.3,394.0
 "Cooks, Private Household",38570,610.0,0.3,554.0
-"Human Resources, Training, and Labor Relations Specialists, All Other",,,0.31,
 Private Detectives and Investigators,52120,32050.0,0.31,324.0
 Film and Video Editors,63520,32080.0,0.31,323.0
 "Financial Specialists, All Other",73810,127020.0,0.33,161.0
@@ -251,24 +200,16 @@ Radiation Therapists,89530,15510.0,0.34,411.0
 Flight Attendants,63760,108480.0,0.35,178.0
 Diagnostic Medical Sonographers,81350,81080.0,0.35,217.0
 Bailiffs,49100,16470.0,0.36,403.0
-"Computer Numerically Controlled Machine Tool Programmers, Metal and Plastic",,,0.36,
 "Telecommunications Equipment Installers and Repairers, Except Line Installers",59960,168180.0,0.36,128.0
 "Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",44530,15030.0,0.37,416.0
 Cleaners of Vehicles and Equipment,31000,359530.0,0.37,71.0
 Funeral Attendants,31160,32950.0,0.37,320.0
-HelpersExtraction Workers,,,0.37,
 Actors,*,54160.0,0.37,258.0
-Mine Shuttle Car Operators,,,0.37,
 "Electrical and Electronics Repairers, Powerhouse, Substation, and Relay",93720,25440.0,0.38,354.0
 Surveyors,63080,47770.0,0.38,278.0
-Mechanical Engineering Technicians,,,0.38,
 "Packers and Packagers, Hand",32920,653870.0,0.38,35.0
 Interpreters and Translators,53640,52160.0,0.38,267.0
-Home Health Aides,,,0.39,
 Upholsterers,39600,26990.0,0.39,348.0
-Elevator Installers and Repairers,,,0.39,
-Gaming Cage Workers,,,0.39,
-AudioVisual and Multimedia Collections Specialists,,,0.39,
 "Judges, Magistrate Judges, and Magistrates",151030,28230.0,0.4,341.0
 "Mobile Heavy Equipment Mechanics, Except Engines",59440,158350.0,0.4,137.0
 "Health Technologists and Technicians, All Other",44990,162800.0,0.4,133.0
@@ -277,7 +218,6 @@ Structural Metal Fabricators and Fitters,47200,58870.0,0.41,249.0
 Judicial Law Clerks,57490,15540.0,0.41,410.0
 "Electrical and Electronics Repairers, Commercial and Industrial Equipment",64030,51650.0,0.41,268.0
 Forest and Conservation Technicians,41520,29120.0,0.42,336.0
-"FirstLine Supervisors of Helpers, Laborers, and Material Movers, Hand",,,0.42,
 "Locker Room, Coatroom, and Dressing Room Attendants",30210,12130.0,0.43,445.0
 "Physical Scientists, All Other",107970,19820.0,0.43,382.0
 Economists,113940,16370.0,0.43,404.0
@@ -286,20 +226,14 @@ Medical Appliance Technicians,42160,15680.0,0.45,408.0
 "Court, Municipal, and License Clerks",44140,159760.0,0.46,135.0
 "Compensation, Benefits, and Job Analysis Specialists",67780,93550.0,0.47,200.0
 Psychiatric Aides,37160,30590.0,0.47,331.0
-Medical and Clinical Laboratory Technicians,,,0.47,
 Fire Inspectors and Investigators,69450,14510.0,0.48,422.0
-Aerospace Engineering and Operations Technicians,,,0.48,
 Merchandise Displayers and Window Trimmers,35380,173110.0,0.48,124.0
 "Explosives Workers, Ordnance Handling Experts, and Blasters",56670,4710.0,0.48,514.0
 Computer Programmers,97800,132740.0,0.48,155.0
-Crossing Guards,,,0.49,
 Agricultural Engineers,83260,1500.0,0.49,548.0
 "Roof Bolters, Mining",60210,1700.0,0.49,547.0
 Telecommunications Line Installers and Repairers,60580,107670.0,0.49,181.0
-"Police, Fire, and Ambulance Dispatchers",,,0.49,
-"Loading Machine Operators, Underground Mining",,,0.5,
 "Installation, Maintenance, and Repair Workers, All Other",44500,172980.0,0.5,125.0
-Court Reporters,,,0.5,
 Demonstrators and Product Promoters,34770,43410.0,0.51,289.0
 Dental Assistants,44820,363880.0,0.51,68.0
 Shoe and Leather Workers and Repairers,32460,8860.0,0.52,474.0
@@ -308,29 +242,21 @@ Architectural and Civil Drafters,59820,105960.0,0.52,188.0
 Hazardous Materials Removal Workers,46690,46780.0,0.53,282.0
 Embalmers,49910,3950.0,0.54,519.5
 Continuous Mining Machine Operators,57360,13500.0,0.54,432.0
-Slot Supervisors,,,0.54,
 Massage Therapists,49860,86270.0,0.54,210.0
 Advertising Sales Agents,58450,106560.0,0.54,187.0
 Automotive Glass Installers and Repairers,43700,17370.0,0.55,396.0
 Commercial Pilots,103910,48750.0,0.55,273.0
 Customer Service Representatives,37780,2879840.0,0.55,6.0
-Audio and Video Equipment Technicians,,,0.55,
-Teacher Assistants,,,0.56,
-"FirstLine Supervisors of Farming, Fishing, and Forestry Workers",,,0.57,
 Chemical Technicians,50840,56030.0,0.57,253.0
-"HelpersPipelayers, Plumbers, Pipefitters, and Steamfitters",,,0.57,
 Cost Estimators,71200,225310.0,0.57,104.0
 Transit and Railroad Police,69150,3370.0,0.57,528.0
-"FirstLine Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers",,,0.57,
 Personal Financial Advisors,95390,283060.0,0.58,89.0
 Millwrights,60930,40930.0,0.59,298.0
 Museum Technicians and Conservators,47270,12240.0,0.59,443.0
-Mine Cutting and Channeling Machine Operators,,,0.59,
 "Transportation, Storage, and Distribution Managers",98560,169910.0,0.59,126.0
 Recreational Vehicle Service Technicians,45030,17190.0,0.59,398.0
 Automotive Service Technicians and Mechanics,46970,664070.0,0.59,34.0
 Correctional Officers and Jailers,49610,363250.0,0.6,69.0
-"Camera Operators, Television, Video, and Motion Picture",,,0.6,
 Slaughterers and Meat Packers,35240,78660.0,0.6,221.0
 "Electronic Equipment Installers and Repairers, Motor Vehicles",41600,9450.0,0.61,466.0
 Physical Therapist Aides,31410,42800.0,0.61,292.0
@@ -347,23 +273,17 @@ Pipelayers,45990,36070.0,0.62,309.0
 "Geoscientists, Except Hydrologists and Geographers",87480,25230.0,0.63,356.0
 "Control and Valve Installers and Repairers, Except Mechanical Door",64810,46410.0,0.63,283.0
 "Healthcare Support Workers, All Other",40420,107170.0,0.63,185.0
-FirstLine Supervisors of Food Preparation and Serving Workers,,,0.63,
 Construction and Building Inspectors,64480,128950.0,0.63,160.0
 "Cutters and Trimmers, Hand",36130,8250.0,0.64,478.0
 "Maintenance and Repair Workers, General",44980,1485990.0,0.64,12.0
 "Administrative Law Judges, Adjudicators, and Hearing Officers",94990,12490.0,0.64,440.0
-Stock Clerks and Order Fillers,,,0.64,
 Power Distributors and Dispatchers,101650,9380.0,0.64,469.0
 "Insulation Workers, Mechanical",50590,25660.0,0.64,353.0
 Social Science Research Assistants,50470,28720.0,0.65,338.0
 Machinists,48510,316860.0,0.65,83.0
-Computer Support Specialists,,,0.65,
-Librarians,,,0.65,
-Electronic Home Entertainment Equipment Installers and Repairers,,,0.65,
 "Heating, Air Conditioning, and Refrigeration Mechanics and Installers",51390,374770.0,0.65,64.0
 Hoist and Winch Operators,58950,2440.0,0.65,538.0
 Pest Control Workers,38310,91160.0,0.66,204.0
-HelpersProduction Workers,,,0.66,
 Statistical Assistants,48880,6710.0,0.66,492.0
 "Janitors and Cleaners, Except Maids and Housekeeping Cleaners",31990,2148350.0,0.66,8.0
 Motorboat Mechanics and Service Technicians,48280,24920.0,0.66,358.0
@@ -378,9 +298,7 @@ Postal Service Mail Carriers,54250,326760.0,0.68,77.0
 Boilermakers,66920,13570.0,0.68,431.0
 Mechanical Drafters,61310,47540.0,0.68,279.0
 Dental Hygienists,81400,214700.0,0.68,108.0
-Light Truck or Delivery Services Drivers,,,0.69,
 Maids and Housekeeping Cleaners,29960,771390.0,0.69,27.0
-"Painters, Transportation Equipment",,,0.69,
 "Eligibility Interviewers, Government Programs",49230,149760.0,0.7,144.0
 Tire Repairers and Changers,34240,99980.0,0.7,194.0
 Food Batchmakers,36580,166520.0,0.7,130.0
@@ -388,30 +306,21 @@ Avionics Technicians,75450,20200.0,0.7,378.5
 Aircraft Mechanics and Service Technicians,70010,134070.0,0.71,152.0
 Airfield Operations Specialists,49600,14760.0,0.71,418.0
 "Petroleum Pump System Operators, Refinery Operators, and Gaugers",85090,31360.0,0.71,328.0
-"Construction and Related Workers, All Other",,,0.71,
 "Opticians, Dispensing",39610,73460.0,0.71,230.0
-Laundry and DryCleaning Workers,,,0.71,
 Amusement and Recreation Attendants,27780,324580.0,0.72,80.0
 Pharmacy Aides,33270,43230.0,0.72,290.0
-HelpersRoofers,,,0.72,
 "Tank Car, Truck, and Ship Loaders",53930,12470.0,0.72,441.0
 Home Appliance Repairers,46000,29370.0,0.72,335.0
 Carpenters,51390,689770.0,0.72,33.0
-Public Address System and Other Announcers,,,0.72,
 "Textile Knitting and Weaving Machine Setters, Operators, and Tenders",35750,16900.0,0.73,400.0
 Administrative Services Managers,103330,236570.0,0.73,100.0
 Glaziers,48720,51630.0,0.73,269.0
 "Coil Winders, Tapers, and Finishers",43160,10860.0,0.73,459.0
 Bus and Truck Mechanics and Diesel Engine Specialists,54360,271720.0,0.73,91.0
 "Computer, Automated Teller, and Office Machine Repairers",44910,81440.0,0.74,216.0
-Personal Care Aides,,,0.74,
 Broadcast Technicians,60700,33020.0,0.74,319.0
-HelpersElectricians,,,0.74,
 Postmasters and Mail Superintendents,82760,13460.0,0.75,433.0
-Tile and Marble Setters,,,0.75,
 "Painters, Construction and Maintenance",46090,215680.0,0.75,107.0
-"Transportation Attendants, Except Flight Attendants",,,0.75,
-Civil Engineering Technicians,,,0.75,
 Farm Equipment Mechanics and Service Technicians,48010,35280.0,0.75,312.0
 Archivists,58640,7230.0,0.76,489.0
 Chemical Equipment Operators and Tenders,49330,115370.0,0.76,171.0
@@ -421,18 +330,13 @@ Fallers,49160,4530.0,0.76,515.0
 Locksmiths and Safe Repairers,47400,15240.0,0.77,415.0
 Tree Trimmers and Pruners,47080,48150.0,0.77,277.0
 Bartenders,29380,613070.0,0.77,37.0
-"Purchasing Agents, Except Wholesale, Retail, and Farm Products",,,0.77,
 Dishwashers,29080,431840.0,0.77,53.0
-Hunters and Trappers,,,0.77,
 Medical Equipment Preparers,41480,63890.0,0.78,238.0
 "Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic",39340,182460.0,0.78,120.0
-Computer Operators,,,0.78,
 Gas Plant Operators,79460,14290.0,0.78,424.5
 "Postal Service Mail Sorters, Processors, and Processing Machine Operators",49130,119530.0,0.79,165.0
-Heavy and TractorTrailer Truck Drivers,,,0.79,
 Shampooers,27860,7480.0,0.79,484.0
 Drywall and Ceiling Tile Installers,50440,91590.0,0.79,203.0
-"HelpersInstallation, Maintenance, and Repair Workers",,,0.79,
 Motorcycle Mechanics,43370,14700.0,0.79,420.0
 "Aircraft Structure, Surfaces, Rigging, and Systems Assemblers",58430,32140.0,0.79,322.0
 Logging Equipment Operators,46400,24780.0,0.79,359.0
@@ -442,37 +346,27 @@ Barbers,34990,12690.0,0.8,439.0
 "Cooks, Fast Food",27640,725590.0,0.81,30.0
 Word Processors and Typists,44330,41990.0,0.81,294.0
 Electrical and Electronics Drafters,64240,20930.0,0.81,372.0
-ElectroMechanical Technicians,,,0.81,
 "Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders",37190,13200.0,0.81,436.0
 "Property, Real Estate, and Community Association Managers",60670,261120.0,0.81,94.0
-Medical Secretaries,,,0.81,
 "Pressers, Textile, Garment, and Related Materials",29690,28570.0,0.81,339.0
 Engine and Other Machine Assemblers,50850,50120.0,0.82,272.0
 Security and Fire Alarm Systems Installers,50130,80720.0,0.82,218.0
 "Refractory Materials Repairers, Except Brickmasons",50550,580.0,0.82,555.0
-Nonfarm Animal Caretakers,,,0.82,
 Sheet Metal Workers,55350,120810.0,0.82,162.0
-PileDriver Operators,,,0.82,
 Brickmasons and Blockmasons,59000,55530.0,0.82,255.0
-Fishers and Related Fishing Workers,,,0.83,
 Structural Iron and Steel Workers,60500,66810.0,0.83,236.0
-"Railroad Brake, Signal, and Switch Operators",,,0.83,
 Railroad Conductors and Yardmasters,68180,40940.0,0.83,297.0
 "Cooks, Institution and Cafeteria",32510,417780.0,0.83,56.0
 Sailors and Marine Oilers,47490,28500.0,0.83,340.0
 "Mixing and Blending Machine Setters, Operators, and Tenders",43410,108900.0,0.83,177.0
-"HelpersBrickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters",,,0.83,
-Segmental Pavers,,,0.83,
 "Insulation Workers, Floor, Ceiling, and Wall",45380,33130.0,0.83,318.0
 Printing Press Operators,39350,150010.0,0.83,143.0
 Automotive and Watercraft Service Attendants,30850,99600.0,0.83,195.0
 Septic Tank Servicers and Sewer Pipe Cleaners,45610,27660.0,0.83,344.0
 Baggage Porters and Bellhops,31510,26520.0,0.83,350.0
-Gaming Change Persons and Booth Cashiers,,,0.83,
 "Rolling Machine Setters, Operators, and Tenders, Metal and Plastic",46310,27900.0,0.83,342.0
 "Paving, Surfacing, and Tamping Equipment Operators",47270,41470.0,0.83,295.0
 Tool and Die Makers,59800,61730.0,0.84,246.0
-Electrical and Electronics Engineering Technicians,,,0.84,
 Plasterers and Stucco Masons,49730,25950.0,0.84,352.0
 "Layout Workers, Metal and Plastic",58260,6890.0,0.84,490.0
 "Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic",47020,19410.0,0.84,385.0
@@ -496,25 +390,19 @@ Subway and Streetcar Operators,88260,9120.0,0.86,472.0
 Veterinary Assistants and Laboratory Animal Caretakers,34740,111880.0,0.86,174.0
 "Cutting and Slicing Machine Setters, Operators, and Tenders",39880,54110.0,0.86,259.0
 Real Estate Sales Agents,49980,193010.0,0.86,119.0
-"ComputerControlled Machine Tool Operators, Metal and Plastic",,,0.86,
 "Maintenance Workers, Machinery",53310,62770.0,0.86,243.0
 Correspondence Clerks,38700,4970.0,0.86,512.0
-Miscellaneous Agricultural Workers,,,0.87,
 Forest and Conservation Workers,32270,6080.0,0.87,502.0
 "Pourers and Casters, Metal",45070,6070.0,0.87,503.0
 Carpet Installers,45240,17400.0,0.87,395.0
 Paperhangers,44930,2220.0,0.87,541.0
-"Buyers and Purchasing Agents, Farm Products",,,0.87,
 Furniture Finishers,37960,14990.0,0.87,417.0
 Food Preparation Workers,29790,904330.0,0.87,23.0
 Floor Sanders and Finishers,46060,4270.0,0.87,517.0
-Parking Lot Attendants,,,0.87,
 Highway Maintenance Workers,44930,143330.0,0.87,145.0
 Construction Laborers,40750,1012780.0,0.88,20.0
 "Production, Planning, and Expediting Clerks",50630,389920.0,0.88,62.0
-Semiconductor Processors,,,0.88,
 Cartographers and Photogrammetrists,71890,13270.0,0.88,435.0
-MetalRefining Furnace Operators and Tenders,,,0.88,
 "Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders",46250,52470.0,0.88,265.0
 "Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers",39860,14460.0,0.88,423.0
 Terrazzo Workers and Finishers,52330,1460.0,0.88,549.0
@@ -523,15 +411,11 @@ Rail Car Repairers,62510,19830.0,0.88,381.0
 Bakers,32780,205300.0,0.89,112.0
 Medical Transcriptionists,34730,48680.0,0.89,274.0
 Stonemasons,50210,10220.0,0.89,462.0
-"Bus Drivers, School or Special Client",,,0.89,
 Technical Writers,79960,48620.0,0.89,275.0
 Riggers,54680,19260.0,0.89,386.0
-RailTrack Laying and Maintenance Equipment Operators,,,0.89,
 Stationary Engineers and Boiler Operators,67120,31470.0,0.89,327.0
 Sewing Machine Operators,31740,116750.0,0.89,170.0
-Taxi Drivers and Chauffeurs,,,0.89,
 "Human Resources Assistants, Except Payroll and Timekeeping",45930,103680.0,0.9,191.0
-Medical and Clinical Laboratory Technologists,,,0.9,
 Reinforcing Iron and Rebar Workers,51070,17270.0,0.9,397.0
 Roofers,47920,131980.0,0.9,157.0
 Crane and Tower Operators,61340,45210.0,0.9,286.0
@@ -539,23 +423,18 @@ Traffic Technicians,50050,7310.0,0.9,488.0
 Transportation Inspectors,79570,24420.0,0.9,360.0
 "Patternmakers, Metal and Plastic",54970,2230.0,0.9,540.0
 "Molders, Shapers, and Casters, Except Metal and Plastic",39590,39060.0,0.9,304.0
-Appraisers and Assessors of Real Estate,,,0.9,
 "Pump Operators, Except Wellhead Pumpers",55860,10870.0,0.9,458.0
 Signal and Track Switch Repairers,81300,6880.0,0.9,491.0
-Gaming and Sports Book Writers and Runners,,,0.91,
 Musical Instrument Repairers and Tuners,38150,6330.0,0.91,498.0
-Tour Guides and Escorts,,,0.91,
 Mechanical Door Repairers,47010,27330.0,0.91,345.0
 "Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders",37790,20010.0,0.91,380.0
 Gas Compressor and Gas Pumping Station Operators,59990,3740.0,0.91,523.0
-Medical Records and Health Information Technicians,,,0.91,
 "Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",43960,152120.0,0.91,141.0
 "Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",39210,137060.0,0.91,150.0
 "Rail Yard Engineers, Dinkey Operators, and Hostlers",56340,2680.0,0.91,536.0
 "Electrical and Electronics Installers and Repairers, Transportation Equipment",73630,8530.0,0.91,476.0
 Dining Room and Cafeteria Attendants and Bartender Helpers,29120,439770.0,0.91,52.0
 "Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic",40900,15600.0,0.91,409.0
-Geological and Petroleum Technicians,,,0.91,
 Automotive Body and Related Repairers,47670,138760.0,0.91,148.0
 "Patternmakers, Wood",44290,330.0,0.91,558.0
 "Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic",39970,63490.0,0.91,240.0
@@ -567,20 +446,14 @@ Insurance Sales Agents,57860,445540.0,0.92,49.0
 Cabinetmakers and Bench Carpenters,38810,95980.0,0.92,199.0
 "Painting, Coating, and Decorating Workers",38270,11990.0,0.92,447.0
 Fence Erectors,39840,27060.0,0.92,347.0
-"Plating and Coating Machine Setters, Operators, and Tenders, Metal and Plastic",,,0.92,
 Retail Salespersons,30600,3640040.0,0.92,1.0
-"Combined Food Preparation and Serving Workers, Including Fast Food",,,0.92,
 "Production Workers, All Other",35490,252660.0,0.92,96.0
-HelpersCarpenters,,,0.92,
 Cooling and Freezing Equipment Operators and Tenders,42890,6420.0,0.93,497.0
 Fiberglass Laminators and Fabricators,38110,21910.0,0.93,368.0
-"Service Unit Operators, Oil, Gas, and Mining",,,0.93,
 Conveyor Operators and Tenders,36890,27780.0,0.93,343.0
 Outdoor Power Equipment and Other Small Engine Mechanics,40030,35570.0,0.93,311.0
-Locomotive Firers,,,0.93,
 Machine Feeders and Offbearers,38040,51010.0,0.93,270.0
 "Model Makers, Metal and Plastic",57620,3350.0,0.93,529.0
-"Radio, Cellular, and Tower Equipment Installers and Repairs",,,0.93,
 Butchers and Meat Cutters,36930,129400.0,0.93,159.0
 "Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",39480,58740.0,0.93,251.0
 Refuse and Recyclable Material Collectors,43540,132240.0,0.93,156.0
@@ -600,12 +473,8 @@ Bicycle Repairers,36250,13760.0,0.94,430.0
 Couriers and Messengers,35280,75800.0,0.94,225.0
 "Interviewers, Except Eligibility and Loan",38700,168680.0,0.94,127.0
 "Cooks, Short Order",30360,133290.0,0.94,154.0
-Excavating and Loading Machine and Dragline Operators,,,0.94,
-"HelpersPainters, Paperhangers, Plasterers, and Stucco Masons",,,0.94,
 "Hotel, Motel, and Resort Desk Clerks",28910,243180.0,0.94,98.0
 Tire Builders,51650,18360.0,0.94,390.0
-"DoortoDoor Sales Workers, News and Street Vendors, and Related Workers",,,0.94,
-FirstLine Supervisors of Housekeeping and Janitorial Workers,,,0.94,
 Agricultural Inspectors,44720,14000.0,0.94,427.0
 Paralegals and Legal Assistants,59200,345240.0,0.94,74.0
 Manicurists and Pedicurists,31130,138020.0,0.95,149.0
@@ -613,13 +482,11 @@ Manicurists and Pedicurists,31130,138020.0,0.95,149.0
 "Textile Cutting Machine Setters, Operators, and Tenders",34420,10700.0,0.95,460.0
 Bill and Account Collectors,39470,202840.0,0.95,114.0
 Nuclear Power Reactor Operators,115870,5450.0,0.95,507.0
-Gaming Surveillance Officers and Gaming Investigators,,,0.95,
 "Library Assistants, Clerical",31150,77660.0,0.95,223.0
 Operating Engineers and Other Construction Equipment Operators,51430,423040.0,0.95,55.0
 Print Binding and Finishing Workers,36970,39030.0,0.95,305.0
 Animal Breeders,45320,1270.0,0.95,551.0
 "Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic",37050,165820.0,0.95,131.0
-Electrical and Electronic Equipment Assemblers,,,0.95,
 Adhesive Bonding Machine Operators and Tenders,38780,11320.0,0.95,454.0
 Landscaping and Groundskeeping Workers,35890,914230.0,0.95,22.0
 "Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic",38910,73800.0,0.95,228.0
@@ -630,23 +497,18 @@ Receptionists and Information Clerks,33960,1011170.0,0.96,21.0
 "Office Clerks, General",38040,2517350.0,0.96,7.0
 Compensation and Benefits Managers,131280,16850.0,0.96,402.0
 "Switchboard Operators, Including Answering Service",34670,47430.0,0.96,280.0
-"Counter Attendants, Cafeteria, Food Concession, and Coffee Shop",,,0.96,
 "Rock Splitters, Quarry",46010,3910.0,0.96,521.0
 "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",41000,1826710.0,0.96,10.0
 Surveying and Mapping Technicians,47180,56580.0,0.96,252.0
 "Model Makers, Wood",46940,720.0,0.96,553.0
 "Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders",33720,23830.0,0.96,362.0
 Locomotive Engineers,74570,36440.0,0.96,308.0
-Gaming Dealers,,,0.96,
-"Fabric Menders, Except Garment",,,0.96,
 "Cooks, Restaurant",34110,1321480.0,0.96,15.0
 "Ushers, Lobby Attendants, and Ticket Takers",27650,98350.0,0.96,196.0
 Billing and Posting Clerks,42810,441980.0,0.96,51.0
 Bridge and Lock Tenders,47280,3690.0,0.97,525.0
 "Woodworking Machine Setters, Operators, and Tenders, Except Sawing",36830,63680.0,0.97,239.0
-Team Assemblers,,,0.97,
 Shoe Machine Operators and Tenders,33060,2960.0,0.97,535.0
-Electromechanical Equipment Assemblers,,,0.97,
 Farm Labor Contractors,49330,550.0,0.97,556.0
 Textile Bleaching and Dyeing Machine Operators and Tenders,32680,6640.0,0.97,493.0
 Dental Laboratory Technicians,46050,33330.0,0.97,316.0
@@ -663,21 +525,17 @@ Counter and Rental Clerks,35830,370770.0,0.97,65.0
 File Clerks,37290,87250.0,0.97,208.0
 Real Estate Brokers,62190,52310.0,0.97,266.0
 Telephone Operators,38330,4030.0,0.97,518.0
-Agricultural and Food Science Technicians,,,0.97,
 Payroll and Timekeeping Clerks,49630,159190.0,0.97,136.0
 "Credit Authorizers, Checkers, and Clerks",44830,16290.0,0.97,405.0
 "Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop",27720,400420.0,0.97,60.0
 Models,43130,2070.0,0.98,544.5
 "Inspectors, Testers, Sorters, Samplers, and Weighers",43900,579740.0,0.98,39.0
 "Bookkeeping, Accounting, and Auditing Clerks",45860,1550750.0,0.98,11.0
-Legal Secretaries,,,0.98,
-Radio Operators,,,0.98,
 Driver/Sales Workers,32690,489510.0,0.98,44.0
 "Claims Adjusters, Examiners, and Investigators",72230,285270.0,0.98,88.0
 Parts Salespersons,35800,259280.0,0.98,95.0
 Credit Analysts,78850,71960.0,0.98,232.0
 "Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic",46870,15480.0,0.98,412.0
-"Shipping, Receiving, and Traffic Clerks",,,0.98,
 Procurement Clerks,45240,63340.0,0.98,242.0
 Packaging and Filling Machine Operators and Tenders,36750,369330.0,0.98,66.0
 Etchers and Engravers,37980,8400.0,0.98,477.0
@@ -695,9 +553,7 @@ New Accounts Clerks,40820,45170.0,0.99,287.0
 Photographic Process Workers and Processing Machine Operators,36280,5380.0,0.99,509.0
 Tax Preparers,48250,82370.0,0.99,215.0
 Cargo and Freight Agents,46860,93480.0,0.99,201.0
-Watch Repairers,,,0.99,
 Insurance Underwriters,76230,105900.0,0.99,189.0
-Mathematical Technicians,,,0.99,
 "Sewers, Hand",31530,3440.0,0.99,527.0
 "Title Examiners, Abstractors, and Searchers",50490,53680.0,0.99,261.0
 Telemarketers,31030,96520.0,0.99,198.0
