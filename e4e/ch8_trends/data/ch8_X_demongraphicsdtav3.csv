@@ -1,0 +1,605 @@
+,Year,var,val
+0,1950,Population in Billions,2.478
+1,1951,Population in Billions,2.521
+2,1952,Population in Billions,2.565
+3,1953,Population in Billions,2.615
+4,1954,Population in Billions,2.665
+5,1955,Population in Billions,2.719
+6,1956,Population in Billions,2.773
+7,1957,Population in Billions,2.829
+8,1958,Population in Billions,2.887
+9,1959,Population in Billions,2.945
+10,1960,Population in Billions,2.996
+11,1961,Population in Billions,3.043
+12,1962,Population in Billions,3.094
+13,1963,Population in Billions,3.16
+14,1964,Population in Billions,3.232
+15,1965,Population in Billions,3.302
+16,1966,Population in Billions,3.372
+17,1967,Population in Billions,3.441
+18,1968,Population in Billions,3.51
+19,1969,Population in Billions,3.584
+20,1970,Population in Billions,3.658
+21,1971,Population in Billions,3.733
+22,1972,Population in Billions,3.807
+23,1973,Population in Billions,3.882
+24,1974,Population in Billions,3.958
+25,1975,Population in Billions,4.033
+26,1976,Population in Billions,4.106
+27,1977,Population in Billions,4.179
+28,1978,Population in Billions,4.252
+29,1979,Population in Billions,4.327
+30,1980,Population in Billions,4.404
+31,1981,Population in Billions,4.484
+32,1982,Population in Billions,4.566
+33,1983,Population in Billions,4.65
+34,1984,Population in Billions,4.733
+35,1985,Population in Billions,4.818
+36,1986,Population in Billions,4.905
+37,1987,Population in Billions,4.995
+38,1988,Population in Billions,5.087
+39,1989,Population in Billions,5.178
+40,1990,Population in Billions,5.27
+41,1991,Population in Billions,5.363
+42,1992,Population in Billions,5.45
+43,1993,Population in Billions,5.535
+44,1994,Population in Billions,5.619
+45,1995,Population in Billions,5.702
+46,1996,Population in Billions,5.784
+47,1997,Population in Billions,5.866
+48,1998,Population in Billions,5.947
+49,1999,Population in Billions,6.028
+50,2000,Population in Billions,6.108
+51,2001,Population in Billions,6.19
+52,2002,Population in Billions,6.272
+53,2003,Population in Billions,6.353
+54,2004,Population in Billions,6.435
+55,2005,Population in Billions,6.517
+56,2006,Population in Billions,6.599
+57,2007,Population in Billions,6.683
+58,2008,Population in Billions,6.769
+59,2009,Population in Billions,6.855
+60,2010,Population in Billions,6.942
+61,2011,Population in Billions,7.029
+62,2012,Population in Billions,7.117
+63,2013,Population in Billions,7.206
+64,2014,Population in Billions,7.295
+65,2015,Population in Billions,7.383
+66,2016,Population in Billions,7.47
+67,2017,Population in Billions,7.557
+68,2018,Population in Billions,7.643
+69,2019,Population in Billions,7.725
+70,2020,Population in Billions,7.805
+71,2021,Population in Billions,7.877
+72,2022,Population in Billions,7.942
+73,2023,Population in Billions,8.009
+74,2024,Population in Billions,8.082
+75,2025,Population in Billions,8.156
+76,2026,Population in Billions,8.228
+77,2027,Population in Billions,8.3
+78,2028,Population in Billions,8.372
+79,2029,Population in Billions,8.442
+80,2030,Population in Billions,8.512
+81,2031,Population in Billions,8.581
+82,2032,Population in Billions,8.649
+83,2033,Population in Billions,8.716
+84,2034,Population in Billions,8.782
+85,2035,Population in Billions,8.847
+86,2036,Population in Billions,8.912
+87,2037,Population in Billions,8.975
+88,2038,Population in Billions,9.037
+89,2039,Population in Billions,9.099
+90,2040,Population in Billions,9.159
+91,2041,Population in Billions,9.218
+92,2042,Population in Billions,9.276
+93,2043,Population in Billions,9.332
+94,2044,Population in Billions,9.387
+95,2045,Population in Billions,9.441
+96,2046,Population in Billions,9.494
+97,2047,Population in Billions,9.545
+98,2048,Population in Billions,9.594
+99,2049,Population in Billions,9.642
+100,2050,Population in Billions,9.687
+101,2051,Population in Billions,9.732
+102,2052,Population in Billions,9.774
+103,2053,Population in Billions,9.814
+104,2054,Population in Billions,9.853
+105,2055,Population in Billions,9.891
+106,2056,Population in Billions,9.926
+107,2057,Population in Billions,9.96
+108,2058,Population in Billions,9.993
+109,2059,Population in Billions,10.024
+110,2060,Population in Billions,10.054
+111,2061,Population in Billions,10.082
+112,2062,Population in Billions,10.109
+113,2063,Population in Billions,10.135
+114,2064,Population in Billions,10.16
+115,2065,Population in Billions,10.185
+116,2066,Population in Billions,10.207
+117,2067,Population in Billions,10.229
+118,2068,Population in Billions,10.25
+119,2069,Population in Billions,10.27
+120,2070,Population in Billions,10.288
+121,2071,Population in Billions,10.306
+122,2072,Population in Billions,10.322
+123,2073,Population in Billions,10.338
+124,2074,Population in Billions,10.352
+125,2075,Population in Billions,10.365
+126,2076,Population in Billions,10.377
+127,2077,Population in Billions,10.387
+128,2078,Population in Billions,10.397
+129,2079,Population in Billions,10.405
+130,2080,Population in Billions,10.412
+131,2081,Population in Billions,10.418
+132,2082,Population in Billions,10.422
+133,2083,Population in Billions,10.426
+134,2084,Population in Billions,10.429
+135,2085,Population in Billions,10.43
+136,2086,Population in Billions,10.431
+137,2087,Population in Billions,10.431
+138,2088,Population in Billions,10.43
+139,2089,Population in Billions,10.428
+140,2090,Population in Billions,10.425
+141,2091,Population in Billions,10.422
+142,2092,Population in Billions,10.417
+143,2093,Population in Billions,10.412
+144,2094,Population in Billions,10.407
+145,2095,Population in Billions,10.4
+146,2096,Population in Billions,10.393
+147,2097,Population in Billions,10.384
+148,2098,Population in Billions,10.375
+149,2099,Population in Billions,10.366
+150,2100,Population in Billions,10.355
+151,1950,Median Age,22.224
+152,1951,Median Age,22.172
+153,1952,Median Age,22.108
+154,1953,Median Age,22.036
+155,1954,Median Age,21.952
+156,1955,Median Age,21.845
+157,1956,Median Age,21.742
+158,1957,Median Age,21.634
+159,1958,Median Age,21.532
+160,1959,Median Age,21.478
+161,1960,Median Age,21.461
+162,1961,Median Age,21.448
+163,1962,Median Age,21.371
+164,1963,Median Age,21.204
+165,1964,Median Age,21.008
+166,1965,Median Age,20.815
+167,1966,Median Age,20.633
+168,1967,Median Age,20.491
+169,1968,Median Age,20.401
+170,1969,Median Age,20.343
+171,1970,Median Age,20.32
+172,1971,Median Age,20.332
+173,1972,Median Age,20.379
+174,1973,Median Age,20.457
+175,1974,Median Age,20.562
+176,1975,Median Age,20.692
+177,1976,Median Age,20.84
+178,1977,Median Age,21.007
+179,1978,Median Age,21.177
+180,1979,Median Age,21.345
+181,1980,Median Age,21.505
+182,1981,Median Age,21.642
+183,1982,Median Age,21.741
+184,1983,Median Age,21.826
+185,1984,Median Age,21.916
+186,1985,Median Age,22.04
+187,1986,Median Age,22.224
+188,1987,Median Age,22.417
+189,1988,Median Age,22.604
+190,1989,Median Age,22.783
+191,1990,Median Age,22.96
+192,1991,Median Age,23.144
+193,1992,Median Age,23.353
+194,1993,Median Age,23.575
+195,1994,Median Age,23.81
+196,1995,Median Age,24.051
+197,1996,Median Age,24.293
+198,1997,Median Age,24.534
+199,1998,Median Age,24.777
+200,1999,Median Age,25.018
+201,2000,Median Age,25.25
+202,2001,Median Age,25.47
+203,2002,Median Age,25.679
+204,2003,Median Age,25.882
+205,2004,Median Age,26.08
+206,2005,Median Age,26.273
+207,2006,Median Age,26.47
+208,2007,Median Age,26.675
+209,2008,Median Age,26.886
+210,2009,Median Age,27.102
+211,2010,Median Age,27.327
+212,2011,Median Age,27.554
+213,2012,Median Age,27.775
+214,2013,Median Age,27.993
+215,2014,Median Age,28.22
+216,2015,Median Age,28.456
+217,2016,Median Age,28.699
+218,2017,Median Age,28.947
+219,2018,Median Age,29.204
+220,2019,Median Age,29.469
+221,2020,Median Age,29.736
+222,2021,Median Age,29.996
+223,2022,Median Age,30.242
+224,2023,Median Age,30.489
+225,2024,Median Age,30.736
+226,2025,Median Age,30.977
+227,2026,Median Age,31.211
+228,2027,Median Age,31.44
+229,2028,Median Age,31.662
+230,2029,Median Age,31.877
+231,2030,Median Age,32.086
+232,2031,Median Age,32.289
+233,2032,Median Age,32.487
+234,2033,Median Age,32.682
+235,2034,Median Age,32.878
+236,2035,Median Age,33.073
+237,2036,Median Age,33.263
+238,2037,Median Age,33.447
+239,2038,Median Age,33.629
+240,2039,Median Age,33.81
+241,2040,Median Age,33.991
+242,2041,Median Age,34.173
+243,2042,Median Age,34.357
+244,2043,Median Age,34.545
+245,2044,Median Age,34.737
+246,2045,Median Age,34.932
+247,2046,Median Age,35.126
+248,2047,Median Age,35.32
+249,2048,Median Age,35.517
+250,2049,Median Age,35.718
+251,2050,Median Age,35.919
+252,2051,Median Age,36.117
+253,2052,Median Age,36.312
+254,2053,Median Age,36.504
+255,2054,Median Age,36.694
+256,2055,Median Age,36.882
+257,2056,Median Age,37.057
+258,2057,Median Age,37.218
+259,2058,Median Age,37.364
+260,2059,Median Age,37.496
+261,2060,Median Age,37.618
+262,2061,Median Age,37.735
+263,2062,Median Age,37.851
+264,2063,Median Age,37.967
+265,2064,Median Age,38.081
+266,2065,Median Age,38.194
+267,2066,Median Age,38.308
+268,2067,Median Age,38.42
+269,2068,Median Age,38.533
+270,2069,Median Age,38.646
+271,2070,Median Age,38.758
+272,2071,Median Age,38.871
+273,2072,Median Age,38.985
+274,2073,Median Age,39.099
+275,2074,Median Age,39.214
+276,2075,Median Age,39.33
+277,2076,Median Age,39.447
+278,2077,Median Age,39.565
+279,2078,Median Age,39.685
+280,2079,Median Age,39.806
+281,2080,Median Age,39.928
+282,2081,Median Age,40.051
+283,2082,Median Age,40.174
+284,2083,Median Age,40.299
+285,2084,Median Age,40.425
+286,2085,Median Age,40.551
+287,2086,Median Age,40.678
+288,2087,Median Age,40.805
+289,2088,Median Age,40.931
+290,2089,Median Age,41.057
+291,2090,Median Age,41.182
+292,2091,Median Age,41.306
+293,2092,Median Age,41.427
+294,2093,Median Age,41.545
+295,2094,Median Age,41.661
+296,2095,Median Age,41.774
+297,2096,Median Age,41.884
+298,2097,Median Age,41.992
+299,2098,Median Age,42.097
+300,2099,Median Age,42.2
+301,2100,Median Age,42.3
+302,1950,Life Expectancy at Birth,46.464
+303,1951,Life Expectancy at Birth,47.144
+304,1952,Life Expectancy at Birth,48.231
+305,1953,Life Expectancy at Birth,48.802
+306,1954,Life Expectancy at Birth,49.592
+307,1955,Life Expectancy at Birth,50.123
+308,1956,Life Expectancy at Birth,50.642
+309,1957,Life Expectancy at Birth,50.945
+310,1958,Life Expectancy at Birth,51.537
+311,1959,Life Expectancy at Birth,49.345
+312,1960,Life Expectancy at Birth,47.697
+313,1961,Life Expectancy at Birth,50.359
+314,1962,Life Expectancy at Birth,53.124
+315,1963,Life Expectancy at Birth,53.576
+316,1964,Life Expectancy at Birth,54.164
+317,1965,Life Expectancy at Birth,53.892
+318,1966,Life Expectancy at Birth,54.472
+319,1967,Life Expectancy at Birth,54.92
+320,1968,Life Expectancy at Birth,55.486
+321,1969,Life Expectancy at Birth,55.829
+322,1970,Life Expectancy at Birth,56.112
+323,1971,Life Expectancy at Birth,55.892
+324,1972,Life Expectancy at Birth,57.123
+325,1973,Life Expectancy at Birth,57.633
+326,1974,Life Expectancy at Birth,58.042
+327,1975,Life Expectancy at Birth,58.275
+328,1976,Life Expectancy at Birth,58.711
+329,1977,Life Expectancy at Birth,59.365
+330,1978,Life Expectancy at Birth,59.74
+331,1979,Life Expectancy at Birth,60.204
+332,1980,Life Expectancy at Birth,60.552
+333,1981,Life Expectancy at Birth,60.992
+334,1982,Life Expectancy at Birth,61.416
+335,1983,Life Expectancy at Birth,61.565
+336,1984,Life Expectancy at Birth,61.907
+337,1985,Life Expectancy at Birth,62.236
+338,1986,Life Expectancy at Birth,62.767
+339,1987,Life Expectancy at Birth,63.158
+340,1988,Life Expectancy at Birth,63.281
+341,1989,Life Expectancy at Birth,63.792
+342,1990,Life Expectancy at Birth,63.988
+343,1991,Life Expectancy at Birth,64.058
+344,1992,Life Expectancy at Birth,64.303
+345,1993,Life Expectancy at Birth,64.437
+346,1994,Life Expectancy at Birth,64.459
+347,1995,Life Expectancy at Birth,64.877
+348,1996,Life Expectancy at Birth,65.143
+349,1997,Life Expectancy at Birth,65.501
+350,1998,Life Expectancy at Birth,65.722
+351,1999,Life Expectancy at Birth,66.073
+352,2000,Life Expectancy at Birth,66.453
+353,2001,Life Expectancy at Birth,66.834
+354,2002,Life Expectancy at Birth,67.137
+355,2003,Life Expectancy at Birth,67.46
+356,2004,Life Expectancy at Birth,67.807
+357,2005,Life Expectancy at Birth,68.205
+358,2006,Life Expectancy at Birth,68.703
+359,2007,Life Expectancy at Birth,69.051
+360,2008,Life Expectancy at Birth,69.301
+361,2009,Life Expectancy at Birth,69.796
+362,2010,Life Expectancy at Birth,70.109
+363,2011,Life Expectancy at Birth,70.53
+364,2012,Life Expectancy at Birth,70.873
+365,2013,Life Expectancy at Birth,71.207
+366,2014,Life Expectancy at Birth,71.565
+367,2015,Life Expectancy at Birth,71.8
+368,2016,Life Expectancy at Birth,72.11
+369,2017,Life Expectancy at Birth,72.327
+370,2018,Life Expectancy at Birth,72.576
+371,2019,Life Expectancy at Birth,72.79
+372,2020,Life Expectancy at Birth,72.036
+373,2021,Life Expectancy at Birth,71.048
+374,2022,Life Expectancy at Birth,71.713
+375,2023,Life Expectancy at Birth,73.357
+376,2024,Life Expectancy at Birth,73.669
+377,2025,Life Expectancy at Birth,73.789
+378,2026,Life Expectancy at Birth,73.948
+379,2027,Life Expectancy at Birth,74.106
+380,2028,Life Expectancy at Birth,74.26
+381,2029,Life Expectancy at Birth,74.414
+382,2030,Life Expectancy at Birth,74.57
+383,2031,Life Expectancy at Birth,74.721
+384,2032,Life Expectancy at Birth,74.871
+385,2033,Life Expectancy at Birth,75.019
+386,2034,Life Expectancy at Birth,75.163
+387,2035,Life Expectancy at Birth,75.307
+388,2036,Life Expectancy at Birth,75.451
+389,2037,Life Expectancy at Birth,75.593
+390,2038,Life Expectancy at Birth,75.733
+391,2039,Life Expectancy at Birth,75.871
+392,2040,Life Expectancy at Birth,76.007
+393,2041,Life Expectancy at Birth,76.145
+394,2042,Life Expectancy at Birth,76.278
+395,2043,Life Expectancy at Birth,76.407
+396,2044,Life Expectancy at Birth,76.535
+397,2045,Life Expectancy at Birth,76.661
+398,2046,Life Expectancy at Birth,76.786
+399,2047,Life Expectancy at Birth,76.904
+400,2048,Life Expectancy at Birth,77.021
+401,2049,Life Expectancy at Birth,77.137
+402,2050,Life Expectancy at Birth,77.248
+403,2051,Life Expectancy at Birth,77.358
+404,2052,Life Expectancy at Birth,77.469
+405,2053,Life Expectancy at Birth,77.578
+406,2054,Life Expectancy at Birth,77.686
+407,2055,Life Expectancy at Birth,77.792
+408,2056,Life Expectancy at Birth,77.895
+409,2057,Life Expectancy at Birth,78.002
+410,2058,Life Expectancy at Birth,78.107
+411,2059,Life Expectancy at Birth,78.21
+412,2060,Life Expectancy at Birth,78.314
+413,2061,Life Expectancy at Birth,78.415
+414,2062,Life Expectancy at Birth,78.518
+415,2063,Life Expectancy at Birth,78.621
+416,2064,Life Expectancy at Birth,78.721
+417,2065,Life Expectancy at Birth,78.824
+418,2066,Life Expectancy at Birth,78.925
+419,2067,Life Expectancy at Birth,79.023
+420,2068,Life Expectancy at Birth,79.122
+421,2069,Life Expectancy at Birth,79.22
+422,2070,Life Expectancy at Birth,79.317
+423,2071,Life Expectancy at Birth,79.416
+424,2072,Life Expectancy at Birth,79.509
+425,2073,Life Expectancy at Birth,79.605
+426,2074,Life Expectancy at Birth,79.699
+427,2075,Life Expectancy at Birth,79.794
+428,2076,Life Expectancy at Birth,79.887
+429,2077,Life Expectancy at Birth,79.981
+430,2078,Life Expectancy at Birth,80.072
+431,2079,Life Expectancy at Birth,80.162
+432,2080,Life Expectancy at Birth,80.253
+433,2081,Life Expectancy at Birth,80.342
+434,2082,Life Expectancy at Birth,80.432
+435,2083,Life Expectancy at Birth,80.525
+436,2084,Life Expectancy at Birth,80.615
+437,2085,Life Expectancy at Birth,80.705
+438,2086,Life Expectancy at Birth,80.797
+439,2087,Life Expectancy at Birth,80.886
+440,2088,Life Expectancy at Birth,80.974
+441,2089,Life Expectancy at Birth,81.066
+442,2090,Life Expectancy at Birth,81.156
+443,2091,Life Expectancy at Birth,81.246
+444,2092,Life Expectancy at Birth,81.335
+445,2093,Life Expectancy at Birth,81.426
+446,2094,Life Expectancy at Birth,81.517
+447,2095,Life Expectancy at Birth,81.609
+448,2096,Life Expectancy at Birth,81.698
+449,2097,Life Expectancy at Birth,81.787
+450,2098,Life Expectancy at Birth,81.877
+451,2099,Life Expectancy at Birth,81.969
+452,2100,Life Expectancy at Birth,82.058
+453,1950,Fertility Rate,4.86
+454,1951,Fertility Rate,4.827
+455,1952,Fertility Rate,5.014
+456,1953,Fertility Rate,4.937
+457,1954,Fertility Rate,5.01
+458,1955,Fertility Rate,5.012
+459,1956,Fertility Rate,4.939
+460,1957,Fertility Rate,5.076
+461,1958,Fertility Rate,4.935
+462,1959,Fertility Rate,4.741
+463,1960,Fertility Rate,4.695
+464,1961,Fertility Rate,4.574
+465,1962,Fertility Rate,5.03
+466,1963,Fertility Rate,5.317
+467,1964,Fertility Rate,5.133
+468,1965,Fertility Rate,5.081
+469,1966,Fertility Rate,4.963
+470,1967,Fertility Rate,4.856
+471,1968,Fertility Rate,4.963
+472,1969,Fertility Rate,4.867
+473,1970,Fertility Rate,4.828
+474,1971,Fertility Rate,4.682
+475,1972,Fertility Rate,4.547
+476,1973,Fertility Rate,4.421
+477,1974,Fertility Rate,4.265
+478,1975,Fertility Rate,4.084
+479,1976,Fertility Rate,3.977
+480,1977,Fertility Rate,3.852
+481,1978,Fertility Rate,3.79
+482,1979,Fertility Rate,3.776
+483,1980,Fertility Rate,3.75
+484,1981,Fertility Rate,3.716
+485,1982,Fertility Rate,3.713
+486,1983,Fertility Rate,3.578
+487,1984,Fertility Rate,3.552
+488,1985,Fertility Rate,3.515
+489,1986,Fertility Rate,3.505
+490,1987,Fertility Rate,3.48
+491,1988,Fertility Rate,3.391
+492,1989,Fertility Rate,3.346
+493,1990,Fertility Rate,3.308
+494,1991,Fertility Rate,3.127
+495,1992,Fertility Rate,3.041
+496,1993,Fertility Rate,2.976
+497,1994,Fertility Rate,2.926
+498,1995,Fertility Rate,2.878
+499,1996,Fertility Rate,2.833
+500,1997,Fertility Rate,2.794
+501,1998,Fertility Rate,2.758
+502,1999,Fertility Rate,2.73
+503,2000,Fertility Rate,2.734
+504,2001,Fertility Rate,2.7
+505,2002,Fertility Rate,2.672
+506,2003,Fertility Rate,2.647
+507,2004,Fertility Rate,2.636
+508,2005,Fertility Rate,2.619
+509,2006,Fertility Rate,2.612
+510,2007,Fertility Rate,2.612
+511,2008,Fertility Rate,2.613
+512,2009,Fertility Rate,2.605
+513,2010,Fertility Rate,2.587
+514,2011,Fertility Rate,2.573
+515,2012,Fertility Rate,2.59
+516,2013,Fertility Rate,2.56
+517,2014,Fertility Rate,2.553
+518,2015,Fertility Rate,2.524
+519,2016,Fertility Rate,2.526
+520,2017,Fertility Rate,2.504
+521,2018,Fertility Rate,2.443
+522,2019,Fertility Rate,2.406
+523,2020,Fertility Rate,2.349
+524,2021,Fertility Rate,2.321
+525,2022,Fertility Rate,2.314
+526,2023,Fertility Rate,2.312
+527,2024,Fertility Rate,2.308
+528,2025,Fertility Rate,2.303
+529,2026,Fertility Rate,2.298
+530,2027,Fertility Rate,2.293
+531,2028,Fertility Rate,2.287
+532,2029,Fertility Rate,2.281
+533,2030,Fertility Rate,2.273
+534,2031,Fertility Rate,2.265
+535,2032,Fertility Rate,2.259
+536,2033,Fertility Rate,2.25
+537,2034,Fertility Rate,2.242
+538,2035,Fertility Rate,2.234
+539,2036,Fertility Rate,2.226
+540,2037,Fertility Rate,2.221
+541,2038,Fertility Rate,2.216
+542,2039,Fertility Rate,2.209
+543,2040,Fertility Rate,2.205
+544,2041,Fertility Rate,2.201
+545,2042,Fertility Rate,2.197
+546,2043,Fertility Rate,2.193
+547,2044,Fertility Rate,2.188
+548,2045,Fertility Rate,2.183
+549,2046,Fertility Rate,2.178
+550,2047,Fertility Rate,2.173
+551,2048,Fertility Rate,2.166
+552,2049,Fertility Rate,2.157
+553,2050,Fertility Rate,2.149
+554,2051,Fertility Rate,2.139
+555,2052,Fertility Rate,2.133
+556,2053,Fertility Rate,2.122
+557,2054,Fertility Rate,2.113
+558,2055,Fertility Rate,2.103
+559,2056,Fertility Rate,2.095
+560,2057,Fertility Rate,2.086
+561,2058,Fertility Rate,2.077
+562,2059,Fertility Rate,2.065
+563,2060,Fertility Rate,2.057
+564,2061,Fertility Rate,2.049
+565,2062,Fertility Rate,2.043
+566,2063,Fertility Rate,2.034
+567,2064,Fertility Rate,2.027
+568,2065,Fertility Rate,2.017
+569,2066,Fertility Rate,2.009
+570,2067,Fertility Rate,2.003
+571,2068,Fertility Rate,1.995
+572,2069,Fertility Rate,1.988
+573,2070,Fertility Rate,1.981
+574,2071,Fertility Rate,1.974
+575,2072,Fertility Rate,1.97
+576,2073,Fertility Rate,1.964
+577,2074,Fertility Rate,1.958
+578,2075,Fertility Rate,1.951
+579,2076,Fertility Rate,1.945
+580,2077,Fertility Rate,1.938
+581,2078,Fertility Rate,1.933
+582,2079,Fertility Rate,1.929
+583,2080,Fertility Rate,1.924
+584,2081,Fertility Rate,1.919
+585,2082,Fertility Rate,1.916
+586,2083,Fertility Rate,1.912
+587,2084,Fertility Rate,1.907
+588,2085,Fertility Rate,1.901
+589,2086,Fertility Rate,1.895
+590,2087,Fertility Rate,1.891
+591,2088,Fertility Rate,1.888
+592,2089,Fertility Rate,1.882
+593,2090,Fertility Rate,1.877
+594,2091,Fertility Rate,1.871
+595,2092,Fertility Rate,1.867
+596,2093,Fertility Rate,1.862
+597,2094,Fertility Rate,1.86
+598,2095,Fertility Rate,1.855
+599,2096,Fertility Rate,1.851
+600,2097,Fertility Rate,1.846
+601,2098,Fertility Rate,1.842
+602,2099,Fertility Rate,1.84
+603,2100,Fertility Rate,1.835
