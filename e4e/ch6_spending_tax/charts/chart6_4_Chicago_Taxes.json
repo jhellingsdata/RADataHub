@@ -3,7 +3,7 @@
   "vconcat": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_4_Chicago_Taxes.csv"
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_4a_Chicago_Taxes.csv"
       },
       "width": 300,
       "height": 200,
@@ -107,7 +107,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chicago_taxes1v2.csv"
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_4b_Chicago_Taxes.csv"
       },
       "title": null,
       "width": 300,
