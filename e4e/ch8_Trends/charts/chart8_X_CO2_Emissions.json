@@ -4,7 +4,7 @@
         "stroke": null
     },
     "data": {
-        "url": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/magazine/issue-2/data/fig4-2a_emissions.csv"
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_X_CO2_Emissions.csv"
     },
     "height": 260,
     "width": 340,
@@ -21,6 +21,20 @@
         "subtitleFontStyle": "italic",
         "fontSize": 16
     },
+    "transform": [
+        {
+            "filter": {
+                "field": "Country",
+                "oneOf": [
+                    "Brazil",
+                    "China",
+                    "India",
+                    "United States",
+                    "United Kingdom"
+                ]
+            }
+        }
+    ],
     "layer": [
         {
             "mark": {
@@ -42,13 +56,13 @@
                 "tooltip": [
                     {
                         "type": "temporal",
-                        "field": "Time",
+                        "field": "Year",
                         "timeUnit": "year",
                         "title": "Year"
                     },
                     {
                         "type": "quantitative",
-                        "field": "Value",
+                        "field": "CO2 pc (production)",
                         "title": "CO2 per capita (t)",
                         "format": ".3f"
                     },
@@ -66,7 +80,7 @@
                         "ticks": false,
                         "tickCount": 6
                     },
-                    "field": "Time",
+                    "field": "Year",
                     "title": ""
                 },
                 "y": {
@@ -79,19 +93,10 @@
                         "ticks": false,
                         "title": ""
                     },
-                    "field": "Value",
+                    "field": "CO2 pc (production)",
                     "sort": [],
                     "title": ""
                 }
-            },
-            "title": {
-                "text": "CO2 Emissions",
-                "anchor": "start",
-                "color": "black",
-                "dy": -5,
-                "subtitle": "Tonnes per capita. Source: Global Carbon Project",
-                "subtitleFontSize": 10,
-                "subtitleFontStyle": "italic"
             }
         },
         {
@@ -119,13 +124,13 @@
                 "tooltip": [
                     {
                         "type": "temporal",
-                        "field": "Time",
+                        "field": "Year",
                         "timeUnit": "year",
                         "title": "Year"
                     },
                     {
                         "type": "quantitative",
-                        "field": "Value",
+                        "field": "CO2 pc (production)",
                         "title": "CO2 per capita (t)"
                     },
                     {
@@ -135,14 +140,7 @@
                 ],
                 "x": {
                     "type": "temporal",
-                    "axis": {
-                        "domainColor": "#676A86",
-                        "grid": false,
-                        "labelColor": "#676A86",
-                        "tickColor": "#676A86",
-                        "titleColor": "#676A86"
-                    },
-                    "field": "Time",
+                    "field": "Year",
                     "title": ""
                 },
                 "y": {
@@ -154,23 +152,14 @@
                         "ticks": false,
                         "title": ""
                     },
-                    "field": "Value",
+                    "field": "CO2 pc (production)",
                     "sort": [],
                     "title": ""
                 }
             },
-            "title": {
-                "text": "CO2 Emissions",
-                "anchor": "start",
-                "color": "black",
-                "dy": -5,
-                "subtitle": "Tonnes per capita. Source: Global Carbon Project",
-                "subtitleFontSize": 10,
-                "subtitleFontStyle": "italic"
-            },
             "transform": [
                 {
-                    "filter": "year(datum.Time)==2018"
+                    "filter": "year(datum.Year)==2018"
                 },
                 {
                     "filter": "datum.Country!='Brazil'"
@@ -203,13 +192,13 @@
                 "tooltip": [
                     {
                         "type": "temporal",
-                        "field": "Time",
+                        "field": "Year",
                         "timeUnit": "year",
                         "title": "Year"
                     },
                     {
                         "type": "quantitative",
-                        "field": "Value",
+                        "field": "CO2 pc (production)",
                         "title": "CO2 per capita (t)"
                     },
                     {
@@ -219,14 +208,7 @@
                 ],
                 "x": {
                     "type": "temporal",
-                    "axis": {
-                        "domainColor": "#676A86",
-                        "grid": false,
-                        "labelColor": "#676A86",
-                        "tickColor": "#676A86",
-                        "titleColor": "#676A86"
-                    },
-                    "field": "Time",
+                    "field": "Year",
                     "title": ""
                 },
                 "y": {
@@ -240,14 +222,14 @@
                         "ticks": false,
                         "title": ""
                     },
-                    "field": "Value",
+                    "field": "CO2 pc (production)",
                     "sort": [],
                     "title": ""
                 }
             },
             "transform": [
                 {
-                    "filter": "year(datum.Time)==2018"
+                    "filter": "year(datum.Year)==2018"
                 },
                 {
                     "filter": "datum.Country=='Brazil'"
