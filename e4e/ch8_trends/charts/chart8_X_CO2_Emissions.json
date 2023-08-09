@@ -1,0 +1,258 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "view": {
+        "stroke": null
+    },
+    "data": {
+        "url": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/magazine/issue-2/data/fig4-2a_emissions.csv"
+    },
+    "height": 260,
+    "width": 340,
+    "title": {
+        "text": "CO2 Emissions",
+        "anchor": "start",
+        "color": "black",
+        "subtitle": [
+            "Tonnes per capita.",
+            "Source: Global Carbon Project",
+            ""
+        ],
+        "subtitleFontSize": 12,
+        "subtitleFontStyle": "italic",
+        "fontSize": 16
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "line",
+                "point": "transparent"
+            },
+            "description": "Carbon per capita by country",
+            "encoding": {
+                "color": {
+                    "type": "nominal",
+                    "field": "Country",
+                    "legend": null,
+                    "scale": {
+                        "scheme": "yellowgreenblue"
+                    },
+                    "sort": [],
+                    "title": null
+                },
+                "tooltip": [
+                    {
+                        "type": "temporal",
+                        "field": "Time",
+                        "timeUnit": "year",
+                        "title": "Year"
+                    },
+                    {
+                        "type": "quantitative",
+                        "field": "Value",
+                        "title": "CO2 per capita (t)",
+                        "format": ".3f"
+                    },
+                    {
+                        "type": "nominal",
+                        "field": "Country"
+                    }
+                ],
+                "x": {
+                    "type": "temporal",
+                    "axis": {
+                        "grid": false,
+                        "labelFontSize": 11,
+                        "labelPadding": 5,
+                        "ticks": false,
+                        "tickCount": 6
+                    },
+                    "field": "Time",
+                    "title": ""
+                },
+                "y": {
+                    "type": "quantitative",
+                    "axis": {
+                        "grid": true,
+                        "gridOpacity": 0.6,
+                        "labelPadding": 5,
+                        "tickCount": 7,
+                        "ticks": false,
+                        "title": ""
+                    },
+                    "field": "Value",
+                    "sort": [],
+                    "title": ""
+                }
+            },
+            "title": {
+                "text": "CO2 Emissions",
+                "anchor": "start",
+                "color": "black",
+                "dy": -5,
+                "subtitle": "Tonnes per capita. Source: Global Carbon Project",
+                "subtitleFontSize": 10,
+                "subtitleFontStyle": "italic"
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 5
+            },
+            "description": "Carbon per capita by country",
+            "encoding": {
+                "color": {
+                    "type": "nominal",
+                    "field": "Country",
+                    "legend": null,
+                    "scale": {
+                        "scheme": "yellowgreenblue"
+                    },
+                    "sort": [],
+                    "title": null
+                },
+                "text": {
+                    "type": "nominal",
+                    "field": "Country"
+                },
+                "tooltip": [
+                    {
+                        "type": "temporal",
+                        "field": "Time",
+                        "timeUnit": "year",
+                        "title": "Year"
+                    },
+                    {
+                        "type": "quantitative",
+                        "field": "Value",
+                        "title": "CO2 per capita (t)"
+                    },
+                    {
+                        "type": "nominal",
+                        "field": "Country"
+                    }
+                ],
+                "x": {
+                    "type": "temporal",
+                    "axis": {
+                        "domainColor": "#676A86",
+                        "grid": false,
+                        "labelColor": "#676A86",
+                        "tickColor": "#676A86",
+                        "titleColor": "#676A86"
+                    },
+                    "field": "Time",
+                    "title": ""
+                },
+                "y": {
+                    "type": "quantitative",
+                    "axis": {
+                        "gridOpacity": 0.6,
+                        "labelPadding": 5,
+                        "tickCount": 7,
+                        "ticks": false,
+                        "title": ""
+                    },
+                    "field": "Value",
+                    "sort": [],
+                    "title": ""
+                }
+            },
+            "title": {
+                "text": "CO2 Emissions",
+                "anchor": "start",
+                "color": "black",
+                "dy": -5,
+                "subtitle": "Tonnes per capita. Source: Global Carbon Project",
+                "subtitleFontSize": 10,
+                "subtitleFontStyle": "italic"
+            },
+            "transform": [
+                {
+                    "filter": "year(datum.Time)==2018"
+                },
+                {
+                    "filter": "datum.Country!='Brazil'"
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 5,
+                "dy": -10
+            },
+            "description": "Carbon per capita by country",
+            "encoding": {
+                "color": {
+                    "type": "nominal",
+                    "field": "Country",
+                    "legend": null,
+                    "scale": {
+                        "scheme": "yellowgreenblue"
+                    },
+                    "sort": [],
+                    "title": null
+                },
+                "text": {
+                    "type": "nominal",
+                    "field": "Country"
+                },
+                "tooltip": [
+                    {
+                        "type": "temporal",
+                        "field": "Time",
+                        "timeUnit": "year",
+                        "title": "Year"
+                    },
+                    {
+                        "type": "quantitative",
+                        "field": "Value",
+                        "title": "CO2 per capita (t)"
+                    },
+                    {
+                        "type": "nominal",
+                        "field": "Country"
+                    }
+                ],
+                "x": {
+                    "type": "temporal",
+                    "axis": {
+                        "domainColor": "#676A86",
+                        "grid": false,
+                        "labelColor": "#676A86",
+                        "tickColor": "#676A86",
+                        "titleColor": "#676A86"
+                    },
+                    "field": "Time",
+                    "title": ""
+                },
+                "y": {
+                    "type": "quantitative",
+                    "axis": {
+                        "grid": true,
+                        "gridOpacity": 0.6,
+                        "labelPadding": 5,
+                        "labelFontSize": 11,
+                        "tickCount": 7,
+                        "ticks": false,
+                        "title": ""
+                    },
+                    "field": "Value",
+                    "sort": [],
+                    "title": ""
+                }
+            },
+            "transform": [
+                {
+                    "filter": "year(datum.Time)==2018"
+                },
+                {
+                    "filter": "datum.Country=='Brazil'"
+                }
+            ]
+        }
+    ]
+}
