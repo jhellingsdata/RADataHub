@@ -1,11 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  },
   "width": 500,
   "height": 450,
   "data": {
     "name": "egov_data",
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_trends/data/chart8_x_egov.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_egov.csv"
   },
   "title": {
     "text": "E-Government Use in Europe",
@@ -14,7 +20,11 @@
     "dy": 55,
     "fontSize": 16,
     "subtitleFontSize": 12,
-    "subtitle": ["Online Interaction with Public Authourities", "Share of Population, Source: Eurostat", ""]
+    "subtitle": [
+      "Online Interaction with Public Authourities",
+      "Share of Population, Source: Eurostat",
+      ""
+    ]
   },
   "params": [
     {
@@ -30,9 +40,10 @@
     }
   ],
   "transform": [
-            {
-          "calculate": "datum.Value/100", "as": "Value"
-        }
+    {
+      "calculate": "datum.Value/100",
+      "as": "Value"
+    }
   ],
   "layer": [
     {
@@ -45,40 +56,57 @@
           "from": {
             "data": {
               "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_trends/data/chart8_x_europe.topojson",
-              "format": {"type": "topojson", "feature": "europe"}
+              "format": {
+                "type": "topojson",
+                "feature": "europe"
+              }
             },
             "key": "id",
-            "fields": ["properties", "type", "geometry"]
+            "fields": [
+              "properties",
+              "type",
+              "geometry"
+            ]
           }
         }
       ],
-
       "mark": {
         "type": "geoshape",
         "stroke": "gray",
-        "tooltip": {"expr": "datum.Value != 0? datum.Country + ': ' + format(datum.Value, '.0%'): 'No Data' "}
+        "tooltip": {
+          "expr": "datum.Value != 0? datum.Country + ': ' + format(datum.Value, '.0%'): 'No Data' "
+        }
       },
       "encoding": {
         "color": {
-          "legend":{
+          "legend": {
             "format": "%",
-            "values": [0,0.5, 1],
+            "values": [
+              0,
+              0.5,
+              1
+            ],
             "orient": "none",
             "direction": "horizontal",
             "gradientLength": 200,
             "legendY": 45,
-            "title":null
-
+            "title": null
           },
           "condition": [
-            {"test":"datum.Value == ''",
-            "value":"rgba(0,0,0,0.1)"
-            
-            
+            {
+              "test": "datum.Value == ''",
+              "value": "rgba(0,0,0,0.1)"
             }
           ],
-          "field":"Value", "type": "quantitative", "scale":{"domain":[0,1]}}
-
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          }
+        }
       }
     }
   ]
