@@ -185,7 +185,6 @@ HiSilicon Kirin 990 5G,"10,300,000,000[143]",2019,Huawei,7 nm,113.31 mm2,90900
 HiSilicon Kirin 9000,"15,300,000,000",2020,Huawei,5 nm,114 mm2,134200000,China,other,,
 "AMD Zen 3 CCX (core complex unit: 8 cores, 32 MB L3 cache)","4,080,000,000[153]",2020,AMD,7 nm,68 mm²,60000000,United States,other,AMDZen 3CCX,"core complex unit: 8 cores, 32 MB L3 cache"
 AMD Zen 3 CCD (core complex die),"4,150,000,000[153]",2020,AMD,7 nm,81 mm²,51230000,United States,other,AMDZen 3CCD,core complex die
-"Core 11th gen Rocket Lake (8-core 64-bit, SIMD, large caches)","6,000,000,000+ [154]",2021,Intel,14 nm +++ 14 nm,276 mm2[155],3.75E+18,United States,64-bit,Core 11th genRocket Lake,"8-core 64-bit,SIMD, large caches"
 "AMD Ryzen 7 5800H(64-bit, SIMD, caches, I/O and GPU)","10,700,000,000[157]",2021,AMD,7 nm,180 mm2,59440000,United States,64-bit,AMD Ryzen 7 5800H,"64-bit,SIMD, caches, I/O and GPU"
 Apple A15,"15,000,000,000",2021,Apple,5 nm,107.68 mm2,139300000,United States,other,,
 "Apple M1 Pro (10-core, 64-bit)","33,700,000,000[161]",2021,Apple,5 nm,245 mm2[162],137600000,United States,64-bit,Apple M1 Pro,"10-core, 64-bit"
