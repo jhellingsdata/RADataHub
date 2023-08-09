@@ -1,11 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
   "data": {
-     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_trends/data/chart8_x_chips.csv"},
-
-  "params":[
-            {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_chips.csv"
+  },
+  "params": [
+    {
       "name": "minYear",
       "value": 1970,
       "bind": {
@@ -29,144 +28,219 @@
     }
   ],
   "title": {
-      "text": "Getting faster fast",
-      "subtitle": ["CPUs by transistor count and country of Designer", "Linear and log scales, Multiple Sources",  ""],
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":12,
-      "fontSize": 16,
-      "anchor": "start",
-      "color": "black"},
-
-      "hconcat":[
-        {
-  "view": {"stroke":"transparent"},
-
-  "width":250,
-  "height":400,
-
-  "transform": [
-    {"calculate": "log(datum.count)", "as": "countLog"},
-    {"filter": "datum.Transistor < 100000000000"},
-    {"filter": "year(datum.Year) > minYear"},
-    {"filter": "year(datum.Year) < maxYear"}
-  ],
-  "params": [
-    {
-      "name": "scaleType",
-      "value": "log",
-      "bind": {
-        "input": "select",
-        "options": [
-          "linear",
-          "log"
-        ]
-      }
-    }
-  ],
-  "mark":{
-      "type": "circle",
-      "color":"rgba(128,0,0,0.5)",
-      "size":60},
-
-  "encoding": {
-    "tooltip":[
-      {"field": "Name"},
-      {"field": "Details"},
-      {"field": "Transistor", "title":"Transistor Count"},
-      {"field": "Designer Country"}
-
-
-
+    "text": "Getting faster fast",
+    "subtitle": [
+      "CPUs by transistor count and country of Designer",
+      "Linear and log scales, Multiple Sources",
+      ""
     ],
-    "color":{
-      "field": "Designer Country",
-      "scale":{
-        "scheme": "accent",
-        "domain": ["Multiple Countries", "Japan","United Kingdom", "China", "South Korea", "United States" ],
-        "reverse": true
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "fontSize": 16,
+    "anchor": "start",
+    "color": "black"
+  },
+  "hconcat": [
+    {
+      "view": {
+        "stroke": "transparent"
       },
-      "legend":{
-        "orient": "none",
-        "title": null,
-        "legendX": 0,
-        "legendY": -25,
-        "direction": "horizontal",
-        "values": ["United States", "Japan", "United Kingdom", "China", "South Korea", "Multiple Countries"]}
+      "width": 250,
+      "height": 400,
+      "transform": [
+        {
+          "calculate": "log(datum.count)",
+          "as": "countLog"
+        },
+        {
+          "filter": "datum.Transistor < 100000000000"
+        },
+        {
+          "filter": "year(datum.Year) > minYear"
+        },
+        {
+          "filter": "year(datum.Year) < maxYear"
+        }
+      ],
+      "params": [
+        {
+          "name": "scaleType",
+          "value": "log",
+          "bind": {
+            "input": "select",
+            "options": [
+              "linear",
+              "log"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "color": "rgba(128,0,0,0.5)",
+        "size": 60
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "Name"
+          },
+          {
+            "field": "Details"
+          },
+          {
+            "field": "Transistor",
+            "title": "Transistor Count"
+          },
+          {
+            "field": "Designer Country"
+          }
+        ],
+        "color": {
+          "field": "Designer Country",
+          "scale": {
+            "scheme": "accent",
+            "domain": [
+              "Multiple Countries",
+              "Japan",
+              "United Kingdom",
+              "China",
+              "South Korea",
+              "United States"
+            ],
+            "reverse": true
+          },
+          "legend": {
+            "orient": "none",
+            "title": null,
+            "legendX": 0,
+            "legendY": -25,
+            "direction": "horizontal",
+            "values": [
+              "United States",
+              "Japan",
+              "United Kingdom",
+              "China",
+              "South Korea",
+              "Multiple Countries"
+            ]
+          }
+        },
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "axis": {
+            "grid": false,
+            "tickOpacity": 0
+          },
+          "title": null
+        },
+        "y": {
+          "field": "Transistor",
+          "type": "quantitative",
+          "scale": {
+            "type": "linear"
+          },
+          "axis": {
+            "grid": true,
+            "tickOpacity": 0,
+            "gridOpacity": 0.6
+          },
+          "title": null
+        }
+      }
     },
-    "x": {
-        "field": "Year",
-        "type": "temporal",
-        "axis":{"grid": false, "tickOpacity":0},
-        "title":null},
-    "y": {
-        "field": "Transistor",
-        "type": "quantitative",
-        "scale":{"type": "linear"},
-        "axis":{"grid": true, "tickOpacity":0, "gridOpacity":0.6},
-        "title":null}
-  }
-
-        },        {
-  "view": {"stroke":"transparent"},
-
-  "width":250,
-  "height":400,
-
-  "transform": [
-    {"calculate": "log(datum.count)", "as": "countLog"},
-    {"filter": "datum.Transistor < 100000000000"},
-    {"filter": "year(datum.Year) > minYear"},
-    {"filter": "year(datum.Year) < maxYear"}
-
-
-  ],
-  "params": [
     {
-      "name": "scaleType",
-      "value": "log",
-      "bind": {
-        "input": "select",
-        "options": [
-          "linear",
-          "log"
-        ]
+      "view": {
+        "stroke": "transparent"
+      },
+      "width": 250,
+      "height": 400,
+      "transform": [
+        {
+          "calculate": "log(datum.count)",
+          "as": "countLog"
+        },
+        {
+          "filter": "datum.Transistor < 100000000000"
+        },
+        {
+          "filter": "year(datum.Year) > minYear"
+        },
+        {
+          "filter": "year(datum.Year) < maxYear"
+        }
+      ],
+      "params": [
+        {
+          "name": "scaleType",
+          "value": "log",
+          "bind": {
+            "input": "select",
+            "options": [
+              "linear",
+              "log"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "color": "rgba(128,0,0,0.5)",
+        "size": 60
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "Name"
+          },
+          {
+            "field": "Details"
+          },
+          {
+            "field": "Transistor",
+            "title": "Transistor Count"
+          },
+          {
+            "field": "Designer Country"
+          }
+        ],
+        "color": {
+          "field": "Designer Country",
+          "legend": {
+            "values": [
+              "United States",
+              "Japan",
+              "United Kingdom",
+              "China",
+              "South Korea",
+              "Multiple Countries"
+            ]
+          }
+        },
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "axis": {
+            "grid": false,
+            "tickOpacity": 0
+          },
+          "title": null
+        },
+        "y": {
+          "field": "Transistor",
+          "type": "quantitative",
+          "scale": {
+            "type": "log"
+          },
+          "axis": {
+            "grid": true,
+            "tickOpacity": 0,
+            "gridOpacity": 0.6
+          },
+          "title": null
+        }
       }
     }
-  ],
-  "mark":{
-      "type": "circle",
-      "color":"rgba(128,0,0,0.5)",
-      "size":60},
-
-  "encoding": {
-    "tooltip":[
-      {"field": "Name"},
-      {"field": "Details"},
-      {"field": "Transistor", "title":"Transistor Count"},
-      {"field": "Designer Country"}
-
-
-
-    ],
-    "color":{
-      "field": "Designer Country",
-      "legend":{"values": ["United States", "Japan", "United Kingdom", "China", "South Korea", "Multiple Countries"]}
-    },
-    "x": {
-        "field": "Year",
-        "type": "temporal",
-        "axis":{"grid": false, "tickOpacity":0},
-        "title":null},
-    "y": {
-        "field": "Transistor",
-        "type": "quantitative",
-        "scale":{"type": "log"},
-        "axis":{"grid": true, "tickOpacity":0, "gridOpacity":0.6},
-        "title":null}
-  }
-
-        }
-
-      ]
-  
+  ]
 }
