@@ -1,11 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_1_CBO.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_1_US_govSpending.csv"
   },
   "transform": [
-    {"calculate": "datum.Category == 'Other Discretionary,' ? 'Other Discretionary' : datum.Category", "as": "Category"},
-    {"calculate": "{'Health Care Programs': 0, 'Social Security': 1, 'Other Discretionary': 2, 'Defense': 3, 'Other Non-Discretionary': 4, 'Net Interest': 5}[datum.Category]", "as": "order"}
+    {
+      "calculate": "datum.Category == 'Other Discretionary,' ? 'Other Discretionary' : datum.Category",
+      "as": "Category"
+    },
+    {
+      "calculate": "{'Health Care Programs': 0, 'Social Security': 1, 'Other Discretionary': 2, 'Defense': 3, 'Other Non-Discretionary': 4, 'Net Interest': 5}[datum.Category]",
+      "as": "order"
+    }
   ],
   "title": {
     "text": "How the Government Spends",
@@ -14,38 +20,60 @@
     "subtitleFontStyle": "italic",
     "anchor": "start",
     "subtitle": [
-      "Federal Outlays: past, present and future", "as a percentage of GDP",
+      "Federal Outlays: past, present and future",
+      "as a percentage of GDP",
       "Source: CBO",
       ""
     ]
   },
   "config": {
-    "style": {"cell": {"stroke": "transparent"}},
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    },
     "locale": {
       "number": {
         "decimal": ".",
         "thousands": ",",
-        "grouping": [3],
-        "currency": ["$", "B"]
+        "grouping": [
+          3
+        ],
+        "currency": [
+          "$",
+          "B"
+        ]
       }
     }
   },
   "layer": [
     {
       "transform": [
-        {"pivot": "Category", "value": "Value", "groupby": ["Period"]},
+        {
+          "pivot": "Category",
+          "value": "Value",
+          "groupby": [
+            "Period"
+          ]
+        },
         {
           "calculate": "datum['European LCFIs'] + datum['UK LCFIs'] + datum['US Commercial Banks'] + datum['US Securities Houses']",
           "as": "Total"
         }
       ],
-      "mark": {"type": "bar", "fill": "black", "opacity": 0.001},
+      "mark": {
+        "type": "bar",
+        "fill": "black",
+        "opacity": 0.001
+      },
       "params": [
         {
           "name": "hover",
           "select": {
             "type": "point",
-            "fields": ["Period"],
+            "fields": [
+              "Period"
+            ],
             "nearest": true,
             "on": "mouseover",
             "clear": "mouseout"
@@ -55,10 +83,18 @@
       "encoding": {
         "x": null,
         "opacity": {
-          "condition": [{"test": "datum.Period == hover.Period", "value": 0.05}]
+          "condition": [
+            {
+              "test": "datum.Period == hover.Period",
+              "value": 0.05
+            }
+          ]
         },
         "tooltip": [
-          {"field": "Period", "type": "nominal"},
+          {
+            "field": "Period",
+            "type": "nominal"
+          },
           {
             "field": "Health Care Programs",
             "type": "quantitative",
@@ -92,18 +128,24 @@
         ]
       }
     },
-    {"mark": "bar"}
+    {
+      "mark": "bar"
+    }
   ],
   "width": 500,
   "height": 250,
   "encoding": {
     "y": {
-      "field": "Period",      
+      "field": "Period",
       "type": "nominal",
-      "axis": {"title": null, 
-      "domain": false,
-      "grid": false,
-      "tickOpacity": 0, "labelAngle": 0}
+      "axis": {
+        "title": null,
+        "domain": false,
+        "grid": false,
+        "tickOpacity": 0,
+        "labelAngle": 0,
+        "labelFontSize": 11
+      }
     },
     "x": {
       "field": "Value",
@@ -113,22 +155,31 @@
         "grid": false,
         "gridOpacity": 0.6,
         "tickOpacity": 0,
-        "title": null
+        "title": null,
+        "labelFontSize": 11
       }
     },
-    "order":{
+    "order": {
       "field": "order"
     },
     "color": {
       "field": "Category",
       "type": "nominal",
       "legend": {
-        "values": ["Health Care Programs", "Social Security", "Other Discretionary", "Defense", "Other Non-Discretionary", "Net Interest"],
+        "values": [
+          "Health Care Programs",
+          "Social Security",
+          "Other Discretionary",
+          "Defense",
+          "Other Non-Discretionary",
+          "Net Interest"
+        ],
         "title": null,
         "columns": 4,
         "direction": "horizontal",
         "orient": "none",
-        "legendY": -26
+        "legendY": -26,
+        "labelFontSize": 11
       }
     }
   }
