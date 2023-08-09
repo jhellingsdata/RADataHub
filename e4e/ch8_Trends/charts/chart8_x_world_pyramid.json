@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A simple bar chart with embedded data.",
     "data": {
-      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_trends/data/chart8_x_world_pyramid.csv"
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_world_pyramid.csv"
     },
     "config": {
     "style": {
