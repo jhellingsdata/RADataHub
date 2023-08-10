@@ -5,7 +5,7 @@
     "height": 450,
     "data": {
       "name": "egov_data",
-      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_trends/data/chart8_x_egov.csv"
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_egov.csv"
     },
     "title": {
       "text": "E-Government Use in Europe",
@@ -44,7 +44,7 @@
             "lookup": "ISO2",
             "from": {
               "data": {
-                "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_trends/data/chart8_x_europe.topojson",
+                "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_europe.topojson",
                 "format": {"type": "topojson", "feature": "europe"}
               },
               "key": "id",

@@ -1,0 +1,270 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch6_spending_tax/data/chart6_2_US_Revenues_Outlays.csv"
+  },
+  "height": 280,
+  "width": 500,
+  "title": {
+    "text": "US Government Revenues and Outlays",
+    "fontSize": 16,
+    "anchor": "start",
+    "subtitle": [
+      "Shaded area shows deficit/surplus",
+      "Source: CBO",
+      ""
+    ],
+    "subtitleFontSize": 12,
+    "subtitleFontStyle": "italic"
+  },
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1962,
+      "bind": {
+        "input": "range",
+        "min": 1962,
+        "max": 2020,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1963,
+        "max": 2021,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "year(datum.Year)",
+      "as": "year"
+    },
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "grid": false,
+        "ticks": false,
+        "labelPadding": 5,
+        "labelFontSize": 11
+      },
+      "title": ""
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        {
+          "calculate": "datum.Value/1000",
+          "as": "Value"
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "Type",
+          "type": "nominal",
+          "legend": {
+            "title": "",
+            "orient": "top",
+            "offset": 10,
+            "direction": "horizontal",
+            "labelAlign": "left",
+            "labelFontSize": 11
+          },
+          "scale": {
+            "range": [
+              "rgb(128,0,0)",
+              "rgb(0,0,128)"
+            ]
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "axis": {
+            "gridOpacity": 0.6,
+            "ticks": false,
+            "labelPadding": 5,
+            "title": null,
+            "labelFontSize": 11,
+            "format": "$.1f"
+          },
+          "title": "Billions of USD"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "linear"
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": "circle"
+        },
+        {
+          "mark": {
+            "type": "area"
+          },
+          "transform": [
+            {
+              "pivot": "Type",
+              "value": "Value",
+              "groupby": [
+                "Year"
+              ]
+            },
+            {
+              "filter": "datum.Revenues > datum.Outlays & year(datum.Year)>1990"
+            }
+          ],
+          "encoding": {
+            "y2": {
+              "field": "Outlays"
+            },
+            "y": {
+              "field": "Revenues"
+            },
+            "color": {
+              "value": "rgba(30,180,30,0.5)"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "area"
+          },
+          "transform": [
+            {
+              "pivot": "Type",
+              "value": "Value",
+              "groupby": [
+                "Year"
+              ]
+            },
+            {
+              "filter": "datum.Revenues < datum.Outlays"
+            }
+          ],
+          "encoding": {
+            "y2": {
+              "field": "Outlays"
+            },
+            "y": {
+              "field": "Revenues"
+            },
+            "color": {
+              "value": "rgba(180,30,30,0.3)"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "pivot": "Type",
+          "value": "Value",
+          "groupby": [
+            "Year"
+          ]
+        },
+        {
+          "calculate": "datum.Outlays/1000",
+          "as": "Outlays"
+        },
+        {
+          "calculate": "datum.Revenues/1000",
+          "as": "Revenues"
+        }
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "value": 0.5,
+            "param": "hover",
+            "empty": false
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "temporal",
+            "format": "%Y"
+          },
+          {
+            "field": "Revenues",
+            "type": "quantitative",
+            "title": "Revenues",
+            "format": "$.3f"
+          },
+          {
+            "field": "Outlays",
+            "type": "quantitative",
+            "title": "Outlays",
+            "format": "$.3f"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "Year"
+            ],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    },
+    "locale": {
+      "number": {
+        "decimal": ".",
+        "thousands": ",",
+        "grouping": [
+          3
+        ],
+        "currency": [
+          "$",
+          " T"
+        ]
+      }
+    }
+  }
+}

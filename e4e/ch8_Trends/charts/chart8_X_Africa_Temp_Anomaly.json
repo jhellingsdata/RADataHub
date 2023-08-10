@@ -171,8 +171,8 @@
     "data": {
         "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_X_Africa_Temp_Anomaly.csv"
     },
-    "height": 300,
-    "width": 400,
+    "height": 350,
+    "width": 500,
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "datasets": {
         "data-3ed4290038625a794a396d8e8be775be": [
