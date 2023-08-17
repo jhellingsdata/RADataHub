@@ -1,0 +1,115 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/ChartOfTheDay/2023-08-17/UK_StrikeDays_LongRun.csv"
+    },
+    "config": {
+        "view": {
+            "stroke": "transparent"
+        }
+    },
+    "width": 400,
+    "height": 260,
+    "title": {
+        "text": "UK working days lost to strike action",
+        "subtitle": [
+            "Yearly total, 1891 to June 2023, no data during pandemic, source: ONS",
+            ""
+        ],
+        "subtitleFontStyle": "italic",
+        "fontSize": 14,
+        "subtitleFontSize": 11,
+        "anchor": "start",
+        "color": "black"
+    },
+    "mark": {
+        "type": "bar",
+        "color": "#122B39"
+    },
+    "transform": [
+        {
+            "calculate": "toNumber(datum.Value)",
+            "as": "Value"
+        },
+        {
+            "calculate": "datum.Value * 1000",
+            "as": "Value"
+        },
+        {
+            "calculate": "year(datum.Year)",
+            "as": "year"
+        },
+        {
+            "filter": "datum.year>=minYear"
+        },
+        {
+            "filter": "datum.year<=maxYear"
+        }
+    ],
+    "params": [
+        {
+            "name": "minYear",
+            "value": 1960,
+            "bind": {
+                "input": "range",
+                "min": 1891,
+                "max": 2022,
+                "step": 1,
+                "name": "Start year:"
+            }
+        },
+        {
+            "name": "maxYear",
+            "value": 2023,
+            "bind": {
+                "input": "range",
+                "min": 1892,
+                "max": 2023,
+                "step": 1,
+                "name": "End year:"
+            }
+        }
+    ],
+    "encoding": {
+        "x": {
+            "field": "Year",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": null,
+            "axis": {
+                "grid": false,
+                "labelFontSize": 11,
+                "labelPadding": 3,
+                "tickOpacity": 0.6,
+                "tickSize": 4,
+                "labelFlushOffset": 3
+            }
+        },
+        "y": {
+            "field": "Value",
+            "type": "quantitative",
+            "title": null,
+            "axis": {
+                "format": "s",
+                "gridOpacity": 0.6,
+                "labelFontSize": 11,
+                "labelPadding": 5,
+                "ticks": false
+            }
+        },
+        "tooltip": [
+            {
+                "field": "Year",
+                "type": "temporal",
+                "format": "%Y",
+                "title": "Year"
+            },
+            {
+                "field": "Value",
+                "type": "quantitative",
+                "title": "Strike Days",
+                "format": ","
+            }
+        ]
+    }
+}
