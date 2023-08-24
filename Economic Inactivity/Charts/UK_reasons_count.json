@@ -1,0 +1,217 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/Series/inac_count_reason.csv"
+  },
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "transform": [
+    {"calculate": "trim(datum.Series)", "as": "Series"},
+    {"calculate": "timeOffset('month', datum.Date, 3)", "as": "DateEnd"},
+    {"calculate": "timeFormat(datum.Date, 'Q%q %Y')", "as": "formatDate"},
+    {"calculate": "datum.Value*1000", "as": "Value"},
+    {"calculate": "{'Long Term Sick': 0,  'Students': 1,  'Looking after family/home': 2,  'Retired': 3,  'Other': 4,  'Temp sick': 5,  'Discouraged workers': 6}[datum.Series]", "as": "seriesOrder"},
+    {"filter": "year(datum.Date)<=maxYear & year(datum.Date) >= minYear"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2000,
+      "bind": {
+        "input": "range",
+        "min": 1971,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 1972,
+        "max": 2023,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "image": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+          }
+        ]
+      },
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": 105,
+        "yOffset": -33
+      },
+      "encoding": {
+        "x": {"value": 400},
+        "y": {"value": -10},
+        "x2": null,
+        "color": null,
+        "url": {"field": "image", "type": "nominal"}
+      }
+    },
+    {
+      "data": {"values": [{"can be": "anything"}]},
+      "mark": {
+        "type": "text",
+        "fontWeight": "lighter",
+        "align": "left",
+        "color": "#676A86",
+        "fontSize": 10
+      },
+      "encoding": {
+        "x": {"value": 0},
+        "text": {
+          "value": "16-64 Economically Inactive Population, Source: ONS"
+        },
+        "y": {"value": -10},
+        "color": null
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [{"op": "max", "field": "Date", "as": "maxDate"}],
+          "groupby": ["Series"]
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "font": "Circular Std"
+      },
+      "encoding": {
+        "x": {"value": 500},
+        "y": {
+          "value": {
+            "expr": "{'Long Term Sick': 260,  'Students': 190,  'Looking after family/home': 130,  'Retired': 90,  'Other': 60,  'Temp sick': 50,  'Discouraged workers': 40}[datum.Series]"
+          }
+        },
+        "color": {"field": "Series"},
+        "text": {"field": "Series"}
+      }
+    },
+    {"mark": {"type": "bar", "opacity": 1}},
+    {
+      "transform": [
+        {"pivot": "Series", "value": "Value", "groupby": ["Date", "DateEnd"]},
+        {"calculate": "datum['Discouraged workers'] + datum['Temp sick'] + datum['Other'] + datum['Retired'] + datum['Looking after family/home'] + datum['Students'] + datum['Long Term Sick']", "as": "Total"}
+      ],
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "mark": {"type": "bar", "opacity": 0.1, "stroke": "black"},
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "y": {"value": 350},
+        "y2": {"datum": 0},
+        "color": {"value": "rgb(100,100,100)"},
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "format": "Q%q %Y",
+            "title": "Period"
+          },
+{"field":"Discouraged workers" , "format":",.6r"},{"field":"Temp sick" , "format":",.6r"},{"field":"Other" , "format":",.6r"},{"field":"Retired" , "format":",.6r"},{"field":"Looking after family/home" , "format":",.6r"},{"field":"Students" , "format":",.6r"},{"field":"Long Term Sick" , "format":",.6r"}, {"field": "Total", "format": ",.6r", "title": "Total (16-64)"}
+        ]
+      }
+    }
+  ],
+  "width": 500,
+  "height": 350,
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "scale": {"paddingInner": 0, "paddingOuter": 0},
+      "axis": {
+        "title": "",
+        "grid": false,
+        "domainOpacity": 0.5,
+        "labelAngle": 0,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "orient": "bottom",
+        "tickColor": "#676A86",
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "titleAlign": "center",
+        "titleAnchor": "middle",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleX": 207,
+        "titleY": -15
+      }
+    },
+    "x2": {"field": "DateEnd", "type": "temporal"},
+
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "axis": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "format": "s",
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "labelColor": "#676A86",
+        "offset": 1,
+        "labelOpacity": 0.7,
+        "labelPadding": 5,
+        "tickColor": "#676A86",
+        "tickCount": 8,
+        "tickOpacity": 0.5,
+        "ticks": false,
+        "title": "Economic Inactivity: Reasons",
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 16,
+        "titleFont": "Circular Std",
+        "titleOpacity": 0.8,
+        "titleX": 0,
+        "titleY": -18
+      }
+    },
+    "y2": {"value": 0},
+    "order":{
+      "field": "seriesOrder"
+    },
+    "color": {
+      "field": "Series",
+      "legend": null,
+      "type": "nominal",
+      "scale": {"scheme": "set2"}
+    }
+  }
+}
