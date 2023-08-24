@@ -1,0 +1,133 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/scot_inactivityv2.csv"
+  },
+  "title": {"text": "Economic Inactivity by Cause in Glasgow and Inverclyde 2004-2023", "font": "Circular Std", "color": "#676A86", "fontSize": 16},
+  "config": {"view": {"stroke": "transparent"}},
+  "facet": {"column": {"field": "Location", "title": null,"header":{"labelFontStyle": "Circular Std", "labelColor": "#676A86", "labelFontWeight": "bold" } }},
+  "spec": {
+    "height": 300,
+    "width": 300,
+    "layer": [
+      {
+        "mark": {"type": "area"},
+        "encoding": {
+          "x": {
+            "field": "Date",
+            "type": "temporal",
+            "axis": {
+              "domainOpacity": 0.5,
+              "labelAngle": 0,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "orient": "bottom",
+              "tickColor": "#676A86",
+              "tickCount": 10,
+              "tickOpacity": 0.5,
+              "title": "",
+              "titleAlign": "center",
+              "titleAnchor": "middle",
+              "titleColor": "#676A86",
+              "titleFontSize": 12,
+              "titleOpacity": 0.8,
+              "titleX": 207,
+              "titleY": -15,
+              "grid": false,
+              "ticks": false,
+              "labelPadding": 5
+            }
+          },
+          "y": {
+            "field": "Inactive",
+            "type": "quantitative",
+            "stack": "zero",
+            "axis": {
+              "domainColor": "#676A86",
+              "domainOpacity": 0.5,
+              "format": "%",
+              "gridColor": "#676A86",
+              "gridDash": [1, 5],
+              "gridOpacity": 0.5,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "labelPadding": 5,
+              "tickColor": "#676A86",
+              "tickCount": 8,
+              "tickOpacity": 0.5,
+              "ticks": false,
+              "title": null,
+              "titleAlign": "left",
+              "titleAngle": 0,
+              "titleBaseline": "bottom",
+              "titleColor": "#676A86",
+              "titleFontSize": 16,
+              "titleFont": "Circular Std",
+              "titleOpacity": 0.8,
+              "titleX": 0,
+              "titleY": -18
+            }
+          },
+          "color": {
+            "field": "Inactivity Type",
+            "legend": {"orient": "top", "title": "", "labelColor": "#676A86"},
+            "scale": {
+              "domain": [
+                "Student",
+                "Looking after family/home",
+                "Temporary sick",
+                "Long-term sick",
+                "Economically Discouraged",
+                "Retired",
+                "Other"
+              ],
+              "range": "heatmap"
+            }
+          },
+          "opacity": {
+            "condition": {
+              "test": {"param": "hover", "empty": false},
+              "value": 0.3
+            },
+            "value": 0.8
+          },
+          "tooltip": [{"field": "Date", "type": "temporal", "format": "%m-%Y"},{"field": "Inactive", "type": "quantitative", "format": ".0%", "title": "Portion of Economically Inactive"},
+            {"field": "Total Population", "format": ".0f"},
+            {"field": "Total Economically Inactive", "format": ".0f"},
+            {"field": "Inactivity Type", "type": "nominal"}
+          ]
+        }
+      },
+      {
+        "params": [
+          {
+            "name": "hover",
+            "select": {"type": "point", "on": "mouseover", "clear": "mouseout"}
+          }
+        ],
+        "mark": {"type": "line", "size": 1.5},
+        "encoding": {
+          "x": {"field": "Date", "type": "temporal"},
+          "y": {"field": "Inactive", "type": "quantitative", "stack": "zero"},
+          "color": {
+            "field": "Inactivity Type",
+            "legend": {"orient": "top", "title": ""},
+            "scale": {
+              "domain": [
+                "Student",
+                "Looking after family/home",
+                "Temporary sick",
+                "Long-term sick",
+                "Economically Discouraged",
+                "Retired",
+                "Other"
+              ],
+              "range": "heatmap"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resolve": {"scale": {"y": "independent"}}
+}

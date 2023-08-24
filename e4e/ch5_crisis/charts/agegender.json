@@ -1,0 +1,154 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/Inactivitypctv5.csv"
+    },
+    "config": {"view": {"stroke": "transparent"}},
+    "title": {
+      "text": "UK Economic Inactivity by Age and Gender",
+      "subtitle": ["Source: ONS"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 11,
+      "fontSize": 16,
+      "anchor": "start"
+    },
+    "transform": [{"calculate": "datum.Val/100", "as": "Val1"},{"calculate": "datum.Val+'%'", "as": "val2"}],
+    "width": 500,
+    "height": 300,
+    "layer": [
+      {
+        "encoding": {
+          "x": {
+            "field": "Date",
+            "type": "temporal",
+            "axis": {
+              "title": null,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "ticks": false,
+              "grid": false
+            }
+          },
+          "y": {
+            "field": "Val1",
+            "type": "quantitative",
+            "axis": {
+              "title": null,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "ticks": false,
+              "gridOpacity": 0.6,
+              "format": "%"
+            }
+          },
+          "color": {
+            "field": "Type",
+            "type": "nominal",
+            "legend": {"orient": "top", "title": null, "legendX": -20},
+            "scale": {
+              "domain": ["Aged 16-24", "Aged 25-34", "Aged 35-49", "Aged 50-64"],
+              "range": ["lightblue", "orange", "green", "darkred"]
+            }
+          }
+        },
+        "transform": [{"filter": {"param": "View"}}],
+        "layer": [
+          {"mark": "line"},
+          {
+            "params": [
+              {
+                "name": "label",
+                "select": {
+                  "type": "point",
+                  "encodings": ["x"],
+                  "nearest": true,
+                  "on": "mouseover"
+                }
+              },
+              {
+                "name": "View",
+                "select": {"type": "point", "fields": ["Series"]},
+                "bind": {
+                  "input": "select",
+                  "options": ["All", "Women", "Men"],
+                  "name": "Group"
+                },
+                "value": "All"
+              }
+            ],
+            "transform": [{"filter": {"param": "View"}}],
+            "mark": "point",
+            "encoding": {
+              "opacity": {
+                "condition": {"param": "label", "empty": false, "value": 1},
+                "value": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "transform": [
+          {"filter": {"param": "label", "empty": false}},
+          {"filter": {"param": "View"}}
+        ],
+        "layer": [
+          {
+            "mark": {"type": "rule", "color": "gray"},
+            "encoding": {
+              "x": {"type": "temporal", "field": "Date", "aggregate": "min"}
+            }
+          },
+          {
+            "encoding": {
+              "text": {"type": "nominal", "field": "val2"},
+              "x": {"type": "temporal", "field": "Date"},
+              "y": {"type": "quantitative", "field": "Val1"}
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "text",
+                  "stroke": "white",
+                  "strokeWidth": 2,
+                  "align": "left",
+                  "dx": 5,
+                  "dy": -5
+                }, "encoding": {"color": {
+                    "type": "nominal",
+                    "field": "Type",
+                    "scale": {
+                      "domain": [
+                        "Aged 16-24",
+                        "Aged 25-34",
+                        "Aged 35-49",
+                        "Aged 50-64"
+                      ],
+                      "range": ["lightblue", "orange", "green", "darkred"]
+                    }
+                  }}
+              },
+              {
+                "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+                "encoding": {
+                  "color": {
+                    "type": "nominal",
+                    "field": "Type",
+                    "scale": {
+                      "domain": [
+                        "Aged 16-24",
+                        "Aged 25-34",
+                        "Aged 35-49",
+                        "Aged 50-64"
+                      ],
+                      "range": ["lightblue", "orange", "green", "darkred"]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
