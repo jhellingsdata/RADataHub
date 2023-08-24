@@ -1,0 +1,526 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/scot_inactivityv2.csv"
+    },
+  
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+    "transform": [
+      {"calculate": "trim(datum.Series)", "as": "Series"},
+      {
+        "calculate": "datum.Series == 'Temporarily sick' ? 'Temp sick' : datum.Series",
+        "as": "Series"
+      },
+      {
+        "calculate": "datum.Series == 'Long-term sick' ? 'Long Term Sick' : datum.Series",
+        "as": "Series"
+      },
+      {"calculate": "timeOffset('month', datum.Date, 3)", "as": "DateEnd"},
+      {"calculate": "timeFormat(datum.Date, 'Q%q %Y')", "as": "formatDate"},
+      {"filter": "year(datum.Date)<=maxYear & year(datum.Date) >= minYear"},
+      {
+        "calculate": "{'Student': 'Students', 'Temporary sick': 'Temp sick', 'Economically Discouraged': 'Discouraged workers', 'Long-term sick': 'Long Term Sick', 'Looking after family/home':'Looking after family/home', 'Retired':'Retired', 'Other':'Other'}[datum['Inactivity Type']]",
+        "as": "Series"
+      },
+      {
+        "calculate": "{'Long Term Sick': 0,  'Students': 0,  'Looking after family/home': 2,  'Retired': 5,  'Other': 4,  'Temp sick': 6,  'Discouraged workers': 7}[datum.Series]",
+        "as": "seriesOrder"
+      },
+      {"calculate": "datum.Value/datum['Total Population']", "as": "pct_total"},
+      {
+        "calculate": "datum.Value/datum['Total Economically Inactive']",
+        "as": "pct_inac"
+      },
+      {"calculate": "datum.Value", "as": "number"},
+      {
+        "calculate": "formatToggle == '% 16-64 Population' ? datum.pct_total : formatToggle == '% Inactive Population' ? datum.pct_inac :  datum.number",
+        "as": "chosenValue"
+      }
+    ],
+    "params": [
+      {
+        "name": "formatToggle",
+        "value": "% 16-64 Population",
+        "bind": {
+          "name": "Show as",
+          "input": "select",
+          "options": ["% 16-64 Population", "% Inactive Population", "Population"]
+        }
+      },
+      {
+        "name": "minYear",
+        "value": 2004,
+        "bind": {
+          "input": "range",
+          "min": 2004,
+          "max": 2022,
+          "step": 1,
+          "name": "Start year:"
+        }
+      },
+      {
+        "name": "maxYear",
+        "value": 2023,
+        "bind": {
+          "input": "range",
+          "min": 1972,
+          "max": 2023,
+          "step": 1,
+          "name": "End year:"
+        }
+      }
+    ],
+    "hconcat": [
+      {
+        "transform": [{"filter": "datum.Location == 'Inverclyde'"}],
+        "layer": [
+                  {
+            "data": {"values": [{"can be": "anything"}]},
+            "mark": {
+              "type": "text",
+              "fontWeight": "bold",
+                  "color": "#676A86",
+      "fontSize": 16,
+              "font": "Circular Std",
+              "align": "left"
+            },
+            "encoding": {
+              "x": {"value": -30},
+              "text": {
+                "value": {
+                  "expr": "'Economic Inactivity: Inverclyde and Glasgow'"
+                }
+              },
+              "y": {"value": -45},
+              "color": null
+            }
+          },
+          {
+            "data": {"values": [{"can be": "anything"}]},
+            "mark": {
+              "type": "text",
+              "fontWeight": "lighter",
+              "align": "left",
+              "color": "#676A86",
+              "fontSize": 10
+            },
+            "encoding": {
+              "x": {"value": -30},
+              "text": {
+                "value": {
+                  "expr": "(formatToggle == '% 16-64 Population' ? 'Percentage of 16-64 Population': formatToggle == '% Inactive Population' ? 'Share of Inactive Population' : 'Inactive Population') + ', Source: ONS, Graph: Economics Observatory'"
+                }
+              },
+              "y": {"value":-30},
+              "color": null
+            }
+          },
+          {
+            "data": {"values": [{"can be": "anything"}]},
+            "mark": {
+              "type": "text",
+              "fontWeight": "lighter",
+              "align": "left",
+              "color": "#676A86",
+              "fontSize": 10
+            },
+            "encoding": {
+              "x": {"value": 0},
+              "text": {"value": "Inverclyde"},
+              "y": {"value": -10},
+              "color": null
+            }
+          },
+          {
+            "transform": [
+              {"filter": "false"},
+              {
+                "aggregate": [{"op": "max", "field": "Date", "as": "maxDate"}],
+                "groupby": ["Series"]
+              }
+            ],
+            "mark": {
+              "type": "text",
+              "align": "left",
+              "dx": 5,
+              "font": "Circular Std"
+            },
+            "encoding": {
+              "x": {"value": 400},
+              "y": {
+                "value": {
+                  "expr": "{'Long Term Sick': 190,  'Students': 265,  'Looking after family/home': 130,  'Retired': 85,  'Other': 100,  'Temp sick': 75,  'Discouraged workers': 65}[datum.Series]"
+                }
+              },
+              "color": {"field": "Series"},
+              "text": {"field": "Series"}
+            }
+          },
+          {"mark": {"type": "bar", "opacity": 1}},
+          {
+            "transform": [
+              {
+                "pivot": "Series",
+                "value": "chosenValue",
+                "groupby": ["Date", "DateEnd"]
+              },
+              {
+                "calculate": "datum['Discouraged workers'] + datum['Temp sick'] + datum['Other'] + datum['Retired'] + datum['Looking after family/home'] + datum['Students'] + datum['Long Term Sick']",
+                "as": "Total"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Discouraged workers'], '.4') : format(datum['Discouraged workers'], '.0%')",
+                "as": "Discouraged workers label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Temp sick'], '.4') : format(datum['Temp sick'], '.0%')",
+                "as": "Temp sick label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Retired'], '.4') : format(datum['Retired'], '.0%')",
+                "as": "Retired label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Other'], '.4') : format(datum['Other'], '.0%')",
+                "as": "Other label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Looking after family/home'], '.4') : format(datum['Looking after family/home'], '.0%')",
+                "as": "Looking after family/home label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Long Term Sick'], '.4') : format(datum['Long Term Sick'], '.0%')",
+                "as": "Long Term Sick label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Students'], '.4') : format(datum['Students'], '.0%')",
+                "as": "Students label"
+              }
+            ],
+            "params": [
+              {
+                "name": "hover",
+                "select": {
+                  "type": "point",
+                  "fields": ["Date"],
+                  "nearest": true,
+                  "on": "mouseover",
+                  "clear": "mouseout"
+                }
+              }
+            ],
+            "mark": {"type": "bar", "opacity": 0.1, "stroke": "black"},
+            "encoding": {
+              "opacity": {
+                "condition": {"value": 0.3, "param": "hover", "empty": false},
+                "value": 0
+              },
+              "y": {"value": 350},
+              "y2": {"datum": 0},
+              "color": {"value": "rgb(100,100,100)"},
+              "tooltip": [
+                {
+                  "field": "Date",
+                  "type": "temporal",
+                  "format": "Q%q %Y",
+                  "title": "Period"
+                },
+                {
+                  "field": "Discouraged workers label",
+                  "title": "Discouraged workers"
+                },
+                {"field": "Temp sick label", "title": "Temp sick"},
+                {"field": "Retired label", "title": "Retired"},
+                {"field": "Other label", "title": "Other"},
+                {
+                  "field": "Looking after family/home label",
+                  "title": "Looking after family/home"
+                },
+                              {"field": "Long Term Sick label", "title": "Long Term Sick"},
+                                                          {"field": "Students label", "title": "Students"}
+  
+  
+              ]
+            }
+          }
+        ],
+        "width": 400,
+        "height": 350,
+        "encoding": {
+          "x": {
+            "field": "Date",
+            "type": "temporal",
+            "scale": {"paddingInner": 0, "paddingOuter": 0},
+            "axis": {
+              "title": "",
+              "grid": false,
+              "domainOpacity": 0.5,
+              "labelAngle": 0,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "orient": "bottom",
+              "tickColor": "#676A86",
+              "tickCount": 10,
+              "tickOpacity": 0.5,
+              "titleAlign": "center",
+              "titleAnchor": "middle",
+              "titleColor": "#676A86",
+              "titleFontSize": 12,
+              "titleOpacity": 0.8,
+              "titleX": 207,
+              "titleY": -15
+            }
+          },
+          "x2": {"field": "DateEnd", "type": "temporal"},
+          "y": {
+            "field": "chosenValue",
+            "type": "quantitative",
+            "scale": {
+              "domain": {
+                "expr": " formatToggle == '% 16-64 Population' ? [0, 0.35] : formatToggle == '% Inactive Population' ? [0,1] : [0, 16000]"
+              }
+            },
+            "axis": {
+              "domainColor": "#676A86",
+              "domainOpacity": 0.5,
+              "gridColor": "#676A86",
+              "labelExpr": "formatToggle == '% 16-64 Population' ? format(datum.value, '.0%') : formatToggle == '% Inactive Population' ? format(datum.value, '.0%') : format(datum.value, '.2s')",
+              "gridDash": [1, 5],
+              "gridOpacity": 0.5,
+              "labelColor": "#676A86",
+              "offset": 1,
+              "labelOpacity": 0.7,
+              "labelPadding": 5,
+              "tickColor": "#676A86",
+              "tickCount": 8,
+              "tickOpacity": 0.5,
+              "ticks": false,
+              "title": null,
+              "titleAlign": "left",
+              "titleAngle": 0,
+              "titleBaseline": "bottom",
+              "titleColor": "#676A86",
+              "titleFontSize": 16,
+              "titleFont": "Circular Std",
+              "titleOpacity": 0.8,
+              "titleX": 0,
+              "titleY": -18
+            }
+          },
+          "y2": {"value": 0},
+          "order": {"field": "seriesOrder"},
+          "color": {
+            "field": "Series",
+            "legend": null,
+            "type": "nominal",
+            "scale": {"scheme": "set2"}
+          }
+        }
+      },
+      {
+        "transform": [{"filter": "datum.Location == 'Glasgow City'"}],
+        "layer": [
+          {
+            "data": {"values": [{"can be": "anything"}]},
+            "mark": {
+              "type": "text",
+              "fontWeight": "lighter",
+              "align": "left",
+              "color": "#676A86",
+              "fontSize": 10
+            },
+            "encoding": {
+              "x": {"value": 0},
+              "text": {"value": "Glasgow City"},
+              "y": {"value": -10},
+              "color": null
+            }
+          },
+          {
+            "transform": [
+              {"filter": "true"},
+              {
+                "aggregate": [{"op": "max", "field": "Date", "as": "maxDate"}],
+                "groupby": ["Series"]
+              }
+            ],
+            "mark": {
+              "type": "text",
+              "align": "left",
+              "dx": 5,
+              "font": "Circular Std"
+            },
+            "encoding": {
+              "x": {"value": 400},
+              "y": {
+                "value": {
+                  "expr": "formatToggle=='% 16-64 Population' ? {'Long Term Sick': 200,  'Students': 265,  'Looking after family/home': 150,  'Retired': 105,  'Other': 120,  'Temp sick': 95,  'Discouraged workers': 85}[datum.Series] : formatToggle=='% Inactive Population' ? {'Long Term Sick': 150,  'Students': 240,  'Looking after family/home': 75,  'Retired': 20,  'Other': 30,  'Temp sick': 10,  'Discouraged workers': 0}[datum.Series] : {'Long Term Sick': 195,  'Students': 265,  'Looking after family/home': 135,  'Retired': 85,  'Other': 100,  'Temp sick': 75,  'Discouraged workers': 65}[datum.Series]"
+                }
+              },
+              "color": {"field": "Series"},
+              "text": {"field": "Series"}
+            }
+          },
+          {"mark": {"type": "bar", "opacity": 1}},
+             {
+            "transform": [
+              {
+                "pivot": "Series",
+                "value": "chosenValue",
+                "groupby": ["Date", "DateEnd"]
+              },
+              {
+                "calculate": "datum['Discouraged workers'] + datum['Temp sick'] + datum['Other'] + datum['Retired'] + datum['Looking after family/home'] + datum['Students'] + datum['Long Term Sick']",
+                "as": "Total"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Discouraged workers'], '.4r') : format(datum['Discouraged workers'], '.0%')",
+                "as": "Discouraged workers label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Temp sick'], '.4r') : format(datum['Temp sick'], '.0%')",
+                "as": "Temp sick label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Retired'], '.4r') : format(datum['Retired'], '.0%')",
+                "as": "Retired label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Other'], '.4r') : format(datum['Other'], '.0%')",
+                "as": "Other label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Looking after family/home'], '.4r') : format(datum['Looking after family/home'], '.0%')",
+                "as": "Looking after family/home label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Long Term Sick'], '.4r') : format(datum['Long Term Sick'], '.0%')",
+                "as": "Long Term Sick label"
+              },
+              {
+                "calculate": "formatToggle == 'Population' ? format(datum['Students'], '.4r') : format(datum['Students'], '.0%')",
+                "as": "Students label"
+              }
+            ],
+            "params": [
+              {
+                "name": "hover",
+                "select": {
+                  "type": "point",
+                  "fields": ["Date"],
+                  "nearest": true,
+                  "on": "mouseover",
+                  "clear": "mouseout"
+                }
+              }
+            ],
+            "mark": {"type": "bar", "opacity": 0.1, "stroke": "black"},
+            "encoding": {
+              "opacity": {
+                "condition": {"value": 0.3, "param": "hover", "empty": false},
+                "value": 0
+              },
+              "y": {"value": 350},
+              "y2": {"datum": 0},
+              "color": {"value": "rgb(100,100,100)"},
+              "tooltip": [
+                {
+                  "field": "Date",
+                  "type": "temporal",
+                  "format": "Q%q %Y",
+                  "title": "Period"
+                },
+                {
+                  "field": "Discouraged workers label",
+                  "title": "Discouraged workers"
+                },
+                {"field": "Temp sick label", "title": "Temp sick"},
+                {"field": "Retired label", "title": "Retired"},
+                {"field": "Other label", "title": "Other"},
+                {
+                  "field": "Looking after family/home label",
+                  "title": "Looking after family/home"
+                },
+                              {"field": "Long Term Sick label", "title": "Long Term Sick"},
+                                                          {"field": "Students label", "title": "Students"}
+  
+  
+              ]
+            }
+          }
+        ],
+        "width": 400,
+        "height": 350,
+        "encoding": {
+          "x": {
+            "field": "Date",
+            "type": "temporal",
+            "scale": {"paddingInner": 0, "paddingOuter": 0},
+            "axis": {
+              "title": "",
+              "grid": false,
+              "domainOpacity": 0.5,
+              "labelAngle": 0,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "orient": "bottom",
+              "tickColor": "#676A86",
+              "tickCount": 10,
+              "tickOpacity": 0.5,
+              "titleAlign": "center",
+              "titleAnchor": "middle",
+              "titleColor": "#676A86",
+              "titleFontSize": 12,
+              "titleOpacity": 0.8,
+              "titleX": 207,
+              "titleY": -15
+            }
+          },
+          "x2": {"field": "DateEnd", "type": "temporal"},
+          "y": {
+            "field": "chosenValue",
+            "type": "quantitative",
+            "scale": {
+              "domain": {
+                "expr": " formatToggle == '% 16-64 Population' ? [0, 0.35] : formatToggle == '% Inactive Population' ? [0,1] : [0, 140000]"
+              }
+            },
+            "axis": {
+              "domainColor": "#676A86",
+              "domainOpacity": 0.5,
+              "gridColor": "#676A86",
+              "labelExpr": "formatToggle == '% 16-64 Population' ? format(datum.value, '.0%') : formatToggle == '% Inactive Population' ? format(datum.value, '.0%') : format(datum.value, '.2s')",
+              "gridDash": [1, 5],
+              "gridOpacity": 0.5,
+              "labelColor": "#676A86",
+              "offset": 1,
+              "labelOpacity": 0.7,
+              "labelPadding": 5,
+              "tickColor": "#676A86",
+              "tickCount": 8,
+              "tickOpacity": 0.5,
+              "ticks": false,
+              "title": null,
+              "titleAlign": "left",
+              "titleAngle": 0,
+              "titleBaseline": "bottom",
+              "titleColor": "#676A86",
+              "titleFontSize": 16,
+              "titleFont": "Circular Std",
+              "titleOpacity": 0.8,
+              "titleX": 0,
+              "titleY": -18
+            }
+          },
+          "y2": {"value": 0},
+          "order": {"field": "seriesOrder"},
+          "color": {
+            "field": "Series",
+            "legend": null,
+            "type": "nominal",
+            "scale": {"scheme": "set2"}
+          }
+        }
+      }
+    ]
+  }

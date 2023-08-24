@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/inac_count_reason_male.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/inac_count_reason_female.csv"
   },
   "config": {"style": {"cell": {"stroke": "transparent"}}},
   "transform": [
@@ -77,7 +77,7 @@
       "encoding": {
         "x": {"value": 0},
         "text": {
-          "value": "16-64 Economically Inactive Men, Source: ONS"
+          "value": "16-64 Economically Inactive Women, Source: ONS"
         },
         "y": {"value": -10},
         "color": null
@@ -100,7 +100,7 @@
         "x": {"value": 500},
         "y": {
           "value": {
-            "expr": "{'Long Term Sick': 250,  'Students': 160,  'Looking after family/home': 135,  'Retired': 90,  'Other': 60,  'Temp sick': 50,  'Discouraged workers': 40}[datum.Series]"
+            "expr": "{'Long Term Sick': 280,  'Students': 215,  'Looking after family/home': 140,  'Retired': 110,  'Other': 80,  'Temp sick': 70,  'Discouraged workers': 60}[datum.Series]"
           }
         },
         "color": {"field": "Series"},
@@ -193,7 +193,7 @@
         "tickCount": 8,
         "tickOpacity": 0.5,
         "ticks": false,
-        "title": "Male Economic Inactivity: Reasons",
+        "title": "Female Economic Inactivity: Reasons",
         "titleAlign": "left",
         "titleAngle": 0,
         "titleBaseline": "bottom",

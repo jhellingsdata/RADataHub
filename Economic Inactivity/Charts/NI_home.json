@@ -29,11 +29,11 @@
           "fields": ["Value", "Area", "Population", "Count"]
         }
       },
-      {"calculate": "toNumber(datum.Value)", "as": "Value"},
+      {"calculate": "toNumber(datum.Value)", "as": "Value"}
 
     ],
     "projection": {
-      "type": "mercator",
+      "type": "mercator"
       
       },
     "layer": [
