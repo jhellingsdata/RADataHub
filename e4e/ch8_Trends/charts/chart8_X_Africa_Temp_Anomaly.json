@@ -1,0 +1,196 @@
+{
+    "config": {
+        "view": {
+            "stroke": null
+        }
+    },
+    "title": {
+        "text": "Africa: Temperature Anomalies",
+        "anchor": "start",
+        "color": "black",
+        "subtitle": [
+            "Annual temperatures (above historical averages)",
+            "Source: National Oceanic and Atmospheric Administration (NOAA)",
+            ""
+        ],
+        "subtitleFontSize": 12,
+        "subtitleFontStyle": "italic",
+        "fontSize": 16
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "bar",
+                "color": "#F4134D"
+            },
+            "encoding": {
+                "x": {
+                    "type": "quantitative",
+                    "axis": {
+                        "format": ".0f",
+                        "grid": false,
+                        "labelAngle": 0,
+                        "orient": "bottom",
+                        "ticks": false,
+                        "title": "",
+                        "titleAlign": "center",
+                        "titleAnchor": "middle",
+                        "labelFontSize": 11,
+                        "labelPadding": 5
+                    },
+                    "field": "Year",
+                    "scale": {
+                        "domain": [
+                            1896,
+                            2025
+                        ],
+                        "nice": false
+                    },
+                    "sort": []
+                },
+                "y": {
+                    "type": "quantitative",
+                    "axis": {
+                        "domainColor": "#676A86",
+                        "format": ".1f",
+                        "grid": true,
+                        "gridColor": "#676A86",
+                        "gridOpacity": 0.1,
+                        "labelPadding": 5,
+                        "labelFontSize": 11,
+                        "tickCount": 7,
+                        "ticks": false,
+                        "title": "°C",
+                        "titleAlign": "left",
+                        "titleAnchor": "start",
+                        "titleAngle": 0,
+                        "titleBaseline": "bottom",
+                        "titleFontSize": 11,
+                        "titleFontWeight": "normal",
+                        "titleX": 5,
+                        "titleY": 10
+                    },
+                    "field": "Value",
+                    "sort": []
+                }
+            },
+            "transform": [
+                {
+                    "filter": "datum.Value>0"
+                }
+            ]
+        },
+        {
+            "mark": {
+                "type": "bar",
+                "color": "#179FDB"
+            },
+            "encoding": {
+                "x": {
+                    "type": "quantitative",
+                    "axis": {
+                        "format": ".0f",
+                        "grid": false,
+                        "labelAngle": 0,
+                        "orient": "bottom",
+                        "tickCount": 7,
+                        "title": "",
+                        "titleAlign": "center",
+                        "titleAnchor": "middle",
+                        "titleColor": "#676A86"
+                    },
+                    "field": "Year",
+                    "scale": {
+                        "domain": [
+                            1896,
+                            2025
+                        ],
+                        "nice": false
+                    },
+                    "sort": []
+                },
+                "y": {
+                    "type": "quantitative",
+                    "field": "Value",
+                    "sort": []
+                }
+            },
+            "transform": [
+                {
+                    "filter": "datum.Value<0"
+                }
+            ]
+        },
+        {
+            "data": {
+                "name": "data-3ed4290038625a794a396d8e8be775be"
+            },
+            "mark": {
+                "type": "line",
+                "color": "#676A86"
+            },
+            "encoding": {
+                "x": {
+                    "type": "quantitative",
+                    "field": "x",
+                    "sort": []
+                },
+                "y": {
+                    "type": "quantitative",
+                    "field": "y"
+                }
+            }
+        },
+        {
+            "data": {
+                "name": "data-3c9914816ad3e12cde86ac1bacb47d4a"
+            },
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "top",
+                "color": "#676A86",
+                "dy": 5
+            },
+            "encoding": {
+                "text": {
+                    "type": "nominal",
+                    "field": "t"
+                },
+                "x": {
+                    "type": "quantitative",
+                    "field": "x"
+                },
+                "y": {
+                    "type": "quantitative",
+                    "field": "y"
+                }
+            }
+        }
+    ],
+    "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_X_Africa_Temp_Anomaly.csv"
+    },
+    "height": 350,
+    "width": 500,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "datasets": {
+        "data-3ed4290038625a794a396d8e8be775be": [
+            {
+                "x": 1895,
+                "y": 0
+            },
+            {
+                "x": 2025,
+                "y": 0
+            }
+        ],
+        "data-3c9914816ad3e12cde86ac1bacb47d4a": [
+            {
+                "x": 2025,
+                "y": 0,
+                "t": "20th century average"
+            }
+        ]
+    }
+}

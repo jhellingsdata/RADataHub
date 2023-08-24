@@ -1,0 +1,127 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 450,
+  "height": 370,
+  "background": "white",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/NI_Activity/SDZ_NI_10_pc.topojson",
+    "format": {"type": "topojson", "feature": "SDZ2021"}
+  },
+  "title": {
+    "text": "Belfast: Economic Inactivity",
+    "subtitle": ["Percentage Economically Inactive"],
+    "anchor": "start",
+    "dy": 0,
+    "fontSize": 15,
+    "subtitleFontSize": 12,
+    "subtitleFontWeight": "lighter",
+    "fontWeight": "bolder"
+  },
+  "transform": [
+    {"calculate": "datum.properties.SDZ2021_cd", "as": "SZD"},
+    {
+      "lookup": "SZD",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/NI_Activity/inactive.csv"
+        },
+        "key": "SDZ",
+        "fields": ["Value", "Area", "Population", "Count"]
+      }
+    },
+    {"calculate": "toNumber(datum.Value)", "as": "Value"},
+
+  ],
+  "projection": {
+    "type": "mercator",
+
+    },
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0},
+      "transform": [
+        {"filter": "indexof(['Belfast'], datum.properties.LGD2014_nm) != -1"},
+        {"calculate": "replace(datum.Area, /_/, ' ')", "as": "Area"}
+      ],
+      "encoding": {
+        "tooltip": [
+          {"field": "Area", "title": "Small Area Title"},
+          {"field": "Value", "title": "Proportion", "format": ".1%"},
+          {"field": "Count", "title": "Count", "format": ".2r"}
+        ],
+        "color": {
+          "legend": {
+            "orient": "none",
+            "legendY": -25,
+            "title": null,
+            "gradientLength": 130,
+            "format": "%",
+            "direction": "horizontal",
+            "labelFontWeight": "lighter",
+            "labelFontSize": 10
+          },
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"scheme": "lightmulti", "reverse": false, "zero": false}
+        }
+      }
+    },
+    {
+      "data": {"url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/belfast_wards.csv"},
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "order": null,
+        "fontWeight": "normal",
+        "dx": 10,
+        "size": 9,
+        "color": "rgba(0,0,0,0.5)",
+
+      },
+      "encoding": {
+        "latitude": {"field": "lat"},
+        "longitude": {"field": "lon"},
+        "text": {
+            "value": {
+            "expr": "datum.name=='Londonderry'?'LONDONDERRY-DERRY':upper(datum.name)"
+          }
+
+        }
+
+      }
+
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/ni_cities.csv"
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "order": null,
+        "fontWeight": "bold",
+        "dx": 10,
+        "size":18,
+        "opacity":0.8,
+        "stroke": "black",
+        "strokeOpacity": 0
+      },
+      "transform": [
+        {"filter": "datum.City == 'Belfast'"},
+        {"filter": "datum.Population > 15000"},
+        {
+          "filter": "datum.City != 'Newtownards' & datum.City != 'Castlereagh' & datum.City != 'Bangor' "
+        }
+      ],
+      "encoding": {
+        "text": {
+          "value": {
+            "expr": "datum.City=='Londonderry'?'LONDONDERRY-DERRY':upper(datum.City)"
+          }
+        },
+        "latitude": {"field": "lat"},
+        "longitude": {"field": "lng"}
+      }
+    },
+  ]
+}

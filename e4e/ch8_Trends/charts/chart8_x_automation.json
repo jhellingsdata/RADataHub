@@ -1,0 +1,198 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_automation.csv"
+  },
+  "config": {
+  "view": {
+     "stroke": "transparent"
+  }
+},
+"title": {
+  "text": "Automation Risk - Education and Income",
+  "subtitle": [
+    "Top 50 Jobs (left), and by Education and Income (Right)",
+    "Sources: Frey & Osborne (Risk), BLS (Education, Income)"
+  ],
+  "subtitleFontStyle": "italic",
+  "fontSize": 16
+},
+  "hconcat": [
+    {
+      "width": 175,
+      "height": 610,
+      "params": [
+        {
+          "name": "barHover",
+          "select": {"type": "point", "clear":true, "on": "mouseover", "fields": ["OCC_CODE"]}
+        }
+      ],
+      "mark": "bar",
+      "transform": [
+        {"calculate": "datum.Occupation == 'Cooks, Fast Food' ?  'Cooks - Fast Food' : datum.Occupation == 'Cooks, Restaurant' ?  'Cooks - Restaurant' : split(datum.Occupation, ',')[0]", "as": "ShortName"},
+        {"calculate": "datum.Occupation == 'Cooks - Fast Food' ?  'Cooks, Fast Food' : datum.Occupation == 'Cooks, Restaurant' ?  'Cooks - Restaurant' : split(datum.ShortName, ' and')[0]", "as": "ShortName"},
+        {"calculate": "datum.ShortName == 'Computer' ? 'IT Managers' : datum.ShortName", "as": "ShortName"},
+        {"filter": "datum.Employment_Rank < 51"},
+        {"calculate": "toNumber(datum.Automation_Risk)", "as": "foo"},
+        {"calculate": "max(barHover.OCC_CODE, educHover.OCC_CODE, incomeHover.OCC_CODE)", "as":"foo"}
+      ],
+      "encoding": {
+        "color": {
+          "field": "Automation_Risk",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "ShortName",
+          "axis": {"title": null, "labelFontWeight": "lighter"},
+          "sort": {"field": "Automation_Risk", "order": "descending"}
+        },
+        "opacity":{
+          "condition": {
+            "test": " (isValid(barHover.OCC_CODE)&datum.OCC_CODE!=barHover.OCC_CODE)|(isValid(educHover.OCC_CODE)&datum.OCC_CODE!=educHover.OCC_CODE)|(isValid(incomeHover.OCC_CODE)&datum.OCC_CODE!=incomeHover.OCC_CODE)",
+            "value": 0.2
+          },
+          "value":1
+        },
+        "x": {"field": "Automation_Risk", 
+        "axis": {"title": "Automation Risk", "titleFontWeight":"lighter"},
+        "type": "quantitative"}
+      }
+    },
+    {
+      "vconcat": [
+        {
+          "params": [
+                    {
+          "name": "educHover",
+          "select": {"type": "point", "clear":"dblclick", "on": "mouseover", "fields": ["OCC_CODE"]}
+        }
+          ],
+          "width": 275,
+          "height": 275,
+          "mark": {"type": "circle", "strokeWidth": 0.4, "stroke":"teal"},
+          "encoding": {
+            "color": {
+              "field": "Automation_Risk",
+              "scale": {"scheme": "yellowgreenblue"},
+              "type": "quantitative",
+              "legend": null
+            },
+                    "opacity":{
+          "condition": {
+            "test": " (isValid(barHover.OCC_CODE)&datum.OCC_CODE!=barHover.OCC_CODE)|(isValid(educHover.OCC_CODE)&datum.OCC_CODE!=educHover.OCC_CODE)|(isValid(incomeHover.OCC_CODE)&datum.OCC_CODE!=incomeHover.OCC_CODE)",
+            "value": 0.05
+          },
+          "value":0.8
+        },
+            "size": {
+              "field": "Employment",
+              "type": "quantitative",
+              "scale": {"type": "linear", "range": [10, 300]},
+              "legend": {
+                "orient": "none",
+                "titleOrient": "left",
+                "titleFontWeight": "lighter",
+                "padding": 0,
+                "title": "Workers:",
+                "direction": "horizontal",
+                "legendX": 270,
+                "legendY": -18,
+                "symbolFillColor": "rgb(40,200,240)",
+                "symbolStrokeColor": "rgb(20,160,180)"
+              }
+            },
+            "x": {
+              "field": "education",
+              "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.3,
+                "format": "%",
+                "title": "Average Education (12-Point Scale)",
+                "titleFontWeight": "normal",
+                "tickOpacity": 0
+              }
+            },
+            "y": {
+              "field": "Automation_Risk",
+              "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.3,
+                "format": "%",
+                "title": "Automation Risk",
+                "titleFontWeight": "lighter",
+                "tickOpacity": 0
+              }
+            }
+          }
+        },
+                {
+                            "params": [
+                    {
+          "name": "incomeHover",
+          "select": {"type": "point", "clear":true, "on": "mouseover", "fields": ["OCC_CODE"]}
+        }
+          ],
+          "width": 275,
+          "height": 275,
+          "mark": {"type": "circle", "strokeWidth": 0.4, "stroke":"teal"},
+          "encoding": {
+            "color": {
+              "field": "Automation_Risk",
+              "scale": {"scheme": "yellowgreenblue"},
+              "type": "quantitative",
+              "legend": null
+            },
+                                "opacity":{
+          "condition": {
+            "test": " (isValid(barHover.OCC_CODE)&datum.OCC_CODE!=barHover.OCC_CODE)|(isValid(educHover.OCC_CODE)&datum.OCC_CODE!=educHover.OCC_CODE)|(isValid(incomeHover.OCC_CODE)&datum.OCC_CODE!=incomeHover.OCC_CODE)",
+            "value": 0.05
+          },
+          "value":0.8
+        },
+            "size": {
+              "field": "Employment",
+              "type": "quantitative",
+              "scale": {"type": "linear", "range": [10, 300]},
+              "legend": {
+                "orient": "none",
+                "titleOrient": "left",
+                "titleFontWeight": "lighter",
+                "padding": 0,
+                "title": "Workers:",
+                "direction": "horizontal",
+                "legendX": 270,
+                "legendY": -18,
+                "symbolFillColor": "rgb(280,100,100)",
+                "symbolStrokeColor": "rgb(280,100,100)"
+              }
+            },
+            "x": {
+              "field": "Median",
+              "type": "quantitative",
+              "scale": {"domainMin" : 20000},
+              "axis": {
+                "format": "$.0s",
+                "gridOpacity": 0.3,
+                "title": "Median Income",
+                "titleFontWeight": "normal",
+                "tickOpacity": 0
+              }
+            },
+            "y": {
+              "field": "Automation_Risk",
+              "type": "quantitative",
+              "axis": {
+                "gridOpacity": 0.3,
+                "format": "%",
+                "title": "Automation Risk",
+                "titleFontWeight": "lighter",
+                "tickOpacity": 0
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

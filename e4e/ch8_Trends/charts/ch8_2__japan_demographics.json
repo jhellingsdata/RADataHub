@@ -1,0 +1,135 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/ch8_X_jpndemongraphicsdtav1.csv"
+    },
+    "config": {"view": {"stroke": "transparent"}},
+    "title": {
+      "text": "Japan Demographics 1950-2100",
+      "subtitle": ["Source: UN"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 11,
+      "fontSize": 16,
+      "anchor": "start", "zindex": 0
+    },
+    "width": 500,
+    "height": 300,
+    "layer": [
+      {
+        "encoding": {
+          "x": {
+            "field": "Year",
+            "type": "temporal",
+            "axis": {
+              "title": null,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "ticks": false,
+              "grid": false
+            }
+          },
+          "y": {
+            "field": "val",
+            "type": "quantitative",
+            "axis": {
+              "title": null,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "ticks": false,
+              "gridOpacity": 0.6
+            }
+          },
+          "color": {
+            "field": "var",
+            "type": "nominal",
+            "legend": null,
+            "scale": {
+              "domain": [
+                "Population in Millions",
+                "Median Age",
+                "Life Expectancy at Birth",
+                "Fertility Rate"
+              ], "range": ["rgb(128,0,0)"]
+            }
+          }
+        },
+        "transform": [{"filter": {"param": "View"}}],
+        "layer": [
+          {"mark": "line"},
+          {
+            "params": [
+              {
+                "name": "label",
+                "select": {
+                  "type": "point",
+                  "encodings": ["x"],
+                  "nearest": true,
+                  "on": "mouseover"
+                }
+              },
+              {
+                "name": "View",
+                "select": {"type": "point", "fields": ["var"]},
+                "bind": {
+                  "input": "select",
+                  "options": [
+                    "Population in Millions",
+                    "Median Age",
+                    "Life Expectancy at Birth",
+                    "Fertility Rate"
+                  ],
+                  "name": "Measure"
+                },
+                "value": "Life Expectancy at Birth"
+              }
+            ],
+            "transform": [{"filter": {"param": "View"}}],
+            "mark": "point",
+            "encoding": {
+              "opacity": {
+                "condition": {"param": "label", "empty": false, "value": 1},
+                "value": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "transform": [
+          {"filter": {"param": "label", "empty": false}},
+          {"filter": {"param": "View"}}
+        ],
+        "layer": [
+          {
+            "mark": {"type": "rule", "color": "gray"},
+            "encoding": {
+              "x": {"type": "temporal", "field": "Year", "aggregate": "min"}
+            }
+          },
+          {
+            "encoding": {
+              "text": {"type": "quantitative", "field": "val"},
+              "x": {"type": "temporal", "field": "Year"},
+              "y": {"type": "quantitative", "field": "val"}
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "text",
+                  "stroke": "white",
+                  "strokeWidth": 2,
+                  "align": "left",
+                  "dx": 5,
+                  "dy": -5
+                }
+              },
+              {
+                "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+                "encoding": {"color": {"type": "nominal", "field": "var"}}
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
