@@ -95,7 +95,7 @@
               "text": {"field":"type"}
             }
           },
-          {"mark": "line"},
+          {"mark": {"type": "line", "interpolate":"basis"}},
           {
             "params": [
               {

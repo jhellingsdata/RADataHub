@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;600&family=Raleway:wght@200;300;400;600;700&display=swap');
+
+body {
+    background-color: white;
+    margin: 3rem auto;
+    min-width: 750px;
+    max-width: 1500px;
+  }
+  
+  h1 {
+    text-align: left;
+    font-family: 'Circular Std Bold', 'Outfit';
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 0rem;
+  }
+
+  h2 {
+    text-align: right;
+    font-family: 'Circular Std Bold', 'Outfit';
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 0.1rem;
+    font-size: 1.5em;
+  }
+
+  h3 {
+    text-align: right;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 300;
+    margin-top: 0rem;
+    font-size: 1.2em;
+  }
+
+  summary {
+    text-align: right;
+    font-family: 'Circular Std Bold', 'Outfit';
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  figure {
+    /* max-width: 600px; */
+    min-width: 450px;
+    margin: 0;
+    padding-bottom: 16px !important;
+  }
+
+  @media screen and (min-width: 35rem) {
+    section {
+      flex-direction: row;
+    }
+  }
+  section > * {
+    flex: 1;
+  }
+  
+  .weekFigures {
+    padding: 0 1rem;
+    padding-left: 0px;
+    margin-left: 16px;
+  }
+
+  .weekFigures > figure:first-of-type > div:first-of-type {
+    border-top: 5px solid black;
+  }
+
+  .weekFigures p {
+    font-family: Georgia;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  @media screen and (min-width: 35rem) {
+    .weekFigures p {
+      margin: 0;
+    }
+  }
+  @media screen and (min-width: 35rem) {
+    .weekFigures p:not(:last-of-type) {
+      min-height: 90vh;
+    }
+  }
+  
+  .graphDesc {
+    align-self: flex-start;
+    margin: 0;
+    width: 100%;
+    min-width: 300px;
+    justify-content: right;
+    top: 20px;
+    border-top: 5px solid black;
+    max-width: 30%;
+  }
+  @media screen and (min-width: 35rem) {
+    .graphDesc {
+      position: sticky;
+    }
+  }
+
+  .dataSource{
+    padding-top: 10px;
+  }
+
+  a {
+    color: black;
+    font-weight: bold;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+  /* Week 5 */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: auto;
+  }
+  
+  .grid > div {
+    padding: 0 !important;
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  #audioChart{
+    width:825px;
+  }
+
+  #mlFirst{
+    width: 1000px;
+  }
+
+  #mlSecond{
+    width:1000px;
+  }

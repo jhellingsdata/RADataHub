@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title for the page -->
+    <title>Inactivity Graphs and Maps</title>
+
+    <link rel="stylesheet" href="portfolio.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1> Inactivity Charts and Maps</h1>
+
+    <section>
+        <div class="weekFigures">
+            <figure id="week1fig1"> </figure>
+            </br>
+            <figure id="week1fig2"> </figure>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        specs = [ "Belfast_home.json", "NI_home.json", "NI_sick_graph.json", "NI_sick_map.json", "NI_Inactive.json", "Belfast_Inactive.json",   "ni_50_64_inac.json", "NI_headline.json",   "belfast_sick.json" ]
+
+        groups = {
+            'UK Wide': [
+                "constituency_level.json",
+                "UK_gender_count.json",
+                "UK_gender_rate.json",
+                "UK_reasons_count.json",
+                "UK_age_count.json",
+                "male_reasons_count.json",
+                "female_reasons_count.json"
+            ],
+            'Scotland' : [
+                "sct_headline.json",
+                "inver_glasgow.json",
+                "sct_sick_graph.json",
+                "sct_50_64.json",
+                "sct_50_64_inac.json",
+                "glasgow_constituencies.json"
+                ],
+            'Northern Ireland' : [  "NI_Inactive.json", "NI_home.json", "NI_sick_graph.json", "NI_sick_map.json",, "Belfast_Inactive.json",  "Belfast_home.json", "belfast_sick.json", "ni_50_64_inac.json", "NI_headline.json"]
+        }
+
+        for (const [group_name, group_specs] of Object.entries(groups)) {
+            let section = document.createElement("section");
+            let graphDesc = document.createElement("div");
+            let weekFigures = document.createElement("div");
+            let figure = document.createElement("figure");
+            let h2 = document.createElement("h2");
+            let h3 = document.createElement("h3");
+
+            group_name_formatted = group_name.replace(/\s/g, '_');
+
+            for (i = 0; i < group_specs.length; i++) {
+                let figure = document.createElement("figure");
+                figure.id = "fig_" +group_name_formatted+ i;
+                weekFigures.appendChild(figure);
+
+                // add a figure link
+                let figLink = document.createElement("a");
+                figLink.href = group_specs[i];
+                figLink.innerHTML = group_specs[i];
+                h3.appendChild(document.createElement("br"));
+                h3.appendChild(figLink);
+
+                vegaEmbed('#fig_' +group_name_formatted+ i, group_specs[i]);
+            }
+
+            h2.innerHTML = group_name;
+
+            graphDesc.className = "graphDesc";
+            weekFigures.className = "weekFigures";
+            
+            section.appendChild(graphDesc);
+            section.appendChild(weekFigures);
+            weekFigures.appendChild(figure);
+            graphDesc.appendChild(h2);
+            graphDesc.appendChild(h3);
+
+            document.body.appendChild(section);
+
+            //vegaEmbed('#fig' + i, specs[i]);
+        }
+
+        // for (i = 0; i < specs.length; i++) {
+
+        //     /*
+        //     Structure:
+        //         <section>
+        //             <div class="graphDesc">
+        //                 <h2> Chart 1 </h2>
+        //                 <h3> male_reasons_count.json </h3>
+                    
+        //             </div>
+                    
+        //             <div class="weekFigures">
+        //                 <figure id="week1fig1"> </figure>
+        //             </br>
+        //             </div>
+        //         </section>
+        //     */
+
+        //     let section = document.createElement("section");
+        //     let graphDesc = document.createElement("div");
+        //     let weekFigures = document.createElement("div");
+        //     let figure = document.createElement("figure");
+        //     let h2 = document.createElement("h2");
+        //     let h3 = document.createElement("h3");
+
+        //     figure.id = "fig" + i;
+        //     h3.innerHTML = specs[i];
+        //     h2.innerHTML = "Chart " + (i + 1);
+
+        //     graphDesc.className = "graphDesc";
+        //     weekFigures.className = "weekFigures";
+            
+        //     section.appendChild(graphDesc);
+        //     section.appendChild(weekFigures);
+        //     weekFigures.appendChild(figure);
+        //     graphDesc.appendChild(h2);
+        //     graphDesc.appendChild(h3);
+
+        //     document.body.appendChild(section);
+
+        //     vegaEmbed('#fig' + i, specs[i]);
+        // }
+
+
+    </script>
+</body>

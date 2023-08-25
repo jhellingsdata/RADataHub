@@ -1,161 +1,164 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {
-    "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/sctheadv4.csv"
-  },
-  "config": {"view": {"stroke": "transparent"}},
-  "title": {
-    "text": "Economic Inactivity in Scotland",
-    "subtitle": ["Ages 16-64, Source: ONS"],
-    "subtitleFontSize": 11,
-    "subtitleFontWeight": "lighter",
-    "fontSize": 16,
-    "subtitleColor": "#676A86",
-    "anchor": "start",
-    "color": "#676A86",
-    "font": "Circular Std"
-  },
-  "transform": [
-    {"calculate": "(datum.obs2)", "as": "obvs2"},
-    {"calculate": "datum.obvs2+'%'", "as": "val2"}
-  ],
-  "width": 500,
-  "height": 350,
-  "layer": [
-
-    {
-      "encoding": {
-        "x": {
-          "field": "DATE",
-          "type": "temporal",
-          "axis": {
-            "title": null,
-            "labelPadding": 5,
-            "labelFontSize": 11,
-            "ticks": false,
-            "grid": false,
-            "labelSeparation": 5,
-            "labelAngle": 0,
-            "labelColor": "#676A86",
-            "labelOpacity": 0.7,
-            "orient": "bottom",
-            "tickColor": "#676A86"
-          }
-        },
-        "y": {
-          "field": "obs",
-          "type": "quantitative",
-          "axis": {
-            "title": null,
-            "labelFontSize": 11,
-            "ticks": false,
-            "gridColor": "#676A86",
-            "gridDash": [1, 5],
-            "gridOpacity": 0.5,
-            "labelColor": "#676A86",
-            "labelOpacity": 0.7,
-            "labelPadding": 5,
-            "tickColor": "#676A86",
-            "tickCount": 8,
-            "tickOpacity": 0.5,
-            "domainColor": "#676A86",
-            "domainOpacity": 0.5,
-            "format": "%"
-          },
-          "scale": {"domain": [0.2, 0.26]}
-        },
-        "color": {"value": "#3275a8"},
-        "tooltip": [
-          {
-            "field": "DATE",
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/sctheadv4.csv"
+    },
+    "config": {"view": {"stroke": "transparent"}},
+    "title": {
+      "text": "Economic Inactivity in Scotland",
+      "subtitle": ["Ages 16-64, Source: ONS"],
+      "subtitleFontSize": 11,
+      "subtitleFontWeight": "lighter",
+      "fontSize": 16,
+      "subtitleColor": "#676A86",
+      "anchor": "start",
+      "color": "#676A86",
+      "font": "Circular Std"
+    },
+    "transform": [
+      {"calculate": "(slice(datum.DATE,0,4))", "as": "year"},
+      {"calculate": "{'JAN': 0, 'FEB': 1, 'MAR': 2, 'APR': 3, 'MAY': 4, 'JUN': 5, 'JUL': 6, 'AUG': 7, 'SEP': 8, 'OCT': 9, 'NOV': 10, 'DEC': 11}[slice(datum.DATE,5)]", "as": "month"},
+      {"calculate": "datetime(datum.year, datum.month, 1)", "as": "DATE2"},
+      {"calculate": "(datum.obs2)", "as": "obvs2"},
+      {"calculate": "datum.obvs2+'%'", "as": "val2"}
+    ],
+    "width": 500,
+    "height": 350,
+    "layer": [
+  
+      {
+        "encoding": {
+          "x": {
+            "field": "DATE2",
             "type": "temporal",
-            "format": "%B %Y",
-            "title": "Date"
+            "axis": {
+              "title": null,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "ticks": false,
+              "grid": false,
+              "labelSeparation": 5,
+              "labelAngle": 0,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "orient": "bottom",
+              "tickColor": "#676A86"
+            }
+          },
+          "y": {
+            "field": "obs",
+            "type": "quantitative",
+            "axis": {
+              "title": null,
+              "labelFontSize": 11,
+              "ticks": false,
+              "gridColor": "#676A86",
+              "gridDash": [1, 5],
+              "gridOpacity": 0.5,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "labelPadding": 5,
+              "tickColor": "#676A86",
+              "tickCount": 8,
+              "tickOpacity": 0.5,
+              "domainColor": "#676A86",
+              "domainOpacity": 0.5,
+              "format": "%"
+            },
+            "scale": {"domain": [0.2, 0.26]}
+          },
+          "color": {"value": "#3275a8"},
+          "tooltip": [
+            {
+              "field": "DATE2",
+              "type": "temporal",
+              "format": "%B %Y",
+              "title": "Date"
+            }
+          ]
+        },
+        "layer": [
+          {"mark": {"type": "line", "interpolate": "basis-open"}},
+          {
+            "params": [
+              {
+                "name": "label",
+                "select": {
+                  "type": "point",
+                  "encodings": ["x"],
+                  "nearest": true,
+                  "on": "mouseover"
+                }
+              }
+            ],
+            "mark": "circle",
+            "encoding": {
+              "opacity": {
+                "condition": {"param": "label", "empty": false, "value": 1},
+                "value": 0
+              }
+            }
           }
         ]
       },
-      "layer": [
-        {"mark": {"type": "line", "interpolate": "basis-open"}},
-        {
-          "params": [
-            {
-              "name": "label",
-              "select": {
-                "type": "point",
-                "encodings": ["x"],
-                "nearest": true,
-                "on": "mouseover"
+      {
+        "transform": [{"filter": {"param": "label", "empty": false}}],
+        "layer": [
+          {
+            "mark": {"type": "rule", "color": "gray"},
+            "encoding": {
+              "x": {"type": "temporal", "field": "DATE2", "aggregate": "min"}
+            }
+          },
+          {
+            "encoding": {
+              "text": {"type": "nominal", "field": "val2"},
+              "x": {"type": "temporal", "field": "DATE2"},
+              "y": {"type": "quantitative", "field": "obs"}
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "text",
+                  "stroke": "white",
+                  "strokeWidth": 2,
+                  "align": "left",
+                  "dx": -15,
+                  "dy": 10,
+                  "opacity": 0.8
+                },
+                "encoding": {"color": {"value": "#3275a8"}}
+              },
+              {
+                "mark": {"type": "text", "align": "left", "dx": -15, "dy": 10},
+                "encoding": {"color": {"value": "#3275a8"}}
               }
-            }
-          ],
-          "mark": "circle",
-          "encoding": {
-            "opacity": {
-              "condition": {"param": "label", "empty": false, "value": 1},
-              "value": 0
-            }
+            ]
           }
-        }
-      ]
-    },
-    {
-      "transform": [{"filter": {"param": "label", "empty": false}}],
-      "layer": [
-        {
-          "mark": {"type": "rule", "color": "gray"},
-          "encoding": {
-            "x": {"type": "temporal", "field": "DATE", "aggregate": "min"}
+        ]
+      },
+      {
+        "encoding": {
+          "x": {"field": "DATE2", "type": "temporal", "aggregate": "max"},
+          "y": {
+            "field": "obs",
+            "aggregate": {"argmax": "DATE2"},
+            "type": "quantitative"
           }
         },
-        {
-          "encoding": {
-            "text": {"type": "nominal", "field": "val2"},
-            "x": {"type": "temporal", "field": "DATE"},
-            "y": {"type": "quantitative", "field": "obs"}
-          },
-          "layer": [
-            {
-              "mark": {
-                "type": "text",
-                "stroke": "white",
-                "strokeWidth": 2,
-                "align": "left",
-                "dx": -15,
-                "dy": 10,
-                "opacity": 0.8
-              },
-              "encoding": {"color": {"value": "#3275a8"}}
+        "layer": [
+          {
+            "mark": {
+              "type": "text",
+              "font": "Circular Std",
+              "color": "rgb(58,105,156)",
+              "align": "left",
+              "dx": 2,
+              "dy": 10
             },
-            {
-              "mark": {"type": "text", "align": "left", "dx": -15, "dy": 10},
-              "encoding": {"color": {"value": "#3275a8"}}
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "encoding": {
-        "x": {"field": "DATE", "type": "temporal", "aggregate": "max"},
-        "y": {
-          "field": "obs",
-          "aggregate": {"argmax": "DATE"},
-          "type": "quantitative"
-        }
-      },
-      "layer": [
-        {
-          "mark": {
-            "type": "text",
-            "font": "Circular Std",
-            "color": "rgb(58,105,156)",
-            "align": "left",
-            "dx": 2,
-            "dy": 10
-          },
-          "encoding": {"text": {"field": "var"}}
-        }
-      ]
-    }
-  ]
-}
+            "encoding": {"text": {"field": "var"}}
+          }
+        ]
+      }
+    ]
+  }

@@ -16,6 +16,9 @@
       "font": "Circular Std"
     },
     "transform": [
+      {"calculate": "(slice(datum.DATE,0,4))", "as": "year"},
+      {"calculate": "{'JAN': 0, 'FEB': 1, 'MAR': 2, 'APR': 3, 'MAY': 4, 'JUN': 5, 'JUL': 6, 'AUG': 7, 'SEP': 8, 'OCT': 9, 'NOV': 10, 'DEC': 11}[slice(datum.DATE,5)]", "as": "month"},
+      {"calculate": "datetime(datum.year, datum.month, 1)", "as": "DATE2"},
       {"calculate": "(datum.obs2)", "as": "obvs2"},
       {"calculate": "datum.obvs2+'%'", "as": "val2"}
     ],
@@ -26,7 +29,7 @@
       {
         "encoding": {
           "x": {
-            "field": "DATE",
+            "field": "DATE2",
             "type": "temporal",
             "axis": {
               "title": null,
@@ -62,12 +65,12 @@
               "domainOpacity": 0.5,
               "format": "%"
             },
-            "scale": {"domain": [0.2, 0.35]}
+            "scale": {"domain": [0.2, 0.33]}
           },
           "color": {"value": "#3275a8"},
           "tooltip": [
             {
-              "field": "DATE",
+              "field": "DATE2",
               "type": "temporal",
               "format": "%B %Y",
               "title": "Date"
@@ -104,13 +107,13 @@
           {
             "mark": {"type": "rule", "color": "gray"},
             "encoding": {
-              "x": {"type": "temporal", "field": "DATE", "aggregate": "min"}
+              "x": {"type": "temporal", "field": "DATE2", "aggregate": "min"}
             }
           },
           {
             "encoding": {
               "text": {"type": "nominal", "field": "val2"},
-              "x": {"type": "temporal", "field": "DATE"},
+              "x": {"type": "temporal", "field": "DATE2"},
               "y": {"type": "quantitative", "field": "obs"}
             },
             "layer": [
@@ -136,10 +139,10 @@
       },
       {
         "encoding": {
-          "x": {"field": "DATE", "type": "temporal", "aggregate": "max"},
+          "x": {"field": "DATE2", "type": "temporal", "aggregate": "max"},
           "y": {
             "field": "obs",
-            "aggregate": {"argmax": "DATE"},
+            "aggregate": {"argmax": "DATE2"},
             "type": "quantitative"
           }
         },

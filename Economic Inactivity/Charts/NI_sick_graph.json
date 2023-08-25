@@ -1,207 +1,214 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/nirelandinav8.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/nirelandinav8.csv"
+  },
+  "config": {"view": {"stroke": "transparent"}},
+  "title": {
+    "text": "Economic Inactivity: Northern Ireland, Temporary and Long-Term Illness",
+    "subtitle": ["Ages 16-64, Source: ONS"],
+    "subtitleFontWeight": "lighter",
+    "subtitleFontStyle": "normal",
+    "subtitleFontSize": 11,
+    "fontSize": 16,
+    "anchor": "start",
+    "color": "#676A86",
+    "font": "Circular Std",
+    "subtitleColor": "#676A86"
+  },
+  "transform": [
+    {
+      "calculate": "{'Male temporary illness' : 'Male','Male long-term illness' : 'Male','Female temporary illness' : 'Female','Female long-term illness' : 'Female'}[datum.Group]",
+      "as": "Gender"
     },
-    "config": {"view": {"stroke": "transparent"}},
-     "title": {
-        "text": "Economic Inactivity: Northern Ireland, Temporary and Long-Term Illness",
-        "subtitle": ["Ages 16-64, Source: ONS"],
-        "subtitleFontWeight": "lighter",
-        "subtitleFontStyle": "normal",
-        
-        "subtitleFontSize": 11,
-        "fontSize": 16,
-        "anchor": "start",
-        "color": "#676A86",
-        "font": "Circular Std",
-        "subtitleColor": "#676A86"
-      },
-    "transform": [
-      {"calculate": "{'Male temporary illness' : 'Male','Male long-term illness' : 'Male','Female temporary illness' : 'Female','Female long-term illness' : 'Female'}[datum.Group]", "as": "Gender"},
-      {"calculate": "{'Male temporary illness' : 'Temporary Illness','Male long-term illness' : 'Long-Term Illness','Female temporary illness' : 'Temporary Illness','Female long-term illness' : 'Long-Term Illness'}[datum.Group]", "as": "Illness_type"},
-      {"calculate": "(datum.obvs)", "as": "obvs2"},
-      {"calculate": "datum.obvs2", "as": "val2"}
-    ],
-    "width": 500,
-    "height": 300,
-    "layer": [
-      {
-        "encoding": {
-          "x": {
-            "field": "DATE2",
-            "type": "temporal",
-            "axis": {
-              "title": null,
-              "labelPadding": 5,
-              "labelFontSize": 11,
-              "ticks": false,
-              "grid": false,
-              "labelSeparation": 5,
-              "labelAngle": 0,
-              "labelColor": "#676A86",
-              "labelOpacity": 0.7,
-              "orient": "bottom",
-              "tickColor": "#676A86"
-            }
-          },
-          "y": {
-            "field": "obvs",
-            "type": "quantitative",
-            "axis": {
-              "title": null,
-              "labelFontSize": 11,
-              "ticks": false,
-              "gridColor": "#676A86",
-              "gridDash": [1, 5],
-              "gridOpacity": 0.5,
-              "labelColor": "#676A86",
-              "labelOpacity": 0.7,
-              "labelPadding": 5,
-              "tickColor": "#676A86",
-              "tickCount": 8,
-              "tickOpacity": 0.5,
-              "domainColor": "#676A86",
-              "domainOpacity": 0.5
-            }
-          },
-          "color": {
-            "field": "Group",
-            "type": "nominal",
-            "legend": null,
-            "scale": {
-              "domain": [
-                "Total Inactive",
-                "Female long-term illness",
-                "Female temporary illness",
-                "Male temporary illness",
-                "Male long-term illness"
-              ],
-              "range": ["#2a92bf", "orange", "green", "darkred", "#bf752a"]
-            }
+    {
+      "calculate": "{'Male temporary illness' : 'Temporary Illness','Male long-term illness' : 'Long-Term Illness','Female temporary illness' : 'Temporary Illness','Female long-term illness' : 'Long-Term Illness'}[datum.Group]",
+      "as": "Illness_type"
+    },
+    {"calculate": "(datum.obvs)", "as": "obvs2"},
+    {"calculate": "datum.obvs2", "as": "val2"}
+  ],
+  "width": 500,
+  "height": 300,
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "DATE2",
+          "type": "temporal",
+          "axis": {
+            "title": null,
+            "labelPadding": 5,
+            "labelFontSize": 11,
+            "ticks": false,
+            "grid": false,
+            "labelSeparation": 5,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86"
           }
         },
-        "transform": [{"filter": {"param": "View"}}],
-        "layer": [
-                  {
-                    "transform": [
-                      {"calculate": "split(datum.type, ' ')[0]", "as": "type"}
-                    ],
-            "mark": {"type": "text", "align":"left", "dx":3, "font":"Circular Std"},
-            "encoding": {
-              "x": {"field": "DATE2", "aggregate":"max", "type": "temporal"},
-              "opacity": {"value":1},
-              "y": {"field":"obvs", "aggregate":{"argmax": "DATE2"}},
-              "text": {"field":"type"}
-            }
-          },
-          {"mark": "line"},
-          {
-            "params": [
-              {
-                "name": "label",
-                "select": {
-                  "type": "point",
-                  "encodings": ["x"],
-                  "nearest": true,
-                  "on": "mouseover"
-                }
-              },
-              {
-                "name": "View",
-                "select": {"type": "point", "fields": ["Illness_type"]},
-                "bind": {
-                  "input": "select",
-                  "options": [
-                    "Temporary Illness",
-                    "Long-Term Illness"
-                  ],
-                  "name": "Group:"
-                },
-                "value": "Temporary Illness"
-              }
+        "y": {
+          "field": "obvs",
+          "type": "quantitative",
+          "axis": {
+            "title": null,
+            "labelFontSize": 11,
+            "ticks": false,
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5
+          }
+        },
+        "color": {
+          "field": "Group",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Total Inactive",
+              "Female long-term illness",
+              "Female temporary illness",
+              "Male temporary illness",
+              "Male long-term illness"
             ],
-            "transform": [{"filter": {"param": "View"}}],
-            "mark": "point",
-            "encoding": {
-              "opacity": {
-                "condition": {"param": "label", "empty": false, "value": 1},
-                "value": 0
-              }
-            }
+            "range": ["#2a92bf", "orange", "green", "darkred", "#bf752a"]
           }
-        ]
+        }
       },
-      {
-        "transform": [
-          {"filter": {"param": "label", "empty": false}},
-          {"filter": {"param": "View"}}
-        ],
-        "layer": [
-          {
-            "mark": {"type": "rule", "color": "gray"},
-            "encoding": {
-              "x": {"type": "temporal", "field": "DATE2", "aggregate": "min"}
-            }
+      "transform": [{"filter": {"param": "View"}}],
+      "layer": [
+        {
+          "transform": [
+            {"calculate": "split(datum.type, ' ')[0]", "as": "type"}
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 3,
+            "font": "Circular Std"
           },
-          {
-            "encoding": {
-              "text": {"type": "nominal", "field": "val2"},
-              "x": {"type": "temporal", "field": "DATE2"},
-              "y": {"type": "quantitative", "field": "obvs"}
+          "encoding": {
+            "x": {"field": "DATE2", "aggregate": "max", "type": "temporal"},
+            "opacity": {"value": 1},
+            "y": {"field": "obvs", "aggregate": {"argmax": "DATE2"}},
+            "text": {"field": "type"}
+          }
+        },
+        {"mark": {"type": "line", "interpolate":"basis"}},
+        {
+          "params": [
+            {
+              "name": "label",
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "nearest": true,
+                "on": "mouseover"
+              }
             },
-            "layer": [
-              {
-                "mark": {
-                  "type": "text",
-                  "stroke": "white",
-                  "strokeWidth": 2,
-                  "align": "left",
-                  "dx": 5,
-                  "dy": -5,
-                  "opacity": 0.8
-                },
-                "encoding": {
-                  "color": {
-                    "legend": null,
-                    "type": "nominal",
-                    "field": "Group",
-                    "scale": {
-                      "domain": [
-                        "Total Inactive",
-                        "Male temporary illness",
-                        "Female long-term illness",
-                        "Female temporary illness",
-                        "Male long-term illness"
-                      ],
-                      "range": ["lightblue", "orange", "green", "darkred", "pink"]
-                    }
-                  }
-                }
+            {
+              "name": "View",
+              "select": {"type": "point", "fields": ["Illness_type"]},
+              "bind": {
+                "input": "select",
+                "options": ["Temporary Illness", "Long-Term Illness"],
+                "name": "Group:"
               },
-              {
-                "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
-                "encoding": {
-                  "color": {
-                    "legend": null,
-                    "type": "nominal",
-                    "field": "Group",
-                    "scale": {
-                      "domain": [
-                        "Total Inactive",
-                        "Male temporary illness",
-                        "Female long-term illness",
-                        "Female temporary illness",
-                        "Male long-term illness"
-                      ],
-                      "range": ["lightblue", "orange", "green", "darkred", "pink"]
-                    }
+              "value": "Temporary Illness"
+            }
+          ],
+          "transform": [{"filter": {"param": "View"}}],
+          "mark": "point",
+          "encoding": {
+            "opacity": {
+              "condition": {"param": "label", "empty": false, "value": 1},
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "transform": [
+        {"filter": {"param": "label", "empty": false}},
+        {"filter": {"param": "View"}}
+      ],
+      "layer": [
+        {
+          "mark": {"type": "rule", "color": "gray"},
+          "encoding": {
+            "x": {"type": "temporal", "field": "DATE2", "aggregate": "min"}
+          }
+        },
+        {
+          "encoding": {
+            "text": {"type": "nominal", "field": "val2"},
+            "x": {"type": "temporal", "field": "DATE2"},
+            "y": {"type": "quantitative", "field": "obvs"}
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "stroke": "white",
+                "strokeWidth": 2,
+                "align": "left",
+                "dx": 5,
+                "dy": -5,
+                "opacity": 0.8
+              },
+              "encoding": {
+                "color": {
+                  "legend": null,
+                  "type": "nominal",
+                  "field": "Group",
+                  "scale": {
+                    "domain": [
+                      "Total Inactive",
+                      "Male temporary illness",
+                      "Female long-term illness",
+                      "Female temporary illness",
+                      "Male long-term illness"
+                    ],
+                    "range": ["lightblue", "orange", "green", "darkred", "pink"]
                   }
                 }
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+            },
+            {
+              "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+              "encoding": {
+                "color": {
+                  "legend": null,
+                  "type": "nominal",
+                  "field": "Group",
+                  "scale": {
+                    "domain": [
+                      "Total Inactive",
+                      "Male temporary illness",
+                      "Female long-term illness",
+                      "Female temporary illness",
+                      "Male long-term illness"
+                    ],
+                    "range": ["lightblue", "orange", "green", "darkred", "pink"]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -9,7 +9,7 @@
   },
   "title": {
     "text": "Belfast: Economic Inactivity",
-    "subtitle": ["Long-Term Sick or Disabled"],
+    "subtitle": ["Long-Term Sick or Disabled, 16+ years", "Source: NISRA Census 2021"],
     "anchor": "start",
     "dy": 0,
     "fontSize": 15,
@@ -32,7 +32,7 @@
     {"calculate": "toNumber(datum.Value)", "as": "Value"}
   ],
   "projection": {
-    "type": "mercator",
+    "type": "mercator"
 
     },
   "layer": [
@@ -74,7 +74,7 @@
         "fontWeight": "normal",
         "dx": 10,
         "size": 9,
-        "color": "rgba(0,0,0,0.5)",
+        "color": "rgba(0,0,0,0.5)"
 
       },
       "encoding": {
@@ -121,6 +121,6 @@
         "latitude": {"field": "lat"},
         "longitude": {"field": "lng"}
       }
-    },
+    }
   ]
 }

@@ -1,0 +1,341 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Google's stock price over time.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/Constituencies/inac_per.csv"
+    },
+    "transform": [
+      {"filter": "datum.Constituency != 'Orkney and Shetland'"},
+      {
+        "lookup": "GEO_CODE",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/Constituencies/westminster.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "westminster"
+            }
+          },
+          "key": "properties.PCON21CD",
+          "fields": ["properties", "type", "geometry"]
+        }
+      },
+      {
+        "filter": "indexof(['Glasgow Central', 'Glasgow East', 'Glasgow North', 'Glasgow North East', 'Glasgow North West', 'Glasgow South', 'Glasgow South West', 'East Dunbartonshire', 'East Renfrewshire', 'Inverclyde', 'Airdrie and Shotts', 'Coatbridge, Chryston and Bellshill', 'Cumbernauld, Kilsyth and Kirkintilloch East', 'Motherwell and Wishaw', 'Paisley and Renfrewshire North', 'Paisley and Renfrewshire South', 'East Kilbride, Strathaven and Lesmahagow', 'Lanark and Hamilton East', 'Rutherglen and Hamilton West', 'West Dunbartonshire'], datum.Constituency)!=-1 "
+      },
+      {
+        "calculate": "datum.properties.LAT", "as": "LAT"
+      },
+          {
+        "calculate": "datum.properties.LONG", "as": "LON"
+      }
+    ],
+    "title": {
+      "text": "Economic Inactivity in, and around, Glasgow",
+      "fontSize": 16,
+      "font": "Circular Std",
+      "align": "left",
+      "anchor": "start",
+      "dy": 0,
+      "dx": 25,
+      "subtitleFontWeight": "lighter",
+      "subtitle": [
+        "Inactive Proportion of 16-64 Population",
+        "95% Confidence Intervals Shown",
+        "Source: Annual Population Survey"
+      ]
+    },
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+    "vconcat": [
+      {
+        "vconcat": [
+          {
+            "resolve": {"scale": {"color": "independent"}},
+            "height": 60,
+            "width": 400,
+            "transform": [
+              {
+                "filter": "datum.Date == hover.Date & (datum.GEO_CODE == geoClick.GEO_CODE | datum.GEO_CODE == geoHover.GEO_CODE)"
+              },
+              {
+                "fold": ["Inac_pc", "Inac_pc_low", "Inac_pc_high"],
+                "as": ["Series", "Value"]
+              }
+            ],
+            "layer": [
+              {
+                "mark": {"type": "rect", "clip": true},
+                "transform": [
+                  {
+                    "filter": "datum.Series == 'Inac_pc' & datum.GEO_CODE == geoClick.GEO_CODE"
+                  }
+                ],
+                "encoding": {
+                  "y": {"value": 15},
+                  "y2": {"value": 35},
+                  "x2": {"field": "Inac_pc_low"},
+                  "x": {"field": "Inac_pc_high"},
+                  "color": {
+                    "legend": null,
+                    "field": "Inac_pc",
+                    "type": "quantitative",
+                    "scale": {"domain": [0.1, 0.5], "scheme": "lightmulti"}
+                  },
+                  "opacity": {"value": 0.15}
+                }
+              },
+              {
+                "transform": [
+                  {
+                    "filter": "datum.Series != 'Inac_pc' & datum.GEO_CODE == geoClick.GEO_CODE"
+                  }
+                ],
+                "mark": {
+                  "type": "text",
+                  "align": "center",
+                  "fontSize": 9,
+                  "dx": 0,
+                  "dy": 10,
+                  "baseline": "middle",
+                  "opacity": 1
+                },
+                "encoding": {
+                  "opacity": {"value": 0.4},
+                  "text": {"field": "Value", "format": ".0%"}
+                }
+              },
+              {
+                "transform": [{"filter": " datum.Series == 'Inac_pc'"}],
+                "layer": [
+                  {
+                    "mark": {
+                      "type": "text",
+                      "align": "left",
+                      "fontSize": 10,
+                      "dx": 5,
+                      "dy": 5,
+                      "opacity": 1
+                    },
+                    "encoding": {
+                      "text": {
+                        "value": {
+                          "expr": "datum.Constituency + ' ' + format(datum.Value, '.0%')"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "layer": [
+                  {
+                    "encoding": {"y2": {"value": 35}, "y": {"value":15}},
+                    "transform": [
+                      {
+                        "filter": "datum.Series != 'Inac_pc' & datum.GEO_CODE == geoClick.GEO_CODE"
+                      }
+                    ],
+                    "layer": [{"mark": {"type": "rule", "strokeWidth": 1}}]
+                  },
+                  {
+                    "transform": [{"filter": "datum.Series == 'Inac_pc'"}],
+                    "layer": [{"mark": {"type": "rule", "strokeWidth": 3}}]
+                  }
+                ],
+                "encoding": {
+                  "color": {
+                    "legend": {
+                      "orient": "none",
+                      "type": "gradient",
+                      "direction": "horizontal",
+                      "zindex": 0,
+                      "legendX": 0,
+                      "values": [],
+                      "legendY": 30,
+                      "gradientLength": 400,
+                      "title": null
+                    },
+                    "field": "Value",
+                    "type": "quantitative",
+                    "scale": {"domain": [0.1, 0.5], "scheme": "lightmulti"}
+                  }
+                }
+              }
+            ],
+            "encoding": {
+              "opacity": {
+                "condition": [
+                  {"test": "datum.GEO_CODE == geoClick.GEO_CODE", "value": 1}
+                ],
+                "value": 0.7
+              },
+              "y": {"value": 0},
+              "y2": {"value": 40},
+              "x": {
+                "field": "Value",
+                "type": "quantitative",
+                "scale": {"domain": [0.1, 0.5], "clamp": true},
+                "axis": {
+                  "values": [0.1, 0.2, 0.3, 0.4, 0.5],
+                  "labelExpr": "inrange(datum.value, [geoClick.Inac_pc_low, geoClick.Inac_pc_high]) ? '' : format(datum.value, '.0%')",
+                  "ticks": true,
+                  "title": null,
+                  "format": "%",
+                  "labelFontWeight": "lighter",
+                  "offset": -15,
+                  "tickOpacity": 0,
+                  "labelPadding": 0,
+                  "grid": false,
+                  "domain": false,
+                  "position": 0
+                }
+              }
+            }
+          },
+                  {
+            "view": {"fill": "white"},
+            "transform": [{"filter": "datum.Date == hover.Date"}],
+            "width": 400,
+                          "projection": {"type": "identity", "reflectY": true},
+            "height": 300,
+            "layer": [
+  
+              {
+                "mark": {
+                  "type": "geoshape",
+                  "stroke": "black",
+                  "strokeWidth": {
+                    "expr": "datum.GEO_CODE == geoClick.GEO_CODE ? 1.5 : datum.GEO_CODE == geoHover.GEO_CODE ? 0.5 : 0"
+                  }
+                },
+                "params": [
+                  {
+                    "name": "geoHover",
+                    "value": [
+                      {
+                        "Constituency": "Glasgow Central",
+                        "GEO_CODE": "S14000029",
+                        "Inac_pc": 0.288,
+                        "Inac_pc_low": 0.172,
+                        "Inac_pc_high": 0.404,
+                        "default": "yes"
+                      }
+                    ],
+                    "select": {
+                      "type": "point",
+                      "fields": [
+                        "Constituency",
+                        "GEO_CODE",
+                        "Inac_pc",
+                        "Inac_pc_high",
+                        "Inac_pc_low"
+                      ],
+                      "nearest": false,
+                      "on": "mouseover",
+                      "clear": "mouseout"
+                    }
+                  },
+                  {
+                    "name": "geoClick",
+                    "value": [
+                      {
+                        "Constituency": "Glasgow Central",
+                        "GEO_CODE": "S14000029",
+                        "Inac_pc": 0.288,
+                        "Inac_pc_low": 0.172,
+                        "Inac_pc_high": 0.404,
+                        "default": "yes"
+                      }
+                    ],
+                    "select": {
+                      "type": "point",
+                      "fields": [
+                        "Constituency",
+                        "GEO_CODE",
+                        "Inac_pc",
+                        "Inac_pc_high",
+                        "Inac_pc_low"
+                      ],
+                      "nearest": false,
+                      "on": "click",
+                      "clear": "dblclick"
+                    }
+                  }
+                ],
+                "encoding": {
+                  "tooltip":[
+                    {"field": "Constituency"},
+                    {"field": "Inac_pc", "format":".0%", "title":"Inactivity"}
+                  ],
+                  "color": {
+                    "legend": null,
+                    "field": "Inac_pc",
+                    "type": "quantitative",
+                    "scale": {"domain": [0.1, 0.5], "scheme": "lightmulti"}
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "width": 400,
+        "height": 20,
+        "layer": [
+          {
+            "mark": {"type": "rule", "strokeWidth": 3},
+            "params": [
+              {
+                "name": "hover",
+                "value": [{"Date": 1677628800000}],
+                "select": {
+                  "type": "point",
+                  "fields": ["Date"],
+                  "nearest": true,
+                  "on": "mouseover",
+                  "clear": false
+                }
+              }
+            ]
+          },
+          {
+            "mark": {"type": "text", "dy": -15},
+            "encoding": {
+              "text": {"field": "Date", "type": "temporal", "format": "%b %Y"}
+            }
+          }
+        ],
+        "transform": [
+          {
+            "aggregate": [{"op": "count", "field": "Inac_pc", "as": "mean_acc"}],
+            "groupby": ["Date"]
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "Date",
+            "axis": {
+              "title": null,
+              "values": [
+                {"year": 2006},
+                {"year": 2010},
+                {"year": 2014},
+                {"year": 2018},
+                {"year": 2022}
+              ],
+              "tickOpacity": 0,
+              "labelFontWeight": "lighter",
+              "grid": false,
+              "offset": -10
+            },
+            "type": "temporal"
+          },
+          "opacity": {
+            "condition": {"value": 1, "param": "hover", "empty": false},
+            "value": 0
+          }
+        }
+      }
+    ]
+  }
