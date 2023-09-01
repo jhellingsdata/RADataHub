@@ -1,0 +1,246 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/JamesFKean/RA_Summer/main/agebsdinactv2.csv"
+    },
+    "config": {"view": {"stroke": "transparent"}},
+    "title": {
+      "text": "Economic Inactivity  by Age Group",
+      "subtitle": ["Source: ONS"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 11,
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "subtitleColor": "#676A86"
+    },
+    "transform": [
+      {"calculate": "(datum.Val2)", "as": "obvs2"},
+      {"calculate": "datum.obvs2+'%'", "as": "val2"}
+    ],
+    "width": 500,
+    "height": 300,
+    "layer": [
+      {
+        "transform": [{"filter": {"param": "View"}}],
+        "encoding": {
+          "x": {
+            "field": "Date",
+            "type": "temporal",
+            "axis": {
+              "title": null,
+              "labelPadding": 5,
+              "labelFontSize": 11,
+              "ticks": false,
+              "grid": false,
+              "labelSeparation": 5,
+              "labelAngle": 0,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "orient": "bottom",
+              "tickColor": "#676A86"
+            }
+          },
+          "y": {
+            "field": "Value",
+            "type": "quantitative",
+            "axis": {
+              "title": null,
+              "labelFontSize": 11,
+              "ticks": false,
+              "gridColor": "#676A86",
+              "gridDash": [1, 5],
+              "gridOpacity": 0.5,
+              "labelColor": "#676A86",
+              "labelOpacity": 0.7,
+              "labelPadding": 5,
+              "tickColor": "#676A86",
+              "tickCount": 8,
+              "tickOpacity": 0.5,
+              "domainColor": "#676A86",
+              "domainOpacity": 0.5,
+              "format": "%"
+            }
+          },
+          "color": {
+            "field": "Variable",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Ages 16-24",
+                "Ages 25-34",
+                "Ages 35-49",
+                "Ages 50-64",
+                "Ages 65+"
+                
+              ],
+              "range": ["lightblue", "orange", "green", "darkred", "pink"]
+            }, "legend": {"orient": "top", "title": null, "labelColor": "#676A86", "symbolOffset": -33, "offset": 15}
+          }
+        },
+        "layer": [
+          {"mark": "line"},
+          
+          {
+           
+            "params": [
+              {
+                "name": "label",
+                "select": {
+                  "type": "point",
+                  "encodings": ["x"],
+                  "nearest": true,
+                  "on": "mouseover"
+                }
+              },
+              {
+                "name": "View",
+                "select": {"type": "point", "fields": ["Gender"]},
+                "bind": {
+                  "input": "select",
+                  "options": ["All", "Female", "Male"],
+                  "name": "Gender:"
+                },
+                "value": "All"
+              },
+              {
+                "name": "hover",
+                "select": {
+                  "type": "point",
+                  "fields": ["Date"],
+                  "nearest": true,
+                  "on": "mouseover",
+                  "clear": "mouseout"
+                }
+              }
+            ],
+            "mark": "point",
+            "encoding": {
+              "opacity": {
+                "condition": {"param": "label", "empty": false, "value": 1},
+                "value": 0
+              }, "tooltip": [{"field": "Date", "type": "temporal", "format": "%m-%Y"}]
+            }
+          }
+        ]
+      },
+     
+      {
+        "transform": [
+          {"filter": {"param": "label", "empty": false}},
+          {"filter": {"param": "View"}}
+        ],
+        "layer": [
+          {
+            "mark": {"type": "rule", "color": "gray"},
+            "encoding": {
+              "x": {"type": "temporal", "field": "Date", "aggregate": "min"}
+            }
+          },
+          {
+            "encoding": {
+              "text": {"type": "nominal", "field": "val2"},
+              "x": {"type": "temporal", "field": "Date"},
+              "y": {"type": "quantitative", "field": "Value"}
+            },
+            "layer": [
+              {
+                "mark": {
+                  "type": "text",
+                  "stroke": "white",
+                  "strokeWidth": 2,
+                  "align": "left",
+                  "dx": -35,
+                  "dy": -5,
+                  "opacity": 0.8
+                },
+                "encoding": {
+                  "color": {
+                    "type": "nominal",
+                    "field": "Variable",
+                    "scale": {
+                      "domain": [
+                        "Ages 25-34",
+                        "Ages 35-49",
+                        "Ages 50-64",
+                        "Ages 65+",
+                        "Ages 16-24"
+                      ],
+                      "range": ["lightblue", "orange", "green", "darkred", "pink"]
+                    }
+                  }
+                }
+              },
+              {
+                "mark": {"type": "text", "align": "left", "dx": -35, "dy": -5},
+                "encoding": {
+                  "color": {
+                    "type": "nominal",
+                    "field": "Variable",
+                    "scale": {
+                      "domain": [
+                        "Ages 25-34",
+                        "Ages 35-49",
+                        "Ages 50-64",
+                        "Ages 65+",
+                        "Ages 16-24"
+                      ],
+                      "range": ["lightblue", "orange", "green", "darkred", "pink"]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "encoding": {
+          "x": {"field": "Date", "type": "temporal", "aggregate": "max"},
+          "y": {
+            "field": "val2",
+            "aggregate": {"argmax": "Date"},
+            "type": "quantitative"
+          },
+          "color": {"field": "Variable", "type": "nominal"}
+        },
+        "layer": [
+          {"mark": {"type": "circle"}},
+          {
+            "mark": {"type": "text", "align": "left", "dx": 4},
+            "encoding": {
+              "text": {"field": "val2"},
+              "color": {"field": "Variable", "type": "nominal"}
+            }
+          }
+        ]
+      }, 
+      {
+      "data": {
+        "values": [
+          {
+            "image": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+          }
+        ]
+      },
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": 200, 
+        "yOffset": -35
+        
+      },
+      "encoding": {
+        "x": {"value": 300},
+        "y": {"value": -10},
+        "url": {"field": "image", "type": "nominal"}
+      }
+    }
+    ],"autosize": {"type": "pad", "contains": "padding", "resize": true}
+  }
