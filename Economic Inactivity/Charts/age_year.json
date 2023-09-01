@@ -1,0 +1,159 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Google's stock price over time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Economic%20Inactivity/inac_per_age_yearly.csv"
+  },
+  "width": "container",
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "height": 350,
+  "params": [
+    {
+      "name": "YearSelect",
+      "value": 2005,
+      "bind": {
+        "input": "range",
+        "min": 1992,
+        "max": 2021,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "transform": [{"calculate": "datum.Value/100", "as": "Value"}],
+  "layer": [
+    {
+      "data": {"values": [{"Date": "3000"}]},
+      "mark": {
+        "type": "text",
+        "fontWeight": "lighter",
+        "align": "left",
+        "color": "#676A86",
+        "fontSize": 10
+      },
+      "encoding": {
+        "color": null,
+        "x": {"value": 1},
+        "text": {"value": "Economic Inactivity by Group Midpoint, Source: LFS"},
+        "y": {"value": -10}
+      }
+    },
+    {
+      "transform": [{"filter": "datum.Date <= YearSelect"}],
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "dx": 2,
+            "align": "left",
+            "stroke": "white",
+            "strokeWidth": 0.5,
+            "size": {"expr": "datum.Date == YearSelect ? 20 : 13"},
+            "opacity": {
+              "expr": "datum.Date == YearSelect ? 1 : datum.Date % 5 == 0 ? 0.2: 0"
+            },
+            "fontWeight": {
+              "expr": "datum.Date == YearSelect ? 'bold' : 'normal'"
+            },
+            "text": {"expr": "datum.Date"}
+          },
+          "transform": [{"filter": "datum.Age_Midpoint == 57"}]
+        },
+        {
+          "mark": {
+            "type": "line",
+            "opacity": {"expr": "datum.Date == YearSelect ? 1 : 0.05"},
+            "size": 3
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "size": 60,
+            "opacity": {"expr": "datum.Date == YearSelect ? 1 : 0.0"}
+          }
+        }
+      ]
+    },
+    {
+      "transform": [{"filter": "datum.Date == YearSelect"}],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontWeight": "bold",
+        "size": 12,
+        "dx": {
+          "expr": "{'16.5':5, '21': 4, '29.5': 0, '37.2':0, '42':0, '57':-35}[datum.Age_Midpoint]"
+        },
+        "dy": {
+          "expr": "{'16.5':0, '21': -4, '29.5': 10, '42':10, '57':-5}[datum.Age_Midpoint]"
+        },
+        "text": {"expr": "slice(datum.Series, 5,12)"}
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Age_Midpoint",
+      "axis": {
+        "grid": false,
+        "domainColor": "#919ae4",
+        "domainOpacity": 0.5,
+        "labelAngle": 0,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "orient": "bottom",
+        "tickColor": "#676A86",
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": "",
+        "titleAlign": "center",
+        "titleAnchor": "middle",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleX": 207,
+        "titleY": -15
+      },
+      "type": "quantitative",
+      "scale": {"domainMin": 15}
+    },
+    "color": {
+      "legend": null,
+      "condition": [{"test": "datum.Date == YearSelect", "value": "teal"}],
+      "field": "Date",
+      "type": "quantitative",
+      "scale": {"range": ["rgb(0,0,0)", "rgb(0,0,0)"]}
+    },
+    "y": {
+      "field": "Value",
+      "axis": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "format": "%",
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "labelPadding": 5,
+        "tickColor": "#676A86",
+        "tickCount": 8,
+        "tickOpacity": 0.5,
+        "ticks": false,
+        "title": "Inactivity by Age Group",
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 16,
+        "titleFont": "Circular Std",
+        "titleOpacity": 0.8,
+        "titleX": 0,
+        "titleY": -18
+      },
+      "type": "quantitative",
+      "scale": {"domain": [0, 0.8]}
+    }
+  }
+}
