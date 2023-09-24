@@ -3790,7 +3790,7 @@ store_id,custom_id,cpi_item_id,product_id,brand_id,product_title,date_qoute_s,da
 5,,,4088600094809,,Specially Selected Wiltshire Cured Ham Gratin 400g,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-wiltshire-cured-ham-gratin-400g/4088600094809
 5,,,4088600282848,,The Deli Tex Mex Dip Selection 400g,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-the-deli-tex-mex-dipselection-400g/4088600282848
 5,,,4061464633155,,Inspired Cuisine Crispy Lemon Chicken 350g,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-inspired-cuisine-crispy-lemon-chicken-350g/4061464633155
-5,,,4088600440507,,Plant Menu No Pork Streaky Bacon Rashers 180g/10 Pack,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-plant-menu-no-pork-streaky-bacon-rashers-180g10-pack/4088600440507
+5,,,4088600440507,,Plant Menu No Pork Streaky Bacon Rashers 180g/10 Pack,,,,"['Home/Chilled Food', 'Home/Vegan Range']",https://groceries.aldi.co.uk/en-GB/p-plant-menu-no-pork-streaky-bacon-rashers-180g10-pack/4088600440507
 5,,,4088600064284,,Frasers Top Crust Steak Pie 660g,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-frasers-topcrust-steak-pie-660g/4088600064284
 5,,,4088600064291,,Frasers Top Crust Steak Pie 371g,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-frasers-topcrust-steak-pie-371g/4088600064291
 5,,,4061464607095,,Crestwood Chicken Fajita Parcels 160g/4 Pack,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-crestwood-chicken-fajita-parcels-160g4-pack/4061464607095
@@ -5585,3 +5585,58 @@ store_id,custom_id,cpi_item_id,product_id,brand_id,product_title,date_qoute_s,da
 5,,,4061459160727,,Purewick Sweet Blossom Fragranced Candle 340g,,,,['Home/Household'],https://groceries.aldi.co.uk/en-GB/p-purewick-sweet-blossom-fragranced-candle-340g/4061459160727
 5,,,4061459166767,,Purewick Fresh Peony Fragranced Candle 340g,,,,['Home/Household'],https://groceries.aldi.co.uk/en-GB/p-purewick-fresh-peony-fragranced-candle-340g/4061459166767
 5,,,4061464691674,,Saxon Blue Palm Leaves Pocket Tissues 1 Pack,,,,['Home/Household'],https://groceries.aldi.co.uk/en-GB/p-saxon-blue-palm-leaves-pocket-tissues-1-pack/4061464691674
+5,,,4088600160108,,The Buckhorn Brewery Stateside IPA 330ml,,,,"['Home/Vegan Range', 'Home/Drinks']",https://groceries.aldi.co.uk/en-GB/p-the-buckhorn-brewery-stateside-ipa-330ml/4088600160108
+5,,,4061464737747,,Village Bakery Mini White Pittas 216g/12 Pack,,,,['Home/Bakery'],https://groceries.aldi.co.uk/en-GB/p-village-bakery-mini-white-pittas-216g12-pack/4061464737747
+5,,,4061464813427,,Village Bakery All Butter Croissants 176g/4 Pack,,,,['Home/Bakery'],https://groceries.aldi.co.uk/en-GB/p-village-bakery-all-butter-croissants-176g4-pack/4061464813427
+5,,,4088600557588,,Village Bakery Both In One Bloomer Bread 800g,,,,['Home/Bakery'],https://groceries.aldi.co.uk/en-GB/p-village-bakery-both-in-one-bloomer-bread-800g/4088600557588
+5,,,4088600568768,,Dairyfine Jive Loaded Brownies 220g/4 Pack,,,,['Home/Bakery'],https://groceries.aldi.co.uk/en-GB/p-dairyfine-jive-loaded-brownies-220g4-pack/4088600568768
+5,,,4088600570396,,Holly Lane Fairy Cakes 240g/12 Pack,,,,['Home/Bakery'],https://groceries.aldi.co.uk/en-GB/p-holly-lane-fairy-cakes-240g12-pack/4088600570396
+5,,,4088600571003,,Holly Lane Assorted Jam Tarts 180g/6 Pack,,,,['Home/Bakery'],https://groceries.aldi.co.uk/en-GB/p-holly-lane-assorted-jam-tarts-180g6-pack/4088600571003
+5,,,4088600568775,,Dairyfine Dreemy Loaded Crispies 208g/4 Pack,,,,['Home/Bakery'],https://groceries.aldi.co.uk/en-GB/p-dairyfine-dreemy-loaded-crispies-208g4-pack/4088600568775
+5,,,4088600464602,,Nature's Pick Tenderstem Broccoli 200g,,,,['Home/Fresh Food'],https://groceries.aldi.co.uk/en-GB/p-natures-pick-tenderstem-broccoli-200g/4088600464602
+5,,,4088600525549,,Specially Selected Wagyu Meatballs 300g,,,,['Home/Fresh Food'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-wagyu-meatballs-300g/4088600525549
+5,,,4061459693775,,"Ready, Set...Cook! Sweet & Sour Chicken Stir Fry Kit 65",,,,['Home/Fresh Food'],https://groceries.aldi.co.uk/en-GB/p-ready-setcook-sweet-sour-chicken-stir-fry-kit-650g/4061459693775
+5,,,4088600571874,,"Ready, Set, Cook Teriyaki Beef Stir Fry 500g",,,,['Home/Fresh Food'],https://groceries.aldi.co.uk/en-GB/p-ready-set-cook-teriyaki-beef-stir-fry-500g/4088600571874
+5,,,4061464919518,,Specially Selected Whisky Infused Smoked Scottish Salmo,,,,['Home/Fresh Food'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-whisky-infused-smoked-scottish-salmon-100g/4061464919518
+5,,,4088600425436,,Freeman's Bay New Zealand Sauvignon Blanc 75cl,,,,['Home/Drinks'],https://groceries.aldi.co.uk/en-GB/p-freemans-bay-new-zealand-sauvignon-blanc-75cl/4088600425436
+5,,,4088600427157,,Zerozecco Sparkling White Alcohol Free 75cl,,,,['Home/Drinks'],https://groceries.aldi.co.uk/en-GB/p-zerozecco-sparkling-white-alcohol-free-75cl/4088600427157
+5,,,4088600438665,,Glen Marnoch Speyside Single Malt Scotch Whisky 70cl,,,,['Home/Drinks'],https://groceries.aldi.co.uk/en-GB/p-glen-marnoch-speyside-single-malt-scotch-whisky-70cl/4088600438665
+5,,,4088600434605,,Specially Selected Pedro Ximénez 37.5cl,,,,['Home/Drinks'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-pedro-ximenez-375cl/4088600434605
+5,,,4088600568126,,Specially Selected Kooliburra The Reprobates Red Wine 7,,,,['Home/Drinks'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-kooliburra-the-reprobates-red-wine-75cl/4088600568126
+5,,,4088600160092,,The Buckhorn Brewery Phanton Pale Ale 330ml,,,,['Home/Drinks'],https://groceries.aldi.co.uk/en-GB/p-the-buckhorn-brewery-phanton-pale-ale-330ml/4088600160092
+5,,,4061464734678,,Bellucci Amaretto Velvet 50cl,,,,['Home/Drinks'],https://groceries.aldi.co.uk/en-GB/p-bellucci-amaretto-velvet-50cl/4061464734678
+5,,,4088600539881,,The Foodie Market Strawberry Yogurt Bites 5x25g,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-the-foodie-market-strawberry-yogurt-bites-5x25g/4088600539881
+5,,,4088600427997,,Snackrite Christmas Star Shaped Salted Pretzels 300g,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-snackrite-christmas-star-shaped-salted-pretzels-300g/4088600427997
+5,,,4088600428000,,Snackrite Christmas Star Shaped Sour Cream & Chive Pret,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-snackrite-christmas-star-shaped-sour-cream-chive-pretzels-300g/4088600428000
+5,,,4088600434186,,Specially Selected Parmesan & Garlic Twists 125g,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-parmesan-garlic-twists-125g/4088600434186
+5,,,4088600565729,,Snackrite Salt 'N' Vinegar Starry Night Mix 125g,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-snackrite-salt-n-vinegar-starry-night-mix-125g/4088600565729
+5,,,4088600565736,,Snackrite Sour Cream & Chive Starry Night Mix 125g,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-snackrite-sour-cream-chive-starry-night-mix-125g/4088600565736
+5,,,4088600567167,,Specially Selected Cheddar & Chutney Bites 75g,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-cheddar-chutney-bites-75g/4088600567167
+5,,,5010067300871,,Silver Spoon Dark Brown Soft Sugar 500g,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-silver-spoon-dark-brown-soft-sugar-500g/5010067300871
+5,,,4088600427973,,Specially Selected Turkey & Stuffing Hand Cooked Crisps,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-turkey-stuffing-hand-cooked-crisps-150g/4088600427973
+5,,,4088600427980,,Specially Selected Pigs In Blankets Hand Cooked Crisps,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-pigs-in-blankets-hand-cooked-crisps-150g/4088600427980
+5,,,4088600564975,,Specially Selected Spicy Chorizo & Turkey Flavour Crink,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-spicy-chorizo-turkey-flavour-crinkle-cut-crisps-150g/4088600564975
+5,,,4088600571904,,Bramwells Cheese Sauce Mix 40g,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-bramwells-cheese-sauce-mix-40g/4088600571904
+5,,,4088600571911,,Bramwells Peppercorn Simmer Sauce Mix 25g,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-bramwells-peppercorn-simmer-sauce-mix-25g/4088600571911
+5,,,4088600571928,,Bramwells Parsley Simmer Sauce Mix 20g,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-bramwells-parsley-simmer-sauce-mix-20g/4088600571928
+5,,,4088600504247,,Specially Selected Chocolate & Orange All Butter Cookie,,,,['Home/Food Cupboard'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-chocolate-orange-all-butter-cookies-200g/4088600504247
+5,,,4088600537214,,"Four Seasons Peas, Bacon & Onion With Parsley Butter 40",,,,['Home/Frozen'],https://groceries.aldi.co.uk/en-GB/p-four-seasons-peas-bacon-onion-with-parsley-butter-400g/4088600537214
+5,,,4061464720336,,Crestwood Chicken & Bacon Family Pie 700g,,,,['Home/Frozen'],https://groceries.aldi.co.uk/en-GB/p-crestwood-chicken-bacon-family-pie-700g/4061464720336
+5,,,4061464867680,,Roosters Chicken Dinosaurs 350g/7 Pack*,,,,['Home/Frozen'],https://groceries.aldi.co.uk/en-GB/p-roosters-chicken-dinosaurs-350g7-pack/4061464867680
+5,,,4088600566412,,Specially Selected Cheese & Dill Salmon Wellington 700g,,,,['Home/Frozen'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-cheese-dill-salmon-wellington-700g/4088600566412
+5,,,4088600566429,,Specially Selected Leek & Cheese Salmon Wellington 700g,,,,['Home/Frozen'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-leek-cheese-salmon-wellington-700g/4088600566429
+5,,,4088600566436,,Specially Selected Prawn & White Wine Salmon Wellington,,,,['Home/Frozen'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-prawn-white-wine-salmon-wellington-700g/4088600566436
+5,,,4088600567242,,The Fishmonger Skinless & Boneless Pollock Fillets In A,,,,['Home/Frozen'],https://groceries.aldi.co.uk/en-GB/p-the-fishmonger-skinless-boneless-pollock-fillets-in-a-katsu-sauce-380g/4088600567242
+5,,,4088600567259,,The Fishmonger Skinless & Boneless Pollock Fillets In A,,,,['Home/Frozen'],https://groceries.aldi.co.uk/en-GB/p-the-fishmonger-skinless-boneless-pollock-fillets-in-a-harissa-sauce-380g/4088600567259
+5,,,4088600567266,,The Fishmonger Skinless & Boneless Pollock Fillets In C,,,,['Home/Frozen'],https://groceries.aldi.co.uk/en-GB/p-the-fishmonger-skinless-boneless-pollock-fillets-in-cheddar-cheese-sauce-380g/4088600567266
+5,,,4061464451094,,Specially Selected Three Bean & Ibérico Cheese Medley 1,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-three-bean-iberico-cheese-medley-185g/4061464451094
+5,,,4061464880009,,Dessert Menu Brookie Desserts 2x75g,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-dessert-menu-brookie-desserts-2x75g/4061464880009
+5,,,4088600565040,,Ashfields BBQ Chicken Mini Fillets 170g,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-ashfields-bbq-chicken-mini-fillets-170g/4088600565040
+5,,,4088600570563,,Eat & Go Satay Chicken Skewers 300g/30 Pack*,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-eat-go-satay-chicken-skewers-300g30-pack/4088600570563
+5,,,4061464803275,,Crestwood Cheese Croquettes 250g,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-crestwood-cheese-croquettes-250g/4061464803275
+5,,,4061464803282,,Crestwood Cheese & Bacon Croquettes 250g,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-crestwood-cheese-bacon-croquettes-250g/4061464803282
+5,,,4061464863361,,Specially Selected Gastro Chorizo Macaroni Cheese 400g,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-specially-selected-gastro-chorizo-macaroni-cheese-400g/4061464863361
+5,,,4088600553955,,Emporium Grated Cheddar & Mozzarella Cheese 250g,,,,['Home/Chilled Food'],https://groceries.aldi.co.uk/en-GB/p-emporium-grated-cheddar-mozzarella-cheese-250g/4088600553955
+5,,,4088600450360,,Scentcerity Lavender Fragranced Candle 130g,,,,['Home/Household'],https://groceries.aldi.co.uk/en-GB/p-scentcerity-lavender-fragranced-candle-130g/4088600450360
+5,,,4061459160499,,Purewick Fresh Linen & Lace Fragranced Candle 340g,,,,['Home/Household'],https://groceries.aldi.co.uk/en-GB/p-purewick-fresh-linen-lace-fragranced-candle-340g/4061459160499
+5,,,4061459160741,,Purewick Passionfruit Cocktail Fragranced Candle 340g,,,,['Home/Household'],https://groceries.aldi.co.uk/en-GB/p-purewick-passionfruit-cocktail-fragranced-candle-340g/4061459160741
