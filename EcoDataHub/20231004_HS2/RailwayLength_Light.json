@@ -1,0 +1,1416 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300,
+      "stroke": null
+    },
+    "font": "Circular Std",
+    "title": {
+      "anchor": "start",
+      "baseline": "top",
+      "color": "#122b39",
+      "dx": 33,
+      "fontSize": 14,
+      "subtitleColor": "#000000",
+      "subtitleFontSize": 12
+    }
+  },
+  "data": {
+    "name": "data-292bc72e6d349caa2e23714e909c3e24"
+  },
+  "mark": {
+    "type": "line",
+    "interpolate": "monotone",
+    "point": "transparent"
+  },
+  "encoding": {
+    "color": {
+      "field": "country",
+      "legend": {
+        "labelColor": "#122b39",
+        "labelFontSize": 11,
+        "orient": "top-left",
+        "symbolSize": 50,
+        "title": null,
+        "titleColor": "#122b39"
+      },
+      "type": "nominal"
+    },
+    "x": {
+      "axis": {
+        "domainColor": "#122b39",
+        "domainOpacity": 0.5,
+        "grid": false,
+        "labelAngle": 0,
+        "labelColor": "#122b39",
+        "tickColor": "#122b39",
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "axis": {
+        "domainColor": "#122b39",
+        "gridColor": "#122b39",
+        "gridDash": [
+          1,
+          5
+        ],
+        "gridOpacity": 0.5,
+        "labelColor": "#122b39",
+        "labelPadding": 5,
+        "tickColor": "#122b39",
+        "tickCount": 8,
+        "tickOpacity": 0.5,
+        "ticks": false,
+        "title": "Total active railway track, km | Source: Eurostat & B.Mitchell (2007)",
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#122b39",
+        "titleFontSize": 12,
+        "titleOpacity": 0.9,
+        "titleX": 0,
+        "titleY": -7
+      },
+      "field": "value",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "title": "Railway Across Europe",
+  "transform": [
+    {
+      "calculate": "year(datum.date)",
+      "as": "year"
+    },
+    {
+      "filter": "(datum.country !== 'China')"
+    }
+  ],
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-292bc72e6d349caa2e23714e909c3e24": [
+      {
+        "country": "United Kingdom",
+        "date": "1825-01-01",
+        "value": 43.0
+      },
+      {
+        "country": "France",
+        "date": "1830-01-01",
+        "value": 31.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1830-01-01",
+        "value": 157.0
+      },
+      {
+        "country": "France",
+        "date": "1835-01-01",
+        "value": 141.0
+      },
+      {
+        "country": "Germany",
+        "date": "1835-01-01",
+        "value": 6.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1835-01-01",
+        "value": 544.0
+      },
+      {
+        "country": "France",
+        "date": "1840-01-01",
+        "value": 410.0
+      },
+      {
+        "country": "Germany",
+        "date": "1840-01-01",
+        "value": 469.0
+      },
+      {
+        "country": "Italy",
+        "date": "1840-01-01",
+        "value": 20.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1840-01-01",
+        "value": 2390.0
+      },
+      {
+        "country": "France",
+        "date": "1845-01-01",
+        "value": 875.0
+      },
+      {
+        "country": "Germany",
+        "date": "1845-01-01",
+        "value": 2143.0
+      },
+      {
+        "country": "Italy",
+        "date": "1845-01-01",
+        "value": 152.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1845-01-01",
+        "value": 3931.0
+      },
+      {
+        "country": "France",
+        "date": "1850-01-01",
+        "value": 2915.0
+      },
+      {
+        "country": "Germany",
+        "date": "1850-01-01",
+        "value": 5856.0
+      },
+      {
+        "country": "Italy",
+        "date": "1850-01-01",
+        "value": 620.0
+      },
+      {
+        "country": "Spain",
+        "date": "1850-01-01",
+        "value": 28.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1850-01-01",
+        "value": 9797.0
+      },
+      {
+        "country": "France",
+        "date": "1855-01-01",
+        "value": 5037.0
+      },
+      {
+        "country": "Germany",
+        "date": "1855-01-01",
+        "value": 7826.0
+      },
+      {
+        "country": "Italy",
+        "date": "1855-01-01",
+        "value": 1207.0
+      },
+      {
+        "country": "Spain",
+        "date": "1855-01-01",
+        "value": 440.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1855-01-01",
+        "value": 11744.0
+      },
+      {
+        "country": "France",
+        "date": "1860-01-01",
+        "value": 9167.0
+      },
+      {
+        "country": "Germany",
+        "date": "1860-01-01",
+        "value": 11089.0
+      },
+      {
+        "country": "Italy",
+        "date": "1860-01-01",
+        "value": 2404.0
+      },
+      {
+        "country": "Spain",
+        "date": "1860-01-01",
+        "value": 1885.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1860-01-01",
+        "value": 14603.0
+      },
+      {
+        "country": "France",
+        "date": "1865-01-01",
+        "value": 13227.0
+      },
+      {
+        "country": "Germany",
+        "date": "1865-01-01",
+        "value": 13900.0
+      },
+      {
+        "country": "Italy",
+        "date": "1865-01-01",
+        "value": 4591.0
+      },
+      {
+        "country": "Spain",
+        "date": "1865-01-01",
+        "value": 4832.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1865-01-01",
+        "value": 18439.0
+      },
+      {
+        "country": "France",
+        "date": "1870-01-01",
+        "value": 15544.0
+      },
+      {
+        "country": "Germany",
+        "date": "1870-01-01",
+        "value": 18876.0
+      },
+      {
+        "country": "Italy",
+        "date": "1870-01-01",
+        "value": 6429.0
+      },
+      {
+        "country": "Spain",
+        "date": "1870-01-01",
+        "value": 5454.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1870-01-01",
+        "value": 21558.0
+      },
+      {
+        "country": "France",
+        "date": "1875-01-01",
+        "value": 19357.0
+      },
+      {
+        "country": "Germany",
+        "date": "1875-01-01",
+        "value": 27970.0
+      },
+      {
+        "country": "Italy",
+        "date": "1875-01-01",
+        "value": 8018.0
+      },
+      {
+        "country": "Spain",
+        "date": "1875-01-01",
+        "value": 6094.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1875-01-01",
+        "value": 23865.0
+      },
+      {
+        "country": "France",
+        "date": "1880-01-01",
+        "value": 23089.0
+      },
+      {
+        "country": "Germany",
+        "date": "1880-01-01",
+        "value": 33838.0
+      },
+      {
+        "country": "Italy",
+        "date": "1880-01-01",
+        "value": 9290.0
+      },
+      {
+        "country": "Spain",
+        "date": "1880-01-01",
+        "value": 7491.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1880-01-01",
+        "value": 25060.0
+      },
+      {
+        "country": "France",
+        "date": "1885-01-01",
+        "value": 29839.0
+      },
+      {
+        "country": "Germany",
+        "date": "1885-01-01",
+        "value": 37571.0
+      },
+      {
+        "country": "Italy",
+        "date": "1885-01-01",
+        "value": 11003.0
+      },
+      {
+        "country": "Spain",
+        "date": "1885-01-01",
+        "value": 9007.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1885-01-01",
+        "value": 26720.0
+      },
+      {
+        "country": "France",
+        "date": "1890-01-01",
+        "value": 33280.0
+      },
+      {
+        "country": "Germany",
+        "date": "1890-01-01",
+        "value": 42869.0
+      },
+      {
+        "country": "Italy",
+        "date": "1890-01-01",
+        "value": 13629.0
+      },
+      {
+        "country": "Spain",
+        "date": "1890-01-01",
+        "value": 10163.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1890-01-01",
+        "value": 27827.0
+      },
+      {
+        "country": "France",
+        "date": "1895-01-01",
+        "value": 36240.0
+      },
+      {
+        "country": "Germany",
+        "date": "1895-01-01",
+        "value": 46500.0
+      },
+      {
+        "country": "Italy",
+        "date": "1895-01-01",
+        "value": 15970.0
+      },
+      {
+        "country": "Spain",
+        "date": "1895-01-01",
+        "value": 12612.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1895-01-01",
+        "value": 28986.0
+      },
+      {
+        "country": "France",
+        "date": "1900-01-01",
+        "value": 38109.0
+      },
+      {
+        "country": "Germany",
+        "date": "1900-01-01",
+        "value": 51678.0
+      },
+      {
+        "country": "Italy",
+        "date": "1900-01-01",
+        "value": 16429.0
+      },
+      {
+        "country": "Spain",
+        "date": "1900-01-01",
+        "value": 13205.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1900-01-01",
+        "value": 30079.0
+      },
+      {
+        "country": "France",
+        "date": "1905-01-01",
+        "value": 39607.0
+      },
+      {
+        "country": "Germany",
+        "date": "1905-01-01",
+        "value": 56739.0
+      },
+      {
+        "country": "Italy",
+        "date": "1905-01-01",
+        "value": 17078.0
+      },
+      {
+        "country": "Spain",
+        "date": "1905-01-01",
+        "value": 14037.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1905-01-01",
+        "value": 31456.0
+      },
+      {
+        "country": "France",
+        "date": "1910-01-01",
+        "value": 40484.0
+      },
+      {
+        "country": "Germany",
+        "date": "1910-01-01",
+        "value": 61209.0
+      },
+      {
+        "country": "Italy",
+        "date": "1910-01-01",
+        "value": 18090.0
+      },
+      {
+        "country": "Spain",
+        "date": "1910-01-01",
+        "value": 14694.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1910-01-01",
+        "value": 32184.0
+      },
+      {
+        "country": "France",
+        "date": "1915-01-01",
+        "value": 36400.0
+      },
+      {
+        "country": "Germany",
+        "date": "1915-01-01",
+        "value": 62091.0
+      },
+      {
+        "country": "Italy",
+        "date": "1915-01-01",
+        "value": 19652.0
+      },
+      {
+        "country": "Spain",
+        "date": "1915-01-01",
+        "value": 15671.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1915-01-01",
+        "value": 32703.0
+      },
+      {
+        "country": "France",
+        "date": "1920-01-01",
+        "value": 38200.0
+      },
+      {
+        "country": "Germany",
+        "date": "1920-01-01",
+        "value": 57545.0
+      },
+      {
+        "country": "Italy",
+        "date": "1920-01-01",
+        "value": 20385.0
+      },
+      {
+        "country": "Poland",
+        "date": "1920-01-01",
+        "value": 13763.0
+      },
+      {
+        "country": "Spain",
+        "date": "1920-01-01",
+        "value": 16089.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1920-01-01",
+        "value": 32707.0
+      },
+      {
+        "country": "France",
+        "date": "1925-01-01",
+        "value": 42100.0
+      },
+      {
+        "country": "Germany",
+        "date": "1925-01-01",
+        "value": 57716.0
+      },
+      {
+        "country": "Italy",
+        "date": "1925-01-01",
+        "value": 21106.0
+      },
+      {
+        "country": "Poland",
+        "date": "1925-01-01",
+        "value": 19281.0
+      },
+      {
+        "country": "Spain",
+        "date": "1925-01-01",
+        "value": 16540.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1925-01-01",
+        "value": 32849.0
+      },
+      {
+        "country": "France",
+        "date": "1930-01-01",
+        "value": 42400.0
+      },
+      {
+        "country": "Germany",
+        "date": "1930-01-01",
+        "value": 58176.0
+      },
+      {
+        "country": "Italy",
+        "date": "1930-01-01",
+        "value": 22119.0
+      },
+      {
+        "country": "Poland",
+        "date": "1930-01-01",
+        "value": 19600.0
+      },
+      {
+        "country": "Spain",
+        "date": "1930-01-01",
+        "value": 17278.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1930-01-01",
+        "value": 32632.0
+      },
+      {
+        "country": "France",
+        "date": "1935-01-01",
+        "value": 42600.0
+      },
+      {
+        "country": "Germany",
+        "date": "1935-01-01",
+        "value": 58841.0
+      },
+      {
+        "country": "Italy",
+        "date": "1935-01-01",
+        "value": 23046.0
+      },
+      {
+        "country": "Poland",
+        "date": "1935-01-01",
+        "value": 20085.0
+      },
+      {
+        "country": "Spain",
+        "date": "1935-01-01",
+        "value": 17437.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1935-01-01",
+        "value": 32450.0
+      },
+      {
+        "country": "France",
+        "date": "1940-01-01",
+        "value": 40600.0
+      },
+      {
+        "country": "Germany",
+        "date": "1940-01-01",
+        "value": 58841.0
+      },
+      {
+        "country": "Italy",
+        "date": "1940-01-01",
+        "value": 22992.0
+      },
+      {
+        "country": "Poland",
+        "date": "1940-01-01",
+        "value": 21800.0
+      },
+      {
+        "country": "Spain",
+        "date": "1940-01-01",
+        "value": 17446.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1940-01-01",
+        "value": 32094.0
+      },
+      {
+        "country": "France",
+        "date": "1945-01-01",
+        "value": 40500.0
+      },
+      {
+        "country": "Germany",
+        "date": "1945-01-01",
+        "value": 58841.0
+      },
+      {
+        "country": "Italy",
+        "date": "1945-01-01",
+        "value": 18655.0
+      },
+      {
+        "country": "Poland",
+        "date": "1945-01-01",
+        "value": 23218.0
+      },
+      {
+        "country": "Spain",
+        "date": "1945-01-01",
+        "value": 17930.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1945-01-01",
+        "value": 31984.0
+      },
+      {
+        "country": "France",
+        "date": "1950-01-01",
+        "value": 41300.0
+      },
+      {
+        "country": "Germany",
+        "date": "1950-01-01",
+        "value": 49819.0
+      },
+      {
+        "country": "Italy",
+        "date": "1950-01-01",
+        "value": 21550.0
+      },
+      {
+        "country": "Poland",
+        "date": "1950-01-01",
+        "value": 26312.0
+      },
+      {
+        "country": "Spain",
+        "date": "1950-01-01",
+        "value": 18071.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1950-01-01",
+        "value": 31336.0
+      },
+      {
+        "country": "France",
+        "date": "1955-01-01",
+        "value": 39800.0
+      },
+      {
+        "country": "Germany",
+        "date": "1955-01-01",
+        "value": 53143.0
+      },
+      {
+        "country": "Italy",
+        "date": "1955-01-01",
+        "value": 21923.0
+      },
+      {
+        "country": "Poland",
+        "date": "1955-01-01",
+        "value": 26985.0
+      },
+      {
+        "country": "Spain",
+        "date": "1955-01-01",
+        "value": 18040.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1955-01-01",
+        "value": 30676.0
+      },
+      {
+        "country": "France",
+        "date": "1960-01-01",
+        "value": 39000.0
+      },
+      {
+        "country": "Germany",
+        "date": "1960-01-01",
+        "value": 52193.0
+      },
+      {
+        "country": "Italy",
+        "date": "1960-01-01",
+        "value": 21277.0
+      },
+      {
+        "country": "Poland",
+        "date": "1960-01-01",
+        "value": 26904.0
+      },
+      {
+        "country": "Spain",
+        "date": "1960-01-01",
+        "value": 18033.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1960-01-01",
+        "value": 29562.0
+      },
+      {
+        "country": "France",
+        "date": "1965-01-01",
+        "value": 37890.0
+      },
+      {
+        "country": "Germany",
+        "date": "1965-01-01",
+        "value": 51159.0
+      },
+      {
+        "country": "Italy",
+        "date": "1965-01-01",
+        "value": 20812.0
+      },
+      {
+        "country": "Poland",
+        "date": "1965-01-01",
+        "value": 26862.0
+      },
+      {
+        "country": "Spain",
+        "date": "1965-01-01",
+        "value": 17561.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1965-01-01",
+        "value": 24011.0
+      },
+      {
+        "country": "France",
+        "date": "1970-01-01",
+        "value": 36532.0
+      },
+      {
+        "country": "Germany",
+        "date": "1970-01-01",
+        "value": 47668.0
+      },
+      {
+        "country": "Italy",
+        "date": "1970-01-01",
+        "value": 20212.0
+      },
+      {
+        "country": "Poland",
+        "date": "1970-01-01",
+        "value": 26678.0
+      },
+      {
+        "country": "Spain",
+        "date": "1970-01-01",
+        "value": 16507.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1970-01-01",
+        "value": 18969.0
+      },
+      {
+        "country": "France",
+        "date": "1975-01-01",
+        "value": 34787.0
+      },
+      {
+        "country": "Germany",
+        "date": "1975-01-01",
+        "value": 46190.0
+      },
+      {
+        "country": "Italy",
+        "date": "1975-01-01",
+        "value": 20176.0
+      },
+      {
+        "country": "Poland",
+        "date": "1975-01-01",
+        "value": 26702.0
+      },
+      {
+        "country": "Spain",
+        "date": "1975-01-01",
+        "value": 15839.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1975-01-01",
+        "value": 18118.0
+      },
+      {
+        "country": "France",
+        "date": "1980-01-01",
+        "value": 34362.0
+      },
+      {
+        "country": "Germany",
+        "date": "1980-01-01",
+        "value": 45745.0
+      },
+      {
+        "country": "Italy",
+        "date": "1980-01-01",
+        "value": 19814.0
+      },
+      {
+        "country": "Poland",
+        "date": "1980-01-01",
+        "value": 27185.0
+      },
+      {
+        "country": "Spain",
+        "date": "1980-01-01",
+        "value": 15743.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1980-01-01",
+        "value": 17645.0
+      },
+      {
+        "country": "France",
+        "date": "1985-01-01",
+        "value": 34676.0
+      },
+      {
+        "country": "Germany",
+        "date": "1985-01-01",
+        "value": 44632.0
+      },
+      {
+        "country": "Italy",
+        "date": "1985-01-01",
+        "value": 19726.0
+      },
+      {
+        "country": "Poland",
+        "date": "1985-01-01",
+        "value": 27095.0
+      },
+      {
+        "country": "Spain",
+        "date": "1985-01-01",
+        "value": 13466.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1985-01-01",
+        "value": 16752.0
+      },
+      {
+        "country": "France",
+        "date": "1990-01-01",
+        "value": 34322.0
+      },
+      {
+        "country": "Germany",
+        "date": "1990-01-01",
+        "value": 44632.0
+      },
+      {
+        "country": "Italy",
+        "date": "1990-01-01",
+        "value": 19588.0
+      },
+      {
+        "country": "Poland",
+        "date": "1990-01-01",
+        "value": 26228.0
+      },
+      {
+        "country": "Spain",
+        "date": "1990-01-01",
+        "value": 12560.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1990-01-01",
+        "value": 16584.0
+      },
+      {
+        "country": "France",
+        "date": "1995-01-01",
+        "value": 34322.0
+      },
+      {
+        "country": "Germany",
+        "date": "1995-01-01",
+        "value": 45468.0
+      },
+      {
+        "country": "Italy",
+        "date": "1995-01-01",
+        "value": 20011.0
+      },
+      {
+        "country": "Poland",
+        "date": "1995-01-01",
+        "value": 25528.0
+      },
+      {
+        "country": "Spain",
+        "date": "1995-01-01",
+        "value": 15430.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "1995-01-01",
+        "value": 16914.0
+      },
+      {
+        "country": "France",
+        "date": "2000-01-01",
+        "value": 31939.0
+      },
+      {
+        "country": "Germany",
+        "date": "2000-01-01",
+        "value": 40826.0
+      },
+      {
+        "country": "Italy",
+        "date": "2000-01-01",
+        "value": 19394.0
+      },
+      {
+        "country": "Poland",
+        "date": "2000-01-01",
+        "value": 23420.0
+      },
+      {
+        "country": "Spain",
+        "date": "2000-01-01",
+        "value": 13950.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2000-01-01",
+        "value": 16878.0
+      },
+      {
+        "country": "France",
+        "date": "2005-01-01",
+        "value": 31144.6666666667
+      },
+      {
+        "country": "Germany",
+        "date": "2005-01-01",
+        "value": 34218.2
+      },
+      {
+        "country": "Italy",
+        "date": "2005-01-01",
+        "value": 19470.3333333333
+      },
+      {
+        "country": "Poland",
+        "date": "2005-01-01",
+        "value": 22250.6666666667
+      },
+      {
+        "country": "Spain",
+        "date": "2005-01-01",
+        "value": 14932.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2005-01-01",
+        "value": 16959.0
+      },
+      {
+        "country": "France",
+        "date": "2010-01-01",
+        "value": 30335.0
+      },
+      {
+        "country": "Germany",
+        "date": "2010-01-01",
+        "value": 37877.0
+      },
+      {
+        "country": "Italy",
+        "date": "2010-01-01",
+        "value": 16704.0
+      },
+      {
+        "country": "Poland",
+        "date": "2010-01-01",
+        "value": 20228.0
+      },
+      {
+        "country": "Spain",
+        "date": "2010-01-01",
+        "value": 13853.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2010-01-01",
+        "value": 15884.0
+      },
+      {
+        "country": "France",
+        "date": "2011-01-01",
+        "value": 30404.0
+      },
+      {
+        "country": "Germany",
+        "date": "2011-01-01",
+        "value": 37846.0
+      },
+      {
+        "country": "Italy",
+        "date": "2011-01-01",
+        "value": 16726.0
+      },
+      {
+        "country": "Poland",
+        "date": "2011-01-01",
+        "value": 20228.0
+      },
+      {
+        "country": "Spain",
+        "date": "2011-01-01",
+        "value": 13945.0
+      },
+      {
+        "country": "France",
+        "date": "2012-01-01",
+        "value": 30581.0
+      },
+      {
+        "country": "Germany",
+        "date": "2012-01-01",
+        "value": 37941.0
+      },
+      {
+        "country": "Italy",
+        "date": "2012-01-01",
+        "value": 16742.0
+      },
+      {
+        "country": "Poland",
+        "date": "2012-01-01",
+        "value": 20094.0
+      },
+      {
+        "country": "Spain",
+        "date": "2012-01-01",
+        "value": 13976.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2012-01-01",
+        "value": 16195.0
+      },
+      {
+        "country": "France",
+        "date": "2013-01-01",
+        "value": 30318.0
+      },
+      {
+        "country": "Germany",
+        "date": "2013-01-01",
+        "value": 37860.0
+      },
+      {
+        "country": "Italy",
+        "date": "2013-01-01",
+        "value": 16752.0
+      },
+      {
+        "country": "Poland",
+        "date": "2013-01-01",
+        "value": 19328.0
+      },
+      {
+        "country": "Spain",
+        "date": "2013-01-01",
+        "value": 15312.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2013-01-01",
+        "value": 16195.0
+      },
+      {
+        "country": "France",
+        "date": "2014-01-01",
+        "value": 29335.0
+      },
+      {
+        "country": "Germany",
+        "date": "2014-01-01",
+        "value": 37775.0
+      },
+      {
+        "country": "Italy",
+        "date": "2014-01-01",
+        "value": 16722.0
+      },
+      {
+        "country": "Poland",
+        "date": "2014-01-01",
+        "value": 19240.0
+      },
+      {
+        "country": "Spain",
+        "date": "2014-01-01",
+        "value": 15182.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2014-01-01",
+        "value": 16202.0
+      },
+      {
+        "country": "France",
+        "date": "2015-01-01",
+        "value": 28808.0
+      },
+      {
+        "country": "Germany",
+        "date": "2015-01-01",
+        "value": 38466.0
+      },
+      {
+        "country": "Italy",
+        "date": "2015-01-01",
+        "value": 16724.0
+      },
+      {
+        "country": "Poland",
+        "date": "2015-01-01",
+        "value": 19231.0
+      },
+      {
+        "country": "Spain",
+        "date": "2015-01-01",
+        "value": 15384.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2015-01-01",
+        "value": 16241.0
+      },
+      {
+        "country": "France",
+        "date": "2016-01-01",
+        "value": 28364.0
+      },
+      {
+        "country": "Germany",
+        "date": "2016-01-01",
+        "value": 38623.0
+      },
+      {
+        "country": "Italy",
+        "date": "2016-01-01",
+        "value": 16788.0
+      },
+      {
+        "country": "Poland",
+        "date": "2016-01-01",
+        "value": 19132.0
+      },
+      {
+        "country": "Spain",
+        "date": "2016-01-01",
+        "value": 16167.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2016-01-01",
+        "value": 16253.0
+      },
+      {
+        "country": "France",
+        "date": "2017-01-01",
+        "value": 28120.367
+      },
+      {
+        "country": "Germany",
+        "date": "2017-01-01",
+        "value": 38594.0
+      },
+      {
+        "country": "Italy",
+        "date": "2017-01-01",
+        "value": 16787.0
+      },
+      {
+        "country": "Poland",
+        "date": "2017-01-01",
+        "value": 19209.0
+      },
+      {
+        "country": "Spain",
+        "date": "2017-01-01",
+        "value": 15949.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2017-01-01",
+        "value": 16320.0
+      },
+      {
+        "country": "France",
+        "date": "2018-01-01",
+        "value": 27594.0
+      },
+      {
+        "country": "Germany",
+        "date": "2018-01-01",
+        "value": 38416.0
+      },
+      {
+        "country": "Italy",
+        "date": "2018-01-01",
+        "value": 16781.0
+      },
+      {
+        "country": "Poland",
+        "date": "2018-01-01",
+        "value": 19196.0
+      },
+      {
+        "country": "Spain",
+        "date": "2018-01-01",
+        "value": 15449.0
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2018-01-01",
+        "value": 16289.0
+      },
+      {
+        "country": "France",
+        "date": "2019-01-01",
+        "value": 27483.0
+      },
+      {
+        "country": "Germany",
+        "date": "2019-01-01",
+        "value": 38394.0
+      },
+      {
+        "country": "Italy",
+        "date": "2019-01-01",
+        "value": 16779.0
+      },
+      {
+        "country": "Poland",
+        "date": "2019-01-01",
+        "value": 19359.0
+      },
+      {
+        "country": "Spain",
+        "date": "2019-01-01",
+        "value": 16006.02
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2019-01-01",
+        "value": 16346.0
+      },
+      {
+        "country": "France",
+        "date": "2020-01-01",
+        "value": 27213.0
+      },
+      {
+        "country": "Germany",
+        "date": "2020-01-01",
+        "value": 39773.0
+      },
+      {
+        "country": "Italy",
+        "date": "2020-01-01",
+        "value": 16782.0
+      },
+      {
+        "country": "Poland",
+        "date": "2020-01-01",
+        "value": 19383.0
+      },
+      {
+        "country": "Spain",
+        "date": "2020-01-01",
+        "value": 16135.36
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2020-01-01",
+        "value": 16377.0
+      },
+      {
+        "country": "France",
+        "date": "2021-01-01",
+        "value": 27057.0
+      },
+      {
+        "country": "Germany",
+        "date": "2021-01-01",
+        "value": 39799.0
+      },
+      {
+        "country": "Italy",
+        "date": "2021-01-01",
+        "value": 16832.0
+      },
+      {
+        "country": "Poland",
+        "date": "2021-01-01",
+        "value": 19287.0
+      },
+      {
+        "country": "Spain",
+        "date": "2021-01-01",
+        "value": 16280.46
+      },
+      {
+        "country": "United Kingdom",
+        "date": "2021-01-01",
+        "value": 16316.0
+      }
+    ]
+  }
+}
