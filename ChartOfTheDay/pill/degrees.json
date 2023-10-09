@@ -1,0 +1,86 @@
+{
+  "config": {
+    "view": {"continuousWidth": 400, "continuousHeight": 350, "stroke": null},
+    "background": "#122B39",
+    "font": "Circular Std",
+    "title": {
+      "anchor": "start",
+      "baseline": "top",
+      "color": "#b4c8d8",
+      "dx": 25,
+      "fontSize": 14,
+      "subtitleColor": "#000000",
+      "subtitleFontSize": 12
+    }
+  },
+  "data": {"url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/ChartOfTheDay/pill/first_year_share.csv"},
+  "mark": {"type": "line", "interpolate": "monotone", "point": true},
+  "encoding": {
+    "color": {
+      "field": "series",
+      "legend": {
+        "labelColor": "#b4c8d8",
+        "labelFontSize": 11,
+        "orient": "none",
+        "legendX": 5,
+        "legendY": 5,
+        "direction": "horizontal",
+        "title": null,
+        "titleColor": "#b4c8d8"
+      },
+      "type": "nominal"
+    },
+    "x": {
+      "axis": {
+        "domainColor": "#b4c8d8",
+        "domainOpacity": 0.5,
+        "grid": false,
+        "labelAngle": 0,
+        "labelColor": "#b4c8d8",
+        "labelOpacity": 0.7,
+        "tickColor": "#b4c8d8",
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "axis": {
+        "gridColor": "#b4c8d8",
+        "format": "%",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "labelColor": "#b4c8d8",
+        "labelOpacity": 0.7,
+        "labelPadding": 5,
+        "tickColor": "#b4c8d8",
+        "tickCount": 8,
+        "tickOpacity": 0.5,
+        "ticks": false,
+        "title": "of first-year students, year of admission | Source: Goldin and Katz (2002)",
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#b4c8d8",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleX": 0,
+        "titleY": -7
+      },
+      "field": "value",
+      "type": "quantitative"
+    }
+  },
+  "height": 350,
+  "title": "Female Student Share",
+  "transform": [
+    {"calculate": "datum.Series == 'MBA' | datum.Series == 'Dentistry' ? datum.value *0.8 : datum.value", "as": "value"},
+    {"calculate": "year(datum.date)", "as": "year"},
+    {"filter": "(datum.country !== 'China')"}
+  ],
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "autosize": {"type": "pad", "contains": "padding", "resize": true}
+}
