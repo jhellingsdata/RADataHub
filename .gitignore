@@ -18,3 +18,4 @@ __pycache__/
 
 .DS_Store
 e4e/.DS_Store
+ChartOfTheDay/templates/cpi/geckodriver.log
