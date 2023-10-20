@@ -1,0 +1,1890 @@
+<table id="istatistikselTable" class="display table-hover dataTable no-footer" style="width: 100%; font-size: 1.3rem;" role="grid" aria-describedby="istatistikselTable_info">
+    <thead class="d-none">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+            <tr class="dtrg-group dtrg-start dtrg-level-0">
+                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>Household Consumption Expenditure Statistics (Turkey)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Quintiles Ordered by Expenditure in Expenditure Types
+                            </td>
+                            <td width="14%">
+                                09 Haziran 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=ioIn886qTBBxZ04d6ADzoen12l8Jgf/nwNiesH5bOD9SEjfjmnV1Px0pu7U4F1jk" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=IZarm6K/Mu88EoNXhQvRr76vq0y3fJQkvlrAo6FTUoooc3T79jyr8KRZcruUU/cd">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Quintiles Ordered by Income 
+                            </td>
+                            <td width="14%">
+                                09 Haziran 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=259m50DUpYS9GZbtWZO86fOJT4VR/jHbS7tW7w4V/TMJeY91SYAxPvxDfXevHD3/" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=D3mYcO6Ez3eUFdjjsJhh/a12JDbZKIqUrf6bithoKW8Ca5RAJpzsGc4LbkBAJGFg">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Type of Household
+                            </td>
+                            <td width="14%">
+                                09 Haziran 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=FM9xB8s/0kXi7bPMZO4aPj/8noaXlpCCOUq3Tlvn8F0zGJ55JXjB/KfR04wday0r" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=ma2CEj/8/LjUNf1YUZ24YprUgiFYCwHJyZqxtK97gRYwaQFP07WgfX3JqsVIFrjn">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Main Source of Household Income
+                            </td>
+                            <td width="14%">
+                                09 Haziran 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=8JRe7mLB4LmjiXhcouBrSvKE6N1JM9jgnsNU5t4KaMiRTaFj9LK63FlaLlWQJD6s" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=i3s/mneG9GZcBEK341QG1uHvoBka1QOYpwGczUnrvp0q5OZG6vyvLQQArJdfoX4A">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditures
+                            </td>
+                            <td width="14%">
+                                09 Haziran 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=VIcN9noxXmip4cOEboEzIr6NQNA5fD8j1GfDAMKfoVjcDcULZazVlIOgAxERXJbj" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=OFuqphQ9ucax3YSsCRr2A18vHAJEtrNsnwjlXGlJOdBmymkGyUycYxcBdlzcW352">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Household Size
+                            </td>
+                            <td width="14%">
+                                09 Haziran 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=qDnnuxXWQAKZ8Ts7dtaaSCAlRr1WhihS95Yne2JDDXrRqPYBZ/nk7M9m70HbdNe/" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=VdklXj7iBtzWW9pNHROHeABqq7md3ibwxqdYkXyHWp3S9p8OZqK4YAvD9MQHBe4h">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Quintiles Ordered by Income in Expenditure Types
+                            </td>
+                            <td width="14%">
+                                09 Haziran 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=6XM1D7Kk4VlwgcQ5qjC43scVT23OBfiBc1Nititkwr4WzZPyWpINECImiFmMo0xZ" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=fX9FkOuIfO/bk8wF5Jvn40GFXXiiIAVc7Unhl2gvwhkQ6p8zHz62p6FmIy8000vG">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Monetary and Non-monetary Consumption Expenditures
+                            </td>
+                            <td width="14%">
+                                09 Haziran 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=6dFU7BC80qcfQfGn8MIraXpdHL9C0dBXtTQpc9i9C/u22ZxTNt7hbnoyTdB5gGLv" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=zPCvVcmlG4tCIFUkp9pcXPp4yogeAedDHkmoAWVYaNnSFAaD78vGOHFCvIXA45v8">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Quintiles Ordered by Expenditure
+                            </td>
+                            <td width="14%">
+                                09 Haziran 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=2pBAHecsdKvaj1L66kCwpJdm89nuBcFJokcyETNjZ9lLRE8FOofcwbqxQDzrMV6M" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=fcNw5wCoK6cQCVhFXM0N3hhrrlPuMd/CKNIUXdJ2vvLf/K3IIey12ndiznHOV4uC">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-0">
+                        <td>Living Conditions Statistics </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>By Equivalised Household Disposable Median Income Groups</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of non-institutional population by specified living conditions indicators
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=k1ghCcAKLWTTP57Qbxzjbbkx6rI7b8HOCpR6GFBmnziGUeppsXrZ0NakRdV4QBFb" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=PrG1KEJLoteC0vBdXZ0YUfeB2v8uJzRiKZt3oCbqojPA8NZjFJ8/XInBZUf8uGIv">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of non-institutional population by problems with the dwelling and environment
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=xmLIG7Jh/klLghR2EBTDlu5nfl089ZpObip1dAC7aVvmKJlDo6Y9q3fzvr1La2Iq" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=iO8nS0cFiUW6jtR0/u32LG5P9EkRtfv4DbqbappotnhIMw7UvjEczN7o0WHbvD7W">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of non-institutional population by possession of durables
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=BifWWphbaBHzwXE5ZmPzITUHGD/2FGsyWzusDY7zMN1RxT0d0DuiUq/7wZFV/wFn" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=GS5iRmYSOg9N4GaSQrEWBPikfQ4GfMxZ7EpKD5G0bB3RYh5f6MOTq0EC90aCOxyO">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of non-institutional population by dwelling facilities
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=pOLcf901slracdXIPr4Evm7LEMbzj1B35/wVYBfHLwtOyTJANEHLxvruFQ2OVZga" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=rAp9oCW4lOMG7GlVfrYkv8GOZrnbZJ1JadZYO5utnEr1whY/vS1mguEymEf6u1oF">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-0">
+                        <td>Relatively Poverty  Statistics </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>Other Indicators of Poverty</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Persistent at-risk-of-poverty, severe material deprivation, material and social deprivation rates
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=kal2W9S7n3Pr38QEbhttckAjN7e3nQdefYT1IbKb6vTKeacwEnScpxJp699GlQhX" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=b3fWCMr0csXA4naxxLCTrTHAESx/BZ8Ge1VQK7Av3ndXDgHRizqNiOf5OmzUZI3N">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                At-risk-of-poverty or social exclusion rate (AROPE) by age groups
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=6vC/ciCvOW7SIAUrQ1Cxm0itghhkIrlNHb7T4PrSaYrSDLFHEA5WOsmMrc/qRK0Y" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=iiiYMsXla5ic2kwKV9mUCbKGHCgxd7FVpuIt3qgADy8UexAZd8FedifsHrC6rex2">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>By Regional Results</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Number of the regional relatively poor and poverty rate by poverty thresholds calculated for regions separately
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=SoWmtEPKlDw3dakIhwqdVMz4FAdp4R07RpmcDtdlJlX95VezfVsabHATgRf7Z7xA" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=nNExXPPes4RuJzWjVDKZJZykFBexMjtzsoFv4iAYMAa6WBP2oUq/yYeR0ZhBpIUi">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Number of the regional relatively poor and proportion of the poor by poverty thresholds calculated for Turkey
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=exBeQQWmzajiWiFtqiFOMorFufcfVKhTcCAbMxdo2lXXxDcqFLGWjjWdg5yV6cNP" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=10LWge4xxjTuI4292vgYkHVEH3gmliussZPgt/H/wqnM8A/zDHH1pqXZ7TBPdCLV">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>By Equivalised Household Disposable Income</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Number of the relatively poor and poverty rate by household type
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=7kDLKYZWV7NoUegxzPu5R1EzvcnOIHez5JMEYyc4Ly4AAEVajgqGG6dpNwueOWCE" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=z5VvutBJVpp2bDGXR7ScaKVD5opaxSyo7ysa66RwkzUP/8gvFGfUZre1FZC32J22">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Number of the relatively poor and poverty rate by education level
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=QR4pFKzboDDbAA4VDobJuKKPbdcod/b6NKS2EHOn9/AMboGkKpOiV742Mku9BfbD" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=V4pP/HP8KzmEKcCmYped66znTdr//xcSD8Tx08xYpoRjeFhcWX3dw1VOEjwvoPoM">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Number of the relatively poor, poverty rates and poverty gap by poverty thresholds adjusted by PPP for Turkey
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=3mHJ0256gcVVqY4INchrkRL6/UGVCmeuHkLCygb1iBBlVZXBeQhZgAmy7rzIV03X" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=fWIqGPY4W25x5odVC8KeSBgqQOy914ZK/sladcidLELT21tBorsyOydbZfic0OqZ">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Number of the relatively poor, poverty rate and poverty gap
+                            </td>
+                            <td width="14%">
+                                08 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=fG0J8LYDV1Urlq8SdbCiKz5nWjYEc6VZ9CN7JPYD5RcPrJDYvpviX5aoteLxZSqe" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=9Vkir95IPP5yGtB9VfkBtZGbpYf22HE1dv2R1YPyr1U6o7baN6XINVZpLfrT7YPP">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-0">
+                        <td>Income Distribution Statistics </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>By Individual Income</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Mean annual income at main job by level of education
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=dUl2dEqtsDICwIjYlJNAFC3B97nv/KLfWgUw2qRKeMeoYgKELrYpV6BYYfCQ3kbb" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=rFkN4Pufa0M/wlDjvqFI8eTYgLDm3jLXiC3ZEg3J8P7DC448GyWz4WlAsshtB4Dt">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Mean annual income at main job by employment status
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=Djqqll0SP5133bFWKv6WtHs3ol1UX6Au4rSu8pzkTL4k2yhV/Z/YV6gorSTrUPLv" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=W6FvqNEx/FOAWM3GG89f1rBRmeDVBvMwcYhaDm4p5Jf47seoLoPcnJeyrsvcelGu">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Mean annual income at main job by occupation group
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=wX6ptJGmnLJaaAAR0KoT3oZjns3wzqPmSc0nhusXW573sMDXEO1yEJMJL0wB3xVx" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=RzL3JDrqGN8gVJbrlkxUcUgxwGHhUboKFb/TQVwtmIihAQY0JjhUhp089l4wOHwP">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Mean annual income at main job by branch of economic activity
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=h0sv5n1jvBTWHUFahr3HmmIjGk9MOwjl6zS9ewDWTkNu2SQKIidZGHMOzD4aiI3t" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=0KjVsPH3MCN7JbP7LEbZGhxDwJKRysqojylDiTF59LY7p25GnohSBRLdF2ZF69ts">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>By Household Disposable Income</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of annual household disposable income orderedby vigintiles
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=rtGBFLGdZYmEe3/3eECa5ds76Qii3b1XxVYdg6sGcJOA0q73mTrabIAXLWVgKcCH" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=c37SAweHCfzTLAQ2iKzAWnvdhPzNND/l4ZvyNyaDZ1tqJHBNKCINU3xxeD70IOU1">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of annual household disposable income ordered by deciles
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=MzeCrqJylEIsPlhsYdixRpAuRixNALeWZAVi6Iwc9UKHqJFwvku0ZDHGztZ9bVNu" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=XO5OmffQc/5PB2SeamcRMnvOO4kAsZ4ThjUzJg8NDxUNiYN8z/4tF8ikRbU6Okgw">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of annual household disposable income ordered by quintiles
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=aWyPA5POdlwGJoDLRSr7lNXbg6A8kUf7bF469bBQcrqNTsbTKAvmgP10U0hFqyCQ" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=eyGJ/fIFpvIlJZlnqxR6MW63lJDurac0aO8pTqZYcV4eSKGC2eDUNsdAefLcjwNp">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Cumulative percentage groups and the highest annual household disposable income by household types
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=ivnNdxa8MvmU2PGQTN/GZc445KtKSs52A6kmPAyyntLaCUBGmijMuCg2RnaXpqqm" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=Os0FZ34HU1to6sdlEMNMXi93dw27DrESCPYceFM3PQSqKk2UdgNAVVzmScmJAJwe">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of households ordered by household disposable income and household types
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=RZ9WIJ9awThiKGnXDwslRVxOuT432S3SHGokZrjE0DlXjVHHKXCxyzBXK8O5XzfH" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=vou1kCgKhZ3m4pfi7y2VSvhHBAiA/FZtpJLWV5km1fSEUrU6fFLOkkeCxEHR6AAw">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Gini coefficient, S80/S20 and S90/S10 ratios
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=BCCfVTU4a/SHzRTMmKsdSwWbqVl/BsGmWs8EABu9QaGPU61CXfMZ4DZ4icovSib0" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=JcgvoDhKoXaNHGaaQ5YMGGFheRH4VkA/nVOKfVQdyw5c3NxZsyG7UhGUl7jPKXnQ">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>By Regional Results</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of annual household disposable incomes by quintiles ordered by household disposable income
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=r6g8Av6cOX5sMCeGad1FDSuGwfHAhBJTbsdjnEDOSlINDvpXm1LzWMdnBsSThS4j" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=C2tv4upjId5AIPHuNVhpwXTG3ntj3XKTYFKf013fGoy5wjADLUJ4uHxMt40Y/Btq">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of annual equivalised household disposable incomes by deciles ordered by equivalised household disposable income
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=r0nja21i6kbJekWXiXFKppYxbUHcAtSIjPf8PXmbXX10QLta5cRz7yVbWgMsFCRV" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=75IkfvS1dJv5yfks4/ebSMnvbMvKxENlqb/0MiKPoTCJ/Ixi8rwoWUSCgIRVqpPN">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of annual equivalised household disposable income by quintiles ordered by equivalised household disposable income
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=hGW/CBJva8oB09iFvg9cMPDFk7mcgKQlVXcwCKm/Nd3h3PLbFNdTOeFs0mWYfdHX" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=Aaqx53dv5CJpUyEh7Xn20JDcx8aZPpcnzBwHnm6kuQCrIl44nmCyfwA89DHbMc4R">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Gini coefficient  by equivalised household disposable income
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=CeZyoMe9ykNvn4pMreyD3TKp/H6o9Hl1pmRR8EkYHhCQKcBu413w2icNKowLSs6f" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=1ONMjJoqHkeb5gaP7PVQkW0WJ1IPLqC718A1EZJpkjO2M03VieM8lWXvIyYWy7Ms">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                S80/S20 ratio by equivalised household disposable income
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=la4JrE3/CotDRkS/KrOd0RmjxDyooiyV3L/rrEgZcVVmDlsii8jeZLqUeOGHRwVE" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=Im63pD3h6wughYEyF8fo7TDEvJJJ7OXGXfDCXO3X4B2CWDql42OsoBs0TOFMQ1xy">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Gini coefficient by household disposable income
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=T/mYpQbuUHw62aQU8iZTkVSnww/s9RMMYd4pZKE22Mf1D/yRmR5gEBfb8q4DBnPY" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=/EP3wqELLrLF111ooC8msOEX/HEMJS3Lzua6swjL8fDc1iOAgcaUTIBqaDBPhso5">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                S80/S20 ratio by household disposable income
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=fuaNYk8C9PtNllwAiwLPTAJ/zUOdqUgslxOtAfj1vmUKWBA6eWyr6EsXlEseE4vd" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=jP3f3LuKeNYokCRzdWGnspvvnUdoYkIf5684yIl3ao7qI6JwxslJhg/4vEyToS5l">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of annual household disposable incomes by deciles ordered by household disposable income
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=CRzJCQvhYMeFmMZv2GYq7lrHLKDCOaGRzrQKyTRS0D74x26IgQQO5/u2MpbUWUAf" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=AEvoqJ1YD5redOV2TWuLV7AZJFATjcEa7PDitPiRWesAyocZgHzQkW6AUPMJD01D">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>By Eqivalised Household Disposable Income</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of annual equivalised household disposable incomes ordered by vigintiles
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=zdmQA4F9pUCTNJTC4WdXqiFNi1tDSGIj7FgZjTHlpNXgq7rIo/D1yGlXREQedmxF" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=CrVB9OG/Xg4A3u2Nho1DOJdmF3xbFK9rRfelvag6qr56R0oa7I39tbPfmRjSPl7O">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of annual equivalised household disposable income ordered by deciles
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=p3d5w6dfNrPIwgSu5xyF//HtAFhV9Ip8ndehS1i9t8sJoCQBzTe8rukCghsetGEc" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=wR74fOpQYYGmSyJiDpAU02z6BK/JetvKr3z7MlqSQkKctZtETZtmpXEtfJ8qPl7C">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Cumulative percentage groups and the highest annual equivalised household disposable income by household types
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=liKhNaSv1GfIMa4x5FbqIH0sbeUmAoyAU7zSuhJ7gU8q66DI58jsmUdaGTBQrWLC" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=E3X198NXS7pgr8XZFW6US4hxjgxE8EIvNYlZ7ZpP268tZjQGr4gaRa94ODvc1ZiR">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of individuals ordered by equivalised household disposable income and household type
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=ZojOpIxk6n0tWHmvZSMYFXbDr4IhhWD3SMeLCvqAfnbX3LSqD2r8N5FZhVZXZDpg" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=D06cT7RvDvxBejMMiZL4QK8aWUiwhOzI1gMTx3g1RCRl/wXHtKz6sIdThzU9fIcZ">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of equivalised household disposable annual income by type of income and ordered quintiles (Vertical%)
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=NS3BBrbLv3X3QzvqEgBy2LlsmhWrwQ4L2fIbo75FOh3PlD/l1ilVnWwpMgbJdduS" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=B3hg2Jji11WQKffyqd0ixhqp01WwuSsR0YJZKbk1FDisydLK4p5XAGYTpc9klAYY">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of equivalised household disposable annual income by type of income and ordered quintiles (Horizontal%)
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=AmmqgUQQ8gVSiT9OjkZoVZ5CRlwpdsVdBAsneW0PdnL2YTb6FDKPh9ezgC5qbaVF" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=otWSavp86dHf/h18C9OT7uba3Mffxysl5WXKseIz5KCghZzk5VC/uDmZdyUyMCKf">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Gini coefficient, S80/S20 and S90/S10 ratios
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=H6uwurdUOSrvqoMED1tPm3Vcr67xuwJvBIrdXm1P95qtV0dYQJojMSGldFE965Tf" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=LOhNpg7Vma4WWIwzLWqo9wgGG461V4Try6rL5eRzHAwAE1HGrBtFwUVgw0q06n5q">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of annual equivalised household disposable income ordered by quintiles
+                            </td>
+                            <td width="14%">
+                                04 May&#x131;s 2023
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=yh3Le7xf8OHUj7lzA8dyPm9YDUaKYsnFwCbM7iU99wGCACRTpyahWV2VupSo8i1p" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=BD7uHZUJgEBfqxL6U1wvYhYcNEg9UsdbKiAaUVwncc6xDk8p3MvK8Pi3bUggpNro">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+            <tr class="dtrg-group dtrg-start dtrg-level-0">
+                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>Household Consumption Expenditure Statistics (Statistical Regions)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditures by Quintiles Ordered by Income, NUTS1
+                            </td>
+                            <td width="14%">
+                                15 Eyl&#xFC;l 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=yewjb8E8gSzzn8mfTjssCAcI5lo/0nZu2CxkfOmM2Sf6Zx7jU15AzFBwqCkpyLKD" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=vIpUN0gMrda8sTzBaukKch4GDNY0FdIX1Yq1EBxEUScbNQg4Qj7PR9rOdPKGani8">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Types of Expenditure, NUTS2
+                            </td>
+                            <td width="14%">
+                                15 Eyl&#xFC;l 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=GeGIY5w/QRu0R8eRVl3f7QEay2vuvEN7dub5s2ijJT/pYRhh2lAgTPEX8oUa4ufi" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=0/7lh21YegWgxGdpGTTH7tfye3BLoLze8ws6lk2UB88JVTzEKLpVlELkHmdohDET">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-0">
+                        <td>Household Consumption Expenditure Statistics (Urban, Rural), 2002-2013 </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>Urban</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Quintiles Ordered by Expenditure
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=u1wBZRBGuEzpZ2yc4fztQ1y6SMzXVHUjMBfR/VxZIx/MyPKTIpxTAbnpXizDbnhL" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=/r5jWg3pLPV2C0pGDbMfSavA2i9myK1TR3fLwp4NfN4ooYcivxjPYsfDcymXeCpU">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Household Size
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=V15DTphQjHnbRx6WQAURMy1hsBffN/4C61cAQOlRfywRignj9xlVM66g8gHRHmjg" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=ktpVXAeUxtEmRY65Po9zXbpr5nwYs8auwLL2ppcEHFm6HraD2MhPwFEYHhdIadVF">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Type of Household
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=Z74T1YeoKJlfHS2N4vEyCf0l81n6AwZ6aLxoFLAa7pWzNASfCJbTCYrI2us4S5yi" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=KqRNNlgBrAHfDl2Ubrge49UD1hWxMmP3yllGjdZbQuUK9At8x3vciYir4UQzLvl/">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Quintiles Ordered by Income
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=AXo7MezLsGddZcHO1FlFu9BZRSmZb7b6LlUEfjXBCZGLguSIZKWkIaRD2MEtnknE" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=OLN7/1Vhu90Alp20L/179yQSCD9fihFYeV0EPtOEJKov9U7H3xqCL2M7eNZLeOHt">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditures
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=x2I4Jkx/BR3pCUKHHFj6tUXd8nQYCa7LtmE3G27sjZzUXz1AtiNkk8T95dhW6WyT" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=AWq4TF1ARbG1UrdDPTcWhkVMBFHqDWAjjpg6t8L1vufOvFiASy3GMBG5NKpXrkjT">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Main Source of Household Income
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=L8xI5ih7guAiFIkSHng0ozbEs13U5xe8WXQPnSLugxZw6OykEEOxytw6VEy2nrXG" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=VSncO03RLhovtA52DYWEHndjX1LxAVNMSPVJJ3Rf3sIl9ObOi7MJnP8s1Jyj9Rcx">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Quintiles Ordered by Income in Expenditure Types
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=mZ159wSNtK5I64/AdVCsPD0s6QtYSye8Lyd/eoQ2Ehx8jRU//GRS0uYCjXLjevEt" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=BKjCXqsFU51wPpmxaieJ6pbdTs1/Mo377Kz/Td5JH4GQRFCS1DBXbGJhiPVxhjhX">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>Rural</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Quintiles Ordered by Expenditure
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=J8OwRL1F3KopBMgc70IroZj1XLkFdBA/5z5a8JNoKYaMEm54MZ3EOZUM3cMW53Hq" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=6xzeqF7/CqFcXGxT2oOtX9xIJgEcsb5T11lvw8lssHxL7kx2Cp6aVTGOYI5eSepO">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Household Size
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=STCFkwB2c8nvQOvtk6qWIjTLl4vQfVlWxLTp5Up2lfcV61KW0k7QzEhdgA/YG4jp" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=lz8Asz/7NQKVHfRR9jccBUKqZz5k2AtJgp4mW5EQlVhXv8ldRVuN2JuZhQvZ4Let">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Type of Household
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=PVUAeDEX/tlnKoMJXc8tktPkQ/WR4wtpsrLXx8A0GY35Vbt36UDYrYxqj6eNi9it" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=Pd3/K0co2h3ofFC7ImGE0Q00eR7P5C5EWLIYDezc9tTlTEkCKnmi0p0T/Yu3fF6q">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Main Source of Household Income
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=O21xg8w81St2q3Z1xno4JQV4/OnQus1cFIEbWteU6e6p1nFndvdMtiV6DsjF6LXf" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=1/CzxKZvWa9wMB2BZC6lz26VHEW5p7GmUTL19X/uMoyukw8UH1HIfGqOnzgjrHUk">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditure by Quintiles Ordered by Income
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=olgm7MZnbe2lrIs6mkp5eeCkzmg7Cq0oduYns/KOMAYL1QjjnweLIXxcrZF609KZ" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=l6YIDv4Mh06IddHDO0Mi7/n7CvBBDSaCYKdBq5BzMJ16QjFss7RVRuPkCvX8EkP/">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Household Consumption Expenditures
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=AEL7IcRDkEx9YZXEoX7etjiKfm/l6SIfrmdnphBuyMgYFClF/4zOxgtniKRifwQ5" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=MwoPJ/j4f8FQ/H9DHxKS56c5oD8FjDkZ36zhxoB75Q0qUOY9tFEAr/SU2yja9zKk">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Distribution of Quintiles Ordered by Income in Expenditure Types
+                            </td>
+                            <td width="14%">
+                                16 Temmuz 2020
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=zvsOrnSK5IGnlhp7CFlWT8/EBSqDNOsghAYbZtRCn7APAvX5DsgKmrR9fLs1yiyA" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=PEkYx/b65rbfgEKGJ8ET2bWgSL3ZzEida6HPS40TG8xeJvkA7MZ50zarap5cM/HC">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+            <tr class="dtrg-group dtrg-start dtrg-level-0">
+                <td>-</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>Well-Being Index for Provinces</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Rankings and Index Values of Well-Being Index for Provinces
+                            </td>
+                            <td width="14%">
+                                22 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=a7W7r54rmrP31k7vFBjLC/zRmcXxxmsg1OaL4mBViGfQW47h1MM2HCDWeoFQP7Et" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=VaS3L2wB8CuthnETBOJ5jcucPpCZ7TnOzV3XnK74zHTMTbx5/yEVBzp4SgMnXoUx">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Indicator Values of Well-Being Index for Provinces
+                            </td>
+                            <td width="14%">
+                                22 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=cKdU4DjgBBr56b9t45IppwzuIUlslV6LBRZmSH2bDqR7Ck/yUCkPy2G4sf8VzTS3" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=kbu3jCnmi7ghrcKZ3Bl8S/GXgO3LAWNBqJOKGNGnxo/m4ooLe6EJgOGB0zBPs1fH">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                    <tr class="dtrg-group dtrg-start dtrg-level-1">
+                        <td>Use of Time</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Average activity time per person by type of activity and sex
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=CUKJETxb3fZDmZoAWkzCNjTqT85JYXruTCp1wwDaIyIj2HiTwkJo2nIYHoIo0jfZ" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=qagycx3h/ahUuLtFqBBennlgsWnyekP2rmMNfV0QqyMrKuOfrDCX4icBxKXAH71t">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Average activity time per person by type of activity, sex and employment status
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=5kwtnKvePBTep5ciuzu4mo4xbcN9tJktXm1kc385a14XFkUgvqfvL/a/pZrCNpNk" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=PUuOTvdDmOVIztc1DJ6eN/qwBje/Q5zbLMiIxH1P8a7kh3p8N46BNeITiLW9esia">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Average activity time per person by type of activity, sex and educational status
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=ygs7/0kg37UP248A5h7KoBCmi5KMeFvcvnbGPU2gwyAhjpFKDYjkopHlN11Frnvz" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=Zi3pCDimTdtB3pEvyBkJvnsGS7NeOsw9wffDttaXvqOvlHDMABaBCwq3H3BlusDv">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Time distribution in household and family care by sex and employment status
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=rfQKmbUKssw3YaBQr79UhffAWEbQRzytoW88dX5hcRDGIcY4r32wyCGmxw83PVfN" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=md5zl7GP1pu418NXRHVLOTs0PDmgFHyaBpylU3MdTRp1RlQ6PJIBHfjmkkjex284">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Time distribution in social life, entertainment, sports, hobbies and mass media by sex and employment status
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=OPzbFQ7g6ee2xthZ9ZPmgl1iBisHlHlQjbnw2YIw6g6IAtz4NZORsZcafT2r8nh9" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=kSZ7vHAcnrTpi/2iIy0QCb9VWEGiOFxaz1NS33igl4yUPKT51b49X65IdKNkYUcE">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Average activity time per person by type of activity, sex and marital status
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=BC0pyJs3SQjCoDqcPJ74pPjH2iqyl88etzgqM2l3SX9GGEc6HLNSyzoNu4APv8ev" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=CXeUegrM0nq6FHAXotXvWOXwz3GjIlAiMZRQQ7oowkpTObURmhJF92yRURhL6y/R">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                General descriptions of Time Use Survey
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=lf8eFYa3BTufhN5Rnv8osU4satKCgAR71dnkQdksFdi6TgCbJDbmB4euGiE/j5s2" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Average activity time per person by type of activity and monthly household income group
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=Wcl35b9IUe8Is873Q147D/KJAbGGm3Ed7nNeha/HouKwAA0Np4ua8QUJr1V4yZ1v" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=7LHpG8Knlc8fVqcmS8LFx9VOxJi4DEB9FYkjMfmwIFyV3eaY5XeUYHI5UE/dVL80">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                The distribution of activities done or participated during the last four weeks by sex
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=tY9lvdvaMZsPd4C1jiwXhldufYNFb7jVApcN9M4RqApfC0dViv9kiVP4fArL1KwL" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=YeQXpGGH1UVQYxiqr4hGIBGZJKqOlgTputSpxCxY4wGZ1WIZLKTqggWL46ES2yFH">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                The distribution of sports activities done or participated regularly during the last four weeks by sex
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=/NS6RgzcywnUduOlRlHfHgpJsl14fnvxQ8JM8E4hpDVzNFZFOkxGyiolWfStR0PJ" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=pCsX1RN4vv6K26WKlXPTtIoyhzmjd05PwyQQO9NZHAuY5BB3tYeEhnDxO/mv3KAK">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                The distribution of intensity status of daily works by sex
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=zVAKifgjFO8SPGWMvUEQ1LKiZatJeOryS68vIGeaBGfTMhD5Hf0HxD1ePOgs/E4B" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=RHT/ucVBGQPvhWO5jCrnZvN2XvwjASTTRpeEEdtFihKkhEqrlczkcmj86S682EYv">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                The distribution of persons who do not have enough time on weekdays and activities which they want to spend time mostly by sex
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=SoyZCWypYuS8qd1KtVTm0WzSRt1wFPbYRmE1Pp8FvzVpju7exyAYG/4yR5vBedLC" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=U6uk7L9VA0TKpwfEYZxWkCgbrIkrIjyJH7fWdHUJYGRSHToNICQDtqTcOtmFhUgT">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Ya&#x15F;l&#x131; bak&#x131;m&#x131; ve s&#x131;kl&#x131;&#x11F;&#x131;n&#x131;n cinsiyete g&#xF6;re da&#x11F;&#x131;l&#x131;m&#x131;
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=rI/5F1peMEvf3tZMHRPbiF19dhidN4rD1jd62mOIiLHsYBlGv5qj044JA98247QY" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=s3RXgJ2Fp/m7ahaLfEuH5MYkZz8JJQTC26ngIpYkp1Cew7MUaxxtVZQFWfkrJczO">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+                        <tr style="font-size: 1.2rem" role="row" class="odd">
+                            <td width="80%">
+                                <svg class="tuik-icon mr-3 tuik-if-green" style="width: 18px; height: 18px">
+                                    <title>İstatistiksel Tablolar</title>
+                                    <use xlink:href="/img/SVG/symbol-defs.svg#tuik-icon-download_table"></use>
+                                </svg>
+                                Average activity time per person by type of activity, sex and age group
+                            </td>
+                            <td width="14%">
+                                12 Ocak 2016
+                            </td>
+                            <td width="3%">
+                                    <a href="/Bulten/DownloadIstatistikselTablo?p=AG3Rpbd7vB9xAes2CibHPPYZ3l424spSuJX2Xpmy/iyXldPDqM//5nq555lLoXK4" data-toggle="tooltip" data-placement="top" title="İstatistiksel Tablolar">
+                                        <img src="/img/SVG/excel.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                            <td width="3%">
+                                    <a data-toggle="tooltip" data-placement="top" title="Tablo Metaverisi" href="/Bulten/DownloadIstatistikselTablo?p=WlMP1P4rW2G1NTMcta3S/pW6rmOsphj9EO3zT04TswcxMfWyHdIrPR3tsoyf1Fhr">
+                                        <img src="/img/SVG/word.svg" width="20px" height="20px" class="img-responsive float-right">
+                                    </a>
+                            </td>
+                        </tr>
+    </tbody>
+</table>
+<script>
+    $(document).ready(function () {
+        $('#istatistikselTable').DataTable({
+            "createdRow": function (row, data, dataIndex) {
+                if (data[1] == "" && data[2] == "" && data[3] == "") {
+                    $('td:eq(1)', row).attr('colspan', 4);
+                    $('td:eq(2)', row).css('display', 'none');
+                    $('td:eq(3)', row).css('display', 'none');
+                    $('td:eq(4)', row).css('display', 'none');
+                }
+            },
+            "aaSorting": [],
+            "pageLength": 50,
+            "oLanguage": "" == "2" ? english : turkish
+        });
+    });
+</script>
