@@ -1,0 +1,323 @@
+{
+  "config": {
+    "background": "#122b39",
+    "font": "Circular Std",
+    "axisX": {
+      "labelColor": "#b4c8d8",
+      "tickColor": "#b4c8d8",
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisY": {
+      "labelColor": "#b4c8d8",
+      "tickColor": "#b4c8d8",
+      "domainColor": "#b4c8d8",
+      "gridColor": "#b4c8d8",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#b4c8d8",
+      "titleFontSize": 12,
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 330,
+      "continuousHeight": 280
+    },
+    "title": {
+      "anchor": "start",
+      "dx": 115,
+      "fontSize": 12,
+      "subtitleFontSize": 12,
+      "color": "#b4c8d8",
+      "subtitleColor": "#b4c8d8E6",
+      "subtitlePadding": 4,
+      "offset": 5
+    },
+    "text": {
+      "color": "#b4c8d8",
+      "fontSize": 12
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-d9e8d24c7e6f4b0de62ddfebed283e86"
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "field": "color",
+          "scale": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "RegionName",
+            "title": "Region",
+            "type": "nominal"
+          },
+          {
+            "field": "12m%Change",
+            "format": ".2%",
+            "title": "12m Change",
+            "type": "quantitative"
+          },
+          {
+            "field": "AveragePriceStr",
+            "title": "Average Price",
+            "type": "nominal"
+          }
+        ],
+        "x": {
+          "axis": {
+            "format": "%",
+            "gridOpacity": 0.6
+          },
+          "field": "12m%Change",
+          "scale": {
+            "padding": 10
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "RegionName",
+          "sort": "-x",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-9c00aa9dc2b1c1a0b4bf9b34ead12925"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#b4c8d8",
+        "size": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-1161fe6dbf20899a0533e388c28c7201"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": -27,
+        "dy": 1,
+        "fontSize": 11
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "title": {
+    "text": "UK House Price Growth by Local Authority",
+    "subtitle": [
+      "Largest changes, 12-months to August 2023",
+      "Source: HM Land Registry"
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-d9e8d24c7e6f4b0de62ddfebed283e86": [
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "Kensington and Chelsea",
+        "AreaCode": "E09000020",
+        "AveragePrice": 1358879.0,
+        "Index": 103.5,
+        "IndexSA": null,
+        "1m%Change": 0.2,
+        "12m%Change": -0.10400000000000001,
+        "AveragePriceStr": "\u00a31,358,879",
+        "color": "#e6224b",
+        "text": "-10.4%"
+      },
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "Hastings",
+        "AreaCode": "E07000062",
+        "AveragePrice": 261075.0,
+        "Index": 169.2,
+        "IndexSA": null,
+        "1m%Change": -3.1,
+        "12m%Change": -0.10400000000000001,
+        "AveragePriceStr": "\u00a3261,075",
+        "color": "#e6224b",
+        "text": "-10.4%"
+      },
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "Shetland Islands",
+        "AreaCode": "S12000027",
+        "AveragePrice": 181821.0,
+        "Index": 136.2,
+        "IndexSA": null,
+        "1m%Change": 0.7,
+        "12m%Change": -0.076,
+        "AveragePriceStr": "\u00a3181,821",
+        "color": "#e6224b",
+        "text": "-7.6%"
+      },
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "Pembrokeshire",
+        "AreaCode": "W06000009",
+        "AveragePrice": 225469.0,
+        "Index": 142.7,
+        "IndexSA": null,
+        "1m%Change": -1.5,
+        "12m%Change": -0.075,
+        "AveragePriceStr": "\u00a3225,469",
+        "color": "#e6224b",
+        "text": "-7.5%"
+      },
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "Orkney Islands",
+        "AreaCode": "S12000023",
+        "AveragePrice": 198965.0,
+        "Index": 163.3,
+        "IndexSA": null,
+        "1m%Change": 0.1,
+        "12m%Change": -0.073,
+        "AveragePriceStr": "\u00a3198,965",
+        "color": "#e6224b",
+        "text": "-7.3%"
+      },
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "Newcastle upon Tyne",
+        "AreaCode": "E08000021",
+        "AveragePrice": 204356.0,
+        "Index": 141.9,
+        "IndexSA": null,
+        "1m%Change": 4.0,
+        "12m%Change": 0.08199999999999999,
+        "AveragePriceStr": "\u00a3204,356",
+        "color": "#36b7b4",
+        "text": "8.2%"
+      },
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "Na h-Eileanan Siar",
+        "AreaCode": "S12000013",
+        "AveragePrice": 173552.0,
+        "Index": 163.8,
+        "IndexSA": null,
+        "1m%Change": -4.9,
+        "12m%Change": 0.11800000000000001,
+        "AveragePriceStr": "\u00a3173,552",
+        "color": "#36b7b4",
+        "text": "11.8%"
+      },
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "Harborough",
+        "AreaCode": "E07000131",
+        "AveragePrice": 390734.0,
+        "Index": 169.7,
+        "IndexSA": null,
+        "1m%Change": 1.9,
+        "12m%Change": 0.122,
+        "AveragePriceStr": "\u00a3390,734",
+        "color": "#36b7b4",
+        "text": "12.2%"
+      },
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "Rutland",
+        "AreaCode": "E06000017",
+        "AveragePrice": 430288.0,
+        "Index": 171.6,
+        "IndexSA": null,
+        "1m%Change": -1.4,
+        "12m%Change": 0.133,
+        "AveragePriceStr": "\u00a3430,288",
+        "color": "#36b7b4",
+        "text": "13.3%"
+      },
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "East Lothian",
+        "AreaCode": "S12000010",
+        "AveragePrice": 336885.0,
+        "Index": 179.5,
+        "IndexSA": null,
+        "1m%Change": 1.2,
+        "12m%Change": 0.154,
+        "AveragePriceStr": "\u00a3336,885",
+        "color": "#36b7b4",
+        "text": "15.4%"
+      },
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "United Kingdom",
+        "AreaCode": "K02000001",
+        "AveragePrice": 291044.0,
+        "Index": 152.6,
+        "IndexSA": 149.8,
+        "1m%Change": 0.3,
+        "12m%Change": 0.002,
+        "AveragePriceStr": "\u00a3291,044",
+        "color": "#b4c8d8",
+        "text": "0.2% UK average"
+      }
+    ],
+    "data-9c00aa9dc2b1c1a0b4bf9b34ead12925": [
+      {
+        "x": 0
+      }
+    ],
+    "data-1161fe6dbf20899a0533e388c28c7201": [
+      {
+        "Date": "2023-08-01T00:00:00",
+        "RegionName": "United Kingdom",
+        "AreaCode": "K02000001",
+        "AveragePrice": 291044.0,
+        "Index": 152.6,
+        "IndexSA": 149.8,
+        "1m%Change": 0.3,
+        "12m%Change": 0.002,
+        "AveragePriceStr": "\u00a3291,044",
+        "color": "#b4c8d8",
+        "text": "0.2% UK average"
+      }
+    ]
+  },
+  "width": 330,
+  "height": 280
+}
