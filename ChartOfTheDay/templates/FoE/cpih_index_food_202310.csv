@@ -1,0 +1,2575 @@
+date,month,value,year,series
+1988-01-01,January,46.9,1988,All items
+1988-02-01,February,47.0,1988,All items
+1988-03-01,March,47.2,1988,All items
+1988-04-01,April,47.8,1988,All items
+1988-05-01,May,48.0,1988,All items
+1988-06-01,June,48.2,1988,All items
+1988-07-01,July,48.2,1988,All items
+1988-08-01,August,48.5,1988,All items
+1988-09-01,September,48.7,1988,All items
+1988-10-01,October,49.0,1988,All items
+1988-11-01,November,49.3,1988,All items
+1988-12-01,December,49.3,1988,All items
+1989-01-01,January,49.5,1989,All items
+1989-02-01,February,49.7,1989,All items
+1989-03-01,March,50.0,1989,All items
+1989-04-01,April,50.5,1989,All items
+1989-05-01,May,50.9,1989,All items
+1989-06-01,June,51.0,1989,All items
+1989-07-01,July,51.0,1989,All items
+1989-08-01,August,51.1,1989,All items
+1989-09-01,September,51.5,1989,All items
+1989-10-01,October,51.9,1989,All items
+1989-11-01,November,52.1,1989,All items
+1989-12-01,December,52.2,1989,All items
+1990-01-01,January,52.4,1990,All items
+1990-02-01,February,52.9,1990,All items
+1990-03-01,March,53.1,1990,All items
+1990-04-01,April,54.4,1990,All items
+1990-05-01,May,55.0,1990,All items
+1990-06-01,June,55.2,1990,All items
+1990-07-01,July,55.2,1990,All items
+1990-08-01,August,55.7,1990,All items
+1990-09-01,September,56.2,1990,All items
+1990-10-01,October,56.7,1990,All items
+1990-11-01,November,56.9,1990,All items
+1990-12-01,December,57.0,1990,All items
+1991-01-01,January,57.0,1991,All items
+1991-02-01,February,57.2,1991,All items
+1991-03-01,March,57.5,1991,All items
+1991-04-01,April,58.7,1991,All items
+1991-05-01,May,59.2,1991,All items
+1991-06-01,June,59.5,1991,All items
+1991-07-01,July,59.3,1991,All items
+1991-08-01,August,59.9,1991,All items
+1991-09-01,September,60.1,1991,All items
+1991-10-01,October,60.4,1991,All items
+1991-11-01,November,60.5,1991,All items
+1991-12-01,December,60.7,1991,All items
+1992-01-01,January,60.5,1992,All items
+1992-02-01,February,60.8,1992,All items
+1992-03-01,March,61.1,1992,All items
+1992-04-01,April,61.8,1992,All items
+1992-05-01,May,62.2,1992,All items
+1992-06-01,June,62.2,1992,All items
+1992-07-01,July,62.0,1992,All items
+1992-08-01,August,62.1,1992,All items
+1992-09-01,September,62.3,1992,All items
+1992-10-01,October,62.5,1992,All items
+1992-11-01,November,62.5,1992,All items
+1992-12-01,December,62.6,1992,All items
+1993-01-01,January,62.4,1993,All items
+1993-02-01,February,62.7,1993,All items
+1993-03-01,March,63.0,1993,All items
+1993-04-01,April,63.4,1993,All items
+1993-05-01,May,63.6,1993,All items
+1993-06-01,June,63.6,1993,All items
+1993-07-01,July,63.4,1993,All items
+1993-08-01,August,63.7,1993,All items
+1993-09-01,September,64.0,1993,All items
+1993-10-01,October,64.0,1993,All items
+1993-11-01,November,63.8,1993,All items
+1993-12-01,December,64.0,1993,All items
+1994-01-01,January,64.0,1994,All items
+1994-02-01,February,64.2,1994,All items
+1994-03-01,March,64.4,1994,All items
+1994-04-01,April,64.9,1994,All items
+1994-05-01,May,65.1,1994,All items
+1994-06-01,June,65.1,1994,All items
+1994-07-01,July,64.7,1994,All items
+1994-08-01,August,65.1,1994,All items
+1994-09-01,September,65.2,1994,All items
+1994-10-01,October,65.1,1994,All items
+1994-11-01,November,65.2,1994,All items
+1994-12-01,December,65.5,1994,All items
+1995-01-01,January,65.5,1995,All items
+1995-02-01,February,65.7,1995,All items
+1995-03-01,March,66.0,1995,All items
+1995-04-01,April,66.4,1995,All items
+1995-05-01,May,66.7,1995,All items
+1995-06-01,June,66.8,1995,All items
+1995-07-01,July,66.6,1995,All items
+1995-08-01,August,66.9,1995,All items
+1995-09-01,September,67.2,1995,All items
+1995-10-01,October,67.1,1995,All items
+1995-11-01,November,67.1,1995,All items
+1995-12-01,December,67.5,1995,All items
+1996-01-01,January,67.4,1996,All items
+1996-02-01,February,67.7,1996,All items
+1996-03-01,March,67.9,1996,All items
+1996-04-01,April,68.3,1996,All items
+1996-05-01,May,68.6,1996,All items
+1996-06-01,June,68.7,1996,All items
+1996-07-01,July,68.3,1996,All items
+1996-08-01,August,68.7,1996,All items
+1996-09-01,September,69.0,1996,All items
+1996-10-01,October,69.1,1996,All items
+1996-11-01,November,69.2,1996,All items
+1996-12-01,December,69.4,1996,All items
+1997-01-01,January,69.2,1997,All items
+1997-02-01,February,69.3,1997,All items
+1997-03-01,March,69.4,1997,All items
+1997-04-01,April,69.7,1997,All items
+1997-05-01,May,70.0,1997,All items
+1997-06-01,June,70.1,1997,All items
+1997-07-01,July,70.0,1997,All items
+1997-08-01,August,70.3,1997,All items
+1997-09-01,September,70.5,1997,All items
+1997-10-01,October,70.6,1997,All items
+1997-11-01,November,70.6,1997,All items
+1997-12-01,December,70.7,1997,All items
+1998-01-01,January,70.4,1998,All items
+1998-02-01,February,70.6,1998,All items
+1998-03-01,March,70.8,1998,All items
+1998-04-01,April,71.2,1998,All items
+1998-05-01,May,71.5,1998,All items
+1998-06-01,June,71.4,1998,All items
+1998-07-01,July,71.2,1998,All items
+1998-08-01,August,71.4,1998,All items
+1998-09-01,September,71.7,1998,All items
+1998-10-01,October,71.7,1998,All items
+1998-11-01,November,71.8,1998,All items
+1998-12-01,December,72.0,1998,All items
+1999-01-01,January,71.8,1999,All items
+1999-02-01,February,71.9,1999,All items
+1999-03-01,March,72.3,1999,All items
+1999-04-01,April,72.6,1999,All items
+1999-05-01,May,72.8,1999,All items
+1999-06-01,June,72.7,1999,All items
+1999-07-01,July,72.4,1999,All items
+1999-08-01,August,72.6,1999,All items
+1999-09-01,September,72.8,1999,All items
+1999-10-01,October,72.8,1999,All items
+1999-11-01,November,72.9,1999,All items
+1999-12-01,December,73.1,1999,All items
+2000-01-01,January,72.6,2000,All items
+2000-02-01,February,72.8,2000,All items
+2000-03-01,March,73.0,2000,All items
+2000-04-01,April,73.3,2000,All items
+2000-05-01,May,73.5,2000,All items
+2000-06-01,June,73.6,2000,All items
+2000-07-01,July,73.3,2000,All items
+2000-08-01,August,73.3,2000,All items
+2000-09-01,September,73.8,2000,All items
+2000-10-01,October,73.8,2000,All items
+2000-11-01,November,74.0,2000,All items
+2000-12-01,December,74.0,2000,All items
+2001-01-01,January,73.5,2001,All items
+2001-02-01,February,73.7,2001,All items
+2001-03-01,March,73.9,2001,All items
+2001-04-01,April,74.4,2001,All items
+2001-05-01,May,74.9,2001,All items
+2001-06-01,June,75.0,2001,All items
+2001-07-01,July,74.5,2001,All items
+2001-08-01,August,74.8,2001,All items
+2001-09-01,September,75.0,2001,All items
+2001-10-01,October,74.9,2001,All items
+2001-11-01,November,74.9,2001,All items
+2001-12-01,December,75.0,2001,All items
+2002-01-01,January,74.8,2002,All items
+2002-02-01,February,75.0,2002,All items
+2002-03-01,March,75.2,2002,All items
+2002-04-01,April,75.6,2002,All items
+2002-05-01,May,75.8,2002,All items
+2002-06-01,June,75.8,2002,All items
+2002-07-01,July,75.6,2002,All items
+2002-08-01,August,75.8,2002,All items
+2002-09-01,September,76.0,2002,All items
+2002-10-01,October,76.1,2002,All items
+2002-11-01,November,76.1,2002,All items
+2002-12-01,December,76.3,2002,All items
+2003-01-01,January,75.9,2003,All items
+2003-02-01,February,76.1,2003,All items
+2003-03-01,March,76.4,2003,All items
+2003-04-01,April,76.8,2003,All items
+2003-05-01,May,76.8,2003,All items
+2003-06-01,June,76.7,2003,All items
+2003-07-01,July,76.6,2003,All items
+2003-08-01,August,76.8,2003,All items
+2003-09-01,September,77.0,2003,All items
+2003-10-01,October,77.1,2003,All items
+2003-11-01,November,77.1,2003,All items
+2003-12-01,December,77.3,2003,All items
+2004-01-01,January,77.0,2004,All items
+2004-02-01,February,77.2,2004,All items
+2004-03-01,March,77.3,2004,All items
+2004-04-01,April,77.6,2004,All items
+2004-05-01,May,77.9,2004,All items
+2004-06-01,June,77.9,2004,All items
+2004-07-01,July,77.7,2004,All items
+2004-08-01,August,77.9,2004,All items
+2004-09-01,September,77.9,2004,All items
+2004-10-01,October,78.1,2004,All items
+2004-11-01,November,78.3,2004,All items
+2004-12-01,December,78.6,2004,All items
+2005-01-01,January,78.3,2005,All items
+2005-02-01,February,78.5,2005,All items
+2005-03-01,March,78.8,2005,All items
+2005-04-01,April,79.1,2005,All items
+2005-05-01,May,79.4,2005,All items
+2005-06-01,June,79.4,2005,All items
+2005-07-01,July,79.5,2005,All items
+2005-08-01,August,79.7,2005,All items
+2005-09-01,September,79.9,2005,All items
+2005-10-01,October,80.0,2005,All items
+2005-11-01,November,80.0,2005,All items
+2005-12-01,December,80.3,2005,All items
+2006-01-01,January,80.0,2006,All items
+2006-02-01,February,80.2,2006,All items
+2006-03-01,March,80.4,2006,All items
+2006-04-01,April,80.9,2006,All items
+2006-05-01,May,81.3,2006,All items
+2006-06-01,June,81.5,2006,All items
+2006-07-01,July,81.5,2006,All items
+2006-08-01,August,81.8,2006,All items
+2006-09-01,September,81.9,2006,All items
+2006-10-01,October,82.0,2006,All items
+2006-11-01,November,82.2,2006,All items
+2006-12-01,December,82.6,2006,All items
+2007-01-01,January,82.1,2007,All items
+2007-02-01,February,82.4,2007,All items
+2007-03-01,March,82.8,2007,All items
+2007-04-01,April,83.1,2007,All items
+2007-05-01,May,83.3,2007,All items
+2007-06-01,June,83.5,2007,All items
+2007-07-01,July,83.1,2007,All items
+2007-08-01,August,83.4,2007,All items
+2007-09-01,September,83.5,2007,All items
+2007-10-01,October,83.8,2007,All items
+2007-11-01,November,84.1,2007,All items
+2007-12-01,December,84.5,2007,All items
+2008-01-01,January,84.1,2008,All items
+2008-02-01,February,84.6,2008,All items
+2008-03-01,March,84.9,2008,All items
+2008-04-01,April,85.6,2008,All items
+2008-05-01,May,86.1,2008,All items
+2008-06-01,June,86.6,2008,All items
+2008-07-01,July,86.6,2008,All items
+2008-08-01,August,87.1,2008,All items
+2008-09-01,September,87.5,2008,All items
+2008-10-01,October,87.3,2008,All items
+2008-11-01,November,87.3,2008,All items
+2008-12-01,December,87.1,2008,All items
+2009-01-01,January,86.6,2009,All items
+2009-02-01,February,87.2,2009,All items
+2009-03-01,March,87.3,2009,All items
+2009-04-01,April,87.5,2009,All items
+2009-05-01,May,87.9,2009,All items
+2009-06-01,June,88.1,2009,All items
+2009-07-01,July,88.0,2009,All items
+2009-08-01,August,88.3,2009,All items
+2009-09-01,September,88.3,2009,All items
+2009-10-01,October,88.4,2009,All items
+2009-11-01,November,88.6,2009,All items
+2009-12-01,December,88.9,2009,All items
+2010-01-01,January,88.8,2010,All items
+2010-02-01,February,89.0,2010,All items
+2010-03-01,March,89.4,2010,All items
+2010-04-01,April,89.9,2010,All items
+2010-05-01,May,90.1,2010,All items
+2010-06-01,June,90.2,2010,All items
+2010-07-01,July,90.0,2010,All items
+2010-08-01,August,90.4,2010,All items
+2010-09-01,September,90.4,2010,All items
+2010-10-01,October,90.6,2010,All items
+2010-11-01,November,90.9,2010,All items
+2010-12-01,December,91.7,2010,All items
+2011-01-01,January,91.8,2011,All items
+2011-02-01,February,92.3,2011,All items
+2011-03-01,March,92.6,2011,All items
+2011-04-01,April,93.3,2011,All items
+2011-05-01,May,93.5,2011,All items
+2011-06-01,June,93.5,2011,All items
+2011-07-01,July,93.5,2011,All items
+2011-08-01,August,93.9,2011,All items
+2011-09-01,September,94.5,2011,All items
+2011-10-01,October,94.5,2011,All items
+2011-11-01,November,94.7,2011,All items
+2011-12-01,December,95.0,2011,All items
+2012-01-01,January,94.7,2012,All items
+2012-02-01,February,95.2,2012,All items
+2012-03-01,March,95.4,2012,All items
+2012-04-01,April,95.9,2012,All items
+2012-05-01,May,95.9,2012,All items
+2012-06-01,June,95.6,2012,All items
+2012-07-01,July,95.7,2012,All items
+2012-08-01,August,96.1,2012,All items
+2012-09-01,September,96.4,2012,All items
+2012-10-01,October,96.8,2012,All items
+2012-11-01,November,97.0,2012,All items
+2012-12-01,December,97.3,2012,All items
+2013-01-01,January,97.0,2013,All items
+2013-02-01,February,97.5,2013,All items
+2013-03-01,March,97.8,2013,All items
+2013-04-01,April,98.0,2013,All items
+2013-05-01,May,98.2,2013,All items
+2013-06-01,June,98.0,2013,All items
+2013-07-01,July,98.0,2013,All items
+2013-08-01,August,98.4,2013,All items
+2013-09-01,September,98.7,2013,All items
+2013-10-01,October,98.8,2013,All items
+2013-11-01,November,98.8,2013,All items
+2013-12-01,December,99.2,2013,All items
+2014-01-01,January,98.7,2014,All items
+2014-02-01,February,99.1,2014,All items
+2014-03-01,March,99.3,2014,All items
+2014-04-01,April,99.6,2014,All items
+2014-05-01,May,99.6,2014,All items
+2014-06-01,June,99.8,2014,All items
+2014-07-01,July,99.6,2014,All items
+2014-08-01,August,99.9,2014,All items
+2014-09-01,September,100.0,2014,All items
+2014-10-01,October,100.1,2014,All items
+2014-11-01,November,99.9,2014,All items
+2014-12-01,December,99.9,2014,All items
+2015-01-01,January,99.2,2015,All items
+2015-02-01,February,99.5,2015,All items
+2015-03-01,March,99.6,2015,All items
+2015-04-01,April,99.9,2015,All items
+2015-05-01,May,100.1,2015,All items
+2015-06-01,June,100.1,2015,All items
+2015-07-01,July,100.0,2015,All items
+2015-08-01,August,100.3,2015,All items
+2015-09-01,September,100.2,2015,All items
+2015-10-01,October,100.3,2015,All items
+2015-11-01,November,100.3,2015,All items
+2015-12-01,December,100.4,2015,All items
+2016-01-01,January,99.9,2016,All items
+2016-02-01,February,100.1,2016,All items
+2016-03-01,March,100.4,2016,All items
+2016-04-01,April,100.6,2016,All items
+2016-05-01,May,100.8,2016,All items
+2016-06-01,June,101.0,2016,All items
+2016-07-01,July,100.9,2016,All items
+2016-08-01,August,101.2,2016,All items
+2016-09-01,September,101.5,2016,All items
+2016-10-01,October,101.6,2016,All items
+2016-11-01,November,101.8,2016,All items
+2016-12-01,December,102.2,2016,All items
+2017-01-01,January,101.8,2017,All items
+2017-02-01,February,102.4,2017,All items
+2017-03-01,March,102.7,2017,All items
+2017-04-01,April,103.2,2017,All items
+2017-05-01,May,103.5,2017,All items
+2017-06-01,June,103.5,2017,All items
+2017-07-01,July,103.5,2017,All items
+2017-08-01,August,104.0,2017,All items
+2017-09-01,September,104.3,2017,All items
+2017-10-01,October,104.4,2017,All items
+2017-11-01,November,104.7,2017,All items
+2017-12-01,December,105.0,2017,All items
+2018-01-01,January,104.5,2018,All items
+2018-02-01,February,104.9,2018,All items
+2018-03-01,March,105.1,2018,All items
+2018-04-01,April,105.5,2018,All items
+2018-05-01,May,105.9,2018,All items
+2018-06-01,June,105.9,2018,All items
+2018-07-01,July,105.9,2018,All items
+2018-08-01,August,106.5,2018,All items
+2018-09-01,September,106.6,2018,All items
+2018-10-01,October,106.7,2018,All items
+2018-11-01,November,106.9,2018,All items
+2018-12-01,December,107.1,2018,All items
+2019-01-01,January,106.4,2019,All items
+2019-02-01,February,106.8,2019,All items
+2019-03-01,March,107.0,2019,All items
+2019-04-01,April,107.6,2019,All items
+2019-05-01,May,107.9,2019,All items
+2019-06-01,June,107.9,2019,All items
+2019-07-01,July,108.0,2019,All items
+2019-08-01,August,108.3,2019,All items
+2019-09-01,September,108.4,2019,All items
+2019-10-01,October,108.3,2019,All items
+2019-11-01,November,108.5,2019,All items
+2019-12-01,December,108.5,2019,All items
+2020-01-01,January,108.3,2020,All items
+2020-02-01,February,108.6,2020,All items
+2020-03-01,March,108.6,2020,All items
+2020-04-01,April,108.6,2020,All items
+2020-05-01,May,108.6,2020,All items
+2020-06-01,June,108.8,2020,All items
+2020-07-01,July,109.2,2020,All items
+2020-08-01,August,108.8,2020,All items
+2020-09-01,September,109.2,2020,All items
+2020-10-01,October,109.2,2020,All items
+2020-11-01,November,109.1,2020,All items
+2020-12-01,December,109.4,2020,All items
+2021-01-01,January,109.3,2021,All items
+2021-02-01,February,109.4,2021,All items
+2021-03-01,March,109.7,2021,All items
+2021-04-01,April,110.4,2021,All items
+2021-05-01,May,111.0,2021,All items
+2021-06-01,June,111.4,2021,All items
+2021-07-01,July,111.4,2021,All items
+2021-08-01,August,112.1,2021,All items
+2021-09-01,September,112.4,2021,All items
+2021-10-01,October,113.4,2021,All items
+2021-11-01,November,114.1,2021,All items
+2021-12-01,December,114.7,2021,All items
+2022-01-01,January,114.6,2022,All items
+2022-02-01,February,115.4,2022,All items
+2022-03-01,March,116.5,2022,All items
+2022-04-01,April,119.0,2022,All items
+2022-05-01,May,119.7,2022,All items
+2022-06-01,June,120.5,2022,All items
+2022-07-01,July,121.2,2022,All items
+2022-08-01,August,121.8,2022,All items
+2022-09-01,September,122.3,2022,All items
+2022-10-01,October,124.3,2022,All items
+2022-11-01,November,124.8,2022,All items
+2022-12-01,December,125.3,2022,All items
+2023-01-01,January,124.8,2023,All items
+2023-02-01,February,126.0,2023,All items
+2023-03-01,March,126.8,2023,All items
+2023-04-01,April,128.3,2023,All items
+2023-05-01,May,129.1,2023,All items
+2023-06-01,June,129.4,2023,All items
+2023-07-01,July,129.0,2023,All items
+2023-08-01,August,129.4,2023,All items
+2023-09-01,September,130.1,2023,All items
+1988-01-01,January,48.2,1988,Food
+1988-02-01,February,48.5,1988,Food
+1988-03-01,March,48.6,1988,Food
+1988-04-01,April,48.9,1988,Food
+1988-05-01,May,49.0,1988,Food
+1988-06-01,June,49.0,1988,Food
+1988-07-01,July,48.5,1988,Food
+1988-08-01,August,48.7,1988,Food
+1988-09-01,September,48.9,1988,Food
+1988-10-01,October,48.9,1988,Food
+1988-11-01,November,49.3,1988,Food
+1988-12-01,December,49.7,1988,Food
+1989-01-01,January,50.1,1989,Food
+1989-02-01,February,50.3,1989,Food
+1989-03-01,March,50.5,1989,Food
+1989-04-01,April,51.1,1989,Food
+1989-05-01,May,51.5,1989,Food
+1989-06-01,June,51.6,1989,Food
+1989-07-01,July,51.3,1989,Food
+1989-08-01,August,51.5,1989,Food
+1989-09-01,September,51.9,1989,Food
+1989-10-01,October,52.5,1989,Food
+1989-11-01,November,53.0,1989,Food
+1989-12-01,December,53.5,1989,Food
+1990-01-01,January,54.3,1990,Food
+1990-02-01,February,54.8,1990,Food
+1990-03-01,March,55.0,1990,Food
+1990-04-01,April,55.5,1990,Food
+1990-05-01,May,56.1,1990,Food
+1990-06-01,June,56.0,1990,Food
+1990-07-01,July,55.3,1990,Food
+1990-08-01,August,55.9,1990,Food
+1990-09-01,September,56.1,1990,Food
+1990-10-01,October,56.1,1990,Food
+1990-11-01,November,56.6,1990,Food
+1990-12-01,December,57.0,1990,Food
+1991-01-01,January,57.5,1991,Food
+1991-02-01,February,58.2,1991,Food
+1991-03-01,March,58.2,1991,Food
+1991-04-01,April,58.8,1991,Food
+1991-05-01,May,58.7,1991,Food
+1991-06-01,June,59.3,1991,Food
+1991-07-01,July,58.4,1991,Food
+1991-08-01,August,59.0,1991,Food
+1991-09-01,September,58.5,1991,Food
+1991-10-01,October,58.5,1991,Food
+1991-11-01,November,59.1,1991,Food
+1991-12-01,December,59.2,1991,Food
+1992-01-01,January,59.7,1992,Food
+1992-02-01,February,60.0,1992,Food
+1992-03-01,March,60.1,1992,Food
+1992-04-01,April,59.8,1992,Food
+1992-05-01,May,60.1,1992,Food
+1992-06-01,June,59.9,1992,Food
+1992-07-01,July,59.0,1992,Food
+1992-08-01,August,59.2,1992,Food
+1992-09-01,September,59.0,1992,Food
+1992-10-01,October,59.2,1992,Food
+1992-11-01,November,59.1,1992,Food
+1992-12-01,December,59.7,1992,Food
+1993-01-01,January,59.9,1993,Food
+1993-02-01,February,60.6,1993,Food
+1993-03-01,March,61.0,1993,Food
+1993-04-01,April,60.7,1993,Food
+1993-05-01,May,61.5,1993,Food
+1993-06-01,June,61.1,1993,Food
+1993-07-01,July,61.1,1993,Food
+1993-08-01,August,61.1,1993,Food
+1993-09-01,September,60.8,1993,Food
+1993-10-01,October,60.2,1993,Food
+1993-11-01,November,59.9,1993,Food
+1993-12-01,December,60.1,1993,Food
+1994-01-01,January,60.4,1994,Food
+1994-02-01,February,60.7,1994,Food
+1994-03-01,March,61.1,1994,Food
+1994-04-01,April,61.3,1994,Food
+1994-05-01,May,61.8,1994,Food
+1994-06-01,June,61.8,1994,Food
+1994-07-01,July,61.4,1994,Food
+1994-08-01,August,61.5,1994,Food
+1994-09-01,September,60.9,1994,Food
+1994-10-01,October,60.7,1994,Food
+1994-11-01,November,61.0,1994,Food
+1994-12-01,December,61.6,1994,Food
+1995-01-01,January,62.0,1995,Food
+1995-02-01,February,62.3,1995,Food
+1995-03-01,March,62.8,1995,Food
+1995-04-01,April,62.7,1995,Food
+1995-05-01,May,63.8,1995,Food
+1995-06-01,June,63.5,1995,Food
+1995-07-01,July,63.0,1995,Food
+1995-08-01,August,64.1,1995,Food
+1995-09-01,September,64.2,1995,Food
+1995-10-01,October,63.3,1995,Food
+1995-11-01,November,63.4,1995,Food
+1995-12-01,December,64.0,1995,Food
+1996-01-01,January,64.5,1996,Food
+1996-02-01,February,65.1,1996,Food
+1996-03-01,March,65.6,1996,Food
+1996-04-01,April,65.6,1996,Food
+1996-05-01,May,66.2,1996,Food
+1996-06-01,June,66.1,1996,Food
+1996-07-01,July,65.0,1996,Food
+1996-08-01,August,65.9,1996,Food
+1996-09-01,September,65.2,1996,Food
+1996-10-01,October,64.5,1996,Food
+1996-11-01,November,64.2,1996,Food
+1996-12-01,December,64.3,1996,Food
+1997-01-01,January,64.8,1997,Food
+1997-02-01,February,64.6,1997,Food
+1997-03-01,March,64.1,1997,Food
+1997-04-01,April,64.3,1997,Food
+1997-05-01,May,64.8,1997,Food
+1997-06-01,June,65.5,1997,Food
+1997-07-01,July,65.0,1997,Food
+1997-08-01,August,65.2,1997,Food
+1997-09-01,September,65.0,1997,Food
+1997-10-01,October,65.0,1997,Food
+1997-11-01,November,64.8,1997,Food
+1997-12-01,December,64.8,1997,Food
+1998-01-01,January,64.7,1998,Food
+1998-02-01,February,64.4,1998,Food
+1998-03-01,March,64.2,1998,Food
+1998-04-01,April,64.5,1998,Food
+1998-05-01,May,65.5,1998,Food
+1998-06-01,June,65.3,1998,Food
+1998-07-01,July,65.1,1998,Food
+1998-08-01,August,65.9,1998,Food
+1998-09-01,September,65.6,1998,Food
+1998-10-01,October,65.7,1998,Food
+1998-11-01,November,65.6,1998,Food
+1998-12-01,December,66.2,1998,Food
+1999-01-01,January,66.4,1999,Food
+1999-02-01,February,66.4,1999,Food
+1999-03-01,March,65.9,1999,Food
+1999-04-01,April,65.7,1999,Food
+1999-05-01,May,66.2,1999,Food
+1999-06-01,June,65.7,1999,Food
+1999-07-01,July,65.0,1999,Food
+1999-08-01,August,64.9,1999,Food
+1999-09-01,September,64.7,1999,Food
+1999-10-01,October,64.7,1999,Food
+1999-11-01,November,65.0,1999,Food
+1999-12-01,December,65.2,1999,Food
+2000-01-01,January,65.1,2000,Food
+2000-02-01,February,65.0,2000,Food
+2000-03-01,March,64.4,2000,Food
+2000-04-01,April,64.3,2000,Food
+2000-05-01,May,64.9,2000,Food
+2000-06-01,June,65.2,2000,Food
+2000-07-01,July,65.8,2000,Food
+2000-08-01,August,65.2,2000,Food
+2000-09-01,September,65.4,2000,Food
+2000-10-01,October,65.4,2000,Food
+2000-11-01,November,65.9,2000,Food
+2000-12-01,December,66.0,2000,Food
+2001-01-01,January,66.2,2001,Food
+2001-02-01,February,66.3,2001,Food
+2001-03-01,March,67.2,2001,Food
+2001-04-01,April,67.4,2001,Food
+2001-05-01,May,69.4,2001,Food
+2001-06-01,June,69.8,2001,Food
+2001-07-01,July,68.3,2001,Food
+2001-08-01,August,68.1,2001,Food
+2001-09-01,September,68.0,2001,Food
+2001-10-01,October,68.1,2001,Food
+2001-11-01,November,68.1,2001,Food
+2001-12-01,December,68.5,2001,Food
+2002-01-01,January,69.0,2002,Food
+2002-02-01,February,69.0,2002,Food
+2002-03-01,March,69.1,2002,Food
+2002-04-01,April,69.0,2002,Food
+2002-05-01,May,68.8,2002,Food
+2002-06-01,June,68.3,2002,Food
+2002-07-01,July,68.3,2002,Food
+2002-08-01,August,68.1,2002,Food
+2002-09-01,September,68.3,2002,Food
+2002-10-01,October,68.4,2002,Food
+2002-11-01,November,68.3,2002,Food
+2002-12-01,December,68.3,2002,Food
+2003-01-01,January,68.3,2003,Food
+2003-02-01,February,68.8,2003,Food
+2003-03-01,March,69.0,2003,Food
+2003-04-01,April,69.3,2003,Food
+2003-05-01,May,69.7,2003,Food
+2003-06-01,June,69.4,2003,Food
+2003-07-01,July,69.3,2003,Food
+2003-08-01,August,69.4,2003,Food
+2003-09-01,September,70.1,2003,Food
+2003-10-01,October,70.2,2003,Food
+2003-11-01,November,70.4,2003,Food
+2003-12-01,December,70.7,2003,Food
+2004-01-01,January,70.5,2004,Food
+2004-02-01,February,70.6,2004,Food
+2004-03-01,March,70.7,2004,Food
+2004-04-01,April,70.5,2004,Food
+2004-05-01,May,70.7,2004,Food
+2004-06-01,June,70.2,2004,Food
+2004-07-01,July,69.7,2004,Food
+2004-08-01,August,69.5,2004,Food
+2004-09-01,September,69.7,2004,Food
+2004-10-01,October,69.9,2004,Food
+2004-11-01,November,70.3,2004,Food
+2004-12-01,December,70.8,2004,Food
+2005-01-01,January,70.9,2005,Food
+2005-02-01,February,71.4,2005,Food
+2005-03-01,March,72.1,2005,Food
+2005-04-01,April,71.4,2005,Food
+2005-05-01,May,71.9,2005,Food
+2005-06-01,June,71.9,2005,Food
+2005-07-01,July,70.9,2005,Food
+2005-08-01,August,71.0,2005,Food
+2005-09-01,September,71.1,2005,Food
+2005-10-01,October,71.0,2005,Food
+2005-11-01,November,71.5,2005,Food
+2005-12-01,December,71.9,2005,Food
+2006-01-01,January,71.6,2006,Food
+2006-02-01,February,72.0,2006,Food
+2006-03-01,March,71.6,2006,Food
+2006-04-01,April,71.4,2006,Food
+2006-05-01,May,72.4,2006,Food
+2006-06-01,June,72.9,2006,Food
+2006-07-01,July,73.1,2006,Food
+2006-08-01,August,73.4,2006,Food
+2006-09-01,September,73.7,2006,Food
+2006-10-01,October,74.1,2006,Food
+2006-11-01,November,74.9,2006,Food
+2006-12-01,December,75.1,2006,Food
+2007-01-01,January,74.4,2007,Food
+2007-02-01,February,75.0,2007,Food
+2007-03-01,March,75.5,2007,Food
+2007-04-01,April,75.6,2007,Food
+2007-05-01,May,75.9,2007,Food
+2007-06-01,June,76.4,2007,Food
+2007-07-01,July,74.9,2007,Food
+2007-08-01,August,75.4,2007,Food
+2007-09-01,September,76.5,2007,Food
+2007-10-01,October,77.9,2007,Food
+2007-11-01,November,78.8,2007,Food
+2007-12-01,December,79.5,2007,Food
+2008-01-01,January,79.3,2008,Food
+2008-02-01,February,79.6,2008,Food
+2008-03-01,March,79.9,2008,Food
+2008-04-01,April,81.1,2008,Food
+2008-05-01,May,82.6,2008,Food
+2008-06-01,June,84.6,2008,Food
+2008-07-01,July,85.2,2008,Food
+2008-08-01,August,86.4,2008,Food
+2008-09-01,September,86.3,2008,Food
+2008-10-01,October,86.6,2008,Food
+2008-11-01,November,88.0,2008,Food
+2008-12-01,December,88.7,2008,Food
+2009-01-01,January,88.2,2009,Food
+2009-02-01,February,89.5,2009,Food
+2009-03-01,March,88.9,2009,Food
+2009-04-01,April,88.5,2009,Food
+2009-05-01,May,89.5,2009,Food
+2009-06-01,June,89.2,2009,Food
+2009-07-01,July,88.7,2009,Food
+2009-08-01,August,88.0,2009,Food
+2009-09-01,September,87.2,2009,Food
+2009-10-01,October,88.1,2009,Food
+2009-11-01,November,89.0,2009,Food
+2009-12-01,December,89.7,2009,Food
+2010-01-01,January,89.4,2010,Food
+2010-02-01,February,90.4,2010,Food
+2010-03-01,March,90.5,2010,Food
+2010-04-01,April,90.8,2010,Food
+2010-05-01,May,90.6,2010,Food
+2010-06-01,June,90.7,2010,Food
+2010-07-01,July,91.4,2010,Food
+2010-08-01,August,91.5,2010,Food
+2010-09-01,September,91.5,2010,Food
+2010-10-01,October,91.9,2010,Food
+2010-11-01,November,93.4,2010,Food
+2010-12-01,December,94.9,2010,Food
+2011-01-01,January,94.5,2011,Food
+2011-02-01,February,95.5,2011,Food
+2011-03-01,March,94.2,2011,Food
+2011-04-01,April,94.3,2011,Food
+2011-05-01,May,95.5,2011,Food
+2011-06-01,June,96.7,2011,Food
+2011-07-01,July,96.9,2011,Food
+2011-08-01,August,96.8,2011,Food
+2011-09-01,September,97.1,2011,Food
+2011-10-01,October,96.2,2011,Food
+2011-11-01,November,96.9,2011,Food
+2011-12-01,December,98.3,2011,Food
+2012-01-01,January,97.8,2012,Food
+2012-02-01,February,98.7,2012,Food
+2012-03-01,March,98.5,2012,Food
+2012-04-01,April,98.2,2012,Food
+2012-05-01,May,98.7,2012,Food
+2012-06-01,June,98.6,2012,Food
+2012-07-01,July,98.5,2012,Food
+2012-08-01,August,98.7,2012,Food
+2012-09-01,September,98.8,2012,Food
+2012-10-01,October,99.4,2012,Food
+2012-11-01,November,100.6,2012,Food
+2012-12-01,December,102.2,2012,Food
+2013-01-01,January,102.1,2013,Food
+2013-02-01,February,102.8,2013,Food
+2013-03-01,March,102.2,2013,Food
+2013-04-01,April,103.1,2013,Food
+2013-05-01,May,103.0,2013,Food
+2013-06-01,June,102.4,2013,Food
+2013-07-01,July,102.8,2013,Food
+2013-08-01,August,103.4,2013,Food
+2013-09-01,September,103.5,2013,Food
+2013-10-01,October,103.6,2013,Food
+2013-11-01,November,103.6,2013,Food
+2013-12-01,December,104.3,2013,Food
+2014-01-01,January,104.3,2014,Food
+2014-02-01,February,104.6,2014,Food
+2014-03-01,March,104.2,2014,Food
+2014-04-01,April,103.6,2014,Food
+2014-05-01,May,102.4,2014,Food
+2014-06-01,June,102.4,2014,Food
+2014-07-01,July,102.2,2014,Food
+2014-08-01,August,102.1,2014,Food
+2014-09-01,September,102.0,2014,Food
+2014-10-01,October,102.0,2014,Food
+2014-11-01,November,101.9,2014,Food
+2014-12-01,December,102.4,2014,Food
+2015-01-01,January,101.4,2015,Food
+2015-02-01,February,101.1,2015,Food
+2015-03-01,March,100.9,2015,Food
+2015-04-01,April,100.5,2015,Food
+2015-05-01,May,100.6,2015,Food
+2015-06-01,June,100.2,2015,Food
+2015-07-01,July,99.5,2015,Food
+2015-08-01,August,99.3,2015,Food
+2015-09-01,September,99.5,2015,Food
+2015-10-01,October,99.0,2015,Food
+2015-11-01,November,99.1,2015,Food
+2015-12-01,December,99.1,2015,Food
+2016-01-01,January,98.6,2016,Food
+2016-02-01,February,98.7,2016,Food
+2016-03-01,March,97.9,2016,Food
+2016-04-01,April,97.9,2016,Food
+2016-05-01,May,97.4,2016,Food
+2016-06-01,June,96.9,2016,Food
+2016-07-01,July,96.8,2016,Food
+2016-08-01,August,97.4,2016,Food
+2016-09-01,September,97.0,2016,Food
+2016-10-01,October,96.9,2016,Food
+2016-11-01,November,97.3,2016,Food
+2016-12-01,December,98.1,2016,Food
+2017-01-01,January,98.2,2017,Food
+2017-02-01,February,98.9,2017,Food
+2017-03-01,March,99.5,2017,Food
+2017-04-01,April,99.7,2017,Food
+2017-05-01,May,99.8,2017,Food
+2017-06-01,June,99.5,2017,Food
+2017-07-01,July,99.5,2017,Food
+2017-08-01,August,99.6,2017,Food
+2017-09-01,September,100.4,2017,Food
+2017-10-01,October,101.0,2017,Food
+2017-11-01,November,101.6,2017,Food
+2017-12-01,December,102.2,2017,Food
+2018-01-01,January,102.1,2018,Food
+2018-02-01,February,102.2,2018,Food
+2018-03-01,March,102.5,2018,Food
+2018-04-01,April,102.0,2018,Food
+2018-05-01,May,101.8,2018,Food
+2018-06-01,June,101.2,2018,Food
+2018-07-01,July,101.4,2018,Food
+2018-08-01,August,101.7,2018,Food
+2018-09-01,September,101.5,2018,Food
+2018-10-01,October,101.4,2018,Food
+2018-11-01,November,101.7,2018,Food
+2018-12-01,December,102.6,2018,Food
+2019-01-01,January,102.5,2019,Food
+2019-02-01,February,103.0,2019,Food
+2019-03-01,March,102.9,2019,Food
+2019-04-01,April,102.6,2019,Food
+2019-05-01,May,102.7,2019,Food
+2019-06-01,June,102.7,2019,Food
+2019-07-01,July,102.9,2019,Food
+2019-08-01,August,103.4,2019,Food
+2019-09-01,September,103.1,2019,Food
+2019-10-01,October,102.4,2019,Food
+2019-11-01,November,103.5,2019,Food
+2019-12-01,December,104.0,2019,Food
+2020-01-01,January,103.8,2020,Food
+2020-02-01,February,103.9,2020,Food
+2020-03-01,March,104.1,2020,Food
+2020-04-01,April,104.0,2020,Food
+2020-05-01,May,104.5,2020,Food
+2020-06-01,June,103.9,2020,Food
+2020-07-01,July,103.6,2020,Food
+2020-08-01,August,103.8,2020,Food
+2020-09-01,September,103.0,2020,Food
+2020-10-01,October,103.0,2020,Food
+2020-11-01,November,103.0,2020,Food
+2020-12-01,December,102.4,2020,Food
+2021-01-01,January,103.0,2021,Food
+2021-02-01,February,103.5,2021,Food
+2021-03-01,March,102.6,2021,Food
+2021-04-01,April,103.5,2021,Food
+2021-05-01,May,103.2,2021,Food
+2021-06-01,June,103.5,2021,Food
+2021-07-01,July,103.1,2021,Food
+2021-08-01,August,104.1,2021,Food
+2021-09-01,September,103.9,2021,Food
+2021-10-01,October,104.4,2021,Food
+2021-11-01,November,105.5,2021,Food
+2021-12-01,December,107.0,2021,Food
+2022-01-01,January,107.6,2022,Food
+2022-02-01,February,108.6,2022,Food
+2022-03-01,March,108.7,2022,Food
+2022-04-01,April,110.5,2022,Food
+2022-05-01,May,112.1,2022,Food
+2022-06-01,June,113.8,2022,Food
+2022-07-01,July,116.4,2022,Food
+2022-08-01,August,118.2,2022,Food
+2022-09-01,September,119.4,2022,Food
+2022-10-01,October,121.9,2022,Food
+2022-11-01,November,123.2,2022,Food
+2022-12-01,December,125.2,2022,Food
+2023-01-01,January,125.9,2023,Food
+2023-02-01,February,128.6,2023,Food
+2023-03-01,March,130.1,2023,Food
+2023-04-01,April,132.0,2023,Food
+2023-05-01,May,133.2,2023,Food
+2023-06-01,June,133.6,2023,Food
+2023-07-01,July,133.8,2023,Food
+2023-08-01,August,134.1,2023,Food
+2023-09-01,September,134.2,2023,Food
+1988-01-01,January,50.1,1988,Bread and cereals
+1988-02-01,February,50.4,1988,Bread and cereals
+1988-03-01,March,50.3,1988,Bread and cereals
+1988-04-01,April,50.5,1988,Bread and cereals
+1988-05-01,May,51.0,1988,Bread and cereals
+1988-06-01,June,51.0,1988,Bread and cereals
+1988-07-01,July,51.2,1988,Bread and cereals
+1988-08-01,August,51.2,1988,Bread and cereals
+1988-09-01,September,51.5,1988,Bread and cereals
+1988-10-01,October,51.6,1988,Bread and cereals
+1988-11-01,November,51.8,1988,Bread and cereals
+1988-12-01,December,52.3,1988,Bread and cereals
+1989-01-01,January,52.7,1989,Bread and cereals
+1989-02-01,February,53.1,1989,Bread and cereals
+1989-03-01,March,53.5,1989,Bread and cereals
+1989-04-01,April,54.0,1989,Bread and cereals
+1989-05-01,May,54.0,1989,Bread and cereals
+1989-06-01,June,54.3,1989,Bread and cereals
+1989-07-01,July,54.4,1989,Bread and cereals
+1989-08-01,August,54.3,1989,Bread and cereals
+1989-09-01,September,54.6,1989,Bread and cereals
+1989-10-01,October,54.7,1989,Bread and cereals
+1989-11-01,November,55.0,1989,Bread and cereals
+1989-12-01,December,55.5,1989,Bread and cereals
+1990-01-01,January,56.0,1990,Bread and cereals
+1990-02-01,February,56.5,1990,Bread and cereals
+1990-03-01,March,56.9,1990,Bread and cereals
+1990-04-01,April,57.4,1990,Bread and cereals
+1990-05-01,May,57.8,1990,Bread and cereals
+1990-06-01,June,58.1,1990,Bread and cereals
+1990-07-01,July,58.1,1990,Bread and cereals
+1990-08-01,August,58.5,1990,Bread and cereals
+1990-09-01,September,58.8,1990,Bread and cereals
+1990-10-01,October,59.1,1990,Bread and cereals
+1990-11-01,November,59.5,1990,Bread and cereals
+1990-12-01,December,60.0,1990,Bread and cereals
+1991-01-01,January,61.0,1991,Bread and cereals
+1991-02-01,February,61.3,1991,Bread and cereals
+1991-03-01,March,61.7,1991,Bread and cereals
+1991-04-01,April,62.0,1991,Bread and cereals
+1991-05-01,May,62.0,1991,Bread and cereals
+1991-06-01,June,62.4,1991,Bread and cereals
+1991-07-01,July,62.4,1991,Bread and cereals
+1991-08-01,August,62.8,1991,Bread and cereals
+1991-09-01,September,62.3,1991,Bread and cereals
+1991-10-01,October,62.6,1991,Bread and cereals
+1991-11-01,November,62.9,1991,Bread and cereals
+1991-12-01,December,63.0,1991,Bread and cereals
+1992-01-01,January,63.6,1992,Bread and cereals
+1992-02-01,February,64.0,1992,Bread and cereals
+1992-03-01,March,64.3,1992,Bread and cereals
+1992-04-01,April,64.2,1992,Bread and cereals
+1992-05-01,May,64.5,1992,Bread and cereals
+1992-06-01,June,64.6,1992,Bread and cereals
+1992-07-01,July,64.9,1992,Bread and cereals
+1992-08-01,August,64.5,1992,Bread and cereals
+1992-09-01,September,65.1,1992,Bread and cereals
+1992-10-01,October,64.9,1992,Bread and cereals
+1992-11-01,November,64.7,1992,Bread and cereals
+1992-12-01,December,65.5,1992,Bread and cereals
+1993-01-01,January,65.7,1993,Bread and cereals
+1993-02-01,February,65.9,1993,Bread and cereals
+1993-03-01,March,66.1,1993,Bread and cereals
+1993-04-01,April,66.6,1993,Bread and cereals
+1993-05-01,May,66.6,1993,Bread and cereals
+1993-06-01,June,66.7,1993,Bread and cereals
+1993-07-01,July,67.3,1993,Bread and cereals
+1993-08-01,August,67.2,1993,Bread and cereals
+1993-09-01,September,67.2,1993,Bread and cereals
+1993-10-01,October,67.0,1993,Bread and cereals
+1993-11-01,November,66.6,1993,Bread and cereals
+1993-12-01,December,66.6,1993,Bread and cereals
+1994-01-01,January,66.7,1994,Bread and cereals
+1994-02-01,February,66.8,1994,Bread and cereals
+1994-03-01,March,66.8,1994,Bread and cereals
+1994-04-01,April,66.9,1994,Bread and cereals
+1994-05-01,May,66.4,1994,Bread and cereals
+1994-06-01,June,66.4,1994,Bread and cereals
+1994-07-01,July,66.6,1994,Bread and cereals
+1994-08-01,August,66.6,1994,Bread and cereals
+1994-09-01,September,66.4,1994,Bread and cereals
+1994-10-01,October,65.9,1994,Bread and cereals
+1994-11-01,November,66.2,1994,Bread and cereals
+1994-12-01,December,66.5,1994,Bread and cereals
+1995-01-01,January,66.2,1995,Bread and cereals
+1995-02-01,February,65.8,1995,Bread and cereals
+1995-03-01,March,66.4,1995,Bread and cereals
+1995-04-01,April,66.0,1995,Bread and cereals
+1995-05-01,May,66.8,1995,Bread and cereals
+1995-06-01,June,67.1,1995,Bread and cereals
+1995-07-01,July,67.5,1995,Bread and cereals
+1995-08-01,August,67.2,1995,Bread and cereals
+1995-09-01,September,67.4,1995,Bread and cereals
+1995-10-01,October,67.6,1995,Bread and cereals
+1995-11-01,November,67.6,1995,Bread and cereals
+1995-12-01,December,67.9,1995,Bread and cereals
+1996-01-01,January,68.0,1996,Bread and cereals
+1996-02-01,February,68.4,1996,Bread and cereals
+1996-03-01,March,68.4,1996,Bread and cereals
+1996-04-01,April,68.3,1996,Bread and cereals
+1996-05-01,May,68.8,1996,Bread and cereals
+1996-06-01,June,68.9,1996,Bread and cereals
+1996-07-01,July,68.8,1996,Bread and cereals
+1996-08-01,August,68.7,1996,Bread and cereals
+1996-09-01,September,68.6,1996,Bread and cereals
+1996-10-01,October,68.5,1996,Bread and cereals
+1996-11-01,November,67.9,1996,Bread and cereals
+1996-12-01,December,67.7,1996,Bread and cereals
+1997-01-01,January,67.9,1997,Bread and cereals
+1997-02-01,February,68.3,1997,Bread and cereals
+1997-03-01,March,67.8,1997,Bread and cereals
+1997-04-01,April,67.8,1997,Bread and cereals
+1997-05-01,May,67.9,1997,Bread and cereals
+1997-06-01,June,68.5,1997,Bread and cereals
+1997-07-01,July,68.4,1997,Bread and cereals
+1997-08-01,August,68.6,1997,Bread and cereals
+1997-09-01,September,68.3,1997,Bread and cereals
+1997-10-01,October,68.7,1997,Bread and cereals
+1997-11-01,November,67.9,1997,Bread and cereals
+1997-12-01,December,68.2,1997,Bread and cereals
+1998-01-01,January,67.7,1998,Bread and cereals
+1998-02-01,February,67.5,1998,Bread and cereals
+1998-03-01,March,67.1,1998,Bread and cereals
+1998-04-01,April,67.6,1998,Bread and cereals
+1998-05-01,May,67.5,1998,Bread and cereals
+1998-06-01,June,68.3,1998,Bread and cereals
+1998-07-01,July,68.3,1998,Bread and cereals
+1998-08-01,August,68.4,1998,Bread and cereals
+1998-09-01,September,68.7,1998,Bread and cereals
+1998-10-01,October,68.6,1998,Bread and cereals
+1998-11-01,November,68.8,1998,Bread and cereals
+1998-12-01,December,69.0,1998,Bread and cereals
+1999-01-01,January,68.2,1999,Bread and cereals
+1999-02-01,February,68.2,1999,Bread and cereals
+1999-03-01,March,67.7,1999,Bread and cereals
+1999-04-01,April,68.3,1999,Bread and cereals
+1999-05-01,May,68.0,1999,Bread and cereals
+1999-06-01,June,67.9,1999,Bread and cereals
+1999-07-01,July,68.5,1999,Bread and cereals
+1999-08-01,August,68.3,1999,Bread and cereals
+1999-09-01,September,68.1,1999,Bread and cereals
+1999-10-01,October,68.0,1999,Bread and cereals
+1999-11-01,November,68.0,1999,Bread and cereals
+1999-12-01,December,68.4,1999,Bread and cereals
+2000-01-01,January,68.5,2000,Bread and cereals
+2000-02-01,February,68.2,2000,Bread and cereals
+2000-03-01,March,67.9,2000,Bread and cereals
+2000-04-01,April,67.9,2000,Bread and cereals
+2000-05-01,May,67.8,2000,Bread and cereals
+2000-06-01,June,67.7,2000,Bread and cereals
+2000-07-01,July,68.0,2000,Bread and cereals
+2000-08-01,August,67.7,2000,Bread and cereals
+2000-09-01,September,68.0,2000,Bread and cereals
+2000-10-01,October,68.0,2000,Bread and cereals
+2000-11-01,November,68.1,2000,Bread and cereals
+2000-12-01,December,68.0,2000,Bread and cereals
+2001-01-01,January,68.1,2001,Bread and cereals
+2001-02-01,February,68.4,2001,Bread and cereals
+2001-03-01,March,68.2,2001,Bread and cereals
+2001-04-01,April,68.1,2001,Bread and cereals
+2001-05-01,May,68.5,2001,Bread and cereals
+2001-06-01,June,68.4,2001,Bread and cereals
+2001-07-01,July,68.5,2001,Bread and cereals
+2001-08-01,August,68.7,2001,Bread and cereals
+2001-09-01,September,69.1,2001,Bread and cereals
+2001-10-01,October,69.1,2001,Bread and cereals
+2001-11-01,November,69.4,2001,Bread and cereals
+2001-12-01,December,69.4,2001,Bread and cereals
+2002-01-01,January,69.1,2002,Bread and cereals
+2002-02-01,February,69.4,2002,Bread and cereals
+2002-03-01,March,69.2,2002,Bread and cereals
+2002-04-01,April,69.3,2002,Bread and cereals
+2002-05-01,May,69.3,2002,Bread and cereals
+2002-06-01,June,69.5,2002,Bread and cereals
+2002-07-01,July,69.4,2002,Bread and cereals
+2002-08-01,August,69.4,2002,Bread and cereals
+2002-09-01,September,69.3,2002,Bread and cereals
+2002-10-01,October,69.4,2002,Bread and cereals
+2002-11-01,November,69.0,2002,Bread and cereals
+2002-12-01,December,69.0,2002,Bread and cereals
+2003-01-01,January,68.7,2003,Bread and cereals
+2003-02-01,February,69.3,2003,Bread and cereals
+2003-03-01,March,69.5,2003,Bread and cereals
+2003-04-01,April,70.1,2003,Bread and cereals
+2003-05-01,May,70.2,2003,Bread and cereals
+2003-06-01,June,69.6,2003,Bread and cereals
+2003-07-01,July,70.0,2003,Bread and cereals
+2003-08-01,August,70.0,2003,Bread and cereals
+2003-09-01,September,69.9,2003,Bread and cereals
+2003-10-01,October,71.1,2003,Bread and cereals
+2003-11-01,November,71.1,2003,Bread and cereals
+2003-12-01,December,70.9,2003,Bread and cereals
+2004-01-01,January,71.2,2004,Bread and cereals
+2004-02-01,February,71.4,2004,Bread and cereals
+2004-03-01,March,71.6,2004,Bread and cereals
+2004-04-01,April,72.1,2004,Bread and cereals
+2004-05-01,May,71.8,2004,Bread and cereals
+2004-06-01,June,71.6,2004,Bread and cereals
+2004-07-01,July,71.4,2004,Bread and cereals
+2004-08-01,August,70.8,2004,Bread and cereals
+2004-09-01,September,70.6,2004,Bread and cereals
+2004-10-01,October,70.8,2004,Bread and cereals
+2004-11-01,November,70.7,2004,Bread and cereals
+2004-12-01,December,71.3,2004,Bread and cereals
+2005-01-01,January,71.4,2005,Bread and cereals
+2005-02-01,February,72.4,2005,Bread and cereals
+2005-03-01,March,72.1,2005,Bread and cereals
+2005-04-01,April,71.9,2005,Bread and cereals
+2005-05-01,May,71.9,2005,Bread and cereals
+2005-06-01,June,72.2,2005,Bread and cereals
+2005-07-01,July,72.0,2005,Bread and cereals
+2005-08-01,August,72.5,2005,Bread and cereals
+2005-09-01,September,72.4,2005,Bread and cereals
+2005-10-01,October,72.3,2005,Bread and cereals
+2005-11-01,November,72.7,2005,Bread and cereals
+2005-12-01,December,73.0,2005,Bread and cereals
+2006-01-01,January,72.9,2006,Bread and cereals
+2006-02-01,February,73.2,2006,Bread and cereals
+2006-03-01,March,73.0,2006,Bread and cereals
+2006-04-01,April,73.1,2006,Bread and cereals
+2006-05-01,May,73.0,2006,Bread and cereals
+2006-06-01,June,73.1,2006,Bread and cereals
+2006-07-01,July,73.4,2006,Bread and cereals
+2006-08-01,August,73.6,2006,Bread and cereals
+2006-09-01,September,74.0,2006,Bread and cereals
+2006-10-01,October,74.0,2006,Bread and cereals
+2006-11-01,November,74.6,2006,Bread and cereals
+2006-12-01,December,75.1,2006,Bread and cereals
+2007-01-01,January,74.5,2007,Bread and cereals
+2007-02-01,February,75.0,2007,Bread and cereals
+2007-03-01,March,76.2,2007,Bread and cereals
+2007-04-01,April,76.1,2007,Bread and cereals
+2007-05-01,May,76.7,2007,Bread and cereals
+2007-06-01,June,77.0,2007,Bread and cereals
+2007-07-01,July,75.6,2007,Bread and cereals
+2007-08-01,August,75.6,2007,Bread and cereals
+2007-09-01,September,76.7,2007,Bread and cereals
+2007-10-01,October,77.4,2007,Bread and cereals
+2007-11-01,November,79.2,2007,Bread and cereals
+2007-12-01,December,80.7,2007,Bread and cereals
+2008-01-01,January,80.3,2008,Bread and cereals
+2008-02-01,February,80.9,2008,Bread and cereals
+2008-03-01,March,81.8,2008,Bread and cereals
+2008-04-01,April,82.6,2008,Bread and cereals
+2008-05-01,May,83.6,2008,Bread and cereals
+2008-06-01,June,86.1,2008,Bread and cereals
+2008-07-01,July,87.6,2008,Bread and cereals
+2008-08-01,August,88.8,2008,Bread and cereals
+2008-09-01,September,88.7,2008,Bread and cereals
+2008-10-01,October,88.2,2008,Bread and cereals
+2008-11-01,November,88.8,2008,Bread and cereals
+2008-12-01,December,89.7,2008,Bread and cereals
+2009-01-01,January,88.2,2009,Bread and cereals
+2009-02-01,February,90.0,2009,Bread and cereals
+2009-03-01,March,89.8,2009,Bread and cereals
+2009-04-01,April,89.9,2009,Bread and cereals
+2009-05-01,May,90.1,2009,Bread and cereals
+2009-06-01,June,89.7,2009,Bread and cereals
+2009-07-01,July,90.0,2009,Bread and cereals
+2009-08-01,August,89.1,2009,Bread and cereals
+2009-09-01,September,89.1,2009,Bread and cereals
+2009-10-01,October,89.8,2009,Bread and cereals
+2009-11-01,November,90.1,2009,Bread and cereals
+2009-12-01,December,89.9,2009,Bread and cereals
+2010-01-01,January,89.6,2010,Bread and cereals
+2010-02-01,February,90.1,2010,Bread and cereals
+2010-03-01,March,89.9,2010,Bread and cereals
+2010-04-01,April,89.9,2010,Bread and cereals
+2010-05-01,May,90.6,2010,Bread and cereals
+2010-06-01,June,90.5,2010,Bread and cereals
+2010-07-01,July,90.9,2010,Bread and cereals
+2010-08-01,August,92.0,2010,Bread and cereals
+2010-09-01,September,92.0,2010,Bread and cereals
+2010-10-01,October,92.9,2010,Bread and cereals
+2010-11-01,November,94.7,2010,Bread and cereals
+2010-12-01,December,95.7,2010,Bread and cereals
+2011-01-01,January,94.8,2011,Bread and cereals
+2011-02-01,February,97.5,2011,Bread and cereals
+2011-03-01,March,94.9,2011,Bread and cereals
+2011-04-01,April,96.1,2011,Bread and cereals
+2011-05-01,May,95.8,2011,Bread and cereals
+2011-06-01,June,98.2,2011,Bread and cereals
+2011-07-01,July,99.7,2011,Bread and cereals
+2011-08-01,August,98.5,2011,Bread and cereals
+2011-09-01,September,99.0,2011,Bread and cereals
+2011-10-01,October,98.6,2011,Bread and cereals
+2011-11-01,November,97.6,2011,Bread and cereals
+2011-12-01,December,98.7,2011,Bread and cereals
+2012-01-01,January,98.0,2012,Bread and cereals
+2012-02-01,February,99.3,2012,Bread and cereals
+2012-03-01,March,99.5,2012,Bread and cereals
+2012-04-01,April,98.9,2012,Bread and cereals
+2012-05-01,May,98.7,2012,Bread and cereals
+2012-06-01,June,99.3,2012,Bread and cereals
+2012-07-01,July,98.8,2012,Bread and cereals
+2012-08-01,August,100.0,2012,Bread and cereals
+2012-09-01,September,100.1,2012,Bread and cereals
+2012-10-01,October,99.9,2012,Bread and cereals
+2012-11-01,November,101.4,2012,Bread and cereals
+2012-12-01,December,101.8,2012,Bread and cereals
+2013-01-01,January,102.0,2013,Bread and cereals
+2013-02-01,February,102.3,2013,Bread and cereals
+2013-03-01,March,103.1,2013,Bread and cereals
+2013-04-01,April,103.4,2013,Bread and cereals
+2013-05-01,May,103.5,2013,Bread and cereals
+2013-06-01,June,103.1,2013,Bread and cereals
+2013-07-01,July,103.4,2013,Bread and cereals
+2013-08-01,August,104.7,2013,Bread and cereals
+2013-09-01,September,104.4,2013,Bread and cereals
+2013-10-01,October,103.8,2013,Bread and cereals
+2013-11-01,November,103.7,2013,Bread and cereals
+2013-12-01,December,105.1,2013,Bread and cereals
+2014-01-01,January,103.0,2014,Bread and cereals
+2014-02-01,February,104.6,2014,Bread and cereals
+2014-03-01,March,104.1,2014,Bread and cereals
+2014-04-01,April,104.0,2014,Bread and cereals
+2014-05-01,May,102.3,2014,Bread and cereals
+2014-06-01,June,103.5,2014,Bread and cereals
+2014-07-01,July,102.4,2014,Bread and cereals
+2014-08-01,August,103.0,2014,Bread and cereals
+2014-09-01,September,101.7,2014,Bread and cereals
+2014-10-01,October,102.9,2014,Bread and cereals
+2014-11-01,November,101.4,2014,Bread and cereals
+2014-12-01,December,102.5,2014,Bread and cereals
+2015-01-01,January,100.6,2015,Bread and cereals
+2015-02-01,February,101.3,2015,Bread and cereals
+2015-03-01,March,101.0,2015,Bread and cereals
+2015-04-01,April,100.1,2015,Bread and cereals
+2015-05-01,May,100.2,2015,Bread and cereals
+2015-06-01,June,99.1,2015,Bread and cereals
+2015-07-01,July,99.8,2015,Bread and cereals
+2015-08-01,August,99.4,2015,Bread and cereals
+2015-09-01,September,99.4,2015,Bread and cereals
+2015-10-01,October,99.7,2015,Bread and cereals
+2015-11-01,November,99.5,2015,Bread and cereals
+2015-12-01,December,100.1,2015,Bread and cereals
+2016-01-01,January,98.8,2016,Bread and cereals
+2016-02-01,February,99.0,2016,Bread and cereals
+2016-03-01,March,98.9,2016,Bread and cereals
+2016-04-01,April,98.4,2016,Bread and cereals
+2016-05-01,May,98.4,2016,Bread and cereals
+2016-06-01,June,97.8,2016,Bread and cereals
+2016-07-01,July,97.1,2016,Bread and cereals
+2016-08-01,August,98.5,2016,Bread and cereals
+2016-09-01,September,97.9,2016,Bread and cereals
+2016-10-01,October,97.6,2016,Bread and cereals
+2016-11-01,November,98.5,2016,Bread and cereals
+2016-12-01,December,99.8,2016,Bread and cereals
+2017-01-01,January,98.0,2017,Bread and cereals
+2017-02-01,February,99.9,2017,Bread and cereals
+2017-03-01,March,100.3,2017,Bread and cereals
+2017-04-01,April,101.1,2017,Bread and cereals
+2017-05-01,May,100.5,2017,Bread and cereals
+2017-06-01,June,100.8,2017,Bread and cereals
+2017-07-01,July,100.7,2017,Bread and cereals
+2017-08-01,August,101.3,2017,Bread and cereals
+2017-09-01,September,100.9,2017,Bread and cereals
+2017-10-01,October,101.8,2017,Bread and cereals
+2017-11-01,November,102.3,2017,Bread and cereals
+2017-12-01,December,104.0,2017,Bread and cereals
+2018-01-01,January,102.1,2018,Bread and cereals
+2018-02-01,February,102.6,2018,Bread and cereals
+2018-03-01,March,102.2,2018,Bread and cereals
+2018-04-01,April,102.0,2018,Bread and cereals
+2018-05-01,May,102.0,2018,Bread and cereals
+2018-06-01,June,101.9,2018,Bread and cereals
+2018-07-01,July,102.3,2018,Bread and cereals
+2018-08-01,August,102.1,2018,Bread and cereals
+2018-09-01,September,101.1,2018,Bread and cereals
+2018-10-01,October,101.9,2018,Bread and cereals
+2018-11-01,November,101.3,2018,Bread and cereals
+2018-12-01,December,103.8,2018,Bread and cereals
+2019-01-01,January,100.5,2019,Bread and cereals
+2019-02-01,February,103.1,2019,Bread and cereals
+2019-03-01,March,103.9,2019,Bread and cereals
+2019-04-01,April,103.8,2019,Bread and cereals
+2019-05-01,May,103.7,2019,Bread and cereals
+2019-06-01,June,103.0,2019,Bread and cereals
+2019-07-01,July,103.6,2019,Bread and cereals
+2019-08-01,August,104.9,2019,Bread and cereals
+2019-09-01,September,102.2,2019,Bread and cereals
+2019-10-01,October,103.7,2019,Bread and cereals
+2019-11-01,November,104.1,2019,Bread and cereals
+2019-12-01,December,104.6,2019,Bread and cereals
+2020-01-01,January,103.2,2020,Bread and cereals
+2020-02-01,February,103.0,2020,Bread and cereals
+2020-03-01,March,106.6,2020,Bread and cereals
+2020-04-01,April,104.7,2020,Bread and cereals
+2020-05-01,May,105.7,2020,Bread and cereals
+2020-06-01,June,104.4,2020,Bread and cereals
+2020-07-01,July,105.8,2020,Bread and cereals
+2020-08-01,August,104.3,2020,Bread and cereals
+2020-09-01,September,103.9,2020,Bread and cereals
+2020-10-01,October,105.6,2020,Bread and cereals
+2020-11-01,November,105.4,2020,Bread and cereals
+2020-12-01,December,105.3,2020,Bread and cereals
+2021-01-01,January,104.5,2021,Bread and cereals
+2021-02-01,February,105.6,2021,Bread and cereals
+2021-03-01,March,104.5,2021,Bread and cereals
+2021-04-01,April,105.7,2021,Bread and cereals
+2021-05-01,May,104.0,2021,Bread and cereals
+2021-06-01,June,105.8,2021,Bread and cereals
+2021-07-01,July,105.6,2021,Bread and cereals
+2021-08-01,August,106.4,2021,Bread and cereals
+2021-09-01,September,105.4,2021,Bread and cereals
+2021-10-01,October,105.8,2021,Bread and cereals
+2021-11-01,November,106.5,2021,Bread and cereals
+2021-12-01,December,109.0,2021,Bread and cereals
+2022-01-01,January,108.3,2022,Bread and cereals
+2022-02-01,February,110.1,2022,Bread and cereals
+2022-03-01,March,110.0,2022,Bread and cereals
+2022-04-01,April,112.3,2022,Bread and cereals
+2022-05-01,May,114.1,2022,Bread and cereals
+2022-06-01,June,116.0,2022,Bread and cereals
+2022-07-01,July,118.6,2022,Bread and cereals
+2022-08-01,August,118.9,2022,Bread and cereals
+2022-09-01,September,120.6,2022,Bread and cereals
+2022-10-01,October,121.8,2022,Bread and cereals
+2022-11-01,November,124.1,2022,Bread and cereals
+2022-12-01,December,125.4,2022,Bread and cereals
+2023-01-01,January,125.6,2023,Bread and cereals
+2023-02-01,February,128.5,2023,Bread and cereals
+2023-03-01,March,131.3,2023,Bread and cereals
+2023-04-01,April,133.3,2023,Bread and cereals
+2023-05-01,May,134.4,2023,Bread and cereals
+2023-06-01,June,135.3,2023,Bread and cereals
+2023-07-01,July,135.6,2023,Bread and cereals
+2023-08-01,August,136.6,2023,Bread and cereals
+2023-09-01,September,136.9,2023,Bread and cereals
+1988-01-01,January,53.7,1988,Meat
+1988-02-01,February,53.4,1988,Meat
+1988-03-01,March,53.7,1988,Meat
+1988-04-01,April,53.7,1988,Meat
+1988-05-01,May,54.2,1988,Meat
+1988-06-01,June,54.7,1988,Meat
+1988-07-01,July,54.4,1988,Meat
+1988-08-01,August,54.7,1988,Meat
+1988-09-01,September,54.9,1988,Meat
+1988-10-01,October,54.6,1988,Meat
+1988-11-01,November,55.3,1988,Meat
+1988-12-01,December,55.6,1988,Meat
+1989-01-01,January,55.7,1989,Meat
+1989-02-01,February,55.3,1989,Meat
+1989-03-01,March,55.6,1989,Meat
+1989-04-01,April,56.8,1989,Meat
+1989-05-01,May,57.6,1989,Meat
+1989-06-01,June,58.0,1989,Meat
+1989-07-01,July,58.6,1989,Meat
+1989-08-01,August,58.6,1989,Meat
+1989-09-01,September,59.6,1989,Meat
+1989-10-01,October,60.3,1989,Meat
+1989-11-01,November,60.8,1989,Meat
+1989-12-01,December,61.1,1989,Meat
+1990-01-01,January,61.6,1990,Meat
+1990-02-01,February,61.9,1990,Meat
+1990-03-01,March,62.1,1990,Meat
+1990-04-01,April,62.6,1990,Meat
+1990-05-01,May,63.5,1990,Meat
+1990-06-01,June,64.0,1990,Meat
+1990-07-01,July,64.2,1990,Meat
+1990-08-01,August,63.9,1990,Meat
+1990-09-01,September,64.1,1990,Meat
+1990-10-01,October,63.8,1990,Meat
+1990-11-01,November,63.9,1990,Meat
+1990-12-01,December,63.8,1990,Meat
+1991-01-01,January,63.8,1991,Meat
+1991-02-01,February,63.7,1991,Meat
+1991-03-01,March,63.7,1991,Meat
+1991-04-01,April,64.5,1991,Meat
+1991-05-01,May,64.6,1991,Meat
+1991-06-01,June,64.9,1991,Meat
+1991-07-01,July,63.3,1991,Meat
+1991-08-01,August,62.8,1991,Meat
+1991-09-01,September,63.0,1991,Meat
+1991-10-01,October,62.8,1991,Meat
+1991-11-01,November,63.0,1991,Meat
+1991-12-01,December,63.3,1991,Meat
+1992-01-01,January,64.0,1992,Meat
+1992-02-01,February,64.3,1992,Meat
+1992-03-01,March,64.9,1992,Meat
+1992-04-01,April,64.7,1992,Meat
+1992-05-01,May,65.4,1992,Meat
+1992-06-01,June,64.6,1992,Meat
+1992-07-01,July,64.1,1992,Meat
+1992-08-01,August,64.3,1992,Meat
+1992-09-01,September,63.8,1992,Meat
+1992-10-01,October,64.0,1992,Meat
+1992-11-01,November,64.0,1992,Meat
+1992-12-01,December,64.7,1992,Meat
+1993-01-01,January,64.5,1993,Meat
+1993-02-01,February,65.2,1993,Meat
+1993-03-01,March,66.3,1993,Meat
+1993-04-01,April,66.8,1993,Meat
+1993-05-01,May,67.6,1993,Meat
+1993-06-01,June,67.6,1993,Meat
+1993-07-01,July,67.3,1993,Meat
+1993-08-01,August,66.4,1993,Meat
+1993-09-01,September,66.3,1993,Meat
+1993-10-01,October,65.5,1993,Meat
+1993-11-01,November,65.1,1993,Meat
+1993-12-01,December,65.1,1993,Meat
+1994-01-01,January,65.4,1994,Meat
+1994-02-01,February,65.6,1994,Meat
+1994-03-01,March,65.7,1994,Meat
+1994-04-01,April,66.2,1994,Meat
+1994-05-01,May,66.2,1994,Meat
+1994-06-01,June,66.2,1994,Meat
+1994-07-01,July,65.3,1994,Meat
+1994-08-01,August,64.9,1994,Meat
+1994-09-01,September,64.2,1994,Meat
+1994-10-01,October,64.1,1994,Meat
+1994-11-01,November,63.7,1994,Meat
+1994-12-01,December,64.2,1994,Meat
+1995-01-01,January,64.6,1995,Meat
+1995-02-01,February,65.1,1995,Meat
+1995-03-01,March,65.1,1995,Meat
+1995-04-01,April,64.6,1995,Meat
+1995-05-01,May,66.0,1995,Meat
+1995-06-01,June,66.4,1995,Meat
+1995-07-01,July,66.2,1995,Meat
+1995-08-01,August,66.3,1995,Meat
+1995-09-01,September,66.6,1995,Meat
+1995-10-01,October,66.2,1995,Meat
+1995-11-01,November,66.1,1995,Meat
+1995-12-01,December,66.5,1995,Meat
+1996-01-01,January,67.2,1996,Meat
+1996-02-01,February,68.0,1996,Meat
+1996-03-01,March,68.4,1996,Meat
+1996-04-01,April,70.0,1996,Meat
+1996-05-01,May,70.8,1996,Meat
+1996-06-01,June,71.3,1996,Meat
+1996-07-01,July,71.0,1996,Meat
+1996-08-01,August,71.9,1996,Meat
+1996-09-01,September,71.5,1996,Meat
+1996-10-01,October,71.2,1996,Meat
+1996-11-01,November,70.3,1996,Meat
+1996-12-01,December,70.6,1996,Meat
+1997-01-01,January,70.9,1997,Meat
+1997-02-01,February,70.9,1997,Meat
+1997-03-01,March,69.9,1997,Meat
+1997-04-01,April,70.7,1997,Meat
+1997-05-01,May,71.3,1997,Meat
+1997-06-01,June,71.0,1997,Meat
+1997-07-01,July,70.6,1997,Meat
+1997-08-01,August,70.3,1997,Meat
+1997-09-01,September,70.6,1997,Meat
+1997-10-01,October,70.0,1997,Meat
+1997-11-01,November,69.8,1997,Meat
+1997-12-01,December,68.3,1997,Meat
+1998-01-01,January,69.0,1998,Meat
+1998-02-01,February,68.7,1998,Meat
+1998-03-01,March,67.7,1998,Meat
+1998-04-01,April,68.1,1998,Meat
+1998-05-01,May,68.4,1998,Meat
+1998-06-01,June,68.1,1998,Meat
+1998-07-01,July,68.5,1998,Meat
+1998-08-01,August,68.1,1998,Meat
+1998-09-01,September,67.9,1998,Meat
+1998-10-01,October,67.5,1998,Meat
+1998-11-01,November,66.8,1998,Meat
+1998-12-01,December,67.1,1998,Meat
+1999-01-01,January,67.9,1999,Meat
+1999-02-01,February,67.4,1999,Meat
+1999-03-01,March,67.3,1999,Meat
+1999-04-01,April,67.5,1999,Meat
+1999-05-01,May,68.1,1999,Meat
+1999-06-01,June,68.5,1999,Meat
+1999-07-01,July,68.6,1999,Meat
+1999-08-01,August,68.5,1999,Meat
+1999-09-01,September,67.9,1999,Meat
+1999-10-01,October,67.2,1999,Meat
+1999-11-01,November,67.6,1999,Meat
+1999-12-01,December,67.8,1999,Meat
+2000-01-01,January,68.1,2000,Meat
+2000-02-01,February,68.6,2000,Meat
+2000-03-01,March,68.0,2000,Meat
+2000-04-01,April,67.6,2000,Meat
+2000-05-01,May,68.3,2000,Meat
+2000-06-01,June,68.3,2000,Meat
+2000-07-01,July,68.4,2000,Meat
+2000-08-01,August,68.6,2000,Meat
+2000-09-01,September,68.3,2000,Meat
+2000-10-01,October,68.2,2000,Meat
+2000-11-01,November,67.9,2000,Meat
+2000-12-01,December,67.5,2000,Meat
+2001-01-01,January,68.7,2001,Meat
+2001-02-01,February,68.8,2001,Meat
+2001-03-01,March,72.1,2001,Meat
+2001-04-01,April,71.3,2001,Meat
+2001-05-01,May,71.8,2001,Meat
+2001-06-01,June,72.2,2001,Meat
+2001-07-01,July,71.8,2001,Meat
+2001-08-01,August,71.7,2001,Meat
+2001-09-01,September,71.2,2001,Meat
+2001-10-01,October,71.3,2001,Meat
+2001-11-01,November,71.0,2001,Meat
+2001-12-01,December,70.9,2001,Meat
+2002-01-01,January,70.9,2002,Meat
+2002-02-01,February,71.5,2002,Meat
+2002-03-01,March,71.2,2002,Meat
+2002-04-01,April,71.2,2002,Meat
+2002-05-01,May,71.6,2002,Meat
+2002-06-01,June,71.5,2002,Meat
+2002-07-01,July,71.6,2002,Meat
+2002-08-01,August,71.7,2002,Meat
+2002-09-01,September,71.7,2002,Meat
+2002-10-01,October,71.0,2002,Meat
+2002-11-01,November,71.1,2002,Meat
+2002-12-01,December,71.2,2002,Meat
+2003-01-01,January,70.9,2003,Meat
+2003-02-01,February,71.1,2003,Meat
+2003-03-01,March,71.1,2003,Meat
+2003-04-01,April,71.1,2003,Meat
+2003-05-01,May,71.4,2003,Meat
+2003-06-01,June,71.0,2003,Meat
+2003-07-01,July,71.5,2003,Meat
+2003-08-01,August,71.3,2003,Meat
+2003-09-01,September,71.8,2003,Meat
+2003-10-01,October,71.8,2003,Meat
+2003-11-01,November,71.9,2003,Meat
+2003-12-01,December,72.4,2003,Meat
+2004-01-01,January,72.8,2004,Meat
+2004-02-01,February,73.2,2004,Meat
+2004-03-01,March,73.4,2004,Meat
+2004-04-01,April,72.9,2004,Meat
+2004-05-01,May,72.9,2004,Meat
+2004-06-01,June,72.0,2004,Meat
+2004-07-01,July,72.4,2004,Meat
+2004-08-01,August,72.4,2004,Meat
+2004-09-01,September,72.3,2004,Meat
+2004-10-01,October,72.0,2004,Meat
+2004-11-01,November,72.4,2004,Meat
+2004-12-01,December,73.0,2004,Meat
+2005-01-01,January,72.7,2005,Meat
+2005-02-01,February,73.1,2005,Meat
+2005-03-01,March,73.1,2005,Meat
+2005-04-01,April,72.7,2005,Meat
+2005-05-01,May,73.2,2005,Meat
+2005-06-01,June,73.2,2005,Meat
+2005-07-01,July,72.9,2005,Meat
+2005-08-01,August,73.2,2005,Meat
+2005-09-01,September,73.2,2005,Meat
+2005-10-01,October,72.8,2005,Meat
+2005-11-01,November,73.9,2005,Meat
+2005-12-01,December,73.6,2005,Meat
+2006-01-01,January,73.4,2006,Meat
+2006-02-01,February,73.6,2006,Meat
+2006-03-01,March,72.7,2006,Meat
+2006-04-01,April,73.0,2006,Meat
+2006-05-01,May,73.9,2006,Meat
+2006-06-01,June,74.3,2006,Meat
+2006-07-01,July,75.1,2006,Meat
+2006-08-01,August,75.5,2006,Meat
+2006-09-01,September,75.1,2006,Meat
+2006-10-01,October,75.7,2006,Meat
+2006-11-01,November,75.8,2006,Meat
+2006-12-01,December,76.2,2006,Meat
+2007-01-01,January,75.7,2007,Meat
+2007-02-01,February,76.2,2007,Meat
+2007-03-01,March,76.4,2007,Meat
+2007-04-01,April,76.2,2007,Meat
+2007-05-01,May,75.5,2007,Meat
+2007-06-01,June,76.3,2007,Meat
+2007-07-01,July,75.0,2007,Meat
+2007-08-01,August,75.2,2007,Meat
+2007-09-01,September,74.6,2007,Meat
+2007-10-01,October,76.6,2007,Meat
+2007-11-01,November,76.8,2007,Meat
+2007-12-01,December,77.4,2007,Meat
+2008-01-01,January,77.1,2008,Meat
+2008-02-01,February,77.8,2008,Meat
+2008-03-01,March,78.1,2008,Meat
+2008-04-01,April,79.3,2008,Meat
+2008-05-01,May,82.2,2008,Meat
+2008-06-01,June,84.8,2008,Meat
+2008-07-01,July,87.2,2008,Meat
+2008-08-01,August,88.1,2008,Meat
+2008-09-01,September,88.9,2008,Meat
+2008-10-01,October,87.6,2008,Meat
+2008-11-01,November,87.6,2008,Meat
+2008-12-01,December,89.1,2008,Meat
+2009-01-01,January,88.2,2009,Meat
+2009-02-01,February,89.6,2009,Meat
+2009-03-01,March,89.6,2009,Meat
+2009-04-01,April,89.1,2009,Meat
+2009-05-01,May,90.4,2009,Meat
+2009-06-01,June,90.6,2009,Meat
+2009-07-01,July,90.2,2009,Meat
+2009-08-01,August,89.8,2009,Meat
+2009-09-01,September,88.7,2009,Meat
+2009-10-01,October,89.3,2009,Meat
+2009-11-01,November,88.9,2009,Meat
+2009-12-01,December,89.8,2009,Meat
+2010-01-01,January,88.9,2010,Meat
+2010-02-01,February,90.1,2010,Meat
+2010-03-01,March,90.0,2010,Meat
+2010-04-01,April,90.3,2010,Meat
+2010-05-01,May,89.7,2010,Meat
+2010-06-01,June,89.4,2010,Meat
+2010-07-01,July,90.1,2010,Meat
+2010-08-01,August,90.2,2010,Meat
+2010-09-01,September,90.6,2010,Meat
+2010-10-01,October,90.5,2010,Meat
+2010-11-01,November,91.4,2010,Meat
+2010-12-01,December,92.8,2010,Meat
+2011-01-01,January,92.4,2011,Meat
+2011-02-01,February,93.8,2011,Meat
+2011-03-01,March,92.9,2011,Meat
+2011-04-01,April,93.4,2011,Meat
+2011-05-01,May,94.4,2011,Meat
+2011-06-01,June,95.8,2011,Meat
+2011-07-01,July,96.1,2011,Meat
+2011-08-01,August,96.7,2011,Meat
+2011-09-01,September,96.4,2011,Meat
+2011-10-01,October,95.7,2011,Meat
+2011-11-01,November,97.3,2011,Meat
+2011-12-01,December,97.6,2011,Meat
+2012-01-01,January,97.7,2012,Meat
+2012-02-01,February,97.9,2012,Meat
+2012-03-01,March,98.6,2012,Meat
+2012-04-01,April,98.2,2012,Meat
+2012-05-01,May,99.0,2012,Meat
+2012-06-01,June,98.5,2012,Meat
+2012-07-01,July,98.3,2012,Meat
+2012-08-01,August,98.2,2012,Meat
+2012-09-01,September,98.6,2012,Meat
+2012-10-01,October,98.9,2012,Meat
+2012-11-01,November,99.7,2012,Meat
+2012-12-01,December,101.6,2012,Meat
+2013-01-01,January,100.8,2013,Meat
+2013-02-01,February,101.9,2013,Meat
+2013-03-01,March,101.0,2013,Meat
+2013-04-01,April,101.4,2013,Meat
+2013-05-01,May,101.7,2013,Meat
+2013-06-01,June,102.4,2013,Meat
+2013-07-01,July,103.1,2013,Meat
+2013-08-01,August,103.1,2013,Meat
+2013-09-01,September,103.7,2013,Meat
+2013-10-01,October,104.0,2013,Meat
+2013-11-01,November,103.8,2013,Meat
+2013-12-01,December,104.1,2013,Meat
+2014-01-01,January,103.5,2014,Meat
+2014-02-01,February,104.2,2014,Meat
+2014-03-01,March,104.2,2014,Meat
+2014-04-01,April,104.0,2014,Meat
+2014-05-01,May,102.9,2014,Meat
+2014-06-01,June,103.0,2014,Meat
+2014-07-01,July,103.1,2014,Meat
+2014-08-01,August,103.2,2014,Meat
+2014-09-01,September,103.6,2014,Meat
+2014-10-01,October,102.4,2014,Meat
+2014-11-01,November,101.7,2014,Meat
+2014-12-01,December,102.2,2014,Meat
+2015-01-01,January,101.7,2015,Meat
+2015-02-01,February,101.8,2015,Meat
+2015-03-01,March,101.1,2015,Meat
+2015-04-01,April,101.1,2015,Meat
+2015-05-01,May,100.4,2015,Meat
+2015-06-01,June,100.4,2015,Meat
+2015-07-01,July,100.5,2015,Meat
+2015-08-01,August,99.4,2015,Meat
+2015-09-01,September,99.8,2015,Meat
+2015-10-01,October,98.0,2015,Meat
+2015-11-01,November,97.8,2015,Meat
+2015-12-01,December,98.1,2015,Meat
+2016-01-01,January,97.8,2016,Meat
+2016-02-01,February,97.4,2016,Meat
+2016-03-01,March,96.7,2016,Meat
+2016-04-01,April,96.1,2016,Meat
+2016-05-01,May,95.2,2016,Meat
+2016-06-01,June,96.3,2016,Meat
+2016-07-01,July,95.0,2016,Meat
+2016-08-01,August,95.4,2016,Meat
+2016-09-01,September,95.3,2016,Meat
+2016-10-01,October,94.8,2016,Meat
+2016-11-01,November,95.0,2016,Meat
+2016-12-01,December,95.9,2016,Meat
+2017-01-01,January,96.2,2017,Meat
+2017-02-01,February,96.6,2017,Meat
+2017-03-01,March,96.7,2017,Meat
+2017-04-01,April,97.5,2017,Meat
+2017-05-01,May,97.2,2017,Meat
+2017-06-01,June,97.6,2017,Meat
+2017-07-01,July,97.1,2017,Meat
+2017-08-01,August,97.0,2017,Meat
+2017-09-01,September,98.3,2017,Meat
+2017-10-01,October,98.5,2017,Meat
+2017-11-01,November,98.6,2017,Meat
+2017-12-01,December,99.9,2017,Meat
+2018-01-01,January,99.0,2018,Meat
+2018-02-01,February,99.2,2018,Meat
+2018-03-01,March,99.8,2018,Meat
+2018-04-01,April,99.5,2018,Meat
+2018-05-01,May,98.9,2018,Meat
+2018-06-01,June,98.4,2018,Meat
+2018-07-01,July,98.6,2018,Meat
+2018-08-01,August,98.4,2018,Meat
+2018-09-01,September,98.0,2018,Meat
+2018-10-01,October,97.4,2018,Meat
+2018-11-01,November,97.3,2018,Meat
+2018-12-01,December,98.1,2018,Meat
+2019-01-01,January,98.4,2019,Meat
+2019-02-01,February,98.0,2019,Meat
+2019-03-01,March,97.9,2019,Meat
+2019-04-01,April,97.6,2019,Meat
+2019-05-01,May,97.9,2019,Meat
+2019-06-01,June,98.2,2019,Meat
+2019-07-01,July,97.9,2019,Meat
+2019-08-01,August,98.8,2019,Meat
+2019-09-01,September,98.7,2019,Meat
+2019-10-01,October,98.0,2019,Meat
+2019-11-01,November,99.0,2019,Meat
+2019-12-01,December,99.8,2019,Meat
+2020-01-01,January,100.2,2020,Meat
+2020-02-01,February,100.3,2020,Meat
+2020-03-01,March,99.9,2020,Meat
+2020-04-01,April,100.4,2020,Meat
+2020-05-01,May,100.6,2020,Meat
+2020-06-01,June,100.9,2020,Meat
+2020-07-01,July,100.1,2020,Meat
+2020-08-01,August,100.6,2020,Meat
+2020-09-01,September,100.3,2020,Meat
+2020-10-01,October,99.8,2020,Meat
+2020-11-01,November,99.1,2020,Meat
+2020-12-01,December,98.4,2020,Meat
+2021-01-01,January,99.3,2021,Meat
+2021-02-01,February,98.7,2021,Meat
+2021-03-01,March,98.7,2021,Meat
+2021-04-01,April,98.6,2021,Meat
+2021-05-01,May,97.9,2021,Meat
+2021-06-01,June,99.3,2021,Meat
+2021-07-01,July,99.1,2021,Meat
+2021-08-01,August,99.9,2021,Meat
+2021-09-01,September,99.5,2021,Meat
+2021-10-01,October,100.4,2021,Meat
+2021-11-01,November,100.7,2021,Meat
+2021-12-01,December,102.8,2021,Meat
+2022-01-01,January,103.1,2022,Meat
+2022-02-01,February,103.8,2022,Meat
+2022-03-01,March,104.2,2022,Meat
+2022-04-01,April,106.2,2022,Meat
+2022-05-01,May,107.5,2022,Meat
+2022-06-01,June,110.3,2022,Meat
+2022-07-01,July,112.1,2022,Meat
+2022-08-01,August,113.1,2022,Meat
+2022-09-01,September,114.7,2022,Meat
+2022-10-01,October,116.1,2022,Meat
+2022-11-01,November,117.3,2022,Meat
+2022-12-01,December,118.7,2022,Meat
+2023-01-01,January,118.6,2023,Meat
+2023-02-01,February,120.7,2023,Meat
+2023-03-01,March,122.4,2023,Meat
+2023-04-01,April,124.5,2023,Meat
+2023-05-01,May,125.0,2023,Meat
+2023-06-01,June,125.7,2023,Meat
+2023-07-01,July,126.3,2023,Meat
+2023-08-01,August,126.6,2023,Meat
+2023-09-01,September,126.8,2023,Meat
+1988-01-01,January,43.3,1988,Fish
+1988-02-01,February,43.7,1988,Fish
+1988-03-01,March,43.1,1988,Fish
+1988-04-01,April,43.2,1988,Fish
+1988-05-01,May,42.8,1988,Fish
+1988-06-01,June,42.9,1988,Fish
+1988-07-01,July,42.8,1988,Fish
+1988-08-01,August,42.5,1988,Fish
+1988-09-01,September,42.8,1988,Fish
+1988-10-01,October,42.6,1988,Fish
+1988-11-01,November,42.6,1988,Fish
+1988-12-01,December,42.9,1988,Fish
+1989-01-01,January,43.7,1989,Fish
+1989-02-01,February,44.0,1989,Fish
+1989-03-01,March,43.7,1989,Fish
+1989-04-01,April,43.8,1989,Fish
+1989-05-01,May,43.8,1989,Fish
+1989-06-01,June,43.9,1989,Fish
+1989-07-01,July,44.1,1989,Fish
+1989-08-01,August,44.1,1989,Fish
+1989-09-01,September,44.2,1989,Fish
+1989-10-01,October,44.7,1989,Fish
+1989-11-01,November,44.5,1989,Fish
+1989-12-01,December,44.2,1989,Fish
+1990-01-01,January,45.8,1990,Fish
+1990-02-01,February,46.8,1990,Fish
+1990-03-01,March,46.8,1990,Fish
+1990-04-01,April,47.3,1990,Fish
+1990-05-01,May,47.9,1990,Fish
+1990-06-01,June,48.3,1990,Fish
+1990-07-01,July,49.1,1990,Fish
+1990-08-01,August,49.2,1990,Fish
+1990-09-01,September,49.5,1990,Fish
+1990-10-01,October,50.4,1990,Fish
+1990-11-01,November,50.6,1990,Fish
+1990-12-01,December,50.4,1990,Fish
+1991-01-01,January,51.2,1991,Fish
+1991-02-01,February,51.0,1991,Fish
+1991-03-01,March,51.0,1991,Fish
+1991-04-01,April,51.8,1991,Fish
+1991-05-01,May,51.3,1991,Fish
+1991-06-01,June,51.9,1991,Fish
+1991-07-01,July,51.7,1991,Fish
+1991-08-01,August,52.7,1991,Fish
+1991-09-01,September,52.5,1991,Fish
+1991-10-01,October,52.9,1991,Fish
+1991-11-01,November,52.4,1991,Fish
+1991-12-01,December,52.0,1991,Fish
+1992-01-01,January,52.5,1992,Fish
+1992-02-01,February,52.1,1992,Fish
+1992-03-01,March,51.7,1992,Fish
+1992-04-01,April,51.0,1992,Fish
+1992-05-01,May,51.7,1992,Fish
+1992-06-01,June,51.2,1992,Fish
+1992-07-01,July,52.0,1992,Fish
+1992-08-01,August,52.1,1992,Fish
+1992-09-01,September,52.5,1992,Fish
+1992-10-01,October,53.1,1992,Fish
+1992-11-01,November,53.2,1992,Fish
+1992-12-01,December,53.1,1992,Fish
+1993-01-01,January,53.7,1993,Fish
+1993-02-01,February,53.5,1993,Fish
+1993-03-01,March,52.3,1993,Fish
+1993-04-01,April,51.0,1993,Fish
+1993-05-01,May,51.2,1993,Fish
+1993-06-01,June,50.8,1993,Fish
+1993-07-01,July,51.2,1993,Fish
+1993-08-01,August,50.9,1993,Fish
+1993-09-01,September,51.5,1993,Fish
+1993-10-01,October,51.7,1993,Fish
+1993-11-01,November,51.0,1993,Fish
+1993-12-01,December,50.8,1993,Fish
+1994-01-01,January,51.0,1994,Fish
+1994-02-01,February,50.6,1994,Fish
+1994-03-01,March,50.7,1994,Fish
+1994-04-01,April,50.8,1994,Fish
+1994-05-01,May,50.3,1994,Fish
+1994-06-01,June,50.1,1994,Fish
+1994-07-01,July,50.4,1994,Fish
+1994-08-01,August,50.2,1994,Fish
+1994-09-01,September,49.9,1994,Fish
+1994-10-01,October,50.1,1994,Fish
+1994-11-01,November,50.5,1994,Fish
+1994-12-01,December,49.8,1994,Fish
+1995-01-01,January,49.6,1995,Fish
+1995-02-01,February,50.2,1995,Fish
+1995-03-01,March,50.1,1995,Fish
+1995-04-01,April,50.7,1995,Fish
+1995-05-01,May,50.0,1995,Fish
+1995-06-01,June,50.0,1995,Fish
+1995-07-01,July,50.4,1995,Fish
+1995-08-01,August,50.6,1995,Fish
+1995-09-01,September,50.8,1995,Fish
+1995-10-01,October,50.5,1995,Fish
+1995-11-01,November,51.0,1995,Fish
+1995-12-01,December,51.1,1995,Fish
+1996-01-01,January,51.7,1996,Fish
+1996-02-01,February,51.4,1996,Fish
+1996-03-01,March,50.1,1996,Fish
+1996-04-01,April,49.5,1996,Fish
+1996-05-01,May,50.3,1996,Fish
+1996-06-01,June,51.2,1996,Fish
+1996-07-01,July,51.3,1996,Fish
+1996-08-01,August,50.2,1996,Fish
+1996-09-01,September,50.2,1996,Fish
+1996-10-01,October,49.2,1996,Fish
+1996-11-01,November,50.2,1996,Fish
+1996-12-01,December,49.7,1996,Fish
+1997-01-01,January,50.2,1997,Fish
+1997-02-01,February,51.7,1997,Fish
+1997-03-01,March,50.2,1997,Fish
+1997-04-01,April,50.1,1997,Fish
+1997-05-01,May,49.7,1997,Fish
+1997-06-01,June,50.7,1997,Fish
+1997-07-01,July,50.7,1997,Fish
+1997-08-01,August,51.4,1997,Fish
+1997-09-01,September,52.1,1997,Fish
+1997-10-01,October,52.5,1997,Fish
+1997-11-01,November,52.5,1997,Fish
+1997-12-01,December,52.5,1997,Fish
+1998-01-01,January,52.6,1998,Fish
+1998-02-01,February,51.7,1998,Fish
+1998-03-01,March,52.7,1998,Fish
+1998-04-01,April,53.1,1998,Fish
+1998-05-01,May,53.9,1998,Fish
+1998-06-01,June,54.7,1998,Fish
+1998-07-01,July,55.9,1998,Fish
+1998-08-01,August,56.3,1998,Fish
+1998-09-01,September,57.7,1998,Fish
+1998-10-01,October,58.7,1998,Fish
+1998-11-01,November,58.8,1998,Fish
+1998-12-01,December,59.3,1998,Fish
+1999-01-01,January,58.8,1999,Fish
+1999-02-01,February,60.6,1999,Fish
+1999-03-01,March,60.6,1999,Fish
+1999-04-01,April,60.7,1999,Fish
+1999-05-01,May,60.3,1999,Fish
+1999-06-01,June,60.0,1999,Fish
+1999-07-01,July,60.6,1999,Fish
+1999-08-01,August,60.3,1999,Fish
+1999-09-01,September,61.4,1999,Fish
+1999-10-01,October,60.8,1999,Fish
+1999-11-01,November,60.6,1999,Fish
+1999-12-01,December,60.6,1999,Fish
+2000-01-01,January,60.6,2000,Fish
+2000-02-01,February,61.4,2000,Fish
+2000-03-01,March,61.6,2000,Fish
+2000-04-01,April,61.3,2000,Fish
+2000-05-01,May,61.4,2000,Fish
+2000-06-01,June,61.7,2000,Fish
+2000-07-01,July,62.2,2000,Fish
+2000-08-01,August,61.8,2000,Fish
+2000-09-01,September,61.8,2000,Fish
+2000-10-01,October,62.2,2000,Fish
+2000-11-01,November,62.7,2000,Fish
+2000-12-01,December,62.4,2000,Fish
+2001-01-01,January,61.5,2001,Fish
+2001-02-01,February,62.6,2001,Fish
+2001-03-01,March,62.5,2001,Fish
+2001-04-01,April,61.8,2001,Fish
+2001-05-01,May,62.8,2001,Fish
+2001-06-01,June,63.1,2001,Fish
+2001-07-01,July,63.0,2001,Fish
+2001-08-01,August,63.2,2001,Fish
+2001-09-01,September,63.7,2001,Fish
+2001-10-01,October,63.3,2001,Fish
+2001-11-01,November,64.2,2001,Fish
+2001-12-01,December,63.5,2001,Fish
+2002-01-01,January,64.8,2002,Fish
+2002-02-01,February,64.3,2002,Fish
+2002-03-01,March,63.5,2002,Fish
+2002-04-01,April,64.8,2002,Fish
+2002-05-01,May,64.4,2002,Fish
+2002-06-01,June,64.8,2002,Fish
+2002-07-01,July,65.3,2002,Fish
+2002-08-01,August,64.3,2002,Fish
+2002-09-01,September,64.9,2002,Fish
+2002-10-01,October,65.2,2002,Fish
+2002-11-01,November,65.3,2002,Fish
+2002-12-01,December,64.9,2002,Fish
+2003-01-01,January,64.6,2003,Fish
+2003-02-01,February,64.3,2003,Fish
+2003-03-01,March,64.1,2003,Fish
+2003-04-01,April,63.4,2003,Fish
+2003-05-01,May,64.4,2003,Fish
+2003-06-01,June,63.4,2003,Fish
+2003-07-01,July,63.9,2003,Fish
+2003-08-01,August,63.3,2003,Fish
+2003-09-01,September,64.7,2003,Fish
+2003-10-01,October,63.0,2003,Fish
+2003-11-01,November,63.2,2003,Fish
+2003-12-01,December,63.7,2003,Fish
+2004-01-01,January,62.9,2004,Fish
+2004-02-01,February,62.4,2004,Fish
+2004-03-01,March,63.2,2004,Fish
+2004-04-01,April,63.7,2004,Fish
+2004-05-01,May,62.2,2004,Fish
+2004-06-01,June,63.1,2004,Fish
+2004-07-01,July,62.8,2004,Fish
+2004-08-01,August,61.8,2004,Fish
+2004-09-01,September,62.6,2004,Fish
+2004-10-01,October,62.8,2004,Fish
+2004-11-01,November,62.5,2004,Fish
+2004-12-01,December,63.1,2004,Fish
+2005-01-01,January,63.0,2005,Fish
+2005-02-01,February,62.3,2005,Fish
+2005-03-01,March,63.3,2005,Fish
+2005-04-01,April,63.4,2005,Fish
+2005-05-01,May,63.9,2005,Fish
+2005-06-01,June,63.4,2005,Fish
+2005-07-01,July,63.7,2005,Fish
+2005-08-01,August,63.7,2005,Fish
+2005-09-01,September,64.0,2005,Fish
+2005-10-01,October,64.6,2005,Fish
+2005-11-01,November,64.7,2005,Fish
+2005-12-01,December,65.3,2005,Fish
+2006-01-01,January,65.4,2006,Fish
+2006-02-01,February,65.9,2006,Fish
+2006-03-01,March,65.7,2006,Fish
+2006-04-01,April,66.3,2006,Fish
+2006-05-01,May,65.6,2006,Fish
+2006-06-01,June,67.6,2006,Fish
+2006-07-01,July,69.5,2006,Fish
+2006-08-01,August,70.7,2006,Fish
+2006-09-01,September,71.1,2006,Fish
+2006-10-01,October,72.5,2006,Fish
+2006-11-01,November,72.1,2006,Fish
+2006-12-01,December,73.3,2006,Fish
+2007-01-01,January,72.5,2007,Fish
+2007-02-01,February,74.3,2007,Fish
+2007-03-01,March,74.0,2007,Fish
+2007-04-01,April,74.1,2007,Fish
+2007-05-01,May,73.9,2007,Fish
+2007-06-01,June,75.1,2007,Fish
+2007-07-01,July,73.9,2007,Fish
+2007-08-01,August,74.4,2007,Fish
+2007-09-01,September,74.8,2007,Fish
+2007-10-01,October,76.3,2007,Fish
+2007-11-01,November,76.4,2007,Fish
+2007-12-01,December,75.3,2007,Fish
+2008-01-01,January,76.4,2008,Fish
+2008-02-01,February,75.8,2008,Fish
+2008-03-01,March,74.4,2008,Fish
+2008-04-01,April,77.5,2008,Fish
+2008-05-01,May,78.9,2008,Fish
+2008-06-01,June,76.3,2008,Fish
+2008-07-01,July,77.6,2008,Fish
+2008-08-01,August,80.0,2008,Fish
+2008-09-01,September,80.4,2008,Fish
+2008-10-01,October,80.9,2008,Fish
+2008-11-01,November,81.4,2008,Fish
+2008-12-01,December,80.0,2008,Fish
+2009-01-01,January,80.3,2009,Fish
+2009-02-01,February,80.6,2009,Fish
+2009-03-01,March,79.8,2009,Fish
+2009-04-01,April,81.4,2009,Fish
+2009-05-01,May,81.7,2009,Fish
+2009-06-01,June,80.6,2009,Fish
+2009-07-01,July,81.9,2009,Fish
+2009-08-01,August,82.3,2009,Fish
+2009-09-01,September,81.4,2009,Fish
+2009-10-01,October,81.1,2009,Fish
+2009-11-01,November,81.1,2009,Fish
+2009-12-01,December,82.1,2009,Fish
+2010-01-01,January,83.4,2010,Fish
+2010-02-01,February,83.3,2010,Fish
+2010-03-01,March,82.1,2010,Fish
+2010-04-01,April,85.4,2010,Fish
+2010-05-01,May,84.8,2010,Fish
+2010-06-01,June,85.4,2010,Fish
+2010-07-01,July,88.3,2010,Fish
+2010-08-01,August,89.2,2010,Fish
+2010-09-01,September,88.7,2010,Fish
+2010-10-01,October,88.4,2010,Fish
+2010-11-01,November,89.8,2010,Fish
+2010-12-01,December,89.5,2010,Fish
+2011-01-01,January,91.7,2011,Fish
+2011-02-01,February,92.8,2011,Fish
+2011-03-01,March,93.2,2011,Fish
+2011-04-01,April,91.2,2011,Fish
+2011-05-01,May,94.5,2011,Fish
+2011-06-01,June,95.8,2011,Fish
+2011-07-01,July,94.4,2011,Fish
+2011-08-01,August,94.7,2011,Fish
+2011-09-01,September,96.0,2011,Fish
+2011-10-01,October,97.3,2011,Fish
+2011-11-01,November,97.2,2011,Fish
+2011-12-01,December,95.2,2011,Fish
+2012-01-01,January,96.7,2012,Fish
+2012-02-01,February,97.7,2012,Fish
+2012-03-01,March,97.6,2012,Fish
+2012-04-01,April,98.0,2012,Fish
+2012-05-01,May,99.1,2012,Fish
+2012-06-01,June,96.2,2012,Fish
+2012-07-01,July,96.2,2012,Fish
+2012-08-01,August,98.6,2012,Fish
+2012-09-01,September,97.9,2012,Fish
+2012-10-01,October,99.8,2012,Fish
+2012-11-01,November,98.0,2012,Fish
+2012-12-01,December,98.7,2012,Fish
+2013-01-01,January,99.9,2013,Fish
+2013-02-01,February,99.2,2013,Fish
+2013-03-01,March,98.9,2013,Fish
+2013-04-01,April,98.2,2013,Fish
+2013-05-01,May,99.9,2013,Fish
+2013-06-01,June,100.2,2013,Fish
+2013-07-01,July,99.5,2013,Fish
+2013-08-01,August,102.8,2013,Fish
+2013-09-01,September,100.7,2013,Fish
+2013-10-01,October,104.7,2013,Fish
+2013-11-01,November,104.9,2013,Fish
+2013-12-01,December,103.8,2013,Fish
+2014-01-01,January,103.1,2014,Fish
+2014-02-01,February,105.3,2014,Fish
+2014-03-01,March,104.2,2014,Fish
+2014-04-01,April,100.7,2014,Fish
+2014-05-01,May,104.1,2014,Fish
+2014-06-01,June,102.2,2014,Fish
+2014-07-01,July,105.1,2014,Fish
+2014-08-01,August,104.7,2014,Fish
+2014-09-01,September,101.0,2014,Fish
+2014-10-01,October,104.3,2014,Fish
+2014-11-01,November,105.0,2014,Fish
+2014-12-01,December,104.0,2014,Fish
+2015-01-01,January,104.2,2015,Fish
+2015-02-01,February,103.9,2015,Fish
+2015-03-01,March,101.9,2015,Fish
+2015-04-01,April,98.8,2015,Fish
+2015-05-01,May,99.9,2015,Fish
+2015-06-01,June,100.0,2015,Fish
+2015-07-01,July,99.8,2015,Fish
+2015-08-01,August,99.0,2015,Fish
+2015-09-01,September,98.6,2015,Fish
+2015-10-01,October,97.6,2015,Fish
+2015-11-01,November,97.3,2015,Fish
+2015-12-01,December,98.9,2015,Fish
+2016-01-01,January,97.2,2016,Fish
+2016-02-01,February,98.9,2016,Fish
+2016-03-01,March,96.4,2016,Fish
+2016-04-01,April,96.1,2016,Fish
+2016-05-01,May,95.8,2016,Fish
+2016-06-01,June,95.8,2016,Fish
+2016-07-01,July,98.4,2016,Fish
+2016-08-01,August,98.1,2016,Fish
+2016-09-01,September,96.8,2016,Fish
+2016-10-01,October,99.6,2016,Fish
+2016-11-01,November,99.3,2016,Fish
+2016-12-01,December,99.9,2016,Fish
+2017-01-01,January,100.2,2017,Fish
+2017-02-01,February,104.8,2017,Fish
+2017-03-01,March,104.8,2017,Fish
+2017-04-01,April,103.5,2017,Fish
+2017-05-01,May,105.8,2017,Fish
+2017-06-01,June,107.9,2017,Fish
+2017-07-01,July,105.8,2017,Fish
+2017-08-01,August,107.6,2017,Fish
+2017-09-01,September,110.0,2017,Fish
+2017-10-01,October,108.1,2017,Fish
+2017-11-01,November,108.5,2017,Fish
+2017-12-01,December,109.0,2017,Fish
+2018-01-01,January,109.1,2018,Fish
+2018-02-01,February,110.5,2018,Fish
+2018-03-01,March,109.0,2018,Fish
+2018-04-01,April,109.6,2018,Fish
+2018-05-01,May,111.3,2018,Fish
+2018-06-01,June,111.1,2018,Fish
+2018-07-01,July,109.2,2018,Fish
+2018-08-01,August,111.0,2018,Fish
+2018-09-01,September,110.9,2018,Fish
+2018-10-01,October,111.2,2018,Fish
+2018-11-01,November,110.7,2018,Fish
+2018-12-01,December,110.6,2018,Fish
+2019-01-01,January,111.3,2019,Fish
+2019-02-01,February,112.4,2019,Fish
+2019-03-01,March,110.6,2019,Fish
+2019-04-01,April,109.5,2019,Fish
+2019-05-01,May,111.9,2019,Fish
+2019-06-01,June,112.3,2019,Fish
+2019-07-01,July,113.5,2019,Fish
+2019-08-01,August,111.8,2019,Fish
+2019-09-01,September,113.6,2019,Fish
+2019-10-01,October,112.6,2019,Fish
+2019-11-01,November,113.3,2019,Fish
+2019-12-01,December,113.4,2019,Fish
+2020-01-01,January,112.2,2020,Fish
+2020-02-01,February,113.6,2020,Fish
+2020-03-01,March,113.0,2020,Fish
+2020-04-01,April,117.0,2020,Fish
+2020-05-01,May,115.9,2020,Fish
+2020-06-01,June,116.1,2020,Fish
+2020-07-01,July,114.2,2020,Fish
+2020-08-01,August,113.9,2020,Fish
+2020-09-01,September,113.5,2020,Fish
+2020-10-01,October,111.2,2020,Fish
+2020-11-01,November,112.7,2020,Fish
+2020-12-01,December,109.9,2020,Fish
+2021-01-01,January,111.0,2021,Fish
+2021-02-01,February,112.1,2021,Fish
+2021-03-01,March,111.0,2021,Fish
+2021-04-01,April,109.8,2021,Fish
+2021-05-01,May,110.6,2021,Fish
+2021-06-01,June,112.2,2021,Fish
+2021-07-01,July,109.0,2021,Fish
+2021-08-01,August,111.2,2021,Fish
+2021-09-01,September,110.5,2021,Fish
+2021-10-01,October,112.1,2021,Fish
+2021-11-01,November,111.9,2021,Fish
+2021-12-01,December,111.8,2021,Fish
+2022-01-01,January,114.3,2022,Fish
+2022-02-01,February,115.7,2022,Fish
+2022-03-01,March,116.2,2022,Fish
+2022-04-01,April,118.5,2022,Fish
+2022-05-01,May,118.1,2022,Fish
+2022-06-01,June,121.2,2022,Fish
+2022-07-01,July,122.9,2022,Fish
+2022-08-01,August,126.8,2022,Fish
+2022-09-01,September,125.4,2022,Fish
+2022-10-01,October,129.7,2022,Fish
+2022-11-01,November,129.8,2022,Fish
+2022-12-01,December,133.7,2022,Fish
+2023-01-01,January,132.2,2023,Fish
+2023-02-01,February,133.9,2023,Fish
+2023-03-01,March,135.6,2023,Fish
+2023-04-01,April,135.4,2023,Fish
+2023-05-01,May,137.8,2023,Fish
+2023-06-01,June,136.8,2023,Fish
+2023-07-01,July,139.4,2023,Fish
+2023-08-01,August,135.5,2023,Fish
+2023-09-01,September,136.4,2023,Fish
+1988-01-01,January,48.5,1988,"Milk, cheese and eggs"
+1988-02-01,February,48.5,1988,"Milk, cheese and eggs"
+1988-03-01,March,48.6,1988,"Milk, cheese and eggs"
+1988-04-01,April,48.9,1988,"Milk, cheese and eggs"
+1988-05-01,May,48.8,1988,"Milk, cheese and eggs"
+1988-06-01,June,48.6,1988,"Milk, cheese and eggs"
+1988-07-01,July,48.6,1988,"Milk, cheese and eggs"
+1988-08-01,August,49.5,1988,"Milk, cheese and eggs"
+1988-09-01,September,49.6,1988,"Milk, cheese and eggs"
+1988-10-01,October,49.8,1988,"Milk, cheese and eggs"
+1988-11-01,November,50.1,1988,"Milk, cheese and eggs"
+1988-12-01,December,50.2,1988,"Milk, cheese and eggs"
+1989-01-01,January,50.9,1989,"Milk, cheese and eggs"
+1989-02-01,February,51.1,1989,"Milk, cheese and eggs"
+1989-03-01,March,51.2,1989,"Milk, cheese and eggs"
+1989-04-01,April,51.3,1989,"Milk, cheese and eggs"
+1989-05-01,May,51.6,1989,"Milk, cheese and eggs"
+1989-06-01,June,51.8,1989,"Milk, cheese and eggs"
+1989-07-01,July,51.7,1989,"Milk, cheese and eggs"
+1989-08-01,August,51.7,1989,"Milk, cheese and eggs"
+1989-09-01,September,52.5,1989,"Milk, cheese and eggs"
+1989-10-01,October,54.6,1989,"Milk, cheese and eggs"
+1989-11-01,November,55.0,1989,"Milk, cheese and eggs"
+1989-12-01,December,54.9,1989,"Milk, cheese and eggs"
+1990-01-01,January,55.3,1990,"Milk, cheese and eggs"
+1990-02-01,February,55.3,1990,"Milk, cheese and eggs"
+1990-03-01,March,55.2,1990,"Milk, cheese and eggs"
+1990-04-01,April,55.3,1990,"Milk, cheese and eggs"
+1990-05-01,May,55.8,1990,"Milk, cheese and eggs"
+1990-06-01,June,56.0,1990,"Milk, cheese and eggs"
+1990-07-01,July,55.9,1990,"Milk, cheese and eggs"
+1990-08-01,August,56.6,1990,"Milk, cheese and eggs"
+1990-09-01,September,56.8,1990,"Milk, cheese and eggs"
+1990-10-01,October,57.3,1990,"Milk, cheese and eggs"
+1990-11-01,November,57.5,1990,"Milk, cheese and eggs"
+1990-12-01,December,58.0,1990,"Milk, cheese and eggs"
+1991-01-01,January,58.4,1991,"Milk, cheese and eggs"
+1991-02-01,February,58.6,1991,"Milk, cheese and eggs"
+1991-03-01,March,58.5,1991,"Milk, cheese and eggs"
+1991-04-01,April,59.0,1991,"Milk, cheese and eggs"
+1991-05-01,May,58.9,1991,"Milk, cheese and eggs"
+1991-06-01,June,58.9,1991,"Milk, cheese and eggs"
+1991-07-01,July,58.7,1991,"Milk, cheese and eggs"
+1991-08-01,August,59.0,1991,"Milk, cheese and eggs"
+1991-09-01,September,59.0,1991,"Milk, cheese and eggs"
+1991-10-01,October,59.8,1991,"Milk, cheese and eggs"
+1991-11-01,November,59.8,1991,"Milk, cheese and eggs"
+1991-12-01,December,60.5,1991,"Milk, cheese and eggs"
+1992-01-01,January,61.0,1992,"Milk, cheese and eggs"
+1992-02-01,February,61.2,1992,"Milk, cheese and eggs"
+1992-03-01,March,61.4,1992,"Milk, cheese and eggs"
+1992-04-01,April,61.3,1992,"Milk, cheese and eggs"
+1992-05-01,May,61.7,1992,"Milk, cheese and eggs"
+1992-06-01,June,62.1,1992,"Milk, cheese and eggs"
+1992-07-01,July,61.9,1992,"Milk, cheese and eggs"
+1992-08-01,August,62.3,1992,"Milk, cheese and eggs"
+1992-09-01,September,62.4,1992,"Milk, cheese and eggs"
+1992-10-01,October,62.9,1992,"Milk, cheese and eggs"
+1992-11-01,November,62.5,1992,"Milk, cheese and eggs"
+1992-12-01,December,62.8,1992,"Milk, cheese and eggs"
+1993-01-01,January,62.9,1993,"Milk, cheese and eggs"
+1993-02-01,February,63.7,1993,"Milk, cheese and eggs"
+1993-03-01,March,63.8,1993,"Milk, cheese and eggs"
+1993-04-01,April,63.8,1993,"Milk, cheese and eggs"
+1993-05-01,May,64.0,1993,"Milk, cheese and eggs"
+1993-06-01,June,64.8,1993,"Milk, cheese and eggs"
+1993-07-01,July,65.2,1993,"Milk, cheese and eggs"
+1993-08-01,August,65.6,1993,"Milk, cheese and eggs"
+1993-09-01,September,65.3,1993,"Milk, cheese and eggs"
+1993-10-01,October,65.0,1993,"Milk, cheese and eggs"
+1993-11-01,November,64.5,1993,"Milk, cheese and eggs"
+1993-12-01,December,63.9,1993,"Milk, cheese and eggs"
+1994-01-01,January,64.4,1994,"Milk, cheese and eggs"
+1994-02-01,February,64.3,1994,"Milk, cheese and eggs"
+1994-03-01,March,64.8,1994,"Milk, cheese and eggs"
+1994-04-01,April,65.9,1994,"Milk, cheese and eggs"
+1994-05-01,May,65.7,1994,"Milk, cheese and eggs"
+1994-06-01,June,65.6,1994,"Milk, cheese and eggs"
+1994-07-01,July,65.4,1994,"Milk, cheese and eggs"
+1994-08-01,August,65.2,1994,"Milk, cheese and eggs"
+1994-09-01,September,65.4,1994,"Milk, cheese and eggs"
+1994-10-01,October,65.7,1994,"Milk, cheese and eggs"
+1994-11-01,November,67.4,1994,"Milk, cheese and eggs"
+1994-12-01,December,67.8,1994,"Milk, cheese and eggs"
+1995-01-01,January,68.0,1995,"Milk, cheese and eggs"
+1995-02-01,February,68.2,1995,"Milk, cheese and eggs"
+1995-03-01,March,68.1,1995,"Milk, cheese and eggs"
+1995-04-01,April,68.2,1995,"Milk, cheese and eggs"
+1995-05-01,May,68.3,1995,"Milk, cheese and eggs"
+1995-06-01,June,68.7,1995,"Milk, cheese and eggs"
+1995-07-01,July,68.9,1995,"Milk, cheese and eggs"
+1995-08-01,August,69.0,1995,"Milk, cheese and eggs"
+1995-09-01,September,69.0,1995,"Milk, cheese and eggs"
+1995-10-01,October,69.3,1995,"Milk, cheese and eggs"
+1995-11-01,November,69.4,1995,"Milk, cheese and eggs"
+1995-12-01,December,70.2,1995,"Milk, cheese and eggs"
+1996-01-01,January,70.1,1996,"Milk, cheese and eggs"
+1996-02-01,February,70.2,1996,"Milk, cheese and eggs"
+1996-03-01,March,71.0,1996,"Milk, cheese and eggs"
+1996-04-01,April,70.7,1996,"Milk, cheese and eggs"
+1996-05-01,May,70.8,1996,"Milk, cheese and eggs"
+1996-06-01,June,70.7,1996,"Milk, cheese and eggs"
+1996-07-01,July,70.6,1996,"Milk, cheese and eggs"
+1996-08-01,August,71.3,1996,"Milk, cheese and eggs"
+1996-09-01,September,71.2,1996,"Milk, cheese and eggs"
+1996-10-01,October,70.9,1996,"Milk, cheese and eggs"
+1996-11-01,November,71.4,1996,"Milk, cheese and eggs"
+1996-12-01,December,71.2,1996,"Milk, cheese and eggs"
+1997-01-01,January,70.8,1997,"Milk, cheese and eggs"
+1997-02-01,February,70.6,1997,"Milk, cheese and eggs"
+1997-03-01,March,71.1,1997,"Milk, cheese and eggs"
+1997-04-01,April,70.5,1997,"Milk, cheese and eggs"
+1997-05-01,May,70.8,1997,"Milk, cheese and eggs"
+1997-06-01,June,70.8,1997,"Milk, cheese and eggs"
+1997-07-01,July,70.5,1997,"Milk, cheese and eggs"
+1997-08-01,August,70.7,1997,"Milk, cheese and eggs"
+1997-09-01,September,70.6,1997,"Milk, cheese and eggs"
+1997-10-01,October,70.7,1997,"Milk, cheese and eggs"
+1997-11-01,November,70.3,1997,"Milk, cheese and eggs"
+1997-12-01,December,70.5,1997,"Milk, cheese and eggs"
+1998-01-01,January,70.5,1998,"Milk, cheese and eggs"
+1998-02-01,February,69.9,1998,"Milk, cheese and eggs"
+1998-03-01,March,70.1,1998,"Milk, cheese and eggs"
+1998-04-01,April,69.7,1998,"Milk, cheese and eggs"
+1998-05-01,May,69.3,1998,"Milk, cheese and eggs"
+1998-06-01,June,69.4,1998,"Milk, cheese and eggs"
+1998-07-01,July,69.7,1998,"Milk, cheese and eggs"
+1998-08-01,August,69.6,1998,"Milk, cheese and eggs"
+1998-09-01,September,70.0,1998,"Milk, cheese and eggs"
+1998-10-01,October,69.9,1998,"Milk, cheese and eggs"
+1998-11-01,November,69.4,1998,"Milk, cheese and eggs"
+1998-12-01,December,68.9,1998,"Milk, cheese and eggs"
+1999-01-01,January,69.3,1999,"Milk, cheese and eggs"
+1999-02-01,February,69.1,1999,"Milk, cheese and eggs"
+1999-03-01,March,69.2,1999,"Milk, cheese and eggs"
+1999-04-01,April,69.0,1999,"Milk, cheese and eggs"
+1999-05-01,May,69.2,1999,"Milk, cheese and eggs"
+1999-06-01,June,69.2,1999,"Milk, cheese and eggs"
+1999-07-01,July,69.2,1999,"Milk, cheese and eggs"
+1999-08-01,August,68.5,1999,"Milk, cheese and eggs"
+1999-09-01,September,68.4,1999,"Milk, cheese and eggs"
+1999-10-01,October,68.1,1999,"Milk, cheese and eggs"
+1999-11-01,November,68.1,1999,"Milk, cheese and eggs"
+1999-12-01,December,68.4,1999,"Milk, cheese and eggs"
+2000-01-01,January,68.2,2000,"Milk, cheese and eggs"
+2000-02-01,February,68.4,2000,"Milk, cheese and eggs"
+2000-03-01,March,68.4,2000,"Milk, cheese and eggs"
+2000-04-01,April,68.3,2000,"Milk, cheese and eggs"
+2000-05-01,May,68.2,2000,"Milk, cheese and eggs"
+2000-06-01,June,68.2,2000,"Milk, cheese and eggs"
+2000-07-01,July,67.9,2000,"Milk, cheese and eggs"
+2000-08-01,August,68.3,2000,"Milk, cheese and eggs"
+2000-09-01,September,68.4,2000,"Milk, cheese and eggs"
+2000-10-01,October,68.9,2000,"Milk, cheese and eggs"
+2000-11-01,November,68.9,2000,"Milk, cheese and eggs"
+2000-12-01,December,68.7,2000,"Milk, cheese and eggs"
+2001-01-01,January,68.7,2001,"Milk, cheese and eggs"
+2001-02-01,February,69.6,2001,"Milk, cheese and eggs"
+2001-03-01,March,69.4,2001,"Milk, cheese and eggs"
+2001-04-01,April,70.1,2001,"Milk, cheese and eggs"
+2001-05-01,May,70.5,2001,"Milk, cheese and eggs"
+2001-06-01,June,70.8,2001,"Milk, cheese and eggs"
+2001-07-01,July,71.4,2001,"Milk, cheese and eggs"
+2001-08-01,August,71.3,2001,"Milk, cheese and eggs"
+2001-09-01,September,71.2,2001,"Milk, cheese and eggs"
+2001-10-01,October,71.4,2001,"Milk, cheese and eggs"
+2001-11-01,November,71.1,2001,"Milk, cheese and eggs"
+2001-12-01,December,71.5,2001,"Milk, cheese and eggs"
+2002-01-01,January,71.3,2002,"Milk, cheese and eggs"
+2002-02-01,February,71.3,2002,"Milk, cheese and eggs"
+2002-03-01,March,71.4,2002,"Milk, cheese and eggs"
+2002-04-01,April,71.4,2002,"Milk, cheese and eggs"
+2002-05-01,May,71.2,2002,"Milk, cheese and eggs"
+2002-06-01,June,71.4,2002,"Milk, cheese and eggs"
+2002-07-01,July,71.5,2002,"Milk, cheese and eggs"
+2002-08-01,August,70.8,2002,"Milk, cheese and eggs"
+2002-09-01,September,71.2,2002,"Milk, cheese and eggs"
+2002-10-01,October,71.4,2002,"Milk, cheese and eggs"
+2002-11-01,November,71.7,2002,"Milk, cheese and eggs"
+2002-12-01,December,71.6,2002,"Milk, cheese and eggs"
+2003-01-01,January,72.1,2003,"Milk, cheese and eggs"
+2003-02-01,February,72.2,2003,"Milk, cheese and eggs"
+2003-03-01,March,72.2,2003,"Milk, cheese and eggs"
+2003-04-01,April,72.4,2003,"Milk, cheese and eggs"
+2003-05-01,May,72.1,2003,"Milk, cheese and eggs"
+2003-06-01,June,72.3,2003,"Milk, cheese and eggs"
+2003-07-01,July,73.0,2003,"Milk, cheese and eggs"
+2003-08-01,August,72.8,2003,"Milk, cheese and eggs"
+2003-09-01,September,73.0,2003,"Milk, cheese and eggs"
+2003-10-01,October,73.3,2003,"Milk, cheese and eggs"
+2003-11-01,November,73.9,2003,"Milk, cheese and eggs"
+2003-12-01,December,74.3,2003,"Milk, cheese and eggs"
+2004-01-01,January,74.2,2004,"Milk, cheese and eggs"
+2004-02-01,February,74.7,2004,"Milk, cheese and eggs"
+2004-03-01,March,74.6,2004,"Milk, cheese and eggs"
+2004-04-01,April,74.5,2004,"Milk, cheese and eggs"
+2004-05-01,May,74.4,2004,"Milk, cheese and eggs"
+2004-06-01,June,74.5,2004,"Milk, cheese and eggs"
+2004-07-01,July,74.3,2004,"Milk, cheese and eggs"
+2004-08-01,August,74.1,2004,"Milk, cheese and eggs"
+2004-09-01,September,74.3,2004,"Milk, cheese and eggs"
+2004-10-01,October,74.4,2004,"Milk, cheese and eggs"
+2004-11-01,November,74.7,2004,"Milk, cheese and eggs"
+2004-12-01,December,74.6,2004,"Milk, cheese and eggs"
+2005-01-01,January,74.6,2005,"Milk, cheese and eggs"
+2005-02-01,February,74.6,2005,"Milk, cheese and eggs"
+2005-03-01,March,76.4,2005,"Milk, cheese and eggs"
+2005-04-01,April,76.3,2005,"Milk, cheese and eggs"
+2005-05-01,May,76.2,2005,"Milk, cheese and eggs"
+2005-06-01,June,76.6,2005,"Milk, cheese and eggs"
+2005-07-01,July,76.4,2005,"Milk, cheese and eggs"
+2005-08-01,August,76.8,2005,"Milk, cheese and eggs"
+2005-09-01,September,77.1,2005,"Milk, cheese and eggs"
+2005-10-01,October,77.4,2005,"Milk, cheese and eggs"
+2005-11-01,November,77.5,2005,"Milk, cheese and eggs"
+2005-12-01,December,77.6,2005,"Milk, cheese and eggs"
+2006-01-01,January,77.6,2006,"Milk, cheese and eggs"
+2006-02-01,February,78.1,2006,"Milk, cheese and eggs"
+2006-03-01,March,75.9,2006,"Milk, cheese and eggs"
+2006-04-01,April,75.2,2006,"Milk, cheese and eggs"
+2006-05-01,May,75.3,2006,"Milk, cheese and eggs"
+2006-06-01,June,76.2,2006,"Milk, cheese and eggs"
+2006-07-01,July,78.1,2006,"Milk, cheese and eggs"
+2006-08-01,August,78.6,2006,"Milk, cheese and eggs"
+2006-09-01,September,78.5,2006,"Milk, cheese and eggs"
+2006-10-01,October,78.6,2006,"Milk, cheese and eggs"
+2006-11-01,November,78.8,2006,"Milk, cheese and eggs"
+2006-12-01,December,79.0,2006,"Milk, cheese and eggs"
+2007-01-01,January,78.5,2007,"Milk, cheese and eggs"
+2007-02-01,February,78.1,2007,"Milk, cheese and eggs"
+2007-03-01,March,80.0,2007,"Milk, cheese and eggs"
+2007-04-01,April,80.1,2007,"Milk, cheese and eggs"
+2007-05-01,May,80.4,2007,"Milk, cheese and eggs"
+2007-06-01,June,80.4,2007,"Milk, cheese and eggs"
+2007-07-01,July,80.6,2007,"Milk, cheese and eggs"
+2007-08-01,August,81.2,2007,"Milk, cheese and eggs"
+2007-09-01,September,86.3,2007,"Milk, cheese and eggs"
+2007-10-01,October,87.5,2007,"Milk, cheese and eggs"
+2007-11-01,November,89.7,2007,"Milk, cheese and eggs"
+2007-12-01,December,90.9,2007,"Milk, cheese and eggs"
+2008-01-01,January,90.6,2008,"Milk, cheese and eggs"
+2008-02-01,February,91.8,2008,"Milk, cheese and eggs"
+2008-03-01,March,92.8,2008,"Milk, cheese and eggs"
+2008-04-01,April,92.7,2008,"Milk, cheese and eggs"
+2008-05-01,May,93.7,2008,"Milk, cheese and eggs"
+2008-06-01,June,95.8,2008,"Milk, cheese and eggs"
+2008-07-01,July,96.0,2008,"Milk, cheese and eggs"
+2008-08-01,August,96.6,2008,"Milk, cheese and eggs"
+2008-09-01,September,96.4,2008,"Milk, cheese and eggs"
+2008-10-01,October,98.7,2008,"Milk, cheese and eggs"
+2008-11-01,November,99.0,2008,"Milk, cheese and eggs"
+2008-12-01,December,99.9,2008,"Milk, cheese and eggs"
+2009-01-01,January,98.4,2009,"Milk, cheese and eggs"
+2009-02-01,February,99.2,2009,"Milk, cheese and eggs"
+2009-03-01,March,100.1,2009,"Milk, cheese and eggs"
+2009-04-01,April,99.7,2009,"Milk, cheese and eggs"
+2009-05-01,May,99.7,2009,"Milk, cheese and eggs"
+2009-06-01,June,99.2,2009,"Milk, cheese and eggs"
+2009-07-01,July,99.4,2009,"Milk, cheese and eggs"
+2009-08-01,August,99.5,2009,"Milk, cheese and eggs"
+2009-09-01,September,98.4,2009,"Milk, cheese and eggs"
+2009-10-01,October,99.3,2009,"Milk, cheese and eggs"
+2009-11-01,November,99.2,2009,"Milk, cheese and eggs"
+2009-12-01,December,99.7,2009,"Milk, cheese and eggs"
+2010-01-01,January,98.6,2010,"Milk, cheese and eggs"
+2010-02-01,February,99.2,2010,"Milk, cheese and eggs"
+2010-03-01,March,99.6,2010,"Milk, cheese and eggs"
+2010-04-01,April,99.1,2010,"Milk, cheese and eggs"
+2010-05-01,May,99.5,2010,"Milk, cheese and eggs"
+2010-06-01,June,99.1,2010,"Milk, cheese and eggs"
+2010-07-01,July,100.1,2010,"Milk, cheese and eggs"
+2010-08-01,August,99.3,2010,"Milk, cheese and eggs"
+2010-09-01,September,98.8,2010,"Milk, cheese and eggs"
+2010-10-01,October,99.8,2010,"Milk, cheese and eggs"
+2010-11-01,November,99.6,2010,"Milk, cheese and eggs"
+2010-12-01,December,101.8,2010,"Milk, cheese and eggs"
+2011-01-01,January,101.0,2011,"Milk, cheese and eggs"
+2011-02-01,February,101.2,2011,"Milk, cheese and eggs"
+2011-03-01,March,100.1,2011,"Milk, cheese and eggs"
+2011-04-01,April,100.2,2011,"Milk, cheese and eggs"
+2011-05-01,May,100.6,2011,"Milk, cheese and eggs"
+2011-06-01,June,102.3,2011,"Milk, cheese and eggs"
+2011-07-01,July,103.4,2011,"Milk, cheese and eggs"
+2011-08-01,August,104.6,2011,"Milk, cheese and eggs"
+2011-09-01,September,103.6,2011,"Milk, cheese and eggs"
+2011-10-01,October,102.4,2011,"Milk, cheese and eggs"
+2011-11-01,November,102.8,2011,"Milk, cheese and eggs"
+2011-12-01,December,103.5,2011,"Milk, cheese and eggs"
+2012-01-01,January,103.0,2012,"Milk, cheese and eggs"
+2012-02-01,February,103.8,2012,"Milk, cheese and eggs"
+2012-03-01,March,103.1,2012,"Milk, cheese and eggs"
+2012-04-01,April,103.1,2012,"Milk, cheese and eggs"
+2012-05-01,May,102.7,2012,"Milk, cheese and eggs"
+2012-06-01,June,102.9,2012,"Milk, cheese and eggs"
+2012-07-01,July,102.5,2012,"Milk, cheese and eggs"
+2012-08-01,August,103.1,2012,"Milk, cheese and eggs"
+2012-09-01,September,103.1,2012,"Milk, cheese and eggs"
+2012-10-01,October,102.8,2012,"Milk, cheese and eggs"
+2012-11-01,November,102.9,2012,"Milk, cheese and eggs"
+2012-12-01,December,104.1,2012,"Milk, cheese and eggs"
+2013-01-01,January,103.7,2013,"Milk, cheese and eggs"
+2013-02-01,February,103.2,2013,"Milk, cheese and eggs"
+2013-03-01,March,103.3,2013,"Milk, cheese and eggs"
+2013-04-01,April,103.6,2013,"Milk, cheese and eggs"
+2013-05-01,May,103.9,2013,"Milk, cheese and eggs"
+2013-06-01,June,103.5,2013,"Milk, cheese and eggs"
+2013-07-01,July,103.1,2013,"Milk, cheese and eggs"
+2013-08-01,August,104.9,2013,"Milk, cheese and eggs"
+2013-09-01,September,104.8,2013,"Milk, cheese and eggs"
+2013-10-01,October,104.4,2013,"Milk, cheese and eggs"
+2013-11-01,November,104.8,2013,"Milk, cheese and eggs"
+2013-12-01,December,106.0,2013,"Milk, cheese and eggs"
+2014-01-01,January,106.0,2014,"Milk, cheese and eggs"
+2014-02-01,February,106.4,2014,"Milk, cheese and eggs"
+2014-03-01,March,105.4,2014,"Milk, cheese and eggs"
+2014-04-01,April,104.5,2014,"Milk, cheese and eggs"
+2014-05-01,May,104.3,2014,"Milk, cheese and eggs"
+2014-06-01,June,104.3,2014,"Milk, cheese and eggs"
+2014-07-01,July,103.9,2014,"Milk, cheese and eggs"
+2014-08-01,August,103.2,2014,"Milk, cheese and eggs"
+2014-09-01,September,104.3,2014,"Milk, cheese and eggs"
+2014-10-01,October,104.3,2014,"Milk, cheese and eggs"
+2014-11-01,November,104.7,2014,"Milk, cheese and eggs"
+2014-12-01,December,104.6,2014,"Milk, cheese and eggs"
+2015-01-01,January,102.4,2015,"Milk, cheese and eggs"
+2015-02-01,February,100.4,2015,"Milk, cheese and eggs"
+2015-03-01,March,101.6,2015,"Milk, cheese and eggs"
+2015-04-01,April,101.0,2015,"Milk, cheese and eggs"
+2015-05-01,May,101.0,2015,"Milk, cheese and eggs"
+2015-06-01,June,101.7,2015,"Milk, cheese and eggs"
+2015-07-01,July,98.9,2015,"Milk, cheese and eggs"
+2015-08-01,August,99.3,2015,"Milk, cheese and eggs"
+2015-09-01,September,98.6,2015,"Milk, cheese and eggs"
+2015-10-01,October,98.5,2015,"Milk, cheese and eggs"
+2015-11-01,November,97.7,2015,"Milk, cheese and eggs"
+2015-12-01,December,98.9,2015,"Milk, cheese and eggs"
+2016-01-01,January,97.9,2016,"Milk, cheese and eggs"
+2016-02-01,February,97.4,2016,"Milk, cheese and eggs"
+2016-03-01,March,97.3,2016,"Milk, cheese and eggs"
+2016-04-01,April,96.2,2016,"Milk, cheese and eggs"
+2016-05-01,May,97.0,2016,"Milk, cheese and eggs"
+2016-06-01,June,95.5,2016,"Milk, cheese and eggs"
+2016-07-01,July,96.9,2016,"Milk, cheese and eggs"
+2016-08-01,August,96.7,2016,"Milk, cheese and eggs"
+2016-09-01,September,95.8,2016,"Milk, cheese and eggs"
+2016-10-01,October,95.7,2016,"Milk, cheese and eggs"
+2016-11-01,November,96.0,2016,"Milk, cheese and eggs"
+2016-12-01,December,96.5,2016,"Milk, cheese and eggs"
+2017-01-01,January,96.0,2017,"Milk, cheese and eggs"
+2017-02-01,February,96.6,2017,"Milk, cheese and eggs"
+2017-03-01,March,98.2,2017,"Milk, cheese and eggs"
+2017-04-01,April,97.4,2017,"Milk, cheese and eggs"
+2017-05-01,May,98.2,2017,"Milk, cheese and eggs"
+2017-06-01,June,98.2,2017,"Milk, cheese and eggs"
+2017-07-01,July,98.8,2017,"Milk, cheese and eggs"
+2017-08-01,August,98.5,2017,"Milk, cheese and eggs"
+2017-09-01,September,98.4,2017,"Milk, cheese and eggs"
+2017-10-01,October,100.3,2017,"Milk, cheese and eggs"
+2017-11-01,November,100.7,2017,"Milk, cheese and eggs"
+2017-12-01,December,101.1,2017,"Milk, cheese and eggs"
+2018-01-01,January,99.8,2018,"Milk, cheese and eggs"
+2018-02-01,February,102.5,2018,"Milk, cheese and eggs"
+2018-03-01,March,102.7,2018,"Milk, cheese and eggs"
+2018-04-01,April,101.0,2018,"Milk, cheese and eggs"
+2018-05-01,May,100.8,2018,"Milk, cheese and eggs"
+2018-06-01,June,100.3,2018,"Milk, cheese and eggs"
+2018-07-01,July,101.5,2018,"Milk, cheese and eggs"
+2018-08-01,August,101.1,2018,"Milk, cheese and eggs"
+2018-09-01,September,100.8,2018,"Milk, cheese and eggs"
+2018-10-01,October,99.5,2018,"Milk, cheese and eggs"
+2018-11-01,November,99.7,2018,"Milk, cheese and eggs"
+2018-12-01,December,101.2,2018,"Milk, cheese and eggs"
+2019-01-01,January,100.0,2019,"Milk, cheese and eggs"
+2019-02-01,February,101.6,2019,"Milk, cheese and eggs"
+2019-03-01,March,100.7,2019,"Milk, cheese and eggs"
+2019-04-01,April,100.2,2019,"Milk, cheese and eggs"
+2019-05-01,May,101.2,2019,"Milk, cheese and eggs"
+2019-06-01,June,100.7,2019,"Milk, cheese and eggs"
+2019-07-01,July,100.5,2019,"Milk, cheese and eggs"
+2019-08-01,August,101.5,2019,"Milk, cheese and eggs"
+2019-09-01,September,101.5,2019,"Milk, cheese and eggs"
+2019-10-01,October,101.0,2019,"Milk, cheese and eggs"
+2019-11-01,November,101.4,2019,"Milk, cheese and eggs"
+2019-12-01,December,102.5,2019,"Milk, cheese and eggs"
+2020-01-01,January,100.8,2020,"Milk, cheese and eggs"
+2020-02-01,February,101.8,2020,"Milk, cheese and eggs"
+2020-03-01,March,102.0,2020,"Milk, cheese and eggs"
+2020-04-01,April,100.1,2020,"Milk, cheese and eggs"
+2020-05-01,May,100.5,2020,"Milk, cheese and eggs"
+2020-06-01,June,101.4,2020,"Milk, cheese and eggs"
+2020-07-01,July,100.6,2020,"Milk, cheese and eggs"
+2020-08-01,August,101.7,2020,"Milk, cheese and eggs"
+2020-09-01,September,99.1,2020,"Milk, cheese and eggs"
+2020-10-01,October,99.6,2020,"Milk, cheese and eggs"
+2020-11-01,November,100.3,2020,"Milk, cheese and eggs"
+2020-12-01,December,100.8,2020,"Milk, cheese and eggs"
+2021-01-01,January,99.2,2021,"Milk, cheese and eggs"
+2021-02-01,February,101.3,2021,"Milk, cheese and eggs"
+2021-03-01,March,99.8,2021,"Milk, cheese and eggs"
+2021-04-01,April,100.8,2021,"Milk, cheese and eggs"
+2021-05-01,May,101.6,2021,"Milk, cheese and eggs"
+2021-06-01,June,101.1,2021,"Milk, cheese and eggs"
+2021-07-01,July,100.3,2021,"Milk, cheese and eggs"
+2021-08-01,August,102.1,2021,"Milk, cheese and eggs"
+2021-09-01,September,101.3,2021,"Milk, cheese and eggs"
+2021-10-01,October,102.6,2021,"Milk, cheese and eggs"
+2021-11-01,November,103.8,2021,"Milk, cheese and eggs"
+2021-12-01,December,105.3,2021,"Milk, cheese and eggs"
+2022-01-01,January,104.8,2022,"Milk, cheese and eggs"
+2022-02-01,February,107.6,2022,"Milk, cheese and eggs"
+2022-03-01,March,108.4,2022,"Milk, cheese and eggs"
+2022-04-01,April,110.3,2022,"Milk, cheese and eggs"
+2022-05-01,May,112.5,2022,"Milk, cheese and eggs"
+2022-06-01,June,116.1,2022,"Milk, cheese and eggs"
+2022-07-01,July,119.8,2022,"Milk, cheese and eggs"
+2022-08-01,August,124.6,2022,"Milk, cheese and eggs"
+2022-09-01,September,125.9,2022,"Milk, cheese and eggs"
+2022-10-01,October,130.5,2022,"Milk, cheese and eggs"
+2022-11-01,November,131.6,2022,"Milk, cheese and eggs"
+2022-12-01,December,137.1,2022,"Milk, cheese and eggs"
+2023-01-01,January,137.4,2023,"Milk, cheese and eggs"
+2023-02-01,February,140.7,2023,"Milk, cheese and eggs"
+2023-03-01,March,140.6,2023,"Milk, cheese and eggs"
+2023-04-01,April,142.6,2023,"Milk, cheese and eggs"
+2023-05-01,May,143.3,2023,"Milk, cheese and eggs"
+2023-06-01,June,142.6,2023,"Milk, cheese and eggs"
+2023-07-01,July,142.1,2023,"Milk, cheese and eggs"
+2023-08-01,August,143.7,2023,"Milk, cheese and eggs"
+2023-09-01,September,141.4,2023,"Milk, cheese and eggs"

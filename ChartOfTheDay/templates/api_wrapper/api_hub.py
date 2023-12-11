@@ -95,3 +95,34 @@ class EconDataAPI:
         df['year'] = df['date'].dt.year
         
         return df
+    
+    def get_ons_data(self, dataset_id: str, series_id: str) -> pd.DataFrame:
+        """Get data from ONS API, return as pandas dataframe
+        """
+
+        try:
+            # Use ONS API to get monthly data
+            url = f'https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/{series_id}/dataset/{dataset_id}/data'
+            # read data at api into dataframe, relevant data is in the 'months' key
+            # Make a GET request to fetch the raw JSON content
+            json_data = requests.get(url).json()
+        except:
+            url = 'https://api.ons.gov.uk/timeseries/{series_id}/dataset/{dataset_id}/data'
+            json_data = requests.get(url).json()
+
+        # Extract data from the 'months' key
+        months_data = json_data['months']
+
+        # Convert the JSON data to a pandas DataFrame
+        df = pd.DataFrame.from_dict(months_data)
+
+        # Clean data set, convert date from yyyy mmm to yyyy-mm-dd
+        df['date'] = pd.to_datetime(df['date'], format='%Y %b')
+
+        # drop unnecessary columns
+        df.drop(columns=['label', 'quarter', 'sourceDataset', 'updateDate'], inplace=True)
+
+        # convert value column to float
+        df['value'] = df['value'].astype(float)
+
+        return df
