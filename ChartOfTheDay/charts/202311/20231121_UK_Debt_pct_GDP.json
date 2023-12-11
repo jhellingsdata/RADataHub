@@ -1,0 +1,2419 @@
+{
+  "config": {
+    "background": "#122b39",
+    "text": {
+      "color": "#b4c8d8",
+      "font": "Circular Std",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 350,
+      "continuousHeight": 280,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#b4c8d8"
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "axis": {
+      "labelColor": "#b4c8d8",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "tickColor": "#b4c8d8",
+      "tickOpacity": 0.5,
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "gridColor": "#b4c8d8",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#b4c8d8"
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#b4c8d8",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8
+    },
+    "title": {
+      "color": "#b4c8d8",
+      "subtitleColor": "#b4c8d8E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "dx": 24,
+      "fontSize": 12,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": -1
+    },
+    "legend": {
+      "titleColor": "#b4c8d8",
+      "labelColor": "#b4c8d8"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-60bd054c2b2a1f52635fc4e496961a4a"
+      },
+      "mark": {
+        "type": "line"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "axis": {
+            "labelExpr": "datum.value + '%'"
+          },
+          "field": "debt",
+          "scale": {
+            "domain": [75, 100],
+            "zero": false
+          },
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "UK Debt",
+        "dx": 32,
+        "subtitle": [
+          "Public sector debt, as percent of GDP | Source: ONS via ECO API"
+        ]
+      },
+      "transform": [
+        {
+          "filter": "(datum.year >= 2018)"
+        }
+      ]
+    },
+    {
+      "data": {
+        "name": "data-9ba4a35245ac8762cc2d1f5bcac9dad4"
+      },
+      "mark": {
+        "type": "point"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "debt",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-9ba4a35245ac8762cc2d1f5bcac9dad4"
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 13
+      },
+      "encoding": {
+        "text": {
+          "field": "debt_fmt",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "debt",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-9ba4a35245ac8762cc2d1f5bcac9dad4"
+      },
+      "mark": {
+        "type": "text",
+        "dy": -14,
+        "fontSize": 12
+      },
+      "encoding": {
+        "text": {
+          "field": "date",
+          "format": "%b %Y",
+          "type": "temporal"
+        },
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "debt",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-60bd054c2b2a1f52635fc4e496961a4a": [
+      {
+        "date": "1997-08-01T00:00:00",
+        "year": 1997,
+        "borrowing": 2955.0,
+        "debt": 37.8,
+        "borrowing_3m": 2886.0
+      },
+      {
+        "date": "1997-09-01T00:00:00",
+        "year": 1997,
+        "borrowing": 2312.0,
+        "debt": 37.9,
+        "borrowing_3m": 2004.0
+      },
+      {
+        "date": "1997-10-01T00:00:00",
+        "year": 1997,
+        "borrowing": -1454.0,
+        "debt": 37.2,
+        "borrowing_3m": 1271.0
+      },
+      {
+        "date": "1997-11-01T00:00:00",
+        "year": 1997,
+        "borrowing": -1772.0,
+        "debt": 37.5,
+        "borrowing_3m": -305.0
+      },
+      {
+        "date": "1997-12-01T00:00:00",
+        "year": 1997,
+        "borrowing": 939.0,
+        "debt": 37.4,
+        "borrowing_3m": -762.0
+      },
+      {
+        "date": "1998-01-01T00:00:00",
+        "year": 1998,
+        "borrowing": -7136.0,
+        "debt": 36.3,
+        "borrowing_3m": -2656.0
+      },
+      {
+        "date": "1998-02-01T00:00:00",
+        "year": 1998,
+        "borrowing": 402.0,
+        "debt": 36.1,
+        "borrowing_3m": -1932.0
+      },
+      {
+        "date": "1998-03-01T00:00:00",
+        "year": 1998,
+        "borrowing": 2585.0,
+        "debt": 36.6,
+        "borrowing_3m": -1383.0
+      },
+      {
+        "date": "1998-04-01T00:00:00",
+        "year": 1998,
+        "borrowing": 1912.0,
+        "debt": 36.2,
+        "borrowing_3m": 1633.0
+      },
+      {
+        "date": "1998-05-01T00:00:00",
+        "year": 1998,
+        "borrowing": 3857.0,
+        "debt": 36.3,
+        "borrowing_3m": 2785.0
+      },
+      {
+        "date": "1998-06-01T00:00:00",
+        "year": 1998,
+        "borrowing": 3355.0,
+        "debt": 36.8,
+        "borrowing_3m": 3041.0
+      },
+      {
+        "date": "1998-07-01T00:00:00",
+        "year": 1998,
+        "borrowing": -2631.0,
+        "debt": 36.2,
+        "borrowing_3m": 1527.0
+      },
+      {
+        "date": "1998-08-01T00:00:00",
+        "year": 1998,
+        "borrowing": 2074.0,
+        "debt": 36.2,
+        "borrowing_3m": 933.0
+      },
+      {
+        "date": "1998-09-01T00:00:00",
+        "year": 1998,
+        "borrowing": 1590.0,
+        "debt": 36.3,
+        "borrowing_3m": 344.0
+      },
+      {
+        "date": "1998-10-01T00:00:00",
+        "year": 1998,
+        "borrowing": -6395.0,
+        "debt": 35.4,
+        "borrowing_3m": -910.0
+      },
+      {
+        "date": "1998-11-01T00:00:00",
+        "year": 1998,
+        "borrowing": 2999.0,
+        "debt": 35.6,
+        "borrowing_3m": -602.0
+      },
+      {
+        "date": "1998-12-01T00:00:00",
+        "year": 1998,
+        "borrowing": 942.0,
+        "debt": 35.7,
+        "borrowing_3m": -818.0
+      },
+      {
+        "date": "1999-01-01T00:00:00",
+        "year": 1999,
+        "borrowing": -6747.0,
+        "debt": 34.5,
+        "borrowing_3m": -935.0
+      },
+      {
+        "date": "1999-02-01T00:00:00",
+        "year": 1999,
+        "borrowing": -2061.0,
+        "debt": 34.5,
+        "borrowing_3m": -2622.0
+      },
+      {
+        "date": "1999-03-01T00:00:00",
+        "year": 1999,
+        "borrowing": 867.0,
+        "debt": 35.1,
+        "borrowing_3m": -2647.0
+      },
+      {
+        "date": "1999-04-01T00:00:00",
+        "year": 1999,
+        "borrowing": 373.0,
+        "debt": 34.7,
+        "borrowing_3m": -274.0
+      },
+      {
+        "date": "1999-05-01T00:00:00",
+        "year": 1999,
+        "borrowing": 3380.0,
+        "debt": 34.8,
+        "borrowing_3m": 1540.0
+      },
+      {
+        "date": "1999-06-01T00:00:00",
+        "year": 1999,
+        "borrowing": 2370.0,
+        "debt": 35.2,
+        "borrowing_3m": 2041.0
+      },
+      {
+        "date": "1999-07-01T00:00:00",
+        "year": 1999,
+        "borrowing": -3440.0,
+        "debt": 34.5,
+        "borrowing_3m": 770.0
+      },
+      {
+        "date": "1999-08-01T00:00:00",
+        "year": 1999,
+        "borrowing": 1474.0,
+        "debt": 34.3,
+        "borrowing_3m": 135.0
+      },
+      {
+        "date": "1999-09-01T00:00:00",
+        "year": 1999,
+        "borrowing": 24.0,
+        "debt": 34.2,
+        "borrowing_3m": -647.0
+      },
+      {
+        "date": "1999-10-01T00:00:00",
+        "year": 1999,
+        "borrowing": -7346.0,
+        "debt": 33.2,
+        "borrowing_3m": -1949.0
+      },
+      {
+        "date": "1999-11-01T00:00:00",
+        "year": 1999,
+        "borrowing": 1685.0,
+        "debt": 33.1,
+        "borrowing_3m": -1879.0
+      },
+      {
+        "date": "1999-12-01T00:00:00",
+        "year": 1999,
+        "borrowing": 1404.0,
+        "debt": 34.3,
+        "borrowing_3m": -1419.0
+      },
+      {
+        "date": "2000-01-01T00:00:00",
+        "year": 2000,
+        "borrowing": -9481.0,
+        "debt": 32.4,
+        "borrowing_3m": -2131.0
+      },
+      {
+        "date": "2000-02-01T00:00:00",
+        "year": 2000,
+        "borrowing": -967.0,
+        "debt": 32.0,
+        "borrowing_3m": -3015.0
+      },
+      {
+        "date": "2000-03-01T00:00:00",
+        "year": 2000,
+        "borrowing": -1307.0,
+        "debt": 32.5,
+        "borrowing_3m": -3918.0
+      },
+      {
+        "date": "2000-04-01T00:00:00",
+        "year": 2000,
+        "borrowing": 2968.0,
+        "debt": 31.7,
+        "borrowing_3m": 231.0
+      },
+      {
+        "date": "2000-05-01T00:00:00",
+        "year": 2000,
+        "borrowing": -9243.0,
+        "debt": 30.5,
+        "borrowing_3m": -2527.0
+      },
+      {
+        "date": "2000-06-01T00:00:00",
+        "year": 2000,
+        "borrowing": 2722.0,
+        "debt": 31.1,
+        "borrowing_3m": -1184.0
+      },
+      {
+        "date": "2000-07-01T00:00:00",
+        "year": 2000,
+        "borrowing": -3769.0,
+        "debt": 30.2,
+        "borrowing_3m": -3430.0
+      },
+      {
+        "date": "2000-08-01T00:00:00",
+        "year": 2000,
+        "borrowing": 3401.0,
+        "debt": 30.1,
+        "borrowing_3m": 785.0
+      },
+      {
+        "date": "2000-09-01T00:00:00",
+        "year": 2000,
+        "borrowing": -4039.0,
+        "debt": 29.3,
+        "borrowing_3m": -1469.0
+      },
+      {
+        "date": "2000-10-01T00:00:00",
+        "year": 2000,
+        "borrowing": 1009.0,
+        "debt": 28.6,
+        "borrowing_3m": 124.0
+      },
+      {
+        "date": "2000-11-01T00:00:00",
+        "year": 2000,
+        "borrowing": 1261.0,
+        "debt": 28.8,
+        "borrowing_3m": -590.0
+      },
+      {
+        "date": "2000-12-01T00:00:00",
+        "year": 2000,
+        "borrowing": 1549.0,
+        "debt": 29.6,
+        "borrowing_3m": 1273.0
+      },
+      {
+        "date": "2001-01-01T00:00:00",
+        "year": 2001,
+        "borrowing": -6756.0,
+        "debt": 28.1,
+        "borrowing_3m": -1315.0
+      },
+      {
+        "date": "2001-02-01T00:00:00",
+        "year": 2001,
+        "borrowing": -3661.0,
+        "debt": 27.8,
+        "borrowing_3m": -2956.0
+      },
+      {
+        "date": "2001-03-01T00:00:00",
+        "year": 2001,
+        "borrowing": -948.0,
+        "debt": 28.3,
+        "borrowing_3m": -3788.0
+      },
+      {
+        "date": "2001-04-01T00:00:00",
+        "year": 2001,
+        "borrowing": -320.0,
+        "debt": 27.9,
+        "borrowing_3m": -1643.0
+      },
+      {
+        "date": "2001-05-01T00:00:00",
+        "year": 2001,
+        "borrowing": 1504.0,
+        "debt": 28.2,
+        "borrowing_3m": 79.0
+      },
+      {
+        "date": "2001-06-01T00:00:00",
+        "year": 2001,
+        "borrowing": -372.0,
+        "debt": 28.8,
+        "borrowing_3m": 271.0
+      },
+      {
+        "date": "2001-07-01T00:00:00",
+        "year": 2001,
+        "borrowing": -1905.0,
+        "debt": 28.1,
+        "borrowing_3m": -258.0
+      },
+      {
+        "date": "2001-08-01T00:00:00",
+        "year": 2001,
+        "borrowing": -913.0,
+        "debt": 28.0,
+        "borrowing_3m": -1063.0
+      },
+      {
+        "date": "2001-09-01T00:00:00",
+        "year": 2001,
+        "borrowing": 1398.0,
+        "debt": 28.2,
+        "borrowing_3m": -473.0
+      },
+      {
+        "date": "2001-10-01T00:00:00",
+        "year": 2001,
+        "borrowing": 3140.0,
+        "debt": 27.6,
+        "borrowing_3m": 1208.0
+      },
+      {
+        "date": "2001-11-01T00:00:00",
+        "year": 2001,
+        "borrowing": 3402.0,
+        "debt": 28.0,
+        "borrowing_3m": 2647.0
+      },
+      {
+        "date": "2001-12-01T00:00:00",
+        "year": 2001,
+        "borrowing": 3211.0,
+        "debt": 28.8,
+        "borrowing_3m": 3251.0
+      },
+      {
+        "date": "2002-01-01T00:00:00",
+        "year": 2002,
+        "borrowing": -3306.0,
+        "debt": 27.8,
+        "borrowing_3m": 1102.0
+      },
+      {
+        "date": "2002-02-01T00:00:00",
+        "year": 2002,
+        "borrowing": -135.0,
+        "debt": 27.5,
+        "borrowing_3m": -77.0
+      },
+      {
+        "date": "2002-03-01T00:00:00",
+        "year": 2002,
+        "borrowing": 886.0,
+        "debt": 28.1,
+        "borrowing_3m": -852.0
+      },
+      {
+        "date": "2002-04-01T00:00:00",
+        "year": 2002,
+        "borrowing": 2445.0,
+        "debt": 27.9,
+        "borrowing_3m": 1065.0
+      },
+      {
+        "date": "2002-05-01T00:00:00",
+        "year": 2002,
+        "borrowing": 3652.0,
+        "debt": 28.0,
+        "borrowing_3m": 2328.0
+      },
+      {
+        "date": "2002-06-01T00:00:00",
+        "year": 2002,
+        "borrowing": 3415.0,
+        "debt": 28.5,
+        "borrowing_3m": 3171.0
+      },
+      {
+        "date": "2002-07-01T00:00:00",
+        "year": 2002,
+        "borrowing": -632.0,
+        "debt": 27.9,
+        "borrowing_3m": 2145.0
+      },
+      {
+        "date": "2002-08-01T00:00:00",
+        "year": 2002,
+        "borrowing": 2214.0,
+        "debt": 28.1,
+        "borrowing_3m": 1666.0
+      },
+      {
+        "date": "2002-09-01T00:00:00",
+        "year": 2002,
+        "borrowing": 4545.0,
+        "debt": 28.4,
+        "borrowing_3m": 2042.0
+      },
+      {
+        "date": "2002-10-01T00:00:00",
+        "year": 2002,
+        "borrowing": 3873.0,
+        "debt": 28.3,
+        "borrowing_3m": 3544.0
+      },
+      {
+        "date": "2002-11-01T00:00:00",
+        "year": 2002,
+        "borrowing": 5313.0,
+        "debt": 29.0,
+        "borrowing_3m": 4577.0
+      },
+      {
+        "date": "2002-12-01T00:00:00",
+        "year": 2002,
+        "borrowing": 5023.0,
+        "debt": 30.1,
+        "borrowing_3m": 4736.0
+      },
+      {
+        "date": "2003-01-01T00:00:00",
+        "year": 2003,
+        "borrowing": 772.0,
+        "debt": 29.0,
+        "borrowing_3m": 3703.0
+      },
+      {
+        "date": "2003-02-01T00:00:00",
+        "year": 2003,
+        "borrowing": 3062.0,
+        "debt": 28.9,
+        "borrowing_3m": 2952.0
+      },
+      {
+        "date": "2003-03-01T00:00:00",
+        "year": 2003,
+        "borrowing": 2505.0,
+        "debt": 29.8,
+        "borrowing_3m": 2113.0
+      },
+      {
+        "date": "2003-04-01T00:00:00",
+        "year": 2003,
+        "borrowing": 3148.0,
+        "debt": 29.5,
+        "borrowing_3m": 2905.0
+      },
+      {
+        "date": "2003-05-01T00:00:00",
+        "year": 2003,
+        "borrowing": 6161.0,
+        "debt": 29.5,
+        "borrowing_3m": 3938.0
+      },
+      {
+        "date": "2003-06-01T00:00:00",
+        "year": 2003,
+        "borrowing": 4366.0,
+        "debt": 29.8,
+        "borrowing_3m": 4558.0
+      },
+      {
+        "date": "2003-07-01T00:00:00",
+        "year": 2003,
+        "borrowing": 1537.0,
+        "debt": 29.4,
+        "borrowing_3m": 4021.0
+      },
+      {
+        "date": "2003-08-01T00:00:00",
+        "year": 2003,
+        "borrowing": 4190.0,
+        "debt": 29.6,
+        "borrowing_3m": 3364.0
+      },
+      {
+        "date": "2003-09-01T00:00:00",
+        "year": 2003,
+        "borrowing": 5916.0,
+        "debt": 30.1,
+        "borrowing_3m": 3881.0
+      },
+      {
+        "date": "2003-10-01T00:00:00",
+        "year": 2003,
+        "borrowing": 4311.0,
+        "debt": 30.0,
+        "borrowing_3m": 4806.0
+      },
+      {
+        "date": "2003-11-01T00:00:00",
+        "year": 2003,
+        "borrowing": 5477.0,
+        "debt": 30.4,
+        "borrowing_3m": 5235.0
+      },
+      {
+        "date": "2003-12-01T00:00:00",
+        "year": 2003,
+        "borrowing": 5160.0,
+        "debt": 31.4,
+        "borrowing_3m": 4983.0
+      },
+      {
+        "date": "2004-01-01T00:00:00",
+        "year": 2004,
+        "borrowing": 986.0,
+        "debt": 30.1,
+        "borrowing_3m": 3874.0
+      },
+      {
+        "date": "2004-02-01T00:00:00",
+        "year": 2004,
+        "borrowing": 948.0,
+        "debt": 30.0,
+        "borrowing_3m": 2365.0
+      },
+      {
+        "date": "2004-03-01T00:00:00",
+        "year": 2004,
+        "borrowing": 1190.0,
+        "debt": 30.9,
+        "borrowing_3m": 1041.0
+      },
+      {
+        "date": "2004-04-01T00:00:00",
+        "year": 2004,
+        "borrowing": 7831.0,
+        "debt": 31.5,
+        "borrowing_3m": 3323.0
+      },
+      {
+        "date": "2004-05-01T00:00:00",
+        "year": 2004,
+        "borrowing": 6065.0,
+        "debt": 31.8,
+        "borrowing_3m": 5029.0
+      },
+      {
+        "date": "2004-06-01T00:00:00",
+        "year": 2004,
+        "borrowing": 2104.0,
+        "debt": 32.5,
+        "borrowing_3m": 5333.0
+      },
+      {
+        "date": "2004-07-01T00:00:00",
+        "year": 2004,
+        "borrowing": 2448.0,
+        "debt": 31.9,
+        "borrowing_3m": 3539.0
+      },
+      {
+        "date": "2004-08-01T00:00:00",
+        "year": 2004,
+        "borrowing": 4538.0,
+        "debt": 32.0,
+        "borrowing_3m": 3030.0
+      },
+      {
+        "date": "2004-09-01T00:00:00",
+        "year": 2004,
+        "borrowing": 5950.0,
+        "debt": 32.6,
+        "borrowing_3m": 4312.0
+      },
+      {
+        "date": "2004-10-01T00:00:00",
+        "year": 2004,
+        "borrowing": 5164.0,
+        "debt": 32.3,
+        "borrowing_3m": 5217.0
+      },
+      {
+        "date": "2004-11-01T00:00:00",
+        "year": 2004,
+        "borrowing": 5911.0,
+        "debt": 33.1,
+        "borrowing_3m": 5675.0
+      },
+      {
+        "date": "2004-12-01T00:00:00",
+        "year": 2004,
+        "borrowing": 5445.0,
+        "debt": 34.1,
+        "borrowing_3m": 5507.0
+      },
+      {
+        "date": "2005-01-01T00:00:00",
+        "year": 2005,
+        "borrowing": -34.0,
+        "debt": 32.7,
+        "borrowing_3m": 3774.0
+      },
+      {
+        "date": "2005-02-01T00:00:00",
+        "year": 2005,
+        "borrowing": 3080.0,
+        "debt": 32.6,
+        "borrowing_3m": 2830.0
+      },
+      {
+        "date": "2005-03-01T00:00:00",
+        "year": 2005,
+        "borrowing": 3210.0,
+        "debt": 33.5,
+        "borrowing_3m": 2085.0
+      },
+      {
+        "date": "2005-04-01T00:00:00",
+        "year": 2005,
+        "borrowing": 8506.0,
+        "debt": 33.1,
+        "borrowing_3m": 4932.0
+      },
+      {
+        "date": "2005-05-01T00:00:00",
+        "year": 2005,
+        "borrowing": 2278.0,
+        "debt": 33.2,
+        "borrowing_3m": 4665.0
+      },
+      {
+        "date": "2005-06-01T00:00:00",
+        "year": 2005,
+        "borrowing": 2397.0,
+        "debt": 33.8,
+        "borrowing_3m": 4394.0
+      },
+      {
+        "date": "2005-07-01T00:00:00",
+        "year": 2005,
+        "borrowing": 1046.0,
+        "debt": 33.2,
+        "borrowing_3m": 1907.0
+      },
+      {
+        "date": "2005-08-01T00:00:00",
+        "year": 2005,
+        "borrowing": 4275.0,
+        "debt": 33.4,
+        "borrowing_3m": 2573.0
+      },
+      {
+        "date": "2005-09-01T00:00:00",
+        "year": 2005,
+        "borrowing": 5224.0,
+        "debt": 34.1,
+        "borrowing_3m": 3515.0
+      },
+      {
+        "date": "2005-10-01T00:00:00",
+        "year": 2005,
+        "borrowing": 4588.0,
+        "debt": 33.6,
+        "borrowing_3m": 4696.0
+      },
+      {
+        "date": "2005-11-01T00:00:00",
+        "year": 2005,
+        "borrowing": 7951.0,
+        "debt": 34.1,
+        "borrowing_3m": 5921.0
+      },
+      {
+        "date": "2005-12-01T00:00:00",
+        "year": 2005,
+        "borrowing": 5534.0,
+        "debt": 35.1,
+        "borrowing_3m": 6024.0
+      },
+      {
+        "date": "2006-01-01T00:00:00",
+        "year": 2006,
+        "borrowing": -2348.0,
+        "debt": 33.4,
+        "borrowing_3m": 3712.0
+      },
+      {
+        "date": "2006-02-01T00:00:00",
+        "year": 2006,
+        "borrowing": 3170.0,
+        "debt": 33.5,
+        "borrowing_3m": 2119.0
+      },
+      {
+        "date": "2006-03-01T00:00:00",
+        "year": 2006,
+        "borrowing": 2398.0,
+        "debt": 34.3,
+        "borrowing_3m": 1073.0
+      },
+      {
+        "date": "2006-04-01T00:00:00",
+        "year": 2006,
+        "borrowing": 4528.0,
+        "debt": 34.1,
+        "borrowing_3m": 3365.0
+      },
+      {
+        "date": "2006-05-01T00:00:00",
+        "year": 2006,
+        "borrowing": 4939.0,
+        "debt": 34.5,
+        "borrowing_3m": 3955.0
+      },
+      {
+        "date": "2006-06-01T00:00:00",
+        "year": 2006,
+        "borrowing": 3779.0,
+        "debt": 35.3,
+        "borrowing_3m": 4415.0
+      },
+      {
+        "date": "2006-07-01T00:00:00",
+        "year": 2006,
+        "borrowing": 1053.0,
+        "debt": 34.4,
+        "borrowing_3m": 3257.0
+      },
+      {
+        "date": "2006-08-01T00:00:00",
+        "year": 2006,
+        "borrowing": 3595.0,
+        "debt": 34.6,
+        "borrowing_3m": 2809.0
+      },
+      {
+        "date": "2006-09-01T00:00:00",
+        "year": 2006,
+        "borrowing": 6924.0,
+        "debt": 35.3,
+        "borrowing_3m": 3857.0
+      },
+      {
+        "date": "2006-10-01T00:00:00",
+        "year": 2006,
+        "borrowing": 4096.0,
+        "debt": 34.7,
+        "borrowing_3m": 4872.0
+      },
+      {
+        "date": "2006-11-01T00:00:00",
+        "year": 2006,
+        "borrowing": 7137.0,
+        "debt": 35.1,
+        "borrowing_3m": 6052.0
+      },
+      {
+        "date": "2006-12-01T00:00:00",
+        "year": 2006,
+        "borrowing": 4604.0,
+        "debt": 35.9,
+        "borrowing_3m": 5279.0
+      },
+      {
+        "date": "2007-01-01T00:00:00",
+        "year": 2007,
+        "borrowing": -4384.0,
+        "debt": 34.3,
+        "borrowing_3m": 2452.0
+      },
+      {
+        "date": "2007-02-01T00:00:00",
+        "year": 2007,
+        "borrowing": 590.0,
+        "debt": 34.1,
+        "borrowing_3m": 270.0
+      },
+      {
+        "date": "2007-03-01T00:00:00",
+        "year": 2007,
+        "borrowing": 4371.0,
+        "debt": 35.1,
+        "borrowing_3m": 192.0
+      },
+      {
+        "date": "2007-04-01T00:00:00",
+        "year": 2007,
+        "borrowing": 3462.0,
+        "debt": 34.8,
+        "borrowing_3m": 2808.0
+      },
+      {
+        "date": "2007-05-01T00:00:00",
+        "year": 2007,
+        "borrowing": 5039.0,
+        "debt": 35.1,
+        "borrowing_3m": 4291.0
+      },
+      {
+        "date": "2007-06-01T00:00:00",
+        "year": 2007,
+        "borrowing": 4079.0,
+        "debt": 35.7,
+        "borrowing_3m": 4193.0
+      },
+      {
+        "date": "2007-07-01T00:00:00",
+        "year": 2007,
+        "borrowing": 720.0,
+        "debt": 34.7,
+        "borrowing_3m": 3279.0
+      },
+      {
+        "date": "2007-08-01T00:00:00",
+        "year": 2007,
+        "borrowing": 5285.0,
+        "debt": 34.9,
+        "borrowing_3m": 3361.0
+      },
+      {
+        "date": "2007-09-01T00:00:00",
+        "year": 2007,
+        "borrowing": 5571.0,
+        "debt": 35.3,
+        "borrowing_3m": 3859.0
+      },
+      {
+        "date": "2007-10-01T00:00:00",
+        "year": 2007,
+        "borrowing": 6233.0,
+        "debt": 34.9,
+        "borrowing_3m": 5696.0
+      },
+      {
+        "date": "2007-11-01T00:00:00",
+        "year": 2007,
+        "borrowing": 6417.0,
+        "debt": 35.4,
+        "borrowing_3m": 6074.0
+      },
+      {
+        "date": "2007-12-01T00:00:00",
+        "year": 2007,
+        "borrowing": 5506.0,
+        "debt": 36.3,
+        "borrowing_3m": 6052.0
+      },
+      {
+        "date": "2008-01-01T00:00:00",
+        "year": 2008,
+        "borrowing": -5347.0,
+        "debt": 34.8,
+        "borrowing_3m": 2192.0
+      },
+      {
+        "date": "2008-02-01T00:00:00",
+        "year": 2008,
+        "borrowing": 3471.0,
+        "debt": 35.1,
+        "borrowing_3m": 1210.0
+      },
+      {
+        "date": "2008-03-01T00:00:00",
+        "year": 2008,
+        "borrowing": 6015.0,
+        "debt": 35.6,
+        "borrowing_3m": 1380.0
+      },
+      {
+        "date": "2008-04-01T00:00:00",
+        "year": 2008,
+        "borrowing": 6660.0,
+        "debt": 35.8,
+        "borrowing_3m": 5382.0
+      },
+      {
+        "date": "2008-05-01T00:00:00",
+        "year": 2008,
+        "borrowing": 7734.0,
+        "debt": 36.5,
+        "borrowing_3m": 6803.0
+      },
+      {
+        "date": "2008-06-01T00:00:00",
+        "year": 2008,
+        "borrowing": 6873.0,
+        "debt": 37.7,
+        "borrowing_3m": 7089.0
+      },
+      {
+        "date": "2008-07-01T00:00:00",
+        "year": 2008,
+        "borrowing": 3545.0,
+        "debt": 37.9,
+        "borrowing_3m": 6051.0
+      },
+      {
+        "date": "2008-08-01T00:00:00",
+        "year": 2008,
+        "borrowing": 8805.0,
+        "debt": 39.6,
+        "borrowing_3m": 6408.0
+      },
+      {
+        "date": "2008-09-01T00:00:00",
+        "year": 2008,
+        "borrowing": 13222.0,
+        "debt": 43.0,
+        "borrowing_3m": 8524.0
+      },
+      {
+        "date": "2008-10-01T00:00:00",
+        "year": 2008,
+        "borrowing": 10965.0,
+        "debt": 43.7,
+        "borrowing_3m": 10997.0
+      },
+      {
+        "date": "2008-11-01T00:00:00",
+        "year": 2008,
+        "borrowing": 12669.0,
+        "debt": 44.6,
+        "borrowing_3m": 12285.0
+      },
+      {
+        "date": "2008-12-01T00:00:00",
+        "year": 2008,
+        "borrowing": 15612.0,
+        "debt": 47.9,
+        "borrowing_3m": 13082.0
+      },
+      {
+        "date": "2009-01-01T00:00:00",
+        "year": 2009,
+        "borrowing": 7106.0,
+        "debt": 48.0,
+        "borrowing_3m": 11796.0
+      },
+      {
+        "date": "2009-02-01T00:00:00",
+        "year": 2009,
+        "borrowing": 11314.0,
+        "debt": 48.7,
+        "borrowing_3m": 11344.0
+      },
+      {
+        "date": "2009-03-01T00:00:00",
+        "year": 2009,
+        "borrowing": 14248.0,
+        "debt": 50.6,
+        "borrowing_3m": 10889.0
+      },
+      {
+        "date": "2009-04-01T00:00:00",
+        "year": 2009,
+        "borrowing": 10893.0,
+        "debt": 51.7,
+        "borrowing_3m": 12152.0
+      },
+      {
+        "date": "2009-05-01T00:00:00",
+        "year": 2009,
+        "borrowing": 13560.0,
+        "debt": 53.1,
+        "borrowing_3m": 12900.0
+      },
+      {
+        "date": "2009-06-01T00:00:00",
+        "year": 2009,
+        "borrowing": 16457.0,
+        "debt": 54.9,
+        "borrowing_3m": 13637.0
+      },
+      {
+        "date": "2009-07-01T00:00:00",
+        "year": 2009,
+        "borrowing": 9243.0,
+        "debt": 55.1,
+        "borrowing_3m": 13087.0
+      },
+      {
+        "date": "2009-08-01T00:00:00",
+        "year": 2009,
+        "borrowing": 11954.0,
+        "debt": 55.2,
+        "borrowing_3m": 12551.0
+      },
+      {
+        "date": "2009-09-01T00:00:00",
+        "year": 2009,
+        "borrowing": 16347.0,
+        "debt": 56.4,
+        "borrowing_3m": 12515.0
+      },
+      {
+        "date": "2009-10-01T00:00:00",
+        "year": 2009,
+        "borrowing": 14688.0,
+        "debt": 56.7,
+        "borrowing_3m": 14330.0
+      },
+      {
+        "date": "2009-11-01T00:00:00",
+        "year": 2009,
+        "borrowing": 14208.0,
+        "debt": 57.5,
+        "borrowing_3m": 15081.0
+      },
+      {
+        "date": "2009-12-01T00:00:00",
+        "year": 2009,
+        "borrowing": 21310.0,
+        "debt": 61.0,
+        "borrowing_3m": 16735.0
+      },
+      {
+        "date": "2010-01-01T00:00:00",
+        "year": 2010,
+        "borrowing": 7686.0,
+        "debt": 63.1,
+        "borrowing_3m": 14401.0
+      },
+      {
+        "date": "2010-02-01T00:00:00",
+        "year": 2010,
+        "borrowing": 9820.0,
+        "debt": 63.3,
+        "borrowing_3m": 12939.0
+      },
+      {
+        "date": "2010-03-01T00:00:00",
+        "year": 2010,
+        "borrowing": 13176.0,
+        "debt": 64.7,
+        "borrowing_3m": 10227.0
+      },
+      {
+        "date": "2010-04-01T00:00:00",
+        "year": 2010,
+        "borrowing": 9187.0,
+        "debt": 64.8,
+        "borrowing_3m": 10728.0
+      },
+      {
+        "date": "2010-05-01T00:00:00",
+        "year": 2010,
+        "borrowing": 13238.0,
+        "debt": 65.3,
+        "borrowing_3m": 11867.0
+      },
+      {
+        "date": "2010-06-01T00:00:00",
+        "year": 2010,
+        "borrowing": 12009.0,
+        "debt": 66.4,
+        "borrowing_3m": 11478.0
+      },
+      {
+        "date": "2010-07-01T00:00:00",
+        "year": 2010,
+        "borrowing": 9154.0,
+        "debt": 66.4,
+        "borrowing_3m": 11467.0
+      },
+      {
+        "date": "2010-08-01T00:00:00",
+        "year": 2010,
+        "borrowing": 11516.0,
+        "debt": 66.7,
+        "borrowing_3m": 10893.0
+      },
+      {
+        "date": "2010-09-01T00:00:00",
+        "year": 2010,
+        "borrowing": 15792.0,
+        "debt": 68.0,
+        "borrowing_3m": 12154.0
+      },
+      {
+        "date": "2010-10-01T00:00:00",
+        "year": 2010,
+        "borrowing": 14191.0,
+        "debt": 68.0,
+        "borrowing_3m": 13833.0
+      },
+      {
+        "date": "2010-11-01T00:00:00",
+        "year": 2010,
+        "borrowing": 14813.0,
+        "debt": 68.9,
+        "borrowing_3m": 14932.0
+      },
+      {
+        "date": "2010-12-01T00:00:00",
+        "year": 2010,
+        "borrowing": 17017.0,
+        "debt": 70.3,
+        "borrowing_3m": 15340.0
+      },
+      {
+        "date": "2011-01-01T00:00:00",
+        "year": 2011,
+        "borrowing": 1282.0,
+        "debt": 69.3,
+        "borrowing_3m": 11037.0
+      },
+      {
+        "date": "2011-02-01T00:00:00",
+        "year": 2011,
+        "borrowing": 9711.0,
+        "debt": 69.6,
+        "borrowing_3m": 9337.0
+      },
+      {
+        "date": "2011-03-01T00:00:00",
+        "year": 2011,
+        "borrowing": 13329.0,
+        "debt": 70.9,
+        "borrowing_3m": 8107.0
+      },
+      {
+        "date": "2011-04-01T00:00:00",
+        "year": 2011,
+        "borrowing": 11846.0,
+        "debt": 71.0,
+        "borrowing_3m": 11629.0
+      },
+      {
+        "date": "2011-05-01T00:00:00",
+        "year": 2011,
+        "borrowing": 9633.0,
+        "debt": 71.4,
+        "borrowing_3m": 11603.0
+      },
+      {
+        "date": "2011-06-01T00:00:00",
+        "year": 2011,
+        "borrowing": 9829.0,
+        "debt": 72.4,
+        "borrowing_3m": 10436.0
+      },
+      {
+        "date": "2011-07-01T00:00:00",
+        "year": 2011,
+        "borrowing": 4597.0,
+        "debt": 71.8,
+        "borrowing_3m": 8020.0
+      },
+      {
+        "date": "2011-08-01T00:00:00",
+        "year": 2011,
+        "borrowing": 9467.0,
+        "debt": 72.6,
+        "borrowing_3m": 7964.0
+      },
+      {
+        "date": "2011-09-01T00:00:00",
+        "year": 2011,
+        "borrowing": 13881.0,
+        "debt": 72.9,
+        "borrowing_3m": 9315.0
+      },
+      {
+        "date": "2011-10-01T00:00:00",
+        "year": 2011,
+        "borrowing": 12798.0,
+        "debt": 72.7,
+        "borrowing_3m": 12049.0
+      },
+      {
+        "date": "2011-11-01T00:00:00",
+        "year": 2011,
+        "borrowing": 11211.0,
+        "debt": 73.1,
+        "borrowing_3m": 12630.0
+      },
+      {
+        "date": "2011-12-01T00:00:00",
+        "year": 2011,
+        "borrowing": 13766.0,
+        "debt": 74.2,
+        "borrowing_3m": 12592.0
+      },
+      {
+        "date": "2012-01-01T00:00:00",
+        "year": 2012,
+        "borrowing": 701.0,
+        "debt": 73.1,
+        "borrowing_3m": 8559.0
+      },
+      {
+        "date": "2012-02-01T00:00:00",
+        "year": 2012,
+        "borrowing": 10340.0,
+        "debt": 73.4,
+        "borrowing_3m": 8269.0
+      },
+      {
+        "date": "2012-03-01T00:00:00",
+        "year": 2012,
+        "borrowing": 12750.0,
+        "debt": 74.3,
+        "borrowing_3m": 7930.0
+      },
+      {
+        "date": "2012-04-01T00:00:00",
+        "year": 2012,
+        "borrowing": 21552.0,
+        "debt": 74.0,
+        "borrowing_3m": 14881.0
+      },
+      {
+        "date": "2012-05-01T00:00:00",
+        "year": 2012,
+        "borrowing": 12871.0,
+        "debt": 74.4,
+        "borrowing_3m": 15724.0
+      },
+      {
+        "date": "2012-06-01T00:00:00",
+        "year": 2012,
+        "borrowing": 8900.0,
+        "debt": 75.3,
+        "borrowing_3m": 14441.0
+      },
+      {
+        "date": "2012-07-01T00:00:00",
+        "year": 2012,
+        "borrowing": 2264.0,
+        "debt": 75.1,
+        "borrowing_3m": 8012.0
+      },
+      {
+        "date": "2012-08-01T00:00:00",
+        "year": 2012,
+        "borrowing": 9940.0,
+        "debt": 75.0,
+        "borrowing_3m": 7035.0
+      },
+      {
+        "date": "2012-09-01T00:00:00",
+        "year": 2012,
+        "borrowing": 12942.0,
+        "debt": 75.9,
+        "borrowing_3m": 8382.0
+      },
+      {
+        "date": "2012-10-01T00:00:00",
+        "year": 2012,
+        "borrowing": 11966.0,
+        "debt": 76.1,
+        "borrowing_3m": 11616.0
+      },
+      {
+        "date": "2012-11-01T00:00:00",
+        "year": 2012,
+        "borrowing": 12055.0,
+        "debt": 76.7,
+        "borrowing_3m": 12321.0
+      },
+      {
+        "date": "2012-12-01T00:00:00",
+        "year": 2012,
+        "borrowing": 13872.0,
+        "debt": 77.6,
+        "borrowing_3m": 12631.0
+      },
+      {
+        "date": "2013-01-01T00:00:00",
+        "year": 2013,
+        "borrowing": -96.0,
+        "debt": 76.3,
+        "borrowing_3m": 8610.0
+      },
+      {
+        "date": "2013-02-01T00:00:00",
+        "year": 2013,
+        "borrowing": 7798.0,
+        "debt": 76.3,
+        "borrowing_3m": 7191.0
+      },
+      {
+        "date": "2013-03-01T00:00:00",
+        "year": 2013,
+        "borrowing": 9391.0,
+        "debt": 77.5,
+        "borrowing_3m": 5698.0
+      },
+      {
+        "date": "2013-04-01T00:00:00",
+        "year": 2013,
+        "borrowing": 11420.0,
+        "debt": 77.4,
+        "borrowing_3m": 9536.0
+      },
+      {
+        "date": "2013-05-01T00:00:00",
+        "year": 2013,
+        "borrowing": 9234.0,
+        "debt": 78.0,
+        "borrowing_3m": 10015.0
+      },
+      {
+        "date": "2013-06-01T00:00:00",
+        "year": 2013,
+        "borrowing": 8347.0,
+        "debt": 78.5,
+        "borrowing_3m": 9667.0
+      },
+      {
+        "date": "2013-07-01T00:00:00",
+        "year": 2013,
+        "borrowing": 3614.0,
+        "debt": 77.9,
+        "borrowing_3m": 7065.0
+      },
+      {
+        "date": "2013-08-01T00:00:00",
+        "year": 2013,
+        "borrowing": 8610.0,
+        "debt": 77.9,
+        "borrowing_3m": 6857.0
+      },
+      {
+        "date": "2013-09-01T00:00:00",
+        "year": 2013,
+        "borrowing": 12052.0,
+        "debt": 78.5,
+        "borrowing_3m": 8092.0
+      },
+      {
+        "date": "2013-10-01T00:00:00",
+        "year": 2013,
+        "borrowing": 11367.0,
+        "debt": 78.2,
+        "borrowing_3m": 10676.0
+      },
+      {
+        "date": "2013-11-01T00:00:00",
+        "year": 2013,
+        "borrowing": 11491.0,
+        "debt": 78.7,
+        "borrowing_3m": 11637.0
+      },
+      {
+        "date": "2013-12-01T00:00:00",
+        "year": 2013,
+        "borrowing": 10894.0,
+        "debt": 79.6,
+        "borrowing_3m": 11251.0
+      },
+      {
+        "date": "2014-01-01T00:00:00",
+        "year": 2014,
+        "borrowing": 253.0,
+        "debt": 78.6,
+        "borrowing_3m": 7546.0
+      },
+      {
+        "date": "2014-02-01T00:00:00",
+        "year": 2014,
+        "borrowing": 9515.0,
+        "debt": 78.7,
+        "borrowing_3m": 6887.0
+      },
+      {
+        "date": "2014-03-01T00:00:00",
+        "year": 2014,
+        "borrowing": 6261.0,
+        "debt": 79.2,
+        "borrowing_3m": 5343.0
+      },
+      {
+        "date": "2014-04-01T00:00:00",
+        "year": 2014,
+        "borrowing": 12649.0,
+        "debt": 79.3,
+        "borrowing_3m": 9475.0
+      },
+      {
+        "date": "2014-05-01T00:00:00",
+        "year": 2014,
+        "borrowing": 10185.0,
+        "debt": 79.8,
+        "borrowing_3m": 9698.0
+      },
+      {
+        "date": "2014-06-01T00:00:00",
+        "year": 2014,
+        "borrowing": 7957.0,
+        "debt": 80.4,
+        "borrowing_3m": 10264.0
+      },
+      {
+        "date": "2014-07-01T00:00:00",
+        "year": 2014,
+        "borrowing": 3378.0,
+        "debt": 80.0,
+        "borrowing_3m": 7173.0
+      },
+      {
+        "date": "2014-08-01T00:00:00",
+        "year": 2014,
+        "borrowing": 8649.0,
+        "debt": 80.0,
+        "borrowing_3m": 6661.0
+      },
+      {
+        "date": "2014-09-01T00:00:00",
+        "year": 2014,
+        "borrowing": 13064.0,
+        "debt": 80.7,
+        "borrowing_3m": 8364.0
+      },
+      {
+        "date": "2014-10-01T00:00:00",
+        "year": 2014,
+        "borrowing": 11278.0,
+        "debt": 80.8,
+        "borrowing_3m": 10997.0
+      },
+      {
+        "date": "2014-11-01T00:00:00",
+        "year": 2014,
+        "borrowing": 9044.0,
+        "debt": 81.1,
+        "borrowing_3m": 11129.0
+      },
+      {
+        "date": "2014-12-01T00:00:00",
+        "year": 2014,
+        "borrowing": 12221.0,
+        "debt": 82.1,
+        "borrowing_3m": 10848.0
+      },
+      {
+        "date": "2015-01-01T00:00:00",
+        "year": 2015,
+        "borrowing": -2999.0,
+        "debt": 80.7,
+        "borrowing_3m": 6089.0
+      },
+      {
+        "date": "2015-02-01T00:00:00",
+        "year": 2015,
+        "borrowing": 6527.0,
+        "debt": 80.8,
+        "borrowing_3m": 5250.0
+      },
+      {
+        "date": "2015-03-01T00:00:00",
+        "year": 2015,
+        "borrowing": 5949.0,
+        "debt": 81.6,
+        "borrowing_3m": 3159.0
+      },
+      {
+        "date": "2015-04-01T00:00:00",
+        "year": 2015,
+        "borrowing": 12103.0,
+        "debt": 81.5,
+        "borrowing_3m": 8193.0
+      },
+      {
+        "date": "2015-05-01T00:00:00",
+        "year": 2015,
+        "borrowing": 7620.0,
+        "debt": 82.1,
+        "borrowing_3m": 8557.0
+      },
+      {
+        "date": "2015-06-01T00:00:00",
+        "year": 2015,
+        "borrowing": 7937.0,
+        "debt": 82.7,
+        "borrowing_3m": 9220.0
+      },
+      {
+        "date": "2015-07-01T00:00:00",
+        "year": 2015,
+        "borrowing": 2068.0,
+        "debt": 82.2,
+        "borrowing_3m": 5875.0
+      },
+      {
+        "date": "2015-08-01T00:00:00",
+        "year": 2015,
+        "borrowing": 8855.0,
+        "debt": 81.9,
+        "borrowing_3m": 6287.0
+      },
+      {
+        "date": "2015-09-01T00:00:00",
+        "year": 2015,
+        "borrowing": 11530.0,
+        "debt": 82.3,
+        "borrowing_3m": 7484.0
+      },
+      {
+        "date": "2015-10-01T00:00:00",
+        "year": 2015,
+        "borrowing": 10535.0,
+        "debt": 82.2,
+        "borrowing_3m": 10307.0
+      },
+      {
+        "date": "2015-11-01T00:00:00",
+        "year": 2015,
+        "borrowing": 9402.0,
+        "debt": 82.1,
+        "borrowing_3m": 10489.0
+      },
+      {
+        "date": "2015-12-01T00:00:00",
+        "year": 2015,
+        "borrowing": 7480.0,
+        "debt": 82.3,
+        "borrowing_3m": 9139.0
+      },
+      {
+        "date": "2016-01-01T00:00:00",
+        "year": 2016,
+        "borrowing": -6100.0,
+        "debt": 81.0,
+        "borrowing_3m": 3594.0
+      },
+      {
+        "date": "2016-02-01T00:00:00",
+        "year": 2016,
+        "borrowing": 5852.0,
+        "debt": 80.6,
+        "borrowing_3m": 2411.0
+      },
+      {
+        "date": "2016-03-01T00:00:00",
+        "year": 2016,
+        "borrowing": 4947.0,
+        "debt": 81.3,
+        "borrowing_3m": 1566.0
+      },
+      {
+        "date": "2016-04-01T00:00:00",
+        "year": 2016,
+        "borrowing": 12139.0,
+        "debt": 81.4,
+        "borrowing_3m": 7646.0
+      },
+      {
+        "date": "2016-05-01T00:00:00",
+        "year": 2016,
+        "borrowing": 7176.0,
+        "debt": 81.5,
+        "borrowing_3m": 8087.0
+      },
+      {
+        "date": "2016-06-01T00:00:00",
+        "year": 2016,
+        "borrowing": 4903.0,
+        "debt": 81.7,
+        "borrowing_3m": 8073.0
+      },
+      {
+        "date": "2016-07-01T00:00:00",
+        "year": 2016,
+        "borrowing": 597.0,
+        "debt": 81.1,
+        "borrowing_3m": 4225.0
+      },
+      {
+        "date": "2016-08-01T00:00:00",
+        "year": 2016,
+        "borrowing": 7248.0,
+        "debt": 81.2,
+        "borrowing_3m": 4249.0
+      },
+      {
+        "date": "2016-09-01T00:00:00",
+        "year": 2016,
+        "borrowing": 10722.0,
+        "debt": 81.1,
+        "borrowing_3m": 6189.0
+      },
+      {
+        "date": "2016-10-01T00:00:00",
+        "year": 2016,
+        "borrowing": 7750.0,
+        "debt": 81.4,
+        "borrowing_3m": 8573.0
+      },
+      {
+        "date": "2016-11-01T00:00:00",
+        "year": 2016,
+        "borrowing": 6868.0,
+        "debt": 82.0,
+        "borrowing_3m": 8447.0
+      },
+      {
+        "date": "2016-12-01T00:00:00",
+        "year": 2016,
+        "borrowing": 5239.0,
+        "debt": 83.0,
+        "borrowing_3m": 6619.0
+      },
+      {
+        "date": "2017-01-01T00:00:00",
+        "year": 2017,
+        "borrowing": -8900.0,
+        "debt": 81.2,
+        "borrowing_3m": 1069.0
+      },
+      {
+        "date": "2017-02-01T00:00:00",
+        "year": 2017,
+        "borrowing": -354.0,
+        "debt": 82.1,
+        "borrowing_3m": -1338.0
+      },
+      {
+        "date": "2017-03-01T00:00:00",
+        "year": 2017,
+        "borrowing": 2564.0,
+        "debt": 83.5,
+        "borrowing_3m": -2230.0
+      },
+      {
+        "date": "2017-04-01T00:00:00",
+        "year": 2017,
+        "borrowing": 12664.0,
+        "debt": 83.2,
+        "borrowing_3m": 4958.0
+      },
+      {
+        "date": "2017-05-01T00:00:00",
+        "year": 2017,
+        "borrowing": 7116.0,
+        "debt": 83.6,
+        "borrowing_3m": 7448.0
+      },
+      {
+        "date": "2017-06-01T00:00:00",
+        "year": 2017,
+        "borrowing": 6636.0,
+        "debt": 84.3,
+        "borrowing_3m": 8805.0
+      },
+      {
+        "date": "2017-07-01T00:00:00",
+        "year": 2017,
+        "borrowing": 175.0,
+        "debt": 84.0,
+        "borrowing_3m": 4642.0
+      },
+      {
+        "date": "2017-08-01T00:00:00",
+        "year": 2017,
+        "borrowing": 5437.0,
+        "debt": 83.7,
+        "borrowing_3m": 4083.0
+      },
+      {
+        "date": "2017-09-01T00:00:00",
+        "year": 2017,
+        "borrowing": 10085.0,
+        "debt": 84.5,
+        "borrowing_3m": 5232.0
+      },
+      {
+        "date": "2017-10-01T00:00:00",
+        "year": 2017,
+        "borrowing": 7982.0,
+        "debt": 83.6,
+        "borrowing_3m": 7835.0
+      },
+      {
+        "date": "2017-11-01T00:00:00",
+        "year": 2017,
+        "borrowing": 6581.0,
+        "debt": 82.8,
+        "borrowing_3m": 8216.0
+      },
+      {
+        "date": "2017-12-01T00:00:00",
+        "year": 2017,
+        "borrowing": 4459.0,
+        "debt": 82.4,
+        "borrowing_3m": 6341.0
+      },
+      {
+        "date": "2018-01-01T00:00:00",
+        "year": 2018,
+        "borrowing": -5861.0,
+        "debt": 81.5,
+        "borrowing_3m": 1726.0
+      },
+      {
+        "date": "2018-02-01T00:00:00",
+        "year": 2018,
+        "borrowing": 2561.0,
+        "debt": 82.2,
+        "borrowing_3m": 386.0
+      },
+      {
+        "date": "2018-03-01T00:00:00",
+        "year": 2018,
+        "borrowing": 1993.0,
+        "debt": 82.3,
+        "borrowing_3m": -436.0
+      },
+      {
+        "date": "2018-04-01T00:00:00",
+        "year": 2018,
+        "borrowing": 10182.0,
+        "debt": 82.6,
+        "borrowing_3m": 4912.0
+      },
+      {
+        "date": "2018-05-01T00:00:00",
+        "year": 2018,
+        "borrowing": 4534.0,
+        "debt": 82.4,
+        "borrowing_3m": 5570.0
+      },
+      {
+        "date": "2018-06-01T00:00:00",
+        "year": 2018,
+        "borrowing": 4146.0,
+        "debt": 82.5,
+        "borrowing_3m": 6287.0
+      },
+      {
+        "date": "2018-07-01T00:00:00",
+        "year": 2018,
+        "borrowing": -2424.0,
+        "debt": 81.4,
+        "borrowing_3m": 2085.0
+      },
+      {
+        "date": "2018-08-01T00:00:00",
+        "year": 2018,
+        "borrowing": 7076.0,
+        "debt": 81.6,
+        "borrowing_3m": 2933.0
+      },
+      {
+        "date": "2018-09-01T00:00:00",
+        "year": 2018,
+        "borrowing": 8892.0,
+        "debt": 81.6,
+        "borrowing_3m": 4515.0
+      },
+      {
+        "date": "2018-10-01T00:00:00",
+        "year": 2018,
+        "borrowing": 9189.0,
+        "debt": 81.5,
+        "borrowing_3m": 8386.0
+      },
+      {
+        "date": "2018-11-01T00:00:00",
+        "year": 2018,
+        "borrowing": 5801.0,
+        "debt": 81.5,
+        "borrowing_3m": 7961.0
+      },
+      {
+        "date": "2018-12-01T00:00:00",
+        "year": 2018,
+        "borrowing": 5441.0,
+        "debt": 81.8,
+        "borrowing_3m": 6810.0
+      },
+      {
+        "date": "2019-01-01T00:00:00",
+        "year": 2019,
+        "borrowing": -10568.0,
+        "debt": 80.4,
+        "borrowing_3m": 225.0
+      },
+      {
+        "date": "2019-02-01T00:00:00",
+        "year": 2019,
+        "borrowing": 1869.0,
+        "debt": 80.3,
+        "borrowing_3m": -1086.0
+      },
+      {
+        "date": "2019-03-01T00:00:00",
+        "year": 2019,
+        "borrowing": 193.0,
+        "debt": 80.3,
+        "borrowing_3m": -2835.0
+      },
+      {
+        "date": "2019-04-01T00:00:00",
+        "year": 2019,
+        "borrowing": 11145.0,
+        "debt": 80.5,
+        "borrowing_3m": 4402.0
+      },
+      {
+        "date": "2019-05-01T00:00:00",
+        "year": 2019,
+        "borrowing": 5085.0,
+        "debt": 80.8,
+        "borrowing_3m": 5474.0
+      },
+      {
+        "date": "2019-06-01T00:00:00",
+        "year": 2019,
+        "borrowing": 7170.0,
+        "debt": 81.0,
+        "borrowing_3m": 7800.0
+      },
+      {
+        "date": "2019-07-01T00:00:00",
+        "year": 2019,
+        "borrowing": -796.0,
+        "debt": 80.3,
+        "borrowing_3m": 3820.0
+      },
+      {
+        "date": "2019-08-01T00:00:00",
+        "year": 2019,
+        "borrowing": 5314.0,
+        "debt": 79.9,
+        "borrowing_3m": 3896.0
+      },
+      {
+        "date": "2019-09-01T00:00:00",
+        "year": 2019,
+        "borrowing": 9013.0,
+        "debt": 80.4,
+        "borrowing_3m": 4510.0
+      },
+      {
+        "date": "2019-10-01T00:00:00",
+        "year": 2019,
+        "borrowing": 11817.0,
+        "debt": 82.1,
+        "borrowing_3m": 8715.0
+      },
+      {
+        "date": "2019-11-01T00:00:00",
+        "year": 2019,
+        "borrowing": 5861.0,
+        "debt": 83.4,
+        "borrowing_3m": 8897.0
+      },
+      {
+        "date": "2019-12-01T00:00:00",
+        "year": 2019,
+        "borrowing": 6310.0,
+        "debt": 84.8,
+        "borrowing_3m": 7996.0
+      },
+      {
+        "date": "2020-01-01T00:00:00",
+        "year": 2020,
+        "borrowing": -8364.0,
+        "debt": 84.2,
+        "borrowing_3m": 1269.0
+      },
+      {
+        "date": "2020-02-01T00:00:00",
+        "year": 2020,
+        "borrowing": 1644.0,
+        "debt": 84.5,
+        "borrowing_3m": -137.0
+      },
+      {
+        "date": "2020-03-01T00:00:00",
+        "year": 2020,
+        "borrowing": 7021.0,
+        "debt": 85.2,
+        "borrowing_3m": 100.0
+      },
+      {
+        "date": "2020-04-01T00:00:00",
+        "year": 2020,
+        "borrowing": 49058.0,
+        "debt": 90.4,
+        "borrowing_3m": 19241.0
+      },
+      {
+        "date": "2020-05-01T00:00:00",
+        "year": 2020,
+        "borrowing": 51272.0,
+        "debt": 94.2,
+        "borrowing_3m": 35784.0
+      },
+      {
+        "date": "2020-06-01T00:00:00",
+        "year": 2020,
+        "borrowing": 32300.0,
+        "debt": 96.2,
+        "borrowing_3m": 44210.0
+      },
+      {
+        "date": "2020-07-01T00:00:00",
+        "year": 2020,
+        "borrowing": 21797.0,
+        "debt": 97.1,
+        "borrowing_3m": 35123.0
+      },
+      {
+        "date": "2020-08-01T00:00:00",
+        "year": 2020,
+        "borrowing": 23996.0,
+        "debt": 98.9,
+        "borrowing_3m": 26031.0
+      },
+      {
+        "date": "2020-09-01T00:00:00",
+        "year": 2020,
+        "borrowing": 28402.0,
+        "debt": 99.3,
+        "borrowing_3m": 24732.0
+      },
+      {
+        "date": "2020-10-01T00:00:00",
+        "year": 2020,
+        "borrowing": 17916.0,
+        "debt": 99.3,
+        "borrowing_3m": 23438.0
+      },
+      {
+        "date": "2020-11-01T00:00:00",
+        "year": 2020,
+        "borrowing": 21667.0,
+        "debt": 99.1,
+        "borrowing_3m": 22662.0
+      },
+      {
+        "date": "2020-12-01T00:00:00",
+        "year": 2020,
+        "borrowing": 24064.0,
+        "debt": 98.8,
+        "borrowing_3m": 21216.0
+      },
+      {
+        "date": "2021-01-01T00:00:00",
+        "year": 2021,
+        "borrowing": 884.0,
+        "debt": 97.2,
+        "borrowing_3m": 15538.0
+      },
+      {
+        "date": "2021-02-01T00:00:00",
+        "year": 2021,
+        "borrowing": 15301.0,
+        "debt": 97.5,
+        "borrowing_3m": 13416.0
+      },
+      {
+        "date": "2021-03-01T00:00:00",
+        "year": 2021,
+        "borrowing": 25240.0,
+        "debt": 96.5,
+        "borrowing_3m": 13808.0
+      },
+      {
+        "date": "2021-04-01T00:00:00",
+        "year": 2021,
+        "borrowing": 23919.0,
+        "debt": 97.5,
+        "borrowing_3m": 21487.0
+      },
+      {
+        "date": "2021-05-01T00:00:00",
+        "year": 2021,
+        "borrowing": 17540.0,
+        "debt": 98.0,
+        "borrowing_3m": 22233.0
+      },
+      {
+        "date": "2021-06-01T00:00:00",
+        "year": 2021,
+        "borrowing": 19201.0,
+        "debt": 97.4,
+        "borrowing_3m": 20220.0
+      },
+      {
+        "date": "2021-07-01T00:00:00",
+        "year": 2021,
+        "borrowing": 4562.0,
+        "debt": 96.9,
+        "borrowing_3m": 13768.0
+      },
+      {
+        "date": "2021-08-01T00:00:00",
+        "year": 2021,
+        "borrowing": 14242.0,
+        "debt": 95.3,
+        "borrowing_3m": 12668.0
+      },
+      {
+        "date": "2021-09-01T00:00:00",
+        "year": 2021,
+        "borrowing": 17588.0,
+        "debt": 94.7,
+        "borrowing_3m": 12131.0
+      },
+      {
+        "date": "2021-10-01T00:00:00",
+        "year": 2021,
+        "borrowing": 8286.0,
+        "debt": 97.5,
+        "borrowing_3m": 13372.0
+      },
+      {
+        "date": "2021-11-01T00:00:00",
+        "year": 2021,
+        "borrowing": 7636.0,
+        "debt": 98.1,
+        "borrowing_3m": 11170.0
+      },
+      {
+        "date": "2021-12-01T00:00:00",
+        "year": 2021,
+        "borrowing": 10038.0,
+        "debt": 97.9,
+        "borrowing_3m": 8653.0
+      },
+      {
+        "date": "2022-01-01T00:00:00",
+        "year": 2022,
+        "borrowing": -12781.0,
+        "debt": 96.7,
+        "borrowing_3m": 1631.0
+      },
+      {
+        "date": "2022-02-01T00:00:00",
+        "year": 2022,
+        "borrowing": 6602.0,
+        "debt": 96.0,
+        "borrowing_3m": 1286.0
+      },
+      {
+        "date": "2022-03-01T00:00:00",
+        "year": 2022,
+        "borrowing": 6015.0,
+        "debt": 96.6,
+        "borrowing_3m": -55.0
+      },
+      {
+        "date": "2022-04-01T00:00:00",
+        "year": 2022,
+        "borrowing": 13499.0,
+        "debt": 96.1,
+        "borrowing_3m": 8705.0
+      },
+      {
+        "date": "2022-05-01T00:00:00",
+        "year": 2022,
+        "borrowing": 9105.0,
+        "debt": 96.4,
+        "borrowing_3m": 9540.0
+      },
+      {
+        "date": "2022-06-01T00:00:00",
+        "year": 2022,
+        "borrowing": 18712.0,
+        "debt": 96.8,
+        "borrowing_3m": 13772.0
+      },
+      {
+        "date": "2022-07-01T00:00:00",
+        "year": 2022,
+        "borrowing": 761.0,
+        "debt": 96.0,
+        "borrowing_3m": 9526.0
+      },
+      {
+        "date": "2022-08-01T00:00:00",
+        "year": 2022,
+        "borrowing": 8021.0,
+        "debt": 95.8,
+        "borrowing_3m": 9165.0
+      },
+      {
+        "date": "2022-09-01T00:00:00",
+        "year": 2022,
+        "borrowing": 15854.0,
+        "debt": 95.7,
+        "borrowing_3m": 8212.0
+      },
+      {
+        "date": "2022-10-01T00:00:00",
+        "year": 2022,
+        "borrowing": 10459.0,
+        "debt": 95.5,
+        "borrowing_3m": 11445.0
+      },
+      {
+        "date": "2022-11-01T00:00:00",
+        "year": 2022,
+        "borrowing": 15133.0,
+        "debt": 95.8,
+        "borrowing_3m": 13815.0
+      },
+      {
+        "date": "2022-12-01T00:00:00",
+        "year": 2022,
+        "borrowing": 16162.0,
+        "debt": 95.8,
+        "borrowing_3m": 13918.0
+      },
+      {
+        "date": "2023-01-01T00:00:00",
+        "year": 2023,
+        "borrowing": -7718.0,
+        "debt": 94.8,
+        "borrowing_3m": 7859.0
+      },
+      {
+        "date": "2023-02-01T00:00:00",
+        "year": 2023,
+        "borrowing": 11909.0,
+        "debt": 94.9,
+        "borrowing_3m": 6784.0
+      },
+      {
+        "date": "2023-03-01T00:00:00",
+        "year": 2023,
+        "borrowing": 15941.0,
+        "debt": 95.8,
+        "borrowing_3m": 6711.0
+      },
+      {
+        "date": "2023-04-01T00:00:00",
+        "year": 2023,
+        "borrowing": 19442.0,
+        "debt": 95.6,
+        "borrowing_3m": 15764.0
+      },
+      {
+        "date": "2023-05-01T00:00:00",
+        "year": 2023,
+        "borrowing": 15668.0,
+        "debt": 96.5,
+        "borrowing_3m": 17017.0
+      },
+      {
+        "date": "2023-06-01T00:00:00",
+        "year": 2023,
+        "borrowing": 19762.0,
+        "debt": 97.3,
+        "borrowing_3m": 18291.0
+      },
+      {
+        "date": "2023-07-01T00:00:00",
+        "year": 2023,
+        "borrowing": 2764.0,
+        "debt": 96.4,
+        "borrowing_3m": 12731.0
+      },
+      {
+        "date": "2023-08-01T00:00:00",
+        "year": 2023,
+        "borrowing": 11093.0,
+        "debt": 96.5,
+        "borrowing_3m": 11206.0
+      },
+      {
+        "date": "2023-09-01T00:00:00",
+        "year": 2023,
+        "borrowing": 14642.0,
+        "debt": 96.4,
+        "borrowing_3m": 9500.0
+      },
+      {
+        "date": "2023-10-01T00:00:00",
+        "year": 2023,
+        "borrowing": 14896.0,
+        "debt": 97.8,
+        "borrowing_3m": 13544.0
+      }
+    ],
+    "data-9ba4a35245ac8762cc2d1f5bcac9dad4": [
+      {
+        "date": "2023-10-01T00:00:00",
+        "year": 2023,
+        "borrowing": 14896.0,
+        "debt": 97.8,
+        "borrowing_3m": 13544.0,
+        "debt_fmt": "97.8%"
+      }
+    ]
+  },
+  "width": 350,
+  "height": 280
+}

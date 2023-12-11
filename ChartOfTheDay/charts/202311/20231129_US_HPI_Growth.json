@@ -1,0 +1,282 @@
+{
+  "config": {
+    "background": "#122b39",
+    "text": {
+      "color": "#b4c8d8",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 350,
+      "continuousHeight": 280,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#b4c8d8"
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "axis": {
+      "labelColor": "#b4c8d8",
+      "labelFontSize": 11,
+      "tickColor": "#b4c8d8",
+      "tickOpacity": 0.5,
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "gridColor": "#b4c8d8",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#b4c8d8",
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#b4c8d8",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8
+    },
+    "title": {
+      "color": "#b4c8d8",
+      "subtitleColor": "#b4c8d8E6",
+      "anchor": "start",
+      "dx": 24,
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#b4c8d8",
+      "labelColor": "#b4c8d8"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-19052bec2e107c59d10495c8b41db214"
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "field": "colour",
+          "scale": null,
+          "type": "nominal"
+        },
+        "x": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "change",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "labelBound": false,
+            "labelLimit": 220
+          },
+          "field": "place_name",
+          "sort": "-x",
+          "type": "nominal"
+        }
+      },
+      "title": {
+        "text": "US House Price Growth",
+        "dx": 5,
+        "subtitle": [
+          "Top/bottom metropolitan areas for 12-month all-transaction house price growth",
+          "Q3 2022-23 | Source: FHFA HPI"
+        ]
+      }
+    },
+    {
+      "data": {
+        "name": "data-77225a9c40ef4e98f869d0c8260fcaf6"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "color": "#b4c8d8",
+        "dx": 3,
+        "fontSize": 14,
+        "text": ["Median: 5.8%"]
+      },
+      "encoding": {
+        "text": {
+          "field": "change",
+          "format": ".1%",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-9c00aa9dc2b1c1a0b4bf9b34ead12925"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#b4c8d8e6",
+        "size": 2,
+        "xOffset": 0.5
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-19052bec2e107c59d10495c8b41db214": [
+      {
+        "place_name": "Parkersburg-Vienna, WV",
+        "2023-07-01": 275.8,
+        "2022-07-01": 233.45,
+        "change": 0.18140929535232395,
+        "rank": 1.0,
+        "colour": "#e6224b"
+      },
+      {
+        "place_name": "Sebring-Avon Park, FL",
+        "2023-07-01": 438.94,
+        "2022-07-01": 378.54,
+        "change": 0.15956041633645052,
+        "rank": 2.0,
+        "colour": "#e6224b"
+      },
+      {
+        "place_name": "Mansfield, OH",
+        "2023-07-01": 272.16,
+        "2022-07-01": 235.29,
+        "change": 0.1567002422542396,
+        "rank": 3.0,
+        "colour": "#e6224b"
+      },
+      {
+        "place_name": "Brunswick, GA",
+        "2023-07-01": 360.78,
+        "2022-07-01": 314.96,
+        "change": 0.1454787909575819,
+        "rank": 4.0,
+        "colour": "#e6224b"
+      },
+      {
+        "place_name": "Dothan, AL",
+        "2023-07-01": 256.61,
+        "2022-07-01": 224.62,
+        "change": 0.1424183064731547,
+        "rank": 5.0,
+        "colour": "#e6224b"
+      },
+      {
+        "place_name": "Median",
+        "2023-07-01": 320.38,
+        "2022-07-01": 299.2,
+        "change": 0.05817039813595376,
+        "rank": 202.0,
+        "colour": "#596870"
+      },
+      {
+        "place_name": "Idaho Falls, ID",
+        "2023-07-01": 403.36,
+        "2022-07-01": 420.64,
+        "change": -0.04108025865348035,
+        "rank": 399.0,
+        "colour": "#36b7b4"
+      },
+      {
+        "place_name": "Twin Falls, ID",
+        "2023-07-01": 395.37,
+        "2022-07-01": 417.65,
+        "change": -0.0533461031964563,
+        "rank": 400.0,
+        "colour": "#36b7b4"
+      },
+      {
+        "place_name": "Santa Rosa-Petaluma, CA",
+        "2023-07-01": 386.0,
+        "2022-07-01": 408.0,
+        "change": -0.05392156862745098,
+        "rank": 401.0,
+        "colour": "#36b7b4"
+      },
+      {
+        "place_name": "Lake Charles, LA",
+        "2023-07-01": 256.47,
+        "2022-07-01": 276.88,
+        "change": -0.07371424443802357,
+        "rank": 402.0,
+        "colour": "#36b7b4"
+      },
+      {
+        "place_name": "Greater Austin, TX",
+        "2023-07-01": 524.91,
+        "2022-07-01": 568.78,
+        "change": -0.07712999753859139,
+        "rank": 403.0,
+        "colour": "#36b7b4"
+      }
+    ],
+    "data-77225a9c40ef4e98f869d0c8260fcaf6": [
+      {
+        "place_name": "Median",
+        "2023-07-01": 320.38,
+        "2022-07-01": 299.2,
+        "change": 0.05817039813595376,
+        "rank": 202.0,
+        "colour": "#596870"
+      }
+    ],
+    "data-9c00aa9dc2b1c1a0b4bf9b34ead12925": [
+      {
+        "x": 0
+      }
+    ]
+  },
+  "width": 380,
+  "height": 280
+}
