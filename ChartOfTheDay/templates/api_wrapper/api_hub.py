@@ -50,8 +50,14 @@ class EconDataAPI:
 
     # Define getters and setters
     def get_fred_api_key(self) -> str:
+        '''Returns API key set for FRED.'''
         return self.fred_api_key
     def set_fred_api_key(self, fred_api_key):
+        '''Update currently stored API key for FRED.
+
+        Args:
+            fred_api_key: Active API key to use when downloading FRED data. Find out more at https://fred.stlouisfed.org/docs/api/api_key.html
+        '''
         self.fred_api_key = fred_api_key
     
     def get_fred_base_url(self) -> str:
@@ -59,7 +65,8 @@ class EconDataAPI:
     def set_fred_base_url(self, fred_base_url):
         self.fred_base_url = fred_base_url
 
-    def get_fred_series_all(self):
+    def get_fred_series_all(self) -> list:
+        '''Returns a list of previously saved series codes for FRED.'''
         return self.fred_series.keys()
 
     # return type either dict or list of dicts

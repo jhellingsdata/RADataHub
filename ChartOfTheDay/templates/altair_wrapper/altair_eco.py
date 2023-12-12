@@ -162,7 +162,7 @@ class CustomChart:
             color=self.detail
             
         ).encode(
-            text=alt.Text(y, format=".2%")
+            text=alt.Text(y, format=".1%")
         )
         self.chart += text_value
         
