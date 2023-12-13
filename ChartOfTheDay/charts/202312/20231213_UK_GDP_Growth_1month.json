@@ -1,0 +1,314 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300,
+      "stroke": null
+    },
+    "background": "#122b39",
+    "font": "Circular Std",
+    "title": {
+      "anchor": "start"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-a27e518c829230e06c41de0ca7451307"
+      },
+      "mark": {
+        "type": "bar",
+        "width": 13
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "(datum.value > 0)",
+            "value": "#36b7b4"
+          },
+          "value": "#e6224b"
+        },
+        "x": {
+          "axis": {
+            "domainColor": "#b4c8d8",
+            "domainOpacity": 0.5,
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#b4c8d8",
+            "labelFontSize": 11,
+            "tickColor": "#b4c8d8",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": null
+          },
+          "field": "date",
+          "scale": {
+            "padding": 20
+          },
+          "type": "temporal"
+        },
+        "y": {
+          "axis": {
+            "domainColor": "#b4c8d8",
+            "gridColor": "#b4c8d8",
+            "gridDash": [
+              1,
+              5
+            ],
+            "gridOpacity": 0.5,
+            "labelColor": "#b4c8d8",
+            "labelFontSize": 11,
+            "labelPadding": 5,
+            "tickColor": "#b4c8d8",
+            "tickCount": 7,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "title": null
+          },
+          "field": "value",
+          "scale": {
+            "padding": 35,
+            "zero": false
+          },
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "UK GDP Growth",
+        "color": "#b4c8d8",
+        "dx": 27,
+        "fontSize": 14,
+        "offset": 0,
+        "subtitle": "Monthly GDP Growth, % | Source: ONS",
+        "subtitleColor": "#b4c8d8E6",
+        "subtitleFontSize": 12
+      }
+    },
+    {
+      "data": {
+        "name": "data-06fd9f850666401b4599de5588b60692"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#b4c8d8",
+        "opacity": 0.7,
+        "size": 1.5
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-006fce4b7a4c3739afd1a76ad97d1f8f"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "color": "#b4c8d8",
+        "dx": -5,
+        "dy": 20,
+        "fontSize": 13
+      },
+      "encoding": {
+        "text": {
+          "field": "month",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-006fce4b7a4c3739afd1a76ad97d1f8f"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "color": "#b4c8d8",
+        "dx": -5,
+        "dy": 8,
+        "fontSize": 13
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "height": 300,
+  "width": 380,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+  "datasets": {
+    "data-a27e518c829230e06c41de0ca7451307": [
+      {
+        "date": "2022-01-01T00:00:00",
+        "month": "January",
+        "value": 0.5,
+        "year": "2022"
+      },
+      {
+        "date": "2022-02-01T00:00:00",
+        "month": "February",
+        "value": 0.5,
+        "year": "2022"
+      },
+      {
+        "date": "2022-03-01T00:00:00",
+        "month": "March",
+        "value": 0.1,
+        "year": "2022"
+      },
+      {
+        "date": "2022-04-01T00:00:00",
+        "month": "April",
+        "value": -0.2,
+        "year": "2022"
+      },
+      {
+        "date": "2022-05-01T00:00:00",
+        "month": "May",
+        "value": 0.7,
+        "year": "2022"
+      },
+      {
+        "date": "2022-06-01T00:00:00",
+        "month": "June",
+        "value": -1.0,
+        "year": "2022"
+      },
+      {
+        "date": "2022-07-01T00:00:00",
+        "month": "July",
+        "value": 0.4,
+        "year": "2022"
+      },
+      {
+        "date": "2022-08-01T00:00:00",
+        "month": "August",
+        "value": 0.1,
+        "year": "2022"
+      },
+      {
+        "date": "2022-09-01T00:00:00",
+        "month": "September",
+        "value": -0.6,
+        "year": "2022"
+      },
+      {
+        "date": "2022-10-01T00:00:00",
+        "month": "October",
+        "value": 0.7,
+        "year": "2022"
+      },
+      {
+        "date": "2022-11-01T00:00:00",
+        "month": "November",
+        "value": 0.1,
+        "year": "2022"
+      },
+      {
+        "date": "2022-12-01T00:00:00",
+        "month": "December",
+        "value": -0.3,
+        "year": "2022"
+      },
+      {
+        "date": "2023-01-01T00:00:00",
+        "month": "January",
+        "value": 0.5,
+        "year": "2023"
+      },
+      {
+        "date": "2023-02-01T00:00:00",
+        "month": "February",
+        "value": 0.1,
+        "year": "2023"
+      },
+      {
+        "date": "2023-03-01T00:00:00",
+        "month": "March",
+        "value": -0.3,
+        "year": "2023"
+      },
+      {
+        "date": "2023-04-01T00:00:00",
+        "month": "April",
+        "value": 0.2,
+        "year": "2023"
+      },
+      {
+        "date": "2023-05-01T00:00:00",
+        "month": "May",
+        "value": -0.2,
+        "year": "2023"
+      },
+      {
+        "date": "2023-06-01T00:00:00",
+        "month": "June",
+        "value": 0.7,
+        "year": "2023"
+      },
+      {
+        "date": "2023-07-01T00:00:00",
+        "month": "July",
+        "value": -0.6,
+        "year": "2023"
+      },
+      {
+        "date": "2023-08-01T00:00:00",
+        "month": "August",
+        "value": 0.1,
+        "year": "2023"
+      },
+      {
+        "date": "2023-09-01T00:00:00",
+        "month": "September",
+        "value": 0.2,
+        "year": "2023"
+      },
+      {
+        "date": "2023-10-01T00:00:00",
+        "month": "October",
+        "value": -0.3,
+        "year": "2023"
+      }
+    ],
+    "data-06fd9f850666401b4599de5588b60692": [
+      {
+        "y": 0
+      }
+    ],
+    "data-006fce4b7a4c3739afd1a76ad97d1f8f": [
+      {
+        "date": "2023-10-01T00:00:00",
+        "month": "October",
+        "value": -0.3,
+        "year": "2023",
+        "text": "-0.3%"
+      }
+    ]
+  }
+}
