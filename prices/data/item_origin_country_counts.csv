@@ -1,125 +1,251 @@
-Country,ISO3,Group,Count
-United Kingdom,GBR,UK,23764
-Italy,ITA,EU,2561
-France,FRA,EU,2341
-Germany,DEU,EU,1844
-Spain,ESP,EU,1750
-Netherlands,NLD,EU,1183
-China,CHN,Non-EU,1182
-United States,USA,Non-EU,927
-Belgium,BEL,EU,856
-Poland,POL,EU,800
-Ireland,IRL,EU,793
-Thailand,THA,Non-EU,590
-South Africa,ZAF,Non-EU,500
-Greece,GRC,EU,411
-India,IND,Non-EU,392
-Australia,AUS,Non-EU,331
-Portugal,PRT,EU,314
-Switzerland,CHE,Non-EU,304
-Chile,CHL,Non-EU,286
-Morocco,MAR,Non-EU,285
-New Zealand,NZL,Non-EU,272
-Denmark,DNK,EU,244
-Türkiye,TUR,Non-EU,234
-Vietnam,VNM,Non-EU,224
-Hungary,HUN,EU,210
-Mexico,MEX,Non-EU,198
-Sweden,SWE,EU,192
-Japan,JPN,Non-EU,186
-Peru,PER,Non-EU,181
-Israel,ISR,Non-EU,180
-Kenya,KEN,Non-EU,177
-Argentina,ARG,Non-EU,169
-Brazil,BRA,Non-EU,169
-Egypt,EGY,Non-EU,167
-Canada,CAN,Non-EU,158
-Austria,AUT,EU,136
-Czechia,CZE,EU,134
-Indonesia,IDN,Non-EU,92
-Colombia,COL,Non-EU,88
-South Korea,KOR,Non-EU,81
-Pakistan,PAK,Non-EU,75
-Bulgaria,BGR,EU,74
-Senegal,SEN,Non-EU,69
-Malaysia,MYS,Non-EU,66
-Honduras,HND,Non-EU,58
-Jamaica,JAM,Non-EU,56
-Philippines,PHL,Non-EU,55
-Ecuador,ECU,Non-EU,54
-Iceland,ISL,Non-EU,54
-Norway,NOR,Non-EU,52
-Guatemala,GTM,Non-EU,50
-Dominican Republic,DOM,Non-EU,48
-Taiwan,TWN,Non-EU,47
-Cyprus,CYP,EU,47
-Jordan,JOR,Non-EU,43
-Seychelles,SYC,Non-EU,43
-Ethiopia,ETH,Non-EU,42
-Mauritius,MUS,Non-EU,40
-Finland,FIN,EU,37
-Costa Rica,CRI,Non-EU,37
-Namibia,NAM,Non-EU,36
-Zimbabwe,ZWE,Non-EU,35
-Zambia,ZMB,Non-EU,33
-Sri Lanka,LKA,Non-EU,32
-Gambia,GMB,Non-EU,31
-Lithuania,LTU,EU,30
-Slovenia,SVN,EU,29
-Tunisia,TUN,Non-EU,29
-Romania,ROU,EU,29
-Ghana,GHA,Non-EU,28
-Nicaragua,NIC,Non-EU,24
-Tanzania,TZA,Non-EU,21
-Mozambique,MOZ,Non-EU,21
-Madagascar,MDG,Non-EU,21
-Singapore,SGP,Non-EU,20
-Saudi Arabia,SAU,Non-EU,20
-Maldives,MDV,Non-EU,18
-Côte d'Ivoire,CIV,Non-EU,18
-Ukraine,UKR,Non-EU,18
-Croatia,HRV,EU,17
-Jersey,JEY,Non-EU,17
-Hong Kong,HKG,Non-EU,15
-Barbados,BRB,Non-EU,15
-Panama,PAN,Non-EU,15
-Serbia,SRB,Non-EU,13
-Uruguay,URY,Non-EU,12
-Nigeria,NGA,Non-EU,12
-Trinidad and Tobago,TTO,Non-EU,11
-Cuba,CUB,Non-EU,10
-Latvia,LVA,EU,9
-Slovakia,SVK,EU,9
-Luxembourg,LUX,EU,8
-Rwanda,RWA,Non-EU,7
-Cameroon,CMR,Non-EU,6
-North Macedonia,MKD,Non-EU,6
-United Arab Emirates,ARE,Non-EU,6
-Burkina Faso,BFA,Non-EU,6
-Guyana,GUY,Non-EU,6
-Venezuela,VEN,Non-EU,5
-Eswatini,SWZ,Non-EU,5
-Belize,BLZ,Non-EU,5
-Lebanon,LBN,Non-EU,4
-Liechtenstein,LIE,Non-EU,4
-Moldova,MDA,Non-EU,4
-Estonia,EST,EU,4
-Fiji,FJI,Non-EU,4
-Bolivia,BOL,Non-EU,3
-Mali,MLI,Non-EU,3
-San Marino,SMR,Non-EU,3
-Bermuda,BMU,Non-EU,3
-Papua New Guinea,PNG,Non-EU,3
-Russia,RUS,Non-EU,3
-Iran,IRN,Non-EU,3
-Malta,MLT,EU,2
-Uganda,UGA,Non-EU,2
-Georgia,GEO,Non-EU,2
-Oman,OMN,Non-EU,2
-Paraguay,PRY,Non-EU,1
-Cambodia,KHM,Non-EU,1
-St. Lucia,LCA,Non-EU,1
-Martinique,MTQ,Non-EU,1
-Guinea,GIN,Non-EU,1
-El Salvador,SLV,Non-EU,1
-Palestine,PSE,Non-EU,1
+Country,ISO3,Group,Count,Share
+Afghanistan,AFG,Non-EU,,
+Aland Islands,ALA,Non-EU,,
+Albania,ALB,Non-EU,,
+Algeria,DZA,Non-EU,,
+American Samoa,ASM,Non-EU,,
+Andorra,AND,Non-EU,,
+Angola,AGO,Non-EU,,
+Anguilla,AIA,Non-EU,,
+Antarctica,ATA,Non-EU,,
+Antigua and Barbuda,ATG,Non-EU,,
+Argentina,ARG,Non-EU,169.0,0.0036189211760423137
+Armenia,ARM,Non-EU,,
+Aruba,ABW,Non-EU,,
+Australia,AUS,Non-EU,331.0,0.007087946208698259
+Austria,AUT,EU,136.0,0.0029122679286494356
+Azerbaijan,AZE,Non-EU,,
+Bahamas,BHS,Non-EU,,
+Bahrain,BHR,Non-EU,,
+Bangladesh,BGD,Non-EU,,
+Barbados,BRB,Non-EU,15.0,0.00032120602154221716
+Belarus,BLR,Non-EU,,
+Belgium,BEL,EU,856.0,0.01833015696267586
+Belize,BLZ,Non-EU,5.0,0.00010706867384740573
+Benin,BEN,Non-EU,,
+Bermuda,BMU,Non-EU,3.0,6.424120430844344e-05
+Bhutan,BTN,Non-EU,,
+Bolivia,BOL,Non-EU,3.0,6.424120430844344e-05
+"Bonaire, Saint Eustatius and Saba",BES,Non-EU,,
+Bosnia and Herzegovina,BIH,Non-EU,,
+Botswana,BWA,Non-EU,,
+Bouvet Island,BVT,Non-EU,,
+Brazil,BRA,Non-EU,169.0,0.0036189211760423137
+British Indian Ocean Territory,IOT,Non-EU,,
+British Virgin Islands,VGB,Non-EU,,
+Brunei Darussalam,BRN,Non-EU,,
+Bulgaria,BGR,EU,74.0,0.0015846163729416047
+Burkina Faso,BFA,Non-EU,6.0,0.00012848240861688688
+Burundi,BDI,Non-EU,,
+Cabo Verde,CPV,Non-EU,,
+Cambodia,KHM,Non-EU,1.0,2.1413734769481146e-05
+Cameroon,CMR,Non-EU,6.0,0.00012848240861688688
+Canada,CAN,Non-EU,158.0,0.003383370093578021
+Cayman Islands,CYM,Non-EU,,
+Central African Republic,CAF,Non-EU,,
+Chad,TCD,Non-EU,,
+Chile,CHL,Non-EU,286.0,0.006124328144071607
+China,CHN,Non-EU,1182.0,0.025311034497526714
+Christmas Island,CXR,Non-EU,,
+Cocos (Keeling) Islands,CCK,Non-EU,,
+Colombia,COL,Non-EU,88.0,0.0018844086597143408
+Comoros,COM,Non-EU,,
+Congo Republic,COG,Non-EU,,
+Cook Islands,COK,Non-EU,,
+Costa Rica,CRI,Non-EU,37.0,0.0007923081864708024
+Cote d'Ivoire,CIV,Unallocated,,
+Croatia,HRV,EU,17.0,0.00036403349108117945
+Cuba,CUB,Non-EU,10.0,0.00021413734769481146
+Curacao,CUW,Non-EU,,
+Cyprus,CYP,EU,47.0,0.0010064455341656138
+Czechia,CZE,EU,134.0,0.0028694404591104736
+Denmark,DNK,EU,244.0,0.0052249512837533995
+Djibouti,DJI,Non-EU,,
+Dominica,DMA,Non-EU,,
+Dominican Republic,DOM,Non-EU,48.0,0.001027859268935095
+DR Congo,COD,Non-EU,,
+Ecuador,ECU,Non-EU,54.0,0.001156341677551982
+Egypt,EGY,Non-EU,167.0,0.0035760937065033513
+El Salvador,SLV,Non-EU,1.0,2.1413734769481146e-05
+Equatorial Guinea,GNQ,Non-EU,,
+Eritrea,ERI,Non-EU,,
+Estonia,EST,EU,4.0,8.565493907792458e-05
+Eswatini,SWZ,Non-EU,5.0,0.00010706867384740573
+Ethiopia,ETH,Non-EU,42.0,0.0008993768603182081
+Faroe Islands,FRO,Non-EU,,
+Falkland Islands,FLK,Non-EU,,
+Fiji,FJI,Non-EU,4.0,8.565493907792458e-05
+Finland,FIN,EU,37.0,0.0007923081864708024
+France,FRA,EU,2341.0,0.05012955309535536
+French Guiana,GUF,Non-EU,,
+French Polynesia,PYF,Non-EU,,
+French Southern Territories,ATF,Non-EU,,
+Gabon,GAB,Non-EU,,
+Gambia,GMB,Non-EU,31.0,0.0006638257778539156
+Georgia,GEO,Non-EU,2.0,4.282746953896229e-05
+Germany,DEU,EU,1844.0,0.03948692691492323
+Ghana,GHA,Non-EU,28.0,0.0005995845735454721
+Gibraltar,GIB,Non-EU,,
+Greece,GRC,EU,411.0,0.00880104499025675
+Greenland,GRL,Non-EU,,
+Grenada,GRD,Non-EU,,
+Guadeloupe,GLP,Non-EU,,
+Guam,GUM,Non-EU,,
+Guatemala,GTM,Non-EU,50.0,0.0010706867384740572
+Guernsey,GGY,Non-EU,,
+Guinea,GIN,Non-EU,1.0,2.1413734769481146e-05
+Guinea-Bissau,GNB,Non-EU,,
+Guyana,GUY,Non-EU,6.0,0.00012848240861688688
+Haiti,HTI,Non-EU,,
+Heard and McDonald Islands,HMD,Non-EU,,
+Honduras,HND,Non-EU,58.0,0.0012419966166299064
+Hong Kong,HKG,Non-EU,15.0,0.00032120602154221716
+Hungary,HUN,EU,210.0,0.004496884301591041
+Iceland,ISL,Non-EU,54.0,0.001156341677551982
+India,IND,Non-EU,392.0,0.008394184029636608
+Indonesia,IDN,Non-EU,92.0,0.0019700635987922655
+Iran,IRN,Non-EU,3.0,6.424120430844344e-05
+Iraq,IRQ,Non-EU,,
+Ireland,IRL,EU,793.0,0.016981091672198547
+Isle of Man,IMN,Non-EU,,
+Israel,ISR,Non-EU,180.0,0.003854472258506606
+Italy,ITA,EU,2561.0,0.05484057474464121
+Jamaica,JAM,Non-EU,56.0,0.0011991691470909442
+Japan,JPN,Non-EU,186.0,0.003982954667123493
+Jersey,JEY,Non-EU,17.0,0.00036403349108117945
+Jordan,JOR,Non-EU,43.0,0.0009207905950876892
+Kazakhstan,KAZ,Non-EU,,
+Kenya,KEN,Non-EU,177.0,0.0037902310541981627
+Kiribati,KIR,Non-EU,,
+Kosovo,XKX,Non-EU,,
+Kuwait,KWT,Non-EU,,
+Kyrgyz Republic,KGZ,Non-EU,,
+Laos,LAO,Non-EU,,
+Latvia,LVA,EU,9.0,0.0001927236129253303
+Lebanon,LBN,Non-EU,4.0,8.565493907792458e-05
+Lesotho,LSO,Non-EU,,
+Liberia,LBR,Non-EU,,
+Libya,LBY,Non-EU,,
+Liechtenstein,LIE,Non-EU,4.0,8.565493907792458e-05
+Lithuania,LTU,EU,30.0,0.0006424120430844343
+Luxembourg,LUX,EU,8.0,0.00017130987815584917
+Macau,MAC,Non-EU,,
+North Macedonia,MKD,Non-EU,6.0,0.00012848240861688688
+Madagascar,MDG,Non-EU,21.0,0.00044968843015910404
+Malawi,MWI,Non-EU,,
+Malaysia,MYS,Non-EU,66.0,0.0014133064947857556
+Maldives,MDV,Non-EU,18.0,0.0003854472258506606
+Mali,MLI,Non-EU,3.0,6.424120430844344e-05
+Malta,MLT,EU,2.0,4.282746953896229e-05
+Marshall Islands,MHL,Non-EU,,
+Martinique,MTQ,Non-EU,1.0,2.1413734769481146e-05
+Mauritania,MRT,Non-EU,,
+Mauritius,MUS,Non-EU,40.0,0.0008565493907792458
+Mayotte,MYT,Non-EU,,
+Mexico,MEX,Non-EU,198.0,0.004239919484357267
+"Micronesia, Fed. Sts.",FSM,Non-EU,,
+Moldova,MDA,Non-EU,4.0,8.565493907792458e-05
+Monaco,MCO,Non-EU,,
+Mongolia,MNG,Non-EU,,
+Montenegro,MNE,Non-EU,,
+Montserrat,MSR,Non-EU,,
+Morocco,MAR,Non-EU,285.0,0.006102914409302126
+Mozambique,MOZ,Non-EU,21.0,0.00044968843015910404
+Myanmar,MMR,Non-EU,,
+Namibia,NAM,Non-EU,36.0,0.0007708944517013213
+Nauru,NRU,Non-EU,,
+Nepal,NPL,Non-EU,,
+Netherlands,NLD,EU,1183.0,0.025332448232296193
+New Caledonia,NCL,Non-EU,,
+New Zealand,NZL,Non-EU,272.0,0.005824535857298871
+Nicaragua,NIC,Non-EU,24.0,0.0005139296344675475
+Niger,NER,Non-EU,,
+Nigeria,NGA,Non-EU,12.0,0.00025696481723377375
+Niue,NIU,Non-EU,,
+Norfolk Island,NFK,Non-EU,,
+North Korea,PRK,Non-EU,,
+Northern Mariana Islands,MNP,Non-EU,,
+Norway,NOR,Non-EU,52.0,0.0011135142080130195
+Oman,OMN,Non-EU,2.0,4.282746953896229e-05
+Pakistan,PAK,Non-EU,75.0,0.001606030107711086
+Palau,PLW,Non-EU,,
+Palestine,PSE,Non-EU,1.0,2.1413734769481146e-05
+Panama,PAN,Non-EU,15.0,0.00032120602154221716
+Papua New Guinea,PNG,Non-EU,3.0,6.424120430844344e-05
+Paraguay,PRY,Non-EU,1.0,2.1413734769481146e-05
+Peru,PER,Non-EU,181.0,0.003875885993276087
+Philippines,PHL,Non-EU,55.0,0.001177755412321463
+Pitcairn,PCN,Non-EU,,
+Poland,POL,EU,800.0,0.017130987815584916
+Portugal,PRT,EU,314.0,0.00672391271761708
+Puerto Rico,PRI,Non-EU,,
+Qatar,QAT,Non-EU,,
+Reunion,REU,Non-EU,,
+Romania,ROU,EU,29.0,0.0006209983083149532
+Russia,RUS,Non-EU,3.0,6.424120430844344e-05
+Rwanda,RWA,Non-EU,7.0,0.00014989614338636802
+Saint-Martin,MAF,Non-EU,,
+Samoa,WSM,Non-EU,,
+San Marino,SMR,Non-EU,3.0,6.424120430844344e-05
+Sao Tome and Principe,STP,Non-EU,,
+Saudi Arabia,SAU,Non-EU,20.0,0.0004282746953896229
+Senegal,SEN,Non-EU,69.0,0.001477547699094199
+Serbia,SRB,Non-EU,13.0,0.00027837855200325487
+Seychelles,SYC,Non-EU,43.0,0.0009207905950876892
+Sierra Leone,SLE,Non-EU,,
+Singapore,SGP,Non-EU,20.0,0.0004282746953896229
+Sint Maarten,SXM,Non-EU,,
+Slovakia,SVK,EU,9.0,0.0001927236129253303
+Slovenia,SVN,EU,29.0,0.0006209983083149532
+Solomon Islands,SLB,Non-EU,,
+Somalia,SOM,Non-EU,,
+South Africa,ZAF,Non-EU,500.0,0.010706867384740573
+South Georgia and South Sandwich Is.,SGS,Non-EU,,
+South Korea,KOR,Non-EU,81.0,0.0017345125163279727
+South Sudan,SSD,Non-EU,,
+Spain,ESP,EU,1750.0,0.037474035846592
+Sri Lanka,LKA,Non-EU,32.0,0.0006852395126233967
+St. Barths,BLM,Non-EU,,
+St. Helena,SHN,Non-EU,,
+St. Kitts and Nevis,KNA,Non-EU,,
+St. Lucia,LCA,Non-EU,1.0,2.1413734769481146e-05
+St. Pierre and Miquelon,SPM,Non-EU,,
+St. Vincent and the Grenadines,VCT,Non-EU,,
+Sudan,SDN,Non-EU,,
+Suriname,SUR,Non-EU,,
+Svalbard and Jan Mayen Islands,SJM,Non-EU,,
+Sweden,SWE,EU,192.0,0.00411143707574038
+Switzerland,CHE,Non-EU,304.0,0.006509775369922268
+Syria,SYR,Non-EU,,
+Taiwan,TWN,Non-EU,47.0,0.0010064455341656138
+Tajikistan,TJK,Non-EU,,
+Tanzania,TZA,Non-EU,21.0,0.00044968843015910404
+Thailand,THA,Non-EU,590.0,0.012634103513993876
+Timor-Leste,TLS,Non-EU,,
+Togo,TGO,Non-EU,,
+Tokelau,TKL,Non-EU,,
+Tonga,TON,Non-EU,,
+Trinidad and Tobago,TTO,Non-EU,11.0,0.0002355510824642926
+Tunisia,TUN,Non-EU,29.0,0.0006209983083149532
+Türkiye,TUR,Non-EU,234.0,0.005010813936058588
+Turkmenistan,TKM,Non-EU,,
+Turks and Caicos Islands,TCA,Non-EU,,
+Tuvalu,TUV,Non-EU,,
+Uganda,UGA,Non-EU,2.0,4.282746953896229e-05
+Ukraine,UKR,Non-EU,18.0,0.0003854472258506606
+United Arab Emirates,ARE,Non-EU,6.0,0.00012848240861688688
+United Kingdom,GBR,UK,23764.0,0.50887599306195
+United States,USA,Non-EU,927.0,0.019850532131309023
+United States Minor Outlying Islands,UMI,Non-EU,,
+United States Virgin Islands,VIR,Non-EU,,
+Uruguay,URY,Non-EU,12.0,0.00025696481723377375
+Uzbekistan,UZB,Non-EU,,
+Vanuatu,VUT,Non-EU,,
+Vatican,VAT,Non-EU,,
+Venezuela,VEN,Non-EU,5.0,0.00010706867384740573
+Vietnam,VNM,Non-EU,224.0,0.004796676588363777
+Wallis and Futuna Islands,WLF,Non-EU,,
+Western Sahara,ESH,Non-EU,,
+Yemen,YEM,Non-EU,,
+Zambia,ZMB,Non-EU,33.0,0.0007066532473928778
+Zimbabwe,ZWE,Non-EU,35.0,0.0007494807169318401
