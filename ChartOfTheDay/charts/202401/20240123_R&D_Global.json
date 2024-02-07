@@ -1,0 +1,106 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Gross domestic expenditure on R&D (GERD) as a percentage of GDP. Data contains most recent available value for each country, along with the GDP per capita (PPP international $) and population values for that respective year, both from the World Bank",
+    
+    "config": {
+      "background": "#122B39",
+      "title": {
+        "color": "#b4c8d8",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "subtitleColor": "#b4c8d8",
+        "offset": 8
+      },
+      "bar": {"color": "#36B7B4"},
+      "view": {"stroke": "transparent", "width": 300, "height": 300},
+      "range": {
+        "category": [
+          "#36B7B4",
+          "#E6224B",
+          "#F4C245",
+          "#0063AF",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ],
+        "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+        "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+        "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+      },
+      "axisX": {
+        "domainColor": "#b4c8d8",
+        "domainOpacity": 0.5,
+        "grid": true,
+        "gridOpacity": 0.4,
+        "gridDash": [1, 5],
+        "labelAngle": 0,
+        "labelColor": "#b4c8d8",
+        "labelOpacity": 0.8,
+        "orient": "bottom",
+        "tickColor": "#b4c8d8",
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": "",
+        "titleAlign": "center",
+        "titleAnchor": "end",
+        "titleColor": "#b4c8d8",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleY": -14,
+        "titleX": 290
+      },
+      "axisY": {
+        "domainColor": "#b4c8d8",
+        "domainOpacity": 0.5,
+        "gridColor": "#b4c8d8",
+  
+        "labelColor": "#b4c8d8",
+        "labelOpacity": 0.8,
+        "labelPadding": 5,
+        "tickColor": "#b4c8d8",
+        "tickCount": 8,
+        "tickOpacity": 0.5,
+        "tickSize": 4,
+        "titleX": 15,
+        "title": "FAO price index",
+        "titleColor": "#b4c8d8",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8
+      }
+    },
+    "title": {
+      "text": "Research & Development",
+      "fontSize": 12,
+      "anchor": "start",
+      "subtitle": ["Expenditure as a percentage of GDP, source: UNESCO UIS"],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 9
+    },
+    "height": 320,
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/growth-global_research_gdp.csv"
+    },
+    "transform": [{"filter": "datum['R&D Expenditure (% of GDP)'] > 1.5"}],
+    "mark": {"type": "bar"},
+    "encoding": {
+      "y": {"field": "Country", "type": "nominal", "title": null, "sort": "-x"},
+      "x": {
+        "field": "R&D Expenditure (% of GDP)", 
+        "type": "quantitative",
+        "axis": {
+          "title": "%"
+        }
+      },
+      "tooltip": [
+        {"field": "Country", "type": "nominal"},
+        {"field": "Year", "type": "nominal"},
+        {
+          "field": "R&D Expenditure (% of GDP)",
+          "type": "quantitative",
+          "title": "Expenditure as % of GDP",
+          "format": ".3"
+        },
+        {"field": "GDP per capita (PPP)", "type": "quantitative", "format": "$,d"}
+      ]
+    }
+  }
