@@ -1,0 +1,76 @@
+<!-- This is a comment -->
+<!-- Comments are not displayed in the browser -->
+<!-- They can be used to leave notes in the code -->
+
+<!-- TODO: Add more comments (e.g. what do head, body, h1 do; HTML is heirarchial; tags have an open an close; style/ids) -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- This is a link to a stylesheet which applies our nice formatting-->
+    <!-- Try swapping level_1 to another, and take a look at level_1.css to see if you understand it-->
+    <link rel="stylesheet" type="text/css" href="level_1.css">
+    <title>My Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
+
+    <!-- This is a link to the vega-lite which we're using to make graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+
+</head>
+
+<body>
+    <h1 style="margin-bottom: 0px;"> <!-- we can also style elements directly in the HTML -->
+        <!-- This is a header, it is the largest text on the page -->
+        ONS vs AutoCPI
+    </h1>
+    <p style="margin-top: 0px;">
+        Medium-term Price Comparisons; August-December 2023
+        <!-- we're setting the margin to 0px so the header and authour name are close together -->
+    </p>
+
+
+    <section>
+        <div class="chart-description">
+            <h2>Our 5 Month Changes vs ONS 5 Month Changes</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Dropped 5 outliers.
+            </p>
+        </div>
+        <figure id="figure_1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Product counts vs Absolute Error</h2>
+            <p>
+                Making August-December comparisons trims our sample a lot. Classification is also uneven: we're making lots of matches for some items and very few for others.
+                Is there a (weak) relationship between the number of matches and the absolute error?
+            </p>
+        </div>
+        <figure id="figure_2"></figure>
+    </section>
+
+    <!-- This is a script, it's a way to run JavaScript code on the page -->
+    <script>
+        // This is a comment in JavaScript - it's a different language to HTML and CSS
+
+        var figure_1_spec = "6_month_inflation_comparison.json"; // We're storing the URL of the graph we want to display in a variable
+        var figure_2_spec = "product_count_vs_error.json";
+
+        vegaEmbed('#figure_1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+        vegaEmbed('#figure_2', figure_2_spec)
+
+        // Do you want to add more graphs?
+        // try defining a new variable for figure_3_spec, adding VegaEmbed for figure_3, and adding a new section in the HTML
+
+    </script>
+
+
+
+
+</body>
+
+</html>

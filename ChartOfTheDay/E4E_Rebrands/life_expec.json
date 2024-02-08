@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "title": {
+    "text": "GDP and Life Expectancy",
+    "subtitle": [
+      "Life expectancy: in years. Source: UN Population Prospects 2022",
+      "GDP: per capita PPP (international $). Source: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "black",
+    "fontSize": 16
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_1-3_GDP_multi.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": {
+    "type": "circle",
+    "size": 150,
+    "opacity": 0.8
+  },
+  "height": 300,
+  "width": 500,
+  "encoding": {
+    "x": {
+      "field": "GDP per capita (PPP)",
+      "type": "quantitative",
+      "title": "GDP (log scale)",
+      "scale": {
+        "type": "log",
+        "domain": [
+          1000,
+          140000
+        ]
+      },
+      "axis": {
+        "values": [
+          1000,
+          2000,
+          5000,
+          10000,
+          20000,
+          40000,
+          100000
+        ],
+        "format": "$,",
+        "gridOpacity": 0.3,
+        "tickSize": 3,
+        "labelFontSize": 11,
+        "ticks": false,
+        "labelPadding": 5,
+        "titleFontWeight": "bold",
+        "titlePadding": 6
+      }
+    },
+    "y": {
+      "field": "Life Expectancy",
+      "type": "quantitative",
+      "title": "Life Expectancy",
+      "scale": {
+        "domain": [
+          50,
+          87
+        ]
+      },
+      "axis": {
+        "values": [
+          55,
+          60,
+          65,
+          70,
+          75,
+          80,
+          85
+        ],
+        "ticks": false,
+        "labelFontSize": 11,
+        "labelPadding": 5,
+        "titleFontWeight": "bold",
+        "gridOpacity": 0.3,
+        "titlePadding": 6
+      }
+    },
+    "color": {
+      "field": "Continent",
+      "type": "nominal",
+      "scale": {
+        "scheme": "set1"
+      },
+      "title": null,
+      "legend": {
+        "orient": "top",
+        "direction": "horizontal",
+        "legendX": -30,
+        "legendY": -25,
+        "title": null,
+        "offset": 10,
+        "labelFontSize": 11
+      }
+    },
+    "size": {
+      "field": "Population",
+      "type": "quantitative",
+      "scale": {
+        "range": [
+          12,
+          600
+        ]
+      },
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Country"
+      },
+      {
+        "field": "Population",
+        "format": ",d"
+      },
+      {
+        "field": "GDP per capita (PPP)",
+        "title": "GDP per capita",
+        "format": "$,d"
+      },
+      {
+        "field": "Life Expectancy",
+        "format": "d"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}
