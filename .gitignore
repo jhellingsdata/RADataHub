@@ -16,6 +16,7 @@ __pycache__/
 # Ignore system-specific temporary files or backups
 *~
 
-.DS_Store
+**/.DS_Store
 e4e/.DS_Store
 ChartOfTheDay/templates/cpi/geckodriver.log
+.vscode/settings.json

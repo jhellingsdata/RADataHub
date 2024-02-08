@@ -1,0 +1,206 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch4_Money/data/chart4_11_cbi.csv"
+  },
+  "config": {
+    "background": "#122B39",
+    "font": "Circular Std",
+    "title": {
+      "color": "whitesmoke",
+      "fontSize": 14,
+      "fontWeight": 400,
+      "subtitleColor": "#b4c8d8"
+    },
+    "mark": {"line": {"interpolate": "monotone", "color": "#36B7B4"}},
+    "legend": {"labelColor": "#b4c8d8"},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#b4c8d8",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#b4c8d8",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": "",
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#b4c8d8",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "format": ".0f",
+      "gridColor": "#b4c8d8",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#b4c8d8",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#b4c8d8",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleX": 15,
+      "title": "FAO price index",
+      "titleColor": "#b4c8d8",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8
+    }
+  },  "title": {
+    "text": "Central Bank Independence",
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitle": ["Average CBI by continent, 100=fully independent", "Source: Garriga, 2016", ""]
+  },
+  "width": 500,
+  "height": 350,
+  "layer": [
+    {
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+            "x": {
+              "field": "Date",
+              "type": "temporal",
+              "axis": {
+                "grid": false,
+                "labelPadding": 6,
+                "ticks": false,
+                "title": null
+              }
+            },
+            "color": {"field": "Series", "type": "nominal"},
+            "y": {
+              "field": "Value",
+              "type": "quantitative",
+              "scale": {"zero": false}
+            }
+          }
+        },
+        {
+          "mark": "point",
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "encoding": {
+            "x": {
+              "field": "Date",
+              "type": "temporal",
+              "axis": {
+                "grid": false,
+                "labelPadding": 6,
+                "ticks": false,
+                "title": null
+              }
+            },
+            "color": {"field": "Series", "type": "nominal"},
+            "y": {
+              "field": "Value",
+              "type": "quantitative",
+              "scale": {"zero": false}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 4},
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "grid": false,
+            "labelPadding": 6,
+            "ticks": false,
+            "title": null
+          }
+        },
+        "text": {"field": "Series"},
+        "y": {
+          "field": "Value",
+          "axis": {
+            "labelPadding": 5,
+            "ticks": false,
+            "title": null,
+            "format": "d",
+            "labelFontSize": 11,
+            "gridOpacity": 0.6
+          },
+          "type": "quantitative",
+          "scale": {"zero": false, "domain": [20, 80]}
+        },
+        "color": {"field": "Series", "type": "nominal", "legend": null}
+      },
+      "transform": [{"filter": "datum.Date==1325376000000"}]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "grid": false,
+            "labelPadding": 5,
+            "ticks": false,
+            "title": null,
+            "labelFontSize": 11
+          }
+        },
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "type": "temporal",
+            "format": "%Y",
+            "title": "Year"
+          },
+          {"format": ".0d", "field": "Europe", "type": "quantitative"},
+          {"format": ".0d", "field": "Africa", "type": "quantitative"},
+          {"format": ".0d", "field": "Asia", "type": "quantitative"},
+          {"format": ".0d", "field": "Americas", "type": "quantitative"},
+          {"format": ".0d", "field": "Oceania", "type": "quantitative"}
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Date"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ],
+      "transform": [{"pivot": "Series", "value": "Value", "groupby": ["Date"]}]
+    }
+  ],
+  "transform": [{"calculate": "datum.Value*100", "as": "Value"}]
+}

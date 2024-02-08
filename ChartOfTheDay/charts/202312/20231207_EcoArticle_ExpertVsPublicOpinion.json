@@ -1,0 +1,127 @@
+{
+    "config": {
+      "view": {
+        "continuousWidth": 300,
+        "continuousHeight": 300,
+        "stroke": "transparent"
+      },
+      "axis": {
+        "gridOpacity": 0.5,
+        "labelFontSize": 11,
+        "labelPadding": 2,
+        "tickCount": 4,
+        "tickOpacity": 0.5,
+        "tickSize": 3,
+        "ticks": true,
+        "titleColor": "#676A86"
+      },
+      "axisX": {"grid": false},
+      "text": {"align": "left", "baseline": "middle", "dx": 7}
+    },
+    "layer": [
+      {
+        "mark": {"type": "text"},
+        "encoding": {
+          "text": {"field": "var10", "type": "nominal"},
+          "x": {"field": "certain", "type": "quantitative"},
+          "y": {"field": "diff", "type": "quantitative"}
+        },
+        "transform": [
+          {"filter": "(datum.var10 !== 'Net zero')"},
+          {"filter": "(datum.var10 !== 'Financial regulation')"},
+          {"filter": "(datum.var10 !== 'Economic policy')"}
+        ]
+      },
+      {
+        "mark": {"type": "text", "dx": 5, "dy": -2},
+        "encoding": {
+          "text": {"field": "var10", "type": "nominal"},
+          "x": {"field": "certain", "type": "quantitative"},
+          "y": {"field": "diff", "type": "quantitative"}
+        },
+        "transform": [{"filter": "(datum.var10 === 'Net zero')"}]
+      },
+      {
+        "mark": {"type": "text", "dx": 3, "dy": -7},
+        "encoding": {
+          "text": {"field": "var10", "type": "nominal"},
+          "x": {"field": "certain", "type": "quantitative"},
+          "y": {"field": "diff", "type": "quantitative"}
+        },
+        "transform": [{"filter": "(datum.var10 === 'Financial regulation')"}]
+      },
+      {
+        "mark": {"type": "text", "dx": 5, "dy": -3},
+        "encoding": {
+          "text": {"field": "var10", "type": "nominal"},
+          "x": {"field": "certain", "type": "quantitative"},
+          "y": {"field": "diff", "type": "quantitative"}
+        },
+        "transform": [{"filter": "(datum.var10 === 'Economic policy')"}]
+      },
+      {
+        "mark": {"type": "point", "color": "#e6224b", "filled": true, "size": 50},
+        "encoding": {
+          "x": {
+            "axis": {"title": "Expert Certainty"},
+            "field": "certain",
+            "scale": {"zero": false},
+            "type": "quantitative"
+          },
+          "y": {
+            "axis": {"title": "Expert-public Distance"},
+            "field": "diff",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "color": "#122b39",
+          "opacity": 0.7,
+          "strokeWidth": 2
+        },
+        "encoding": {
+          "x": {
+            "axis": {"title": "Expert Certainty"},
+            "field": "certain",
+            "scale": {"zero": false},
+            "type": "quantitative"
+          },
+          "y": {
+            "axis": {"title": "Expert-public Distance"},
+            "field": "diff",
+            "type": "quantitative"
+          }
+        },
+        "transform": [{"on": "certain", "regression": "diff"}]
+      }
+    ],
+    "data": {"name": "data-9189eb1977f1b4a34f518a0e776a681f"},
+    "height": 300,
+    "width": 380,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+    "datasets": {
+      "data-9189eb1977f1b4a34f518a0e776a681f": [
+        {
+          "var10": "Artificial intelligence",
+          "diff": 0.4357405,
+          "certain": 0.4390244
+        },
+        {"var10": "Twitter", "diff": 0.0485933, "certain": 0.3720931},
+        {"var10": "Gouging", "diff": 0.7333333, "certain": 0.6511627},
+        {"var10": "Net zero", "diff": 0.1029412, "certain": 0.3488372},
+        {"var10": "Semiconductors", "diff": 0.0487805, "certain": 0.7560976},
+        {"var10": "Greedflation", "diff": 0.535, "certain": 0.6511628},
+        {
+          "var10": "Financial regulation",
+          "diff": 0.1181396,
+          "certain": 0.3414634
+        },
+        {"var10": "Economic policy", "diff": 0.0092592, "certain": 0.5813953},
+        {"var10": "Windfall tax", "diff": 0.2317276, "certain": 0.3488372},
+        {"var10": "Junk food", "diff": 0.2149758, "certain": 0.4418605}
+      ]
+    }
+  }
