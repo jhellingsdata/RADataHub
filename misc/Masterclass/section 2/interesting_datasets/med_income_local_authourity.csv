@@ -1,0 +1,393 @@
+area_code,area_name,median_income,25th_percentile,75th_percentile,country
+E92000001,England,29919,19885,43685,England
+E12000001,North East ,26959,18468,38488,England
+E06000005,Darlington UA,27282,18771,36633,England
+E06000001,Hartlepool UA,25859,16122,37114,England
+E06000002,Middlesbrough UA,25079,16639,33967,England
+E06000003,Redcar and Cleveland UA,24493,15335,34957,England
+E06000004,Stockton-on-Tees UA,27273,18555,39539,England
+E06000047,County Durham UA,26845,18526,39351,England
+E06000057,Northumberland UA,27468,19125,41051,England
+E11000007,Tyne and Wear Met County,27076,18567,38038,England
+E08000037,  Gateshead,26384,18362,37792,England
+E08000021,  Newcastle upon Tyne,28044,18142,39678,England
+E08000022,  North Tyneside,28097,19484,39729,England
+E08000023,  South Tyneside,26306,16458,36171,England
+E08000024,  Sunderland,25333,18549,36053,England
+E12000002,North West ,28429,19469,40802,England
+E06000008,Blackburn with Darwen UA,25476,16924,35526,England
+E06000009,Blackpool UA,23506,17428,32959,England
+E06000006,Halton UA,x,x,x,England
+E06000007,Warrington UA,30259,22299,43380,England
+E06000049,Cheshire East UA,30712,20795,45935,England
+E06000050,Cheshire West and Chester ,29385,20405,44181,England
+E06000063,Cumberland UA,29347,19077,45095,England
+E06000064,Westmorland and Furness UA,29243,19823,40811,England
+E11000001,Greater Manchester Met County,28131,19096,40049,England
+E08000001,  Bolton,27358,x,39599,England
+E08000002,  Bury,30018,20902,39472,England
+E08000003,  Manchester,27217,17964,38970,England
+E08000004,  Oldham,x,x,x,England
+E08000005,  Rochdale,26959,18283,38220,England
+E08000006,  Salford,27183,17553,38826,England
+E08000007,  Stockport,30639,20284,x,England
+E08000008,  Tameside,26904,19241,37703,England
+E08000009,  Trafford,31528,19960,47375,England
+E08000010,  Wigan,28246,19806,38953,England
+E10000017,Lancashire,28233,20158,40610,England
+E07000117,  Burnley,x,x,x,England
+E07000118,  Chorley,29928,21223,42386,England
+E07000119,  Fylde,33364,21774,48607,England
+E07000120,  Hyndburn,28337,20720,41906,England
+E07000121,  Lancaster,26906,20177,37046,England
+E07000122,  Pendle,24305,17829,33206,England
+E07000123,  Preston,26752,18330,40719,England
+E07000124,  Ribble Valley,29656,21081,x,England
+E07000125,  Rossendale,27419,19793,39286,England
+E07000126,  South Ribble,29149,21199,40019,England
+E07000127,  West Lancashire,28005,20999,40463,England
+E07000128,  Wyre,28797,19733,42765,England
+E11000002,Merseyside Met County,28301,19205,40894,England
+E08000011,  Knowsley,28123,20098,x,England
+E08000012,  Liverpool,28289,19955,40118,England
+E08000013,  St. Helens,28422,18961,39893,England
+E08000014,  Sefton,27534,17434,40579,England
+E08000015,  Wirral,29810,19825,42545,England
+E12000003,Yorkshire and The Humber ,27648,19001,39799,England
+E06000011,East Riding of Yorkshire UA,29718,20120,41027,England
+E06000010,Kingston upon Hull UA,25396,18636,33662,England
+E06000012,North East Lincolnshire UA,x,x,x,England
+E06000013,North Lincolnshire UA,27244,19503,39506,England
+E06000014,York UA,28592,20370,41829,England
+E06000065,North Yorkshire UA,27867,18426,40483,England
+E11000003,South Yorkshire Met County,27535,18996,39587,England
+E08000016,  Barnsley,27189,17707,x,England
+E08000017,  Doncaster,27772,19164,36556,England
+E08000018,  Rotherham,26188,17987,37009,England
+E08000019,  Sheffield,28373,19699,41016,England
+E11000006,West Yorkshire Met County,27593,18861,39847,England
+E08000032,  Bradford,26216,17667,38536,England
+E08000033,  Calderdale,26752,18479,39860,England
+E08000034,  Kirklees,27329,18158,39453,England
+E08000035,  Leeds,29000,20352,42006,England
+E08000036,  Wakefield,26423,17655,37879,England
+E12000004,East Midlands ,27782,18646,40146,England
+E06000015,Derby UA,28442,x,40490,England
+E06000016,Leicester UA,24245,16185,33980,England
+E06000061,North Northamptonshire UA,29447,19139,38570,England
+E06000018,Nottingham UA,23377,12500,31186,England
+E06000017,Rutland UA,34857,27678,x,England
+E06000062,West Northamptonshire UA,29023,21239,44514,England
+E10000007,Derbyshire,28326,19269,40616,England
+E07000032,  Amber Valley,28571,18725,40095,England
+E07000033,  Bolsover,24068,15252,31999,England
+E07000034,  Chesterfield,x,18670,x,England
+E07000035,  Derbyshire Dales,30049,21309,42403,England
+E07000036,  Erewash,30415,20864,42065,England
+E07000037,  High Peak,30095,20572,43377,England
+E07000038,  North East Derbyshire,x,x,x,England
+E07000039,  South Derbyshire,31852,21207,43510,England
+E10000018,Leicestershire,29224,19249,41924,England
+E07000129,  Blaby,27989,20026,40828,England
+E07000130,  Charnwood,31128,18532,41108,England
+E07000131,  Harborough,30074,20494,46830,England
+E07000132,  Hinckley and Bosworth,30172,20791,41547,England
+E07000133,  Melton,24839,14414,x,England
+E07000134,  North West Leicestershire,28637,19284,44396,England
+E07000135,  Oadby and Wigston,27150,17846,x,England
+E10000019,Lincolnshire,27626,18156,38881,England
+E07000136,  Boston,x,x,x,England
+E07000137,  East Lindsey,25819,16726,36804,England
+E07000138,  Lincoln,27228,18243,35882,England
+E07000139,  North Kesteven,28444,19514,41405,England
+E07000140,  South Holland,x,x,x,England
+E07000141,  South Kesteven,27607,x,x,England
+E07000142,  West Lindsey,x,x,x,England
+E10000024,Nottinghamshire,27056,17835,40305,England
+E07000170,  Ashfield,26189,18319,34996,England
+E07000171,  Bassetlaw,x,x,x,England
+E07000172,  Broxtowe,28810,20203,42795,England
+E07000173,  Gedling,26944,16638,39697,England
+E07000174,  Mansfield,25437,x,x,England
+E07000175,  Newark and Sherwood,27048,17061,42071,England
+E07000176,  Rushcliffe,31352,18988,x,England
+E12000005,West Midlands ,28352,19230,40699,England
+E06000019,Herefordshire UA,26332,16454,37135,England
+E06000021,Stoke-on-Trent UA,25975,16469,35635,England
+E06000020,Telford and Wrekin UA,29135,19721,40258,England
+E06000051,Shropshire UA,27324,18164,39422,England
+E10000028,Staffordshire,29707,20018,42477,England
+E07000192,  Cannock Chase,26812,17575,34734,England
+E07000193,  East Staffordshire,28130,20836,40049,England
+E07000194,  Lichfield,x,21158,x,England
+E07000195,  Newcastle-under-Lyme,27114,x,x,England
+E07000196,  South Staffordshire,31770,19793,47141,England
+E07000197,  Stafford,32764,22999,46277,England
+E07000198,  Staffordshire Moorlands,30467,21312,42188,England
+E07000199,  Tamworth,30000,20037,39455,England
+E10000031,Warwickshire,30633,20911,45726,England
+E07000218,  North Warwickshire,32009,23581,x,England
+E07000219,  Nuneaton and Bedworth,26882,17860,36483,England
+E07000220,  Rugby,33025,x,46477,England
+E07000221,  Stratford-on-Avon,x,x,x,England
+E07000222,  Warwick,34623,21669,50476,England
+E11000005,West Midlands Met County,27519,18780,39484,England
+E08000025,  Birmingham,27175,17555,39190,England
+E08000026,  Coventry,29476,20309,43510,England
+E08000027,  Dudley,27389,18176,37270,England
+E08000028,  Sandwell,26274,19084,35640,England
+E08000029,  Solihull,33527,21576,48148,England
+E08000030,  Walsall,26442,x,x,England
+E08000031,  Wolverhampton,26282,19665,38099,England
+E10000034,Worcestershire,29452,19680,42197,England
+E07000234,  Bromsgrove,32839,20270,x,England
+E07000235,  Malvern Hills,31276,19848,x,England
+E07000236,  Redditch,26387,x,x,England
+E07000237,  Worcester,x,x,x,England
+E07000238,  Wychavon,28646,17671,38853,England
+E07000239,  Wyre Forest,26730,18910,x,England
+E12000006,East ,30798,19906,45467,England
+E06000055,Bedford UA,31021,x,x,England
+E06000056,Central Bedfordshire UA,33690,21364,47517,England
+E06000032,Luton UA,27362,17088,40564,England
+E06000031,Peterborough UA,28123,18036,39179,England
+E06000033,Southend-on-Sea UA,31923,x,x,England
+E06000034,Thurrock UA,32291,22712,47218,England
+E10000003,Cambridgeshire,32858,21945,46760,England
+E07000008,  Cambridge,34436,20354,51129,England
+E07000009,  East Cambridgeshire,x,x,x,England
+E07000010,  Fenland,x,x,x,England
+E07000011,  Huntingdonshire,31047,21923,42716,England
+E07000012,  South Cambridgeshire,36912,24838,51271,England
+E10000012,Essex,30668,19554,46729,England
+E07000066,  Basildon,31025,20885,46830,England
+E07000067,  Braintree,32477,20602,45216,England
+E07000068,  Brentwood,41512,24698,x,England
+E07000069,  Castle Point,30120,20176,x,England
+E07000070,  Chelmsford,30512,18494,48967,England
+E07000071,  Colchester,29978,17003,43267,England
+E07000072,  Epping Forest,33294,18030,x,England
+E07000073,  Harlow,27578,18526,x,England
+E07000074,  Maldon,28935,x,x,England
+E07000075,  Rochford,x,x,x,England
+E07000076,  Tendring,25735,15071,40260,England
+E07000077,  Uttlesford,x,x,x,England
+E10000015,Hertfordshire,34992,22157,51856,England
+E07000095,  Broxbourne,30995,21817,48671,England
+E07000096,  Dacorum,34046,21664,50259,England
+E07000242,  East Hertfordshire,41140,22615,61652,England
+E07000098,  Hertsmere,x,x,x,England
+E07000099,  North Hertfordshire,35900,23006,51531,England
+E07000240,  St Albans,39753,24451,x,England
+E07000243,  Stevenage,28136,18314,38253,England
+E07000102,  Three Rivers,34490,24495,x,England
+E07000103,  Watford,34316,22791,46904,England
+E07000241,  Welwyn Hatfield,34575,20374,45820,England
+E10000020,Norfolk,28007,17997,38896,England
+E07000143,  Breckland,27082,16390,35983,England
+E07000144,  Broadland,29946,19960,x,England
+E07000145,  Great Yarmouth,27577,16632,36668,England
+E07000146,  King's Lynn and West Norfolk,26573,17811,37857,England
+E07000147,  North Norfolk,x,x,x,England
+E07000148,  Norwich,28456,20539,41540,England
+E07000149,  South Norfolk,29209,18871,44128,England
+E10000029,Suffolk,28715,18015,41086,England
+E07000200,  Babergh,27306,19189,41103,England
+E07000202,  Ipswich,28657,19037,38082,England
+E07000203,  Mid Suffolk,x,14825,x,England
+E07000244,  East Suffolk,28580,17370,40688,England
+E07000245,  West Suffolk,29951,18952,42985,England
+E12000007,London ,36184,23042,54313,England
+E13000001,Inner London,38592,25181,58248,England
+E09000007,  Camden,39641,24471,58929,England
+E09000001,  City of London,x,x,x,England
+E09000012,  Hackney,34687,18770,54135,England
+E09000013,  Hammersmith and Fulham,40952,29269,63206,England
+E09000014,  Haringey,33906,19570,49436,England
+E09000019,  Islington,41335,28535,x,England
+E09000020,  Kensington and Chelsea,41892,26927,x,England
+E09000022,  Lambeth,40220,27459,x,England
+E09000023,  Lewisham,34730,x,51018,England
+E09000025,  Newham,32297,21134,47731,England
+E09000028,  Southwark,38306,24066,60261,England
+E09000030,  Tower Hamlets,x,27953,x,England
+E09000032,  Wandsworth,46010,29704,x,England
+E09000033,  Westminster,44995,28552,68317,England
+E13000002,Outer London,34747,21698,51588,England
+E09000002,  Barking and Dagenham,28372,18759,42459,England
+E09000003,  Barnet,33902,19280,49747,England
+E09000004,  Bexley,36730,23926,53636,England
+E09000005,  Brent,31710,20285,47290,England
+E09000006,  Bromley,39327,23739,58508,England
+E09000008,  Croydon,36502,24743,50800,England
+E09000009,  Ealing,32180,20988,48778,England
+E09000010,  Enfield,29746,15233,45916,England
+E09000011,  Greenwich,x,x,x,England
+E09000015,  Harrow,x,x,x,England
+E09000016,  Havering,35408,22280,49790,England
+E09000017,  Hillingdon,37466,24600,53905,England
+E09000018,  Hounslow,32234,x,46509,England
+E09000021,  Kingston upon Thames,35301,21658,58602,England
+E09000024,  Merton,34751,21920,54873,England
+E09000026,  Redbridge,34374,20849,48078,England
+E09000027,  Richmond upon Thames,x,x,x,England
+E09000029,  Sutton,32959,x,x,England
+E09000031,  Waltham Forest,34293,21353,53017,England
+E12000008,South East ,31800,21000,47247,England
+E06000036,Bracknell Forest UA,34284,20539,51103,England
+E06000043,Brighton and Hove UA,29144,x,x,England
+E06000060,Buckinghamshire UA,32934,21216,49832,England
+E06000046,Isle of Wight UA,25172,x,x,England
+E06000035,Medway UA,30091,21193,44819,England
+E06000042,Milton Keynes UA,31745,22213,46868,England
+E06000044,Portsmouth UA,28573,18751,40538,England
+E06000038,Reading UA,29927,20718,x,England
+E06000039,Slough UA,33370,22759,44759,England
+E06000045,Southampton UA,28539,19727,39135,England
+E06000037,West Berkshire UA,34706,23771,49498,England
+E06000040,Windsor and Maidenhead UA,x,x,x,England
+E06000041,Wokingham ,x,x,x,England
+E10000011,East Sussex,26842,16579,41035,England
+E07000061,  Eastbourne,29060,20101,43158,England
+E07000062,  Hastings,25897,16888,34779,England
+E07000063,  Lewes,27934,15335,x,England
+E07000064,  Rother,24796,14932,x,England
+E07000065,  Wealden,27817,14432,42434,England
+E10000014,Hampshire,32676,21787,47494,England
+E07000084,  Basingstoke and Deane,35793,24566,50553,England
+E07000085,  East Hampshire,33264,20680,x,England
+E07000086,  Eastleigh,30923,21449,45943,England
+E07000087,  Fareham,x,x,x,England
+E07000088,  Gosport,29189,20723,40675,England
+E07000089,  Hart,38455,26500,x,England
+E07000090,  Havant,28411,20492,x,England
+E07000091,  New Forest,31082,17589,43450,England
+E07000092,  Rushmoor,30140,20141,41326,England
+E07000093,  Test Valley,32576,23653,47536,England
+E07000094,  Winchester,x,x,x,England
+E10000016,Kent,30426,20225,45134,England
+E07000105,  Ashford,29344,21163,43065,England
+E07000106,  Canterbury,26534,16798,x,England
+E07000107,  Dartford,32413,22414,49004,England
+E07000108,  Dover,29702,16424,42352,England
+E07000109,  Gravesham,x,x,x,England
+E07000110,  Maidstone,30336,21687,43656,England
+E07000111,  Sevenoaks,x,x,x,England
+E07000112,  Folkestone and Hythe,x,x,x,England
+E07000113,  Swale,30274,17998,41727,England
+E07000114,  Thanet,27104,16881,39511,England
+E07000115,  Tonbridge and Malling,30972,20634,x,England
+E07000116,  Tunbridge Wells,32674,24961,x,England
+E10000025,Oxfordshire,33823,21942,46539,England
+E07000177,  Cherwell,33624,20924,46666,England
+E07000178,  Oxford,31475,18935,43870,England
+E07000179,  South Oxfordshire,37009,25138,49906,England
+E07000180,  Vale of White Horse,35749,24187,48548,England
+E07000181,  West Oxfordshire,x,x,x,England
+E10000030,Surrey,36762,23117,55051,England
+E07000207,  Elmbridge,36844,19832,x,England
+E07000208,  Epsom and Ewell,37146,24895,x,England
+E07000209,  Guildford,x,x,x,England
+E07000210,  Mole Valley,x,x,x,England
+E07000211,  Reigate and Banstead,38835,24659,55023,England
+E07000212,  Runnymede,37225,24286,x,England
+E07000213,  Spelthorne,35832,23368,48601,England
+E07000214,  Surrey Heath,40132,25949,57520,England
+E07000215,  Tandridge,33641,20611,50119,England
+E07000216,  Waverley,38149,21083,60112,England
+E07000217,  Woking,36166,22295,51864,England
+E10000032,West Sussex,30021,20052,44269,England
+E07000223,  Adur,26886,20302,x,England
+E07000224,  Arun,x,x,x,England
+E07000225,  Chichester,x,x,x,England
+E07000226,  Crawley,29348,x,x,England
+E07000227,  Horsham,32340,22140,47133,England
+E07000228,  Mid Sussex,35504,24951,53296,England
+E07000229,  Worthing,30542,21261,42657,England
+E12000009,South West ,28748,19275,41496,England
+E06000022,Bath and North East Somerset UA,29451,18545,45722,England
+E06000058,"Bournemouth, Christchurch and Poole UA",28805,19268,40537,England
+E06000023,"Bristol, City of UA",30867,21246,43060,England
+E06000059,Dorset UA,28913,20020,41214,England
+E06000024,North Somerset UA,31029,21347,43493,England
+E06000026,Plymouth UA,26820,18791,37739,England
+E06000025,South Gloucestershire UA,30894,21036,43797,England
+E06000030,Swindon UA,31683,21581,44875,England
+E06000027,Torbay UA,25422,18090,36447,England
+E06000052,Cornwall UA,27153,18143,38503,England
+E06000053,Isles of Scilly ,x,x,x,England
+E06000054,Wiltshire UA,29999,20505,43388,England
+E10000008,Devon,26336,17193,38038,England
+E07000040,  East Devon,28513,19624,x,England
+E07000041,  Exeter,27397,18307,41291,England
+E07000042,  Mid Devon,x,x,x,England
+E07000043,  North Devon,x,x,x,England
+E07000044,  South Hams,25971,14555,x,England
+E07000045,  Teignbridge,25415,18421,36288,England
+E07000046,  Torridge,x,x,x,England
+E07000047,  West Devon,22297,x,x,England
+E10000013,Gloucestershire,29685,19885,43145,England
+E07000078,  Cheltenham,31067,21773,47227,England
+E07000079,  Cotswold,29573,21111,45541,England
+E07000080,  Forest of Dean,31191,x,42586,England
+E07000081,  Gloucester,27653,19554,38315,England
+E07000082,  Stroud,30382,21534,44456,England
+E07000083,  Tewkesbury,27849,16336,40820,England
+E06000066,Somerset UA,26563,17683,38916,England
+W92000004,Wales  ,27852,19024,39815,Wales
+W06000001,Isle of Anglesey / Ynys Môn,29722,19990,40029,Wales
+W06000002,Gwynedd / Gwynedd,24340,15587,36505,Wales
+W06000003,Conwy / Conwy,26471,15662,38189,Wales
+W06000004,Denbighshire / Sir Ddinbych,23818,14375,33955,Wales
+W06000005,Flintshire / Sir y Fflint,28241,20321,41576,Wales
+W06000006,Wrexham / Wrecsam,27711,19828,38998,Wales
+W06000023,Powys / Powys,x,x,x,Wales
+W06000008,Ceredigion / Ceredigion,26675,16276,40715,Wales
+W06000009,Pembrokeshire / Sir Benfro,26805,16364,38924,Wales
+W06000010,Carmarthenshire / Sir Gaerfyrddin,28023,x,40334,Wales
+W06000011,Swansea / Abertawe,27010,18354,40173,Wales
+W06000012,Neath Port Talbot / Castell-nedd Port Talbot,28552,20215,39732,Wales
+W06000013,Bridgend / Pen-y-bont ar Ogwr,27439,19691,38176,Wales
+W06000014,Vale of Glamorgan / Bro Morgannwg,28000,19741,40786,Wales
+W06000015,Cardiff / Caerdydd,30230,21033,43095,Wales
+W06000016,Rhondda Cynon Taf / Rhondda Cynon Taf,27692,17823,38407,Wales
+W06000024,Merthyr Tydfil / Merthyr Tudful,27002,17985,x,Wales
+W06000018,Caerphilly / Caerffili,27880,x,x,Wales
+W06000019,Blaenau Gwent / Blaenau Gwent,27470,20242,36832,Wales
+W06000020,Torfaen / Torfaen,27773,20056,38523,Wales
+W06000021,Monmouthshire / Sir Fynwy,31380,20035,43501,Wales
+W06000022,Newport / Casnewydd,27764,20280,x,Wales
+S92000003,Scotland ,29842,20202,42542,Scotland
+S12000033,Aberdeen City,29958,21159,41847,Scotland
+S12000034,Aberdeenshire,29666,19122,43233,Scotland
+S12000041,Angus,28856,21162,40433,Scotland
+S12000035,Argyll and Bute,26121,15881,37789,Scotland
+S12000005,Clackmannanshire,x,x,x,Scotland
+S12000006,Dumfries and Galloway,25893,17435,36108,Scotland
+S12000042,Dundee City,27247,20102,35218,Scotland
+S12000008,East Ayrshire,28445,x,x,Scotland
+S12000045,East Dunbartonshire,35572,22954,49426,Scotland
+S12000010,East Lothian,30001,21856,43526,Scotland
+S12000011,East Renfrewshire,38762,24000,51616,Scotland
+S12000036,City of Edinburgh,32240,22157,47578,Scotland
+S12000014,Falkirk,30316,21662,40655,Scotland
+S12000047,Fife,28242,19500,41619,Scotland
+S12000049,Glasgow City,28836,18586,41626,Scotland
+S12000017,Highland,29049,19051,42101,Scotland
+S12000018,Inverclyde,x,x,x,Scotland
+S12000019,Midlothian,30599,22632,44375,Scotland
+S12000020,Moray,26750,14142,42574,Scotland
+S12000013,Na h-Eileanan Siar,x,x,x,Scotland
+S12000021,North Ayrshire,29885,20606,41290,Scotland
+S12000050,North Lanarkshire,30480,20819,41590,Scotland
+S12000023,Orkney Islands,x,x,x,Scotland
+S12000048,Perth and Kinross,x,x,x,Scotland
+S12000038,Renfrewshire,31009,21104,42931,Scotland
+S12000026,Scottish Borders,27641,18293,37653,Scotland
+S12000027,Shetland Islands,32705,x,x,Scotland
+S12000028,South Ayrshire,27575,17671,45334,Scotland
+S12000029,South Lanarkshire,32372,21336,44727,Scotland
+S12000030,Stirling,30774,19918,x,Scotland
+S12000039,West Dunbartonshire,29659,21633,43414,Scotland
+S12000040,West Lothian,31788,21655,43456,Scotland
+N92000002,Northern Ireland ,27173,18442,40308,Northern Ireland
