@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "GDP Per Capita",
+    "subtitle": ["Current International USD, PPP", "Source: World Bank"]
+  },
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {"Country": "Denmark", "GDP Per Capita": 74897.0},
+      {"Country": "United States", "GDP Per Capita": 76329.6},
+      {"Country": "Netherlands", "GDP Per Capita": 70869.4},
+      {"Country": "France", "GDP Per Capita":       55387.5},
+      {"Country": "United Kingdom", "GDP Per Capita": 54929.8},
+      {"Country": "Italy", "GDP Per Capita": 52804.0}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Country", "type": "nominal", "axis":{"title":null}, "sort":"y"},
+    "y": {"field": "GDP Per Capita", "type": "quantitative", "axis":{"format":"$,.0r"}}
+  },
+  "width": 400,
+  "height": 300
+}
