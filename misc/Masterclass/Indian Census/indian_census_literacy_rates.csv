@@ -1,1924 +1,1921 @@
-State,Distt,Area Name,gender,value
-1.0,1.0,District - Kupwara,male,0.7341243554036299
-1.0,2.0,District - Badgam,male,0.6261030439926858
-1.0,3.0,District - Leh(Ladakh),male,0.8571340542872108
-1.0,4.0,District - Kargil,male,0.8170840947364649
-1.0,5.0,District - Punch,male,0.758391508986954
-1.0,6.0,District - Rajouri,male,0.7559462254395036
-1.0,7.0,District - Kathua,male,0.791432508859219
-1.0,8.0,District - Baramula,male,0.7222271245783578
-1.0,9.0,District - Bandipore,male,0.627177184950706
-1.0,10.0,District - Srinagar,male,0.7418563362305899
-1.0,11.0,District - Ganderbal,male,0.6574230136225734
-1.0,12.0,District - Pulwama,male,0.7207507383010631
-1.0,13.0,District - Shupiyan,male,0.6581899775617053
-1.0,14.0,District - Anantnag,male,0.6921121189306756
-1.0,15.0,District - Kulgam,male,0.6602198769313754
-1.0,16.0,District - Doda,male,0.7535348628377533
-1.0,17.0,District - Ramban,male,0.6371453138435081
-1.0,18.0,District - Kishtwar,male,0.6416088729236861
-1.0,19.0,District - Udhampur,male,0.7540798931302276
-1.0,20.0,District - Reasi,male,0.637578264225744
-1.0,21.0,District - Jammu,male,0.8823910853061184
-1.0,22.0,District - Samba,male,0.8709894491983052
-2.0,23.0,District - Chamba,male,0.7983504582060539
-2.0,24.0,District - Kangra,male,0.9052174404136205
-2.0,25.0,District - Lahul & Spiti,male,0.8467040996846397
-2.0,26.0,District - Kullu,male,0.8584795602968237
-2.0,27.0,District - Mandi,male,0.8816028091263584
-2.0,28.0,District - Hamirpur,male,0.9373707946644955
-2.0,29.0,District - Una,male,0.9116509028374893
-2.0,30.0,District - Bilaspur,male,0.9021702674753347
-2.0,31.0,District - Solan,male,0.8850127389092692
-2.0,32.0,District - Sirmaur,male,0.8339979983062591
-2.0,33.0,District - Shimla,male,0.8868856957002939
-2.0,34.0,District - Kinnaur,male,0.8616972165648337
-3.0,35.0,District - Gurdaspur,male,0.8271551334237901
-3.0,36.0,District - Kapurthala ,male,0.8132057118152688
-3.0,37.0,District - Jalandhar,male,0.8497382565202691
-3.0,38.0,District - Hoshiarpur,male,0.8786467333203343
-3.0,39.0,District - Shahid Bhagat Singh Nagar ,male,0.838471229495552
-3.0,40.0,District - Fatehgarh Sahib,male,0.8156138716011582
-3.0,41.0,District - Ludhiana,male,0.8503399693014678
-3.0,42.0,District - Moga,male,0.7148619569995861
-3.0,43.0,District - Firozpur,male,0.7231886798399042
-3.0,44.0,District - Muktsar,male,0.6846856242323113
-3.0,45.0,District - Faridkot,male,0.7153
-3.0,46.0,District - Bathinda,male,0.7067710137397529
-3.0,47.0,District - Mansa,male,0.6262115268001621
-3.0,48.0,District - Patiala,male,0.7784540697958718
-3.0,49.0,District - Amritsar ,male,0.7822970420403056
-3.0,50.0,District - Tarn Taran,male,0.6954086667264717
-3.0,51.0,District - Rupnagar,male,0.8633890099432409
-3.0,52.0,District - Sahibzada Ajit Singh Nagar,male,0.8708605858189147
-3.0,53.0,District - Sangrur,male,0.6947174275953704
-3.0,54.0,District - Barnala,male,0.6765432520193378
-4.0,55.0,District - Chandigarh,male,0.8940152000018352
-5.0,56.0,District - Uttarkashi,male,0.8737815456707982
-5.0,57.0,District - Chamoli,male,0.9263169111099272
-5.0,58.0,District - Rudraprayag,male,0.9332197252103526
-5.0,59.0,District - Tehri Garhwal,male,0.8789293543450387
-5.0,60.0,District - Dehradun,male,0.8844461464993829
-5.0,61.0,District - Garhwal,male,0.9193720339173658
-5.0,62.0,District - Pithoragarh,male,0.919167917809239
-5.0,63.0,District - Bageshwar,male,0.9137013473959216
-5.0,64.0,"District - Almora
-",male,0.918871642374634
-5.0,65.0,District - Champawat,male,0.9047280027077181
-5.0,66.0,District - Nainital,male,0.8936748246876887
-5.0,67.0,District - Udham Singh Nagar,male,0.7858359456635319
-5.0,68.0,District - Hardwar,male,0.7928290094233011
-6.0,69.0,District - Panchkula,male,0.8643402868377805
-6.0,70.0,District - Ambala,male,0.8592679402428063
-6.0,71.0,District - Yamunanagar,male,0.8175464632694266
-6.0,72.0,District - Kurukshetra,male,0.8071982599417244
-6.0,73.0,District - Kaithal,male,0.7408556278259302
-6.0,74.0,District - Karnal,male,0.7970338094837116
-6.0,75.0,District - Panipat,male,0.8204969028533624
-6.0,76.0,District - Sonipat,male,0.8569097182835753
-6.0,77.0,District - Jind,male,0.7751483430362741
-6.0,78.0,District - Fatehabad,male,0.7229063646976689
-6.0,79.0,District - Sirsa,male,0.729684970429841
-6.0,80.0,District - Hisar,male,0.7979278528690861
-6.0,81.0,District - Bhiwani,male,0.8331947871301065
-6.0,82.0,District - Rohtak,male,0.8616809701630131
-6.0,83.0,District - Jhajjar,male,0.8800606898670968
-6.0,84.0,District - Mahendragarh,male,0.8827901390089206
-6.0,85.0,District - Rewari,male,0.9068607531688053
-6.0,86.0,District - Gurgaon,male,0.9006127002612607
-6.0,87.0,District - Mewat ,male,0.6476401199511703
-6.0,88.0,District - Faridabad,male,0.8812469171743744
-6.0,89.0,District - Palwal ,male,0.8002553754510237
-7.0,90.0,District - North West,male,0.8897869219045991
-7.0,91.0,District - North,male,0.9032880844645551
-7.0,92.0,District - North East,male,0.8790629575402635
-7.0,93.0,District - East,male,0.9277453633069515
-7.0,94.0,District - New Delhi,male,0.917869830199133
-7.0,95.0,District - Central,male,0.8663754897552829
-7.0,96.0,District - West,male,0.9066108933364954
-7.0,97.0,District - South West,male,0.9300391687520401
-7.0,98.0,District - South,male,0.9133306141168687
-8.0,99.0,District - Ganganagar ,male,0.7544136108951244
-8.0,100.0,District - Hanumangarh,male,0.7368481161977891
-8.0,101.0,District - Bikaner,male,0.728951006897686
-8.0,102.0,District - Churu,male,0.7513271930072195
-8.0,103.0,District - Jhunjhunun,male,0.8462164773240427
-8.0,104.0,District - Alwar,male,0.8087115957587966
-8.0,105.0,District - Bharatpur,male,0.8186652611725556
-8.0,106.0,District - Dhaulpur,male,0.7795619582144941
-8.0,107.0,District - Karauli,male,0.7798336023842046
-8.0,108.0,District - Sawai Madhopur,male,0.7823957944465911
-8.0,109.0,District - Dausa,male,0.7962854260295331
-8.0,110.0,District - Jaipur,male,0.8429242603763207
-8.0,111.0,District - Sikar,male,0.8272950472759021
-8.0,112.0,District - Nagaur,male,0.7324778322814903
-8.0,113.0,District - Jodhpur,male,0.7630546141680531
-8.0,114.0,District - Jaisalmer,male,0.6862426525857762
-8.0,115.0,District - Barmer,male,0.6547762369762637
-8.0,116.0,District - Jalor,male,0.6458163447608569
-8.0,117.0,District - Sirohi,male,0.6610813513748199
-8.0,118.0,District - Pali,male,0.7270310392379976
-8.0,119.0,District - Ajmer,male,0.8065045397351294
-8.0,120.0,District - Tonk,male,0.7319418313358211
-8.0,121.0,District - Bundi,male,0.7161769907821636
-8.0,122.0,District - Bhilwara,male,0.7148058057526316
-8.0,123.0,District - Rajsamand,male,0.7485981159949803
-8.0,124.0,District - Dungarpur,male,0.6812108730502346
-8.0,125.0,District - Banswara,male,0.6447661047447504
-8.0,126.0,District - Chittaurgarh,male,0.7347983578845689
-8.0,127.0,District - Kota,male,0.8536765443380772
-8.0,128.0,District - Baran,male,0.7763444358847988
-8.0,129.0,District - Jhalawar,male,0.7196424533722771
-8.0,130.0,District - Udaipur,male,0.7227224741964989
-8.0,131.0,District - Pratapgarh,male,0.6543241909843405
-9.0,132.0,District - Saharanpur,male,0.7560351228790112
-9.0,133.0,District - Muzaffarnagar,male,0.7614584477186455
-9.0,134.0,District - Bijnor,male,0.7358348497207755
-9.0,135.0,District - Moradabad,male,0.6114186926931746
-9.0,136.0,District - Rampur,male,0.5641079551465144
-9.0,137.0,District - Jyotiba Phule Nagar,male,0.70528981174922
-9.0,138.0,District - Meerut,male,0.7984562614270518
-9.0,139.0,District - Baghpat,male,0.8071107683324836
-9.0,140.0,District - Ghaziabad,male,0.8491080896867869
-9.0,141.0,District - Gautam Buddha Nagar,male,0.8770490166051906
-9.0,142.0,District - Bulandshahr ,male,0.7917731639556338
-9.0,143.0,District - Aligarh,male,0.7652466121533713
-9.0,144.0,District - Mahamaya Nagar,male,0.8064049676249578
-9.0,145.0,District - Mathura,male,0.8021860749055821
-9.0,146.0,District - Agra,male,0.7941659106149659
-9.0,147.0,District - Firozabad,male,0.795222092515948
-9.0,148.0,District - Mainpuri,male,0.8301019533051031
-9.0,149.0,District - Budaun,male,0.55924729541832
-9.0,150.0,District - Bareilly,male,0.64409708148566
-9.0,151.0,District - Pilibhit,male,0.6784292559825538
-9.0,152.0,District - Shahjahanpur,male,0.6396300695502178
-9.0,153.0,District - Kheri,male,0.6556726263769553
-9.0,154.0,District - Sitapur,male,0.6623836025208892
-9.0,155.0,District - Hardoi,male,0.7073251719728926
-9.0,156.0,District - Unnao,male,0.7196369544098803
-9.0,157.0,District - Lucknow,male,0.816382838198727
-9.0,158.0,District - Rae Bareli,male,0.7440785304945424
-9.0,159.0,District - Farrukhabad,male,0.7531495324179777
-9.0,160.0,District - Kannauj,male,0.7882618062599688
-9.0,161.0,District - Etawah,male,0.843317432183312
-9.0,162.0,District - Auraiya,male,0.8418718006240695
-9.0,163.0,District - Kanpur Dehat,male,0.8101739898371071
-9.0,164.0,District - Kanpur Nagar,male,0.8263327641813698
-9.0,165.0,District - Jalaun ,male,0.8165400371360809
-9.0,166.0,District - Jhansi,male,0.8378765439472652
-9.0,167.0,District - Lalitpur,male,0.7013952669124215
-9.0,168.0,District - Hamirpur,male,0.7684182809855181
-9.0,169.0,District - Mahoba,male,0.7224488996533467
-9.0,170.0,District - Banda,male,0.7415912860866652
-9.0,171.0,District - Chitrakoot,male,0.7107700901515974
-9.0,172.0,District - Fatehpur,male,0.7399697169615054
-9.0,173.0,District - Pratapgarh,male,0.7891979487219707
-9.0,174.0,District - Kaushambi,male,0.6858101586917823
-9.0,175.0,District - Allahabad ,male,0.8046904249832797
-9.0,176.0,District - Bara Banki,male,0.6621700498195336
-9.0,177.0,District - Faizabad,male,0.7481159799902816
-9.0,178.0,District - Ambedkar Nagar,male,0.7846360649716361
-9.0,179.0,District - Sultanpur,male,0.7695884804102867
-9.0,180.0,District - Bahraich,male,0.5405224858112396
-9.0,181.0,District - Shrawasti,male,0.5136008150972127
-9.0,182.0,District - Balrampur,male,0.5506888468809074
-9.0,183.0,District - Gonda,male,0.6523860935203498
-9.0,184.0,District - Siddharthnagar,male,0.6592324437250321
-9.0,185.0,District - Basti,male,0.7392108468532624
-9.0,186.0,District - Sant Kabir Nagar,male,0.7472076611384759
-9.0,187.0,District - Mahrajganj,male,0.7203098464631061
-9.0,188.0,District - Gorakhpur,male,0.7972219930247956
-9.0,189.0,District - Kushinagar,male,0.7463662656493061
-9.0,190.0,District - Deoria,male,0.8059305461656453
-9.0,191.0,District - Azamgarh,male,0.7788218501888251
-9.0,192.0,District - Mau,male,0.7975243947810323
-9.0,193.0,District - Ballia,male,0.7914445614229512
-9.0,194.0,District - Jaunpur,male,0.809320168679679
-9.0,195.0,District - Ghazipur,male,0.8029085885520524
-9.0,196.0,District - Chandauli,male,0.7918489917167932
-9.0,197.0,District - Varanasi,male,0.8218371951082375
-9.0,198.0,District - Sant Ravidas Nagar (Bhadohi),male,0.7872514669426072
-9.0,199.0,District - Mirzapur,male,0.7536458364758624
-9.0,200.0,District - Sonbhadra,male,0.7090472698179878
-9.0,201.0,District - Etah,male,0.792614159008245
-9.0,202.0,District - Kanshiram Nagar,male,0.6896485993878815
-10.0,203.0,District - Pashchim Champaran,male,0.604126295740812
-10.0,204.0,District - Purba Champaran,male,0.5987430620519628
-10.0,205.0,District - Sheohar,male,0.5574077073731022
-10.0,206.0,District - Sitamarhi,male,0.5591316546681199
-10.0,207.0,District - Madhubani,male,0.6535321009625779
-10.0,208.0,District - Supaul,male,0.6367417677642981
-10.0,209.0,District - Araria,male,0.5664318181818182
-10.0,210.0,District - Kishanganj,male,0.5716073327910905
-10.0,211.0,District - Purnia,male,0.5362187420528496
-10.0,212.0,District - Katihar,male,0.5366670865619513
-10.0,213.0,District - Madhepura,male,0.5642970157489213
-10.0,214.0,District - Saharsa,male,0.5900749976841778
-10.0,215.0,District - Darbhanga,male,0.6303655515054029
-10.0,216.0,District - Muzaffarpur,male,0.6781504661007444
-10.0,217.0,District - Gopalganj,male,0.7232486062502352
-10.0,218.0,District - Siwan,male,0.7685685352721718
-10.0,219.0,District - Saran,male,0.7440829963073676
-10.0,220.0,District - Vaishali,male,0.7183165416394254
-10.0,221.0,District - Samastipur,male,0.6666439889756185
-10.0,222.0,District - Begusarai,male,0.680569110911348
-10.0,223.0,District - Khagaria,male,0.6089717147035778
-10.0,224.0,District - Bhagalpur,male,0.6719133745308977
-10.0,225.0,District - Banka,male,0.634795622831856
-10.0,226.0,District - Munger,male,0.7567597436086347
-10.0,227.0,District - Lakhisarai,male,0.6722325214822
-10.0,228.0,District - Sheikhpura,male,0.6992805904226984
-10.0,229.0,District - Nalanda,male,0.7216962624650626
-10.0,230.0,District - Patna,male,0.7745229813689761
-10.0,231.0,District - Bhojpur,male,0.8029611116485089
-10.0,232.0,District - Buxar,male,0.7819838168107007
-10.0,233.0,District - Kaimur (Bhabua),male,0.7617871784395349
-10.0,234.0,District - Rohtas,male,0.8058159998905976
-10.0,235.0,District - Aurangabad,male,0.7733135800495164
-10.0,236.0,District - Gaya,male,0.6983659807115324
-10.0,237.0,District - Nawada,male,0.6676528297929057
-10.0,238.0,District - Jamui,male,0.6645290227879433
-10.0,239.0,District - Jehanabad ,male,0.7485385221896823
-10.0,240.0,District - Arwal,male,0.7615856884818187
-11.0,241.0,District - North  District,male,0.8228847703464948
-11.0,242.0,District - West District,male,0.8151101527695844
-11.0,243.0,District - South District,male,0.8474490806605558
-11.0,244.0,District - East District,male,0.8780549082119744
-12.0,245.0,District - Tawang,male,0.6577833236775258
-12.0,246.0,District - West Kameng,male,0.7233803671673494
-12.0,247.0,District - East Kameng,male,0.6299461855017411
-12.0,248.0,District - Papum Pare,male,0.856606454231784
-12.0,249.0,District - Upper Subansiri,male,0.6696016610273762
-12.0,250.0,District - West Siang,male,0.7209783775494556
-12.0,251.0,District - East Siang,male,0.7777384742365288
-12.0,252.0,District - Upper Siang,male,0.6593441327538523
-12.0,253.0,District - Changlang,male,0.6691997392225573
-12.0,254.0,District - Tirap,male,0.6110292450691454
-12.0,255.0,District - Lower Subansiri,male,0.800785153461813
-12.0,256.0,District - Kurung Kumey,male,0.5085948588550702
-12.0,257.0,District - Dibang Valley,male,0.6579457364341085
-12.0,258.0,District - Lower Dibang Valley,male,0.7315020900059714
-12.0,259.0,District - Lohit,male,0.7322716285116496
-12.0,260.0,District - Anjaw,male,0.6266077170418006
-13.0,261.0,District - Mon,male,0.5947238132220173
-13.0,262.0,District - Mokokchung,male,0.9233295474760191
-13.0,263.0,District - Zunheboto,male,0.8772184855717076
-13.0,264.0,District - Wokha,male,0.9102933607822954
-13.0,265.0,District - Dimapur ,male,0.8804858819750635
-13.0,266.0,District - Phek,male,0.8271372213692987
-13.0,267.0,District - Tuensang,male,0.7666787407797682
-13.0,268.0,District - Longleng,male,0.7299144246752447
-13.0,269.0,District - Kiphire,male,0.7379195098175741
-13.0,270.0,District - Kohima,male,0.8905234061711462
-13.0,271.0,District - Peren,male,0.8358228132729434
-14.0,272.0,District - Senapati,male,0.6759679613117727
-14.0,273.0,District - Tamenglong ,male,0.765897603130605
-14.0,274.0,District - Churachandpur,male,0.8739848431073718
-14.0,275.0,District - Bishnupur,male,0.8491924711596843
-14.0,276.0,District - Thoubal,male,0.8506235827664399
-14.0,277.0,District - Imphal West,male,0.9267108478782723
-14.0,278.0,District - Imphal East,male,0.8943989191782724
-14.0,279.0,District - Ukhrul,male,0.8708076472883339
-14.0,280.0,District - Chandel,male,0.7809121527325505
-15.0,281.0,District - Mamit,male,0.8836100379381157
-15.0,282.0,District - Kolasib,male,0.9452822959841176
-15.0,283.0,District - Aizawl,male,0.9832413996378795
-15.0,284.0,District - Champhai,male,0.9759951894167168
-15.0,285.0,District - Serchhip,male,0.984244629859755
-15.0,286.0,District - Lunglei,male,0.9214266316647054
-15.0,287.0,District - Lawngtlai,male,0.7392210463637102
-15.0,288.0,District - Saiha,male,0.9371110743983699
-16.0,289.0,District - West Tripura ,male,0.9198285391511382
-16.0,290.0,District - South Tripura ,male,0.889687241145611
-16.0,291.0,District - Dhalai,male,0.9064026372695791
-16.0,292.0,District - North Tripura,male,0.9067949980186533
-17.0,293.0,District - West Garo Hills,male,0.7192543872702202
-17.0,294.0,District - East Garo Hills,male,0.7938165271796539
-17.0,295.0,District - South Garo Hills,male,0.767614254624592
-17.0,296.0,District - West Khasi Hills,male,0.782703172533681
-17.0,297.0,District - Ribhoi,male,0.7558914202110983
-17.0,298.0,District - East Khasi Hills,male,0.8381900376470948
-17.0,299.0,District - Jaintia Hills,male,0.5366932832315641
-18.0,300.0,District - Kokrajhar,male,0.6881191596992904
-18.0,301.0,District - Dhubri,male,0.6029574928012927
-18.0,302.0,District - Goalpara,male,0.689130036070184
-18.0,303.0,District - Barpeta,male,0.6672405941510198
-18.0,304.0,District - Morigaon,male,0.6896424766304897
-18.0,305.0,District - Nagaon,male,0.7384084335219998
-18.0,306.0,District - Sonitpur,male,0.7123330059599887
-18.0,307.0,District - Lakhimpur,male,0.8153809050929209
-18.0,308.0,District - Dhemaji,male,0.7762897448447023
-18.0,309.0,District - Tinsukia,male,0.752414555728138
-18.0,310.0,District - Dibrugarh,male,0.814778633032327
-18.0,311.0,District - Sivasagar,male,0.8476925325563194
-18.0,312.0,District - Jorhat,male,0.8658004722463151
-18.0,313.0,District - Golaghat,male,0.8168088781866722
-18.0,314.0,District - Karbi Anglong,male,0.7380995707939058
-18.0,315.0,District - Dima Hasao,male,0.8201051071284193
-18.0,316.0,District - Cachar,male,0.8356139767054909
-18.0,317.0,District - Karimganj,male,0.8273986805605749
-18.0,318.0,District - Hailakandi,male,0.7911909850936437
-18.0,319.0,District - Bongaigaon,male,0.7239203344945474
-18.0,320.0,District - Chirang,male,0.6701082897684839
-18.0,321.0,District - Kamrup,male,0.8014137990611433
-18.0,322.0,District - Kamrup Metropolitan,male,0.9202728118468162
-18.0,323.0,District - Nalbari,male,0.8359399293286219
-18.0,324.0,District - Baksa,male,0.7449501291618829
-18.0,325.0,District - Darrang,male,0.6600427336292494
-18.0,326.0,District - Udalguri,male,0.6988437026426688
-19.0,327.0,District - Darjiling ,male,0.8403966390153768
-19.0,328.0,District - Jalpaiguri ,male,0.7723518072120549
-19.0,329.0,District - Koch Bihar ,male,0.7800513106911371
-19.0,330.0,District - Uttar Dinajpur,male,0.613960676306327
-19.0,331.0,District - Dakshin Dinajpur,male,0.7510913424483636
-19.0,332.0,District - Maldah ,male,0.6212684574036927
-19.0,333.0,District - Murshidabad ,male,0.6529059820324398
-19.0,334.0,District - Birbhum,male,0.7408255142889616
-19.0,335.0,District - Barddhaman ,male,0.8053913461088339
-19.0,336.0,District - Nadia ,male,0.7585336066776976
-19.0,337.0,District - North Twenty Four Parganas,male,0.8671489637391199
-19.0,338.0,District - Hugli ,male,0.8570656359971773
-19.0,339.0,District - Bankura ,male,0.7761691547106229
-19.0,340.0,District - Puruliya,male,0.7509412716163558
-19.0,341.0,District - Haora ,male,0.8590265962922907
-19.0,342.0,District - Kolkata,male,0.8793006271873014
-19.0,343.0,District - South Twenty Four Parganas,male,0.8229733130104995
-19.0,344.0,District - Paschim Medinipur,male,0.8375660088701373
-19.0,345.0,District - Purba Medinipur,male,0.9163093133111748
-20.0,346.0,District - Garhwa ,male,0.6630634650557274
-20.0,347.0,District - Chatra,male,0.6368578659731285
-20.0,348.0,District - Kodarma,male,0.7608410163550878
-20.0,349.0,District - Giridih,male,0.7268947243983204
-20.0,350.0,District - Deoghar,male,0.7301185114515639
-20.0,351.0,District - Godda,male,0.6343136525431254
-20.0,352.0,District - Sahibganj,male,0.5339199481261127
-20.0,353.0,District - Pakur,male,0.5106637514954003
-20.0,354.0,District - Dhanbad,male,0.8210020570146711
-20.0,355.0,District - Bokaro,male,0.7994832914280651
-20.0,356.0,District - Lohardaga,male,0.729244487287625
-20.0,357.0,District - Purbi Singhbhum,male,0.8201335096894292
-20.0,358.0,District - Palamu,male,0.6949428142794922
-20.0,359.0,District - Latehar,male,0.6440587930970769
-20.0,360.0,District - Hazaribagh,male,0.76289741732015
-20.0,361.0,District - Ramgarh,male,0.7968040045044638
-20.0,362.0,District - Dumka,male,0.6932556388881145
-20.0,363.0,District - Jamtara,male,0.7362194035386928
-20.0,364.0,District - Ranchi,male,0.8239970132683588
-20.0,365.0,District - Khunti,male,0.711349324276516
-20.0,366.0,District - Gumla,male,0.7213757473622973
-20.0,367.0,District - Simdega,male,0.737152416089819
-20.0,368.0,District - Pashchimi Singhbhum,male,0.6855899805080822
-20.0,369.0,District - Saraikela-Kharsawan,male,0.7613496545846659
-21.0,370.0,District - Bargarh,male,0.8198174044840998
-21.0,371.0,District - Jharsuguda,male,0.8521664327432427
-21.0,372.0,District - Sambalpur,male,0.8272067069350885
-21.0,373.0,District - Debagarh,male,0.7995273445604034
-21.0,374.0,District - Sundargarh,male,0.7901568372265972
-21.0,375.0,District - Kendujhar,male,0.7668250210674609
-21.0,376.0,District - Mayurbhanj,male,0.7090296774650966
-21.0,377.0,District - Baleshwar,male,0.8592072138702015
-21.0,378.0,District - Bhadrak,male,0.8881543892367124
-21.0,379.0,District - Kendrapara ,male,0.9060863698740408
-21.0,380.0,District - Jagatsinghapur ,male,0.9164815637494447
-21.0,381.0,District - Cuttack,male,0.9046577235304277
-21.0,382.0,District - Jajapur  ,male,0.8570643202364706
-21.0,383.0,District - Dhenkanal,male,0.8477279546441798
-21.0,384.0,District - Anugul  ,male,0.8448680089866222
-21.0,385.0,District - Nayagarh  ,male,0.8694721285384062
-21.0,386.0,District - Khordha ,male,0.9128476815161043
-21.0,387.0,District - Puri,male,0.9007060974990264
-21.0,388.0,District - Ganjam,male,0.7876242675581241
-21.0,389.0,District - Gajapati,male,0.5980442418028317
-21.0,390.0,District - Kandhamal,male,0.7377043551412299
-21.0,391.0,District - Baudh,male,0.8077520723989143
-21.0,392.0,District - Subarnapur,male,0.826020568953043
-21.0,393.0,District - Balangir,male,0.7318132520084725
-21.0,394.0,District - Nuapada,male,0.6572492420600269
-21.0,395.0,District - Kalahandi,male,0.6816706352772037
-21.0,396.0,District - Rayagada  ,male,0.5606134122873901
-21.0,397.0,District - Nabarangapur ,male,0.5137592612926333
-21.0,398.0,District - Koraput,male,0.5505339896623616
-21.0,399.0,District - Malkangiri  ,male,0.5274076823158286
-22.0,400.0,District - Koriya,male,0.7773610757353523
-22.0,401.0,District - Surguja,male,0.6425130797703874
-22.0,402.0,District - Jashpur ,male,0.7372944359163219
-22.0,403.0,District - Raigarh,male,0.8108555664769886
-22.0,404.0,District - Korba ,male,0.8031903494192221
-22.0,405.0,District - Janjgir - Champa,male,0.826289958304378
-22.0,406.0,District - Bilaspur,male,0.7932682125476107
-22.0,407.0,District - Kabeerdham,male,0.6818676851809243
-22.0,408.0,District - Rajnandgaon,male,0.8329318990107306
-22.0,409.0,District - Durg,male,0.8645425871241486
-22.0,410.0,District - Raipur,male,0.83511145425515
-22.0,411.0,District - Mahasamund,male,0.7942127139912163
-22.0,412.0,District - Dhamtari ,male,0.8601970221890799
-22.0,413.0,District - Uttar Bastar Kanker,male,0.771387190340282
-22.0,414.0,District - Bastar,male,0.5952397528500566
-22.0,415.0,District - Narayanpur,male,0.5222510944120607
-22.0,416.0,District - Dakshin Bastar Dantewada,male,0.4633011226374876
-22.0,417.0,District - Bijapur,male,0.4569233347513891
-23.0,418.0,District - Sheopur ,male,0.6349815615913765
-23.0,419.0,District - Morena,male,0.8019845255635027
-23.0,420.0,District - Bhind,male,0.8311142753135299
-23.0,421.0,District - Gwalior,male,0.8312558200970842
-23.0,422.0,District - Datia,male,0.8189208904363026
-23.0,423.0,District - Shivpuri,male,0.7028517269636951
-23.0,424.0,District - Tikamgarh,male,0.6687008631590522
-23.0,425.0,District - Chhatarpur,male,0.6823540806647697
-23.0,426.0,District - Panna,male,0.6950383526685537
-23.0,427.0,District - Sagar,male,0.8290598493922522
-23.0,428.0,District - Damoh,male,0.7605704232715238
-23.0,429.0,District - Satna,male,0.7799767614871597
-23.0,430.0,District - Rewa,male,0.7832171247389064
-23.0,431.0,District - Umaria,male,0.7135788972051692
-23.0,432.0,District - Neemuch ,male,0.8185682660835789
-23.0,433.0,District - Mandsaur,male,0.82851781804551
-23.0,434.0,District - Ratlam,male,0.7469553062907639
-23.0,435.0,District - Ujjain,male,0.8121135203349968
-23.0,436.0,District - Shajapur,male,0.7816556616014533
-23.0,437.0,District - Dewas,male,0.7762502423672946
-23.0,438.0,District - Dhar,male,0.6446885771167717
-23.0,439.0,District - Indore,male,0.8651273128536181
-23.0,440.0,District - Khargone (West Nimar),male,0.6915070624654722
-23.0,441.0,District - Barwani ,male,0.49860244480934135
-23.0,442.0,District - Rajgarh,male,0.6806222982482899
-23.0,443.0,District - Vidisha,male,0.7578571197437184
-23.0,444.0,District - Bhopal,male,0.8448994007337025
-23.0,445.0,District - Sehore,male,0.7770447841244301
-23.0,446.0,District - Raisen,male,0.7779558812304405
-23.0,447.0,District - Betul,male,0.732033205383659
-23.0,448.0,District - Harda ,male,0.7878120933636955
-23.0,449.0,District - Hoshangabad,male,0.8120844640621446
-23.0,450.0,District - Katni ,male,0.7932407694129219
-23.0,451.0,District - Jabalpur,male,0.8614236535785648
-23.0,452.0,District - Narsimhapur,male,0.8125821685256192
-23.0,453.0,District - Dindori ,male,0.7130159435586911
-23.0,454.0,District - Mandla,male,0.7390533534035791
-23.0,455.0,District - Chhindwara,male,0.758887391474762
-23.0,456.0,District - Seoni,male,0.7728181143466056
-23.0,457.0,District - Balaghat,male,0.8326465985952463
-23.0,458.0,District - Guna,male,0.6935888002620508
-23.0,459.0,District - Ashoknagar,male,0.7461010075272585
-23.0,460.0,District - Shahdol,male,0.7170005892751915
-23.0,461.0,District - Anuppur,male,0.7451101048802198
-23.0,462.0,District - Sidhi,male,0.6903172305227205
-23.0,463.0,District - Singrauli,male,0.6569874403676301
-23.0,464.0,District - Jhabua,male,0.4557080876937629
-23.0,465.0,District - Alirajpur,male,0.3400634668782229
-23.0,466.0,District - Khandwa (East Nimar),male,0.7348659546195541
-23.0,467.0,District - Burhanpur,male,0.699504492154128
-24.0,468.0,District - Kachchh,male,0.7691316307749312
-24.0,469.0,District - Banas Kantha,male,0.7375742641730705
-24.0,470.0,District - Patan  ,male,0.8021070101381823
-24.0,471.0,District - Mahesana,male,0.9041592208364644
-24.0,472.0,District - Sabar Kantha,male,0.8480104987497266
-24.0,473.0,District - Gandhinagar,male,0.9116680171316125
-24.0,474.0,District - Ahmadabad,male,0.9013838243286448
-24.0,475.0,District - Surendranagar,male,0.7927026206486703
-24.0,476.0,District - Rajkot,male,0.8576446778846087
-24.0,477.0,District - Jamnagar,male,0.793291187028332
-24.0,478.0,District - Porbandar ,male,0.8157032599930883
-24.0,479.0,District - Junagadh,male,0.8203638049634476
-24.0,480.0,District - Amreli,male,0.7969144531313818
-24.0,481.0,District - Bhavnagar,male,0.8213589611121548
-24.0,482.0,District - Anand  ,male,0.9112677012894983
-24.0,483.0,District - Kheda,male,0.9035996748788876
-24.0,484.0,District - Panch Mahals,male,0.7984270100098251
-24.0,485.0,District - Dohad  ,male,0.6430926736779361
-24.0,486.0,District - Vadodara,male,0.8429667831269588
-24.0,487.0,District - Narmada,male,0.7849138619564638
-24.0,488.0,District - Bharuch,male,0.861502074632069
-24.0,489.0,District - The Dangs,male,0.7949509811062392
-24.0,490.0,District - Navsari  ,male,0.8763640327484652
-24.0,491.0,District - Valsad,male,0.8275148226624834
-24.0,492.0,District - Surat,male,0.8901721470057566
-24.0,493.0,District - Tapi,male,0.7208443414943515
-25.0,494.0,District - Diu,male,0.8985244040862657
-25.0,495.0,District - Daman,male,0.9143944442834652
-26.0,496.0,District - Dadra & Nagar Haveli,male,0.8307159386962027
-27.0,497.0,District - Nandurbar,male,0.6791092840265868
-27.0,498.0,District - Dhule,male,0.7760862949963718
-27.0,499.0,District - Jalgaon,male,0.843332930071892
-27.0,500.0,District - Buldana,male,0.8962014861118927
-27.0,501.0,District - Akola,male,0.9184130546180623
-27.0,502.0,District - Washim,male,0.8934971378003926
-27.0,503.0,District - Amravati,male,0.9061605749736694
-27.0,504.0,District - Wardha,male,0.9110454726070165
-27.0,505.0,District - Nagpur,male,0.9159422572294916
-27.0,506.0,District - Bhandara,male,0.894949535078252
-27.0,507.0,District - Gondiya,male,0.9130720506405821
-27.0,508.0,District - Gadchiroli,male,0.7963681630348297
-27.0,509.0,District - Chandrapur,male,0.8532894184827632
-27.0,510.0,District - Yavatmal,male,0.8818359375
-27.0,511.0,District - Nanded,male,0.821784139168485
-27.0,512.0,District - Hingoli,male,0.8499668422932016
-27.0,513.0,District - Parbhani,male,0.8023227841126905
-27.0,514.0,District - Jalna,male,0.7905699021129892
-27.0,515.0,District - Aurangabad,male,0.8589220493910988
-27.0,516.0,District - Nashik,male,0.8703398634069665
-27.0,517.0,District - Thane,male,0.8818154429250208
-27.0,518.0,District - Mumbai Suburban,male,0.9269159580358138
-27.0,519.0,District - Mumbai,male,0.9124415527860915
-27.0,520.0,District - Raigarh,male,0.8834098459679856
-27.0,521.0,District - Pune,male,0.9039836773174669
-27.0,522.0,District - Ahmadnagar,male,0.8546952719795425
-27.0,523.0,District - Bid,male,0.8331465411537948
-27.0,524.0,District - Latur,male,0.8254319759326492
-27.0,525.0,District - Osmanabad,male,0.8394554194610135
-27.0,526.0,District - Solapur,male,0.8310327791990384
-27.0,527.0,District - Satara,male,0.88557552460694
-27.0,528.0,District - Ratnagiri,male,0.8978935972669819
-27.0,529.0,District - Sindhudurg,male,0.910842926104716
-27.0,530.0,District - Kolhapur,male,0.8755194341022505
-27.0,531.0,District - Sangli,male,0.8695003269243525
-28.0,532.0,District - Adilabad,male,0.66394449501864
-28.0,533.0,District - Nizamabad,male,0.6702594641713513
-28.0,534.0,District - Karimnagar,male,0.6971951961721952
-28.0,535.0,District - Medak,male,0.6674779251487051
-28.0,536.0,District - Hyderabad,male,0.8616078753634812
-28.0,537.0,District - Rangareddy,male,0.8020177059878111
-28.0,538.0,District - Mahbubnagar,male,0.5950811979040778
-28.0,539.0,District - Nalgonda,male,0.7007649541827148
-28.0,540.0,District - Warangal,male,0.7054691721661079
-28.0,541.0,District - Khammam,male,0.6828308797530953
-28.0,542.0,District - Srikakulam,male,0.6698338108303395
-28.0,543.0,District - Vizianagaram,male,0.6347753743760399
-28.0,544.0,District - Visakhapatnam,male,0.7134394559226138
-28.0,545.0,District - East Godavari,male,0.7122270221665201
-28.0,546.0,District - West Godavari,male,0.7504694364084432
-28.0,547.0,District - Krishna,male,0.7590939673867532
-28.0,548.0,District - Guntur,male,0.7159832201467554
-28.0,549.0,District - Prakasam,male,0.6895381963563237
-28.0,550.0,District - Sri Potti Sriramulu Nellore,male,0.727179877939714
-28.0,551.0,District - Y.S.R.,male,0.7481639161707946
-28.0,552.0,District - Kurnool,male,0.658655468091088
-28.0,553.0,District - Anantapur,male,0.6953019719517182
-28.0,554.0,District - Chittoor,male,0.7723517671565687
-29.0,555.0,District - Belgaum,male,0.7956597375207387
-29.0,556.0,District - Bagalkot ,male,0.7594914029050335
-29.0,557.0,District - Bijapur,male,0.7320714337934747
-29.0,558.0,District - Bidar,male,0.7548554781692517
-29.0,559.0,District - Raichur,male,0.6538505076067355
-29.0,560.0,District - Koppal,male,0.7482058100000424
-29.0,561.0,District - Gadag,male,0.8258691444057298
-29.0,562.0,District - Dharwad,male,0.8464615191759117
-29.0,563.0,District - Uttara Kannada,male,0.8835532108449361
-29.0,564.0,District - Haveri,male,0.8181834991931146
-29.0,565.0,District - Bellary,male,0.7310443607696163
-29.0,566.0,District - Chitradurga,male,0.7875178587749723
-29.0,567.0,District - Davanagere,male,0.8002374734143446
-29.0,568.0,District - Shimoga,male,0.8432964654892056
-29.0,569.0,District - Udupi,male,0.9054605987283163
-29.0,570.0,District - Chikmagalur,male,0.8359214773803721
-29.0,571.0,District - Tumkur,male,0.8046290138796527
-29.0,572.0,District - Bangalore,male,0.9051525881016472
-29.0,573.0,District - Mandya,male,0.7520598992378841
-29.0,574.0,District - Hassan,male,0.8154571752901973
-29.0,575.0,District - Dakshina Kannada,male,0.9236349906621629
-29.0,576.0,District - Kodagu,male,0.8569501588207139
-29.0,577.0,District - Mysore,male,0.7547216382309512
-29.0,578.0,District - Chamarajanagar,male,0.6330182911295664
-29.0,579.0,District - Gulbarga,male,0.7013813965557271
-29.0,580.0,District - Yadgir,male,0.5627107794773859
-29.0,581.0,District - Kolar,male,0.7909720803808507
-29.0,582.0,District - Chikkaballapura,male,0.74341142483605
-29.0,583.0,District - Bangalore Rural,male,0.8297212739540321
-29.0,584.0,District - Ramanagara,male,0.7338174100702269
-30.0,585.0,District - North Goa,male,0.9309121523721209
-30.0,586.0,District - South Goa,male,0.9107987297991545
-31.0,587.0,District - Lakshadweep,male,0.960057922046579
-32.0,588.0,District - Kasaragod,male,0.9354510116922833
-32.0,589.0,District - Kannur,male,0.972566544810972
-32.0,590.0,District - Wayanad,male,0.9186091282348331
-32.0,591.0,District - Kozhikode,male,0.9745321199998898
-32.0,592.0,District - Malappuram,male,0.9552315929339524
-32.0,593.0,District - Palakkad,male,0.9238305290866069
-32.0,594.0,District - Thrissur,male,0.9661580660536999
-32.0,595.0,District - Ernakulam,male,0.9731774828305872
-32.0,596.0,District - Idukki ,male,0.9417914923324165
-32.0,597.0,District - Kottayam,male,0.9802033243424421
-32.0,598.0,District - Alappuzha,male,0.9732179246820998
-32.0,599.0,District - Pathanamthitta,male,0.9729943003499152
-32.0,600.0,District - Kollam,male,0.9590077782325221
-32.0,601.0,District - Thiruvananthapuram,male,0.9474391479485195
-33.0,602.0,District - Thiruvallur,male,0.8872208561407257
-33.0,603.0,District - Chennai,male,0.9338964061491103
-33.0,604.0,District - Kancheepuram,male,0.8903016258779182
-33.0,605.0,District - Vellore,male,0.8513160392519407
-33.0,606.0,District - Tiruvannamalai,male,0.8112590364126324
-33.0,607.0,District - Viluppuram,male,0.7789361173214805
-33.0,608.0,District - Salem,male,0.7742541202829576
-33.0,609.0,District - Namakkal   ,male,0.8044645204746951
-33.0,610.0,District - Erode,male,0.7805228977718061
-33.0,611.0,District - The Nilgiris,male,0.908421718312404
-33.0,612.0,District - Dindigul,male,0.8208538633921045
-33.0,613.0,District - Karur ,male,0.8250782458093647
-33.0,614.0,District - Tiruchirappalli,male,0.8859224293949306
-33.0,615.0,District - Perambalur  ,male,0.8015721818111843
-33.0,616.0,District - Ariyalur  ,male,0.7850381812374786
-33.0,617.0,District - Cuddalore,male,0.8424943698544162
-33.0,618.0,District - Nagapattinam  ,male,0.8872119777251659
-33.0,619.0,District - Thiruvarur,male,0.883572714325689
-33.0,620.0,District - Thanjavur,male,0.8792785535266738
-33.0,621.0,District - Pudukkottai,male,0.8342992000324585
-33.0,622.0,District - Sivaganga,male,0.8649974549869383
-33.0,623.0,District - Madurai,male,0.8849812891546589
-33.0,624.0,District - Theni  ,male,0.8295515925932178
-33.0,625.0,District - Virudhunagar,male,0.8614219385588868
-33.0,626.0,District - Ramanathapuram,male,0.8616847958636165
-33.0,627.0,District - Thoothukkudi,male,0.901568606837184
-33.0,628.0,District - Tirunelveli ,male,0.8798762283511472
-33.0,629.0,District - Kanniyakumari,male,0.9310115505775288
-33.0,630.0,District - Dharmapuri,male,0.7286930186782294
-33.0,631.0,District - Krishnagiri,male,0.7520989185959757
-33.0,632.0,District - Coimbatore,male,0.8793639787248577
-33.0,633.0,District - Tiruppur,male,0.8384833902818204
-34.0,634.0,District - Yanam,male,0.8038035996532912
-34.0,635.0,District - Puducherry,male,0.9065184607824864
-34.0,636.0,District - Mahe,male,0.9889325240985363
-34.0,637.0,District - Karaikal,male,0.9233779608650875
-35.0,638.0,District - Nicobars,male,0.8241905925473427
-35.0,639.0,District - North  & Middle Andaman,male,0.8714854502556036
-35.0,640.0,District - South Andaman,male,0.9147571593838161
-1.0,1.0,District - Kupwara,total,0.5871166219893835
-1.0,2.0,District - Badgam,total,0.49527519409466697
-1.0,3.0,District - Leh(Ladakh),total,0.7517097157067767
-1.0,4.0,District - Kargil,total,0.672850535515555
-1.0,5.0,District - Punch,total,0.6073569701313577
-1.0,6.0,District - Rajouri,total,0.6349066980567724
-1.0,7.0,District - Kathua,total,0.6928085819206667
-1.0,8.0,District - Baramula,total,0.5878745530524302
-1.0,9.0,District - Bandipore,total,0.49919752018000724
-1.0,10.0,District - Srinagar,total,0.6612758440155448
-1.0,11.0,District - Ganderbal,total,0.5219068745555473
-1.0,12.0,District - Pulwama,total,0.590030138605778
-1.0,13.0,District - Shupiyan,total,0.54055514168567
-1.0,14.0,District - Anantnag,total,0.5673108872258379
-1.0,15.0,District - Kulgam,total,0.5333422298844771
-1.0,16.0,District - Doda,total,0.5836415044915947
-1.0,17.0,District - Ramban,total,0.4637764267365723
-1.0,18.0,District - Kishtwar,total,0.4880988270116203
-1.0,19.0,District - Udhampur,total,0.635508963596685
-1.0,20.0,District - Reasi,total,0.5157274952545253
-1.0,21.0,District - Jammu,total,0.817203945392646
-1.0,22.0,District - Samba,total,0.7883145970624973
-2.0,23.0,District - Chamba,total,0.6718374074886017
-2.0,24.0,District - Kangra,total,0.8377219517221155
-2.0,25.0,District - Lahul & Spiti,total,0.7413133763723837
-2.0,26.0,District - Kullu,total,0.7625028339653465
-2.0,27.0,District - Mandi,total,0.7864905910787889
-2.0,28.0,District - Hamirpur,total,0.8651989691171974
-2.0,29.0,District - Una,total,0.8487584650112867
-2.0,30.0,District - Bilaspur,total,0.8254030495041259
-2.0,31.0,District - Solan,total,0.8150790725021816
-2.0,32.0,District - Sirmaur,total,0.7508931584331832
-2.0,33.0,District - Shimla,total,0.8171383100733238
-2.0,34.0,District - Kinnaur,total,0.7755267547013909
-3.0,35.0,District - Gurdaspur,total,0.7739464207105192
-3.0,36.0,District - Kapurthala ,total,0.7665253571989323
-3.0,37.0,District - Jalandhar,total,0.8075743179530519
-3.0,38.0,District - Hoshiarpur,total,0.8305226045267704
-3.0,39.0,District - Shahid Bhagat Singh Nagar ,total,0.7739141839259875
-3.0,40.0,District - Fatehgarh Sahib,total,0.77058387921165
-3.0,41.0,District - Ludhiana,total,0.8068458733317523
-3.0,42.0,District - Moga,total,0.671793183604641
-3.0,43.0,District - Firozpur,total,0.6470221695699875
-3.0,44.0,District - Muktsar,total,0.6166318778159419
-3.0,45.0,District - Faridkot,total,0.6574204700821207
-3.0,46.0,District - Bathinda,total,0.6439894016203881
-3.0,47.0,District - Mansa,total,0.5644587200704503
-3.0,48.0,District - Patiala,total,0.7224632217590665
-3.0,49.0,District - Amritsar ,total,0.7387444102293819
-3.0,50.0,District - Tarn Taran,total,0.6337627052677275
-3.0,51.0,District - Rupnagar,total,0.8018726475375132
-3.0,52.0,District - Sahibzada Ajit Singh Nagar,total,0.8236354367940895
-3.0,53.0,District - Sangrur,total,0.6360338406735752
-3.0,54.0,District - Barnala,total,0.6336354984374262
-4.0,55.0,District - Chandigarh,total,0.848434224235618
-5.0,56.0,District - Uttarkashi,total,0.7089920008696676
-5.0,57.0,District - Chamoli,total,0.7926902093777647
-5.0,58.0,District - Rudraprayag,total,0.7753517272076559
-5.0,59.0,District - Tehri Garhwal,total,0.710924996058459
-5.0,60.0,District - Dehradun,total,0.8229866988627386
-5.0,61.0,District - Garhwal,total,0.78778583551921
-5.0,62.0,District - Pithoragarh,total,0.7898641613025369
-5.0,63.0,District - Bageshwar,total,0.7612540731152078
-5.0,64.0,"District - Almora
-",total,0.7653987865772307
-5.0,65.0,District - Champawat,total,0.7547671789058479
-5.0,66.0,District - Nainital,total,0.8177705934099302
-5.0,67.0,District - Udham Singh Nagar,total,0.6869370444886335
-5.0,68.0,District - Hardwar,total,0.6980214793501823
-6.0,69.0,District - Panchkula,total,0.8045079012087915
-6.0,70.0,District - Ambala,total,0.7949287285901254
-6.0,71.0,District - Yamunanagar,total,0.7491456942537175
-6.0,72.0,District - Kurukshetra,total,0.7291258869803562
-6.0,73.0,District - Kaithal,total,0.6358627053397173
-6.0,74.0,District - Karnal,total,0.7129289578828201
-6.0,75.0,District - Panipat,total,0.7266744799437829
-6.0,76.0,District - Sonipat,total,0.7598064464715063
-6.0,77.0,District - Jind,total,0.6615427293595466
-6.0,78.0,District - Fatehabad,total,0.6243845900599362
-6.0,79.0,District - Sirsa,total,0.6396286725796834
-6.0,80.0,District - Hisar,total,0.6854735079098465
-6.0,81.0,District - Bhiwani,total,0.7062100923216781
-6.0,82.0,District - Rohtak,total,0.7727611085661933
-6.0,83.0,District - Jhajjar,total,0.7762587201143488
-6.0,84.0,District - Mahendragarh,total,0.7374441681718902
-6.0,85.0,District - Rewari,total,0.7808078994058106
-6.0,86.0,District - Gurgaon,total,0.8328837502125371
-6.0,87.0,District - Mewat ,total,0.45700892526192205
-6.0,88.0,District - Faridabad,total,0.7985444621332727
-6.0,89.0,District - Palwal ,total,0.6355732706803005
-7.0,90.0,District - North West,total,0.8267403280425858
-7.0,91.0,District - North,total,0.8547232740215708
-7.0,92.0,District - North East,total,0.808467393767578
-7.0,93.0,District - East,total,0.8827451035932685
-7.0,94.0,District - New Delhi,total,0.8728026219561743
-7.0,95.0,District - Central,total,0.8378462905214301
-7.0,96.0,District - West,total,0.8596186514879216
-7.0,97.0,District - South West,total,0.8726574082978411
-7.0,98.0,District - South,total,0.8516419665283176
-8.0,99.0,District - Ganganagar ,total,0.6477496059197673
-8.0,100.0,District - Hanumangarh,total,0.6119590988715525
-8.0,101.0,District - Bikaner,total,0.5977492336747245
-8.0,102.0,District - Churu,total,0.6026253299852885
-8.0,103.0,District - Jhunjhunun,total,0.6886645511302888
-8.0,104.0,District - Alwar,total,0.6474496119564436
-8.0,105.0,District - Bharatpur,total,0.6436706359627732
-8.0,106.0,District - Dhaulpur,total,0.6212890845467886
-8.0,107.0,District - Karauli,total,0.5893572079184863
-8.0,108.0,District - Sawai Madhopur,total,0.5863071370144319
-8.0,109.0,District - Dausa,total,0.6086985165431646
-8.0,110.0,District - Jaipur,total,0.7134259702412058
-8.0,111.0,District - Sikar,total,0.6631471912838859
-8.0,112.0,District - Nagaur,total,0.5565691715786388
-8.0,113.0,District - Jodhpur,total,0.605569722814499
-8.0,114.0,District - Jaisalmer,total,0.5086296238252438
-8.0,115.0,District - Barmer,total,0.4793397254672669
-8.0,116.0,District - Jalor,total,0.4572606313778465
-8.0,117.0,District - Sirohi,total,0.4955267379760233
-8.0,118.0,District - Pali,total,0.5545124425535704
-8.0,119.0,District - Ajmer,total,0.6543107002905858
-8.0,120.0,District - Tonk,total,0.5456230505835757
-8.0,121.0,District - Bundi,total,0.5498238516871392
-8.0,122.0,District - Bhilwara,total,0.5540536103982343
-8.0,123.0,District - Rajsamand,total,0.5630297114095096
-8.0,124.0,District - Dungarpur,total,0.5164145596407935
-8.0,125.0,District - Banswara,total,0.4860829298943347
-8.0,126.0,District - Chittaurgarh,total,0.5597141407590082
-8.0,127.0,District - Kota,total,0.7370444428142588
-8.0,128.0,District - Baran,total,0.609250384949463
-8.0,129.0,District - Jhalawar,total,0.5488226132688223
-8.0,130.0,District - Udaipur,total,0.571207340288741
-8.0,131.0,District - Pratapgarh,total,0.49392616753366364
-9.0,132.0,District - Saharanpur,total,0.6579636132065625
-9.0,133.0,District - Muzaffarnagar,total,0.6458347899633493
-9.0,134.0,District - Bijnor,total,0.631343865059289
-9.0,135.0,District - Moradabad,total,0.5094576185041857
-9.0,136.0,District - Rampur,total,0.4613816880206997
-9.0,137.0,District - Jyotiba Phule Nagar,total,0.5682789062534076
-9.0,138.0,District - Meerut,total,0.7019640999803223
-9.0,139.0,District - Baghpat,total,0.6782584920039326
-9.0,140.0,District - Ghaziabad,total,0.7604195605505746
-9.0,141.0,District - Gautam Buddha Nagar,total,0.781063720314021
-9.0,142.0,District - Bulandshahr ,total,0.6407750043637633
-9.0,143.0,District - Aligarh,total,0.6337357538188688
-9.0,144.0,District - Mahamaya Nagar,total,0.6689507893595474
-9.0,145.0,District - Mathura,total,0.6570730296704007
-9.0,146.0,District - Agra,total,0.6805981517319907
-9.0,147.0,District - Firozabad,total,0.6820236647726738
-9.0,148.0,District - Mainpuri,total,0.7201000098375799
-9.0,149.0,District - Budaun,total,0.43822643719213383
-9.0,150.0,District - Bareilly,total,0.5326591151864379
-9.0,151.0,District - Pilibhit,total,0.5477939017870662
-9.0,152.0,District - Shahjahanpur,total,0.5284141715926737
-9.0,153.0,District - Kheri,total,0.5408012532500387
-9.0,154.0,District - Sitapur,total,0.5434699447680041
-9.0,155.0,District - Hardoi,total,0.5805095373984727
-9.0,156.0,District - Unnao,total,0.6099466455103281
-9.0,157.0,District - Lucknow,total,0.7522866330787931
-9.0,158.0,District - Rae Bareli,total,0.61212748481249
-9.0,159.0,District - Farrukhabad,total,0.6459469274792431
-9.0,160.0,District - Kannauj,total,0.6821493667844911
-9.0,161.0,District - Etawah,total,0.7463326031155536
-9.0,162.0,District - Auraiya,total,0.7500219961990569
-9.0,163.0,District - Kanpur Dehat,total,0.7129404725796601
-9.0,164.0,District - Kanpur Nagar,total,0.7784047490270773
-9.0,165.0,District - Jalaun ,total,0.6957306172130836
-9.0,166.0,District - Jhansi,total,0.712030509385524
-9.0,167.0,District - Lalitpur,total,0.5530202670607484
-9.0,168.0,District - Hamirpur,total,0.6291150734351014
-9.0,169.0,District - Mahoba,total,0.5887110973201103
-9.0,170.0,District - Banda,total,0.5959836328257101
-9.0,171.0,District - Chitrakoot,total,0.5673864544485882
-9.0,172.0,District - Fatehpur,total,0.6139032849578578
-9.0,173.0,District - Pratapgarh,total,0.6382562694644947
-9.0,174.0,District - Kaushambi,total,0.5368506483525267
-9.0,175.0,District - Allahabad ,total,0.6746304571575055
-9.0,176.0,District - Bara Banki,total,0.5522956413275638
-9.0,177.0,District - Faizabad,total,0.6280980838585791
-9.0,178.0,District - Ambedkar Nagar,total,0.6631533539618413
-9.0,179.0,District - Sultanpur,total,0.6297675735827913
-9.0,180.0,District - Bahraich,total,0.4272447674390752
-9.0,181.0,District - Shrawasti,total,0.38455201959113633
-9.0,182.0,District - Balrampur,total,0.4239606529260709
-9.0,183.0,District - Gonda,total,0.5170474491884745
-9.0,184.0,District - Siddharthnagar,total,0.5089774877893297
-9.0,185.0,District - Basti,total,0.6011264744103813
-9.0,186.0,District - Sant Kabir Nagar,total,0.5952687709243575
-9.0,187.0,District - Mahrajganj,total,0.5512151655123889
-9.0,188.0,District - Gorakhpur,total,0.6586943027094873
-9.0,189.0,District - Kushinagar,total,0.5872371756121403
-9.0,190.0,District - Deoria,total,0.6499982663255599
-9.0,191.0,District - Azamgarh,total,0.6438213378452251
-9.0,192.0,District - Mau,total,0.6750850748300294
-9.0,193.0,District - Ballia,total,0.6590727484168639
-9.0,194.0,District - Jaunpur,total,0.651586364684872
-9.0,195.0,District - Ghazipur,total,0.6617001256055366
-9.0,196.0,District - Chandauli,total,0.6603269330357965
-9.0,197.0,District - Varanasi,total,0.7187937471070664
-9.0,198.0,District - Sant Ravidas Nagar (Bhadohi),total,0.6247759347878985
-9.0,199.0,District - Mirzapur,total,0.6188059990912772
-9.0,200.0,District - Sonbhadra,total,0.5697716930836049
-9.0,201.0,District - Etah,total,0.6574488592806452
-9.0,202.0,District - Kanshiram Nagar,total,0.5534752027993188
-10.0,203.0,District - Pashchim Champaran,total,0.47791620868228857
-10.0,204.0,District - Purba Champaran,total,0.4762567813595472
-10.0,205.0,District - Sheohar,total,0.4624209457876792
-10.0,206.0,District - Sitamarhi,total,0.45181072803914574
-10.0,207.0,District - Madhubani,total,0.5073707936021631
-10.0,208.0,District - Supaul,total,0.48452895742077684
-10.0,209.0,District - Araria,total,0.4516194812088479
-10.0,210.0,District - Kishanganj,total,0.46220051684113705
-10.0,211.0,District - Purnia,total,0.43531120012529234
-10.0,212.0,District - Katihar,total,0.4417988832710186
-10.0,213.0,District - Madhepura,total,0.4438439291004839
-10.0,214.0,District - Saharsa,total,0.46302632651173947
-10.0,215.0,District - Darbhanga,total,0.5034104946331898
-10.0,216.0,District - Muzaffarpur,total,0.5776317869567617
-10.0,217.0,District - Gopalganj,total,0.5798749315259213
-10.0,218.0,District - Siwan,total,0.6272924486946476
-10.0,219.0,District - Saran,total,0.6003952909325465
-10.0,220.0,District - Vaishali,total,0.6043751646339554
-10.0,221.0,District - Samastipur,total,0.5431061065464937
-10.0,222.0,District - Begusarai,total,0.5790647283480796
-10.0,223.0,District - Khagaria,total,0.5144411693727283
-10.0,224.0,District - Bhagalpur,total,0.581276106272329
-10.0,225.0,District - Banka,total,0.5152514514073921
-10.0,226.0,District - Munger,total,0.6644487786496586
-10.0,227.0,District - Lakhisarai,total,0.5581747910640883
-10.0,228.0,District - Sheikhpura,total,0.5759000066840452
-10.0,229.0,District - Nalanda,total,0.5893370107527867
-10.0,230.0,District - Patna,total,0.6775234522177769
-10.0,231.0,District - Bhojpur,total,0.6607934216196809
-10.0,232.0,District - Buxar,total,0.6464204359320123
-10.0,233.0,District - Kaimur (Bhabua),total,0.6313941205902883
-10.0,234.0,District - Rohtas,total,0.6811841345757401
-10.0,235.0,District - Aurangabad,total,0.6450503632169415
-10.0,236.0,District - Gaya,total,0.5759050639015976
-10.0,237.0,District - Nawada,total,0.5384899746554491
-10.0,238.0,District - Jamui,total,0.5204306424438114
-10.0,239.0,District - Jehanabad ,total,0.6086999752883152
-10.0,240.0,District - Arwal,total,0.6111647521547134
-11.0,241.0,District - North  District,total,0.7542829949238579
-11.0,242.0,District - West District,total,0.7360394872550464
-11.0,243.0,District - South District,total,0.783504567293997
-11.0,244.0,District - East District,total,0.822424196853206
-12.0,245.0,District - Tawang,total,0.5502479338842975
-12.0,246.0,District - West Kameng,total,0.6440436968961332
-12.0,247.0,District - East Kameng,total,0.513746427701101
-12.0,248.0,District - Papum Pare,total,0.782353800792566
-12.0,249.0,District - Upper Subansiri,total,0.590687673630932
-12.0,250.0,District - West Siang,total,0.6415349584784356
-12.0,251.0,District - East Siang,total,0.7049795869714217
-12.0,252.0,District - Upper Siang,total,0.5754189944134078
-12.0,253.0,District - Changlang,total,0.5602665181249464
-12.0,254.0,District - Tirap,total,0.4913132494881544
-12.0,255.0,District - Lower Subansiri,total,0.7234194632071763
-12.0,256.0,District - Kurung Kumey,total,0.4270489000341958
-12.0,257.0,District - Dibang Valley,total,0.6061995597945709
-12.0,258.0,District - Lower Dibang Valley,total,0.6507999658984341
-12.0,259.0,District - Lohit,total,0.6420643131169447
-12.0,260.0,District - Anjaw,total,0.5001494768310912
-13.0,261.0,District - Mon,total,0.5436434271716456
-13.0,262.0,District - Mokokchung,total,0.915777130267927
-13.0,263.0,District - Zunheboto,total,0.8434201343452848
-13.0,264.0,District - Wokha,total,0.8712631670584139
-13.0,265.0,District - Dimapur ,total,0.8476010638910317
-13.0,266.0,District - Phek,total,0.7540612162468353
-13.0,267.0,District - Tuensang,total,0.724340824256647
-13.0,268.0,District - Longleng,total,0.6974946866748245
-13.0,269.0,District - Kiphire,total,0.6676189584113901
-13.0,270.0,District - Kohima,total,0.8472328123885747
-13.0,271.0,District - Peren,total,0.773420880722266
-14.0,272.0,District - Senapati,total,0.6072521277976599
-14.0,273.0,District - Tamenglong ,total,0.6928788037226812
-14.0,274.0,District - Churachandpur,total,0.8223155482436545
-14.0,275.0,District - Bishnupur,total,0.7382918290507959
-14.0,276.0,District - Thoubal,total,0.7209112900970439
-14.0,277.0,District - Imphal West,total,0.8534615222699334
-14.0,278.0,District - Imphal East,total,0.8121431732170652
-14.0,279.0,District - Ukhrul,total,0.8173594073411066
-14.0,280.0,District - Chandel,total,0.7015370077525359
-15.0,281.0,District - Mamit,total,0.8352898419044158
-15.0,282.0,District - Kolasib,total,0.932417936065222
-15.0,283.0,District - Aizawl,total,0.9803712329243283
-15.0,284.0,District - Champhai,total,0.9592439313632953
-15.0,285.0,District - Serchhip,total,0.9793100346332029
-15.0,286.0,District - Lunglei,total,0.8836515513126492
-15.0,287.0,District - Lawngtlai,total,0.6452164009111617
-15.0,288.0,District - Saiha,total,0.9015419476069415
-16.0,289.0,District - West Tripura ,total,0.8749360427999264
-16.0,290.0,District - South Tripura ,total,0.825408213597084
-16.0,291.0,District - Dhalai,total,0.8393018039980498
-16.0,292.0,District - North Tripura,total,0.8628100787676427
-17.0,293.0,District - West Garo Hills,total,0.6531688166012338
-17.0,294.0,District - East Garo Hills,total,0.7415907335907336
-17.0,295.0,District - South Garo Hills,total,0.7037975871942919
-17.0,296.0,District - West Khasi Hills,total,0.7699856948002263
-17.0,297.0,District - Ribhoi,total,0.7347166906522976
-17.0,298.0,District - East Khasi Hills,total,0.8303274668991446
-17.0,299.0,District - Jaintia Hills,total,0.5693662867315562
-18.0,300.0,District - Kokrajhar,total,0.6042094131893809
-18.0,301.0,District - Dhubri,total,0.5354863544341589
-18.0,302.0,District - Goalpara,total,0.6324546545548826
-18.0,303.0,District - Barpeta,total,0.594221351707024
-18.0,304.0,District - Morigaon,total,0.6348204487459178
-18.0,305.0,District - Nagaon,total,0.6827931798333894
-18.0,306.0,District - Sonitpur,total,0.6349289585312244
-18.0,307.0,District - Lakhimpur,total,0.7371608945363305
-18.0,308.0,District - Dhemaji,total,0.6864573959224566
-18.0,309.0,District - Tinsukia,total,0.662808143191586
-18.0,310.0,District - Dibrugarh,total,0.7350812609276214
-18.0,311.0,District - Sivasagar,total,0.7841426605172289
-18.0,312.0,District - Jorhat,total,0.8019044020687947
-18.0,313.0,District - Golaghat,total,0.7435322832925201
-18.0,314.0,District - Karbi Anglong,total,0.6518455956661826
-18.0,315.0,District - Dima Hasao,total,0.747311865716192
-18.0,316.0,District - Cachar,total,0.7697747329505044
-18.0,317.0,District - Karimganj,total,0.7531285956759712
-18.0,318.0,District - Hailakandi,total,0.7101184898372727
-18.0,319.0,District - Bongaigaon,total,0.6571833996832503
-18.0,320.0,District - Chirang,total,0.5850309450055834
-18.0,321.0,District - Kamrup,total,0.7299817036059774
-18.0,322.0,District - Kamrup Metropolitan,total,0.8811480192552149
-18.0,323.0,District - Nalbari,total,0.7665374178858003
-18.0,324.0,District - Baksa,total,0.6495640433673662
-18.0,325.0,District - Darrang,total,0.5931768537676938
-18.0,326.0,District - Udalguri,total,0.6104291359427211
-19.0,327.0,District - Darjiling ,total,0.7677973027599257
-19.0,328.0,District - Jalpaiguri ,total,0.6903457903009337
-19.0,329.0,District - Koch Bihar ,total,0.7065259199959502
-19.0,330.0,District - Uttar Dinajpur,total,0.5282456386091121
-19.0,331.0,District - Dakshin Dinajpur,total,0.6823382356719945
-19.0,332.0,District - Maldah ,total,0.5576506347081808
-19.0,333.0,District - Murshidabad ,total,0.6069857911678537
-19.0,334.0,District - Birbhum,total,0.6642003247191002
-19.0,335.0,District - Barddhaman ,total,0.731796360883816
-19.0,336.0,District - Nadia ,total,0.712629124618797
-19.0,337.0,District - North Twenty Four Parganas,total,0.8250539544622262
-19.0,338.0,District - Hugli ,total,0.7958153906647405
-19.0,339.0,District - Bankura ,total,0.6606010680496394
-19.0,340.0,District - Puruliya,total,0.5898956451688631
-19.0,341.0,District - Haora ,total,0.815033782161515
-19.0,342.0,District - Kolkata,total,0.8560117353494512
-19.0,343.0,District - South Twenty Four Parganas,total,0.7502577758140992
-19.0,344.0,District - Paschim Medinipur,total,0.7508024810095678
-19.0,345.0,District - Purba Medinipur,total,0.8520230199236892
-20.0,346.0,District - Garhwa ,total,0.505870155605408
-20.0,347.0,District - Chatra,total,0.5095447057232386
-20.0,348.0,District - Kodarma,total,0.5932895877182122
-20.0,349.0,District - Giridih,total,0.5499647833701363
-20.0,350.0,District - Deoghar,total,0.5784119430264274
-20.0,351.0,District - Godda,total,0.491125449309013
-20.0,352.0,District - Sahibganj,total,0.4277585818099817
-20.0,353.0,District - Pakur,total,0.4038602309565425
-20.0,354.0,District - Dhanbad,total,0.7055053856674893
-20.0,355.0,District - Bokaro,total,0.6678456505552537
-20.0,356.0,District - Lohardaga,total,0.5990819076156225
-20.0,357.0,District - Purbi Singhbhum,total,0.7216590423909729
-20.0,358.0,District - Palamu,total,0.5555291620337612
-20.0,359.0,District - Latehar,total,0.5071150688926835
-20.0,360.0,District - Hazaribagh,total,0.629125479590141
-20.0,361.0,District - Ramgarh,total,0.6779618957903288
-20.0,362.0,District - Dumka,total,0.5445737340661911
-20.0,363.0,District - Jamtara,total,0.5889592625690022
-20.0,364.0,District - Ranchi,total,0.7216225963475766
-20.0,365.0,District - Khunti,total,0.584519309874371
-20.0,366.0,District - Gumla,total,0.5932883199374895
-20.0,367.0,District - Simdega,total,0.6354505826202205
-20.0,368.0,District - Pashchimi Singhbhum,total,0.5295292141791315
-20.0,369.0,District - Saraikela-Kharsawan,total,0.6217619765477755
-21.0,370.0,District - Bargarh,total,0.7125299229855467
-21.0,371.0,District - Jharsuguda,total,0.7597393694767638
-21.0,372.0,District - Sambalpur,total,0.7303002497966016
-21.0,373.0,District - Debagarh,total,0.685283583442898
-21.0,374.0,District - Sundargarh,total,0.696732090297788
-21.0,375.0,District - Kendujhar,total,0.6476667642426691
-21.0,376.0,District - Mayurbhanj,total,0.5796761416820289
-21.0,377.0,District - Baleshwar,total,0.7720953492046867
-21.0,378.0,District - Bhadrak,total,0.8048272067775314
-21.0,379.0,District - Kendrapara ,total,0.8304745993031688
-21.0,380.0,District - Jagatsinghapur ,total,0.8485314401483178
-21.0,381.0,District - Cuttack,total,0.838697483828128
-21.0,382.0,District - Jajapur  ,total,0.7772586195896524
-21.0,383.0,District - Dhenkanal,total,0.7591679949470042
-21.0,384.0,District - Anugul  ,total,0.7428488576813935
-21.0,385.0,District - Nayagarh  ,total,0.7766351509965576
-21.0,386.0,District - Khordha ,total,0.8553003403415201
-21.0,387.0,District - Puri,total,0.8273997884113821
-21.0,388.0,District - Ganjam,total,0.6671554263874512
-21.0,389.0,District - Gajapati,total,0.4666430213464696
-21.0,390.0,District - Kandhamal,total,0.5770692321764148
-21.0,391.0,District - Baudh,total,0.6602811498608285
-21.0,392.0,District - Subarnapur,total,0.704889074565596
-21.0,393.0,District - Balangir,total,0.5989303352219477
-21.0,394.0,District - Nuapada,total,0.5007484614958142
-21.0,395.0,District - Kalahandi,total,0.5297726907921168
-21.0,396.0,District - Rayagada  ,total,0.42623426560742916
-21.0,397.0,District - Nabarangapur ,total,0.3794090247865307
-21.0,398.0,District - Koraput,total,0.4168435652983789
-21.0,399.0,District - Malkangiri  ,total,0.398156105945777
-22.0,400.0,District - Koriya,total,0.6559547072837755
-22.0,401.0,District - Surguja,total,0.5225107523791108
-22.0,402.0,District - Jashpur ,total,0.6213809872304336
-22.0,403.0,District - Raigarh,total,0.6863413093518493
-22.0,404.0,District - Korba ,total,0.6774191987086797
-22.0,405.0,District - Janjgir - Champa,total,0.6799858191782014
-22.0,406.0,District - Bilaspur,total,0.6589735314020705
-22.0,407.0,District - Kabeerdham,total,0.528529465831278
-22.0,408.0,District - Rajnandgaon,total,0.7152923549561567
-22.0,409.0,District - Durg,total,0.7573978576569711
-22.0,410.0,District - Raipur,total,0.7149466073913112
-22.0,411.0,District - Mahasamund,total,0.659035076123119
-22.0,412.0,District - Dhamtari ,total,0.7439791473988184
-22.0,413.0,District - Uttar Bastar Kanker,total,0.6520579538847945
-22.0,414.0,District - Bastar,total,0.4675584191834604
-22.0,415.0,District - Narayanpur,total,0.4134952735071626
-22.0,416.0,District - Dakshin Bastar Dantewada,total,0.3526343680339153
-22.0,417.0,District - Bijapur,total,0.34456819007669115
-23.0,418.0,District - Sheopur ,total,0.4809923513044693
-23.0,419.0,District - Morena,total,0.6501106934754305
-23.0,420.0,District - Bhind,total,0.7037163558900404
-23.0,421.0,District - Gwalior,total,0.7327465155348193
-23.0,422.0,District - Datia,total,0.6733029566550094
-23.0,423.0,District - Shivpuri,total,0.5471802924344883
-23.0,424.0,District - Tikamgarh,total,0.5343924712144137
-23.0,425.0,District - Chhatarpur,total,0.565847597642495
-23.0,426.0,District - Panna,total,0.570884244248582
-23.0,427.0,District - Sagar,total,0.7213567087471444
-23.0,428.0,District - Damoh,total,0.6373361041846479
-23.0,429.0,District - Satna,total,0.6627565223020652
-23.0,430.0,District - Rewa,total,0.6575482966515438
-23.0,431.0,District - Umaria,total,0.5821640401558631
-23.0,432.0,District - Neemuch ,total,0.6586719246827218
-23.0,433.0,District - Mandsaur,total,0.6634692892274136
-23.0,434.0,District - Ratlam,total,0.6130302742716143
-23.0,435.0,District - Ujjain,total,0.6760599844080795
-23.0,436.0,District - Shajapur,total,0.6257140227081739
-23.0,437.0,District - Dewas,total,0.6384794837238531
-23.0,438.0,District - Dhar,total,0.5176454212738052
-23.0,439.0,District - Indore,total,0.7886712227213296
-23.0,440.0,District - Khargone (West Nimar),total,0.5693392326706965
-23.0,441.0,District - Barwani ,total,0.4062609252644678
-23.0,442.0,District - Rajgarh,total,0.5324088582214987
-23.0,443.0,District - Vidisha,total,0.6437875157180479
-23.0,444.0,District - Bhopal,total,0.7835433434529202
-23.0,445.0,District - Sehore,total,0.638116430412296
-23.0,446.0,District - Raisen,total,0.6756507943860299
-23.0,447.0,District - Betul,total,0.6348295001634653
-23.0,448.0,District - Harda ,total,0.6788783094881395
-23.0,449.0,District - Hoshangabad,total,0.711636671112309
-23.0,450.0,District - Katni ,total,0.6661300963495346
-23.0,451.0,District - Jabalpur,total,0.7860018915909219
-23.0,452.0,District - Narsimhapur,total,0.7147677734971382
-23.0,453.0,District - Dindori ,total,0.5680582885709727
-23.0,454.0,District - Mandla,total,0.6074243622060064
-23.0,455.0,District - Chhindwara,total,0.6614840009751214
-23.0,456.0,District - Seoni,total,0.6679558259238016
-23.0,457.0,District - Balaghat,total,0.7311496333599032
-23.0,458.0,District - Guna,total,0.5536252625865528
-23.0,459.0,District - Ashoknagar,total,0.5932663442372752
-23.0,460.0,District - Shahdol,total,0.5965884795426926
-23.0,461.0,District - Anuppur,total,0.6146568683048548
-23.0,462.0,District - Sidhi,total,0.5582366211430017
-23.0,463.0,District - Singrauli,total,0.5118366357598181
-23.0,464.0,District - Jhabua,total,0.3392015489613121
-23.0,465.0,District - Alirajpur,total,0.2629392178052984
-23.0,466.0,District - Khandwa (East Nimar),total,0.6087274408691998
-23.0,467.0,District - Burhanpur,total,0.6050513691687682
-24.0,468.0,District - Kachchh,total,0.6640438723664281
-24.0,469.0,District - Banas Kantha,total,0.5787012018354724
-24.0,470.0,District - Patan  ,total,0.6743533164616053
-24.0,471.0,District - Mahesana,total,0.8121548860121435
-24.0,472.0,District - Sabar Kantha,total,0.7181680938031447
-24.0,473.0,District - Gandhinagar,total,0.8194640116484987
-24.0,474.0,District - Ahmadabad,total,0.8385719074052318
-24.0,475.0,District - Surendranagar,total,0.6721588169769301
-24.0,476.0,District - Rajkot,total,0.786313258956854
-24.0,477.0,District - Jamnagar,total,0.7005168534247592
-24.0,478.0,District - Porbandar ,total,0.7242198537525978
-24.0,479.0,District - Junagadh,total,0.7171137743531112
-24.0,480.0,District - Amreli,total,0.7030270733129281
-24.0,481.0,District - Bhavnagar,total,0.7143918718080363
-24.0,482.0,District - Anand  ,total,0.8231149265963816
-24.0,483.0,District - Kheda,total,0.7997947537349339
-24.0,484.0,District - Panch Mahals,total,0.6553280277987861
-24.0,485.0,District - Dohad  ,total,0.49937652864699233
-24.0,486.0,District - Vadodara,total,0.7677898093106453
-24.0,487.0,District - Narmada,total,0.6754822963807842
-24.0,488.0,District - Bharuch,total,0.7906487120805833
-24.0,489.0,District - The Dangs,total,0.69018602586318
-24.0,490.0,District - Navsari  ,total,0.8195890765999927
-24.0,491.0,District - Valsad,total,0.7561571386220848
-24.0,492.0,District - Surat,total,0.8427261702406149
-24.0,493.0,District - Tapi,total,0.6357064669788741
-25.0,494.0,District - Diu,total,0.8016314017463663
-25.0,495.0,District - Daman,total,0.8748492377857892
-26.0,496.0,District - Dadra & Nagar Haveli,total,0.720440363550039
-27.0,497.0,District - Nandurbar,total,0.5858501049285687
-27.0,498.0,District - Dhule,total,0.6963224103988942
-27.0,499.0,District - Jalgaon,total,0.7584969312845852
-27.0,500.0,District - Buldana,total,0.810054351509237
-27.0,501.0,District - Akola,total,0.8667879512279308
-27.0,502.0,District - Washim,total,0.8043603125753429
-27.0,503.0,District - Amravati,total,0.8573676710902215
-27.0,504.0,District - Wardha,total,0.853423061160483
-27.0,505.0,District - Nagpur,total,0.8723666659489182
-27.0,506.0,District - Bhandara,total,0.8164899657751664
-27.0,507.0,District - Gondiya,total,0.8282690334527505
-27.0,508.0,District - Gadchiroli,total,0.701045280909585
-27.0,509.0,District - Chandrapur,total,0.7734955633170151
-27.0,510.0,District - Yavatmal,total,0.8026730425913029
-27.0,511.0,District - Nanded,total,0.7130112757495982
-27.0,512.0,District - Hingoli,total,0.7420196464238085
-27.0,513.0,District - Parbhani,total,0.6881977602256655
-27.0,514.0,District - Jalna,total,0.6685223104623378
-27.0,515.0,District - Aurangabad,total,0.7569840498504673
-27.0,516.0,District - Nashik,total,0.7995596761389809
-27.0,517.0,District - Thane,total,0.8328933414258337
-27.0,518.0,District - Mumbai Suburban,total,0.8920005856329325
-27.0,519.0,District - Mumbai,total,0.8864193622033818
-27.0,520.0,District - Raigarh,total,0.8128389686512286
-27.0,521.0,District - Pune,total,0.8493918611580272
-27.0,522.0,District - Ahmadnagar,total,0.7623717140403935
-27.0,523.0,District - Bid,total,0.7297336920996095
-27.0,524.0,District - Latur,total,0.7383494267148398
-27.0,525.0,District - Osmanabad,total,0.7509090026009784
-27.0,526.0,District - Solapur,total,0.7352009974235794
-27.0,527.0,District - Satara,total,0.8089483331902974
-27.0,528.0,District - Ratnagiri,total,0.794689943327911
-27.0,529.0,District - Sindhudurg,total,0.8406105621438288
-27.0,530.0,District - Kolhapur,total,0.793326742142486
-27.0,531.0,District - Sangli,total,0.7906988176182678
-28.0,532.0,District - Adilabad,total,0.547200516895883
-28.0,533.0,District - Nizamabad,total,0.5496095286704332
-28.0,534.0,District - Karimnagar,total,0.5855909012932538
-28.0,535.0,District - Medak,total,0.5474209573994572
-28.0,536.0,District - Hyderabad,total,0.8181218652500678
-28.0,537.0,District - Rangareddy,total,0.7289051712915364
-28.0,538.0,District - Mahbubnagar,total,0.4751232088097531
-28.0,539.0,District - Nalgonda,total,0.5830966121402352
-28.0,540.0,District - Warangal,total,0.592719270376695
-28.0,541.0,District - Khammam,total,0.5938604601356332
-28.0,542.0,District - Srikakulam,total,0.5549991702930228
-28.0,543.0,District - Vizianagaram,total,0.5277504612855514
-28.0,544.0,District - Visakhapatnam,total,0.6246664859743831
-28.0,545.0,District - East Godavari,total,0.6708092006899928
-28.0,546.0,District - West Godavari,total,0.7117911000015625
-28.0,547.0,District - Krishna,total,0.7064966795618235
-28.0,548.0,District - Guntur,total,0.6305539477348274
-28.0,549.0,District - Prakasam,total,0.5736867372100509
-28.0,550.0,District - Sri Potti Sriramulu Nellore,total,0.6468867233556039
-28.0,551.0,District - Y.S.R.,total,0.623577458275727
-28.0,552.0,District - Kurnool,total,0.5389919651731975
-28.0,553.0,District - Anantapur,total,0.5836649231248564
-28.0,554.0,District - Chittoor,total,0.67534164671011
-29.0,555.0,District - Belgaum,total,0.6915485984156002
-29.0,556.0,District - Bagalkot ,total,0.6328427141281743
-29.0,557.0,District - Bijapur,total,0.6104852248814907
-29.0,558.0,District - Bidar,total,0.6490727471614276
-29.0,559.0,District - Raichur,total,0.524111859902308
-29.0,560.0,District - Koppal,total,0.6208273423539232
-29.0,561.0,District - Gadag,total,0.712008844138881
-29.0,562.0,District - Dharwad,total,0.7706846898842459
-29.0,563.0,District - Uttara Kannada,total,0.8183628925491693
-29.0,564.0,District - Haveri,total,0.7389186413575397
-29.0,565.0,District - Bellary,total,0.6211556774463871
-29.0,566.0,District - Chitradurga,total,0.6975517918174263
-29.0,567.0,District - Davanagere,total,0.7216708186148326
-29.0,568.0,District - Shimoga,total,0.7771229454604549
-29.0,569.0,District - Udupi,total,0.8470081000608305
-29.0,570.0,District - Chikmagalur,total,0.7645368970893793
-29.0,571.0,District - Tumkur,total,0.7159760808233399
-29.0,572.0,District - Bangalore,total,0.8669472022062334
-29.0,573.0,District - Mandya,total,0.6619803091582123
-29.0,574.0,District - Hassan,total,0.7279173193716063
-29.0,575.0,District - Dakshina Kannada,total,0.870740269790412
-29.0,576.0,District - Kodagu,total,0.803377787078609
-29.0,577.0,District - Mysore,total,0.688724722478399
-29.0,578.0,District - Chamarajanagar,total,0.5584826079223518
-29.0,579.0,District - Gulbarga,total,0.5862491117385645
-29.0,580.0,District - Yadgir,total,0.4417624516039187
-29.0,581.0,District - Kolar,total,0.7027556216721881
-29.0,582.0,District - Chikkaballapura,total,0.6490579694718243
-29.0,583.0,District - Bangalore Rural,total,0.7489382493829199
-29.0,584.0,District - Ramanagara,total,0.6465078850334498
-30.0,585.0,District - North Goa,total,0.8873804562862424
-30.0,586.0,District - South Goa,total,0.863983073988596
-31.0,587.0,District - Lakshadweep,total,0.9160904698433855
-32.0,588.0,District - Kasaragod,total,0.8885463454682853
-32.0,589.0,District - Kannur,total,0.9480797390013025
-32.0,590.0,District - Wayanad,total,0.8770337126181892
-32.0,591.0,District - Kozhikode,total,0.9470256154131579
-32.0,592.0,District - Malappuram,total,0.9283725977553337
-32.0,593.0,District - Palakkad,total,0.879575952437021
-32.0,594.0,District - Thrissur,total,0.946533925729094
-32.0,595.0,District - Ernakulam,total,0.9562644133860503
-32.0,596.0,District - Idukki ,total,0.9120022840271298
-32.0,597.0,District - Kottayam,total,0.97136673112484
-32.0,598.0,District - Alappuzha,total,0.9542833524629648
-32.0,599.0,District - Pathanamthitta,total,0.9636420929118873
-32.0,600.0,District - Kollam,total,0.9358496982973681
-32.0,601.0,District - Thiruvananthapuram,total,0.9242109255951957
-33.0,602.0,District - Thiruvallur,total,0.8216844517553109
-33.0,603.0,District - Chennai,total,0.8938744607375252
-33.0,604.0,District - Kancheepuram,total,0.8279733732625891
-33.0,605.0,District - Vellore,total,0.765329919883122
-33.0,606.0,District - Tiruvannamalai,total,0.7070607661395566
-33.0,607.0,District - Viluppuram,total,0.6764950359785253
-33.0,608.0,District - Salem,total,0.6889638101163946
-33.0,609.0,District - Namakkal   ,total,0.7135552707192704
-33.0,610.0,District - Erode,total,0.6916606212122903
-33.0,611.0,District - The Nilgiris,total,0.8324410759044858
-33.0,612.0,District - Dindigul,total,0.7284999057410926
-33.0,613.0,District - Karur ,total,0.7223417999190427
-33.0,614.0,District - Tiruchirappalli,total,0.810356788733824
-33.0,615.0,District - Perambalur  ,total,0.7013783880845272
-33.0,616.0,District - Ariyalur  ,total,0.6685847145700164
-33.0,617.0,District - Cuddalore,total,0.7496482503936276
-33.0,618.0,District - Nagapattinam  ,total,0.8141504367428825
-33.0,619.0,District - Thiruvarur,total,0.810224998870075
-33.0,620.0,District - Thanjavur,total,0.8045029427268725
-33.0,621.0,District - Pudukkottai,total,0.7354266417855934
-33.0,622.0,District - Sivaganga,total,0.7704034466176629
-33.0,623.0,District - Madurai,total,0.8119002292493089
-33.0,624.0,District - Theni  ,total,0.7393340722529408
-33.0,625.0,District - Virudhunagar,total,0.7726457247308917
-33.0,626.0,District - Ramanathapuram,total,0.7781354323861416
-33.0,627.0,District - Thoothukkudi,total,0.8429705356960462
-33.0,628.0,District - Tirunelveli ,total,0.8008982530441203
-33.0,629.0,District - Kanniyakumari,total,0.9091538077069768
-33.0,630.0,District - Dharmapuri,total,0.6312257879167397
-33.0,631.0,District - Krishnagiri,total,0.6660379328042497
-33.0,632.0,District - Coimbatore,total,0.8215064892189637
-33.0,633.0,District - Tiruppur,total,0.760626105854346
-34.0,634.0,District - Yanam,total,0.7640371859048652
-34.0,635.0,District - Puducherry,total,0.8391972317958092
-34.0,636.0,District - Mahe,total,0.9794352556442991
-34.0,637.0,District - Karaikal,total,0.86016459812836
-35.0,638.0,District - Nicobars,total,0.7615067188657285
-35.0,639.0,District - North  & Middle Andaman,total,0.8171182186755904
-35.0,640.0,District - South Andaman,total,0.8784326232555071
-1.0,1.0,District - Kupwara,female,0.40197004826019017
-1.0,2.0,District - Badgam,female,0.3521540423889561
-1.0,3.0,District - Leh(Ladakh),female,0.5857821743768791
-1.0,4.0,District - Kargil,female,0.48173293768545994
-1.0,5.0,District - Punch,female,0.4369480144558732
-1.0,6.0,District - Rajouri,female,0.49215661535873495
-1.0,7.0,District - Kathua,female,0.5853524175384885
-1.0,8.0,District - Baramula,female,0.4348544973544973
-1.0,9.0,District - Bandipore,female,0.35378940026722017
-1.0,10.0,District - Srinagar,female,0.5720128221877975
-1.0,11.0,District - Ganderbal,female,0.3658246928241904
-1.0,12.0,District - Pulwama,female,0.4496030262376564
-1.0,13.0,District - Shupiyan,female,0.418405434228219
-1.0,14.0,District - Anantnag,female,0.4373284708781669
-1.0,15.0,District - Kulgam,female,0.4022469273415271
-1.0,16.0,District - Doda,female,0.397098638218774
-1.0,17.0,District - Ramban,female,0.26763777858149485
-1.0,18.0,District - Kishtwar,female,0.32004305705059205
-1.0,19.0,District - Udhampur,female,0.49787950496710776
-1.0,20.0,District - Reasi,female,0.3760947908703724
-1.0,21.0,District - Jammu,female,0.7455754920535161
-1.0,22.0,District - Samba,female,0.6993023255813954
-2.0,23.0,District - Chamba,female,0.5455074842910305
-2.0,24.0,District - Kangra,female,0.774567794327716
-2.0,25.0,District - Lahul & Spiti,female,0.6202509277257466
-2.0,26.0,District - Kullu,female,0.6599911364030496
-2.0,27.0,District - Mandi,female,0.6950642397437288
-2.0,28.0,District - Hamirpur,female,0.8042581532247669
-2.0,29.0,District - Una,female,0.7872807129934758
-2.0,30.0,District - Bilaspur,female,0.749665660200466
-2.0,31.0,District - Solan,female,0.7352667865707434
-2.0,32.0,District - Sirmaur,female,0.6602131508352982
-2.0,33.0,District - Shimla,female,0.7408184538367343
-2.0,34.0,District - Kinnaur,female,0.6642947279865395
-3.0,35.0,District - Gurdaspur,female,0.7168285850229161
-3.0,36.0,District - Kapurthala ,female,0.717057214466663
-3.0,37.0,District - Jalandhar,female,0.762835239088454
-3.0,38.0,District - Hoshiarpur,female,0.7826951283481957
-3.0,39.0,District - Shahid Bhagat Singh Nagar ,female,0.7089066956638058
-3.0,40.0,District - Fatehgarh Sahib,female,0.7201689791850061
-3.0,41.0,District - Ludhiana,female,0.7578586833660305
-3.0,42.0,District - Moga,female,0.6246375914114091
-3.0,43.0,District - Firozpur,female,0.5642135168317962
-3.0,44.0,District - Muktsar,female,0.5431682573833857
-3.0,45.0,District - Faridkot,female,0.5940845507103646
-3.0,46.0,District - Bathinda,female,0.5730244053639597
-3.0,47.0,District - Mansa,female,0.4965827073206658
-3.0,48.0,District - Patiala,female,0.6617523384788951
-3.0,49.0,District - Amritsar ,female,0.6914778380823157
-3.0,50.0,District - Tarn Taran,female,0.5684314657553605
-3.0,51.0,District - Rupnagar,female,0.7367354038459232
-3.0,52.0,District - Sahibzada Ajit Singh Nagar,female,0.7715044051422247
-3.0,53.0,District - Sangrur,female,0.5717460565201017
-3.0,54.0,District - Barnala,female,0.5857734412184674
-4.0,55.0,District - Chandigarh,female,0.7921488200284972
-5.0,56.0,District - Uttarkashi,female,0.5398615904251414
-5.0,57.0,District - Chamoli,female,0.6671884940633198
-5.0,58.0,District - Rudraprayag,female,0.645245174952545
-5.0,59.0,District - Tehri Garhwal,female,0.5666335112476799
-5.0,60.0,District - Dehradun,female,0.7557020231424822
-5.0,61.0,District - Garhwal,female,0.6768851651059635
-5.0,62.0,District - Pithoragarh,female,0.6720211238140471
-5.0,63.0,District - Bageshwar,female,0.6307045346259814
-5.0,64.0,"District - Almora
-",female,0.6409009715869253
-5.0,65.0,District - Champawat,female,0.6074524191699151
-5.0,66.0,District - Nainital,female,0.7378712561220405
-5.0,67.0,District - Udham Singh Nagar,female,0.5809262636765675
-5.0,68.0,District - Hardwar,female,0.5914920417779147
-6.0,69.0,District - Panchkula,female,0.7369422273685952
-6.0,70.0,District - Ambala,female,0.7249604668255417
-6.0,71.0,District - Yamunanagar,female,0.6734646631471423
-6.0,72.0,District - Kurukshetra,female,0.6449473733893425
-6.0,73.0,District - Kaithal,female,0.5204983535845641
-6.0,74.0,District - Karnal,female,0.6214752993341204
-6.0,75.0,District - Panipat,female,0.6204085298570658
-6.0,76.0,District - Sonipat,female,0.6497819182898413
-6.0,77.0,District - Jind,female,0.5336354059748257
-6.0,78.0,District - Fatehabad,female,0.5181059105141779
-6.0,79.0,District - Sirsa,female,0.5419415244499298
-6.0,80.0,District - Hisar,female,0.5584156656660932
-6.0,81.0,District - Bhiwani,female,0.5665106653525879
-6.0,82.0,District - Rohtak,female,0.6727427075066572
-6.0,83.0,District - Jhajjar,female,0.6604691163058315
-6.0,84.0,District - Mahendragarh,female,0.5825193604796403
-6.0,85.0,District - Rewari,female,0.6473115948727921
-6.0,86.0,District - Gurgaon,female,0.7549380470794753
-6.0,87.0,District - Mewat ,female,0.25072599548429014
-6.0,88.0,District - Faridabad,female,0.7056479350997462
-6.0,89.0,District - Palwal ,female,0.45177588052463924
-7.0,90.0,District - North West,female,0.7543416890470692
-7.0,91.0,District - North,female,0.7990173139915769
-7.0,92.0,District - North East,female,0.7293834850097594
-7.0,93.0,District - East,female,0.8323874057129137
-7.0,94.0,District - New Delhi,female,0.8168087303354862
-7.0,95.0,District - Central,female,0.8057704621280324
-7.0,96.0,District - West,female,0.8064258894361725
-7.0,97.0,District - South West,female,0.8046827372076029
-7.0,98.0,District - South,female,0.7798505299700207
-8.0,99.0,District - Ganganagar ,female,0.529626429090353
-8.0,100.0,District - Hanumangarh,female,0.4762362198298434
-8.0,101.0,District - Bikaner,female,0.45268036388900335
-8.0,102.0,District - Churu,female,0.44778135346721537
-8.0,103.0,District - Jhunjhunun,female,0.5311848164911115
-8.0,104.0,District - Alwar,female,0.47064227787074736
-8.0,105.0,District - Bharatpur,female,0.4470350151977298
-8.0,106.0,District - Dhaulpur,female,0.4354282088350529
-8.0,107.0,District - Karauli,female,0.3705761316872428
-8.0,108.0,District - Sawai Madhopur,female,0.3704151483977656
-8.0,109.0,District - Dausa,female,0.40506888676048036
-8.0,110.0,District - Jaipur,female,0.5739934719171136
-8.0,111.0,District - Sikar,female,0.49746027130699294
-8.0,112.0,District - Nagaur,female,0.37613407934950704
-8.0,113.0,District - Jodhpur,female,0.43560836122625407
-8.0,114.0,District - Jaisalmer,female,0.29893673900222134
-8.0,115.0,District - Barmer,female,0.28490241244025183
-8.0,116.0,District - Jalor,female,0.26585481035637526
-8.0,117.0,District - Sirohi,female,0.32566520124238485
-8.0,118.0,District - Pali,female,0.3872779336138382
-8.0,119.0,District - Ajmer,female,0.4979074778450801
-8.0,120.0,District - Tonk,female,0.3547711833727294
-8.0,121.0,District - Bundi,female,0.3731722541692215
-8.0,122.0,District - Bhilwara,female,0.3923836904474964
-8.0,123.0,District - Rajsamand,female,0.383114932939742
-8.0,124.0,District - Dungarpur,female,0.3571646648287903
-8.0,125.0,District - Banswara,female,0.3284907661088474
-8.0,126.0,District - Chittaurgarh,female,0.38447823241562923
-8.0,127.0,District - Kota,female,0.6099885424649635
-8.0,128.0,District - Baran,female,0.43131455183764145
-8.0,129.0,District - Jhalawar,female,0.3712450239153969
-8.0,130.0,District - Udaipur,female,0.4166471650766539
-8.0,131.0,District - Pratapgarh,female,0.334770516116633
-9.0,132.0,District - Saharanpur,female,0.5490981405246675
-9.0,133.0,District - Muzaffarnagar,female,0.5186769939688997
-9.0,134.0,District - Bijnor,female,0.5190628803600669
-9.0,135.0,District - Moradabad,female,0.3973698957354556
-9.0,136.0,District - Rampur,female,0.3480264981833569
-9.0,137.0,District - Jyotiba Phule Nagar,female,0.4193126076554153
-9.0,138.0,District - Meerut,female,0.5953623684435698
-9.0,139.0,District - Baghpat,female,0.5305837084978189
-9.0,140.0,District - Ghaziabad,female,0.6617514950591521
-9.0,141.0,District - Gautam Buddha Nagar,female,0.669051975649647
-9.0,142.0,District - Bulandshahr ,female,0.47658767859942996
-9.0,143.0,District - Aligarh,female,0.48608476729663874
-9.0,144.0,District - Mahamaya Nagar,female,0.512698460260861
-9.0,145.0,District - Mathura,female,0.4896758766570757
-9.0,146.0,District - Agra,female,0.5515389822201568
-9.0,147.0,District - Firozabad,female,0.5534441168946493
-9.0,148.0,District - Mainpuri,female,0.5961542212253654
-9.0,149.0,District - Budaun,female,0.2992152593013879
-9.0,150.0,District - Bareilly,female,0.4066931113554645
-9.0,151.0,District - Pilibhit,female,0.40071147374592897
-9.0,152.0,District - Shahjahanpur,female,0.3995121712800151
-9.0,153.0,District - Kheri,female,0.41151910521736035
-9.0,154.0,District - Sitapur,female,0.40790828195770834
-9.0,155.0,District - Hardoi,female,0.4320020469243951
-9.0,156.0,District - Unnao,female,0.48855148106854207
-9.0,157.0,District - Lucknow,female,0.6825529098673698
-9.0,158.0,District - Rae Bareli,female,0.47367548637847223
-9.0,159.0,District - Farrukhabad,female,0.5231679905433118
-9.0,160.0,District - Kannauj,female,0.5603982678355256
-9.0,161.0,District - Etawah,female,0.634793869180869
-9.0,162.0,District - Auraiya,female,0.6425147642259345
-9.0,163.0,District - Kanpur Dehat,female,0.599178814347848
-9.0,164.0,District - Kanpur Nagar,female,0.7226141776881138
-9.0,165.0,District - Jalaun ,female,0.5554544605324615
-9.0,166.0,District - Jhansi,female,0.572097888481515
-9.0,167.0,District - Lalitpur,female,0.3894358675599573
-9.0,168.0,District - Hamirpur,female,0.4647631051071308
-9.0,169.0,District - Mahoba,female,0.4354228632358718
-9.0,170.0,District - Banda,female,0.4238771603471623
-9.0,171.0,District - Chitrakoot,female,0.4014295720263645
-9.0,172.0,District - Fatehpur,female,0.4738653566904563
-9.0,173.0,District - Pratapgarh,female,0.49327039245764154
-9.0,174.0,District - Kaushambi,female,0.3718348859662575
-9.0,175.0,District - Allahabad ,female,0.5308562954219749
-9.0,176.0,District - Bara Banki,female,0.4305712336665665
-9.0,177.0,District - Faizabad,female,0.5052884970648684
-9.0,178.0,District - Ambedkar Nagar,female,0.5414991998630891
-9.0,179.0,District - Sultanpur,female,0.4918866390723512
-9.0,180.0,District - Bahraich,female,0.299157775039886
-9.0,181.0,District - Shrawasti,female,0.23775575834378762
-9.0,182.0,District - Balrampur,female,0.28810237154919166
-9.0,183.0,District - Gonda,female,0.3711983887210473
-9.0,184.0,District - Siddharthnagar,female,0.3592321863986321
-9.0,185.0,District - Basti,female,0.4605137194445966
-9.0,186.0,District - Sant Kabir Nagar,female,0.44254743316773126
-9.0,187.0,District - Mahrajganj,female,0.37272445684516553
-9.0,188.0,District - Gorakhpur,female,0.5154089165292244
-9.0,189.0,District - Kushinagar,female,0.42410285674104886
-9.0,190.0,District - Deoria,female,0.5038078825407952
-9.0,191.0,District - Azamgarh,female,0.517613613799129
-9.0,192.0,District - Mau,female,0.5532624339516663
-9.0,193.0,District - Ballia,female,0.5203693471299827
-9.0,194.0,District - Jaunpur,female,0.5061233170241054
-9.0,195.0,District - Ghazipur,female,0.5166911108416096
-9.0,196.0,District - Chandauli,female,0.5181404026018372
-9.0,197.0,District - Varanasi,female,0.6070076426819049
-9.0,198.0,District - Sant Ravidas Nagar (Bhadohi),female,0.46057880671313045
-9.0,199.0,District - Mirzapur,female,0.4696912273771809
-9.0,200.0,District - Sonbhadra,female,0.4167556332805333
-9.0,201.0,District - Etah,female,0.5042729811407368
-9.0,202.0,District - Kanshiram Nagar,female,0.3992182799246909
-10.0,203.0,District - Pashchim Champaran,female,0.336669888103799
-10.0,204.0,District - Purba Champaran,female,0.3394941396155081
-10.0,205.0,District - Sheohar,female,0.3552129327490402
-10.0,206.0,District - Sitamarhi,female,0.3317869098769012
-10.0,207.0,District - Madhubani,female,0.34942598981944206
-10.0,208.0,District - Supaul,female,0.32049733432295685
-10.0,209.0,District - Araria,female,0.3249562539094357
-10.0,210.0,District - Kishanganj,female,0.34522871896234375
-10.0,211.0,District - Purnia,female,0.32423160228684617
-10.0,212.0,District - Katihar,female,0.33614979904655024
-10.0,213.0,District - Madhepura,female,0.3112457257021375
-10.0,214.0,District - Saharsa,female,0.3232407339745932
-10.0,215.0,District - Darbhanga,female,0.3637871339877469
-10.0,216.0,District - Muzaffarpur,female,0.46510501642294133
-10.0,217.0,District - Gopalganj,female,0.4453610275370031
-10.0,218.0,District - Siwan,female,0.4879291866325984
-10.0,219.0,District - Saran,female,0.4518362742809983
-10.0,220.0,District - Vaishali,female,0.4764103672170833
-10.0,221.0,District - Samastipur,female,0.4069336679598448
-10.0,222.0,District - Begusarai,female,0.46432813902457315
-10.0,223.0,District - Khagaria,female,0.40614570614570616
-10.0,224.0,District - Bhagalpur,female,0.4754337770890564
-10.0,225.0,District - Banka,female,0.38183458491571154
-10.0,226.0,District - Munger,female,0.5575066839046555
-10.0,227.0,District - Lakhisarai,female,0.43093100575960586
-10.0,228.0,District - Sheikhpura,female,0.4438595908607864
-10.0,229.0,District - Nalanda,female,0.44616578606035173
-10.0,230.0,District - Patna,female,0.5691097591624459
-10.0,231.0,District - Bhojpur,female,0.5042017431380201
-10.0,232.0,District - Buxar,female,0.5001346369356633
-10.0,233.0,District - Kaimur (Bhabua),female,0.489232629855108
-10.0,234.0,District - Rohtas,female,0.5447571539938119
-10.0,235.0,District - Aurangabad,female,0.5053313085790797
-10.0,236.0,District - Gaya,female,0.44470575116561983
-10.0,237.0,District - Nawada,female,0.40146742263038904
-10.0,238.0,District - Jamui,female,0.36319990892621257
-10.0,239.0,District - Jehanabad ,female,0.4576523799529758
-10.0,240.0,District - Arwal,female,0.44897356953857354
-11.0,241.0,District - North  District,female,0.6553273924835336
-11.0,242.0,District - West District,female,0.6512789201683421
-11.0,243.0,District - South District,female,0.7121823842522849
-11.0,244.0,District - East District,female,0.7564683285571955
-12.0,245.0,District - Tawang,female,0.3761633359786451
-12.0,246.0,District - West Kameng,female,0.5382561197653247
-12.0,247.0,District - East Kameng,female,0.4021540866846174
-12.0,248.0,District - Papum Pare,female,0.7056129494642264
-12.0,249.0,District - Upper Subansiri,female,0.513373012883297
-12.0,250.0,District - West Siang,female,0.5540608994202736
-12.0,251.0,District - East Siang,female,0.6306116300090389
-12.0,252.0,District - Upper Siang,female,0.47702427274411713
-12.0,253.0,District - Changlang,female,0.4394822445107075
-12.0,254.0,District - Tirap,female,0.36365284660945246
-12.0,255.0,District - Lower Subansiri,female,0.6458378068856918
-12.0,256.0,District - Kurung Kumey,female,0.35121361003153184
-12.0,257.0,District - Dibang Valley,female,0.5382003395585738
-12.0,258.0,District - Lower Dibang Valley,female,0.5621421755725191
-12.0,259.0,District - Lohit,female,0.5401335873482223
-12.0,260.0,District - Anjaw,female,0.34060175794455716
-13.0,261.0,District - Mon,female,0.4870277467687052
-13.0,262.0,District - Mokokchung,female,0.9076163297895935
-13.0,263.0,District - Zunheboto,female,0.8092690840531416
-13.0,264.0,District - Wokha,female,0.8310533757511488
-13.0,265.0,District - Dimapur ,female,0.8111439323433011
-13.0,266.0,District - Phek,female,0.6789339087349157
-13.0,267.0,District - Tuensang,female,0.6791271780985705
-13.0,268.0,District - Longleng,female,0.6619404496657889
-13.0,269.0,District - Kiphire,female,0.5960493360427201
-13.0,270.0,District - Kohima,female,0.7995921095082269
-13.0,271.0,District - Peren,female,0.7054252712635631
-14.0,272.0,District - Senapati,female,0.5353748680042238
-14.0,273.0,District - Tamenglong ,female,0.6159429626766311
-14.0,274.0,District - Churachandpur,female,0.7699115981155047
-14.0,275.0,District - Bishnupur,female,0.6298007816676369
-14.0,276.0,District - Thoubal,female,0.5946141745322073
-14.0,277.0,District - Imphal West,female,0.7843249574214535
-14.0,278.0,District - Imphal East,female,0.7330650692206381
-14.0,279.0,District - Ukhrul,female,0.7612683438155137
-14.0,280.0,District - Chandel,female,0.6161666700022015
-15.0,281.0,District - Mamit,female,0.782501235788433
-15.0,282.0,District - Kolasib,female,0.9188494177289592
-15.0,283.0,District - Aizawl,female,0.9775544780847957
-15.0,284.0,District - Champhai,female,0.9422838078075153
-15.0,285.0,District - Serchhip,female,0.9742409045317771
-15.0,286.0,District - Lunglei,female,0.84354879009783
-15.0,287.0,District - Lawngtlai,female,0.5461211446831579
-15.0,288.0,District - Saiha,female,0.8657163458871817
-16.0,289.0,District - West Tripura ,female,0.8283957069411169
-16.0,290.0,District - South Tripura ,female,0.7583966818877651
-16.0,291.0,District - Dhalai,female,0.7677997373446023
-16.0,292.0,District - North Tripura,female,0.817285819387246
-17.0,293.0,District - West Garo Hills,female,0.5864087107717131
-17.0,294.0,District - East Garo Hills,female,0.6879136480364114
-17.0,295.0,District - South Garo Hills,female,0.6353041362530414
-17.0,296.0,District - West Khasi Hills,female,0.7571126646073809
-17.0,297.0,District - Ribhoi,female,0.7124637919909943
-17.0,298.0,District - East Khasi Hills,female,0.8227099370771388
-17.0,299.0,District - Jaintia Hills,female,0.601038109547876
-18.0,300.0,District - Kokrajhar,female,0.5169477961950093
-18.0,301.0,District - Dhubri,female,0.46477552415483414
-18.0,302.0,District - Goalpara,female,0.573961024825615
-18.0,303.0,District - Barpeta,female,0.5176470364394654
-18.0,304.0,District - Morigaon,female,0.5783858298087856
-18.0,305.0,District - Nagaon,female,0.6248382851033628
-18.0,306.0,District - Sonitpur,female,0.5534388386857155
-18.0,307.0,District - Lakhimpur,female,0.6566952897429761
-18.0,308.0,District - Dhemaji,female,0.5923005334241289
-18.0,309.0,District - Tinsukia,female,0.5686108939742467
-18.0,310.0,District - Dibrugarh,female,0.6523963925273781
-18.0,311.0,District - Sivasagar,female,0.7174290720465659
-18.0,312.0,District - Jorhat,female,0.7356180620164918
-18.0,313.0,District - Golaghat,female,0.6675621550334587
-18.0,314.0,District - Karbi Anglong,female,0.5607219211455278
-18.0,315.0,District - Dima Hasao,female,0.6680748074807481
-18.0,316.0,District - Cachar,female,0.7012261670067874
-18.0,317.0,District - Karimganj,female,0.6757884683263086
-18.0,318.0,District - Hailakandi,female,0.6239630296459461
-18.0,319.0,District - Bongaigaon,female,0.5883226767541511
-18.0,320.0,District - Chirang,female,0.4975884964243223
-18.0,321.0,District - Kamrup,female,0.6543809549746531
-18.0,322.0,District - Kamrup Metropolitan,female,0.8391955675895097
-18.0,323.0,District - Nalbari,female,0.6929329495885236
-18.0,324.0,District - Baksa,female,0.5519872765365265
-18.0,325.0,District - Darrang,female,0.5229262156367389
-18.0,326.0,District - Udalguri,female,0.5196107699306266
-19.0,327.0,District - Darjiling ,female,0.6934035350966806
-19.0,328.0,District - Jalpaiguri ,female,0.604013922395536
-19.0,329.0,District - Koch Bihar ,female,0.6280373179661463
-19.0,330.0,District - Uttar Dinajpur,female,0.43606454868576944
-19.0,331.0,District - Dakshin Dinajpur,female,0.6102288725517667
-19.0,332.0,District - Maldah ,female,0.4897418210091908
-19.0,333.0,District - Murshidabad ,female,0.5588369439321964
-19.0,334.0,District - Birbhum,female,0.5839810085058493
-19.0,335.0,District - Barddhaman ,female,0.6537867983700105
-19.0,336.0,District - Nadia ,female,0.663943979543044
-19.0,337.0,District - North Twenty Four Parganas,female,0.7809978728525934
-19.0,338.0,District - Hugli ,female,0.7320922769382989
-19.0,339.0,District - Bankura ,female,0.5399255484308546
-19.0,340.0,District - Puruliya,female,0.42168505482091634
-19.0,341.0,District - Haora ,female,0.7679310174371201
-19.0,342.0,District - Kolkata,female,0.8302507085995994
-19.0,343.0,District - South Twenty Four Parganas,female,0.6739260305219139
-19.0,344.0,District - Paschim Medinipur,female,0.6610311968881669
-19.0,345.0,District - Purba Medinipur,female,0.7830423204765408
-20.0,346.0,District - Garhwa ,female,0.3350412047287522
-20.0,347.0,District - Chatra,female,0.3753614651386955
-20.0,348.0,District - Kodarma,female,0.4178232972067196
-20.0,349.0,District - Giridih,female,0.36230661789531343
-20.0,350.0,District - Deoghar,female,0.4128317128033141
-20.0,351.0,District - Godda,female,0.3380038757202808
-20.0,352.0,District - Sahibganj,female,0.3165729910375209
-20.0,353.0,District - Pakur,female,0.2979346204916295
-20.0,354.0,District - Dhanbad,female,0.5774243254030873
-20.0,355.0,District - Bokaro,female,0.5237275983489891
-20.0,356.0,District - Lohardaga,female,0.46846103508123027
-20.0,357.0,District - Purbi Singhbhum,female,0.6189653818981081
-20.0,358.0,District - Palamu,female,0.4031732040546496
-20.0,359.0,District - Latehar,female,0.36503790746935294
-20.0,360.0,District - Hazaribagh,female,0.48754299246339766
-20.0,361.0,District - Ramgarh,female,0.5473845531233102
-20.0,362.0,District - Dumka,female,0.3938935144197261
-20.0,363.0,District - Jamtara,female,0.4348508131642976
-20.0,364.0,District - Ranchi,female,0.6139195040295532
-20.0,365.0,District - Khunti,female,0.45943651324397405
-20.0,366.0,District - Gumla,female,0.4660920893577607
-20.0,367.0,District - Simdega,female,0.5346953922485664
-20.0,368.0,District - Pashchimi Singhbhum,female,0.37707639448497
-20.0,369.0,District - Saraikela-Kharsawan,female,0.47656699826126614
-21.0,370.0,District - Bargarh,female,0.6030644325948836
-21.0,371.0,District - Jharsuguda,female,0.6622826071389357
-21.0,372.0,District - Sambalpur,female,0.6317763525184193
-21.0,373.0,District - Debagarh,female,0.5698360177563875
-21.0,374.0,District - Sundargarh,female,0.6009430519699792
-21.0,375.0,District - Kendujhar,female,0.52782140471365
-21.0,376.0,District - Mayurbhanj,female,0.45331038447419636
-21.0,377.0,District - Baleshwar,female,0.6811372335962358
-21.0,378.0,District - Bhadrak,female,0.7207248254973652
-21.0,379.0,District - Kendrapara ,female,0.756935706656377
-21.0,380.0,District - Jagatsinghapur ,female,0.7789714259196956
-21.0,381.0,District - Cuttack,female,0.7686256012605739
-21.0,382.0,District - Jajapur  ,female,0.6962308703472041
-21.0,383.0,District - Dhenkanal,female,0.6666151848081716
-21.0,384.0,District - Anugul  ,female,0.6356376140532879
-21.0,385.0,District - Nayagarh  ,female,0.6760832600410437
-21.0,386.0,District - Khordha ,female,0.7935268334467712
-21.0,387.0,District - Puri,female,0.7518354847155336
-21.0,388.0,District - Ganjam,female,0.5464240478329386
-21.0,389.0,District - Gajapati,female,0.3445092741383593
-21.0,390.0,District - Kandhamal,female,0.42619296215819624
-21.0,391.0,District - Baudh,female,0.5121949586134847
-21.0,392.0,District - Subarnapur,female,0.5780422050757646
-21.0,393.0,District - Balangir,female,0.4649234387750204
-21.0,394.0,District - Nuapada,female,0.34956328876967335
-21.0,395.0,District - Kalahandi,female,0.3805011488416843
-21.0,396.0,District - Rayagada  ,female,0.3032680923039749
-21.0,397.0,District - Nabarangapur ,female,0.24884591248497845
-21.0,398.0,District - Koraput,female,0.28980804744193306
-21.0,399.0,District - Malkangiri  ,female,0.27336387602057793
-22.0,400.0,District - Koriya,female,0.5306161309334905
-22.0,401.0,District - Surguja,female,0.4007312585385885
-22.0,402.0,District - Jashpur ,female,0.5069422262696832
-22.0,403.0,District - Raigarh,female,0.5623952005147713
-22.0,404.0,District - Korba ,female,0.5474812232617525
-22.0,405.0,District - Janjgir - Champa,female,0.533082449911143
-22.0,406.0,District - Bilaspur,female,0.5213114716436701
-22.0,407.0,District - Kabeerdham,female,0.3755947372447028
-22.0,408.0,District - Rajnandgaon,female,0.6005341216386448
-22.0,409.0,District - Durg,female,0.6499021644265275
-22.0,410.0,District - Raipur,female,0.5938249980961499
-22.0,411.0,District - Mahasamund,female,0.528304186711741
-22.0,412.0,District - Dhamtari ,female,0.629777014234626
-22.0,413.0,District - Uttar Bastar Kanker,female,0.5348702775474812
-22.0,414.0,District - Bastar,female,0.34456699646035877
-22.0,415.0,District - Narayanpur,female,0.3056458352678986
-22.0,416.0,District - Dakshin Bastar Dantewada,female,0.2478270621880783
-22.0,417.0,District - Bijapur,female,0.23465166725520858
-23.0,418.0,District - Sheopur ,female,0.3105768900617553
-23.0,419.0,District - Morena,female,0.4709009618274722
-23.0,420.0,District - Bhind,female,0.5518545683554074
-23.0,421.0,District - Gwalior,female,0.6204925817720963
-23.0,422.0,District - Datia,female,0.5071203072530213
-23.0,423.0,District - Shivpuri,female,0.3674889610338318
-23.0,424.0,District - Tikamgarh,female,0.3847527263735092
-23.0,425.0,District - Chhatarpur,female,0.43206976623785026
-23.0,426.0,District - Panna,female,0.43221505094518886
-23.0,427.0,District - Sagar,female,0.5984760172889936
-23.0,428.0,District - Damoh,female,0.5002187608273965
-23.0,429.0,District - Satna,female,0.5365544060147822
-23.0,430.0,District - Rewa,female,0.5243838357567667
-23.0,431.0,District - Umaria,female,0.44342451834387236
-23.0,432.0,District - Neemuch ,female,0.4929367794248068
-23.0,433.0,District - Mandsaur,female,0.4944243756871368
-23.0,434.0,District - Ratlam,female,0.47691293287600856
-23.0,435.0,District - Ujjain,female,0.535278816090743
-23.0,436.0,District - Shajapur,female,0.4601842140702984
-23.0,437.0,District - Dewas,female,0.49333053106297053
-23.0,438.0,District - Dhar,female,0.38771254085370455
-23.0,439.0,District - Indore,female,0.7072420082963005
-23.0,440.0,District - Khargone (West Nimar),female,0.4430157901230186
-23.0,441.0,District - Barwani ,female,0.31299096031038154
-23.0,442.0,District - Rajgarh,female,0.37887303098424785
-23.0,443.0,District - Vidisha,female,0.5134743612847775
-23.0,444.0,District - Bhopal,female,0.7167909051019978
-23.0,445.0,District - Sehore,female,0.4866442670123263
-23.0,446.0,District - Raisen,female,0.55982964014567
-23.0,447.0,District - Betul,female,0.5346887788871176
-23.0,448.0,District - Harda ,female,0.5626589589106468
-23.0,449.0,District - Hoshangabad,female,0.6011252605444589
-23.0,450.0,District - Katni ,female,0.5328066563815
-23.0,451.0,District - Jabalpur,female,0.7049062735766932
-23.0,452.0,District - Narsimhapur,female,0.6084412168281982
-23.0,453.0,District - Dindori ,female,0.42435885487710856
-23.0,454.0,District - Mandla,female,0.478428576501859
-23.0,455.0,District - Chhindwara,female,0.5606224242297883
-23.0,456.0,District - Seoni,female,0.5614366490823515
-23.0,457.0,District - Balaghat,female,0.633493363823581
-23.0,458.0,District - Guna,female,0.3997473729474052
-23.0,459.0,District - Ashoknagar,female,0.42238998488553364
-23.0,460.0,District - Shahdol,female,0.4732330998348425
-23.0,461.0,District - Anuppur,female,0.4814180909766471
-23.0,462.0,District - Sidhi,female,0.4217272817074092
-23.0,463.0,District - Singrauli,female,0.351578231571666
-23.0,464.0,District - Jhabua,female,0.22607387122357264
-23.0,465.0,District - Alirajpur,female,0.1885745156910367
-23.0,466.0,District - Khandwa (East Nimar),female,0.4753156181479228
-23.0,467.0,District - Burhanpur,female,0.5066775372365301
-24.0,468.0,District - Kachchh,female,0.5478987008208154
-24.0,469.0,District - Banas Kantha,female,0.41345696866350234
-24.0,470.0,District - Patan  ,female,0.541828389014255
-24.0,471.0,District - Mahesana,female,0.7173168088111321
-24.0,472.0,District - Sabar Kantha,female,0.5858572228881914
-24.0,473.0,District - Gandhinagar,female,0.7235133507327846
-24.0,474.0,District - Ahmadabad,female,0.7709814956305718
-24.0,475.0,District - Surendranagar,female,0.5456428335353091
-24.0,476.0,District - Rajkot,female,0.7114955752535601
-24.0,477.0,District - Jamnagar,female,0.6034260404444022
-24.0,478.0,District - Porbandar ,female,0.6295796668986491
-24.0,479.0,District - Junagadh,female,0.6110488946280885
-24.0,480.0,District - Amreli,female,0.60844918984254
-24.0,481.0,District - Bhavnagar,female,0.6024230766867207
-24.0,482.0,District - Anand  ,female,0.7302944930633701
-24.0,483.0,District - Kheda,female,0.6922790803782535
-24.0,484.0,District - Panch Mahals,female,0.5061370745123251
-24.0,485.0,District - Dohad  ,female,0.3574417850952935
-24.0,486.0,District - Vadodara,female,0.689042439540272
-24.0,487.0,District - Narmada,female,0.563063779848631
-24.0,488.0,District - Bharuch,female,0.7145455746900686
-24.0,489.0,District - The Dangs,female,0.5889087606145527
-24.0,490.0,District - Navsari  ,female,0.7613716429975749
-24.0,491.0,District - Valsad,female,0.6789889254358007
-24.0,492.0,District - Surat,female,0.7815488485230242
-24.0,493.0,District - Tapi,female,0.5527495877518513
-25.0,494.0,District - Diu,female,0.711362554856448
-25.0,495.0,District - Daman,female,0.7898995767283592
-26.0,496.0,District - Dadra & Nagar Haveli,female,0.566570540809488
-27.0,497.0,District - Nandurbar,female,0.4930915640025551
-27.0,498.0,District - Dhule,female,0.6142943924373448
-27.0,499.0,District - Jalgaon,female,0.6698202046156226
-27.0,500.0,District - Buldana,female,0.7201497084938963
-27.0,501.0,District - Akola,female,0.8126664309939471
-27.0,502.0,District - Washim,female,0.7105240174672489
-27.0,503.0,District - Amravati,female,0.8062580433905223
-27.0,504.0,District - Wardha,female,0.7929879162885802
-27.0,505.0,District - Nagpur,female,0.8268458529712996
-27.0,506.0,District - Bhandara,female,0.7373997161126117
-27.0,507.0,District - Gondiya,female,0.7445734202151841
-27.0,508.0,District - Gadchiroli,female,0.6050378458865864
-27.0,509.0,District - Chandrapur,female,0.6910558285766613
-27.0,510.0,District - Yavatmal,female,0.7206185891480896
-27.0,511.0,District - Nanded,female,0.5992372906009201
-27.0,512.0,District - Hingoli,female,0.6297750992654859
-27.0,513.0,District - Parbhani,female,0.5702449775747348
-27.0,514.0,District - Jalna,female,0.5415619076503146
-27.0,515.0,District - Aurangabad,female,0.6495348624486279
-27.0,516.0,District - Nashik,female,0.7252135851782421
-27.0,517.0,District - Thane,female,0.7770496588922576
-27.0,518.0,District - Mumbai Suburban,female,0.8508321597688968
-27.0,519.0,District - Mumbai,female,0.8544375563550335
-27.0,520.0,District - Raigarh,female,0.740089564166031
-27.0,521.0,District - Pune,female,0.790387946986321
-27.0,522.0,District - Ahmadnagar,female,0.6672575745180523
-27.0,523.0,District - Bid,female,0.6210489309703222
-27.0,524.0,District - Latur,female,0.6459315545851945
-27.0,525.0,District - Osmanabad,female,0.6569054993318763
-27.0,526.0,District - Solapur,female,0.635327158829822
-27.0,527.0,District - Satara,female,0.734092479131901
-27.0,528.0,District - Ratnagiri,female,0.7076768470524232
-27.0,529.0,District - Sindhudurg,female,0.7747011813355945
-27.0,530.0,District - Kolhapur,female,0.7106038763633488
-27.0,531.0,District - Sangli,female,0.7122737196504945
-28.0,532.0,District - Adilabad,female,0.43304442306829677
-28.0,533.0,District - Nizamabad,female,0.43703034333503826
-28.0,534.0,District - Karimnagar,female,0.47695131307009137
-28.0,535.0,District - Medak,female,0.4281539403092716
-28.0,536.0,District - Hyderabad,female,0.7730407802294443
-28.0,537.0,District - Rangareddy,female,0.6533678321838637
-28.0,538.0,District - Mahbubnagar,female,0.35458396508807877
-28.0,539.0,District - Nalgonda,female,0.46540204571645116
-28.0,540.0,District - Warangal,female,0.48204004016577845
-28.0,541.0,District - Khammam,female,0.507175439374734
-28.0,542.0,District - Srikakulam,female,0.4445955793053194
-28.0,543.0,District - Vizianagaram,female,0.4249648978136352
-28.0,544.0,District - Visakhapatnam,female,0.5378869182626527
-28.0,545.0,District - East Godavari,female,0.630066984324287
-28.0,546.0,District - West Godavari,female,0.6736608124282469
-28.0,547.0,District - Krishna,female,0.6543059746910305
-28.0,548.0,District - Guntur,female,0.5470970422049387
-28.0,549.0,District - Prakasam,female,0.45760759015953023
-28.0,550.0,District - Sri Potti Sriramulu Nellore,female,0.56679756356915
-28.0,551.0,District - Y.S.R.,female,0.49983070264047447
-28.0,552.0,District - Kurnool,female,0.4202126286547076
-28.0,553.0,District - Anantapur,female,0.4710939975368119
-28.0,554.0,District - Chittoor,female,0.5799734230248432
-29.0,555.0,District - Belgaum,female,0.586586903430435
-29.0,556.0,District - Bagalkot ,female,0.5076076464407028
-29.0,557.0,District - Bijapur,female,0.48573645757896877
-29.0,558.0,District - Bidar,female,0.5388583093670298
-29.0,559.0,District - Raichur,female,0.3973492073833119
-29.0,560.0,District - Koppal,female,0.4935714542535844
-29.0,561.0,District - Gadag,female,0.5974355844472897
-29.0,562.0,District - Dharwad,female,0.6933649437126034
-29.0,563.0,District - Uttara Kannada,female,0.7525846354046666
-29.0,564.0,District - Haveri,female,0.6555810451601957
-29.0,565.0,District - Bellary,female,0.5105598446064956
-29.0,566.0,District - Chitradurga,female,0.6060871337164283
-29.0,567.0,District - Davanagere,female,0.6415610747889327
-29.0,568.0,District - Shimoga,female,0.7116393642314789
-29.0,569.0,District - Udupi,female,0.7953219196538092
-29.0,570.0,District - Chikmagalur,female,0.6946676718463425
-29.0,571.0,District - Tumkur,female,0.6271193542760308
-29.0,572.0,District - Bangalore,female,0.8248422306013098
-29.0,573.0,District - Mandya,female,0.5731585045387699
-29.0,574.0,District - Hassan,female,0.642223079338542
-29.0,575.0,District - Dakshina Kannada,female,0.8199606634903915
-29.0,576.0,District - Kodagu,female,0.7515198315198315
-29.0,577.0,District - Mysore,female,0.622209842446921
-29.0,578.0,District - Chamarajanagar,female,0.4843360364926508
-29.0,579.0,District - Gulbarga,female,0.46966220397758246
-29.0,580.0,District - Yadgir,female,0.3224068534557016
-29.0,581.0,District - Kolar,female,0.613248169816902
-29.0,582.0,District - Chikkaballapura,female,0.5528792210304581
-29.0,583.0,District - Bangalore Rural,female,0.6636301176753977
-29.0,584.0,District - Ramanagara,female,0.557905308117657
-30.0,585.0,District - North Goa,female,0.8425270846625535
-30.0,586.0,District - South Goa,female,0.8171630620352615
-31.0,587.0,District - Lakshadweep,female,0.8688836104513065
-32.0,588.0,District - Kasaragod,female,0.8469260386749411
-32.0,589.0,District - Kannur,female,0.927565012721434
-32.0,590.0,District - Wayanad,female,0.8378864830006834
-32.0,591.0,District - Kozhikode,female,0.9230199567203655
-32.0,592.0,District - Malappuram,female,0.9052758671391679
-32.0,593.0,District - Palakkad,female,0.8393750934396628
-32.0,594.0,District - Thrissur,female,0.9295462040509552
-32.0,595.0,District - Ernakulam,female,0.940084291888436
-32.0,596.0,District - Idukki ,female,0.8827551785525354
-32.0,597.0,District - Kottayam,female,0.963026436732935
-32.0,598.0,District - Alappuzha,female,0.9376978841043422
-32.0,599.0,District - Pathanamthitta,female,0.9556835493068
-32.0,600.0,District - Kollam,female,0.9158737030109476
-32.0,601.0,District - Thiruvananthapuram,female,0.903527712536136
-33.0,602.0,District - Thiruvallur,female,0.7561086917846894
-33.0,603.0,District - Chennai,female,0.8538360557214018
-33.0,604.0,District - Kancheepuram,female,0.76534640930632
-33.0,605.0,District - Vellore,female,0.6815570916466865
-33.0,606.0,District - Tiruvannamalai,female,0.604154228882384
-33.0,607.0,District - Viluppuram,female,0.5741556361949887
-33.0,608.0,District - Salem,female,0.6014432567448539
-33.0,609.0,District - Namakkal   ,female,0.6237368725226355
-33.0,610.0,District - Erode,female,0.6033697490210039
-33.0,611.0,District - The Nilgiris,female,0.7606786556583649
-33.0,612.0,District - Dindigul,female,0.6378652504600237
-33.0,613.0,District - Karur ,female,0.6236996705079688
-33.0,614.0,District - Tiruchirappalli,female,0.7373104225574911
-33.0,615.0,District - Perambalur  ,female,0.6046827990937117
-33.0,616.0,District - Ariyalur  ,female,0.5574679406152493
-33.0,617.0,District - Cuddalore,female,0.6575438903476333
-33.0,618.0,District - Nagapattinam  ,female,0.7440848317786597
-33.0,619.0,District - Thiruvarur,female,0.7392154325754788
-33.0,620.0,District - Thanjavur,female,0.7338842101926308
-33.0,621.0,District - Pudukkottai,female,0.64003979515282
-33.0,622.0,District - Sivaganga,female,0.6774935270327841
-33.0,623.0,District - Madurai,female,0.7396065969891978
-33.0,624.0,District - Theni  ,female,0.6505332239540607
-33.0,625.0,District - Virudhunagar,female,0.6858709185107835
-33.0,626.0,District - Ramanathapuram,female,0.6939469245076028
-33.0,627.0,District - Thoothukkudi,female,0.786809604599302
-33.0,628.0,District - Tirunelveli ,female,0.7253208723159895
-33.0,629.0,District - Kanniyakumari,female,0.8880081917475728
-33.0,630.0,District - Dharmapuri,female,0.5305474336651445
-33.0,631.0,District - Krishnagiri,female,0.5774704859629975
-33.0,632.0,District - Coimbatore,female,0.7642974856064606
-33.0,633.0,District - Tiruppur,female,0.6827504728816036
-34.0,634.0,District - Yanam,female,0.7267908309455587
-34.0,635.0,District - Puducherry,female,0.7751896980404582
-34.0,636.0,District - Mahe,female,0.9719615665561612
-34.0,637.0,District - Karaikal,female,0.8010276832166485
-35.0,638.0,District - Nicobars,female,0.6758741550529918
-35.0,639.0,District - North  & Middle Andaman,female,0.7573432053395304
-35.0,640.0,District - South Andaman,female,0.8354697777137645
+state_id,district_id,gender,value
+1.0,1.0,male,0.7341243554036299
+1.0,2.0,male,0.6261030439926858
+1.0,3.0,male,0.8571340542872108
+1.0,4.0,male,0.8170840947364649
+1.0,5.0,male,0.758391508986954
+1.0,6.0,male,0.7559462254395036
+1.0,7.0,male,0.791432508859219
+1.0,8.0,male,0.7222271245783578
+1.0,9.0,male,0.627177184950706
+1.0,10.0,male,0.7418563362305899
+1.0,11.0,male,0.6574230136225734
+1.0,12.0,male,0.7207507383010631
+1.0,13.0,male,0.6581899775617053
+1.0,14.0,male,0.6921121189306756
+1.0,15.0,male,0.6602198769313754
+1.0,16.0,male,0.7535348628377533
+1.0,17.0,male,0.6371453138435081
+1.0,18.0,male,0.6416088729236861
+1.0,19.0,male,0.7540798931302276
+1.0,20.0,male,0.637578264225744
+1.0,21.0,male,0.8823910853061184
+1.0,22.0,male,0.8709894491983052
+2.0,23.0,male,0.7983504582060539
+2.0,24.0,male,0.9052174404136205
+2.0,25.0,male,0.8467040996846397
+2.0,26.0,male,0.8584795602968237
+2.0,27.0,male,0.8816028091263584
+2.0,28.0,male,0.9373707946644955
+2.0,29.0,male,0.9116509028374893
+2.0,30.0,male,0.9021702674753347
+2.0,31.0,male,0.8850127389092692
+2.0,32.0,male,0.8339979983062591
+2.0,33.0,male,0.8868856957002939
+2.0,34.0,male,0.8616972165648337
+3.0,35.0,male,0.8271551334237901
+3.0,36.0,male,0.8132057118152688
+3.0,37.0,male,0.8497382565202691
+3.0,38.0,male,0.8786467333203343
+3.0,39.0,male,0.838471229495552
+3.0,40.0,male,0.8156138716011582
+3.0,41.0,male,0.8503399693014678
+3.0,42.0,male,0.7148619569995861
+3.0,43.0,male,0.7231886798399042
+3.0,44.0,male,0.6846856242323113
+3.0,45.0,male,0.7153
+3.0,46.0,male,0.7067710137397529
+3.0,47.0,male,0.6262115268001621
+3.0,48.0,male,0.7784540697958718
+3.0,49.0,male,0.7822970420403056
+3.0,50.0,male,0.6954086667264717
+3.0,51.0,male,0.8633890099432409
+3.0,52.0,male,0.8708605858189147
+3.0,53.0,male,0.6947174275953704
+3.0,54.0,male,0.6765432520193378
+4.0,55.0,male,0.8940152000018352
+5.0,56.0,male,0.8737815456707982
+5.0,57.0,male,0.9263169111099272
+5.0,58.0,male,0.9332197252103526
+5.0,59.0,male,0.8789293543450387
+5.0,60.0,male,0.8844461464993829
+5.0,61.0,male,0.9193720339173658
+5.0,62.0,male,0.919167917809239
+5.0,63.0,male,0.9137013473959216
+5.0,64.0,male,0.918871642374634
+5.0,65.0,male,0.9047280027077181
+5.0,66.0,male,0.8936748246876887
+5.0,67.0,male,0.7858359456635319
+5.0,68.0,male,0.7928290094233011
+6.0,69.0,male,0.8643402868377805
+6.0,70.0,male,0.8592679402428063
+6.0,71.0,male,0.8175464632694266
+6.0,72.0,male,0.8071982599417244
+6.0,73.0,male,0.7408556278259302
+6.0,74.0,male,0.7970338094837116
+6.0,75.0,male,0.8204969028533624
+6.0,76.0,male,0.8569097182835753
+6.0,77.0,male,0.7751483430362741
+6.0,78.0,male,0.7229063646976689
+6.0,79.0,male,0.729684970429841
+6.0,80.0,male,0.7979278528690861
+6.0,81.0,male,0.8331947871301065
+6.0,82.0,male,0.8616809701630131
+6.0,83.0,male,0.8800606898670968
+6.0,84.0,male,0.8827901390089206
+6.0,85.0,male,0.9068607531688053
+6.0,86.0,male,0.9006127002612607
+6.0,87.0,male,0.6476401199511703
+6.0,88.0,male,0.8812469171743744
+6.0,89.0,male,0.8002553754510237
+7.0,90.0,male,0.8897869219045991
+7.0,91.0,male,0.9032880844645551
+7.0,92.0,male,0.8790629575402635
+7.0,93.0,male,0.9277453633069515
+7.0,94.0,male,0.917869830199133
+7.0,95.0,male,0.8663754897552829
+7.0,96.0,male,0.9066108933364954
+7.0,97.0,male,0.9300391687520401
+7.0,98.0,male,0.9133306141168687
+8.0,99.0,male,0.7544136108951244
+8.0,100.0,male,0.7368481161977891
+8.0,101.0,male,0.728951006897686
+8.0,102.0,male,0.7513271930072195
+8.0,103.0,male,0.8462164773240427
+8.0,104.0,male,0.8087115957587966
+8.0,105.0,male,0.8186652611725556
+8.0,106.0,male,0.7795619582144941
+8.0,107.0,male,0.7798336023842046
+8.0,108.0,male,0.7823957944465911
+8.0,109.0,male,0.7962854260295331
+8.0,110.0,male,0.8429242603763207
+8.0,111.0,male,0.8272950472759021
+8.0,112.0,male,0.7324778322814903
+8.0,113.0,male,0.7630546141680531
+8.0,114.0,male,0.6862426525857762
+8.0,115.0,male,0.6547762369762637
+8.0,116.0,male,0.6458163447608569
+8.0,117.0,male,0.6610813513748199
+8.0,118.0,male,0.7270310392379976
+8.0,119.0,male,0.8065045397351294
+8.0,120.0,male,0.7319418313358211
+8.0,121.0,male,0.7161769907821636
+8.0,122.0,male,0.7148058057526316
+8.0,123.0,male,0.7485981159949803
+8.0,124.0,male,0.6812108730502346
+8.0,125.0,male,0.6447661047447504
+8.0,126.0,male,0.7347983578845689
+8.0,127.0,male,0.8536765443380772
+8.0,128.0,male,0.7763444358847988
+8.0,129.0,male,0.7196424533722771
+8.0,130.0,male,0.7227224741964989
+8.0,131.0,male,0.6543241909843405
+9.0,132.0,male,0.7560351228790112
+9.0,133.0,male,0.7614584477186455
+9.0,134.0,male,0.7358348497207755
+9.0,135.0,male,0.6114186926931746
+9.0,136.0,male,0.5641079551465144
+9.0,137.0,male,0.70528981174922
+9.0,138.0,male,0.7984562614270518
+9.0,139.0,male,0.8071107683324836
+9.0,140.0,male,0.8491080896867869
+9.0,141.0,male,0.8770490166051906
+9.0,142.0,male,0.7917731639556338
+9.0,143.0,male,0.7652466121533713
+9.0,144.0,male,0.8064049676249578
+9.0,145.0,male,0.8021860749055821
+9.0,146.0,male,0.7941659106149659
+9.0,147.0,male,0.795222092515948
+9.0,148.0,male,0.8301019533051031
+9.0,149.0,male,0.55924729541832
+9.0,150.0,male,0.64409708148566
+9.0,151.0,male,0.6784292559825538
+9.0,152.0,male,0.6396300695502178
+9.0,153.0,male,0.6556726263769553
+9.0,154.0,male,0.6623836025208892
+9.0,155.0,male,0.7073251719728926
+9.0,156.0,male,0.7196369544098803
+9.0,157.0,male,0.816382838198727
+9.0,158.0,male,0.7440785304945424
+9.0,159.0,male,0.7531495324179777
+9.0,160.0,male,0.7882618062599688
+9.0,161.0,male,0.843317432183312
+9.0,162.0,male,0.8418718006240695
+9.0,163.0,male,0.8101739898371071
+9.0,164.0,male,0.8263327641813698
+9.0,165.0,male,0.8165400371360809
+9.0,166.0,male,0.8378765439472652
+9.0,167.0,male,0.7013952669124215
+9.0,168.0,male,0.7684182809855181
+9.0,169.0,male,0.7224488996533467
+9.0,170.0,male,0.7415912860866652
+9.0,171.0,male,0.7107700901515974
+9.0,172.0,male,0.7399697169615054
+9.0,173.0,male,0.7891979487219707
+9.0,174.0,male,0.6858101586917823
+9.0,175.0,male,0.8046904249832797
+9.0,176.0,male,0.6621700498195336
+9.0,177.0,male,0.7481159799902816
+9.0,178.0,male,0.7846360649716361
+9.0,179.0,male,0.7695884804102867
+9.0,180.0,male,0.5405224858112396
+9.0,181.0,male,0.5136008150972127
+9.0,182.0,male,0.5506888468809074
+9.0,183.0,male,0.6523860935203498
+9.0,184.0,male,0.6592324437250321
+9.0,185.0,male,0.7392108468532624
+9.0,186.0,male,0.7472076611384759
+9.0,187.0,male,0.7203098464631061
+9.0,188.0,male,0.7972219930247956
+9.0,189.0,male,0.7463662656493061
+9.0,190.0,male,0.8059305461656453
+9.0,191.0,male,0.7788218501888251
+9.0,192.0,male,0.7975243947810323
+9.0,193.0,male,0.7914445614229512
+9.0,194.0,male,0.809320168679679
+9.0,195.0,male,0.8029085885520524
+9.0,196.0,male,0.7918489917167932
+9.0,197.0,male,0.8218371951082375
+9.0,198.0,male,0.7872514669426072
+9.0,199.0,male,0.7536458364758624
+9.0,200.0,male,0.7090472698179878
+9.0,201.0,male,0.792614159008245
+9.0,202.0,male,0.6896485993878815
+10.0,203.0,male,0.604126295740812
+10.0,204.0,male,0.5987430620519628
+10.0,205.0,male,0.5574077073731022
+10.0,206.0,male,0.5591316546681199
+10.0,207.0,male,0.6535321009625779
+10.0,208.0,male,0.6367417677642981
+10.0,209.0,male,0.5664318181818182
+10.0,210.0,male,0.5716073327910905
+10.0,211.0,male,0.5362187420528496
+10.0,212.0,male,0.5366670865619513
+10.0,213.0,male,0.5642970157489213
+10.0,214.0,male,0.5900749976841778
+10.0,215.0,male,0.6303655515054029
+10.0,216.0,male,0.6781504661007444
+10.0,217.0,male,0.7232486062502352
+10.0,218.0,male,0.7685685352721718
+10.0,219.0,male,0.7440829963073676
+10.0,220.0,male,0.7183165416394254
+10.0,221.0,male,0.6666439889756185
+10.0,222.0,male,0.680569110911348
+10.0,223.0,male,0.6089717147035778
+10.0,224.0,male,0.6719133745308977
+10.0,225.0,male,0.634795622831856
+10.0,226.0,male,0.7567597436086347
+10.0,227.0,male,0.6722325214822
+10.0,228.0,male,0.6992805904226984
+10.0,229.0,male,0.7216962624650626
+10.0,230.0,male,0.7745229813689761
+10.0,231.0,male,0.8029611116485089
+10.0,232.0,male,0.7819838168107007
+10.0,233.0,male,0.7617871784395349
+10.0,234.0,male,0.8058159998905976
+10.0,235.0,male,0.7733135800495164
+10.0,236.0,male,0.6983659807115324
+10.0,237.0,male,0.6676528297929057
+10.0,238.0,male,0.6645290227879433
+10.0,239.0,male,0.7485385221896823
+10.0,240.0,male,0.7615856884818187
+11.0,241.0,male,0.8228847703464948
+11.0,242.0,male,0.8151101527695844
+11.0,243.0,male,0.8474490806605558
+11.0,244.0,male,0.8780549082119744
+12.0,245.0,male,0.6577833236775258
+12.0,246.0,male,0.7233803671673494
+12.0,247.0,male,0.6299461855017411
+12.0,248.0,male,0.856606454231784
+12.0,249.0,male,0.6696016610273762
+12.0,250.0,male,0.7209783775494556
+12.0,251.0,male,0.7777384742365288
+12.0,252.0,male,0.6593441327538523
+12.0,253.0,male,0.6691997392225573
+12.0,254.0,male,0.6110292450691454
+12.0,255.0,male,0.800785153461813
+12.0,256.0,male,0.5085948588550702
+12.0,257.0,male,0.6579457364341085
+12.0,258.0,male,0.7315020900059714
+12.0,259.0,male,0.7322716285116496
+12.0,260.0,male,0.6266077170418006
+13.0,261.0,male,0.5947238132220173
+13.0,262.0,male,0.9233295474760191
+13.0,263.0,male,0.8772184855717076
+13.0,264.0,male,0.9102933607822954
+13.0,265.0,male,0.8804858819750635
+13.0,266.0,male,0.8271372213692987
+13.0,267.0,male,0.7666787407797682
+13.0,268.0,male,0.7299144246752447
+13.0,269.0,male,0.7379195098175741
+13.0,270.0,male,0.8905234061711462
+13.0,271.0,male,0.8358228132729434
+14.0,272.0,male,0.6759679613117727
+14.0,273.0,male,0.765897603130605
+14.0,274.0,male,0.8739848431073718
+14.0,275.0,male,0.8491924711596843
+14.0,276.0,male,0.8506235827664399
+14.0,277.0,male,0.9267108478782723
+14.0,278.0,male,0.8943989191782724
+14.0,279.0,male,0.8708076472883339
+14.0,280.0,male,0.7809121527325505
+15.0,281.0,male,0.8836100379381157
+15.0,282.0,male,0.9452822959841176
+15.0,283.0,male,0.9832413996378795
+15.0,284.0,male,0.9759951894167168
+15.0,285.0,male,0.984244629859755
+15.0,286.0,male,0.9214266316647054
+15.0,287.0,male,0.7392210463637102
+15.0,288.0,male,0.9371110743983699
+16.0,289.0,male,0.9198285391511382
+16.0,290.0,male,0.889687241145611
+16.0,291.0,male,0.9064026372695791
+16.0,292.0,male,0.9067949980186533
+17.0,293.0,male,0.7192543872702202
+17.0,294.0,male,0.7938165271796539
+17.0,295.0,male,0.767614254624592
+17.0,296.0,male,0.782703172533681
+17.0,297.0,male,0.7558914202110983
+17.0,298.0,male,0.8381900376470948
+17.0,299.0,male,0.5366932832315641
+18.0,300.0,male,0.6881191596992904
+18.0,301.0,male,0.6029574928012927
+18.0,302.0,male,0.689130036070184
+18.0,303.0,male,0.6672405941510198
+18.0,304.0,male,0.6896424766304897
+18.0,305.0,male,0.7384084335219998
+18.0,306.0,male,0.7123330059599887
+18.0,307.0,male,0.8153809050929209
+18.0,308.0,male,0.7762897448447023
+18.0,309.0,male,0.752414555728138
+18.0,310.0,male,0.814778633032327
+18.0,311.0,male,0.8476925325563194
+18.0,312.0,male,0.8658004722463151
+18.0,313.0,male,0.8168088781866722
+18.0,314.0,male,0.7380995707939058
+18.0,315.0,male,0.8201051071284193
+18.0,316.0,male,0.8356139767054909
+18.0,317.0,male,0.8273986805605749
+18.0,318.0,male,0.7911909850936437
+18.0,319.0,male,0.7239203344945474
+18.0,320.0,male,0.6701082897684839
+18.0,321.0,male,0.8014137990611433
+18.0,322.0,male,0.9202728118468162
+18.0,323.0,male,0.8359399293286219
+18.0,324.0,male,0.7449501291618829
+18.0,325.0,male,0.6600427336292494
+18.0,326.0,male,0.6988437026426688
+19.0,327.0,male,0.8403966390153768
+19.0,328.0,male,0.7723518072120549
+19.0,329.0,male,0.7800513106911371
+19.0,330.0,male,0.613960676306327
+19.0,331.0,male,0.7510913424483636
+19.0,332.0,male,0.6212684574036927
+19.0,333.0,male,0.6529059820324398
+19.0,334.0,male,0.7408255142889616
+19.0,335.0,male,0.8053913461088339
+19.0,336.0,male,0.7585336066776976
+19.0,337.0,male,0.8671489637391199
+19.0,338.0,male,0.8570656359971773
+19.0,339.0,male,0.7761691547106229
+19.0,340.0,male,0.7509412716163558
+19.0,341.0,male,0.8590265962922907
+19.0,342.0,male,0.8793006271873014
+19.0,343.0,male,0.8229733130104995
+19.0,344.0,male,0.8375660088701373
+19.0,345.0,male,0.9163093133111748
+20.0,346.0,male,0.6630634650557274
+20.0,347.0,male,0.6368578659731285
+20.0,348.0,male,0.7608410163550878
+20.0,349.0,male,0.7268947243983204
+20.0,350.0,male,0.7301185114515639
+20.0,351.0,male,0.6343136525431254
+20.0,352.0,male,0.5339199481261127
+20.0,353.0,male,0.5106637514954003
+20.0,354.0,male,0.8210020570146711
+20.0,355.0,male,0.7994832914280651
+20.0,356.0,male,0.729244487287625
+20.0,357.0,male,0.8201335096894292
+20.0,358.0,male,0.6949428142794922
+20.0,359.0,male,0.6440587930970769
+20.0,360.0,male,0.76289741732015
+20.0,361.0,male,0.7968040045044638
+20.0,362.0,male,0.6932556388881145
+20.0,363.0,male,0.7362194035386928
+20.0,364.0,male,0.8239970132683588
+20.0,365.0,male,0.711349324276516
+20.0,366.0,male,0.7213757473622973
+20.0,367.0,male,0.737152416089819
+20.0,368.0,male,0.6855899805080822
+20.0,369.0,male,0.7613496545846659
+21.0,370.0,male,0.8198174044840998
+21.0,371.0,male,0.8521664327432427
+21.0,372.0,male,0.8272067069350885
+21.0,373.0,male,0.7995273445604034
+21.0,374.0,male,0.7901568372265972
+21.0,375.0,male,0.7668250210674609
+21.0,376.0,male,0.7090296774650966
+21.0,377.0,male,0.8592072138702015
+21.0,378.0,male,0.8881543892367124
+21.0,379.0,male,0.9060863698740408
+21.0,380.0,male,0.9164815637494447
+21.0,381.0,male,0.9046577235304277
+21.0,382.0,male,0.8570643202364706
+21.0,383.0,male,0.8477279546441798
+21.0,384.0,male,0.8448680089866222
+21.0,385.0,male,0.8694721285384062
+21.0,386.0,male,0.9128476815161043
+21.0,387.0,male,0.9007060974990264
+21.0,388.0,male,0.7876242675581241
+21.0,389.0,male,0.5980442418028317
+21.0,390.0,male,0.7377043551412299
+21.0,391.0,male,0.8077520723989143
+21.0,392.0,male,0.826020568953043
+21.0,393.0,male,0.7318132520084725
+21.0,394.0,male,0.6572492420600269
+21.0,395.0,male,0.6816706352772037
+21.0,396.0,male,0.5606134122873901
+21.0,397.0,male,0.5137592612926333
+21.0,398.0,male,0.5505339896623616
+21.0,399.0,male,0.5274076823158286
+22.0,400.0,male,0.7773610757353523
+22.0,401.0,male,0.6425130797703874
+22.0,402.0,male,0.7372944359163219
+22.0,403.0,male,0.8108555664769886
+22.0,404.0,male,0.8031903494192221
+22.0,405.0,male,0.826289958304378
+22.0,406.0,male,0.7932682125476107
+22.0,407.0,male,0.6818676851809243
+22.0,408.0,male,0.8329318990107306
+22.0,409.0,male,0.8645425871241486
+22.0,410.0,male,0.83511145425515
+22.0,411.0,male,0.7942127139912163
+22.0,412.0,male,0.8601970221890799
+22.0,413.0,male,0.771387190340282
+22.0,414.0,male,0.5952397528500566
+22.0,415.0,male,0.5222510944120607
+22.0,416.0,male,0.4633011226374876
+22.0,417.0,male,0.4569233347513891
+23.0,418.0,male,0.6349815615913765
+23.0,419.0,male,0.8019845255635027
+23.0,420.0,male,0.8311142753135299
+23.0,421.0,male,0.8312558200970842
+23.0,422.0,male,0.8189208904363026
+23.0,423.0,male,0.7028517269636951
+23.0,424.0,male,0.6687008631590522
+23.0,425.0,male,0.6823540806647697
+23.0,426.0,male,0.6950383526685537
+23.0,427.0,male,0.8290598493922522
+23.0,428.0,male,0.7605704232715238
+23.0,429.0,male,0.7799767614871597
+23.0,430.0,male,0.7832171247389064
+23.0,431.0,male,0.7135788972051692
+23.0,432.0,male,0.8185682660835789
+23.0,433.0,male,0.82851781804551
+23.0,434.0,male,0.7469553062907639
+23.0,435.0,male,0.8121135203349968
+23.0,436.0,male,0.7816556616014533
+23.0,437.0,male,0.7762502423672946
+23.0,438.0,male,0.6446885771167717
+23.0,439.0,male,0.8651273128536181
+23.0,440.0,male,0.6915070624654722
+23.0,441.0,male,0.49860244480934135
+23.0,442.0,male,0.6806222982482899
+23.0,443.0,male,0.7578571197437184
+23.0,444.0,male,0.8448994007337025
+23.0,445.0,male,0.7770447841244301
+23.0,446.0,male,0.7779558812304405
+23.0,447.0,male,0.732033205383659
+23.0,448.0,male,0.7878120933636955
+23.0,449.0,male,0.8120844640621446
+23.0,450.0,male,0.7932407694129219
+23.0,451.0,male,0.8614236535785648
+23.0,452.0,male,0.8125821685256192
+23.0,453.0,male,0.7130159435586911
+23.0,454.0,male,0.7390533534035791
+23.0,455.0,male,0.758887391474762
+23.0,456.0,male,0.7728181143466056
+23.0,457.0,male,0.8326465985952463
+23.0,458.0,male,0.6935888002620508
+23.0,459.0,male,0.7461010075272585
+23.0,460.0,male,0.7170005892751915
+23.0,461.0,male,0.7451101048802198
+23.0,462.0,male,0.6903172305227205
+23.0,463.0,male,0.6569874403676301
+23.0,464.0,male,0.4557080876937629
+23.0,465.0,male,0.3400634668782229
+23.0,466.0,male,0.7348659546195541
+23.0,467.0,male,0.699504492154128
+24.0,468.0,male,0.7691316307749312
+24.0,469.0,male,0.7375742641730705
+24.0,470.0,male,0.8021070101381823
+24.0,471.0,male,0.9041592208364644
+24.0,472.0,male,0.8480104987497266
+24.0,473.0,male,0.9116680171316125
+24.0,474.0,male,0.9013838243286448
+24.0,475.0,male,0.7927026206486703
+24.0,476.0,male,0.8576446778846087
+24.0,477.0,male,0.793291187028332
+24.0,478.0,male,0.8157032599930883
+24.0,479.0,male,0.8203638049634476
+24.0,480.0,male,0.7969144531313818
+24.0,481.0,male,0.8213589611121548
+24.0,482.0,male,0.9112677012894983
+24.0,483.0,male,0.9035996748788876
+24.0,484.0,male,0.7984270100098251
+24.0,485.0,male,0.6430926736779361
+24.0,486.0,male,0.8429667831269588
+24.0,487.0,male,0.7849138619564638
+24.0,488.0,male,0.861502074632069
+24.0,489.0,male,0.7949509811062392
+24.0,490.0,male,0.8763640327484652
+24.0,491.0,male,0.8275148226624834
+24.0,492.0,male,0.8901721470057566
+24.0,493.0,male,0.7208443414943515
+25.0,494.0,male,0.8985244040862657
+25.0,495.0,male,0.9143944442834652
+26.0,496.0,male,0.8307159386962027
+27.0,497.0,male,0.6791092840265868
+27.0,498.0,male,0.7760862949963718
+27.0,499.0,male,0.843332930071892
+27.0,500.0,male,0.8962014861118927
+27.0,501.0,male,0.9184130546180623
+27.0,502.0,male,0.8934971378003926
+27.0,503.0,male,0.9061605749736694
+27.0,504.0,male,0.9110454726070165
+27.0,505.0,male,0.9159422572294916
+27.0,506.0,male,0.894949535078252
+27.0,507.0,male,0.9130720506405821
+27.0,508.0,male,0.7963681630348297
+27.0,509.0,male,0.8532894184827632
+27.0,510.0,male,0.8818359375
+27.0,511.0,male,0.821784139168485
+27.0,512.0,male,0.8499668422932016
+27.0,513.0,male,0.8023227841126905
+27.0,514.0,male,0.7905699021129892
+27.0,515.0,male,0.8589220493910988
+27.0,516.0,male,0.8703398634069665
+27.0,517.0,male,0.8818154429250208
+27.0,518.0,male,0.9269159580358138
+27.0,519.0,male,0.9124415527860915
+27.0,520.0,male,0.8834098459679856
+27.0,521.0,male,0.9039836773174669
+27.0,522.0,male,0.8546952719795425
+27.0,523.0,male,0.8331465411537948
+27.0,524.0,male,0.8254319759326492
+27.0,525.0,male,0.8394554194610135
+27.0,526.0,male,0.8310327791990384
+27.0,527.0,male,0.88557552460694
+27.0,528.0,male,0.8978935972669819
+27.0,529.0,male,0.910842926104716
+27.0,530.0,male,0.8755194341022505
+27.0,531.0,male,0.8695003269243525
+28.0,532.0,male,0.66394449501864
+28.0,533.0,male,0.6702594641713513
+28.0,534.0,male,0.6971951961721952
+28.0,535.0,male,0.6674779251487051
+28.0,536.0,male,0.8616078753634812
+28.0,537.0,male,0.8020177059878111
+28.0,538.0,male,0.5950811979040778
+28.0,539.0,male,0.7007649541827148
+28.0,540.0,male,0.7054691721661079
+28.0,541.0,male,0.6828308797530953
+28.0,542.0,male,0.6698338108303395
+28.0,543.0,male,0.6347753743760399
+28.0,544.0,male,0.7134394559226138
+28.0,545.0,male,0.7122270221665201
+28.0,546.0,male,0.7504694364084432
+28.0,547.0,male,0.7590939673867532
+28.0,548.0,male,0.7159832201467554
+28.0,549.0,male,0.6895381963563237
+28.0,550.0,male,0.727179877939714
+28.0,551.0,male,0.7481639161707946
+28.0,552.0,male,0.658655468091088
+28.0,553.0,male,0.6953019719517182
+28.0,554.0,male,0.7723517671565687
+29.0,555.0,male,0.7956597375207387
+29.0,556.0,male,0.7594914029050335
+29.0,557.0,male,0.7320714337934747
+29.0,558.0,male,0.7548554781692517
+29.0,559.0,male,0.6538505076067355
+29.0,560.0,male,0.7482058100000424
+29.0,561.0,male,0.8258691444057298
+29.0,562.0,male,0.8464615191759117
+29.0,563.0,male,0.8835532108449361
+29.0,564.0,male,0.8181834991931146
+29.0,565.0,male,0.7310443607696163
+29.0,566.0,male,0.7875178587749723
+29.0,567.0,male,0.8002374734143446
+29.0,568.0,male,0.8432964654892056
+29.0,569.0,male,0.9054605987283163
+29.0,570.0,male,0.8359214773803721
+29.0,571.0,male,0.8046290138796527
+29.0,572.0,male,0.9051525881016472
+29.0,573.0,male,0.7520598992378841
+29.0,574.0,male,0.8154571752901973
+29.0,575.0,male,0.9236349906621629
+29.0,576.0,male,0.8569501588207139
+29.0,577.0,male,0.7547216382309512
+29.0,578.0,male,0.6330182911295664
+29.0,579.0,male,0.7013813965557271
+29.0,580.0,male,0.5627107794773859
+29.0,581.0,male,0.7909720803808507
+29.0,582.0,male,0.74341142483605
+29.0,583.0,male,0.8297212739540321
+29.0,584.0,male,0.7338174100702269
+30.0,585.0,male,0.9309121523721209
+30.0,586.0,male,0.9107987297991545
+31.0,587.0,male,0.960057922046579
+32.0,588.0,male,0.9354510116922833
+32.0,589.0,male,0.972566544810972
+32.0,590.0,male,0.9186091282348331
+32.0,591.0,male,0.9745321199998898
+32.0,592.0,male,0.9552315929339524
+32.0,593.0,male,0.9238305290866069
+32.0,594.0,male,0.9661580660536999
+32.0,595.0,male,0.9731774828305872
+32.0,596.0,male,0.9417914923324165
+32.0,597.0,male,0.9802033243424421
+32.0,598.0,male,0.9732179246820998
+32.0,599.0,male,0.9729943003499152
+32.0,600.0,male,0.9590077782325221
+32.0,601.0,male,0.9474391479485195
+33.0,602.0,male,0.8872208561407257
+33.0,603.0,male,0.9338964061491103
+33.0,604.0,male,0.8903016258779182
+33.0,605.0,male,0.8513160392519407
+33.0,606.0,male,0.8112590364126324
+33.0,607.0,male,0.7789361173214805
+33.0,608.0,male,0.7742541202829576
+33.0,609.0,male,0.8044645204746951
+33.0,610.0,male,0.7805228977718061
+33.0,611.0,male,0.908421718312404
+33.0,612.0,male,0.8208538633921045
+33.0,613.0,male,0.8250782458093647
+33.0,614.0,male,0.8859224293949306
+33.0,615.0,male,0.8015721818111843
+33.0,616.0,male,0.7850381812374786
+33.0,617.0,male,0.8424943698544162
+33.0,618.0,male,0.8872119777251659
+33.0,619.0,male,0.883572714325689
+33.0,620.0,male,0.8792785535266738
+33.0,621.0,male,0.8342992000324585
+33.0,622.0,male,0.8649974549869383
+33.0,623.0,male,0.8849812891546589
+33.0,624.0,male,0.8295515925932178
+33.0,625.0,male,0.8614219385588868
+33.0,626.0,male,0.8616847958636165
+33.0,627.0,male,0.901568606837184
+33.0,628.0,male,0.8798762283511472
+33.0,629.0,male,0.9310115505775288
+33.0,630.0,male,0.7286930186782294
+33.0,631.0,male,0.7520989185959757
+33.0,632.0,male,0.8793639787248577
+33.0,633.0,male,0.8384833902818204
+34.0,634.0,male,0.8038035996532912
+34.0,635.0,male,0.9065184607824864
+34.0,636.0,male,0.9889325240985363
+34.0,637.0,male,0.9233779608650875
+35.0,638.0,male,0.8241905925473427
+35.0,639.0,male,0.8714854502556036
+35.0,640.0,male,0.9147571593838161
+1.0,1.0,total,0.5871166219893835
+1.0,2.0,total,0.49527519409466697
+1.0,3.0,total,0.7517097157067767
+1.0,4.0,total,0.672850535515555
+1.0,5.0,total,0.6073569701313577
+1.0,6.0,total,0.6349066980567724
+1.0,7.0,total,0.6928085819206667
+1.0,8.0,total,0.5878745530524302
+1.0,9.0,total,0.49919752018000724
+1.0,10.0,total,0.6612758440155448
+1.0,11.0,total,0.5219068745555473
+1.0,12.0,total,0.590030138605778
+1.0,13.0,total,0.54055514168567
+1.0,14.0,total,0.5673108872258379
+1.0,15.0,total,0.5333422298844771
+1.0,16.0,total,0.5836415044915947
+1.0,17.0,total,0.4637764267365723
+1.0,18.0,total,0.4880988270116203
+1.0,19.0,total,0.635508963596685
+1.0,20.0,total,0.5157274952545253
+1.0,21.0,total,0.817203945392646
+1.0,22.0,total,0.7883145970624973
+2.0,23.0,total,0.6718374074886017
+2.0,24.0,total,0.8377219517221155
+2.0,25.0,total,0.7413133763723837
+2.0,26.0,total,0.7625028339653465
+2.0,27.0,total,0.7864905910787889
+2.0,28.0,total,0.8651989691171974
+2.0,29.0,total,0.8487584650112867
+2.0,30.0,total,0.8254030495041259
+2.0,31.0,total,0.8150790725021816
+2.0,32.0,total,0.7508931584331832
+2.0,33.0,total,0.8171383100733238
+2.0,34.0,total,0.7755267547013909
+3.0,35.0,total,0.7739464207105192
+3.0,36.0,total,0.7665253571989323
+3.0,37.0,total,0.8075743179530519
+3.0,38.0,total,0.8305226045267704
+3.0,39.0,total,0.7739141839259875
+3.0,40.0,total,0.77058387921165
+3.0,41.0,total,0.8068458733317523
+3.0,42.0,total,0.671793183604641
+3.0,43.0,total,0.6470221695699875
+3.0,44.0,total,0.6166318778159419
+3.0,45.0,total,0.6574204700821207
+3.0,46.0,total,0.6439894016203881
+3.0,47.0,total,0.5644587200704503
+3.0,48.0,total,0.7224632217590665
+3.0,49.0,total,0.7387444102293819
+3.0,50.0,total,0.6337627052677275
+3.0,51.0,total,0.8018726475375132
+3.0,52.0,total,0.8236354367940895
+3.0,53.0,total,0.6360338406735752
+3.0,54.0,total,0.6336354984374262
+4.0,55.0,total,0.848434224235618
+5.0,56.0,total,0.7089920008696676
+5.0,57.0,total,0.7926902093777647
+5.0,58.0,total,0.7753517272076559
+5.0,59.0,total,0.710924996058459
+5.0,60.0,total,0.8229866988627386
+5.0,61.0,total,0.78778583551921
+5.0,62.0,total,0.7898641613025369
+5.0,63.0,total,0.7612540731152078
+5.0,64.0,total,0.7653987865772307
+5.0,65.0,total,0.7547671789058479
+5.0,66.0,total,0.8177705934099302
+5.0,67.0,total,0.6869370444886335
+5.0,68.0,total,0.6980214793501823
+6.0,69.0,total,0.8045079012087915
+6.0,70.0,total,0.7949287285901254
+6.0,71.0,total,0.7491456942537175
+6.0,72.0,total,0.7291258869803562
+6.0,73.0,total,0.6358627053397173
+6.0,74.0,total,0.7129289578828201
+6.0,75.0,total,0.7266744799437829
+6.0,76.0,total,0.7598064464715063
+6.0,77.0,total,0.6615427293595466
+6.0,78.0,total,0.6243845900599362
+6.0,79.0,total,0.6396286725796834
+6.0,80.0,total,0.6854735079098465
+6.0,81.0,total,0.7062100923216781
+6.0,82.0,total,0.7727611085661933
+6.0,83.0,total,0.7762587201143488
+6.0,84.0,total,0.7374441681718902
+6.0,85.0,total,0.7808078994058106
+6.0,86.0,total,0.8328837502125371
+6.0,87.0,total,0.45700892526192205
+6.0,88.0,total,0.7985444621332727
+6.0,89.0,total,0.6355732706803005
+7.0,90.0,total,0.8267403280425858
+7.0,91.0,total,0.8547232740215708
+7.0,92.0,total,0.808467393767578
+7.0,93.0,total,0.8827451035932685
+7.0,94.0,total,0.8728026219561743
+7.0,95.0,total,0.8378462905214301
+7.0,96.0,total,0.8596186514879216
+7.0,97.0,total,0.8726574082978411
+7.0,98.0,total,0.8516419665283176
+8.0,99.0,total,0.6477496059197673
+8.0,100.0,total,0.6119590988715525
+8.0,101.0,total,0.5977492336747245
+8.0,102.0,total,0.6026253299852885
+8.0,103.0,total,0.6886645511302888
+8.0,104.0,total,0.6474496119564436
+8.0,105.0,total,0.6436706359627732
+8.0,106.0,total,0.6212890845467886
+8.0,107.0,total,0.5893572079184863
+8.0,108.0,total,0.5863071370144319
+8.0,109.0,total,0.6086985165431646
+8.0,110.0,total,0.7134259702412058
+8.0,111.0,total,0.6631471912838859
+8.0,112.0,total,0.5565691715786388
+8.0,113.0,total,0.605569722814499
+8.0,114.0,total,0.5086296238252438
+8.0,115.0,total,0.4793397254672669
+8.0,116.0,total,0.4572606313778465
+8.0,117.0,total,0.4955267379760233
+8.0,118.0,total,0.5545124425535704
+8.0,119.0,total,0.6543107002905858
+8.0,120.0,total,0.5456230505835757
+8.0,121.0,total,0.5498238516871392
+8.0,122.0,total,0.5540536103982343
+8.0,123.0,total,0.5630297114095096
+8.0,124.0,total,0.5164145596407935
+8.0,125.0,total,0.4860829298943347
+8.0,126.0,total,0.5597141407590082
+8.0,127.0,total,0.7370444428142588
+8.0,128.0,total,0.609250384949463
+8.0,129.0,total,0.5488226132688223
+8.0,130.0,total,0.571207340288741
+8.0,131.0,total,0.49392616753366364
+9.0,132.0,total,0.6579636132065625
+9.0,133.0,total,0.6458347899633493
+9.0,134.0,total,0.631343865059289
+9.0,135.0,total,0.5094576185041857
+9.0,136.0,total,0.4613816880206997
+9.0,137.0,total,0.5682789062534076
+9.0,138.0,total,0.7019640999803223
+9.0,139.0,total,0.6782584920039326
+9.0,140.0,total,0.7604195605505746
+9.0,141.0,total,0.781063720314021
+9.0,142.0,total,0.6407750043637633
+9.0,143.0,total,0.6337357538188688
+9.0,144.0,total,0.6689507893595474
+9.0,145.0,total,0.6570730296704007
+9.0,146.0,total,0.6805981517319907
+9.0,147.0,total,0.6820236647726738
+9.0,148.0,total,0.7201000098375799
+9.0,149.0,total,0.43822643719213383
+9.0,150.0,total,0.5326591151864379
+9.0,151.0,total,0.5477939017870662
+9.0,152.0,total,0.5284141715926737
+9.0,153.0,total,0.5408012532500387
+9.0,154.0,total,0.5434699447680041
+9.0,155.0,total,0.5805095373984727
+9.0,156.0,total,0.6099466455103281
+9.0,157.0,total,0.7522866330787931
+9.0,158.0,total,0.61212748481249
+9.0,159.0,total,0.6459469274792431
+9.0,160.0,total,0.6821493667844911
+9.0,161.0,total,0.7463326031155536
+9.0,162.0,total,0.7500219961990569
+9.0,163.0,total,0.7129404725796601
+9.0,164.0,total,0.7784047490270773
+9.0,165.0,total,0.6957306172130836
+9.0,166.0,total,0.712030509385524
+9.0,167.0,total,0.5530202670607484
+9.0,168.0,total,0.6291150734351014
+9.0,169.0,total,0.5887110973201103
+9.0,170.0,total,0.5959836328257101
+9.0,171.0,total,0.5673864544485882
+9.0,172.0,total,0.6139032849578578
+9.0,173.0,total,0.6382562694644947
+9.0,174.0,total,0.5368506483525267
+9.0,175.0,total,0.6746304571575055
+9.0,176.0,total,0.5522956413275638
+9.0,177.0,total,0.6280980838585791
+9.0,178.0,total,0.6631533539618413
+9.0,179.0,total,0.6297675735827913
+9.0,180.0,total,0.4272447674390752
+9.0,181.0,total,0.38455201959113633
+9.0,182.0,total,0.4239606529260709
+9.0,183.0,total,0.5170474491884745
+9.0,184.0,total,0.5089774877893297
+9.0,185.0,total,0.6011264744103813
+9.0,186.0,total,0.5952687709243575
+9.0,187.0,total,0.5512151655123889
+9.0,188.0,total,0.6586943027094873
+9.0,189.0,total,0.5872371756121403
+9.0,190.0,total,0.6499982663255599
+9.0,191.0,total,0.6438213378452251
+9.0,192.0,total,0.6750850748300294
+9.0,193.0,total,0.6590727484168639
+9.0,194.0,total,0.651586364684872
+9.0,195.0,total,0.6617001256055366
+9.0,196.0,total,0.6603269330357965
+9.0,197.0,total,0.7187937471070664
+9.0,198.0,total,0.6247759347878985
+9.0,199.0,total,0.6188059990912772
+9.0,200.0,total,0.5697716930836049
+9.0,201.0,total,0.6574488592806452
+9.0,202.0,total,0.5534752027993188
+10.0,203.0,total,0.47791620868228857
+10.0,204.0,total,0.4762567813595472
+10.0,205.0,total,0.4624209457876792
+10.0,206.0,total,0.45181072803914574
+10.0,207.0,total,0.5073707936021631
+10.0,208.0,total,0.48452895742077684
+10.0,209.0,total,0.4516194812088479
+10.0,210.0,total,0.46220051684113705
+10.0,211.0,total,0.43531120012529234
+10.0,212.0,total,0.4417988832710186
+10.0,213.0,total,0.4438439291004839
+10.0,214.0,total,0.46302632651173947
+10.0,215.0,total,0.5034104946331898
+10.0,216.0,total,0.5776317869567617
+10.0,217.0,total,0.5798749315259213
+10.0,218.0,total,0.6272924486946476
+10.0,219.0,total,0.6003952909325465
+10.0,220.0,total,0.6043751646339554
+10.0,221.0,total,0.5431061065464937
+10.0,222.0,total,0.5790647283480796
+10.0,223.0,total,0.5144411693727283
+10.0,224.0,total,0.581276106272329
+10.0,225.0,total,0.5152514514073921
+10.0,226.0,total,0.6644487786496586
+10.0,227.0,total,0.5581747910640883
+10.0,228.0,total,0.5759000066840452
+10.0,229.0,total,0.5893370107527867
+10.0,230.0,total,0.6775234522177769
+10.0,231.0,total,0.6607934216196809
+10.0,232.0,total,0.6464204359320123
+10.0,233.0,total,0.6313941205902883
+10.0,234.0,total,0.6811841345757401
+10.0,235.0,total,0.6450503632169415
+10.0,236.0,total,0.5759050639015976
+10.0,237.0,total,0.5384899746554491
+10.0,238.0,total,0.5204306424438114
+10.0,239.0,total,0.6086999752883152
+10.0,240.0,total,0.6111647521547134
+11.0,241.0,total,0.7542829949238579
+11.0,242.0,total,0.7360394872550464
+11.0,243.0,total,0.783504567293997
+11.0,244.0,total,0.822424196853206
+12.0,245.0,total,0.5502479338842975
+12.0,246.0,total,0.6440436968961332
+12.0,247.0,total,0.513746427701101
+12.0,248.0,total,0.782353800792566
+12.0,249.0,total,0.590687673630932
+12.0,250.0,total,0.6415349584784356
+12.0,251.0,total,0.7049795869714217
+12.0,252.0,total,0.5754189944134078
+12.0,253.0,total,0.5602665181249464
+12.0,254.0,total,0.4913132494881544
+12.0,255.0,total,0.7234194632071763
+12.0,256.0,total,0.4270489000341958
+12.0,257.0,total,0.6061995597945709
+12.0,258.0,total,0.6507999658984341
+12.0,259.0,total,0.6420643131169447
+12.0,260.0,total,0.5001494768310912
+13.0,261.0,total,0.5436434271716456
+13.0,262.0,total,0.915777130267927
+13.0,263.0,total,0.8434201343452848
+13.0,264.0,total,0.8712631670584139
+13.0,265.0,total,0.8476010638910317
+13.0,266.0,total,0.7540612162468353
+13.0,267.0,total,0.724340824256647
+13.0,268.0,total,0.6974946866748245
+13.0,269.0,total,0.6676189584113901
+13.0,270.0,total,0.8472328123885747
+13.0,271.0,total,0.773420880722266
+14.0,272.0,total,0.6072521277976599
+14.0,273.0,total,0.6928788037226812
+14.0,274.0,total,0.8223155482436545
+14.0,275.0,total,0.7382918290507959
+14.0,276.0,total,0.7209112900970439
+14.0,277.0,total,0.8534615222699334
+14.0,278.0,total,0.8121431732170652
+14.0,279.0,total,0.8173594073411066
+14.0,280.0,total,0.7015370077525359
+15.0,281.0,total,0.8352898419044158
+15.0,282.0,total,0.932417936065222
+15.0,283.0,total,0.9803712329243283
+15.0,284.0,total,0.9592439313632953
+15.0,285.0,total,0.9793100346332029
+15.0,286.0,total,0.8836515513126492
+15.0,287.0,total,0.6452164009111617
+15.0,288.0,total,0.9015419476069415
+16.0,289.0,total,0.8749360427999264
+16.0,290.0,total,0.825408213597084
+16.0,291.0,total,0.8393018039980498
+16.0,292.0,total,0.8628100787676427
+17.0,293.0,total,0.6531688166012338
+17.0,294.0,total,0.7415907335907336
+17.0,295.0,total,0.7037975871942919
+17.0,296.0,total,0.7699856948002263
+17.0,297.0,total,0.7347166906522976
+17.0,298.0,total,0.8303274668991446
+17.0,299.0,total,0.5693662867315562
+18.0,300.0,total,0.6042094131893809
+18.0,301.0,total,0.5354863544341589
+18.0,302.0,total,0.6324546545548826
+18.0,303.0,total,0.594221351707024
+18.0,304.0,total,0.6348204487459178
+18.0,305.0,total,0.6827931798333894
+18.0,306.0,total,0.6349289585312244
+18.0,307.0,total,0.7371608945363305
+18.0,308.0,total,0.6864573959224566
+18.0,309.0,total,0.662808143191586
+18.0,310.0,total,0.7350812609276214
+18.0,311.0,total,0.7841426605172289
+18.0,312.0,total,0.8019044020687947
+18.0,313.0,total,0.7435322832925201
+18.0,314.0,total,0.6518455956661826
+18.0,315.0,total,0.747311865716192
+18.0,316.0,total,0.7697747329505044
+18.0,317.0,total,0.7531285956759712
+18.0,318.0,total,0.7101184898372727
+18.0,319.0,total,0.6571833996832503
+18.0,320.0,total,0.5850309450055834
+18.0,321.0,total,0.7299817036059774
+18.0,322.0,total,0.8811480192552149
+18.0,323.0,total,0.7665374178858003
+18.0,324.0,total,0.6495640433673662
+18.0,325.0,total,0.5931768537676938
+18.0,326.0,total,0.6104291359427211
+19.0,327.0,total,0.7677973027599257
+19.0,328.0,total,0.6903457903009337
+19.0,329.0,total,0.7065259199959502
+19.0,330.0,total,0.5282456386091121
+19.0,331.0,total,0.6823382356719945
+19.0,332.0,total,0.5576506347081808
+19.0,333.0,total,0.6069857911678537
+19.0,334.0,total,0.6642003247191002
+19.0,335.0,total,0.731796360883816
+19.0,336.0,total,0.712629124618797
+19.0,337.0,total,0.8250539544622262
+19.0,338.0,total,0.7958153906647405
+19.0,339.0,total,0.6606010680496394
+19.0,340.0,total,0.5898956451688631
+19.0,341.0,total,0.815033782161515
+19.0,342.0,total,0.8560117353494512
+19.0,343.0,total,0.7502577758140992
+19.0,344.0,total,0.7508024810095678
+19.0,345.0,total,0.8520230199236892
+20.0,346.0,total,0.505870155605408
+20.0,347.0,total,0.5095447057232386
+20.0,348.0,total,0.5932895877182122
+20.0,349.0,total,0.5499647833701363
+20.0,350.0,total,0.5784119430264274
+20.0,351.0,total,0.491125449309013
+20.0,352.0,total,0.4277585818099817
+20.0,353.0,total,0.4038602309565425
+20.0,354.0,total,0.7055053856674893
+20.0,355.0,total,0.6678456505552537
+20.0,356.0,total,0.5990819076156225
+20.0,357.0,total,0.7216590423909729
+20.0,358.0,total,0.5555291620337612
+20.0,359.0,total,0.5071150688926835
+20.0,360.0,total,0.629125479590141
+20.0,361.0,total,0.6779618957903288
+20.0,362.0,total,0.5445737340661911
+20.0,363.0,total,0.5889592625690022
+20.0,364.0,total,0.7216225963475766
+20.0,365.0,total,0.584519309874371
+20.0,366.0,total,0.5932883199374895
+20.0,367.0,total,0.6354505826202205
+20.0,368.0,total,0.5295292141791315
+20.0,369.0,total,0.6217619765477755
+21.0,370.0,total,0.7125299229855467
+21.0,371.0,total,0.7597393694767638
+21.0,372.0,total,0.7303002497966016
+21.0,373.0,total,0.685283583442898
+21.0,374.0,total,0.696732090297788
+21.0,375.0,total,0.6476667642426691
+21.0,376.0,total,0.5796761416820289
+21.0,377.0,total,0.7720953492046867
+21.0,378.0,total,0.8048272067775314
+21.0,379.0,total,0.8304745993031688
+21.0,380.0,total,0.8485314401483178
+21.0,381.0,total,0.838697483828128
+21.0,382.0,total,0.7772586195896524
+21.0,383.0,total,0.7591679949470042
+21.0,384.0,total,0.7428488576813935
+21.0,385.0,total,0.7766351509965576
+21.0,386.0,total,0.8553003403415201
+21.0,387.0,total,0.8273997884113821
+21.0,388.0,total,0.6671554263874512
+21.0,389.0,total,0.4666430213464696
+21.0,390.0,total,0.5770692321764148
+21.0,391.0,total,0.6602811498608285
+21.0,392.0,total,0.704889074565596
+21.0,393.0,total,0.5989303352219477
+21.0,394.0,total,0.5007484614958142
+21.0,395.0,total,0.5297726907921168
+21.0,396.0,total,0.42623426560742916
+21.0,397.0,total,0.3794090247865307
+21.0,398.0,total,0.4168435652983789
+21.0,399.0,total,0.398156105945777
+22.0,400.0,total,0.6559547072837755
+22.0,401.0,total,0.5225107523791108
+22.0,402.0,total,0.6213809872304336
+22.0,403.0,total,0.6863413093518493
+22.0,404.0,total,0.6774191987086797
+22.0,405.0,total,0.6799858191782014
+22.0,406.0,total,0.6589735314020705
+22.0,407.0,total,0.528529465831278
+22.0,408.0,total,0.7152923549561567
+22.0,409.0,total,0.7573978576569711
+22.0,410.0,total,0.7149466073913112
+22.0,411.0,total,0.659035076123119
+22.0,412.0,total,0.7439791473988184
+22.0,413.0,total,0.6520579538847945
+22.0,414.0,total,0.4675584191834604
+22.0,415.0,total,0.4134952735071626
+22.0,416.0,total,0.3526343680339153
+22.0,417.0,total,0.34456819007669115
+23.0,418.0,total,0.4809923513044693
+23.0,419.0,total,0.6501106934754305
+23.0,420.0,total,0.7037163558900404
+23.0,421.0,total,0.7327465155348193
+23.0,422.0,total,0.6733029566550094
+23.0,423.0,total,0.5471802924344883
+23.0,424.0,total,0.5343924712144137
+23.0,425.0,total,0.565847597642495
+23.0,426.0,total,0.570884244248582
+23.0,427.0,total,0.7213567087471444
+23.0,428.0,total,0.6373361041846479
+23.0,429.0,total,0.6627565223020652
+23.0,430.0,total,0.6575482966515438
+23.0,431.0,total,0.5821640401558631
+23.0,432.0,total,0.6586719246827218
+23.0,433.0,total,0.6634692892274136
+23.0,434.0,total,0.6130302742716143
+23.0,435.0,total,0.6760599844080795
+23.0,436.0,total,0.6257140227081739
+23.0,437.0,total,0.6384794837238531
+23.0,438.0,total,0.5176454212738052
+23.0,439.0,total,0.7886712227213296
+23.0,440.0,total,0.5693392326706965
+23.0,441.0,total,0.4062609252644678
+23.0,442.0,total,0.5324088582214987
+23.0,443.0,total,0.6437875157180479
+23.0,444.0,total,0.7835433434529202
+23.0,445.0,total,0.638116430412296
+23.0,446.0,total,0.6756507943860299
+23.0,447.0,total,0.6348295001634653
+23.0,448.0,total,0.6788783094881395
+23.0,449.0,total,0.711636671112309
+23.0,450.0,total,0.6661300963495346
+23.0,451.0,total,0.7860018915909219
+23.0,452.0,total,0.7147677734971382
+23.0,453.0,total,0.5680582885709727
+23.0,454.0,total,0.6074243622060064
+23.0,455.0,total,0.6614840009751214
+23.0,456.0,total,0.6679558259238016
+23.0,457.0,total,0.7311496333599032
+23.0,458.0,total,0.5536252625865528
+23.0,459.0,total,0.5932663442372752
+23.0,460.0,total,0.5965884795426926
+23.0,461.0,total,0.6146568683048548
+23.0,462.0,total,0.5582366211430017
+23.0,463.0,total,0.5118366357598181
+23.0,464.0,total,0.3392015489613121
+23.0,465.0,total,0.2629392178052984
+23.0,466.0,total,0.6087274408691998
+23.0,467.0,total,0.6050513691687682
+24.0,468.0,total,0.6640438723664281
+24.0,469.0,total,0.5787012018354724
+24.0,470.0,total,0.6743533164616053
+24.0,471.0,total,0.8121548860121435
+24.0,472.0,total,0.7181680938031447
+24.0,473.0,total,0.8194640116484987
+24.0,474.0,total,0.8385719074052318
+24.0,475.0,total,0.6721588169769301
+24.0,476.0,total,0.786313258956854
+24.0,477.0,total,0.7005168534247592
+24.0,478.0,total,0.7242198537525978
+24.0,479.0,total,0.7171137743531112
+24.0,480.0,total,0.7030270733129281
+24.0,481.0,total,0.7143918718080363
+24.0,482.0,total,0.8231149265963816
+24.0,483.0,total,0.7997947537349339
+24.0,484.0,total,0.6553280277987861
+24.0,485.0,total,0.49937652864699233
+24.0,486.0,total,0.7677898093106453
+24.0,487.0,total,0.6754822963807842
+24.0,488.0,total,0.7906487120805833
+24.0,489.0,total,0.69018602586318
+24.0,490.0,total,0.8195890765999927
+24.0,491.0,total,0.7561571386220848
+24.0,492.0,total,0.8427261702406149
+24.0,493.0,total,0.6357064669788741
+25.0,494.0,total,0.8016314017463663
+25.0,495.0,total,0.8748492377857892
+26.0,496.0,total,0.720440363550039
+27.0,497.0,total,0.5858501049285687
+27.0,498.0,total,0.6963224103988942
+27.0,499.0,total,0.7584969312845852
+27.0,500.0,total,0.810054351509237
+27.0,501.0,total,0.8667879512279308
+27.0,502.0,total,0.8043603125753429
+27.0,503.0,total,0.8573676710902215
+27.0,504.0,total,0.853423061160483
+27.0,505.0,total,0.8723666659489182
+27.0,506.0,total,0.8164899657751664
+27.0,507.0,total,0.8282690334527505
+27.0,508.0,total,0.701045280909585
+27.0,509.0,total,0.7734955633170151
+27.0,510.0,total,0.8026730425913029
+27.0,511.0,total,0.7130112757495982
+27.0,512.0,total,0.7420196464238085
+27.0,513.0,total,0.6881977602256655
+27.0,514.0,total,0.6685223104623378
+27.0,515.0,total,0.7569840498504673
+27.0,516.0,total,0.7995596761389809
+27.0,517.0,total,0.8328933414258337
+27.0,518.0,total,0.8920005856329325
+27.0,519.0,total,0.8864193622033818
+27.0,520.0,total,0.8128389686512286
+27.0,521.0,total,0.8493918611580272
+27.0,522.0,total,0.7623717140403935
+27.0,523.0,total,0.7297336920996095
+27.0,524.0,total,0.7383494267148398
+27.0,525.0,total,0.7509090026009784
+27.0,526.0,total,0.7352009974235794
+27.0,527.0,total,0.8089483331902974
+27.0,528.0,total,0.794689943327911
+27.0,529.0,total,0.8406105621438288
+27.0,530.0,total,0.793326742142486
+27.0,531.0,total,0.7906988176182678
+28.0,532.0,total,0.547200516895883
+28.0,533.0,total,0.5496095286704332
+28.0,534.0,total,0.5855909012932538
+28.0,535.0,total,0.5474209573994572
+28.0,536.0,total,0.8181218652500678
+28.0,537.0,total,0.7289051712915364
+28.0,538.0,total,0.4751232088097531
+28.0,539.0,total,0.5830966121402352
+28.0,540.0,total,0.592719270376695
+28.0,541.0,total,0.5938604601356332
+28.0,542.0,total,0.5549991702930228
+28.0,543.0,total,0.5277504612855514
+28.0,544.0,total,0.6246664859743831
+28.0,545.0,total,0.6708092006899928
+28.0,546.0,total,0.7117911000015625
+28.0,547.0,total,0.7064966795618235
+28.0,548.0,total,0.6305539477348274
+28.0,549.0,total,0.5736867372100509
+28.0,550.0,total,0.6468867233556039
+28.0,551.0,total,0.623577458275727
+28.0,552.0,total,0.5389919651731975
+28.0,553.0,total,0.5836649231248564
+28.0,554.0,total,0.67534164671011
+29.0,555.0,total,0.6915485984156002
+29.0,556.0,total,0.6328427141281743
+29.0,557.0,total,0.6104852248814907
+29.0,558.0,total,0.6490727471614276
+29.0,559.0,total,0.524111859902308
+29.0,560.0,total,0.6208273423539232
+29.0,561.0,total,0.712008844138881
+29.0,562.0,total,0.7706846898842459
+29.0,563.0,total,0.8183628925491693
+29.0,564.0,total,0.7389186413575397
+29.0,565.0,total,0.6211556774463871
+29.0,566.0,total,0.6975517918174263
+29.0,567.0,total,0.7216708186148326
+29.0,568.0,total,0.7771229454604549
+29.0,569.0,total,0.8470081000608305
+29.0,570.0,total,0.7645368970893793
+29.0,571.0,total,0.7159760808233399
+29.0,572.0,total,0.8669472022062334
+29.0,573.0,total,0.6619803091582123
+29.0,574.0,total,0.7279173193716063
+29.0,575.0,total,0.870740269790412
+29.0,576.0,total,0.803377787078609
+29.0,577.0,total,0.688724722478399
+29.0,578.0,total,0.5584826079223518
+29.0,579.0,total,0.5862491117385645
+29.0,580.0,total,0.4417624516039187
+29.0,581.0,total,0.7027556216721881
+29.0,582.0,total,0.6490579694718243
+29.0,583.0,total,0.7489382493829199
+29.0,584.0,total,0.6465078850334498
+30.0,585.0,total,0.8873804562862424
+30.0,586.0,total,0.863983073988596
+31.0,587.0,total,0.9160904698433855
+32.0,588.0,total,0.8885463454682853
+32.0,589.0,total,0.9480797390013025
+32.0,590.0,total,0.8770337126181892
+32.0,591.0,total,0.9470256154131579
+32.0,592.0,total,0.9283725977553337
+32.0,593.0,total,0.879575952437021
+32.0,594.0,total,0.946533925729094
+32.0,595.0,total,0.9562644133860503
+32.0,596.0,total,0.9120022840271298
+32.0,597.0,total,0.97136673112484
+32.0,598.0,total,0.9542833524629648
+32.0,599.0,total,0.9636420929118873
+32.0,600.0,total,0.9358496982973681
+32.0,601.0,total,0.9242109255951957
+33.0,602.0,total,0.8216844517553109
+33.0,603.0,total,0.8938744607375252
+33.0,604.0,total,0.8279733732625891
+33.0,605.0,total,0.765329919883122
+33.0,606.0,total,0.7070607661395566
+33.0,607.0,total,0.6764950359785253
+33.0,608.0,total,0.6889638101163946
+33.0,609.0,total,0.7135552707192704
+33.0,610.0,total,0.6916606212122903
+33.0,611.0,total,0.8324410759044858
+33.0,612.0,total,0.7284999057410926
+33.0,613.0,total,0.7223417999190427
+33.0,614.0,total,0.810356788733824
+33.0,615.0,total,0.7013783880845272
+33.0,616.0,total,0.6685847145700164
+33.0,617.0,total,0.7496482503936276
+33.0,618.0,total,0.8141504367428825
+33.0,619.0,total,0.810224998870075
+33.0,620.0,total,0.8045029427268725
+33.0,621.0,total,0.7354266417855934
+33.0,622.0,total,0.7704034466176629
+33.0,623.0,total,0.8119002292493089
+33.0,624.0,total,0.7393340722529408
+33.0,625.0,total,0.7726457247308917
+33.0,626.0,total,0.7781354323861416
+33.0,627.0,total,0.8429705356960462
+33.0,628.0,total,0.8008982530441203
+33.0,629.0,total,0.9091538077069768
+33.0,630.0,total,0.6312257879167397
+33.0,631.0,total,0.6660379328042497
+33.0,632.0,total,0.8215064892189637
+33.0,633.0,total,0.760626105854346
+34.0,634.0,total,0.7640371859048652
+34.0,635.0,total,0.8391972317958092
+34.0,636.0,total,0.9794352556442991
+34.0,637.0,total,0.86016459812836
+35.0,638.0,total,0.7615067188657285
+35.0,639.0,total,0.8171182186755904
+35.0,640.0,total,0.8784326232555071
+1.0,1.0,female,0.40197004826019017
+1.0,2.0,female,0.3521540423889561
+1.0,3.0,female,0.5857821743768791
+1.0,4.0,female,0.48173293768545994
+1.0,5.0,female,0.4369480144558732
+1.0,6.0,female,0.49215661535873495
+1.0,7.0,female,0.5853524175384885
+1.0,8.0,female,0.4348544973544973
+1.0,9.0,female,0.35378940026722017
+1.0,10.0,female,0.5720128221877975
+1.0,11.0,female,0.3658246928241904
+1.0,12.0,female,0.4496030262376564
+1.0,13.0,female,0.418405434228219
+1.0,14.0,female,0.4373284708781669
+1.0,15.0,female,0.4022469273415271
+1.0,16.0,female,0.397098638218774
+1.0,17.0,female,0.26763777858149485
+1.0,18.0,female,0.32004305705059205
+1.0,19.0,female,0.49787950496710776
+1.0,20.0,female,0.3760947908703724
+1.0,21.0,female,0.7455754920535161
+1.0,22.0,female,0.6993023255813954
+2.0,23.0,female,0.5455074842910305
+2.0,24.0,female,0.774567794327716
+2.0,25.0,female,0.6202509277257466
+2.0,26.0,female,0.6599911364030496
+2.0,27.0,female,0.6950642397437288
+2.0,28.0,female,0.8042581532247669
+2.0,29.0,female,0.7872807129934758
+2.0,30.0,female,0.749665660200466
+2.0,31.0,female,0.7352667865707434
+2.0,32.0,female,0.6602131508352982
+2.0,33.0,female,0.7408184538367343
+2.0,34.0,female,0.6642947279865395
+3.0,35.0,female,0.7168285850229161
+3.0,36.0,female,0.717057214466663
+3.0,37.0,female,0.762835239088454
+3.0,38.0,female,0.7826951283481957
+3.0,39.0,female,0.7089066956638058
+3.0,40.0,female,0.7201689791850061
+3.0,41.0,female,0.7578586833660305
+3.0,42.0,female,0.6246375914114091
+3.0,43.0,female,0.5642135168317962
+3.0,44.0,female,0.5431682573833857
+3.0,45.0,female,0.5940845507103646
+3.0,46.0,female,0.5730244053639597
+3.0,47.0,female,0.4965827073206658
+3.0,48.0,female,0.6617523384788951
+3.0,49.0,female,0.6914778380823157
+3.0,50.0,female,0.5684314657553605
+3.0,51.0,female,0.7367354038459232
+3.0,52.0,female,0.7715044051422247
+3.0,53.0,female,0.5717460565201017
+3.0,54.0,female,0.5857734412184674
+4.0,55.0,female,0.7921488200284972
+5.0,56.0,female,0.5398615904251414
+5.0,57.0,female,0.6671884940633198
+5.0,58.0,female,0.645245174952545
+5.0,59.0,female,0.5666335112476799
+5.0,60.0,female,0.7557020231424822
+5.0,61.0,female,0.6768851651059635
+5.0,62.0,female,0.6720211238140471
+5.0,63.0,female,0.6307045346259814
+5.0,64.0,female,0.6409009715869253
+5.0,65.0,female,0.6074524191699151
+5.0,66.0,female,0.7378712561220405
+5.0,67.0,female,0.5809262636765675
+5.0,68.0,female,0.5914920417779147
+6.0,69.0,female,0.7369422273685952
+6.0,70.0,female,0.7249604668255417
+6.0,71.0,female,0.6734646631471423
+6.0,72.0,female,0.6449473733893425
+6.0,73.0,female,0.5204983535845641
+6.0,74.0,female,0.6214752993341204
+6.0,75.0,female,0.6204085298570658
+6.0,76.0,female,0.6497819182898413
+6.0,77.0,female,0.5336354059748257
+6.0,78.0,female,0.5181059105141779
+6.0,79.0,female,0.5419415244499298
+6.0,80.0,female,0.5584156656660932
+6.0,81.0,female,0.5665106653525879
+6.0,82.0,female,0.6727427075066572
+6.0,83.0,female,0.6604691163058315
+6.0,84.0,female,0.5825193604796403
+6.0,85.0,female,0.6473115948727921
+6.0,86.0,female,0.7549380470794753
+6.0,87.0,female,0.25072599548429014
+6.0,88.0,female,0.7056479350997462
+6.0,89.0,female,0.45177588052463924
+7.0,90.0,female,0.7543416890470692
+7.0,91.0,female,0.7990173139915769
+7.0,92.0,female,0.7293834850097594
+7.0,93.0,female,0.8323874057129137
+7.0,94.0,female,0.8168087303354862
+7.0,95.0,female,0.8057704621280324
+7.0,96.0,female,0.8064258894361725
+7.0,97.0,female,0.8046827372076029
+7.0,98.0,female,0.7798505299700207
+8.0,99.0,female,0.529626429090353
+8.0,100.0,female,0.4762362198298434
+8.0,101.0,female,0.45268036388900335
+8.0,102.0,female,0.44778135346721537
+8.0,103.0,female,0.5311848164911115
+8.0,104.0,female,0.47064227787074736
+8.0,105.0,female,0.4470350151977298
+8.0,106.0,female,0.4354282088350529
+8.0,107.0,female,0.3705761316872428
+8.0,108.0,female,0.3704151483977656
+8.0,109.0,female,0.40506888676048036
+8.0,110.0,female,0.5739934719171136
+8.0,111.0,female,0.49746027130699294
+8.0,112.0,female,0.37613407934950704
+8.0,113.0,female,0.43560836122625407
+8.0,114.0,female,0.29893673900222134
+8.0,115.0,female,0.28490241244025183
+8.0,116.0,female,0.26585481035637526
+8.0,117.0,female,0.32566520124238485
+8.0,118.0,female,0.3872779336138382
+8.0,119.0,female,0.4979074778450801
+8.0,120.0,female,0.3547711833727294
+8.0,121.0,female,0.3731722541692215
+8.0,122.0,female,0.3923836904474964
+8.0,123.0,female,0.383114932939742
+8.0,124.0,female,0.3571646648287903
+8.0,125.0,female,0.3284907661088474
+8.0,126.0,female,0.38447823241562923
+8.0,127.0,female,0.6099885424649635
+8.0,128.0,female,0.43131455183764145
+8.0,129.0,female,0.3712450239153969
+8.0,130.0,female,0.4166471650766539
+8.0,131.0,female,0.334770516116633
+9.0,132.0,female,0.5490981405246675
+9.0,133.0,female,0.5186769939688997
+9.0,134.0,female,0.5190628803600669
+9.0,135.0,female,0.3973698957354556
+9.0,136.0,female,0.3480264981833569
+9.0,137.0,female,0.4193126076554153
+9.0,138.0,female,0.5953623684435698
+9.0,139.0,female,0.5305837084978189
+9.0,140.0,female,0.6617514950591521
+9.0,141.0,female,0.669051975649647
+9.0,142.0,female,0.47658767859942996
+9.0,143.0,female,0.48608476729663874
+9.0,144.0,female,0.512698460260861
+9.0,145.0,female,0.4896758766570757
+9.0,146.0,female,0.5515389822201568
+9.0,147.0,female,0.5534441168946493
+9.0,148.0,female,0.5961542212253654
+9.0,149.0,female,0.2992152593013879
+9.0,150.0,female,0.4066931113554645
+9.0,151.0,female,0.40071147374592897
+9.0,152.0,female,0.3995121712800151
+9.0,153.0,female,0.41151910521736035
+9.0,154.0,female,0.40790828195770834
+9.0,155.0,female,0.4320020469243951
+9.0,156.0,female,0.48855148106854207
+9.0,157.0,female,0.6825529098673698
+9.0,158.0,female,0.47367548637847223
+9.0,159.0,female,0.5231679905433118
+9.0,160.0,female,0.5603982678355256
+9.0,161.0,female,0.634793869180869
+9.0,162.0,female,0.6425147642259345
+9.0,163.0,female,0.599178814347848
+9.0,164.0,female,0.7226141776881138
+9.0,165.0,female,0.5554544605324615
+9.0,166.0,female,0.572097888481515
+9.0,167.0,female,0.3894358675599573
+9.0,168.0,female,0.4647631051071308
+9.0,169.0,female,0.4354228632358718
+9.0,170.0,female,0.4238771603471623
+9.0,171.0,female,0.4014295720263645
+9.0,172.0,female,0.4738653566904563
+9.0,173.0,female,0.49327039245764154
+9.0,174.0,female,0.3718348859662575
+9.0,175.0,female,0.5308562954219749
+9.0,176.0,female,0.4305712336665665
+9.0,177.0,female,0.5052884970648684
+9.0,178.0,female,0.5414991998630891
+9.0,179.0,female,0.4918866390723512
+9.0,180.0,female,0.299157775039886
+9.0,181.0,female,0.23775575834378762
+9.0,182.0,female,0.28810237154919166
+9.0,183.0,female,0.3711983887210473
+9.0,184.0,female,0.3592321863986321
+9.0,185.0,female,0.4605137194445966
+9.0,186.0,female,0.44254743316773126
+9.0,187.0,female,0.37272445684516553
+9.0,188.0,female,0.5154089165292244
+9.0,189.0,female,0.42410285674104886
+9.0,190.0,female,0.5038078825407952
+9.0,191.0,female,0.517613613799129
+9.0,192.0,female,0.5532624339516663
+9.0,193.0,female,0.5203693471299827
+9.0,194.0,female,0.5061233170241054
+9.0,195.0,female,0.5166911108416096
+9.0,196.0,female,0.5181404026018372
+9.0,197.0,female,0.6070076426819049
+9.0,198.0,female,0.46057880671313045
+9.0,199.0,female,0.4696912273771809
+9.0,200.0,female,0.4167556332805333
+9.0,201.0,female,0.5042729811407368
+9.0,202.0,female,0.3992182799246909
+10.0,203.0,female,0.336669888103799
+10.0,204.0,female,0.3394941396155081
+10.0,205.0,female,0.3552129327490402
+10.0,206.0,female,0.3317869098769012
+10.0,207.0,female,0.34942598981944206
+10.0,208.0,female,0.32049733432295685
+10.0,209.0,female,0.3249562539094357
+10.0,210.0,female,0.34522871896234375
+10.0,211.0,female,0.32423160228684617
+10.0,212.0,female,0.33614979904655024
+10.0,213.0,female,0.3112457257021375
+10.0,214.0,female,0.3232407339745932
+10.0,215.0,female,0.3637871339877469
+10.0,216.0,female,0.46510501642294133
+10.0,217.0,female,0.4453610275370031
+10.0,218.0,female,0.4879291866325984
+10.0,219.0,female,0.4518362742809983
+10.0,220.0,female,0.4764103672170833
+10.0,221.0,female,0.4069336679598448
+10.0,222.0,female,0.46432813902457315
+10.0,223.0,female,0.40614570614570616
+10.0,224.0,female,0.4754337770890564
+10.0,225.0,female,0.38183458491571154
+10.0,226.0,female,0.5575066839046555
+10.0,227.0,female,0.43093100575960586
+10.0,228.0,female,0.4438595908607864
+10.0,229.0,female,0.44616578606035173
+10.0,230.0,female,0.5691097591624459
+10.0,231.0,female,0.5042017431380201
+10.0,232.0,female,0.5001346369356633
+10.0,233.0,female,0.489232629855108
+10.0,234.0,female,0.5447571539938119
+10.0,235.0,female,0.5053313085790797
+10.0,236.0,female,0.44470575116561983
+10.0,237.0,female,0.40146742263038904
+10.0,238.0,female,0.36319990892621257
+10.0,239.0,female,0.4576523799529758
+10.0,240.0,female,0.44897356953857354
+11.0,241.0,female,0.6553273924835336
+11.0,242.0,female,0.6512789201683421
+11.0,243.0,female,0.7121823842522849
+11.0,244.0,female,0.7564683285571955
+12.0,245.0,female,0.3761633359786451
+12.0,246.0,female,0.5382561197653247
+12.0,247.0,female,0.4021540866846174
+12.0,248.0,female,0.7056129494642264
+12.0,249.0,female,0.513373012883297
+12.0,250.0,female,0.5540608994202736
+12.0,251.0,female,0.6306116300090389
+12.0,252.0,female,0.47702427274411713
+12.0,253.0,female,0.4394822445107075
+12.0,254.0,female,0.36365284660945246
+12.0,255.0,female,0.6458378068856918
+12.0,256.0,female,0.35121361003153184
+12.0,257.0,female,0.5382003395585738
+12.0,258.0,female,0.5621421755725191
+12.0,259.0,female,0.5401335873482223
+12.0,260.0,female,0.34060175794455716
+13.0,261.0,female,0.4870277467687052
+13.0,262.0,female,0.9076163297895935
+13.0,263.0,female,0.8092690840531416
+13.0,264.0,female,0.8310533757511488
+13.0,265.0,female,0.8111439323433011
+13.0,266.0,female,0.6789339087349157
+13.0,267.0,female,0.6791271780985705
+13.0,268.0,female,0.6619404496657889
+13.0,269.0,female,0.5960493360427201
+13.0,270.0,female,0.7995921095082269
+13.0,271.0,female,0.7054252712635631
+14.0,272.0,female,0.5353748680042238
+14.0,273.0,female,0.6159429626766311
+14.0,274.0,female,0.7699115981155047
+14.0,275.0,female,0.6298007816676369
+14.0,276.0,female,0.5946141745322073
+14.0,277.0,female,0.7843249574214535
+14.0,278.0,female,0.7330650692206381
+14.0,279.0,female,0.7612683438155137
+14.0,280.0,female,0.6161666700022015
+15.0,281.0,female,0.782501235788433
+15.0,282.0,female,0.9188494177289592
+15.0,283.0,female,0.9775544780847957
+15.0,284.0,female,0.9422838078075153
+15.0,285.0,female,0.9742409045317771
+15.0,286.0,female,0.84354879009783
+15.0,287.0,female,0.5461211446831579
+15.0,288.0,female,0.8657163458871817
+16.0,289.0,female,0.8283957069411169
+16.0,290.0,female,0.7583966818877651
+16.0,291.0,female,0.7677997373446023
+16.0,292.0,female,0.817285819387246
+17.0,293.0,female,0.5864087107717131
+17.0,294.0,female,0.6879136480364114
+17.0,295.0,female,0.6353041362530414
+17.0,296.0,female,0.7571126646073809
+17.0,297.0,female,0.7124637919909943
+17.0,298.0,female,0.8227099370771388
+17.0,299.0,female,0.601038109547876
+18.0,300.0,female,0.5169477961950093
+18.0,301.0,female,0.46477552415483414
+18.0,302.0,female,0.573961024825615
+18.0,303.0,female,0.5176470364394654
+18.0,304.0,female,0.5783858298087856
+18.0,305.0,female,0.6248382851033628
+18.0,306.0,female,0.5534388386857155
+18.0,307.0,female,0.6566952897429761
+18.0,308.0,female,0.5923005334241289
+18.0,309.0,female,0.5686108939742467
+18.0,310.0,female,0.6523963925273781
+18.0,311.0,female,0.7174290720465659
+18.0,312.0,female,0.7356180620164918
+18.0,313.0,female,0.6675621550334587
+18.0,314.0,female,0.5607219211455278
+18.0,315.0,female,0.6680748074807481
+18.0,316.0,female,0.7012261670067874
+18.0,317.0,female,0.6757884683263086
+18.0,318.0,female,0.6239630296459461
+18.0,319.0,female,0.5883226767541511
+18.0,320.0,female,0.4975884964243223
+18.0,321.0,female,0.6543809549746531
+18.0,322.0,female,0.8391955675895097
+18.0,323.0,female,0.6929329495885236
+18.0,324.0,female,0.5519872765365265
+18.0,325.0,female,0.5229262156367389
+18.0,326.0,female,0.5196107699306266
+19.0,327.0,female,0.6934035350966806
+19.0,328.0,female,0.604013922395536
+19.0,329.0,female,0.6280373179661463
+19.0,330.0,female,0.43606454868576944
+19.0,331.0,female,0.6102288725517667
+19.0,332.0,female,0.4897418210091908
+19.0,333.0,female,0.5588369439321964
+19.0,334.0,female,0.5839810085058493
+19.0,335.0,female,0.6537867983700105
+19.0,336.0,female,0.663943979543044
+19.0,337.0,female,0.7809978728525934
+19.0,338.0,female,0.7320922769382989
+19.0,339.0,female,0.5399255484308546
+19.0,340.0,female,0.42168505482091634
+19.0,341.0,female,0.7679310174371201
+19.0,342.0,female,0.8302507085995994
+19.0,343.0,female,0.6739260305219139
+19.0,344.0,female,0.6610311968881669
+19.0,345.0,female,0.7830423204765408
+20.0,346.0,female,0.3350412047287522
+20.0,347.0,female,0.3753614651386955
+20.0,348.0,female,0.4178232972067196
+20.0,349.0,female,0.36230661789531343
+20.0,350.0,female,0.4128317128033141
+20.0,351.0,female,0.3380038757202808
+20.0,352.0,female,0.3165729910375209
+20.0,353.0,female,0.2979346204916295
+20.0,354.0,female,0.5774243254030873
+20.0,355.0,female,0.5237275983489891
+20.0,356.0,female,0.46846103508123027
+20.0,357.0,female,0.6189653818981081
+20.0,358.0,female,0.4031732040546496
+20.0,359.0,female,0.36503790746935294
+20.0,360.0,female,0.48754299246339766
+20.0,361.0,female,0.5473845531233102
+20.0,362.0,female,0.3938935144197261
+20.0,363.0,female,0.4348508131642976
+20.0,364.0,female,0.6139195040295532
+20.0,365.0,female,0.45943651324397405
+20.0,366.0,female,0.4660920893577607
+20.0,367.0,female,0.5346953922485664
+20.0,368.0,female,0.37707639448497
+20.0,369.0,female,0.47656699826126614
+21.0,370.0,female,0.6030644325948836
+21.0,371.0,female,0.6622826071389357
+21.0,372.0,female,0.6317763525184193
+21.0,373.0,female,0.5698360177563875
+21.0,374.0,female,0.6009430519699792
+21.0,375.0,female,0.52782140471365
+21.0,376.0,female,0.45331038447419636
+21.0,377.0,female,0.6811372335962358
+21.0,378.0,female,0.7207248254973652
+21.0,379.0,female,0.756935706656377
+21.0,380.0,female,0.7789714259196956
+21.0,381.0,female,0.7686256012605739
+21.0,382.0,female,0.6962308703472041
+21.0,383.0,female,0.6666151848081716
+21.0,384.0,female,0.6356376140532879
+21.0,385.0,female,0.6760832600410437
+21.0,386.0,female,0.7935268334467712
+21.0,387.0,female,0.7518354847155336
+21.0,388.0,female,0.5464240478329386
+21.0,389.0,female,0.3445092741383593
+21.0,390.0,female,0.42619296215819624
+21.0,391.0,female,0.5121949586134847
+21.0,392.0,female,0.5780422050757646
+21.0,393.0,female,0.4649234387750204
+21.0,394.0,female,0.34956328876967335
+21.0,395.0,female,0.3805011488416843
+21.0,396.0,female,0.3032680923039749
+21.0,397.0,female,0.24884591248497845
+21.0,398.0,female,0.28980804744193306
+21.0,399.0,female,0.27336387602057793
+22.0,400.0,female,0.5306161309334905
+22.0,401.0,female,0.4007312585385885
+22.0,402.0,female,0.5069422262696832
+22.0,403.0,female,0.5623952005147713
+22.0,404.0,female,0.5474812232617525
+22.0,405.0,female,0.533082449911143
+22.0,406.0,female,0.5213114716436701
+22.0,407.0,female,0.3755947372447028
+22.0,408.0,female,0.6005341216386448
+22.0,409.0,female,0.6499021644265275
+22.0,410.0,female,0.5938249980961499
+22.0,411.0,female,0.528304186711741
+22.0,412.0,female,0.629777014234626
+22.0,413.0,female,0.5348702775474812
+22.0,414.0,female,0.34456699646035877
+22.0,415.0,female,0.3056458352678986
+22.0,416.0,female,0.2478270621880783
+22.0,417.0,female,0.23465166725520858
+23.0,418.0,female,0.3105768900617553
+23.0,419.0,female,0.4709009618274722
+23.0,420.0,female,0.5518545683554074
+23.0,421.0,female,0.6204925817720963
+23.0,422.0,female,0.5071203072530213
+23.0,423.0,female,0.3674889610338318
+23.0,424.0,female,0.3847527263735092
+23.0,425.0,female,0.43206976623785026
+23.0,426.0,female,0.43221505094518886
+23.0,427.0,female,0.5984760172889936
+23.0,428.0,female,0.5002187608273965
+23.0,429.0,female,0.5365544060147822
+23.0,430.0,female,0.5243838357567667
+23.0,431.0,female,0.44342451834387236
+23.0,432.0,female,0.4929367794248068
+23.0,433.0,female,0.4944243756871368
+23.0,434.0,female,0.47691293287600856
+23.0,435.0,female,0.535278816090743
+23.0,436.0,female,0.4601842140702984
+23.0,437.0,female,0.49333053106297053
+23.0,438.0,female,0.38771254085370455
+23.0,439.0,female,0.7072420082963005
+23.0,440.0,female,0.4430157901230186
+23.0,441.0,female,0.31299096031038154
+23.0,442.0,female,0.37887303098424785
+23.0,443.0,female,0.5134743612847775
+23.0,444.0,female,0.7167909051019978
+23.0,445.0,female,0.4866442670123263
+23.0,446.0,female,0.55982964014567
+23.0,447.0,female,0.5346887788871176
+23.0,448.0,female,0.5626589589106468
+23.0,449.0,female,0.6011252605444589
+23.0,450.0,female,0.5328066563815
+23.0,451.0,female,0.7049062735766932
+23.0,452.0,female,0.6084412168281982
+23.0,453.0,female,0.42435885487710856
+23.0,454.0,female,0.478428576501859
+23.0,455.0,female,0.5606224242297883
+23.0,456.0,female,0.5614366490823515
+23.0,457.0,female,0.633493363823581
+23.0,458.0,female,0.3997473729474052
+23.0,459.0,female,0.42238998488553364
+23.0,460.0,female,0.4732330998348425
+23.0,461.0,female,0.4814180909766471
+23.0,462.0,female,0.4217272817074092
+23.0,463.0,female,0.351578231571666
+23.0,464.0,female,0.22607387122357264
+23.0,465.0,female,0.1885745156910367
+23.0,466.0,female,0.4753156181479228
+23.0,467.0,female,0.5066775372365301
+24.0,468.0,female,0.5478987008208154
+24.0,469.0,female,0.41345696866350234
+24.0,470.0,female,0.541828389014255
+24.0,471.0,female,0.7173168088111321
+24.0,472.0,female,0.5858572228881914
+24.0,473.0,female,0.7235133507327846
+24.0,474.0,female,0.7709814956305718
+24.0,475.0,female,0.5456428335353091
+24.0,476.0,female,0.7114955752535601
+24.0,477.0,female,0.6034260404444022
+24.0,478.0,female,0.6295796668986491
+24.0,479.0,female,0.6110488946280885
+24.0,480.0,female,0.60844918984254
+24.0,481.0,female,0.6024230766867207
+24.0,482.0,female,0.7302944930633701
+24.0,483.0,female,0.6922790803782535
+24.0,484.0,female,0.5061370745123251
+24.0,485.0,female,0.3574417850952935
+24.0,486.0,female,0.689042439540272
+24.0,487.0,female,0.563063779848631
+24.0,488.0,female,0.7145455746900686
+24.0,489.0,female,0.5889087606145527
+24.0,490.0,female,0.7613716429975749
+24.0,491.0,female,0.6789889254358007
+24.0,492.0,female,0.7815488485230242
+24.0,493.0,female,0.5527495877518513
+25.0,494.0,female,0.711362554856448
+25.0,495.0,female,0.7898995767283592
+26.0,496.0,female,0.566570540809488
+27.0,497.0,female,0.4930915640025551
+27.0,498.0,female,0.6142943924373448
+27.0,499.0,female,0.6698202046156226
+27.0,500.0,female,0.7201497084938963
+27.0,501.0,female,0.8126664309939471
+27.0,502.0,female,0.7105240174672489
+27.0,503.0,female,0.8062580433905223
+27.0,504.0,female,0.7929879162885802
+27.0,505.0,female,0.8268458529712996
+27.0,506.0,female,0.7373997161126117
+27.0,507.0,female,0.7445734202151841
+27.0,508.0,female,0.6050378458865864
+27.0,509.0,female,0.6910558285766613
+27.0,510.0,female,0.7206185891480896
+27.0,511.0,female,0.5992372906009201
+27.0,512.0,female,0.6297750992654859
+27.0,513.0,female,0.5702449775747348
+27.0,514.0,female,0.5415619076503146
+27.0,515.0,female,0.6495348624486279
+27.0,516.0,female,0.7252135851782421
+27.0,517.0,female,0.7770496588922576
+27.0,518.0,female,0.8508321597688968
+27.0,519.0,female,0.8544375563550335
+27.0,520.0,female,0.740089564166031
+27.0,521.0,female,0.790387946986321
+27.0,522.0,female,0.6672575745180523
+27.0,523.0,female,0.6210489309703222
+27.0,524.0,female,0.6459315545851945
+27.0,525.0,female,0.6569054993318763
+27.0,526.0,female,0.635327158829822
+27.0,527.0,female,0.734092479131901
+27.0,528.0,female,0.7076768470524232
+27.0,529.0,female,0.7747011813355945
+27.0,530.0,female,0.7106038763633488
+27.0,531.0,female,0.7122737196504945
+28.0,532.0,female,0.43304442306829677
+28.0,533.0,female,0.43703034333503826
+28.0,534.0,female,0.47695131307009137
+28.0,535.0,female,0.4281539403092716
+28.0,536.0,female,0.7730407802294443
+28.0,537.0,female,0.6533678321838637
+28.0,538.0,female,0.35458396508807877
+28.0,539.0,female,0.46540204571645116
+28.0,540.0,female,0.48204004016577845
+28.0,541.0,female,0.507175439374734
+28.0,542.0,female,0.4445955793053194
+28.0,543.0,female,0.4249648978136352
+28.0,544.0,female,0.5378869182626527
+28.0,545.0,female,0.630066984324287
+28.0,546.0,female,0.6736608124282469
+28.0,547.0,female,0.6543059746910305
+28.0,548.0,female,0.5470970422049387
+28.0,549.0,female,0.45760759015953023
+28.0,550.0,female,0.56679756356915
+28.0,551.0,female,0.49983070264047447
+28.0,552.0,female,0.4202126286547076
+28.0,553.0,female,0.4710939975368119
+28.0,554.0,female,0.5799734230248432
+29.0,555.0,female,0.586586903430435
+29.0,556.0,female,0.5076076464407028
+29.0,557.0,female,0.48573645757896877
+29.0,558.0,female,0.5388583093670298
+29.0,559.0,female,0.3973492073833119
+29.0,560.0,female,0.4935714542535844
+29.0,561.0,female,0.5974355844472897
+29.0,562.0,female,0.6933649437126034
+29.0,563.0,female,0.7525846354046666
+29.0,564.0,female,0.6555810451601957
+29.0,565.0,female,0.5105598446064956
+29.0,566.0,female,0.6060871337164283
+29.0,567.0,female,0.6415610747889327
+29.0,568.0,female,0.7116393642314789
+29.0,569.0,female,0.7953219196538092
+29.0,570.0,female,0.6946676718463425
+29.0,571.0,female,0.6271193542760308
+29.0,572.0,female,0.8248422306013098
+29.0,573.0,female,0.5731585045387699
+29.0,574.0,female,0.642223079338542
+29.0,575.0,female,0.8199606634903915
+29.0,576.0,female,0.7515198315198315
+29.0,577.0,female,0.622209842446921
+29.0,578.0,female,0.4843360364926508
+29.0,579.0,female,0.46966220397758246
+29.0,580.0,female,0.3224068534557016
+29.0,581.0,female,0.613248169816902
+29.0,582.0,female,0.5528792210304581
+29.0,583.0,female,0.6636301176753977
+29.0,584.0,female,0.557905308117657
+30.0,585.0,female,0.8425270846625535
+30.0,586.0,female,0.8171630620352615
+31.0,587.0,female,0.8688836104513065
+32.0,588.0,female,0.8469260386749411
+32.0,589.0,female,0.927565012721434
+32.0,590.0,female,0.8378864830006834
+32.0,591.0,female,0.9230199567203655
+32.0,592.0,female,0.9052758671391679
+32.0,593.0,female,0.8393750934396628
+32.0,594.0,female,0.9295462040509552
+32.0,595.0,female,0.940084291888436
+32.0,596.0,female,0.8827551785525354
+32.0,597.0,female,0.963026436732935
+32.0,598.0,female,0.9376978841043422
+32.0,599.0,female,0.9556835493068
+32.0,600.0,female,0.9158737030109476
+32.0,601.0,female,0.903527712536136
+33.0,602.0,female,0.7561086917846894
+33.0,603.0,female,0.8538360557214018
+33.0,604.0,female,0.76534640930632
+33.0,605.0,female,0.6815570916466865
+33.0,606.0,female,0.604154228882384
+33.0,607.0,female,0.5741556361949887
+33.0,608.0,female,0.6014432567448539
+33.0,609.0,female,0.6237368725226355
+33.0,610.0,female,0.6033697490210039
+33.0,611.0,female,0.7606786556583649
+33.0,612.0,female,0.6378652504600237
+33.0,613.0,female,0.6236996705079688
+33.0,614.0,female,0.7373104225574911
+33.0,615.0,female,0.6046827990937117
+33.0,616.0,female,0.5574679406152493
+33.0,617.0,female,0.6575438903476333
+33.0,618.0,female,0.7440848317786597
+33.0,619.0,female,0.7392154325754788
+33.0,620.0,female,0.7338842101926308
+33.0,621.0,female,0.64003979515282
+33.0,622.0,female,0.6774935270327841
+33.0,623.0,female,0.7396065969891978
+33.0,624.0,female,0.6505332239540607
+33.0,625.0,female,0.6858709185107835
+33.0,626.0,female,0.6939469245076028
+33.0,627.0,female,0.786809604599302
+33.0,628.0,female,0.7253208723159895
+33.0,629.0,female,0.8880081917475728
+33.0,630.0,female,0.5305474336651445
+33.0,631.0,female,0.5774704859629975
+33.0,632.0,female,0.7642974856064606
+33.0,633.0,female,0.6827504728816036
+34.0,634.0,female,0.7267908309455587
+34.0,635.0,female,0.7751896980404582
+34.0,636.0,female,0.9719615665561612
+34.0,637.0,female,0.8010276832166485
+35.0,638.0,female,0.6758741550529918
+35.0,639.0,female,0.7573432053395304
+35.0,640.0,female,0.8354697777137645
