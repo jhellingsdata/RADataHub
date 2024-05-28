@@ -18,7 +18,7 @@ pallete = {
     "domain": "#122b39",
     "bar": {
         "accent_1": "#122b39",
-        "other" : "rgb(168, 192, 222)",
+        "other" : "#a8c0de",
         "accent_2" : "#eb5c2e"
     }
 }
