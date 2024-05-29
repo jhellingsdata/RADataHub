@@ -1,0 +1,116 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 330,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_4_world_map_gdp_world_countries.geojson",
+    "format": {"property": "features"}
+  },
+  "config": {
+    "background": "white",
+    "font": "Circular Std",
+    "title": {
+      "color": "black",
+      "fontSize": 14,
+      "fontWeight": 400,
+      "subtitleColor": "#b4c8d8"
+    },
+    "mark": {"line": {"interpolate": "monotone", "color": "#36B7B4"}},
+    "legend": {"labelColor": "#b4c8d8"},
+    "view": {"stroke": "transparent", "width": 500, "height": 300},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#b4c8d8",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#b4c8d8",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": "",
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#b4c8d8",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "format": ".0f",
+      "gridColor": "#b4c8d8",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#b4c8d8",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#b4c8d8",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleX": 15,
+      "title": "",
+      "titleColor": "#b4c8d8",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8
+    }
+  },
+  "title": {
+    "text": "Legal Voting Age by Country",
+    "fontSize": 16,
+    "subtitle": ["Source: Wikipedia ", ""],
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "dx": 5
+  },
+  "projection": {
+    "type": "naturalEarth1",
+    "translate": [220, 140],
+    "scale": 100
+  },
+  "mark": {"type": "geoshape", "stroke": "lightgray", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {
+      "condition": {"value": "gray", "test": "!datum['Age']"},
+      "field": "Age",
+      "legend": {"orient": "top", "direction": "horizontal", "title": ""}
+    },
+    "tooltip": [
+      {"field": "properties.COUNTRY", "title": "Country"},
+      {"field": "Age", "title": "Age"}
+    ]
+  },
+  "transform": [
+    {
+      "lookup": "properties.ISO3",
+      "from": {
+        "key": "iso3",
+        "fields": ["Age"],
+        "data": {
+          "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/voting_age_wiki.csv"
+        }
+      }
+    },
+    {
+      "filter": "datum['properties.COUNTRY'] != 'Antarctica' && datum['Age'] != 'N/A' && datum['Age'] != 'varies' && datum['Age'] != null"
+    }
+  ],
+  "autosize": {"type": "fit", "contains": "padding", "resize": false}
+}
