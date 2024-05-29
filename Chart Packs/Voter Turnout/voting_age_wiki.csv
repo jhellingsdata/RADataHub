@@ -1,0 +1,239 @@
+Country,iso3,Age
+Afghanistan,AFG,N/A
+Albania,ALB,18
+Algeria,DZA,18
+American Samoa,ASM,18
+Andorra,AND,18
+Angola,AGO,18
+Anguilla,AIA,18
+Antigua and Barbuda,ATG,18
+Argentina,ARG,16
+Armenia,ARM,18
+Aruba,ABW,18
+Australia,AUS,18
+Austria,AUT,16
+Azerbaijan,AZE,18
+Bahamas,BHS,18
+Bahrain,BHR,20
+Bangladesh,BGD,18
+Barbados,BRB,18
+Belarus,BLR,18
+Belgium,BEL,18
+Belize,BLZ,18
+Benin,BEN,18
+Bermuda,BMU,18
+Bhutan,BTN,18
+Bolivia,BOL,18
+Bosnia and Herzegovina,BIH,18
+Botswana,BWA,18
+Brazil,BRA,16
+British Virgin Islands,VGB,18
+Brunei,BRN,18
+Bulgaria,BGR,18
+Burkina Faso,BFA,18
+Burundi,BDI,18
+Cambodia,KHM,18
+Cameroon,CMR,20
+Canada,CAN,18
+Cape Verde,CPV,18
+Cayman Islands,CYM,18
+Central African Republic,CAF,18
+Chad,TCD,18
+Chile,CHL,18
+China,CHN,18
+Cocos (Keeling) Islands,CCK,18
+Colombia,COL,18
+Comoros,COM,18
+Democratic Republic of  the Congo,COD,18
+Republic of the Congo,COG,18
+Cook Islands,COK,18
+Costa Rica,CRI,18
+Côte d'Ivoire,CIV,18
+Croatia,HRV,18
+Cuba,CUB,16
+Curaçao,CUW,18
+Cyprus,CYP,18
+Czech Republic,CZE,18
+Denmark,DNK,18
+Djibouti,DJI,18
+Dominica,DMA,18
+Dominican Republic,DOM,18
+East Timor,TLS,17
+Ecuador,ECU,16
+Egypt,EGY,18
+El Salvador,SLV,18
+Equatorial Guinea,GNQ,18
+Eritrea,ERI,18
+Estonia,EST,18
+Eswatini,SWZ,18
+Ethiopia,ETH,18
+Falkland Islands,FLK,18
+Faroe Islands,FRO,18
+Fiji,FJI,18
+Finland,FIN,18
+France,FRA,18
+French Guiana,GUF,18
+French Polynesia,PYF,18
+Gabon,GAB,18
+Gambia,GMB,18
+Georgia,GEO,18
+Germany,DEU,18
+Ghana,GHA,18
+Gibraltar,GIB,18
+Greece,GRC,17
+Greenland,GRL,18
+Grenada,GRD,18
+Guadeloupe,GLP,18
+Guam,GUM,18
+Guatemala,GTM,18
+Guernsey,GGY,16
+Guinea,GIN,18
+Guinea-Bissau,GNB,18
+Guyana,GUY,18
+Haiti,HTI,18
+Honduras,HND,18
+Hong Kong,HKG,18
+Hungary,HUN,18
+Iceland,ISL,18
+India,IND,18
+Indonesia,IDN,17
+Iran,IRN,18
+Iraq,IRQ,18
+Ireland,IRL,18
+Isle of Man,IMN,16
+Israel,ISR,18
+Italy,ITA,18
+Jamaica,JAM,18
+Japan,JPN,18
+Jersey,JEY,16
+Jordan,JOR,18
+Kazakhstan,KAZ,18
+Kenya,KEN,18
+Kiribati,KIR,18
+North Korea,PRK,17
+South Korea,KOR,18
+Kosovo,XKX,18
+Kuwait,KWT,21
+Kyrgyzstan,KGZ,18
+Laos,LAO,18
+Latvia,LVA,18
+Lebanon,LBN,21
+Lesotho,LSO,18
+Liberia,LBR,18
+Libya,LBY,18
+Liechtenstein,LIE,18
+Lithuania,LTU,18
+Luxembourg,LUX,18
+Macau,MAC,18
+Madagascar,MDG,18
+North Macedonia,MKD,18
+Malawi,MWI,18
+Malaysia,MYS,18
+Maldives,MDV,18
+Mali,MLI,18
+Malta,MLT,16
+Marshall Islands,MHL,18
+Martinique,MTQ,18
+Mauritania,MRT,18
+Mauritius,MUS,18
+Mayotte,MYT,18
+Mexico,MEX,18
+Federated States of  Micronesia,FSM,18
+Moldova,MDA,18
+Monaco,MCO,18
+Mongolia,MNG,18
+Montenegro,MNE,18
+Montserrat,MSR,18
+Morocco,MAR,18
+Mozambique,MOZ,18
+Myanmar,MMR,18
+Namibia,NAM,18
+Nauru,NRU,20
+Nepal,NPL,18
+Netherlands,NLD,18
+New Caledonia,NCL,18
+New Zealand,NZL,18
+Nicaragua,NIC,16
+Niger,NER,18
+Nigeria,NGA,18
+Niue,NIU,18
+Norfolk Island,NFK,18
+North Macedonia,MKD,18
+Northern Cyprus,CYP,18
+Northern Mariana  Islands,MNP,18
+Norway,NOR,18
+Oman,OMN,21
+Pakistan,PAK,18
+Palau,PLW,18
+Palestine,PSE,18
+Panama,PAN,18
+Papua New Guinea,PNG,18
+Paraguay,PRY,18
+Peru,PER,18
+Philippines,PHL,18
+Pitcairn Islands,PCN,18
+Poland,POL,18
+Portugal,PRT,18
+Puerto Rico,PRI,18
+Qatar,QAT,18
+Réunion,REU,18
+Romania,ROU,18
+Russia,RUS,18
+Rwanda,RWA,18
+Saint Helena,SHN,18
+Saint Kitts and Nevis,KNA,18
+Saint Lucia,LCA,18
+Saint Pierre and  Miquelon,SPM,18
+Saint Vincent and the  Grenadines,VCT,18
+Samoa,WSM,21
+San Marino,SMR,18
+São Tomé and Príncipe,STP,18
+Saudi Arabia,SAU,18
+Senegal,SEN,18
+Serbia,SRB,18
+Seychelles,SYC,18
+Sierra Leone,SLE,18
+Singapore,SGP,21
+Sint Maarten,SXM,18
+Slovakia,SVK,18
+Slovenia,SVN,18
+Solomon Islands,SLB,19
+Somalia,SOM,18
+South Africa,ZAF,18
+South Sudan,SSD,18
+Spain,ESP,18
+Sri Lanka,LKA,18
+Sudan,SDN,18
+Suriname,SUR,18
+Sweden,SWE,18
+Switzerland,CHE,18
+Syria,SYR,18
+Taiwan,TWN,20
+Tajikistan,TJK,18
+Tanzania,TZA,18
+Thailand,THA,18
+Togo,TGO,18
+Tokelau,TKL,21
+Tonga,TON,21
+Trinidad and Tobago,TTO,18
+Tunisia,TUN,18
+Turkey,TUR,18
+Turkmenistan,TKM,18
+Turks and Caicos  Islands,TCA,18
+Tuvalu,TUV,18
+Uganda,UGA,18
+Ukraine,UKR,18
+United Arab Emirates,ARE,varies
+United Kingdom,GBR,18
+United States,USA,18
+Uruguay,URY,18
+Uzbekistan,UZB,18
+Vanuatu,VUT,18
+Venezuela,VEN,18
+Vietnam,VNM,18
+United States Virgin Islands,VIR,18
+Wallis and Futuna,WLF,18
+Western Sahara,ESH,N/A
+Yemen,YEM,18
+Zambia,ZMB,18
+Zimbabwe,ZWE,18
