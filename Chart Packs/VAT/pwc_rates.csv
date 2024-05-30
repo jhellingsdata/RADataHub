@@ -1,0 +1,151 @@
+country,full,id,value
+Albania  ,20,AL,0.2
+Algeria  ,19,DZ,0.19
+Angola  ,14,AO,0.14
+Argentina  ,21,AR,0.21
+Armenia  ,20,AM,0.2
+Australia  ,Goods and services tax: 10,AU,
+Austria  ,20,AT,0.2
+Azerbaijan  ,18,AZ,0.18
+Bahrain  ,10,BH,0.1
+Barbados  ,17.5,BB,0.175
+Belgium  ,21,BE,0.21
+Bermuda  ,,BM,
+Bolivia  ,13,BO,0.13
+Bosnia and Herzegovina  ,17,BA,0.17
+Botswana  ,14,BW,0.14
+Brazil  ,Excise federal tax .,BR,
+Bulgaria  ,20,BG,0.2
+Cabo Verde  ,15,CV,0.15
+Cambodia  ,10,KH,0.1
+"Cameroon, Republic of  ",19.25,CM,0.1925
+Canada  ,Combined federal and provincial/territorial sales taxes range from 5% to 15%.,CA,
+Cayman Islands  ,,KY,
+Chad  ,18,TD,0.18
+Chile  ,19,CL,0.19
+"China, People's Republic of  ","13, 9, or 6 depending on the types of goods and services",CN,
+Colombia  ,19,CO,0.19
+"Congo, Democratic Republic of the  ",16,CD,0.16
+"Congo, Republic of  ",18.90 ,CG,0.18899999999999997
+Costa Rica  ,13,CR,0.13
+Croatia  ,25,HR,0.25
+Cyprus  ,19,CY,0.19
+Czech Republic  ,21,CZ,0.21
+Denmark  ,25,DK,0.25
+Dominican Republic  ,18,DO,0.18
+Ecuador  ,12,EC,0.12
+Egypt  ,14,EG,0.14
+El Salvador  ,13,SV,0.13
+Equatorial Guinea  ,15,GQ,0.15
+Estonia  ,22,EE,0.22
+Eswatini  ,15,SZ,0.15
+Ethiopia  ,15,ET,0.15
+Fiji  ,"Effective 1 August 2023, VAT rate increased to 15% on all goods and services except zero rated items and exempt supplies",FJ,
+Finland  ,24,FI,0.24
+France  ,Turnover tax: 20,FR,
+Gabon  ,18,GA,0.18
+Georgia  ,18,GE,0.18
+Germany  ,19,DE,0.19
+Ghana  ,"Standard rate scheme: 15; Flat rate scheme: 3 Immovable property: 5 Additional levies are charged on taxable supplies. Under the standard rate scheme these are NHIL: 2.5, GETFL: 2.5, and CHRL:1. While under the flat rate scheme, this is the CHRL: 1",GH,
+Gibraltar  ,,GI,
+Greece  ,24,GR,0.24
+Greenland  ,,GL,
+Guatemala  ,12,GT,0.12
+"Guernsey, Channel Islands  ",,GG,
+Guyana  ,14,GY,0.14
+Honduras  ,Sales tax: 15,HN,
+Hong Kong SAR  ,,HK,
+Hungary  ,27,HU,0.27
+Iceland  ,24,IS,0.24
+India  ,"The rate of GST varies from 5% to 28% depending upon the category of goods and services being supplied, the general rate of tax being 18% on majority of goods and services. Additionally, for certain goods, a compensation cess is levied at different rates as prescribed by the government.",IN,
+Indonesia  ,11,ID,0.11
+Iraq  ,Sales tax: Varies by good/service .,IQ,
+Ireland  ,23,IE,0.23
+Isle of Man  ,20,IM,0.2
+Israel  ,17,IL,0.17
+Italy  ,22,IT,0.22
+Ivory Coast ,18,CI,0.18
+Jamaica  ,General consumption tax : 15,JM,
+Japan  ,Consumption tax: 10,JP,
+"Jersey, Channel Islands  ",Goods and Services Tax : 5,JE,
+Jordan  ,Sales tax: 16,JO,
+Kazakhstan  ,12,KZ,0.12
+Kenya  ,16 ,KE,0.16
+"Korea, Republic of  ",10,KR,0.1
+Kosovo  ,18,RS,0.18
+Kuwait  ,,KW,
+Kyrgyzstan  ,12,KG,0.12
+Lao PDR  ,7,LA,0.07
+Latvia  ,21,LV,0.21
+Lebanon  ,11,LB,0.11
+Libya  ,,LY,
+Liechtenstein  ,8.1,LI,0.081
+Lithuania  ,21,LT,0.21
+Luxembourg  ,17,LU,0.17
+Macau SAR  ,,MO,
+Madagascar  ,20,MG,0.2
+Malawi  ,16.5,MW,0.165
+Malaysia  ,Sales tax: 10; Service tax: 6,MY,
+Malta  ,18,MT,0.18
+Mauritania  ,16,MR,0.16
+Mauritius  ,15,MU,0.15
+Mexico  ,16,MX,0.16
+Moldova  ,20,MD,0.2
+Mongolia  ,10,MN,0.1
+Montenegro  ,21,ME,0.21
+Morocco  ,20,MA,0.2
+Mozambique  ,16,MZ,0.16
+Myanmar  ,"There is no VAT in Myanmar. The indirect tax in Myanmar is commercial tax, with the general rate of 5%.",MM,
+"Namibia, Republic of  ",15,NA,0.15
+Netherlands  ,21,NL,0.21
+New Caledonia  ,General consumption tax : 11,NC,
+New Zealand  ,Goods and services tax : 15,NZ,
+Nicaragua  ,15,NI,0.15
+Nigeria  ,7.5,NG,0.075
+North Macedonia  ,18,MK,0.18
+Norway  ,25,NO,0.25
+Oman  ,5 ,OM,0.05
+Pakistan  ,For goods:18 For services: Ranges from 13% to 16% depending on the province.,PK,
+Palestinian territories  ,16,PS,0.16
+Panama  ,Movable goods and services transfer tax: 7,PA,
+Papua New Guinea  ,Goods and services tax: 10,PG,
+Paraguay  ,10 ,PY,0.1
+Peru  ,18,PE,0.18
+Philippines  ,12,PH,0.12
+Poland  ,23,PL,0.23
+Portugal  ,23,PT,0.23
+Puerto Rico  ,Sales and use tax: 11.5% for tangible personal property and certain services; 4% for business-to-business services and designated services.,PR,
+Qatar  ,,QA,
+Romania  ,19,RO,0.19
+Rwanda  ,18,RW,0.18
+Saint Lucia  ,12.5,LC,0.125
+Saudi Arabia  ,15 ,SA,0.15
+Senegal  ,18,SN,0.18
+Serbia  ,20,RS,0.2
+Singapore  ,Goods and services tax: 9,SG,
+Slovak Republic  ,20,SK,0.2
+Slovenia  ,22,SI,0.22
+South Africa  ,15,ZA,0.15
+Spain  ,21,ES,0.21
+Sweden  ,25,SE,0.25
+Switzerland  ,8.1 ,CH,0.081
+Taiwan  ,5% to general industries,TW,
+Tajikistan  ,15,TJ,0.15
+Tanzania  ,"Tanzania Mainland: 18; Tanzania Zanzibar: 18 - Banking, postal and telecommunication services; 15 - all other supplies",TZ,
+Thailand  ,7,TH,0.07
+Timor-Leste  ,Sales tax on imported goods: 2.5; Sales tax on other goods: 0,TL,
+Trinidad and Tobago  ,12.5,TT,0.125
+Tunisia  ,19,TN,0.19
+Turkey  ,20,TR,0.2
+Turkmenistan  ,15,TM,0.15
+Uganda  ,18,UG,0.18
+Ukraine  ,20,UA,0.2
+United Arab Emirates  ,5,AE,0.05
+United Kingdom  ,20,GB,0.2
+United States  ,,US,
+Uruguay  ,22 .,UY,
+"Uzbekistan, Republic of  ",12,UZ,0.12
+Venezuela  ,16,VE,0.16
+Vietnam  ,10,VN,0.1
+Zambia  ,16,ZM,0.16
+Zimbabwe  ,15,ZW,0.15
