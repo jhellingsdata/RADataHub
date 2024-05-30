@@ -69,31 +69,50 @@
     "fontSize": 14,
     "anchor": "start"
   },
-  "width": "container",
-  "height": 380,
+  "projection": {"type": "identity", "reflectY": true},
+  "width": 300,
+  "height": 600,
   "data": {
-    "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/UKconstmap.json",
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Voter%20Turnout/lowpoly_westminster.json",
     "format": {"property": "features"}
   },
-  "projection": {"type": "identity", "reflectY": true},
   "transform": [
     {
-      "lookup": "properties.pcon19nm",
+      "lookup": "properties.pcon18nm",
       "from": {
         "key": "Constituency",
         "fields": ["Turnout"],
         "data": {
-          "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/turnout_const_2019.csv"
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Voter%20Turnout/turnout_const_2019_fixed_names.csv"
         }
       }
     }
   ],
-  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.3},
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.1},
+      "encoding": {"color": {"value": "red"}}
+    },
+    {"mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.2}}
+  ],
   "encoding": {
-    "color": {"field": "Turnout", "type": "quantitative", "title": ""},
+    "color": {
+      "field": "Turnout",
+      "legend": {"labelExpr": "datum.value + '%'"},
+      "scale": {
+        "range": [
+          "rgb(111, 181, 219)",
+          "rgb(73, 191, 161)",
+          "rgb(230, 189, 81)",
+          "rgb(235, 61, 75)"
+        ]
+      },
+      "type": "quantitative",
+      "title": ""
+    },
     "tooltip": [
       {
-        "field": "properties.pcon19nm",
+        "field": "properties.pcon18nm",
         "title": "Constituency",
         "type": "nominal"
       },
