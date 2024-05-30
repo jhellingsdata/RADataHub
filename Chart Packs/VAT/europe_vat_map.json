@@ -1,0 +1,66 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+      "title": {
+      "font": "Circular Std",
+      "text": "Value-added Tax Rates",
+      "subtitle": [
+        "Includes equivalent taxes, 2024",
+        "Source: PwC",
+        ""
+      ],
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitleFont": "Arial",
+      "subtitleFontWeight": "lighter"
+    },
+    "width": 500,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_europe.topojson",
+      "format": {"type": "topojson", "feature": "europe"}
+    },
+    "transform": [
+      {
+        "filter": "datum.id != 'RU' && datum.id != 'IL' && datum.id != 'GE'"
+      },
+      {
+        "lookup": "id",
+        "from" : {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/VAT/pwc_rates_fixed.csv"
+          },
+          "key": "id",
+          "fields": ["value"]
+        }
+      }
+    ],
+    "mark": {
+      "type": "geoshape",
+      "strokeWidth": 0.3,
+      "stroke": "rgba(0,0,0,0.3)"
+    },
+    "encoding": {
+      "color": {
+        "legend": {
+          "title":null,
+          "format": "%"
+        },
+      "field":"value",
+                  "scale": {
+              "range": [
+                "rgb(111, 181, 219)",
+                "rgb(73, 191, 161)",
+                "rgb(230, 189, 81)",
+                "rgb(235, 61, 75)"
+              ],
+              "domain": [0.07, 0.27]
+            },
+      "type": "quantitative"
+      },
+      "tooltip": [
+        {"field" : "id"},
+        {"field": "value"}
+      ]
+    }
+  }
