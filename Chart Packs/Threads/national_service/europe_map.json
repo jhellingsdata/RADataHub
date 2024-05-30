@@ -1,0 +1,57 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+      "title": {
+      "font": "Circular Std",
+      "text": "National Service in Europe",
+      "subtitle": [
+        "Countries with some form of mandatory national service",
+        "Various Sources",
+        ""
+      ],
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitleFont": "Arial",
+      "subtitleFontWeight": "lighter"
+    },
+    "width": 500,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_europe.topojson",
+      "format": {"type": "topojson", "feature": "europe"}
+    },
+    "transform": [
+      {
+        "filter": "datum.id != 'RU' && datum.id != 'IL' && datum.id != 'GE'"
+      },
+      {
+        "lookup": "id",
+        "from" : {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Threads/national_service/conscription.csv"
+          },
+          "key": "id",
+          "fields": ["value"]
+        }
+      }
+    ],
+    "mark": {
+      "type": "geoshape",
+      "strokeWidth": 0.3,
+      "stroke": "rgba(0,0,0,0.3)"
+    },
+    "encoding": {
+      "color": {"condition": [
+        {
+          "test": "datum.value=='True'",
+          "value": "#36B7B4"
+        },
+      ],
+      "value": "rgb(228,228,228)"
+      },
+      "tooltip": [
+        {"field" : "id"},
+        {"field": "value"}
+      ]
+    }
+  }
