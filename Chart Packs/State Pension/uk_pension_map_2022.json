@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 400,
+  "config": {
+    "background": "white",
+    "font": "Circular Std",
+    "title": {
+      "color": "black",
+      "fontSize": 14,
+      "fontWeight": 400,
+      "subtitleColor": "#b4c8d8"
+    },
+    "view": {"stroke": "transparent"}
+  },
+  "title": {
+    "text": "UK Pension Recipients by Region",
+    "fontSize": 16,
+    "subtitle": ["Source: ONS...", ""],
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "dx": 5
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/UK_region_boundary.geojson",
+    "format": {"type": "json"}
+  },
+  "projection": {"type": "identity", "reflectY": true},
+  "transform": [
+    {
+      "lookup": "Region",
+      "from": {
+        "fields": ["Caseload"],
+        "data": {
+          "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/map_UK_pension_2022.csv"
+        },
+        "key": "Caseload"
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {"field": "Caseload", "type": "nominal", "legend": null},
+    "tooltip": [{"field": "properties.Region", "title": "Region"}]
+  }
+}
