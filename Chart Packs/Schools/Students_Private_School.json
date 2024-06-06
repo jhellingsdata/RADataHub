@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title":{
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0,
+    "text":"Students in private schools",  
+    "subtitle":["Number of students and percentage of total students","Source: UK Government statistics"]},
+
+  "width":300,
+  "height":300,
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Schools/Students_Private_Schools.csv"
+  },
+
+  "resolve":{"scale":{"y": "independent"}},
+
+  "layer": [
+    {
+      "mark": {"type":"bar",
+      "color":"#36b7b4"},
+      "encoding": {
+        "x": {
+          "field": "Year", 
+          "type": "temporal",
+          "axis": {
+        "labelColor": "#676A86",
+        "tickColor": "#676A86",
+        "gridDash": [1,5],
+        "labelFontSize": 11,
+        "title":""
+      }},
+        "y": {
+          "field": "Number of students in private schools", 
+          "type": "quantitative", 
+          "axis": {
+        "labelColor": "#676A86",
+        "tickColor": "#676A86",
+        "gridDash": [1,5],
+        "labelFontSize": 11,
+        "title":""
+      },
+      "scale":{
+        "domain": [500000, 580000],
+        "clamp":true
+      }}
+      }
+    },
+     {
+      "mark": {"type":"line",
+      "color":"#e6224b"},
+      "encoding": {
+        "x": {
+          "field": "Year", 
+          "type": "temporal",
+          "axis": {
+        "labelColor": "#676A86",
+        "tickColor": "#676A86",
+        "gridDash": [1,5],
+        "labelFontSize": 11,
+        "title":""
+      }},
+        "y": {
+          "field": "% of total students", 
+          "type": "quantitative", 
+          "axis": {
+        "labelColor": "#676A86",
+        "tickColor": "#676A86",
+        "gridDash": [1,5],
+        "labelFontSize": 11,
+        "title":""
+        
+      },
+      "scale":{
+        "domain": [4, 7]
+      }}
+      }
+     }
+  ]
+}
