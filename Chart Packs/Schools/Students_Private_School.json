@@ -17,7 +17,7 @@
   "height":300,
 
   "data": {
-    "url": "https://raw.githubusercontent.com/andreacorreaj/andreacorreaj.github.io/main/Schools_data.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Schools/Students_Private_Schools.csv"
   },
 
   "resolve":{"scale":{"y": "independent"}},
