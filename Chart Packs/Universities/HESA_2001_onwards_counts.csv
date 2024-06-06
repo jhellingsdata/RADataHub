@@ -1,0 +1,80 @@
+﻿Title,Students by level of study and academic year,
+Location,UK,
+Academic years,2000/01 to 2021/22,
+Data source,HESA,
+Data collection,"051, 054",
+Data source link,https://www.hesa.ac.uk/data-and-analysis/students/chart-1,
+Data file canonical link,https://www.hesa.ac.uk/data-and-analysis/students/chart-1.csv,
+Licence,Creative Commons Attribution 4.0 International Licence,
+Code page,Unicode UTF-8,
+Disclaimer,Please note that this data includes rounded totals.  Caution must be taken when importing into a pivot table so as not to double count.,
+,,
+Last updated,Jan-23,
+,,
+Academic Year,Level of study,Number
+2000/01,Undergraduate,1541225
+2000/01,Postgraduate,406905
+2000/01,Total,1948135
+2001/02,Undergraduate,1615130
+2001/02,Postgraduate,427455
+2001/02,Total,2042580
+2002/03,Undergraduate,1676920
+2002/03,Postgraduate,454190
+2002/03,Total,2131110
+2003/04,Undergraduate,1722685
+2003/04,Postgraduate,477495
+2003/04,Total,2200175
+2004/05,Undergraduate,1753810
+2004/05,Postgraduate,482115
+2004/05,Total,2235925
+2005/06,Undergraduate,1789025
+2005/06,Postgraduate,492755
+2005/06,Total,2281780
+2006/07,Undergraduate,1802280
+2006/07,Postgraduate,502965
+2006/07,Total,2305250
+2007/08,Undergraduate,1804305
+2007/08,Postgraduate,501480
+2007/08,Total,2305780
+2008/09,Undergraduate,1860425
+2008/09,Postgraduate,537160
+2008/09,Total,2397585
+2009/10,Undergraduate,1914835
+2009/10,Postgraduate,578915
+2009/10,Total,2493750
+2010/11,Undergraduate,1913940
+2010/11,Postgraduate,589070
+2010/11,Total,2503010
+2011/12,Undergraduate,1928140
+2011/12,Postgraduate,568490
+2011/12,Total,2496635
+2012/13,Undergraduate,1803755
+2012/13,Postgraduate,536715
+2012/13,Total,2340470
+2013/14,Undergraduate,1760020
+2013/14,Postgraduate,539440
+2013/14,Total,2299460
+2014/15,Undergraduate,1777645
+2014/15,Postgraduate,538195
+2014/15,Total,2315840
+2015/16,Undergraduate,1801570
+2015/16,Postgraduate,531255
+2015/16,Total,2332825
+2016/17,Undergraduate,1818565
+2016/17,Postgraduate,558410
+2016/17,Total,2376975
+2017/18,Undergraduate,1832735
+2017/18,Postgraduate,582010
+2017/18,Total,2414745
+2018/19,Undergraduate,1853840
+2018/19,Postgraduate,602710
+2018/19,Total,2456545
+2019/20,Undergraduate,1890020
+2019/20,Postgraduate,642145
+2019/20,Total,2532165
+2020/21,Undergraduate,2008525
+2020/21,Postgraduate,743340
+2020/21,Total,2751865
+2021/22,Undergraduate,2042310
+2021/22,Postgraduate,820310
+2021/22,Total,2862620

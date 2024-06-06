@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Housing/london_lads_BGC.geojson",
+    "format": {"type": "json", "property": "features"}
+  },
+  "params": [
+    {
+      "name": "yearSelect",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 2009,
+        "max": 2022,
+        "step": 1,
+        "name": "Year:"
+      }
+    }
+  ],
+  "title": {
+    "font": "Circular Std",
+    "text": "Housing Starts",
+    "subtitle": ["Per 1,000 people", "Source: ONS", ""],
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitleFont": "Arial",
+    "subtitleFontWeight": "lighter"
+  },
+  "transform": [
+    {
+      "lookup": "properties.LAD21CD",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Housing/lad_starts_per_1K_wide.csv"
+        },
+        "key": "id",
+        "fields": [
+          "id",
+          "name",
+          "2009",
+          "2010",
+          "2011",
+          "2012",
+          "2013",
+          "2014",
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ]
+      }
+    },
+    {"calculate": "datum[yearSelect]", "as": "value"}
+  ],
+  "projection": {"type": "identity", "reflectY": true},
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "color": "rgba(0,0,0,0.1)",
+        "stroke": "grey",
+        "strokeWidth": 0.5,
+        "clip": true
+      }
+    },
+    {
+      "mark": {
+        "type": "geoshape",
+        "color": "red",
+        "stroke": "grey",
+        "strokeWidth": 0.5,
+        "clip": true
+      },
+      "transform": [{"filter": "datum.value"}],
+      "encoding": {
+        "color": {
+          "field": "value",
+          "type": "quantitative",
+          "legend": {
+            "orient": "top",
+            "legendX": 270,
+            "title":null,
+            "titleFontWeight": "normal",
+            "labelExpr": "(datum.value == 6 ? '>' : datum.value == 1.5 ? '>' : '' )+format(datum.value, '.0')+(datum.value==1? ' of median' : '') + (datum.value == 6 ? ' ' : '')"
+          },
+          "scale": {
+            "clamp": true,
+            "domain": [0, 6],
+            "type": "linear",
+            "scheme": "yellowgreenblue"
+          }
+        },
+        "tooltip": [
+          {"field": "name", "title": "Authourity"},
+          {"field": "value", "title": "Per 1K", "format": ".3"}
+        ]
+      }
+    },
+        {
+      "data": {"values": [{"unused": "unused"}]},
+      "transform": [{"calculate": "yearSelect", "as": "year"}],
+      "mark": {
+        "type": "text",
+        "stroke": "black",
+        "fontSize": 64,
+        "color": "rgba(255, 255,255, 1)",
+        "font": "Circular Std",
+        "text": {"expr": "datum.year"}
+      },
+      "encoding": {
+        "x": {"value": 240},
+        "y": {"value": 175}
+      }
+    },
+
+  ],
+  "width": 500,
+  "height": 500,
+  "config": {"view": {"strokeWidth": 0}},
+  "autosize": {"type": "fit", "contains": "padding", "resize": false}
+}
