@@ -1,0 +1,483 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {"line": {"interpolate": "monotone"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": false,
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "hconcat": [
+    {
+      "data": {"name": "data-cb41c0a7dbecd8b3a2fca4ca5659e872"},
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {
+          "field": "date_label",
+          "legend": {
+            "labelColor": "black",
+            "labelFontSize": 11,
+            "orient": "top",
+            "title": null,
+            "titleColor": "black",
+            "titleFontSize": 11,
+            "titleFontWeight": "normal"
+          },
+          "scale": {
+            "range": [
+              "#59a700",
+              "#00A767",
+              "#36B7B4",
+              "hsl(198, 81.00%, 47.50%)",
+              "#0063AF",
+              "#243B5A",
+              "#663399"
+            ]
+          },
+          "type": "nominal"
+        },
+        "x": {
+          "axis": {
+            "labelAngle": 0,
+            "labelColor": "black",
+            "labelFontSize": 11,
+            "labels": false,
+            "ticks": false
+          },
+          "field": "date_label",
+          "title": "",
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {"labelExpr": "datum.label+ '%'"},
+          "field": "value",
+          "scale": {"domain": [0, 45]},
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "Wales",
+        "anchor": "middle",
+        "dy": 5,
+        "fontWeight": "normal",
+        "orient": "bottom"
+      },
+      "width": 125
+    },
+    {
+      "data": {"name": "data-6084e6ca5df45cfe030490d461cfaa19"},
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {
+          "field": "date_label",
+          "legend": {
+            "labelColor": "black",
+            "labelFontSize": 11,
+            "orient": "top",
+            "title": null,
+            "titleColor": "black",
+            "titleFontSize": 11,
+            "titleFontWeight": "normal"
+          },
+          "scale": {
+            "range": [
+              "#59a700",
+              "#00A767",
+              "#36B7B4",
+              "hsl(198, 81.00%, 47.50%)",
+              "#0063AF",
+              "#243B5A",
+              "#663399"
+            ]
+          },
+          "type": "nominal"
+        },
+        "x": {
+          "axis": {
+            "labelAngle": 0,
+            "labelColor": "black",
+            "labelFontSize": 11,
+            "labels": false,
+            "ticks": false
+          },
+          "field": "date_label",
+          "title": "",
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {"domain": false, "labels": false},
+          "field": "value",
+          "scale": {"domain": [0, 45]},
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "Scotland",
+        "anchor": "middle",
+        "dy": 5,
+        "fontWeight": "normal",
+        "orient": "bottom"
+      },
+      "width": 125
+    },
+    {
+      "data": {"name": "data-6e7e28cd47af45be4ac095e6c8fb2560"},
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {
+          "field": "date_label",
+          "legend": {
+            "labelColor": "black",
+            "labelFontSize": 11,
+            "orient": "top",
+            "title": null,
+            "titleColor": "black",
+            "titleFontSize": 11,
+            "titleFontWeight": "normal"
+          },
+          "scale": {
+            "range": [
+              "#59a700",
+              "#00A767",
+              "#36B7B4",
+              "hsl(198, 81.00%, 47.50%)",
+              "#0063AF",
+              "#243B5A",
+              "#663399"
+            ]
+          },
+          "type": "nominal"
+        },
+        "x": {
+          "axis": {
+            "labelAngle": 0,
+            "labelColor": "black",
+            "labelFontSize": 11,
+            "labels": false,
+            "ticks": false
+          },
+          "field": "date_label",
+          "title": "",
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {"domain": false, "labels": false},
+          "field": "value",
+          "scale": {"domain": [0, 45]},
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "N. Ireland",
+        "anchor": "middle",
+        "dy": 5,
+        "fontWeight": "normal",
+        "orient": "bottom"
+      },
+      "width": 125
+    },
+    {
+      "data": {"name": "data-efa76aa2e7c777523d20df5cf5e6c736"},
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {
+          "field": "date_label",
+          "legend": {
+            "labelColor": "black",
+            "labelFontSize": 11,
+            "orient": "top",
+            "title": null,
+            "titleColor": "black",
+            "titleFontSize": 11,
+            "titleFontWeight": "normal"
+          },
+          "scale": {
+            "range": [
+              "#59a700",
+              "#00A767",
+              "#36B7B4",
+              "hsl(198, 81.00%, 47.50%)",
+              "#0063AF",
+              "#243B5A",
+              "#663399"
+            ]
+          },
+          "type": "nominal"
+        },
+        "x": {
+          "axis": {
+            "labelAngle": 0,
+            "labelColor": "black",
+            "labelFontSize": 11,
+            "labels": false,
+            "ticks": false
+          },
+          "field": "date_label",
+          "title": "",
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {"domain": false, "labels": false},
+          "field": "value",
+          "scale": {"domain": [0, 45]},
+          "title": "",
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "UK",
+        "anchor": "middle",
+        "dy": 5,
+        "fontWeight": "normal",
+        "orient": "bottom"
+      },
+      "width": 125
+    }
+  ],
+  "spacing": 20,
+  "title": {
+    "text": "Economic Inactivity Rates",
+    "anchor": "start",
+    "fontSize": 16,
+    "fontWeight": "normal",
+    "subtitle": [
+      "Proportion of the population aged 16 or over, Source: NiReMS",
+      ""
+    ],
+    "subtitleColor": "rgb(143, 143, 143)"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-cb41c0a7dbecd8b3a2fca4ca5659e872": [
+      {
+        "date": "2019-01-01T00:00:00",
+        "date_label": "2019-20",
+        "series": "Wales",
+        "value": 39.27463
+      },
+      {
+        "date": "2020-01-01T00:00:00",
+        "date_label": "2020-21",
+        "series": "Wales",
+        "value": 40.4477325
+      },
+      {
+        "date": "2021-01-01T00:00:00",
+        "date_label": "2021-22",
+        "series": "Wales",
+        "value": 39.8413775
+      },
+      {
+        "date": "2022-01-01T00:00:00",
+        "date_label": "2022-23",
+        "series": "Wales",
+        "value": 41.297762500000005
+      },
+      {
+        "date": "2023-01-01T00:00:00",
+        "date_label": "2023-24",
+        "series": "Wales",
+        "value": 41.07017
+      },
+      {
+        "date": "2024-01-01T00:00:00",
+        "date_label": "2023-25",
+        "series": "Wales",
+        "value": 41.868412500000005
+      },
+      {
+        "date": "2025-01-01T00:00:00",
+        "date_label": "2025-26",
+        "series": "Wales",
+        "value": 42.1264975
+      }
+    ],
+    "data-6084e6ca5df45cfe030490d461cfaa19": [
+      {
+        "date": "2019-01-01T00:00:00",
+        "date_label": "2019-20",
+        "series": "Scotland",
+        "value": 37.973695
+      },
+      {
+        "date": "2020-01-01T00:00:00",
+        "date_label": "2020-21",
+        "series": "Scotland",
+        "value": 38.34723
+      },
+      {
+        "date": "2021-01-01T00:00:00",
+        "date_label": "2021-22",
+        "series": "Scotland",
+        "value": 38.2577775
+      },
+      {
+        "date": "2022-01-01T00:00:00",
+        "date_label": "2022-23",
+        "series": "Scotland",
+        "value": 37.67626
+      },
+      {
+        "date": "2023-01-01T00:00:00",
+        "date_label": "2023-24",
+        "series": "Scotland",
+        "value": 37.7562025
+      },
+      {
+        "date": "2024-01-01T00:00:00",
+        "date_label": "2023-25",
+        "series": "Scotland",
+        "value": 38.544602499999996
+      },
+      {
+        "date": "2025-01-01T00:00:00",
+        "date_label": "2025-26",
+        "series": "Scotland",
+        "value": 38.78471
+      }
+    ],
+    "data-6e7e28cd47af45be4ac095e6c8fb2560": [
+      {
+        "date": "2019-01-01T00:00:00",
+        "date_label": "2019-20",
+        "series": "N. Ireland",
+        "value": 39.010485
+      },
+      {
+        "date": "2020-01-01T00:00:00",
+        "date_label": "2020-21",
+        "series": "N. Ireland",
+        "value": 40.63781
+      },
+      {
+        "date": "2021-01-01T00:00:00",
+        "date_label": "2021-22",
+        "series": "N. Ireland",
+        "value": 41.63539
+      },
+      {
+        "date": "2022-01-01T00:00:00",
+        "date_label": "2022-23",
+        "series": "N. Ireland",
+        "value": 40.6218425
+      },
+      {
+        "date": "2023-01-01T00:00:00",
+        "date_label": "2023-24",
+        "series": "N. Ireland",
+        "value": 39.9219375
+      },
+      {
+        "date": "2024-01-01T00:00:00",
+        "date_label": "2023-25",
+        "series": "N. Ireland",
+        "value": 40.63707
+      },
+      {
+        "date": "2025-01-01T00:00:00",
+        "date_label": "2025-26",
+        "series": "N. Ireland",
+        "value": 40.797455
+      }
+    ],
+    "data-efa76aa2e7c777523d20df5cf5e6c736": [
+      {
+        "date": "2019-01-01T00:00:00",
+        "date_label": "2019-20",
+        "series": "UK",
+        "value": 36.800692857142856
+      },
+      {
+        "date": "2020-01-01T00:00:00",
+        "date_label": "2020-21",
+        "series": "UK",
+        "value": 37.2422606547619
+      },
+      {
+        "date": "2021-01-01T00:00:00",
+        "date_label": "2021-22",
+        "series": "UK",
+        "value": 37.59741952380953
+      },
+      {
+        "date": "2022-01-01T00:00:00",
+        "date_label": "2022-23",
+        "series": "UK",
+        "value": 37.711765
+      },
+      {
+        "date": "2023-01-01T00:00:00",
+        "date_label": "2023-24",
+        "series": "UK",
+        "value": 37.28036660714286
+      },
+      {
+        "date": "2024-01-01T00:00:00",
+        "date_label": "2023-25",
+        "series": "UK",
+        "value": 38.124855476190476
+      },
+      {
+        "date": "2025-01-01T00:00:00",
+        "date_label": "2025-26",
+        "series": "UK",
+        "value": 38.374204226190464
+      }
+    ]
+  }
+}

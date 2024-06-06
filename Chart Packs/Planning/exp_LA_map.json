@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Productivity/map%20of%20the%20day/lad_2021.geojson",
+    "format": {"type": "json", "property": "features"}
+  },
+  "title": {
+    "font": "Circular Std",
+    "text": "Planning and Development Expenditure by Local Authority",
+    "subtitle": ["", "Source: DLUHC RO 2022-23", ""],
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitleFont": "Arial",
+    "subtitleFontWeight": "lighter"
+  },
+  "transform": [
+    {
+      "lookup": "properties.LAD21CD",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/exp_LA_map_RO.csv"
+        },
+        "key": "ONSCODE",
+        "fields": ["ONSCODE", "Local Authority", "Expenditure"]
+      }
+    }
+  ],
+  "projection": {"type": "identity", "reflectY": true},
+  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {
+      "field": "Expenditure",
+      "type": "quantitative",
+      "legend": {"title": "£ Thousands", "titleFontWeight": "normal"}
+    },
+    "tooltip": [
+      {"field": "properties.LAD21NM", "title": "Authority"},
+      {"field": "Expenditure", "title": "£"}
+    ]
+  },
+  "width": "container",
+  "height": 600,
+  "config": {"view": {"strokeWidth": 0}},
+  "autosize": {"type": "fit", "contains": "padding", "resize": false}
+}
