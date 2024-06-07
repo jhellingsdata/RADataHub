@@ -3,7 +3,7 @@
     "config": {
       "font": "Circular Std",
       "mark": {"line": {"interpolate": "monotone"}},
-      "view": {"stroke": "transparent", "width": 300, "height": 400},
+      "view": {"stroke": "transparent", "width": 400, "height": 400},
       "title": {"anchor": "start", "subtitleColor": "#676A86"},
       "range": {
         "category": [
@@ -70,29 +70,29 @@
       }
     },
     "title": {
-      "text": "Public Pension Expenditure by Service 2019-2020",
-      "subtitle": ["Source: OBR 2021", ""]
+      "text": "Average Monthly Pension Payments",
+      "subtitle": ["Source: Almond Financial", ""]
     },
     "data": {
-      "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/exp_scheme_2020.csv"
+      "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/pension_data_with_iso3.csv"
     },
     "height": {"step": 17},
     "mark": "bar",
     "encoding": {
       "y": {
-        "field": "scheme",
+        "field": "Country",
         "type": "ordinal",
         "title": "",
         "sort": "-x"
       },
       "x": {
-        "field": "billions",
+        "field": "pension2",
         "aggregate": "average",
         "type": "quantitative",
         "title": "",
         "axis": {
           "grid": false,
-          "labelExpr": "'£' + datum.value+'B'"
+          "labelExpr": "'£' + datum.value+'k'"
         }
       },
       "color": {
