@@ -1,18 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple bar chart with embedded data.",
-  "title":{
-    "color": "#122b39E6",
-    "subtitleColor": "#676A86",
-    "anchor": "start",
-    "dx": 24,
-    "fontSize": 14,
-    "subtitleFontSize": 12,
-    "subtitlePadding": 4,
-    "offset": 0,
-    "text":"Students in private schools",  
-    "subtitle":["Number of students and percentage of total students","Source: UK Government statistics"]},
-
   "width":300,
   "height":300,
 
