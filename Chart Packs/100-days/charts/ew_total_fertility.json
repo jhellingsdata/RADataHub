@@ -1,0 +1,252 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect"
+      },
+      "encoding": {
+        "x": {
+          "field": "start",
+          "type": "temporal"
+        },
+        "x2": {
+          "field": "end"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -3,
+        "dy": 5,
+        "opacity": 0.7
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "end",
+          "type": "temporal"
+        },
+        "x2": {
+          "field": "end"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/100-days/data/ons_total_fertility_1939-2022.csv"
+      },
+      "mark": {
+        "type": "line"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "axis": {
+            "title": "Total fertility rate"
+          },
+          "field": "value",
+          "scale": {
+            "domain": [
+              0,
+              3.5
+            ]
+          },
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-6f95411b4d4c538feb2dd33dd1915bff"
+      },
+      "mark": {
+        "type": "rule",
+        "opacity": 0.6,
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-6f95411b4d4c538feb2dd33dd1915bff"
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": 3,
+        "dy": -7,
+        "opacity": 0.7
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "data": {
+    "name": "data-73aca959ff6411ec9c696118c690fea5"
+  },
+  "height": 300,
+  "width": 450,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-73aca959ff6411ec9c696118c690fea5": [
+      {
+        "start": "1939-01-01",
+        "end": "1945-09-02",
+        "text": "WW2",
+        "y": 3.4
+      }
+    ],
+    "data-6f95411b4d4c538feb2dd33dd1915bff": [
+      {
+        "y": 2.1,
+        "x": "2021-01-01",
+        "text": "Replacement rate (2.1)"
+      }
+    ]
+  }
+}
