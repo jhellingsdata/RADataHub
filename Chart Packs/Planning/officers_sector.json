@@ -64,13 +64,13 @@
   "layer": [
     {"mark": {"type": "line"}},
     {
-      "transform": [{"filter": "datum.Date == 1571612400000"}],
+      "transform": [{"filter": "datum.Date == 1572303600000"}],
       "mark": {"type": "text", "align": "left", "dx": 5, "dy": 0},
       "encoding": {"text": {"field": "Sector"}}
     },
     {"mark": {"type": "line"}},
     {
-      "transform": [{"filter": "datum.Date == 1572307200000"}],
+      "transform": [{"filter": "datum.Date == 1571608800000"}],
       "mark": {"type": "text", "align": "left", "dx": 5, "dy": 0},
       "encoding": {"text": {"field": "Sector"}}
     }
@@ -85,9 +85,9 @@
     "y": {"field": "Value", "title": "", "type": "quantitative"}
   },
   "title": {
-    "text": "Number of Town Planning Officers by Sector",
+    "text": "Town Planning Officers by Sector",
     "anchor": "start",
-    "subtitle": ["5-year moving average from ONS APS, Source: RTPI 2023", ""],
+    "subtitle": ["5-year moving average from ONS APS", "Source: RTPI 2023", ""],
     "subtitleColor": "rgb(143, 143, 143)"
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",

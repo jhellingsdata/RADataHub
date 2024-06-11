@@ -61,9 +61,10 @@
       "titleY": -7
     }
   },
+  "transform": [{"calculate": "datum.value*1000", "as": "value"}],
   "title": {
     "text": "Net Planning Expenditure by Region",
-    "subtitle": ["Inflation Adjusted 2021 GBP (£), Source: RTPI 2022", ""]
+    "subtitle": ["Inflation Adjusted 2021 GBP", "Source: RTPI 2022", ""]
   },
   "data": {
     "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/exp_region_time_rtpi.csv"
@@ -71,12 +72,12 @@
   "mark": "bar",
   "encoding": {
     "x": {"field": "value", "type": "quantitative", "title": ""},
-    "y": {"field": "region", "type": "nominal", "title": ""},
+    "y": {"field": "region", "sort": "-x", "type": "nominal", "title": ""},
     "color": {
       "field": "year",
       "type": "nominal",
       "title": "",
-      "legend": {"orient": "top", "direction": "horizontal"}
+      "legend": {"orient": "none", "direction": "horizontal", "legendY": -20}
     },
     "yOffset": {"field": "year"}
   }

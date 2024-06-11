@@ -62,9 +62,9 @@
   },
   "mark": "line",
   "layer": [
-    {"mark": {"type": "line"}},
+    {"mark": {"type": "line", "interpolate": "monotone"}},
     {
-      "transform": [{"filter": "datum.Date == 1703980800000"}],
+      "transform": [{"filter": "datum.Date == 1703977200000"}],
       "mark": {
         "type": "text",
         "align": "left",
@@ -84,9 +84,13 @@
     "y": {"field": "Value", "title": "", "type": "quantitative"}
   },
   "title": {
-    "text": "Number of Planning Applications Recieved, Decided & Granted",
+    "text": "Planning Application Volume",
     "anchor": "start",
-    "subtitle": ["England, Source: DLUHC 2023", "", ""],
+    "subtitle": [
+      "Planning Applications Recieved, Decided & Granted",
+      "Source: DLUHC 2023",
+      ""
+    ],
     "subtitleColor": "rgb(143, 143, 143)"
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",

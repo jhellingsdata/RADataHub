@@ -1,96 +1,101 @@
 {
-    "config": {
-      "font": "Circular Std",
-      "mark": {"line": {"interpolate": "monotone"}},
-      "view": {"stroke": "transparent", "width": 450, "height": 300},
-      "range": {
-        "category": [
-          "#36B7B4",
-          "#E6224B",
-          "#F4C245",
-          "#0063AF",
-          "#00A767",
-          "#179FDB",
-          "#EB5C2E"
-        ],
-        "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
-        "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
-        "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
-      },
-      "axisX": {
-        "domainColor": "#676A86",
-        "domainOpacity": 0.5,
-        "grid": false,
-        "labelAngle": 0,
-        "labelColor": "#676A86",
-        "labelOpacity": 0.7,
-        "orient": "bottom",
-        "tickColor": "#676A86",
-        "tickCount": 10,
-        "tickOpacity": 0.5,
-        "title": false,
-        "titleAlign": "center",
-        "titleAnchor": "middle",
-        "titleColor": "#676A86",
-        "titleFontSize": 12,
-        "titleOpacity": 0.8,
-        "titleY": -15
-      },
-      "axisY": {
-        "domainColor": "#676A86",
-        "domainOpacity": 0.5,
-        "gridColor": "#676A86",
-        "gridDash": [1, 5],
-        "gridOpacity": 0.5,
-        "labelColor": "#676A86",
-        "labelOpacity": 0.7,
-        "labelPadding": 5,
-        "tickColor": "#676A86",
-        "tickCount": 8,
-        "tickOpacity": 0.5,
-        "ticks": false,
-        "titleAlign": "left",
-        "titleAngle": 0,
-        "titleBaseline": "bottom",
-        "titleColor": "#676A86",
-        "titleFontSize": 12,
-        "titleOpacity": 0.8,
-        "titleX": 0,
-        "titleY": -7,
-        "format": "~s"
-      }
+  "config": {
+    "font": "Circular Std",
+    "mark": {"line": {"interpolate": "monotone"}},
+    "view": {"stroke": "transparent", "width": 450, "height": 300},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
     },
-    "mark": "line",
-    "layer": [
-      {"mark": {"type": "line"}},
-      {
-        "transform": [{"filter": "datum.Yeart == 1483228800000"}],
-        "mark": {
-          "type": "text",
-          "align": "left",
-          "dx": 5,
-          "dy": -8
-        },
-        "encoding": {"text": {"field": "Type"}}
-      }
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": false,
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7,
+      "format": "~s"
+    }
+  },
+  "transform": [{"calculate": "(100-datum.Percent)/100", "as": "Percent"}],
+  "mark": "line",
+  "layer": [
+    {"mark": {"type": "line"}},
+    {
+      "transform": [{"filter": "datum.Yeart == 1640995200000"}],
+      "mark": {"type": "text", "align": "left", "dx": 5, "dy": 0},
+      "encoding": {"text": {"field": "Type"}}
+    }
+  ],
+  "encoding": {
+    "color": {"field": "Type", "legend": null},
+    "x": {
+      "axis": {"labelAngle": 0, "title": null},
+      "field": "Yeart",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "Percent",
+      "title": "",
+      "type": "quantitative",
+      "axis": {"format": "%"}
+    }
+  },
+  "title": {
+    "text": "Delays in Planning Decisions",
+    "subtitle": [
+      "District Planning Applications Decided after Statutory Time Period",
+      "by type of development, Source: DLUHC Table P120",
+      ""
     ],
-    "encoding": {
-  "color": {"field": "Type", "legend" :null},
-      "x": {
-        "axis": {"labelAngle": 0, "title": null},
-        "field": "Yeart",
-        "type": "temporal"
-      },
-      "y": {"field": "Percent", "title": "%", "type": "quantitative"}
-    },
-  
-    "title": {
-      "text": "District Planning Applications Decided within Statutory Time Period",
-      "anchor": "start",
-      "subtitle": ["by type of development, Source: DLUHC Table P120", ""],
-      "subtitleColor": "rgb(143, 143, 143)"
-  
-    },
-   "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
-    "data": {"url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/district_time.csv"  }
+    "anchor": "start",
+    "subtitleColor": "rgb(143, 143, 143)"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/district_time.csv"
   }
+}

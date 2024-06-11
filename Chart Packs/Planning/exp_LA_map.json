@@ -4,14 +4,21 @@
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Productivity/map%20of%20the%20day/lad_2021.geojson",
     "format": {"type": "json", "property": "features"}
   },
+  "config": {
+    "view": {"strokeWidth": 0},
+    "font": "Circular Std",
+    "title": {"anchor": "start", "subtitleColor": "#676A86"}
+  },
   "title": {
     "font": "Circular Std",
-    "text": "Planning and Development Expenditure by Local Authority",
-    "subtitle": ["", "Source: DLUHC RO 2022-23", ""],
+    "text": "Planning and Development Expenditure",
+    "subtitle": [
+      "Local Authorities in England",
+      "Source: DLUHC RO 2022-23",
+      ""
+    ],
     "anchor": "start",
-    "fontSize": 16,
-    "subtitleFont": "Arial",
-    "subtitleFontWeight": "lighter"
+    "fontSize": 16
   },
   "transform": [
     {
@@ -23,23 +30,38 @@
         "key": "ONSCODE",
         "fields": ["ONSCODE", "Local Authority", "Expenditure"]
       }
+    },
+    {
+      "calculate": "datum.Expenditure ? datum.Expenditure*1000 : null",
+      "as": "Expenditure"
     }
   ],
   "projection": {"type": "identity", "reflectY": true},
-  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+  "layer": [
+    {
+      "transform": [{"filter": "slice(datum.properties.LAD21CD,0,1)=='E'"}],
+      "encoding": {"color": {"value": "rgba(0,0,0,0.05)"}},
+      "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5}
+    },
+    {"mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5}}
+  ],
   "encoding": {
     "color": {
       "field": "Expenditure",
       "type": "quantitative",
-      "legend": {"title": "£ Thousands", "titleFontWeight": "normal"}
+      "legend": {
+        "orient": "none",
+        "title": "",
+        "titleFontWeight": "normal",
+        "labelExpr": "'£'+format(datum.value, '.0s')"
+      }
     },
     "tooltip": [
       {"field": "properties.LAD21NM", "title": "Authority"},
-      {"field": "Expenditure", "title": "£"}
+      {"field": "Expenditure", "title": "£", "format": ".2s"}
     ]
   },
-  "width": "container",
-  "height": 600,
-  "config": {"view": {"strokeWidth": 0}},
+  "width": 400,
+  "height": 500,
   "autosize": {"type": "fit", "contains": "padding", "resize": false}
 }
