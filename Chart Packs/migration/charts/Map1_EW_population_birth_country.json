@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A map of Local Authorities in England and Wales. Shows the density of Non-British population in each authority area.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/migration/data/lad_population_birth_country_2021.geojson",
+    "format": {
+      "type": "json",
+      "property": "features"
+    }
+  },
+  "width": 400,
+  "height": 450,
+  "config": {
+    "font": "Circular Std",
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+
+      "dx": 24,
+      "subtitlePadding": 4,
+      "offset": 10
+    }
+  },
+
+  "title": {
+    "text": "Population by Non-British Country of Birth",
+    "subtitle": ["Share of total population by local authority.", "Source: ONS (2021 Census)"],
+    "fontSize": 16,
+    "subtitleFontSize": 12
+  },
+  "params": [{
+    "name": "Select",
+    "value": "Non-British (%)",
+    "bind": {
+      "input": "select",
+      "options": [
+        "Non-British (%)",
+        "EU (%)",
+        "Non-EU (%)",
+        "EU (% of Non-British)",
+        "Non-EU (% of Non-British)"
+      ]
+    }
+  }],
+  "transform": [
+    {"calculate": "datum.properties[Select]","as": "varSelected"},
+    {"calculate": "Select", "as": "Selection"},
+    {"calculate": "datum.Selection == 'Non-British (%)' ? 'In 2021, x% of the UK population was born outside the UK' : 'Non-British'", "as": "text_label"}
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape", "color": "lightgrey"
+      },
+      "encoding": {
+        "tooltip": [
+          {"field": "properties.AREANM", "title": "Local Authority"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "geoshape",
+        "stroke": "grey",
+        "strokeWidth": 0.2
+      },
+      "encoding": {
+        "color": {
+          "field": "varSelected",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "turbo"
+          },
+          "legend": {
+            "title":"",
+            "format": "%"
+          }
+        },
+        "tooltip": [
+          {"field": "properties.AREANM", "title": "Local Authority"},
+          {"field": "Selection", "title": "Measure"},
+          {"field": "varSelected", "title": "Population Share", "format": ".1%"}
+          
+        ]
+      }
+    }
+  ]
+}
