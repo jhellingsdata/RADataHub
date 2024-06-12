@@ -1,0 +1,836 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "dx": 24,
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-3a5c31721ac75fbbc2871f8eae13b12a"
+      },
+      "mark": {
+        "type": "line"
+      },
+      "encoding": {
+        "color": {
+          "field": "Reason",
+          "legend": null,
+          "type": "nominal"
+        },
+        "x": {
+          "field": "Date",
+          "type": "temporal"
+        },
+        "y": {
+          "axis": {
+            "title": "Annual immigration to UK among non-EU nationals"
+          },
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-dbc6efe0ed9580480d2a4c3578f71ded"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "gray",
+        "opacity": 0.7,
+        "strokeDash": [
+          4,
+          2
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "temporal"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-dbc6efe0ed9580480d2a4c3578f71ded"
+      },
+      "mark": {
+        "type": "text",
+        "dy": 10,
+        "fontSize": 10,
+        "lineBreak": "|",
+        "opacity": 0.5
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-3a5c31721ac75fbbc2871f8eae13b12a"
+      },
+      "mark": {
+        "type": "text",
+        "dy": {
+          "expr": "datum.Reason == 'Family' ? 3 : datum.Reason == 'Asylum' ? -3 : 0"
+        }
+      },
+      "encoding": {
+        "color": {
+          "field": "Reason",
+          "type": "nominal"
+        },
+        "text": {
+          "field": "Reason",
+          "type": "nominal"
+        },
+        "x": {
+          "aggregate": "max",
+          "field": "Date",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "Date"
+          },
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-3a5c31721ac75fbbc2871f8eae13b12a"
+      },
+      "mark": {
+        "type": "point",
+        "size": 30
+      },
+      "encoding": {
+        "color": {
+          "field": "Reason",
+          "type": "nominal"
+        },
+        "x": {
+          "aggregate": "max",
+          "field": "Date",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "Date"
+          },
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "height": 300,
+  "width": 450,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-3a5c31721ac75fbbc2871f8eae13b12a": [
+      {
+        "Date": "2019-06-30",
+        "Reason": "Work ",
+        "Value": 89000
+      },
+      {
+        "Date": "2019-09-30",
+        "Reason": "Work ",
+        "Value": 95000
+      },
+      {
+        "Date": "2019-12-31",
+        "Reason": "Work ",
+        "Value": 99000
+      },
+      {
+        "Date": "2020-03-31",
+        "Reason": "Work ",
+        "Value": 102000
+      },
+      {
+        "Date": "2020-06-30",
+        "Reason": "Work ",
+        "Value": 80000
+      },
+      {
+        "Date": "2020-09-30",
+        "Reason": "Work ",
+        "Value": 68000
+      },
+      {
+        "Date": "2020-12-31",
+        "Reason": "Work ",
+        "Value": 71000
+      },
+      {
+        "Date": "2021-03-31",
+        "Reason": "Work ",
+        "Value": 70000
+      },
+      {
+        "Date": "2021-06-30",
+        "Reason": "Work ",
+        "Value": 95000
+      },
+      {
+        "Date": "2021-09-30",
+        "Reason": "Work ",
+        "Value": 118000
+      },
+      {
+        "Date": "2021-12-31",
+        "Reason": "Work ",
+        "Value": 139000
+      },
+      {
+        "Date": "2022-03-31",
+        "Reason": "Work ",
+        "Value": 170000
+      },
+      {
+        "Date": "2022-06-30",
+        "Reason": "Work ",
+        "Value": 198000
+      },
+      {
+        "Date": "2022-09-30",
+        "Reason": "Work ",
+        "Value": 243000
+      },
+      {
+        "Date": "2022-12-31",
+        "Reason": "Work ",
+        "Value": 277000
+      },
+      {
+        "Date": "2023-03-31",
+        "Reason": "Work ",
+        "Value": 291000
+      },
+      {
+        "Date": "2023-06-30",
+        "Reason": "Work ",
+        "Value": 343000
+      },
+      {
+        "Date": "2023-09-30",
+        "Reason": "Work ",
+        "Value": 379000
+      },
+      {
+        "Date": "2023-12-31",
+        "Reason": "Work ",
+        "Value": 423000
+      },
+      {
+        "Date": "2019-06-30",
+        "Reason": "Study ",
+        "Value": 126000
+      },
+      {
+        "Date": "2019-09-30",
+        "Reason": "Study ",
+        "Value": 116000
+      },
+      {
+        "Date": "2019-12-31",
+        "Reason": "Study ",
+        "Value": 120000
+      },
+      {
+        "Date": "2020-03-31",
+        "Reason": "Study ",
+        "Value": 135000
+      },
+      {
+        "Date": "2020-06-30",
+        "Reason": "Study ",
+        "Value": 124000
+      },
+      {
+        "Date": "2020-09-30",
+        "Reason": "Study ",
+        "Value": 77000
+      },
+      {
+        "Date": "2020-12-31",
+        "Reason": "Study ",
+        "Value": 112000
+      },
+      {
+        "Date": "2021-03-31",
+        "Reason": "Study ",
+        "Value": 124000
+      },
+      {
+        "Date": "2021-06-30",
+        "Reason": "Study ",
+        "Value": 137000
+      },
+      {
+        "Date": "2021-09-30",
+        "Reason": "Study ",
+        "Value": 230000
+      },
+      {
+        "Date": "2021-12-31",
+        "Reason": "Study ",
+        "Value": 264000
+      },
+      {
+        "Date": "2022-03-31",
+        "Reason": "Study ",
+        "Value": 309000
+      },
+      {
+        "Date": "2022-06-30",
+        "Reason": "Study ",
+        "Value": 320000
+      },
+      {
+        "Date": "2022-09-30",
+        "Reason": "Study ",
+        "Value": 402000
+      },
+      {
+        "Date": "2022-12-31",
+        "Reason": "Study ",
+        "Value": 419000
+      },
+      {
+        "Date": "2023-03-31",
+        "Reason": "Study ",
+        "Value": 389000
+      },
+      {
+        "Date": "2023-06-30",
+        "Reason": "Study ",
+        "Value": 394000
+      },
+      {
+        "Date": "2023-09-30",
+        "Reason": "Study ",
+        "Value": 404000
+      },
+      {
+        "Date": "2023-12-31",
+        "Reason": "Study ",
+        "Value": 379000
+      },
+      {
+        "Date": "2019-06-30",
+        "Reason": "Family",
+        "Value": 65000
+      },
+      {
+        "Date": "2019-09-30",
+        "Reason": "Family",
+        "Value": 71000
+      },
+      {
+        "Date": "2019-12-31",
+        "Reason": "Family",
+        "Value": 78000
+      },
+      {
+        "Date": "2020-03-31",
+        "Reason": "Family",
+        "Value": 82000
+      },
+      {
+        "Date": "2020-06-30",
+        "Reason": "Family",
+        "Value": 68000
+      },
+      {
+        "Date": "2020-09-30",
+        "Reason": "Family",
+        "Value": 59000
+      },
+      {
+        "Date": "2020-12-31",
+        "Reason": "Family",
+        "Value": 56000
+      },
+      {
+        "Date": "2021-03-31",
+        "Reason": "Family",
+        "Value": 51000
+      },
+      {
+        "Date": "2021-06-30",
+        "Reason": "Family",
+        "Value": 66000
+      },
+      {
+        "Date": "2021-09-30",
+        "Reason": "Family",
+        "Value": 70000
+      },
+      {
+        "Date": "2021-12-31",
+        "Reason": "Family",
+        "Value": 66000
+      },
+      {
+        "Date": "2022-03-31",
+        "Reason": "Family",
+        "Value": 67000
+      },
+      {
+        "Date": "2022-06-30",
+        "Reason": "Family",
+        "Value": 61000
+      },
+      {
+        "Date": "2022-09-30",
+        "Reason": "Family",
+        "Value": 63000
+      },
+      {
+        "Date": "2022-12-31",
+        "Reason": "Family",
+        "Value": 67000
+      },
+      {
+        "Date": "2023-03-31",
+        "Reason": "Family",
+        "Value": 72000
+      },
+      {
+        "Date": "2023-06-30",
+        "Reason": "Family",
+        "Value": 79000
+      },
+      {
+        "Date": "2023-09-30",
+        "Reason": "Family",
+        "Value": 81000
+      },
+      {
+        "Date": "2023-12-31",
+        "Reason": "Family",
+        "Value": 75000
+      },
+      {
+        "Date": "2019-06-30",
+        "Reason": "Asylum",
+        "Value": 39000
+      },
+      {
+        "Date": "2019-09-30",
+        "Reason": "Asylum",
+        "Value": 41000
+      },
+      {
+        "Date": "2019-12-31",
+        "Reason": "Asylum",
+        "Value": 42000
+      },
+      {
+        "Date": "2020-03-31",
+        "Reason": "Asylum",
+        "Value": 42000
+      },
+      {
+        "Date": "2020-06-30",
+        "Reason": "Asylum",
+        "Value": 38000
+      },
+      {
+        "Date": "2020-09-30",
+        "Reason": "Asylum",
+        "Value": 37000
+      },
+      {
+        "Date": "2020-12-31",
+        "Reason": "Asylum",
+        "Value": 35000
+      },
+      {
+        "Date": "2021-03-31",
+        "Reason": "Asylum",
+        "Value": 31000
+      },
+      {
+        "Date": "2021-06-30",
+        "Reason": "Asylum",
+        "Value": 36000
+      },
+      {
+        "Date": "2021-09-30",
+        "Reason": "Asylum",
+        "Value": 43000
+      },
+      {
+        "Date": "2021-12-31",
+        "Reason": "Asylum",
+        "Value": 56000
+      },
+      {
+        "Date": "2022-03-31",
+        "Reason": "Asylum",
+        "Value": 65000
+      },
+      {
+        "Date": "2022-06-30",
+        "Reason": "Asylum",
+        "Value": 75000
+      },
+      {
+        "Date": "2022-09-30",
+        "Reason": "Asylum",
+        "Value": 88000
+      },
+      {
+        "Date": "2022-12-31",
+        "Reason": "Asylum",
+        "Value": 92000
+      },
+      {
+        "Date": "2023-03-31",
+        "Reason": "Asylum",
+        "Value": 94000
+      },
+      {
+        "Date": "2023-06-30",
+        "Reason": "Asylum",
+        "Value": 93000
+      },
+      {
+        "Date": "2023-09-30",
+        "Reason": "Asylum",
+        "Value": 89000
+      },
+      {
+        "Date": "2023-12-31",
+        "Reason": "Asylum",
+        "Value": 81000
+      },
+      {
+        "Date": "2019-06-30",
+        "Reason": "Humanitarian",
+        "Value": 6000
+      },
+      {
+        "Date": "2019-09-30",
+        "Reason": "Humanitarian",
+        "Value": 6000
+      },
+      {
+        "Date": "2019-12-31",
+        "Reason": "Humanitarian",
+        "Value": 6000
+      },
+      {
+        "Date": "2020-03-31",
+        "Reason": "Humanitarian",
+        "Value": 5000
+      },
+      {
+        "Date": "2020-06-30",
+        "Reason": "Humanitarian",
+        "Value": 4000
+      },
+      {
+        "Date": "2020-09-30",
+        "Reason": "Humanitarian",
+        "Value": 2000
+      },
+      {
+        "Date": "2020-12-31",
+        "Reason": "Humanitarian",
+        "Value": 1000
+      },
+      {
+        "Date": "2021-03-31",
+        "Reason": "Humanitarian",
+        "Value": 1000
+      },
+      {
+        "Date": "2021-06-30",
+        "Reason": "Humanitarian",
+        "Value": 9000
+      },
+      {
+        "Date": "2021-09-30",
+        "Reason": "Humanitarian",
+        "Value": 44000
+      },
+      {
+        "Date": "2021-12-31",
+        "Reason": "Humanitarian",
+        "Value": 57000
+      },
+      {
+        "Date": "2022-03-31",
+        "Reason": "Humanitarian",
+        "Value": 77000
+      },
+      {
+        "Date": "2022-06-30",
+        "Reason": "Humanitarian",
+        "Value": 157000
+      },
+      {
+        "Date": "2022-09-30",
+        "Reason": "Humanitarian",
+        "Value": 155000
+      },
+      {
+        "Date": "2022-12-31",
+        "Reason": "Humanitarian",
+        "Value": 160000
+      },
+      {
+        "Date": "2023-03-31",
+        "Reason": "Humanitarian",
+        "Value": 152000
+      },
+      {
+        "Date": "2023-06-30",
+        "Reason": "Humanitarian",
+        "Value": 84000
+      },
+      {
+        "Date": "2023-09-30",
+        "Reason": "Humanitarian",
+        "Value": 58000
+      },
+      {
+        "Date": "2023-12-31",
+        "Reason": "Humanitarian",
+        "Value": 50000
+      },
+      {
+        "Date": "2019-06-30",
+        "Reason": "Other",
+        "Value": 22000
+      },
+      {
+        "Date": "2019-09-30",
+        "Reason": "Other",
+        "Value": 22000
+      },
+      {
+        "Date": "2019-12-31",
+        "Reason": "Other",
+        "Value": 23000
+      },
+      {
+        "Date": "2020-03-31",
+        "Reason": "Other",
+        "Value": 23000
+      },
+      {
+        "Date": "2020-06-30",
+        "Reason": "Other",
+        "Value": 17000
+      },
+      {
+        "Date": "2020-09-30",
+        "Reason": "Other",
+        "Value": 16000
+      },
+      {
+        "Date": "2020-12-31",
+        "Reason": "Other",
+        "Value": 20000
+      },
+      {
+        "Date": "2021-03-31",
+        "Reason": "Other",
+        "Value": 21000
+      },
+      {
+        "Date": "2021-06-30",
+        "Reason": "Other",
+        "Value": 26000
+      },
+      {
+        "Date": "2021-09-30",
+        "Reason": "Other",
+        "Value": 29000
+      },
+      {
+        "Date": "2021-12-31",
+        "Reason": "Other",
+        "Value": 29000
+      },
+      {
+        "Date": "2022-03-31",
+        "Reason": "Other",
+        "Value": 32000
+      },
+      {
+        "Date": "2022-06-30",
+        "Reason": "Other",
+        "Value": 37000
+      },
+      {
+        "Date": "2022-09-30",
+        "Reason": "Other",
+        "Value": 39000
+      },
+      {
+        "Date": "2022-12-31",
+        "Reason": "Other",
+        "Value": 38000
+      },
+      {
+        "Date": "2023-03-31",
+        "Reason": "Other",
+        "Value": 35000
+      },
+      {
+        "Date": "2023-06-30",
+        "Reason": "Other",
+        "Value": 32000
+      },
+      {
+        "Date": "2023-09-30",
+        "Reason": "Other",
+        "Value": 27000
+      },
+      {
+        "Date": "2023-12-31",
+        "Reason": "Other",
+        "Value": 21000
+      }
+    ],
+    "data-dbc6efe0ed9580480d2a4c3578f71ded": [
+      {
+        "x": "2021-01-01",
+        "y": 450000,
+        "text": "New immigration system introduced |following end of EU transition period"
+      }
+    ]
+  }
+}

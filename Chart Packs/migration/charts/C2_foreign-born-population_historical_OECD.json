@@ -1,0 +1,2031 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "dx": 24,
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line"
+      },
+      "encoding": {
+        "color": {
+          "field": "Country",
+          "legend": null,
+          "scale": {
+            "scheme": "category10"
+          },
+          "title": "Country",
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {
+            "test": "(datum.Country === 'UK')",
+            "value": 1
+          },
+          "value": 0.7
+        },
+        "size": {
+          "condition": {
+            "test": "(datum.Country === 'UK')",
+            "value": 3.5
+          },
+          "value": 2
+        },
+        "x": {
+          "field": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "Value",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "field": "Country",
+            "oneOf": [
+              "UK",
+              "United States",
+              "Germany",
+              "France",
+              "Italy",
+              "Spain",
+              "Canada",
+              "Australia"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "dy": 0
+      },
+      "encoding": {
+        "color": {
+          "field": "Country",
+          "legend": null,
+          "scale": {
+            "scheme": "category10"
+          },
+          "title": "Country",
+          "type": "nominal"
+        },
+        "text": {
+          "field": "Country",
+          "type": "nominal"
+        },
+        "x": {
+          "aggregate": "max",
+          "field": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "Year"
+          },
+          "field": "Value",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": {
+            "field": "Country",
+            "oneOf": [
+              "UK",
+              "United States",
+              "Germany",
+              "France",
+              "Italy",
+              "Spain",
+              "Canada",
+              "Australia"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "data": {
+    "name": "data-5a062a58147ce1f2af4f8ec231e355d1"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-5a062a58147ce1f2af4f8ec231e355d1": [
+      {
+        "Country": "Australia",
+        "Year": 2012,
+        "Value": 0.2781554755715571
+      },
+      {
+        "Country": "Australia",
+        "Year": 2013,
+        "Value": 0.2819191882979563
+      },
+      {
+        "Country": "Australia",
+        "Year": 2014,
+        "Value": 0.28406967117833004
+      },
+      {
+        "Country": "Australia",
+        "Year": 2015,
+        "Value": 0.28667958840478613
+      },
+      {
+        "Country": "Australia",
+        "Year": 2016,
+        "Value": 0.2902251197147127
+      },
+      {
+        "Country": "Australia",
+        "Year": 2017,
+        "Value": 0.2951108860862472
+      },
+      {
+        "Country": "Australia",
+        "Year": 2018,
+        "Value": 0.29806689412914306
+      },
+      {
+        "Country": "Australia",
+        "Year": 2019,
+        "Value": 0.30152880266526966
+      },
+      {
+        "Country": "Australia",
+        "Year": 2020,
+        "Value": 0.30170610009680376
+      },
+      {
+        "Country": "Australia",
+        "Year": 2021,
+        "Value": 0.29200062413238453
+      },
+      {
+        "Country": "Austria",
+        "Year": 2012,
+        "Value": 0.1577251758173717
+      },
+      {
+        "Country": "Austria",
+        "Year": 2013,
+        "Value": 0.16196541998034492
+      },
+      {
+        "Country": "Austria",
+        "Year": 2014,
+        "Value": 0.16687337727064147
+      },
+      {
+        "Country": "Austria",
+        "Year": 2015,
+        "Value": 0.17376016101251743
+      },
+      {
+        "Country": "Austria",
+        "Year": 2016,
+        "Value": 0.18479859653823116
+      },
+      {
+        "Country": "Austria",
+        "Year": 2017,
+        "Value": 0.18950832547084
+      },
+      {
+        "Country": "Austria",
+        "Year": 2018,
+        "Value": 0.19296292367328846
+      },
+      {
+        "Country": "Austria",
+        "Year": 2019,
+        "Value": 0.1955885163425309
+      },
+      {
+        "Country": "Austria",
+        "Year": 2020,
+        "Value": 0.19884919827201764
+      },
+      {
+        "Country": "Austria",
+        "Year": 2021,
+        "Value": 0.20159294010381476
+      },
+      {
+        "Country": "Austria",
+        "Year": 2022,
+        "Value": 0.20582269826800365
+      },
+      {
+        "Country": "Belgium",
+        "Year": 2012,
+        "Value": 0.1528018687948607
+      },
+      {
+        "Country": "Belgium",
+        "Year": 2013,
+        "Value": 0.15580577006270832
+      },
+      {
+        "Country": "Belgium",
+        "Year": 2014,
+        "Value": 0.15737787024991298
+      },
+      {
+        "Country": "Belgium",
+        "Year": 2015,
+        "Value": 0.15975988074181796
+      },
+      {
+        "Country": "Belgium",
+        "Year": 2016,
+        "Value": 0.16454965327143167
+      },
+      {
+        "Country": "Belgium",
+        "Year": 2017,
+        "Value": 0.16651682164227843
+      },
+      {
+        "Country": "Belgium",
+        "Year": 2018,
+        "Value": 0.1692169612676128
+      },
+      {
+        "Country": "Belgium",
+        "Year": 2019,
+        "Value": 0.17301402873092514
+      },
+      {
+        "Country": "Belgium",
+        "Year": 2020,
+        "Value": 0.17941117375178883
+      },
+      {
+        "Country": "Belgium",
+        "Year": 2021,
+        "Value": 0.18073939392043303
+      },
+      {
+        "Country": "Belgium",
+        "Year": 2022,
+        "Value": 0.1840016307996068
+      },
+      {
+        "Country": "Canada",
+        "Year": 2012,
+        "Value": 0.20134348581311784
+      },
+      {
+        "Country": "Canada",
+        "Year": 2013,
+        "Value": 0.2024818531148415
+      },
+      {
+        "Country": "Canada",
+        "Year": 2014,
+        "Value": 0.20397370187242497
+      },
+      {
+        "Country": "Canada",
+        "Year": 2015,
+        "Value": 0.20563000679930699
+      },
+      {
+        "Country": "Canada",
+        "Year": 2016,
+        "Value": 0.21121528812162865
+      },
+      {
+        "Country": "Canada",
+        "Year": 2017,
+        "Value": 0.21362806954305388
+      },
+      {
+        "Country": "Canada",
+        "Year": 2018,
+        "Value": 0.21606099355877742
+      },
+      {
+        "Country": "Canada",
+        "Year": 2021,
+        "Value": 0.21982438561993142
+      },
+      {
+        "Country": "Chile",
+        "Year": 2012,
+        "Value": 0.022487331894878216
+      },
+      {
+        "Country": "Chile",
+        "Year": 2013,
+        "Value": 0.02384843721936165
+      },
+      {
+        "Country": "Chile",
+        "Year": 2014,
+        "Value": 0.025096664744103166
+      },
+      {
+        "Country": "Chile",
+        "Year": 2015,
+        "Value": 0.026141781667549956
+      },
+      {
+        "Country": "Chile",
+        "Year": 2017,
+        "Value": 0.04106313445914211
+      },
+      {
+        "Country": "Chile",
+        "Year": 2019,
+        "Value": 0.0692978472813104
+      },
+      {
+        "Country": "Chile",
+        "Year": 2020,
+        "Value": 0.07580335094343414
+      },
+      {
+        "Country": "Chile",
+        "Year": 2021,
+        "Value": 0.07503462530918667
+      },
+      {
+        "Country": "Chile",
+        "Year": 2022,
+        "Value": 0.07533096121867455
+      },
+      {
+        "Country": "Colombia",
+        "Year": 2015,
+        "Value": 0.0033445451803978733
+      },
+      {
+        "Country": "Colombia",
+        "Year": 2020,
+        "Value": 0.03782457060895003
+      },
+      {
+        "Country": "Costa Rica",
+        "Year": 2015,
+        "Value": 0.08625304689084874
+      },
+      {
+        "Country": "Costa Rica",
+        "Year": 2020,
+        "Value": 0.10295141640642122
+      },
+      {
+        "Country": "Czech Republic",
+        "Year": 2012,
+        "Value": 0.03723494456147625
+      },
+      {
+        "Country": "Czech Republic",
+        "Year": 2013,
+        "Value": 0.03685664278239264
+      },
+      {
+        "Country": "Czech Republic",
+        "Year": 2014,
+        "Value": 0.03769066607146476
+      },
+      {
+        "Country": "Czech Republic",
+        "Year": 2015,
+        "Value": 0.03956889182418298
+      },
+      {
+        "Country": "Czech Republic",
+        "Year": 2016,
+        "Value": 0.04109763669381849
+      },
+      {
+        "Country": "Czech Republic",
+        "Year": 2017,
+        "Value": 0.044017368581857334
+      },
+      {
+        "Country": "Czech Republic",
+        "Year": 2018,
+        "Value": 0.04415495084482535
+      },
+      {
+        "Country": "Czech Republic",
+        "Year": 2019,
+        "Value": 0.04771602504321771
+      },
+      {
+        "Country": "Czech Republic",
+        "Year": 2020,
+        "Value": 0.05001619596518018
+      },
+      {
+        "Country": "Czech Republic",
+        "Year": 2021,
+        "Value": 0.053283246831471134
+      },
+      {
+        "Country": "Czech Republic",
+        "Year": 2022,
+        "Value": 0.04317974259226633
+      },
+      {
+        "Country": "Denmark",
+        "Year": 2012,
+        "Value": 0.07931550591572695
+      },
+      {
+        "Country": "Denmark",
+        "Year": 2013,
+        "Value": 0.08168588807938308
+      },
+      {
+        "Country": "Denmark",
+        "Year": 2014,
+        "Value": 0.0848773994505761
+      },
+      {
+        "Country": "Denmark",
+        "Year": 2015,
+        "Value": 0.08884432008048627
+      },
+      {
+        "Country": "Denmark",
+        "Year": 2016,
+        "Value": 0.09518666344507241
+      },
+      {
+        "Country": "Denmark",
+        "Year": 2017,
+        "Value": 0.09967427472584296
+      },
+      {
+        "Country": "Denmark",
+        "Year": 2018,
+        "Value": 0.10270949993177904
+      },
+      {
+        "Country": "Denmark",
+        "Year": 2019,
+        "Value": 0.10494412998231248
+      },
+      {
+        "Country": "Denmark",
+        "Year": 2020,
+        "Value": 0.10565949277155698
+      },
+      {
+        "Country": "Denmark",
+        "Year": 2021,
+        "Value": 0.10604880026683433
+      },
+      {
+        "Country": "Denmark",
+        "Year": 2022,
+        "Value": 0.10955577674499063
+      },
+      {
+        "Country": "Estonia",
+        "Year": 2012,
+        "Value": 0.15883366391977335
+      },
+      {
+        "Country": "Estonia",
+        "Year": 2013,
+        "Value": 0.15048582591918325
+      },
+      {
+        "Country": "Estonia",
+        "Year": 2014,
+        "Value": 0.14941232794915316
+      },
+      {
+        "Country": "Estonia",
+        "Year": 2015,
+        "Value": 0.1481349059940892
+      },
+      {
+        "Country": "Estonia",
+        "Year": 2016,
+        "Value": 0.147465251999075
+      },
+      {
+        "Country": "Estonia",
+        "Year": 2017,
+        "Value": 0.14634630146147942
+      },
+      {
+        "Country": "Estonia",
+        "Year": 2018,
+        "Value": 0.1489990769585785
+      },
+      {
+        "Country": "Estonia",
+        "Year": 2019,
+        "Value": 0.1498240892239426
+      },
+      {
+        "Country": "Estonia",
+        "Year": 2020,
+        "Value": 0.15001036285049987
+      },
+      {
+        "Country": "Estonia",
+        "Year": 2021,
+        "Value": 0.14911329926986436
+      },
+      {
+        "Country": "Estonia",
+        "Year": 2022,
+        "Value": 0.1512120829614135
+      },
+      {
+        "Country": "Finland",
+        "Year": 2012,
+        "Value": 0.049393942993226775
+      },
+      {
+        "Country": "Finland",
+        "Year": 2013,
+        "Value": 0.05272861840495149
+      },
+      {
+        "Country": "Finland",
+        "Year": 2014,
+        "Value": 0.05594418065903962
+      },
+      {
+        "Country": "Finland",
+        "Year": 2015,
+        "Value": 0.05895387481880001
+      },
+      {
+        "Country": "Finland",
+        "Year": 2016,
+        "Value": 0.061531212177399215
+      },
+      {
+        "Country": "Finland",
+        "Year": 2017,
+        "Value": 0.06506308940171933
+      },
+      {
+        "Country": "Finland",
+        "Year": 2018,
+        "Value": 0.0676811646035944
+      },
+      {
+        "Country": "Finland",
+        "Year": 2019,
+        "Value": 0.07020455894951069
+      },
+      {
+        "Country": "Finland",
+        "Year": 2020,
+        "Value": 0.07319954976859083
+      },
+      {
+        "Country": "Finland",
+        "Year": 2021,
+        "Value": 0.07609414517831034
+      },
+      {
+        "Country": "Finland",
+        "Year": 2022,
+        "Value": 0.07982104377894324
+      },
+      {
+        "Country": "France",
+        "Year": 2012,
+        "Value": 0.11484040738689538
+      },
+      {
+        "Country": "France",
+        "Year": 2013,
+        "Value": 0.1160641749174862
+      },
+      {
+        "Country": "France",
+        "Year": 2014,
+        "Value": 0.11736550105352533
+      },
+      {
+        "Country": "France",
+        "Year": 2015,
+        "Value": 0.11840514741604931
+      },
+      {
+        "Country": "France",
+        "Year": 2016,
+        "Value": 0.12070242434518906
+      },
+      {
+        "Country": "France",
+        "Year": 2017,
+        "Value": 0.12144319259060957
+      },
+      {
+        "Country": "France",
+        "Year": 2018,
+        "Value": 0.12259654179217255
+      },
+      {
+        "Country": "France",
+        "Year": 2019,
+        "Value": 0.12556649660750452
+      },
+      {
+        "Country": "France",
+        "Year": 2020,
+        "Value": 0.12651913228284614
+      },
+      {
+        "Country": "France",
+        "Year": 2022,
+        "Value": 0.12774840753227962
+      },
+      {
+        "Country": "Germany",
+        "Year": 2012,
+        "Value": 0.12148243298867925
+      },
+      {
+        "Country": "Germany",
+        "Year": 2013,
+        "Value": 0.12492255907946782
+      },
+      {
+        "Country": "Germany",
+        "Year": 2014,
+        "Value": 0.12897169039775944
+      },
+      {
+        "Country": "Germany",
+        "Year": 2015,
+        "Value": 0.13326336759567606
+      },
+      {
+        "Country": "Germany",
+        "Year": 2016,
+        "Value": 0.13945982430804324
+      },
+      {
+        "Country": "Germany",
+        "Year": 2017,
+        "Value": 0.15311722888927323
+      },
+      {
+        "Country": "Germany",
+        "Year": 2018,
+        "Value": 0.15779667783732776
+      },
+      {
+        "Country": "Germany",
+        "Year": 2019,
+        "Value": 0.16231677334759786
+      },
+      {
+        "Country": "Germany",
+        "Year": 2020,
+        "Value": 0.16465895942710332
+      },
+      {
+        "Country": "Germany",
+        "Year": 2021,
+        "Value": 0.16344224568875984
+      },
+      {
+        "Country": "Germany",
+        "Year": 2022,
+        "Value": 0.16784445862192968
+      },
+      {
+        "Country": "Greece",
+        "Year": 2012,
+        "Value": 0.11823609397653287
+      },
+      {
+        "Country": "Greece",
+        "Year": 2013,
+        "Value": 0.11588943785474165
+      },
+      {
+        "Country": "Greece",
+        "Year": 2014,
+        "Value": 0.11536487813410579
+      },
+      {
+        "Country": "Greece",
+        "Year": 2015,
+        "Value": 0.11411610740134304
+      },
+      {
+        "Country": "Greece",
+        "Year": 2016,
+        "Value": 0.11274495805933768
+      },
+      {
+        "Country": "Greece",
+        "Year": 2017,
+        "Value": 0.11609168031896167
+      },
+      {
+        "Country": "Greece",
+        "Year": 2018,
+        "Value": 0.118831998611953
+      },
+      {
+        "Country": "Greece",
+        "Year": 2019,
+        "Value": 0.1217753636792819
+      },
+      {
+        "Country": "Greece",
+        "Year": 2020,
+        "Value": 0.12572769098297415
+      },
+      {
+        "Country": "Greece",
+        "Year": 2021,
+        "Value": 0.127306412233305
+      },
+      {
+        "Country": "Greece",
+        "Year": 2022,
+        "Value": 0.11242284621076813
+      },
+      {
+        "Country": "Hungary",
+        "Year": 2012,
+        "Value": 0.04043559761674672
+      },
+      {
+        "Country": "Hungary",
+        "Year": 2013,
+        "Value": 0.04275972131667749
+      },
+      {
+        "Country": "Hungary",
+        "Year": 2014,
+        "Value": 0.0452494940151619
+      },
+      {
+        "Country": "Hungary",
+        "Year": 2015,
+        "Value": 0.04825202863923111
+      },
+      {
+        "Country": "Hungary",
+        "Year": 2016,
+        "Value": 0.05123445282319206
+      },
+      {
+        "Country": "Hungary",
+        "Year": 2017,
+        "Value": 0.052386961273589445
+      },
+      {
+        "Country": "Hungary",
+        "Year": 2018,
+        "Value": 0.05482015727675476
+      },
+      {
+        "Country": "Hungary",
+        "Year": 2019,
+        "Value": 0.0578101564656205
+      },
+      {
+        "Country": "Hungary",
+        "Year": 2020,
+        "Value": 0.06081888892823376
+      },
+      {
+        "Country": "Hungary",
+        "Year": 2021,
+        "Value": 0.06129565351436024
+      },
+      {
+        "Country": "Hungary",
+        "Year": 2022,
+        "Value": 0.0630964728447574
+      },
+      {
+        "Country": "Iceland",
+        "Year": 2012,
+        "Value": 0.1086827726943585
+      },
+      {
+        "Country": "Iceland",
+        "Year": 2013,
+        "Value": 0.11049098443204883
+      },
+      {
+        "Country": "Iceland",
+        "Year": 2014,
+        "Value": 0.11499152157596759
+      },
+      {
+        "Country": "Iceland",
+        "Year": 2015,
+        "Value": 0.11980304173450343
+      },
+      {
+        "Country": "Iceland",
+        "Year": 2016,
+        "Value": 0.1270184814611055
+      },
+      {
+        "Country": "Iceland",
+        "Year": 2017,
+        "Value": 0.13867068135406263
+      },
+      {
+        "Country": "Iceland",
+        "Year": 2018,
+        "Value": 0.15897541926447076
+      },
+      {
+        "Country": "Iceland",
+        "Year": 2019,
+        "Value": 0.17407760219096058
+      },
+      {
+        "Country": "Iceland",
+        "Year": 2020,
+        "Value": 0.18517686474852862
+      },
+      {
+        "Country": "Iceland",
+        "Year": 2021,
+        "Value": 0.1880686128438965
+      },
+      {
+        "Country": "Iceland",
+        "Year": 2022,
+        "Value": 0.1926511920069365
+      },
+      {
+        "Country": "Ireland",
+        "Year": 2012,
+        "Value": 0.168528715894247
+      },
+      {
+        "Country": "Ireland",
+        "Year": 2013,
+        "Value": 0.16958018780951378
+      },
+      {
+        "Country": "Ireland",
+        "Year": 2014,
+        "Value": 0.17119321017390413
+      },
+      {
+        "Country": "Ireland",
+        "Year": 2015,
+        "Value": 0.17328821381828202
+      },
+      {
+        "Country": "Ireland",
+        "Year": 2016,
+        "Value": 0.1727894206797365
+      },
+      {
+        "Country": "Ireland",
+        "Year": 2017,
+        "Value": 0.1781950729847566
+      },
+      {
+        "Country": "Ireland",
+        "Year": 2018,
+        "Value": 0.1834423580782989
+      },
+      {
+        "Country": "Ireland",
+        "Year": 2019,
+        "Value": 0.1881234667794932
+      },
+      {
+        "Country": "Ireland",
+        "Year": 2020,
+        "Value": 0.19268355258915854
+      },
+      {
+        "Country": "Ireland",
+        "Year": 2021,
+        "Value": 0.1974636709384049
+      },
+      {
+        "Country": "Ireland",
+        "Year": 2022,
+        "Value": 0.20302207340774941
+      },
+      {
+        "Country": "Israel",
+        "Year": 2012,
+        "Value": 0.23822302619989721
+      },
+      {
+        "Country": "Israel",
+        "Year": 2013,
+        "Value": 0.2319694331286482
+      },
+      {
+        "Country": "Israel",
+        "Year": 2014,
+        "Value": 0.22594577102970725
+      },
+      {
+        "Country": "Israel",
+        "Year": 2015,
+        "Value": 0.22116278311148893
+      },
+      {
+        "Country": "Israel",
+        "Year": 2016,
+        "Value": 0.21688158527968895
+      },
+      {
+        "Country": "Israel",
+        "Year": 2017,
+        "Value": 0.21207794187906895
+      },
+      {
+        "Country": "Israel",
+        "Year": 2018,
+        "Value": 0.20787148977857675
+      },
+      {
+        "Country": "Israel",
+        "Year": 2019,
+        "Value": 0.2036438207747048
+      },
+      {
+        "Country": "Israel",
+        "Year": 2020,
+        "Value": 0.20015184405257946
+      },
+      {
+        "Country": "Israel",
+        "Year": 2021,
+        "Value": 0.19503830284012796
+      },
+      {
+        "Country": "Israel",
+        "Year": 2022,
+        "Value": 0.19131399790853024
+      },
+      {
+        "Country": "Italy",
+        "Year": 2012,
+        "Value": 0.09520848705622438
+      },
+      {
+        "Country": "Italy",
+        "Year": 2013,
+        "Value": 0.0946297620070747
+      },
+      {
+        "Country": "Italy",
+        "Year": 2014,
+        "Value": 0.09512616939330559
+      },
+      {
+        "Country": "Italy",
+        "Year": 2015,
+        "Value": 0.09624104544661513
+      },
+      {
+        "Country": "Italy",
+        "Year": 2016,
+        "Value": 0.09808220705570361
+      },
+      {
+        "Country": "Italy",
+        "Year": 2017,
+        "Value": 0.10070594435153027
+      },
+      {
+        "Country": "Italy",
+        "Year": 2018,
+        "Value": 0.10291841703146686
+      },
+      {
+        "Country": "Italy",
+        "Year": 2019,
+        "Value": 0.10135741781982649
+      },
+      {
+        "Country": "Italy",
+        "Year": 2020,
+        "Value": 0.10315563724515617
+      },
+      {
+        "Country": "Italy",
+        "Year": 2021,
+        "Value": 0.1053554624084637
+      },
+      {
+        "Country": "Italy",
+        "Year": 2022,
+        "Value": 0.10423004251115206
+      },
+      {
+        "Country": "Latvia",
+        "Year": 2012,
+        "Value": 0.14031975375174174
+      },
+      {
+        "Country": "Latvia",
+        "Year": 2013,
+        "Value": 0.13725788025899513
+      },
+      {
+        "Country": "Latvia",
+        "Year": 2014,
+        "Value": 0.1347111540175699
+      },
+      {
+        "Country": "Latvia",
+        "Year": 2015,
+        "Value": 0.13312267872413525
+      },
+      {
+        "Country": "Latvia",
+        "Year": 2016,
+        "Value": 0.13091579718668253
+      },
+      {
+        "Country": "Latvia",
+        "Year": 2017,
+        "Value": 0.12832891476804448
+      },
+      {
+        "Country": "Latvia",
+        "Year": 2018,
+        "Value": 0.1266780177804368
+      },
+      {
+        "Country": "Latvia",
+        "Year": 2019,
+        "Value": 0.12544508268601107
+      },
+      {
+        "Country": "Latvia",
+        "Year": 2020,
+        "Value": 0.12381428614722552
+      },
+      {
+        "Country": "Latvia",
+        "Year": 2021,
+        "Value": 0.12107408358450218
+      },
+      {
+        "Country": "Latvia",
+        "Year": 2022,
+        "Value": 0.11866936801932408
+      },
+      {
+        "Country": "Lithuania",
+        "Year": 2012,
+        "Value": 0.06835926857564051
+      },
+      {
+        "Country": "Lithuania",
+        "Year": 2014,
+        "Value": 0.046460936224193956
+      },
+      {
+        "Country": "Lithuania",
+        "Year": 2015,
+        "Value": 0.04638609232271824
+      },
+      {
+        "Country": "Lithuania",
+        "Year": 2016,
+        "Value": 0.044650639538326174
+      },
+      {
+        "Country": "Lithuania",
+        "Year": 2017,
+        "Value": 0.04440049173114885
+      },
+      {
+        "Country": "Lithuania",
+        "Year": 2018,
+        "Value": 0.046307132164568075
+      },
+      {
+        "Country": "Lithuania",
+        "Year": 2019,
+        "Value": 0.049319642296864474
+      },
+      {
+        "Country": "Lithuania",
+        "Year": 2020,
+        "Value": 0.05460652402264029
+      },
+      {
+        "Country": "Lithuania",
+        "Year": 2021,
+        "Value": 0.05909499121611225
+      },
+      {
+        "Country": "Lithuania",
+        "Year": 2022,
+        "Value": 0.060381974020157256
+      },
+      {
+        "Country": "Luxembourg",
+        "Year": 2012,
+        "Value": 0.41544629025505886
+      },
+      {
+        "Country": "Luxembourg",
+        "Year": 2013,
+        "Value": 0.4258388705570371
+      },
+      {
+        "Country": "Luxembourg",
+        "Year": 2014,
+        "Value": 0.4374519193607162
+      },
+      {
+        "Country": "Luxembourg",
+        "Year": 2015,
+        "Value": 0.44738119290626654
+      },
+      {
+        "Country": "Luxembourg",
+        "Year": 2016,
+        "Value": 0.45746262761036155
+      },
+      {
+        "Country": "Luxembourg",
+        "Year": 2017,
+        "Value": 0.4640343194637498
+      },
+      {
+        "Country": "Luxembourg",
+        "Year": 2018,
+        "Value": 0.47082773666567723
+      },
+      {
+        "Country": "Luxembourg",
+        "Year": 2019,
+        "Value": 0.47896208569783705
+      },
+      {
+        "Country": "Luxembourg",
+        "Year": 2020,
+        "Value": 0.48659119391357775
+      },
+      {
+        "Country": "Luxembourg",
+        "Year": 2021,
+        "Value": 0.491132003940274
+      },
+      {
+        "Country": "Luxembourg",
+        "Year": 2022,
+        "Value": 0.49841890810918904
+      },
+      {
+        "Country": "Mexico",
+        "Year": 2012,
+        "Value": 0.008442589162842913
+      },
+      {
+        "Country": "Mexico",
+        "Year": 2013,
+        "Value": 0.008474745131233268
+      },
+      {
+        "Country": "Mexico",
+        "Year": 2014,
+        "Value": 0.007935574682372926
+      },
+      {
+        "Country": "Mexico",
+        "Year": 2015,
+        "Value": 0.008396115838417076
+      },
+      {
+        "Country": "Mexico",
+        "Year": 2018,
+        "Value": 0.00866643823279119
+      },
+      {
+        "Country": "Mexico",
+        "Year": 2020,
+        "Value": 0.009575147013860443
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2012,
+        "Value": 0.11419676208228634
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2013,
+        "Value": 0.11505414843351192
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2014,
+        "Value": 0.11624529960254529
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2015,
+        "Value": 0.1183704745352033
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2016,
+        "Value": 0.1214009507125917
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2017,
+        "Value": 0.12549598322144853
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2018,
+        "Value": 0.1293452129567555
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2019,
+        "Value": 0.1334006166105547
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2020,
+        "Value": 0.1383583255366023
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2021,
+        "Value": 0.14053613508012497
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2022,
+        "Value": 0.14548439704185254
+      },
+      {
+        "Country": "New Zealand",
+        "Year": 2012,
+        "Value": 0.2201186131386861
+      },
+      {
+        "Country": "New Zealand",
+        "Year": 2013,
+        "Value": 0.22730881785803406
+      },
+      {
+        "Country": "New Zealand",
+        "Year": 2014,
+        "Value": 0.2363746876477342
+      },
+      {
+        "Country": "New Zealand",
+        "Year": 2015,
+        "Value": 0.24532270563489425
+      },
+      {
+        "Country": "New Zealand",
+        "Year": 2016,
+        "Value": 0.2536121837983252
+      },
+      {
+        "Country": "New Zealand",
+        "Year": 2017,
+        "Value": 0.262
+      },
+      {
+        "Country": "New Zealand",
+        "Year": 2018,
+        "Value": 0.27399999999999997
+      },
+      {
+        "Country": "Norway",
+        "Year": 2012,
+        "Value": 0.12442457625938073
+      },
+      {
+        "Country": "Norway",
+        "Year": 2013,
+        "Value": 0.13228259661011274
+      },
+      {
+        "Country": "Norway",
+        "Year": 2014,
+        "Value": 0.1386785995983206
+      },
+      {
+        "Country": "Norway",
+        "Year": 2015,
+        "Value": 0.14439368189562596
+      },
+      {
+        "Country": "Norway",
+        "Year": 2016,
+        "Value": 0.1488424242634441
+      },
+      {
+        "Country": "Norway",
+        "Year": 2017,
+        "Value": 0.15274518386784802
+      },
+      {
+        "Country": "Norway",
+        "Year": 2018,
+        "Value": 0.15583957824241776
+      },
+      {
+        "Country": "Norway",
+        "Year": 2019,
+        "Value": 0.15843247521233395
+      },
+      {
+        "Country": "Norway",
+        "Year": 2020,
+        "Value": 0.16226540059795513
+      },
+      {
+        "Country": "Norway",
+        "Year": 2021,
+        "Value": 0.1632414854097205
+      },
+      {
+        "Country": "Norway",
+        "Year": 2022,
+        "Value": 0.16608077924383174
+      },
+      {
+        "Country": "Poland",
+        "Year": 2012,
+        "Value": 0.016378689844978686
+      },
+      {
+        "Country": "Poland",
+        "Year": 2013,
+        "Value": 0.016219531383223174
+      },
+      {
+        "Country": "Poland",
+        "Year": 2014,
+        "Value": 0.016102893960157696
+      },
+      {
+        "Country": "Poland",
+        "Year": 2015,
+        "Value": 0.015902730584591393
+      },
+      {
+        "Country": "Poland",
+        "Year": 2016,
+        "Value": 0.01627894688008002
+      },
+      {
+        "Country": "Poland",
+        "Year": 2017,
+        "Value": 0.016967320913896335
+      },
+      {
+        "Country": "Poland",
+        "Year": 2018,
+        "Value": 0.018114458705879122
+      },
+      {
+        "Country": "Poland",
+        "Year": 2019,
+        "Value": 0.019810929796703153
+      },
+      {
+        "Country": "Poland",
+        "Year": 2020,
+        "Value": 0.022117164388833196
+      },
+      {
+        "Country": "Poland",
+        "Year": 2021,
+        "Value": 0.023512174281531243
+      },
+      {
+        "Country": "Poland",
+        "Year": 2022,
+        "Value": 0.024921267691316945
+      },
+      {
+        "Country": "Portugal",
+        "Year": 2012,
+        "Value": 0.08463452183243675
+      },
+      {
+        "Country": "Portugal",
+        "Year": 2013,
+        "Value": 0.08704409152642167
+      },
+      {
+        "Country": "Portugal",
+        "Year": 2014,
+        "Value": 0.08960022644479285
+      },
+      {
+        "Country": "Portugal",
+        "Year": 2015,
+        "Value": 0.09217299599661054
+      },
+      {
+        "Country": "Portugal",
+        "Year": 2016,
+        "Value": 0.0946525204101611
+      },
+      {
+        "Country": "Portugal",
+        "Year": 2017,
+        "Value": 0.09705522320258828
+      },
+      {
+        "Country": "Portugal",
+        "Year": 2018,
+        "Value": 0.09940098832072851
+      },
+      {
+        "Country": "Portugal",
+        "Year": 2019,
+        "Value": 0.10167241323313451
+      },
+      {
+        "Country": "Portugal",
+        "Year": 2020,
+        "Value": 0.1037599369178097
+      },
+      {
+        "Country": "Portugal",
+        "Year": 2021,
+        "Value": 0.10576036576581099
+      },
+      {
+        "Country": "Portugal",
+        "Year": 2022,
+        "Value": 0.10734300923452192
+      },
+      {
+        "Country": "Slovak Republic",
+        "Year": 2012,
+        "Value": 0.03146274885224912
+      },
+      {
+        "Country": "Slovak Republic",
+        "Year": 2013,
+        "Value": 0.03192519240125757
+      },
+      {
+        "Country": "Slovak Republic",
+        "Year": 2014,
+        "Value": 0.03231023798847026
+      },
+      {
+        "Country": "Slovak Republic",
+        "Year": 2015,
+        "Value": 0.03278012655922168
+      },
+      {
+        "Country": "Slovak Republic",
+        "Year": 2016,
+        "Value": 0.033489801109019404
+      },
+      {
+        "Country": "Slovak Republic",
+        "Year": 2017,
+        "Value": 0.034289070804057784
+      },
+      {
+        "Country": "Slovak Republic",
+        "Year": 2018,
+        "Value": 0.03498803093782641
+      },
+      {
+        "Country": "Slovak Republic",
+        "Year": 2019,
+        "Value": 0.035688854523978936
+      },
+      {
+        "Country": "Slovak Republic",
+        "Year": 2020,
+        "Value": 0.03638130765452416
+      },
+      {
+        "Country": "Slovak Republic",
+        "Year": 2021,
+        "Value": 0.03699347863561164
+      },
+      {
+        "Country": "Slovak Republic",
+        "Year": 2022,
+        "Value": 0.04177110914001878
+      },
+      {
+        "Country": "Slovenia",
+        "Year": 2012,
+        "Value": 0.11211178974283019
+      },
+      {
+        "Country": "Slovenia",
+        "Year": 2013,
+        "Value": 0.11316797178569658
+      },
+      {
+        "Country": "Slovenia",
+        "Year": 2014,
+        "Value": 0.1142773056761306
+      },
+      {
+        "Country": "Slovenia",
+        "Year": 2015,
+        "Value": 0.11525676614977617
+      },
+      {
+        "Country": "Slovenia",
+        "Year": 2016,
+        "Value": 0.11691420145733775
+      },
+      {
+        "Country": "Slovenia",
+        "Year": 2017,
+        "Value": 0.11886645018677568
+      },
+      {
+        "Country": "Slovenia",
+        "Year": 2018,
+        "Value": 0.12110672885607655
+      },
+      {
+        "Country": "Slovenia",
+        "Year": 2019,
+        "Value": 0.12805101326054927
+      },
+      {
+        "Country": "Slovenia",
+        "Year": 2020,
+        "Value": 0.13479139045905109
+      },
+      {
+        "Country": "Slovenia",
+        "Year": 2021,
+        "Value": 0.1394316341019539
+      },
+      {
+        "Country": "Slovenia",
+        "Year": 2022,
+        "Value": 0.13978738561381143
+      },
+      {
+        "Country": "Spain",
+        "Year": 2012,
+        "Value": 0.13469098316022612
+      },
+      {
+        "Country": "Spain",
+        "Year": 2013,
+        "Value": 0.13203368426648077
+      },
+      {
+        "Country": "Spain",
+        "Year": 2014,
+        "Value": 0.12787923773064402
+      },
+      {
+        "Country": "Spain",
+        "Year": 2015,
+        "Value": 0.1268150323299327
+      },
+      {
+        "Country": "Spain",
+        "Year": 2016,
+        "Value": 0.12752256111020027
+      },
+      {
+        "Country": "Spain",
+        "Year": 2017,
+        "Value": 0.12969944161594496
+      },
+      {
+        "Country": "Spain",
+        "Year": 2018,
+        "Value": 0.13321405353147253
+      },
+      {
+        "Country": "Spain",
+        "Year": 2019,
+        "Value": 0.13993422644180525
+      },
+      {
+        "Country": "Spain",
+        "Year": 2020,
+        "Value": 0.14853565065782962
+      },
+      {
+        "Country": "Spain",
+        "Year": 2021,
+        "Value": 0.15235505515335696
+      },
+      {
+        "Country": "Spain",
+        "Year": 2022,
+        "Value": 0.15561104121997285
+      },
+      {
+        "Country": "Sweden",
+        "Year": 2012,
+        "Value": 0.151049145241256
+      },
+      {
+        "Country": "Sweden",
+        "Year": 2013,
+        "Value": 0.15476387692936694
+      },
+      {
+        "Country": "Sweden",
+        "Year": 2014,
+        "Value": 0.15973263124957426
+      },
+      {
+        "Country": "Sweden",
+        "Year": 2015,
+        "Value": 0.16538094420388394
+      },
+      {
+        "Country": "Sweden",
+        "Year": 2016,
+        "Value": 0.1710616078911885
+      },
+      {
+        "Country": "Sweden",
+        "Year": 2017,
+        "Value": 0.17983286650947097
+      },
+      {
+        "Country": "Sweden",
+        "Year": 2018,
+        "Value": 0.1866282483213102
+      },
+      {
+        "Country": "Sweden",
+        "Year": 2019,
+        "Value": 0.19218945250788316
+      },
+      {
+        "Country": "Sweden",
+        "Year": 2020,
+        "Value": 0.19649333663330118
+      },
+      {
+        "Country": "Sweden",
+        "Year": 2021,
+        "Value": 0.1976860067046289
+      },
+      {
+        "Country": "Sweden",
+        "Year": 2022,
+        "Value": 0.20070475542377303
+      },
+      {
+        "Country": "Switzerland",
+        "Year": 2012,
+        "Value": 0.27279018896425306
+      },
+      {
+        "Country": "Switzerland",
+        "Year": 2013,
+        "Value": 0.27741447550482623
+      },
+      {
+        "Country": "Switzerland",
+        "Year": 2014,
+        "Value": 0.2830340054684272
+      },
+      {
+        "Country": "Switzerland",
+        "Year": 2015,
+        "Value": 0.2875734278902764
+      },
+      {
+        "Country": "Switzerland",
+        "Year": 2016,
+        "Value": 0.29175052925493317
+      },
+      {
+        "Country": "Switzerland",
+        "Year": 2017,
+        "Value": 0.2961821420237148
+      },
+      {
+        "Country": "Switzerland",
+        "Year": 2018,
+        "Value": 0.2980498670466079
+      },
+      {
+        "Country": "Switzerland",
+        "Year": 2019,
+        "Value": 0.2998963981533714
+      },
+      {
+        "Country": "Switzerland",
+        "Year": 2020,
+        "Value": 0.30203550204774654
+      },
+      {
+        "Country": "Switzerland",
+        "Year": 2021,
+        "Value": 0.3045126808702168
+      },
+      {
+        "Country": "Switzerland",
+        "Year": 2022,
+        "Value": 0.30701672758888404
+      },
+      {
+        "Country": "T\u00fcrkiye",
+        "Year": 2014,
+        "Value": 0.0191703264214355
+      },
+      {
+        "Country": "T\u00fcrkiye",
+        "Year": 2015,
+        "Value": 0.02063226123992241
+      },
+      {
+        "Country": "T\u00fcrkiye",
+        "Year": 2016,
+        "Value": 0.02272212165492127
+      },
+      {
+        "Country": "T\u00fcrkiye",
+        "Year": 2017,
+        "Value": 0.024267699787624483
+      },
+      {
+        "Country": "T\u00fcrkiye",
+        "Year": 2018,
+        "Value": 0.028370230026361454
+      },
+      {
+        "Country": "T\u00fcrkiye",
+        "Year": 2019,
+        "Value": 0.03278080611310956
+      },
+      {
+        "Country": "T\u00fcrkiye",
+        "Year": 2020,
+        "Value": 0.03160570896526215
+      },
+      {
+        "Country": "T\u00fcrkiye",
+        "Year": 2021,
+        "Value": 0.03767299579030625
+      },
+      {
+        "Country": "T\u00fcrkiye",
+        "Year": 2022,
+        "Value": 0.03853578187380548
+      },
+      {
+        "Country": "UK",
+        "Year": 2012,
+        "Value": 0.11990175577538775
+      },
+      {
+        "Country": "UK",
+        "Year": 2013,
+        "Value": 0.12338115216333781
+      },
+      {
+        "Country": "UK",
+        "Year": 2014,
+        "Value": 0.12579233650747873
+      },
+      {
+        "Country": "UK",
+        "Year": 2015,
+        "Value": 0.13130691153016488
+      },
+      {
+        "Country": "UK",
+        "Year": 2016,
+        "Value": 0.1380432392340634
+      },
+      {
+        "Country": "UK",
+        "Year": 2017,
+        "Value": 0.14271557843892826
+      },
+      {
+        "Country": "UK",
+        "Year": 2018,
+        "Value": 0.14215577598920803
+      },
+      {
+        "Country": "UK",
+        "Year": 2019,
+        "Value": 0.14272479116978784
+      },
+      {
+        "Country": "UK",
+        "Year": 2020,
+        "Value": 0.1428062272497546
+      },
+      {
+        "Country": "UK",
+        "Year": 2021,
+        "Value": 0.1433187707906506
+      },
+      {
+        "Country": "United States",
+        "Year": 2012,
+        "Value": 0.13074577596108186
+      },
+      {
+        "Country": "United States",
+        "Year": 2013,
+        "Value": 0.13172123730168478
+      },
+      {
+        "Country": "United States",
+        "Year": 2014,
+        "Value": 0.13412235685782736
+      },
+      {
+        "Country": "United States",
+        "Year": 2015,
+        "Value": 0.1359657813699658
+      },
+      {
+        "Country": "United States",
+        "Year": 2016,
+        "Value": 0.1363691406976228
+      },
+      {
+        "Country": "United States",
+        "Year": 2017,
+        "Value": 0.1378190984228875
+      },
+      {
+        "Country": "United States",
+        "Year": 2018,
+        "Value": 0.13757446248014227
+      },
+      {
+        "Country": "United States",
+        "Year": 2019,
+        "Value": 0.13747719555877247
+      },
+      {
+        "Country": "United States",
+        "Year": 2020,
+        "Value": 0.13479809521000966
+      },
+      {
+        "Country": "United States",
+        "Year": 2021,
+        "Value": 0.13656952496167735
+      },
+      {
+        "Country": "United States",
+        "Year": 2022,
+        "Value": 0.1426103405473942
+      }
+    ]
+  },
+  "width": 450,
+  "height": 350
+}
