@@ -1,0 +1,374 @@
+{
+    "config": {
+      "font": "Circular Std",
+      "text": {
+        "color": "#676A86",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "dy": 0,
+        "fontSize": 11
+      },
+      "view": {
+        "stroke": null,
+        "continuousWidth": 400,
+        "continuousHeight": 300,
+        "discreteWidth": 400,
+        "discreteHeight": 300
+      },
+      "bar": {
+        "color": "#179fdb"
+      },
+      "line": {
+        "color": "#e6224b"
+      },
+      "rule": {
+        "color": "#676A86"
+      },
+      "area": {
+        "opacity": 0.3
+      },
+      "point": {
+        "filled": true,
+        "size": 80,
+        "color": "#e6224b",
+        "opacity": 0.95
+      },
+      "geoshape": {
+        "stroke": "white",
+        "strokeWidth": 0.3
+      },
+      "rect": {
+        "fill": "#d6d4d4",
+        "opacity": 0.3
+      },
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Circular Std",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [
+          2,
+          2
+        ],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXDiscrete": {
+        "grid": false,
+        "labelAngle": 0,
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "axisYDiscrete": {
+        "ticks": false,
+        "labelPadding": 5
+      },
+      "axisXTemporal": {
+        "grid": false,
+        "ticks": true
+      },
+      "axisXQuantitative": {
+        "grid": true
+      },
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [
+          1,
+          5
+        ],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
+      },
+      "title": {
+        "color": "#676A86",
+        "subtitleColor": "#122b39E6",
+        "font": "Circular Std",
+        "subtitleFont": "Circular Std",
+        "anchor": "start",
+  
+        "fontSize": 14,
+        "subtitleFontSize": 12,
+        "subtitlePadding": 4,
+        "offset": 0,
+        "frame": "group"
+      },
+      "legend": {
+        "titleColor": "#122b39",
+        "title": null,
+        "labelColor": "#122b39",
+        "labelFontSize": 11
+      }
+    },
+    "title": {
+      "text": "Foreign-born population in OECD countries",
+      "subtitle": "% of total population, 2022 (or latest available). Source: OECD"
+    },
+    "layer": [
+      {
+  
+        "mark": {
+          "type": "bar"
+        },
+        "encoding": {
+          "color": {
+            "condition": {
+              "test": "(datum.Country === 'United Kingdom')",
+              "value": "#122b39"
+            },
+            "value": "#179fdb"
+          },
+          "x": {
+            "axis": {
+              "format": "%"
+            },
+            "field": "Value",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Country",
+            "sort": "-x",
+            "type": "nominal"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontSize": 12
+        },
+        "encoding": {
+          "opacity": {
+            "condition": {
+              "test": "(datum.Country === 'United Kingdom')",
+              "value": 1
+            },
+            "value": 0
+          },
+          "text": {
+            "field": "Value",
+            "format": ".1%",
+            "type": "quantitative"
+          },
+          "x": {
+            "axis": {
+              "format": "%"
+            },
+            "field": "Value",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Country",
+            "sort": "-x",
+            "type": "nominal"
+          }
+        }
+      }
+    ],
+    "data": {
+      "name": "data-ca931741448ca707f968d3a29cb073a8"
+    },
+    "height": 400,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+    "datasets": {
+      "data-ca931741448ca707f968d3a29cb073a8": [
+        {
+          "Country": "Australia",
+          "Year": 2021,
+          "Value": 0.29200062413238453
+        },
+        {
+          "Country": "Austria",
+          "Year": 2022,
+          "Value": 0.20582269826800365
+        },
+        {
+          "Country": "Belgium",
+          "Year": 2022,
+          "Value": 0.1840016307996068
+        },
+        {
+          "Country": "Canada",
+          "Year": 2021,
+          "Value": 0.21982438561993142
+        },
+        {
+          "Country": "Chile",
+          "Year": 2022,
+          "Value": 0.07533096121867455
+        },
+        {
+          "Country": "Colombia",
+          "Year": 2020,
+          "Value": 0.03782457060895003
+        },
+        {
+          "Country": "Costa Rica",
+          "Year": 2020,
+          "Value": 0.10295141640642122
+        },
+        {
+          "Country": "Czech Republic",
+          "Year": 2022,
+          "Value": 0.04317974259226633
+        },
+        {
+          "Country": "Denmark",
+          "Year": 2022,
+          "Value": 0.10955577674499063
+        },
+        {
+          "Country": "Estonia",
+          "Year": 2022,
+          "Value": 0.1512120829614135
+        },
+        {
+          "Country": "Finland",
+          "Year": 2022,
+          "Value": 0.07982104377894324
+        },
+        {
+          "Country": "France",
+          "Year": 2022,
+          "Value": 0.12774840753227962
+        },
+        {
+          "Country": "Germany",
+          "Year": 2022,
+          "Value": 0.16784445862192968
+        },
+        {
+          "Country": "Greece",
+          "Year": 2022,
+          "Value": 0.11242284621076813
+        },
+        {
+          "Country": "Hungary",
+          "Year": 2022,
+          "Value": 0.0630964728447574
+        },
+        {
+          "Country": "Iceland",
+          "Year": 2022,
+          "Value": 0.1926511920069365
+        },
+        {
+          "Country": "Ireland",
+          "Year": 2022,
+          "Value": 0.20302207340774941
+        },
+        {
+          "Country": "Israel",
+          "Year": 2022,
+          "Value": 0.19131399790853024
+        },
+        {
+          "Country": "Italy",
+          "Year": 2022,
+          "Value": 0.10423004251115206
+        },
+        {
+          "Country": "Latvia",
+          "Year": 2022,
+          "Value": 0.11866936801932408
+        },
+        {
+          "Country": "Lithuania",
+          "Year": 2022,
+          "Value": 0.060381974020157256
+        },
+        {
+          "Country": "Luxembourg",
+          "Year": 2022,
+          "Value": 0.49841890810918904
+        },
+        {
+          "Country": "Mexico",
+          "Year": 2020,
+          "Value": 0.009575147013860443
+        },
+        {
+          "Country": "Netherlands",
+          "Year": 2022,
+          "Value": 0.14548439704185254
+        },
+        {
+          "Country": "New Zealand",
+          "Year": 2018,
+          "Value": 0.27399999999999997
+        },
+        {
+          "Country": "Norway",
+          "Year": 2022,
+          "Value": 0.16608077924383174
+        },
+        {
+          "Country": "Poland",
+          "Year": 2022,
+          "Value": 0.024921267691316945
+        },
+        {
+          "Country": "Portugal",
+          "Year": 2022,
+          "Value": 0.10734300923452192
+        },
+        {
+          "Country": "Slovak Republic",
+          "Year": 2022,
+          "Value": 0.04177110914001878
+        },
+        {
+          "Country": "Slovenia",
+          "Year": 2022,
+          "Value": 0.13978738561381143
+        },
+        {
+          "Country": "Spain",
+          "Year": 2022,
+          "Value": 0.15561104121997285
+        },
+        {
+          "Country": "Sweden",
+          "Year": 2022,
+          "Value": 0.20070475542377303
+        },
+        {
+          "Country": "Switzerland",
+          "Year": 2022,
+          "Value": 0.30701672758888404
+        },
+        {
+          "Country": "T\u00fcrkiye",
+          "Year": 2022,
+          "Value": 0.03853578187380548
+        },
+        {
+          "Country": "United Kingdom",
+          "Year": 2021,
+          "Value": 0.1433187707906506
+        },
+        {
+          "Country": "United States",
+          "Year": 2022,
+          "Value": 0.1426103405473942
+        }
+      ]
+    },
+    "width": 350
+  }

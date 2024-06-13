@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Public expenditure - type",
+    "subtitle": ["% of GDP", "Source: IFS"],
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0
+  },
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Fiscal_Tax/Expenditure_type.csv"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal","axis": {
+        "labelColor": "#676A86",
+        "tickColor": "#676A86",
+        "gridDash": [1, 5],
+        "labelFontSize": 11
+      },
+      "title": ""},
+    "y": {"field": "Value", "type": "quantitative","axis": {
+        "labelColor": "#676A86",
+        "tickColor": "#676A86",
+        "gridDash": [1, 5],
+        "labelFontSize": 11
+      },
+      "title": ""},
+    "color": {"field": "Expenditure", "type": "nominal"}
+  }
+}
