@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Public expenditure - total",
+    "text": "Public expenditure - type",
     "subtitle": ["% of GDP", "Source: IFS"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
@@ -15,32 +15,24 @@
   "width": 400,
   "height": 300,
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Fiscal_Tax/Expenditure_UK.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Fiscal_Tax/Expenditure_type.csv"
   },
-
-  "mark": {"type": "line", "color": "#36b7b4"},
+  "mark": "line",
   "encoding": {
-    "x": {
-      "field": "Year",
-      "type": "temporal",
-      "axis": {
+    "x": {"field": "Year", "type": "temporal","axis": {
         "labelColor": "#676A86",
         "tickColor": "#676A86",
         "gridDash": [1, 5],
         "labelFontSize": 11
       },
-      "title": ""
-    },
-    "y": {
-      "field": "Total expenditure",
-      "type": "quantitative",
-      "scale": {"domain": [30, 60]},
-      "axis": {
+      "title": ""},
+    "y": {"field": "Value", "type": "quantitative","axis": {
         "labelColor": "#676A86",
         "tickColor": "#676A86",
         "gridDash": [1, 5],
         "labelFontSize": 11
       },
-      "title": ""
-    }
-  }}
+      "title": ""},
+    "color": {"field": "Expenditure", "type": "nominal"}
+  }
+}
