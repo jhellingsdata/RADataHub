@@ -1,0 +1,90 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "UK's relative technological advantages by selected clean technologies - 2015-18",
+    "subtitle": [""],
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0
+  },
+
+  "width": 400,
+  "height": 300,
+
+  "config": {
+    "font": "Circular Std",
+    "view": {"stroke": "transparent"},
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": "",
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+
+  "data": {
+    "values": [
+      {"Sector": "Solar", "Change": -0.25}, 
+      {"Sector": "Heating and cooling", "Change": -0.23}, 
+      {"Sector": "Smart systems", "Change": -0.22},
+      {"Sector": "Clean cars", "Change": -0.12}, 
+      {"Sector": "Building fabric", "Change": -0.11}, 
+      {"Sector": "Hydrogen", "Change": -0.08},
+      {"Sector": "Total UK clean innovation", "Change": 0.002}, 
+      {"Sector": "Industry", "Change": 0.04}, 
+      {"Sector": "Biomass and bioenergy", "Change": 0.11},
+      {"Sector": "Nuclear", "Change": 0.12},
+      {"Sector": "CCUS", "Change": 0.13},
+      {"Sector": "Offshore wind", "Change": 0.295},
+      {"Sector": "Tidal stream", "Change": 0.4}
+    ]
+  },
+ 
+  "encoding": {
+    "x": {"field": "Change", "type": "quantitative", "scale": {"domain": [-0.3, 0.4]} },
+    "y": {"field": "Sector", "type": "nominal", "axis": {"labelAngle": 0, "title":""}, "sort": ["Solar", "Heating and cooling", "Smart systems", "Clean cars","Building fabric", "Hydrogen", "Total UK clean innovation", "Industry", "Biomass and bioenergy", "Nuclear", "CCUS", "Offshore wind", "Tidal stream" ]}
+  },
+  
+    "mark": {"type":"bar","color": "#E6224B"}
+}
