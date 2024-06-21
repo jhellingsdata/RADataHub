@@ -1,0 +1,71 @@
+ISO3,Country,Type of indicator,Family type,Earnings of the first adult,Include social assistance benefits,Include housing benefits,Year,Value,Rank_Single,Rank_Couple
+AUS,Australia,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.13,32.0,0.0
+AUT,Austria,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.04,14.0,0.0
+BEL,Belgium,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.13,32.0,0.0
+CAN,Canada,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.05,18.0,0.0
+CHE,Switzerland,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.18,38.5,0.0
+CZE,Czechia,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.18,38.5,0.0
+DEU,Germany,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.01,8.5,0.0
+DNK,Denmark,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.06,21.5,0.0
+ESP,Spain,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.09,27.0,0.0
+EST,Estonia,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.04,14.0,0.0
+FIN,Finland,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.1,29.0,0.0
+FRA,France,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.06,21.5,0.0
+GBR,United Kingdom,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.05,18.0,0.0
+GRC,Greece,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.0,4.0,0.0
+HUN,Hungary,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.08,24.0,0.0
+IRL,Ireland,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.14,35.0,0.0
+ISL,Iceland,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.05,18.0,0.0
+ISR,Israel,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.14,35.0,0.0
+ITA,Italy,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.0,4.0,0.0
+JPN,Japan,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.01,8.5,0.0
+KOR,Korea,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.05,18.0,0.0
+LTU,Lithuania,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.05,18.0,0.0
+LUX,Luxembourg,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.02,10.5,0.0
+LVA,Latvia,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.0,4.0,0.0
+NLD,Netherlands,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.14,35.0,0.0
+NOR,Norway,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.09,27.0,0.0
+NZL,New Zealand,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.17,37.0,0.0
+OECD,OECD averages,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.08,24.0,0.0
+POL,Poland,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.08,24.0,0.0
+PRT,Portugal,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.0,4.0,0.0
+SVK,Slovak Republic,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.11,30.0,0.0
+SVN,Slovenia,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.09,27.0,0.0
+SWE,Sweden,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.04,14.0,0.0
+TUR,Türkiye,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.0,0.0,0.0
+USA,United States,Percentage of net household income,Single: 2 children,Average Wage,Yes,Yes,2022,0.37,41.0,0.0
+AUS,Australia,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.16,0.0,34.0
+AUT,Austria,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.02,0.0,8.0
+BEL,Belgium,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.14,0.0,32.0
+CAN,Canada,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.19,0.0,37.0
+CHE,Switzerland,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.32,0.0,41.0
+CZE,Czechia,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.1,0.0,29.5
+DEU,Germany,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.01,0.0,6.0
+DNK,Denmark,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.08,0.0,24.5
+ESP,Spain,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.05,0.0,16.5
+EST,Estonia,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.02,0.0,8.0
+FIN,Finland,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.11,0.0,31.0
+FRA,France,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.1,0.0,29.5
+GBR,United Kingdom,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.16,0.0,34.0
+GRC,Greece,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.06,0.0,20.0
+HUN,Hungary,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.05,0.0,16.5
+IRL,Ireland,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.19,0.0,37.0
+ISL,Iceland,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.04,0.0,13.5
+ISR,Israel,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.09,0.0,27.0
+ITA,Italy,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.0,0.0,3.0
+JPN,Japan,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.09,0.0,27.0
+KOR,Korea,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.03,0.0,11.0
+LTU,Lithuania,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.06,0.0,20.0
+LUX,Luxembourg,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.06,0.0,20.0
+LVA,Latvia,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.0,0.0,3.0
+NLD,Netherlands,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.19,0.0,37.0
+NOR,Norway,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.05,0.0,16.5
+NZL,New Zealand,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.23,0.0,40.0
+OECD,OECD averages,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.09,0.0,27.0
+POL,Poland,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.05,0.0,16.5
+PRT,Portugal,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.04,0.0,13.5
+SVK,Slovak Republic,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.07,0.0,22.5
+SVN,Slovenia,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.08,0.0,24.5
+SWE,Sweden,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.03,0.0,11.0
+TUR,Türkiye,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.0,0.0,0.0
+USA,United States,Percentage of net household income,Couple: 2 children,Average Wage,Yes,Yes,2022,0.2,0.0,39.0
