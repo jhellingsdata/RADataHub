@@ -1,0 +1,1287 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "opacity": 0.8
+      },
+      "encoding": {
+        "color": {
+          "value": "#db646f"
+        },
+        "detail": {
+          "field": "ISO3",
+          "type": "nominal"
+        },
+        "order": {
+          "field": "Rank_Couple",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "Country"
+          },
+          {
+            "field": "Family type"
+          },
+          {
+            "field": "Value",
+            "format": "~%",
+            "title": "Income share"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labelAngle": -40,
+            "labelOffset": 6,
+            "labelFontSize": 10,
+            "labelPadding": 0
+          },
+          "field": "ISO3",
+          "sort": {
+            "field": "Rank_Couple",
+            "op": "average",
+            "order": "ascending"
+          },
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "Value",
+          "scale": {
+            "domain": [
+              0,
+              0.45
+            ]
+          },
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "Childcare Costs at Average Wages: Comparison",
+        "anchor": "start",
+        "dx": 0,
+        "frame": "group",
+        "subtitle": [
+          "Total childcare costs, % of household income, after social and housing benefits",
+          "Source: OECD (2022 figures)"
+        ]
+      },
+      "transform": [
+        {
+          "filter": "(datum.Country !== 'OECD averages')"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "point"
+      },
+      "encoding": {
+        "color": {
+          "field": "Family type",
+          "legend": {
+            "orient": "top-left",
+            "labelLimit": 0
+          },
+          "scale": {
+            "domain": [
+              "Single: 2 children",
+              "Couple: 2 children"
+            ],
+            "range": [
+              "#e6959cE6",
+              "#911a24"
+            ]
+          },
+          "type": "nominal"
+        },
+        "order": {
+          "field": "Rank_Couple",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "Country"
+          },
+          {
+            "field": "Family type"
+          },
+          {
+            "field": "Value",
+            "format": "~%",
+            "title": "Income share"
+          }
+        ],
+        "x": {
+          "axis": {
+            "labelAngle": -40,
+            "labelOffset": 6,
+            "labelFontSize": 10,
+            "labelPadding": 0
+          },
+          "field": "ISO3",
+          "sort": {
+            "field": "Rank_Couple",
+            "op": "average",
+            "order": "ascending"
+          },
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "Value",
+          "scale": {
+            "domain": [
+              0,
+              0.45
+            ]
+          },
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "Childcare Costs at Average Wages: Comparison",
+        "anchor": "start",
+        "dx": 0,
+        "frame": "group",
+        "subtitle": [
+          "Total childcare costs, % of household income, after social and housing benefits",
+          "Source: OECD (2022 figures)"
+        ]
+      },
+      "transform": [
+        {
+          "filter": "(datum.Country !== 'OECD averages')"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "opacity": 0.7,
+        "size": 1.7,
+        "strokeDash": [
+          4,
+          2
+        ]
+      },
+      "encoding": {
+        "color": {
+          "field": "Family type",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Country"
+          },
+          {
+            "field": "Family type"
+          },
+          {
+            "field": "Value",
+            "format": "~%",
+            "title": "Income share"
+          }
+        ],
+        "y": {
+          "field": "Value",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "(datum.Country === 'OECD averages')"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dy": 10,
+        "text": "OECD"
+      },
+      "encoding": {
+        "color": {
+          "value": "#676A86"
+        },
+        "text": {
+          "field": "Country",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Country"
+          },
+          {
+            "field": "Family type"
+          },
+          {
+            "field": "Value",
+            "format": "~%",
+            "title": "Income share"
+          }
+        ],
+        "x": {
+          "value": 0
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "(datum.Country === 'OECD averages')"
+        },
+        {
+          "filter": "(datum['Family type'] === 'Single: 2 children')"
+        },
+        {
+          "filter": "datum['ISO3']"
+        }
+      ]
+    }
+  ],
+  "data": {
+    "name": "data-dd3d28629fb94600a855e674c70551ce"
+  },
+  "height": 300,
+  "width": 510,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-dd3d28629fb94600a855e674c70551ce": [
+      {
+        "ISO3": "AUS",
+        "Country": "Australia",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.13,
+        "Rank_Single": 32.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "AUT",
+        "Country": "Austria",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.04,
+        "Rank_Single": 14.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "BEL",
+        "Country": "Belgium",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.13,
+        "Rank_Single": 32.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "CAN",
+        "Country": "Canada",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.05,
+        "Rank_Single": 18.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "CHE",
+        "Country": "Switzerland",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.18,
+        "Rank_Single": 38.5,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "CZE",
+        "Country": "Czechia",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.18,
+        "Rank_Single": 38.5,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "DEU",
+        "Country": "Germany",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.01,
+        "Rank_Single": 8.5,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "DNK",
+        "Country": "Denmark",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.06,
+        "Rank_Single": 21.5,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "ESP",
+        "Country": "Spain",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.09,
+        "Rank_Single": 27.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "EST",
+        "Country": "Estonia",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.04,
+        "Rank_Single": 14.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "FIN",
+        "Country": "Finland",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.1,
+        "Rank_Single": 29.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "FRA",
+        "Country": "France",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.06,
+        "Rank_Single": 21.5,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "GBR",
+        "Country": "United Kingdom",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.05,
+        "Rank_Single": 18.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "GRC",
+        "Country": "Greece",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.0,
+        "Rank_Single": 4.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "HUN",
+        "Country": "Hungary",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.08,
+        "Rank_Single": 24.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "IRL",
+        "Country": "Ireland",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.14,
+        "Rank_Single": 35.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "ISL",
+        "Country": "Iceland",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.05,
+        "Rank_Single": 18.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "ISR",
+        "Country": "Israel",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.14,
+        "Rank_Single": 35.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "ITA",
+        "Country": "Italy",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.0,
+        "Rank_Single": 4.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "JPN",
+        "Country": "Japan",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.01,
+        "Rank_Single": 8.5,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "KOR",
+        "Country": "Korea",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.05,
+        "Rank_Single": 18.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "LTU",
+        "Country": "Lithuania",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.05,
+        "Rank_Single": 18.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "LUX",
+        "Country": "Luxembourg",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.02,
+        "Rank_Single": 10.5,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "LVA",
+        "Country": "Latvia",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.0,
+        "Rank_Single": 4.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "NLD",
+        "Country": "Netherlands",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.14,
+        "Rank_Single": 35.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "NOR",
+        "Country": "Norway",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.09,
+        "Rank_Single": 27.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "NZL",
+        "Country": "New Zealand",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.17,
+        "Rank_Single": 37.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "OECD",
+        "Country": "OECD averages",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.08,
+        "Rank_Single": 24.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "POL",
+        "Country": "Poland",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.08,
+        "Rank_Single": 24.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "PRT",
+        "Country": "Portugal",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.0,
+        "Rank_Single": 4.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "SVK",
+        "Country": "Slovak Republic",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.11,
+        "Rank_Single": 30.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "SVN",
+        "Country": "Slovenia",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.09,
+        "Rank_Single": 27.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "SWE",
+        "Country": "Sweden",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.04,
+        "Rank_Single": 14.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "TUR",
+        "Country": "T\u00fcrkiye",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.0,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "USA",
+        "Country": "United States",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Single: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.37,
+        "Rank_Single": 41.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "AUS",
+        "Country": "Australia",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.16,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 34.0
+      },
+      {
+        "ISO3": "AUT",
+        "Country": "Austria",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.02,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 8.0
+      },
+      {
+        "ISO3": "BEL",
+        "Country": "Belgium",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.14,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 32.0
+      },
+      {
+        "ISO3": "CAN",
+        "Country": "Canada",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.19,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 37.0
+      },
+      {
+        "ISO3": "CHE",
+        "Country": "Switzerland",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.32,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 41.0
+      },
+      {
+        "ISO3": "CZE",
+        "Country": "Czechia",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.1,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 29.5
+      },
+      {
+        "ISO3": "DEU",
+        "Country": "Germany",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.01,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 6.0
+      },
+      {
+        "ISO3": "DNK",
+        "Country": "Denmark",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.08,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 24.5
+      },
+      {
+        "ISO3": "ESP",
+        "Country": "Spain",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.05,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 16.5
+      },
+      {
+        "ISO3": "EST",
+        "Country": "Estonia",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.02,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 8.0
+      },
+      {
+        "ISO3": "FIN",
+        "Country": "Finland",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.11,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 31.0
+      },
+      {
+        "ISO3": "FRA",
+        "Country": "France",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.1,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 29.5
+      },
+      {
+        "ISO3": "GBR",
+        "Country": "United Kingdom",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.16,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 34.0
+      },
+      {
+        "ISO3": "GRC",
+        "Country": "Greece",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.06,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 20.0
+      },
+      {
+        "ISO3": "HUN",
+        "Country": "Hungary",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.05,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 16.5
+      },
+      {
+        "ISO3": "IRL",
+        "Country": "Ireland",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.19,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 37.0
+      },
+      {
+        "ISO3": "ISL",
+        "Country": "Iceland",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.04,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 13.5
+      },
+      {
+        "ISO3": "ISR",
+        "Country": "Israel",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.09,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 27.0
+      },
+      {
+        "ISO3": "ITA",
+        "Country": "Italy",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.0,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 3.0
+      },
+      {
+        "ISO3": "JPN",
+        "Country": "Japan",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.09,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 27.0
+      },
+      {
+        "ISO3": "KOR",
+        "Country": "Korea",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.03,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 11.0
+      },
+      {
+        "ISO3": "LTU",
+        "Country": "Lithuania",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.06,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 20.0
+      },
+      {
+        "ISO3": "LUX",
+        "Country": "Luxembourg",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.06,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 20.0
+      },
+      {
+        "ISO3": "LVA",
+        "Country": "Latvia",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.0,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 3.0
+      },
+      {
+        "ISO3": "NLD",
+        "Country": "Netherlands",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.19,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 37.0
+      },
+      {
+        "ISO3": "NOR",
+        "Country": "Norway",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.05,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 16.5
+      },
+      {
+        "ISO3": "NZL",
+        "Country": "New Zealand",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.23,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 40.0
+      },
+      {
+        "ISO3": "OECD",
+        "Country": "OECD averages",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.09,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 27.0
+      },
+      {
+        "ISO3": "POL",
+        "Country": "Poland",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.05,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 16.5
+      },
+      {
+        "ISO3": "PRT",
+        "Country": "Portugal",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.04,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 13.5
+      },
+      {
+        "ISO3": "SVK",
+        "Country": "Slovak Republic",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.07,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 22.5
+      },
+      {
+        "ISO3": "SVN",
+        "Country": "Slovenia",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.08,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 24.5
+      },
+      {
+        "ISO3": "SWE",
+        "Country": "Sweden",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.03,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 11.0
+      },
+      {
+        "ISO3": "TUR",
+        "Country": "T\u00fcrkiye",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.0,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 0.0
+      },
+      {
+        "ISO3": "USA",
+        "Country": "United States",
+        "Type of indicator": "Percentage of net household income",
+        "Family type": "Couple: 2 children",
+        "Earnings of the first adult": "Average Wage",
+        "Include social assistance benefits": "Yes",
+        "Include housing benefits": "Yes",
+        "Year": 2022,
+        "Value": 0.2,
+        "Rank_Single": 0.0,
+        "Rank_Couple": 39.0
+      }
+    ]
+  }
+}

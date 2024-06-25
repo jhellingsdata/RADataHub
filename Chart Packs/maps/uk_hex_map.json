@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+
+  "height": 400,
+  "width": 400,
+
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/maps/uk-wpc-hex-constitcode-v5-june-2024.geojson",
+        "format": {
+          "property": "features",
+          "type": "json"
+        }
+      },
+      "mark": {
+        "type": "geoshape"
+      },
+      "encoding": {
+        "color": {
+          "field": "properties.Country",
+          "legend": {
+            "orient": "top-right"
+          },
+          "scale": {
+            "range": [
+              "#e6224b",
+              "#FEDD00",
+              "#005EB8",
+              "#00B140"
+            ]
+          },
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "properties.Country",
+            "title": "Country",
+            "type": "nominal"
+          },
+          {
+            "field": "properties.BCName",
+            "title": "Constituency",
+            "type": "nominal"
+          }
+        ]
+      },
+      "projection": {
+        "reflectY": true,
+        "type": "identity"
+      },
+      "title": {
+        "text": "UK Constituency Hex Map 2024",
+        "anchor": "middle",
+        "offset": 10,
+        "subtitle": "Source: automaticknowledge.org",
+        "subtitleFontSize": 12
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/maps/eng-region-from-hex.geojson",
+        "format": {
+          "property": "features",
+          "type": "json"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "strokeWidth": 1.5
+      },
+      "projection": {
+        "reflectY": true,
+        "type": "identity"
+      }
+    }
+  ]
+}

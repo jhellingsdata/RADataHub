@@ -1,0 +1,37 @@
+ISO3,Country,Type of indicator,Family type,Earnings of the first adult,Include social assistance benefits,Include housing benefits,Year,Value,Date,10th Percentile,90th Percentile
+FRA,France,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2004,0.09,2004-01-01,0.038000000000000006,0.274
+FRA,France,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2008,0.07,2008-01-01,0.033,0.23399999999999999
+FRA,France,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2012,0.07,2012-01-01,0.01200000000000001,0.23600000000000002
+FRA,France,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2015,0.07,2015-01-01,0.04,0.22800000000000004
+FRA,France,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2018,0.07,2018-01-01,0.03,0.20499999999999996
+FRA,France,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2019,0.07,2019-01-01,0.016000000000000004,0.174
+FRA,France,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2020,0.07,2020-01-01,0.01,0.147
+FRA,France,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2021,0.08,2021-01-01,0.0030000000000000027,0.16
+FRA,France,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2022,0.08,2022-01-01,0.0030000000000000027,0.19499999999999995
+DEU,Germany,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2004,0.06,2004-01-01,0.038000000000000006,0.274
+DEU,Germany,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2008,0.13,2008-01-01,0.033,0.23399999999999999
+DEU,Germany,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2012,0.11,2012-01-01,0.01200000000000001,0.23600000000000002
+DEU,Germany,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2015,0.06,2015-01-01,0.04,0.22800000000000004
+DEU,Germany,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2018,0.05,2018-01-01,0.03,0.20499999999999996
+DEU,Germany,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2019,0.01,2019-01-01,0.016000000000000004,0.174
+DEU,Germany,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2020,0.01,2020-01-01,0.01,0.147
+DEU,Germany,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2021,0.01,2021-01-01,0.0030000000000000027,0.16
+DEU,Germany,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2022,0.01,2022-01-01,0.0030000000000000027,0.19499999999999995
+GBR,United Kingdom,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2004,0.26,2004-01-01,0.038000000000000006,0.274
+GBR,United Kingdom,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2008,0.22,2008-01-01,0.033,0.23399999999999999
+GBR,United Kingdom,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2012,0.23,2012-01-01,0.01200000000000001,0.23600000000000002
+GBR,United Kingdom,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2015,0.24,2015-01-01,0.04,0.22800000000000004
+GBR,United Kingdom,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2018,0.22,2018-01-01,0.03,0.20499999999999996
+GBR,United Kingdom,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2019,0.16,2019-01-01,0.016000000000000004,0.174
+GBR,United Kingdom,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2020,0.13,2020-01-01,0.01,0.147
+GBR,United Kingdom,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2021,0.16,2021-01-01,0.0030000000000000027,0.16
+GBR,United Kingdom,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2022,0.1,2022-01-01,0.0030000000000000027,0.19499999999999995
+USA,United States,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2004,0.31,2004-01-01,0.038000000000000006,0.274
+USA,United States,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2008,0.31,2008-01-01,0.033,0.23399999999999999
+USA,United States,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2012,0.3,2012-01-01,0.01200000000000001,0.23600000000000002
+USA,United States,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2015,0.27,2015-01-01,0.04,0.22800000000000004
+USA,United States,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2018,0.29,2018-01-01,0.03,0.20499999999999996
+USA,United States,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2019,0.29,2019-01-01,0.016000000000000004,0.174
+USA,United States,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2020,0.27,2020-01-01,0.01,0.147
+USA,United States,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2021,0.14,2021-01-01,0.0030000000000000027,0.16
+USA,United States,Percentage of net household income,Couple with 2 children - partner's earnings: 67% of the AW,67% of the Average Wage,Yes,Yes,2022,0.29,2022-01-01,0.0030000000000000027,0.19499999999999995
