@@ -27,6 +27,7 @@
         .map {
             width: 100%;
             height: 100%;
+            margin-top: 100px;
         }
 
         .info {
@@ -44,18 +45,29 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
+        button {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            width: 150px;
+            height: 50px;
+
+            z-index: 2;
+        }
+
         svg {
         }
     </style>
 </head>
 
 <body>
+    <button onclick="drawHexBarGraph('employment_rate_quintile')"> Transition to Employment Rate chart </button>
     <div id="container">
         <div class="map-container">
             <svg class="map"></svg>
         </div>
         <div class="info">
-            <div class="info-box">
+            <!-- <div class="info-box">
                 <h2>Information 1</h2>
                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, distinctio aut molestias, consequatur vitae.</p>
             </div>
@@ -89,7 +101,7 @@
                 <h2>Information 2</h2>
                 <p>This is the second info box containing additional information.</p>
             </div>
-
+ -->
             <!-- Add more info boxes as needed -->
         </div>
     </div>
