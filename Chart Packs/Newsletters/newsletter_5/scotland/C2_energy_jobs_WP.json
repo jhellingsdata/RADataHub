@@ -1,0 +1,275 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-822a0b908939a88d3b8287368b61d06d"
+      },
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "field": "Type",
+          "scale": {
+            "scheme": "set2"
+          },
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Nation",
+            "type": "nominal"
+          },
+          {
+            "field": "Type",
+            "type": "nominal"
+          },
+          {
+            "field": "Jobs",
+            "format": ",",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "Jobs",
+          "title": "Jobs linked to oil and gas",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "title": "* 'Induced' jobs in Scotland estimated at 8,000 \u2013 26,000.",
+            "titleAngle": 0,
+            "titleAlign": "left",
+            "titleX": 0,
+            "titleY": -5
+          },
+          "field": "Nation",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-14ae5cac19228eb6ad2ccf7e47e9306f"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "dimgrey",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "x2"
+        },
+        "y": {
+          "field": "y",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-14ae5cac19228eb6ad2ccf7e47e9306f"
+      },
+      "mark": {
+        "type": "tick",
+        "color": "dimgrey",
+        "thickness": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-14ae5cac19228eb6ad2ccf7e47e9306f"
+      },
+      "mark": {
+        "type": "tick",
+        "color": "dimgrey",
+        "thickness": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "x2",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "height": 160,
+  "width": 380,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-822a0b908939a88d3b8287368b61d06d": [
+      {
+        "Nation": "Scotland",
+        "Type": "Direct",
+        "Jobs": 23000
+      },
+      {
+        "Nation": "Scotland",
+        "Type": "Indirect",
+        "Jobs": 35000
+      },
+      {
+        "Nation": "Scotland",
+        "Type": "Induced",
+        "Jobs": 17000
+      },
+      {
+        "Nation": "UK",
+        "Type": "Direct",
+        "Jobs": 28000
+      },
+      {
+        "Nation": "UK",
+        "Type": "Indirect",
+        "Jobs": 12200
+      },
+      {
+        "Nation": "UK",
+        "Type": "Induced",
+        "Jobs": 90000
+      }
+    ],
+    "data-14ae5cac19228eb6ad2ccf7e47e9306f": [
+      {
+        "y": "Scotland",
+        "x": 66000,
+        "x2": 84000
+      }
+    ]
+  }
+}

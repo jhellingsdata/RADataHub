@@ -1,0 +1,464 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line"
+      },
+      "encoding": {
+        "color": {
+          "field": "Area",
+          "legend": null,
+          "scale": {
+            "range": [
+              "#C8102E",
+              "#005EB8"
+            ]
+          },
+          "type": "nominal"
+        },
+        "x": {
+          "axis": {
+            "grid": false,
+            "labelExpr": "\"\u00a3\" + datum.label",
+            "labelFlush": false
+          },
+          "field": "Income",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "format": "%",
+            "title": "Marginal tax rate"
+          },
+          "field": "rate",
+          "scale": {
+            "domain": [
+              0,
+              0.8
+            ]
+          },
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text"
+      },
+      "encoding": {
+        "color": {
+          "field": "Area",
+          "type": "nominal"
+        },
+        "text": {
+          "field": "Area",
+          "type": "nominal"
+        },
+        "x": {
+          "aggregate": "max",
+          "field": "Income",
+          "type": "quantitative"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "Income"
+          },
+          "field": "rate",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "bottom",
+        "dx": 0,
+        "dy": -15,
+        "fontSize": 10,
+        "lineBreak": "|",
+        "opacity": 0.8
+      },
+      "data": {
+        "name": "data-1e7fc6e9368df4ec5f0c9c6fa12f3ca8"
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y2",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "opacity": 0.8,
+        "strokeDash": [
+          2,
+          2
+        ]
+      },
+      "data": {
+        "name": "data-1e7fc6e9368df4ec5f0c9c6fa12f3ca8"
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "y2"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "bottom",
+        "dx": 0,
+        "dy": -15,
+        "fontSize": 10,
+        "lineBreak": "|",
+        "opacity": 0.8
+      },
+      "data": {
+        "name": "data-33136386fce12291e781292c09a8f704"
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y2",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "opacity": 0.8,
+        "strokeDash": [
+          2,
+          2
+        ]
+      },
+      "data": {
+        "name": "data-33136386fce12291e781292c09a8f704"
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "y2"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "bottom",
+        "dx": 0,
+        "dy": -15,
+        "fontSize": 10,
+        "lineBreak": "|",
+        "opacity": 0.8
+      },
+      "data": {
+        "name": "data-d707a5a2b296552fcb1fef564ea78bae"
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y2",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "opacity": 0.8,
+        "strokeDash": [
+          2,
+          2
+        ]
+      },
+      "data": {
+        "name": "data-d707a5a2b296552fcb1fef564ea78bae"
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "y2"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "bottom",
+        "dx": 0,
+        "dy": -15,
+        "fontSize": 10,
+        "lineBreak": "|",
+        "opacity": 0.8
+      },
+      "data": {
+        "name": "data-ec05764d614e8cfb7398f092ad7d0d5b"
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y2",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "opacity": 0.8,
+        "strokeDash": [
+          2,
+          2
+        ]
+      },
+      "data": {
+        "name": "data-ec05764d614e8cfb7398f092ad7d0d5b"
+      },
+      "encoding": {
+        "text": {
+          "field": "text",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "y2"
+        }
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Newsletters/newsletter_5/scotland/C1_tax_rates.csv"
+  },
+  "datasets": {
+    "data-1e7fc6e9368df4ec5f0c9c6fa12f3ca8": [
+      {
+        "x": 26563,
+        "y": 0.29,
+        "y2": 0.4,
+        "text": "Intermediate |rate threshold"
+      }
+    ],
+    "data-33136386fce12291e781292c09a8f704": [
+      {
+        "x": 43663,
+        "y": 0.5,
+        "y2": 0.56,
+        "text": "Scottish higher| rate threshold"
+      }
+    ],
+    "data-d707a5a2b296552fcb1fef564ea78bae": [
+      {
+        "x": 75001,
+        "y": 0.47,
+        "y2": 0.65,
+        "text": "Advanced| rate threshold"
+      }
+    ],
+    "data-ec05764d614e8cfb7398f092ad7d0d5b": [
+      {
+        "x": 100001,
+        "y": 0.67,
+        "y2": 0.73,
+        "text": "Top rate| threshold"
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "width": 450,
+  "height": 300
+}
