@@ -1,0 +1,354 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": "transparent",
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": "",
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "data": {
+    "name": "data-c649980a1072ccb34c6e31c915a21125"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "field": "Partner",
+      "legend": {
+        "title": "Partner"
+      },
+      "scale": {
+        "range": [
+          "#36b7b4",
+          "#e6224b",
+          "#F4C245"
+        ]
+      }
+    },
+    "x": {
+      "field": "Year"
+    },
+    "xOffset": {
+      "field": "Partner"
+    },
+    "y": {
+      "axis": {
+        "labelExpr": "'\u00a3' + datum.value + 'bn'",
+        "title": "Sales and exports"
+      },
+      "field": "\u00a3 billion",
+      "type": "quantitative"
+    }
+  },
+  "height": 200,
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-c649980a1072ccb34c6e31c915a21125": [
+      {
+        "Year": "2013",
+        "Partner": "GB Sales",
+        "\u00a3 billion": 12.1
+      },
+      {
+        "Year": "2013",
+        "Partner": "IE Exports",
+        "\u00a3 billion": 3.7
+      },
+      {
+        "Year": "2013",
+        "Partner": "REU Exports",
+        "\u00a3 billion": 2.2
+      },
+      {
+        "Year": "2014",
+        "Partner": "GB Sales",
+        "\u00a3 billion": 13.1
+      },
+      {
+        "Year": "2014",
+        "Partner": "IE Exports",
+        "\u00a3 billion": 3.5
+      },
+      {
+        "Year": "2014",
+        "Partner": "REU Exports",
+        "\u00a3 billion": 2.1
+      },
+      {
+        "Year": "2015",
+        "Partner": "GB Sales",
+        "\u00a3 billion": 13.7
+      },
+      {
+        "Year": "2015",
+        "Partner": "IE Exports",
+        "\u00a3 billion": 3.3
+      },
+      {
+        "Year": "2015",
+        "Partner": "REU Exports",
+        "\u00a3 billion": 2.1
+      },
+      {
+        "Year": "2016",
+        "Partner": "GB Sales",
+        "\u00a3 billion": 14.2
+      },
+      {
+        "Year": "2016",
+        "Partner": "IE Exports",
+        "\u00a3 billion": 3.3
+      },
+      {
+        "Year": "2016",
+        "Partner": "REU Exports",
+        "\u00a3 billion": 2.2
+      },
+      {
+        "Year": "2017",
+        "Partner": "GB Sales",
+        "\u00a3 billion": 11.6
+      },
+      {
+        "Year": "2017",
+        "Partner": "IE Exports",
+        "\u00a3 billion": 3.8
+      },
+      {
+        "Year": "2017",
+        "Partner": "REU Exports",
+        "\u00a3 billion": 2.0
+      },
+      {
+        "Year": "2018",
+        "Partner": "GB Sales",
+        "\u00a3 billion": 10.6
+      },
+      {
+        "Year": "2018",
+        "Partner": "IE Exports",
+        "\u00a3 billion": 4.1
+      },
+      {
+        "Year": "2018",
+        "Partner": "REU Exports",
+        "\u00a3 billion": 2.7
+      },
+      {
+        "Year": "2019",
+        "Partner": "GB Sales",
+        "\u00a3 billion": 10.8
+      },
+      {
+        "Year": "2019",
+        "Partner": "IE Exports",
+        "\u00a3 billion": 4.5
+      },
+      {
+        "Year": "2019",
+        "Partner": "REU Exports",
+        "\u00a3 billion": 2.4
+      },
+      {
+        "Year": "2020",
+        "Partner": "GB Sales",
+        "\u00a3 billion": 11.3
+      },
+      {
+        "Year": "2020",
+        "Partner": "IE Exports",
+        "\u00a3 billion": 4.2
+      },
+      {
+        "Year": "2020",
+        "Partner": "REU Exports",
+        "\u00a3 billion": 2.2
+      },
+      {
+        "Year": "2021",
+        "Partner": "GB Sales",
+        "\u00a3 billion": 13.7
+      },
+      {
+        "Year": "2021",
+        "Partner": "IE Exports",
+        "\u00a3 billion": 5.4
+      },
+      {
+        "Year": "2021",
+        "Partner": "REU Exports",
+        "\u00a3 billion": 2.7
+      },
+      {
+        "Year": "2022",
+        "Partner": "GB Sales",
+        "\u00a3 billion": 15.7
+      },
+      {
+        "Year": "2022",
+        "Partner": "IE Exports",
+        "\u00a3 billion": 6.4
+      },
+      {
+        "Year": "2022",
+        "Partner": "REU Exports",
+        "\u00a3 billion": 2.7
+      }
+    ]
+  }
+}
