@@ -1,9 +1,22 @@
 id,name,value
+E06000047,County Durham,30.64
+E06000005,Darlington,28.56
+E06000001,Hartlepool,29.84
+E06000002,Middlesbrough,29.5
+E06000057,Northumberland,30.43
+E06000003,Redcar and Cleveland,28.42
+E06000004,Stockton-on-Tees,39.76
 E08000037,Gateshead,30.85
 E08000021,Newcastle upon Tyne,33.23
 E08000022,North Tyneside,36.5
 E08000023,South Tyneside,28.23
 E08000024,Sunderland,35.79
+E06000008,Blackburn with Darwen,28.48
+E06000009,Blackpool,28.32
+E06000049,Cheshire East,44.54
+E06000050,Cheshire West and Chester,41.45
+E06000006,Halton,40.15
+E06000007,Warrington,35.19
 E07000026,Allerdale,29.96
 E07000027,Barrow-in-Furness,41.23
 E07000028,Carlisle,29.17
@@ -37,6 +50,11 @@ E08000012,Liverpool,33.44
 E08000014,Sefton,32.06
 E08000013,St. Helens,26.5
 E08000015,Wirral,34.4
+E06000011,East Riding of Yorkshire,35.35
+E06000010,"Kingston upon Hull, City of",29.4
+E06000012,North East Lincolnshire,29.5
+E06000013,North Lincolnshire,37.76
+E06000014,York,33.97
 E07000163,Craven,30.48
 E07000164,Hambleton,39.86
 E07000165,Harrogate,36.85
@@ -53,6 +71,12 @@ E08000033,Calderdale,33.57
 E08000034,Kirklees ,31.17
 E08000035,Leeds ,34.5
 E08000036,Wakefield,33.2
+E06000015,Derby ,33.5
+E06000016,Leicester,34.09
+E06000061,North Northamptonshire,28.88
+E06000018,Nottingham,32.03
+E06000017,Rutland ,33.11
+E06000062,West Northamptonshire,33.57
 E07000032,Amber Valley,36.49
 E07000033,Bolsover,43.64
 E07000034,Chesterfield,33.77
@@ -82,6 +106,10 @@ E07000173,Gedling,33.47
 E07000174,Mansfield,27.75
 E07000175,Newark and Sherwood,29.65
 E07000176,Rushcliffe,45.75
+E06000019,"Herefordshire, County of",27.45
+E06000051,Shropshire,30.63
+E06000021,Stoke-on-Trent,29.91
+E06000020,Telford and Wrekin,32.34
 E07000192,Cannock Chase,29.99
 E07000193,East Staffordshire,33.4
 E07000194,Lichfield,30.34
@@ -108,6 +136,12 @@ E07000236,Redditch,32.93
 E07000237,Worcester,35.3
 E07000238,Wychavon,34.27
 E07000239,Wyre Forest,23.84
+E06000055,Bedford,32.74
+E06000056,Central Bedfordshire,34.0
+E06000032,Luton,32.71
+E06000031,Peterborough,35.05
+E06000033,Southend-on-Sea,26.06
+E06000034,Thurrock,36.65
 E07000008,Cambridge,40.74
 E07000009,East Cambridgeshire,35.9
 E07000010,Fenland,28.53
@@ -180,6 +214,19 @@ E09000026,Redbridge,38.05
 E09000027,Richmond upon Thames,52.38
 E09000029,Sutton,33.99
 E09000031,Waltham Forest,36.73
+E06000036,Bracknell Forest,49.02
+E06000043,Brighton and Hove,39.36
+E06000060,Buckinghamshire,38.65
+E06000046,Isle of Wight,31.81
+E06000035,Medway,38.76
+E06000042,Milton Keynes,45.87
+E06000044,Portsmouth,38.74
+E06000038,Reading,43.69
+E06000039,Slough,63.99
+E06000045,Southampton,35.83
+E06000037,West Berkshire,52.18
+E06000040,Windsor and Maidenhead,56.0
+E06000041,Wokingham,58.92
 E07000061,Eastbourne,31.58
 E07000062,Hastings,30.57
 E07000063,Lewes,31.13
@@ -231,6 +278,18 @@ E07000226,Crawley,37.07
 E07000227,Horsham,37.22
 E07000228,Mid Sussex,37.23
 E07000229,Worthing,52.3
+E06000022,Bath and North East Somerset,28.45
+E06000058,"Bournemouth, Christchurch and Poole",34.79
+E06000023,"Bristol, City of",33.63
+E06000052,Cornwall,29.16
+E06000059,Dorset,32.37
+E06000053,Isles of Scilly,40.9
+E06000024,North Somerset,30.96
+E06000026,Plymouth,31.25
+E06000025,South Gloucestershire,49.57
+E06000030,Swindon,50.85
+E06000027,Torbay,25.49
+E06000054,Wiltshire,35.27
 E07000040,East Devon,34.96
 E07000041,Exeter,36.05
 E07000042,Mid Devon,28.58
