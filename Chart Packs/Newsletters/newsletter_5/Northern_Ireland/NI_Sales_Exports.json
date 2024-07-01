@@ -1,0 +1,108 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Northern Ireland sales and exports by trade partner - 2013-22",
+    "subtitle": ["Sales and exports"],
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0
+  },
+
+  "width": 400,
+  "height": 300,
+
+  "config": {
+    "font": "Circular Std",
+    "view": {"stroke": "transparent"},
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": "",
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+
+  "data": {
+    "values": [
+      {"Year":"2013", "Partner": "GB Sales", "£ billion":12.1},
+      {"Year":"2013", "Partner": "IE Exports", "£ billion":3.7},
+      {"Year":"2013", "Partner": "REU Exports", "£ billion":2.2},
+      {"Year":"2014", "Partner": "GB Sales", "£ billion":13.1},
+      {"Year":"2014", "Partner": "IE Exports", "£ billion":3.5},
+      {"Year":"2014", "Partner": "REU Exports", "£ billion":2.1},
+      {"Year":"2015", "Partner": "GB Sales", "£ billion":13.7},
+      {"Year":"2015", "Partner": "IE Exports", "£ billion":3.3},
+      {"Year":"2015", "Partner": "REU Exports", "£ billion":2.1},
+      {"Year":"2016", "Partner": "GB Sales", "£ billion":14.2},
+      {"Year":"2016", "Partner": "IE Exports", "£ billion":3.3},
+      {"Year":"2016", "Partner": "REU Exports", "£ billion":2.2},
+      {"Year":"2017", "Partner": "GB Sales", "£ billion":11.6},
+      {"Year":"2017", "Partner": "IE Exports", "£ billion":3.8},
+      {"Year":"2017", "Partner": "REU Exports", "£ billion":2.0},
+      {"Year":"2018", "Partner": "GB Sales", "£ billion":10.6},
+      {"Year":"2018", "Partner": "IE Exports", "£ billion":4.1},
+      {"Year":"2018", "Partner": "REU Exports", "£ billion":2.7},
+      {"Year":"2019", "Partner": "GB Sales", "£ billion":10.8},
+      {"Year":"2019", "Partner": "IE Exports", "£ billion":4.5},
+      {"Year":"2019", "Partner": "REU Exports", "£ billion":2.4},
+      {"Year":"2020", "Partner": "GB Sales", "£ billion":11.3},
+      {"Year":"2020", "Partner": "IE Exports", "£ billion":4.2},
+      {"Year":"2020", "Partner": "REU Exports", "£ billion":2.2},
+      {"Year":"2021", "Partner": "GB Sales", "£ billion":13.7},
+      {"Year":"2021", "Partner": "IE Exports", "£ billion":5.4},
+      {"Year":"2021", "Partner": "REU Exports", "£ billion":2.7},
+      {"Year":"2022", "Partner": "GB Sales", "£ billion":15.7},
+      {"Year":"2022", "Partner": "IE Exports", "£ billion":6.4},
+      {"Year":"2022", "Partner": "REU Exports", "£ billion":2.7}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Year"},
+    "y": {"field": "£ billion", "type": "quantitative"},
+    "xOffset": {"field": "Partner"},
+    "color": {"field": "Partner","scale": {
+        "range": ["#36b7b4","#e6224b", "#F4C245"]}}
+  }
+}

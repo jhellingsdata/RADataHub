@@ -1,0 +1,483 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line"
+      },
+      "encoding": {
+        "color": {
+          "field": "Economy",
+          "legend": null,
+          "scale": {
+            "range": [
+              "#E6224B",
+              "#36B7B4",
+              "#F4C245",
+              "#0063AF",
+              "#00A767",
+              "#179FDB",
+              "#EB5C2E"
+            ]
+          },
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "title": "Year",
+            "type": "temporal"
+          },
+          {
+            "field": "Economy",
+            "title": "Economy",
+            "type": "nominal"
+          },
+          {
+            "field": "Value",
+            "format": ",.0f",
+            "title": "Capacity (MMT)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "Value",
+          "title": "Capacity, million metric tons",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text"
+      },
+      "encoding": {
+        "color": {
+          "field": "Economy",
+          "type": "nominal"
+        },
+        "text": {
+          "field": "Economy",
+          "type": "nominal"
+        },
+        "x": {
+          "aggregate": "max",
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "Year"
+          },
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "data": {
+    "name": "data-7cdc363b0722a7018be0e399b0bd4c46"
+  },
+  "height": 300,
+  "width": 450,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-7cdc363b0722a7018be0e399b0bd4c46": [
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2000-01-01",
+        "Value": 149.6
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2001-01-01",
+        "Value": 160.0
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2002-01-01",
+        "Value": 191.0
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2003-01-01",
+        "Value": 278.2
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2004-01-01",
+        "Value": 340.13
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2005-01-01",
+        "Value": 423.76
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2006-01-01",
+        "Value": 488.47
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2007-01-01",
+        "Value": 807.979
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2008-01-01",
+        "Value": 875.419
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2009-01-01",
+        "Value": 979.84
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2010-01-01",
+        "Value": 1057.93
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2011-01-01",
+        "Value": 1110.58
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2012-01-01",
+        "Value": 1166.37
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2013-01-01",
+        "Value": 1215.31
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2014-01-01",
+        "Value": 1223.45
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2015-01-01",
+        "Value": 1208.71
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2016-01-01",
+        "Value": 1187.371
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2017-01-01",
+        "Value": 1158.811
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2018-01-01",
+        "Value": 1122.921
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2019-01-01",
+        "Value": 1148.262
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2020-01-01",
+        "Value": 1147.857
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2021-01-01",
+        "Value": 1146.492
+      },
+      {
+        "ISO3": "CHN",
+        "Economy": "China",
+        "Year": "2022-01-01",
+        "Value": 1149.882
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2000-01-01",
+        "Value": 919.9060000000001
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2001-01-01",
+        "Value": 918.673
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2002-01-01",
+        "Value": 924.498
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2003-01-01",
+        "Value": 916.6299999999999
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2004-01-01",
+        "Value": 926.535
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2005-01-01",
+        "Value": 948.315
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2006-01-01",
+        "Value": 976.7819999999999
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2007-01-01",
+        "Value": 1057.094
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2008-01-01",
+        "Value": 1085.1080000000002
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2009-01-01",
+        "Value": 1093.1129999999998
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2010-01-01",
+        "Value": 1132.586
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2011-01-01",
+        "Value": 1152.2420000000002
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2012-01-01",
+        "Value": 1149.2350000000001
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2013-01-01",
+        "Value": 1191.944
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2014-01-01",
+        "Value": 1203.6319999999998
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2015-01-01",
+        "Value": 1206.578
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2016-01-01",
+        "Value": 1224.348
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2017-01-01",
+        "Value": 1239.9040000000002
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2018-01-01",
+        "Value": 1255.001
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2019-01-01",
+        "Value": 1263.8280000000002
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2020-01-01",
+        "Value": 1273.125
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2021-01-01",
+        "Value": 1280.472
+      },
+      {
+        "ISO3": "ROW",
+        "Economy": "Rest of World",
+        "Year": "2022-01-01",
+        "Value": 1309.179
+      }
+    ]
+  }
+}

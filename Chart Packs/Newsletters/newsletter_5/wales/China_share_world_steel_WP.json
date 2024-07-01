@@ -1,0 +1,232 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "Year",
+            "title": "Year",
+            "type": "nominal"
+          },
+          {
+            "field": "Value",
+            "format": "~%",
+            "title": "Chinese share",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "Value",
+          "scale": {
+            "domain": [
+              0,
+              0.8
+            ]
+          },
+          "title": "Share of world crude steel production (%)",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "bottom",
+        "dx": 0,
+        "dy": -3
+      },
+      "encoding": {
+        "text": {
+          "field": "Value",
+          "format": ".1%",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "data": {
+    "name": "data-880cc675147eb25f5a2fd8e804c885f9"
+  },
+  "height": 300,
+  "width": 450,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-880cc675147eb25f5a2fd8e804c885f9": [
+      {
+        "Year": 2013,
+        "Value": 0.485
+      },
+      {
+        "Year": 2014,
+        "Value": 0.494
+      },
+      {
+        "Year": 2015,
+        "Value": 0.495
+      },
+      {
+        "Year": 2016,
+        "Value": 0.496
+      },
+      {
+        "Year": 2017,
+        "Value": 0.503
+      },
+      {
+        "Year": 2018,
+        "Value": 0.513
+      },
+      {
+        "Year": 2019,
+        "Value": 0.5329999999999999
+      },
+      {
+        "Year": 2020,
+        "Value": 0.5670000000000001
+      },
+      {
+        "Year": 2021,
+        "Value": 0.529
+      },
+      {
+        "Year": 2022,
+        "Value": 0.54
+      }
+    ]
+  }
+}
