@@ -1,0 +1,544 @@
+name,forecast,previousWinner,change,code
+Guildford,Liberal Democrat,,True,E14001258
+Mitcham and Morden,Labour,,True,E14001371
+Newcastle upon Tyne East and Wallsend,Labour,,True,E14001378
+Scunthorpe,Labour,,True,E14001462
+Norwich North,Labour,,True,E14001408
+Reigate,Conservative,,True,E14001442
+Stratford-on-Avon,Conservative,,True,E14001526
+Ossett and Denby Dale,Labour,,True,E14001418
+Mid Cheshire,Labour,,True,E14001361
+Penrith and Solway,Labour,,True,E14001424
+Lewes,Liberal Democrat,,True,E14001330
+Oxford East,Labour,,True,E14001419
+Leeds Central and Headingley,Labour,,True,E14001319
+Northampton South,Labour,,True,E14001407
+Streatham and Croydon North,Labour,,True,E14001527
+Ilford North,Labour,,True,E14001300
+Mid Bedfordshire,Labour,,True,E14001359
+North Dorset,Conservative,,True,E14001388
+Amber Valley,Labour,,True,E14001066
+Blackley and Middleton South,Labour,,True,E14001103
+South Shropshire,Conservative,,True,E14001493
+Wolverhampton West,Labour,,True,E14001596
+Ealing North,Labour,,True,E14001208
+Stourbridge,Labour,,True,E14001524
+Coventry North West,Labour,,True,E14001181
+Wythenshawe and Sale East,Labour,,True,E14001602
+Chelmsford,Conservative,,True,E14001159
+Stoke-on-Trent Central,Labour,,True,E14001520
+Northampton North,Labour,,True,E14001406
+Leicester West,Labour,,True,E14001328
+Carshalton and Wallington,Liberal Democrat,,True,E14001153
+St Ives,Liberal Democrat,,True,E14001511
+Barnsley South,Reform UK,,True,E14001075
+Tamworth,Conservative,,True,E14001538
+Oxford West and Abingdon,Liberal Democrat,,True,E14001420
+Warwick and Leamington,Labour,,True,E14001566
+Aldridge-Brownhills,Conservative,,True,E14001064
+Tynemouth,Labour,,True,E14001557
+Sunderland Central,Labour,,True,E14001531
+South Cambridgeshire,Liberal Democrat,,True,E14001481
+Macclesfield,Labour,,True,E14001347
+Orpington,Labour,,True,E14001417
+Melksham and Devizes,Conservative,,True,E14001356
+Godalming and Ash,Liberal Democrat,,True,E14001249
+Gorton and Denton,Labour,,True,E14001251
+Cannock Chase,Labour,,True,E14001150
+Cheadle,Liberal Democrat,,True,E14001158
+Torridge and Tavistock,Conservative,,True,E14001552
+Hackney South and Shoreditch,Labour,,True,E14001260
+Bath,Liberal Democrat,,True,E14001080
+Havant,Conservative,,True,E14001275
+Birmingham Erdington,Labour,,True,E14001093
+Honiton and Sidmouth,Conservative,,True,E14001291
+East Surrey,Conservative,,True,E14001215
+Harpenden and Berkhamsted,Liberal Democrat,,True,E14001268
+Cheltenham,Liberal Democrat,,True,E14001161
+Mid Leicestershire,Labour,,True,E14001364
+Nottingham East,Labour,,True,E14001410
+Basildon and Billericay,Conservative,,True,E14001077
+Warrington North,Labour,,True,E14001564
+Warrington South,Labour,,True,E14001565
+Bradford South,Labour,,True,E14001119
+Tewkesbury,Conservative,,True,E14001542
+Walthamstow,Labour,,True,E14001563
+North Cotswolds,Conservative,,True,E14001386
+Harwich and North Essex,Conservative,,True,E14001273
+Newark,Conservative,,True,E14001375
+Chester South and Eddisbury,Conservative,,True,E14001164
+Bristol South,Labour,,True,E14001135
+Vauxhall and Camberwell Green,Labour,,True,E14001559
+"Pontefract, Castleford and Knottingley",Labour,,True,E14001428
+Dewsbury and Batley,Labour,,True,E14001196
+West Worcestershire,Conservative,,True,E14001579
+Camborne and Redruth,Labour,,True,E14001148
+York Central,Labour,,True,E14001604
+Bedford,Labour,,True,E14001084
+Wolverhampton South East,Labour,,True,E14001595
+Ealing Southall,Labour,,True,E14001209
+North Shropshire,Conservative,,True,E14001398
+Windsor,Conservative,,True,E14001588
+"Harborough, Oadby and Wigston",Conservative,,True,E14001266
+Goole and Pocklington,Conservative,,True,E14001250
+Southgate and Wood Green,Labour,,True,E14001503
+Easington,Labour,,True,E14001211
+Telford,Labour,,True,E14001541
+Doncaster North,Labour,,True,E14001200
+Manchester Withington,Labour,,True,E14001354
+Rossendale and Darwen,Labour,,True,E14001450
+East Thanet,Labour,,True,E14001216
+Smethwick,Labour,,True,E14001478
+Staffordshire Moorlands,Labour,,True,E14001514
+Rawmarsh and Conisbrough,Labour,,True,E14001436
+East Worthing and Shoreham,Labour,,True,E14001218
+Gedling,Labour,,True,E14001245
+Redditch,Labour,,True,E14001441
+The Wrekin,Conservative,,True,E14001543
+Heywood and Middleton North,Labour,,True,E14001286
+Hove and Portslade,Labour,,True,E14001296
+Preston,Labour,,True,E14001433
+Normanton and Hemsworth,Labour,,True,E14001383
+Coventry East,Labour,,True,E14001180
+Sevenoaks,Conservative,,True,E14001465
+Bishop Auckland,Labour,,True,E14001101
+Portsmouth South,Labour,,True,E14001432
+Nuneaton,Labour,,True,E14001413
+Washington and Gateshead South,Labour,,True,E14001567
+Swindon South,Labour,,True,E14001537
+Sheffield Brightside and Hillsborough,Labour,,True,E14001466
+Sheffield Hallam,Liberal Democrat,,True,E14001468
+Great Yarmouth,Reform UK,,True,E14001256
+Burnley,Labour,,True,E14001142
+Earley and Woodley,Labour,,True,E14001210
+Salisbury,Conservative,,True,E14001460
+Lewisham North,Labour,,True,E14001332
+Solihull West and Shirley,Labour,,True,E14001479
+Aylesbury,Labour,,True,E14001071
+Croydon East,Labour,,True,E14001186
+Wirral West,Labour,,True,E14001589
+Bury South,Labour,,True,E14001145
+Hayes and Harlington,Labour,,True,E14001276
+Frome and East Somerset,Liberal Democrat,,True,E14001241
+Barrow and Furness,Labour,,True,E14001076
+Taunton and Wellington,Liberal Democrat,,True,E14001540
+Canterbury,Labour,,True,E14001151
+South Holland and The Deepings,Conservative,,True,E14001487
+Ealing Central and Acton,Labour,,True,E14001207
+Epping Forest,Conservative,,True,E14001226
+Leeds South West and Morley,Labour,,True,E14001324
+South West Wiltshire,Conservative,,True,E14001498
+Spen Valley,Labour,,True,E14001506
+Sefton Central,Labour,,True,E14001463
+North Bedfordshire,Labour,,True,E14001384
+Hamble Valley,Conservative,,True,E14001263
+North Somerset,Conservative,,True,E14001399
+Broxtowe,Labour,,True,E14001140
+Folkestone and Hythe,Labour,,True,E14001239
+South Cotswolds,Conservative,,True,E14001482
+Bolton West,Labour,,True,E14001112
+Rutland and Stamford,Conservative,,True,E14001458
+Boston and Skegness,Conservative,,True,E14001114
+Battersea,Labour,,True,E14001081
+Birmingham Hodge Hill and Solihull North,Labour,,True,E14001095
+Islington North,,,True,E14001305
+Epsom and Ewell,Liberal Democrat,,True,E14001227
+Hendon,Labour,,True,E14001279
+Altrincham and Sale West,Labour,,True,E14001065
+Bury St Edmunds and Stowmarket,Conservative,,True,E14001146
+Liverpool Garston,Labour,,True,E14001337
+Harrow East,Labour,,True,E14001270
+Crewe and Nantwich,Labour,,True,E14001185
+Stratford and Bow,Labour,,True,E14001525
+Wakefield and Rothwell,Labour,,True,E14001560
+St Helens South and Whiston,Labour,,True,E14001510
+Coventry South,Labour,,True,E14001182
+West Bromwich,Labour,,True,E14001574
+Hampstead and Highgate,Labour,,True,E14001265
+North Durham,Labour,,True,E14001389
+Milton Keynes North,Labour,,True,E14001370
+Old Bexley and Sidcup,Labour,,True,E14001414
+Greenwich and Woolwich,Labour,,True,E14001257
+Leeds North West,Labour,,True,E14001322
+Peterborough,Labour,,True,E14001425
+Hereford and South Herefordshire,Conservative,,True,E14001281
+North East Derbyshire,Labour,,True,E14001391
+North West Hampshire,Conservative,,True,E14001403
+Dagenham and Rainham,Labour,,True,E14001189
+Chesterfield,Labour,,True,E14001165
+Oldham East and Saddleworth,Labour,,True,E14001415
+Liverpool West Derby,Labour,,True,E14001341
+Braintree,Conservative,,True,E14001121
+Meriden and Solihull East,Conservative,,True,E14001358
+Bolton South and Walkden,Labour,,True,E14001111
+Huddersfield,Labour,,True,E14001297
+Faversham and Mid Kent,Conservative,,True,E14001235
+West Dorset,Liberal Democrat,,True,E14001575
+Lincoln,Labour,,True,E14001336
+Twickenham,Liberal Democrat,,True,E14001556
+Dover and Deal,Labour,,True,E14001202
+Bermondsey and Old Southwark,Labour,,True,E14001085
+Kingston upon Hull East,Labour,,True,E14001313
+West Lancashire,Labour,,True,E14001577
+Kettering,Labour,,True,E14001311
+Rayleigh and Wickford,Conservative,,True,E14001437
+Knowsley,Labour,,True,E14001317
+Bexleyheath and Crayford,Labour,,True,E14001089
+Brent East,Labour,,True,E14001122
+Banbury,Labour,,True,E14001072
+Swindon North,Labour,,True,E14001536
+Rochester and Strood,Labour,,True,E14001447
+Sheffield South East,Labour,,True,E14001470
+Halesowen,Labour,,True,E14001261
+Maidenhead,Conservative,,True,E14001348
+St Albans,Liberal Democrat,,True,E14001507
+Bury North,Labour,,True,E14001144
+Worthing West,Labour,,True,E14001599
+Wallasey,Labour,,True,E14001561
+Chorley,The Speaker,,True,E14001170
+South Dorset,Labour,,True,E14001485
+Sutton Coldfield,Labour,,True,E14001535
+Chester North and Neston,Labour,,True,E14001163
+Arundel and South Downs,Conservative,,True,E14001067
+Welwyn Hatfield,Labour,,True,E14001573
+Truro and Falmouth,Labour,,True,E14001554
+Didcot and Wantage,Liberal Democrat,,True,E14001197
+Mid Sussex,Liberal Democrat,,True,E14001366
+Harlow,Labour,,True,E14001267
+"Ruislip, Northwood and Pinner",Conservative,,True,E14001454
+Eastleigh,Liberal Democrat,,True,E14001220
+Lewisham West and East Dulwich,Labour,,True,E14001333
+South West Hertfordshire,Labour,,True,E14001496
+North Herefordshire,Conservative,,True,E14001395
+Eltham and Chislehurst,Labour,,True,E14001223
+Bassetlaw,Reform UK,,True,E14001079
+Rotherham,Labour,,True,E14001452
+Bromsgrove,Labour,,True,E14001138
+Louth and Horncastle,Conservative,,True,E14001343
+Middlesbrough South and East Cleveland,Labour,,True,E14001368
+Brighton Kemptown and Peacehaven,Labour,,True,E14001129
+Bristol North West,Labour,,True,E14001134
+Runcorn and Helsby,Labour,,True,E14001455
+Herne Bay and Sandwich,Labour,,True,E14001282
+North Warwickshire and Bedworth,Labour,,True,E14001400
+Dudley,Labour,,True,E14001204
+Basingstoke,Labour,,True,E14001078
+Uxbridge and South Ruislip,Labour,,True,E14001558
+Ashton-under-Lyne,Labour,,True,E14001070
+Ashford,Labour,,True,E14001069
+Brentford and Isleworth,Labour,,True,E14001124
+Dulwich and West Norwood,Labour,,True,E14001205
+South Derbyshire,Labour,,True,E14001483
+Bradford East,Labour,,True,E14001118
+Brentwood and Ongar,Conservative,,True,E14001125
+South Shields,Labour,,True,E14001492
+Stockton West,Labour,,True,E14001519
+Blackpool South,Labour,,True,E14001105
+Daventry,Conservative,,True,E14001192
+South Devon,Liberal Democrat,,True,E14001484
+New Forest East,Conservative,,True,E14001373
+Newbury,Liberal Democrat,,True,E14001376
+Hertford and Stortford,Labour,,True,E14001283
+Broxbourne,Labour,,True,E14001139
+Tottenham,Labour,,True,E14001553
+Nottingham South,Labour,,True,E14001412
+West Ham and Beckton,Labour,,True,E14001576
+Blackpool North and Fleetwood,Labour,,True,E14001104
+Beaconsfield,Conservative,,True,E14001082
+Brent West,Labour,,True,E14001123
+North West Leicestershire,Labour,,True,E14001404
+Romsey and Southampton North,Conservative,,True,E14001449
+Wycombe,Labour,,True,E14001600
+Calder Valley,Labour,,True,E14001147
+Harrow West,Labour,,True,E14001271
+Manchester Rusholme,Labour,,True,E14001353
+Rugby,Labour,,True,E14001453
+Worcester,Labour,,True,E14001597
+Reading Central,Labour,,True,E14001438
+Kingswinford and South Staffordshire,Conservative,,True,E14001316
+Bristol Central,Green,,True,E14001131
+Skipton and Ripon,Conservative,,True,E14001475
+Wetherby and Easingwold,Conservative,,True,E14001582
+Croydon South,Labour,,True,E14001187
+Liverpool Riverside,Labour,,True,E14001338
+Stoke-on-Trent North,Labour,,True,E14001521
+East Grinstead and Uckfield,Conservative,,True,E14001212
+North Cornwall,Liberal Democrat,,True,E14001385
+Central Suffolk and North Ipswich,Conservative,,True,E14001156
+Chippenham,Liberal Democrat,,True,E14001168
+Stockton North,Labour,,True,E14001518
+South East Cornwall,Conservative,,True,E14001486
+"Oldham West, Chadderton and Royton",Labour,,True,E14001416
+Sheffield Central,Labour,,True,E14001467
+Kingston upon Hull West and Haltemprice,Labour,,True,E14001315
+Maidstone and Malling,Conservative,,True,E14001349
+Sleaford and North Hykeham,Conservative,,True,E14001476
+Broadland and Fakenham,Conservative,,True,E14001136
+Doncaster East and the Isle of Axholme,Labour,,True,E14001199
+Hammersmith and Chiswick,Labour,,True,E14001264
+Luton South and South Bedfordshire,Labour,,True,E14001346
+Leeds West and Pudsey,Labour,,True,E14001325
+Maldon,Conservative,,True,E14001351
+Mansfield,Labour,,True,E14001355
+Rushcliffe,Labour,,True,E14001457
+Leicester East,Labour,,True,E14001326
+Milton Keynes Central,Labour,,True,E14001369
+Gateshead Central and Whickham,Labour,,True,E14001244
+Cramlington and Killingworth,Labour,,True,E14001183
+Loughborough,Labour,,True,E14001342
+Manchester Central,Labour,,True,E14001352
+Hackney North and Stoke Newington,Labour,,True,E14001259
+Southend West and Leigh,Labour,,True,E14001502
+Walsall and Bloxwich,Labour,,True,E14001562
+Leigh and Atherton,Labour,,True,E14001329
+Tiverton and Minehead,Conservative,,True,E14001548
+Mid Buckinghamshire,Conservative,,True,E14001360
+Melton and Syston,Conservative,,True,E14001357
+Liverpool Wavertree,Labour,,True,E14001340
+Gravesham,Labour,,True,E14001254
+Holborn and St Pancras,Labour,,True,E14001290
+Liverpool Walton,Labour,,True,E14001339
+Beckenham and Penge,Labour,,True,E14001083
+Chelsea and Fulham,Labour,,True,E14001160
+Ely and East Cambridgeshire,Liberal Democrat,,True,E14001224
+Derby North,Labour,,True,E14001193
+Luton North,Labour,,True,E14001345
+Tipton and Wednesbury,Labour,,True,E14001547
+Birkenhead,Labour,,True,E14001091
+Congleton,Conservative,,True,E14001178
+Bristol East,Labour,,True,E14001132
+Hexham,Labour,,True,E14001285
+Birmingham Perry Barr,Labour,,True,E14001098
+Kingston upon Hull North and Cottingham,Labour,,True,E14001314
+Penistone and Stocksbridge,Labour,,True,E14001423
+Wells and Mendip Hills,Liberal Democrat,,True,E14001572
+Winchester,Liberal Democrat,,True,E14001587
+Corby and East Northamptonshire,Labour,,True,E14001179
+Feltham and Heston,Labour,,True,E14001236
+Lowestoft,Labour,,True,E14001344
+Widnes and Halewood,Labour,,True,E14001584
+Burton and Uttoxeter,Labour,,True,E14001143
+Great Grimsby and Cleethorpes,Labour,,True,E14001255
+Newcastle upon Tyne North,Labour,,True,E14001379
+Bristol North East,Labour,,True,E14001133
+East Hampshire,Conservative,,True,E14001214
+Gillingham and Rainham,Labour,,True,E14001246
+Huntingdon,Conservative,,True,E14001298
+Torbay,Liberal Democrat,,True,E14001551
+East Wiltshire,Conservative,,True,E14001217
+Ipswich,Labour,,True,E14001302
+Stafford,Labour,,True,E14001513
+South West Devon,Conservative,,True,E14001495
+Carlisle,Labour,,True,E14001152
+Hastings and Rye,Labour,,True,E14001274
+Tatton,Conservative,,True,E14001539
+Crawley,Labour,,True,E14001184
+Chatham and Aylesford,Labour,,True,E14001157
+Thirsk and Malton,Conservative,,True,E14001544
+Leeds East,Labour,,True,E14001320
+Spelthorne,Conservative,,True,E14001505
+Shipley,Labour,,True,E14001472
+Weston-super-Mare,Labour,,True,E14001581
+Slough,Labour,,True,E14001477
+Brigg and Immingham,Conservative,,True,E14001128
+Stoke-on-Trent South,Labour,,True,E14001522
+Bradford West,Labour,,True,E14001120
+Mid Norfolk,Conservative,,True,E14001365
+Weald of Kent,Conservative,,True,E14001570
+Sherwood Forest,Labour,,True,E14001471
+Birmingham Ladywood,Labour,,True,E14001096
+Kingston and Surbiton,Liberal Democrat,,True,E14001312
+Southend East and Rochford,Labour,,True,E14001501
+Bicester and Woodstock,Conservative,,True,E14001090
+North West Norfolk,Labour,,True,E14001405
+Chipping Barnet,Labour,,True,E14001169
+Bournemouth West,Labour,,True,E14001116
+South West Norfolk,Conservative,,True,E14001497
+Southampton Itchen,Labour,,True,E14001499
+Thornbury and Yate,Liberal Democrat,,True,E14001545
+Stevenage,Labour,,True,E14001516
+Filton and Bradley Stoke,Labour,,True,E14001237
+Croydon West,Labour,,True,E14001188
+Chichester,Conservative,,True,E14001166
+Hyndburn,Labour,,True,E14001299
+Hertsmere,Conservative,,True,E14001284
+Stroud,Labour,,True,E14001529
+North West Essex,Conservative,,True,E14001402
+High Peak,Labour,,True,E14001287
+Gloucester,Labour,,True,E14001248
+Hemel Hempstead,Labour,,True,E14001278
+Chingford and Woodford Green,Labour,,True,E14001167
+Sussex Weald,Conservative,,True,E14001533
+Derby South,Labour,,True,E14001194
+Farnham and Bordon,Liberal Democrat,,True,E14001234
+Birmingham Edgbaston,Labour,,True,E14001092
+Bridlington and The Wolds,Labour,,True,E14001127
+West Suffolk,Conservative,,True,E14001578
+Tonbridge,Conservative,,True,E14001549
+Southport,Labour,,True,E14001504
+Enfield North,Labour,,True,E14001225
+Newton Abbot,Conservative,,True,E14001381
+Dartford,Labour,,True,E14001191
+Leicester South,Labour,,True,E14001327
+Wolverhampton North East,Labour,,True,E14001594
+Birmingham Northfield,Labour,,True,E14001097
+Putney,Labour,,True,E14001434
+Ribble Valley,Labour,,True,E14001443
+North West Cambridgeshire,Conservative,,True,E14001401
+Dorking and Horley,Liberal Democrat,,True,E14001201
+Scarborough and Whitby,Labour,,True,E14001461
+South Suffolk,Conservative,,True,E14001494
+Aldershot,Labour,,True,E14001063
+Chesham and Amersham,Conservative,,True,E14001162
+Bridgwater,Conservative,,True,E14001126
+St Austell and Newquay,Labour,,True,E14001508
+South Northamptonshire,Labour,,True,E14001490
+Colchester,Labour,,True,E14001176
+Watford,Labour,,True,E14001568
+Kenilworth and Southam,Conservative,,True,E14001309
+St Helens North,Labour,,True,E14001509
+Henley and Thame,Liberal Democrat,,True,E14001280
+North East Somerset and Hanham,Labour,,True,E14001394
+Lichfield,Conservative,,True,E14001335
+Gosport,Conservative,,True,E14001252
+Houghton and Sunderland South,Labour,,True,E14001295
+Peckham,Labour,,True,E14001421
+Bolsover,Labour,,True,E14001109
+Tunbridge Wells,Conservative,,True,E14001555
+Ilford South,Labour,,True,E14001301
+Birmingham Hall Green and Moseley,Labour,,True,E14001094
+Hornsey and Friern Barnet,Labour,,True,E14001293
+Mid Dorset and North Poole,Liberal Democrat,,True,E14001363
+Rochdale,Labour,,True,E14001446
+Birmingham Yardley,Labour,,True,E14001100
+Fareham and Waterlooville,Conservative,,True,E14001233
+Halifax,Labour,,True,E14001262
+Stockport,Labour,,True,E14001517
+Pendle and Clitheroe,Labour,,True,E14001422
+Hazel Grove,Liberal Democrat,,True,E14001277
+North Northumberland,Conservative,,True,E14001397
+Southampton Test,Labour,,True,E14001500
+Central Devon,Conservative,,True,E14001155
+Nottingham North and Kimberley,Labour,,True,E14001411
+Edmonton and Winchmore Hill,Labour,,True,E14001221
+Sutton and Cheam,Liberal Democrat,,True,E14001534
+Woking,Liberal Democrat,,True,E14001592
+Gainsborough,Conservative,,True,E14001243
+South Leicestershire,Conservative,,True,E14001488
+Shrewsbury,Labour,,True,E14001473
+Darlington,Labour,,True,E14001190
+Esher and Walton,Liberal Democrat,,True,E14001230
+Stretford and Urmston,Labour,,True,E14001528
+Morecambe and Lunesdale,Labour,,True,E14001372
+Exeter,Labour,,True,E14001231
+Hitchin,Labour,,True,E14001289
+Isle of Wight East,Labour,,True,E14001303
+Wokingham,Liberal Democrat,,True,E14001593
+"Stone, Great Wyrley and Penkridge",Conservative,,True,E14001523
+Tooting,Labour,,True,E14001550
+Lancaster and Wyre,Labour,,True,E14001318
+Harrogate and Knaresborough,Liberal Democrat,,True,E14001269
+Norwich South,Labour,,True,E14001409
+Glastonbury and Somerton,Liberal Democrat,,True,E14001247
+Newton Aycliffe and Spennymoor,Labour,,True,E14001382
+Rother Valley,Labour,,True,E14001451
+Hartlepool,Reform UK,,True,E14001272
+Selby,Labour,,True,E14001464
+South Ribble,Labour,,True,E14001491
+Jarrow and Gateshead East,Labour,,True,E14001307
+St Neots and Mid Cambridgeshire,Liberal Democrat,,True,E14001512
+Exmouth and Exeter East,Conservative,,True,E14001232
+Clapham and Brixton Hill,Labour,,True,E14001175
+Richmond Park,Liberal Democrat,,True,E14001445
+South Basildon and East Thurrock,Conservative,,True,E14001480
+Makerfield,Labour,,True,E14001350
+Portsmouth North,Labour,,True,E14001431
+Leeds South,Labour,,True,E14001323
+Sittingbourne and Sheppey,Conservative,,True,E14001474
+Redcar,Labour,,True,E14001440
+Queen's Park and Maida Vale,Labour,,True,E14001435
+Suffolk Coastal,Conservative,,True,E14001530
+Finchley and Golders Green,Liberal Democrat,,True,E14001238
+Barnsley North,Reform UK,,True,E14001074
+Bracknell,Labour,,True,E14001117
+Newcastle-under-Lyme,Labour,,True,E14001380
+Mid Derbyshire,Conservative,,True,E14001362
+Sheffield Heeley,Labour,,True,E14001469
+Brighton Pavilion,Green,,True,E14001130
+Bournemouth East,Labour,,True,E14001115
+North East Cambridgeshire,Conservative,,True,E14001390
+Wigan,Labour,,True,E14001585
+Kensington and Bayswater,Labour,,True,E14001310
+Thurrock,Labour,,True,E14001546
+Salford,Labour,,True,E14001459
+City of Durham,Labour,,True,E14001173
+South Norfolk,Conservative,,True,E14001489
+York Outer,Labour,,True,E14001605
+Isle of Wight West,Labour,,True,E14001304
+Ellesmere Port and Bromborough,Labour,,True,E14001222
+Waveney Valley,Conservative,,True,E14001569
+Dunstable and Leighton Buzzard,Labour,,True,E14001206
+Cities of London and Westminster,Labour,,True,E14001172
+Lewisham East,Labour,,True,E14001331
+Hinckley and Bosworth,Conservative,,True,E14001288
+Bognor Regis and Littlehampton,Conservative,,True,E14001108
+Wellingborough and Rushden,Labour,,True,E14001571
+North Devon,Liberal Democrat,,True,E14001387
+Yeovil,Liberal Democrat,,True,E14001603
+Romford,Labour,,True,E14001448
+East Ham,Labour,,True,E14001213
+Fylde,Conservative,,True,E14001242
+Bolton North East,Labour,,True,E14001110
+Birmingham Selly Oak,Labour,,True,E14001099
+Ashfield,Labour,,True,E14001068
+Doncaster Central,Labour,,True,E14001198
+Witham,Conservative,,True,E14001590
+Wimbledon,Liberal Democrat,,True,E14001586
+North East Hertfordshire,Conservative,,True,E14001393
+Middlesbrough and Thornaby East,Labour,,True,E14001367
+Cambridge,Liberal Democrat,,True,E14001149
+Erith and Thamesmead,Labour,,True,E14001229
+Islington South and Finsbury,Labour,,True,E14001306
+Bromley and Biggin Hill,Labour,,True,E14001137
+North Norfolk,Liberal Democrat,,True,E14001396
+Runnymede and Weybridge,Conservative,,True,E14001456
+Surrey Heath,Liberal Democrat,,True,E14001532
+Worsley and Eccles,Labour,,True,E14001598
+Witney,Conservative,,True,E14001591
+Blackburn,Labour,,True,E14001102
+Whitehaven and Workington,Labour,,True,E14001583
+Clacton,Reform UK,,True,E14001174
+Castle Point,Conservative,,True,E14001154
+Grantham and Bourne,Conservative,,True,E14001253
+Leyton and Wanstead,Labour,,True,E14001334
+Erewash,Labour,,True,E14001228
+Buckingham and Bletchley,Labour,,True,E14001141
+Keighley and Ilkley,Labour,,True,E14001308
+Forest of Dean,Labour,,True,E14001240
+New Forest West,Conservative,,True,E14001374
+Reading West and Mid Berkshire,Conservative,,True,E14001439
+Barking,Labour,,True,E14001073
+Bexhill and Battle,Conservative,,True,E14001088
+Plymouth Moor View,Labour,,True,E14001426
+Poole,Conservative,,True,E14001429
+Colne Valley,Labour,,True,E14001177
+Newcastle upon Tyne Central and West,Labour,,True,E14001377
+Horsham,Conservative,,True,E14001294
+Wyre Forest,Labour,,True,E14001601
+Westmorland and Lonsdale,Liberal Democrat,,True,E14001580
+Blyth and Ashington,Labour,,True,E14001107
+Christchurch,Conservative,,True,E14001171
+Bethnal Green and Stepney,Labour,,True,E14001086
+Droitwich and Evesham,Conservative,,True,E14001203
+Plymouth Sutton and Devonport,Labour,,True,E14001427
+Stalybridge and Hyde,Labour,,True,E14001515
+Hornchurch and Upminster,Conservative,,True,E14001292
+Derbyshire Dales,Conservative,,True,E14001195
+North East Hampshire,Conservative,,True,E14001392
+Eastbourne,Liberal Democrat,,True,E14001219
+Beverley and Holderness,Conservative,,True,E14001087
+Richmond and Northallerton,Conservative,,True,E14001444
+Bootle,Labour,,True,E14001113
+Poplar and Limehouse,Labour,,True,E14001430
+Leeds North East,Labour,,True,E14001321
+Blaydon and Consett,Labour,,True,E14001106
