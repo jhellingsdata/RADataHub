@@ -1,0 +1,1239 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {"line": {"interpolate": "monotone"}},
+    "view": {
+      "stroke": "transparent",
+      "width": 400,
+      "height": 300,
+      "strokeOpacity": 0
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": false,
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15,
+      "labelExpr": "datum.value + '%'"
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    },
+    "axis": {"labelColor": "#676A86", "titleColor": "#676A86"},
+    "point": {"size": 40}
+  },
+  "hconcat": [
+    {
+      "layer": [
+        {
+          "mark": {"type": "point", "color": "#36B7B4", "filled": true},
+          "encoding": {
+            "x": {
+              "axis": {"titleX": 200},
+              "field": "return2",
+              "title": "Returns to Shares",
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {"format": "~s"},
+              "field": "total_compensation",
+              "title": "Total Compensation",
+              "type": "quantitative"
+            }
+          },
+          "height": 300,
+          "width": 250
+        },
+        {
+          "mark": {"type": "line", "color": "#E6224B"},
+          "encoding": {
+            "x": {
+              "axis": {"titleX": 200},
+              "field": "return2",
+              "title": "Returns to Shares",
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {"format": "~s"},
+              "field": "total_compensation",
+              "title": "Total Compensation",
+              "type": "quantitative"
+            }
+          },
+          "height": 300,
+          "transform": [{"on": "return2", "regression": "total_compensation"}],
+          "width": 250
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "mark": {"type": "point", "color": "#36B7B4", "filled": true},
+          "encoding": {
+            "x": {"field": "return2", "title": "", "type": "quantitative"},
+            "y": {
+              "axis": {"format": "~s"},
+              "field": "Bonus",
+              "title": "Bonus",
+              "type": "quantitative"
+            }
+          },
+          "height": 300,
+          "width": 250
+        },
+        {
+          "mark": {"type": "line", "color": "#E6224B"},
+          "encoding": {
+            "x": {"field": "return2", "title": "", "type": "quantitative"},
+            "y": {
+              "axis": {"format": "~s"},
+              "field": "Bonus",
+              "title": "Bonus",
+              "type": "quantitative"
+            }
+          },
+          "height": 300,
+          "transform": [{"on": "return2", "regression": "Bonus"}],
+          "width": 250
+        }
+      ]
+    }
+  ],
+  "data": {"name": "data-50ebebf330511ce5e6ba885237d64042"},
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-50ebebf330511ce5e6ba885237d64042": [
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 1862000,
+        "Bonus": 686000,
+        "return2": -13.5495488
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2433000,
+        "Bonus": 1064000,
+        "return2": 21.11942818
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4771520,
+        "Bonus": 787000,
+        "return2": 15.05854062
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 3603000,
+        "Bonus": 1046000,
+        "return2": -35.27794392
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2286000,
+        "Bonus": 1084000,
+        "return2": -19.35300697
+      },
+      {
+        "Year": 2023,
+        "total_return": 1,
+        "total_compensation": 4100000,
+        "Bonus": 1167000,
+        "return2": 54.25616037
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2273011,
+        "Bonus": 399085,
+        "return2": -25.3221384
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2064178,
+        "Bonus": 296017,
+        "return2": 31.32489253
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 5909000,
+        "Bonus": 1777000,
+        "return2": -19.45100396
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 8142000,
+        "Bonus": 3120000,
+        "return2": 17.36407676
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 5292000,
+        "Bonus": 1846000,
+        "return2": 23.59560415
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4836000,
+        "Bonus": 2020000,
+        "return2": 12.1815388
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 1673000,
+        "Bonus": 652000,
+        "return2": -29.48194234
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 1281000,
+        "Bonus": 648000,
+        "return2": 41.97730166
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 5523000,
+        "Bonus": 2001000,
+        "return2": 15.60770431
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 8579000,
+        "Bonus": 3127000,
+        "return2": 32.41401722
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 12718000,
+        "Bonus": 2839000,
+        "return2": -3.520090306
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 8579000,
+        "Bonus": 2490000,
+        "return2": 49.17158112
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 12718000,
+        "Bonus": 2613000,
+        "return2": 33.29875057
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 5197000,
+        "Bonus": 1949000,
+        "return2": -12.06738821
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4641000,
+        "Bonus": 1425000,
+        "return2": 1.641133547
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4936000,
+        "Bonus": 1186000,
+        "return2": 28.15142929
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4588000,
+        "Bonus": 1650000,
+        "return2": -23.45835625
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2738000,
+        "Bonus": 1151000,
+        "return2": -41.47322953
+      },
+      {
+        "Year": 2023,
+        "total_return": 1,
+        "total_compensation": 1756000,
+        "Bonus": 483000,
+        "return2": 52.85047716
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 1507155,
+        "Bonus": 787875,
+        "return2": 49.17158112
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 3636444,
+        "Bonus": 1875000,
+        "return2": -21.45607357
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 1237665,
+        "Bonus": 556640,
+        "return2": -32.35537269
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 1609673,
+        "Bonus": 668178,
+        "return2": 46.37572967
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4505100,
+        "Bonus": 1657500,
+        "return2": -2.392789714
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 6284900,
+        "Bonus": 1609900,
+        "return2": 18.01109004
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 5428000,
+        "Bonus": 1404000,
+        "return2": 49.17158112
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 8034000,
+        "Bonus": 1839000,
+        "return2": 2.612760471
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4289000,
+        "Bonus": 1298000,
+        "return2": -27.92806602
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4073000,
+        "Bonus": 911000,
+        "return2": -20.20471904
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4490000,
+        "Bonus": 1422000,
+        "return2": 36.96543549
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 8231000,
+        "Bonus": 1426000,
+        "return2": 49.51992295
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3299000,
+        "Bonus": 2090000,
+        "return2": 17.72177123
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 7494000,
+        "Bonus": 2190000,
+        "return2": 14.00016268
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4155280,
+        "Bonus": 1074686,
+        "return2": -33.78522276
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4419000,
+        "Bonus": 1339000,
+        "return2": 22.95859121
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4264000,
+        "Bonus": 1873000,
+        "return2": 7.393047303
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3697000,
+        "Bonus": 1653000,
+        "return2": -30.16394754
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 3106000,
+        "Bonus": 1008000,
+        "return2": 47.19552072
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 402000,
+        "Bonus": 79000,
+        "return2": -19.89059771
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3758000,
+        "Bonus": 889000,
+        "return2": -16.37230663
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4118000,
+        "Bonus": 943000,
+        "return2": 31.56315557
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 8579000,
+        "Bonus": 1982000,
+        "return2": -21.27756952
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 7371000,
+        "Bonus": 1199000,
+        "return2": 15.56270576
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2034000,
+        "Bonus": 1201000,
+        "return2": -41.61870503
+      },
+      {
+        "Year": 2023,
+        "total_return": 1,
+        "total_compensation": 2194000,
+        "Bonus": 1326000,
+        "return2": 57.11645102
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4733000,
+        "Bonus": 1110000,
+        "return2": -3.996598634
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4535000,
+        "Bonus": 3206000,
+        "return2": 23.47209922
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 6071000,
+        "Bonus": 3842000,
+        "return2": 49.17158112
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 5833000,
+        "Bonus": 3808500,
+        "return2": -6.134251164
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 8449000,
+        "Bonus": 3143000,
+        "return2": -7.347770216
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 12718000,
+        "Bonus": 3774000,
+        "return2": 4.941998545
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 1552833,
+        "Bonus": 554213,
+        "return2": 18.36500407
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 1940000,
+        "Bonus": 887000,
+        "return2": -37.7287222
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2335000,
+        "Bonus": 845000,
+        "return2": 16.77418076
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2350000,
+        "Bonus": 1014000,
+        "return2": 6.161829093
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 5763000,
+        "Bonus": 1880000,
+        "return2": -0.463845769
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 5562000,
+        "Bonus": 2195000,
+        "return2": 20.0096312
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 10644000,
+        "Bonus": 2063000,
+        "return2": 31.95964694
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2571000,
+        "Bonus": 1004000,
+        "return2": -35.8275235
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2517000,
+        "Bonus": 334000,
+        "return2": 49.47813643
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3026000,
+        "Bonus": 1608000,
+        "return2": -13.08253791
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 3526000,
+        "Bonus": 1624000,
+        "return2": 25.16149871
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 7851000,
+        "Bonus": 3842000,
+        "return2": -46.53130365
+      },
+      {
+        "Year": 2023,
+        "total_return": 1,
+        "total_compensation": 7267600,
+        "Bonus": 3808500,
+        "return2": 54.25298842
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3339000,
+        "Bonus": 1349000,
+        "return2": 1.352228304
+      },
+      {
+        "Year": 2023,
+        "total_return": 1,
+        "total_compensation": 3850000,
+        "Bonus": 1403000,
+        "return2": 52.61993695
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 6215000,
+        "Bonus": 2613000,
+        "return2": -3.360544563
+      },
+      {
+        "Year": 2023,
+        "total_return": 1,
+        "total_compensation": 8542000,
+        "Bonus": 2357000,
+        "return2": 59.02733693
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 5432000,
+        "Bonus": 2185000,
+        "return2": 37.87134801
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 8601000,
+        "Bonus": 1919000,
+        "return2": -5.770424182
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3710000,
+        "Bonus": 757000,
+        "return2": -24.40755446
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4103002,
+        "Bonus": 785593,
+        "return2": 20.54977731
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4192423,
+        "Bonus": 789473,
+        "return2": 28.29373809
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3080000,
+        "Bonus": 415000,
+        "return2": -26.60071575
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 5088000,
+        "Bonus": 1417000,
+        "return2": 8.004918135
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 1887800,
+        "Bonus": 634400,
+        "return2": -26.48175919
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 1964400,
+        "Bonus": 265200,
+        "return2": 8.787554574
+      },
+      {
+        "Year": 2024,
+        "total_return": null,
+        "total_compensation": 5073100,
+        "Bonus": 364900,
+        "return2": 0
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2000000,
+        "Bonus": 1085000,
+        "return2": -15.31232503
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2657000,
+        "Bonus": 615000,
+        "return2": 20.81696328
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3767000,
+        "Bonus": 1338000,
+        "return2": -0.414410583
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 3681000,
+        "Bonus": 1277000,
+        "return2": 10.85677568
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4854000,
+        "Bonus": 1433000,
+        "return2": 4.274232551
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 5127000,
+        "Bonus": 1582000,
+        "return2": 31.77133412
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4196451,
+        "Bonus": 1798556,
+        "return2": -19.7364473
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 3226277,
+        "Bonus": 575934,
+        "return2": 14.49622452
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 1173229,
+        "Bonus": 255000,
+        "return2": 2.42105369
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2746000,
+        "Bonus": 1748000,
+        "return2": 31.33111129
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 1000000,
+        "Bonus": 464000,
+        "return2": -14.55781053
+      },
+      {
+        "Year": 2023,
+        "total_return": 1,
+        "total_compensation": 1025000,
+        "Bonus": 463000,
+        "return2": 59.02733693
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 6614000,
+        "Bonus": 1116000,
+        "return2": -1.351339788
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 7248000,
+        "Bonus": 1118000,
+        "return2": 11.976158
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2299942,
+        "Bonus": 245000,
+        "return2": -12.10154114
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4148000,
+        "Bonus": 1236000,
+        "return2": -24.96927881
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2529000,
+        "Bonus": 701000,
+        "return2": 43.9714703
+      },
+      {
+        "Year": 2024,
+        "total_return": null,
+        "total_compensation": 4520000,
+        "Bonus": 1362000,
+        "return2": 0
+      },
+      {
+        "Year": 2022,
+        "total_return": -1,
+        "total_compensation": 2004000,
+        "Bonus": 1191000,
+        "return2": -60.31495495
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 1957000,
+        "Bonus": 1106000,
+        "return2": 22.95719845
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3112000,
+        "Bonus": 1053000,
+        "return2": 0.924753016
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2901000,
+        "Bonus": 1227000,
+        "return2": -2.7812282
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 12535658,
+        "Bonus": 2638000,
+        "return2": -20.08706508
+      },
+      {
+        "Year": 2022,
+        "total_return": -1,
+        "total_compensation": 2143563,
+        "Bonus": 1087021,
+        "return2": -57.38795518
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2252464,
+        "Bonus": 1271887,
+        "return2": 14.13311422
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 8579000,
+        "Bonus": 2046000,
+        "return2": -2.724070549
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 12718000,
+        "Bonus": 2396000,
+        "return2": 38.85297027
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 5235000,
+        "Bonus": 694000,
+        "return2": 31.92337893
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 6074000,
+        "Bonus": 860000,
+        "return2": 7.029458036
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 3619373,
+        "Bonus": 1845900,
+        "return2": -2.844160764
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 1346649,
+        "Bonus": 717269,
+        "return2": 14.32085757
+      },
+      {
+        "Year": 2023,
+        "total_return": 1,
+        "total_compensation": 12718000,
+        "Bonus": 3808500,
+        "return2": 59.02733693
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4324300,
+        "Bonus": 1599900,
+        "return2": -11.92313862
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 3339900,
+        "Bonus": 981000,
+        "return2": -12.07594501
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3599000,
+        "Bonus": 1675000,
+        "return2": -15.81913012
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4947000,
+        "Bonus": 1700000,
+        "return2": 45.87378838
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4696000,
+        "Bonus": 3842000,
+        "return2": -25.09136543
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 6190000,
+        "Bonus": 3808500,
+        "return2": 3.544513775
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2524000,
+        "Bonus": 1237000,
+        "return2": -10.43421764
+      },
+      {
+        "Year": 2023,
+        "total_return": 1,
+        "total_compensation": 4000000,
+        "Bonus": 993000,
+        "return2": 59.02733693
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3915000,
+        "Bonus": 1065000,
+        "return2": -45.75621166
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2883000,
+        "Bonus": 958000,
+        "return2": 20.25640134
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 7940000,
+        "Bonus": 2710000,
+        "return2": 15.03875447
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 5534000,
+        "Bonus": 1674000,
+        "return2": -21.45784498
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2580000,
+        "Bonus": 1618000,
+        "return2": -9.733917373
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4190000,
+        "Bonus": 1677000,
+        "return2": 1.459111933
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 5955246,
+        "Bonus": 3842000,
+        "return2": -11.83306694
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4658252,
+        "Bonus": 3080526,
+        "return2": 0.043901527
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2156266,
+        "Bonus": 388413,
+        "return2": -33.080459
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 795172,
+        "Bonus": 66181,
+        "return2": 0.42564555
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4655000,
+        "Bonus": 3292000,
+        "return2": 9.166329831
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4627000,
+        "Bonus": 3281000,
+        "return2": 14.68351132
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 6408000,
+        "Bonus": 1499000,
+        "return2": 41.38737727
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 7837000,
+        "Bonus": 1462000,
+        "return2": 9.416827674
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 3948400,
+        "Bonus": 737600,
+        "return2": -6.652967309
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 3209300,
+        "Bonus": 358800,
+        "return2": 1.37689235
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 4745000,
+        "Bonus": 3206000,
+        "return2": -18.80182487
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4443000,
+        "Bonus": 2730000,
+        "return2": 34.74331481
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 1629000,
+        "Bonus": 730000,
+        "return2": -36.91722856
+      },
+      {
+        "Year": 2023,
+        "total_return": 1,
+        "total_compensation": 2185000,
+        "Bonus": 1054000,
+        "return2": 56.95714759
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4670406,
+        "Bonus": 1862000,
+        "return2": -5.760624993
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 858555,
+        "Bonus": 207270,
+        "return2": -17.15353444
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 1377895,
+        "Bonus": 332482,
+        "return2": 18.84415338
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 875490,
+        "Bonus": 210000,
+        "return2": 11.81863185
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2687000,
+        "Bonus": 968000,
+        "return2": -19.41635568
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 3689000,
+        "Bonus": 1206000,
+        "return2": -9.726707387
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 2512408,
+        "Bonus": 941186,
+        "return2": -0.891190879
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 2774255,
+        "Bonus": 1022519,
+        "return2": 15.2815243
+      },
+      {
+        "Year": 2022,
+        "total_return": 0,
+        "total_compensation": 6682000,
+        "Bonus": 2395000,
+        "return2": -23.64008604
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 4498000,
+        "Bonus": 1289000,
+        "return2": -3.678537431
+      },
+      {
+        "Year": 2023,
+        "total_return": 0,
+        "total_compensation": 3070372,
+        "Bonus": 179000,
+        "return2": 45.90891814
+      }
+    ]
+  }
+}
