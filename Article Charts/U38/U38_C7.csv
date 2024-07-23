@@ -1,0 +1,651 @@
+Constituency_Name,ID,Incumbent,Turnout
+Aberafan Maesteg,W07000081,Labour,0.512124554191672
+Aberdeen North,S14000060,Other,0.547434813707003
+Aberdeen South,S14000061,Other,0.605342215256008
+Aberdeenshire North and Moray East,S14000062,Conservative,0.534209974120445
+Airdrie and Shotts,S14000063,Other,0.520675944333996
+Aldershot,E14001063,Conservative,0.632371523480753
+Aldridge-Brownhills,E14001064,Conservative,0.560364869669867
+Alloa and Grangemouth,S14000064,Other,0.56017435826472
+Altrincham and Sale West,E14001065,Conservative,0.695917980901886
+Alyn and Deeside,W07000082,Labour,0.573247902767686
+Amber Valley,E14001066,Conservative,0.602208849557522
+Angus and Perthshire Glens,S14000065,Other,0.614861179648339
+Arbroath and Broughty Ferry,S14000066,Other,0.574365317016014
+"Argyll, Bute and South Lochaber",S14000067,Other,0.625629297000293
+Arundel and South Downs,E14001067,Conservative,0.711149219216878
+Ashfield,E14001068,Other,0.571219868517166
+Ashford,E14001069,Conservative,0.638715905691676
+Ashton-under-Lyne,E14001070,Labour,0.490619552284236
+Aylesbury,E14001071,Conservative,0.660267597440372
+"Ayr, Carrick and Cumnock",S14000107,Other,0.568105805126497
+Banbury,E14001072,Conservative,0.688818037544858
+Bangor Aberconwy,W07000083,Conservative,0.59119032752455
+Barking,E14001073,Labour,0.507880593689956
+Barnsley North,E14001074,Labour,0.480428158449879
+Barnsley South,E14001075,Labour,0.462237799093496
+Barrow and Furness,E14001076,Conservative,0.551166403404566
+Basildon and Billericay,E14001077,Conservative,0.547114672762459
+Basingstoke,E14001078,Conservative,0.635807916937054
+Bassetlaw,E14001079,Conservative,0.592269014028744
+Bath,E14001080,Other,0.657145587853798
+Bathgate and Linlithgow,S14000068,Other,0.587090020935101
+Battersea,E14001081,Labour,0.654380185965059
+Beaconsfield,E14001082,Conservative,0.6599737260596
+Beckenham and Penge,E14001083,Conservative,0.68152691680261
+Bedford,E14001084,Labour,0.580279157389964
+Belfast East,N05000001,Other,0.609424053884354
+Belfast North,N05000002,Other,0.566776887294737
+Belfast South and Mid Down,N05000003,Other,0.604226291366807
+Belfast West,N05000004,Other,0.552592427802728
+Bermondsey and Old Southwark,E14001085,Labour,0.532605308631483
+"Berwickshire, Roxburgh and Selkirk",S14000108,Conservative,0.623374884518055
+Bethnal Green and Stepney,E14001086,Labour,0.605805194805195
+Beverley and Holderness,E14001087,Conservative,0.631444966386318
+Bexhill and Battle,E14001088,Conservative,0.673778379827569
+Bexleyheath and Crayford,E14001089,Conservative,0.621332990221307
+Bicester and Woodstock,E14001090,Conservative,0.713449544673173
+Birkenhead,E14001091,Labour,0.56553604908812
+Birmingham Edgbaston,E14001092,Labour,0.524539619362615
+Birmingham Erdington,E14001093,Labour,0.439757468512543
+Birmingham Hall Green and Moseley,E14001094,Labour,0.549029440097122
+Birmingham Hodge Hill and Solihull North,E14001095,Labour,0.44377421283898
+Birmingham Ladywood,E14001096,Labour,0.477626167003983
+Birmingham Northfield,E14001097,Conservative,0.51239062095995
+Birmingham Perry Barr,E14001098,Labour,0.506104148660328
+Birmingham Selly Oak,E14001099,Labour,0.503677000720981
+Birmingham Yardley,E14001100,Labour,0.502614306374458
+Bishop Auckland,E14001101,Conservative,0.570366399074479
+Blackburn,E14001102,Labour,0.550916612359391
+Blackley and Middleton South,E14001103,Labour,0.439089316987741
+Blackpool North and Fleetwood,E14001104,Conservative,0.554538702318425
+Blackpool South,E14001105,Labour,0.462462699320372
+Blaenau Gwent and Rhymney,W07000084,Labour,0.420968218461149
+Blaydon and Consett,E14001106,Conservative,0.601684648603965
+Blyth and Ashington,E14001107,Labour,0.535453003233844
+Bognor Regis and Littlehampton,E14001108,Conservative,0.62125089303111
+Bolsover,E14001109,Conservative,0.568211033743974
+Bolton North East,E14001110,Conservative,0.562957673331602
+Bolton South and Walkden,E14001111,Labour,0.487743673728142
+Bolton West,E14001112,Conservative,0.6183431542461
+Bootle,E14001113,Labour,0.517062531584967
+Boston and Skegness,E14001114,Conservative,0.533664881407804
+Bournemouth East,E14001115,Conservative,0.613750973719815
+Bournemouth West,E14001116,Conservative,0.546758398757178
+Bracknell,E14001117,Conservative,0.624040884308227
+Bradford East,E14001118,Labour,0.515814275814276
+Bradford South,E14001119,Labour,0.466102412187897
+Bradford West,E14001120,Labour,0.520376659462797
+Braintree,E14001121,Conservative,0.647987100526024
+"Brecon, Radnor and Cwm Tawe",W07000085,Conservative,0.645486944101618
+Brent East,E14001122,Labour,0.498181338956247
+Brent West,E14001123,Labour,0.541124465427723
+Brentford and Isleworth,E14001124,Labour,0.592686696178327
+Brentwood and Ongar,E14001125,Conservative,0.644968440156398
+Bridgend,W07000086,Conservative,0.584626254062456
+Bridgwater,E14001126,Conservative,0.56188915959562
+Bridlington and The Wolds,E14001127,Conservative,0.592226314119805
+Brigg and Immingham,E14001128,Conservative,0.59345507343497
+Brighton Kemptown and Peacehaven,E14001129,Labour,0.582351678236599
+Brighton Pavilion,E14001130,Other,0.691516336071419
+Bristol Central,E14001131,Labour,0.617497543679781
+Bristol East,E14001132,Labour,0.607208702064897
+Bristol North East,E14001133,Labour,0.601621939162953
+Bristol North West,E14001134,Labour,0.631181381295339
+Bristol South,E14001135,Labour,0.581061904251901
+Broadland and Fakenham,E14001136,Conservative,0.679125461204
+Bromley and Biggin Hill,E14001137,Conservative,0.66443238944588
+Bromsgrove,E14001138,Conservative,0.669344665028883
+Broxbourne,E14001139,Conservative,0.569247488536062
+Broxtowe,E14001140,Conservative,0.660189619243455
+Buckingham and Bletchley,E14001141,Conservative,0.646909456303297
+Burnley,E14001142,Conservative,0.52652579670184
+Burton and Uttoxeter,E14001143,Conservative,0.604651470978002
+Bury North,E14001144,Conservative,0.591099741588646
+Bury South,E14001145,Other,0.565886484892356
+Bury St Edmunds and Stowmarket,E14001146,Conservative,0.672698433679202
+Caerfyrddin,W07000087,Other,0.627436952244679
+Caerphilly,W07000088,Labour,0.527671202627729
+"Caithness, Sutherland and Easter Ross",S14000069,Other,0.612560360767829
+Calder Valley,E14001147,Conservative,0.65284851356153
+Camborne and Redruth,E14001148,Conservative,0.649535123966942
+Cambridge,E14001149,Labour,0.580209481808159
+Cannock Chase,E14001150,Conservative,0.568296684395756
+Canterbury,E14001151,Labour,0.625584444827084
+Cardiff East,W07000089,Labour,0.539903122973103
+Cardiff North,W07000090,Labour,0.667289824719227
+Cardiff South and Penarth,W07000091,Labour,0.542085818262325
+Cardiff West,W07000092,Labour,0.60525781978985
+Carlisle,E14001152,Conservative,0.60603943691675
+Carshalton and Wallington,E14001153,Conservative,0.641467940347742
+Castle Point,E14001154,Conservative,0.572917107285366
+Central Ayrshire,S14000109,Other,0.59357399790768
+Central Devon,E14001155,Conservative,0.727055013539073
+Central Suffolk and North Ipswich,E14001156,Other,0.653660940580118
+Ceredigion Preseli,W07000093,Other,0.625170462984216
+Chatham and Aylesford,E14001157,Conservative,0.54576429716729
+Cheadle,E14001158,Conservative,0.687644866147069
+Chelmsford,E14001159,Conservative,0.663353127370707
+Chelsea and Fulham,E14001160,Conservative,0.616048430329101
+Cheltenham,E14001161,Conservative,0.657998193699198
+Chesham and Amersham,E14001162,Other,0.73432674802778
+Chester North and Neston,E14001163,Labour,0.617943506574308
+Chester South and Eddisbury,E14001164,Conservative,0.729225425494963
+Chesterfield,E14001165,Labour,0.587582364752128
+Chichester,E14001166,Conservative,0.676362925812545
+Chingford and Woodford Green,E14001167,Conservative,0.641040210367747
+Chippenham,E14001168,Conservative,0.69104510942385
+Chipping Barnet,E14001169,Conservative,0.667554832189219
+Chorley,E14001170,Other,0.455476880163073
+Christchurch,E14001171,Conservative,0.661121819045225
+Cities of London and Westminster,E14001172,Conservative,0.536163522012579
+City of Durham,E14001173,Labour,0.557465901918274
+Clacton,E14001174,Conservative,0.605036927816322
+Clapham and Brixton Hill,E14001175,Labour,0.566406042936655
+Clwyd East,W07000094,Other,0.625983375875385
+Clwyd North,W07000095,Conservative,0.546644780039396
+Coatbridge and Bellshill,S14000070,Other,0.534169114706166
+Colchester,E14001176,Conservative,0.584347305545072
+Colne Valley,E14001177,Conservative,0.64628485136609
+Congleton,E14001178,Conservative,0.717753021364339
+Corby and East Northamptonshire,E14001179,Conservative,0.646127586386616
+Coventry East,E14001180,Labour,0.504353513469321
+Coventry North West,E14001181,Labour,0.572374065449197
+Coventry South,E14001182,Labour,0.601862024282374
+Cowdenbeath and Kirkcaldy,S14000071,Other,0.58032959376644
+Cramlington and Killingworth,E14001183,Conservative,0.619332833071833
+Crawley,E14001184,Conservative,0.613088681729039
+Crewe and Nantwich,E14001185,Conservative,0.619090718295818
+Croydon East,E14001186,Labour,0.581039471239349
+Croydon South,E14001187,Conservative,0.69020561635985
+Croydon West,E14001188,Labour,0.538355081059707
+Cumbernauld and Kirkintilloch,S14000072,Other,0.580569291148925
+Dagenham and Rainham,E14001189,Labour,0.527890583617423
+Darlington,E14001190,Conservative,0.601567157823013
+Dartford,E14001191,Conservative,0.617477237397291
+Daventry,E14001192,Conservative,0.693528789244699
+Derby North,E14001193,Conservative,0.569299905392621
+Derby South,E14001194,Labour,0.518947645940583
+Derbyshire Dales,E14001195,Conservative,0.717743403093722
+Dewsbury and Batley,E14001196,Conservative,0.542106911969926
+Didcot and Wantage,E14001197,Conservative,0.736093926515681
+Doncaster Central,E14001198,Labour,0.505872785206714
+Doncaster East and the Isle of Axholme,E14001199,Conservative,0.558127594026785
+Doncaster North,E14001200,Labour,0.432149876636139
+Dorking and Horley,E14001201,Conservative,0.710567856990486
+Dover and Deal,E14001202,Other,0.629820051413882
+Droitwich and Evesham,E14001203,Conservative,0.667280920034972
+Dudley,E14001204,Conservative,0.503580321595881
+Dulwich and West Norwood,E14001205,Labour,0.610625185025702
+Dumfries and Galloway,S14000073,Conservative,0.595540116831245
+"Dumfriesshire, Clydesdale and Tweeddale",S14000074,Conservative,0.625038875851735
+Dundee Central,S14000075,Other,0.515923397699806
+Dunfermline and Dollar,S14000076,Other,0.629720749381407
+Dunstable and Leighton Buzzard,E14001206,Conservative,0.621650083030688
+Dwyfor Meirionnydd,W07000096,Other,0.556918919664153
+Ealing Central and Acton,E14001207,Labour,0.633549516571838
+Ealing North,E14001208,Labour,0.592340891964102
+Ealing Southall,E14001209,Labour,0.623506692415263
+Earley and Woodley,E14001210,Conservative,0.655137479845326
+Easington,E14001211,Labour,0.490041831446397
+East Antrim,N05000005,Other,0.567304392587509
+East Grinstead and Uckfield,E14001212,Conservative,0.696459174083697
+East Ham,E14001213,Labour,0.534427801754534
+East Hampshire,E14001214,Conservative,0.716219499992853
+East Kilbride and Strathaven,S14000077,Other,0.621426005508176
+East Londonderry,N05000006,Other,0.571600681317768
+East Renfrewshire,S14000021,Other,0.688427747090832
+East Surrey,E14001215,Conservative,0.67258185795338
+East Thanet,E14001216,Conservative,0.578845372001626
+East Wiltshire,E14001217,Conservative,0.66368532815818
+East Worthing and Shoreham,E14001218,Conservative,0.650412106114012
+Eastbourne,E14001219,Conservative,0.621982488202722
+Eastleigh,E14001220,Conservative,0.663313423451745
+Edinburgh East and Musselburgh,S14000078,Other,0.602007793408626
+Edinburgh North and Leith,S14000079,Other,0.644457470366028
+Edinburgh South,S14000080,Labour,0.65970695970696
+Edinburgh South West,S14000081,Other,0.622846620746096
+Edinburgh West,S14000082,Other,0.683901828656335
+Edmonton and Winchmore Hill,E14001221,Labour,0.545782139247912
+Ellesmere Port and Bromborough,E14001222,Labour,0.590817576414603
+Eltham and Chislehurst,E14001223,Labour,0.614270885290985
+Ely and East Cambridgeshire,E14001224,Conservative,0.686545445011078
+Enfield North,E14001225,Labour,0.566125169217953
+Epping Forest,E14001226,Conservative,0.560044532077851
+Epsom and Ewell,E14001227,Conservative,0.70955442194576
+Erewash,E14001228,Conservative,0.597421720890173
+Erith and Thamesmead,E14001229,Labour,0.526261599416119
+Esher and Walton,E14001230,Conservative,0.735262008733624
+Exeter,E14001231,Labour,0.560498096579421
+Exmouth and Exeter East,E14001232,Conservative,0.688786878204612
+Falkirk,S14000083,Other,0.567826075372667
+Fareham and Waterlooville,E14001233,Conservative,0.650643854821123
+Farnham and Bordon,E14001234,Conservative,0.726850201541035
+Faversham and Mid Kent,E14001235,Conservative,0.648959581046826
+Feltham and Heston,E14001236,Labour,0.516935633956345
+Fermanagh and South Tyrone,N05000007,Other,0.684270460726391
+Filton and Bradley Stoke,E14001237,Conservative,0.684352835674882
+Finchley and Golders Green,E14001238,Conservative,0.650585393540212
+Folkestone and Hythe,E14001239,Conservative,0.617597075246705
+Forest of Dean,E14001240,Conservative,0.672507341630541
+Foyle,N05000008,Other,0.54883388181428
+Frome and East Somerset,E14001241,Conservative,0.664662211265799
+Fylde,E14001242,Other,0.638496152514844
+Gainsborough,E14001243,Conservative,0.624548494983278
+Gateshead Central and Whickham,E14001244,Labour,0.566484491647181
+Gedling,E14001245,Conservative,0.642812850451877
+Gillingham and Rainham,E14001246,Conservative,0.556314316236427
+Glasgow East,S14000084,Other,0.508186614669955
+Glasgow North,S14000085,Other,0.474511678732414
+Glasgow North East,S14000086,Other,0.453120846403318
+Glasgow South,S14000087,Other,0.593995290423862
+Glasgow South West,S14000088,Other,0.50643892604109
+Glasgow West,S14000089,Other,0.550759844856382
+Glastonbury and Somerton,E14001247,Other,0.680454188388202
+Glenrothes and Mid Fife,S14000090,Other,0.518240743396335
+Gloucester,E14001248,Conservative,0.595762435621618
+Godalming and Ash,E14001249,Conservative,0.766061149315817
+Goole and Pocklington,E14001250,Conservative,0.651610621323866
+Gordon and Buchan,S14000091,Other,0.624277456647399
+Gorton and Denton,E14001251,Labour,0.492019486986246
+Gosport,E14001252,Conservative,0.600260293100877
+Gower,W07000097,Labour,0.614952930300387
+Grantham and Bourne,E14001253,Conservative,0.639993894909187
+Gravesham,E14001254,Conservative,0.593308264485494
+Great Grimsby and Cleethorpes,E14001255,Conservative,0.475262816353018
+Great Yarmouth,E14001256,Conservative,0.581474663584343
+Greenwich and Woolwich,E14001257,Labour,0.611809692942255
+Guildford,E14001258,Conservative,0.676699314809366
+Hackney North and Stoke Newington,E14001259,Labour,0.543215607220063
+Hackney South and Shoreditch,E14001260,Labour,0.554556697740601
+Halesowen,E14001261,Conservative,0.551847454475231
+Halifax,E14001262,Labour,0.539329157893325
+Hamble Valley,E14001263,Conservative,0.702244414969702
+Hamilton and Clyde Valley,S14000092,Other,0.564302667042118
+Hammersmith and Chiswick,E14001264,Labour,0.61569849891633
+Hampstead and Highgate,E14001265,Labour,0.654118724906362
+"Harborough, Oadby and Wigston",E14001266,Conservative,0.673519582943457
+Harlow,E14001267,Conservative,0.590059744961145
+Harpenden and Berkhamsted,E14001268,Conservative,0.758511900607245
+Harrogate and Knaresborough,E14001269,Conservative,0.686860158311346
+Harrow East,E14001270,Conservative,0.626181208141653
+Harrow West,E14001271,Labour,0.610869565217391
+Hartlepool,E14001272,Conservative,0.498553939462009
+Harwich and North Essex,E14001273,Conservative,0.641959966861755
+Hastings and Rye,E14001274,Conservative,0.608486259774282
+Havant,E14001275,Conservative,0.579748783772641
+Hayes and Harlington,E14001276,Labour,0.525604620217567
+Hazel Grove,E14001277,Other,0.63061926762726
+Hemel Hempstead,E14001278,Conservative,0.625680889695869
+Hendon,E14001279,Conservative,0.577039274924471
+Henley and Thame,E14001280,Conservative,0.752654829666129
+Hereford and South Herefordshire,E14001281,Conservative,0.640731107205624
+Herne Bay and Sandwich,E14001282,Conservative,0.642223917504077
+Hertford and Stortford,E14001283,Conservative,0.71633773674996
+Hertsmere,E14001284,Conservative,0.655331986458447
+Hexham,E14001285,Conservative,0.712529901839479
+Heywood and Middleton North,E14001286,Conservative,0.506506970780018
+High Peak,E14001287,Conservative,0.665305570578691
+Hinckley and Bosworth,E14001288,Conservative,0.631568516047197
+Hitchin,E14001289,Conservative,0.728172842245396
+Holborn and St Pancras,E14001290,Labour,0.51145412388208
+Honiton and Sidmouth,E14001291,Conservative,0.681167215760102
+Hornchurch and Upminster,E14001292,Conservative,0.609724713405599
+Hornsey and Friern Barnet,E14001293,Labour,0.689321901792673
+Horsham,E14001294,Conservative,0.72094412907081
+Houghton and Sunderland South,E14001295,Labour,0.520687278071875
+Hove and Portslade,E14001296,Labour,0.704079971787429
+Huddersfield,E14001297,Labour,0.528049550260376
+Huntingdon,E14001298,Conservative,0.688450853287472
+Hyndburn,E14001299,Conservative,0.511265724927964
+Ilford North,E14001300,Labour,0.62781854212415
+Ilford South,E14001301,Labour,0.555863093228921
+Inverclyde and Renfrewshire West,S14000093,Other,0.573006901644466
+"Inverness, Skye and West Ross-shire",S14000094,Other,0.624891096576206
+Ipswich,E14001302,Conservative,0.586751334584715
+Isle of Wight East,E14001303,Conservative,0.599911979579262
+Isle of Wight West,E14001304,Conservative,0.62446504343392
+Islington North,E14001305,Other,0.662511829119913
+Islington South and Finsbury,E14001306,Labour,0.563256702457019
+Jarrow and Gateshead East,E14001307,Labour,0.516524625207437
+Keighley and Ilkley,E14001308,Conservative,0.632960495654796
+Kenilworth and Southam,E14001309,Conservative,0.746245678856839
+Kensington and Bayswater,E14001310,Conservative,0.551566201632008
+Kettering,E14001311,Conservative,0.659519714296968
+Kilmarnock and Loudoun,S14000110,Other,0.567880108554699
+Kingston and Surbiton,E14001312,Other,0.671847235114706
+Kingston upon Hull East,E14001313,Labour,0.410564291812398
+Kingston upon Hull North and Cottingham,E14001314,Labour,0.502742013966517
+Kingston upon Hull West and Haltemprice,E14001315,Labour,0.513690612343752
+Kingswinford and South Staffordshire,E14001316,Conservative,0.628407700011127
+Knowsley,E14001317,Labour,0.50607907002864
+Lagan Valley,N05000009,Other,0.642993764083215
+Lancaster and Wyre,E14001318,Labour,0.573501173458502
+Leeds Central and Headingley,E14001319,Labour,0.419054061223407
+Leeds East,E14001320,Labour,0.522872693482012
+Leeds North East,E14001321,Labour,0.636370040577096
+Leeds North West,E14001322,Conservative,0.695141536441968
+Leeds South,E14001323,Labour,0.423922061932928
+Leeds South West and Morley,E14001324,Conservative,0.56334061869536
+Leeds West and Pudsey,E14001325,Labour,0.547801337697453
+Leicester East,E14001326,Other,0.610920028771333
+Leicester South,E14001327,Labour,0.589195431436337
+Leicester West,E14001328,Labour,0.485902152426971
+Leigh and Atherton,E14001329,Conservative,0.539135445176329
+Lewes,E14001330,Conservative,0.708114154825478
+Lewisham East,E14001331,Labour,0.566716871670432
+Lewisham North,E14001332,Labour,0.600878863735307
+Lewisham West and East Dulwich,E14001333,Labour,0.663967727168688
+Leyton and Wanstead,E14001334,Labour,0.613094069816347
+Lichfield,E14001335,Conservative,0.655226708654693
+Lincoln,E14001336,Conservative,0.568745952946255
+Liverpool Garston,E14001337,Labour,0.596714602398681
+Liverpool Riverside,E14001338,Labour,0.46155052239976
+Liverpool Walton,E14001339,Labour,0.518200081482418
+Liverpool Wavertree,E14001340,Labour,0.56017502391806
+Liverpool West Derby,E14001341,Labour,0.537339177152552
+Livingston,S14000095,Other,0.59426935616402
+Llanelli,W07000098,Labour,0.582931540167394
+Lothian East,S14000096,Other,0.671959824371905
+Loughborough,E14001342,Conservative,0.571824849124516
+Louth and Horncastle,E14001343,Conservative,0.611895891204466
+Lowestoft,E14001344,Conservative,0.56544134546487
+Luton North,E14001345,Labour,0.528826467938744
+Luton South and South Bedfordshire,E14001346,Labour,0.546775503226634
+Macclesfield,E14001347,Conservative,0.695720931458468
+Maidenhead,E14001348,Conservative,0.685093176156705
+Maidstone and Malling,E14001349,Conservative,0.634735372995457
+Makerfield,E14001350,Labour,0.526196792869558
+Maldon,E14001351,Conservative,0.649022059015027
+Manchester Central,E14001352,Labour,0.527479385481537
+Manchester Rusholme,E14001353,Labour,0.410697108583715
+Manchester Withington,E14001354,Labour,0.58272125562041
+Mansfield,E14001355,Conservative,0.550174076057847
+Melksham and Devizes,E14001356,Conservative,0.712905336730574
+Melton and Syston,E14001357,Conservative,0.642128045800461
+Meriden and Solihull East,E14001358,Conservative,0.593375645119996
+Merthyr Tydfil and Aberdare,W07000099,Labour,0.470757302319364
+Mid Bedfordshire,E14001359,Labour,0.691601159614205
+Mid Buckinghamshire,E14001360,Conservative,0.746830011074197
+Mid Cheshire,E14001361,Conservative,0.594897886062343
+Mid Derbyshire,E14001362,Conservative,0.678361989013341
+Mid Dorset and North Poole,E14001363,Conservative,0.666361617656954
+Mid Dunbartonshire,S14000097,Other,0.702246368127405
+Mid Leicestershire,E14001364,Conservative,0.630800939965605
+Mid Norfolk,E14001365,Conservative,0.645890796509992
+Mid Sussex,E14001366,Conservative,0.738052729914885
+Mid Ulster,N05000010,Other,0.648343652809085
+Mid and South Pembrokeshire,W07000100,Conservative,0.606990367091903
+Middlesbrough South and East Cleveland,E14001368,Conservative,0.543613417754084
+Middlesbrough and Thornaby East,E14001367,Labour,0.479593543530986
+Midlothian,S14000045,Other,0.620207835978093
+Milton Keynes Central,E14001369,Conservative,0.62221671794337
+Milton Keynes North,E14001370,Conservative,0.651047861795525
+Mitcham and Morden,E14001371,Labour,0.588667611899528
+Monmouthshire,W07000101,Conservative,0.699550088743963
+Montgomeryshire and Glyndwr,W07000102,Conservative,0.582824730878569
+"Moray West, Nairn and Strathspey",S14000098,Conservative,0.610648372837336
+Morecambe and Lunesdale,E14001372,Conservative,0.632022619673856
+"Motherwell, Wishaw and Carluke",S14000099,Other,0.539644348571587
+Na h-Eileanan an Iar,S14000027,Other,0.638806252065921
+Neath and Swansea East,W07000103,Labour,0.537273274881199
+New Forest East,E14001373,Conservative,0.61268168456985
+New Forest West,E14001374,Conservative,0.652551085073723
+Newark,E14001375,Conservative,0.699011480425743
+Newbury,E14001376,Conservative,0.68308413954852
+Newcastle upon Tyne Central and West,E14001377,Labour,0.540871043682971
+Newcastle upon Tyne East and Wallsend,E14001378,Labour,0.550517073170732
+Newcastle upon Tyne North,E14001379,Labour,0.635491418637178
+Newcastle-under-Lyme,E14001380,Conservative,0.565769368082828
+Newport East,W07000104,Labour,0.505928386664741
+Newport West and Islwyn,W07000105,Labour,0.550292520397723
+Newry and Armagh,N05000011,Other,0.615968358248978
+Newton Abbot,E14001381,Conservative,0.657821152475465
+Newton Aycliffe and Spennymoor,E14001382,Conservative,0.558857767991136
+Normanton and Hemsworth,E14001383,Labour,0.482158964291399
+North Antrim,N05000012,Other,0.578725497084241
+North Ayrshire and Arran,S14000048,Other,0.574305593303256
+North Bedfordshire,E14001384,Conservative,0.675598474822783
+North Cornwall,E14001385,Conservative,0.69375216568489
+North Cotswolds,E14001386,Conservative,0.708298667418741
+North Devon,E14001387,Conservative,0.672513243084167
+North Dorset,E14001388,Conservative,0.688998599342662
+North Down,N05000013,Other,0.614895188320173
+North Durham,E14001389,Labour,0.568768045539758
+North East Cambridgeshire,E14001390,Conservative,0.553286444651583
+North East Derbyshire,E14001391,Conservative,0.633998673006746
+North East Fife,S14000100,Other,0.606483847158349
+North East Hampshire,E14001392,Conservative,0.757918860666248
+North East Hertfordshire,E14001393,Conservative,0.683418131660789
+North East Somerset and Hanham,E14001394,Conservative,0.699260049512399
+North Herefordshire,E14001395,Conservative,0.710384517730697
+North Norfolk,E14001396,Conservative,0.665210198108005
+North Northumberland,E14001397,Conservative,0.673315780041632
+North Shropshire,E14001398,Other,0.643643253906453
+North Somerset,E14001399,Conservative,0.72693103308411
+North Warwickshire and Bedworth,E14001400,Conservative,0.582817282368852
+North West Cambridgeshire,E14001401,Conservative,0.603948012398717
+North West Essex,E14001402,Conservative,0.712978500262192
+North West Hampshire,E14001403,Conservative,0.66868849007947
+North West Leicestershire,E14001404,Other,0.644421742533799
+North West Norfolk,E14001405,Conservative,0.592632978723404
+Northampton North,E14001406,Conservative,0.552256547752698
+Northampton South,E14001407,Conservative,0.613938919342208
+Norwich North,E14001408,Conservative,0.640598535854761
+Norwich South,E14001409,Labour,0.615203066806728
+Nottingham East,E14001410,Labour,0.483239741394188
+Nottingham North and Kimberley,E14001411,Labour,0.469798027242837
+Nottingham South,E14001412,Labour,0.432186234817814
+Nuneaton,E14001413,Conservative,0.585952939503803
+Old Bexley and Sidcup,E14001414,Conservative,0.640943525707442
+Oldham East and Saddleworth,E14001415,Labour,0.548858172253654
+"Oldham West, Chadderton and Royton",E14001416,Labour,0.519970882816818
+Orkney and Shetland,S14000051,Other,0.59407305306685
+Orpington,E14001417,Conservative,0.643738385658996
+Ossett and Denby Dale,E14001418,Conservative,0.612794189538376
+Oxford East,E14001419,Labour,0.543601718920562
+Oxford West and Abingdon,E14001420,Other,0.638825620798845
+Paisley and Renfrewshire North,S14000101,Other,0.59362891580046
+Paisley and Renfrewshire South,S14000102,Other,0.591336857032358
+Peckham,E14001421,Labour,0.545085422052377
+Pendle and Clitheroe,E14001422,Conservative,0.607660415123276
+Penistone and Stocksbridge,E14001423,Conservative,0.61595471930734
+Penrith and Solway,E14001424,Conservative,0.642348800834202
+Perth and Kinross-shire,S14000103,Other,0.656145178197065
+Peterborough,E14001425,Conservative,0.57935882002961
+Plymouth Moor View,E14001426,Conservative,0.584044263948322
+Plymouth Sutton and Devonport,E14001427,Labour,0.572760051704198
+"Pontefract, Castleford and Knottingley",E14001428,Labour,0.494247501752553
+Pontypridd,W07000106,Labour,0.533989666815833
+Poole,E14001429,Conservative,0.616598763892353
+Poplar and Limehouse,E14001430,Labour,0.567850265122537
+Portsmouth North,E14001431,Conservative,0.578934914537052
+Portsmouth South,E14001432,Labour,0.524261645994101
+Preston,E14001433,Labour,0.548254873468045
+Putney,E14001434,Labour,0.585109732889747
+Queen's Park and Maida Vale,E14001435,Labour,0.509500903582439
+Rawmarsh and Conisbrough,E14001436,Labour,0.482468123861567
+Rayleigh and Wickford,E14001437,Conservative,0.627803512077674
+Reading Central,E14001438,Labour,0.63536888178107
+Reading West and Mid Berkshire,E14001439,Conservative,0.665023786054087
+Redcar,E14001440,Conservative,0.535531536078283
+Redditch,E14001441,Conservative,0.606041103531128
+Reigate,E14001442,Conservative,0.698209853031955
+Rhondda and Ogmore,W07000107,Labour,0.486778960534008
+Ribble Valley,E14001443,Conservative,0.6845762109668
+Richmond Park,E14001445,Other,0.686554633047696
+Richmond and Northallerton,E14001444,Conservative,0.667079071813483
+Rochdale,E14001446,Other,0.553551752514052
+Rochester and Strood,E14001447,Conservative,0.590367957868478
+Romford,E14001448,Conservative,0.597409466974095
+Romsey and Southampton North,E14001449,Conservative,0.677588005038534
+Rossendale and Darwen,E14001450,Conservative,0.598152641668789
+Rother Valley,E14001451,Conservative,0.592841673315855
+Rotherham,E14001452,Labour,0.490171876036897
+Rugby,E14001453,Conservative,0.674958335055025
+"Ruislip, Northwood and Pinner",E14001454,Conservative,0.652519122048553
+Runcorn and Helsby,E14001455,Labour,0.595278365045807
+Runnymede and Weybridge,E14001456,Conservative,0.654029656537179
+Rushcliffe,E14001457,Conservative,0.758083785167583
+Rutherglen,S14000104,Labour,0.593252527509356
+Rutland and Stamford,E14001458,Conservative,0.685496161661775
+Salford,E14001459,Labour,0.55015311283238
+Salisbury,E14001460,Conservative,0.714287748070955
+Scarborough and Whitby,E14001461,Conservative,0.598697571146192
+Scunthorpe,E14001462,Conservative,0.525741134656291
+Sefton Central,E14001463,Labour,0.634803200171247
+Selby,E14001464,Labour,0.658391407284547
+Sevenoaks,E14001465,Conservative,0.677202649150426
+Sheffield Brightside and Hillsborough,E14001466,Labour,0.444275796160441
+Sheffield Central,E14001467,Labour,0.451407321192852
+Sheffield Hallam,E14001468,Labour,0.673317066169083
+Sheffield Heeley,E14001469,Labour,0.51526523172595
+Sheffield South East,E14001470,Labour,0.469294045104496
+Sherwood Forest,E14001471,Conservative,0.636504971062017
+Shipley,E14001472,Conservative,0.65190633645995
+Shrewsbury,E14001473,Conservative,0.686194918750582
+Sittingbourne and Sheppey,E14001474,Conservative,0.533481736051446
+Skipton and Ripon,E14001475,Conservative,0.6963443549858
+Sleaford and North Hykeham,E14001476,Conservative,0.661828836195149
+Slough,E14001477,Labour,0.574840277870017
+Smethwick,E14001478,Labour,0.493222838682492
+Solihull West and Shirley,E14001479,Conservative,0.664573202716305
+South Antrim,N05000014,Other,0.598888981938978
+South Basildon and East Thurrock,E14001480,Conservative,0.539387905403562
+South Cambridgeshire,E14001481,Conservative,0.727107731439775
+South Cotswolds,E14001482,Conservative,0.717587319014616
+South Derbyshire,E14001483,Conservative,0.642355551810342
+South Devon,E14001484,Conservative,0.683544656930438
+South Dorset,E14001485,Conservative,0.639835594989562
+South Down,N05000015,Other,0.630371175388731
+South East Cornwall,E14001486,Conservative,0.687066105333594
+South Holland and The Deepings,E14001487,Conservative,0.603238813223184
+South Leicestershire,E14001488,Conservative,0.679046460586509
+South Norfolk,E14001489,Conservative,0.709924538568381
+South Northamptonshire,E14001490,Conservative,0.7014172816929
+South Ribble,E14001491,Conservative,0.648627636091019
+South Shields,E14001492,Labour,0.528131946934385
+South Shropshire,E14001493,Conservative,0.670522107121531
+South Suffolk,E14001494,Conservative,0.686661038412832
+South West Devon,E14001495,Conservative,0.693131310450969
+South West Hertfordshire,E14001496,Conservative,0.674390652951699
+South West Norfolk,E14001497,Conservative,0.617068527918782
+South West Wiltshire,E14001498,Conservative,0.64524604827326
+Southampton Itchen,E14001499,Conservative,0.527415107415107
+Southampton Test,E14001500,Labour,0.511792452830189
+Southend East and Rochford,E14001501,Conservative,0.56575455816475
+Southend West and Leigh,E14001502,Conservative,0.611371446422993
+Southgate and Wood Green,E14001503,Labour,0.600665491753689
+Southport,E14001504,Conservative,0.607526156833136
+Spelthorne,E14001505,Conservative,0.633304525563466
+Spen Valley,E14001506,Labour,0.56891463093572
+St Albans,E14001507,Other,0.72817821418998
+St Austell and Newquay,E14001508,Conservative,0.626560300328484
+St Helens North,E14001509,Other,0.5319786546095
+St Helens South and Whiston,E14001510,Labour,0.53617999069597
+St Ives,E14001511,Conservative,0.686179696749255
+St Neots and Mid Cambridgeshire,E14001512,Conservative,0.707934510502149
+Stafford,E14001513,Conservative,0.652267604236075
+Staffordshire Moorlands,E14001514,Conservative,0.617603012280176
+Stalybridge and Hyde,E14001515,Labour,0.509927698964781
+Stevenage,E14001516,Conservative,0.607005826346455
+Stirling and Strathallan,S14000105,Other,0.646452316642427
+Stockport,E14001517,Labour,0.58423945752919
+Stockton North,E14001518,Labour,0.535992203958211
+Stockton West,E14001519,Conservative,0.693758201631768
+Stoke-on-Trent Central,E14001520,Conservative,0.500198440822112
+Stoke-on-Trent North,E14001521,Conservative,0.523481474055084
+Stoke-on-Trent South,E14001522,Conservative,0.586301212928356
+"Stone, Great Wyrley and Penkridge",E14001523,Conservative,0.604941938586442
+Stourbridge,E14001524,Conservative,0.570990836197022
+Strangford,N05000016,Other,0.555287569573284
+Stratford and Bow,E14001525,Labour,0.58815962301453
+Stratford-on-Avon,E14001526,Conservative,0.731599160081781
+Streatham and Croydon North,E14001527,Labour,0.585838264299803
+Stretford and Urmston,E14001528,Labour,0.628339616456319
+Stroud,E14001529,Conservative,0.724219334024053
+Suffolk Coastal,E14001530,Conservative,0.680552688438407
+Sunderland Central,E14001531,Labour,0.54970559101915
+Surrey Heath,E14001532,Conservative,0.674733498058595
+Sussex Weald,E14001533,Conservative,0.701748127006778
+Sutton Coldfield,E14001535,Conservative,0.648034430977153
+Sutton and Cheam,E14001534,Conservative,0.667835699455698
+Swansea West,W07000108,Labour,0.477898997480298
+Swindon North,E14001536,Conservative,0.61201723875116
+Swindon South,E14001537,Conservative,0.618121101727659
+Tamworth,E14001538,Labour,0.460159687143555
+Tatton,E14001539,Conservative,0.687190553099102
+Taunton and Wellington,E14001540,Conservative,0.661336769714263
+Telford,E14001541,Other,0.575542618132489
+Tewkesbury,E14001542,Conservative,0.6701875017259
+The Wrekin,E14001543,Conservative,0.656921844424307
+Thirsk and Malton,E14001544,Conservative,0.649896245252731
+Thornbury and Yate,E14001545,Conservative,0.712177220257557
+Thurrock,E14001546,Conservative,0.512059116255607
+Tipton and Wednesbury,E14001547,Conservative,0.431454890273639
+Tiverton and Minehead,E14001548,Conservative,0.670502195428426
+Tonbridge,E14001549,Conservative,0.68295065950171
+Tooting,E14001550,Labour,0.687696464292209
+Torbay,E14001551,Conservative,0.608843178157429
+Torfaen,W07000109,Labour,0.505801022793274
+Torridge and Tavistock,E14001552,Conservative,0.679393599101628
+Tottenham,E14001553,Labour,0.528485678180286
+Truro and Falmouth,E14001554,Conservative,0.685486730491231
+Tunbridge Wells,E14001555,Conservative,0.721284884262029
+Twickenham,E14001556,Other,0.706755919830278
+Tynemouth,E14001557,Labour,0.663060447536359
+Upper Bann,N05000017,Other,0.615286673855708
+Uxbridge and South Ruislip,E14001558,Conservative,0.611844034007622
+Vale of Glamorgan,W07000110,Conservative,0.650697185698464
+Vauxhall and Camberwell Green,E14001559,Labour,0.536266876205443
+Wakefield and Rothwell,E14001560,Labour,0.54964308890331
+Wallasey,E14001561,Labour,0.585128808826348
+Walsall and Bloxwich,E14001562,Conservative,0.496767558037026
+Walthamstow,E14001563,Labour,0.647113607179646
+Warrington North,E14001564,Labour,0.553434692467173
+Warrington South,E14001565,Conservative,0.648129542400083
+Warwick and Leamington,E14001566,Labour,0.652147401908802
+Washington and Gateshead South,E14001567,Labour,0.51579240682689
+Watford,E14001568,Conservative,0.629888347313534
+Waveney Valley,E14001569,Conservative,0.695676212078253
+Weald of Kent,E14001570,Conservative,0.723320496362858
+Wellingborough and Rushden,E14001571,Labour,0.573699930871669
+Wells and Mendip Hills,E14001572,Conservative,0.721160316710336
+Welwyn Hatfield,E14001573,Conservative,0.650097269739049
+West Aberdeenshire and Kincardine,S14000111,Conservative,0.664883070320776
+West Bromwich,E14001574,Conservative,0.505235022020331
+West Dorset,E14001575,Conservative,0.697771587743733
+West Dunbartonshire,S14000106,Other,0.563184702501209
+West Ham and Beckton,E14001576,Labour,0.514917127071823
+West Lancashire,E14001577,Labour,0.600119480801608
+West Suffolk,E14001578,Conservative,0.605445745838962
+West Tyrone,N05000018,Other,0.61878664287535
+West Worcestershire,E14001579,Conservative,0.713575510843185
+Westmorland and Lonsdale,E14001580,Other,0.68489532922209
+Weston-Super-Mare,E14001581,Conservative,0.59938915754645
+Wetherby and Easingwold,E14001582,Conservative,0.731355398502554
+Whitehaven and Workington,E14001583,Conservative,0.571111262519588
+Widnes and Halewood,E14001584,Labour,0.537867776758626
+Wigan,E14001585,Labour,0.540941976272038
+Wimbledon,E14001586,Conservative,0.736659476695114
+Winchester,E14001587,Conservative,0.745341290465806
+Windsor,E14001588,Conservative,0.608652371599989
+Wirral West,E14001589,Labour,0.692551923023598
+Witham,E14001590,Conservative,0.674131407865288
+Witney,E14001591,Conservative,0.722195254276006
+Woking,E14001592,Conservative,0.671132051800326
+Wokingham,E14001593,Conservative,0.768833202819107
+Wolverhampton North East,E14001594,Conservative,0.472526224644779
+Wolverhampton South East,E14001595,Labour,0.441064940212724
+Wolverhampton West,E14001596,Conservative,0.577534659752355
+Worcester,E14001597,Conservative,0.622713991992209
+Worsley and Eccles,E14001598,Labour,0.553117077293116
+Worthing West,E14001599,Conservative,0.668436160591404
+Wrexham,W07000111,Conservative,0.568922270446987
+Wycombe,E14001600,Conservative,0.621953768340091
+Wyre Forest,E14001601,Conservative,0.586353307797182
+Wythenshawe and Sale East,E14001602,Labour,0.508399267256499
+Yeovil,E14001603,Conservative,0.643631008730409
+Ynys Mon,W07000112,Conservative,0.62249356100353
+York Central,E14001604,Labour,0.578766665776044
+York Outer,E14001605,Conservative,0.702777777777778

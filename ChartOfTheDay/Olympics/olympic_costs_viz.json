@@ -1,0 +1,107 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+      "font": "Circular Std",
+      "mark": {"line": {"interpolate": "monotone"}},
+      "view": {"stroke": "transparent", "width": 500, "height": 300},
+      "title": {"anchor": "start", "subtitleColor": "#676A86"},
+     "legend": {
+        "orient": "none",
+        "direction": "horizontal",
+        "legendX": 380,
+        "legendY": -25,
+        "title": ""
+      },
+      "axisX": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "grid": false,
+        "labelAngle": 0,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.9,
+        "orient": "bottom",
+        "tickColor": "#676A86",
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "titleAlign": "center",
+        "titleAnchor": "middle",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleY": -15,
+        "labelExpr": "'$' + datum.value + 'B'"
+      },
+      "axisY": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.9,
+        "labelPadding": 5,
+        "tickColor": "#676A86",
+        "tickCount": 8,
+        "tickOpacity": 0.5,
+        "ticks": false,
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleX": 0,
+        "titleY": -7,
+        "labelExpr": "datum.value + '%'"
+      }
+    },
+    "title": {
+      "text": "Olympic Costs",
+      "anchor": "start",
+      "subtitle": ["Source: Budzier and Flyvbjerg 2024", ""]
+    },
+    "data": {
+      "values": [{"year": "1988", "city": "Calgary", "season": "Winter", "cost": "1.2", "overrun": "65", "flag": "🇨🇦1988"}, {"year": "1992", "city": "Albertville", "season": "Winter", "cost": "2.1", "overrun": "137", "flag": "🇫🇷1992"}, {"year": "1992", "city": "Barcelona", "season": "Summer", "cost": "11.6", "overrun": "266", "flag":"🇪🇸1992"}, {"year": "1994", "city": "Lillehammer", "season": "Winter", "cost": "3.4", "overrun": "277", "flag": "🇳🇴1994"}, {"year": "1996", "city": "Atlanta", "season": "Summer", "cost": "4.7", "overrun": "151", "flag":"🇺🇸1996"}, {"year": "1998", "city": "Nagano", "season": "Winter", "cost": "2.2", "overrun": "56", "flag":"🇯🇵1998"}, {"year": "2000", "city": "Sydney", "season": "Summer", "cost": "5.2", "overrun": "90", "flag":"🇦🇺2000"}, {"year": "2002", "city": "Salt Lake City", "season": "Winter", "cost": "2.7", "overrun": "24","flag":"🇺🇸2002"}, {"year": "2004", "city": "Athens", "season": "Summer", "cost": "3.1", "overrun": "49", "flag":"🇬🇷2004"}, {"year": "2006", "city": "Turin", "season": "Winter", "cost": "4.7", "overrun": "80", "flag":"🇮🇹2006"}, {"year": "2008", "city": "Beijing", "season": "Summer", "cost": "8.3", "overrun": "2", "flag":"🇨🇳2008"}, {"year": "2010", "city": "Vancouver", "season": "Winter", "cost": "3.2", "overrun": "13", "flag":"🇨🇦2010"}, {"year": "2012", "city": "London", "season": "Summer", "cost": "16.8", "overrun": "76", "flag":"🇬🇧2012"}, {"year": "2014", "city": "Sochi", "season": "Winter", "cost": "28.9", "overrun": "289", "flag":"🇷🇺2014"}, {"year": "2016", "city": "Rio de Janeiro", "season": "Summer", "cost": "23.6", "overrun": "352", "flag":"🇧🇷2016"}, {"year": "2018", "city": "Pyeongchang", "season": "Winter", "cost": "3.4", "overrun": "2", "flag":"🇰🇷2018"}, {"year": "2020", "city": "Tokyo", "season": "Summer", "cost": "13.7", "overrun": "128", "flag":"🇯🇵2020"}, {"year": "2022", "city": "Beijing", "season": "Winter", "cost": "8.7", "overrun": "149", "flag":"🇨🇳2022"}, {"year": "2024", "city": "Paris", "season": "Summer", "cost": "8.7", "overrun": "115", "flag":"🇫🇷2024"}]
+    },
+    "layer": [
+      {
+        "mark": {"type": "image", "filled":true, "color": "black"},
+        "encoding": {
+          "x": {
+            "field": "cost",
+            "title": "Cost",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "overrun",
+            "title": "Overrun",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 5,
+          "dy": {"expr": "datum.flag == '🇨🇦1988' ? -4: datum.flag == '🇯🇵1998' ? -2 : datum.flag == '🇬🇷2004' ? 2 :datum.flag == '🇦🇺2000' ? -2: 0"}
+        },
+        "encoding": {
+          "x": {"field": "cost", "type": "quantitative"},
+          "y": {"field": "overrun", "type": "quantitative"},
+          "color": {
+            "condition": {"test": "datum.city === 'Paris'", "value": "black"},
+            "field": "season",
+            "type": "nominal",
+            "scale": {"range": ["#e6224b", "#179fdb"]}
+          },
+          "text": 
+          {"field": "flag", "type": "nominal"},
+          "tooltip": [
+            {"field": "city", "type": "nominal"},
+            {"field": "cost", "type": "quantitative"},
+            {"field":"overrun", "type": "quantitative"}]
+        }
+      }
+    ]
+  }
