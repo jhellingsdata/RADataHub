@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Circular Std",
+    "mark": {"line": {"interpolate": "monotone"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "title": {"anchor": "start", "subtitleColor": "#676A86"},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.9,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.9,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "hconcat": [
+    {
+      "width": 350,
+      "height": 600,
+      "projection": {"type": "identity", "reflectY": true},
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Hexmaps/buc_const.geojson",
+        "format": {"property": "features"}
+      },
+      "transform": [
+        {
+          "lookup": "properties.PCON24CD",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Article%20Charts/Ashley_Election/data/fig2_turnout_replaced_codes.csv"
+            },
+            "key": "constituency_id",
+            "fields": ["name", "turnout_2024_percent"]
+          }
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "geoshape",
+            "color": "grey",
+            "tooltip": {"expr": "datum.properties"}
+          }
+        },
+        {
+          "mark": {"type": "geoshape"},
+          "encoding": {
+            "tooltip": [
+              {"field": "name"},
+              {"field": "turnout_2024_percent", "title": "Turnout"}
+            ],
+            "color": {
+              "field": "turnout_2024_percent",
+              "type": "quantitative",
+              "legend": {
+                "orient": "none",
+                "legendX": -35,
+                "legendY": 160,
+                "labelExpr": "datum.value + '%'",
+                "title": null
+              },
+              "scale": {
+                "range": [
+                  "rgb(111, 181, 219)",
+                  "rgb(73, 191, 161)",
+                  "rgb(230, 189, 81)",
+                  "rgb(235, 61, 75)"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

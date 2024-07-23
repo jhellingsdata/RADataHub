@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "title": {
+    "text": "Real Average Annual Earnings by Sector",
+    "anchor": "start",
+    "fontSize": 16,
+    "fontWeight": "normal",
+    "subtitle": ["CPIH Adjusted, base year = 2015, Source: ONS (2024)", ""],
+    "subtitleColor": "rgb(143, 143, 143)"
+  },
+  "width": "container",
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/public_pay_ons_data.csv"
+  },
+  "config": {
+    "font": "Circular Std",
+    "mark": {"line": {"interpolate": "monotone"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": false,
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7,
+      "labelExpr": "'£' + datum.value"
+    }
+  },
+  "layer": [
+    {"mark": {"type": "line"}},
+    {
+      "transform": [{"filter": "datum.year2 == 1709251200000"}],
+      "mark": {"type": "text", "align": "left", "dx": 5, "dy": 5},
+      "encoding": {"text": {"field": "sector"}}
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year2",
+      "type": "temporal",
+      "axis": {"title": "", "titleColor": "#122B39"}
+    },
+    "y": {
+      "field": "real_annual",
+      "type": "quantitative",
+      "scale": {"domain": [18000, 33000]},
+      "axis": {"title": ""}
+    },
+    "color": {"field": "sector", "type": "nominal", "legend": null}
+  }
+}

@@ -1,0 +1,651 @@
+GSScode,name_x,winner_2024,rqf4_rate,activity_rate,employment_rate,activity_rate_quintile,employment_rate_quintile,rqf4_rate_quintile,name_y,has_co-operative,has_iceland,has_lidl,has_marks and spencer,has_morrisons,has_sainsburys,has_tesco,has_waitrose,Con_win
+W07000081,Aberafan Maesteg,Lab,30.2,70.3,67.8,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Aberafan Maesteg,True,True,True,False,True,False,True,False,False
+E14001259,Hackney North and Stoke Newington,Lab,72.0,79.3,67.6,Third Quintile (77.5%-80.6%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Hackney North and Stoke Newington,True,True,False,False,True,True,True,False,False
+S14000060,Aberdeen North,SNP,58.7,79.2,75.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Aberdeen North,True,True,True,True,True,True,True,False,False
+E14001415,Oldham East and Saddleworth,Lab,34.5,82.3,80.4,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Oldham East and Saddleworth,True,True,False,False,True,False,True,False,False
+S14000061,Aberdeen South,SNP,63.7,77.5,73.5,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Aberdeen South,True,True,True,True,True,True,True,False,False
+E14001064,Aldridge-Brownhills,Con,36.5,85.8,80.5,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Aldridge-Brownhills,True,True,False,True,True,False,True,True,True
+E14001086,Bethnal Green and Stepney,Lab,48.9,67.2,64.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Bethnal Green and Stepney,True,True,False,False,False,True,True,False,False
+E14001094,Birmingham Hall Green and Moseley,Lab,68.8,77.4,70.9,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Birmingham Hall Green and Moseley,True,True,True,True,False,True,True,True,False
+W07000082,Alyn and Deeside,Lab,43.6,83.6,81.3,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Alyn and Deeside,True,True,True,True,True,True,True,False,False
+E14001550,Tooting,Lab,81.4,88.9,86.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Tooting,True,True,True,True,False,True,True,False,False
+E14001455,Runcorn and Helsby,Lab,37.5,73.6,68.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Runcorn and Helsby,True,True,True,False,True,True,True,False,False
+S14000065,Angus and Perthshire Glens,SNP,50.8,68.9,67.3,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Angus and Perthshire Glens,True,False,True,False,False,True,True,False,False
+E14001434,Putney,Lab,72.5,84.2,80.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Putney,True,False,True,True,False,True,True,True,False
+E14001068,Ashfield,RUK,24.2,64.9,59.0,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Ashfield,True,True,True,True,True,False,True,False,False
+S14000067,"Argyll, Bute and South Lochaber",SNP,47.0,72.9,70.4,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),"Argyll, Bute and South Lochaber",True,False,True,True,True,False,True,False,False
+E14001493,South Shropshire,Con,40.4,83.5,80.5,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),South Shropshire,True,False,False,True,False,True,True,False,True
+E14001067,Arundel and South Downs,Con,63.2,78.5,72.6,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Arundel and South Downs,True,False,False,True,True,True,True,True,True
+E14001192,Daventry,Con,50.8,76.7,73.7,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),Daventry,True,False,False,False,True,False,True,True,True
+W07000097,Gower,Lab,51.0,79.2,77.2,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Gower,True,True,True,True,True,True,True,False,False
+E14001070,Ashton-under-Lyne,Lab,26.8,71.3,68.4,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Ashton-under-Lyne,True,True,True,True,True,True,True,False,False
+E14001357,Melton and Syston,Con,40.7,82.9,82.9,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Melton and Syston,True,True,True,True,True,True,True,False,True
+E14001343,Louth and Horncastle,Con,20.3,79.4,79.4,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Louth and Horncastle,True,False,True,False,True,True,True,False,True
+E14001417,Orpington,Con,54.1,82.0,80.5,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Orpington,True,True,True,True,True,True,True,True,True
+E14001074,Barnsley North,Lab,33.0,73.8,71.6,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Barnsley North,True,True,True,True,True,True,True,False,False
+E14001402,North West Essex,Con,59.3,81.8,74.6,Fourth Quintile (80.6%-84.2%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),North West Essex,True,False,False,True,True,False,True,True,True
+E14001075,Barnsley South,Lab,24.1,71.1,66.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Barnsley South,True,False,True,False,True,False,True,False,False
+E14001077,Basildon and Billericay,Con,15.6,76.5,69.0,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Basildon and Billericay,True,True,True,True,True,True,True,True,True
+E14001579,West Worcestershire,Con,66.7,92.3,85.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),West Worcestershire,True,True,True,True,True,True,True,True,True
+E14001080,Bath,LD,59.6,81.6,79.0,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Bath,True,False,True,True,True,True,True,True,False
+E14001390,North East Cambridgeshire,Con,32.2,71.9,67.8,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),North East Cambridgeshire,True,True,True,False,True,True,True,False,True
+E14001081,Battersea,Lab,81.7,92.4,86.1,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Battersea,True,False,True,True,False,True,True,True,False
+E14001340,Liverpool Wavertree,Lab,60.7,73.7,70.8,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Liverpool Wavertree,True,True,True,False,True,False,True,False,False
+E14001082,Beaconsfield,Con,64.1,85.6,83.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Beaconsfield,True,False,True,True,True,True,True,True,True
+E14001084,Bedford,Lab,56.8,86.8,81.5,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Bedford,True,True,True,True,True,True,True,True,False
+N05000001,Belfast East,DUP,,,,,,,Belfast East,True,True,True,True,False,True,True,False,False
+N05000018,West Tyrone,SF,,,,,,,West Tyrone,True,True,True,True,False,False,False,False,False
+N05000002,Belfast North,SF,,,,,,,Belfast North,True,True,True,True,False,False,True,False,False
+E14001430,Poplar and Limehouse,Lab,59.0,76.9,70.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Poplar and Limehouse,True,True,True,True,True,True,True,True,False
+N05000003,Belfast South and Mid Down,SDLP,,,,,,,Belfast South and Mid Down,True,True,False,True,False,True,True,False,False
+N05000004,Belfast West,SF,,,,,,,Belfast West,True,True,True,False,False,True,True,False,False
+E14001323,Leeds South,Lab,44.9,77.9,74.2,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Leeds South,True,True,True,True,True,True,True,False,False
+E14001085,Bermondsey and Old Southwark,Lab,63.3,81.4,78.9,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Bermondsey and Old Southwark,True,True,False,True,False,True,True,True,False
+S14000108,"Berwickshire, Roxburgh and Selkirk",Con,,,,,,,"Berwickshire, Roxburgh and Selkirk",True,True,True,True,True,True,True,False,True
+E14001470,Sheffield South East,Lab,24.8,62.5,58.8,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Sheffield South East,True,True,True,True,True,True,True,False,False
+E14001087,Beverley and Holderness,Con,40.9,74.8,72.6,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Beverley and Holderness,True,False,True,True,True,True,True,False,True
+E14001358,Meriden and Solihull East,Con,37.4,78.8,75.8,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Meriden and Solihull East,True,True,False,True,False,True,True,True,True
+E14001088,Bexhill and Battle,Con,49.9,65.0,63.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Bexhill and Battle,True,True,True,True,True,True,True,False,True
+E14001270,Harrow East,Con,59.3,75.5,74.3,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Harrow East,False,True,True,False,True,True,True,True,True
+E14001091,Birkenhead,Lab,38.1,69.0,67.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Birkenhead,True,True,True,True,True,True,True,False,False
+E14001092,Birmingham Edgbaston,Lab,57.9,80.0,77.2,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Birmingham Edgbaston,True,True,True,True,True,True,True,True,False
+E14001468,Sheffield Hallam,Lab,59.2,77.3,75.6,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Sheffield Hallam,True,False,True,False,True,True,True,False,False
+E14001093,Birmingham Erdington,Lab,26.6,69.8,63.3,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Birmingham Erdington,True,True,True,False,False,True,True,False,False
+E14001095,Birmingham Hodge Hill and Solihull North,Lab,25.7,59.5,52.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Birmingham Hodge Hill and Solihull North,True,True,True,True,True,False,True,False,False
+E14001096,Birmingham Ladywood,Lab,58.2,66.1,62.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Birmingham Ladywood,True,True,True,True,True,True,True,False,False
+S14000111,West Aberdeenshire and Kincardine,Con,,,,,,,West Aberdeenshire and Kincardine,True,False,False,True,True,False,True,False,True
+E14001514,Staffordshire Moorlands,Con,32.5,76.3,73.8,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Staffordshire Moorlands,True,True,True,False,True,True,False,False,True
+E14001100,Birmingham Yardley,Lab,33.3,60.7,60.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Birmingham Yardley,True,True,True,True,True,False,True,False,False
+E14001103,Blackley and Middleton South,Lab,38.8,77.9,71.9,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Blackley and Middleton South,False,True,True,False,True,True,True,False,False
+E14001233,Fareham and Waterlooville,Con,31.2,77.4,74.6,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Fareham and Waterlooville,True,True,True,True,True,True,True,False,True
+E14001105,Blackpool South,Lab,34.0,70.6,68.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Blackpool South,True,True,True,True,True,True,True,False,False
+W07000084,Blaenau Gwent and Rhymney,Lab,35.6,75.6,70.0,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Blaenau Gwent and Rhymney,True,True,True,False,True,False,True,False,False
+E14001106,Blaydon and Consett,Lab,44.8,75.4,73.7,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Blaydon and Consett,True,True,True,False,True,False,True,False,False
+E14001107,Blyth and Ashington,Lab,31.4,67.1,62.8,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Blyth and Ashington,True,True,True,False,True,False,True,False,False
+E14001111,Bolton South and Walkden,Lab,38.0,69.4,55.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Bolton South and Walkden,True,True,True,True,True,True,True,False,False
+E14001113,Bootle,Lab,38.7,75.1,74.4,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Bootle,True,True,True,False,False,False,True,False,False
+W07000107,Rhondda and Ogmore,Lab,27.8,71.9,70.3,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Rhondda and Ogmore,True,True,True,False,True,False,False,False,False
+E14001118,Bradford East,Lab,31.5,70.2,68.0,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Bradford East,True,True,True,False,True,True,True,False,False
+E14001119,Bradford South,Lab,25.2,77.0,71.2,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Bradford South,True,True,False,False,True,False,True,False,False
+E14001125,Brentwood and Ongar,Con,43.8,82.5,82.5,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Brentwood and Ongar,True,True,False,True,True,True,True,True,True
+E14001120,Bradford West,Lab,32.8,77.3,65.3,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Bradford West,True,False,False,True,True,True,True,False,False
+E14001320,Leeds East,Lab,34.7,58.8,52.4,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Leeds East,True,True,True,True,True,True,True,False,False
+E14001121,Braintree,Con,39.1,76.2,70.5,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Braintree,True,True,True,True,True,True,True,False,True
+E14001122,Brent East,Lab,43.4,71.1,69.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Brent East,True,True,False,True,True,True,True,False,False
+E14001124,Brentford and Isleworth,Lab,51.1,85.5,84.0,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Brentford and Isleworth,True,True,True,True,True,True,True,False,False
+E14001341,Liverpool West Derby,Lab,29.1,78.2,69.7,Third Quintile (77.5%-80.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Liverpool West Derby,True,True,True,True,True,True,True,False,False
+E14001123,Brent West,Lab,57.3,80.6,80.6,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Brent West,True,True,True,True,False,True,True,False,False
+W07000086,Bridgend,Lab,45.7,70.2,68.2,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Bridgend,True,True,True,True,True,True,True,False,False
+E14001128,Brigg and Immingham,Con,41.6,79.1,76.0,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Brigg and Immingham,True,False,True,False,True,True,True,False,True
+E14001557,Tynemouth,Lab,52.2,77.9,76.1,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Tynemouth,True,True,True,True,True,True,True,False,False
+N05000006,East Londonderry,DUP,,,,,,,East Londonderry,False,True,True,True,False,True,True,False,False
+E14001339,Liverpool Walton,Lab,35.5,71.9,69.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Liverpool Walton,False,True,True,True,True,True,True,False,False
+S14000051,Orkney and Shetland,LD,36.9,86.2,86.2,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Orkney and Shetland,True,False,True,False,False,False,True,False,False
+E14001132,Bristol East,Lab,49.9,82.4,79.9,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Bristol East,True,True,True,True,True,True,True,False,False
+E14001133,Bristol North East,Lab,39.3,77.9,74.7,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Bristol North East,True,True,True,True,True,True,True,False,False
+E14001494,South Suffolk,Con,30.6,75.2,69.7,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),South Suffolk,True,True,False,False,True,True,True,True,True
+E14001134,Bristol North West,Lab,60.1,84.3,81.8,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Bristol North West,True,True,True,True,True,True,True,True,False
+E14001135,Bristol South,Lab,53.3,81.3,76.9,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Bristol South,True,True,True,True,True,True,True,False,False
+E14001136,Broadland and Fakenham,Con,32.7,74.2,73.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Broadland and Fakenham,True,False,True,True,True,False,True,True,True
+S14000100,North East Fife,LD,57.6,77.9,75.2,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),North East Fife,True,True,True,True,True,True,True,False,False
+E14001452,Rotherham,Lab,25.9,63.4,58.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Rotherham,True,True,True,True,True,True,True,False,False
+E14001503,Southgate and Wood Green,Lab,47.6,72.8,71.5,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Southgate and Wood Green,False,True,True,True,True,True,True,False,False
+E14001171,Christchurch,Con,33.9,76.9,76.9,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Christchurch,True,True,True,True,True,True,True,True,True
+E14001145,Bury South,Lab,52.9,74.9,71.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),Bury South,True,True,True,True,True,True,True,False,False
+E14001225,Enfield North,Lab,43.7,67.1,67.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Enfield North,True,True,True,True,True,True,True,True,False
+W07000088,Caerphilly,Lab,45.1,77.0,74.9,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Caerphilly,True,True,True,False,True,True,True,False,False
+S14000069,"Caithness, Sutherland and Easter Ross",LD,56.0,78.9,78.9,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),"Caithness, Sutherland and Easter Ross",True,False,True,False,True,False,True,False,False
+E14001149,Cambridge,Lab,66.7,80.1,74.4,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Cambridge,True,True,True,True,False,True,True,True,False
+E14001386,North Cotswolds,Con,37.2,75.2,73.8,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),North Cotswolds,True,False,False,True,True,False,True,False,True
+E14001151,Canterbury,Lab,61.7,68.2,62.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Canterbury,True,True,False,True,True,True,True,True,False
+W07000089,Cardiff East,Lab,57.0,85.1,81.7,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Cardiff East,True,True,True,False,True,True,True,False,False
+W07000090,Cardiff North,Lab,53.7,78.0,74.8,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Cardiff North,True,True,True,True,True,True,True,True,False
+W07000091,Cardiff South and Penarth,Lab,56.3,84.1,81.1,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Cardiff South and Penarth,True,False,True,True,True,True,True,False,False
+E14001507,St Albans,LD,63.2,85.7,85.0,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),St Albans,True,True,False,True,True,True,True,True,False
+E14001428,"Pontefract, Castleford and Knottingley",Lab,29.1,86.2,84.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),"Pontefract, Castleford and Knottingley",True,True,True,True,True,True,True,False,False
+E14001305,Islington North,Ind,70.8,80.6,77.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Islington North,True,True,True,True,True,True,True,True,False
+E14001488,South Leicestershire,Con,39.0,88.0,84.5,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),South Leicestershire,True,True,False,True,True,True,True,True,True
+E14001154,Castle Point,Con,30.2,87.9,85.2,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),Castle Point,True,True,True,True,True,True,True,False,True
+E14001215,East Surrey,Con,45.5,81.9,81.1,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),East Surrey,True,False,False,True,True,True,True,True,True
+E14001155,Central Devon,Con,42.9,79.3,79.3,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Central Devon,True,False,True,True,True,False,True,True,True
+E14001552,Torridge and Tavistock,Con,45.0,79.4,79.4,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Torridge and Tavistock,True,False,True,True,True,False,True,True,True
+W07000093,Ceredigion Preseli,PC,44.4,71.0,67.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Ceredigion Preseli,True,True,True,True,True,True,True,False,False
+E14001563,Walthamstow,Lab,65.7,76.9,75.2,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Walthamstow,True,True,True,False,True,True,True,False,False
+E14001162,Chesham and Amersham,LD,58.8,87.7,83.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Chesham and Amersham,True,False,False,True,True,True,True,True,False
+E14001165,Chesterfield,Lab,40.1,72.3,71.1,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Chesterfield,True,True,True,True,True,True,True,False,False
+E14001163,Chester North and Neston,Lab,67.5,85.1,82.9,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Chester North and Neston,True,True,True,True,True,True,True,True,False
+E14001331,Lewisham East,Lab,52.1,79.1,69.7,Third Quintile (77.5%-80.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Lewisham East,True,True,True,True,True,True,True,False,False
+E14001167,Chingford and Woodford Green,Con,57.5,74.2,71.8,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),Chingford and Woodford Green,True,True,False,False,True,True,True,True,True
+E14001577,West Lancashire,Lab,46.2,80.1,74.7,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),West Lancashire,True,True,True,True,True,False,True,False,False
+E14001312,Kingston and Surbiton,LD,70.5,88.6,82.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Kingston and Surbiton,True,True,True,True,True,True,True,True,False
+E14001170,Chorley,Spk,39.4,69.6,69.0,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Chorley,True,True,True,True,True,False,True,False,False
+E14001253,Grantham and Bourne,Con,29.7,71.4,64.8,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Grantham and Bourne,True,True,True,True,True,True,True,False,True
+E14001173,City of Durham,Lab,55.7,82.0,82.0,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),City of Durham,True,True,True,True,True,True,True,False,False
+E14001175,Clapham and Brixton Hill,Lab,75.0,80.1,74.7,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Clapham and Brixton Hill,True,True,True,True,False,True,True,True,False
+E14001212,East Grinstead and Uckfield,Con,40.7,74.3,71.7,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),East Grinstead and Uckfield,True,True,False,True,True,True,True,True,True
+W07000106,Pontypridd,Lab,37.9,72.5,67.2,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Pontypridd,True,True,True,True,True,True,True,False,False
+E14001250,Goole and Pocklington,Con,45.5,85.5,84.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Goole and Pocklington,True,True,True,False,True,True,True,False,True
+E14001477,Slough,Lab,50.9,85.5,80.8,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Slough,True,True,True,True,True,True,True,False,False
+E14001181,Coventry North West,Lab,52.3,85.4,79.7,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Coventry North West,True,False,False,False,True,False,True,False,False
+E14001252,Gosport,Con,33.3,84.7,83.8,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),Gosport,True,True,True,True,True,False,True,True,True
+E14001182,Coventry South,Lab,63.5,76.7,70.6,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Coventry South,True,True,True,True,True,True,True,False,False
+E14001419,Oxford East,Lab,71.6,80.5,79.2,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Oxford East,True,True,True,True,True,True,True,True,False
+E14001187,Croydon South,Con,67.4,89.3,88.3,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Croydon South,True,False,False,False,True,True,True,True,True
+E14001188,Croydon West,Lab,55.4,79.0,77.2,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Croydon West,True,True,True,True,True,True,True,False,False
+E14001284,Hertsmere,Con,45.7,70.2,70.2,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Hertsmere,True,True,True,True,True,True,True,True,True
+E14001200,Doncaster North,Lab,32.5,82.4,80.4,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Doncaster North,True,True,True,False,True,True,True,False,False
+E14001247,Glastonbury and Somerton,LD,30.5,84.3,81.2,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Glastonbury and Somerton,True,False,True,True,True,True,True,False,False
+E14001203,Droitwich and Evesham,Con,47.0,78.7,78.7,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Droitwich and Evesham,True,True,True,True,True,True,True,True,True
+E14001561,Wallasey,Lab,44.8,79.7,79.7,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Wallasey,True,True,True,False,True,False,True,False,False
+E14001337,Liverpool Garston,Lab,46.3,71.1,67.3,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Liverpool Garston,True,True,True,True,True,True,True,False,False
+E14001205,Dulwich and West Norwood,Lab,71.7,81.2,78.3,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Dulwich and West Norwood,True,True,False,True,False,True,True,False,False
+N05000008,Foyle,SDLP,,,,,,,Foyle,False,True,True,True,False,True,True,False,False
+S14000074,"Dumfriesshire, Clydesdale and Tweeddale",Con,52.4,79.0,77.4,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),"Dumfriesshire, Clydesdale and Tweeddale",True,False,False,True,True,True,True,True,True
+S14000075,Dundee Central,SNP,57.2,69.2,61.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Dundee Central,True,True,True,True,True,True,True,False,False
+E14001538,Tamworth,Lab,28.2,79.5,79.5,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Tamworth,True,True,True,True,True,True,True,False,False
+E14001223,Eltham and Chislehurst,Lab,67.9,84.3,82.5,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Eltham and Chislehurst,True,True,True,True,False,True,True,False,False
+W07000096,Dwyfor Meirionnydd,PC,44.2,77.2,74.3,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Dwyfor Meirionnydd,True,True,True,False,True,False,True,False,False
+E14001207,Ealing Central and Acton,Lab,90.7,77.7,70.1,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Ealing Central and Acton,True,True,True,True,True,True,True,True,False
+E14001208,Ealing North,Lab,45.3,86.8,80.0,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Ealing North,True,True,True,True,False,True,True,False,False
+E14001211,Easington,Lab,23.1,72.3,72.3,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Easington,True,True,True,True,True,True,True,False,False
+N05000005,East Antrim,DUP,,,,,,,East Antrim,False,True,True,True,False,True,True,False,False
+E14001559,Vauxhall and Camberwell Green,Lab,68.4,82.3,77.6,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Vauxhall and Camberwell Green,True,True,True,True,True,True,True,True,False
+E14001463,Sefton Central,Lab,43.5,81.0,81.0,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Sefton Central,True,True,True,True,True,True,True,True,False
+E14001213,East Ham,Lab,40.1,69.7,69.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),East Ham,False,True,True,False,False,True,True,False,False
+E14001214,East Hampshire,Con,67.4,85.4,82.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),East Hampshire,True,True,True,True,True,True,True,True,True
+E14001288,Hinckley and Bosworth,Con,41.4,87.2,84.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Hinckley and Bosworth,True,True,True,False,True,True,True,False,True
+E14001580,Westmorland and Lonsdale,LD,27.9,88.2,86.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),Westmorland and Lonsdale,True,True,True,True,True,True,True,False,False
+E14001217,East Wiltshire,Con,41.1,80.5,79.2,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),East Wiltshire,True,False,True,False,True,True,True,True,True
+S14000080,Edinburgh South,Lab,80.8,91.1,89.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Edinburgh South,True,True,True,True,True,True,True,True,False
+S14000082,Edinburgh West,LD,64.7,89.5,84.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Edinburgh West,True,True,True,True,True,True,True,True,False
+E14001221,Edmonton and Winchmore Hill,Lab,33.0,69.8,64.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Edmonton and Winchmore Hill,False,True,True,True,False,True,True,True,False
+E14001222,Ellesmere Port and Bromborough,Lab,47.8,74.6,69.3,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Ellesmere Port and Bromborough,True,True,True,True,True,True,True,False,False
+E14001291,Honiton and Sidmouth,LD,33.9,77.1,73.9,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Honiton and Sidmouth,True,True,True,True,True,True,True,True,False
+E14001226,Epping Forest,Con,58.8,80.5,79.7,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Epping Forest,True,True,True,True,True,True,True,True,True
+E14001229,Erith and Thamesmead,Lab,51.3,82.0,76.7,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Erith and Thamesmead,True,True,True,False,True,True,True,False,False
+E14001332,Lewisham North,Lab,68.6,75.7,70.0,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Lewisham North,True,True,True,True,True,True,True,False,False
+E14001437,Rayleigh and Wickford,Con,24.6,83.1,81.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Rayleigh and Wickford,True,True,False,True,True,True,True,False,True
+E14001365,Mid Norfolk,Con,29.8,70.1,67.9,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Mid Norfolk,True,True,True,True,True,True,True,False,True
+E14001414,Old Bexley and Sidcup,Con,47.5,83.6,78.6,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Old Bexley and Sidcup,True,True,True,False,True,False,True,True,True
+E14001235,Faversham and Mid Kent,Con,52.8,66.5,66.5,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Faversham and Mid Kent,True,False,False,True,True,True,True,False,True
+E14001384,North Bedfordshire,Con,41.5,87.4,82.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),North Bedfordshire,True,True,True,True,True,True,True,False,True
+E14001236,Feltham and Heston,Lab,51.2,80.3,80.3,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Feltham and Heston,False,True,True,True,False,True,True,False,False
+E14001466,Sheffield Brightside and Hillsborough,Lab,31.2,68.5,65.4,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Sheffield Brightside and Hillsborough,True,True,True,False,True,True,True,False,False
+E14001282,Herne Bay and Sandwich,Con,37.1,75.5,72.8,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Herne Bay and Sandwich,True,True,True,True,True,True,True,False,True
+E14001601,Wyre Forest,Con,32.7,81.5,81.5,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Wyre Forest,True,True,True,True,True,True,True,False,True
+E14001533,Sussex Weald,Con,34.8,81.1,80.2,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Sussex Weald,True,True,True,True,True,True,True,True,True
+E14001243,Gainsborough,Con,24.7,72.2,61.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Gainsborough,True,False,True,True,True,False,True,False,True
+E14001460,Salisbury,Con,56.9,81.1,81.1,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Salisbury,True,True,True,True,False,True,True,True,True
+E14001378,Newcastle upon Tyne East and Wallsend,Lab,45.8,77.4,72.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Newcastle upon Tyne East and Wallsend,True,True,True,True,True,True,True,False,False
+E14001349,Maidstone and Malling,Con,38.3,82.4,79.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Maidstone and Malling,True,True,True,True,True,True,True,True,True
+E14001249,Godalming and Ash,Con,60.1,78.0,78.0,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Godalming and Ash,True,False,False,True,False,True,True,True,True
+E14001251,Gorton and Denton,Lab,49.4,68.2,66.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Gorton and Denton,False,True,True,False,True,True,True,False,False
+E14001412,Nottingham South,Lab,31.5,69.8,65.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Nottingham South,True,True,True,True,True,True,True,False,False
+W07000098,Llanelli,Lab,42.4,71.5,67.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Llanelli,True,True,True,True,True,False,True,False,False
+E14001257,Greenwich and Woolwich,Lab,72.7,90.1,87.8,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Greenwich and Woolwich,True,True,True,True,True,True,True,True,False
+E14001469,Sheffield Heeley,Lab,54.2,80.3,78.7,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Sheffield Heeley,True,True,True,True,True,True,False,False,False
+E14001260,Hackney South and Shoreditch,Lab,68.8,87.8,86.1,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Hackney South and Shoreditch,True,True,True,True,False,True,True,False,False
+E14001321,Leeds North East,Lab,62.9,81.6,81.6,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Leeds North East,True,False,True,True,True,True,True,True,False
+E14001263,Hamble Valley,Con,50.8,89.0,81.8,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Hamble Valley,True,True,True,True,True,True,True,True,True
+E14001264,Hammersmith and Chiswick,Lab,81.3,78.6,76.3,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Hammersmith and Chiswick,True,True,True,True,False,True,True,True,False
+E14001265,Hampstead and Highgate,Lab,77.8,74.9,73.5,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Hampstead and Highgate,True,True,False,True,False,True,True,True,False
+E14001266,"Harborough, Oadby and Wigston",Con,45.2,84.7,81.6,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),"Harborough, Oadby and Wigston",True,True,True,True,True,True,True,True,True
+E14001315,Kingston upon Hull West and Haltemprice,Lab,33.9,79.5,79.5,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Kingston upon Hull West and Haltemprice,True,True,True,True,True,True,True,True,False
+E14001271,Harrow West,Lab,50.4,85.0,73.4,Highest Quintile (84.2%+),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),Harrow West,False,True,True,True,True,False,True,True,False
+W07000103,Neath and Swansea East,Lab,40.6,78.2,76.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Neath and Swansea East,True,True,True,True,True,False,True,False,False
+E14001273,Harwich and North Essex,Con,38.5,71.5,71.5,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Harwich and North Essex,True,True,True,False,True,False,True,False,True
+E14001275,Havant,Con,32.4,67.5,66.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Havant,True,True,True,True,True,True,True,True,True
+E14001276,Hayes and Harlington,Lab,48.8,64.1,59.4,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Hayes and Harlington,True,True,True,True,False,True,True,False,False
+E14001487,South Holland and The Deepings,Con,28.0,82.2,82.2,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),South Holland and The Deepings,True,True,True,True,True,True,True,False,True
+N05000015,South Down,SF,,,,,,,South Down,False,False,True,False,False,False,True,False,False
+E14001436,Rawmarsh and Conisbrough,Lab,27.7,70.2,66.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Rawmarsh and Conisbrough,True,True,False,True,True,True,True,False,False
+E14001281,Hereford and South Herefordshire,Con,41.0,79.6,77.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Hereford and South Herefordshire,True,True,True,True,True,True,True,True,True
+E14001433,Preston,Lab,37.9,79.9,79.2,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Preston,True,True,True,True,True,True,True,False,False
+E14001289,Hitchin,Lab,46.7,84.9,83.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Hitchin,True,True,False,True,True,True,True,True,False
+E14001290,Holborn and St Pancras,Lab,67.9,72.9,68.2,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Holborn and St Pancras,True,True,True,True,True,True,True,True,False
+E14001388,North Dorset,Con,40.1,79.7,77.8,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),North Dorset,True,True,True,True,True,False,True,True,True
+E14001292,Hornchurch and Upminster,Con,51.1,86.1,84.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Hornchurch and Upminster,True,True,True,True,False,True,True,True,True
+E14001293,Hornsey and Friern Barnet,Lab,72.7,83.7,79.4,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Hornsey and Friern Barnet,True,True,True,True,False,True,True,True,False
+E14001567,Washington and Gateshead South,Lab,29.3,77.4,71.8,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Washington and Gateshead South,True,True,True,True,True,True,False,False,False
+E14001295,Houghton and Sunderland South,Lab,24.1,72.4,69.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Houghton and Sunderland South,True,True,True,False,True,True,True,False,False
+E14001296,Hove and Portslade,Lab,56.9,86.1,81.4,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Hove and Portslade,True,True,True,True,True,True,True,True,False
+E14001544,Thirsk and Malton,Con,40.8,90.6,88.9,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Thirsk and Malton,True,False,True,True,True,True,True,False,True
+E14001300,Ilford North,Lab,63.8,74.9,72.7,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Ilford North,True,True,True,True,False,True,True,False,False
+E14001346,Luton South and South Bedfordshire,Lab,43.2,71.7,65.9,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Luton South and South Bedfordshire,True,True,True,True,False,True,True,False,False
+E14001306,Islington South and Finsbury,Lab,73.8,86.3,82.2,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Islington South and Finsbury,True,True,False,True,False,True,True,True,False
+E14001307,Jarrow and Gateshead East,Lab,32.2,77.0,71.3,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Jarrow and Gateshead East,True,True,True,False,True,False,True,False,False
+E14001308,Keighley and Ilkley,Con,51.5,76.7,76.7,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Keighley and Ilkley,True,True,False,True,True,True,True,False,True
+E14001309,Kenilworth and Southam,Con,55.1,81.8,80.6,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Kenilworth and Southam,True,True,False,False,False,True,True,True,True
+E14001313,Kingston upon Hull East,Lab,27.7,81.3,77.6,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Kingston upon Hull East,True,True,True,False,True,True,True,False,False
+E14001314,Kingston upon Hull North and Cottingham,Lab,48.3,69.0,67.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Kingston upon Hull North and Cottingham,True,True,True,True,True,True,True,False,False
+E14001316,Kingswinford and South Staffordshire,Con,52.9,85.9,80.3,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Kingswinford and South Staffordshire,True,False,True,False,True,True,True,False,True
+E14001318,Lancaster and Wyre,Lab,54.2,73.4,69.0,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Lancaster and Wyre,True,True,True,True,True,True,True,False,False
+E14001375,Newark,Con,47.4,78.1,77.0,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Newark,True,True,True,True,True,True,True,True,True
+E14001319,Leeds Central and Headingley,Lab,62.3,69.8,67.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Leeds Central and Headingley,True,True,False,True,True,True,True,False,False
+E14001476,Sleaford and North Hykeham,Con,49.0,84.7,83.3,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Sleaford and North Hykeham,True,True,True,False,True,True,True,False,True
+E14001338,Liverpool Riverside,Lab,46.4,78.3,64.7,Third Quintile (77.5%-80.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Liverpool Riverside,True,True,True,True,True,True,True,False,False
+E14001325,Leeds West and Pudsey,Lab,44.4,87.3,85.9,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Leeds West and Pudsey,True,False,True,True,True,True,True,False,False
+E14001328,Leicester West,Lab,36.3,76.2,70.6,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Leicester West,True,True,True,False,True,False,True,False,False
+W07000099,Merthyr Tydfil and Aberdare,Lab,31.7,75.9,72.5,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Merthyr Tydfil and Aberdare,True,True,True,True,False,False,True,False,False
+W07000105,Newport West and Islwyn,Lab,49.4,80.4,79.1,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Newport West and Islwyn,True,True,True,False,True,False,True,False,False
+E14001333,Lewisham West and East Dulwich,Lab,79.7,91.8,90.9,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Lewisham West and East Dulwich,True,False,True,True,False,True,True,False,False
+E14001602,Wythenshawe and Sale East,Lab,55.9,83.2,79.7,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Wythenshawe and Sale East,True,True,True,True,True,True,True,False,False
+E14001458,Rutland and Stamford,Con,35.6,80.2,76.7,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Rutland and Stamford,True,False,True,True,True,True,True,True,True
+E14001353,Manchester Rusholme,Lab,49.8,68.3,66.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Manchester Rusholme,True,True,True,True,True,True,True,False,False
+E14001571,Wellingborough and Rushden,Lab,23.7,80.8,80.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Wellingborough and Rushden,True,True,True,True,True,True,True,True,False
+E14001345,Luton North,Lab,41.1,78.4,76.3,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Luton North,True,True,True,True,True,True,True,False,False
+E14001553,Tottenham,Lab,55.9,81.3,76.2,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Tottenham,True,True,True,False,False,True,True,False,False
+E14001351,Maldon,Con,53.2,84.2,84.2,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Maldon,True,True,True,True,True,True,True,False,True
+E14001352,Manchester Central,Lab,56.8,76.5,69.8,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Manchester Central,True,True,True,True,True,True,True,False,False
+E14001354,Manchester Withington,Lab,73.7,76.3,75.3,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Manchester Withington,True,False,False,True,True,True,True,False,False
+E14001506,Spen Valley,Lab,33.8,71.7,69.9,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Spen Valley,True,False,True,True,True,True,True,False,False
+E14001492,South Shields,Lab,37.1,70.7,63.8,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),South Shields,True,True,True,False,True,True,True,False,False
+E14001409,Norwich South,Lab,72.9,89.1,83.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Norwich South,True,True,False,True,True,True,True,True,False
+E14001360,Mid Buckinghamshire,Con,52.7,86.5,86.5,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Mid Buckinghamshire,True,False,False,True,True,True,True,True,True
+E14001373,New Forest East,Con,41.6,82.7,80.1,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),New Forest East,True,False,True,False,True,True,True,True,True
+E14001560,Wakefield and Rothwell,Lab,32.0,79.2,72.6,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Wakefield and Rothwell,True,True,True,True,True,True,True,False,False
+E14001367,Middlesbrough and Thornaby East,Lab,37.8,73.4,66.4,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Middlesbrough and Thornaby East,True,True,True,True,True,True,True,False,False
+N05000017,Upper Bann,DUP,,,,,,,Upper Bann,False,True,True,True,False,False,True,False,False
+E14001459,Salford,Lab,62.8,82.5,78.2,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Salford,True,True,True,True,True,True,True,True,False
+E14001371,Mitcham and Morden,Lab,59.0,78.2,76.0,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Mitcham and Morden,True,True,True,True,True,True,True,False,False
+E14001377,Newcastle upon Tyne Central and West,Lab,37.5,73.5,71.4,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Newcastle upon Tyne Central and West,True,True,True,True,True,True,True,False,False
+E14001595,Wolverhampton South East,Lab,31.5,77.1,69.5,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Wolverhampton South East,False,True,True,False,True,False,True,False,False
+E14001379,Newcastle upon Tyne North,Lab,67.8,77.3,75.3,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Newcastle upon Tyne North,False,False,True,True,True,True,True,True,False
+E14001374,New Forest West,Con,33.1,89.6,85.1,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),New Forest West,True,True,True,True,True,True,True,True,True
+W07000104,Newport East,Lab,37.4,74.9,70.4,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Newport East,True,True,True,True,True,True,True,False,False
+E14001416,"Oldham West, Chadderton and Royton",Lab,25.1,73.6,71.1,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),"Oldham West, Chadderton and Royton",True,True,True,False,True,True,True,False,False
+E14001383,Normanton and Hemsworth,Lab,26.3,71.5,68.4,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Normanton and Hemsworth,True,True,True,False,True,True,True,False,False
+E14001539,Tatton,Con,51.9,79.8,77.2,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Tatton,True,False,True,True,True,True,True,True,True
+E14001403,North West Hampshire,Con,46.0,86.4,86.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),North West Hampshire,True,True,True,False,True,True,True,True,True
+E14001604,York Central,Lab,52.1,82.7,82.1,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),York Central,True,True,True,True,True,True,True,True,False
+E14001464,Selby,Lab,44.9,85.6,84.1,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Selby,True,False,True,True,True,True,True,False,False
+E14001398,North Shropshire,LD,47.6,74.4,71.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),North Shropshire,True,True,True,True,True,True,True,True,False
+E14001405,North West Norfolk,Con,28.5,78.3,74.6,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),North West Norfolk,True,False,True,True,True,True,True,False,True
+E14001517,Stockport,Lab,48.8,75.4,67.8,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Stockport,True,False,False,True,True,True,True,False,False
+E14001535,Sutton Coldfield,Con,58.0,83.1,81.2,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Sutton Coldfield,True,True,True,True,True,True,True,False,True
+E14001410,Nottingham East,Lab,45.8,71.5,67.2,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Nottingham East,True,False,True,True,False,True,True,True,False
+E14001496,South West Hertfordshire,Con,77.4,80.4,75.5,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),South West Hertfordshire,True,True,True,True,True,False,True,True,True
+E14001411,Nottingham North and Kimberley,Lab,36.1,72.7,69.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Nottingham North and Kimberley,True,True,True,False,True,True,True,False,False
+E14001420,Oxford West and Abingdon,LD,74.0,93.1,84.8,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Oxford West and Abingdon,True,True,True,True,True,True,True,True,False
+E14001432,Portsmouth South,Lab,53.8,81.4,81.0,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Portsmouth South,True,True,True,True,True,True,True,True,False
+S14000103,Perth and Kinross-shire,SNP,65.7,80.5,78.0,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Perth and Kinross-shire,True,False,True,True,True,True,True,False,False
+E14001427,Plymouth Sutton and Devonport,Lab,40.7,73.3,70.0,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Plymouth Sutton and Devonport,True,True,True,True,True,True,True,False,False
+E14001498,South West Wiltshire,Con,40.0,87.9,85.8,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),South West Wiltshire,True,True,True,True,True,True,True,True,True
+E14001585,Wigan,Lab,29.7,72.9,70.5,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Wigan,True,True,True,True,True,False,True,False,False
+E14001564,Warrington North,Lab,46.9,81.4,75.4,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Warrington North,True,False,True,True,True,True,True,False,False
+E14001449,Romsey and Southampton North,Con,45.8,83.6,82.2,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Romsey and Southampton North,True,False,False,True,True,True,True,True,True
+E14001438,Reading Central,Lab,63.4,89.7,86.9,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Reading Central,True,True,True,True,True,True,True,True,False
+E14001445,Richmond Park,LD,79.5,81.2,79.1,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Richmond Park,True,False,False,True,True,True,True,True,False
+E14001444,Richmond and Northallerton,Con,37.2,75.6,71.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Richmond and Northallerton,True,True,True,True,True,True,True,False,True
+E14001448,Romford,Con,44.5,79.4,78.8,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Romford,True,True,True,True,False,True,True,False,True
+E14001590,Witham,Con,45.9,83.1,83.1,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Witham,True,True,True,True,True,True,True,False,True
+E14001454,"Ruislip, Northwood and Pinner",Con,47.8,82.3,77.5,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),"Ruislip, Northwood and Pinner",True,True,True,True,True,True,True,True,True
+E14001456,Runnymede and Weybridge,Con,64.1,82.1,82.1,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Runnymede and Weybridge,True,True,True,True,True,True,True,True,True
+S14000104,Rutherglen,Lab,50.7,78.7,77.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Rutherglen,True,True,True,True,True,False,True,False,False
+E14001465,Sevenoaks,Con,48.1,75.5,75.5,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Sevenoaks,True,True,True,True,True,True,True,True,True
+E14001543,The Wrekin,Con,47.4,81.6,79.2,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),The Wrekin,True,True,True,True,True,False,True,True,True
+E14001475,Skipton and Ripon,Con,48.2,76.6,76.6,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Skipton and Ripon,True,False,False,True,True,True,True,False,True
+E14001527,Streatham and Croydon North,Lab,61.9,74.3,68.2,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Streatham and Croydon North,True,True,True,True,False,True,True,False,False
+E14001515,Stalybridge and Hyde,Lab,41.9,77.1,76.5,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Stalybridge and Hyde,True,False,False,False,True,False,True,False,False
+E14001510,St Helens South and Whiston,Lab,42.3,77.1,74.8,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),St Helens South and Whiston,True,True,True,True,True,True,True,False,False
+N05000016,Strangford,DUP,,,,,,,Strangford,False,True,True,False,False,False,True,False,False
+E14001582,Wetherby and Easingwold,Con,58.2,71.2,70.2,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Wetherby and Easingwold,True,False,False,True,True,True,True,False,True
+E14001519,Stockton West,Con,42.8,84.3,82.1,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Stockton West,True,False,False,False,True,True,True,False,True
+E14001523,"Stone, Great Wyrley and Penkridge",Con,52.3,74.2,73.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),"Stone, Great Wyrley and Penkridge",True,False,False,True,True,False,True,False,True
+E14001528,Stretford and Urmston,Lab,49.8,81.2,77.9,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Stretford and Urmston,True,True,True,True,True,True,True,False,False
+E14001549,Tonbridge,Con,40.2,83.3,83.3,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Tonbridge,True,True,True,True,True,True,True,True,True
+W07000109,Torfaen,Lab,34.3,78.8,76.4,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Torfaen,True,True,True,True,True,True,True,False,False
+E14001556,Twickenham,LD,78.3,80.8,74.4,Fourth Quintile (80.6%-84.2%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Twickenham,True,True,True,True,False,True,True,True,False
+E14001562,Walsall and Bloxwich,Lab,26.5,71.9,67.2,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Walsall and Bloxwich,True,True,True,False,True,True,True,False,False
+E14001566,Warwick and Leamington,Lab,62.2,81.2,76.6,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Warwick and Leamington,True,True,True,True,True,True,True,False,False
+E14001584,Widnes and Halewood,Lab,40.3,68.2,64.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Widnes and Halewood,True,True,False,True,True,False,True,False,False
+S14000062,Aberdeenshire North and Moray East,SNP,39.0,66.7,64.3,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Aberdeenshire North and Moray East,True,True,True,False,True,False,True,False,False
+S14000063,Airdrie and Shotts,Lab,46.9,73.7,73.7,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Airdrie and Shotts,True,True,True,True,True,False,True,False,False
+E14001063,Aldershot,Lab,43.3,86.6,86.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Aldershot,True,True,True,True,True,True,True,True,False
+S14000064,Alloa and Grangemouth,Lab,43.7,75.5,71.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Alloa and Grangemouth,True,True,True,True,True,True,True,False,False
+E14001065,Altrincham and Sale West,Lab,62.1,76.8,73.3,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Altrincham and Sale West,True,True,False,True,True,True,True,True,False
+E14001066,Amber Valley,Lab,32.2,76.8,74.9,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Amber Valley,True,True,True,False,True,True,True,False,False
+E14001069,Ashford,Lab,26.0,65.4,63.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Ashford,True,True,True,True,True,True,True,True,False
+E14001071,Aylesbury,Lab,42.9,85.2,81.3,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Aylesbury,True,True,True,True,True,True,True,True,False
+S14000107,"Ayr, Carrick and Cumnock",Lab,,,,,,,"Ayr, Carrick and Cumnock",True,True,True,True,True,False,True,False,False
+E14001072,Banbury,Lab,41.3,81.0,81.0,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Banbury,True,True,True,True,True,True,True,True,False
+W07000083,Bangor Aberconwy,Lab,41.4,76.2,73.7,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Bangor Aberconwy,True,True,True,True,True,True,True,False,False
+E14001073,Barking,Lab,46.3,74.5,70.8,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Barking,True,True,True,False,False,False,True,False,False
+E14001076,Barrow and Furness,Lab,36.9,75.4,73.4,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Barrow and Furness,True,True,False,True,True,False,True,False,False
+E14001078,Basingstoke,Lab,37.2,82.5,78.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Basingstoke,True,True,True,True,True,True,True,True,False
+E14001079,Bassetlaw,Lab,38.4,78.8,78.8,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Bassetlaw,True,True,True,True,True,True,True,False,False
+S14000068,Bathgate and Linlithgow,Lab,65.8,78.5,78.2,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Bathgate and Linlithgow,True,True,True,True,True,True,True,False,False
+E14001083,Beckenham and Penge,Lab,62.1,78.4,71.3,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Beckenham and Penge,True,True,True,True,False,True,True,True,False
+E14001089,Bexleyheath and Crayford,Lab,50.3,77.9,67.8,Third Quintile (77.5%-80.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Bexleyheath and Crayford,True,True,True,True,True,True,True,False,False
+E14001090,Bicester and Woodstock,LD,57.8,92.7,92.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Bicester and Woodstock,True,True,True,True,True,True,True,False,False
+E14001097,Birmingham Northfield,Lab,43.3,74.4,69.0,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Birmingham Northfield,True,True,False,True,True,True,True,False,False
+E14001098,Birmingham Perry Barr,Ind,27.4,78.3,63.3,Third Quintile (77.5%-80.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Birmingham Perry Barr,True,True,True,True,True,False,True,False,False
+E14001099,Birmingham Selly Oak,Lab,65.1,78.2,72.7,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Birmingham Selly Oak,True,True,True,True,True,True,True,False,False
+E14001101,Bishop Auckland,Lab,29.1,75.4,69.3,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Bishop Auckland,True,False,True,True,True,True,True,False,False
+E14001102,Blackburn,Ind,30.2,68.0,63.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Blackburn,True,True,True,True,True,True,True,False,False
+E14001104,Blackpool North and Fleetwood,Lab,36.5,70.7,64.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Blackpool North and Fleetwood,True,True,True,True,True,True,True,False,False
+E14001108,Bognor Regis and Littlehampton,Con,45.8,90.4,86.2,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Bognor Regis and Littlehampton,True,True,True,True,True,True,True,True,True
+E14001109,Bolsover,Lab,36.8,78.8,71.4,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Bolsover,True,False,True,True,True,False,True,False,False
+E14001110,Bolton North East,Lab,30.0,63.6,62.3,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Bolton North East,True,False,True,False,True,True,True,False,False
+E14001112,Bolton West,Lab,52.2,80.1,76.8,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Bolton West,True,True,True,True,True,True,True,False,False
+E14001114,Boston and Skegness,RUK,23.1,72.9,68.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Boston and Skegness,True,True,True,True,True,False,True,False,False
+E14001115,Bournemouth East,Lab,50.0,79.8,76.7,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Bournemouth East,True,True,True,True,False,True,True,False,False
+E14001116,Bournemouth West,Lab,42.5,82.8,78.4,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Bournemouth West,True,True,True,True,False,True,True,True,False
+E14001117,Bracknell,Lab,44.4,84.4,80.6,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Bracknell,True,False,True,True,True,True,True,True,False
+W07000085,"Brecon, Radnor and Cwm Tawe",LD,41.4,77.2,73.8,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),"Brecon, Radnor and Cwm Tawe",True,False,True,False,True,False,True,False,False
+E14001126,Bridgwater,Con,33.3,81.0,76.0,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Bridgwater,True,True,True,True,True,True,True,False,True
+E14001127,Bridlington and The Wolds,Con,29.4,71.9,68.8,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Bridlington and The Wolds,True,True,True,False,True,False,True,False,True
+E14001129,Brighton Kemptown and Peacehaven,Lab,48.7,71.7,69.3,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Brighton Kemptown and Peacehaven,True,False,True,False,True,True,True,False,False
+E14001130,Brighton Pavilion,Green,57.1,78.5,75.8,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Brighton Pavilion,True,True,False,True,False,True,True,True,False
+E14001131,Bristol Central,Green,67.9,69.7,66.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Bristol Central,True,False,True,True,True,True,True,True,False
+E14001137,Bromley and Biggin Hill,Con,53.1,84.8,81.3,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Bromley and Biggin Hill,True,True,True,True,True,True,True,True,True
+E14001138,Bromsgrove,Con,62.2,85.9,85.9,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Bromsgrove,True,True,True,True,True,True,True,True,True
+E14001139,Broxbourne,Con,26.8,78.0,74.6,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Broxbourne,True,True,True,True,True,True,True,True,True
+E14001140,Broxtowe,Lab,43.0,84.1,81.1,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Broxtowe,True,True,True,True,True,True,True,False,False
+E14001141,Buckingham and Bletchley,Lab,44.6,80.2,76.1,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Buckingham and Bletchley,True,True,True,True,True,True,True,True,False
+E14001142,Burnley,Lab,38.2,76.5,74.4,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Burnley,False,True,True,True,True,True,True,False,False
+E14001143,Burton and Uttoxeter,Lab,45.1,80.6,80.6,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Burton and Uttoxeter,True,True,True,True,True,True,True,True,False
+E14001146,Bury St Edmunds and Stowmarket,Lab,33.3,78.2,72.7,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Bury St Edmunds and Stowmarket,True,True,True,True,True,True,True,True,False
+W07000087,Caerfyrddin,PC,45.8,82.3,80.0,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Caerfyrddin,True,True,True,True,True,False,True,False,False
+E14001147,Calder Valley,Lab,48.4,79.4,77.6,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Calder Valley,True,False,True,False,True,True,True,True,False
+E14001148,Camborne and Redruth,Lab,40.6,85.6,82.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Camborne and Redruth,True,True,True,True,True,False,True,False,False
+E14001150,Cannock Chase,Lab,24.3,84.8,84.8,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),Cannock Chase,True,True,False,True,True,True,True,False,False
+W07000092,Cardiff West,Lab,44.1,71.7,65.5,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Cardiff West,True,True,True,False,True,False,True,False,False
+E14001152,Carlisle,Lab,34.5,87.5,84.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),Carlisle,True,True,True,True,True,True,True,False,False
+E14001153,Carshalton and Wallington,LD,60.9,88.9,87.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Carshalton and Wallington,True,True,True,True,False,True,True,False,False
+S14000109,Central Ayrshire,Lab,,,,,,,Central Ayrshire,True,True,False,True,True,True,True,False,False
+E14001156,Central Suffolk and North Ipswich,Con,44.6,83.1,81.6,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Central Suffolk and North Ipswich,True,False,False,False,True,False,True,False,True
+E14001157,Chatham and Aylesford,Lab,47.4,79.9,78.9,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Chatham and Aylesford,True,False,False,True,True,False,True,False,False
+E14001158,Cheadle,LD,62.6,81.3,81.3,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Cheadle,True,True,True,True,True,True,True,True,False
+E14001159,Chelmsford,LD,48.5,87.1,87.1,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Chelmsford,True,True,True,True,True,True,True,False,False
+E14001160,Chelsea and Fulham,Lab,69.2,73.0,70.8,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Chelsea and Fulham,True,True,False,True,False,True,True,True,False
+E14001161,Cheltenham,LD,55.3,86.4,83.3,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Cheltenham,True,True,True,True,True,True,True,True,False
+E14001164,Chester South and Eddisbury,Con,56.5,78.6,78.6,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Chester South and Eddisbury,True,False,False,False,True,False,True,False,True
+E14001166,Chichester,LD,44.8,68.6,68.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Chichester,True,True,True,True,False,True,True,True,False
+E14001168,Chippenham,LD,51.1,77.3,75.7,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Chippenham,True,True,True,True,True,True,True,True,False
+E14001169,Chipping Barnet,Lab,49.8,75.6,65.2,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Chipping Barnet,True,True,False,True,False,True,True,True,False
+E14001172,Cities of London and Westminster,Lab,66.8,75.2,70.0,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Cities of London and Westminster,True,False,False,True,False,True,True,True,False
+E14001174,Clacton,RUK,15.7,58.4,57.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Clacton,True,True,True,True,True,True,True,False,False
+W07000094,Clwyd East,Lab,38.0,77.5,75.4,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Clwyd East,True,True,True,True,True,True,True,False,False
+W07000095,Clwyd North,Lab,41.2,76.3,75.2,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Clwyd North,True,True,True,False,True,True,True,False,False
+S14000070,Coatbridge and Bellshill,Lab,35.2,71.1,69.8,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Coatbridge and Bellshill,True,False,True,True,True,False,True,False,False
+E14001176,Colchester,Lab,49.1,79.7,79.7,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Colchester,True,True,True,True,True,True,True,True,False
+E14001177,Colne Valley,Lab,46.8,83.1,83.1,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Colne Valley,True,False,True,False,True,True,True,False,False
+E14001178,Congleton,Lab,57.1,93.1,93.1,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Congleton,True,True,False,True,True,True,True,True,False
+E14001179,Corby and East Northamptonshire,Lab,28.3,90.0,87.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),Corby and East Northamptonshire,True,True,True,True,True,True,True,True,False
+S14000071,Cowdenbeath and Kirkcaldy,Lab,61.0,78.9,77.8,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Cowdenbeath and Kirkcaldy,True,True,True,True,True,True,True,False,False
+E14001183,Cramlington and Killingworth,Lab,43.4,82.5,80.9,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Cramlington and Killingworth,True,True,True,True,True,True,True,False,False
+E14001184,Crawley,Lab,42.7,78.6,78.6,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Crawley,True,True,True,True,True,True,True,False,False
+E14001185,Crewe and Nantwich,Lab,59.7,84.2,81.3,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Crewe and Nantwich,True,True,True,True,True,True,True,False,False
+E14001186,Croydon East,Lab,57.4,79.5,70.5,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),Croydon East,True,True,True,True,True,True,True,False,False
+S14000072,Cumbernauld and Kirkintilloch,Lab,59.4,76.5,73.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Cumbernauld and Kirkintilloch,True,True,True,True,False,False,True,False,False
+E14001189,Dagenham and Rainham,Lab,44.3,79.2,77.1,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Dagenham and Rainham,True,True,True,False,True,True,True,False,False
+E14001190,Darlington,Lab,41.1,84.0,81.2,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Darlington,True,True,True,True,True,True,True,False,False
+E14001191,Dartford,Lab,58.3,83.5,83.5,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Dartford,True,True,True,True,True,True,True,True,False
+E14001193,Derby North,Lab,52.0,82.9,78.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Derby North,True,True,True,True,True,True,True,False,False
+E14001195,Derbyshire Dales,Lab,71.6,81.9,81.9,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Derbyshire Dales,True,True,False,True,True,True,True,False,False
+E14001194,Derby South,Lab,43.2,79.4,77.3,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Derby South,True,True,True,True,True,True,True,False,False
+E14001196,Dewsbury and Batley,Ind,35.5,68.6,66.3,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Dewsbury and Batley,True,True,True,False,False,True,True,False,False
+E14001197,Didcot and Wantage,LD,74.1,82.9,82.9,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Didcot and Wantage,True,True,True,True,True,True,True,True,False
+E14001198,Doncaster Central,Lab,28.5,74.1,71.6,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Doncaster Central,True,True,True,True,True,True,True,False,False
+E14001199,Doncaster East and the Isle of Axholme,Lab,34.1,76.2,73.8,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Doncaster East and the Isle of Axholme,True,False,True,True,False,True,True,False,False
+E14001201,Dorking and Horley,LD,37.1,83.4,83.4,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Dorking and Horley,True,True,True,True,True,True,True,True,False
+E14001202,Dover and Deal,Lab,38.1,82.0,80.1,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Dover and Deal,True,True,True,True,True,True,True,False,False
+E14001204,Dudley,Lab,36.2,76.9,75.2,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Dudley,True,True,False,False,True,True,True,False,False
+S14000073,Dumfries and Galloway,Con,53.2,73.6,67.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Dumfries and Galloway,True,True,True,True,True,True,True,False,True
+S14000076,Dunfermline and Dollar,Lab,55.8,85.7,81.3,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Dunfermline and Dollar,True,True,False,True,True,True,True,False,False
+E14001206,Dunstable and Leighton Buzzard,Lab,49.3,86.7,85.3,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Dunstable and Leighton Buzzard,True,True,True,True,True,True,True,True,False
+E14001209,Ealing Southall,Lab,64.6,100.0,100.0,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Ealing Southall,False,True,True,False,False,True,True,True,False
+E14001210,Earley and Woodley,Lab,56.8,80.7,78.1,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Earley and Woodley,True,True,True,True,True,True,True,True,False
+E14001219,Eastbourne,LD,42.1,81.8,74.8,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Eastbourne,True,True,True,True,True,True,True,True,False
+S14000077,East Kilbride and Strathaven,Lab,50.1,80.2,75.8,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),East Kilbride and Strathaven,True,True,True,True,True,True,True,False,False
+E14001220,Eastleigh,LD,51.3,85.8,85.8,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Eastleigh,True,True,True,True,True,True,True,True,False
+S14000021,East Renfrewshire,Lab,70.1,79.6,77.5,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),East Renfrewshire,True,True,True,True,True,True,True,True,False
+E14001216,East Thanet,Lab,37.7,72.8,64.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),East Thanet,True,True,True,True,True,True,True,True,False
+E14001218,East Worthing and Shoreham,Lab,46.4,82.3,82.3,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),East Worthing and Shoreham,True,False,True,True,True,True,True,True,False
+S14000078,Edinburgh East and Musselburgh,Lab,60.3,72.1,70.2,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Edinburgh East and Musselburgh,True,True,True,True,True,True,True,False,False
+S14000079,Edinburgh North and Leith,Lab,67.9,82.8,79.3,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Edinburgh North and Leith,True,False,True,True,True,True,True,True,False
+S14000081,Edinburgh South West,Lab,78.1,93.8,88.2,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Edinburgh South West,True,True,True,True,True,True,True,False,False
+E14001224,Ely and East Cambridgeshire,LD,44.8,85.5,85.1,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Ely and East Cambridgeshire,True,True,False,True,False,True,True,True,False
+E14001227,Epsom and Ewell,LD,57.7,91.6,90.5,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Epsom and Ewell,True,False,True,True,True,True,True,True,False
+E14001228,Erewash,Lab,42.2,83.3,80.3,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Erewash,True,True,True,True,True,True,True,False,False
+E14001230,Esher and Walton,LD,68.4,77.4,76.7,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Esher and Walton,True,False,True,True,True,True,True,True,False
+E14001231,Exeter,Lab,37.7,76.6,74.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Exeter,True,True,True,True,True,True,True,True,False
+E14001232,Exmouth and Exeter East,Con,49.2,85.1,83.5,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Exmouth and Exeter East,True,True,True,True,True,True,True,False,True
+S14000083,Falkirk,Lab,41.4,72.6,70.3,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Falkirk,True,True,True,True,True,True,True,False,False
+E14001234,Farnham and Bordon,Con,54.7,81.4,81.4,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Farnham and Bordon,True,False,True,True,True,True,True,True,True
+N05000007,Fermanagh and South Tyrone,SF,,,,,,,Fermanagh and South Tyrone,True,True,True,True,False,True,True,False,False
+E14001237,Filton and Bradley Stoke,Lab,56.8,90.9,88.2,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Filton and Bradley Stoke,True,True,True,True,True,True,True,False,False
+E14001238,Finchley and Golders Green,Lab,77.4,84.6,84.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Finchley and Golders Green,True,True,True,True,False,True,True,True,False
+E14001239,Folkestone and Hythe,Lab,45.3,79.0,63.9,Third Quintile (77.5%-80.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Folkestone and Hythe,True,True,True,True,True,True,True,True,False
+E14001240,Forest of Dean,Lab,49.0,83.8,83.1,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Forest of Dean,True,False,True,False,True,False,True,False,False
+E14001241,Frome and East Somerset,LD,45.7,79.5,77.5,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Frome and East Somerset,True,True,True,True,True,True,True,False,False
+E14001242,Fylde,Con,51.5,73.0,73.0,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),Fylde,True,False,True,True,True,True,True,False,True
+E14001244,Gateshead Central and Whickham,Lab,51.5,82.2,81.4,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Gateshead Central and Whickham,True,True,True,True,True,False,True,False,False
+E14001245,Gedling,Lab,49.0,78.0,75.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Gedling,True,True,True,True,True,True,True,False,False
+E14001246,Gillingham and Rainham,Lab,33.0,78.9,75.7,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Gillingham and Rainham,True,True,True,True,True,True,True,False,False
+S14000084,Glasgow East,Lab,51.7,70.5,65.0,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Glasgow East,True,True,True,True,True,True,True,False,False
+S14000085,Glasgow North,Lab,69.8,77.3,75.6,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Glasgow North,True,True,True,True,False,True,True,False,False
+S14000086,Glasgow North East,Lab,47.1,66.1,66.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Glasgow North East,True,True,True,True,True,False,True,False,False
+S14000087,Glasgow South,Lab,68.6,82.4,78.7,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Glasgow South,True,True,True,True,True,True,True,False,False
+S14000088,Glasgow South West,Lab,36.3,81.5,79.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Glasgow South West,True,True,True,True,True,True,True,False,False
+S14000089,Glasgow West,Lab,59.5,72.7,65.4,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Glasgow West,True,True,True,True,True,True,True,True,False
+S14000090,Glenrothes and Mid Fife,Lab,37.0,70.3,67.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Glenrothes and Mid Fife,True,True,True,True,True,False,True,False,False
+E14001248,Gloucester,Lab,44.5,89.8,85.9,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Gloucester,True,True,True,True,True,True,True,False,False
+S14000091,Gordon and Buchan,Con,52.8,87.0,84.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Gordon and Buchan,True,True,True,True,True,True,True,False,True
+E14001254,Gravesham,Lab,41.1,87.0,85.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Gravesham,True,True,True,False,True,True,True,False,False
+E14001256,Great Yarmouth,RUK,19.5,70.7,67.9,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Great Yarmouth,True,True,True,True,True,True,True,False,False
+E14001258,Guildford,LD,62.2,84.6,82.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Guildford,True,False,True,True,True,True,True,True,False
+E14001261,Halesowen,Lab,39.2,86.6,85.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Halesowen,True,True,True,False,False,False,True,False,False
+E14001262,Halifax,Lab,39.7,77.4,76.5,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Halifax,False,True,True,True,True,True,True,False,False
+S14000092,Hamilton and Clyde Valley,Lab,45.0,72.1,72.1,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Hamilton and Clyde Valley,True,True,True,True,True,True,True,False,False
+E14001267,Harlow,Lab,27.7,74.9,66.6,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Harlow,True,True,True,True,True,True,True,False,False
+E14001268,Harpenden and Berkhamsted,LD,46.7,81.7,72.9,Fourth Quintile (80.6%-84.2%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Harpenden and Berkhamsted,True,False,False,True,True,True,True,True,False
+E14001269,Harrogate and Knaresborough,LD,45.9,81.8,81.1,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Harrogate and Knaresborough,True,False,True,True,True,True,True,True,False
+E14001272,Hartlepool,Lab,36.6,70.3,67.9,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Hartlepool,False,True,True,True,True,True,True,False,False
+E14001274,Hastings and Rye,Lab,41.3,81.2,78.2,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Hastings and Rye,True,True,True,True,True,True,True,False,False
+E14001277,Hazel Grove,LD,51.8,83.0,78.2,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Hazel Grove,True,True,True,True,True,True,True,False,False
+E14001278,Hemel Hempstead,Lab,43.9,79.8,78.1,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Hemel Hempstead,True,True,False,True,True,True,True,False,False
+E14001279,Hendon,Lab,38.2,68.5,65.3,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Hendon,True,True,False,True,True,True,True,True,False
+E14001280,Henley and Thame,LD,59.1,85.7,84.2,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Henley and Thame,True,False,False,True,True,True,True,True,False
+E14001283,Hertford and Stortford,Lab,56.7,82.4,78.0,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Hertford and Stortford,True,False,False,True,True,True,True,True,False
+E14001285,Hexham,Lab,50.5,72.6,71.1,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),Hexham,True,True,True,True,True,True,True,True,False
+E14001286,Heywood and Middleton North,Lab,46.0,71.4,69.5,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Heywood and Middleton North,True,True,False,True,True,False,True,False,False
+E14001287,High Peak,Lab,57.2,74.8,74.8,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),High Peak,True,True,True,True,True,True,True,True,False
+E14001294,Horsham,LD,52.1,78.8,76.2,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Horsham,True,False,True,True,True,True,True,True,False
+E14001297,Huddersfield,Lab,45.2,81.4,73.0,Fourth Quintile (80.6%-84.2%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Huddersfield,True,True,True,True,True,True,True,False,False
+E14001298,Huntingdon,Con,37.8,89.1,88.8,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Huntingdon,True,True,True,True,True,True,True,True,True
+E14001299,Hyndburn,Lab,39.8,79.5,79.5,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Hyndburn,True,True,True,False,True,False,True,False,False
+E14001301,Ilford South,Lab,34.4,67.9,65.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Ilford South,True,True,True,True,False,True,True,False,False
+S14000093,Inverclyde and Renfrewshire West,Lab,55.6,74.9,71.2,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),Inverclyde and Renfrewshire West,True,True,True,True,True,True,True,False,False
+S14000094,"Inverness, Skye and West Ross-shire",LD,47.0,76.0,74.2,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),"Inverness, Skye and West Ross-shire",True,True,True,True,True,False,True,False,False
+E14001302,Ipswich,Lab,47.1,87.3,84.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Ipswich,True,True,True,True,True,True,True,True,False
+E14001303,Isle of Wight East,Con,37.0,73.4,70.6,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Isle of Wight East,True,True,True,False,True,True,True,False,True
+E14001304,Isle of Wight West,Lab,37.4,78.2,74.2,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Isle of Wight West,True,True,True,True,True,True,True,True,False
+E14001310,Kensington and Bayswater,Lab,70.8,68.5,62.8,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Kensington and Bayswater,True,False,False,True,False,True,True,True,False
+E14001311,Kettering,Lab,31.3,75.9,75.9,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Kettering,True,True,True,True,True,True,True,False,False
+S14000110,Kilmarnock and Loudoun,Lab,,,,,,,Kilmarnock and Loudoun,True,True,True,True,True,True,True,False,False
+E14001317,Knowsley,Lab,26.4,75.7,70.6,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Knowsley,True,True,False,True,True,False,True,False,False
+N05000009,Lagan Valley,All,,,,,,,Lagan Valley,True,True,True,True,False,True,True,False,False
+E14001322,Leeds North West,Lab,62.3,86.6,86.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Leeds North West,True,False,False,True,True,True,True,True,False
+E14001324,Leeds South West and Morley,Lab,62.9,91.4,91.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Leeds South West and Morley,True,False,False,True,True,True,True,False,False
+E14001326,Leicester East,Con,25.1,66.1,57.4,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Leicester East,True,True,True,False,True,True,True,False,True
+E14001327,Leicester South,Ind,43.8,72.6,66.4,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Leicester South,True,True,True,True,True,True,True,False,False
+E14001330,Lewes,LD,39.4,77.5,75.8,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Lewes,True,False,True,True,True,True,True,True,False
+E14001334,Leyton and Wanstead,Lab,70.2,73.6,72.0,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Leyton and Wanstead,True,True,False,True,False,True,True,True,False
+E14001335,Lichfield,Lab,45.8,92.4,91.3,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Lichfield,True,True,True,False,True,False,True,True,False
+E14001336,Lincoln,Lab,51.4,74.3,74.3,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),Lincoln,True,True,True,True,True,True,True,True,False
+S14000095,Livingston,Lab,40.9,77.6,72.0,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Livingston,True,True,True,True,True,True,True,True,False
+E14001342,Loughborough,Lab,43.5,77.6,74.4,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Loughborough,True,True,True,True,True,True,True,True,False
+E14001344,Lowestoft,Lab,25.5,75.4,73.6,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Lowestoft,True,True,True,True,True,False,True,False,False
+E14001347,Macclesfield,Lab,63.3,90.1,88.2,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Macclesfield,True,True,False,True,True,True,True,True,False
+E14001348,Maidenhead,LD,61.7,85.7,81.4,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Maidenhead,True,True,True,True,True,True,True,True,False
+E14001350,Makerfield,Lab,39.3,73.3,71.7,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Makerfield,True,True,True,False,True,True,True,False,False
+E14001355,Mansfield,Lab,42.2,73.3,73.3,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Mansfield,True,True,True,True,True,True,True,False,False
+E14001356,Melksham and Devizes,LD,49.0,82.0,81.3,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Melksham and Devizes,True,True,True,True,True,True,True,True,False
+W07000100,Mid and South Pembrokeshire,Lab,38.8,78.1,77.1,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Mid and South Pembrokeshire,True,True,True,True,True,True,True,False,False
+E14001359,Mid Bedfordshire,Con,50.9,82.4,81.1,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Mid Bedfordshire,True,False,False,True,True,True,True,True,True
+E14001361,Mid Cheshire,Lab,31.6,75.0,70.8,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Mid Cheshire,True,True,True,False,True,True,True,True,False
+E14001362,Mid Derbyshire,Lab,59.7,91.7,88.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Mid Derbyshire,True,True,False,False,True,False,True,True,False
+E14001368,Middlesbrough South and East Cleveland,Lab,38.7,76.7,72.6,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Middlesbrough South and East Cleveland,True,True,True,True,True,True,True,False,False
+E14001363,Mid Dorset and North Poole,LD,39.6,88.4,85.1,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Mid Dorset and North Poole,True,True,True,True,True,True,True,True,False
+S14000097,Mid Dunbartonshire,LD,63.8,74.2,72.2,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Mid Dunbartonshire,True,True,True,True,True,True,True,True,False
+E14001364,Mid Leicestershire,Con,43.3,85.7,85.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Mid Leicestershire,True,False,False,False,True,False,True,True,True
+S14000045,Midlothian,Lab,59.8,86.6,85.3,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Midlothian,True,False,True,True,True,True,True,False,False
+E14001366,Mid Sussex,LD,45.3,84.9,83.3,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Mid Sussex,True,True,False,True,True,True,True,True,False
+N05000010,Mid Ulster,SF,,,,,,,Mid Ulster,False,True,True,True,False,False,True,False,False
+E14001369,Milton Keynes Central,Lab,55.3,76.7,74.4,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),Milton Keynes Central,True,False,True,True,True,True,True,True,False
+E14001370,Milton Keynes North,Lab,46.3,77.4,76.5,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Milton Keynes North,True,False,True,True,True,True,True,True,False
+W07000101,Monmouthshire,Lab,58.0,80.2,76.2,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Monmouthshire,True,True,True,True,True,False,True,True,False
+W07000102,Montgomeryshire and Glyndwr,Lab,39.3,83.7,80.0,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Montgomeryshire and Glyndwr,True,True,True,False,True,False,True,False,False
+S14000098,"Moray West, Nairn and Strathspey",SNP,51.2,77.3,74.8,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),"Moray West, Nairn and Strathspey",True,False,True,True,True,True,True,False,False
+E14001372,Morecambe and Lunesdale,Lab,39.0,79.5,79.5,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Morecambe and Lunesdale,True,True,True,True,True,True,True,False,False
+S14000027,Na h-Eileanan an Iar,Lab,51.0,79.1,77.8,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Na h-Eileanan an Iar,True,False,False,False,False,False,True,False,False
+E14001376,Newbury,LD,56.8,83.8,82.3,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Newbury,True,False,True,True,True,True,True,True,False
+E14001380,Newcastle-under-Lyme,Lab,48.3,90.2,90.2,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Newcastle-under-Lyme,True,True,True,True,True,True,True,True,False
+N05000011,Newry and Armagh,SF,,,,,,,Newry and Armagh,False,True,True,True,False,True,True,False,False
+E14001381,Newton Abbot,LD,41.3,84.8,82.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Newton Abbot,True,True,True,False,True,True,True,False,False
+E14001382,Newton Aycliffe and Spennymoor,Lab,37.3,77.2,75.7,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Newton Aycliffe and Spennymoor,True,True,True,False,True,True,True,False,False
+E14001406,Northampton North,Lab,34.1,76.0,70.2,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Northampton North,True,True,True,True,True,True,True,True,False
+E14001407,Northampton South,Lab,45.1,83.6,79.6,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Northampton South,True,False,True,True,True,True,True,True,False
+N05000012,North Antrim,TUV,,,,,,,North Antrim,True,True,True,True,False,True,True,False,False
+S14000048,North Ayrshire and Arran,Lab,54.2,75.3,74.2,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),North Ayrshire and Arran,True,True,True,False,True,True,True,False,False
+E14001385,North Cornwall,LD,29.4,70.5,70.5,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),North Cornwall,True,True,True,True,True,True,True,False,False
+E14001387,North Devon,LD,42.7,78.0,78.0,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),North Devon,True,True,True,True,True,True,True,False,False
+N05000013,North Down,Ind,,,,,,,North Down,True,False,True,True,False,True,True,False,False
+E14001389,North Durham,Lab,31.2,72.8,70.7,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),North Durham,True,True,False,True,True,True,True,False,False
+E14001391,North East Derbyshire,Lab,35.5,70.1,66.5,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),North East Derbyshire,True,True,False,False,True,True,True,False,False
+E14001392,North East Hampshire,LD,54.2,88.2,83.1,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),North East Hampshire,True,False,False,True,True,True,True,True,False
+E14001393,North East Hertfordshire,Lab,42.9,87.7,81.1,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),North East Hertfordshire,True,True,True,True,True,True,True,False,False
+E14001395,North Herefordshire,Green,46.0,83.5,82.9,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),North Herefordshire,True,False,False,False,True,False,True,False,False
+E14001396,North Norfolk,LD,42.4,75.4,72.5,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),North Norfolk,True,True,True,False,True,True,True,True,False
+E14001397,North Northumberland,Lab,43.9,74.8,72.3,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),North Northumberland,True,True,True,True,True,True,True,False,False
+E14001399,North Somerset,Lab,57.1,88.6,87.3,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),North Somerset,True,True,True,True,False,True,True,True,False
+E14001400,North Warwickshire and Bedworth,Lab,30.7,75.0,75.0,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),North Warwickshire and Bedworth,True,True,False,True,True,True,True,True,False
+E14001401,North West Cambridgeshire,Lab,37.0,82.9,81.6,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),North West Cambridgeshire,True,False,True,True,True,False,True,False,False
+E14001404,North West Leicestershire,Lab,42.8,79.0,77.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),North West Leicestershire,True,True,True,True,True,False,True,False,False
+E14001408,Norwich North,Lab,43.5,81.8,79.9,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Norwich North,True,False,True,True,True,True,True,False,False
+E14001413,Nuneaton,Lab,32.5,82.6,81.7,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Nuneaton,True,True,True,False,False,True,True,False,False
+E14001418,Ossett and Denby Dale,Lab,40.0,75.0,74.0,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Ossett and Denby Dale,True,True,True,True,True,True,True,False,False
+S14000101,Paisley and Renfrewshire North,Lab,58.4,72.2,71.8,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Paisley and Renfrewshire North,True,True,True,True,True,True,True,False,False
+S14000102,Paisley and Renfrewshire South,Lab,62.0,76.1,75.3,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Paisley and Renfrewshire South,True,True,True,False,True,False,True,False,False
+E14001421,Peckham,Lab,58.8,69.2,67.8,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Peckham,True,True,True,True,True,True,True,False,False
+E14001422,Pendle and Clitheroe,Lab,33.8,61.6,58.3,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Pendle and Clitheroe,True,False,True,True,True,True,True,False,False
+E14001423,Penistone and Stocksbridge,Lab,41.4,84.1,80.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Penistone and Stocksbridge,True,True,True,False,True,True,True,False,False
+E14001424,Penrith and Solway,Lab,38.9,87.4,85.8,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Penrith and Solway,True,True,True,True,True,True,True,False,False
+E14001425,Peterborough,Lab,34.3,81.9,78.1,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Peterborough,True,True,True,True,True,True,True,True,False
+E14001426,Plymouth Moor View,Lab,24.2,76.3,74.8,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Plymouth Moor View,True,False,True,True,True,False,True,False,False
+E14001429,Poole,Lab,48.1,81.4,79.6,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Poole,True,True,True,True,True,True,True,True,False
+E14001431,Portsmouth North,Lab,42.2,82.9,79.7,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Portsmouth North,True,True,True,True,True,True,True,False,False
+E14001435,Queen's Park and Maida Vale,Lab,59.5,63.1,57.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Highest Quintile (57.9%+),Queen's Park and Maida Vale,True,True,False,True,False,True,True,False,False
+E14001439,Reading West and Mid Berkshire,Lab,55.6,83.9,83.4,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Reading West and Mid Berkshire,True,False,True,True,True,True,True,True,False
+E14001441,Redditch,Lab,44.1,78.5,77.1,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Redditch,True,True,True,False,True,True,True,False,False
+E14001442,Reigate,Con,65.3,93.2,92.8,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Reigate,True,True,False,True,True,True,True,True,True
+E14001443,Ribble Valley,Lab,44.6,81.2,79.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Ribble Valley,True,False,True,True,True,True,False,True,False
+E14001446,Rochdale,Lab,33.8,71.5,67.8,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Rochdale,True,True,True,True,True,True,True,False,False
+E14001447,Rochester and Strood,Lab,38.0,83.8,79.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Rochester and Strood,True,True,False,True,True,True,True,False,False
+E14001450,Rossendale and Darwen,Lab,42.8,71.4,71.4,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Rossendale and Darwen,True,True,True,True,True,True,True,False,False
+E14001451,Rother Valley,Lab,47.2,79.2,75.1,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Rother Valley,True,False,False,False,True,False,True,True,False
+E14001453,Rugby,Lab,52.7,85.2,83.5,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Rugby,True,True,True,True,False,True,True,False,False
+E14001457,Rushcliffe,Lab,66.0,81.9,79.4,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Rushcliffe,True,True,True,True,True,True,True,True,False
+E14001461,Scarborough and Whitby,Lab,36.2,73.6,73.6,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Scarborough and Whitby,True,True,True,True,True,True,True,False,False
+E14001467,Sheffield Central,Lab,71.1,80.6,80.6,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Sheffield Central,True,True,True,True,True,True,True,True,False
+E14001471,Sherwood Forest,Lab,33.8,79.8,77.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Sherwood Forest,True,True,False,False,True,True,True,False,False
+E14001472,Shipley,Lab,47.6,73.6,66.5,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Shipley,True,True,True,True,True,True,True,False,False
+E14001473,Shrewsbury,Lab,36.5,85.9,81.6,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Shrewsbury,True,True,True,True,True,True,True,False,False
+E14001474,Sittingbourne and Sheppey,Lab,22.8,85.6,84.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),Sittingbourne and Sheppey,True,True,True,True,True,True,True,False,False
+E14001478,Smethwick,Lab,42.6,79.4,77.2,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Smethwick,True,True,True,False,False,True,True,False,False
+E14001479,Solihull West and Shirley,Con,57.6,80.7,77.5,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Solihull West and Shirley,True,True,True,True,True,True,True,True,True
+E14001499,Southampton Itchen,Lab,42.7,79.5,76.1,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Southampton Itchen,True,True,True,True,True,True,True,True,False
+E14001500,Southampton Test,Lab,34.1,77.3,75.4,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Southampton Test,True,True,True,True,True,True,True,True,False
+N05000014,South Antrim,UUP,,,,,,,South Antrim,True,True,True,True,False,False,True,False,False
+E14001480,South Basildon and East Thurrock,RUK,31.3,84.3,77.6,Highest Quintile (84.2%+),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),South Basildon and East Thurrock,True,True,True,True,True,True,True,False,False
+E14001481,South Cambridgeshire,LD,54.4,79.9,76.0,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),South Cambridgeshire,True,False,False,True,True,True,True,False,False
+E14001482,South Cotswolds,LD,37.3,79.0,76.1,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),South Cotswolds,True,False,True,True,True,False,True,True,False
+E14001483,South Derbyshire,Lab,32.4,80.1,80.1,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),South Derbyshire,True,True,True,False,True,True,True,True,False
+E14001484,South Devon,LD,43.3,77.5,76.1,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),South Devon,True,False,True,True,True,True,True,False,False
+E14001485,South Dorset,Lab,26.2,75.5,73.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),South Dorset,True,False,True,True,True,True,True,False,False
+E14001486,South East Cornwall,Lab,33.7,72.4,71.0,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),South East Cornwall,True,False,True,False,True,True,True,True,False
+E14001501,Southend East and Rochford,Lab,45.2,79.7,76.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Southend East and Rochford,True,True,True,True,True,True,True,False,False
+E14001502,Southend West and Leigh,Lab,39.6,79.3,75.8,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Southend West and Leigh,True,True,True,True,True,True,True,True,False
+E14001489,South Norfolk,Lab,50.5,79.1,75.2,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),South Norfolk,True,False,True,True,True,True,True,True,False
+E14001490,South Northamptonshire,Con,47.1,89.7,86.0,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),South Northamptonshire,True,False,False,True,False,True,True,True,True
+E14001504,Southport,Lab,47.0,88.9,88.2,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Southport,True,True,True,True,True,True,True,False,False
+E14001491,South Ribble,Lab,41.4,85.7,85.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),South Ribble,True,True,True,False,True,True,True,True,False
+E14001495,South West Devon,Con,42.7,79.8,79.4,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),South West Devon,True,True,True,False,True,False,True,False,True
+E14001497,South West Norfolk,Lab,30.8,92.4,90.7,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),South West Norfolk,True,True,True,True,True,True,True,True,False
+E14001505,Spelthorne,Con,39.8,76.9,74.3,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Spelthorne,True,True,True,True,False,True,True,False,True
+E14001513,Stafford,Lab,32.6,85.4,84.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),Stafford,True,True,True,True,True,True,True,False,False
+E14001508,St Austell and Newquay,Lab,29.5,81.8,80.3,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),St Austell and Newquay,True,True,True,True,True,True,True,False,False
+E14001516,Stevenage,Lab,26.3,74.9,73.2,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Stevenage,True,True,False,True,True,True,True,False,False
+E14001509,St Helens North,Lab,42.9,79.4,76.4,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),St Helens North,True,True,True,False,True,False,True,False,False
+S14000105,Stirling and Strathallan,Lab,65.7,83.9,80.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Stirling and Strathallan,True,True,True,True,True,True,True,True,False
+E14001512,St Neots and Mid Cambridgeshire,LD,44.1,89.4,82.3,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),St Neots and Mid Cambridgeshire,True,True,True,True,True,False,True,True,False
+E14001518,Stockton North,Lab,29.6,71.3,67.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Stockton North,True,True,True,False,True,True,True,False,False
+E14001521,Stoke-on-Trent North,Lab,28.9,85.2,80.4,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Stoke-on-Trent North,True,True,True,True,True,False,True,False,False
+E14001522,Stoke-on-Trent South,Lab,36.2,83.4,83.1,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Stoke-on-Trent South,True,True,True,False,True,False,True,False,False
+E14001524,Stourbridge,Lab,39.5,81.4,76.9,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Stourbridge,True,True,True,True,True,True,True,True,False
+E14001525,Stratford and Bow,Lab,53.1,70.7,65.6,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Stratford and Bow,True,True,True,True,True,True,True,True,False
+E14001526,Stratford-on-Avon,LD,59.1,88.9,85.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Stratford-on-Avon,True,False,True,True,True,True,True,True,False
+E14001529,Stroud,Lab,59.9,88.9,87.5,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Stroud,True,True,True,True,True,True,True,True,False
+E14001530,Suffolk Coastal,Lab,29.5,77.9,77.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Suffolk Coastal,True,True,True,True,True,True,True,True,False
+E14001531,Sunderland Central,Lab,32.5,74.3,74.3,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Sunderland Central,False,True,True,True,True,True,True,False,False
+E14001532,Surrey Heath,LD,41.6,87.3,85.3,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Surrey Heath,True,False,False,True,True,True,True,True,False
+E14001534,Sutton and Cheam,LD,64.2,82.6,76.5,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Sutton and Cheam,False,True,True,True,True,True,True,True,False
+W07000108,Swansea West,Lab,46.3,71.9,67.1,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Third Quintile (42.3%-48.3%),Swansea West,True,True,True,True,False,True,True,False,False
+E14001536,Swindon North,Lab,35.9,77.5,75.7,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Swindon North,True,True,True,True,True,True,True,False,False
+E14001540,Taunton and Wellington,LD,45.2,82.0,81.0,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Taunton and Wellington,True,True,True,True,True,True,True,True,False
+E14001541,Telford,Lab,30.9,76.9,74.2,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Telford,True,True,True,True,True,True,True,False,False
+E14001542,Tewkesbury,LD,43.3,82.0,77.4,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Tewkesbury,True,False,True,True,True,True,True,False,False
+E14001545,Thornbury and Yate,LD,51.0,83.2,83.2,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Thornbury and Yate,True,True,True,True,True,True,True,True,False
+E14001546,Thurrock,Lab,36.6,80.2,77.2,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Thurrock,True,True,True,True,True,True,True,False,False
+E14001547,Tipton and Wednesbury,Lab,17.0,65.2,59.5,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Tipton and Wednesbury,True,True,True,True,True,False,False,False,False
+E14001548,Tiverton and Minehead,LD,38.3,81.3,80.3,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),Tiverton and Minehead,True,True,True,True,True,False,True,False,False
+E14001551,Torbay,LD,35.6,77.0,75.8,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Torbay,True,True,True,True,True,True,True,False,False
+E14001554,Truro and Falmouth,Lab,59.4,76.8,74.7,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Truro and Falmouth,True,True,True,True,False,True,True,True,False
+E14001555,Tunbridge Wells,LD,46.0,86.6,83.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),Tunbridge Wells,True,True,True,True,True,True,True,True,False
+E14001558,Uxbridge and South Ruislip,Lab,50.4,81.2,68.5,Fourth Quintile (80.6%-84.2%),Lowest Quintile (<70.0%),Fourth Quintile (48.3%-57.9%),Uxbridge and South Ruislip,True,True,True,True,False,True,True,True,False
+W07000110,Vale of Glamorgan,Lab,43.8,75.5,74.9,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Vale of Glamorgan,True,True,True,True,True,True,True,True,False
+E14001565,Warrington South,Lab,49.8,84.4,82.9,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Fourth Quintile (48.3%-57.9%),Warrington South,True,True,True,True,True,True,True,False,False
+E14001568,Watford,Lab,62.8,82.3,82.3,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Watford,True,True,True,True,True,True,True,False,False
+E14001569,Waveney Valley,Green,37.1,78.0,74.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Waveney Valley,True,False,False,True,True,False,True,False,False
+E14001570,Weald of Kent,Con,53.4,79.0,76.7,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Weald of Kent,True,False,False,False,True,True,True,True,True
+E14001573,Welwyn Hatfield,Lab,58.9,80.3,79.4,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Welwyn Hatfield,True,True,True,True,True,True,True,True,False
+E14001574,West Bromwich,Lab,33.1,74.6,67.6,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),West Bromwich,True,True,True,True,True,True,True,False,False
+E14001575,West Dorset,LD,44.7,83.2,83.2,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),West Dorset,True,True,True,False,True,True,True,True,False
+S14000106,West Dunbartonshire,Lab,44.7,74.4,72.2,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),West Dunbartonshire,True,True,True,True,True,False,True,False,False
+E14001576,West Ham and Beckton,Lab,53.6,76.6,74.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Fourth Quintile (48.3%-57.9%),West Ham and Beckton,True,True,True,False,True,True,True,False,False
+E14001581,Weston-super-Mare,Lab,42.7,82.3,75.7,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Weston-super-Mare,True,True,True,True,True,True,True,True,False
+E14001578,West Suffolk,Con,40.8,84.8,79.9,Highest Quintile (84.2%+),Fourth Quintile (78.2%-81.9%),Second Quintile (35.3%-42.3%),West Suffolk,True,True,True,True,True,True,True,True,True
+E14001583,Whitehaven and Workington,Lab,31.3,82.4,81.6,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Lowest Quintile (<35.3%),Whitehaven and Workington,True,True,False,True,True,False,True,False,False
+E14001586,Wimbledon,LD,69.2,78.6,70.9,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Highest Quintile (57.9%+),Wimbledon,True,False,True,True,True,True,True,True,False
+E14001587,Winchester,LD,64.7,82.4,80.8,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Winchester,True,True,False,True,False,True,True,True,False
+E14001588,Windsor,Con,50.9,82.1,80.0,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Windsor,True,False,False,True,True,True,True,True,True
+E14001589,Wirral West,Lab,59.6,78.6,77.5,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Highest Quintile (57.9%+),Wirral West,True,False,False,True,True,True,True,False,False
+E14001591,Witney,LD,30.9,86.9,86.9,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Lowest Quintile (<35.3%),Witney,True,False,True,True,True,True,True,True,False
+E14001592,Woking,LD,66.8,87.8,83.4,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Highest Quintile (57.9%+),Woking,True,False,False,True,True,True,True,True,False
+E14001593,Wokingham,LD,65.3,80.6,79.4,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Wokingham,True,False,True,True,True,True,True,True,False
+E14001594,Wolverhampton North East,Lab,40.3,74.9,66.9,Second Quintile (73.6%-77.5%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Wolverhampton North East,True,False,True,False,False,True,True,False,False
+E14001596,Wolverhampton West,Lab,47.6,79.5,75.1,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Third Quintile (42.3%-48.3%),Wolverhampton West,True,True,True,True,True,True,True,False,False
+E14001597,Worcester,Lab,51.5,81.7,78.4,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Worcester,True,True,True,True,False,True,True,True,False
+E14001598,Worsley and Eccles,Lab,36.0,76.7,75.9,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Worsley and Eccles,True,False,True,False,True,True,True,False,False
+E14001599,Worthing West,Lab,57.1,86.2,76.8,Highest Quintile (84.2%+),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Worthing West,True,True,True,True,True,True,True,True,False
+W07000111,Wrexham,Lab,48.3,81.0,79.5,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Third Quintile (42.3%-48.3%),Wrexham,True,True,True,True,True,True,True,False,False
+E14001603,Yeovil,LD,36.6,77.7,74.6,Third Quintile (77.5%-80.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),Yeovil,True,True,True,True,True,True,True,True,False
+W07000112,Ynys Môn,PC,39.8,81.6,77.3,Fourth Quintile (80.6%-84.2%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Ynys Môn,True,True,True,False,True,False,True,True,False
+E14001605,York Outer,Lab,56.2,79.7,75.6,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),York Outer,True,True,False,True,True,True,True,False,False
+S14000066,Arbroath and Broughty Ferry,SNP,50.7,79.7,76.8,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Fourth Quintile (48.3%-57.9%),Arbroath and Broughty Ferry,True,True,True,True,True,True,True,False,False
+E14001144,Bury North,Lab,40.3,77.4,74.9,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Second Quintile (35.3%-42.3%),Bury North,True,True,True,True,True,False,True,False,False
+E14001180,Coventry East,Lab,29.9,70.0,65.0,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Coventry East,True,True,True,True,True,False,True,False,False
+E14001255,Great Grimsby and Cleethorpes,Lab,20.2,76.0,72.1,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Lowest Quintile (<35.3%),Great Grimsby and Cleethorpes,True,True,True,True,True,True,True,False,False
+E14001329,Leigh and Atherton,Lab,28.1,67.3,65.3,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Lowest Quintile (<35.3%),Leigh and Atherton,True,True,True,True,True,True,True,False,False
+S14000096,Lothian East,Lab,55.5,83.1,78.7,Fourth Quintile (80.6%-84.2%),Fourth Quintile (78.2%-81.9%),Fourth Quintile (48.3%-57.9%),Lothian East,True,False,True,False,True,False,True,False,False
+S14000099,"Motherwell, Wishaw and Carluke",Lab,41.8,72.8,70.5,Lowest Quintile (<73.6%),Second Quintile (70.0%-74.7%),Second Quintile (35.3%-42.3%),"Motherwell, Wishaw and Carluke",True,True,True,False,True,False,True,False,False
+E14001394,North East Somerset and Hanham,Lab,45.8,83.2,82.4,Fourth Quintile (80.6%-84.2%),Highest Quintile (81.9%+),Third Quintile (42.3%-48.3%),North East Somerset and Hanham,True,True,True,True,True,True,True,True,False
+E14001440,Redcar,Lab,36.5,72.3,69.7,Lowest Quintile (<73.6%),Lowest Quintile (<70.0%),Second Quintile (35.3%-42.3%),Redcar,True,True,False,True,True,True,True,False,False
+E14001462,Scunthorpe,Lab,28.9,76.6,74.8,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Scunthorpe,True,True,True,True,True,True,True,False,False
+E14001511,St Ives,LD,35.1,77.1,76.4,Second Quintile (73.6%-77.5%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),St Ives,True,True,True,False,True,True,True,False,False
+E14001520,Stoke-on-Trent Central,Lab,43.0,75.1,72.8,Second Quintile (73.6%-77.5%),Second Quintile (70.0%-74.7%),Third Quintile (42.3%-48.3%),Stoke-on-Trent Central,True,True,True,False,True,True,True,False,False
+E14001537,Swindon South,Lab,37.2,87.0,85.6,Highest Quintile (84.2%+),Highest Quintile (81.9%+),Second Quintile (35.3%-42.3%),Swindon South,True,True,True,True,True,True,True,False,False
+E14001572,Wells and Mendip Hills,LD,31.1,78.1,76.9,Third Quintile (77.5%-80.6%),Third Quintile (74.7%-78.2%),Lowest Quintile (<35.3%),Wells and Mendip Hills,True,False,True,False,True,True,True,True,False
+E14001600,Wycombe,Lab,58.2,80.2,78.4,Third Quintile (77.5%-80.6%),Fourth Quintile (78.2%-81.9%),Highest Quintile (57.9%+),Wycombe,True,True,True,True,True,True,True,True,False

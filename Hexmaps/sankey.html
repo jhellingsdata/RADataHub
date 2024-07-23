@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankey Diagram</title>
+    <style>
+        .node rect {
+            stroke: #000;
+            stroke-width: 1px;
+        }
+        .node text {
+            pointer-events: none;
+            text-shadow: 0 1px 0 #fff;
+        }
+        .link {
+            fill: none;
+            stroke-opacity: 0.2;
+        }
+        .link:hover {
+            stroke-opacity: 0.5;
+        }
+    </style>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+</head>
+<body>
+    <svg width="960" height="500"></svg>
+    <script>
+        // Set up the SVG canvas dimensions
+        const width = 960;
+        const height = 500;
+
+        const svg = d3.select("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        // Load and parse the CSV data
+        d3.csv("from_to.csv").then(data => {
+            // Prepare the data for the Sankey diagram
+            const graph = { nodes: [], links: [] };
+            const nodeMap = new Map();
+
+            // Collect all nodes and map them to their names
+            data.forEach(d => {
+                if (!nodeMap.has(d.previous)) {
+                    graph.nodes.push({ name: d.previous });
+                    nodeMap.set(d.previous, graph.nodes.length - 1);
+                }
+                let winnerNode = d.winner;
+                if (d.previous === d.winner) {
+                    winnerNode += " "; // Add a space to end nodes to avoid circular reference
+                }
+                if (!nodeMap.has(winnerNode)) {
+                    graph.nodes.push({ name: winnerNode });
+                    nodeMap.set(winnerNode, graph.nodes.length - 1);
+                }
+                graph.links.push({
+                    source: nodeMap.get(d.previous),
+                    target: nodeMap.get(winnerNode),
+                    value: +d.count
+                });
+            });
+
+            // Log nodes and links for debugging
+            console.log("Nodes:", graph.nodes);
+            console.log("Links:", graph.links);
+
+            // Create the Sankey generator
+            const sankey = d3.sankey()
+                .nodeWidth(15)
+                .nodePadding(10)
+                .size([width, height]);
+
+            const { nodes, links } = sankey({
+                nodes: graph.nodes.map(d => Object.assign({}, d)),
+                links: graph.links.map(d => Object.assign({}, d))
+            });
+
+            // Draw the links
+            svg.append("g")
+                .selectAll(".link")
+                .data(links)
+                .enter().append("path")
+                .attr("class", "link")
+                .attr("d", d3.sankeyLinkHorizontal())
+                .attr("stroke-width", d => Math.max(1, d.width));
+
+            // Draw the nodes
+            const node = svg.append("g")
+                .selectAll(".node")
+                .data(nodes)
+                .enter().append("g")
+                .attr("class", "node")
+                .attr("transform", d => `translate(${d.x0},${d.y0})`);
+
+            node.append("rect")
+                .attr("height", d => d.y1 - d.y0)
+                .attr("width", sankey.nodeWidth())
+                .append("title")
+                .text(d => `${d.name}\n${d.value}`);
+
+            node.append("text")
+                .attr("x", -6)
+                .attr("y", d => (d.y1 - d.y0) / 2)
+                .attr("dy", "0.35em")
+                .attr("text-anchor", "end")
+                .text(d => d.name)
+                .filter(d => d.x0 < width / 2)
+                .attr("x", 6 + sankey.nodeWidth())
+                .attr("text-anchor", "start");
+        }).catch(error => {
+            console.error('Error loading or processing data:', error);
+        });
+    </script>
+</body>
+</html>
