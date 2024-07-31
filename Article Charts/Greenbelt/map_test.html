@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Scrollytelling Mapbox GL JS</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: fixed; top: 0; bottom: 0; width: 100%; }
+        .panel-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+        .panel {
+            margin: 500px 20px 700px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            padding: 20px;
+            width: 80%;
+        }
+        .panel h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<div class="panel-container">
+    <div class="panel" id="panel1">
+        <h2>Welcome to the Greenbelt</h2>
+        <p>This is the greenbelt.</p>
+    </div>
+    <div class="panel" id="panel2">
+        <h2>Welcome to London</h2>
+        <p>This is a boilerplate text about London. .</p>
+    </div>
+    <div class="panel" id="panel3">
+        <h2>Bristol</h2>
+        <p>This is a boilerplate text about the broader Bristol area.</p>
+    </div>
+    <div class="panel" id="panel4">
+        <h2>The Bristol greenbelt</h2>
+        <p>This is a boilerplate text. Bristol greenbelt is very nearby city center.</p>
+    </div>
+</div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZm0tZHMiLCJhIjoiY2xvbXIwb3piMm93aTJscndvYnFncjh4NSJ9.ZYcFieW_kfpK-uB6PhVkLA';
+
+    class MainMap {
+        constructor(container, options) {
+            this.map = new mapboxgl.Map({
+                container: container,
+                style: options.style || 'mapbox://styles/mapbox/streets-v11',
+                center: options.center || [0, 0],
+                zoom: options.zoom || 2
+            });
+
+            this.map.on('load', () => {
+                this.map.addSource('greenbelt', {
+                    type: 'vector',
+                    url: 'mapbox://fm-ds.41zgrzuu'
+                });
+
+                this.map.addLayer({
+                    id: 'greenbelt',
+                    type: 'fill',
+                    source: 'greenbelt',
+                    'source-layer': '41zgrzuu',
+                    paint: {
+                        'fill-color': '#00ff00',
+                        'fill-opacity': 0.6,
+                        'fill-outline-color': 'rgba(255, 255, 255, 1)'
+                    }
+                }, 'waterway-label');
+            });
+        }
+
+        setCenter(center) {
+            this.map.flyTo({ center: center, essential: true });
+        }
+
+        setZoom(zoom) {
+            this.map.flyTo({ zoom: zoom, essential: true });
+        }
+
+        setCenterAndZoom(center, zoom) {
+            this.map.flyTo({ center: center, zoom: zoom, essential: true });
+        }
+
+        setStyle(style) {
+            this.map.setStyle(style);
+            this.map.on('style.load', () => {
+                this.map.addSource('greenbelt', {
+                    type: 'vector',
+                    url: 'mapbox://fm-ds.41zgrzuu'
+                });
+
+                this.map.addLayer({
+                    id: 'greenbelt',
+                    type: 'fill',
+                    source: 'greenbelt',
+                    'source-layer': '41zgrzuu',
+                    paint: {
+                        'fill-color': 'rgb(0, 255, 0)',
+                        'fill-opacity': 0.6,
+                        'fill-outline-color': 'rgba(255, 255, 255, 1)'
+                    }
+                }, 'waterway-label');
+            });
+        }
+    }
+
+    const myMap = new MainMap('map', {
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-1.1743, 52.3555], // England
+        zoom: 5
+    });
+
+    const panels = document.querySelectorAll('.panel');
+    let activePanel = -1;
+
+    function updateMapOnScroll() {
+        const panelOffsets = Array.from(panels).map(panel => panel.getBoundingClientRect().top);
+        const closestPanel = panelOffsets.reduce((closest, offset, index) => {
+            return Math.abs(offset) < Math.abs(panelOffsets[closest]) ? index : closest;
+        }, 0);
+
+        if (closestPanel !== activePanel) {
+            activePanel = closestPanel;
+            switch (activePanel) {
+                case 0:
+                    myMap.setCenterAndZoom([-1.1743, 52.3555], 5); // England
+                    break;
+                case 1:
+                    myMap.setCenterAndZoom([-0.1276, 51.5074], 12); // London
+                    break;
+                case 2:
+                    myMap.setCenterAndZoom([-2.5879, 51.4545], 10); // Broader Bristol area
+                    break;
+                case 3:
+                    myMap.setStyle('mapbox://styles/mapbox/satellite-streets-v11'); // Satellite with labels
+                    myMap.setCenterAndZoom([-2.6278, 51.4543], 14); // Clifton Suspension Bridge
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    window.addEventListener('scroll', updateMapOnScroll);
+    updateMapOnScroll();
+</script>
+</body>
+</html>
