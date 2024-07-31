@@ -1,0 +1,81 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {"style": {"cell": {"stroke": "transparent"}}},
+    "width": 350,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_europe.topojson",
+      "format": {"type": "topojson", "feature": "europe"}
+    },
+    "transform": [
+      {"filter": "datum.id != 'RU' && datum.id != 'IL' && datum.id != 'GE'"},
+      {
+        "lookup": "id",
+        "from": {
+          "data": {
+            "values": [
+              {"country": "Belgium", "year": 1952, "organisation": "Founding members of ECSC (1952) and EEC (1957)", "iso2": "BE", "iso3": "BEL"},
+              {"country": "France", "year": 1952, "organisation": "Founding members of ECSC (1952) and EEC (1957)", "iso2": "FR", "iso3": "FRA"},
+              {"country": "Germany", "year": 1952, "organisation": "Founding members of ECSC (1952) and EEC (1957)", "iso2": "DE", "iso3": "DEU"},
+              {"country": "Italy", "year": 1952, "organisation": "Founding members of ECSC (1952) and EEC (1957)", "iso2": "IT", "iso3": "ITA"},
+              {"country": "Luxembourg", "year": 1952, "organisation": "Founding members of ECSC (1952) and EEC (1957)", "iso2": "LU", "iso3": "LUX"},
+              {"country": "Netherlands", "year": 1952, "organisation": "Founding members of ECSC (1952) and EEC (1957)", "iso2": "NL", "iso3": "NLD"},
+              {"country": "Denmark", "year": 1973, "organisation": "Joined EEC in 1973", "iso2": "DK", "iso3": "DNK"},
+              {"country": "Ireland", "year": 1973, "organisation": "Joined EEC in 1973", "iso2": "IE", "iso3": "IRL"},
+              {"country": "United Kingdom", "year": 1973, "organisation": "Joined EEC in 1973", "iso2": "GB", "iso3": "GBR"},
+              {"country": "Greece", "year": 1981, "organisation": "Joined EEC in 1981", "iso2": "GR", "iso3": "GRC"},
+              {"country": "Portugal", "year": 1986, "organisation": "Joined EEC in 1986", "iso2": "PT", "iso3": "PRT"},
+              {"country": "Spain", "year": 1986, "organisation": "Joined EEC in 1986", "iso2": "ES", "iso3": "ESP"},
+              {"country": "Germany", "year": 1990, "organisation": "Joined EEC (Germany reunified)", "iso2": "DE", "iso3": "DEU"}
+            ]
+          },
+          "key": "iso2",
+          "fields": ["organisation"]
+        }
+      }
+    ],
+    "title": {
+      "font": "Circular Std",
+      "text": "European Economic Community",
+      "subtitle": ["Founding members of European Coal and Steel Community ", "Note: West Germany was a founding member of ECSC and 'Germany' joined EEC following reunification in 1990."],
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "projection": {
+      "type": "mercator",
+      "clipExtent": [[0, 10], [300, 300]],
+      "rotate": [0,0,-5]
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "geoshape",
+          "strokeWidth": 0.3,
+          "stroke": "rgba(0,0,0,0.3)"
+        },
+        "encoding": {
+          "color": {
+            "condition": {
+              "test": "!datum.organisation",
+              "value": "lightgray"
+            },
+            "field": "organisation",
+            "type": "nominal",
+            "legend": {
+              "title": ""
+            }
+          },
+          "tooltip": [
+            {"field": "properties.NAME", "title": "Country"}
+          ]
+        }
+      }
+    ]
+  }
