@@ -1,20 +1,20 @@
-year,city,season,cost,overrun,overrun2,name,flag
-1988,Calgary,Winter,1.20,0.65,65,Calgary 1988, ____
-1992,Albertville,Winter,2.10,1.37,137,Albertville 1992,
-1992,Barcelona,Summer,11.60,2.66,266,Barcelona 1992,
-1994,Lillehammer,Winter,3.40,2.77,277,Lillehammer 1994,
-1996,Atlanta,Summer,4.70,1.51,151,Atlanta 1996,
-1998,Nagano,Winter,2.20,0.56,56,Nagano 1998,
-2000,Sydney,Summer,5.20,0.90,90,Sydney 2000,
-2002,Salt Lake City,Winter,2.70,0.24,24,Salt Lake City 2002,
-2004,Athens,Summer,3.10,0.49,49,Athens 2004,
-2006,Turin,Winter,4.70,0.80,80,Turin 2006,
-2008,Beijing,Summer,8.30,0.02,2,Beijing 2008,
-2010,Vancouver,Winter,3.20,0.13,13,Vancouver 2010,
-2012,London,Summer,16.80,0.76,76,London 2012,
-2014,Sochi,Winter,28.90,2.89,289,Sochi 2014,
-2016,Rio de Janeiro,Summer,23.60,3.52,352,Rio de Janeiro 2016,
-2018,Pyeongchang,Winter,3.40,0.02,2,Pyeongchang 2018,
-2020,Tokyo,Summer,13.70,1.28,128,Tokyo 2020,
-2022,Beijing,Winter,8.70,1.49,149,Beijing 2022,
-2024,Paris,Summer,8.70,1.15,115,Paris 2024,
+
+Calgary,Winter,$1.2B,65%
+Albertville,Winter,$2.1B,137%
+Barcelona,Summer,$11.6B,266%
+Lillehammer,Winter,$3.4B,277%
+Atlanta,Summer,$4.7B,151%
+Nagano,Winter,$2.2B,56%
+Sydney,Summer,$5.2B,90%
+Salt Lake City,Winter,$2.7B,24%
+Athens,Summer,$3.1B,49%
+Turin,Winter,$4.7B,80%
+Beijing,Summer,$8.3B,2%
+Vancouver,Winter,$3.2B,13%
+London,Summer,$16.8B,76%
+Sochi,Winter,$28.9B,289%
+Rio de Janeiro,Summer,$23.6B,352%
+Pyeongchang,Winter,$3.4B,2%
+Tokyo,Summer,$13.7B,128%
+Beijing,Winter,$8.7B,149%
+Paris,Summer,$8.7B,115%

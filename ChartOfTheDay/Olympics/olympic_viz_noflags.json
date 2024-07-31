@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Circular Std",
+    "mark": {"line": {"interpolate": "monotone"}},
+    "view": {"stroke": "transparent", "width": 500, "height": 300},
+    "title": {"anchor": "start", "subtitleColor": "#676A86"},
+    "legend": {
+      "orient": "none",
+      "direction": "horizontal",
+      "legendX": 380,
+      "legendY": -25,
+      "title": ""
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.9,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15,
+      "labelExpr": "'$' + datum.value + 'B'"
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.9,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7,
+      "labelExpr": "datum.value + '%'"
+    }
+  },
+  "title": {
+    "text": "Olympic Costs",
+    "anchor": "start",
+    "subtitle": ["Source: Budzier and Flyvbjerg 2024", ""]
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/olympics_costs.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "point", "filled": true, "color": "black"},
+      "encoding": {
+        "x": {"field": "cost", "title": "Cost", "type": "quantitative"},
+        "y": {"field": "overrun2", "title": "Overrun", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 5, "dy": 0},
+      "encoding": {
+        "x": {"field": "cost", "type": "quantitative"},
+        "y": {"field": "overrun2", "type": "quantitative"},
+        "color": {
+          "field": "season",
+          "type": "nominal",
+          "scale": {"range": ["#e6224b", "#179fdb"]}
+        },
+        "text": {"field": "year", "type": "nominal"},
+        "tooltip": [
+          {"field": "name", "type": "nominal"},
+          {"field": "cost", "type": "quantitative"}
+        ]
+      }
+    }
+  ]
+}

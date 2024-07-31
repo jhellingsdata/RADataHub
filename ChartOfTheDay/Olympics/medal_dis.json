@@ -1,0 +1,116 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Circular Std",
+    "mark": {"line": {"interpolate": "monotone"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "title": {"anchor": "start", "subtitleColor": "#676A86"},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "legend": {
+      "orient": "top-right",
+      "direction": "horizontal",
+      "legendX": 0,
+      "legendY": -15,
+      "titleOrient": "left",
+      "titleColor": "#676A86",
+      "titleOpacity": 0.9
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.9,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "titleAlign": "right",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": 20
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.9,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7,
+      "format": "%"
+    }
+  },
+  "title": {
+    "text": "Olympic medal distribution by table ranking",
+    "anchor": "start",
+    "fontSize": 16,
+    "fontWeight": "normal",
+    "subtitle": ["Source: Olympedia, IOC", ""],
+    "subtitleColor": "rgb(143, 143, 143)"
+  },
+  "transform": [
+    {
+      "calculate": "indexof(['1st to 10th', '11th to 20th', '21st to 40th', '41st and over'],datum.ranking)",
+      "as": "custom-order"
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/medal_spread.csv"
+  },
+  "mark": "area",
+  "encoding": {
+    "x": {"field": "year", "type": "temporal", "title": ""},
+    "y": {
+      "field": "share",
+      "type": "quantitative",
+      "title": "",
+      "scale": {"domain": [0, 1]}
+    },
+    "color": {
+      "field": "ranking",
+      "type": "nominal",
+      "title": "Ranking:",
+      "legend": {
+        "orient": "top",
+        "direction": "horizontal",
+        "values": [
+          "1st to 10th ",
+          "11th to 20th",
+          "21st to 40th",
+          "41st and over"
+        ]
+      }
+    },
+    "order": {"field": "custom-order"}
+  }
+}
