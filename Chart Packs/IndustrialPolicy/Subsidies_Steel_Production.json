@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Energy subsidies and steel production and exports",
+    "subtitle": ["Growth, %"],
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0
+  },
+  "height": 300,
+  "width": 500,
+  "config": {
+    "font": "Circular Std",
+    "view": {"stroke": "transparent"},
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": "",
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+
+  "data": {
+    "values":[
+  {"Label":"Energy subsidies",	"Growth":"0", "Year":"2000"},
+  {"Label":"Energy subsidies",	"Growth":"500", "Year":"2001"},
+  {"Label":"Energy subsidies",	"Growth":"30", "Year":"2002"},
+  {"Label":"Energy subsidies",	"Growth":"-100", "Year":"2003"},
+  {"Label":"Energy subsidies",	"Growth":"1300", "Year":"2004"},
+  {"Label":"Energy subsidies",	"Growth":"1500", "Year":"2005"},
+  {"Label":"Energy subsidies",	"Growth":"1400", "Year":"2006"},
+  {"Label":"Energy subsidies",	"Growth":"3750", "Year":"2007"},
+  {"Label":"Global exports", "Growth":"0", "Year":"2000"},
+  {"Label":"Global exports", "Growth":"0", "Year":"2001"},
+  {"Label":"Global exports", "Growth":"0", "Year":"2002"},
+  {"Label":"Global exports", "Growth":"50", "Year":"2003"},
+  {"Label":"Global exports", "Growth":"250", "Year":"2004"},
+  {"Label":"Global exports", "Growth":"500", "Year":"2005"},
+  {"Label":"Global exports", "Growth":"1000", "Year":"2006"},
+  {"Label":"Global exports", "Growth":"1500", "Year":"2007"},
+  {"Label":"Production", "Growth":"0", "Year":"2000"},
+  {"Label":"Production", "Growth":"0", "Year":"2001"},
+  {"Label":"Production", "Growth":"20", "Year":"2002"},
+  {"Label":"Production", "Growth":"100", "Year":"2003"},
+  {"Label":"Production", "Growth":"200", "Year":"2004"},
+  {"Label":"Production", "Growth":"300", "Year":"2005"},
+  {"Label":"Production", "Growth":"400", "Year":"2006"},
+  {"Label":"Production", "Growth":"450", "Year":"2007"}
+    ]
+  },
+
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal"},
+    "y": {"field": "Growth", "type": "quantitative", "title":""},
+    "color": {"field": "Label", "type": "nominal", "title":""}
+}
+}
