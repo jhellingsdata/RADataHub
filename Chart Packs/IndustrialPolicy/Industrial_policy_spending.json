@@ -1,0 +1,94 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+
+"title": {
+    "text": "Industrial policy spending in key economises - 2019",
+    "subtitle": ["US$ billion, market exchange rates"],
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0
+  },
+  "height": 300,
+  "width": 400,
+  "config": {
+    "font": "Circular Std",
+    "view": {"stroke": "transparent"},
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": "",
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+
+  "data": {
+    "values": [
+      {"Country": "China", "Value": 248},
+      {"Country": "Unites States", "Value": 84},
+      {"Country": "Japan", "Value": 26},
+      {"Country": "Germany", "Value": 16},
+      {"Country": "France", "Value": 15},
+      {"Country": "South Korea", "Value": 10},
+      {"Country": "Brazil", "Value": 6},
+      {"Country": "Taiwan", "Value": 2}
+    ]
+  },
+  "encoding": {
+    "y": {"field": "Value", "type": "quantitative","scale": {"domain": [0, 300]}, "title":""},
+    "x": {"field": "Country", "type": "nominal", "sort": "-y"}, "color": {"value": "#36b7b4"}
+  },
+  "layer": [{
+    "mark": "bar"
+  }, {
+    "mark": {
+      "type": "text",
+      "align": "left",
+      "baseline": "bottom",
+      "dx": -7
+    },
+    "encoding": {
+      "text": {"field": "Value", "type": "quantitative"}
+    }
+  }]
+}
