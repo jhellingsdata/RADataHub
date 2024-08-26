@@ -1,0 +1,1546 @@
+date,country,category,value
+2016-01-01,England,rent_yoy,3.5
+2016-02-01,England,rent_yoy,3.5
+2016-03-01,England,rent_yoy,3.4
+2016-04-01,England,rent_yoy,3.5
+2016-05-01,England,rent_yoy,3.4
+2016-06-01,England,rent_yoy,3.4
+2016-07-01,England,rent_yoy,3.6
+2016-08-01,England,rent_yoy,3.4
+2016-09-01,England,rent_yoy,3.4
+2016-10-01,England,rent_yoy,3.5
+2016-11-01,England,rent_yoy,3.7
+2016-12-01,England,rent_yoy,3.6
+2017-01-01,England,rent_yoy,3.6
+2017-02-01,England,rent_yoy,3.5
+2017-03-01,England,rent_yoy,3.2
+2017-04-01,England,rent_yoy,3.2
+2017-05-01,England,rent_yoy,2.8
+2017-06-01,England,rent_yoy,3.0
+2017-07-01,England,rent_yoy,2.7
+2017-08-01,England,rent_yoy,2.4
+2017-09-01,England,rent_yoy,2.2
+2017-10-01,England,rent_yoy,1.9
+2017-11-01,England,rent_yoy,1.7
+2017-12-01,England,rent_yoy,1.6
+2018-01-01,England,rent_yoy,1.2
+2018-02-01,England,rent_yoy,1.1
+2018-03-01,England,rent_yoy,1.0
+2018-04-01,England,rent_yoy,0.8
+2018-05-01,England,rent_yoy,0.7
+2018-06-01,England,rent_yoy,0.6
+2018-07-01,England,rent_yoy,0.6
+2018-08-01,England,rent_yoy,0.7
+2018-09-01,England,rent_yoy,0.8
+2018-10-01,England,rent_yoy,0.9
+2018-11-01,England,rent_yoy,1.0
+2018-12-01,England,rent_yoy,1.1
+2019-01-01,England,rent_yoy,1.3
+2019-02-01,England,rent_yoy,1.4
+2019-03-01,England,rent_yoy,1.7
+2019-04-01,England,rent_yoy,1.6
+2019-05-01,England,rent_yoy,2.1
+2019-06-01,England,rent_yoy,2.0
+2019-07-01,England,rent_yoy,1.9
+2019-08-01,England,rent_yoy,1.9
+2019-09-01,England,rent_yoy,2.1
+2019-10-01,England,rent_yoy,2.0
+2019-11-01,England,rent_yoy,2.1
+2019-12-01,England,rent_yoy,2.1
+2020-01-01,England,rent_yoy,2.1
+2020-02-01,England,rent_yoy,2.1
+2020-03-01,England,rent_yoy,2.0
+2020-04-01,England,rent_yoy,2.0
+2020-05-01,England,rent_yoy,1.7
+2020-06-01,England,rent_yoy,1.7
+2020-07-01,England,rent_yoy,1.7
+2020-08-01,England,rent_yoy,1.6
+2020-09-01,England,rent_yoy,1.5
+2020-10-01,England,rent_yoy,1.5
+2020-11-01,England,rent_yoy,1.2
+2020-12-01,England,rent_yoy,1.0
+2021-01-01,England,rent_yoy,1.0
+2021-02-01,England,rent_yoy,1.0
+2021-03-01,England,rent_yoy,1.0
+2021-04-01,England,rent_yoy,1.1
+2021-05-01,England,rent_yoy,0.9
+2021-06-01,England,rent_yoy,1.0
+2021-07-01,England,rent_yoy,1.0
+2021-08-01,England,rent_yoy,1.2
+2021-09-01,England,rent_yoy,1.2
+2021-10-01,England,rent_yoy,1.5
+2021-11-01,England,rent_yoy,1.8
+2021-12-01,England,rent_yoy,2.3
+2022-01-01,England,rent_yoy,2.6
+2022-02-01,England,rent_yoy,2.8
+2022-03-01,England,rent_yoy,3.1
+2022-04-01,England,rent_yoy,3.5
+2022-05-01,England,rent_yoy,3.9
+2022-06-01,England,rent_yoy,4.0
+2022-07-01,England,rent_yoy,4.4
+2022-08-01,England,rent_yoy,4.7
+2022-09-01,England,rent_yoy,5.1
+2022-10-01,England,rent_yoy,5.1
+2022-11-01,England,rent_yoy,5.4
+2022-12-01,England,rent_yoy,5.5
+2023-01-01,England,rent_yoy,5.7
+2023-02-01,England,rent_yoy,5.8
+2023-03-01,England,rent_yoy,6.0
+2023-04-01,England,rent_yoy,6.4
+2023-05-01,England,rent_yoy,7.0
+2023-06-01,England,rent_yoy,7.4
+2023-07-01,England,rent_yoy,7.6
+2023-08-01,England,rent_yoy,7.8
+2023-09-01,England,rent_yoy,7.8
+2023-10-01,England,rent_yoy,8.1
+2023-11-01,England,rent_yoy,8.1
+2023-12-01,England,rent_yoy,8.1
+2024-01-01,England,rent_yoy,8.3
+2024-02-01,England,rent_yoy,8.8
+2024-03-01,England,rent_yoy,9.1
+2024-04-01,England,rent_yoy,8.9
+2024-05-01,England,rent_yoy,8.6
+2024-06-01,England,rent_yoy,8.6
+2024-07-01,England,rent_yoy,8.6
+2016-01-01,Wales,rent_yoy,1.2
+2016-02-01,Wales,rent_yoy,0.9
+2016-03-01,Wales,rent_yoy,0.8
+2016-04-01,Wales,rent_yoy,0.6
+2016-05-01,Wales,rent_yoy,0.4
+2016-06-01,Wales,rent_yoy,0.3
+2016-07-01,Wales,rent_yoy,0.3
+2016-08-01,Wales,rent_yoy,0.9
+2016-09-01,Wales,rent_yoy,1.4
+2016-10-01,Wales,rent_yoy,1.4
+2016-11-01,Wales,rent_yoy,1.3
+2016-12-01,Wales,rent_yoy,1.4
+2017-01-01,Wales,rent_yoy,1.5
+2017-02-01,Wales,rent_yoy,1.7
+2017-03-01,Wales,rent_yoy,1.7
+2017-04-01,Wales,rent_yoy,1.7
+2017-05-01,Wales,rent_yoy,2.0
+2017-06-01,Wales,rent_yoy,2.5
+2017-07-01,Wales,rent_yoy,2.8
+2017-08-01,Wales,rent_yoy,2.6
+2017-09-01,Wales,rent_yoy,2.3
+2017-10-01,Wales,rent_yoy,2.3
+2017-11-01,Wales,rent_yoy,2.2
+2017-12-01,Wales,rent_yoy,2.5
+2018-01-01,Wales,rent_yoy,2.0
+2018-02-01,Wales,rent_yoy,1.8
+2018-03-01,Wales,rent_yoy,2.1
+2018-04-01,Wales,rent_yoy,2.4
+2018-05-01,Wales,rent_yoy,2.5
+2018-06-01,Wales,rent_yoy,2.0
+2018-07-01,Wales,rent_yoy,1.8
+2018-08-01,Wales,rent_yoy,1.8
+2018-09-01,Wales,rent_yoy,1.8
+2018-10-01,Wales,rent_yoy,1.7
+2018-11-01,Wales,rent_yoy,1.8
+2018-12-01,Wales,rent_yoy,2.1
+2019-01-01,Wales,rent_yoy,2.4
+2019-02-01,Wales,rent_yoy,2.5
+2019-03-01,Wales,rent_yoy,2.3
+2019-04-01,Wales,rent_yoy,2.3
+2019-05-01,Wales,rent_yoy,2.0
+2019-06-01,Wales,rent_yoy,2.2
+2019-07-01,Wales,rent_yoy,1.9
+2019-08-01,Wales,rent_yoy,2.0
+2019-09-01,Wales,rent_yoy,2.6
+2019-10-01,Wales,rent_yoy,2.6
+2019-11-01,Wales,rent_yoy,2.8
+2019-12-01,Wales,rent_yoy,2.3
+2020-01-01,Wales,rent_yoy,2.2
+2020-02-01,Wales,rent_yoy,2.2
+2020-03-01,Wales,rent_yoy,2.1
+2020-04-01,Wales,rent_yoy,1.8
+2020-05-01,Wales,rent_yoy,2.3
+2020-06-01,Wales,rent_yoy,2.3
+2020-07-01,Wales,rent_yoy,2.8
+2020-08-01,Wales,rent_yoy,2.6
+2020-09-01,Wales,rent_yoy,1.6
+2020-10-01,Wales,rent_yoy,1.5
+2020-11-01,Wales,rent_yoy,1.5
+2020-12-01,Wales,rent_yoy,1.6
+2021-01-01,Wales,rent_yoy,2.0
+2021-02-01,Wales,rent_yoy,2.0
+2021-03-01,Wales,rent_yoy,2.0
+2021-04-01,Wales,rent_yoy,2.1
+2021-05-01,Wales,rent_yoy,2.0
+2021-06-01,Wales,rent_yoy,2.0
+2021-07-01,Wales,rent_yoy,1.4
+2021-08-01,Wales,rent_yoy,1.9
+2021-09-01,Wales,rent_yoy,2.1
+2021-10-01,Wales,rent_yoy,2.4
+2021-11-01,Wales,rent_yoy,2.8
+2021-12-01,Wales,rent_yoy,2.8
+2022-01-01,Wales,rent_yoy,2.7
+2022-02-01,Wales,rent_yoy,2.8
+2022-03-01,Wales,rent_yoy,2.9
+2022-04-01,Wales,rent_yoy,3.1
+2022-05-01,Wales,rent_yoy,3.5
+2022-06-01,Wales,rent_yoy,3.6
+2022-07-01,Wales,rent_yoy,4.3
+2022-08-01,Wales,rent_yoy,4.6
+2022-09-01,Wales,rent_yoy,5.4
+2022-10-01,Wales,rent_yoy,5.5
+2022-11-01,Wales,rent_yoy,5.5
+2022-12-01,Wales,rent_yoy,5.7
+2023-01-01,Wales,rent_yoy,6.2
+2023-02-01,Wales,rent_yoy,6.7
+2023-03-01,Wales,rent_yoy,7.1
+2023-04-01,Wales,rent_yoy,8.1
+2023-05-01,Wales,rent_yoy,7.8
+2023-06-01,Wales,rent_yoy,8.7
+2023-07-01,Wales,rent_yoy,9.2
+2023-08-01,Wales,rent_yoy,8.4
+2023-09-01,Wales,rent_yoy,8.9
+2023-10-01,Wales,rent_yoy,9.7
+2023-11-01,Wales,rent_yoy,9.8
+2023-12-01,Wales,rent_yoy,9.4
+2024-01-01,Wales,rent_yoy,9.1
+2024-02-01,Wales,rent_yoy,9.0
+2024-03-01,Wales,rent_yoy,9.0
+2024-04-01,Wales,rent_yoy,8.2
+2024-05-01,Wales,rent_yoy,8.5
+2024-06-01,Wales,rent_yoy,8.2
+2024-07-01,Wales,rent_yoy,7.9
+2016-01-01,Scotland,rent_yoy,2.1
+2016-02-01,Scotland,rent_yoy,1.9
+2016-03-01,Scotland,rent_yoy,1.7
+2016-04-01,Scotland,rent_yoy,1.5
+2016-05-01,Scotland,rent_yoy,1.4
+2016-06-01,Scotland,rent_yoy,1.1
+2016-07-01,Scotland,rent_yoy,1.2
+2016-08-01,Scotland,rent_yoy,0.9
+2016-09-01,Scotland,rent_yoy,1.1
+2016-10-01,Scotland,rent_yoy,1.1
+2016-11-01,Scotland,rent_yoy,1.3
+2016-12-01,Scotland,rent_yoy,1.4
+2017-01-01,Scotland,rent_yoy,1.4
+2017-02-01,Scotland,rent_yoy,1.6
+2017-03-01,Scotland,rent_yoy,1.6
+2017-04-01,Scotland,rent_yoy,1.8
+2017-05-01,Scotland,rent_yoy,1.9
+2017-06-01,Scotland,rent_yoy,2.1
+2017-07-01,Scotland,rent_yoy,2.3
+2017-08-01,Scotland,rent_yoy,2.6
+2017-09-01,Scotland,rent_yoy,2.5
+2017-10-01,Scotland,rent_yoy,2.6
+2017-11-01,Scotland,rent_yoy,2.6
+2017-12-01,Scotland,rent_yoy,2.6
+2018-01-01,Scotland,rent_yoy,2.6
+2018-02-01,Scotland,rent_yoy,2.7
+2018-03-01,Scotland,rent_yoy,2.9
+2018-04-01,Scotland,rent_yoy,2.7
+2018-05-01,Scotland,rent_yoy,2.6
+2018-06-01,Scotland,rent_yoy,2.5
+2018-07-01,Scotland,rent_yoy,2.3
+2018-08-01,Scotland,rent_yoy,2.1
+2018-09-01,Scotland,rent_yoy,2.1
+2018-10-01,Scotland,rent_yoy,1.9
+2018-11-01,Scotland,rent_yoy,2.1
+2018-12-01,Scotland,rent_yoy,2.0
+2019-01-01,Scotland,rent_yoy,1.8
+2019-02-01,Scotland,rent_yoy,1.6
+2019-03-01,Scotland,rent_yoy,1.5
+2019-04-01,Scotland,rent_yoy,1.7
+2019-05-01,Scotland,rent_yoy,1.8
+2019-06-01,Scotland,rent_yoy,2.1
+2019-07-01,Scotland,rent_yoy,2.3
+2019-08-01,Scotland,rent_yoy,2.3
+2019-09-01,Scotland,rent_yoy,2.4
+2019-10-01,Scotland,rent_yoy,2.6
+2019-11-01,Scotland,rent_yoy,2.6
+2019-12-01,Scotland,rent_yoy,2.7
+2020-01-01,Scotland,rent_yoy,2.9
+2020-02-01,Scotland,rent_yoy,2.7
+2020-03-01,Scotland,rent_yoy,2.8
+2020-04-01,Scotland,rent_yoy,2.8
+2020-05-01,Scotland,rent_yoy,2.7
+2020-06-01,Scotland,rent_yoy,2.2
+2020-07-01,Scotland,rent_yoy,2.1
+2020-08-01,Scotland,rent_yoy,1.7
+2020-09-01,Scotland,rent_yoy,1.6
+2020-10-01,Scotland,rent_yoy,1.4
+2020-11-01,Scotland,rent_yoy,1.4
+2020-12-01,Scotland,rent_yoy,1.3
+2021-01-01,Scotland,rent_yoy,1.3
+2021-02-01,Scotland,rent_yoy,1.4
+2021-03-01,Scotland,rent_yoy,1.3
+2021-04-01,Scotland,rent_yoy,1.4
+2021-05-01,Scotland,rent_yoy,1.5
+2021-06-01,Scotland,rent_yoy,1.7
+2021-07-01,Scotland,rent_yoy,1.8
+2021-08-01,Scotland,rent_yoy,2.0
+2021-09-01,Scotland,rent_yoy,2.0
+2021-10-01,Scotland,rent_yoy,2.1
+2021-11-01,Scotland,rent_yoy,2.5
+2021-12-01,Scotland,rent_yoy,3.2
+2022-01-01,Scotland,rent_yoy,3.5
+2022-02-01,Scotland,rent_yoy,3.9
+2022-03-01,Scotland,rent_yoy,4.2
+2022-04-01,Scotland,rent_yoy,4.4
+2022-05-01,Scotland,rent_yoy,4.6
+2022-06-01,Scotland,rent_yoy,4.8
+2022-07-01,Scotland,rent_yoy,4.9
+2022-08-01,Scotland,rent_yoy,5.1
+2022-09-01,Scotland,rent_yoy,6.0
+2022-10-01,Scotland,rent_yoy,7.0
+2022-11-01,Scotland,rent_yoy,7.3
+2022-12-01,Scotland,rent_yoy,7.4
+2023-01-01,Scotland,rent_yoy,7.8
+2023-02-01,Scotland,rent_yoy,8.4
+2023-03-01,Scotland,rent_yoy,8.5
+2023-04-01,Scotland,rent_yoy,8.9
+2023-05-01,Scotland,rent_yoy,9.8
+2023-06-01,Scotland,rent_yoy,10.5
+2023-07-01,Scotland,rent_yoy,11.0
+2023-08-01,Scotland,rent_yoy,11.8
+2023-09-01,Scotland,rent_yoy,11.6
+2023-10-01,Scotland,rent_yoy,11.5
+2023-11-01,Scotland,rent_yoy,11.2
+2023-12-01,Scotland,rent_yoy,10.8
+2024-01-01,Scotland,rent_yoy,11.2
+2024-02-01,Scotland,rent_yoy,10.9
+2024-03-01,Scotland,rent_yoy,10.5
+2024-04-01,Scotland,rent_yoy,10.0
+2024-05-01,Scotland,rent_yoy,9.3
+2024-06-01,Scotland,rent_yoy,8.4
+2024-07-01,Scotland,rent_yoy,8.2
+2016-01-01,Northern Ireland,rent_yoy,1.5
+2016-02-01,Northern Ireland,rent_yoy,1.7
+2016-03-01,Northern Ireland,rent_yoy,1.8
+2016-04-01,Northern Ireland,rent_yoy,1.9
+2016-05-01,Northern Ireland,rent_yoy,2.3
+2016-06-01,Northern Ireland,rent_yoy,2.4
+2016-07-01,Northern Ireland,rent_yoy,2.5
+2016-08-01,Northern Ireland,rent_yoy,2.7
+2016-09-01,Northern Ireland,rent_yoy,2.3
+2016-10-01,Northern Ireland,rent_yoy,2.3
+2016-11-01,Northern Ireland,rent_yoy,1.9
+2016-12-01,Northern Ireland,rent_yoy,1.7
+2017-01-01,Northern Ireland,rent_yoy,1.2
+2017-02-01,Northern Ireland,rent_yoy,1.0
+2017-03-01,Northern Ireland,rent_yoy,1.1
+2017-04-01,Northern Ireland,rent_yoy,1.3
+2017-05-01,Northern Ireland,rent_yoy,1.2
+2017-06-01,Northern Ireland,rent_yoy,1.4
+2017-07-01,Northern Ireland,rent_yoy,1.3
+2017-08-01,Northern Ireland,rent_yoy,1.3
+2017-09-01,Northern Ireland,rent_yoy,1.6
+2017-10-01,Northern Ireland,rent_yoy,1.6
+2017-11-01,Northern Ireland,rent_yoy,1.8
+2017-12-01,Northern Ireland,rent_yoy,1.8
+2018-01-01,Northern Ireland,rent_yoy,2.1
+2018-02-01,Northern Ireland,rent_yoy,2.2
+2018-03-01,Northern Ireland,rent_yoy,2.1
+2018-04-01,Northern Ireland,rent_yoy,2.1
+2018-05-01,Northern Ireland,rent_yoy,2.0
+2018-06-01,Northern Ireland,rent_yoy,1.9
+2018-07-01,Northern Ireland,rent_yoy,2.0
+2018-08-01,Northern Ireland,rent_yoy,2.0
+2018-09-01,Northern Ireland,rent_yoy,2.0
+2018-10-01,Northern Ireland,rent_yoy,2.0
+2018-11-01,Northern Ireland,rent_yoy,1.7
+2018-12-01,Northern Ireland,rent_yoy,2.0
+2019-01-01,Northern Ireland,rent_yoy,2.1
+2019-02-01,Northern Ireland,rent_yoy,2.0
+2019-03-01,Northern Ireland,rent_yoy,2.1
+2019-04-01,Northern Ireland,rent_yoy,1.9
+2019-05-01,Northern Ireland,rent_yoy,1.8
+2019-06-01,Northern Ireland,rent_yoy,1.9
+2019-07-01,Northern Ireland,rent_yoy,2.1
+2019-08-01,Northern Ireland,rent_yoy,2.2
+2019-09-01,Northern Ireland,rent_yoy,2.2
+2019-10-01,Northern Ireland,rent_yoy,2.2
+2019-11-01,Northern Ireland,rent_yoy,2.2
+2019-12-01,Northern Ireland,rent_yoy,2.0
+2020-01-01,Northern Ireland,rent_yoy,2.3
+2020-02-01,Northern Ireland,rent_yoy,2.5
+2020-03-01,Northern Ireland,rent_yoy,2.6
+2020-04-01,Northern Ireland,rent_yoy,2.7
+2020-05-01,Northern Ireland,rent_yoy,2.8
+2020-06-01,Northern Ireland,rent_yoy,2.4
+2020-07-01,Northern Ireland,rent_yoy,2.4
+2020-08-01,Northern Ireland,rent_yoy,2.3
+2020-09-01,Northern Ireland,rent_yoy,2.7
+2020-10-01,Northern Ireland,rent_yoy,2.6
+2020-11-01,Northern Ireland,rent_yoy,3.0
+2020-12-01,Northern Ireland,rent_yoy,3.3
+2021-01-01,Northern Ireland,rent_yoy,3.5
+2021-02-01,Northern Ireland,rent_yoy,3.4
+2021-03-01,Northern Ireland,rent_yoy,3.4
+2021-04-01,Northern Ireland,rent_yoy,3.6
+2021-05-01,Northern Ireland,rent_yoy,3.7
+2021-06-01,Northern Ireland,rent_yoy,4.3
+2021-07-01,Northern Ireland,rent_yoy,4.4
+2021-08-01,Northern Ireland,rent_yoy,4.7
+2021-09-01,Northern Ireland,rent_yoy,5.0
+2021-10-01,Northern Ireland,rent_yoy,5.5
+2021-11-01,Northern Ireland,rent_yoy,6.0
+2021-12-01,Northern Ireland,rent_yoy,6.5
+2022-01-01,Northern Ireland,rent_yoy,6.3
+2022-02-01,Northern Ireland,rent_yoy,6.7
+2022-03-01,Northern Ireland,rent_yoy,6.8
+2022-04-01,Northern Ireland,rent_yoy,7.4
+2022-05-01,Northern Ireland,rent_yoy,8.1
+2022-06-01,Northern Ireland,rent_yoy,8.4
+2022-07-01,Northern Ireland,rent_yoy,8.9
+2022-08-01,Northern Ireland,rent_yoy,9.1
+2022-09-01,Northern Ireland,rent_yoy,9.5
+2022-10-01,Northern Ireland,rent_yoy,9.6
+2022-11-01,Northern Ireland,rent_yoy,9.2
+2022-12-01,Northern Ireland,rent_yoy,9.5
+2023-01-01,Northern Ireland,rent_yoy,9.9
+2023-02-01,Northern Ireland,rent_yoy,9.8
+2023-03-01,Northern Ireland,rent_yoy,10.0
+2023-04-01,Northern Ireland,rent_yoy,9.6
+2023-05-01,Northern Ireland,rent_yoy,9.2
+2023-06-01,Northern Ireland,rent_yoy,9.1
+2023-07-01,Northern Ireland,rent_yoy,9.3
+2023-08-01,Northern Ireland,rent_yoy,9.6
+2023-09-01,Northern Ireland,rent_yoy,9.1
+2023-10-01,Northern Ireland,rent_yoy,9.3
+2023-11-01,Northern Ireland,rent_yoy,9.5
+2023-12-01,Northern Ireland,rent_yoy,9.3
+2024-01-01,Northern Ireland,rent_yoy,10.1
+2024-02-01,Northern Ireland,rent_yoy,10.4
+2024-03-01,Northern Ireland,rent_yoy,10.3
+2024-04-01,Northern Ireland,rent_yoy,10.3
+2024-05-01,Northern Ireland,rent_yoy,10.0
+2024-06-01,Northern Ireland,rent_yoy,
+2024-07-01,Northern Ireland,rent_yoy,
+2016-01-01,UK,rent_yoy,3.4
+2016-02-01,UK,rent_yoy,3.3
+2016-03-01,UK,rent_yoy,3.2
+2016-04-01,UK,rent_yoy,3.3
+2016-05-01,UK,rent_yoy,3.2
+2016-06-01,UK,rent_yoy,3.2
+2016-07-01,UK,rent_yoy,3.4
+2016-08-01,UK,rent_yoy,3.2
+2016-09-01,UK,rent_yoy,3.2
+2016-10-01,UK,rent_yoy,3.3
+2016-11-01,UK,rent_yoy,3.5
+2016-12-01,UK,rent_yoy,3.4
+2017-01-01,UK,rent_yoy,3.4
+2017-02-01,UK,rent_yoy,3.3
+2017-03-01,UK,rent_yoy,3.1
+2017-04-01,UK,rent_yoy,3.1
+2017-05-01,UK,rent_yoy,2.7
+2017-06-01,UK,rent_yoy,2.9
+2017-07-01,UK,rent_yoy,2.6
+2017-08-01,UK,rent_yoy,2.4
+2017-09-01,UK,rent_yoy,2.2
+2017-10-01,UK,rent_yoy,2.0
+2017-11-01,UK,rent_yoy,1.7
+2017-12-01,UK,rent_yoy,1.7
+2018-01-01,UK,rent_yoy,1.3
+2018-02-01,UK,rent_yoy,1.3
+2018-03-01,UK,rent_yoy,1.1
+2018-04-01,UK,rent_yoy,0.9
+2018-05-01,UK,rent_yoy,0.9
+2018-06-01,UK,rent_yoy,0.8
+2018-07-01,UK,rent_yoy,0.8
+2018-08-01,UK,rent_yoy,0.8
+2018-09-01,UK,rent_yoy,0.9
+2018-10-01,UK,rent_yoy,1.0
+2018-11-01,UK,rent_yoy,1.1
+2018-12-01,UK,rent_yoy,1.2
+2019-01-01,UK,rent_yoy,1.4
+2019-02-01,UK,rent_yoy,1.5
+2019-03-01,UK,rent_yoy,1.7
+2019-04-01,UK,rent_yoy,1.6
+2019-05-01,UK,rent_yoy,2.1
+2019-06-01,UK,rent_yoy,2.0
+2019-07-01,UK,rent_yoy,2.0
+2019-08-01,UK,rent_yoy,2.0
+2019-09-01,UK,rent_yoy,2.1
+2019-10-01,UK,rent_yoy,2.1
+2019-11-01,UK,rent_yoy,2.2
+2019-12-01,UK,rent_yoy,2.2
+2020-01-01,UK,rent_yoy,2.1
+2020-02-01,UK,rent_yoy,2.2
+2020-03-01,UK,rent_yoy,2.1
+2020-04-01,UK,rent_yoy,2.1
+2020-05-01,UK,rent_yoy,1.8
+2020-06-01,UK,rent_yoy,1.8
+2020-07-01,UK,rent_yoy,1.8
+2020-08-01,UK,rent_yoy,1.7
+2020-09-01,UK,rent_yoy,1.5
+2020-10-01,UK,rent_yoy,1.5
+2020-11-01,UK,rent_yoy,1.3
+2020-12-01,UK,rent_yoy,1.1
+2021-01-01,UK,rent_yoy,1.1
+2021-02-01,UK,rent_yoy,1.1
+2021-03-01,UK,rent_yoy,1.1
+2021-04-01,UK,rent_yoy,1.1
+2021-05-01,UK,rent_yoy,1.0
+2021-06-01,UK,rent_yoy,1.1
+2021-07-01,UK,rent_yoy,1.1
+2021-08-01,UK,rent_yoy,1.3
+2021-09-01,UK,rent_yoy,1.4
+2021-10-01,UK,rent_yoy,1.6
+2021-11-01,UK,rent_yoy,1.9
+2021-12-01,UK,rent_yoy,2.4
+2022-01-01,UK,rent_yoy,2.7
+2022-02-01,UK,rent_yoy,3.0
+2022-03-01,UK,rent_yoy,3.2
+2022-04-01,UK,rent_yoy,3.6
+2022-05-01,UK,rent_yoy,4.0
+2022-06-01,UK,rent_yoy,4.1
+2022-07-01,UK,rent_yoy,4.5
+2022-08-01,UK,rent_yoy,4.8
+2022-09-01,UK,rent_yoy,5.2
+2022-10-01,UK,rent_yoy,5.2
+2022-11-01,UK,rent_yoy,5.6
+2022-12-01,UK,rent_yoy,5.6
+2023-01-01,UK,rent_yoy,5.9
+2023-02-01,UK,rent_yoy,6.0
+2023-03-01,UK,rent_yoy,6.2
+2023-04-01,UK,rent_yoy,6.6
+2023-05-01,UK,rent_yoy,7.2
+2023-06-01,UK,rent_yoy,7.6
+2023-07-01,UK,rent_yoy,7.8
+2023-08-01,UK,rent_yoy,8.0
+2023-09-01,UK,rent_yoy,8.1
+2023-10-01,UK,rent_yoy,8.4
+2023-11-01,UK,rent_yoy,8.3
+2023-12-01,UK,rent_yoy,8.3
+2024-01-01,UK,rent_yoy,8.5
+2024-02-01,UK,rent_yoy,9.0
+2024-03-01,UK,rent_yoy,9.2
+2024-04-01,UK,rent_yoy,8.9
+2024-05-01,UK,rent_yoy,8.7
+2024-06-01,UK,rent_yoy,8.6
+2024-07-01,UK,rent_yoy,8.6
+2016-01-01,England,started,
+2016-02-01,England,started,
+2016-03-01,England,started,36670.0
+2016-04-01,England,started,
+2016-05-01,England,started,
+2016-06-01,England,started,40910.0
+2016-07-01,England,started,
+2016-08-01,England,started,
+2016-09-01,England,started,42580.0
+2016-10-01,England,started,
+2016-11-01,England,started,
+2016-12-01,England,started,34990.0
+2017-01-01,England,started,
+2017-02-01,England,started,
+2017-03-01,England,started,41810.0
+2017-04-01,England,started,
+2017-05-01,England,started,
+2017-06-01,England,started,43360.0
+2017-07-01,England,started,
+2017-08-01,England,started,
+2017-09-01,England,started,41710.0
+2017-10-01,England,started,
+2017-11-01,England,started,
+2017-12-01,England,started,37230.0
+2018-01-01,England,started,
+2018-02-01,England,started,
+2018-03-01,England,started,41500.0
+2018-04-01,England,started,
+2018-05-01,England,started,
+2018-06-01,England,started,42400.0
+2018-07-01,England,started,
+2018-08-01,England,started,
+2018-09-01,England,started,48060.0
+2018-10-01,England,started,
+2018-11-01,England,started,
+2018-12-01,England,started,36650.0
+2019-01-01,England,started,
+2019-02-01,England,started,
+2019-03-01,England,started,39270.0
+2019-04-01,England,started,
+2019-05-01,England,started,
+2019-06-01,England,started,40090.0
+2019-07-01,England,started,
+2019-08-01,England,started,
+2019-09-01,England,started,43600.0
+2019-10-01,England,started,
+2019-11-01,England,started,
+2019-12-01,England,started,30040.0
+2020-01-01,England,started,
+2020-02-01,England,started,
+2020-03-01,England,started,34790.0
+2020-04-01,England,started,
+2020-05-01,England,started,
+2020-06-01,England,started,17690.0
+2020-07-01,England,started,
+2020-08-01,England,started,
+2020-09-01,England,started,40510.0
+2020-10-01,England,started,
+2020-11-01,England,started,
+2020-12-01,England,started,36980.0
+2021-01-01,England,started,
+2021-02-01,England,started,
+2021-03-01,England,started,46490.0
+2021-04-01,England,started,
+2021-05-01,England,started,
+2021-06-01,England,started,47800.0
+2021-07-01,England,started,
+2021-08-01,England,started,
+2021-09-01,England,started,47520.0
+2021-10-01,England,started,
+2021-11-01,England,started,
+2021-12-01,England,started,36140.0
+2022-01-01,England,started,
+2022-02-01,England,started,
+2022-03-01,England,started,42650.0
+2022-04-01,England,started,
+2022-05-01,England,started,
+2022-06-01,England,started,54650.0
+2022-07-01,England,started,
+2022-08-01,England,started,
+2022-09-01,England,started,46400.0
+2022-10-01,England,started,
+2022-11-01,England,started,
+2022-12-01,England,started,32690.0
+2023-01-01,England,started,
+2023-02-01,England,started,
+2023-03-01,England,started,38610.0
+2023-04-01,England,started,
+2023-05-01,England,started,
+2023-06-01,England,started,72360.0
+2023-07-01,England,started,
+2023-08-01,England,started,
+2023-09-01,England,started,22110.0
+2023-10-01,England,started,
+2023-11-01,England,started,
+2023-12-01,England,started,15860.0
+2024-01-01,England,started,
+2024-02-01,England,started,
+2024-03-01,England,started,
+2024-04-01,England,started,
+2024-05-01,England,started,
+2024-06-01,England,started,
+2024-07-01,England,started,
+2016-01-01,Wales,started,
+2016-02-01,Wales,started,
+2016-03-01,Wales,started,1410.0
+2016-04-01,Wales,started,
+2016-05-01,Wales,started,
+2016-06-01,Wales,started,1360.0
+2016-07-01,Wales,started,
+2016-08-01,Wales,started,
+2016-09-01,Wales,started,1900.0
+2016-10-01,Wales,started,
+2016-11-01,Wales,started,
+2016-12-01,Wales,started,2140.0
+2017-01-01,Wales,started,
+2017-02-01,Wales,started,
+2017-03-01,Wales,started,1480.0
+2017-04-01,Wales,started,
+2017-05-01,Wales,started,
+2017-06-01,Wales,started,1850.0
+2017-07-01,Wales,started,
+2017-08-01,Wales,started,
+2017-09-01,Wales,started,1510.0
+2017-10-01,Wales,started,
+2017-11-01,Wales,started,
+2017-12-01,Wales,started,1260.0
+2018-01-01,Wales,started,
+2018-02-01,Wales,started,
+2018-03-01,Wales,started,1420.0
+2018-04-01,Wales,started,
+2018-05-01,Wales,started,
+2018-06-01,Wales,started,1820.0
+2018-07-01,Wales,started,
+2018-08-01,Wales,started,
+2018-09-01,Wales,started,1430.0
+2018-10-01,Wales,started,
+2018-11-01,Wales,started,
+2018-12-01,Wales,started,1330.0
+2019-01-01,Wales,started,
+2019-02-01,Wales,started,
+2019-03-01,Wales,started,1390.0
+2019-04-01,Wales,started,
+2019-05-01,Wales,started,
+2019-06-01,Wales,started,1690.0
+2019-07-01,Wales,started,
+2019-08-01,Wales,started,
+2019-09-01,Wales,started,1720.0
+2019-10-01,Wales,started,
+2019-11-01,Wales,started,
+2019-12-01,Wales,started,1330.0
+2020-01-01,Wales,started,
+2020-02-01,Wales,started,
+2020-03-01,Wales,started,1490.0
+2020-04-01,Wales,started,
+2020-05-01,Wales,started,
+2020-06-01,Wales,started,
+2020-07-01,Wales,started,
+2020-08-01,Wales,started,
+2020-09-01,Wales,started,
+2020-10-01,Wales,started,
+2020-11-01,Wales,started,
+2020-12-01,Wales,started,
+2021-01-01,Wales,started,
+2021-02-01,Wales,started,
+2021-03-01,Wales,started,
+2021-04-01,Wales,started,
+2021-05-01,Wales,started,
+2021-06-01,Wales,started,
+2021-07-01,Wales,started,
+2021-08-01,Wales,started,
+2021-09-01,Wales,started,
+2021-10-01,Wales,started,
+2021-11-01,Wales,started,
+2021-12-01,Wales,started,
+2022-01-01,Wales,started,
+2022-02-01,Wales,started,
+2022-03-01,Wales,started,
+2022-04-01,Wales,started,
+2022-05-01,Wales,started,
+2022-06-01,Wales,started,1230.0
+2022-07-01,Wales,started,
+2022-08-01,Wales,started,
+2022-09-01,Wales,started,1300.0
+2022-10-01,Wales,started,
+2022-11-01,Wales,started,
+2022-12-01,Wales,started,990.0
+2023-01-01,Wales,started,
+2023-02-01,Wales,started,
+2023-03-01,Wales,started,1030.0
+2023-04-01,Wales,started,
+2023-05-01,Wales,started,
+2023-06-01,Wales,started,1250.0
+2023-07-01,Wales,started,
+2023-08-01,Wales,started,
+2023-09-01,Wales,started,1420.0
+2023-10-01,Wales,started,
+2023-11-01,Wales,started,
+2023-12-01,Wales,started,1880.0
+2024-01-01,Wales,started,
+2024-02-01,Wales,started,
+2024-03-01,Wales,started,
+2024-04-01,Wales,started,
+2024-05-01,Wales,started,
+2024-06-01,Wales,started,
+2024-07-01,Wales,started,
+2016-01-01,Scotland,started,
+2016-02-01,Scotland,started,
+2016-03-01,Scotland,started,36670.0
+2016-04-01,Scotland,started,
+2016-05-01,Scotland,started,
+2016-06-01,Scotland,started,40910.0
+2016-07-01,Scotland,started,
+2016-08-01,Scotland,started,
+2016-09-01,Scotland,started,42580.0
+2016-10-01,Scotland,started,
+2016-11-01,Scotland,started,
+2016-12-01,Scotland,started,34990.0
+2017-01-01,Scotland,started,
+2017-02-01,Scotland,started,
+2017-03-01,Scotland,started,41810.0
+2017-04-01,Scotland,started,
+2017-05-01,Scotland,started,
+2017-06-01,Scotland,started,43360.0
+2017-07-01,Scotland,started,
+2017-08-01,Scotland,started,
+2017-09-01,Scotland,started,41710.0
+2017-10-01,Scotland,started,
+2017-11-01,Scotland,started,
+2017-12-01,Scotland,started,37230.0
+2018-01-01,Scotland,started,
+2018-02-01,Scotland,started,
+2018-03-01,Scotland,started,41500.0
+2018-04-01,Scotland,started,
+2018-05-01,Scotland,started,
+2018-06-01,Scotland,started,42400.0
+2018-07-01,Scotland,started,
+2018-08-01,Scotland,started,
+2018-09-01,Scotland,started,48060.0
+2018-10-01,Scotland,started,
+2018-11-01,Scotland,started,
+2018-12-01,Scotland,started,36650.0
+2019-01-01,Scotland,started,
+2019-02-01,Scotland,started,
+2019-03-01,Scotland,started,39270.0
+2019-04-01,Scotland,started,
+2019-05-01,Scotland,started,
+2019-06-01,Scotland,started,40090.0
+2019-07-01,Scotland,started,
+2019-08-01,Scotland,started,
+2019-09-01,Scotland,started,43600.0
+2019-10-01,Scotland,started,
+2019-11-01,Scotland,started,
+2019-12-01,Scotland,started,30040.0
+2020-01-01,Scotland,started,
+2020-02-01,Scotland,started,
+2020-03-01,Scotland,started,34790.0
+2020-04-01,Scotland,started,
+2020-05-01,Scotland,started,
+2020-06-01,Scotland,started,17690.0
+2020-07-01,Scotland,started,
+2020-08-01,Scotland,started,
+2020-09-01,Scotland,started,40510.0
+2020-10-01,Scotland,started,
+2020-11-01,Scotland,started,
+2020-12-01,Scotland,started,36980.0
+2021-01-01,Scotland,started,
+2021-02-01,Scotland,started,
+2021-03-01,Scotland,started,46490.0
+2021-04-01,Scotland,started,
+2021-05-01,Scotland,started,
+2021-06-01,Scotland,started,47800.0
+2021-07-01,Scotland,started,
+2021-08-01,Scotland,started,
+2021-09-01,Scotland,started,47520.0
+2021-10-01,Scotland,started,
+2021-11-01,Scotland,started,
+2021-12-01,Scotland,started,36140.0
+2022-01-01,Scotland,started,
+2022-02-01,Scotland,started,
+2022-03-01,Scotland,started,42650.0
+2022-04-01,Scotland,started,
+2022-05-01,Scotland,started,
+2022-06-01,Scotland,started,54650.0
+2022-07-01,Scotland,started,
+2022-08-01,Scotland,started,
+2022-09-01,Scotland,started,46400.0
+2022-10-01,Scotland,started,
+2022-11-01,Scotland,started,
+2022-12-01,Scotland,started,32690.0
+2023-01-01,Scotland,started,
+2023-02-01,Scotland,started,
+2023-03-01,Scotland,started,38610.0
+2023-04-01,Scotland,started,
+2023-05-01,Scotland,started,
+2023-06-01,Scotland,started,72360.0
+2023-07-01,Scotland,started,
+2023-08-01,Scotland,started,
+2023-09-01,Scotland,started,22110.0
+2023-10-01,Scotland,started,
+2023-11-01,Scotland,started,
+2023-12-01,Scotland,started,15860.0
+2024-01-01,Scotland,started,
+2024-02-01,Scotland,started,
+2024-03-01,Scotland,started,
+2024-04-01,Scotland,started,
+2024-05-01,Scotland,started,
+2024-06-01,Scotland,started,
+2024-07-01,Scotland,started,
+2016-01-01,Northern Ireland,started,
+2016-02-01,Northern Ireland,started,
+2016-03-01,Northern Ireland,started,1620.0
+2016-04-01,Northern Ireland,started,
+2016-05-01,Northern Ireland,started,
+2016-06-01,Northern Ireland,started,2050.0
+2016-07-01,Northern Ireland,started,
+2016-08-01,Northern Ireland,started,
+2016-09-01,Northern Ireland,started,2020.0
+2016-10-01,Northern Ireland,started,
+2016-11-01,Northern Ireland,started,
+2016-12-01,Northern Ireland,started,1760.0
+2017-01-01,Northern Ireland,started,
+2017-02-01,Northern Ireland,started,
+2017-03-01,Northern Ireland,started,1890.0
+2017-04-01,Northern Ireland,started,
+2017-05-01,Northern Ireland,started,
+2017-06-01,Northern Ireland,started,2440.0
+2017-07-01,Northern Ireland,started,
+2017-08-01,Northern Ireland,started,
+2017-09-01,Northern Ireland,started,1720.0
+2017-10-01,Northern Ireland,started,
+2017-11-01,Northern Ireland,started,
+2017-12-01,Northern Ireland,started,1390.0
+2018-01-01,Northern Ireland,started,
+2018-02-01,Northern Ireland,started,
+2018-03-01,Northern Ireland,started,1960.0
+2018-04-01,Northern Ireland,started,
+2018-05-01,Northern Ireland,started,
+2018-06-01,Northern Ireland,started,2590.0
+2018-07-01,Northern Ireland,started,
+2018-08-01,Northern Ireland,started,
+2018-09-01,Northern Ireland,started,2240.0
+2018-10-01,Northern Ireland,started,
+2018-11-01,Northern Ireland,started,
+2018-12-01,Northern Ireland,started,1840.0
+2019-01-01,Northern Ireland,started,
+2019-02-01,Northern Ireland,started,
+2019-03-01,Northern Ireland,started,1760.0
+2019-04-01,Northern Ireland,started,
+2019-05-01,Northern Ireland,started,
+2019-06-01,Northern Ireland,started,1870.0
+2019-07-01,Northern Ireland,started,
+2019-08-01,Northern Ireland,started,
+2019-09-01,Northern Ireland,started,1920.0
+2019-10-01,Northern Ireland,started,
+2019-11-01,Northern Ireland,started,
+2019-12-01,Northern Ireland,started,1720.0
+2020-01-01,Northern Ireland,started,
+2020-02-01,Northern Ireland,started,
+2020-03-01,Northern Ireland,started,1570.0
+2020-04-01,Northern Ireland,started,
+2020-05-01,Northern Ireland,started,
+2020-06-01,Northern Ireland,started,1240.0
+2020-07-01,Northern Ireland,started,
+2020-08-01,Northern Ireland,started,
+2020-09-01,Northern Ireland,started,1660.0
+2020-10-01,Northern Ireland,started,
+2020-11-01,Northern Ireland,started,
+2020-12-01,Northern Ireland,started,1590.0
+2021-01-01,Northern Ireland,started,
+2021-02-01,Northern Ireland,started,
+2021-03-01,Northern Ireland,started,1980.0
+2021-04-01,Northern Ireland,started,
+2021-05-01,Northern Ireland,started,
+2021-06-01,Northern Ireland,started,2240.0
+2021-07-01,Northern Ireland,started,
+2021-08-01,Northern Ireland,started,
+2021-09-01,Northern Ireland,started,1920.0
+2021-10-01,Northern Ireland,started,
+2021-11-01,Northern Ireland,started,
+2021-12-01,Northern Ireland,started,1380.0
+2022-01-01,Northern Ireland,started,
+2022-02-01,Northern Ireland,started,
+2022-03-01,Northern Ireland,started,1910.0
+2022-04-01,Northern Ireland,started,
+2022-05-01,Northern Ireland,started,
+2022-06-01,Northern Ireland,started,1870.0
+2022-07-01,Northern Ireland,started,
+2022-08-01,Northern Ireland,started,
+2022-09-01,Northern Ireland,started,1580.0
+2022-10-01,Northern Ireland,started,
+2022-11-01,Northern Ireland,started,
+2022-12-01,Northern Ireland,started,1240.0
+2023-01-01,Northern Ireland,started,
+2023-02-01,Northern Ireland,started,
+2023-03-01,Northern Ireland,started,1360.0
+2023-04-01,Northern Ireland,started,
+2023-05-01,Northern Ireland,started,
+2023-06-01,Northern Ireland,started,1570.0
+2023-07-01,Northern Ireland,started,
+2023-08-01,Northern Ireland,started,
+2023-09-01,Northern Ireland,started,1270.0
+2023-10-01,Northern Ireland,started,
+2023-11-01,Northern Ireland,started,
+2023-12-01,Northern Ireland,started,1580.0
+2024-01-01,Northern Ireland,started,
+2024-02-01,Northern Ireland,started,
+2024-03-01,Northern Ireland,started,
+2024-04-01,Northern Ireland,started,
+2024-05-01,Northern Ireland,started,
+2024-06-01,Northern Ireland,started,
+2024-07-01,Northern Ireland,started,
+2016-01-01,UK,started,
+2016-02-01,UK,started,
+2016-03-01,UK,started,44540.0
+2016-04-01,UK,started,
+2016-05-01,UK,started,
+2016-06-01,UK,started,48410.0
+2016-07-01,UK,started,
+2016-08-01,UK,started,
+2016-09-01,UK,started,51510.0
+2016-10-01,UK,started,
+2016-11-01,UK,started,
+2016-12-01,UK,started,43110.0
+2017-01-01,UK,started,
+2017-02-01,UK,started,
+2017-03-01,UK,started,51270.0
+2017-04-01,UK,started,
+2017-05-01,UK,started,
+2017-06-01,UK,started,52590.0
+2017-07-01,UK,started,
+2017-08-01,UK,started,
+2017-09-01,UK,started,48980.0
+2017-10-01,UK,started,
+2017-11-01,UK,started,
+2017-12-01,UK,started,44290.0
+2018-01-01,UK,started,
+2018-02-01,UK,started,
+2018-03-01,UK,started,51150.0
+2018-04-01,UK,started,
+2018-05-01,UK,started,
+2018-06-01,UK,started,51860.0
+2018-07-01,UK,started,
+2018-08-01,UK,started,
+2018-09-01,UK,started,56260.0
+2018-10-01,UK,started,
+2018-11-01,UK,started,
+2018-12-01,UK,started,46470.0
+2019-01-01,UK,started,
+2019-02-01,UK,started,
+2019-03-01,UK,started,49260.0
+2019-04-01,UK,started,
+2019-05-01,UK,started,
+2019-06-01,UK,started,49480.0
+2019-07-01,UK,started,
+2019-08-01,UK,started,
+2019-09-01,UK,started,53280.0
+2019-10-01,UK,started,
+2019-11-01,UK,started,
+2019-12-01,UK,started,39340.0
+2020-01-01,UK,started,
+2020-02-01,UK,started,
+2020-03-01,UK,started,45390.0
+2020-04-01,UK,started,
+2020-05-01,UK,started,
+2020-06-01,UK,started,
+2020-07-01,UK,started,
+2020-08-01,UK,started,
+2020-09-01,UK,started,
+2020-10-01,UK,started,
+2020-11-01,UK,started,
+2020-12-01,UK,started,
+2021-01-01,UK,started,
+2021-02-01,UK,started,
+2021-03-01,UK,started,
+2021-04-01,UK,started,
+2021-05-01,UK,started,
+2021-06-01,UK,started,
+2021-07-01,UK,started,
+2021-08-01,UK,started,
+2021-09-01,UK,started,
+2021-10-01,UK,started,
+2021-11-01,UK,started,
+2021-12-01,UK,started,
+2022-01-01,UK,started,
+2022-02-01,UK,started,
+2022-03-01,UK,started,
+2022-04-01,UK,started,
+2022-05-01,UK,started,
+2022-06-01,UK,started,63660.0
+2022-07-01,UK,started,
+2022-08-01,UK,started,
+2022-09-01,UK,started,54190.0
+2022-10-01,UK,started,
+2022-11-01,UK,started,
+2022-12-01,UK,started,39040.0
+2023-01-01,UK,started,
+2023-02-01,UK,started,
+2023-03-01,UK,started,45490.0
+2023-04-01,UK,started,
+2023-05-01,UK,started,
+2023-06-01,UK,started,79110.0
+2023-07-01,UK,started,
+2023-08-01,UK,started,
+2023-09-01,UK,started,28500.0
+2023-10-01,UK,started,
+2023-11-01,UK,started,
+2023-12-01,UK,started,23360.0
+2024-01-01,UK,started,
+2024-02-01,UK,started,
+2024-03-01,UK,started,
+2024-04-01,UK,started,
+2024-05-01,UK,started,
+2024-06-01,UK,started,
+2024-07-01,UK,started,
+2016-01-01,England,completed,
+2016-02-01,England,completed,
+2016-03-01,England,completed,31410.0
+2016-04-01,England,completed,
+2016-05-01,England,completed,
+2016-06-01,England,completed,36260.0
+2016-07-01,England,completed,
+2016-08-01,England,completed,
+2016-09-01,England,completed,35810.0
+2016-10-01,England,completed,
+2016-11-01,England,completed,
+2016-12-01,England,completed,38400.0
+2017-01-01,England,completed,
+2017-02-01,England,completed,
+2017-03-01,England,completed,37050.0
+2017-04-01,England,completed,
+2017-05-01,England,completed,
+2017-06-01,England,completed,42160.0
+2017-07-01,England,completed,
+2017-08-01,England,completed,
+2017-09-01,England,completed,36980.0
+2017-10-01,England,completed,
+2017-11-01,England,completed,
+2017-12-01,England,completed,46280.0
+2018-01-01,England,completed,
+2018-02-01,England,completed,
+2018-03-01,England,completed,35480.0
+2018-04-01,England,completed,
+2018-05-01,England,completed,
+2018-06-01,England,completed,42480.0
+2018-07-01,England,completed,
+2018-08-01,England,completed,
+2018-09-01,England,completed,38660.0
+2018-10-01,England,completed,
+2018-11-01,England,completed,
+2018-12-01,England,completed,48870.0
+2019-01-01,England,completed,
+2019-02-01,England,completed,
+2019-03-01,England,completed,39050.0
+2019-04-01,England,completed,
+2019-05-01,England,completed,
+2019-06-01,England,completed,46310.0
+2019-07-01,England,completed,
+2019-08-01,England,completed,
+2019-09-01,England,completed,42800.0
+2019-10-01,England,completed,
+2019-11-01,England,completed,
+2019-12-01,England,completed,49720.0
+2020-01-01,England,completed,
+2020-02-01,England,completed,
+2020-03-01,England,completed,36510.0
+2020-04-01,England,completed,
+2020-05-01,England,completed,
+2020-06-01,England,completed,16640.0
+2020-07-01,England,completed,
+2020-08-01,England,completed,
+2020-09-01,England,completed,42110.0
+2020-10-01,England,completed,
+2020-11-01,England,completed,
+2020-12-01,England,completed,51400.0
+2021-01-01,England,completed,
+2021-02-01,England,completed,
+2021-03-01,England,completed,44510.0
+2021-04-01,England,completed,
+2021-05-01,England,completed,
+2021-06-01,England,completed,43910.0
+2021-07-01,England,completed,
+2021-08-01,England,completed,
+2021-09-01,England,completed,40940.0
+2021-10-01,England,completed,
+2021-11-01,England,completed,
+2021-12-01,England,completed,45580.0
+2022-01-01,England,completed,
+2022-02-01,England,completed,
+2022-03-01,England,completed,40730.0
+2022-04-01,England,completed,
+2022-05-01,England,completed,
+2022-06-01,England,completed,46190.0
+2022-07-01,England,completed,
+2022-08-01,England,completed,
+2022-09-01,England,completed,40660.0
+2022-10-01,England,completed,
+2022-11-01,England,completed,
+2022-12-01,England,completed,50430.0
+2023-01-01,England,completed,
+2023-02-01,England,completed,
+2023-03-01,England,completed,37160.0
+2023-04-01,England,completed,
+2023-05-01,England,completed,
+2023-06-01,England,completed,40210.0
+2023-07-01,England,completed,
+2023-08-01,England,completed,
+2023-09-01,England,completed,38600.0
+2023-10-01,England,completed,
+2023-11-01,England,completed,
+2023-12-01,England,completed,42230.0
+2024-01-01,England,completed,
+2024-02-01,England,completed,
+2024-03-01,England,completed,
+2024-04-01,England,completed,
+2024-05-01,England,completed,
+2024-06-01,England,completed,
+2024-07-01,England,completed,
+2016-01-01,Wales,completed,
+2016-02-01,Wales,completed,
+2016-03-01,Wales,completed,1380.0
+2016-04-01,Wales,completed,
+2016-05-01,Wales,completed,
+2016-06-01,Wales,completed,1630.0
+2016-07-01,Wales,completed,
+2016-08-01,Wales,completed,
+2016-09-01,Wales,completed,1600.0
+2016-10-01,Wales,completed,
+2016-11-01,Wales,completed,
+2016-12-01,Wales,completed,2010.0
+2017-01-01,Wales,completed,
+2017-02-01,Wales,completed,
+2017-03-01,Wales,completed,1590.0
+2017-04-01,Wales,completed,
+2017-05-01,Wales,completed,
+2017-06-01,Wales,completed,2070.0
+2017-07-01,Wales,completed,
+2017-08-01,Wales,completed,
+2017-09-01,Wales,completed,1410.0
+2017-10-01,Wales,completed,
+2017-11-01,Wales,completed,
+2017-12-01,Wales,completed,1820.0
+2018-01-01,Wales,completed,
+2018-02-01,Wales,completed,
+2018-03-01,Wales,completed,1370.0
+2018-04-01,Wales,completed,
+2018-05-01,Wales,completed,
+2018-06-01,Wales,completed,1560.0
+2018-07-01,Wales,completed,
+2018-08-01,Wales,completed,
+2018-09-01,Wales,completed,1300.0
+2018-10-01,Wales,completed,
+2018-11-01,Wales,completed,
+2018-12-01,Wales,completed,1590.0
+2019-01-01,Wales,completed,
+2019-02-01,Wales,completed,
+2019-03-01,Wales,completed,1330.0
+2019-04-01,Wales,completed,
+2019-05-01,Wales,completed,
+2019-06-01,Wales,completed,1600.0
+2019-07-01,Wales,completed,
+2019-08-01,Wales,completed,
+2019-09-01,Wales,completed,1390.0
+2019-10-01,Wales,completed,
+2019-11-01,Wales,completed,
+2019-12-01,Wales,completed,1760.0
+2020-01-01,Wales,completed,
+2020-02-01,Wales,completed,
+2020-03-01,Wales,completed,1290.0
+2020-04-01,Wales,completed,
+2020-05-01,Wales,completed,
+2020-06-01,Wales,completed,
+2020-07-01,Wales,completed,
+2020-08-01,Wales,completed,
+2020-09-01,Wales,completed,
+2020-10-01,Wales,completed,
+2020-11-01,Wales,completed,
+2020-12-01,Wales,completed,
+2021-01-01,Wales,completed,
+2021-02-01,Wales,completed,
+2021-03-01,Wales,completed,
+2021-04-01,Wales,completed,
+2021-05-01,Wales,completed,
+2021-06-01,Wales,completed,
+2021-07-01,Wales,completed,
+2021-08-01,Wales,completed,
+2021-09-01,Wales,completed,
+2021-10-01,Wales,completed,
+2021-11-01,Wales,completed,
+2021-12-01,Wales,completed,
+2022-01-01,Wales,completed,
+2022-02-01,Wales,completed,
+2022-03-01,Wales,completed,
+2022-04-01,Wales,completed,
+2022-05-01,Wales,completed,
+2022-06-01,Wales,completed,1590.0
+2022-07-01,Wales,completed,
+2022-08-01,Wales,completed,
+2022-09-01,Wales,completed,1340.0
+2022-10-01,Wales,completed,
+2022-11-01,Wales,completed,
+2022-12-01,Wales,completed,1810.0
+2023-01-01,Wales,completed,
+2023-02-01,Wales,completed,
+2023-03-01,Wales,completed,1050.0
+2023-04-01,Wales,completed,
+2023-05-01,Wales,completed,
+2023-06-01,Wales,completed,1110.0
+2023-07-01,Wales,completed,
+2023-08-01,Wales,completed,
+2023-09-01,Wales,completed,1010.0
+2023-10-01,Wales,completed,
+2023-11-01,Wales,completed,
+2023-12-01,Wales,completed,1540.0
+2024-01-01,Wales,completed,
+2024-02-01,Wales,completed,
+2024-03-01,Wales,completed,
+2024-04-01,Wales,completed,
+2024-05-01,Wales,completed,
+2024-06-01,Wales,completed,
+2024-07-01,Wales,completed,
+2016-01-01,Scotland,completed,
+2016-02-01,Scotland,completed,
+2016-03-01,Scotland,completed,31410.0
+2016-04-01,Scotland,completed,
+2016-05-01,Scotland,completed,
+2016-06-01,Scotland,completed,36260.0
+2016-07-01,Scotland,completed,
+2016-08-01,Scotland,completed,
+2016-09-01,Scotland,completed,35810.0
+2016-10-01,Scotland,completed,
+2016-11-01,Scotland,completed,
+2016-12-01,Scotland,completed,38400.0
+2017-01-01,Scotland,completed,
+2017-02-01,Scotland,completed,
+2017-03-01,Scotland,completed,37050.0
+2017-04-01,Scotland,completed,
+2017-05-01,Scotland,completed,
+2017-06-01,Scotland,completed,42160.0
+2017-07-01,Scotland,completed,
+2017-08-01,Scotland,completed,
+2017-09-01,Scotland,completed,36980.0
+2017-10-01,Scotland,completed,
+2017-11-01,Scotland,completed,
+2017-12-01,Scotland,completed,46280.0
+2018-01-01,Scotland,completed,
+2018-02-01,Scotland,completed,
+2018-03-01,Scotland,completed,35480.0
+2018-04-01,Scotland,completed,
+2018-05-01,Scotland,completed,
+2018-06-01,Scotland,completed,42480.0
+2018-07-01,Scotland,completed,
+2018-08-01,Scotland,completed,
+2018-09-01,Scotland,completed,38660.0
+2018-10-01,Scotland,completed,
+2018-11-01,Scotland,completed,
+2018-12-01,Scotland,completed,48870.0
+2019-01-01,Scotland,completed,
+2019-02-01,Scotland,completed,
+2019-03-01,Scotland,completed,39050.0
+2019-04-01,Scotland,completed,
+2019-05-01,Scotland,completed,
+2019-06-01,Scotland,completed,46310.0
+2019-07-01,Scotland,completed,
+2019-08-01,Scotland,completed,
+2019-09-01,Scotland,completed,42800.0
+2019-10-01,Scotland,completed,
+2019-11-01,Scotland,completed,
+2019-12-01,Scotland,completed,49720.0
+2020-01-01,Scotland,completed,
+2020-02-01,Scotland,completed,
+2020-03-01,Scotland,completed,36510.0
+2020-04-01,Scotland,completed,
+2020-05-01,Scotland,completed,
+2020-06-01,Scotland,completed,16640.0
+2020-07-01,Scotland,completed,
+2020-08-01,Scotland,completed,
+2020-09-01,Scotland,completed,42110.0
+2020-10-01,Scotland,completed,
+2020-11-01,Scotland,completed,
+2020-12-01,Scotland,completed,51400.0
+2021-01-01,Scotland,completed,
+2021-02-01,Scotland,completed,
+2021-03-01,Scotland,completed,44510.0
+2021-04-01,Scotland,completed,
+2021-05-01,Scotland,completed,
+2021-06-01,Scotland,completed,43910.0
+2021-07-01,Scotland,completed,
+2021-08-01,Scotland,completed,
+2021-09-01,Scotland,completed,40940.0
+2021-10-01,Scotland,completed,
+2021-11-01,Scotland,completed,
+2021-12-01,Scotland,completed,45580.0
+2022-01-01,Scotland,completed,
+2022-02-01,Scotland,completed,
+2022-03-01,Scotland,completed,40730.0
+2022-04-01,Scotland,completed,
+2022-05-01,Scotland,completed,
+2022-06-01,Scotland,completed,46190.0
+2022-07-01,Scotland,completed,
+2022-08-01,Scotland,completed,
+2022-09-01,Scotland,completed,40660.0
+2022-10-01,Scotland,completed,
+2022-11-01,Scotland,completed,
+2022-12-01,Scotland,completed,50430.0
+2023-01-01,Scotland,completed,
+2023-02-01,Scotland,completed,
+2023-03-01,Scotland,completed,37160.0
+2023-04-01,Scotland,completed,
+2023-05-01,Scotland,completed,
+2023-06-01,Scotland,completed,40210.0
+2023-07-01,Scotland,completed,
+2023-08-01,Scotland,completed,
+2023-09-01,Scotland,completed,38600.0
+2023-10-01,Scotland,completed,
+2023-11-01,Scotland,completed,
+2023-12-01,Scotland,completed,42230.0
+2024-01-01,Scotland,completed,
+2024-02-01,Scotland,completed,
+2024-03-01,Scotland,completed,
+2024-04-01,Scotland,completed,
+2024-05-01,Scotland,completed,
+2024-06-01,Scotland,completed,
+2024-07-01,Scotland,completed,
+2016-01-01,Northern Ireland,completed,
+2016-02-01,Northern Ireland,completed,
+2016-03-01,Northern Ireland,completed,1480.0
+2016-04-01,Northern Ireland,completed,
+2016-05-01,Northern Ireland,completed,
+2016-06-01,Northern Ireland,completed,1670.0
+2016-07-01,Northern Ireland,completed,
+2016-08-01,Northern Ireland,completed,
+2016-09-01,Northern Ireland,completed,1550.0
+2016-10-01,Northern Ireland,completed,
+2016-11-01,Northern Ireland,completed,
+2016-12-01,Northern Ireland,completed,1750.0
+2017-01-01,Northern Ireland,completed,
+2017-02-01,Northern Ireland,completed,
+2017-03-01,Northern Ireland,completed,1490.0
+2017-04-01,Northern Ireland,completed,
+2017-05-01,Northern Ireland,completed,
+2017-06-01,Northern Ireland,completed,1630.0
+2017-07-01,Northern Ireland,completed,
+2017-08-01,Northern Ireland,completed,
+2017-09-01,Northern Ireland,completed,1620.0
+2017-10-01,Northern Ireland,completed,
+2017-11-01,Northern Ireland,completed,
+2017-12-01,Northern Ireland,completed,2140.0
+2018-01-01,Northern Ireland,completed,
+2018-02-01,Northern Ireland,completed,
+2018-03-01,Northern Ireland,completed,1700.0
+2018-04-01,Northern Ireland,completed,
+2018-05-01,Northern Ireland,completed,
+2018-06-01,Northern Ireland,completed,2060.0
+2018-07-01,Northern Ireland,completed,
+2018-08-01,Northern Ireland,completed,
+2018-09-01,Northern Ireland,completed,1710.0
+2018-10-01,Northern Ireland,completed,
+2018-11-01,Northern Ireland,completed,
+2018-12-01,Northern Ireland,completed,2170.0
+2019-01-01,Northern Ireland,completed,
+2019-02-01,Northern Ireland,completed,
+2019-03-01,Northern Ireland,completed,1870.0
+2019-04-01,Northern Ireland,completed,
+2019-05-01,Northern Ireland,completed,
+2019-06-01,Northern Ireland,completed,1780.0
+2019-07-01,Northern Ireland,completed,
+2019-08-01,Northern Ireland,completed,
+2019-09-01,Northern Ireland,completed,1820.0
+2019-10-01,Northern Ireland,completed,
+2019-11-01,Northern Ireland,completed,
+2019-12-01,Northern Ireland,completed,1960.0
+2020-01-01,Northern Ireland,completed,
+2020-02-01,Northern Ireland,completed,
+2020-03-01,Northern Ireland,completed,1760.0
+2020-04-01,Northern Ireland,completed,
+2020-05-01,Northern Ireland,completed,
+2020-06-01,Northern Ireland,completed,690.0
+2020-07-01,Northern Ireland,completed,
+2020-08-01,Northern Ireland,completed,
+2020-09-01,Northern Ireland,completed,1830.0
+2020-10-01,Northern Ireland,completed,
+2020-11-01,Northern Ireland,completed,
+2020-12-01,Northern Ireland,completed,2140.0
+2021-01-01,Northern Ireland,completed,
+2021-02-01,Northern Ireland,completed,
+2021-03-01,Northern Ireland,completed,1780.0
+2021-04-01,Northern Ireland,completed,
+2021-05-01,Northern Ireland,completed,
+2021-06-01,Northern Ireland,completed,2000.0
+2021-07-01,Northern Ireland,completed,
+2021-08-01,Northern Ireland,completed,
+2021-09-01,Northern Ireland,completed,1770.0
+2021-10-01,Northern Ireland,completed,
+2021-11-01,Northern Ireland,completed,
+2021-12-01,Northern Ireland,completed,1860.0
+2022-01-01,Northern Ireland,completed,
+2022-02-01,Northern Ireland,completed,
+2022-03-01,Northern Ireland,completed,1650.0
+2022-04-01,Northern Ireland,completed,
+2022-05-01,Northern Ireland,completed,
+2022-06-01,Northern Ireland,completed,1770.0
+2022-07-01,Northern Ireland,completed,
+2022-08-01,Northern Ireland,completed,
+2022-09-01,Northern Ireland,completed,1600.0
+2022-10-01,Northern Ireland,completed,
+2022-11-01,Northern Ireland,completed,
+2022-12-01,Northern Ireland,completed,1820.0
+2023-01-01,Northern Ireland,completed,
+2023-02-01,Northern Ireland,completed,
+2023-03-01,Northern Ireland,completed,1230.0
+2023-04-01,Northern Ireland,completed,
+2023-05-01,Northern Ireland,completed,
+2023-06-01,Northern Ireland,completed,1410.0
+2023-07-01,Northern Ireland,completed,
+2023-08-01,Northern Ireland,completed,
+2023-09-01,Northern Ireland,completed,1260.0
+2023-10-01,Northern Ireland,completed,
+2023-11-01,Northern Ireland,completed,
+2023-12-01,Northern Ireland,completed,1490.0
+2024-01-01,Northern Ireland,completed,
+2024-02-01,Northern Ireland,completed,
+2024-03-01,Northern Ireland,completed,
+2024-04-01,Northern Ireland,completed,
+2024-05-01,Northern Ireland,completed,
+2024-06-01,Northern Ireland,completed,
+2024-07-01,Northern Ireland,completed,
+2016-01-01,UK,completed,
+2016-02-01,UK,completed,
+2016-03-01,UK,completed,38380.0
+2016-04-01,UK,completed,
+2016-05-01,UK,completed,
+2016-06-01,UK,completed,43970.0
+2016-07-01,UK,completed,
+2016-08-01,UK,completed,
+2016-09-01,UK,completed,42660.0
+2016-10-01,UK,completed,
+2016-11-01,UK,completed,
+2016-12-01,UK,completed,46810.0
+2017-01-01,UK,completed,
+2017-02-01,UK,completed,
+2017-03-01,UK,completed,44520.0
+2017-04-01,UK,completed,
+2017-05-01,UK,completed,
+2017-06-01,UK,completed,50530.0
+2017-07-01,UK,completed,
+2017-08-01,UK,completed,
+2017-09-01,UK,completed,44260.0
+2017-10-01,UK,completed,
+2017-11-01,UK,completed,
+2017-12-01,UK,completed,54370.0
+2018-01-01,UK,completed,
+2018-02-01,UK,completed,
+2018-03-01,UK,completed,43070.0
+2018-04-01,UK,completed,
+2018-05-01,UK,completed,
+2018-06-01,UK,completed,51300.0
+2018-07-01,UK,completed,
+2018-08-01,UK,completed,
+2018-09-01,UK,completed,46600.0
+2018-10-01,UK,completed,
+2018-11-01,UK,completed,
+2018-12-01,UK,completed,58140.0
+2019-01-01,UK,completed,
+2019-02-01,UK,completed,
+2019-03-01,UK,completed,47870.0
+2019-04-01,UK,completed,
+2019-05-01,UK,completed,
+2019-06-01,UK,completed,55220.0
+2019-07-01,UK,completed,
+2019-08-01,UK,completed,
+2019-09-01,UK,completed,51360.0
+2019-10-01,UK,completed,
+2019-11-01,UK,completed,
+2019-12-01,UK,completed,59710.0
+2020-01-01,UK,completed,
+2020-02-01,UK,completed,
+2020-03-01,UK,completed,44530.0
+2020-04-01,UK,completed,
+2020-05-01,UK,completed,
+2020-06-01,UK,completed,
+2020-07-01,UK,completed,
+2020-08-01,UK,completed,
+2020-09-01,UK,completed,
+2020-10-01,UK,completed,
+2020-11-01,UK,completed,
+2020-12-01,UK,completed,
+2021-01-01,UK,completed,
+2021-02-01,UK,completed,
+2021-03-01,UK,completed,
+2021-04-01,UK,completed,
+2021-05-01,UK,completed,
+2021-06-01,UK,completed,
+2021-07-01,UK,completed,
+2021-08-01,UK,completed,
+2021-09-01,UK,completed,
+2021-10-01,UK,completed,
+2021-11-01,UK,completed,
+2021-12-01,UK,completed,
+2022-01-01,UK,completed,
+2022-02-01,UK,completed,
+2022-03-01,UK,completed,
+2022-04-01,UK,completed,
+2022-05-01,UK,completed,
+2022-06-01,UK,completed,54900.0
+2022-07-01,UK,completed,
+2022-08-01,UK,completed,
+2022-09-01,UK,completed,50090.0
+2022-10-01,UK,completed,
+2022-11-01,UK,completed,
+2022-12-01,UK,completed,60370.0
+2023-01-01,UK,completed,
+2023-02-01,UK,completed,
+2023-03-01,UK,completed,45090.0
+2023-04-01,UK,completed,
+2023-05-01,UK,completed,
+2023-06-01,UK,completed,47680.0
+2023-07-01,UK,completed,
+2023-08-01,UK,completed,
+2023-09-01,UK,completed,45850.0
+2023-10-01,UK,completed,
+2023-11-01,UK,completed,
+2023-12-01,UK,completed,50650.0
+2024-01-01,UK,completed,
+2024-02-01,UK,completed,
+2024-03-01,UK,completed,
+2024-04-01,UK,completed,
+2024-05-01,UK,completed,
+2024-06-01,UK,completed,
+2024-07-01,UK,completed,
