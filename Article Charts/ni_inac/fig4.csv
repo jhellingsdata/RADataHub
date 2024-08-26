@@ -1,0 +1,41 @@
+year,region,series,value
+2020,NI,Home or Family,0.0501
+2021,NI,Home or Family,0.0424
+2022,NI,Home or Family,0.0475
+2023,NI,Home or Family,0.0461
+2020,UK,Home or Family,0.0418
+2021,UK,Home or Family,0.0394
+2022,UK,Home or Family,0.0415
+2023,UK,Home or Family,0.0396
+2020,NI,Long-Term Illness/Disability,0.0979
+2021,NI,Long-Term Illness/Disability,0.1009
+2022,NI,Long-Term Illness/Disability,0.0999
+2023,NI,Long-Term Illness/Disability,0.1128
+2020,UK,Long-Term Illness/Disability,0.0526
+2021,UK,Long-Term Illness/Disability,0.0544
+2022,UK,Long-Term Illness/Disability,0.0567
+2023,UK,Long-Term Illness/Disability,0.065
+2020,NI,Retired,0.0309
+2021,NI,Retired,0.0309
+2022,NI,Retired,0.0249
+2023,NI,Retired,0.0257
+2020,UK,Retired,0.0271
+2021,UK,Retired,0.0284
+2022,UK,Retired,0.0287
+2023,UK,Retired,0.0257
+2020,NI,Student,0.0671
+2021,NI,Student,0.0777
+2022,NI,Student,0.0782
+2023,NI,Student,0.0645
+2020,UK,Student,0.0546
+2021,UK,Student,0.0581
+2022,UK,Student,0.0587
+2023,UK,Student,0.0569
+2020,NI,Other,0.0311
+2021,NI,Other,0.0352
+2022,NI,Other,0.0281
+2023,NI,Other,0.0256
+2020,UK,Other,0.0331
+2021,UK,Other,0.0324
+2022,UK,Other,0.0305
+2023,UK,Other,0.0302

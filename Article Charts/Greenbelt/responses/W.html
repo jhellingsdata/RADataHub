@@ -1,0 +1,3231 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="Phil Deaves">
+<meta name="description" content="UK railway stations with ELR, mileage, owner/operator, coordinates and grid reference; stations starting W">
+<meta name="keywords" content="railway, station, ELR, mileage, owner, operator">
+<meta name=viewport content="width=device-width, initial-scale=1">
+
+<meta name = "format-detection" content = "telephone=no">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="/android-chrome-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/android-chrome-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/android-chrome-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/android-chrome-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/android-chrome-144x144.png" sizes="144x144">
+
+<!-- 
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+-->
+
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-title" content="RailwayCodes">
+<meta name="application-name" content="RailwayCodes">
+<meta name="msapplication-TileColor" content="#00008b">
+<meta name="msapplication-TileImage" content="/mstile-70x70.png">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="msapplication-TileImage" content="/mstile-150x150.png">
+<meta name="msapplication-TileImage" content="/mstile-310x150.png">
+<meta name="msapplication-TileImage" content="/mstile-310x310.png">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="theme-color" content="#00008b">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+<title>Railway station data, location W</title>
+<link rel="stylesheet" type="text/css" href="../style/_style.css">
+<link rel="stylesheet" type="text/css" href="../style/_stylestation.css">
+</head>
+<body>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+
+  h = checkTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML =
+  h + "<b>:</b>" + m + "<b>.</b><span id='secs'>" +s +"</span>";
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+setInterval(startTime, 1000);
+</script>
+
+<div id="nav">
+ <div class="topnav" id="myTopnav">
+  <nav>
+   <a href="/index.shtml" class="active"><img src="/logo.svg" alt="logo" class="menuleft"><i class="fas fa-home"></i> Home</a>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Line data</button>
+    <div class="dropdown-content">
+     <a href="/elrs/elr0.shtm">ELRs and mileages</a>
+     <a href="/electrification/mast_prefix0.shtm">Electrification</a>
+     <a href="/crs/crs0.shtm">CRS, NLC, TIPLOC and STANOX Codes</a>
+     <a href="/pride/pride0.shtm">Line of Route (LOR/PRIDE) codes</a>
+     <a href="/line/line_names.shtm">Line names</a>
+     <a href="/line/diagrams0.shtm">Track diagrams</a>
+     <a href="/bridges/bridges0.shtm">Bridges</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Other assets</button>
+    <div class="dropdown-content">
+     <a href="/signal/signal_boxes0.shtm">Signal boxes</a>
+     <a href="/tunnels/tunnels0.shtm">Tunnels</a>
+     <a href="/viaducts/viaducts0.shtm">Viaducts</a>
+     <a href="/stations/station0.shtm">Stations</a>
+     <a href="/depots/depots0.shtm">Depots</a>
+     <a href="/features/habdwild.shtm">HABD and WILD</a>
+     <a href="/features/troughs.shtm">Water troughs</a>
+     <a href="/features/telegraph.shtm">Telegraph codes</a>
+     <a href="/features/buzzer.shtm">Buzzer codes</a>
+     <a href="/features/stamper.shtm">Stamper codes</a>
+     <a href="/underground/underground0.shtm">London Underground stations</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> &quot;Legal/financial&quot; lists</button>
+    <div class="dropdown-content">
+     <a href="/operators/experimental.shtm">Experimental services</a>
+     <a href="/licences/licence0.shtm">Licences/exemptions</a>
+     <a href="/operators/community.shtm">Community rail partnerships</a>
+     <a href="/operators/franchises1.shtm">Rail franchises</a>
+     <a href="/operators/franchises3.shtm">National Rail Contract operators</a>
+     <a href="/operators/franchises2.shtm">Light rail operators</a>
+     <a href="/operators/toccodes.shtm">TOC timetable codes</a>
+     <a href="/operators/servicegroups.shtm">TOC service groups</a>
+     <a href="/operators/access0.shtm">TOC station access</a>
+     <a href="/operators/privatisation.shtm">BR privatisation</a>
+     <a href="/operators/business.shtm">Business/sector codes</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Miscellaneous</button>
+    <div class="dropdown-content">
+     <a href="/misc/identify.shtm">'What's this?' quiz</a>
+     <a href="/misc/search.shtm">Site search</a>
+     <a href="/misc/updates.shtm">Site updates</a>
+     <a href="/misc/contact.shtm">Contact</a>
+     <a href="/misc/links.shtm">External links</a>
+     <a href="/misc/contributing.shtm">Use/contribute</a>
+     <a href="/misc/acknowledgements.shtm">Acknowledgements</a>
+     <a href="/misc/sitemap.shtm">Site map</a>
+    </div>
+   </div>
+    <a href="/index.shtml" class="active">
+     <img src="/logo.svg" alt="logo" class="menuright">
+    </a>
+    <a href="javascript:void(0);" class="icon" onclick="responseFunction()">&#9776;</a>
+   <div id="navright">
+    <div class="element">
+     <div id="clock">
+      <div id="time">
+      </div>
+     </div>
+    </div>
+   </div>
+  </nav>
+ </div>
+</div>
+
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function responseFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<script src="https://kit.fontawesome.com/674d93a07b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="font-family : 'Century Gothic', Montserrat, sans-serif;"><i class="fas fa-long-arrow-alt-up"></i> Top of page</button>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.addEventListener("scroll", navFunction);
+
+function navFunction() {var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-35px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<script>function popup1() {  var popup = document.getElementById("myPopup1");  popup.classList.toggle("show");}function popup2() {  var popup = document.getElementById("myPopup2");  popup.classList.toggle("show");}function popup3() {  var popup = document.getElementById("myPopup3");  popup.classList.toggle("show");}function popup4() {  var popup = document.getElementById("myPopup4");  popup.classList.toggle("show");}function popup5() {  var popup = document.getElementById("myPopup5");  popup.classList.toggle("show");}function popup6() {  var popup = document.getElementById("myPopup6");  popup.classList.toggle("show");}function popup7() {  var popup = document.getElementById("myPopup7");  popup.classList.toggle("show");}function popup8() {  var popup = document.getElementById("myPopup8");  popup.classList.toggle("show");}function popup9() {  var popup = document.getElementById("myPopup9");  popup.classList.toggle("show");}function popup10() {  var popup = document.getElementById("myPopup10");  popup.classList.toggle("show");}function popup11() {  var popup = document.getElementById("myPopup11");  popup.classList.toggle("show");}function popup12() {  var popup = document.getElementById("myPopup12");  popup.classList.toggle("show");}function popup13() {  var popup = document.getElementById("myPopup13");  popup.classList.toggle("show");}function popup14() {  var popup = document.getElementById("myPopup14");  popup.classList.toggle("show");}function popup15() {  var popup = document.getElementById("myPopup15");  popup.classList.toggle("show");}function popup16() {  var popup = document.getElementById("myPopup16");  popup.classList.toggle("show");}function popup17() {  var popup = document.getElementById("myPopup17");  popup.classList.toggle("show");}function popup18() {  var popup = document.getElementById("myPopup18");  popup.classList.toggle("show");}function popup19() {  var popup = document.getElementById("myPopup19");  popup.classList.toggle("show");}function popup20() {  var popup = document.getElementById("myPopup20");  popup.classList.toggle("show");}function popup21() {  var popup = document.getElementById("myPopup21");  popup.classList.toggle("show");}function popup22() {  var popup = document.getElementById("myPopup22");  popup.classList.toggle("show");}function popup23() {  var popup = document.getElementById("myPopup23");  popup.classList.toggle("show");}function popup24() {  var popup = document.getElementById("myPopup24");  popup.classList.toggle("show");}function popup25() {  var popup = document.getElementById("myPopup25");  popup.classList.toggle("show");}function popup26() {  var popup = document.getElementById("myPopup26");  popup.classList.toggle("show");}function popup27() {  var popup = document.getElementById("myPopup27");  popup.classList.toggle("show");}function popup28() {  var popup = document.getElementById("myPopup28");  popup.classList.toggle("show");}function popup29() {  var popup = document.getElementById("myPopup29");  popup.classList.toggle("show");}function popup30() {  var popup = document.getElementById("myPopup30");  popup.classList.toggle("show");}function popup31() {  var popup = document.getElementById("myPopup31");  popup.classList.toggle("show");}function popup32() {  var popup = document.getElementById("myPopup32");  popup.classList.toggle("show");}function popup33() {  var popup = document.getElementById("myPopup33");  popup.classList.toggle("show");}function popup34() {  var popup = document.getElementById("myPopup34");  popup.classList.toggle("show");}function popup35() {  var popup = document.getElementById("myPopup35");  popup.classList.toggle("show");}function popup36() {  var popup = document.getElementById("myPopup36");  popup.classList.toggle("show");}function popup37() {  var popup = document.getElementById("myPopup37");  popup.classList.toggle("show");}function popup38() {  var popup = document.getElementById("myPopup38");  popup.classList.toggle("show");}function popup39() {  var popup = document.getElementById("myPopup39");  popup.classList.toggle("show");}function popup40() {  var popup = document.getElementById("myPopup40");  popup.classList.toggle("show");}function popup41() {  var popup = document.getElementById("myPopup41");  popup.classList.toggle("show");}function popup42() {  var popup = document.getElementById("myPopup42");  popup.classList.toggle("show");}function popup43() {  var popup = document.getElementById("myPopup43");  popup.classList.toggle("show");}function popup44() {  var popup = document.getElementById("myPopup44");  popup.classList.toggle("show");}function popup45() {  var popup = document.getElementById("myPopup45");  popup.classList.toggle("show");}function popup46() {  var popup = document.getElementById("myPopup46");  popup.classList.toggle("show");}function popup47() {  var popup = document.getElementById("myPopup47");  popup.classList.toggle("show");}function popup48() {  var popup = document.getElementById("myPopup48");  popup.classList.toggle("show");}function popup49() {  var popup = document.getElementById("myPopup49");  popup.classList.toggle("show");}function popup50() {  var popup = document.getElementById("myPopup50");  popup.classList.toggle("show");}function popup51() {  var popup = document.getElementById("myPopup51");  popup.classList.toggle("show");}function popup52() {  var popup = document.getElementById("myPopup52");  popup.classList.toggle("show");}function popup53() {  var popup = document.getElementById("myPopup53");  popup.classList.toggle("show");}function popup54() {  var popup = document.getElementById("myPopup54");  popup.classList.toggle("show");}function popup55() {  var popup = document.getElementById("myPopup55");  popup.classList.toggle("show");}function popup56() {  var popup = document.getElementById("myPopup56");  popup.classList.toggle("show");}function popup57() {  var popup = document.getElementById("myPopup57");  popup.classList.toggle("show");}function popup58() {  var popup = document.getElementById("myPopup58");  popup.classList.toggle("show");}function popup59() {  var popup = document.getElementById("myPopup59");  popup.classList.toggle("show");}function popup60() {  var popup = document.getElementById("myPopup60");  popup.classList.toggle("show");}</script>
+
+<div class="mainlogo"><img class="mainlogo" src="/logo.svg" alt="logo"></div>
+<div class="appeal"><h1>Railway station data</h1></div>
+<h2>A (hopefully) comprehensive listing</h2>
+<h2>Locations beginning W</h2>
+
+ <p class="update">Last update 9 August 2024</p>
+
+<div class="appeal"><span class="background"><span style="font-weight:lighter">Additional information is always gratefully received, whether entirely new records </span><span>(particularly historical records)</span><span style="font-weight:lighter"> or information to fill in gaps or correct errors, via the contact link under the Miscellaneous entry in the navigation bar above.  Thank you.</span></span>
+</div>
+
+ <p>Please select a feature from the list below:</p>
+
+<nav>
+ <span class="background">
+  <span class="help" title="section navigation links"><i class="fas fa-directions"></i></span>
+  <a href="/stations/station1.shtm">Mileages, operators and grid coordinates</a>&nbsp;|
+  <a href="/stations/bilingual0.shtm">Bilingual signs</a>&nbsp;|
+  <a href="/stations/sponsored0.shtm">Sponsored signs</a>&nbsp;|
+  <a href="/stations/notserved.shtm">Not served by SFO</a>&nbsp;|
+  <a href="/stations/international.shtm">International</a>&nbsp;|
+  <a href="/stations/trivia.shtm">Trivia</a>&nbsp;|
+  <a href="/operators/access0.shtm">Access rights</a>&nbsp;|
+  <a href="/stations/barriers.shtm">Barrier error codes</a>&nbsp;|
+  <a href="/underground/underground0.shtm">London Underground</a>&nbsp;|
+  <a href="/stations/post.shtm">Post boxes</a>&nbsp;|
+  <a href="/stations/railnet.shtm">Railnet</a>
+ </span>
+</nav>
+
+ <p>To see other locations, please click the link below:</p>
+
+<nav>
+ <span class="background">
+  <span class="help" title="section navigation links"><i class="fas fa-directions"></i></span>
+  <a href="stationa.shtm">A</a>&nbsp;|
+  <a href="stationb.shtm">B</a>&nbsp;|
+  <a href="stationc.shtm">C</a>&nbsp;|
+  <a href="stationd.shtm">D</a>&nbsp;|
+  <a href="statione.shtm">E</a>&nbsp;|
+  <a href="stationf.shtm">F</a>&nbsp;|
+  <a href="stationg.shtm">G</a>&nbsp;|
+  <a href="stationh.shtm">H</a>&nbsp;|
+  <a href="stationi.shtm">I</a>&nbsp;|
+  <a href="stationj.shtm">J</a>&nbsp;|
+  <a href="stationk.shtm">K</a>&nbsp;|
+  <a href="stationl.shtm">L</a>&nbsp;|
+  <a href="stationm.shtm">M</a>&nbsp;|
+  <a href="stationn.shtm">N</a>&nbsp;|
+  <a href="stationo.shtm">O</a>&nbsp;|
+  <a href="stationp.shtm">P</a>&nbsp;|
+  <a href="stationq.shtm">Q</a>&nbsp;|
+  <a href="stationr.shtm">R</a>&nbsp;|
+  <a href="stations.shtm">S</a>&nbsp;|
+  <a href="stationt.shtm">T</a>&nbsp;|
+  <a href="stationu.shtm">U</a>&nbsp;|
+  <a href="stationv.shtm">V</a>&nbsp;|
+  <a href="stationw.shtm">W</a>&nbsp;|
+  <small>X</small>&nbsp;|
+  <a href="stationy.shtm">Y</a>&nbsp;|
+  <small>Z</small>
+ </span>
+</nav>
+  <p>Station CRS codes are given in parentheses.  Other CRS codes can be found <a href="/crs/crs0.shtm">here</a>.</p>
+  <p>Names are given in the form that National Rail uses.  All known English language differences (e.g., punctuation or capitalisation) that appear on signs displayed since 1 April 1994 are shown in the accompanying box with links to photographs where possible.  Signs labelled 'for...' are treated as part of the name whereas 'alight/change for...' are treated as an instruction in the same way as 'way out' would be.  Other languages and their variants appear on the <a href="bilingual0.shtm">bilingual</a> pages.</p>
+
+ <p></p>
+
+<input type="text" id="input" onkeyup="myFunction()" placeholder="Fast filter any detail&hellip;" onkeydown="onkeypressed(event, this);">
+
+<div class="background">
+<table id="tablesort" class="colright">
+ <col class="eighteen">
+ <col class="twelve">
+ <col class="ten">
+ <col class="eleven">
+ <col>
+ <col class="six">
+ <col class="six">
+ <col class="six">
+ <thead>
+  <tr class="sticky noshow">
+   <th>Station</th>
+   <th><abbr title="Engineers' Line Reference">ELR</abbr><span class="r">Mileage</span></th>
+   <th>Status</th>
+   <th>Owner</th>
+   <th>Operator</th>
+   <th>Degrees Longitude</th>
+   <th>Degrees Latitude</th>
+   <th>Grid Reference</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a id="wdo"></a><span class="r">(WDO)</span>Waddon</td>
+   <td><a href="../elrs/_mileages/n/nfe.shtm">NFE</a><span class="r">11m 40ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.1177</td>
+   <td>51.3675</td>
+   <td>TQ311648</td>
+  </tr>
+  <tr>
+   <td><a id="wda"></a><span class="r">(WDA)</span>Waddon Marsh</td>
+   <td><a href="../elrs/_mileages/c/cmj.shtm">CMJ</a><span class="r">4m 79ch</span></td>
+   <td>Closed</td>
+   <td class="noshow"></td>
+   <td><details><summary>Connex South Central <em>from 29 September 1996 to 2 June 1997</em></summary>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.1201</td>
+   <td>51.3789</td>
+   <td>TQ309661</td>
+  </tr>
+  <tr>
+   <td><a id="wad"></a><span class="r">(WAD)</span>Wadhurst</td>
+   <td><a href="../elrs/_mileages/t/tth.shtm">TTH</a><span class="r">39m 23ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.3130</td>
+   <td>51.0734</td>
+   <td>TQ621329</td>
+  </tr>
+  <tr>
+   <td><a id="wadsley"></a><span class="r">(WBG)</span>Wadsley Bridge</td>
+   <td><a href="../elrs/_mileages/m/mac3.shtm">MAC3</a><span class="r">38m 35ch</span></td>
+   <td>Closed</td>
+   <td class="noshow"></td>
+   <td>n/a</td>
+   <td>-1.4992</td>
+   <td>53.4189</td>
+   <td>SK334915</td>
+  </tr>
+  <tr>
+   <td><a id="wfl"></a><span class="r">(WFL)</span>Wainfleet</td>
+   <td><a href="../elrs/_mileages/g/grs4.shtm">GRS4</a><span class="r">4m 15ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 18 August 2019</em></summary>
+East Midlands Trains <em>from 11 November 2007 to 17 August 2019</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>0.2345</td>
+   <td>53.1052</td>
+   <td>TF496587</td>
+  </tr>
+  <tr>
+   <td><a id="wkk"></a><span class="r">(WKK)</span>Wakefield Kirkgate</td>
+   <td><a href="../elrs/_mileages/m/mvn2.shtm">MVN2</a><span class="r">47m 62ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.4898</td>
+   <td>53.6786</td>
+   <td>SE339204</td>
+  </tr>
+  <tr>
+   <td><a id="wkf"></a><span class="r">(WKF)</span>Wakefield Westgate</td>
+   <td><a href="../elrs/_mileages/d/dol2.shtm">DOL2</a><span class="r">175m 65ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>London North Eastern Railway <em>from 24 June 2018</em></summary>
+East Coast Main Line Company <em>14 November 2009 to 23 June 2018</em>
+NXEC Trains <em>9 December 2007 to 13 November 2009</em>
+Great North Eastern Railway <em>22 October 1996 to 8 December 2007</em>
+Intercity East Coast <em>28 April 1996 to 21 October 1996</em></details></td>
+   <td>-1.5051</td>
+   <td>53.6816</td>
+   <td>SE327207</td>
+  </tr>
+  <tr>
+   <td><a id="wkd"></a><span class="r">(WKD)</span>Walkden</td>
+   <td><a href="../elrs/_mileages/w/wbs1.shtm">WBS1</a><span class="r">7m 42ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.3966</td>
+   <td>53.5196</td>
+   <td>SD738026</td>
+  </tr>
+  <tr>
+   <td><a id="wlg"></a><span class="r">(WLG)</span>Wallasey Grove Road</td>
+   <td><a href="../elrs/_mileages/b/ben.shtm">BEN</a><span class="r">5m 73ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Merseyrail Electrics (2002) <em>from 20 July 2003</em></summary>
+Arriva Trains Merseyside <em>from 20 March 2001 to 19 July 2003</em>
+Merseyrail Electrics <em>from 19 January 1997 to 19 March 2001</em></details></td>
+   <td>-3.0697</td>
+   <td>53.4282</td>
+   <td>SJ290929</td>
+  </tr>
+  <tr>
+   <td><a id="wlv"></a><span class="r">(WLV)</span>Wallasey Village</td>
+   <td><a href="../elrs/_mileages/b/ben.shtm">BEN</a><span class="r">5m 48ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Merseyrail Electrics (2002) <em>from 20 July 2003</em></summary>
+Arriva Trains Merseyside <em>from 20 March 2001 to 19 July 2003</em>
+Merseyrail Electrics <em>from 19 January 1997 to 19 March 2001</em></details></td>
+   <td>-3.0692</td>
+   <td>53.4231</td>
+   <td>SJ290923</td>
+  </tr>
+  <tr>
+   <td><a id="wlt"></a><span class="r">(WLT)</span>Wallington</td>
+   <td><a href="../elrs/_mileages/n/nfe.shtm">NFE</a><span class="r">13m 05ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.1507</td>
+   <td>51.3602</td>
+   <td>TQ288639</td>
+  </tr>
+  <tr>
+   <td><a id="waf"></a><span class="r">(WAF)</span>Wallyford</td>
+   <td><a href="../elrs/_mileages/e/ecm8.shtm">ECM8</a><span class="r">7m 54ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-3.0141</td>
+   <td>55.9414</td>
+   <td>NT366723</td>
+  </tr>
+  <tr>
+   <td><a id="wam"></a><span class="r">(WAM)</span>Walmer</td>
+   <td><a href="../elrs/_mileages/b/bme2.shtm">BME2</a><span class="r">92m 27ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>1.3830</td>
+   <td>51.2035</td>
+   <td>TR363503</td>
+  </tr>
+  <tr>
+   <td><a id="wsl"></a><span class="r">(WSL)</span>Walsall</td>
+   <td><a href="../elrs/_mileages/b/bjw2.shtm">BJW2</a><span class="r">6m 29ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.9851</td>
+   <td>52.5845</td>
+   <td>SP011985</td>
+  </tr>
+  <tr>
+   <td><a id="wdn"></a><span class="r">(WDN)</span>Walsden</td>
+   <td><a href="../elrs/_mileages/m/mvn2.shtm">MVN2</a><span class="r">17m 70ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-2.1044</td>
+   <td>53.6963</td>
+   <td>SD931222</td>
+  </tr>
+  <tr>
+   <td><a id="wlc"></a><span class="r">(WLC)</span>Waltham Cross</td>
+   <td><a href="../elrs/_mileages/b/bgk.shtm">BGK</a><span class="r">12m 63ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>-0.0266</td>
+   <td>51.6851</td>
+   <td>TL365002</td>
+  </tr>
+  <tr>
+   <td><a id="whc"></a><span class="r">(WHC)</span>Walthamstow Central<div class="signs"><a href="signs/names/whc1.jpg" target="_blank">Walthamstow Central</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/mintyian/48252421692/" target="_blank">WALTHAMSTOW CENTRAL</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/c/cjc.shtm">CJC</a><span class="r">6m 16ch</span></td>
+   <td>London Underground involvement?<span class="popup" onclick="popup1()"><span class="popuptext" id="myPopup1"><span class="close">&#x2716;</span>Main line platforms only.  Also appears on London Underground licence</span></span></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 31 May 2015 to 12 November 2016</em>
+Abellio Greater Anglia <em>from 5 February 2012 to 30 May 2015</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Great Eastern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>-0.0202</td>
+   <td>51.5830</td>
+   <td>TQ372889</td>
+  </tr>
+  <tr>
+   <td><a id="wmw"></a><span class="r">(WMW)</span>Walthamstow Queens Road<div class="signs"><a href="https://www.flickr.com/photos/28083135@N06/51940720353/" target="_blank">Walthamstow Queens Road</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="https://www.flickr.com/photos/45801463@N05/5477140102/" target="_blank">Walthamstow Queen's Road</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="https://www.flickr.com/photos/richardandgill/6836192588/" target="_blank">WALTHAMSTOW QUEEN'S ROAD</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/t/tah2.shtm">TAH2</a><span class="r">8m 11ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 11 November 2007 to 12 November 2016</em>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.0238</td>
+   <td>51.5817</td>
+   <td>TQ370888</td>
+  </tr>
+  <tr>
+   <td><a id="wao"></a><span class="r">(WAO)</span>Walton (Merseyside)<div class="signs"><a href="signs/names/wao1.jpg" target="_blank">Walton</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/s/sjo2.shtm">SJO2</a><span class="r">3m 45ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Merseyrail Electrics (2002) <em>from 20 July 2003</em></summary>
+Arriva Trains Merseyside <em>from 20 March 2001 to 19 July 2003</em>
+Merseyrail Electrics <em>from 19 January 1997 to 19 March 2001</em></details></td>
+   <td>-2.9660</td>
+   <td>53.4564</td>
+   <td>SJ359959</td>
+  </tr>
+  <tr>
+   <td><a id="wal"></a><span class="r">(WAL)</span>Walton-on-Thames<div class="signs"><a href="signs/names/wal1.jpg" target="_blank">Walton on Thames</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/b/bml1.shtm">BML1</a><span class="r">17m 06ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.4145</td>
+   <td>51.3728</td>
+   <td>TQ104649</td>
+  </tr>
+  <tr>
+   <td><a id="won"></a><span class="r">(WON)</span>Walton-on-the-Naze<div class="signs"><a href="signs/names/won1.jpg" target="_blank">Walton-on-Naze</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/39918537@N04/11778021024/" target="_blank">Walton-on-the-Naze</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/t/twn.shtm">TWN</a><span class="r">70m 14ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Great Eastern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>1.2679</td>
+   <td>51.8463</td>
+   <td>TM251214</td>
+  </tr>
+  <tr>
+   <td><a id="wan"></a><span class="r">(WAN)</span>Wanborough</td>
+   <td><a href="../elrs/_mileages/g/gtw1.shtm">GTW1</a><span class="r">34m 29ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.6682</td>
+   <td>51.2445</td>
+   <td>SU930503</td>
+  </tr>
+  <tr>
+   <td><a id="wsw"></a><span class="r">(WSW)</span>Wandsworth Common</td>
+   <td><a href="../elrs/_mileages/v/vtb1.shtm">VTB1</a><span class="r">4m 05ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.1636</td>
+   <td>51.4461</td>
+   <td>TQ277735</td>
+  </tr>
+  <tr>
+   <td><a id="wwr"></a><span class="r">(WWR)</span>Wandsworth Road<div class="signs"><a href="signs/names/wwr1.jpg" target="_blank">Wandsworth Road</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/lereddog/52020390414/" target="_blank">WANDSWORTH ROAD</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/a/atl.shtm">ATL</a><span class="r">6m 52ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 9 December 2012 to 12 November 2016</em>
+Southern Railway <em>from 22 June 2008 to 8 December 2012</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.1386</td>
+   <td>51.4701</td>
+   <td>TQ294762</td>
+  </tr>
+  <tr>
+   <td><a id="wnt"></a><span class="r">(WNT)</span>Wandsworth Town</td>
+   <td><a href="../elrs/_mileages/r/rdg1.shtm">RDG1</a><span class="r">4m 60ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.1883</td>
+   <td>51.4610</td>
+   <td>TQ259751</td>
+  </tr>
+  <tr>
+   <td><a id="wnp"></a><span class="r">(WNP)</span>Wanstead Park<div class="signs"><a href="https://www.flickr.com/photos/24772733@N05/4679989414/" target="_blank">Wanstead Park</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="https://www.flickr.com/photos/24772733@N05/6766661761/" target="_blank">WANSTEAD PARK</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/t/tah2.shtm">TAH2</a><span class="r">11m 15ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 11 November 2007 to 12 November 2016</em>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>0.0264</td>
+   <td>51.5518</td>
+   <td>TQ405856</td>
+  </tr>
+  <tr>
+   <td><a id="wpe"></a><span class="r">(WPE)</span>Wapping<div class="signs"><a href="https://www.flickr.com/photos/157760463@N05/51801905271/" target="_blank">WAPPING</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/e/ell1.shtm">ELL1</a><span class="r">3m 57ch</span></td>
+   <td>National network confusion<span class="popup" onclick="popup2()"><span class="popuptext" id="myPopup2"><span class="close">&#x2716;</span>Not on <abbr title="Office of Rail &amp; Road">ORR</abbr> station licence until 13 November 2016</span></span></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 27 April 2010 to 12 November 2016</em></details></td>
+   <td>-0.0558</td>
+   <td>51.5044</td>
+   <td>TQ349802</td>
+  </tr>
+  <tr>
+   <td><a id="wbl"></a><span class="r">(WBL)</span>Warblington</td>
+   <td><a href="../elrs/_mileages/t/tbh2.shtm">TBH2</a><span class="r">36m 66ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.9675</td>
+   <td>50.8536</td>
+   <td>SU728065</td>
+  </tr>
+  <tr>
+   <td><a id="wrm"></a><span class="r">(WRM)</span>Wareham (Dorset)<div class="signs"><a href="signs/names/wrm1.jpg" target="_blank">Wareham</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/b/bml2.shtm">BML2</a><span class="r">120m 70ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-2.1151</td>
+   <td>50.6930</td>
+   <td>SY919881</td>
+  </tr>
+  <tr>
+   <td><a id="war"></a><span class="r">(WAR)</span>Ware (Herts)<div class="signs"><a href="signs/names/war1.jpg" target="_blank">Ware</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/h/heb.shtm">HEB</a><span class="r">22m 16ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>-0.0285</td>
+   <td>51.8080</td>
+   <td>TL359139</td>
+  </tr>
+  <tr>
+   <td><a id="wgv"></a><span class="r">(WGV)</span>Wargrave</td>
+   <td><a href="../elrs/_mileages/h/hen.shtm">HEN</a><span class="r">32m 68ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+First Great Western Link <em>from 1 April 2004 to 31 March 2006</em>
+Thames Trains <em>from 13 October 1996 to 31 March 2004</em></details></td>
+   <td>-0.8770</td>
+   <td>51.4990</td>
+   <td>SU780783</td>
+  </tr>
+  <tr>
+   <td><a id="wmn"></a><span class="r">(WMN)</span>Warminster</td>
+   <td><a href="../elrs/_mileages/s/sal.shtm">SAL</a><span class="r">114m 37ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 31 March 2006</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-2.1767</td>
+   <td>51.2068</td>
+   <td>ST877453</td>
+  </tr>
+  <tr>
+   <td><a id="wnh"></a><span class="r">(WNH)</span>Warnham</td>
+   <td><a href="../elrs/_mileages/b/bth3.shtm">BTH3</a><span class="r">33m 46ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.3300</td>
+   <td>51.0930</td>
+   <td>TQ170339</td>
+  </tr>
+  <tr>
+   <td><a id="wbq"></a><span class="r">(WBQ)</span>Warrington Bank Quay</td>
+   <td><a href="../elrs/_mileages/c/cgj3.shtm">CGJ3</a><span class="r">182m 11ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Trenitalia West Coast Rail <em>from 8 December 2019</em></summary>
+West Coast Trains <em>from 9 March 1997 to 7 December 2019</em></details></td>
+   <td>-2.6029</td>
+   <td>53.3862</td>
+   <td>SJ599878</td>
+  </tr>
+  <tr>
+   <td><a id="wac"></a><span class="r">(WAC)</span>Warrington Central</td>
+   <td><a href="../elrs/_mileages/m/maj.shtm">MAJ</a><span class="r">18m 30ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+First/Keolis TransPennine <em>from 1 April 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 31 March 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.5926</td>
+   <td>53.3920</td>
+   <td>SJ607885</td>
+  </tr>
+  <tr>
+   <td><a id="waw"></a><span class="r">(WAW)</span>Warrington West</td>
+   <td><a href="../elrs/_mileages/m/maj.shtm">MAJ</a><span class="r">16m 31ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 15 December 2019 to 29 February 2020</em></details></td>
+   <td>-2.6380</td>
+   <td>53.3936</td>
+   <td>SJ576887</td>
+  </tr>
+  <tr>
+   <td><a id="wrw"></a><span class="r">(WRW)</span>Warwick</td>
+   <td><a href="../elrs/_mileages/d/dcl.shtm">DCL</a><span class="r">108m 02ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>The Chiltern Railway Company <em>from 28 March 2004</em></summary>
+Central Trains <em>from 2 March 1997 to 27 March 2004</em></details></td>
+   <td>-1.5812</td>
+   <td>52.2866</td>
+   <td>SP286654</td>
+  </tr>
+  <tr>
+   <td><a id="wrp"></a><span class="r">(WRP)</span>Warwick Parkway</td>
+   <td><a href="../elrs/_mileages/d/dcl.shtm">DCL</a><span class="r">109m 26ch</span></td>
+   <td class="noshow"></td>
+   <td><a href="https://find-and-update.company-information.service.gov.uk/company/03005018" target="_blank">M40 Trains</a><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></td>
+   <td>The Chiltern Railway Company <em>from 8 October 2000</em></td>
+   <td>-1.6124</td>
+   <td>52.2859</td>
+   <td>SP265653</td>
+  </tr>
+  <tr>
+   <td><a id="wbc"></a><span class="r">(WBC)</span>Waterbeach</td>
+   <td><a href="../elrs/_mileages/b/bgk.shtm">BGK</a><span class="r">61m 01ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2006</em></details></td>
+   <td>0.1973</td>
+   <td>52.2632</td>
+   <td>TL500650</td>
+  </tr>
+  <tr>
+   <td><a id="wtr"></a><span class="r">(WTR)</span>Wateringbury</td>
+   <td><a href="../elrs/_mileages/p/pws1.shtm">PWS1</a><span class="r">39m 77ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.4214</td>
+   <td>51.2495</td>
+   <td>TQ691528</td>
+  </tr>
+  <tr>
+   <td><a id="wlo"></a><span class="r">(WLO)</span>Waterloo (Merseyside)<div class="signs"><a href="signs/names/wlo1.jpg" target="_blank">Waterloo</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="signs/names/wlo2.jpg" target="_blank">Waterloo for Another Place</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/h/hxs3.shtm">HXS3</a><span class="r">5m 20ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Merseyrail Electrics (2002) <em>from 20 July 2003</em></summary>
+Arriva Trains Merseyside <em>from 20 March 2001 to 19 July 2003</em>
+Merseyrail Electrics <em>from 19 January 1997 to 19 March 2001</em></details></td>
+   <td>-3.0250</td>
+   <td>53.4749</td>
+   <td>SJ320980</td>
+  </tr>
+  <tr>
+   <td><a id="wto"></a><span class="r">(WTO)</span>Water Orton</td>
+   <td><a href="../elrs/_mileages/d/dbp3.shtm">DBP3</a><span class="r">34m 54ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.7433</td>
+   <td>52.5187</td>
+   <td>SP174912</td>
+  </tr>
+  <tr>
+   <td><a id="wfh"></a><span class="r">(WFH)</span>Watford High Street</td>
+   <td><a href="../elrs/_mileages/c/cwj.shtm">CWJ</a><span class="r">16m 67ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 11 November 2007 to 12 November 2016</em>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.3921</td>
+   <td>51.6524</td>
+   <td>TQ113960</td>
+  </tr>
+  <tr>
+   <td><a id="wfj"></a><span class="r">(WFJ)</span>Watford Junction</td>
+   <td><a href="../elrs/_mileages/l/lec1.shtm">LEC1</a><span class="r">17m 34ch</span>
+<a href="../elrs/_mileages/c/cwj.shtm">CWJ</a><span class="r">17m 58ch</span>
+<a href="../elrs/_mileages/w/wsa.shtm">WSA</a><span class="r">0m 15ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.3963</td>
+   <td>51.6640</td>
+   <td>TQ110973</td>
+  </tr>
+  <tr>
+   <td><a id="wfn"></a><span class="r">(WFN)</span>Watford North</td>
+   <td><a href="../elrs/_mileages/w/wsa.shtm">WSA</a><span class="r">0m 75ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.3900</td>
+   <td>51.6754</td>
+   <td>TQ113986</td>
+  </tr>
+  <tr>
+   <td><a id="wfs"></a><span class="r">(WFS)</span>Watford Stadium</td>
+   <td><a href="../elrs/_mileages/c/ccg2.shtm">CCG2</a><span class="r">17m 07ch</span></td>
+   <td>Sporting specials only; closed</td>
+   <td class="noshow"></td>
+   <td><details><summary>Silverlink Train Services <em>from 26 September 1997 to 10 November 2007 (licence dates; last train before May 1993)</em></summary>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.4083</td>
+   <td>51.6467</td>
+   <td>TQ104953</td>
+  </tr>
+  <tr>
+   <td><a id="wfw"></a><span class="r">(WFW)</span>Watford West</td>
+   <td><a href="../elrs/_mileages/c/ccg2.shtm">CCG2</a><span class="r">17m 32ch</span></td>
+   <td>Closed</td>
+   <td class="noshow"></td>
+   <td><details><summary>Silverlink Train Services <em>from 26 September 1997 to 26 September 2003 (official, last train 22 March 1996)</em></summary>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.4143</td>
+   <td>51.6485</td>
+   <td>TQ099956</td>
+  </tr>
+  <tr>
+   <td><a id="wtg"></a><span class="r">(WTG)</span>Watlington</td>
+   <td><a href="../elrs/_mileages/b/bgk.shtm">BGK</a><span class="r">90m 70ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2006</em></details></td>
+   <td>0.3831</td>
+   <td>52.6730</td>
+   <td>TF612110</td>
+  </tr>
+  <tr>
+   <td><a id="was"></a><span class="r">(WAS)</span>Watton-at-Stone</td>
+   <td><a href="../elrs/_mileages/h/hdb.shtm">HDB</a><span class="r">23m 72ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2006</em></details></td>
+   <td>-0.1193</td>
+   <td>51.8567</td>
+   <td>TL295192</td>
+  </tr>
+  <tr>
+   <td><a id="wng"></a><span class="r">(WNG)</span>Waun-Gron Park<div class="signs"><a href="signs/names/wng1.jpg" target="_blank">Waun-gron Park</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/r/rad.shtm">RAD</a><span class="r">2m 25ch</span></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales <em>from 28 March 2020</em></summary>
+Network Rail Infrastructure <em>from 3 February 2003 to 27 March 2020</em>
+Railtrack <em>from 1 April 1994 to 2 February 2003</em></details></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 13 October 1996 to 6 December 2003</em></details></td>
+   <td>-3.2292</td>
+   <td>51.4882</td>
+   <td>ST147772</td>
+  </tr>
+  <tr>
+   <td><a id="wav"></a><span class="r">(WAV)</span>Wavertree Technology Park</td>
+   <td><a href="../elrs/_mileages/d/dse.shtm">DSE</a><span class="r">2m 29ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 13 August 2000 to 11 December 2004</em></details></td>
+   <td>-2.9229</td>
+   <td>53.4051</td>
+   <td>SJ387902</td>
+  </tr>
+  <tr>
+   <td><a id="wed"></a><span class="r">(WED)</span>Wedgwood</td>
+   <td><a href="../elrs/_mileages/c/cmd2.shtm">CMD2</a><span class="r">24m 00ch</span></td>
+   <td>Officially open but no trains since 22 May 2004</td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-2.1712</td>
+   <td>52.9521</td>
+   <td>SJ886393</td>
+  </tr>
+  <tr>
+   <td><a id="wee"></a><span class="r">(WEE)</span>Weeley</td>
+   <td><a href="../elrs/_mileages/c/coc.shtm">COC</a><span class="r">62m 76ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Great Eastern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>1.1151</td>
+   <td>51.8531</td>
+   <td>TM146217</td>
+  </tr>
+  <tr>
+   <td><a id="wet"></a><span class="r">(WET)</span>Weeton</td>
+   <td><a href="../elrs/_mileages/l/leh1.shtm">LEH1</a><span class="r">10m 62ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.5812</td>
+   <td>53.9228</td>
+   <td>SE275475</td>
+  </tr>
+  <tr>
+   <td><a id="wmg"></a><span class="r">(WMG)</span>Welham Green</td>
+   <td><a href="../elrs/_mileages/e/ecm1.shtm">ECM1</a><span class="r">15m 50ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2006</em></details></td>
+   <td>-0.2112</td>
+   <td>51.7368</td>
+   <td>TL237056</td>
+  </tr>
+  <tr>
+   <td><a id="wli"></a><span class="r">(WLI)</span>Welling</td>
+   <td><a href="../elrs/_mileages/b/bex.shtm">BEX</a><span class="r">11m 28ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.1018</td>
+   <td>51.4648</td>
+   <td>TQ460760</td>
+  </tr>
+  <tr>
+   <td><a id="wel"></a><span class="r">(WEL)</span>Wellingborough</td>
+   <td><a href="../elrs/_mileages/s/spc3.shtm">SPC3</a><span class="r">65m 11ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 18 August 2019</em></summary>
+East Midlands Trains <em>from 11 November 2007 to 17 August 2019</em>
+Midland Main Line <em>from 28 April 1996 to 10 November 2007</em></details></td>
+   <td>-0.6762</td>
+   <td>52.3035</td>
+   <td>SP903681</td>
+  </tr>
+  <tr>
+   <td><a id="wln"></a><span class="r">(WLN)</span>Wellington (Shropshire)<div class="signs"><a href="https://www.flickr.com/photos/39918537@N04/14803469580/" target="_blank">Wellington</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/w/wsj2.shtm">WSJ2</a><span class="r">161m 27ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-2.5169</td>
+   <td>52.7013</td>
+   <td>SJ651116</td>
+  </tr>
+  <tr>
+   <td><a id="wlq"></a><span class="r">(WLQ)</span>Wellington (Somerset)</td>
+   <td><a href="../elrs/_mileages/m/mln1.shtm">MLN1</a><span class="r"> </span></td>
+   <td>Under construction</td>
+   <td class="noshow"></td>
+   <td>First Greater Western <em>from opening</em></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+  </tr>
+  <tr>
+   <td><a id="wlp"></a><span class="r">(WLP)</span>Welshpool</td>
+   <td><a href="../elrs/_mileages/s/sba2.shtm">SBA2</a><span class="r">33m 70ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 14 October 2001 to 6 December 2003</em>
+Central Trains <em>from 2 March 1997 to 13 October 2001</em></details></td>
+   <td>-3.1405</td>
+   <td>52.6569</td>
+   <td>SJ229071</td>
+  </tr>
+  <tr>
+   <td><a id="wgc"></a><span class="r">(WGC)</span>Welwyn Garden City</td>
+   <td><a href="../elrs/_mileages/e/ecm1.shtm">ECM1</a><span class="r">20m 25ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2006</em></details></td>
+   <td>-0.2038</td>
+   <td>51.8008</td>
+   <td>TL239129</td>
+  </tr>
+  <tr>
+   <td><a id="wlw"></a><span class="r">(WLW)</span>Welwyn North</td>
+   <td><a href="../elrs/_mileages/e/ecm1.shtm">ECM1</a><span class="r">22m 00ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2006</em></details></td>
+   <td>-0.1922</td>
+   <td>51.8237</td>
+   <td>TL246154</td>
+  </tr>
+  <tr>
+   <td><a id="wem"></a><span class="r">(WEM)</span>Wem</td>
+   <td><a href="../elrs/_mileages/s/syc.shtm">SYC</a><span class="r">21m 55ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 14 October 2001 to 6 December 2003</em>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 13 October 2001</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-2.7193</td>
+   <td>52.8557</td>
+   <td>SJ517289</td>
+  </tr>
+  <tr>
+   <td><a id="wmb"></a><span class="r">(WMB)</span>Wembley Central<div class="signs"><a href="https://www.flickr.com/photos/rpmarks/2849951455/" target="_blank">Wembley Central</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="https://www.flickr.com/photos/tanvirspics/52731176089/" target="_blank">WEMBLEY CENTRAL</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/l/lec1.shtm">LEC1</a><span class="r">8m 04ch</span>
+<a href="../elrs/_mileages/c/cwj.shtm">CWJ</a><span class="r">8m 09ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>London Underground <em>from 11 November 2007</em></summary>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.2959</td>
+   <td>51.5519</td>
+   <td>TQ182850</td>
+  </tr>
+  <tr>
+   <td><a id="wcx"></a><span class="r">(WCX)</span>Wembley Stadium<div class="signs"><a href="signs/names/wcx1.jpg" target="_blank">Wembley Stadium</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/johnfrombedford/18799656058/" target="_blank">Wembley Stadium for Wembley Stadium, Wembley Arena and London Designer Outlet</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/n/naj1.shtm">NAJ1</a><span class="r">5m 00ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td>The Chiltern Railway Company <em>from 21 July 1996</em></td>
+   <td>-0.2862</td>
+   <td>51.5544</td>
+   <td>TQ189853</td>
+  </tr>
+  <tr>
+   <td><a id="wms"></a><span class="r">(WMS)</span>Wemyss Bay<div class="signs"><a href="https://www.flickr.com/photos/amaccaluim/14094110886/" target="_blank">Wemyss Bay</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="https://www.flickr.com/photos/66737297@N06/53648975216/" target="_blank">WEMYSS BAY</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/w/wys.shtm">WYS</a><span class="r">10m 03ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.8892</td>
+   <td>55.8767</td>
+   <td>NS193685</td>
+  </tr>
+  <tr>
+   <td><a id="wnd"></a><span class="r">(WND)</span>Wendover</td>
+   <td><a href="../elrs/_mileages/m/mcj2.shtm">MCJ2</a><span class="r">33m 43ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td>The Chiltern Railway Company <em>from 21 July 1996</em></td>
+   <td>-0.7477</td>
+   <td>51.7619</td>
+   <td>SP865077</td>
+  </tr>
+  <tr>
+   <td><a id="wnn"></a><span class="r">(WNN)</span>Wennington</td>
+   <td><a href="../elrs/_mileages/s/skw1.shtm">SKW1</a><span class="r">249m 38ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-2.5877</td>
+   <td>54.1237</td>
+   <td>SD617699</td>
+  </tr>
+  <tr>
+   <td><a id="wsa"></a><span class="r">(WSA)</span>West Allerton</td>
+   <td><a href="../elrs/_mileages/w/wjl3.shtm">WJL3</a><span class="r">189m 00ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.9070</td>
+   <td>53.3693</td>
+   <td>SJ397862</td>
+  </tr>
+  <tr>
+   <td><a id="wbp"></a><span class="r">(WBP)</span>West Brompton<div class="signs"><a href="signs/names/wbp1.jpg" target="_blank">West Brompton</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="signs/names/wbp2.jpg" target="_blank">WEST BROMPTON</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/w/wll.shtm">WLL</a><span class="r">2m 43ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>London Underground <em>from 11 November 2007</em></summary>
+Silverlink Train Services <em>from 30 May 1999 to 10 November 2007</em></details></td>
+   <td>-0.1952</td>
+   <td>51.4868</td>
+   <td>TQ254780</td>
+  </tr>
+  <tr>
+   <td><a id="wsb"></a><span class="r">(WSB)</span>Westbury</td>
+   <td><a href="../elrs/_mileages/w/wey.shtm">WEY</a><span class="r">109m 64ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 31 March 2006</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-2.1989</td>
+   <td>51.2662</td>
+   <td>ST862519</td>
+  </tr>
+  <tr>
+   <td><a id="wby"></a><span class="r">(WBY)</span>West Byfleet</td>
+   <td><a href="../elrs/_mileages/b/bml1.shtm">BML1</a><span class="r">21m 54ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.5057</td>
+   <td>51.3394</td>
+   <td>TQ042611</td>
+  </tr>
+  <tr>
+   <td><a id="wcl"></a><span class="r">(WCL)</span>West Calder</td>
+   <td><a href="../elrs/_mileages/e/egs2.shtm">EGS2</a><span class="r">18m 28ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-3.5670</td>
+   <td>55.8540</td>
+   <td>NT019633</td>
+  </tr>
+  <tr>
+   <td><a id="wcf"></a><span class="r">(WCF)</span>Westcliff</td>
+   <td><a href="../elrs/_mileages/f/fss2.shtm">FSS2</a><span class="r">34m 66ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Trenitalia c2c <em>from 3 April 2017</em></summary>
+NXET Trains <em>from 9 November 2014 to 2 April 2017</em>
+c2c rail <em>from 3 July 2000 to 8 November 2014</em>
+LTS Rail <em>from 26 May 1996 to 2 July 2000</em></details></td>
+   <td>0.6899</td>
+   <td>51.5378</td>
+   <td>TQ867854</td>
+  </tr>
+  <tr>
+   <td><a id="wcb"></a><span class="r">(WCB)</span>Westcombe Park</td>
+   <td><a href="../elrs/_mileages/n/nkl.shtm">NKL</a><span class="r">6m 76ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.0186</td>
+   <td>51.4843</td>
+   <td>TQ401780</td>
+  </tr>
+  <tr>
+   <td><a id="wcy"></a><span class="r">(WCY)</span>West Croydon<div class="signs"><a href="signs/names/wcy1.jpg" target="_blank">West Croydon</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/mikegmcdermott/51854974535/" target="_blank">WEST CROYDON</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/n/nfe.shtm">NFE</a><span class="r">10m 35ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 20 September 2009 to 12 November 2016</em>
+Southern Railway <em>from 22 June 2008 to 19 September 2009</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.1025</td>
+   <td>51.3786</td>
+   <td>TQ321661</td>
+  </tr>
+  <tr>
+   <td><a id="wdt"></a><span class="r">(WDT)</span>West Drayton<div class="signs"><a href="https://www.flickr.com/photos/24772733@N05/51399773913/" target="_blank">West Drayton</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="https://www.flickr.com/photos/26357712@N03/51551449075/" target="_blank">WEST DRAYTON</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/m/mln1.shtm">MLN1</a><span class="r">13m 17ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>MTR Corporation (Crossrail) <em>from 10 December 2017</em></summary>
+First Greater Western <em>from 1 April 2006 to 9 December 2017</em>
+First Great Western Link <em>from 1 April 2004 to 31 March 2006</em>
+Thames Trains <em>from 13 October 1996 to 31 March 2004</em></details></td>
+   <td>-0.4723</td>
+   <td>51.5099</td>
+   <td>TQ061801</td>
+  </tr>
+  <tr>
+   <td><a id="wdu"></a><span class="r">(WDU)</span>West Dulwich</td>
+   <td><a href="../elrs/_mileages/v/vir.shtm">VIR</a><span class="r">5m 02ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>-0.0915</td>
+   <td>51.4408</td>
+   <td>TQ327730</td>
+  </tr>
+  <tr>
+   <td><a id="wea"></a><span class="r">(WEA)</span>West Ealing<div class="signs"><a href="signs/names/wea1.jpg" target="_blank">West Ealing</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="signs/names/wea2.jpg" target="_blank">WEST EALING</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/m/mln1.shtm">MLN1</a><span class="r">6m 46ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>MTR Corporation (Crossrail) <em>from 10 December 2017</em></summary>
+First Greater Western <em>from 1 April 2006 to 9 December 2017</em>
+First Great Western Link <em>from 1 April 2004 to 31 March 2006</em>
+Thames Trains <em>from 13 October 1996 to 31 March 2004</em></details></td>
+   <td>-0.3203</td>
+   <td>51.5136</td>
+   <td>TQ166807</td>
+  </tr>
+  <tr>
+   <td><a id="wha"></a><span class="r">(WHA)</span>Westenhanger</td>
+   <td><a href="../elrs/_mileages/x/xtd.shtm">XTD</a><span class="r">64m 15ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>1.0382</td>
+   <td>51.0949</td>
+   <td>TR127372</td>
+  </tr>
+  <tr>
+   <td><a id="wfi"></a><span class="r">(WFI)</span>Westerfield</td>
+   <td><a href="../elrs/_mileages/e/esk.shtm">ESK</a><span class="r">72m 20ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Anglia Railways Train Services <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>1.1665</td>
+   <td>52.0813</td>
+   <td>TM170472</td>
+  </tr>
+  <tr>
+   <td><a id="wta"></a><span class="r">(WTA)</span>Wester Hailes</td>
+   <td><a href="../elrs/_mileages/e/eca2.shtm">ECA2</a><span class="r">97m 17ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-3.2850</td>
+   <td>55.9141</td>
+   <td>NT198697</td>
+  </tr>
+  <tr>
+   <td><a id="wes"></a><span class="r">(WES)</span>Westerton</td>
+   <td><a href="../elrs/_mileages/n/nem5.shtm">NEM5</a><span class="r">6m 10ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.3355</td>
+   <td>55.9048</td>
+   <td>NS541704</td>
+  </tr>
+  <tr>
+   <td><a id="wga"></a><span class="r">(WGA)</span>Westgate-on-Sea</td>
+   <td><a href="../elrs/_mileages/v/vir.shtm">VIR</a><span class="r">72m 35ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>1.3385</td>
+   <td>51.3815</td>
+   <td>TR324699</td>
+  </tr>
+  <tr>
+   <td><a id="weh"></a><span class="r">(WEH)</span>West Ham<span class="tab1"> </span><em>high level</em></td>
+   <td><a href="../elrs/_mileages/f/fss1.shtm">FSS1</a><span class="r">4m 08ch</span></td>
+   <td>London Underground involvement?<span class="popup" onclick="popup3()"><span class="popuptext" id="myPopup3"><span class="close">&#x2716;</span>Main line platforms only.  Also appears on London Underground licence</span></span></td>
+   <td class="noshow"></td>
+   <td><details><summary>Trenitalia c2c <em>from 3 April 2017</em></summary>
+NXET Trains <em>from 9 November 2014 to 2 April 2017</em>
+c2c rail <em>from 3 July 2000 to 8 November 2014</em>
+LTS Rail <em>from 30 May 1999 to 2 July 2000</em></details></td>
+   <td>0.0053</td>
+   <td>51.5279</td>
+   <td>TQ392829</td>
+  </tr>
+  <tr>
+   <td><a id="weh2"></a><span class="r">(WEH)</span>West Ham<span class="tab1"> </span><em>low level</em></td>
+   <td><a href="../elrs/_mileages/d/dww2.shtm">DWW1</a><span class="r">4m 70ch</span></td>
+   <td>Closed</td>
+   <td class="noshow"></td>
+   <td><details><summary>Silverlink Train Services <em>from 26 September 1997 to 9 December 2006</em></summary>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>0.0044</td>
+   <td>51.5281</td>
+   <td>TQ391828</td>
+  </tr>
+  <tr>
+   <td><a id="whd"></a><span class="r">(WHD)</span>West Hampstead<div class="signs"><a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F962e86e5-a31e-40e1-ae2d-c603b0d6bed0_1984x1323.jpeg" target="_blank">West Hampstead</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="signs/names/whd2.jpg" target="_blank">WEST HAMPSTEAD</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/b/bok2.shtm">BOK2</a><span class="r">2m 75ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 11 November 2007 to 12 November 2016</em>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.1920</td>
+   <td>51.5474</td>
+   <td>TQ254847</td>
+  </tr>
+  <tr>
+   <td><a id="whp"></a><span class="r">(WHP)</span>West Hampstead Thameslink</td>
+   <td><a href="../elrs/_mileages/s/spc1.shtm">SPC1</a><span class="r">3m 73ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+Thameslink Rail <em>from 2 March 1997 to 31 March 2006</em></details></td>
+   <td>-0.1918</td>
+   <td>51.5484</td>
+   <td>TQ254848</td>
+  </tr>
+  <tr>
+   <td><a id="whr"></a><span class="r">(WHR)</span>West Horndon</td>
+   <td><a href="../elrs/_mileages/f/fss2.shtm">FSS2</a><span class="r">19m 15ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Trenitalia c2c <em>from 3 April 2017</em></summary>
+NXET Trains <em>from 9 November 2014 to 2 April 2017</em>
+c2c rail <em>from 3 July 2000 to 8 November 2014</em>
+LTS Rail <em>from 26 May 1996 to 2 July 2000</em></details></td>
+   <td>0.3402</td>
+   <td>51.5678</td>
+   <td>TQ623880</td>
+  </tr>
+  <tr>
+   <td><a id="whg"></a><span class="r">(WHG)</span>Westhoughton</td>
+   <td><a href="../elrs/_mileages/l/lcn.shtm">LCN</a><span class="r">15m 25ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.5235</td>
+   <td>53.5556</td>
+   <td>SD654067</td>
+  </tr>
+  <tr>
+   <td><a id="wkb"></a><span class="r">(WKB)</span>West Kilbride</td>
+   <td><a href="../elrs/_mileages/l/lgs2.shtm">LGS2</a><span class="r">35m 10ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.8515</td>
+   <td>55.6963</td>
+   <td>NS208484</td>
+  </tr>
+  <tr>
+   <td><a id="wki"></a><span class="r">(WKI)</span>West Kirby<div class="signs"><a href="signs/names/wki1.jpg" target="_blank">West Kirby for Marine Lake and Hilbre Island</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/39918537@N04/13790910233/" target="_blank">West Kirby</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/c/cwk3.shtm">CWK3</a><span class="r">10m 46ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Merseyrail Electrics (2002) <em>from 20 July 2003</em></summary>
+Arriva Trains Merseyside <em>from 20 March 2001 to 19 July 2003</em>
+Merseyrail Electrics <em>from 19 January 1997 to 19 March 2001</em></details></td>
+   <td>-3.1836</td>
+   <td>53.3730</td>
+   <td>SJ213869</td>
+  </tr>
+  <tr>
+   <td><a id="wma"></a><span class="r">(WMA)</span>West Malling<div class="signs"><a href="https://www.flickr.com/photos/joshtechfission/11279806533/" target="_blank">West Malling for Kings Hill</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/s/sbj.shtm">SBJ</a><span class="r">34m 61ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.4186</td>
+   <td>51.2921</td>
+   <td>TQ687575</td>
+  </tr>
+  <tr>
+   <td><a id="wnw"></a><span class="r">(WNW)</span>West Norwood</td>
+   <td><a href="../elrs/_mileages/b/bbj.shtm">BBJ</a><span class="r">7m 02ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.1037</td>
+   <td>51.4316</td>
+   <td>TQ319719</td>
+  </tr>
+  <tr>
+   <td><a id="wnm"></a><span class="r">(WNM)</span>Weston Milton</td>
+   <td><a href="../elrs/_mileages/w/wsm.shtm">WSM</a><span class="r">136m 12ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 31 March 2006</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-2.9420</td>
+   <td>51.3486</td>
+   <td>ST344614</td>
+  </tr>
+  <tr>
+   <td><a id="wsm"></a><span class="r">(WSM)</span>Weston-super-Mare</td>
+   <td><a href="../elrs/_mileages/w/wsm.shtm">WSM</a><span class="r">137m 33ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 31 March 2006</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-2.9713</td>
+   <td>51.3446</td>
+   <td>ST323610</td>
+  </tr>
+  <tr>
+   <td><a id="wru"></a><span class="r">(WRU)</span>West Ruislip</td>
+   <td><a href="../elrs/_mileages/n/naj2.shtm">NAJ2</a><span class="r">1m 68ch</span></td>
+   <td>Main line platforms only<span class="popup" onclick="popup4()"><span class="popuptext" id="myPopup4"><span class="close">&#x2716;</span>Also appears on London Underground licence</span></span></td>
+   <td class="noshow"></td>
+   <td>The Chiltern Railway Company <em>from 21 July 1996</em></td>
+   <td>-0.4365</td>
+   <td>51.5695</td>
+   <td>TQ084867</td>
+  </tr>
+  <tr>
+   <td><a id="wrn"></a><span class="r">(WRN)</span>West Runton</td>
+   <td><a href="../elrs/_mileages/c/crs.shtm">CRS</a><span class="r">44m 39ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Anglia Railways Train Services <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>1.2454</td>
+   <td>52.9357</td>
+   <td>TG182425</td>
+  </tr>
+  <tr>
+   <td><a id="wld"></a><span class="r">(WLD)</span>West St Leonards</td>
+   <td><a href="../elrs/_mileages/t/tth.shtm">TTH</a><span class="r">60m 59ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.5398</td>
+   <td>50.8533</td>
+   <td>TQ788090</td>
+  </tr>
+  <tr>
+   <td><a id="wsu"></a><span class="r">(WSU)</span>West Sutton</td>
+   <td><a href="../elrs/_mileages/s/sms2.shtm">SMS2</a><span class="r">11m 47ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+Thameslink Rail <em>from 2 March 1997 to 31 March 2006</em></details></td>
+   <td>-0.2048</td>
+   <td>51.3662</td>
+   <td>TQ250645</td>
+  </tr>
+  <tr>
+   <td><a id="wwi"></a><span class="r">(WWI)</span>West Wickham</td>
+   <td><a href="../elrs/_mileages/l/lch.shtm">LCH</a><span class="r">13m 19ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>-0.0143</td>
+   <td>51.3813</td>
+   <td>TQ382665</td>
+  </tr>
+  <tr>
+   <td><a id="wwo"></a><span class="r">(WWO)</span>West Worthing</td>
+   <td><a href="../elrs/_mileages/b/bli1.shtm">BLI1</a><span class="r">11m 30ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.3922</td>
+   <td>50.8184</td>
+   <td>TQ132033</td>
+  </tr>
+  <tr>
+   <td><a id="wrl"></a><span class="r">(WRL)</span>Wetheral</td>
+   <td><a href="../elrs/_mileages/n/nec2.shtm">NEC2</a><span class="r">55m 76ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-2.8325</td>
+   <td>54.8838</td>
+   <td>NY467546</td>
+  </tr>
+  <tr>
+   <td><a id="wyb"></a><span class="r">(WYB)</span>Weybridge</td>
+   <td><a href="../elrs/_mileages/b/bml1.shtm">BML1</a><span class="r">19m 12ch</span>
+<a href="../elrs/_mileages/v/vww.shtm">VWW</a><span class="r">19m 08ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.4577</td>
+   <td>51.3616</td>
+   <td>TQ074636</td>
+  </tr>
+  <tr>
+   <td><a id="wey"></a><span class="r">(WEY)</span>Weymouth</td>
+   <td><a href="../elrs/_mileages/b/bml3.shtm">BML3</a><span class="r">168m 63ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-2.4543</td>
+   <td>50.6154</td>
+   <td>SY679795</td>
+  </tr>
+  <tr>
+   <td><a id="wyq"></a><span class="r">(WYQ)</span>Weymouth Quay</td>
+   <td><a href="../elrs/_mileages/w/wtq.shtm">WTQ</a><span class="r">169m 65ch</span></td>
+   <td>Closed</td>
+   <td class="noshow"></td>
+   <td>n/a<span class="popup" onclick="popup5()"><span class="popuptext" id="myPopup5"><span class="close">&#x2716;</span>Appears on South Wales &amp; West TOU/South Wales &amp; West Railway/Wales &amp; West Passenger Trains track access contracts but with no indication of who operates the station</span></span></td>
+   <td>-2.4483</td>
+   <td>50.6086</td>
+   <td>SY684789</td>
+  </tr>
+  <tr>
+   <td><a id="wbr"></a><span class="r">(WBR)</span>Whaley Bridge</td>
+   <td><a href="../elrs/_mileages/b/bej.shtm">BEJ</a><span class="r">10m 04ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-1.9848</td>
+   <td>53.3301</td>
+   <td>SK010815</td>
+  </tr>
+  <tr>
+   <td><a id="whe"></a><span class="r">(WHE)</span>Whalley (Lancashire)<div class="signs"><a href="https://www.flickr.com/photos/johnfrombedford/42858420352/" target="_blank">Whalley</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/d/djh.shtm">DJH</a><span class="r">17m 60ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.4119</td>
+   <td>53.8245</td>
+   <td>SD729365</td>
+  </tr>
+  <tr>
+   <td><a id="wts"></a><span class="r">(WTS)</span>Whatstandwell</td>
+   <td><a href="../elrs/_mileages/a/ajm1.shtm">AJM1</a><span class="r">140m 13ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 18 August 2019</em></summary>
+East Midlands Trains <em>from 11 November 2007 to 17 August 2019</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.5040</td>
+   <td>53.0832</td>
+   <td>SK333541</td>
+  </tr>
+  <tr>
+   <td><a id="wff"></a><span class="r">(WFF)</span>Whifflet</td>
+   <td><a href="../elrs/_mileages/s/scm2.shtm">SCM2</a><span class="r">94m 02ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.0188</td>
+   <td>55.8539</td>
+   <td>NS737641</td>
+  </tr>
+  <tr>
+   <td><a id="whm"></a><span class="r">(WHM)</span>Whimple</td>
+   <td><a href="../elrs/_mileages/b/bae2.shtm">BAE2</a><span class="r">163m 02ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-3.3542</td>
+   <td>50.7680</td>
+   <td>SY046973</td>
+  </tr>
+  <tr>
+   <td><a id="wnl"></a><span class="r">(WNL)</span>Whinhill</td>
+   <td><a href="../elrs/_mileages/w/wys.shtm">WYS</a><span class="r">1m 63ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.7439</td>
+   <td>55.9380</td>
+   <td>NS285751</td>
+  </tr>
+  <tr>
+   <td><a id="whn"></a><span class="r">(WHN)</span>Whiston</td>
+   <td><a href="../elrs/_mileages/d/dse.shtm">DSE</a><span class="r">7m 52ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.7961</td>
+   <td>53.4141</td>
+   <td>SJ471910</td>
+  </tr>
+  <tr>
+   <td><a id="wtb"></a><span class="r">(WTB)</span>Whitby</td>
+   <td><a href="../elrs/_mileages/m/mbw3.shtm">MBW3</a><span class="r">30m 61ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-0.6147</td>
+   <td>54.4848</td>
+   <td>NZ898108</td>
+  </tr>
+  <tr>
+   <td><a id="wht"></a><span class="r">(WHT)</span>Whitchurch (Cardiff)<div class="signs"><a href="signs/names/wht1.jpg" target="_blank">Whitchurch</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/c/cry.shtm">CRY</a><span class="r">2m 25ch</span></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales <em>from 28 March 2020</em></summary>
+Network Rail Infrastructure <em>from 3 February 2003 to 27 March 2020</em>
+Railtrack <em>from 1 April 1994 to 2 February 2003</em></details></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 13 October 1996 to 6 December 2003</em></details></td>
+   <td>-3.2236</td>
+   <td>51.5209</td>
+   <td>ST153809</td>
+  </tr>
+  <tr>
+   <td><a id="wch"></a><span class="r">(WCH)</span>Whitchurch (Hampshire)<div class="signs"><a href="signs/names/wch1.jpg" target="_blank">Whitchurch</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/b/bae1.shtm">BAE1</a><span class="r">59m 08ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-1.3381</td>
+   <td>51.2377</td>
+   <td>SU463489</td>
+  </tr>
+  <tr>
+   <td><a id="wtc"></a><span class="r">(WTC)</span>Whitchurch (Shropshire)<div class="signs"><a href="signs/names/wtc1.jpg" target="_blank">Whitchurch</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/s/syc.shtm">SYC</a><span class="r">13m 44ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 14 October 2001 to 6 December 2003</em>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 13 October 2001</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-2.6720</td>
+   <td>52.9676</td>
+   <td>SJ549414</td>
+  </tr>
+  <tr>
+   <td><a id="zlw"></a><a id="wcc"></a><span class="r">(ZLW)</span>Whitechapel<div class="signs"><a href="signs/names/zlw1.jpg" target="_blank">WHITECHAPEL</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/e/ell1.shtm">ELL1</a><span class="r">2m 49ch</span>
+<a href="../elrs/_mileages/x/xrc.shtm">XRC</a><span class="r">10.356km</span></td>
+   <td class="noshow"></td>
+   <td>London Underground</td>
+   <td>London Underground <em>from 27 April 2010</em><span class="popup" onclick="popup8()"><span class="popuptext" id="myPopup8"><span class="close">&#x2716;</span>XRC portion opened for testing 23 August 2021 and to public 24 May 2022.  Not on <abbr title="Office of Rail &amp; Road">ORR</abbr> station licence.</span></span></td>
+   <td>-0.0602</td>
+   <td>51.5190</td>
+   <td>TQ345818</td>
+  </tr>
+  <tr>
+   <td><a id="wcr"></a><span class="r">(WCR)</span>Whitecraigs<div class="signs"><a href="https://www.flickr.com/photos/amaccaluim/8041067551/" target="_blank">Whitecraigs</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="https://www.flickr.com/photos/39918537@N04/11469404563/" target="_blank">Whitecraigs for Rouken Glen Park</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/n/nnh.shtm">NNH</a><span class="r">103m 61ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.3103</td>
+   <td>55.7903</td>
+   <td>NS552576</td>
+  </tr>
+  <tr>
+   <td><a id="whl"></a><span class="r">(WHL)</span>White Hart Lane</td>
+   <td><a href="../elrs/_mileages/h/hdt.shtm">HDT</a><span class="r">7m 11ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 31 May 2015 to 12 November 2016</em>
+Abellio Greater Anglia <em>from 5 February 2012 to 30 May 2015</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>-0.0710</td>
+   <td>51.6050</td>
+   <td>TQ337913</td>
+  </tr>
+  <tr>
+   <td><a id="wth"></a><span class="r">(WTH)</span>Whitehaven</td>
+   <td><a href="../elrs/_mileages/c/cbc2.shtm">CBC2</a><span class="r">0m 00ch</span>
+<a href="../elrs/_mileages/c/cbc1.shtm">CBC1</a><span class="r">74m 66ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-3.5869</td>
+   <td>54.5536</td>
+   <td>NX974186</td>
+  </tr>
+  <tr>
+   <td><a id="wny"></a><span class="r">(WNY)</span>White Notley</td>
+   <td><a href="../elrs/_mileages/b/bra.shtm">BRA</a><span class="r">21m 10ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Great Eastern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>0.5951</td>
+   <td>51.8395</td>
+   <td>TL789188</td>
+  </tr>
+  <tr>
+   <td><a id="wro"></a><span class="r">(WRO)</span>White Rose</td>
+   <td><a href="../elrs/_mileages/m/mdl1.shtm">MDL1</a><span class="r">&ap;39m 47ch</span></td>
+   <td>Construction halted</td>
+   <td class="noshow"></td>
+   <td>Northern Trains <em>from opening</em></td>
+   <td>-1.5821</td>
+   <td>53.7633</td>
+   <td>SE276297</td>
+  </tr>
+  <tr>
+   <td><a id="wtl"></a><span class="r">(WTL)</span>Whitland</td>
+   <td><a href="../elrs/_mileages/s/swm2.shtm">SWM2</a><span class="r">258m 74ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 14 October 2001 to 6 December 2003</em>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 13 October 2001</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-4.6144</td>
+   <td>51.8181</td>
+   <td>SN198165</td>
+  </tr>
+  <tr>
+   <td><a id="wbd"></a><span class="r">(WBD)</span>Whitley Bridge</td>
+   <td><a href="../elrs/_mileages/w/wag1.shtm">WAG1</a><span class="r">62m 55ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.1589</td>
+   <td>53.6993</td>
+   <td>SE556229</td>
+  </tr>
+  <tr>
+   <td><a id="wte"></a><span class="r">(WTE)</span>Whitlocks End</td>
+   <td><a href="../elrs/_mileages/t/tsb.shtm">TSB</a><span class="r">4m 60ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.8514</td>
+   <td>52.3921</td>
+   <td>SP101770</td>
+  </tr>
+  <tr>
+   <td><a id="whi"></a><span class="r">(WHI)</span>Whitstable<div class="signs"><a href="signs/names/whi1.jpg" target="_blank">Whitstable</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.kentonline.co.uk/whitstable/news/you-had-one-job-railway-station-sign-blunder-as-town-s-na-310878/" target="_blank">Whistable</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/v/vir.shtm">VIR</a><span class="r">59m 06ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>1.0329</td>
+   <td>51.3576</td>
+   <td>TR113664</td>
+  </tr>
+  <tr>
+   <td><a id="wle"></a><span class="r">(WLE)</span>Whittlesea</td>
+   <td><a href="../elrs/_mileages/e/emp.shtm">EMP</a><span class="r">94m 60ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Central Trains <em>from 2 March 1997 to 31 March 2004</em></details></td>
+   <td>-0.1194</td>
+   <td>52.5500</td>
+   <td>TL277963</td>
+  </tr>
+  <tr>
+   <td><a id="wlf"></a><span class="r">(WLF)</span>Whittlesford Parkway<span class="tab1"> </span><em>formerly '<a href="https://www.flickr.com/photos/timhorn/8056729441/" target="_blank">Whittlesford</a>'<span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small> to 9 December 2006</em></td>
+   <td><a href="../elrs/_mileages/b/bgk.shtm">BGK</a><span class="r">49m 01ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>0.1656</td>
+   <td>52.1042</td>
+   <td>TL484472</td>
+  </tr>
+  <tr>
+   <td><a id="wtn"></a><span class="r">(WTN)</span>Whitton (London)<div class="signs"><a href="signs/names/wtn1.jpg" target="_blank">Whitton</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/r/rdg1.shtm">RDG1</a><span class="r">12m 43ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.3578</td>
+   <td>51.4495</td>
+   <td>TQ142735</td>
+  </tr>
+  <tr>
+   <td><a id="wwl"></a><span class="r">(WWL)</span>Whitwell (Derbyshire)<div class="signs"><a href="https://www.flickr.com/photos/66737297@N06/51329980387/" target="_blank">Whitwell</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/p/pse.shtm">PSE</a><span class="r">150m 56ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 18 August 2019</em></summary>
+East Midlands Trains <em>from 11 November 2007 to 17 August 2019</em>
+Central Trains <em>from 25 May 1998 to 10 November 2007</em></details></td>
+   <td>-1.2016</td>
+   <td>53.2793</td>
+   <td>SK533761</td>
+  </tr>
+  <tr>
+   <td><a id="why"></a><span class="r">(WHY)</span>Whyteleafe</td>
+   <td><a href="../elrs/_mileages/p/pat.shtm">PAT</a><span class="r">17m 58ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.0809</td>
+   <td>51.3102</td>
+   <td>TQ338585</td>
+  </tr>
+  <tr>
+   <td><a id="whs"></a><span class="r">(WHS)</span>Whyteleafe South</td>
+   <td><a href="../elrs/_mileages/p/pat.shtm">PAT</a><span class="r">18m 18ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.0771</td>
+   <td>51.3035</td>
+   <td>TQ341578</td>
+  </tr>
+  <tr>
+   <td><a id="wck"></a><span class="r">(WCK)</span>Wick</td>
+   <td><a href="../elrs/_mileages/w/wck.shtm">WCK</a><span class="r">161m 35ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-3.0973</td>
+   <td>58.4415</td>
+   <td>ND360509</td>
+  </tr>
+  <tr>
+   <td><a id="wic"></a><span class="r">(WIC)</span>Wickford</td>
+   <td><a href="../elrs/_mileages/s/ssv.shtm">SSV</a><span class="r">29m 02ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Great Eastern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>0.5193</td>
+   <td>51.6150</td>
+   <td>TQ745936</td>
+  </tr>
+  <tr>
+   <td><a id="wcm"></a><span class="r">(WCM)</span>Wickham Market<div class="signs"><a href="signs/names/wcm1.jpg" target="_blank">Campsea Ashe for Wickham Market</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/e/esk.shtm">ESK</a><span class="r">84m 43ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Anglia Railways Train Services <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>1.3982</td>
+   <td>52.1509</td>
+   <td>TM325557</td>
+  </tr>
+  <tr>
+   <td><a id="wdd"></a><span class="r">(WDD)</span>Widdrington</td>
+   <td><a href="../elrs/_mileages/e/ecm7.shtm">ECM7</a><span class="r">23m 20ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.6165</td>
+   <td>55.2412</td>
+   <td>NZ244941</td>
+  </tr>
+  <tr>
+   <td><a id="wid"></a><span class="r">(WID)</span>Widnes</td>
+   <td><a href="../elrs/_mileages/m/maj.shtm">MAJ</a><span class="r">12m 20ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.7334</td>
+   <td>53.3788</td>
+   <td>SJ512871</td>
+  </tr>
+  <tr>
+   <td><a id="wmr"></a><span class="r">(WMR)</span>Widney Manor</td>
+   <td><a href="../elrs/_mileages/d/dcl.shtm">DCL</a><span class="r">120m 66ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.7746</td>
+   <td>52.3968</td>
+   <td>SP154776</td>
+  </tr>
+  <tr>
+   <td><a id="wgn"></a><span class="r">(WGN)</span>Wigan North Western</td>
+   <td><a href="../elrs/_mileages/c/cgj5.shtm">CGJ5</a><span class="r">6m 47ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Trenitalia West Coast Rail <em>from 8 December 2019</em></summary>
+West Coast Trains <em>from 9 March 1997 to 7 December 2019</em></details></td>
+   <td>-2.6334</td>
+   <td>53.5439</td>
+   <td>SD581053</td>
+  </tr>
+  <tr>
+   <td><a id="wgw"></a><span class="r">(WGW)</span>Wigan Wallgate</td>
+   <td><a href="../elrs/_mileages/w/wbs2.shtm">WBS2</a><span class="r">17m 72ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.6331</td>
+   <td>53.5448</td>
+   <td>SD580055</td>
+  </tr>
+  <tr>
+   <td><a id="wgt"></a><span class="r">(WGT)</span>Wigton</td>
+   <td><a href="../elrs/_mileages/c/cbc3.shtm">CBC3</a><span class="r">16m 20ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-3.1640</td>
+   <td>54.8291</td>
+   <td>NY252488</td>
+  </tr>
+  <tr>
+   <td><a id="wmi"></a><span class="r">(WMI)</span>Wildmill</td>
+   <td><a href="../elrs/_mileages/b/bal.shtm">BAL</a><span class="r">0m 64ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 14 October 2001 to 6 December 2003</em>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 13 October 2001</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-3.5806</td>
+   <td>51.5203</td>
+   <td>SS904812</td>
+  </tr>
+  <tr>
+   <td><a id="wia"></a><span class="r">(WIA)</span>Willenhall</td>
+   <td><a href="../elrs/_mileages/p/pbj.shtm">PBJ</a><span class="r">11m 55ch</span></td>
+   <td>Under construction</td>
+   <td class="noshow"></td>
+   <td>West Midlands Trains <em>from opening</em></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+  </tr>
+  <tr>
+   <td><a id="wij"></a><span class="r">(WIJ)</span>Willesden Junction
+<span class="r"><em>also <a href="../crs/crsw.shtm#wjh">WJH</a> and <a href="../crs/crsw.shtm#wjl">WJL</a></em></span>
+<div class="signs"><a href="signs/names/wij1.jpg" target="_blank">Willesden Junction</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/richard_rka/53700408988/" target="_blank">WILLESDEN JUNCTION</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/b/bok3.shtm">BOK3</a><span class="r">5m 39ch</span>
+<a href="../elrs/_mileages/c/cwj.shtm">CWJ</a><span class="r">5m 36ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 11 November 2007 to 12 November 2016</em>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.2435
+-0.2446</td>
+   <td>51.5320
+51.5324</td>
+   <td>TQ219829
+TQ218829</td>
+  </tr>
+  <tr>
+   <td><a id="wlm"></a><span class="r">(WLM)</span>Williamwood</td>
+   <td><a href="../elrs/_mileages/n/nnh.shtm">NNH</a><span class="r">102m 73ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.2893</td>
+   <td>55.7944</td>
+   <td>NS565580</td>
+  </tr>
+  <tr>
+   <td><a id="wil"></a><span class="r">(WIL)</span>Willington</td>
+   <td><a href="../elrs/_mileages/d/dbp1.shtm">DBP1</a><span class="r">6m 03ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 18 August 2019</em></summary>
+East Midlands Trains <em>from 11 November 2007 to 17 August 2019</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.5641</td>
+   <td>52.8533</td>
+   <td>SK294285</td>
+  </tr>
+  <tr>
+   <td><a id="wmc"></a><span class="r">(WMC)</span>Wilmcote<div class="signs"><a href="https://www.flickr.com/photos/ell-r-brown/52837330491/" target="_blank">Wilmcote</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="https://www.flickr.com/photos/39918537@N04/12651355965/" target="_blank">Wilmcote for Mary Arden's House</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/h/hsa.shtm">HSA</a><span class="r">11m 49ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.7556</td>
+   <td>52.2228</td>
+   <td>SP168582</td>
+  </tr>
+  <tr>
+   <td><a id="wml"></a><span class="r">(WML)</span>Wilmslow</td>
+   <td><a href="../elrs/_mileages/s/sty.shtm">STY</a><span class="r">0m 18ch</span>
+<a href="../elrs/_mileages/c/cmp1.shtm">CMP1</a><span class="r">176m 71ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.2259</td>
+   <td>53.3264</td>
+   <td>SJ850811</td>
+  </tr>
+  <tr>
+   <td><a id="wne"></a><span class="r">(WNE)</span>Wilnecote (Staffs)<div class="signs"><a href="signs/names/wne1.jpg" target="_blank">Wilnecote</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/d/dbp1.shtm">DBP1</a><span class="r">25m 47ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.6798</td>
+   <td>52.6110</td>
+   <td>SK217014</td>
+  </tr>
+  <tr>
+   <td><a id="wim"></a><span class="r">(WIM)</span>Wimbledon</td>
+   <td><a href="../elrs/_mileages/b/bml1.shtm">BML1</a><span class="r">7m 19ch</span>
+<a href="../elrs/_mileages/p/ppw.shtm">PPW</a><span class="r">8m 47ch</span>
+<a href="../elrs/_mileages/s/sms1.shtm">SMS1</a><span class="r">3m 05ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.2065</td>
+   <td>51.4216</td>
+   <td>TQ248707</td>
+  </tr>
+  <tr>
+   <td><a id="wbo"></a><span class="r">(WBO)</span>Wimbledon Chase</td>
+   <td><a href="../elrs/_mileages/s/sms2.shtm">SMS2</a><span class="r">8m 13ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+Thameslink Rail <em>from 2 March 1997 to 31 March 2006</em></details></td>
+   <td>-0.2144</td>
+   <td>51.4097</td>
+   <td>TQ242693</td>
+  </tr>
+  <tr>
+   <td><a id="wmp"></a><span class="r">(WMP)</span>Wimbledon Park<div class="signs"><a href="https://www.flickr.com/photos/essie123/53546906347/" target="_blank">WIMBLEDON PARK</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/p/ppw.shtm">PPW</a><span class="r">7m 50ch</span></td>
+   <td class="noshow"></td>
+   <td>London Underground</td>
+   <td>London Underground <em>from 1 April 1994</em></td>
+   <td>-0.1988</td>
+   <td>51.4341</td>
+   <td>TQ253721</td>
+  </tr>
+  <tr>
+   <td><a id="wse"></a><span class="r">(WSE)</span>Winchelsea</td>
+   <td><a href="../elrs/_mileages/a/ath.shtm">ATH</a><span class="r">73m 22ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>0.7017</td>
+   <td>50.9333</td>
+   <td>TQ899183</td>
+  </tr>
+  <tr>
+   <td><a id="win"></a><span class="r">(WIN)</span>Winchester</td>
+   <td><a href="../elrs/_mileages/b/bml1.shtm">BML1</a><span class="r">66m 39ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-1.3197</td>
+   <td>51.0672</td>
+   <td>SU477299</td>
+  </tr>
+  <tr>
+   <td><a id="wnf"></a><span class="r">(WNF)</span>Winchfield</td>
+   <td><a href="../elrs/_mileages/b/bml1.shtm">BML1</a><span class="r">39m 66ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.9072</td>
+   <td>51.2854</td>
+   <td>SU763545</td>
+  </tr>
+  <tr>
+   <td><a id="wih"></a><span class="r">(WIH)</span>Winchmore Hill</td>
+   <td><a href="../elrs/_mileages/h/hdb.shtm">HDB</a><span class="r">7m 63ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2006</em></details></td>
+   <td>-0.1010</td>
+   <td>51.6340</td>
+   <td>TQ315945</td>
+  </tr>
+  <tr>
+   <td><a id="wdm"></a><span class="r">(WDM)</span>Windermere</td>
+   <td><a href="../elrs/_mileages/o/oxw.shtm">OXW</a><span class="r">10m 15ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+First/Keolis TransPennine <em>from 1 April 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 31 March 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.9039</td>
+   <td>54.3798</td>
+   <td>SD413986</td>
+  </tr>
+  <tr>
+   <td><a id="wnc"></a><span class="r">(WNC)</span>Windsor &amp; Eton Central<div class="signs"><a href="signs/names/wnc1.jpg" target="_blank">Windsor &amp; Eton Central</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/39918537@N04/46497816724/" target="_blank">Windsor and Eton Central</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/w/win.shtm">WIN</a><span class="r">21m 19ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+First Great Western Link <em>from 1 April 2004 to 31 March 2006</em>
+Thames Trains <em>from 13 October 1996 to 31 March 2004</em></details></td>
+   <td>-0.6090</td>
+   <td>51.4829</td>
+   <td>SU966769</td>
+  </tr>
+  <tr>
+   <td><a id="wnr"></a><span class="r">(WNR)</span>Windsor &amp; Eton Riverside<div class="signs"><a href="signs/names/wnr1.jpg" target="_blank">Windsor &amp; Eton Riverside</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/rpmarks/52351454149/" target="_blank">Windsor and Eton Riverside</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/s/swe.shtm">SWE</a><span class="r">25m 48ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.6063</td>
+   <td>51.4859</td>
+   <td>SU968772</td>
+  </tr>
+  <tr>
+   <td><a id="wns"></a><span class="r">(WNS)</span>Winnersh</td>
+   <td><a href="../elrs/_mileages/r/rdg2.shtm">RDG2</a><span class="r">64m 10ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.8770</td>
+   <td>51.4307</td>
+   <td>SU780707</td>
+  </tr>
+  <tr>
+   <td><a id="wti"></a><span class="r">(WTI)</span>Winnersh Triangle</td>
+   <td><a href="../elrs/_mileages/r/rdg2.shtm">RDG2</a><span class="r">64m 72ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.8914</td>
+   <td>51.4367</td>
+   <td>SU771714</td>
+  </tr>
+  <tr>
+   <td><a id="wsf"></a><span class="r">(WSF)</span>Winsford</td>
+   <td><a href="../elrs/_mileages/c/cgj1.shtm">CGJ1</a><span class="r">165m 41ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-2.4943</td>
+   <td>53.1905</td>
+   <td>SJ671660</td>
+  </tr>
+  <tr>
+   <td><a id="wno"></a><span class="r">(WNO)</span>Winslow</td>
+   <td><a href="../elrs/_mileages/o/oxd.shtm">OXD</a><span class="r">7m 36ch</span></td>
+   <td>Under construction</td>
+   <td class="noshow"></td>
+   <td>[future East/West Rail operator]</td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+  </tr>
+  <tr>
+   <td><a id="wsh"></a><span class="r">(WSH)</span>Wishaw</td>
+   <td><a href="../elrs/_mileages/w/wwd.shtm">WWD</a><span class="r">86m 31ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-3.9260</td>
+   <td>55.7720</td>
+   <td>NS792548</td>
+  </tr>
+  <tr>
+   <td><a id="wtm"></a><span class="r">(WTM)</span>Witham<div class="signs"><a href="signs/names/wtm1.jpg" target="_blank">Witham</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/111015206@N08/51410513349/" target="_blank">WITHAM STATION</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/l/ltn1.shtm">LTN1</a><span class="r">38m 47ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Great Eastern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>0.6392</td>
+   <td>51.8059</td>
+   <td>TL820152</td>
+  </tr>
+  <tr>
+   <td><a id="wty"></a><span class="r">(WTY)</span>Witley</td>
+   <td><a href="../elrs/_mileages/w/wph1.shtm">WPH1</a><span class="r">38m 36ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.6456</td>
+   <td>51.1327</td>
+   <td>SU948379</td>
+  </tr>
+  <tr>
+   <td><a id="wtt"></a><span class="r">(WTT)</span>Witton (West Midlands)<div class="signs"><a href="signs/names/wtt1.jpg" target="_blank">Witton</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/p/pbj.shtm">PBJ</a><span class="r">2m 45ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.8844</td>
+   <td>52.5124</td>
+   <td>SP079904</td>
+  </tr>
+  <tr>
+   <td><a id="wvf"></a><span class="r">(WVF)</span>Wivelsfield</td>
+   <td><a href="../elrs/_mileages/v/vtb3.shtm">VTB3</a><span class="r">40m 52ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.1208</td>
+   <td>50.9638</td>
+   <td>TQ320199</td>
+  </tr>
+  <tr>
+   <td><a id="wiv"></a><span class="r">(WIV)</span>Wivenhoe</td>
+   <td><a href="../elrs/_mileages/c/coc.shtm">COC</a><span class="r">56m 00ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Great Eastern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>0.9582</td>
+   <td>51.8562</td>
+   <td>TM036216</td>
+  </tr>
+  <tr>
+   <td><a id="wixams"></a><span class="r"><em>CRS unknown</em></span>Wixams</td>
+   <td><a href="../elrs/_mileages/s/spc1.shtm">SPC1</a><span class="r">&ap;46m 72ch</span></td>
+   <td>Under development</td>
+   <td class="noshow"></td>
+   <td>Govia Thameslink Railway <em>from opening</em></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+  </tr>
+  <tr>
+   <td><a id="wob"></a><span class="r">(WOB)</span>Woburn Sands</td>
+   <td><a href="../elrs/_mileages/b/bbm.shtm">BBM</a><span class="r">4m 08ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.6546</td>
+   <td>52.0182</td>
+   <td>SP924363</td>
+  </tr>
+  <tr>
+   <td><a id="wok"></a><span class="r">(WOK)</span>Woking</td>
+   <td><a href="../elrs/_mileages/b/bml1.shtm">BML1</a><span class="r">24m 27ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.5571</td>
+   <td>51.3186</td>
+   <td>TQ006586</td>
+  </tr>
+  <tr>
+   <td><a id="wkm"></a><span class="r">(WKM)</span>Wokingham</td>
+   <td><a href="../elrs/_mileages/r/rdg2.shtm">RDG2</a><span class="r">62m 08ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.8425</td>
+   <td>51.4113</td>
+   <td>SU805686</td>
+  </tr>
+  <tr>
+   <td><a id="woh"></a><span class="r">(WOH)</span>Woldingham</td>
+   <td><a href="../elrs/_mileages/s/scu1.shtm">SCU1</a><span class="r">17m 15ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.0519</td>
+   <td>51.2901</td>
+   <td>TQ359562</td>
+  </tr>
+  <tr>
+   <td><a id="wvh"></a><span class="r">(WVH)</span>Wolverhampton<div class="signs"><a href="sponsored/wvh8l.jpg" target="_blank">Wolverhampton</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="signs/names/wvh1.jpg" target="_blank">City of Wolverhampton</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/r/rbs2.shtm">RBS2</a><span class="r">12m 75ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 1 April 2018</em></summary>
+West Coast Trains <em>from 9 March 1997 to 31 March 2018</em></details></td>
+   <td>-2.1201</td>
+   <td>52.5877</td>
+   <td>SO919988</td>
+  </tr>
+  <tr>
+   <td><a id="wol"></a><span class="r">(WOL)</span>Wolverton</td>
+   <td><a href="../elrs/_mileages/l/lec1.shtm">LEC1</a><span class="r">52m 33ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.8043</td>
+   <td>52.0657</td>
+   <td>SP820414</td>
+  </tr>
+  <tr>
+   <td><a id="wom"></a><span class="r">(WOM)</span>Wombwell</td>
+   <td><a href="../elrs/_mileages/s/shb.shtm">SHB</a><span class="r">170m 45ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.4159</td>
+   <td>53.5172</td>
+   <td>SE387025</td>
+  </tr>
+  <tr>
+   <td><a id="wde"></a><span class="r">(WDE)</span>Wood End<div class="signs"><a href="signs/names/wde1.jpg" target="_blank">WOOD END</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/39918537@N04/12651843164/" target="_blank">Wood End</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/t/tsb.shtm">TSB</a><span class="r">8m 56ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.8439</td>
+   <td>52.3436</td>
+   <td>SP106717</td>
+  </tr>
+  <tr>
+   <td><a id="wdb"></a><span class="r">(WDB)</span>Woodbridge</td>
+   <td><a href="../elrs/_mileages/e/esk.shtm">ESK</a><span class="r">78m 78ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Anglia Railways Train Services <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>1.3177</td>
+   <td>52.0904</td>
+   <td>TM273487</td>
+  </tr>
+  <tr>
+   <td><a id="wgr"></a><span class="r">(WGR)</span>Woodgrange Park</td>
+   <td><a href="../elrs/_mileages/t/tah3.shtm">TAH3</a><span class="r">12m 05ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 11 November 2007 to 12 November 2016</em>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>0.0444</td>
+   <td>51.5492</td>
+   <td>TQ419853</td>
+  </tr>
+  <tr>
+   <td><a id="wdl"></a><span class="r">(WDL)</span>Woodhall</td>
+   <td><a href="../elrs/_mileages/g/gou2.shtm">GOU2</a><span class="r">119m 45ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.6558</td>
+   <td>55.9312</td>
+   <td>NS341741</td>
+  </tr>
+  <tr>
+   <td><span class="r">(WDF)</span>Woodham Ferrers<span class="tab1"> </span><em>see <a href="stations.shtm#sof">South Woodham Ferrers</a></em></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+  </tr>
+  <tr>
+   <td><a id="wdh"></a><span class="r">(WDH)</span>Woodhouse</td>
+   <td><a href="../elrs/_mileages/m/mac3.shtm">MAC3</a><span class="r">46m 18ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.3580</td>
+   <td>53.3642</td>
+   <td>SK428854</td>
+  </tr>
+  <tr>
+   <td><a id="wds"></a><span class="r">(WDS)</span>Woodlesford</td>
+   <td><a href="../elrs/_mileages/t/tjc3.shtm">TJC3</a><span class="r">190m 02ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.4432</td>
+   <td>53.7567</td>
+   <td>SE367291</td>
+  </tr>
+  <tr>
+   <td><a id="wly"></a><span class="r">(WLY)</span>Woodley</td>
+   <td><a href="../elrs/_mileages/r/ryh2.shtm">RYH2</a><span class="r">8m 72ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.0930</td>
+   <td>53.4293</td>
+   <td>SJ939924</td>
+  </tr>
+  <tr>
+   <td><a id="wme"></a><span class="r">(WME)</span>Woodmansterne</td>
+   <td><a href="../elrs/_mileages/t/tat.shtm">TAT</a><span class="r">17m 40ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.1539</td>
+   <td>51.3191</td>
+   <td>TQ287593</td>
+  </tr>
+  <tr>
+   <td><a id="wod"></a><span class="r">(WOD)</span>Woodside</td>
+   <td><a href="../elrs/_mileages/e/eea.shtm">EEA</a><span class="r">12m 08ch</span></td>
+   <td>Closed</td>
+   <td class="noshow"></td>
+   <td>Connex South Eastern <em>from 13 October 1996 to 31 May 1997</em></td>
+   <td>-0.0650</td>
+   <td>51.3873</td>
+   <td>TQ347671</td>
+  </tr>
+  <tr>
+   <td><a id="wsr"></a><span class="r">(WSR)</span>Woodsmoor</td>
+   <td><a href="../elrs/_mileages/b/bej.shtm">BEJ</a><span class="r">1m 25ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.1412</td>
+   <td>53.3862</td>
+   <td>SJ907877</td>
+  </tr>
+  <tr>
+   <td><a id="wst"></a><span class="r">(WST)</span>Wood Street<div class="signs"><a href="signs/names/wst1.jpg" target="_blank">Wood Street</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/24772733@N05/36079465314/" target="_blank">WOOD STREET</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/c/cjc.shtm">CJC</a><span class="r">7m 07ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 31 May 2015 to 12 November 2016</em>
+Abellio Greater Anglia <em>from 5 February 2012 to 30 May 2015</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>-0.0025</td>
+   <td>51.5867</td>
+   <td>TQ385894</td>
+  </tr>
+  <tr>
+   <td><a id="woo"></a><span class="r">(WOO)</span>Wool</td>
+   <td><a href="../elrs/_mileages/b/bml2.shtm">BML2</a><span class="r">125m 69ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-2.2220</td>
+   <td>50.6817</td>
+   <td>SY844869</td>
+  </tr>
+  <tr>
+   <td><a id="wls"></a><span class="r">(WLS)</span>Woolston</td>
+   <td><a href="../elrs/_mileages/s/sdp1.shtm">SDP1</a><span class="r">4m 11ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-1.3756</td>
+   <td>50.8989</td>
+   <td>SU439112</td>
+  </tr>
+  <tr>
+   <td><a id="wow"></a><span class="r">(WWC)</span>Woolwich<div class="signs"><a href="https://www.flickr.com/photos/16299801@N03/53410121282/" target="_blank">WOOLWICH</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/x/xrs.shtm">XRS</a><span class="r">21.164km</span></td>
+   <td class="noshow"></td>
+   <td>Rail for London (Infrastructure)</td>
+   <td>MTR Corporation (Crossrail) <em>from 24 May 2022</em><span class="popup" onclick="popup7()"><span class="popuptextfr" id="myPopup7"><span class="close">&#x2716;</span>Opened for testing 25 June 2021.  Station control is confused; the ORR licence suggests it was train operator MTR Corporation (Crossrail)'s responsibility, the track access contract names RfL(I).</span></span></td>
+   <td>0.0705</td>
+   <td>51.4920</td>
+   <td>TQ447790</td>
+  </tr>
+  <tr>
+   <td><a id="wwa"></a><span class="r">(WWA)</span>Woolwich Arsenal</td>
+   <td><a href="../elrs/_mileages/n/nkl.shtm">NKL</a><span class="r">9m 32ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.0694</td>
+   <td>51.4899</td>
+   <td>TQ437788</td>
+  </tr>
+  <tr>
+   <td><a id="wwd"></a><span class="r">(WWD)</span>Woolwich Dockyard</td>
+   <td><a href="../elrs/_mileages/n/nkl.shtm">NKL</a><span class="r">8m 56ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.0538</td>
+   <td>51.4914</td>
+   <td>TQ427789</td>
+  </tr>
+  <tr>
+   <td><a id="www"></a><span class="r">(WWW)</span>Wootton Wawen</td>
+   <td><a href="../elrs/_mileages/t/tsb.shtm">TSB</a><span class="r">15m 22ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.7847</td>
+   <td>52.2671</td>
+   <td>SP148631</td>
+  </tr>
+  <tr>
+   <td><a id="wof"></a><span class="r">(WOF)</span>Worcester Foregate Street</td>
+   <td><a href="../elrs/_mileages/w/wah.shtm">WAH</a><span class="r">121m 12ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-2.2212</td>
+   <td>52.1950</td>
+   <td>SO849552</td>
+  </tr>
+  <tr>
+   <td><a id="wcp"></a><span class="r">(WCP)</span>Worcester Park</td>
+   <td><a href="../elrs/_mileages/r/rpe.shtm">RPE</a><span class="r">10m 53ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.2451</td>
+   <td>51.3812</td>
+   <td>TQ222661</td>
+  </tr>
+  <tr>
+   <td><a id="wop"></a><span class="r">(WOP)<span class="noshow">
+</span> <em>also <a href="../crs/crsw.shtm#wph">WPH</a></em></span>Worcestershire Parkway</td>
+   <td><a href="../elrs/_mileages/b/bag2.shtm">BAG2</a><span class="r">68m 13ch</span>
+<a href="../elrs/_mileages/o/oww.shtm">OWW</a><span class="r">116m 60ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td>First Greater Western <em>from 23 February 2020</em></td>
+   <td>-2.1603</td>
+   <td>52.1556</td>
+   <td>SO891508</td>
+  </tr>
+  <tr>
+   <td><a id="wos"></a><span class="r">(WOS)</span>Worcester Shrub Hill</td>
+   <td><a href="../elrs/_mileages/o/oww.shtm">OWW</a><span class="r">120m 42ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-2.2094</td>
+   <td>52.1948</td>
+   <td>SO857551</td>
+  </tr>
+  <tr>
+   <td><a id="wkg"></a><span class="r">(WKG)</span>Workington<div class="signs"><a href="https://www.flickr.com/photos/39918537@N04/30230407596/" target="_blank">Workington</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="signs/names/wkg1.jpg" target="_blank">Workington Main</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="signs/names/wkg2.jpg" target="_blank">WORKINGTON</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/c/cbc2.shtm">CBC2</a><span class="r">6m 69ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-3.5589</td>
+   <td>54.6449</td>
+   <td>NX995289</td>
+  </tr>
+  <tr>
+   <td><a id="wkn"></a><span class="r">(WKN)</span>Workington North</td>
+   <td><a href="../elrs/_mileages/c/cbc2.shtm">CBC2</a><span class="r">7m 65ch</span></td>
+   <td>Temporary station, closed</td>
+   <td class="noshow"></td>
+   <td>Northern Rail <em>from 30 November 2009 to 8 October 2010</em></td>
+   <td>-3.5566</td>
+   <td>54.6587</td>
+   <td>NX996304</td>
+  </tr>
+  <tr>
+   <td><a id="wrk"></a><span class="r">(WRK)</span>Worksop<div class="signs"><a href="signs/names/wrk1.jpg" target="_blank">Worksop</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="signs/names/wrk2.jpg" target="_blank">WORKSOP.</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/m/mac3.shtm">MAC3</a><span class="r">56m 61ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.1225</td>
+   <td>53.3114</td>
+   <td>SK585797</td>
+  </tr>
+  <tr>
+   <td><a id="wor"></a><span class="r">(WOR)</span>Worle<div class="signs"><a href="signs/names/wor1.jpg" target="_blank">WORLE</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="signs/names/wor2.jpg" target="_blank">Worle</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/m/mln1.shtm">MLN1</a><span class="r">134m 42ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 31 March 2006</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-2.9092</td>
+   <td>51.3584</td>
+   <td>ST368625</td>
+  </tr>
+  <tr>
+   <td><a id="wpl"></a><span class="r">(WPL)</span>Worplesdon</td>
+   <td><a href="../elrs/_mileages/w/wph1.shtm">WPH1</a><span class="r">26m 65ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.5822</td>
+   <td>51.2882</td>
+   <td>SU989552</td>
+  </tr>
+  <tr>
+   <td><a id="wrt"></a><span class="r">(WRT)</span>Worstead</td>
+   <td><a href="../elrs/_mileages/w/whc1.shtm">WHC1</a><span class="r">13m 12ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Anglia Railways Train Services <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>1.4039</td>
+   <td>52.7774</td>
+   <td>TG296254</td>
+  </tr>
+  <tr>
+   <td><a id="wrh"></a><span class="r">(WRH)</span>Worthing</td>
+   <td><a href="../elrs/_mileages/b/bli1.shtm">BLI1</a><span class="r">10m 46ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.3732</td>
+   <td>50.8185</td>
+   <td>TQ145033</td>
+  </tr>
+  <tr>
+   <td><a id="wrb"></a><span class="r">(WRB)</span>Wrabness</td>
+   <td><a href="../elrs/_mileages/m/mah.shtm">MAH</a><span class="r">65m 06ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Great Eastern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>1.1713</td>
+   <td>51.9397</td>
+   <td>TM180315</td>
+  </tr>
+  <tr>
+   <td><a id="wry"></a><span class="r">(WRY)</span>Wraysbury</td>
+   <td><a href="../elrs/_mileages/s/swe.shtm">SWE</a><span class="r">21m 40ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.5419</td>
+   <td>51.4579</td>
+   <td>TQ014741</td>
+  </tr>
+  <tr>
+   <td><a id="wre"></a><span class="r">(WRE)</span>Wrenbury</td>
+   <td><a href="../elrs/_mileages/s/syc.shtm">SYC</a><span class="r">8m 48ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 14 October 2001 to 6 December 2003</em>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 13 October 2001</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-2.5958</td>
+   <td>53.0196</td>
+   <td>SJ601470</td>
+  </tr>
+  <tr>
+   <td><a id="wrs"></a><span class="r">(WRS)</span>Wressle</td>
+   <td><a href="../elrs/_mileages/h/hul1.shtm">HUL1</a><span class="r">24m 79ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-0.9240</td>
+   <td>53.7730</td>
+   <td>SE710312</td>
+  </tr>
+  <tr>
+   <td><a id="wxc2"></a><span class="r">(WXC)</span>Wrexham Central<span class="tab1"> </span><em>old</em></td>
+   <td><a href="../elrs/_mileages/w/wdb1.shtm">WDB1</a><span class="r">0m 00ch</span></td>
+   <td>Closed</td>
+   <td class="noshow"></td>
+   <td><details><summary>North Western Trains Company <em>from 1 June 1997 to 22 November 1998</em></summary>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.9971</td>
+   <td>53.0455</td>
+   <td>SJ330503</td>
+  </tr>
+  <tr>
+   <td><a id="wxc"></a><span class="r">(WXC)</span>Wrexham Central<span class="tab1"> </span><em>new</em></td>
+   <td><a href="../elrs/_mileages/w/wdb1.shtm">WDB1</a><span class="r">0m 16ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 28 September 2003 to 6 December 2003</em>
+North Western Trains Company <em>from 23 November 1998 to 27 September 2003</em></details></td>
+   <td>-2.9966</td>
+   <td>53.0456</td>
+   <td>SJ332502</td>
+  </tr>
+  <tr>
+   <td><a id="wrx"></a><span class="r">(WRX)</span>Wrexham General</td>
+   <td><a href="../elrs/_mileages/w/wdb1.shtm">WDB1</a><span class="r">0m 49ch</span>
+<a href="../elrs/_mileages/w/wsj2.shtm">WSJ2</a><span class="r">201m 66ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 28 September 2003 to 6 December 2003</em>
+North Western Trains Company <em>from 1 June 1997 to 27 September 2003</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-3.0016</td>
+   <td>53.0506</td>
+   <td>SJ329508</td>
+  </tr>
+  <tr>
+   <td><a id="wye"></a><span class="r">(WYE)</span>Wye</td>
+   <td><a href="../elrs/_mileages/a/acr.shtm">ACR</a><span class="r">60m 32ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.9292</td>
+   <td>51.1856</td>
+   <td>TR048470</td>
+  </tr>
+  <tr>
+   <td><a id="wym"></a><span class="r">(WYM)</span>Wylam</td>
+   <td><a href="../elrs/_mileages/n/nec2.shtm">NEC2</a><span class="r">8m 35ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.8141</td>
+   <td>54.9749</td>
+   <td>NZ120644</td>
+  </tr>
+  <tr>
+   <td><a id="wyl"></a><span class="r">(WYL)</span>Wylde Green</td>
+   <td><a href="../elrs/_mileages/a/alc1.shtm">ALC1</a><span class="r">3m 59ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.8315</td>
+   <td>52.5459</td>
+   <td>SP115942</td>
+  </tr>
+  <tr>
+   <td><a id="wmd"></a><span class="r">(WMD)</span>Wymondham</td>
+   <td><a href="../elrs/_mileages/e/etn.shtm">ETN</a><span class="r">113m 72ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Central Trains <em>from 2 March 1997 to 31 March 2004</em></details></td>
+   <td>1.1179</td>
+   <td>52.5655</td>
+   <td>TG114009</td>
+  </tr>
+  <tr>
+   <td><a id="wyt"></a><span class="r">(WYT)</span>Wythall</td>
+   <td><a href="../elrs/_mileages/t/tsb.shtm">TSB</a><span class="r">5m 59ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.8660</td>
+   <td>52.3800</td>
+   <td>SP092758</td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+ <p> </p>
+<div class="fixed">
+<nav>
+ <a href="stationa.shtm">A</a>&nbsp;|
+ <a href="stationb.shtm">B</a>&nbsp;|
+ <a href="stationc.shtm">C</a>&nbsp;|
+ <a href="stationd.shtm">D</a>&nbsp;|
+ <a href="statione.shtm">E</a>&nbsp;|
+ <a href="stationf.shtm">F</a>&nbsp;|
+ <a href="stationg.shtm">G</a>&nbsp;|
+ <a href="stationh.shtm">H</a>&nbsp;|
+ <a href="stationi.shtm">I</a>&nbsp;|
+ <a href="stationj.shtm">J</a>&nbsp;|
+ <a href="stationk.shtm">K</a>&nbsp;|
+ <a href="stationl.shtm">L</a>&nbsp;|
+ <a href="stationm.shtm">M</a>&nbsp;|
+ <a href="stationn.shtm">N</a>&nbsp;|
+ <a href="stationo.shtm">O</a>&nbsp;|
+ <a href="stationp.shtm">P</a>&nbsp;|
+ <a href="stationq.shtm">Q</a>&nbsp;|
+ <a href="stationr.shtm">R</a>&nbsp;|
+ <a href="stations.shtm">S</a>&nbsp;|
+ <a href="stationt.shtm">T</a>&nbsp;|
+ <a href="stationu.shtm">U</a>&nbsp;|
+ <a href="stationv.shtm">V</a>&nbsp;|
+ <a href="stationw.shtm">W</a>&nbsp;|
+ <small>X</small>&nbsp;|
+ <a href="stationy.shtm">Y</a>&nbsp;|
+ <small>Z</small>
+</nav>
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("input");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("tablesort");
+  var rows = table.getElementsByTagName("tr");
+  for (i = 1; i < rows.length; i++) {
+    var cells = rows[i].getElementsByTagName("td");
+    var j;
+    var rowContainsFilter = false;
+    for (j = 0; j < cells.length; j++) {
+      if (cells[j]) {
+        if (cells[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+          rowContainsFilter = true;
+          continue;
+        }
+      }
+    }
+
+    if (! rowContainsFilter) {
+      rows[i].style.display = "none";
+    } else {
+      rows[i].style.display = "";
+    }
+  }
+}
+
+function onkeypressed(evt, input) {
+    var code = evt.charCode || evt.keyCode;
+    if (code == 27) {
+        input.value = '';
+    }
+}
+</script>
+
+
+ <p> </p>
+
+</body>
+</html>

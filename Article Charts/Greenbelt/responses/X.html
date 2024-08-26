@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="Phil Deaves">
+<meta name="description" content="UK railway stations with ELR, mileage, owner/operator, coordinates and grid reference; stations starting X">
+<meta name="keywords" content="railway, station, ELR, mileage, owner, operator">
+<meta name=viewport content="width=device-width, initial-scale=1">
+
+<meta name = "format-detection" content = "telephone=no">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="/android-chrome-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/android-chrome-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/android-chrome-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/android-chrome-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/android-chrome-144x144.png" sizes="144x144">
+
+<!-- 
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+-->
+
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-title" content="RailwayCodes">
+<meta name="application-name" content="RailwayCodes">
+<meta name="msapplication-TileColor" content="#00008b">
+<meta name="msapplication-TileImage" content="/mstile-70x70.png">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="msapplication-TileImage" content="/mstile-150x150.png">
+<meta name="msapplication-TileImage" content="/mstile-310x150.png">
+<meta name="msapplication-TileImage" content="/mstile-310x310.png">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="theme-color" content="#00008b">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+<title>Railway station data, location X</title>
+<link rel="stylesheet" type="text/css" href="../style/_style.css">
+</head>
+<body>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+
+  h = checkTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML =
+  h + "<b>:</b>" + m + "<b>.</b><span id='secs'>" +s +"</span>";
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+setInterval(startTime, 1000);
+</script>
+
+<div id="nav">
+ <div class="topnav" id="myTopnav">
+  <nav>
+   <a href="/index.shtml" class="active"><img src="/logo.svg" alt="logo" class="menuleft"><i class="fas fa-home"></i> Home</a>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Line data</button>
+    <div class="dropdown-content">
+     <a href="/elrs/elr0.shtm">ELRs and mileages</a>
+     <a href="/electrification/mast_prefix0.shtm">Electrification</a>
+     <a href="/crs/crs0.shtm">CRS, NLC, TIPLOC and STANOX Codes</a>
+     <a href="/pride/pride0.shtm">Line of Route (LOR/PRIDE) codes</a>
+     <a href="/line/line_names.shtm">Line names</a>
+     <a href="/line/diagrams0.shtm">Track diagrams</a>
+     <a href="/bridges/bridges0.shtm">Bridges</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Other assets</button>
+    <div class="dropdown-content">
+     <a href="/signal/signal_boxes0.shtm">Signal boxes</a>
+     <a href="/tunnels/tunnels0.shtm">Tunnels</a>
+     <a href="/viaducts/viaducts0.shtm">Viaducts</a>
+     <a href="/stations/station0.shtm">Stations</a>
+     <a href="/depots/depots0.shtm">Depots</a>
+     <a href="/features/habdwild.shtm">HABD and WILD</a>
+     <a href="/features/troughs.shtm">Water troughs</a>
+     <a href="/features/telegraph.shtm">Telegraph codes</a>
+     <a href="/features/buzzer.shtm">Buzzer codes</a>
+     <a href="/features/stamper.shtm">Stamper codes</a>
+     <a href="/underground/underground0.shtm">London Underground stations</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> &quot;Legal/financial&quot; lists</button>
+    <div class="dropdown-content">
+     <a href="/operators/experimental.shtm">Experimental services</a>
+     <a href="/licences/licence0.shtm">Licences/exemptions</a>
+     <a href="/operators/community.shtm">Community rail partnerships</a>
+     <a href="/operators/franchises1.shtm">Rail franchises</a>
+     <a href="/operators/franchises3.shtm">National Rail Contract operators</a>
+     <a href="/operators/franchises2.shtm">Light rail operators</a>
+     <a href="/operators/toccodes.shtm">TOC timetable codes</a>
+     <a href="/operators/servicegroups.shtm">TOC service groups</a>
+     <a href="/operators/access0.shtm">TOC station access</a>
+     <a href="/operators/privatisation.shtm">BR privatisation</a>
+     <a href="/operators/business.shtm">Business/sector codes</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Miscellaneous</button>
+    <div class="dropdown-content">
+     <a href="/misc/identify.shtm">'What's this?' quiz</a>
+     <a href="/misc/search.shtm">Site search</a>
+     <a href="/misc/updates.shtm">Site updates</a>
+     <a href="/misc/contact.shtm">Contact</a>
+     <a href="/misc/links.shtm">External links</a>
+     <a href="/misc/contributing.shtm">Use/contribute</a>
+     <a href="/misc/acknowledgements.shtm">Acknowledgements</a>
+     <a href="/misc/sitemap.shtm">Site map</a>
+    </div>
+   </div>
+    <a href="/index.shtml" class="active">
+     <img src="/logo.svg" alt="logo" class="menuright">
+    </a>
+    <a href="javascript:void(0);" class="icon" onclick="responseFunction()">&#9776;</a>
+   <div id="navright">
+    <div class="element">
+     <div id="clock">
+      <div id="time">
+      </div>
+     </div>
+    </div>
+   </div>
+  </nav>
+ </div>
+</div>
+
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function responseFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<script src="https://kit.fontawesome.com/674d93a07b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="font-family : 'Century Gothic', Montserrat, sans-serif;"><i class="fas fa-long-arrow-alt-up"></i> Top of page</button>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.addEventListener("scroll", navFunction);
+
+function navFunction() {var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-35px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<div class="mainlogo"><img class="mainlogo" src="/logo.svg" alt="logo"></div>
+<div class="appeal"><h1>Railway station data</h1></div>
+<h2>A (hopefully) comprehensive listing</h2>
+<h2>Locations beginning X</h2>
+
+ <p class="update">Last update 8 January 2021</p>
+
+<div class="appeal"><span class="background"><span style="font-weight:lighter">Additional information is always gratefully received, whether entirely new records </span><span>(particularly historical records)</span><span style="font-weight:lighter"> or information to fill in gaps or correct errors, via the contact link under the Miscellaneous entry in the navigation bar above.  Thank you.</span></span>
+</div>
+
+ <p>Please select a feature from the list below:</p>
+
+<nav>
+ <span class="background">
+  <span class="help" title="section navigation links"><i class="fas fa-directions"></i></span>
+  <a href="/stations/station1.shtm">Mileages, operators and grid coordinates</a>&nbsp;|
+  <a href="/stations/bilingual0.shtm">Bilingual signs</a>&nbsp;|
+  <a href="/stations/sponsored0.shtm">Sponsored signs</a>&nbsp;|
+  <a href="/stations/notserved.shtm">Not served by SFO</a>&nbsp;|
+  <a href="/stations/international.shtm">International</a>&nbsp;|
+  <a href="/stations/trivia.shtm">Trivia</a>&nbsp;|
+  <a href="/operators/access0.shtm">Access rights</a>&nbsp;|
+  <a href="/stations/barriers.shtm">Barrier error codes</a>&nbsp;|
+  <a href="/underground/underground0.shtm">London Underground</a>&nbsp;|
+  <a href="/stations/post.shtm">Post boxes</a>&nbsp;|
+  <a href="/stations/railnet.shtm">Railnet</a>
+ </span>
+</nav>
+
+ <p>To see other locations, please click the link below:</p>
+
+<nav>
+ <span class="background">
+  <span class="help" title="section navigation links"><i class="fas fa-directions"></i></span>
+  <a href="stationa.shtm">A</a>&nbsp;|
+  <a href="stationb.shtm">B</a>&nbsp;|
+  <a href="stationc.shtm">C</a>&nbsp;|
+  <a href="stationd.shtm">D</a>&nbsp;|
+  <a href="statione.shtm">E</a>&nbsp;|
+  <a href="stationf.shtm">F</a>&nbsp;|
+  <a href="stationg.shtm">G</a>&nbsp;|
+  <a href="stationh.shtm">H</a>&nbsp;|
+  <a href="stationi.shtm">I</a>&nbsp;|
+  <a href="stationj.shtm">J</a>&nbsp;|
+  <a href="stationk.shtm">K</a>&nbsp;|
+  <a href="stationl.shtm">L</a>&nbsp;|
+  <a href="stationm.shtm">M</a>&nbsp;|
+  <a href="stationn.shtm">N</a>&nbsp;|
+  <a href="stationo.shtm">O</a>&nbsp;|
+  <a href="stationp.shtm">P</a>&nbsp;|
+  <a href="stationq.shtm">Q</a>&nbsp;|
+  <a href="stationr.shtm">R</a>&nbsp;|
+  <a href="stations.shtm">S</a>&nbsp;|
+  <a href="stationt.shtm">T</a>&nbsp;|
+  <a href="stationu.shtm">U</a>&nbsp;|
+  <a href="stationv.shtm">V</a>&nbsp;|
+  <a href="stationw.shtm">W</a>&nbsp;|
+  <small>X</small>&nbsp;|
+  <a href="stationy.shtm">Y</a>&nbsp;|
+  <small>Z</small>
+ </span>
+</nav>
+  <p>Station CRS codes are given in parentheses.  Other CRS codes can be found <a href="/crs/crs0.shtm">here</a>.</p>
+  <p>Names are given in the form that National Rail uses.  All known English language differences (e.g., punctuation or capitalisation) that appear on signs displayed since 1 April 1994 are shown in the accompanying box with links to photographs where possible.  Signs labelled 'for...' are treated as part of the name whereas 'alight/change for...' are treated as an instruction in the same way as 'way out' would be.  Other languages and their variants appear on the <a href="bilingual0.shtm">bilingual</a> pages.</p>
+
+ <p>There are no stations starting with X.  There are no British towns starting with X.  What are you doing here?  This page isn't linked from anything!</p>
+
+ <p> </p>
+<div class="fixed">
+<nav>
+ <a href="stationa.shtm">A</a>&nbsp;|
+ <a href="stationb.shtm">B</a>&nbsp;|
+ <a href="stationc.shtm">C</a>&nbsp;|
+ <a href="stationd.shtm">D</a>&nbsp;|
+ <a href="statione.shtm">E</a>&nbsp;|
+ <a href="stationf.shtm">F</a>&nbsp;|
+ <a href="stationg.shtm">G</a>&nbsp;|
+ <a href="stationh.shtm">H</a>&nbsp;|
+ <a href="stationi.shtm">I</a>&nbsp;|
+ <a href="stationj.shtm">J</a>&nbsp;|
+ <a href="stationk.shtm">K</a>&nbsp;|
+ <a href="stationl.shtm">L</a>&nbsp;|
+ <a href="stationm.shtm">M</a>&nbsp;|
+ <a href="stationn.shtm">N</a>&nbsp;|
+ <a href="stationo.shtm">O</a>&nbsp;|
+ <a href="stationp.shtm">P</a>&nbsp;|
+ <a href="stationq.shtm">Q</a>&nbsp;|
+ <a href="stationr.shtm">R</a>&nbsp;|
+ <a href="stations.shtm">S</a>&nbsp;|
+ <a href="stationt.shtm">T</a>&nbsp;|
+ <a href="stationu.shtm">U</a>&nbsp;|
+ <a href="stationv.shtm">V</a>&nbsp;|
+ <a href="stationw.shtm">W</a>&nbsp;|
+ <small>X</small>&nbsp;|
+ <a href="stationy.shtm">Y</a>&nbsp;|
+ <small>Z</small>
+</nav>
+
+</div>
+
+ <p> </p>
+
+</body>
+</html>

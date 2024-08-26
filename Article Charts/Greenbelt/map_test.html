@@ -16,13 +16,16 @@
             margin: auto;
         }
         .panel {
-            margin: 500px 20px 700px;
+            margin: 150px 20px 300px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             text-align: left;
             padding: 20px;
             width: 80%;
+        }
+        .panel:last-child {
+            margin-bottom: 700px; /* 300px + 400px extra */
         }
         .panel h2 {
             margin-top: 0;
@@ -38,15 +41,15 @@
     </div>
     <div class="panel" id="panel2">
         <h2>Welcome to London</h2>
-        <p>This is a boilerplate text about London. .</p>
+        <p>This is a boilerplate text about London. Scroll down to see more locations.</p>
     </div>
     <div class="panel" id="panel3">
         <h2>Bristol</h2>
         <p>This is a boilerplate text about the broader Bristol area.</p>
     </div>
     <div class="panel" id="panel4">
-        <h2>The Bristol greenbelt</h2>
-        <p>This is a boilerplate text. Bristol greenbelt is very nearby city center.</p>
+        <h2>The Bristol Greenbelt</h2>
+        <p>This is a boilerplate text. The Bristol greenbelt is very nearby city center.</p>
     </div>
 </div>
 <script>
@@ -58,27 +61,49 @@
                 container: container,
                 style: options.style || 'mapbox://styles/mapbox/streets-v11',
                 center: options.center || [0, 0],
-                zoom: options.zoom || 2
+                zoom: options.zoom || 2,
+                scrollZoom: false // Disable scroll zoom
             });
 
             this.map.on('load', () => {
+                this.addGreenbeltLayer();
+            });
+
+            this.map.on('styledata', () => {
+                this.addGreenbeltLayer();
+            });
+
+            // Disable scroll zoom while allowing panning
+            this.map.scrollZoom.disable();
+        }
+
+        addGreenbeltLayer() {
+            if (!this.map.getSource('greenbelt')) {
                 this.map.addSource('greenbelt', {
                     type: 'vector',
                     url: 'mapbox://fm-ds.41zgrzuu'
                 });
+            }
 
-                this.map.addLayer({
-                    id: 'greenbelt',
-                    type: 'fill',
-                    source: 'greenbelt',
-                    'source-layer': '41zgrzuu',
-                    paint: {
-                        'fill-color': '#00ff00',
-                        'fill-opacity': 0.6,
-                        'fill-outline-color': 'rgba(255, 255, 255, 1)'
+            fetch('https://api.mapbox.com/v4/fm-ds.41zgrzuu.json?access_token=pk.eyJ1IjoiZm0tZHMiLCJhIjoiY2xvbXIwb3piMm93aTJscndvYnFncjh4NSJ9.ZYcFieW_kfpK-uB6PhVkLA')
+                .then(response => response.json())
+                .then(data => {
+                    const sourceLayer = data.vector_layers[0].id;
+
+                    if (!this.map.getLayer('greenbelt')) {
+                        this.map.addLayer({
+                            id: 'greenbelt',
+                            type: 'fill',
+                            source: 'greenbelt',
+                            'source-layer': sourceLayer,
+                            paint: {
+                                'fill-color': '#00ff00',
+                                'fill-opacity': 0.6,
+                                'fill-outline-color': 'rgba(255, 255, 255, 1)'
+                            }
+                        }, 'waterway-label');
                     }
-                }, 'waterway-label');
-            });
+                });
         }
 
         setCenter(center) {
@@ -95,31 +120,13 @@
 
         setStyle(style) {
             this.map.setStyle(style);
-            this.map.on('style.load', () => {
-                this.map.addSource('greenbelt', {
-                    type: 'vector',
-                    url: 'mapbox://fm-ds.41zgrzuu'
-                });
-
-                this.map.addLayer({
-                    id: 'greenbelt',
-                    type: 'fill',
-                    source: 'greenbelt',
-                    'source-layer': '41zgrzuu',
-                    paint: {
-                        'fill-color': 'rgb(0, 255, 0)',
-                        'fill-opacity': 0.6,
-                        'fill-outline-color': 'rgba(255, 255, 255, 1)'
-                    }
-                }, 'waterway-label');
-            });
         }
     }
 
     const myMap = new MainMap('map', {
         style: 'mapbox://styles/mapbox/streets-v11',
         center: [-1.1743, 52.3555], // England
-        zoom: 5
+        zoom: 6 // Slightly more zoomed in on England
     });
 
     const panels = document.querySelectorAll('.panel');
@@ -135,10 +142,10 @@
             activePanel = closestPanel;
             switch (activePanel) {
                 case 0:
-                    myMap.setCenterAndZoom([-1.1743, 52.3555], 5); // England
+                    myMap.setCenterAndZoom([-1.1743, 52.3555], 6); // England
                     break;
                 case 1:
-                    myMap.setCenterAndZoom([-0.1276, 51.5074], 12); // London
+                    myMap.setCenterAndZoom([-0.1276, 51.5074], 10); // London (slightly less zoomed in)
                     break;
                 case 2:
                     myMap.setCenterAndZoom([-2.5879, 51.4545], 10); // Broader Bristol area

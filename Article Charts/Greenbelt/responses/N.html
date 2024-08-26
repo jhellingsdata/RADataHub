@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="Phil Deaves">
+<meta name="description" content="UK railway stations with ELR, mileage, owner/operator, coordinates and grid reference; stations starting N">
+<meta name="keywords" content="railway, station, ELR, mileage, owner, operator">
+<meta name=viewport content="width=device-width, initial-scale=1">
+
+<meta name = "format-detection" content = "telephone=no">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="/android-chrome-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/android-chrome-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/android-chrome-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/android-chrome-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/android-chrome-144x144.png" sizes="144x144">
+
+<!-- 
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+-->
+
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-title" content="RailwayCodes">
+<meta name="application-name" content="RailwayCodes">
+<meta name="msapplication-TileColor" content="#00008b">
+<meta name="msapplication-TileImage" content="/mstile-70x70.png">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="msapplication-TileImage" content="/mstile-150x150.png">
+<meta name="msapplication-TileImage" content="/mstile-310x150.png">
+<meta name="msapplication-TileImage" content="/mstile-310x310.png">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="theme-color" content="#00008b">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+<title>Railway station data, location N</title>
+<link rel="stylesheet" type="text/css" href="../style/_style.css">
+<link rel="stylesheet" type="text/css" href="../style/_stylestation.css">
+</head>
+<body>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+
+  h = checkTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML =
+  h + "<b>:</b>" + m + "<b>.</b><span id='secs'>" +s +"</span>";
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+setInterval(startTime, 1000);
+</script>
+
+<div id="nav">
+ <div class="topnav" id="myTopnav">
+  <nav>
+   <a href="/index.shtml" class="active"><img src="/logo.svg" alt="logo" class="menuleft"><i class="fas fa-home"></i> Home</a>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Line data</button>
+    <div class="dropdown-content">
+     <a href="/elrs/elr0.shtm">ELRs and mileages</a>
+     <a href="/electrification/mast_prefix0.shtm">Electrification</a>
+     <a href="/crs/crs0.shtm">CRS, NLC, TIPLOC and STANOX Codes</a>
+     <a href="/pride/pride0.shtm">Line of Route (LOR/PRIDE) codes</a>
+     <a href="/line/line_names.shtm">Line names</a>
+     <a href="/line/diagrams0.shtm">Track diagrams</a>
+     <a href="/bridges/bridges0.shtm">Bridges</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Other assets</button>
+    <div class="dropdown-content">
+     <a href="/signal/signal_boxes0.shtm">Signal boxes</a>
+     <a href="/tunnels/tunnels0.shtm">Tunnels</a>
+     <a href="/viaducts/viaducts0.shtm">Viaducts</a>
+     <a href="/stations/station0.shtm">Stations</a>
+     <a href="/depots/depots0.shtm">Depots</a>
+     <a href="/features/habdwild.shtm">HABD and WILD</a>
+     <a href="/features/troughs.shtm">Water troughs</a>
+     <a href="/features/telegraph.shtm">Telegraph codes</a>
+     <a href="/features/buzzer.shtm">Buzzer codes</a>
+     <a href="/features/stamper.shtm">Stamper codes</a>
+     <a href="/underground/underground0.shtm">London Underground stations</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> &quot;Legal/financial&quot; lists</button>
+    <div class="dropdown-content">
+     <a href="/operators/experimental.shtm">Experimental services</a>
+     <a href="/licences/licence0.shtm">Licences/exemptions</a>
+     <a href="/operators/community.shtm">Community rail partnerships</a>
+     <a href="/operators/franchises1.shtm">Rail franchises</a>
+     <a href="/operators/franchises3.shtm">National Rail Contract operators</a>
+     <a href="/operators/franchises2.shtm">Light rail operators</a>
+     <a href="/operators/toccodes.shtm">TOC timetable codes</a>
+     <a href="/operators/servicegroups.shtm">TOC service groups</a>
+     <a href="/operators/access0.shtm">TOC station access</a>
+     <a href="/operators/privatisation.shtm">BR privatisation</a>
+     <a href="/operators/business.shtm">Business/sector codes</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Miscellaneous</button>
+    <div class="dropdown-content">
+     <a href="/misc/identify.shtm">'What's this?' quiz</a>
+     <a href="/misc/search.shtm">Site search</a>
+     <a href="/misc/updates.shtm">Site updates</a>
+     <a href="/misc/contact.shtm">Contact</a>
+     <a href="/misc/links.shtm">External links</a>
+     <a href="/misc/contributing.shtm">Use/contribute</a>
+     <a href="/misc/acknowledgements.shtm">Acknowledgements</a>
+     <a href="/misc/sitemap.shtm">Site map</a>
+    </div>
+   </div>
+    <a href="/index.shtml" class="active">
+     <img src="/logo.svg" alt="logo" class="menuright">
+    </a>
+    <a href="javascript:void(0);" class="icon" onclick="responseFunction()">&#9776;</a>
+   <div id="navright">
+    <div class="element">
+     <div id="clock">
+      <div id="time">
+      </div>
+     </div>
+    </div>
+   </div>
+  </nav>
+ </div>
+</div>
+
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function responseFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<script src="https://kit.fontawesome.com/674d93a07b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="font-family : 'Century Gothic', Montserrat, sans-serif;"><i class="fas fa-long-arrow-alt-up"></i> Top of page</button>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.addEventListener("scroll", navFunction);
+
+function navFunction() {var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-35px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+<script>function popup1() {  var popup = document.getElementById("myPopup1");  popup.classList.toggle("show");}function popup2() {  var popup = document.getElementById("myPopup2");  popup.classList.toggle("show");}function popup3() {  var popup = document.getElementById("myPopup3");  popup.classList.toggle("show");}function popup4() {  var popup = document.getElementById("myPopup4");  popup.classList.toggle("show");}function popup5() {  var popup = document.getElementById("myPopup5");  popup.classList.toggle("show");}function popup6() {  var popup = document.getElementById("myPopup6");  popup.classList.toggle("show");}function popup7() {  var popup = document.getElementById("myPopup7");  popup.classList.toggle("show");}function popup8() {  var popup = document.getElementById("myPopup8");  popup.classList.toggle("show");}function popup9() {  var popup = document.getElementById("myPopup9");  popup.classList.toggle("show");}function popup10() {  var popup = document.getElementById("myPopup10");  popup.classList.toggle("show");}function popup11() {  var popup = document.getElementById("myPopup11");  popup.classList.toggle("show");}function popup12() {  var popup = document.getElementById("myPopup12");  popup.classList.toggle("show");}function popup13() {  var popup = document.getElementById("myPopup13");  popup.classList.toggle("show");}function popup14() {  var popup = document.getElementById("myPopup14");  popup.classList.toggle("show");}function popup15() {  var popup = document.getElementById("myPopup15");  popup.classList.toggle("show");}function popup16() {  var popup = document.getElementById("myPopup16");  popup.classList.toggle("show");}function popup17() {  var popup = document.getElementById("myPopup17");  popup.classList.toggle("show");}function popup18() {  var popup = document.getElementById("myPopup18");  popup.classList.toggle("show");}function popup19() {  var popup = document.getElementById("myPopup19");  popup.classList.toggle("show");}function popup20() {  var popup = document.getElementById("myPopup20");  popup.classList.toggle("show");}function popup21() {  var popup = document.getElementById("myPopup21");  popup.classList.toggle("show");}function popup22() {  var popup = document.getElementById("myPopup22");  popup.classList.toggle("show");}function popup23() {  var popup = document.getElementById("myPopup23");  popup.classList.toggle("show");}function popup24() {  var popup = document.getElementById("myPopup24");  popup.classList.toggle("show");}function popup25() {  var popup = document.getElementById("myPopup25");  popup.classList.toggle("show");}function popup26() {  var popup = document.getElementById("myPopup26");  popup.classList.toggle("show");}function popup27() {  var popup = document.getElementById("myPopup27");  popup.classList.toggle("show");}function popup28() {  var popup = document.getElementById("myPopup28");  popup.classList.toggle("show");}function popup29() {  var popup = document.getElementById("myPopup29");  popup.classList.toggle("show");}function popup30() {  var popup = document.getElementById("myPopup30");  popup.classList.toggle("show");}function popup31() {  var popup = document.getElementById("myPopup31");  popup.classList.toggle("show");}function popup32() {  var popup = document.getElementById("myPopup32");  popup.classList.toggle("show");}function popup33() {  var popup = document.getElementById("myPopup33");  popup.classList.toggle("show");}function popup34() {  var popup = document.getElementById("myPopup34");  popup.classList.toggle("show");}function popup35() {  var popup = document.getElementById("myPopup35");  popup.classList.toggle("show");}function popup36() {  var popup = document.getElementById("myPopup36");  popup.classList.toggle("show");}function popup37() {  var popup = document.getElementById("myPopup37");  popup.classList.toggle("show");}function popup38() {  var popup = document.getElementById("myPopup38");  popup.classList.toggle("show");}function popup39() {  var popup = document.getElementById("myPopup39");  popup.classList.toggle("show");}function popup40() {  var popup = document.getElementById("myPopup40");  popup.classList.toggle("show");}function popup41() {  var popup = document.getElementById("myPopup41");  popup.classList.toggle("show");}function popup42() {  var popup = document.getElementById("myPopup42");  popup.classList.toggle("show");}function popup43() {  var popup = document.getElementById("myPopup43");  popup.classList.toggle("show");}function popup44() {  var popup = document.getElementById("myPopup44");  popup.classList.toggle("show");}function popup45() {  var popup = document.getElementById("myPopup45");  popup.classList.toggle("show");}function popup46() {  var popup = document.getElementById("myPopup46");  popup.classList.toggle("show");}function popup47() {  var popup = document.getElementById("myPopup47");  popup.classList.toggle("show");}function popup48() {  var popup = document.getElementById("myPopup48");  popup.classList.toggle("show");}function popup49() {  var popup = document.getElementById("myPopup49");  popup.classList.toggle("show");}function popup50() {  var popup = document.getElementById("myPopup50");  popup.classList.toggle("show");}function popup51() {  var popup = document.getElementById("myPopup51");  popup.classList.toggle("show");}function popup52() {  var popup = document.getElementById("myPopup52");  popup.classList.toggle("show");}function popup53() {  var popup = document.getElementById("myPopup53");  popup.classList.toggle("show");}function popup54() {  var popup = document.getElementById("myPopup54");  popup.classList.toggle("show");}function popup55() {  var popup = document.getElementById("myPopup55");  popup.classList.toggle("show");}function popup56() {  var popup = document.getElementById("myPopup56");  popup.classList.toggle("show");}function popup57() {  var popup = document.getElementById("myPopup57");  popup.classList.toggle("show");}function popup58() {  var popup = document.getElementById("myPopup58");  popup.classList.toggle("show");}function popup59() {  var popup = document.getElementById("myPopup59");  popup.classList.toggle("show");}function popup60() {  var popup = document.getElementById("myPopup60");  popup.classList.toggle("show");}</script>
+
+<div class="mainlogo"><img class="mainlogo" src="/logo.svg" alt="logo"></div>
+<div class="appeal"><h1>Railway station data</h1></div>
+<h2>A (hopefully) comprehensive listing</h2>
+<h2>Locations beginning N</h2>
+
+ <p class="update">Last update 8 August 2024</p>
+
+<div class="appeal"><span class="background"><span style="font-weight:lighter">Additional information is always gratefully received, whether entirely new records </span><span>(particularly historical records)</span><span style="font-weight:lighter"> or information to fill in gaps or correct errors, via the contact link under the Miscellaneous entry in the navigation bar above.  Thank you.</span></span>
+</div>
+
+ <p>Please select a feature from the list below:</p>
+
+<nav>
+ <span class="background">
+  <span class="help" title="section navigation links"><i class="fas fa-directions"></i></span>
+  <a href="/stations/station1.shtm">Mileages, operators and grid coordinates</a>&nbsp;|
+  <a href="/stations/bilingual0.shtm">Bilingual signs</a>&nbsp;|
+  <a href="/stations/sponsored0.shtm">Sponsored signs</a>&nbsp;|
+  <a href="/stations/notserved.shtm">Not served by SFO</a>&nbsp;|
+  <a href="/stations/international.shtm">International</a>&nbsp;|
+  <a href="/stations/trivia.shtm">Trivia</a>&nbsp;|
+  <a href="/operators/access0.shtm">Access rights</a>&nbsp;|
+  <a href="/stations/barriers.shtm">Barrier error codes</a>&nbsp;|
+  <a href="/underground/underground0.shtm">London Underground</a>&nbsp;|
+  <a href="/stations/post.shtm">Post boxes</a>&nbsp;|
+  <a href="/stations/railnet.shtm">Railnet</a>
+ </span>
+</nav>
+
+ <p>To see other locations, please click the link below:</p>
+
+<nav>
+ <span class="background">
+  <span class="help" title="section navigation links"><i class="fas fa-directions"></i></span>
+  <a href="stationa.shtm">A</a>&nbsp;|
+  <a href="stationb.shtm">B</a>&nbsp;|
+  <a href="stationc.shtm">C</a>&nbsp;|
+  <a href="stationd.shtm">D</a>&nbsp;|
+  <a href="statione.shtm">E</a>&nbsp;|
+  <a href="stationf.shtm">F</a>&nbsp;|
+  <a href="stationg.shtm">G</a>&nbsp;|
+  <a href="stationh.shtm">H</a>&nbsp;|
+  <a href="stationi.shtm">I</a>&nbsp;|
+  <a href="stationj.shtm">J</a>&nbsp;|
+  <a href="stationk.shtm">K</a>&nbsp;|
+  <a href="stationl.shtm">L</a>&nbsp;|
+  <a href="stationm.shtm">M</a>&nbsp;|
+  <a href="stationn.shtm">N</a>&nbsp;|
+  <a href="stationo.shtm">O</a>&nbsp;|
+  <a href="stationp.shtm">P</a>&nbsp;|
+  <a href="stationq.shtm">Q</a>&nbsp;|
+  <a href="stationr.shtm">R</a>&nbsp;|
+  <a href="stations.shtm">S</a>&nbsp;|
+  <a href="stationt.shtm">T</a>&nbsp;|
+  <a href="stationu.shtm">U</a>&nbsp;|
+  <a href="stationv.shtm">V</a>&nbsp;|
+  <a href="stationw.shtm">W</a>&nbsp;|
+  <small>X</small>&nbsp;|
+  <a href="stationy.shtm">Y</a>&nbsp;|
+  <small>Z</small>
+ </span>
+</nav>
+  <p>Station CRS codes are given in parentheses.  Other CRS codes can be found <a href="/crs/crs0.shtm">here</a>.</p>
+  <p>Names are given in the form that National Rail uses.  All known English language differences (e.g., punctuation or capitalisation) that appear on signs displayed since 1 April 1994 are shown in the accompanying box with links to photographs where possible.  Signs labelled 'for...' are treated as part of the name whereas 'alight/change for...' are treated as an instruction in the same way as 'way out' would be.  Other languages and their variants appear on the <a href="bilingual0.shtm">bilingual</a> pages.</p>
+
+ <p></p>
+
+<input type="text" id="input" onkeyup="myFunction()" placeholder="Fast filter any detail&hellip;" onkeydown="onkeypressed(event, this);">
+
+<div class="background">
+<table id="tablesort" class="colright">
+ <col class="eighteen">
+ <col class="twelve">
+ <col class="ten">
+ <col class="eleven">
+ <col>
+ <col class="six">
+ <col class="six">
+ <col class="six">
+ <thead>
+  <tr class="sticky noshow">
+   <th>Station</th>
+   <th><abbr title="Engineers' Line Reference">ELR</abbr><span class="r">Mileage</span></th>
+   <th>Status</th>
+   <th>Owner</th>
+   <th>Operator</th>
+   <th>Degrees Longitude</th>
+   <th>Degrees Latitude</th>
+   <th>Grid Reference</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><a id="nfn"></a><span class="r">(NFN)</span>Nafferton</td>
+   <td><a href="../elrs/_mileages/h/hbs.shtm">HBS</a><span class="r">21m 46ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-0.3861</td>
+   <td>54.0115</td>
+   <td>TA058584</td>
+  </tr>
+  <tr>
+   <td><a id="nls"></a><span class="r">(NLS)</span>Nailsea &amp; Backwell</td>
+   <td><a href="../elrs/_mileages/m/mln1.shtm">MLN1</a><span class="r">126m 33ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 31 March 2006</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-2.7502</td>
+   <td>51.4195</td>
+   <td>ST478691</td>
+  </tr>
+  <tr>
+   <td><a id="nrn"></a><span class="r">(NRN)</span>Nairn</td>
+   <td><a href="../elrs/_mileages/a/ani3.shtm">ANI3</a><span class="r">128m 72ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-3.8726</td>
+   <td>57.5802</td>
+   <td>NH881560</td>
+  </tr>
+  <tr>
+   <td><a id="nan"></a><span class="r">(NAN)</span>Nantwich<div class="signs"><a href="signs/names/nan1.jpg" target="_blank">Nantwich</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="signs/names/nan2.jpg" target="_blank">NANTWICH</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/s/syc.shtm">SYC</a><span class="r">4m 14ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 14 October 2001 to 6 December 2003</em>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 13 October 2001</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-2.5188</td>
+   <td>53.0634</td>
+   <td>SJ653519</td>
+  </tr>
+  <tr>
+   <td><a id="nar"></a><span class="r">(NAR)</span>Narberth</td>
+   <td><a href="../elrs/_mileages/p/pem.shtm">PEM</a><span class="r">264m 08ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 14 October 2001 to 6 December 2003</em>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 13 October 2001</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-4.7268</td>
+   <td>51.7998</td>
+   <td>SN120147</td>
+  </tr>
+  <tr>
+   <td><a id="nbr"></a><span class="r">(NBR)</span>Narborough</td>
+   <td><a href="../elrs/_mileages/w/wns.shtm">WNS</a><span class="r">11m 67ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 18 August 2019</em></summary>
+East Midlands Trains <em>from 11 November 2007 to 17 August 2019</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.2030</td>
+   <td>52.5713</td>
+   <td>SP541973</td>
+  </tr>
+  <tr>
+   <td><a id="nvr"></a><span class="r">(NVR)</span>Navigation Road</td>
+   <td><a href="../elrs/_mileages/c/cdm1.shtm">CDM1</a><span class="r">7m 25ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.3436</td>
+   <td>53.3957</td>
+   <td>SJ772888</td>
+  </tr>
+  <tr>
+   <td><a id="nth"></a><span class="r">(NTH)</span>Neath</td>
+   <td><a href="../elrs/_mileages/s/swm2.shtm">SWM2</a><span class="r">208m 20ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 1 April 2002 to 6 December 2003</em>
+Great Western Trains Company <em>from 4 February 1996 to 31 March 2002</em></details></td>
+   <td>-3.8071</td>
+   <td>51.6622</td>
+   <td>SS750975</td>
+  </tr>
+  <tr>
+   <td><a id="nmt"></a><span class="r">(NMT)</span>Needham Market</td>
+   <td><a href="../elrs/_mileages/l/ltn1.shtm">LTN1</a><span class="r">77m 07ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Anglia Railways Train Services <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>1.0547</td>
+   <td>52.1529</td>
+   <td>TM090549</td>
+  </tr>
+  <tr>
+   <td><a id="nei"></a><span class="r">(NEI)</span>Neilston</td>
+   <td><a href="../elrs/_mileages/n/nnh.shtm">NNH</a><span class="r">108m 45ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.4280</td>
+   <td>55.7825</td>
+   <td>NS478570</td>
+  </tr>
+  <tr>
+   <td><a id="nel"></a><span class="r">(NEL)</span>Nelson<div class="signs"><a href="https://www.flickr.com/photos/39918537@N04/15673984881/" target="_blank">Nelson</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="https://www.flickr.com/photos/39918537@N04/15490027669/" target="_blank">Nelson Station</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="https://www.flickr.com/photos/39918537@N04/15057802583/" target="_blank">Nelson Interchange</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/g/gjc.shtm">GJC</a><span class="r">25m 35ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.2141</td>
+   <td>53.8346</td>
+   <td>SD860376</td>
+  </tr>
+  <tr>
+   <td><a id="nes"></a><span class="r">(NES)</span>Neston</td>
+   <td><a href="../elrs/_mileages/w/wdb3.shtm">WDB3</a><span class="r">8m 55ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 28 September 2003 to 6 December 2003</em>
+North Western Trains Company <em>from 1 June 1997 to 27 September 2003</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-3.0628</td>
+   <td>53.2917</td>
+   <td>SJ292777</td>
+  </tr>
+  <tr>
+   <td><a id="net"></a><span class="r">(NET)</span>Netherfield</td>
+   <td><a href="../elrs/_mileages/n/nog1.shtm">NOG1</a><span class="r">125m 13ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 18 August 2019</em></summary>
+East Midlands Trains <em>from 11 November 2007 to 17 August 2019</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.0796</td>
+   <td>52.9615</td>
+   <td>SK619408</td>
+  </tr>
+  <tr>
+   <td><a id="nrt"></a><span class="r">(NRT)</span>Nethertown</td>
+   <td><a href="../elrs/_mileages/c/cbc1.shtm">CBC1</a><span class="r">67m 35ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-3.5654</td>
+   <td>54.4564</td>
+   <td>NX985079</td>
+  </tr>
+  <tr>
+   <td><a id="ntl"></a><span class="r">(NTL)</span>Netley</td>
+   <td><a href="../elrs/_mileages/s/sdp1.shtm">SDP1</a><span class="r">6m 45ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-1.3408</td>
+   <td>50.8744</td>
+   <td>SU464085</td>
+  </tr>
+  <tr>
+   <td><a id="nct"></a><span class="r">(NCT)</span>Newark Castle<div class="signs"><a href="signs/names/nct1.jpg" target="_blank">Newark Castle</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="signs/names/nct2.jpg" target="_blank">NEWARK CASTLE</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/n/nob1.shtm">NOB1</a><span class="r">17m 02ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 18 August 2019</em></summary>
+East Midlands Trains <em>from 11 November 2007 to 17 August 2019</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-0.8133</td>
+   <td>53.0801</td>
+   <td>SK796543</td>
+  </tr>
+  <tr>
+   <td><a id="nng"></a><span class="r">(NNG)</span>Newark Northgate<div class="signs"><a href="signs/names/nng1.jpg" target="_blank">Newark Northgate</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/186621906@N04/49843973591/" target="_blank">Newark North Gate</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/e/ecm1.shtm">ECM1</a><span class="r">120m 08ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>London North Eastern Railway <em>from 24 June 2018</em></summary>
+East Coast Main Line Company <em>14 November 2009 to 23 June 2018</em>
+NXEC Trains <em>9 December 2007 to 13 November 2009</em>
+Great North Eastern Railway <em>22 October 1996 to 8 December 2007</em>
+Intercity East Coast <em>28 April 1996 to 21 October 1996</em></details></td>
+   <td>-0.8000</td>
+   <td>53.0820</td>
+   <td>SK805545</td>
+  </tr>
+  <tr>
+   <td><a id="nba"></a><span class="r">(NBA)</span>New Barnet</td>
+   <td><a href="../elrs/_mileages/e/ecm1.shtm">ECM1</a><span class="r">9m 12ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2006</em></details></td>
+   <td>-0.1728</td>
+   <td>51.6485</td>
+   <td>TQ265959</td>
+  </tr>
+  <tr>
+   <td><a id="nbc"></a><span class="r">(NBC)</span>New Beckenham</td>
+   <td><a href="../elrs/_mileages/l/lch.shtm">LCH</a><span class="r">9m 44ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>-0.0354</td>
+   <td>51.4162</td>
+   <td>TQ367704</td>
+  </tr>
+  <tr>
+   <td><a id="nbe"></a><span class="r">(NBE)</span>Newbridge</td>
+   <td><a href="../elrs/_mileages/w/wvl.shtm">WVL</a><span class="r">10m 45ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 6 February 2008 to 13 October 2018</em></details></td>
+   <td>-3.1425</td>
+   <td>51.6659</td>
+   <td>ST210969</td>
+  </tr>
+  <tr>
+   <td><a id="nbn"></a><span class="r">(NBN)</span>New Brighton<div class="signs"><a href="signs/names/nbn1.jpg" target="_blank">New Brighton</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="signs/names/nbn2.jpg" target="_blank">New Brighton for Seaside, Attractions and Promenade</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/b/ben.shtm">BEN</a><span class="r">7m 18ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Merseyrail Electrics (2002) <em>from 20 July 2003</em></summary>
+Arriva Trains Merseyside <em>from 20 March 2001 to 19 July 2003</em>
+Merseyrail Electrics <em>from 19 January 1997 to 19 March 2001</em></details></td>
+   <td>-3.0482</td>
+   <td>53.4375</td>
+   <td>SJ304939</td>
+  </tr>
+  <tr>
+   <td><a id="nby"></a><span class="r">(NBY)</span>Newbury</td>
+   <td><a href="../elrs/_mileages/b/bhl.shtm">BHL</a><span class="r">53m 06ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+First Great Western Link <em>from 1 April 2004 to 31 March 2006</em>
+Thames Trains <em>from 13 October 1996 to 31 March 2004</em></details></td>
+   <td>-1.3211</td>
+   <td>51.3980</td>
+   <td>SU471667</td>
+  </tr>
+  <tr>
+   <td><a id="nrc"></a><span class="r">(NRC)</span>Newbury Racecourse</td>
+   <td><a href="../elrs/_mileages/b/bhl.shtm">BHL</a><span class="r">52m 31ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+First Great Western Link <em>from 1 April 2004 to 31 March 2006</em>
+Thames Trains <em>from 13 October 1996 to 31 March 2004</em></details></td>
+   <td>-1.3079</td>
+   <td>51.3989</td>
+   <td>SU482668</td>
+  </tr>
+  <tr>
+   <td><a id="ncl"></a><span class="r">(NCL)</span>Newcastle</td>
+   <td><a href="../elrs/_mileages/e/ecm6.shtm">ECM6</a><span class="r">80m 16ch</span>
+<a href="../elrs/_mileages/e/ecm7.shtm">ECM7</a><span class="r">0m 00ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>London North Eastern Railway <em>from 24 June 2018</em></summary>
+East Coast Main Line Company <em>14 November 2009 to 23 June 2018</em>
+NXEC Trains <em>9 December 2007 to 13 November 2009</em>
+Great North Eastern Railway <em>22 October 1996 to 8 December 2007</em>
+Intercity East Coast <em>28 April 1996 to 21 October 1996</em></details></td>
+   <td>-1.6173</td>
+   <td>54.9682</td>
+   <td>NZ245638</td>
+  </tr>
+  <tr>
+   <td><a id="nce"></a><span class="r">(NCE)</span>New Clee</td>
+   <td><a href="../elrs/_mileages/m/mac3.shtm">MAC3</a><span class="r">110m 78ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 16 May 2021</em></summary>
+Northern Trains <em>from 1 March 2020 to 15 May 2021</em>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-0.0647</td>
+   <td>53.5757</td>
+   <td>TA285103</td>
+  </tr>
+  <tr>
+   <td><a id="nco"></a><span class="r">(NCO)</span>Newcourt</td>
+   <td><a href="../elrs/_mileages/e/emt.shtm">EMT</a><span class="r">3m 06ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td>First Greater Western <em>from 4 June 2015</em></td>
+   <td>-3.4701</td>
+   <td>50.6965</td>
+   <td>SX962895</td>
+  </tr>
+  <tr>
+   <td><a id="new"></a><span class="r">(NEW)</span>Newcraighall</td>
+   <td><a href="../elrs/_mileages/n/nde1.shtm">NDE1</a><span class="r">4m 54ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 3 June 2002 to 16 October 2004</em></details></td>
+   <td>-3.0905</td>
+   <td>55.9328</td>
+   <td>NT319717</td>
+  </tr>
+  <tr>
+   <td><a id="nwx"></a><span class="r">(NWX)</span>New Cross</td>
+   <td><a href="../elrs/_mileages/x/xtd.shtm">XTD</a><span class="r">4m 68ch</span>
+<a href="../elrs/_mileages/e/ell2.shtm">ELL2</a><span class="r">5m 78ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>-0.0326</td>
+   <td>51.4763</td>
+   <td>TQ366771</td>
+  </tr>
+  <tr>
+   <td><a id="nxg"></a><span class="r">(NXG)</span>New Cross Gate<div class="signs"><a href="signs/names/nxg1.jpg" target="_blank">New Cross Gate</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="signs/names/nxg2.jpg" target="_blank">NEW CROSS GATE</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/l/lbw.shtm">LBW</a><span class="r">2m 70ch</span>
+<a href="../elrs/_mileages/e/ell1.shtm">ELL1</a><span class="r">5m 67ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 20 September 2009 to 12 November 2016</em>
+Southern Railway <em>from 22 June 2008 to 19 September 2009</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.0404</td>
+   <td>51.4752</td>
+   <td>TQ361770</td>
+  </tr>
+  <tr>
+   <td><a id="nck"></a><span class="r">(NCK)</span>New Cumnock</td>
+   <td><a href="../elrs/_mileages/g/gsw.shtm">GSW</a><span class="r">55m 00ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.1824</td>
+   <td>55.4021</td>
+   <td>NS618142</td>
+  </tr>
+  <tr>
+   <td><a id="neh"></a><span class="r">(NEH)</span>New Eltham</td>
+   <td><a href="../elrs/_mileages/h/hdr.shtm">HDR</a><span class="r">10m 32ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.0705</td>
+   <td>51.4381</td>
+   <td>TQ439730</td>
+  </tr>
+  <tr>
+   <td><a id="nvh"></a><span class="r">(NVH)</span>Newhaven Harbour</td>
+   <td><a href="../elrs/_mileages/s/sts.shtm">STS</a><span class="r">56m 51ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>0.0547</td>
+   <td>50.7906</td>
+   <td>TQ448009</td>
+  </tr>
+  <tr>
+   <td><a id="nvm"></a><span class="r">(NVM)</span>Newhaven Marine</td>
+   <td><a href="../elrs/_mileages/n/nhb.shtm">NHB</a><span class="r">56m 67ch</span></td>
+   <td>Closed, latterly shipping specials only<span class="popup" onclick="popup1()"><span class="popuptext" id="myPopup1"><span class="close">&#x2716;</span>'Temporarily' closed since 17 August 2006; removed from timetable from 21 May 2018 though still TOC responsibility until official closure ratified 2020</span></span></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015 to 25 September 2020</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>0.0566</td>
+   <td>50.7870</td>
+   <td>TQ450006</td>
+  </tr>
+  <tr>
+   <td><a id="nvn"></a><span class="r">(NVN)</span>Newhaven Town</td>
+   <td><a href="../elrs/_mileages/s/sts.shtm">STS</a><span class="r">56m 25ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>0.0551</td>
+   <td>50.7947</td>
+   <td>TQ449014</td>
+  </tr>
+  <tr>
+   <td><a id="nhy"></a><span class="r">(NHY)</span>New Hey</td>
+   <td><a href="../elrs/_mileages/m/mpr3.shtm">MPR3</a><span class="r">11m 64ch</span></td>
+   <td>Closed</td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Rail <em>from 12 December 2004 to 3 October 2009</em></summary>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.0951</td>
+   <td>53.6011</td>
+   <td>SD938115</td>
+  </tr>
+  <tr>
+   <td><a id="nhl"></a><span class="r">(NHL)</span>New Holland</td>
+   <td><a href="../elrs/_mileages/b/bar.shtm">BAR</a><span class="r">106m 52ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 16 May 2021</em></summary>
+Northern Trains <em>from 1 March 2020 to 15 May 2021</em>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-0.3602</td>
+   <td>53.7019</td>
+   <td>TA083241</td>
+  </tr>
+  <tr>
+   <td><a id="nhe"></a><span class="r">(NHE)</span>New Hythe</td>
+   <td><a href="../elrs/_mileages/p/pws2.shtm">PWS2</a><span class="r">38m 03ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.4548</td>
+   <td>51.3132</td>
+   <td>TQ712599</td>
+  </tr>
+  <tr>
+   <td><a id="ngt"></a><span class="r">(NGT)</span>Newington</td>
+   <td><a href="../elrs/_mileages/v/vir.shtm">VIR</a><span class="r">41m 42ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.6687</td>
+   <td>51.3533</td>
+   <td>TQ859649</td>
+  </tr>
+  <tr>
+   <td><a id="nln"></a><span class="r">(NLN)</span>New Lane</td>
+   <td><a href="../elrs/_mileages/w/wbs3.shtm">WBS3</a><span class="r">28m 70ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.8680</td>
+   <td>53.6116</td>
+   <td>SD427131</td>
+  </tr>
+  <tr>
+   <td><a id="nem"></a><span class="r">(NEM)</span>New Malden</td>
+   <td><a href="../elrs/_mileages/b/bml1.shtm">BML1</a><span class="r">9m 62ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.2560</td>
+   <td>51.4039</td>
+   <td>TQ214686</td>
+  </tr>
+  <tr>
+   <td><a id="nmk"></a><span class="r">(NMK)</span>Newmarket</td>
+   <td><a href="../elrs/_mileages/c/cch.shtm">CCH</a><span class="r">13m 67ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Anglia Railways Train Services <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>0.4071</td>
+   <td>52.2385</td>
+   <td>TL644627</td>
+  </tr>
+  <tr>
+   <td><a id="nmc"></a><span class="r">(NMC)</span>New Mills Central</td>
+   <td><a href="../elrs/_mileages/t/tta1.shtm">TTA1</a><span class="r">173m 15ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.0057</td>
+   <td>53.3651</td>
+   <td>SJ996853</td>
+  </tr>
+  <tr>
+   <td><a id="nmn"></a><span class="r">(NMN)</span>New Mills Newtown</td>
+   <td><a href="../elrs/_mileages/b/bej.shtm">BEJ</a><span class="r">7m 50ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.0080</td>
+   <td>53.3593</td>
+   <td>SJ995847</td>
+  </tr>
+  <tr>
+   <td><a id="nwm"></a><span class="r">(NWM)</span>New Milton</td>
+   <td><a href="../elrs/_mileages/b/bml2.shtm">BML2</a><span class="r">98m 44ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-1.6585</td>
+   <td>50.7559</td>
+   <td>SZ242951</td>
+  </tr>
+  <tr>
+   <td><a id="nwe"></a><span class="r">(NWE)</span>Newport (Essex)<div class="signs"><a href="signs/names/nwe1.jpg" target="_blank">Newport</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/b/bgk.shtm">BGK</a><span class="r">39m 72ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>0.2152</td>
+   <td>51.9800</td>
+   <td>TL522335</td>
+  </tr>
+  <tr>
+   <td><a id="nwp"></a><span class="r">(NWP)</span>Newport (South Wales)<div class="signs"><a href="signs/names/nwp1.jpg" target="_blank">Newport</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/s/swm2.shtm">SWM2</a><span class="r">158m 50ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 1 April 2002 to 6 December 2003</em>
+Great Western Trains Company <em>from 4 February 1996 to 31 March 2002</em></details></td>
+   <td>-2.9990</td>
+   <td>51.5896</td>
+   <td>ST308883</td>
+  </tr>
+  <tr>
+   <td><a id="npd"></a><span class="r">(NPD)</span>New Pudsey</td>
+   <td><a href="../elrs/_mileages/l/lbe1.shtm">LBE1</a><span class="r">4m 77ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.6810</td>
+   <td>53.8047</td>
+   <td>SE211343</td>
+  </tr>
+  <tr>
+   <td><a id="nqy"></a><span class="r">(NQY)</span>Newquay</td>
+   <td><a href="../elrs/_mileages/n/new.shtm">NEW</a><span class="r">302m 49ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 31 March 2006</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-5.0748</td>
+   <td>50.4145</td>
+   <td>SW816617</td>
+  </tr>
+  <tr>
+   <td><a id="nwh"></a><span class="r">(NWH)</span>Newsham</td>
+   <td><a href="../elrs/_mileages/e/ejm.shtm">EJM</a><span class="r">12m 41ch</span></td>
+   <td>Under construction</td>
+   <td class="noshow"></td>
+   <td>Northern Trains <em>from opening</em></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+  </tr>
+  <tr>
+   <td><a id="nsg"></a><span class="r">(NSG)</span>New Southgate</td>
+   <td><a href="../elrs/_mileages/e/ecm1.shtm">ECM1</a><span class="r">6m 35ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 September 2014</em></summary>
+First Capital Connect <em>from 1 April 2006 to 13 September 2014</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2006</em></details></td>
+   <td>-0.1445</td>
+   <td>51.6144</td>
+   <td>TQ286922</td>
+  </tr>
+  <tr>
+   <td><a id="nsd"></a><span class="r">(NSD)</span>Newstead</td>
+   <td><a href="../elrs/_mileages/r/rac.shtm">RAC</a><span class="r">134m 20ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 18 August 2019</em></summary>
+East Midlands Trains <em>from 11 November 2007 to 17 August 2019</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.2216</td>
+   <td>53.0699</td>
+   <td>SK522528</td>
+  </tr>
+  <tr>
+   <td><a id="nta"></a><span class="r">(NTA)</span>Newton Abbot</td>
+   <td><a href="../elrs/_mileages/m/mln1.shtm">MLN1</a><span class="r">214m 05ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+Great Western Trains Company <em>from 4 February 1996 to 31 March 2006</em></details></td>
+   <td>-3.5995</td>
+   <td>50.5301</td>
+   <td>SX867712</td>
+  </tr>
+  <tr>
+   <td><a id="nay"></a><span class="r">(NAY)</span>Newton Aycliffe</td>
+   <td><a href="../elrs/_mileages/d/dae1.shtm">DAE1</a><span class="r">6m 30ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.5896</td>
+   <td>54.6137</td>
+   <td>NZ265243</td>
+  </tr>
+  <tr>
+   <td><a id="nwn"></a><span class="r">(NWN)</span>Newton for Hyde<div class="signs"><a href="https://www.flickr.com/photos/39918537@N04/13769260395/" target="_blank">Newton For Hyde</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/h/haj.shtm">HAJ</a><span class="r">7m 27ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.0667</td>
+   <td>53.4565</td>
+   <td>SJ956955</td>
+  </tr>
+  <tr>
+   <td><a id="neg"></a><span class="r">(NEG)</span>Newtongrange</td>
+   <td><a href="../elrs/_mileages/s/sbo.shtm">SBO</a><span class="r">9m 58ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-3.0690</td>
+   <td>55.8647</td>
+   <td>NT331640</td>
+  </tr>
+  <tr>
+   <td><a id="ntn"></a><span class="r">(NTN)</span>Newton (Lanark)<div class="signs"><a href="signs/names/ntn1.jpg" target="_blank">Newton</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/w/wcm2.shtm">WCM2</a><span class="r">95m 57ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.1331</td>
+   <td>55.8188</td>
+   <td>NS664604</td>
+  </tr>
+  <tr>
+   <td><a id="nlw"></a><span class="r">(NLW)</span>Newton-le-Willows</td>
+   <td><a href="../elrs/_mileages/d/dse.shtm">DSE</a><span class="r">15m 60ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.6131</td>
+   <td>53.4533</td>
+   <td>SJ593953</td>
+  </tr>
+  <tr>
+   <td><a id="nwr"></a><span class="r">(NWR)</span>Newtonmore</td>
+   <td><a href="../elrs/_mileages/h/hgl2.shtm">HGL2</a><span class="r">68m 62ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.1189</td>
+   <td>57.0592</td>
+   <td>NN715984</td>
+  </tr>
+  <tr>
+   <td><a id="noa"></a><span class="r">(NOA)</span>Newton-on-Ayr</td>
+   <td><a href="../elrs/_mileages/a/ayr6.shtm">AYR6</a><span class="r">39m 33ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.6258</td>
+   <td>55.4738</td>
+   <td>NS341231</td>
+  </tr>
+  <tr>
+   <td><a id="ntc"></a><span class="r">(NTC)</span>Newton St Cyres</td>
+   <td><a href="../elrs/_mileages/d/dac.shtm">DAC</a><span class="r">176m 51ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+Wales &amp; West Passenger Trains <em>from 29 September 1997 to 31 March 2006</em>
+South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>
+   <td>-3.5877</td>
+   <td>50.7790</td>
+   <td>SX881988</td>
+  </tr>
+  <tr>
+   <td><a id="nwt"></a><span class="r">(NWT)</span>Newtown (Powys)<div class="signs"><a href="https://www.flickr.com/photos/johnfrombedford/48784488626/" target="_blank">Newtown</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/s/sba2.shtm">SBA2</a><span class="r">47m 58ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 14 October 2001 to 6 December 2003</em>
+Central Trains <em>from 2 March 1997 to 13 October 2001</em></details></td>
+   <td>-3.3111</td>
+   <td>52.5121</td>
+   <td>SO110912</td>
+  </tr>
+  <tr>
+   <td><a id="nnp"></a><span class="r">(NNP)</span>Ninian Park</td>
+   <td><a href="../elrs/_mileages/r/rad.shtm">RAD</a><span class="r">0m 63ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 13 October 1996 to 6 December 2003</em></details></td>
+   <td>-3.2013</td>
+   <td>51.4768</td>
+   <td>ST166759</td>
+  </tr>
+  <tr>
+   <td><a id="nit"></a><span class="r">(NIT)</span>Nitshill</td>
+   <td><a href="../elrs/_mileages/g/gbk.shtm">GBK</a><span class="r">5m 30ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-4.3593</td>
+   <td>55.8118</td>
+   <td>NS521601</td>
+  </tr>
+  <tr>
+   <td><a id="nbt"></a><span class="r">(NBT)</span>Norbiton</td>
+   <td><a href="../elrs/_mileages/n/nms1.shtm">NMS1</a><span class="r">11m 24ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.2840</td>
+   <td>51.4123</td>
+   <td>TQ194695</td>
+  </tr>
+  <tr>
+   <td><a id="nrb"></a><span class="r">(NRB)</span>Norbury</td>
+   <td><a href="../elrs/_mileages/v/vtb1.shtm">VTB1</a><span class="r">7m 36ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.1229</td>
+   <td>51.4112</td>
+   <td>TQ306697</td>
+  </tr>
+  <tr>
+   <td><a id="nsb"></a><span class="r">(NSB)</span>Normans Bay</td>
+   <td><a href="../elrs/_mileages/w/wjb.shtm">WJB</a><span class="r">25m 77ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>0.3891</td>
+   <td>50.8263</td>
+   <td>TQ683056</td>
+  </tr>
+  <tr>
+   <td><a id="nor"></a><span class="r">(NOR)</span>Normanton</td>
+   <td><a href="../elrs/_mileages/t/tjc3.shtm">TJC3</a><span class="r">185m 11ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.4230</td>
+   <td>53.7012</td>
+   <td>SE380227</td>
+  </tr>
+  <tr>
+   <td><a id="ntr"></a><span class="r">(NTR)</span>Northallerton</td>
+   <td><a href="../elrs/_mileages/e/ecm5.shtm">ECM5</a><span class="r">29m 76ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transpennine Trains <em>from 28 May 2023</em></summary>
+First Transpennine Express <em>from 1 April 2016 to 27 May 2023</em>
+First/Keolis TransPennine <em>from 1 February 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.4416</td>
+   <td>54.3334</td>
+   <td>SE363932</td>
+  </tr>
+<!--
+  <tr>
+   <td><a id="northam"></a>Northam Depot <em>believed no CRS issued</em></td>
+   <td><a href="../elrs/_mileages/b/bml1.shtm">BML1</a><span class="r">   <td>&ap;77m 66ch</td>
+   <td>Staff halt</td>
+   <td class="noshow"></td>
+   <td>n/a</td>
+   <td>-1.3918</td>
+   <td>50.9123</td>
+   <td>SU428127</td>
+  </tr>
+-->
+  <tr>
+   <td><a id="nmp"></a><span class="r">(NMP)</span>Northampton</td>
+   <td><a href="../elrs/_mileages/h/hnr.shtm">HNR</a><span class="r">65m 68ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.9071</td>
+   <td>52.2378</td>
+   <td>SP747604</td>
+  </tr>
+  <tr>
+   <td><a id="nbw"></a><span class="r">(NBW)</span>North Berwick</td>
+   <td><a href="../elrs/_mileages/n/nbk.shtm">NBK</a><span class="r">22m 25ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-2.7304</td>
+   <td>56.0569</td>
+   <td>NT546851</td>
+  </tr>
+  <tr>
+   <td><a id="ncm"></a><span class="r">(NCM)</span>North Camp</td>
+   <td><a href="../elrs/_mileages/g/gtw2.shtm">GTW2</a><span class="r">51m 18ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>
+First Great Western Link <em>from 1 April 2004 to 31 March 2006</em>
+Thames Trains <em>from 13 October 1996 to 31 March 2004</em></details></td>
+   <td>-0.7312</td>
+   <td>51.2758</td>
+   <td>SU886536</td>
+  </tr>
+  <tr>
+   <td><a id="ndl"></a><span class="r">(NDL)</span>North Dulwich</td>
+   <td><a href="../elrs/_mileages/b/bth1.shtm">BTH1</a><span class="r">4m 64ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.0882</td>
+   <td>51.4542</td>
+   <td>TQ329746</td>
+  </tr>
+  <tr>
+   <td><a id="nfa"></a><span class="r">(NFA)</span>North Fambridge<span class="tab1"> </span><em>previously Fambridge to 19 May 2007</em></td>
+   <td><a href="../elrs/_mileages/w/wis.shtm">WIS</a><span class="r">37m 23ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Great Eastern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>0.6817</td>
+   <td>51.6486</td>
+   <td>TQ856978</td>
+  </tr>
+  <tr>
+   <td><a id="nfd"></a><span class="r">(NFD)</span>Northfield</td>
+   <td><a href="../elrs/_mileages/b/bag2.shtm">BAG2</a><span class="r">48m 12ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.9657</td>
+   <td>52.4082</td>
+   <td>SP024789</td>
+  </tr>
+  <tr>
+   <td><a id="northfilton"></a><span class="r"><em>CRS awaited</em></span>North Filton</td>
+   <td><a href="../elrs/_mileages/a/afr.shtm">AFR</a><span class="r">&ap;113m 37ch</span></td>
+   <td>Planned</td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+  </tr>
+  <tr>
+   <td><a id="nfl"></a><span class="r">(NFL)</span>Northfleet</td>
+   <td><a href="../elrs/_mileages/h/hdr.shtm">HDR</a><span class="r">21m 65ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>SE Trains <em>from 17 October 2021</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 16 October 2021</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>0.3240</td>
+   <td>51.4460</td>
+   <td>TQ616744</td>
+  </tr>
+  <tr>
+   <td><a id="nlr"></a><span class="r">(NLR)</span>North Llanrwst</td>
+   <td><a href="../elrs/_mileages/l/ljt1.shtm">LJT1</a><span class="r">11m 17ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Transport for Wales Rail <em>from 7 February 2021</em></summary>
+Keolis Amey Operations/Gweithrediadau Keolis Amey <em>from 14 October 2018 to 6 February 2021</em>
+Arriva Trains Wales/Trenau Arriva Cymru <em>from 7 December 2003 to 13 October 2018</em>
+Cardiff Railway Company <em>from 28 September 2003 to 6 December 2003</em>
+North Western Trains Company <em>from 1 June 1997 to 27 September 2003</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-3.8021</td>
+   <td>53.1447</td>
+   <td>SH795622</td>
+  </tr>
+  <tr>
+   <td><a id="nlt"></a><span class="r">(NLT)</span>Northolt Park</td>
+   <td><a href="../elrs/_mileages/n/naj1.shtm">NAJ1</a><span class="r">1m 57ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td>The Chiltern Railway Company <em>from 21 July 1996</em></td>
+   <td>-0.3598</td>
+   <td>51.5574</td>
+   <td>TQ137855</td>
+  </tr>
+  <tr>
+   <td><a id="nqu"></a><span class="r">(NQU)</span>North Queensferry</td>
+   <td><a href="../elrs/_mileages/e/ecn2.shtm">ECN2</a><span class="r">11m 22ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>
+Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>
+First ScotRail <em>from 17 October 2004 to 31 March 2015</em>
+ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>
+   <td>-3.3952</td>
+   <td>56.0132</td>
+   <td>NT131808</td>
+  </tr>
+  <tr>
+   <td><a id="nrd"></a><span class="r">(NRD)</span>North Road (Darlington)<div class="signs"><a href="signs/names/nrd1.jpg" target="_blank">North Road</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>
+   <td><a href="../elrs/_mileages/d/dae1.shtm">DAE1</a><span class="r">0m 49ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.5544</td>
+   <td>54.5358</td>
+   <td>NZ289157</td>
+  </tr>
+  <tr>
+   <td><a id="nsh"></a><span class="r">(NSH)</span>North Sheen</td>
+   <td><a href="../elrs/_mileages/r/rdg1.shtm">RDG1</a><span class="r">9m 03ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>
+Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>
+South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>
+   <td>-0.2867</td>
+   <td>51.4656</td>
+   <td>TQ191754</td>
+  </tr>
+  <tr>
+   <td><a id="num"></a><span class="r">(NUM)</span>Northumberland Park</td>
+   <td><a href="../elrs/_mileages/b/bgk.shtm">BGK</a><span class="r">6m 73ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em><span class="popup" onclick="popup3()"><span class="popuptextfr" id="myPopup3"><span class="close">&#x2716;</span>Expected to pass to London Overground concession holder</span></span></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+West Anglia Great Northern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>-0.0541</td>
+   <td>51.6020</td>
+   <td>TQ348910</td>
+  </tr>
+  <tr>
+   <td><a id="nop"></a><span class="r">(NOP)</span>Northumberland Park</td>
+   <td><a href="../elrs/_mileages/b/bne.shtm">BNE</a><span class="r">2m 12ch</span></td>
+   <td>Under construction</td>
+   <td class="noshow"></td>
+   <td>Northern Trains <em>from opening</em></td>
+   <td>-1.5200</td>
+   <td>55.0331</td>
+   <td>NZ307710</td>
+  </tr>
+  <tr>
+   <td><a id="nwa"></a><span class="r">(NWA)</span>North Walsham</td>
+   <td><a href="../elrs/_mileages/w/whc1.shtm">WHC1</a><span class="r">16m 00ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Anglia Railways Train Services <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>1.3845</td>
+   <td>52.8171</td>
+   <td>TG281297</td>
+  </tr>
+  <tr>
+   <td><a id="nwb"></a><span class="r">(NWB)</span>North Wembley<div class="signs"><a href="https://www.flickr.com/photos/nicohogg/401028041/" target="_blank">North Wembley</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small>
+<a href="https://www.flickr.com/photos/24772733@N05/4440932089/" target="_blank">NORTH WEMBLEY</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/c/cwj.shtm">CWJ</a><span class="r">8m 69ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>London Underground <em>from 11 November 2007</em></summary>
+Silverlink Train Services <em>from 26 September 1997 to 10 November 2007</em>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>-0.3040</td>
+   <td>51.5624</td>
+   <td>TQ176862</td>
+  </tr>
+  <tr>
+   <td><a id="nwi"></a><span class="r">(NWI)</span>Northwich</td>
+   <td><a href="../elrs/_mileages/c/cdm2.shtm">CDM2</a><span class="r">20m 47ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>
+North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>
+   <td>-2.4967</td>
+   <td>53.2617</td>
+   <td>SJ669739</td>
+  </tr>
+  <tr>
+   <td><a id="nww"></a><span class="r">(NWW)</span>North Woolwich</td>
+   <td><a href="../elrs/_mileages/d/dww2.shtm">DWW1</a><span class="r">8m 57ch</span></td>
+   <td>Closed</td>
+   <td class="noshow"></td>
+   <td><details><summary>Silverlink Train Services <em>from 26 September 1997 to 9 December 2006</em></summary>
+North London Railways <em>from 2 March 1997 to 25 September 1997</em></details></td>
+   <td>0.0626</td>
+   <td>51.4993</td>
+   <td>TQ432798</td>
+  </tr>
+  <tr>
+   <td><a id="ntb"></a><span class="r">(NTB)</span>Norton Bridge</td>
+   <td><a href="../elrs/_mileages/l/lec4.shtm">LEC4</a><span class="r">138m 68ch</span></td>
+   <td>Closed<span class="popup" onclick="popup2()"><span class="popuptext" id="myPopup2"><span class="close">&#x2716;</span>Last train 22 May 2004, though still TOC responsibility until official closure ratified 2017</span></span></td>
+   <td class="noshow"></td>
+   <td><details><summary>London &amp; Birmingham Railway <em>from 11 November 2007 to <a href="https://www.gov.uk/government/consultations/norton-bridge-station-closure" target="_blank">10 December 2017</a><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></em></summary>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-2.1906</td>
+   <td>52.8661</td>
+   <td>SJ872298</td>
+  </tr>
+  <tr>
+   <td><a id="nrw"></a><span class="r">(NRW)</span>Norwich</td>
+   <td><a href="../elrs/_mileages/l/ltn2.shtm">LTN2</a><span class="r">124m 09ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>
+Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>
+London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>
+Anglia Railways Train Services <em>from 5 January 1997 to 31 March 2004</em></details></td>
+   <td>1.3067</td>
+   <td>52.6268</td>
+   <td>TG239083</td>
+  </tr>
+  <tr>
+   <td><a id="nwd"></a><span class="r">(NWD)</span>Norwood Junction<div class="signs"><a href="signs/names/nwd1.jpg" target="_blank">Norwood Junction</a><span class="help" title="link to image"><i class="far fa-image"></i></span>
+<a href="https://www.flickr.com/photos/24772733@N05/5862821115/" target="_blank">NORWOOD JUNCTION</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>
+   <td><a href="../elrs/_mileages/l/lbw.shtm">LBW</a><span class="r">8m 55ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>
+London Overground Rail Operations <em>from 20 September 2009 to 12 November 2016</em>
+Southern Railway <em>from 22 June 2008 to 19 September 2009</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.0753</td>
+   <td>51.3974</td>
+   <td>TQ340682</td>
+  </tr>
+  <tr>
+   <td><a id="not"></a><span class="r">(NOT)</span>Nottingham</td>
+   <td><a href="../elrs/_mileages/t/tsn2.shtm">TSN2</a><span class="r">123m 39ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Abellio East Midlands <em>from 18 August 2019</em></summary>
+East Midlands Trains <em>from 11 November 2007 to 17 August 2019</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.1465</td>
+   <td>52.9472</td>
+   <td>SK574392</td>
+  </tr>
+  <tr>
+   <td><a id="nun"></a><span class="r">(NUN)</span>Nuneaton</td>
+   <td><a href="../elrs/_mileages/l/lec2.shtm">LEC2</a><span class="r">97m 10ch</span>
+<a href="../elrs/_mileages/p/pvs.shtm">PVS</a><span class="r">10m 45ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>West Midlands Trains <em>from 10 December 2017</em></summary>
+London &amp; Birmingham Railway <em>from 11 November 2007 to 9 December 2017</em>
+Central Trains <em>from 2 March 1997 to 10 November 2007</em></details></td>
+   <td>-1.4641</td>
+   <td>52.5265</td>
+   <td>SP364921</td>
+  </tr>
+  <tr>
+   <td><a id="nhd"></a><span class="r">(NHD)</span>Nunhead</td>
+   <td><a href="../elrs/_mileages/c/cat.shtm">CAT</a><span class="r">5m 77ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 14 December 2014</em></summary>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 13 December 2014</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>-0.0527</td>
+   <td>51.4670</td>
+   <td>TQ353760</td>
+  </tr>
+  <tr>
+   <td><a id="nnt"></a><span class="r">(NNT)</span>Nunthorpe</td>
+   <td><a href="../elrs/_mileages/m/mbw1.shtm">MBW1</a><span class="r">4m 25ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>
+Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>
+Northern Rail <em>from 12 December 2004 to 31 March 2016</em>
+Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>
+Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>
+Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>
+   <td>-1.1695</td>
+   <td>54.5280</td>
+   <td>NZ538150</td>
+  </tr>
+  <tr>
+   <td><a id="nut"></a><span class="r">(NUT)</span>Nutbourne</td>
+   <td><a href="../elrs/_mileages/t/tbh2.shtm">TBH2</a><span class="r">33m 14ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 22 June 2008 to 25 July 2015</em>
+South Central <em>from 29 May 2004 to 21 June 2008</em>
+New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>
+Connex South Central <em>from 29 September 1996 to 25 August 2001</em>
+Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>
+   <td>-0.8837</td>
+   <td>50.8467</td>
+   <td>SU786057</td>
+  </tr>
+  <tr>
+   <td><a id="nuf"></a><span class="r">(NUF)</span>Nutfield</td>
+   <td><a href="../elrs/_mileages/r/rtt.shtm">RTT</a><span class="r">24m 47ch</span></td>
+   <td class="noshow"></td>
+   <td class="noshow"></td>
+   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>
+Southern Railway <em>from 14 December 2008 to 25 July 2015</em>
+London &amp; South Eastern Railway <em>from 1 April 2006 to 13 December 2008</em>
+South Eastern Trains <em>from 9 November 2003 to 31 March 2006</em>
+Connex South Eastern <em>from 13 October 1996 to 8 November 2003</em></details></td>
+   <td>-0.1327</td>
+   <td>51.2267</td>
+   <td>TQ304491</td>
+  </tr>
+ </tbody>
+</table>
+</div>
+
+ <p> </p>
+<div class="fixed">
+<nav>
+ <a href="stationa.shtm">A</a>&nbsp;|
+ <a href="stationb.shtm">B</a>&nbsp;|
+ <a href="stationc.shtm">C</a>&nbsp;|
+ <a href="stationd.shtm">D</a>&nbsp;|
+ <a href="statione.shtm">E</a>&nbsp;|
+ <a href="stationf.shtm">F</a>&nbsp;|
+ <a href="stationg.shtm">G</a>&nbsp;|
+ <a href="stationh.shtm">H</a>&nbsp;|
+ <a href="stationi.shtm">I</a>&nbsp;|
+ <a href="stationj.shtm">J</a>&nbsp;|
+ <a href="stationk.shtm">K</a>&nbsp;|
+ <a href="stationl.shtm">L</a>&nbsp;|
+ <a href="stationm.shtm">M</a>&nbsp;|
+ <a href="stationn.shtm">N</a>&nbsp;|
+ <a href="stationo.shtm">O</a>&nbsp;|
+ <a href="stationp.shtm">P</a>&nbsp;|
+ <a href="stationq.shtm">Q</a>&nbsp;|
+ <a href="stationr.shtm">R</a>&nbsp;|
+ <a href="stations.shtm">S</a>&nbsp;|
+ <a href="stationt.shtm">T</a>&nbsp;|
+ <a href="stationu.shtm">U</a>&nbsp;|
+ <a href="stationv.shtm">V</a>&nbsp;|
+ <a href="stationw.shtm">W</a>&nbsp;|
+ <small>X</small>&nbsp;|
+ <a href="stationy.shtm">Y</a>&nbsp;|
+ <small>Z</small>
+</nav>
+
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("input");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("tablesort");
+  var rows = table.getElementsByTagName("tr");
+  for (i = 1; i < rows.length; i++) {
+    var cells = rows[i].getElementsByTagName("td");
+    var j;
+    var rowContainsFilter = false;
+    for (j = 0; j < cells.length; j++) {
+      if (cells[j]) {
+        if (cells[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+          rowContainsFilter = true;
+          continue;
+        }
+      }
+    }
+
+    if (! rowContainsFilter) {
+      rows[i].style.display = "none";
+    } else {
+      rows[i].style.display = "";
+    }
+  }
+}
+
+function onkeypressed(evt, input) {
+    var code = evt.charCode || evt.keyCode;
+    if (code == 27) {
+        input.value = '';
+    }
+}
+</script>
+
+
+ <p> </p>
+
+</body>
+</html>

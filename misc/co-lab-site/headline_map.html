@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vega-Lite Chart Embedding</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+    <div id="vis"></div>
+
+    <script type="text/javascript">
+        const specPath = 'charts/headline_map.json';
+        vegaEmbed('#vis', specPath).catch(console.error);
+    </script>
+</body>
+</html>

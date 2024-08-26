@@ -1,0 +1,304 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="author" content="Phil Deaves"><meta name="description" content="UK railway stations with ELR, mileage, owner/operator, coordinates and grid reference; stations starting I"><meta name="keywords" content="railway, station, ELR, mileage, owner, operator"><meta name=viewport content="width=device-width, initial-scale=1"><meta name = "format-detection" content = "telephone=no">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="/android-chrome-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/android-chrome-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/android-chrome-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/android-chrome-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/android-chrome-144x144.png" sizes="144x144">
+
+<!-- 
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+-->
+
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-title" content="RailwayCodes">
+<meta name="application-name" content="RailwayCodes">
+<meta name="msapplication-TileColor" content="#00008b">
+<meta name="msapplication-TileImage" content="/mstile-70x70.png">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="msapplication-TileImage" content="/mstile-150x150.png">
+<meta name="msapplication-TileImage" content="/mstile-310x150.png">
+<meta name="msapplication-TileImage" content="/mstile-310x310.png">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="theme-color" content="#00008b">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<title>Railway station data, location I</title><link rel="stylesheet" type="text/css" href="../style/_style.css"><link rel="stylesheet" type="text/css" href="../style/_stylestation.css"></head><body><script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+
+  h = checkTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML =
+  h + "<b>:</b>" + m + "<b>.</b><span id='secs'>" +s +"</span>";
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+setInterval(startTime, 1000);
+</script>
+
+<div id="nav">
+ <div class="topnav" id="myTopnav">
+  <nav>
+   <a href="/index.shtml" class="active"><img src="/logo.svg" alt="logo" class="menuleft"><i class="fas fa-home"></i> Home</a>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Line data</button>
+    <div class="dropdown-content">
+     <a href="/elrs/elr0.shtm">ELRs and mileages</a>
+     <a href="/electrification/mast_prefix0.shtm">Electrification</a>
+     <a href="/crs/crs0.shtm">CRS, NLC, TIPLOC and STANOX Codes</a>
+     <a href="/pride/pride0.shtm">Line of Route (LOR/PRIDE) codes</a>
+     <a href="/line/line_names.shtm">Line names</a>
+     <a href="/line/diagrams0.shtm">Track diagrams</a>
+     <a href="/bridges/bridges0.shtm">Bridges</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Other assets</button>
+    <div class="dropdown-content">
+     <a href="/signal/signal_boxes0.shtm">Signal boxes</a>
+     <a href="/tunnels/tunnels0.shtm">Tunnels</a>
+     <a href="/viaducts/viaducts0.shtm">Viaducts</a>
+     <a href="/stations/station0.shtm">Stations</a>
+     <a href="/depots/depots0.shtm">Depots</a>
+     <a href="/features/habdwild.shtm">HABD and WILD</a>
+     <a href="/features/troughs.shtm">Water troughs</a>
+     <a href="/features/telegraph.shtm">Telegraph codes</a>
+     <a href="/features/buzzer.shtm">Buzzer codes</a>
+     <a href="/features/stamper.shtm">Stamper codes</a>
+     <a href="/underground/underground0.shtm">London Underground stations</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> &quot;Legal/financial&quot; lists</button>
+    <div class="dropdown-content">
+     <a href="/operators/experimental.shtm">Experimental services</a>
+     <a href="/licences/licence0.shtm">Licences/exemptions</a>
+     <a href="/operators/community.shtm">Community rail partnerships</a>
+     <a href="/operators/franchises1.shtm">Rail franchises</a>
+     <a href="/operators/franchises3.shtm">National Rail Contract operators</a>
+     <a href="/operators/franchises2.shtm">Light rail operators</a>
+     <a href="/operators/toccodes.shtm">TOC timetable codes</a>
+     <a href="/operators/servicegroups.shtm">TOC service groups</a>
+     <a href="/operators/access0.shtm">TOC station access</a>
+     <a href="/operators/privatisation.shtm">BR privatisation</a>
+     <a href="/operators/business.shtm">Business/sector codes</a>
+    </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-caret-down"></i> Miscellaneous</button>
+    <div class="dropdown-content">
+     <a href="/misc/identify.shtm">'What's this?' quiz</a>
+     <a href="/misc/search.shtm">Site search</a>
+     <a href="/misc/updates.shtm">Site updates</a>
+     <a href="/misc/contact.shtm">Contact</a>
+     <a href="/misc/links.shtm">External links</a>
+     <a href="/misc/contributing.shtm">Use/contribute</a>
+     <a href="/misc/acknowledgements.shtm">Acknowledgements</a>
+     <a href="/misc/sitemap.shtm">Site map</a>
+    </div>
+   </div>
+    <a href="/index.shtml" class="active">
+     <img src="/logo.svg" alt="logo" class="menuright">
+    </a>
+    <a href="javascript:void(0);" class="icon" onclick="responseFunction()">&#9776;</a>
+   <div id="navright">
+    <div class="element">
+     <div id="clock">
+      <div id="time">
+      </div>
+     </div>
+    </div>
+   </div>
+  </nav>
+ </div>
+</div>
+
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function responseFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<script src="https://kit.fontawesome.com/674d93a07b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="font-family : 'Century Gothic', Montserrat, sans-serif;"><i class="fas fa-long-arrow-alt-up"></i> Top of page</button>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.addEventListener("scroll", navFunction);
+
+function navFunction() {var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-35px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script><div class="mainlogo"><img class="mainlogo" src="/logo.svg" alt="logo"></div><div class="appeal"><h1>Railway station data</h1></div><h2>A (hopefully) comprehensive listing</h2><h2>Locations beginning I</h2> <p class="update">Last update 21 July 2024</p><div class="appeal"><span class="background"><span style="font-weight:lighter">Additional information is always gratefully received, whether entirely new records </span><span>(particularly historical records)</span><span style="font-weight:lighter"> or information to fill in gaps or correct errors, via the contact link under the Miscellaneous entry in the navigation bar above.  Thank you.</span></span>
+</div> <p>Please select a feature from the list below:</p><nav>
+ <span class="background">
+  <span class="help" title="section navigation links"><i class="fas fa-directions"></i></span>
+  <a href="/stations/station1.shtm">Mileages, operators and grid coordinates</a>&nbsp;|
+  <a href="/stations/bilingual0.shtm">Bilingual signs</a>&nbsp;|
+  <a href="/stations/sponsored0.shtm">Sponsored signs</a>&nbsp;|
+  <a href="/stations/notserved.shtm">Not served by SFO</a>&nbsp;|
+  <a href="/stations/international.shtm">International</a>&nbsp;|
+  <a href="/stations/trivia.shtm">Trivia</a>&nbsp;|
+  <a href="/operators/access0.shtm">Access rights</a>&nbsp;|
+  <a href="/stations/barriers.shtm">Barrier error codes</a>&nbsp;|
+  <a href="/underground/underground0.shtm">London Underground</a>&nbsp;|
+  <a href="/stations/post.shtm">Post boxes</a>&nbsp;|
+  <a href="/stations/railnet.shtm">Railnet</a>
+ </span>
+</nav> <p>To see other locations, please click the link below:</p><nav>
+ <span class="background">
+  <span class="help" title="section navigation links"><i class="fas fa-directions"></i></span>
+  <a href="stationa.shtm">A</a>&nbsp;|
+  <a href="stationb.shtm">B</a>&nbsp;|
+  <a href="stationc.shtm">C</a>&nbsp;|
+  <a href="stationd.shtm">D</a>&nbsp;|
+  <a href="statione.shtm">E</a>&nbsp;|
+  <a href="stationf.shtm">F</a>&nbsp;|
+  <a href="stationg.shtm">G</a>&nbsp;|
+  <a href="stationh.shtm">H</a>&nbsp;|
+  <a href="stationi.shtm">I</a>&nbsp;|
+  <a href="stationj.shtm">J</a>&nbsp;|
+  <a href="stationk.shtm">K</a>&nbsp;|
+  <a href="stationl.shtm">L</a>&nbsp;|
+  <a href="stationm.shtm">M</a>&nbsp;|
+  <a href="stationn.shtm">N</a>&nbsp;|
+  <a href="stationo.shtm">O</a>&nbsp;|
+  <a href="stationp.shtm">P</a>&nbsp;|
+  <a href="stationq.shtm">Q</a>&nbsp;|
+  <a href="stationr.shtm">R</a>&nbsp;|
+  <a href="stations.shtm">S</a>&nbsp;|
+  <a href="stationt.shtm">T</a>&nbsp;|
+  <a href="stationu.shtm">U</a>&nbsp;|
+  <a href="stationv.shtm">V</a>&nbsp;|
+  <a href="stationw.shtm">W</a>&nbsp;|
+  <small>X</small>&nbsp;|
+  <a href="stationy.shtm">Y</a>&nbsp;|
+  <small>Z</small>
+ </span>
+</nav>
+  <p>Station CRS codes are given in parentheses.  Other CRS codes can be found <a href="/crs/crs0.shtm">here</a>.</p>
+  <p>Names are given in the form that National Rail uses.  All known English language differences (e.g., punctuation or capitalisation) that appear on signs displayed since 1 April 1994 are shown in the accompanying box with links to photographs where possible.  Signs labelled 'for...' are treated as part of the name whereas 'alight/change for...' are treated as an instruction in the same way as 'way out' would be.  Other languages and their variants appear on the <a href="bilingual0.shtm">bilingual</a> pages.</p> <p></p><input type="text" id="input" onkeyup="myFunction()" placeholder="Fast filter any detail&hellip;" onkeydown="onkeypressed(event, this);"><div class="background"><table id="tablesort" class="colright"> <col class="eighteen"> <col class="twelve"> <col class="ten"> <col class="eleven"> <col> <col class="six"> <col class="six"> <col class="six"> <thead>  <tr class="sticky noshow">   <th>Station</th>   <th><abbr title="Engineers' Line Reference">ELR</abbr><span class="r">Mileage</span></th>   <th>Status</th>   <th>Owner</th>   <th>Operator</th>   <th>Degrees Longitude</th>   <th>Degrees Latitude</th>   <th>Grid Reference</th>  </tr> </thead> <tbody>  <tr>   <td><a id="ibm"></a><span class="r">(IBM)</span>IBM</td>   <td><a href="../elrs/_mileages/w/wys.shtm">WYS</a><span class="r">5m 22ch</span></td>   <td>Officially open but no trains since 9 December 2018</td>   <td class="noshow"></td>   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>First ScotRail <em>from 17 October 2004 to 31 March 2015</em>ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>   <td>-4.8272</td>   <td>55.9294</td>   <td>NS234743</td>  </tr>  <tr>   <td><a id="ifi"></a><span class="r">(IFI)</span>Ifield</td>   <td><a href="../elrs/_mileages/t/tbh1.shtm">TBH1</a><span class="r">31m 66ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>Govia Thameslink Railway <em>from 26 July 2015</em></summary>Southern Railway <em>from 22 June 2008 to 25 July 2015</em>South Central <em>from 29 May 2004 to 21 June 2008</em>New Southern Railway <em>from 26 August 2001 to 28 May 2004</em>Connex South Central <em>from 29 September 1996 to 25 August 2001</em>Network Southcentral <em>from 26 May 1996 to 28 September 1996</em></details></td>   <td>-0.2149</td>   <td>51.1158</td>   <td>TQ250366</td>  </tr>  <tr>   <td><a id="ifd"></a><span class="r">(IFD)</span>Ilford<div class="signs"><a href="signs/names/ifd1.jpg" target="_blank">Ilford</a><span class="help" title="link to image"><i class="far fa-image"></i></span><a href="signs/names/ifd2.jpg" target="_blank">ILFORD</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>   <td><a href="../elrs/_mileages/l/ltn1.shtm">LTN1</a><span class="r">7m 28ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>MTR Corporation (Crossrail) <em>from 31 May 2015</em></summary>Abellio Greater Anglia <em>from 5 February 2012 to 30 May 2015</em>London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>Great Eastern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>   <td>0.0693</td>   <td>51.5591</td>   <td>TQ435864</td>  </tr>  <tr>   <td><a id="iln"></a><span class="r">(ILN)</span>Ilkeston</td>   <td><a href="../elrs/_mileages/t/tcc.shtm">TCC</a><span class="r">126m 51ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>Abellio East Midlands <em>from 18 August 2019</em></summary>East Midlands Trains <em>from 2 April 2017 to 17 August 2019</em></details></td>   <td>-1.2949</td>   <td>52.9791</td>   <td>SK474426</td>  </tr>  <tr>   <td><a id="ilk"></a><span class="r">(ILK)</span>Ilkley</td>   <td><a href="../elrs/_mileages/i/ilk2.shtm">ILK2</a><span class="r">211m 20ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>Northern Rail <em>from 12 December 2004 to 31 March 2016</em>Arriva Trains Northern <em>from 27 April 2001 to 11 December 2004</em>Northern Spirit <em>from 17 June 1998 to 26 April 2001</em>Regional Railways North East <em>from 2 March 1997 to 16 June 1998</em></details></td>   <td>-1.8216</td>   <td>53.9248</td>   <td>SE118476</td>  </tr>  <tr>   <td><a id="imw"></a><span class="r">(IMW)</span>Imperial Wharf<div class="signs"><a href="https://www.flickr.com/photos/tompagenet/3960152814/" target="_blank">IMPERIAL WHARF</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>   <td><a href="../elrs/_mileages/w/wll.shtm">WLL</a><span class="r">1m 43ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>Arriva Rail London <em>from 13 November 2016</em></summary>London Overground Rail Operations <em>from 27 September 2009 to 12 November 2016</em></details></td>   <td>-0.1810</td>   <td>51.4744</td>   <td>TQ264766</td>  </tr>  <tr>   <td><a id="inc"></a><span class="r">(INC)</span>Ince (Manchester)<div class="signs"><a href="signs/names/inc1.jpg" target="_blank">Ince</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>   <td><a href="../elrs/_mileages/w/wbs2.shtm">WBS2</a><span class="r">16m 70ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>Northern Rail <em>from 12 December 2004 to 31 March 2016</em>North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>   <td>-2.6121</td>   <td>53.5392</td>   <td>SD594048</td>  </tr>  <tr>   <td><a id="ine"></a><span class="r">(INE)</span>Ince &amp; Elton (Cheshire)<div class="signs"><a href="signs/names/ine1.jpg" target="_blank">Ince &amp; Elton</a><span class="help" title="link to image"><i class="far fa-image"></i></span><a href="https://www.flickr.com/photos/39918537@N04/15605153778/" target="_blank">Ince and Elton</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>   <td><a href="../elrs/_mileages/h/hhj.shtm">HHJ</a><span class="r">6m 66ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>Northern Rail <em>from 12 December 2004 to 31 March 2016</em>North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>   <td>-2.8174</td>   <td>53.2766</td>   <td>SJ456758</td>  </tr>  <tr>   <td><a id="int"></a><span class="r">(INT)</span>Ingatestone</td>   <td><a href="../elrs/_mileages/l/ltn1.shtm">LTN1</a><span class="r">23m 50ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>Great Eastern Railway <em>from 5 January 1997 to 31 March 2004</em></details></td>   <td>0.3835</td>   <td>51.6669</td>   <td>TQ649992</td>  </tr>  <tr>   <td><a id="ins"></a><span class="r">(INS)</span>Insch</td>   <td><a href="../elrs/_mileages/a/ani1.shtm">ANI1</a><span class="r">27m 42ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>First ScotRail <em>from 17 October 2004 to 31 March 2015</em>ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>   <td>-2.6172</td>   <td>57.3374</td>   <td>NJ629276</td>  </tr>  <tr>   <td><a id="igd"></a><span class="r">(IGD)</span>Invergordon</td>   <td><a href="../elrs/_mileages/w/wck.shtm">WCK</a><span class="r">31m 37ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>First ScotRail <em>from 17 October 2004 to 31 March 2015</em>ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>   <td>-4.1754</td>   <td>57.6889</td>   <td>NH704686</td>  </tr>  <tr>   <td><a id="ing"></a><span class="r">(ING)</span>Invergowrie</td>   <td><a href="../elrs/_mileages/s/scm5.shtm">SCM5</a><span class="r">3m 50ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>First ScotRail <em>from 17 October 2004 to 31 March 2015</em>ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>   <td>-3.0582</td>   <td>56.4562</td>   <td>NO349298</td>  </tr>  <tr>   <td><a id="ink"></a><span class="r">(INK)</span>Inverkeithing</td>   <td><a href="../elrs/_mileages/e/ecn2.shtm">ECN2</a><span class="r">13m 12ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>First ScotRail <em>from 17 October 2004 to 31 March 2015</em>ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>   <td>-3.3956</td>   <td>56.0352</td>   <td>NT131833</td>  </tr>  <tr>   <td><a id="inp"></a><span class="r">(INP)</span>Inverkip</td>   <td><a href="../elrs/_mileages/w/wys.shtm">WYS</a><span class="r">7m 62ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>First ScotRail <em>from 17 October 2004 to 31 March 2015</em>ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>   <td>-4.8726</td>   <td>55.9061</td>   <td>NS205718</td>  </tr>  <tr>   <td><a id="inv"></a><span class="r">(INV)</span>Inverness</td>   <td><a href="../elrs/_mileages/h/hgl2.shtm">HGL2</a><span class="r">118m 03ch</span><a href="../elrs/_mileages/w/wck.shtm">WCK</a><span class="r">0m 02ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>First ScotRail <em>from 17 October 2004 to 31 March 2015</em>ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>   <td>-4.2241</td>   <td>57.4796</td>   <td>NH667454</td>  </tr>  <tr>   <td><a id="iva"></a><span class="r">(IVA)</span>Inverness Airport</td>   <td><a href="../elrs/_mileages/a/ani3.shtm">ANI3</a><span class="r">136m 43ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td>ScotRail Trains <em>from 3 February 2023</em></td>   <td>-4.0558</td>   <td>57.5332</td>   <td>NH770510</td>  </tr>  <tr>   <td><a id="inh"></a><span class="r">(INH)</span>Invershin</td>   <td><a href="../elrs/_mileages/w/wck.shtm">WCK</a><span class="r">61m 34ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>First ScotRail <em>from 17 October 2004 to 31 March 2015</em>ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>   <td>-4.3990</td>   <td>57.9252</td>   <td>NH579953</td>  </tr>  <tr>   <td><a id="inr"></a><span class="r">(INR)</span>Inverurie</td>   <td><a href="../elrs/_mileages/a/ani1.shtm">ANI1</a><span class="r">16m 72ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>First ScotRail <em>from 17 October 2004 to 31 March 2015</em>ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>   <td>-2.3741</td>   <td>57.2864</td>   <td>NJ775218</td>  </tr>  <tr>   <td><a id="ips"></a><span class="r">(IPS)</span>Ipswich</td>   <td><a href="../elrs/_mileages/l/ltn1.shtm">LTN1</a><span class="r">68m 59ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>Abellio East Anglia <em>from 16 October 2016</em></summary>Abellio Greater Anglia <em>from 5 February 2012 to 15 October 2016</em>London Eastern Railway <em>from 1 April 2004 to 4 February 2012</em>Anglia Railways Train Services <em>from 5 January 1997 to 31 March 2004</em></details></td>   <td>1.1443</td>   <td>52.0506</td>   <td>TM157437</td>  </tr>  <tr>   <td><a id="irl"></a><span class="r">(IRL)</span>Irlam<div class="signs"><a href="signs/names/irl1.jpg" target="_blank">Irlam</a><span class="help" title="link to image"><i class="far fa-image"></i></span><a href="signs/names/irl2.jpg" target="_blank">IRLAM</a><span class="help" title="link to image"><i class="far fa-image"></i></span></div></td>   <td><a href="../elrs/_mileages/m/maj.shtm">MAJ</a><span class="r">25m 51ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>Northern Trains <em>from 1 March 2020</em></summary>Arriva Rail North <em>from 1 April 2016 to 29 February 2020</em>Northern Rail <em>from 12 December 2004 to 31 March 2016</em>North Western Trains Company <em>from 1 June 1997 to 11 December 2004</em>North West Regional Railways <em>from 2 March 1997 to 31 May 1997</em></details></td>   <td>-2.4329</td>   <td>53.4344</td>   <td>SJ712931</td>  </tr>  <tr>   <td><a id="irv"></a><span class="r">(IRV)</span>Irvine<div class="signs"><a href="signs/gd/irv1.jpg" target="_blank">Irvine</a><span class="help" title="link to image"><i class="far fa-image"></i></span><a href="https://www.flickr.com/photos/12313825@N00/2408349804/" target="_blank">Irvine For Magnum Centre and Beach Park</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>   <td><a href="../elrs/_mileages/a/ayr4.shtm">AYR4</a><span class="r">29m 28ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>ScotRail Trains <em>from 1 April 2022</em></summary>Abellio ScotRail <em>from 1 April 2015 to 31 March 2022</em>First ScotRail <em>from 17 October 2004 to 31 March 2015</em>ScotRail Railways <em>from 31 March 1997 to 16 October 2004</em></details></td>   <td>-4.6750</td>   <td>55.6117</td>   <td>NS316385</td>  </tr>  <tr>   <td><a id="isl"></a><span class="r">(ISL)</span>Isleworth</td>   <td><a href="../elrs/_mileages/h/hou.shtm">HOU</a><span class="r">12m 10ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>First MTR South Western Trains <em>from 20 August 2017</em></summary>Stagecoach South Western Trains <em>from 4 February 2007 to 19 August 2017</em>South West Trains <em>from 4 February 1996 to 3 February 2007</em></details></td>   <td>-0.3366</td>   <td>51.4750</td>   <td>TQ156764</td>  </tr>  <tr>   <td><a id="isp1"></a><span class="r">(ISP)</span>Islip<span class="tab1"> </span><em>old</em></td>   <td><a href="../elrs/_mileages/o/oxd.shtm">OXD</a><span class="r">25m 27ch</span></td>   <td>Closed</td>   <td class="noshow"></td>   <td><details><summary>The Chiltern Railway Company <em>from 22 May 2011 to 15 February 2014</em></summary>First Greater Western <em>from 1 April 2006 to 21 May 2011</em>First Great Western Link <em>from 1 April 2004 to 31 March 2006</em>Thames Trains <em>from 13 October 1996 to 31 March 2004</em></details></td>   <td>-1.2391</td>   <td>51.8253</td>   <td>SP525143</td>  </tr>  <tr>   <td><a id="isp2"></a><span class="r">(ISP)</span>Islip<span class="tab1"> </span><em>new</em></td>   <td><a href="../elrs/_mileages/o/oxd.shtm">OXD</a><span class="r">25m 35ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td>The Chiltern Railway Company <em>from 14 September 2015</em></td>   <td>-1.2374</td>   <td>51.8264</td>   <td>SP526144</td>  </tr>  <tr>   <td><a id="ivr"></a><span class="r">(IVR)</span>Iver<div class="signs"><a href="signs/names/ivr1.jpg" target="_blank">Iver</a><span class="help" title="link to image"><i class="far fa-image"></i></span><a href="https://www.flickr.com/photos/111015206@N08/53169241616/" target="_blank">IVER</a><span class="help" title="link to image"><i class="far fa-image"></i></span><small><span class="help" title="external link"><i class="fas fa-external-link-alt"></i></span></small></div></td>   <td><a href="../elrs/_mileages/m/mln1.shtm">MLN1</a><span class="r">14m 60ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>MTR Corporation (Crossrail) <em>from 10 December 2017</em></summary>First Greater Western <em>from 1 April 2006 to 9 December 2017</em>First Great Western Link <em>from 1 April 2004 to 31 March 2006</em>Thames Trains <em>from 13 October 1996 to 31 March 2004</em></details></td>   <td>-0.5069</td>   <td>51.5087</td>   <td>TQ037799</td>  </tr>  <tr>   <td><a id="ivy"></a><span class="r">(IVY)</span>Ivybridge</td>   <td><a href="../elrs/_mileages/m/mln1.shtm">MLN1</a><span class="r">234m 27ch</span></td>   <td class="noshow"></td>   <td class="noshow"></td>   <td><details><summary>First Greater Western <em>from 1 April 2006</em></summary>Wales &amp; West Passenger Trains <em>from 29 September 1997 to 31 March 2006</em>South Wales &amp; West Railway <em>from 13 October 1996 to 28 September 1997</em></details></td>   <td>-3.9048</td>   <td>50.3933</td>   <td>SX647566</td>  </tr> </tbody></table></div> <p> </p><div class="fixed"><nav>
+ <a href="stationa.shtm">A</a>&nbsp;|
+ <a href="stationb.shtm">B</a>&nbsp;|
+ <a href="stationc.shtm">C</a>&nbsp;|
+ <a href="stationd.shtm">D</a>&nbsp;|
+ <a href="statione.shtm">E</a>&nbsp;|
+ <a href="stationf.shtm">F</a>&nbsp;|
+ <a href="stationg.shtm">G</a>&nbsp;|
+ <a href="stationh.shtm">H</a>&nbsp;|
+ <a href="stationi.shtm">I</a>&nbsp;|
+ <a href="stationj.shtm">J</a>&nbsp;|
+ <a href="stationk.shtm">K</a>&nbsp;|
+ <a href="stationl.shtm">L</a>&nbsp;|
+ <a href="stationm.shtm">M</a>&nbsp;|
+ <a href="stationn.shtm">N</a>&nbsp;|
+ <a href="stationo.shtm">O</a>&nbsp;|
+ <a href="stationp.shtm">P</a>&nbsp;|
+ <a href="stationq.shtm">Q</a>&nbsp;|
+ <a href="stationr.shtm">R</a>&nbsp;|
+ <a href="stations.shtm">S</a>&nbsp;|
+ <a href="stationt.shtm">T</a>&nbsp;|
+ <a href="stationu.shtm">U</a>&nbsp;|
+ <a href="stationv.shtm">V</a>&nbsp;|
+ <a href="stationw.shtm">W</a>&nbsp;|
+ <small>X</small>&nbsp;|
+ <a href="stationy.shtm">Y</a>&nbsp;|
+ <small>Z</small>
+</nav></div><script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("input");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("tablesort");
+  var rows = table.getElementsByTagName("tr");
+  for (i = 1; i < rows.length; i++) {
+    var cells = rows[i].getElementsByTagName("td");
+    var j;
+    var rowContainsFilter = false;
+    for (j = 0; j < cells.length; j++) {
+      if (cells[j]) {
+        if (cells[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+          rowContainsFilter = true;
+          continue;
+        }
+      }
+    }
+
+    if (! rowContainsFilter) {
+      rows[i].style.display = "none";
+    } else {
+      rows[i].style.display = "";
+    }
+  }
+}
+
+function onkeypressed(evt, input) {
+    var code = evt.charCode || evt.keyCode;
+    if (code == 27) {
+        input.value = '';
+    }
+}
+</script>
+ <p> </p></body></html>
