@@ -1,0 +1,201 @@
+Date,Cost,Value
+7/1/17,Wholesale costs,331.0
+1/1/18,Wholesale costs,323.0
+7/1/18,Wholesale costs,347.0
+1/1/19,Wholesale costs,387.0
+7/1/19,Wholesale costs,453.0
+1/1/20,Wholesale costs,426.0
+7/1/20,Wholesale costs,399.0
+1/1/21,Wholesale costs,318.0
+7/1/21,Wholesale costs,385.0
+1/1/21,Wholesale costs,520.0
+7/1/22,Wholesale costs,1037.0
+12/1/22,Wholesale costs,2411.0
+3/1/23,Wholesale costs,3062.0
+6/1/23,Wholesale costs,2120.0
+9/1/23,Wholesale costs,1021.0
+12/1/23,Wholesale costs,893.0
+3/1/24,Wholesale costs,985.0
+6/1/24,Wholesale costs,720.0
+9/1/24,Wholesale costs,613.0
+12/1/24,Wholesale costs,735.0
+7/1/17,Adjustment allowance,
+1/1/18,Adjustment allowance,
+7/1/18,Adjustment allowance,
+1/1/19,Adjustment allowance,
+7/1/19,Adjustment allowance,
+1/1/20,Adjustment allowance,0.0
+7/1/20,Adjustment allowance,0.0
+1/1/21,Adjustment allowance,0.0
+7/1/21,Adjustment allowance,0.0
+1/1/21,Adjustment allowance,0.0
+7/1/22,Adjustment allowance,0.0
+12/1/22,Adjustment allowance,6.0
+3/1/23,Adjustment allowance,6.0
+6/1/23,Adjustment allowance,6.0
+9/1/23,Adjustment allowance,13.0
+12/1/23,Adjustment allowance,9.0
+3/1/24,Adjustment allowance,9.0
+6/1/24,Adjustment allowance,9.0
+9/1/24,Adjustment allowance,9.0
+12/1/24,Adjustment allowance,9.0
+7/1/17,Network costs,235.0
+1/1/18,Network costs,235.0
+7/1/18,Network costs,235.0
+1/1/19,Network costs,235.0
+7/1/19,Network costs,247.0
+1/1/20,Network costs,250.0
+7/1/20,Network costs,251.0
+1/1/21,Network costs,252.0
+7/1/21,Network costs,254.0
+1/1/21,Network costs,254.0
+7/1/22,Network costs,340.0
+12/1/22,Network costs,341.0
+3/1/23,Network costs,341.0
+6/1/23,Network costs,362.0
+9/1/23,Network costs,367.0
+12/1/23,Network costs,370.0
+3/1/24,Network costs,370.0
+6/1/24,Network costs,361.0
+9/1/24,Network costs,355.0
+12/1/24,Network costs,363.0
+7/1/17,Policy costs,116.0
+1/1/18,Policy costs,104.0
+7/1/18,Policy costs,126.0
+1/1/19,Policy costs,125.0
+7/1/19,Policy costs,134.0
+1/1/20,Policy costs,120.0
+7/1/20,Policy costs,126.0
+1/1/21,Policy costs,124.0
+7/1/21,Policy costs,130.0
+1/1/21,Policy costs,129.0
+7/1/22,Policy costs,144.0
+12/1/22,Policy costs,143.0
+3/1/23,Policy costs,143.0
+6/1/23,Policy costs,156.0
+9/1/23,Policy costs,156.0
+12/1/23,Policy costs,157.0
+3/1/24,Policy costs,157.0
+6/1/24,Policy costs,188.0
+9/1/24,Policy costs,188.0
+12/1/24,Policy costs,187.0
+7/1/17,Operating costs,158.0
+1/1/18,Operating costs,160.0
+7/1/18,Operating costs,163.0
+1/1/19,Operating costs,164.0
+7/1/19,Operating costs,166.0
+1/1/20,Operating costs,178.0
+7/1/20,Operating costs,183.0
+1/1/21,Operating costs,183.0
+7/1/21,Operating costs,183.0
+1/1/21,Operating costs,181.0
+7/1/22,Operating costs,184.0
+12/1/22,Operating costs,187.0
+3/1/23,Operating costs,187.0
+6/1/23,Operating costs,194.0
+9/1/23,Operating costs,194.0
+12/1/23,Operating costs,199.0
+3/1/24,Operating costs,199.0
+6/1/24,Operating costs,197.0
+9/1/24,Operating costs,197.0
+12/1/24,Operating costs,187.0
+7/1/17,Prepayment payment method uplift allowance,64.0
+1/1/18,Prepayment payment method uplift allowance,65.0
+7/1/18,Prepayment payment method uplift allowance,66.0
+1/1/19,Prepayment payment method uplift allowance,67.0
+7/1/19,Prepayment payment method uplift allowance,67.0
+1/1/20,Prepayment payment method uplift allowance,68.0
+7/1/20,Prepayment payment method uplift allowance,68.0
+1/1/21,Prepayment payment method uplift allowance,68.0
+7/1/21,Prepayment payment method uplift allowance,69.0
+1/1/21,Prepayment payment method uplift allowance,70.0
+7/1/22,Prepayment payment method uplift allowance,72.0
+12/1/22,Prepayment payment method uplift allowance,76.0
+3/1/23,Prepayment payment method uplift allowance,76.0
+6/1/23,Prepayment payment method uplift allowance,79.0
+9/1/23,Prepayment payment method uplift allowance,79.0
+12/1/23,Prepayment payment method uplift allowance,81.0
+3/1/24,Prepayment payment method uplift allowance,81.0
+6/1/24,Prepayment payment method uplift allowance,82.0
+9/1/24,Prepayment payment method uplift allowance,82.0
+12/1/24,Prepayment payment method uplift allowance,83.0
+7/1/17,EBIT,
+1/1/18,EBIT,
+7/1/18,EBIT,
+1/1/19,EBIT,
+7/1/19,EBIT,
+1/1/20,EBIT,20.0
+7/1/20,EBIT,20.0
+1/1/21,EBIT,18.0
+7/1/21,EBIT,20.0
+1/1/21,EBIT,22.0
+7/1/22,EBIT,34.0
+12/1/22,EBIT,61.0
+3/1/23,EBIT,74.0
+6/1/23,EBIT,56.0
+9/1/23,EBIT,35.0
+12/1/23,EBIT,42.0
+3/1/24,EBIT,44.0
+6/1/24,EBIT,40.0
+9/1/24,EBIT,39.0
+12/1/24,EBIT,43.0
+7/1/17,Headroom allowance,26.0
+1/1/18,Headroom allowance,25.0
+7/1/18,Headroom allowance,27.0
+1/1/19,Headroom allowance,29.0
+7/1/19,Headroom allowance,32.0
+1/1/20,Headroom allowance,12.0
+7/1/20,Headroom allowance,12.0
+1/1/21,Headroom allowance,10.0
+7/1/21,Headroom allowance,11.0
+1/1/21,Headroom allowance,13.0
+7/1/22,Headroom allowance,22.0
+12/1/22,Headroom allowance,42.0
+3/1/23,Headroom allowance,52.0
+6/1/23,Headroom allowance,38.0
+9/1/23,Headroom allowance,22.0
+12/1/23,Headroom allowance,20.0
+3/1/24,Headroom allowance,22.0
+6/1/24,Headroom allowance,18.0
+9/1/24,Headroom allowance,17.0
+12/1/24,Headroom allowance,18.0
+7/1/17,VAT,47.0
+1/1/18,VAT,46.0
+7/1/18,VAT,48.0
+1/1/19,VAT,50.0
+7/1/19,VAT,55.0
+1/1/20,VAT,54.0
+7/1/20,VAT,53.0
+1/1/21,VAT,49.0
+7/1/21,VAT,53.0
+1/1/21,VAT,59.0
+7/1/22,VAT,92.0
+12/1/22,VAT,163.0
+3/1/23,VAT,197.0
+6/1/23,VAT,151.0
+9/1/23,VAT,94.0
+12/1/23,VAT,88.0
+3/1/24,VAT,93.0
+6/1/24,VAT,78.0
+9/1/24,VAT,72.0
+12/1/24,VAT,79.0
+7/1/17,Total,977.0
+1/1/18,Total,959.0
+7/1/18,Total,1013.0
+1/1/19,Total,1057.0
+7/1/19,Total,1154.0
+1/1/20,Total,1128.0
+7/1/20,Total,1112.0
+1/1/21,Total,1022.0
+7/1/21,Total,1104.0
+1/1/21,Total,1248.0
+7/1/22,Total,1924.0
+12/1/22,Total,3431.0
+3/1/23,Total,4138.0
+6/1/23,Total,3162.0
+9/1/23,Total,1982.0
+12/1/23,Total,1861.0
+3/1/24,Total,1960.0
+6/1/24,Total,1643.0
+9/1/24,Total,1522.0
+12/1/24,Total,1669.0
