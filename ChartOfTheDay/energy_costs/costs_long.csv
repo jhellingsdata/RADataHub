@@ -8,7 +8,7 @@ Date,Cost,Value
 7/1/20,Wholesale costs,399.0
 1/1/21,Wholesale costs,318.0
 7/1/21,Wholesale costs,385.0
-1/1/21,Wholesale costs,520.0
+1/1/22,Wholesale costs,520.0
 7/1/22,Wholesale costs,1037.0
 12/1/22,Wholesale costs,2411.0
 3/1/23,Wholesale costs,3062.0
@@ -28,7 +28,7 @@ Date,Cost,Value
 7/1/20,Adjustment allowance,0.0
 1/1/21,Adjustment allowance,0.0
 7/1/21,Adjustment allowance,0.0
-1/1/21,Adjustment allowance,0.0
+1/1/22,Adjustment allowance,0.0
 7/1/22,Adjustment allowance,0.0
 12/1/22,Adjustment allowance,6.0
 3/1/23,Adjustment allowance,6.0
@@ -48,7 +48,7 @@ Date,Cost,Value
 7/1/20,Network costs,251.0
 1/1/21,Network costs,252.0
 7/1/21,Network costs,254.0
-1/1/21,Network costs,254.0
+1/1/22,Network costs,254.0
 7/1/22,Network costs,340.0
 12/1/22,Network costs,341.0
 3/1/23,Network costs,341.0
@@ -68,7 +68,7 @@ Date,Cost,Value
 7/1/20,Policy costs,126.0
 1/1/21,Policy costs,124.0
 7/1/21,Policy costs,130.0
-1/1/21,Policy costs,129.0
+1/1/22,Policy costs,129.0
 7/1/22,Policy costs,144.0
 12/1/22,Policy costs,143.0
 3/1/23,Policy costs,143.0
@@ -88,7 +88,7 @@ Date,Cost,Value
 7/1/20,Operating costs,183.0
 1/1/21,Operating costs,183.0
 7/1/21,Operating costs,183.0
-1/1/21,Operating costs,181.0
+1/1/22,Operating costs,181.0
 7/1/22,Operating costs,184.0
 12/1/22,Operating costs,187.0
 3/1/23,Operating costs,187.0
@@ -108,7 +108,7 @@ Date,Cost,Value
 7/1/20,Prepayment payment method uplift allowance,68.0
 1/1/21,Prepayment payment method uplift allowance,68.0
 7/1/21,Prepayment payment method uplift allowance,69.0
-1/1/21,Prepayment payment method uplift allowance,70.0
+1/1/22,Prepayment payment method uplift allowance,70.0
 7/1/22,Prepayment payment method uplift allowance,72.0
 12/1/22,Prepayment payment method uplift allowance,76.0
 3/1/23,Prepayment payment method uplift allowance,76.0
@@ -128,7 +128,7 @@ Date,Cost,Value
 7/1/20,EBIT,20.0
 1/1/21,EBIT,18.0
 7/1/21,EBIT,20.0
-1/1/21,EBIT,22.0
+1/1/22,EBIT,22.0
 7/1/22,EBIT,34.0
 12/1/22,EBIT,61.0
 3/1/23,EBIT,74.0
@@ -148,7 +148,7 @@ Date,Cost,Value
 7/1/20,Headroom allowance,12.0
 1/1/21,Headroom allowance,10.0
 7/1/21,Headroom allowance,11.0
-1/1/21,Headroom allowance,13.0
+1/1/22,Headroom allowance,13.0
 7/1/22,Headroom allowance,22.0
 12/1/22,Headroom allowance,42.0
 3/1/23,Headroom allowance,52.0
@@ -168,7 +168,7 @@ Date,Cost,Value
 7/1/20,VAT,53.0
 1/1/21,VAT,49.0
 7/1/21,VAT,53.0
-1/1/21,VAT,59.0
+1/1/22,VAT,59.0
 7/1/22,VAT,92.0
 12/1/22,VAT,163.0
 3/1/23,VAT,197.0
@@ -188,7 +188,7 @@ Date,Cost,Value
 7/1/20,Total,1112.0
 1/1/21,Total,1022.0
 7/1/21,Total,1104.0
-1/1/21,Total,1248.0
+1/1/22,Total,1248.0
 7/1/22,Total,1924.0
 12/1/22,Total,3431.0
 3/1/23,Total,4138.0
