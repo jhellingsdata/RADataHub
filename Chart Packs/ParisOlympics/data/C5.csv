@@ -28,6 +28,7 @@ year,ranking,share
 2012,1st to 10th ,0.561128527
 2016,1st to 10th ,0.532374101
 2020,1st to 10th ,0.5507109
+2024,1st to 10th ,0.628078
 1896,11th to 20th,0.016393443
 1900,11th to 20th,0.091549296
 1904,11th to 20th,0
@@ -57,6 +58,7 @@ year,ranking,share
 2012,11th to 20th,0.171368861
 2016,11th to 20th,0.177800617
 2020,11th to 20th,0.170616114
+2024,11th to 20th,0.176242
 1896,21st to 40th,0
 1900,21st to 40th,0
 1904,21st to 40th,0
@@ -86,6 +88,7 @@ year,ranking,share
 2012,21st to 40th,0.166144201
 2016,21st to 40th,0.184994861
 2020,21st to 40th,0.1507109
+2024,21st to 40th,0.117063
 1896,41st and over,0
 1900,41st and over,0
 1904,41st and over,0
@@ -115,3 +118,4 @@ year,ranking,share
 2012,41st and over,0.101358412
 2016,41st and over,0.104830421
 2020,41st and over,0.127962085
+2024,41st and over,0.0786618
