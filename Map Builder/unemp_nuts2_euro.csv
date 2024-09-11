@@ -1,0 +1,3774 @@
+id,date,value,country,name,iso3
+AT11,2012-01-01,4.6,Austria,Burgenland,AUT
+AT11,2013-01-01,4.3,Austria,Burgenland,AUT
+AT11,2014-01-01,4.8,Austria,Burgenland,AUT
+AT11,2015-01-01,5.2,Austria,Burgenland,AUT
+AT11,2016-01-01,5.7,Austria,Burgenland,AUT
+AT11,2017-01-01,5.2,Austria,Burgenland,AUT
+AT11,2018-01-01,4.2,Austria,Burgenland,AUT
+AT11,2019-01-01,3.6,Austria,Burgenland,AUT
+AT11,2020-01-01,4.2,Austria,Burgenland,AUT
+AT11,2021-01-01,5.1,Austria,Burgenland,AUT
+AT11,2022-01-01,4.3,Austria,Burgenland,AUT
+AT11,2023-01-01,5.2,Austria,Burgenland,AUT
+AT12,2012-01-01,4.6,Austria,Niederösterreich,AUT
+AT12,2013-01-01,5.0,Austria,Niederösterreich,AUT
+AT12,2014-01-01,5.1,Austria,Niederösterreich,AUT
+AT12,2015-01-01,5.2,Austria,Niederösterreich,AUT
+AT12,2016-01-01,5.2,Austria,Niederösterreich,AUT
+AT12,2017-01-01,4.8,Austria,Niederösterreich,AUT
+AT12,2018-01-01,3.8,Austria,Niederösterreich,AUT
+AT12,2019-01-01,4.0,Austria,Niederösterreich,AUT
+AT12,2020-01-01,4.2,Austria,Niederösterreich,AUT
+AT12,2021-01-01,5.1,Austria,Niederösterreich,AUT
+AT12,2022-01-01,3.9,Austria,Niederösterreich,AUT
+AT12,2023-01-01,4.3,Austria,Niederösterreich,AUT
+AT13,2012-01-01,8.9,Austria,Wien,AUT
+AT13,2013-01-01,9.2,Austria,Wien,AUT
+AT13,2014-01-01,10.2,Austria,Wien,AUT
+AT13,2015-01-01,10.6,Austria,Wien,AUT
+AT13,2016-01-01,11.3,Austria,Wien,AUT
+AT13,2017-01-01,10.4,Austria,Wien,AUT
+AT13,2018-01-01,10.0,Austria,Wien,AUT
+AT13,2019-01-01,9.3,Austria,Wien,AUT
+AT13,2020-01-01,10.6,Austria,Wien,AUT
+AT13,2021-01-01,12.1,Austria,Wien,AUT
+AT13,2022-01-01,9.2,Austria,Wien,AUT
+AT13,2023-01-01,9.6,Austria,Wien,AUT
+AT21,2012-01-01,5.0,Austria,Kärnten,AUT
+AT21,2013-01-01,5.5,Austria,Kärnten,AUT
+AT21,2014-01-01,6.0,Austria,Kärnten,AUT
+AT21,2015-01-01,6.1,Austria,Kärnten,AUT
+AT21,2016-01-01,5.4,Austria,Kärnten,AUT
+AT21,2017-01-01,4.8,Austria,Kärnten,AUT
+AT21,2018-01-01,4.1,Austria,Kärnten,AUT
+AT21,2019-01-01,3.8,Austria,Kärnten,AUT
+AT21,2020-01-01,4.7,Austria,Kärnten,AUT
+AT21,2021-01-01,5.6,Austria,Kärnten,AUT
+AT21,2022-01-01,4.5,Austria,Kärnten,AUT
+AT21,2023-01-01,4.5,Austria,Kärnten,AUT
+AT22,2012-01-01,4.0,Austria,Steiermark,AUT
+AT22,2013-01-01,4.7,Austria,Steiermark,AUT
+AT22,2014-01-01,4.9,Austria,Steiermark,AUT
+AT22,2015-01-01,4.7,Austria,Steiermark,AUT
+AT22,2016-01-01,5.1,Austria,Steiermark,AUT
+AT22,2017-01-01,4.5,Austria,Steiermark,AUT
+AT22,2018-01-01,4.0,Austria,Steiermark,AUT
+AT22,2019-01-01,3.2,Austria,Steiermark,AUT
+AT22,2020-01-01,4.4,Austria,Steiermark,AUT
+AT22,2021-01-01,4.3,Austria,Steiermark,AUT
+AT22,2022-01-01,3.7,Austria,Steiermark,AUT
+AT22,2023-01-01,4.3,Austria,Steiermark,AUT
+AT31,2012-01-01,3.3,Austria,Oberösterreich,AUT
+AT31,2013-01-01,4.3,Austria,Oberösterreich,AUT
+AT31,2014-01-01,4.0,Austria,Oberösterreich,AUT
+AT31,2015-01-01,4.1,Austria,Oberösterreich,AUT
+AT31,2016-01-01,4.4,Austria,Oberösterreich,AUT
+AT31,2017-01-01,4.0,Austria,Oberösterreich,AUT
+AT31,2018-01-01,3.2,Austria,Oberösterreich,AUT
+AT31,2019-01-01,2.9,Austria,Oberösterreich,AUT
+AT31,2020-01-01,3.9,Austria,Oberösterreich,AUT
+AT31,2021-01-01,3.7,Austria,Oberösterreich,AUT
+AT31,2022-01-01,2.9,Austria,Oberösterreich,AUT
+AT31,2023-01-01,3.5,Austria,Oberösterreich,AUT
+AT32,2012-01-01,2.9,Austria,Salzburg,AUT
+AT32,2013-01-01,3.2,Austria,Salzburg,AUT
+AT32,2014-01-01,3.5,Austria,Salzburg,AUT
+AT32,2015-01-01,3.5,Austria,Salzburg,AUT
+AT32,2016-01-01,3.4,Austria,Salzburg,AUT
+AT32,2017-01-01,3.1,Austria,Salzburg,AUT
+AT32,2018-01-01,2.8,Austria,Salzburg,AUT
+AT32,2019-01-01,2.4,Austria,Salzburg,AUT
+AT32,2020-01-01,3.0,Austria,Salzburg,AUT
+AT32,2021-01-01,4.6,Austria,Salzburg,AUT
+AT32,2022-01-01,3.0,Austria,Salzburg,AUT
+AT32,2023-01-01,3.0,Austria,Salzburg,AUT
+AT33,2012-01-01,2.8,Austria,Tirol,AUT
+AT33,2013-01-01,3.1,Austria,Tirol,AUT
+AT33,2014-01-01,3.2,Austria,Tirol,AUT
+AT33,2015-01-01,3.0,Austria,Tirol,AUT
+AT33,2016-01-01,3.5,Austria,Tirol,AUT
+AT33,2017-01-01,3.3,Austria,Tirol,AUT
+AT33,2018-01-01,2.4,Austria,Tirol,AUT
+AT33,2019-01-01,2.1,Austria,Tirol,AUT
+AT33,2020-01-01,3.0,Austria,Tirol,AUT
+AT33,2021-01-01,4.8,Austria,Tirol,AUT
+AT33,2022-01-01,3.2,Austria,Tirol,AUT
+AT33,2023-01-01,3.1,Austria,Tirol,AUT
+AT34,2012-01-01,4.0,Austria,Vorarlberg,AUT
+AT34,2013-01-01,3.6,Austria,Vorarlberg,AUT
+AT34,2014-01-01,3.4,Austria,Vorarlberg,AUT
+AT34,2015-01-01,3.5,Austria,Vorarlberg,AUT
+AT34,2016-01-01,3.4,Austria,Vorarlberg,AUT
+AT34,2017-01-01,3.7,Austria,Vorarlberg,AUT
+AT34,2018-01-01,3.3,Austria,Vorarlberg,AUT
+AT34,2019-01-01,3.2,Austria,Vorarlberg,AUT
+AT34,2020-01-01,3.6,Austria,Vorarlberg,AUT
+AT34,2021-01-01,4.1,Austria,Vorarlberg,AUT
+AT34,2022-01-01,3.2,Austria,Vorarlberg,AUT
+AT34,2023-01-01,3.3,Austria,Vorarlberg,AUT
+BE10,2012-01-01,17.4,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE10,2013-01-01,19.2,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE10,2014-01-01,18.3,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE10,2015-01-01,17.3,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE10,2016-01-01,16.8,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE10,2017-01-01,14.8,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE10,2018-01-01,13.2,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE10,2019-01-01,12.6,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE10,2020-01-01,12.3,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE10,2021-01-01,12.3,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE10,2022-01-01,11.4,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE10,2023-01-01,10.6,Belgium,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BEL
+BE21,2012-01-01,5.3,Belgium,Prov. Antwerpen,BEL
+BE21,2013-01-01,6.2,Belgium,Prov. Antwerpen,BEL
+BE21,2014-01-01,6.1,Belgium,Prov. Antwerpen,BEL
+BE21,2015-01-01,6.1,Belgium,Prov. Antwerpen,BEL
+BE21,2016-01-01,6.1,Belgium,Prov. Antwerpen,BEL
+BE21,2017-01-01,5.9,Belgium,Prov. Antwerpen,BEL
+BE21,2018-01-01,4.3,Belgium,Prov. Antwerpen,BEL
+BE21,2019-01-01,3.6,Belgium,Prov. Antwerpen,BEL
+BE21,2020-01-01,4.0,Belgium,Prov. Antwerpen,BEL
+BE21,2021-01-01,5.2,Belgium,Prov. Antwerpen,BEL
+BE21,2022-01-01,4.0,Belgium,Prov. Antwerpen,BEL
+BE21,2023-01-01,3.6,Belgium,Prov. Antwerpen,BEL
+BE22,2012-01-01,4.7,Belgium,Prov. Limburg (BE),BEL
+BE22,2013-01-01,5.5,Belgium,Prov. Limburg (BE),BEL
+BE22,2014-01-01,5.6,Belgium,Prov. Limburg (BE),BEL
+BE22,2015-01-01,6.0,Belgium,Prov. Limburg (BE),BEL
+BE22,2016-01-01,4.8,Belgium,Prov. Limburg (BE),BEL
+BE22,2017-01-01,4.1,Belgium,Prov. Limburg (BE),BEL
+BE22,2018-01-01,3.8,Belgium,Prov. Limburg (BE),BEL
+BE22,2019-01-01,3.6,Belgium,Prov. Limburg (BE),BEL
+BE22,2020-01-01,3.6,Belgium,Prov. Limburg (BE),BEL
+BE22,2021-01-01,3.4,Belgium,Prov. Limburg (BE),BEL
+BE22,2022-01-01,3.5,Belgium,Prov. Limburg (BE),BEL
+BE22,2023-01-01,3.2,Belgium,Prov. Limburg (BE),BEL
+BE23,2012-01-01,4.1,Belgium,Prov. Oost-Vlaanderen,BEL
+BE23,2013-01-01,4.0,Belgium,Prov. Oost-Vlaanderen,BEL
+BE23,2014-01-01,4.3,Belgium,Prov. Oost-Vlaanderen,BEL
+BE23,2015-01-01,4.4,Belgium,Prov. Oost-Vlaanderen,BEL
+BE23,2016-01-01,4.2,Belgium,Prov. Oost-Vlaanderen,BEL
+BE23,2017-01-01,3.4,Belgium,Prov. Oost-Vlaanderen,BEL
+BE23,2018-01-01,2.7,Belgium,Prov. Oost-Vlaanderen,BEL
+BE23,2019-01-01,2.9,Belgium,Prov. Oost-Vlaanderen,BEL
+BE23,2020-01-01,2.7,Belgium,Prov. Oost-Vlaanderen,BEL
+BE23,2021-01-01,2.8,Belgium,Prov. Oost-Vlaanderen,BEL
+BE23,2022-01-01,2.0,Belgium,Prov. Oost-Vlaanderen,BEL
+BE23,2023-01-01,2.9,Belgium,Prov. Oost-Vlaanderen,BEL
+BE24,2012-01-01,4.4,Belgium,Prov. Vlaams-Brabant,BEL
+BE24,2013-01-01,5.5,Belgium,Prov. Vlaams-Brabant,BEL
+BE24,2014-01-01,5.0,Belgium,Prov. Vlaams-Brabant,BEL
+BE24,2015-01-01,5.1,Belgium,Prov. Vlaams-Brabant,BEL
+BE24,2016-01-01,4.8,Belgium,Prov. Vlaams-Brabant,BEL
+BE24,2017-01-01,4.7,Belgium,Prov. Vlaams-Brabant,BEL
+BE24,2018-01-01,3.6,Belgium,Prov. Vlaams-Brabant,BEL
+BE24,2019-01-01,3.6,Belgium,Prov. Vlaams-Brabant,BEL
+BE24,2020-01-01,3.8,Belgium,Prov. Vlaams-Brabant,BEL
+BE24,2021-01-01,4.0,Belgium,Prov. Vlaams-Brabant,BEL
+BE24,2022-01-01,3.6,Belgium,Prov. Vlaams-Brabant,BEL
+BE24,2023-01-01,4.2,Belgium,Prov. Vlaams-Brabant,BEL
+BE25,2012-01-01,3.9,Belgium,Prov. West-Vlaanderen,BEL
+BE25,2013-01-01,3.9,Belgium,Prov. West-Vlaanderen,BEL
+BE25,2014-01-01,4.2,Belgium,Prov. West-Vlaanderen,BEL
+BE25,2015-01-01,4.2,Belgium,Prov. West-Vlaanderen,BEL
+BE25,2016-01-01,3.7,Belgium,Prov. West-Vlaanderen,BEL
+BE25,2017-01-01,3.2,Belgium,Prov. West-Vlaanderen,BEL
+BE25,2018-01-01,2.6,Belgium,Prov. West-Vlaanderen,BEL
+BE25,2019-01-01,2.5,Belgium,Prov. West-Vlaanderen,BEL
+BE25,2020-01-01,3.3,Belgium,Prov. West-Vlaanderen,BEL
+BE25,2021-01-01,3.6,Belgium,Prov. West-Vlaanderen,BEL
+BE25,2022-01-01,2.7,Belgium,Prov. West-Vlaanderen,BEL
+BE25,2023-01-01,2.8,Belgium,Prov. West-Vlaanderen,BEL
+BE31,2012-01-01,7.0,Belgium,Prov. Brabant wallon,BEL
+BE31,2013-01-01,8.2,Belgium,Prov. Brabant wallon,BEL
+BE31,2014-01-01,8.8,Belgium,Prov. Brabant wallon,BEL
+BE31,2015-01-01,7.8,Belgium,Prov. Brabant wallon,BEL
+BE31,2016-01-01,7.9,Belgium,Prov. Brabant wallon,BEL
+BE31,2017-01-01,7.5,Belgium,Prov. Brabant wallon,BEL
+BE31,2018-01-01,6.9,Belgium,Prov. Brabant wallon,BEL
+BE31,2019-01-01,5.5,Belgium,Prov. Brabant wallon,BEL
+BE31,2020-01-01,6.2,Belgium,Prov. Brabant wallon,BEL
+BE31,2021-01-01,6.8,Belgium,Prov. Brabant wallon,BEL
+BE31,2022-01-01,5.5,Belgium,Prov. Brabant wallon,BEL
+BE31,2023-01-01,5.7,Belgium,Prov. Brabant wallon,BEL
+BE32,2012-01-01,12.1,Belgium,Prov. Hainaut,BEL
+BE32,2013-01-01,13.2,Belgium,Prov. Hainaut,BEL
+BE32,2014-01-01,14.4,Belgium,Prov. Hainaut,BEL
+BE32,2015-01-01,13.3,Belgium,Prov. Hainaut,BEL
+BE32,2016-01-01,11.8,Belgium,Prov. Hainaut,BEL
+BE32,2017-01-01,11.4,Belgium,Prov. Hainaut,BEL
+BE32,2018-01-01,9.9,Belgium,Prov. Hainaut,BEL
+BE32,2019-01-01,8.6,Belgium,Prov. Hainaut,BEL
+BE32,2020-01-01,8.3,Belgium,Prov. Hainaut,BEL
+BE32,2021-01-01,10.3,Belgium,Prov. Hainaut,BEL
+BE32,2022-01-01,10.5,Belgium,Prov. Hainaut,BEL
+BE32,2023-01-01,9.3,Belgium,Prov. Hainaut,BEL
+BE33,2012-01-01,10.7,Belgium,Prov. Liège,BEL
+BE33,2013-01-01,11.7,Belgium,Prov. Liège,BEL
+BE33,2014-01-01,12.3,Belgium,Prov. Liège,BEL
+BE33,2015-01-01,12.8,Belgium,Prov. Liège,BEL
+BE33,2016-01-01,11.1,Belgium,Prov. Liège,BEL
+BE33,2017-01-01,10.5,Belgium,Prov. Liège,BEL
+BE33,2018-01-01,8.2,Belgium,Prov. Liège,BEL
+BE33,2019-01-01,6.7,Belgium,Prov. Liège,BEL
+BE33,2020-01-01,7.8,Belgium,Prov. Liège,BEL
+BE33,2021-01-01,9.4,Belgium,Prov. Liège,BEL
+BE33,2022-01-01,8.3,Belgium,Prov. Liège,BEL
+BE33,2023-01-01,9.1,Belgium,Prov. Liège,BEL
+BE34,2012-01-01,7.6,Belgium,Prov. Luxembourg (BE),BEL
+BE34,2013-01-01,7.9,Belgium,Prov. Luxembourg (BE),BEL
+BE34,2014-01-01,8.5,Belgium,Prov. Luxembourg (BE),BEL
+BE34,2015-01-01,9.3,Belgium,Prov. Luxembourg (BE),BEL
+BE34,2016-01-01,7.8,Belgium,Prov. Luxembourg (BE),BEL
+BE34,2017-01-01,6.7,Belgium,Prov. Luxembourg (BE),BEL
+BE34,2018-01-01,5.4,Belgium,Prov. Luxembourg (BE),BEL
+BE34,2019-01-01,5.4,Belgium,Prov. Luxembourg (BE),BEL
+BE34,2020-01-01,5.1,Belgium,Prov. Luxembourg (BE),BEL
+BE34,2021-01-01,5.6,Belgium,Prov. Luxembourg (BE),BEL
+BE34,2022-01-01,4.8,Belgium,Prov. Luxembourg (BE),BEL
+BE34,2023-01-01,6.5,Belgium,Prov. Luxembourg (BE),BEL
+BE35,2012-01-01,7.3,Belgium,Prov. Namur,BEL
+BE35,2013-01-01,10.4,Belgium,Prov. Namur,BEL
+BE35,2014-01-01,8.9,Belgium,Prov. Namur,BEL
+BE35,2015-01-01,10.9,Belgium,Prov. Namur,BEL
+BE35,2016-01-01,9.7,Belgium,Prov. Namur,BEL
+BE35,2017-01-01,7.4,Belgium,Prov. Namur,BEL
+BE35,2018-01-01,8.5,Belgium,Prov. Namur,BEL
+BE35,2019-01-01,7.0,Belgium,Prov. Namur,BEL
+BE35,2020-01-01,6.1,Belgium,Prov. Namur,BEL
+BE35,2021-01-01,7.6,Belgium,Prov. Namur,BEL
+BE35,2022-01-01,7.2,Belgium,Prov. Namur,BEL
+BE35,2023-01-01,6.6,Belgium,Prov. Namur,BEL
+BG31,2012-01-01,12.3,Bulgaria,Severozapaden,BGR
+BG31,2013-01-01,14.0,Bulgaria,Severozapaden,BGR
+BG31,2014-01-01,14.2,Bulgaria,Severozapaden,BGR
+BG31,2015-01-01,12.1,Bulgaria,Severozapaden,BGR
+BG31,2016-01-01,10.6,Bulgaria,Severozapaden,BGR
+BG31,2017-01-01,11.3,Bulgaria,Severozapaden,BGR
+BG31,2018-01-01,11.2,Bulgaria,Severozapaden,BGR
+BG31,2019-01-01,10.8,Bulgaria,Severozapaden,BGR
+BG31,2020-01-01,13.0,Bulgaria,Severozapaden,BGR
+BG31,2021-01-01,11.1,Bulgaria,Severozapaden,BGR
+BG31,2022-01-01,6.8,Bulgaria,Severozapaden,BGR
+BG31,2023-01-01,7.8,Bulgaria,Severozapaden,BGR
+BG32,2012-01-01,14.3,Bulgaria,Severen tsentralen,BGR
+BG32,2013-01-01,15.3,Bulgaria,Severen tsentralen,BGR
+BG32,2014-01-01,13.2,Bulgaria,Severen tsentralen,BGR
+BG32,2015-01-01,10.6,Bulgaria,Severen tsentralen,BGR
+BG32,2016-01-01,9.3,Bulgaria,Severen tsentralen,BGR
+BG32,2017-01-01,6.9,Bulgaria,Severen tsentralen,BGR
+BG32,2018-01-01,6.7,Bulgaria,Severen tsentralen,BGR
+BG32,2019-01-01,5.1,Bulgaria,Severen tsentralen,BGR
+BG32,2020-01-01,5.7,Bulgaria,Severen tsentralen,BGR
+BG32,2021-01-01,6.7,Bulgaria,Severen tsentralen,BGR
+BG32,2022-01-01,5.8,Bulgaria,Severen tsentralen,BGR
+BG32,2023-01-01,6.0,Bulgaria,Severen tsentralen,BGR
+BG33,2012-01-01,18.2,Bulgaria,Severoiztochen,BGR
+BG33,2013-01-01,16.8,Bulgaria,Severoiztochen,BGR
+BG33,2014-01-01,12.6,Bulgaria,Severoiztochen,BGR
+BG33,2015-01-01,10.3,Bulgaria,Severoiztochen,BGR
+BG33,2016-01-01,9.7,Bulgaria,Severoiztochen,BGR
+BG33,2017-01-01,9.4,Bulgaria,Severoiztochen,BGR
+BG33,2018-01-01,7.4,Bulgaria,Severoiztochen,BGR
+BG33,2019-01-01,5.9,Bulgaria,Severoiztochen,BGR
+BG33,2020-01-01,6.1,Bulgaria,Severoiztochen,BGR
+BG33,2021-01-01,6.1,Bulgaria,Severoiztochen,BGR
+BG33,2022-01-01,5.3,Bulgaria,Severoiztochen,BGR
+BG33,2023-01-01,4.5,Bulgaria,Severoiztochen,BGR
+BG34,2012-01-01,11.9,Bulgaria,Yugoiztochen,BGR
+BG34,2013-01-01,13.0,Bulgaria,Yugoiztochen,BGR
+BG34,2014-01-01,11.9,Bulgaria,Yugoiztochen,BGR
+BG34,2015-01-01,10.4,Bulgaria,Yugoiztochen,BGR
+BG34,2016-01-01,7.9,Bulgaria,Yugoiztochen,BGR
+BG34,2017-01-01,7.0,Bulgaria,Yugoiztochen,BGR
+BG34,2018-01-01,5.4,Bulgaria,Yugoiztochen,BGR
+BG34,2019-01-01,4.0,Bulgaria,Yugoiztochen,BGR
+BG34,2020-01-01,4.6,Bulgaria,Yugoiztochen,BGR
+BG34,2021-01-01,5.5,Bulgaria,Yugoiztochen,BGR
+BG34,2022-01-01,4.4,Bulgaria,Yugoiztochen,BGR
+BG34,2023-01-01,4.6,Bulgaria,Yugoiztochen,BGR
+BG41,2012-01-01,8.2,Bulgaria,Yugozapaden,BGR
+BG41,2013-01-01,9.8,Bulgaria,Yugozapaden,BGR
+BG41,2014-01-01,8.9,Bulgaria,Yugozapaden,BGR
+BG41,2015-01-01,6.7,Bulgaria,Yugozapaden,BGR
+BG41,2016-01-01,5.4,Bulgaria,Yugozapaden,BGR
+BG41,2017-01-01,3.3,Bulgaria,Yugozapaden,BGR
+BG41,2018-01-01,2.6,Bulgaria,Yugozapaden,BGR
+BG41,2019-01-01,2.3,Bulgaria,Yugozapaden,BGR
+BG41,2020-01-01,3.6,Bulgaria,Yugozapaden,BGR
+BG41,2021-01-01,3.5,Bulgaria,Yugozapaden,BGR
+BG41,2022-01-01,3.1,Bulgaria,Yugozapaden,BGR
+BG41,2023-01-01,3.5,Bulgaria,Yugozapaden,BGR
+BG42,2012-01-01,13.8,Bulgaria,Yuzhen tsentralen,BGR
+BG42,2013-01-01,13.5,Bulgaria,Yuzhen tsentralen,BGR
+BG42,2014-01-01,12.0,Bulgaria,Yuzhen tsentralen,BGR
+BG42,2015-01-01,9.2,Bulgaria,Yuzhen tsentralen,BGR
+BG42,2016-01-01,7.1,Bulgaria,Yuzhen tsentralen,BGR
+BG42,2017-01-01,5.2,Bulgaria,Yuzhen tsentralen,BGR
+BG42,2018-01-01,4.2,Bulgaria,Yuzhen tsentralen,BGR
+BG42,2019-01-01,3.0,Bulgaria,Yuzhen tsentralen,BGR
+BG42,2020-01-01,3.4,Bulgaria,Yuzhen tsentralen,BGR
+BG42,2021-01-01,4.0,Bulgaria,Yuzhen tsentralen,BGR
+BG42,2022-01-01,2.9,Bulgaria,Yuzhen tsentralen,BGR
+BG42,2023-01-01,3.1,Bulgaria,Yuzhen tsentralen,BGR
+CH01,2012-01-01,7.1,Switzerland,Région lémanique,CHE
+CH01,2013-01-01,7.4,Switzerland,Région lémanique,CHE
+CH01,2014-01-01,7.5,Switzerland,Région lémanique,CHE
+CH01,2015-01-01,7.5,Switzerland,Région lémanique,CHE
+CH01,2016-01-01,7.6,Switzerland,Région lémanique,CHE
+CH01,2017-01-01,7.8,Switzerland,Région lémanique,CHE
+CH01,2018-01-01,7.5,Switzerland,Région lémanique,CHE
+CH01,2019-01-01,7.5,Switzerland,Région lémanique,CHE
+CH01,2020-01-01,7.6,Switzerland,Région lémanique,CHE
+CH01,2021-01-01,7.7,Switzerland,Région lémanique,CHE
+CH01,2022-01-01,6.9,Switzerland,Région lémanique,CHE
+CH01,2023-01-01,6.7,Switzerland,Région lémanique,CHE
+CH02,2012-01-01,3.9,Switzerland,Espace Mittelland,CHE
+CH02,2013-01-01,4.1,Switzerland,Espace Mittelland,CHE
+CH02,2014-01-01,4.5,Switzerland,Espace Mittelland,CHE
+CH02,2015-01-01,4.4,Switzerland,Espace Mittelland,CHE
+CH02,2016-01-01,4.6,Switzerland,Espace Mittelland,CHE
+CH02,2017-01-01,4.2,Switzerland,Espace Mittelland,CHE
+CH02,2018-01-01,4.3,Switzerland,Espace Mittelland,CHE
+CH02,2019-01-01,3.8,Switzerland,Espace Mittelland,CHE
+CH02,2020-01-01,4.3,Switzerland,Espace Mittelland,CHE
+CH02,2021-01-01,4.5,Switzerland,Espace Mittelland,CHE
+CH02,2022-01-01,3.9,Switzerland,Espace Mittelland,CHE
+CH02,2023-01-01,3.5,Switzerland,Espace Mittelland,CHE
+CH03,2012-01-01,4.5,Switzerland,Nordwestschweiz,CHE
+CH03,2013-01-01,4.4,Switzerland,Nordwestschweiz,CHE
+CH03,2014-01-01,4.6,Switzerland,Nordwestschweiz,CHE
+CH03,2015-01-01,4.3,Switzerland,Nordwestschweiz,CHE
+CH03,2016-01-01,4.9,Switzerland,Nordwestschweiz,CHE
+CH03,2017-01-01,4.4,Switzerland,Nordwestschweiz,CHE
+CH03,2018-01-01,4.2,Switzerland,Nordwestschweiz,CHE
+CH03,2019-01-01,3.5,Switzerland,Nordwestschweiz,CHE
+CH03,2020-01-01,4.7,Switzerland,Nordwestschweiz,CHE
+CH03,2021-01-01,4.8,Switzerland,Nordwestschweiz,CHE
+CH03,2022-01-01,4.3,Switzerland,Nordwestschweiz,CHE
+CH03,2023-01-01,3.8,Switzerland,Nordwestschweiz,CHE
+CH04,2012-01-01,3.8,Switzerland,Zürich,CHE
+CH04,2013-01-01,4.4,Switzerland,Zürich,CHE
+CH04,2014-01-01,4.1,Switzerland,Zürich,CHE
+CH04,2015-01-01,4.1,Switzerland,Zürich,CHE
+CH04,2016-01-01,3.9,Switzerland,Zürich,CHE
+CH04,2017-01-01,4.4,Switzerland,Zürich,CHE
+CH04,2018-01-01,4.3,Switzerland,Zürich,CHE
+CH04,2019-01-01,4.0,Switzerland,Zürich,CHE
+CH04,2020-01-01,4.3,Switzerland,Zürich,CHE
+CH04,2021-01-01,4.7,Switzerland,Zürich,CHE
+CH04,2022-01-01,3.9,Switzerland,Zürich,CHE
+CH04,2023-01-01,3.4,Switzerland,Zürich,CHE
+CH05,2012-01-01,3.5,Switzerland,Ostschweiz,CHE
+CH05,2013-01-01,3.9,Switzerland,Ostschweiz,CHE
+CH05,2014-01-01,3.5,Switzerland,Ostschweiz,CHE
+CH05,2015-01-01,3.9,Switzerland,Ostschweiz,CHE
+CH05,2016-01-01,4.0,Switzerland,Ostschweiz,CHE
+CH05,2017-01-01,3.7,Switzerland,Ostschweiz,CHE
+CH05,2018-01-01,3.6,Switzerland,Ostschweiz,CHE
+CH05,2019-01-01,3.4,Switzerland,Ostschweiz,CHE
+CH05,2020-01-01,3.8,Switzerland,Ostschweiz,CHE
+CH05,2021-01-01,4.1,Switzerland,Ostschweiz,CHE
+CH05,2022-01-01,3.1,Switzerland,Ostschweiz,CHE
+CH05,2023-01-01,3.0,Switzerland,Ostschweiz,CHE
+CH06,2012-01-01,2.8,Switzerland,Zentralschweiz,CHE
+CH06,2013-01-01,2.8,Switzerland,Zentralschweiz,CHE
+CH06,2014-01-01,3.7,Switzerland,Zentralschweiz,CHE
+CH06,2015-01-01,3.4,Switzerland,Zentralschweiz,CHE
+CH06,2016-01-01,3.4,Switzerland,Zentralschweiz,CHE
+CH06,2017-01-01,2.9,Switzerland,Zentralschweiz,CHE
+CH06,2018-01-01,2.9,Switzerland,Zentralschweiz,CHE
+CH06,2019-01-01,2.7,Switzerland,Zentralschweiz,CHE
+CH06,2020-01-01,2.9,Switzerland,Zentralschweiz,CHE
+CH06,2021-01-01,3.3,Switzerland,Zentralschweiz,CHE
+CH06,2022-01-01,2.4,Switzerland,Zentralschweiz,CHE
+CH06,2023-01-01,2.8,Switzerland,Zentralschweiz,CHE
+CH07,2012-01-01,7.4,Switzerland,Ticino,CHE
+CH07,2013-01-01,7.7,Switzerland,Ticino,CHE
+CH07,2014-01-01,7.1,Switzerland,Ticino,CHE
+CH07,2015-01-01,6.9,Switzerland,Ticino,CHE
+CH07,2016-01-01,6.9,Switzerland,Ticino,CHE
+CH07,2017-01-01,6.0,Switzerland,Ticino,CHE
+CH07,2018-01-01,6.6,Switzerland,Ticino,CHE
+CH07,2019-01-01,6.8,Switzerland,Ticino,CHE
+CH07,2020-01-01,6.5,Switzerland,Ticino,CHE
+CH07,2021-01-01,7.8,Switzerland,Ticino,CHE
+CH07,2022-01-01,6.5,Switzerland,Ticino,CHE
+CH07,2023-01-01,6.3,Switzerland,Ticino,CHE
+CY00,2012-01-01,11.8,Cyprus,Kýpros,CYP
+CY00,2013-01-01,15.9,Cyprus,Kýpros,CYP
+CY00,2014-01-01,16.1,Cyprus,Kýpros,CYP
+CY00,2015-01-01,14.9,Cyprus,Kýpros,CYP
+CY00,2016-01-01,13.0,Cyprus,Kýpros,CYP
+CY00,2017-01-01,11.1,Cyprus,Kýpros,CYP
+CY00,2018-01-01,8.4,Cyprus,Kýpros,CYP
+CY00,2019-01-01,7.1,Cyprus,Kýpros,CYP
+CY00,2020-01-01,7.6,Cyprus,Kýpros,CYP
+CY00,2021-01-01,7.5,Cyprus,Kýpros,CYP
+CY00,2022-01-01,6.8,Cyprus,Kýpros,CYP
+CY00,2023-01-01,6.1,Cyprus,Kýpros,CYP
+CZ01,2012-01-01,3.1,Czechia,Praha,CZE
+CZ01,2013-01-01,3.1,Czechia,Praha,CZE
+CZ01,2014-01-01,2.5,Czechia,Praha,CZE
+CZ01,2015-01-01,2.8,Czechia,Praha,CZE
+CZ01,2016-01-01,2.2,Czechia,Praha,CZE
+CZ01,2017-01-01,1.7,Czechia,Praha,CZE
+CZ01,2018-01-01,1.3,Czechia,Praha,CZE
+CZ01,2019-01-01,1.3,Czechia,Praha,CZE
+CZ01,2020-01-01,2.3,Czechia,Praha,CZE
+CZ01,2021-01-01,2.3,Czechia,Praha,CZE
+CZ01,2022-01-01,1.6,Czechia,Praha,CZE
+CZ01,2023-01-01,2.1,Czechia,Praha,CZE
+CZ02,2012-01-01,4.6,Czechia,Střední Čechy,CZE
+CZ02,2013-01-01,5.2,Czechia,Střední Čechy,CZE
+CZ02,2014-01-01,5.1,Czechia,Střední Čechy,CZE
+CZ02,2015-01-01,3.5,Czechia,Střední Čechy,CZE
+CZ02,2016-01-01,3.1,Czechia,Střední Čechy,CZE
+CZ02,2017-01-01,2.1,Czechia,Střední Čechy,CZE
+CZ02,2018-01-01,2.0,Czechia,Střední Čechy,CZE
+CZ02,2019-01-01,1.3,Czechia,Střední Čechy,CZE
+CZ02,2020-01-01,1.9,Czechia,Střední Čechy,CZE
+CZ02,2021-01-01,2.5,Czechia,Střední Čechy,CZE
+CZ02,2022-01-01,1.2,Czechia,Střední Čechy,CZE
+CZ02,2023-01-01,1.7,Czechia,Střední Čechy,CZE
+CZ03,2012-01-01,5.3,Czechia,Jihozápad,CZE
+CZ03,2013-01-01,5.2,Czechia,Jihozápad,CZE
+CZ03,2014-01-01,5.5,Czechia,Jihozápad,CZE
+CZ03,2015-01-01,3.9,Czechia,Jihozápad,CZE
+CZ03,2016-01-01,3.1,Czechia,Jihozápad,CZE
+CZ03,2017-01-01,2.1,Czechia,Jihozápad,CZE
+CZ03,2018-01-01,1.5,Czechia,Jihozápad,CZE
+CZ03,2019-01-01,1.5,Czechia,Jihozápad,CZE
+CZ03,2020-01-01,2.0,Czechia,Jihozápad,CZE
+CZ03,2021-01-01,2.4,Czechia,Jihozápad,CZE
+CZ03,2022-01-01,1.7,Czechia,Jihozápad,CZE
+CZ03,2023-01-01,1.9,Czechia,Jihozápad,CZE
+CZ04,2012-01-01,10.7,Czechia,Severozápad,CZE
+CZ04,2013-01-01,9.6,Czechia,Severozápad,CZE
+CZ04,2014-01-01,8.7,Czechia,Severozápad,CZE
+CZ04,2015-01-01,7.3,Czechia,Severozápad,CZE
+CZ04,2016-01-01,5.2,Czechia,Severozápad,CZE
+CZ04,2017-01-01,3.4,Czechia,Severozápad,CZE
+CZ04,2018-01-01,3.4,Czechia,Severozápad,CZE
+CZ04,2019-01-01,3.0,Czechia,Severozápad,CZE
+CZ04,2020-01-01,4.0,Czechia,Severozápad,CZE
+CZ04,2021-01-01,4.2,Czechia,Severozápad,CZE
+CZ04,2022-01-01,3.3,Czechia,Severozápad,CZE
+CZ04,2023-01-01,4.1,Czechia,Severozápad,CZE
+CZ05,2012-01-01,8.0,Czechia,Severovýchod,CZE
+CZ05,2013-01-01,8.3,Czechia,Severovýchod,CZE
+CZ05,2014-01-01,6.3,Czechia,Severovýchod,CZE
+CZ05,2015-01-01,5.2,Czechia,Severovýchod,CZE
+CZ05,2016-01-01,4.0,Czechia,Severovýchod,CZE
+CZ05,2017-01-01,2.8,Czechia,Severovýchod,CZE
+CZ05,2018-01-01,2.0,Czechia,Severovýchod,CZE
+CZ05,2019-01-01,1.7,Czechia,Severovýchod,CZE
+CZ05,2020-01-01,2.3,Czechia,Severovýchod,CZE
+CZ05,2021-01-01,2.4,Czechia,Severovýchod,CZE
+CZ05,2022-01-01,2.2,Czechia,Severovýchod,CZE
+CZ05,2023-01-01,2.8,Czechia,Severovýchod,CZE
+CZ06,2012-01-01,7.6,Czechia,Jihovýchod,CZE
+CZ06,2013-01-01,6.8,Czechia,Jihovýchod,CZE
+CZ06,2014-01-01,5.9,Czechia,Jihovýchod,CZE
+CZ06,2015-01-01,4.9,Czechia,Jihovýchod,CZE
+CZ06,2016-01-01,3.7,Czechia,Jihovýchod,CZE
+CZ06,2017-01-01,3.1,Czechia,Jihovýchod,CZE
+CZ06,2018-01-01,2.3,Czechia,Jihovýchod,CZE
+CZ06,2019-01-01,1.9,Czechia,Jihovýchod,CZE
+CZ06,2020-01-01,2.3,Czechia,Jihovýchod,CZE
+CZ06,2021-01-01,2.4,Czechia,Jihovýchod,CZE
+CZ06,2022-01-01,1.7,Czechia,Jihovýchod,CZE
+CZ06,2023-01-01,2.2,Czechia,Jihovýchod,CZE
+CZ07,2012-01-01,7.5,Czechia,Střední Morava,CZE
+CZ07,2013-01-01,8.0,Czechia,Střední Morava,CZE
+CZ07,2014-01-01,6.9,Czechia,Střední Morava,CZE
+CZ07,2015-01-01,5.3,Czechia,Střední Morava,CZE
+CZ07,2016-01-01,3.9,Czechia,Střední Morava,CZE
+CZ07,2017-01-01,3.3,Czechia,Střední Morava,CZE
+CZ07,2018-01-01,2.2,Czechia,Střední Morava,CZE
+CZ07,2019-01-01,2.2,Czechia,Střední Morava,CZE
+CZ07,2020-01-01,2.5,Czechia,Střední Morava,CZE
+CZ07,2021-01-01,2.2,Czechia,Střední Morava,CZE
+CZ07,2022-01-01,2.7,Czechia,Střední Morava,CZE
+CZ07,2023-01-01,2.5,Czechia,Střední Morava,CZE
+CZ08,2012-01-01,9.5,Czechia,Moravskoslezsko,CZE
+CZ08,2013-01-01,9.9,Czechia,Moravskoslezsko,CZE
+CZ08,2014-01-01,8.6,Czechia,Moravskoslezsko,CZE
+CZ08,2015-01-01,8.1,Czechia,Moravskoslezsko,CZE
+CZ08,2016-01-01,6.9,Czechia,Moravskoslezsko,CZE
+CZ08,2017-01-01,4.7,Czechia,Moravskoslezsko,CZE
+CZ08,2018-01-01,3.7,Czechia,Moravskoslezsko,CZE
+CZ08,2019-01-01,3.7,Czechia,Moravskoslezsko,CZE
+CZ08,2020-01-01,3.6,Czechia,Moravskoslezsko,CZE
+CZ08,2021-01-01,4.6,Czechia,Moravskoslezsko,CZE
+CZ08,2022-01-01,4.0,Czechia,Moravskoslezsko,CZE
+CZ08,2023-01-01,3.9,Czechia,Moravskoslezsko,CZE
+DE11,2012-01-01,3.4,Germany,Stuttgart,DEU
+DE11,2013-01-01,3.6,Germany,Stuttgart,DEU
+DE11,2014-01-01,3.1,Germany,Stuttgart,DEU
+DE11,2015-01-01,3.3,Germany,Stuttgart,DEU
+DE11,2016-01-01,3.3,Germany,Stuttgart,DEU
+DE11,2017-01-01,3.0,Germany,Stuttgart,DEU
+DE11,2018-01-01,2.3,Germany,Stuttgart,DEU
+DE11,2019-01-01,2.4,Germany,Stuttgart,DEU
+DE11,2020-01-01,3.5,Germany,Stuttgart,DEU
+DE11,2021-01-01,3.2,Germany,Stuttgart,DEU
+DE11,2022-01-01,2.8,Germany,Stuttgart,DEU
+DE11,2023-01-01,3.0,Germany,Stuttgart,DEU
+DE12,2012-01-01,4.0,Germany,Karlsruhe,DEU
+DE12,2013-01-01,3.6,Germany,Karlsruhe,DEU
+DE12,2014-01-01,3.5,Germany,Karlsruhe,DEU
+DE12,2015-01-01,3.3,Germany,Karlsruhe,DEU
+DE12,2016-01-01,3.1,Germany,Karlsruhe,DEU
+DE12,2017-01-01,3.3,Germany,Karlsruhe,DEU
+DE12,2018-01-01,2.9,Germany,Karlsruhe,DEU
+DE12,2019-01-01,2.8,Germany,Karlsruhe,DEU
+DE12,2020-01-01,3.5,Germany,Karlsruhe,DEU
+DE12,2021-01-01,3.4,Germany,Karlsruhe,DEU
+DE12,2022-01-01,3.2,Germany,Karlsruhe,DEU
+DE12,2023-01-01,2.9,Germany,Karlsruhe,DEU
+DE13,2012-01-01,2.8,Germany,Freiburg,DEU
+DE13,2013-01-01,2.9,Germany,Freiburg,DEU
+DE13,2014-01-01,3.0,Germany,Freiburg,DEU
+DE13,2015-01-01,2.5,Germany,Freiburg,DEU
+DE13,2016-01-01,3.0,Germany,Freiburg,DEU
+DE13,2017-01-01,2.9,Germany,Freiburg,DEU
+DE13,2018-01-01,2.6,Germany,Freiburg,DEU
+DE13,2019-01-01,2.1,Germany,Freiburg,DEU
+DE13,2020-01-01,2.7,Germany,Freiburg,DEU
+DE13,2021-01-01,3.2,Germany,Freiburg,DEU
+DE13,2022-01-01,2.3,Germany,Freiburg,DEU
+DE13,2023-01-01,2.2,Germany,Freiburg,DEU
+DE14,2012-01-01,2.7,Germany,Tübingen,DEU
+DE14,2013-01-01,2.9,Germany,Tübingen,DEU
+DE14,2014-01-01,2.6,Germany,Tübingen,DEU
+DE14,2015-01-01,3.0,Germany,Tübingen,DEU
+DE14,2016-01-01,2.6,Germany,Tübingen,DEU
+DE14,2017-01-01,2.2,Germany,Tübingen,DEU
+DE14,2018-01-01,1.9,Germany,Tübingen,DEU
+DE14,2019-01-01,1.9,Germany,Tübingen,DEU
+DE14,2020-01-01,2.9,Germany,Tübingen,DEU
+DE14,2021-01-01,3.0,Germany,Tübingen,DEU
+DE14,2022-01-01,2.1,Germany,Tübingen,DEU
+DE14,2023-01-01,2.1,Germany,Tübingen,DEU
+DE21,2012-01-01,2.7,Germany,Oberbayern,DEU
+DE21,2013-01-01,2.5,Germany,Oberbayern,DEU
+DE21,2014-01-01,2.5,Germany,Oberbayern,DEU
+DE21,2015-01-01,2.7,Germany,Oberbayern,DEU
+DE21,2016-01-01,2.4,Germany,Oberbayern,DEU
+DE21,2017-01-01,2.2,Germany,Oberbayern,DEU
+DE21,2018-01-01,2.3,Germany,Oberbayern,DEU
+DE21,2019-01-01,1.9,Germany,Oberbayern,DEU
+DE21,2020-01-01,2.8,Germany,Oberbayern,DEU
+DE21,2021-01-01,2.7,Germany,Oberbayern,DEU
+DE21,2022-01-01,2.2,Germany,Oberbayern,DEU
+DE21,2023-01-01,2.3,Germany,Oberbayern,DEU
+DE22,2012-01-01,3.3,Germany,Niederbayern,DEU
+DE22,2013-01-01,3.2,Germany,Niederbayern,DEU
+DE22,2014-01-01,2.8,Germany,Niederbayern,DEU
+DE22,2015-01-01,2.5,Germany,Niederbayern,DEU
+DE22,2016-01-01,2.1,Germany,Niederbayern,DEU
+DE22,2017-01-01,2.1,Germany,Niederbayern,DEU
+DE22,2018-01-01,2.0,Germany,Niederbayern,DEU
+DE22,2019-01-01,2.0,Germany,Niederbayern,DEU
+DE22,2020-01-01,,Germany,Niederbayern,DEU
+DE22,2021-01-01,1.8,Germany,Niederbayern,DEU
+DE22,2022-01-01,,Germany,Niederbayern,DEU
+DE22,2023-01-01,,Germany,Niederbayern,DEU
+DE23,2012-01-01,3.2,Germany,Oberpfalz,DEU
+DE23,2013-01-01,3.4,Germany,Oberpfalz,DEU
+DE23,2014-01-01,2.7,Germany,Oberpfalz,DEU
+DE23,2015-01-01,2.7,Germany,Oberpfalz,DEU
+DE23,2016-01-01,2.8,Germany,Oberpfalz,DEU
+DE23,2017-01-01,2.2,Germany,Oberpfalz,DEU
+DE23,2018-01-01,1.9,Germany,Oberpfalz,DEU
+DE23,2019-01-01,2.2,Germany,Oberpfalz,DEU
+DE23,2020-01-01,,Germany,Oberpfalz,DEU
+DE23,2021-01-01,2.5,Germany,Oberpfalz,DEU
+DE23,2022-01-01,,Germany,Oberpfalz,DEU
+DE23,2023-01-01,2.1,Germany,Oberpfalz,DEU
+DE24,2012-01-01,3.3,Germany,Oberfranken,DEU
+DE24,2013-01-01,3.9,Germany,Oberfranken,DEU
+DE24,2014-01-01,4.0,Germany,Oberfranken,DEU
+DE24,2015-01-01,3.8,Germany,Oberfranken,DEU
+DE24,2016-01-01,3.3,Germany,Oberfranken,DEU
+DE24,2017-01-01,3.0,Germany,Oberfranken,DEU
+DE24,2018-01-01,2.3,Germany,Oberfranken,DEU
+DE24,2019-01-01,2.3,Germany,Oberfranken,DEU
+DE24,2020-01-01,,Germany,Oberfranken,DEU
+DE24,2021-01-01,3.3,Germany,Oberfranken,DEU
+DE24,2022-01-01,3.0,Germany,Oberfranken,DEU
+DE24,2023-01-01,2.5,Germany,Oberfranken,DEU
+DE25,2012-01-01,3.7,Germany,Mittelfranken,DEU
+DE25,2013-01-01,3.1,Germany,Mittelfranken,DEU
+DE25,2014-01-01,3.1,Germany,Mittelfranken,DEU
+DE25,2015-01-01,3.0,Germany,Mittelfranken,DEU
+DE25,2016-01-01,2.5,Germany,Mittelfranken,DEU
+DE25,2017-01-01,2.1,Germany,Mittelfranken,DEU
+DE25,2018-01-01,1.8,Germany,Mittelfranken,DEU
+DE25,2019-01-01,2.1,Germany,Mittelfranken,DEU
+DE25,2020-01-01,3.8,Germany,Mittelfranken,DEU
+DE25,2021-01-01,3.4,Germany,Mittelfranken,DEU
+DE25,2022-01-01,3.0,Germany,Mittelfranken,DEU
+DE25,2023-01-01,2.4,Germany,Mittelfranken,DEU
+DE26,2012-01-01,3.4,Germany,Unterfranken,DEU
+DE26,2013-01-01,3.3,Germany,Unterfranken,DEU
+DE26,2014-01-01,2.9,Germany,Unterfranken,DEU
+DE26,2015-01-01,3.0,Germany,Unterfranken,DEU
+DE26,2016-01-01,2.5,Germany,Unterfranken,DEU
+DE26,2017-01-01,2.3,Germany,Unterfranken,DEU
+DE26,2018-01-01,2.0,Germany,Unterfranken,DEU
+DE26,2019-01-01,2.0,Germany,Unterfranken,DEU
+DE26,2020-01-01,,Germany,Unterfranken,DEU
+DE26,2021-01-01,2.6,Germany,Unterfranken,DEU
+DE26,2022-01-01,2.2,Germany,Unterfranken,DEU
+DE26,2023-01-01,2.1,Germany,Unterfranken,DEU
+DE27,2012-01-01,3.2,Germany,Schwaben,DEU
+DE27,2013-01-01,3.3,Germany,Schwaben,DEU
+DE27,2014-01-01,3.0,Germany,Schwaben,DEU
+DE27,2015-01-01,3.0,Germany,Schwaben,DEU
+DE27,2016-01-01,2.7,Germany,Schwaben,DEU
+DE27,2017-01-01,2.6,Germany,Schwaben,DEU
+DE27,2018-01-01,2.4,Germany,Schwaben,DEU
+DE27,2019-01-01,2.2,Germany,Schwaben,DEU
+DE27,2020-01-01,2.5,Germany,Schwaben,DEU
+DE27,2021-01-01,2.8,Germany,Schwaben,DEU
+DE27,2022-01-01,2.3,Germany,Schwaben,DEU
+DE27,2023-01-01,1.9,Germany,Schwaben,DEU
+DE30,2012-01-01,10.4,Germany,Berlin,DEU
+DE30,2013-01-01,10.4,Germany,Berlin,DEU
+DE30,2014-01-01,9.8,Germany,Berlin,DEU
+DE30,2015-01-01,9.4,Germany,Berlin,DEU
+DE30,2016-01-01,7.8,Germany,Berlin,DEU
+DE30,2017-01-01,7.0,Germany,Berlin,DEU
+DE30,2018-01-01,6.1,Germany,Berlin,DEU
+DE30,2019-01-01,5.3,Germany,Berlin,DEU
+DE30,2020-01-01,6.1,Germany,Berlin,DEU
+DE30,2021-01-01,5.8,Germany,Berlin,DEU
+DE30,2022-01-01,4.8,Germany,Berlin,DEU
+DE30,2023-01-01,5.1,Germany,Berlin,DEU
+DE40,2012-01-01,8.2,Germany,Brandenburg,DEU
+DE40,2013-01-01,7.3,Germany,Brandenburg,DEU
+DE40,2014-01-01,6.7,Germany,Brandenburg,DEU
+DE40,2015-01-01,5.7,Germany,Brandenburg,DEU
+DE40,2016-01-01,4.6,Germany,Brandenburg,DEU
+DE40,2017-01-01,4.5,Germany,Brandenburg,DEU
+DE40,2018-01-01,4.1,Germany,Brandenburg,DEU
+DE40,2019-01-01,3.4,Germany,Brandenburg,DEU
+DE40,2020-01-01,4.1,Germany,Brandenburg,DEU
+DE40,2021-01-01,3.1,Germany,Brandenburg,DEU
+DE40,2022-01-01,3.4,Germany,Brandenburg,DEU
+DE40,2023-01-01,3.3,Germany,Brandenburg,DEU
+DE50,2012-01-01,6.6,Germany,Bremen,DEU
+DE50,2013-01-01,7.0,Germany,Bremen,DEU
+DE50,2014-01-01,6.6,Germany,Bremen,DEU
+DE50,2015-01-01,5.6,Germany,Bremen,DEU
+DE50,2016-01-01,5.3,Germany,Bremen,DEU
+DE50,2017-01-01,4.3,Germany,Bremen,DEU
+DE50,2018-01-01,4.3,Germany,Bremen,DEU
+DE50,2019-01-01,5.1,Germany,Bremen,DEU
+DE50,2020-01-01,,Germany,Bremen,DEU
+DE50,2021-01-01,6.4,Germany,Bremen,DEU
+DE50,2022-01-01,5.5,Germany,Bremen,DEU
+DE50,2023-01-01,4.5,Germany,Bremen,DEU
+DE60,2012-01-01,5.3,Germany,Hamburg,DEU
+DE60,2013-01-01,4.7,Germany,Hamburg,DEU
+DE60,2014-01-01,5.0,Germany,Hamburg,DEU
+DE60,2015-01-01,4.3,Germany,Hamburg,DEU
+DE60,2016-01-01,4.1,Germany,Hamburg,DEU
+DE60,2017-01-01,4.2,Germany,Hamburg,DEU
+DE60,2018-01-01,4.1,Germany,Hamburg,DEU
+DE60,2019-01-01,3.6,Germany,Hamburg,DEU
+DE60,2020-01-01,4.8,Germany,Hamburg,DEU
+DE60,2021-01-01,4.6,Germany,Hamburg,DEU
+DE60,2022-01-01,4.1,Germany,Hamburg,DEU
+DE60,2023-01-01,4.0,Germany,Hamburg,DEU
+DE71,2012-01-01,4.8,Germany,Darmstadt,DEU
+DE71,2013-01-01,4.3,Germany,Darmstadt,DEU
+DE71,2014-01-01,4.5,Germany,Darmstadt,DEU
+DE71,2015-01-01,4.1,Germany,Darmstadt,DEU
+DE71,2016-01-01,4.0,Germany,Darmstadt,DEU
+DE71,2017-01-01,3.5,Germany,Darmstadt,DEU
+DE71,2018-01-01,3.1,Germany,Darmstadt,DEU
+DE71,2019-01-01,3.1,Germany,Darmstadt,DEU
+DE71,2020-01-01,4.2,Germany,Darmstadt,DEU
+DE71,2021-01-01,4.2,Germany,Darmstadt,DEU
+DE71,2022-01-01,4.0,Germany,Darmstadt,DEU
+DE71,2023-01-01,3.2,Germany,Darmstadt,DEU
+DE72,2012-01-01,5.0,Germany,Gießen,DEU
+DE72,2013-01-01,4.5,Germany,Gießen,DEU
+DE72,2014-01-01,4.5,Germany,Gießen,DEU
+DE72,2015-01-01,3.8,Germany,Gießen,DEU
+DE72,2016-01-01,4.0,Germany,Gießen,DEU
+DE72,2017-01-01,3.6,Germany,Gießen,DEU
+DE72,2018-01-01,3.6,Germany,Gießen,DEU
+DE72,2019-01-01,3.3,Germany,Gießen,DEU
+DE72,2020-01-01,5.1,Germany,Gießen,DEU
+DE72,2021-01-01,3.6,Germany,Gießen,DEU
+DE72,2022-01-01,2.7,Germany,Gießen,DEU
+DE72,2023-01-01,3.0,Germany,Gießen,DEU
+DE73,2012-01-01,4.5,Germany,Kassel,DEU
+DE73,2013-01-01,4.3,Germany,Kassel,DEU
+DE73,2014-01-01,4.4,Germany,Kassel,DEU
+DE73,2015-01-01,3.6,Germany,Kassel,DEU
+DE73,2016-01-01,3.7,Germany,Kassel,DEU
+DE73,2017-01-01,2.5,Germany,Kassel,DEU
+DE73,2018-01-01,2.9,Germany,Kassel,DEU
+DE73,2019-01-01,2.8,Germany,Kassel,DEU
+DE73,2020-01-01,,Germany,Kassel,DEU
+DE73,2021-01-01,3.1,Germany,Kassel,DEU
+DE73,2022-01-01,2.5,Germany,Kassel,DEU
+DE73,2023-01-01,2.2,Germany,Kassel,DEU
+DE80,2012-01-01,10.8,Germany,Mecklenburg-Vorpommern,DEU
+DE80,2013-01-01,10.0,Germany,Mecklenburg-Vorpommern,DEU
+DE80,2014-01-01,9.6,Germany,Mecklenburg-Vorpommern,DEU
+DE80,2015-01-01,7.8,Germany,Mecklenburg-Vorpommern,DEU
+DE80,2016-01-01,6.3,Germany,Mecklenburg-Vorpommern,DEU
+DE80,2017-01-01,5.1,Germany,Mecklenburg-Vorpommern,DEU
+DE80,2018-01-01,4.8,Germany,Mecklenburg-Vorpommern,DEU
+DE80,2019-01-01,4.0,Germany,Mecklenburg-Vorpommern,DEU
+DE80,2020-01-01,4.5,Germany,Mecklenburg-Vorpommern,DEU
+DE80,2021-01-01,3.8,Germany,Mecklenburg-Vorpommern,DEU
+DE80,2022-01-01,3.8,Germany,Mecklenburg-Vorpommern,DEU
+DE80,2023-01-01,4.3,Germany,Mecklenburg-Vorpommern,DEU
+DE91,2012-01-01,5.5,Germany,Braunschweig,DEU
+DE91,2013-01-01,6.2,Germany,Braunschweig,DEU
+DE91,2014-01-01,5.5,Germany,Braunschweig,DEU
+DE91,2015-01-01,4.9,Germany,Braunschweig,DEU
+DE91,2016-01-01,4.6,Germany,Braunschweig,DEU
+DE91,2017-01-01,4.4,Germany,Braunschweig,DEU
+DE91,2018-01-01,4.0,Germany,Braunschweig,DEU
+DE91,2019-01-01,3.3,Germany,Braunschweig,DEU
+DE91,2020-01-01,4.5,Germany,Braunschweig,DEU
+DE91,2021-01-01,4.0,Germany,Braunschweig,DEU
+DE91,2022-01-01,3.1,Germany,Braunschweig,DEU
+DE91,2023-01-01,3.1,Germany,Braunschweig,DEU
+DE92,2012-01-01,5.4,Germany,Hannover,DEU
+DE92,2013-01-01,5.4,Germany,Hannover,DEU
+DE92,2014-01-01,5.2,Germany,Hannover,DEU
+DE92,2015-01-01,4.7,Germany,Hannover,DEU
+DE92,2016-01-01,4.7,Germany,Hannover,DEU
+DE92,2017-01-01,4.5,Germany,Hannover,DEU
+DE92,2018-01-01,4.1,Germany,Hannover,DEU
+DE92,2019-01-01,3.5,Germany,Hannover,DEU
+DE92,2020-01-01,3.7,Germany,Hannover,DEU
+DE92,2021-01-01,2.8,Germany,Hannover,DEU
+DE92,2022-01-01,3.1,Germany,Hannover,DEU
+DE92,2023-01-01,2.9,Germany,Hannover,DEU
+DE93,2012-01-01,4.4,Germany,Lüneburg,DEU
+DE93,2013-01-01,4.3,Germany,Lüneburg,DEU
+DE93,2014-01-01,4.0,Germany,Lüneburg,DEU
+DE93,2015-01-01,3.5,Germany,Lüneburg,DEU
+DE93,2016-01-01,3.3,Germany,Lüneburg,DEU
+DE93,2017-01-01,3.4,Germany,Lüneburg,DEU
+DE93,2018-01-01,2.4,Germany,Lüneburg,DEU
+DE93,2019-01-01,2.6,Germany,Lüneburg,DEU
+DE93,2020-01-01,3.8,Germany,Lüneburg,DEU
+DE93,2021-01-01,3.2,Germany,Lüneburg,DEU
+DE93,2022-01-01,2.6,Germany,Lüneburg,DEU
+DE93,2023-01-01,2.6,Germany,Lüneburg,DEU
+DE94,2012-01-01,4.3,Germany,Weser-Ems,DEU
+DE94,2013-01-01,4.0,Germany,Weser-Ems,DEU
+DE94,2014-01-01,4.1,Germany,Weser-Ems,DEU
+DE94,2015-01-01,3.9,Germany,Weser-Ems,DEU
+DE94,2016-01-01,3.6,Germany,Weser-Ems,DEU
+DE94,2017-01-01,3.0,Germany,Weser-Ems,DEU
+DE94,2018-01-01,2.7,Germany,Weser-Ems,DEU
+DE94,2019-01-01,2.9,Germany,Weser-Ems,DEU
+DE94,2020-01-01,3.3,Germany,Weser-Ems,DEU
+DE94,2021-01-01,3.6,Germany,Weser-Ems,DEU
+DE94,2022-01-01,2.7,Germany,Weser-Ems,DEU
+DE94,2023-01-01,2.6,Germany,Weser-Ems,DEU
+DEA1,2012-01-01,6.5,Germany,Düsseldorf,DEU
+DEA1,2013-01-01,6.3,Germany,Düsseldorf,DEU
+DEA1,2014-01-01,6.3,Germany,Düsseldorf,DEU
+DEA1,2015-01-01,5.9,Germany,Düsseldorf,DEU
+DEA1,2016-01-01,4.9,Germany,Düsseldorf,DEU
+DEA1,2017-01-01,4.3,Germany,Düsseldorf,DEU
+DEA1,2018-01-01,4.3,Germany,Düsseldorf,DEU
+DEA1,2019-01-01,3.8,Germany,Düsseldorf,DEU
+DEA1,2020-01-01,5.1,Germany,Düsseldorf,DEU
+DEA1,2021-01-01,4.4,Germany,Düsseldorf,DEU
+DEA1,2022-01-01,3.9,Germany,Düsseldorf,DEU
+DEA1,2023-01-01,4.0,Germany,Düsseldorf,DEU
+DEA2,2012-01-01,5.4,Germany,Köln,DEU
+DEA2,2013-01-01,5.8,Germany,Köln,DEU
+DEA2,2014-01-01,5.3,Germany,Köln,DEU
+DEA2,2015-01-01,4.8,Germany,Köln,DEU
+DEA2,2016-01-01,3.9,Germany,Köln,DEU
+DEA2,2017-01-01,3.7,Germany,Köln,DEU
+DEA2,2018-01-01,3.6,Germany,Köln,DEU
+DEA2,2019-01-01,3.4,Germany,Köln,DEU
+DEA2,2020-01-01,4.1,Germany,Köln,DEU
+DEA2,2021-01-01,4.1,Germany,Köln,DEU
+DEA2,2022-01-01,3.3,Germany,Köln,DEU
+DEA2,2023-01-01,3.3,Germany,Köln,DEU
+DEA3,2012-01-01,4.9,Germany,Münster,DEU
+DEA3,2013-01-01,5.1,Germany,Münster,DEU
+DEA3,2014-01-01,4.9,Germany,Münster,DEU
+DEA3,2015-01-01,4.4,Germany,Münster,DEU
+DEA3,2016-01-01,4.3,Germany,Münster,DEU
+DEA3,2017-01-01,3.9,Germany,Münster,DEU
+DEA3,2018-01-01,3.6,Germany,Münster,DEU
+DEA3,2019-01-01,3.4,Germany,Münster,DEU
+DEA3,2020-01-01,3.6,Germany,Münster,DEU
+DEA3,2021-01-01,3.7,Germany,Münster,DEU
+DEA3,2022-01-01,3.5,Germany,Münster,DEU
+DEA3,2023-01-01,3.0,Germany,Münster,DEU
+DEA4,2012-01-01,4.7,Germany,Detmold,DEU
+DEA4,2013-01-01,5.0,Germany,Detmold,DEU
+DEA4,2014-01-01,5.0,Germany,Detmold,DEU
+DEA4,2015-01-01,4.7,Germany,Detmold,DEU
+DEA4,2016-01-01,4.1,Germany,Detmold,DEU
+DEA4,2017-01-01,3.9,Germany,Detmold,DEU
+DEA4,2018-01-01,3.2,Germany,Detmold,DEU
+DEA4,2019-01-01,3.0,Germany,Detmold,DEU
+DEA4,2020-01-01,3.7,Germany,Detmold,DEU
+DEA4,2021-01-01,3.9,Germany,Detmold,DEU
+DEA4,2022-01-01,2.7,Germany,Detmold,DEU
+DEA4,2023-01-01,2.4,Germany,Detmold,DEU
+DEA5,2012-01-01,6.6,Germany,Arnsberg,DEU
+DEA5,2013-01-01,6.5,Germany,Arnsberg,DEU
+DEA5,2014-01-01,5.7,Germany,Arnsberg,DEU
+DEA5,2015-01-01,5.7,Germany,Arnsberg,DEU
+DEA5,2016-01-01,5.0,Germany,Arnsberg,DEU
+DEA5,2017-01-01,4.6,Germany,Arnsberg,DEU
+DEA5,2018-01-01,4.0,Germany,Arnsberg,DEU
+DEA5,2019-01-01,3.9,Germany,Arnsberg,DEU
+DEA5,2020-01-01,5.1,Germany,Arnsberg,DEU
+DEA5,2021-01-01,4.2,Germany,Arnsberg,DEU
+DEA5,2022-01-01,3.9,Germany,Arnsberg,DEU
+DEA5,2023-01-01,3.5,Germany,Arnsberg,DEU
+DEB1,2012-01-01,4.0,Germany,Koblenz,DEU
+DEB1,2013-01-01,3.8,Germany,Koblenz,DEU
+DEB1,2014-01-01,4.0,Germany,Koblenz,DEU
+DEB1,2015-01-01,3.4,Germany,Koblenz,DEU
+DEB1,2016-01-01,3.4,Germany,Koblenz,DEU
+DEB1,2017-01-01,3.1,Germany,Koblenz,DEU
+DEB1,2018-01-01,2.7,Germany,Koblenz,DEU
+DEB1,2019-01-01,2.2,Germany,Koblenz,DEU
+DEB1,2020-01-01,,Germany,Koblenz,DEU
+DEB1,2021-01-01,2.9,Germany,Koblenz,DEU
+DEB1,2022-01-01,2.8,Germany,Koblenz,DEU
+DEB1,2023-01-01,2.5,Germany,Koblenz,DEU
+DEB2,2012-01-01,2.7,Germany,Trier,DEU
+DEB2,2013-01-01,3.0,Germany,Trier,DEU
+DEB2,2014-01-01,3.0,Germany,Trier,DEU
+DEB2,2015-01-01,2.9,Germany,Trier,DEU
+DEB2,2016-01-01,2.7,Germany,Trier,DEU
+DEB2,2017-01-01,2.0,Germany,Trier,DEU
+DEB2,2018-01-01,2.5,Germany,Trier,DEU
+DEB2,2019-01-01,2.0,Germany,Trier,DEU
+DEB2,2020-01-01,,Germany,Trier,DEU
+DEB2,2021-01-01,,Germany,Trier,DEU
+DEB2,2022-01-01,,Germany,Trier,DEU
+DEB2,2023-01-01,,Germany,Trier,DEU
+DEB3,2012-01-01,4.3,Germany,Rheinhessen-Pfalz,DEU
+DEB3,2013-01-01,4.4,Germany,Rheinhessen-Pfalz,DEU
+DEB3,2014-01-01,3.9,Germany,Rheinhessen-Pfalz,DEU
+DEB3,2015-01-01,4.1,Germany,Rheinhessen-Pfalz,DEU
+DEB3,2016-01-01,4.1,Germany,Rheinhessen-Pfalz,DEU
+DEB3,2017-01-01,3.8,Germany,Rheinhessen-Pfalz,DEU
+DEB3,2018-01-01,3.5,Germany,Rheinhessen-Pfalz,DEU
+DEB3,2019-01-01,3.3,Germany,Rheinhessen-Pfalz,DEU
+DEB3,2020-01-01,4.0,Germany,Rheinhessen-Pfalz,DEU
+DEB3,2021-01-01,4.2,Germany,Rheinhessen-Pfalz,DEU
+DEB3,2022-01-01,3.6,Germany,Rheinhessen-Pfalz,DEU
+DEB3,2023-01-01,3.6,Germany,Rheinhessen-Pfalz,DEU
+DEC0,2012-01-01,6.2,Germany,Saarland,DEU
+DEC0,2013-01-01,5.9,Germany,Saarland,DEU
+DEC0,2014-01-01,5.8,Germany,Saarland,DEU
+DEC0,2015-01-01,5.6,Germany,Saarland,DEU
+DEC0,2016-01-01,4.8,Germany,Saarland,DEU
+DEC0,2017-01-01,4.5,Germany,Saarland,DEU
+DEC0,2018-01-01,3.6,Germany,Saarland,DEU
+DEC0,2019-01-01,3.7,Germany,Saarland,DEU
+DEC0,2020-01-01,,Germany,Saarland,DEU
+DEC0,2021-01-01,3.2,Germany,Saarland,DEU
+DEC0,2022-01-01,3.7,Germany,Saarland,DEU
+DEC0,2023-01-01,3.3,Germany,Saarland,DEU
+DED2,2012-01-01,7.5,Germany,Dresden,DEU
+DED2,2013-01-01,7.2,Germany,Dresden,DEU
+DED2,2014-01-01,7.4,Germany,Dresden,DEU
+DED2,2015-01-01,6.2,Germany,Dresden,DEU
+DED2,2016-01-01,4.9,Germany,Dresden,DEU
+DED2,2017-01-01,4.3,Germany,Dresden,DEU
+DED2,2018-01-01,4.0,Germany,Dresden,DEU
+DED2,2019-01-01,3.5,Germany,Dresden,DEU
+DED2,2020-01-01,3.6,Germany,Dresden,DEU
+DED2,2021-01-01,3.4,Germany,Dresden,DEU
+DED2,2022-01-01,3.4,Germany,Dresden,DEU
+DED2,2023-01-01,2.5,Germany,Dresden,DEU
+DED4,2012-01-01,7.9,Germany,Chemnitz,DEU
+DED4,2013-01-01,7.4,Germany,Chemnitz,DEU
+DED4,2014-01-01,6.3,Germany,Chemnitz,DEU
+DED4,2015-01-01,5.4,Germany,Chemnitz,DEU
+DED4,2016-01-01,4.4,Germany,Chemnitz,DEU
+DED4,2017-01-01,4.1,Germany,Chemnitz,DEU
+DED4,2018-01-01,3.4,Germany,Chemnitz,DEU
+DED4,2019-01-01,3.7,Germany,Chemnitz,DEU
+DED4,2020-01-01,,Germany,Chemnitz,DEU
+DED4,2021-01-01,2.4,Germany,Chemnitz,DEU
+DED4,2022-01-01,2.4,Germany,Chemnitz,DEU
+DED4,2023-01-01,3.4,Germany,Chemnitz,DEU
+DED5,2012-01-01,9.5,Germany,Leipzig,DEU
+DED5,2013-01-01,9.2,Germany,Leipzig,DEU
+DED5,2014-01-01,8.3,Germany,Leipzig,DEU
+DED5,2015-01-01,7.7,Germany,Leipzig,DEU
+DED5,2016-01-01,6.0,Germany,Leipzig,DEU
+DED5,2017-01-01,5.1,Germany,Leipzig,DEU
+DED5,2018-01-01,4.7,Germany,Leipzig,DEU
+DED5,2019-01-01,4.7,Germany,Leipzig,DEU
+DED5,2020-01-01,5.3,Germany,Leipzig,DEU
+DED5,2021-01-01,4.6,Germany,Leipzig,DEU
+DED5,2022-01-01,3.5,Germany,Leipzig,DEU
+DED5,2023-01-01,4.5,Germany,Leipzig,DEU
+DEE0,2012-01-01,9.5,Germany,Sachsen-Anhalt,DEU
+DEE0,2013-01-01,9.1,Germany,Sachsen-Anhalt,DEU
+DEE0,2014-01-01,8.8,Germany,Sachsen-Anhalt,DEU
+DEE0,2015-01-01,8.0,Germany,Sachsen-Anhalt,DEU
+DEE0,2016-01-01,7.4,Germany,Sachsen-Anhalt,DEU
+DEE0,2017-01-01,6.9,Germany,Sachsen-Anhalt,DEU
+DEE0,2018-01-01,5.3,Germany,Sachsen-Anhalt,DEU
+DEE0,2019-01-01,4.6,Germany,Sachsen-Anhalt,DEU
+DEE0,2020-01-01,4.8,Germany,Sachsen-Anhalt,DEU
+DEE0,2021-01-01,4.3,Germany,Sachsen-Anhalt,DEU
+DEE0,2022-01-01,4.0,Germany,Sachsen-Anhalt,DEU
+DEE0,2023-01-01,3.8,Germany,Sachsen-Anhalt,DEU
+DEF0,2012-01-01,5.0,Germany,Schleswig-Holstein,DEU
+DEF0,2013-01-01,4.9,Germany,Schleswig-Holstein,DEU
+DEF0,2014-01-01,4.6,Germany,Schleswig-Holstein,DEU
+DEF0,2015-01-01,4.2,Germany,Schleswig-Holstein,DEU
+DEF0,2016-01-01,4.0,Germany,Schleswig-Holstein,DEU
+DEF0,2017-01-01,3.6,Germany,Schleswig-Holstein,DEU
+DEF0,2018-01-01,3.1,Germany,Schleswig-Holstein,DEU
+DEF0,2019-01-01,2.9,Germany,Schleswig-Holstein,DEU
+DEF0,2020-01-01,3.4,Germany,Schleswig-Holstein,DEU
+DEF0,2021-01-01,3.2,Germany,Schleswig-Holstein,DEU
+DEF0,2022-01-01,2.9,Germany,Schleswig-Holstein,DEU
+DEF0,2023-01-01,3.1,Germany,Schleswig-Holstein,DEU
+DEG0,2012-01-01,7.2,Germany,Thüringen,DEU
+DEG0,2013-01-01,6.0,Germany,Thüringen,DEU
+DEG0,2014-01-01,6.0,Germany,Thüringen,DEU
+DEG0,2015-01-01,5.8,Germany,Thüringen,DEU
+DEG0,2016-01-01,5.1,Germany,Thüringen,DEU
+DEG0,2017-01-01,4.4,Germany,Thüringen,DEU
+DEG0,2018-01-01,4.1,Germany,Thüringen,DEU
+DEG0,2019-01-01,3.7,Germany,Thüringen,DEU
+DEG0,2020-01-01,4.2,Germany,Thüringen,DEU
+DEG0,2021-01-01,3.5,Germany,Thüringen,DEU
+DEG0,2022-01-01,3.0,Germany,Thüringen,DEU
+DEG0,2023-01-01,3.0,Germany,Thüringen,DEU
+DK01,2012-01-01,8.4,Denmark,Hovedstaden,DNK
+DK01,2013-01-01,7.7,Denmark,Hovedstaden,DNK
+DK01,2014-01-01,7.5,Denmark,Hovedstaden,DNK
+DK01,2015-01-01,6.8,Denmark,Hovedstaden,DNK
+DK01,2016-01-01,6.2,Denmark,Hovedstaden,DNK
+DK01,2017-01-01,6.2,Denmark,Hovedstaden,DNK
+DK01,2018-01-01,5.4,Denmark,Hovedstaden,DNK
+DK01,2019-01-01,5.1,Denmark,Hovedstaden,DNK
+DK01,2020-01-01,6.1,Denmark,Hovedstaden,DNK
+DK01,2021-01-01,5.7,Denmark,Hovedstaden,DNK
+DK01,2022-01-01,4.7,Denmark,Hovedstaden,DNK
+DK01,2023-01-01,5.2,Denmark,Hovedstaden,DNK
+DK02,2012-01-01,6.7,Denmark,Sjælland,DNK
+DK02,2013-01-01,7.3,Denmark,Sjælland,DNK
+DK02,2014-01-01,6.6,Denmark,Sjælland,DNK
+DK02,2015-01-01,6.0,Denmark,Sjælland,DNK
+DK02,2016-01-01,6.2,Denmark,Sjælland,DNK
+DK02,2017-01-01,5.6,Denmark,Sjælland,DNK
+DK02,2018-01-01,5.2,Denmark,Sjælland,DNK
+DK02,2019-01-01,4.9,Denmark,Sjælland,DNK
+DK02,2020-01-01,5.3,Denmark,Sjælland,DNK
+DK02,2021-01-01,4.9,Denmark,Sjælland,DNK
+DK02,2022-01-01,3.9,Denmark,Sjælland,DNK
+DK02,2023-01-01,4.6,Denmark,Sjælland,DNK
+DK03,2012-01-01,8.0,Denmark,Syddanmark,DNK
+DK03,2013-01-01,7.7,Denmark,Syddanmark,DNK
+DK03,2014-01-01,7.0,Denmark,Syddanmark,DNK
+DK03,2015-01-01,6.2,Denmark,Syddanmark,DNK
+DK03,2016-01-01,6.1,Denmark,Syddanmark,DNK
+DK03,2017-01-01,6.1,Denmark,Syddanmark,DNK
+DK03,2018-01-01,4.9,Denmark,Syddanmark,DNK
+DK03,2019-01-01,4.8,Denmark,Syddanmark,DNK
+DK03,2020-01-01,5.1,Denmark,Syddanmark,DNK
+DK03,2021-01-01,4.4,Denmark,Syddanmark,DNK
+DK03,2022-01-01,4.5,Denmark,Syddanmark,DNK
+DK03,2023-01-01,5.1,Denmark,Syddanmark,DNK
+DK04,2012-01-01,7.2,Denmark,Midtjylland,DNK
+DK04,2013-01-01,6.9,Denmark,Midtjylland,DNK
+DK04,2014-01-01,6.3,Denmark,Midtjylland,DNK
+DK04,2015-01-01,5.7,Denmark,Midtjylland,DNK
+DK04,2016-01-01,5.4,Denmark,Midtjylland,DNK
+DK04,2017-01-01,5.4,Denmark,Midtjylland,DNK
+DK04,2018-01-01,4.7,Denmark,Midtjylland,DNK
+DK04,2019-01-01,4.9,Denmark,Midtjylland,DNK
+DK04,2020-01-01,5.5,Denmark,Midtjylland,DNK
+DK04,2021-01-01,4.8,Denmark,Midtjylland,DNK
+DK04,2022-01-01,4.1,Denmark,Midtjylland,DNK
+DK04,2023-01-01,5.4,Denmark,Midtjylland,DNK
+DK05,2012-01-01,8.2,Denmark,Nordjylland,DNK
+DK05,2013-01-01,6.9,Denmark,Nordjylland,DNK
+DK05,2014-01-01,6.9,Denmark,Nordjylland,DNK
+DK05,2015-01-01,6.4,Denmark,Nordjylland,DNK
+DK05,2016-01-01,6.0,Denmark,Nordjylland,DNK
+DK05,2017-01-01,5.6,Denmark,Nordjylland,DNK
+DK05,2018-01-01,5.5,Denmark,Nordjylland,DNK
+DK05,2019-01-01,5.8,Denmark,Nordjylland,DNK
+DK05,2020-01-01,5.8,Denmark,Nordjylland,DNK
+DK05,2021-01-01,5.1,Denmark,Nordjylland,DNK
+DK05,2022-01-01,4.8,Denmark,Nordjylland,DNK
+DK05,2023-01-01,4.6,Denmark,Nordjylland,DNK
+EA20,2012-01-01,11.4,Unknown,Euro area – 20 countries (from 2023),Unknown
+EA20,2013-01-01,12.1,Unknown,Euro area – 20 countries (from 2023),Unknown
+EA20,2014-01-01,11.7,Unknown,Euro area – 20 countries (from 2023),Unknown
+EA20,2015-01-01,10.9,Unknown,Euro area – 20 countries (from 2023),Unknown
+EA20,2016-01-01,10.1,Unknown,Euro area – 20 countries (from 2023),Unknown
+EA20,2017-01-01,9.1,Unknown,Euro area – 20 countries (from 2023),Unknown
+EA20,2018-01-01,8.2,Unknown,Euro area – 20 countries (from 2023),Unknown
+EA20,2019-01-01,7.5,Unknown,Euro area – 20 countries (from 2023),Unknown
+EA20,2020-01-01,7.9,Unknown,Euro area – 20 countries (from 2023),Unknown
+EA20,2021-01-01,7.8,Unknown,Euro area – 20 countries (from 2023),Unknown
+EA20,2022-01-01,6.8,Unknown,Euro area – 20 countries (from 2023),Unknown
+EA20,2023-01-01,6.5,Unknown,Euro area – 20 countries (from 2023),Unknown
+EE00,2012-01-01,10.0,Estonia,Eesti,EST
+EE00,2013-01-01,8.6,Estonia,Eesti,EST
+EE00,2014-01-01,7.4,Estonia,Eesti,EST
+EE00,2015-01-01,6.4,Estonia,Eesti,EST
+EE00,2016-01-01,6.9,Estonia,Eesti,EST
+EE00,2017-01-01,5.8,Estonia,Eesti,EST
+EE00,2018-01-01,5.4,Estonia,Eesti,EST
+EE00,2019-01-01,4.5,Estonia,Eesti,EST
+EE00,2020-01-01,7.0,Estonia,Eesti,EST
+EE00,2021-01-01,6.2,Estonia,Eesti,EST
+EE00,2022-01-01,5.6,Estonia,Eesti,EST
+EE00,2023-01-01,6.4,Estonia,Eesti,EST
+EL30,2012-01-01,25.8,Greece,Attiki,GRC
+EL30,2013-01-01,28.7,Greece,Attiki,GRC
+EL30,2014-01-01,27.3,Greece,Attiki,GRC
+EL30,2015-01-01,25.2,Greece,Attiki,GRC
+EL30,2016-01-01,23.0,Greece,Attiki,GRC
+EL30,2017-01-01,21.6,Greece,Attiki,GRC
+EL30,2018-01-01,19.9,Greece,Attiki,GRC
+EL30,2019-01-01,16.9,Greece,Attiki,GRC
+EL30,2020-01-01,14.0,Greece,Attiki,GRC
+EL30,2021-01-01,11.9,Greece,Attiki,GRC
+EL30,2022-01-01,10.0,Greece,Attiki,GRC
+EL30,2023-01-01,9.4,Greece,Attiki,GRC
+EL41,2012-01-01,21.8,Greece,Voreio Aigaio,GRC
+EL41,2013-01-01,22.0,Greece,Voreio Aigaio,GRC
+EL41,2014-01-01,22.3,Greece,Voreio Aigaio,GRC
+EL41,2015-01-01,18.0,Greece,Voreio Aigaio,GRC
+EL41,2016-01-01,18.3,Greece,Voreio Aigaio,GRC
+EL41,2017-01-01,22.5,Greece,Voreio Aigaio,GRC
+EL41,2018-01-01,22.3,Greece,Voreio Aigaio,GRC
+EL41,2019-01-01,17.6,Greece,Voreio Aigaio,GRC
+EL41,2020-01-01,16.5,Greece,Voreio Aigaio,GRC
+EL41,2021-01-01,13.8,Greece,Voreio Aigaio,GRC
+EL41,2022-01-01,11.5,Greece,Voreio Aigaio,GRC
+EL41,2023-01-01,9.9,Greece,Voreio Aigaio,GRC
+EL42,2012-01-01,15.4,Greece,Notio Aigaio,GRC
+EL42,2013-01-01,21.3,Greece,Notio Aigaio,GRC
+EL42,2014-01-01,20.1,Greece,Notio Aigaio,GRC
+EL42,2015-01-01,14.9,Greece,Notio Aigaio,GRC
+EL42,2016-01-01,17.4,Greece,Notio Aigaio,GRC
+EL42,2017-01-01,16.0,Greece,Notio Aigaio,GRC
+EL42,2018-01-01,16.9,Greece,Notio Aigaio,GRC
+EL42,2019-01-01,13.7,Greece,Notio Aigaio,GRC
+EL42,2020-01-01,16.7,Greece,Notio Aigaio,GRC
+EL42,2021-01-01,18.8,Greece,Notio Aigaio,GRC
+EL42,2022-01-01,10.7,Greece,Notio Aigaio,GRC
+EL42,2023-01-01,7.1,Greece,Notio Aigaio,GRC
+EL43,2012-01-01,22.3,Greece,Kriti,GRC
+EL43,2013-01-01,24.9,Greece,Kriti,GRC
+EL43,2014-01-01,24.0,Greece,Kriti,GRC
+EL43,2015-01-01,24.2,Greece,Kriti,GRC
+EL43,2016-01-01,22.6,Greece,Kriti,GRC
+EL43,2017-01-01,17.7,Greece,Kriti,GRC
+EL43,2018-01-01,13.4,Greece,Kriti,GRC
+EL43,2019-01-01,11.7,Greece,Kriti,GRC
+EL43,2020-01-01,17.3,Greece,Kriti,GRC
+EL43,2021-01-01,16.3,Greece,Kriti,GRC
+EL43,2022-01-01,12.1,Greece,Kriti,GRC
+EL43,2023-01-01,10.8,Greece,Kriti,GRC
+EL51,2012-01-01,22.8,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL51,2013-01-01,26.8,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL51,2014-01-01,24.2,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL51,2015-01-01,23.4,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL51,2016-01-01,22.8,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL51,2017-01-01,19.5,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL51,2018-01-01,15.9,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL51,2019-01-01,16.2,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL51,2020-01-01,17.2,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL51,2021-01-01,18.5,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL51,2022-01-01,14.7,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL51,2023-01-01,12.1,Greece,"Anatoliki Makedonia, Thraki",GRC
+EL52,2012-01-01,26.2,Greece,Kentriki Makedonia,GRC
+EL52,2013-01-01,30.2,Greece,Kentriki Makedonia,GRC
+EL52,2014-01-01,28.7,Greece,Kentriki Makedonia,GRC
+EL52,2015-01-01,26.0,Greece,Kentriki Makedonia,GRC
+EL52,2016-01-01,24.5,Greece,Kentriki Makedonia,GRC
+EL52,2017-01-01,22.9,Greece,Kentriki Makedonia,GRC
+EL52,2018-01-01,20.7,Greece,Kentriki Makedonia,GRC
+EL52,2019-01-01,19.6,Greece,Kentriki Makedonia,GRC
+EL52,2020-01-01,18.4,Greece,Kentriki Makedonia,GRC
+EL52,2021-01-01,16.1,Greece,Kentriki Makedonia,GRC
+EL52,2022-01-01,14.7,Greece,Kentriki Makedonia,GRC
+EL52,2023-01-01,14.1,Greece,Kentriki Makedonia,GRC
+EL53,2012-01-01,29.7,Greece,Dytiki Makedonia,GRC
+EL53,2013-01-01,31.6,Greece,Dytiki Makedonia,GRC
+EL53,2014-01-01,27.6,Greece,Dytiki Makedonia,GRC
+EL53,2015-01-01,30.7,Greece,Dytiki Makedonia,GRC
+EL53,2016-01-01,31.3,Greece,Dytiki Makedonia,GRC
+EL53,2017-01-01,29.1,Greece,Dytiki Makedonia,GRC
+EL53,2018-01-01,27.0,Greece,Dytiki Makedonia,GRC
+EL53,2019-01-01,24.5,Greece,Dytiki Makedonia,GRC
+EL53,2020-01-01,19.7,Greece,Dytiki Makedonia,GRC
+EL53,2021-01-01,19.7,Greece,Dytiki Makedonia,GRC
+EL53,2022-01-01,17.7,Greece,Dytiki Makedonia,GRC
+EL53,2023-01-01,16.7,Greece,Dytiki Makedonia,GRC
+EL54,2012-01-01,22.5,Greece,Ipeiros,GRC
+EL54,2013-01-01,27.4,Greece,Ipeiros,GRC
+EL54,2014-01-01,26.8,Greece,Ipeiros,GRC
+EL54,2015-01-01,24.5,Greece,Ipeiros,GRC
+EL54,2016-01-01,24.3,Greece,Ipeiros,GRC
+EL54,2017-01-01,24.8,Greece,Ipeiros,GRC
+EL54,2018-01-01,20.1,Greece,Ipeiros,GRC
+EL54,2019-01-01,16.4,Greece,Ipeiros,GRC
+EL54,2020-01-01,17.8,Greece,Ipeiros,GRC
+EL54,2021-01-01,15.1,Greece,Ipeiros,GRC
+EL54,2022-01-01,13.3,Greece,Ipeiros,GRC
+EL54,2023-01-01,13.8,Greece,Ipeiros,GRC
+EL61,2012-01-01,22.6,Greece,Thessalia,GRC
+EL61,2013-01-01,25.4,Greece,Thessalia,GRC
+EL61,2014-01-01,25.4,Greece,Thessalia,GRC
+EL61,2015-01-01,26.9,Greece,Thessalia,GRC
+EL61,2016-01-01,25.5,Greece,Thessalia,GRC
+EL61,2017-01-01,20.6,Greece,Thessalia,GRC
+EL61,2018-01-01,18.3,Greece,Thessalia,GRC
+EL61,2019-01-01,18.5,Greece,Thessalia,GRC
+EL61,2020-01-01,16.8,Greece,Thessalia,GRC
+EL61,2021-01-01,16.6,Greece,Thessalia,GRC
+EL61,2022-01-01,16.3,Greece,Thessalia,GRC
+EL61,2023-01-01,12.9,Greece,Thessalia,GRC
+EL62,2012-01-01,14.7,Greece,Ionia Nisia,GRC
+EL62,2013-01-01,18.1,Greece,Ionia Nisia,GRC
+EL62,2014-01-01,21.4,Greece,Ionia Nisia,GRC
+EL62,2015-01-01,19.0,Greece,Ionia Nisia,GRC
+EL62,2016-01-01,16.0,Greece,Ionia Nisia,GRC
+EL62,2017-01-01,19.6,Greece,Ionia Nisia,GRC
+EL62,2018-01-01,15.9,Greece,Ionia Nisia,GRC
+EL62,2019-01-01,12.3,Greece,Ionia Nisia,GRC
+EL62,2020-01-01,15.9,Greece,Ionia Nisia,GRC
+EL62,2021-01-01,13.2,Greece,Ionia Nisia,GRC
+EL62,2022-01-01,12.9,Greece,Ionia Nisia,GRC
+EL62,2023-01-01,14.7,Greece,Ionia Nisia,GRC
+EL63,2012-01-01,25.6,Greece,Dytiki Elláda,GRC
+EL63,2013-01-01,28.4,Greece,Dytiki Elláda,GRC
+EL63,2014-01-01,28.7,Greece,Dytiki Elláda,GRC
+EL63,2015-01-01,28.5,Greece,Dytiki Elláda,GRC
+EL63,2016-01-01,29.8,Greece,Dytiki Elláda,GRC
+EL63,2017-01-01,26.3,Greece,Dytiki Elláda,GRC
+EL63,2018-01-01,24.1,Greece,Dytiki Elláda,GRC
+EL63,2019-01-01,24.1,Greece,Dytiki Elláda,GRC
+EL63,2020-01-01,21.6,Greece,Dytiki Elláda,GRC
+EL63,2021-01-01,17.4,Greece,Dytiki Elláda,GRC
+EL63,2022-01-01,12.6,Greece,Dytiki Elláda,GRC
+EL63,2023-01-01,9.8,Greece,Dytiki Elláda,GRC
+EL64,2012-01-01,27.9,Greece,Sterea Elláda,GRC
+EL64,2013-01-01,28.2,Greece,Sterea Elláda,GRC
+EL64,2014-01-01,26.8,Greece,Sterea Elláda,GRC
+EL64,2015-01-01,25.8,Greece,Sterea Elláda,GRC
+EL64,2016-01-01,25.0,Greece,Sterea Elláda,GRC
+EL64,2017-01-01,20.8,Greece,Sterea Elláda,GRC
+EL64,2018-01-01,18.9,Greece,Sterea Elláda,GRC
+EL64,2019-01-01,17.2,Greece,Sterea Elláda,GRC
+EL64,2020-01-01,19.3,Greece,Sterea Elláda,GRC
+EL64,2021-01-01,17.2,Greece,Sterea Elláda,GRC
+EL64,2022-01-01,13.8,Greece,Sterea Elláda,GRC
+EL64,2023-01-01,9.9,Greece,Sterea Elláda,GRC
+EL65,2012-01-01,19.2,Greece,Peloponnisos,GRC
+EL65,2013-01-01,21.9,Greece,Peloponnisos,GRC
+EL65,2014-01-01,23.4,Greece,Peloponnisos,GRC
+EL65,2015-01-01,22.3,Greece,Peloponnisos,GRC
+EL65,2016-01-01,19.2,Greece,Peloponnisos,GRC
+EL65,2017-01-01,16.8,Greece,Peloponnisos,GRC
+EL65,2018-01-01,14.4,Greece,Peloponnisos,GRC
+EL65,2019-01-01,12.0,Greece,Peloponnisos,GRC
+EL65,2020-01-01,11.3,Greece,Peloponnisos,GRC
+EL65,2021-01-01,12.7,Greece,Peloponnisos,GRC
+EL65,2022-01-01,12.6,Greece,Peloponnisos,GRC
+EL65,2023-01-01,9.6,Greece,Peloponnisos,GRC
+ES11,2012-01-01,20.5,Spain,Galicia,ESP
+ES11,2013-01-01,22.0,Spain,Galicia,ESP
+ES11,2014-01-01,21.7,Spain,Galicia,ESP
+ES11,2015-01-01,19.3,Spain,Galicia,ESP
+ES11,2016-01-01,17.2,Spain,Galicia,ESP
+ES11,2017-01-01,15.7,Spain,Galicia,ESP
+ES11,2018-01-01,13.3,Spain,Galicia,ESP
+ES11,2019-01-01,11.8,Spain,Galicia,ESP
+ES11,2020-01-01,12.0,Spain,Galicia,ESP
+ES11,2021-01-01,11.5,Spain,Galicia,ESP
+ES11,2022-01-01,11.0,Spain,Galicia,ESP
+ES11,2023-01-01,9.7,Spain,Galicia,ESP
+ES12,2012-01-01,21.8,Spain,Principado de Asturias,ESP
+ES12,2013-01-01,24.1,Spain,Principado de Asturias,ESP
+ES12,2014-01-01,21.1,Spain,Principado de Asturias,ESP
+ES12,2015-01-01,19.1,Spain,Principado de Asturias,ESP
+ES12,2016-01-01,17.6,Spain,Principado de Asturias,ESP
+ES12,2017-01-01,13.7,Spain,Principado de Asturias,ESP
+ES12,2018-01-01,13.6,Spain,Principado de Asturias,ESP
+ES12,2019-01-01,14.2,Spain,Principado de Asturias,ESP
+ES12,2020-01-01,14.1,Spain,Principado de Asturias,ESP
+ES12,2021-01-01,12.3,Spain,Principado de Asturias,ESP
+ES12,2022-01-01,12.5,Spain,Principado de Asturias,ESP
+ES12,2023-01-01,12.1,Spain,Principado de Asturias,ESP
+ES13,2012-01-01,17.8,Spain,Cantabria,ESP
+ES13,2013-01-01,20.4,Spain,Cantabria,ESP
+ES13,2014-01-01,19.4,Spain,Cantabria,ESP
+ES13,2015-01-01,17.6,Spain,Cantabria,ESP
+ES13,2016-01-01,14.9,Spain,Cantabria,ESP
+ES13,2017-01-01,13.6,Spain,Cantabria,ESP
+ES13,2018-01-01,10.7,Spain,Cantabria,ESP
+ES13,2019-01-01,10.3,Spain,Cantabria,ESP
+ES13,2020-01-01,12.1,Spain,Cantabria,ESP
+ES13,2021-01-01,11.2,Spain,Cantabria,ESP
+ES13,2022-01-01,9.6,Spain,Cantabria,ESP
+ES13,2023-01-01,8.1,Spain,Cantabria,ESP
+ES21,2012-01-01,15.6,Spain,País Vasco,ESP
+ES21,2013-01-01,16.6,Spain,País Vasco,ESP
+ES21,2014-01-01,16.3,Spain,País Vasco,ESP
+ES21,2015-01-01,14.8,Spain,País Vasco,ESP
+ES21,2016-01-01,12.6,Spain,País Vasco,ESP
+ES21,2017-01-01,11.3,Spain,País Vasco,ESP
+ES21,2018-01-01,10.0,Spain,País Vasco,ESP
+ES21,2019-01-01,9.2,Spain,País Vasco,ESP
+ES21,2020-01-01,9.5,Spain,País Vasco,ESP
+ES21,2021-01-01,10.3,Spain,País Vasco,ESP
+ES21,2022-01-01,8.9,Spain,País Vasco,ESP
+ES21,2023-01-01,7.7,Spain,País Vasco,ESP
+ES22,2012-01-01,16.2,Spain,Comunidad Foral de Navarra,ESP
+ES22,2013-01-01,17.9,Spain,Comunidad Foral de Navarra,ESP
+ES22,2014-01-01,15.7,Spain,Comunidad Foral de Navarra,ESP
+ES22,2015-01-01,13.8,Spain,Comunidad Foral de Navarra,ESP
+ES22,2016-01-01,12.5,Spain,Comunidad Foral de Navarra,ESP
+ES22,2017-01-01,10.2,Spain,Comunidad Foral de Navarra,ESP
+ES22,2018-01-01,10.0,Spain,Comunidad Foral de Navarra,ESP
+ES22,2019-01-01,8.2,Spain,Comunidad Foral de Navarra,ESP
+ES22,2020-01-01,10.1,Spain,Comunidad Foral de Navarra,ESP
+ES22,2021-01-01,10.7,Spain,Comunidad Foral de Navarra,ESP
+ES22,2022-01-01,9.7,Spain,Comunidad Foral de Navarra,ESP
+ES22,2023-01-01,9.9,Spain,Comunidad Foral de Navarra,ESP
+ES23,2012-01-01,20.6,Spain,La Rioja,ESP
+ES23,2013-01-01,20.0,Spain,La Rioja,ESP
+ES23,2014-01-01,18.2,Spain,La Rioja,ESP
+ES23,2015-01-01,15.4,Spain,La Rioja,ESP
+ES23,2016-01-01,13.5,Spain,La Rioja,ESP
+ES23,2017-01-01,12.0,Spain,La Rioja,ESP
+ES23,2018-01-01,10.4,Spain,La Rioja,ESP
+ES23,2019-01-01,10.0,Spain,La Rioja,ESP
+ES23,2020-01-01,10.8,Spain,La Rioja,ESP
+ES23,2021-01-01,11.6,Spain,La Rioja,ESP
+ES23,2022-01-01,9.6,Spain,La Rioja,ESP
+ES23,2023-01-01,9.4,Spain,La Rioja,ESP
+ES24,2012-01-01,18.7,Spain,Aragón,ESP
+ES24,2013-01-01,21.4,Spain,Aragón,ESP
+ES24,2014-01-01,20.2,Spain,Aragón,ESP
+ES24,2015-01-01,16.3,Spain,Aragón,ESP
+ES24,2016-01-01,14.7,Spain,Aragón,ESP
+ES24,2017-01-01,11.6,Spain,Aragón,ESP
+ES24,2018-01-01,10.6,Spain,Aragón,ESP
+ES24,2019-01-01,10.0,Spain,Aragón,ESP
+ES24,2020-01-01,11.7,Spain,Aragón,ESP
+ES24,2021-01-01,10.3,Spain,Aragón,ESP
+ES24,2022-01-01,9.6,Spain,Aragón,ESP
+ES24,2023-01-01,8.6,Spain,Aragón,ESP
+ES30,2012-01-01,18.5,Spain,Comunidad de Madrid,ESP
+ES30,2013-01-01,19.8,Spain,Comunidad de Madrid,ESP
+ES30,2014-01-01,18.7,Spain,Comunidad de Madrid,ESP
+ES30,2015-01-01,17.1,Spain,Comunidad de Madrid,ESP
+ES30,2016-01-01,15.7,Spain,Comunidad de Madrid,ESP
+ES30,2017-01-01,13.3,Spain,Comunidad de Madrid,ESP
+ES30,2018-01-01,12.2,Spain,Comunidad de Madrid,ESP
+ES30,2019-01-01,10.6,Spain,Comunidad de Madrid,ESP
+ES30,2020-01-01,12.5,Spain,Comunidad de Madrid,ESP
+ES30,2021-01-01,11.7,Spain,Comunidad de Madrid,ESP
+ES30,2022-01-01,11.2,Spain,Comunidad de Madrid,ESP
+ES30,2023-01-01,10.0,Spain,Comunidad de Madrid,ESP
+ES41,2012-01-01,19.8,Spain,Castilla y León,ESP
+ES41,2013-01-01,21.7,Spain,Castilla y León,ESP
+ES41,2014-01-01,20.8,Spain,Castilla y León,ESP
+ES41,2015-01-01,18.3,Spain,Castilla y León,ESP
+ES41,2016-01-01,15.8,Spain,Castilla y León,ESP
+ES41,2017-01-01,14.1,Spain,Castilla y León,ESP
+ES41,2018-01-01,12.1,Spain,Castilla y León,ESP
+ES41,2019-01-01,11.6,Spain,Castilla y León,ESP
+ES41,2020-01-01,12.1,Spain,Castilla y León,ESP
+ES41,2021-01-01,11.6,Spain,Castilla y León,ESP
+ES41,2022-01-01,9.9,Spain,Castilla y León,ESP
+ES41,2023-01-01,9.7,Spain,Castilla y León,ESP
+ES42,2012-01-01,28.6,Spain,Castilla-La Mancha,ESP
+ES42,2013-01-01,30.0,Spain,Castilla-La Mancha,ESP
+ES42,2014-01-01,29.0,Spain,Castilla-La Mancha,ESP
+ES42,2015-01-01,26.3,Spain,Castilla-La Mancha,ESP
+ES42,2016-01-01,23.5,Spain,Castilla-La Mancha,ESP
+ES42,2017-01-01,20.8,Spain,Castilla-La Mancha,ESP
+ES42,2018-01-01,18.2,Spain,Castilla-La Mancha,ESP
+ES42,2019-01-01,16.2,Spain,Castilla-La Mancha,ESP
+ES42,2020-01-01,17.7,Spain,Castilla-La Mancha,ESP
+ES42,2021-01-01,15.7,Spain,Castilla-La Mancha,ESP
+ES42,2022-01-01,14.6,Spain,Castilla-La Mancha,ESP
+ES42,2023-01-01,13.2,Spain,Castilla-La Mancha,ESP
+ES43,2012-01-01,33.1,Spain,Extremadura,ESP
+ES43,2013-01-01,33.9,Spain,Extremadura,ESP
+ES43,2014-01-01,29.8,Spain,Extremadura,ESP
+ES43,2015-01-01,29.1,Spain,Extremadura,ESP
+ES43,2016-01-01,27.5,Spain,Extremadura,ESP
+ES43,2017-01-01,26.2,Spain,Extremadura,ESP
+ES43,2018-01-01,23.6,Spain,Extremadura,ESP
+ES43,2019-01-01,21.5,Spain,Extremadura,ESP
+ES43,2020-01-01,21.8,Spain,Extremadura,ESP
+ES43,2021-01-01,20.2,Spain,Extremadura,ESP
+ES43,2022-01-01,17.3,Spain,Extremadura,ESP
+ES43,2023-01-01,17.4,Spain,Extremadura,ESP
+ES51,2012-01-01,22.5,Spain,Cataluña,ESP
+ES51,2013-01-01,23.1,Spain,Cataluña,ESP
+ES51,2014-01-01,20.3,Spain,Cataluña,ESP
+ES51,2015-01-01,18.6,Spain,Cataluña,ESP
+ES51,2016-01-01,15.7,Spain,Cataluña,ESP
+ES51,2017-01-01,13.4,Spain,Cataluña,ESP
+ES51,2018-01-01,11.5,Spain,Cataluña,ESP
+ES51,2019-01-01,11.0,Spain,Cataluña,ESP
+ES51,2020-01-01,12.6,Spain,Cataluña,ESP
+ES51,2021-01-01,11.7,Spain,Cataluña,ESP
+ES51,2022-01-01,10.0,Spain,Cataluña,ESP
+ES51,2023-01-01,9.3,Spain,Cataluña,ESP
+ES52,2012-01-01,27.2,Spain,Comunitat Valenciana,ESP
+ES52,2013-01-01,28.0,Spain,Comunitat Valenciana,ESP
+ES52,2014-01-01,25.8,Spain,Comunitat Valenciana,ESP
+ES52,2015-01-01,22.8,Spain,Comunitat Valenciana,ESP
+ES52,2016-01-01,20.6,Spain,Comunitat Valenciana,ESP
+ES52,2017-01-01,18.2,Spain,Comunitat Valenciana,ESP
+ES52,2018-01-01,15.6,Spain,Comunitat Valenciana,ESP
+ES52,2019-01-01,14.1,Spain,Comunitat Valenciana,ESP
+ES52,2020-01-01,16.2,Spain,Comunitat Valenciana,ESP
+ES52,2021-01-01,16.1,Spain,Comunitat Valenciana,ESP
+ES52,2022-01-01,13.3,Spain,Comunitat Valenciana,ESP
+ES52,2023-01-01,12.8,Spain,Comunitat Valenciana,ESP
+ES53,2012-01-01,23.2,Spain,Illes Balears,ESP
+ES53,2013-01-01,22.3,Spain,Illes Balears,ESP
+ES53,2014-01-01,20.0,Spain,Illes Balears,ESP
+ES53,2015-01-01,17.3,Spain,Illes Balears,ESP
+ES53,2016-01-01,13.9,Spain,Illes Balears,ESP
+ES53,2017-01-01,12.4,Spain,Illes Balears,ESP
+ES53,2018-01-01,11.5,Spain,Illes Balears,ESP
+ES53,2019-01-01,11.7,Spain,Illes Balears,ESP
+ES53,2020-01-01,16.1,Spain,Illes Balears,ESP
+ES53,2021-01-01,14.3,Spain,Illes Balears,ESP
+ES53,2022-01-01,10.6,Spain,Illes Balears,ESP
+ES53,2023-01-01,10.3,Spain,Illes Balears,ESP
+ES61,2012-01-01,34.4,Spain,Andalucía,ESP
+ES61,2013-01-01,36.2,Spain,Andalucía,ESP
+ES61,2014-01-01,34.8,Spain,Andalucía,ESP
+ES61,2015-01-01,31.5,Spain,Andalucía,ESP
+ES61,2016-01-01,28.9,Spain,Andalucía,ESP
+ES61,2017-01-01,25.5,Spain,Andalucía,ESP
+ES61,2018-01-01,23.0,Spain,Andalucía,ESP
+ES61,2019-01-01,21.2,Spain,Andalucía,ESP
+ES61,2020-01-01,22.3,Spain,Andalucía,ESP
+ES61,2021-01-01,21.9,Spain,Andalucía,ESP
+ES61,2022-01-01,19.1,Spain,Andalucía,ESP
+ES61,2023-01-01,18.2,Spain,Andalucía,ESP
+ES62,2012-01-01,27.6,Spain,Región de Murcia,ESP
+ES62,2013-01-01,29.0,Spain,Región de Murcia,ESP
+ES62,2014-01-01,26.6,Spain,Región de Murcia,ESP
+ES62,2015-01-01,24.6,Spain,Región de Murcia,ESP
+ES62,2016-01-01,19.8,Spain,Región de Murcia,ESP
+ES62,2017-01-01,18.0,Spain,Región de Murcia,ESP
+ES62,2018-01-01,16.8,Spain,Región de Murcia,ESP
+ES62,2019-01-01,14.7,Spain,Región de Murcia,ESP
+ES62,2020-01-01,16.2,Spain,Región de Murcia,ESP
+ES62,2021-01-01,14.7,Spain,Región de Murcia,ESP
+ES62,2022-01-01,13.6,Spain,Región de Murcia,ESP
+ES62,2023-01-01,12.8,Spain,Región de Murcia,ESP
+ES63,2012-01-01,37.0,Spain,Ciudad de Ceuta,ESP
+ES63,2013-01-01,34.8,Spain,Ciudad de Ceuta,ESP
+ES63,2014-01-01,31.9,Spain,Ciudad de Ceuta,ESP
+ES63,2015-01-01,27.6,Spain,Ciudad de Ceuta,ESP
+ES63,2016-01-01,24.9,Spain,Ciudad de Ceuta,ESP
+ES63,2017-01-01,22.4,Spain,Ciudad de Ceuta,ESP
+ES63,2018-01-01,29.0,Spain,Ciudad de Ceuta,ESP
+ES63,2019-01-01,25.8,Spain,Ciudad de Ceuta,ESP
+ES63,2020-01-01,24.5,Spain,Ciudad de Ceuta,ESP
+ES63,2021-01-01,30.8,Spain,Ciudad de Ceuta,ESP
+ES63,2022-01-01,29.9,Spain,Ciudad de Ceuta,ESP
+ES63,2023-01-01,30.0,Spain,Ciudad de Ceuta,ESP
+ES64,2012-01-01,26.9,Spain,Ciudad de Melilla,ESP
+ES64,2013-01-01,32.5,Spain,Ciudad de Melilla,ESP
+ES64,2014-01-01,28.4,Spain,Ciudad de Melilla,ESP
+ES64,2015-01-01,34.0,Spain,Ciudad de Melilla,ESP
+ES64,2016-01-01,30.8,Spain,Ciudad de Melilla,ESP
+ES64,2017-01-01,27.6,Spain,Ciudad de Melilla,ESP
+ES64,2018-01-01,25.8,Spain,Ciudad de Melilla,ESP
+ES64,2019-01-01,27.0,Spain,Ciudad de Melilla,ESP
+ES64,2020-01-01,23.6,Spain,Ciudad de Melilla,ESP
+ES64,2021-01-01,25.4,Spain,Ciudad de Melilla,ESP
+ES64,2022-01-01,25.9,Spain,Ciudad de Melilla,ESP
+ES64,2023-01-01,26.6,Spain,Ciudad de Melilla,ESP
+ES70,2012-01-01,32.6,Spain,Canarias,ESP
+ES70,2013-01-01,33.7,Spain,Canarias,ESP
+ES70,2014-01-01,32.4,Spain,Canarias,ESP
+ES70,2015-01-01,29.1,Spain,Canarias,ESP
+ES70,2016-01-01,26.1,Spain,Canarias,ESP
+ES70,2017-01-01,23.5,Spain,Canarias,ESP
+ES70,2018-01-01,20.1,Spain,Canarias,ESP
+ES70,2019-01-01,20.5,Spain,Canarias,ESP
+ES70,2020-01-01,22.6,Spain,Canarias,ESP
+ES70,2021-01-01,23.5,Spain,Canarias,ESP
+ES70,2022-01-01,17.6,Spain,Canarias,ESP
+ES70,2023-01-01,16.1,Spain,Canarias,ESP
+FI19,2012-01-01,8.2,Finland,Länsi-Suomi,FIN
+FI19,2013-01-01,8.5,Finland,Länsi-Suomi,FIN
+FI19,2014-01-01,8.7,Finland,Länsi-Suomi,FIN
+FI19,2015-01-01,9.8,Finland,Länsi-Suomi,FIN
+FI19,2016-01-01,9.4,Finland,Länsi-Suomi,FIN
+FI19,2017-01-01,9.3,Finland,Länsi-Suomi,FIN
+FI19,2018-01-01,7.4,Finland,Länsi-Suomi,FIN
+FI19,2019-01-01,6.4,Finland,Länsi-Suomi,FIN
+FI19,2020-01-01,7.7,Finland,Länsi-Suomi,FIN
+FI19,2021-01-01,7.6,Finland,Länsi-Suomi,FIN
+FI19,2022-01-01,6.2,Finland,Länsi-Suomi,FIN
+FI19,2023-01-01,6.7,Finland,Länsi-Suomi,FIN
+FI1B,2012-01-01,6.3,Finland,Helsinki-Uusimaa,FIN
+FI1B,2013-01-01,6.7,Finland,Helsinki-Uusimaa,FIN
+FI1B,2014-01-01,7.3,Finland,Helsinki-Uusimaa,FIN
+FI1B,2015-01-01,8.0,Finland,Helsinki-Uusimaa,FIN
+FI1B,2016-01-01,7.4,Finland,Helsinki-Uusimaa,FIN
+FI1B,2017-01-01,7.7,Finland,Helsinki-Uusimaa,FIN
+FI1B,2018-01-01,6.9,Finland,Helsinki-Uusimaa,FIN
+FI1B,2019-01-01,6.4,Finland,Helsinki-Uusimaa,FIN
+FI1B,2020-01-01,7.2,Finland,Helsinki-Uusimaa,FIN
+FI1B,2021-01-01,7.7,Finland,Helsinki-Uusimaa,FIN
+FI1B,2022-01-01,6.7,Finland,Helsinki-Uusimaa,FIN
+FI1B,2023-01-01,7.6,Finland,Helsinki-Uusimaa,FIN
+FI1C,2012-01-01,7.5,Finland,Etelä-Suomi,FIN
+FI1C,2013-01-01,8.4,Finland,Etelä-Suomi,FIN
+FI1C,2014-01-01,9.4,Finland,Etelä-Suomi,FIN
+FI1C,2015-01-01,10.0,Finland,Etelä-Suomi,FIN
+FI1C,2016-01-01,9.1,Finland,Etelä-Suomi,FIN
+FI1C,2017-01-01,8.5,Finland,Etelä-Suomi,FIN
+FI1C,2018-01-01,7.4,Finland,Etelä-Suomi,FIN
+FI1C,2019-01-01,6.3,Finland,Etelä-Suomi,FIN
+FI1C,2020-01-01,7.7,Finland,Etelä-Suomi,FIN
+FI1C,2021-01-01,7.4,Finland,Etelä-Suomi,FIN
+FI1C,2022-01-01,7.5,Finland,Etelä-Suomi,FIN
+FI1C,2023-01-01,7.5,Finland,Etelä-Suomi,FIN
+FI1D,2012-01-01,9.5,Finland,Pohjois- ja Itä-Suomi,FIN
+FI1D,2013-01-01,9.9,Finland,Pohjois- ja Itä-Suomi,FIN
+FI1D,2014-01-01,10.0,Finland,Pohjois- ja Itä-Suomi,FIN
+FI1D,2015-01-01,10.4,Finland,Pohjois- ja Itä-Suomi,FIN
+FI1D,2016-01-01,10.2,Finland,Pohjois- ja Itä-Suomi,FIN
+FI1D,2017-01-01,9.6,Finland,Pohjois- ja Itä-Suomi,FIN
+FI1D,2018-01-01,8.1,Finland,Pohjois- ja Itä-Suomi,FIN
+FI1D,2019-01-01,7.8,Finland,Pohjois- ja Itä-Suomi,FIN
+FI1D,2020-01-01,8.8,Finland,Pohjois- ja Itä-Suomi,FIN
+FI1D,2021-01-01,7.7,Finland,Pohjois- ja Itä-Suomi,FIN
+FI1D,2022-01-01,6.7,Finland,Pohjois- ja Itä-Suomi,FIN
+FI1D,2023-01-01,6.8,Finland,Pohjois- ja Itä-Suomi,FIN
+FI20,2012-01-01,,Finland,Åland,FIN
+FI20,2013-01-01,,Finland,Åland,FIN
+FI20,2014-01-01,,Finland,Åland,FIN
+FI20,2015-01-01,,Finland,Åland,FIN
+FI20,2016-01-01,,Finland,Åland,FIN
+FI20,2017-01-01,,Finland,Åland,FIN
+FI20,2018-01-01,,Finland,Åland,FIN
+FI20,2019-01-01,,Finland,Åland,FIN
+FI20,2020-01-01,,Finland,Åland,FIN
+FI20,2021-01-01,,Finland,Åland,FIN
+FI20,2022-01-01,,Finland,Åland,FIN
+FI20,2023-01-01,,Finland,Åland,FIN
+FR10,2012-01-01,8.1,France,Ile de France,FRA
+FR10,2013-01-01,9.0,France,Ile de France,FRA
+FR10,2014-01-01,9.7,France,Ile de France,FRA
+FR10,2015-01-01,9.6,France,Ile de France,FRA
+FR10,2016-01-01,9.2,France,Ile de France,FRA
+FR10,2017-01-01,8.7,France,Ile de France,FRA
+FR10,2018-01-01,8.7,France,Ile de France,FRA
+FR10,2019-01-01,7.9,France,Ile de France,FRA
+FR10,2020-01-01,8.2,France,Ile de France,FRA
+FR10,2021-01-01,7.9,France,Ile de France,FRA
+FR10,2022-01-01,7.5,France,Ile de France,FRA
+FR10,2023-01-01,7.6,France,Ile de France,FRA
+FRB0,2012-01-01,10.8,France,Centre — Val de Loire,FRA
+FRB0,2013-01-01,10.6,France,Centre — Val de Loire,FRA
+FRB0,2014-01-01,9.5,France,Centre — Val de Loire,FRA
+FRB0,2015-01-01,10.7,France,Centre — Val de Loire,FRA
+FRB0,2016-01-01,9.9,France,Centre — Val de Loire,FRA
+FRB0,2017-01-01,8.5,France,Centre — Val de Loire,FRA
+FRB0,2018-01-01,8.3,France,Centre — Val de Loire,FRA
+FRB0,2019-01-01,8.2,France,Centre — Val de Loire,FRA
+FRB0,2020-01-01,8.9,France,Centre — Val de Loire,FRA
+FRB0,2021-01-01,7.2,France,Centre — Val de Loire,FRA
+FRB0,2022-01-01,6.4,France,Centre — Val de Loire,FRA
+FRB0,2023-01-01,5.7,France,Centre — Val de Loire,FRA
+FRC1,2012-01-01,8.8,France,Bourgogne,FRA
+FRC1,2013-01-01,10.6,France,Bourgogne,FRA
+FRC1,2014-01-01,10.7,France,Bourgogne,FRA
+FRC1,2015-01-01,8.8,France,Bourgogne,FRA
+FRC1,2016-01-01,9.6,France,Bourgogne,FRA
+FRC1,2017-01-01,10.7,France,Bourgogne,FRA
+FRC1,2018-01-01,8.9,France,Bourgogne,FRA
+FRC1,2019-01-01,7.5,France,Bourgogne,FRA
+FRC1,2020-01-01,7.8,France,Bourgogne,FRA
+FRC1,2021-01-01,7.1,France,Bourgogne,FRA
+FRC1,2022-01-01,6.6,France,Bourgogne,FRA
+FRC1,2023-01-01,7.3,France,Bourgogne,FRA
+FRC2,2012-01-01,9.0,France,Franche-Comté,FRA
+FRC2,2013-01-01,9.5,France,Franche-Comté,FRA
+FRC2,2014-01-01,9.9,France,Franche-Comté,FRA
+FRC2,2015-01-01,9.3,France,Franche-Comté,FRA
+FRC2,2016-01-01,8.1,France,Franche-Comté,FRA
+FRC2,2017-01-01,6.9,France,Franche-Comté,FRA
+FRC2,2018-01-01,7.2,France,Franche-Comté,FRA
+FRC2,2019-01-01,8.2,France,Franche-Comté,FRA
+FRC2,2020-01-01,5.6,France,Franche-Comté,FRA
+FRC2,2021-01-01,7.0,France,Franche-Comté,FRA
+FRC2,2022-01-01,5.9,France,Franche-Comté,FRA
+FRC2,2023-01-01,5.7,France,Franche-Comté,FRA
+FRD1,2012-01-01,8.8,France,Basse-Normandie,FRA
+FRD1,2013-01-01,9.1,France,Basse-Normandie,FRA
+FRD1,2014-01-01,8.2,France,Basse-Normandie,FRA
+FRD1,2015-01-01,8.2,France,Basse-Normandie,FRA
+FRD1,2016-01-01,8.6,France,Basse-Normandie,FRA
+FRD1,2017-01-01,8.1,France,Basse-Normandie,FRA
+FRD1,2018-01-01,8.0,France,Basse-Normandie,FRA
+FRD1,2019-01-01,8.2,France,Basse-Normandie,FRA
+FRD1,2020-01-01,6.1,France,Basse-Normandie,FRA
+FRD1,2021-01-01,6.4,France,Basse-Normandie,FRA
+FRD1,2022-01-01,6.2,France,Basse-Normandie,FRA
+FRD1,2023-01-01,5.9,France,Basse-Normandie,FRA
+FRD2,2012-01-01,10.9,France,Haute-Normandie,FRA
+FRD2,2013-01-01,11.6,France,Haute-Normandie,FRA
+FRD2,2014-01-01,11.9,France,Haute-Normandie,FRA
+FRD2,2015-01-01,10.6,France,Haute-Normandie,FRA
+FRD2,2016-01-01,11.5,France,Haute-Normandie,FRA
+FRD2,2017-01-01,11.3,France,Haute-Normandie,FRA
+FRD2,2018-01-01,9.3,France,Haute-Normandie,FRA
+FRD2,2019-01-01,9.9,France,Haute-Normandie,FRA
+FRD2,2020-01-01,8.3,France,Haute-Normandie,FRA
+FRD2,2021-01-01,7.6,France,Haute-Normandie,FRA
+FRD2,2022-01-01,7.9,France,Haute-Normandie,FRA
+FRD2,2023-01-01,6.9,France,Haute-Normandie,FRA
+FRE1,2012-01-01,13.1,France,Nord-Pas de Calais,FRA
+FRE1,2013-01-01,14.7,France,Nord-Pas de Calais,FRA
+FRE1,2014-01-01,13.8,France,Nord-Pas de Calais,FRA
+FRE1,2015-01-01,13.8,France,Nord-Pas de Calais,FRA
+FRE1,2016-01-01,13.3,France,Nord-Pas de Calais,FRA
+FRE1,2017-01-01,12.9,France,Nord-Pas de Calais,FRA
+FRE1,2018-01-01,12.2,France,Nord-Pas de Calais,FRA
+FRE1,2019-01-01,11.2,France,Nord-Pas de Calais,FRA
+FRE1,2020-01-01,9.1,France,Nord-Pas de Calais,FRA
+FRE1,2021-01-01,8.8,France,Nord-Pas de Calais,FRA
+FRE1,2022-01-01,8.7,France,Nord-Pas de Calais,FRA
+FRE1,2023-01-01,9.8,France,Nord-Pas de Calais,FRA
+FRE2,2012-01-01,10.6,France,Picardie,FRA
+FRE2,2013-01-01,11.5,France,Picardie,FRA
+FRE2,2014-01-01,11.6,France,Picardie,FRA
+FRE2,2015-01-01,10.8,France,Picardie,FRA
+FRE2,2016-01-01,11.5,France,Picardie,FRA
+FRE2,2017-01-01,10.0,France,Picardie,FRA
+FRE2,2018-01-01,9.2,France,Picardie,FRA
+FRE2,2019-01-01,9.0,France,Picardie,FRA
+FRE2,2020-01-01,8.6,France,Picardie,FRA
+FRE2,2021-01-01,9.7,France,Picardie,FRA
+FRE2,2022-01-01,9.1,France,Picardie,FRA
+FRE2,2023-01-01,9.1,France,Picardie,FRA
+FRF1,2012-01-01,8.5,France,Alsace,FRA
+FRF1,2013-01-01,9.7,France,Alsace,FRA
+FRF1,2014-01-01,10.1,France,Alsace,FRA
+FRF1,2015-01-01,9.1,France,Alsace,FRA
+FRF1,2016-01-01,10.9,France,Alsace,FRA
+FRF1,2017-01-01,9.0,France,Alsace,FRA
+FRF1,2018-01-01,8.0,France,Alsace,FRA
+FRF1,2019-01-01,7.3,France,Alsace,FRA
+FRF1,2020-01-01,7.3,France,Alsace,FRA
+FRF1,2021-01-01,7.1,France,Alsace,FRA
+FRF1,2022-01-01,6.7,France,Alsace,FRA
+FRF1,2023-01-01,5.9,France,Alsace,FRA
+FRF2,2012-01-01,10.7,France,Champagne-Ardenne,FRA
+FRF2,2013-01-01,10.5,France,Champagne-Ardenne,FRA
+FRF2,2014-01-01,11.4,France,Champagne-Ardenne,FRA
+FRF2,2015-01-01,13.0,France,Champagne-Ardenne,FRA
+FRF2,2016-01-01,11.3,France,Champagne-Ardenne,FRA
+FRF2,2017-01-01,9.6,France,Champagne-Ardenne,FRA
+FRF2,2018-01-01,8.8,France,Champagne-Ardenne,FRA
+FRF2,2019-01-01,9.1,France,Champagne-Ardenne,FRA
+FRF2,2020-01-01,11.7,France,Champagne-Ardenne,FRA
+FRF2,2021-01-01,8.9,France,Champagne-Ardenne,FRA
+FRF2,2022-01-01,8.0,France,Champagne-Ardenne,FRA
+FRF2,2023-01-01,7.1,France,Champagne-Ardenne,FRA
+FRF3,2012-01-01,11.7,France,Lorraine,FRA
+FRF3,2013-01-01,12.1,France,Lorraine,FRA
+FRF3,2014-01-01,11.8,France,Lorraine,FRA
+FRF3,2015-01-01,12.2,France,Lorraine,FRA
+FRF3,2016-01-01,11.7,France,Lorraine,FRA
+FRF3,2017-01-01,11.0,France,Lorraine,FRA
+FRF3,2018-01-01,9.8,France,Lorraine,FRA
+FRF3,2019-01-01,8.1,France,Lorraine,FRA
+FRF3,2020-01-01,8.7,France,Lorraine,FRA
+FRF3,2021-01-01,8.5,France,Lorraine,FRA
+FRF3,2022-01-01,6.9,France,Lorraine,FRA
+FRF3,2023-01-01,7.4,France,Lorraine,FRA
+FRG0,2012-01-01,8.4,France,Pays de la Loire,FRA
+FRG0,2013-01-01,8.8,France,Pays de la Loire,FRA
+FRG0,2014-01-01,8.6,France,Pays de la Loire,FRA
+FRG0,2015-01-01,9.1,France,Pays de la Loire,FRA
+FRG0,2016-01-01,8.9,France,Pays de la Loire,FRA
+FRG0,2017-01-01,7.1,France,Pays de la Loire,FRA
+FRG0,2018-01-01,7.8,France,Pays de la Loire,FRA
+FRG0,2019-01-01,7.6,France,Pays de la Loire,FRA
+FRG0,2020-01-01,6.9,France,Pays de la Loire,FRA
+FRG0,2021-01-01,6.0,France,Pays de la Loire,FRA
+FRG0,2022-01-01,6.1,France,Pays de la Loire,FRA
+FRG0,2023-01-01,6.1,France,Pays de la Loire,FRA
+FRH0,2012-01-01,8.0,France,Bretagne,FRA
+FRH0,2013-01-01,8.0,France,Bretagne,FRA
+FRH0,2014-01-01,7.4,France,Bretagne,FRA
+FRH0,2015-01-01,7.8,France,Bretagne,FRA
+FRH0,2016-01-01,8.6,France,Bretagne,FRA
+FRH0,2017-01-01,7.3,France,Bretagne,FRA
+FRH0,2018-01-01,6.8,France,Bretagne,FRA
+FRH0,2019-01-01,6.9,France,Bretagne,FRA
+FRH0,2020-01-01,6.7,France,Bretagne,FRA
+FRH0,2021-01-01,5.8,France,Bretagne,FRA
+FRH0,2022-01-01,5.9,France,Bretagne,FRA
+FRH0,2023-01-01,5.4,France,Bretagne,FRA
+FRI1,2012-01-01,9.4,France,Aquitaine,FRA
+FRI1,2013-01-01,8.9,France,Aquitaine,FRA
+FRI1,2014-01-01,9.1,France,Aquitaine,FRA
+FRI1,2015-01-01,9.7,France,Aquitaine,FRA
+FRI1,2016-01-01,10.0,France,Aquitaine,FRA
+FRI1,2017-01-01,10.1,France,Aquitaine,FRA
+FRI1,2018-01-01,9.3,France,Aquitaine,FRA
+FRI1,2019-01-01,9.1,France,Aquitaine,FRA
+FRI1,2020-01-01,7.3,France,Aquitaine,FRA
+FRI1,2021-01-01,7.4,France,Aquitaine,FRA
+FRI1,2022-01-01,6.9,France,Aquitaine,FRA
+FRI1,2023-01-01,7.2,France,Aquitaine,FRA
+FRI2,2012-01-01,6.7,France,Limousin,FRA
+FRI2,2013-01-01,6.9,France,Limousin,FRA
+FRI2,2014-01-01,9.3,France,Limousin,FRA
+FRI2,2015-01-01,8.9,France,Limousin,FRA
+FRI2,2016-01-01,7.1,France,Limousin,FRA
+FRI2,2017-01-01,6.3,France,Limousin,FRA
+FRI2,2018-01-01,7.0,France,Limousin,FRA
+FRI2,2019-01-01,7.0,France,Limousin,FRA
+FRI2,2020-01-01,7.2,France,Limousin,FRA
+FRI2,2021-01-01,6.2,France,Limousin,FRA
+FRI2,2022-01-01,6.8,France,Limousin,FRA
+FRI2,2023-01-01,6.3,France,Limousin,FRA
+FRI3,2012-01-01,8.3,France,Poitou-Charentes,FRA
+FRI3,2013-01-01,9.9,France,Poitou-Charentes,FRA
+FRI3,2014-01-01,10.9,France,Poitou-Charentes,FRA
+FRI3,2015-01-01,9.8,France,Poitou-Charentes,FRA
+FRI3,2016-01-01,9.0,France,Poitou-Charentes,FRA
+FRI3,2017-01-01,9.1,France,Poitou-Charentes,FRA
+FRI3,2018-01-01,8.7,France,Poitou-Charentes,FRA
+FRI3,2019-01-01,8.1,France,Poitou-Charentes,FRA
+FRI3,2020-01-01,8.6,France,Poitou-Charentes,FRA
+FRI3,2021-01-01,8.6,France,Poitou-Charentes,FRA
+FRI3,2022-01-01,7.1,France,Poitou-Charentes,FRA
+FRI3,2023-01-01,7.3,France,Poitou-Charentes,FRA
+FRJ1,2012-01-01,15.0,France,Languedoc-Roussillon,FRA
+FRJ1,2013-01-01,12.9,France,Languedoc-Roussillon,FRA
+FRJ1,2014-01-01,12.3,France,Languedoc-Roussillon,FRA
+FRJ1,2015-01-01,13.0,France,Languedoc-Roussillon,FRA
+FRJ1,2016-01-01,11.9,France,Languedoc-Roussillon,FRA
+FRJ1,2017-01-01,12.3,France,Languedoc-Roussillon,FRA
+FRJ1,2018-01-01,11.7,France,Languedoc-Roussillon,FRA
+FRJ1,2019-01-01,10.3,France,Languedoc-Roussillon,FRA
+FRJ1,2020-01-01,9.2,France,Languedoc-Roussillon,FRA
+FRJ1,2021-01-01,11.4,France,Languedoc-Roussillon,FRA
+FRJ1,2022-01-01,9.0,France,Languedoc-Roussillon,FRA
+FRJ1,2023-01-01,9.2,France,Languedoc-Roussillon,FRA
+FRJ2,2012-01-01,8.3,France,Midi-Pyrénées,FRA
+FRJ2,2013-01-01,8.6,France,Midi-Pyrénées,FRA
+FRJ2,2014-01-01,9.1,France,Midi-Pyrénées,FRA
+FRJ2,2015-01-01,8.6,France,Midi-Pyrénées,FRA
+FRJ2,2016-01-01,8.5,France,Midi-Pyrénées,FRA
+FRJ2,2017-01-01,7.2,France,Midi-Pyrénées,FRA
+FRJ2,2018-01-01,7.7,France,Midi-Pyrénées,FRA
+FRJ2,2019-01-01,6.7,France,Midi-Pyrénées,FRA
+FRJ2,2020-01-01,5.6,France,Midi-Pyrénées,FRA
+FRJ2,2021-01-01,6.1,France,Midi-Pyrénées,FRA
+FRJ2,2022-01-01,6.2,France,Midi-Pyrénées,FRA
+FRJ2,2023-01-01,6.1,France,Midi-Pyrénées,FRA
+FRK1,2012-01-01,10.0,France,Auvergne,FRA
+FRK1,2013-01-01,8.9,France,Auvergne,FRA
+FRK1,2014-01-01,7.3,France,Auvergne,FRA
+FRK1,2015-01-01,8.6,France,Auvergne,FRA
+FRK1,2016-01-01,7.2,France,Auvergne,FRA
+FRK1,2017-01-01,8.4,France,Auvergne,FRA
+FRK1,2018-01-01,7.7,France,Auvergne,FRA
+FRK1,2019-01-01,5.6,France,Auvergne,FRA
+FRK1,2020-01-01,5.5,France,Auvergne,FRA
+FRK1,2021-01-01,7.0,France,Auvergne,FRA
+FRK1,2022-01-01,7.1,France,Auvergne,FRA
+FRK1,2023-01-01,7.1,France,Auvergne,FRA
+FRK2,2012-01-01,8.0,France,Rhône-Alpes,FRA
+FRK2,2013-01-01,8.4,France,Rhône-Alpes,FRA
+FRK2,2014-01-01,8.8,France,Rhône-Alpes,FRA
+FRK2,2015-01-01,9.1,France,Rhône-Alpes,FRA
+FRK2,2016-01-01,8.1,France,Rhône-Alpes,FRA
+FRK2,2017-01-01,7.2,France,Rhône-Alpes,FRA
+FRK2,2018-01-01,7.3,France,Rhône-Alpes,FRA
+FRK2,2019-01-01,7.0,France,Rhône-Alpes,FRA
+FRK2,2020-01-01,7.5,France,Rhône-Alpes,FRA
+FRK2,2021-01-01,7.2,France,Rhône-Alpes,FRA
+FRK2,2022-01-01,6.6,France,Rhône-Alpes,FRA
+FRK2,2023-01-01,6.5,France,Rhône-Alpes,FRA
+FRL0,2012-01-01,9.6,France,Provence-Alpes-Côte d’Azur,FRA
+FRL0,2013-01-01,10.9,France,Provence-Alpes-Côte d’Azur,FRA
+FRL0,2014-01-01,10.0,France,Provence-Alpes-Côte d’Azur,FRA
+FRL0,2015-01-01,11.0,France,Provence-Alpes-Côte d’Azur,FRA
+FRL0,2016-01-01,10.5,France,Provence-Alpes-Côte d’Azur,FRA
+FRL0,2017-01-01,10.3,France,Provence-Alpes-Côte d’Azur,FRA
+FRL0,2018-01-01,9.3,France,Provence-Alpes-Côte d’Azur,FRA
+FRL0,2019-01-01,8.8,France,Provence-Alpes-Côte d’Azur,FRA
+FRL0,2020-01-01,8.0,France,Provence-Alpes-Côte d’Azur,FRA
+FRL0,2021-01-01,8.1,France,Provence-Alpes-Côte d’Azur,FRA
+FRL0,2022-01-01,6.7,France,Provence-Alpes-Côte d’Azur,FRA
+FRL0,2023-01-01,7.1,France,Provence-Alpes-Côte d’Azur,FRA
+FRM0,2012-01-01,7.9,France,Corse,FRA
+FRM0,2013-01-01,12.3,France,Corse,FRA
+FRM0,2014-01-01,9.8,France,Corse,FRA
+FRM0,2015-01-01,11.9,France,Corse,FRA
+FRM0,2016-01-01,8.3,France,Corse,FRA
+FRM0,2017-01-01,9.8,France,Corse,FRA
+FRM0,2018-01-01,5.0,France,Corse,FRA
+FRM0,2019-01-01,6.3,France,Corse,FRA
+FRM0,2020-01-01,8.1,France,Corse,FRA
+FRM0,2021-01-01,9.1,France,Corse,FRA
+FRM0,2022-01-01,6.0,France,Corse,FRA
+FRM0,2023-01-01,6.9,France,Corse,FRA
+FRY1,2012-01-01,23.0,France,Guadeloupe,FRA
+FRY1,2013-01-01,26.2,France,Guadeloupe,FRA
+FRY1,2014-01-01,23.9,France,Guadeloupe,FRA
+FRY1,2015-01-01,23.6,France,Guadeloupe,FRA
+FRY1,2016-01-01,23.8,France,Guadeloupe,FRA
+FRY1,2017-01-01,22.4,France,Guadeloupe,FRA
+FRY1,2018-01-01,22.6,France,Guadeloupe,FRA
+FRY1,2019-01-01,20.6,France,Guadeloupe,FRA
+FRY1,2020-01-01,17.4,France,Guadeloupe,FRA
+FRY1,2021-01-01,17.1,France,Guadeloupe,FRA
+FRY1,2022-01-01,18.6,France,Guadeloupe,FRA
+FRY1,2023-01-01,18.6,France,Guadeloupe,FRA
+FRY2,2012-01-01,21.0,France,Martinique,FRA
+FRY2,2013-01-01,22.8,France,Martinique,FRA
+FRY2,2014-01-01,19.4,France,Martinique,FRA
+FRY2,2015-01-01,17.9,France,Martinique,FRA
+FRY2,2016-01-01,17.8,France,Martinique,FRA
+FRY2,2017-01-01,17.8,France,Martinique,FRA
+FRY2,2018-01-01,17.3,France,Martinique,FRA
+FRY2,2019-01-01,14.8,France,Martinique,FRA
+FRY2,2020-01-01,12.4,France,Martinique,FRA
+FRY2,2021-01-01,12.8,France,Martinique,FRA
+FRY2,2022-01-01,12.5,France,Martinique,FRA
+FRY2,2023-01-01,10.8,France,Martinique,FRA
+FRY3,2012-01-01,22.3,France,Guyane,FRA
+FRY3,2013-01-01,21.3,France,Guyane,FRA
+FRY3,2014-01-01,22.2,France,Guyane,FRA
+FRY3,2015-01-01,21.9,France,Guyane,FRA
+FRY3,2016-01-01,23.0,France,Guyane,FRA
+FRY3,2017-01-01,21.9,France,Guyane,FRA
+FRY3,2018-01-01,19.0,France,Guyane,FRA
+FRY3,2019-01-01,19.3,France,Guyane,FRA
+FRY3,2020-01-01,16.1,France,Guyane,FRA
+FRY3,2021-01-01,14.6,France,Guyane,FRA
+FRY3,2022-01-01,13.1,France,Guyane,FRA
+FRY3,2023-01-01,14.0,France,Guyane,FRA
+FRY4,2012-01-01,28.6,France,La Réunion,FRA
+FRY4,2013-01-01,28.9,France,La Réunion,FRA
+FRY4,2014-01-01,26.4,France,La Réunion,FRA
+FRY4,2015-01-01,23.5,France,La Réunion,FRA
+FRY4,2016-01-01,22.3,France,La Réunion,FRA
+FRY4,2017-01-01,22.7,France,La Réunion,FRA
+FRY4,2018-01-01,24.0,France,La Réunion,FRA
+FRY4,2019-01-01,21.3,France,La Réunion,FRA
+FRY4,2020-01-01,17.3,France,La Réunion,FRA
+FRY4,2021-01-01,17.9,France,La Réunion,FRA
+FRY4,2022-01-01,18.1,France,La Réunion,FRA
+FRY4,2023-01-01,19.0,France,La Réunion,FRA
+FRY5,2013-01-01,19.4,France,Mayotte,FRA
+FRY5,2014-01-01,20.3,France,Mayotte,FRA
+FRY5,2015-01-01,25.3,France,Mayotte,FRA
+FRY5,2016-01-01,29.7,France,Mayotte,FRA
+FRY5,2017-01-01,29.6,France,Mayotte,FRA
+FRY5,2018-01-01,35.1,France,Mayotte,FRA
+FRY5,2019-01-01,30.1,France,Mayotte,FRA
+FRY5,2020-01-01,27.8,France,Mayotte,FRA
+HR02,2016-01-01,17.2,Croatia,Panonska Hrvatska,HRV
+HR02,2017-01-01,16.1,Croatia,Panonska Hrvatska,HRV
+HR02,2018-01-01,12.1,Croatia,Panonska Hrvatska,HRV
+HR02,2019-01-01,9.6,Croatia,Panonska Hrvatska,HRV
+HR02,2020-01-01,12.1,Croatia,Panonska Hrvatska,HRV
+HR02,2021-01-01,9.7,Croatia,Panonska Hrvatska,HRV
+HR02,2022-01-01,10.9,Croatia,Panonska Hrvatska,HRV
+HR02,2023-01-01,10.1,Croatia,Panonska Hrvatska,HRV
+HR03,2012-01-01,14.8,Croatia,Jadranska Hrvatska,HRV
+HR03,2013-01-01,15.0,Croatia,Jadranska Hrvatska,HRV
+HR03,2014-01-01,17.2,Croatia,Jadranska Hrvatska,HRV
+HR03,2015-01-01,16.8,Croatia,Jadranska Hrvatska,HRV
+HR03,2016-01-01,14.2,Croatia,Jadranska Hrvatska,HRV
+HR03,2017-01-01,10.9,Croatia,Jadranska Hrvatska,HRV
+HR03,2018-01-01,9.4,Croatia,Jadranska Hrvatska,HRV
+HR03,2019-01-01,6.4,Croatia,Jadranska Hrvatska,HRV
+HR03,2020-01-01,7.5,Croatia,Jadranska Hrvatska,HRV
+HR03,2021-01-01,9.4,Croatia,Jadranska Hrvatska,HRV
+HR03,2022-01-01,6.8,Croatia,Jadranska Hrvatska,HRV
+HR03,2023-01-01,5.9,Croatia,Jadranska Hrvatska,HRV
+HR04,2012-01-01,16.5,Croatia,Kontinentalna Hrvatska (),HRV
+HR04,2013-01-01,18.3,Croatia,Kontinentalna Hrvatska (),HRV
+HR04,2014-01-01,17.3,Croatia,Kontinentalna Hrvatska (),HRV
+HR04,2015-01-01,15.9,Croatia,Kontinentalna Hrvatska (),HRV
+HR05,2016-01-01,9.6,Croatia,Grad Zagreb,HRV
+HR05,2017-01-01,8.0,Croatia,Grad Zagreb,HRV
+HR05,2018-01-01,5.3,Croatia,Grad Zagreb,HRV
+HR05,2019-01-01,5.4,Croatia,Grad Zagreb,HRV
+HR05,2020-01-01,4.9,Croatia,Grad Zagreb,HRV
+HR05,2021-01-01,5.4,Croatia,Grad Zagreb,HRV
+HR05,2022-01-01,5.6,Croatia,Grad Zagreb,HRV
+HR05,2023-01-01,3.8,Croatia,Grad Zagreb,HRV
+HR06,2016-01-01,9.8,Croatia,Sjeverna Hrvatska,HRV
+HR06,2017-01-01,9.1,Croatia,Sjeverna Hrvatska,HRV
+HR06,2018-01-01,5.8,Croatia,Sjeverna Hrvatska,HRV
+HR06,2019-01-01,4.8,Croatia,Sjeverna Hrvatska,HRV
+HR06,2020-01-01,5.0,Croatia,Sjeverna Hrvatska,HRV
+HR06,2021-01-01,4.6,Croatia,Sjeverna Hrvatska,HRV
+HR06,2022-01-01,4.2,Croatia,Sjeverna Hrvatska,HRV
+HR06,2023-01-01,4.4,Croatia,Sjeverna Hrvatska,HRV
+HU10,2012-01-01,9.5,Hungary,Közép-Magyarország (),HUN
+HU11,2013-01-01,8.5,Hungary,Budapest,HUN
+HU11,2014-01-01,6.0,Hungary,Budapest,HUN
+HU11,2015-01-01,5.1,Hungary,Budapest,HUN
+HU11,2016-01-01,4.3,Hungary,Budapest,HUN
+HU11,2017-01-01,2.9,Hungary,Budapest,HUN
+HU11,2018-01-01,3.1,Hungary,Budapest,HUN
+HU11,2019-01-01,2.5,Hungary,Budapest,HUN
+HU11,2020-01-01,3.3,Hungary,Budapest,HUN
+HU11,2021-01-01,2.9,Hungary,Budapest,HUN
+HU11,2022-01-01,2.3,Hungary,Budapest,HUN
+HU11,2023-01-01,2.2,Hungary,Budapest,HUN
+HU12,2013-01-01,9.1,Hungary,Pest,HUN
+HU12,2014-01-01,6.5,Hungary,Pest,HUN
+HU12,2015-01-01,5.7,Hungary,Pest,HUN
+HU12,2016-01-01,3.1,Hungary,Pest,HUN
+HU12,2017-01-01,2.6,Hungary,Pest,HUN
+HU12,2018-01-01,2.2,Hungary,Pest,HUN
+HU12,2019-01-01,2.4,Hungary,Pest,HUN
+HU12,2020-01-01,3.3,Hungary,Pest,HUN
+HU12,2021-01-01,3.0,Hungary,Pest,HUN
+HU12,2022-01-01,2.2,Hungary,Pest,HUN
+HU12,2023-01-01,3.2,Hungary,Pest,HUN
+HU21,2012-01-01,9.9,Hungary,Közép-Dunántúl,HUN
+HU21,2013-01-01,8.7,Hungary,Közép-Dunántúl,HUN
+HU21,2014-01-01,5.6,Hungary,Közép-Dunántúl,HUN
+HU21,2015-01-01,4.4,Hungary,Közép-Dunántúl,HUN
+HU21,2016-01-01,3.0,Hungary,Közép-Dunántúl,HUN
+HU21,2017-01-01,2.2,Hungary,Közép-Dunántúl,HUN
+HU21,2018-01-01,2.2,Hungary,Közép-Dunántúl,HUN
+HU21,2019-01-01,2.0,Hungary,Közép-Dunántúl,HUN
+HU21,2020-01-01,2.8,Hungary,Közép-Dunántúl,HUN
+HU21,2021-01-01,2.1,Hungary,Közép-Dunántúl,HUN
+HU21,2022-01-01,1.7,Hungary,Közép-Dunántúl,HUN
+HU21,2023-01-01,2.1,Hungary,Közép-Dunántúl,HUN
+HU22,2012-01-01,7.5,Hungary,Nyugat-Dunántúl,HUN
+HU22,2013-01-01,7.7,Hungary,Nyugat-Dunántúl,HUN
+HU22,2014-01-01,4.6,Hungary,Nyugat-Dunántúl,HUN
+HU22,2015-01-01,3.8,Hungary,Nyugat-Dunántúl,HUN
+HU22,2016-01-01,2.7,Hungary,Nyugat-Dunántúl,HUN
+HU22,2017-01-01,2.4,Hungary,Nyugat-Dunántúl,HUN
+HU22,2018-01-01,2.0,Hungary,Nyugat-Dunántúl,HUN
+HU22,2019-01-01,1.8,Hungary,Nyugat-Dunántúl,HUN
+HU22,2020-01-01,2.4,Hungary,Nyugat-Dunántúl,HUN
+HU22,2021-01-01,2.2,Hungary,Nyugat-Dunántúl,HUN
+HU22,2022-01-01,2.4,Hungary,Nyugat-Dunántúl,HUN
+HU22,2023-01-01,2.7,Hungary,Nyugat-Dunántúl,HUN
+HU23,2012-01-01,12.1,Hungary,Dél-Dunántúl,HUN
+HU23,2013-01-01,9.3,Hungary,Dél-Dunántúl,HUN
+HU23,2014-01-01,7.8,Hungary,Dél-Dunántúl,HUN
+HU23,2015-01-01,8.1,Hungary,Dél-Dunántúl,HUN
+HU23,2016-01-01,6.2,Hungary,Dél-Dunántúl,HUN
+HU23,2017-01-01,6.3,Hungary,Dél-Dunántúl,HUN
+HU23,2018-01-01,5.6,Hungary,Dél-Dunántúl,HUN
+HU23,2019-01-01,4.8,Hungary,Dél-Dunántúl,HUN
+HU23,2020-01-01,5.3,Hungary,Dél-Dunántúl,HUN
+HU23,2021-01-01,4.8,Hungary,Dél-Dunántúl,HUN
+HU23,2022-01-01,4.7,Hungary,Dél-Dunántúl,HUN
+HU23,2023-01-01,6.2,Hungary,Dél-Dunántúl,HUN
+HU31,2012-01-01,16.1,Hungary,Észak-Magyarország,HUN
+HU31,2013-01-01,12.6,Hungary,Észak-Magyarország,HUN
+HU31,2014-01-01,10.4,Hungary,Észak-Magyarország,HUN
+HU31,2015-01-01,8.7,Hungary,Észak-Magyarország,HUN
+HU31,2016-01-01,6.3,Hungary,Észak-Magyarország,HUN
+HU31,2017-01-01,5.8,Hungary,Észak-Magyarország,HUN
+HU31,2018-01-01,4.7,Hungary,Észak-Magyarország,HUN
+HU31,2019-01-01,4.5,Hungary,Észak-Magyarország,HUN
+HU31,2020-01-01,5.0,Hungary,Észak-Magyarország,HUN
+HU31,2021-01-01,6.2,Hungary,Észak-Magyarország,HUN
+HU31,2022-01-01,6.2,Hungary,Észak-Magyarország,HUN
+HU31,2023-01-01,6.4,Hungary,Észak-Magyarország,HUN
+HU32,2012-01-01,13.9,Hungary,Észak-Alföld,HUN
+HU32,2013-01-01,14.2,Hungary,Észak-Alföld,HUN
+HU32,2014-01-01,11.8,Hungary,Észak-Alföld,HUN
+HU32,2015-01-01,10.9,Hungary,Észak-Alföld,HUN
+HU32,2016-01-01,9.3,Hungary,Észak-Alföld,HUN
+HU32,2017-01-01,7.4,Hungary,Észak-Alföld,HUN
+HU32,2018-01-01,6.6,Hungary,Észak-Alföld,HUN
+HU32,2019-01-01,6.3,Hungary,Észak-Alföld,HUN
+HU32,2020-01-01,7.3,Hungary,Észak-Alföld,HUN
+HU32,2021-01-01,7.1,Hungary,Észak-Alföld,HUN
+HU32,2022-01-01,6.3,Hungary,Észak-Alföld,HUN
+HU32,2023-01-01,6.7,Hungary,Észak-Alföld,HUN
+HU33,2012-01-01,10.3,Hungary,Dél-Alföld,HUN
+HU33,2013-01-01,11.0,Hungary,Dél-Alföld,HUN
+HU33,2014-01-01,9.0,Hungary,Dél-Alföld,HUN
+HU33,2015-01-01,7.9,Hungary,Dél-Alföld,HUN
+HU33,2016-01-01,5.6,Hungary,Dél-Alföld,HUN
+HU33,2017-01-01,4.1,Hungary,Dél-Alföld,HUN
+HU33,2018-01-01,3.3,Hungary,Dél-Alföld,HUN
+HU33,2019-01-01,3.5,Hungary,Dél-Alföld,HUN
+HU33,2020-01-01,4.7,Hungary,Dél-Alföld,HUN
+HU33,2021-01-01,4.5,Hungary,Dél-Alföld,HUN
+HU33,2022-01-01,4.0,Hungary,Dél-Alföld,HUN
+HU33,2023-01-01,4.7,Hungary,Dél-Alföld,HUN
+IE04,2012-01-01,15.7,Ireland,Northern and Western,IRL
+IE04,2013-01-01,13.1,Ireland,Northern and Western,IRL
+IE04,2014-01-01,11.5,Ireland,Northern and Western,IRL
+IE04,2015-01-01,10.0,Ireland,Northern and Western,IRL
+IE04,2016-01-01,8.5,Ireland,Northern and Western,IRL
+IE04,2017-01-01,6.2,Ireland,Northern and Western,IRL
+IE04,2018-01-01,5.6,Ireland,Northern and Western,IRL
+IE04,2019-01-01,4.7,Ireland,Northern and Western,IRL
+IE04,2020-01-01,4.9,Ireland,Northern and Western,IRL
+IE04,2021-01-01,5.0,Ireland,Northern and Western,IRL
+IE04,2022-01-01,4.0,Ireland,Northern and Western,IRL
+IE04,2023-01-01,3.8,Ireland,Northern and Western,IRL
+IE05,2012-01-01,16.6,Ireland,Southern,IRL
+IE05,2013-01-01,14.3,Ireland,Southern,IRL
+IE05,2014-01-01,12.6,Ireland,Southern,IRL
+IE05,2015-01-01,10.6,Ireland,Southern,IRL
+IE05,2016-01-01,8.6,Ireland,Southern,IRL
+IE05,2017-01-01,7.0,Ireland,Southern,IRL
+IE05,2018-01-01,6.1,Ireland,Southern,IRL
+IE05,2019-01-01,5.5,Ireland,Southern,IRL
+IE05,2020-01-01,5.7,Ireland,Southern,IRL
+IE05,2021-01-01,6.4,Ireland,Southern,IRL
+IE05,2022-01-01,4.2,Ireland,Southern,IRL
+IE05,2023-01-01,4.2,Ireland,Southern,IRL
+IE06,2012-01-01,14.6,Ireland,Eastern and Midland,IRL
+IE06,2013-01-01,13.6,Ireland,Eastern and Midland,IRL
+IE06,2014-01-01,11.5,Ireland,Eastern and Midland,IRL
+IE06,2015-01-01,9.4,Ireland,Eastern and Midland,IRL
+IE06,2016-01-01,8.2,Ireland,Eastern and Midland,IRL
+IE06,2017-01-01,6.7,Ireland,Eastern and Midland,IRL
+IE06,2018-01-01,5.6,Ireland,Eastern and Midland,IRL
+IE06,2019-01-01,4.7,Ireland,Eastern and Midland,IRL
+IE06,2020-01-01,5.8,Ireland,Eastern and Midland,IRL
+IE06,2021-01-01,6.5,Ireland,Eastern and Midland,IRL
+IE06,2022-01-01,4.7,Ireland,Eastern and Midland,IRL
+IE06,2023-01-01,4.5,Ireland,Eastern and Midland,IRL
+IS00,2012-01-01,6.0,Iceland,Ísland,ISL
+IS00,2013-01-01,5.4,Iceland,Ísland,ISL
+IS00,2014-01-01,4.9,Iceland,Ísland,ISL
+IS00,2015-01-01,4.0,Iceland,Ísland,ISL
+IS00,2016-01-01,3.0,Iceland,Ísland,ISL
+IS00,2017-01-01,2.7,Iceland,Ísland,ISL
+IS00,2018-01-01,2.7,Iceland,Ísland,ISL
+IS00,2019-01-01,3.5,Iceland,Ísland,ISL
+IS00,2020-01-01,5.5,Iceland,Ísland,ISL
+IS00,2021-01-01,6.0,Iceland,Ísland,ISL
+IS00,2022-01-01,3.8,Iceland,Ísland,ISL
+IS00,2023-01-01,3.5,Iceland,Ísland,ISL
+ITC1,2012-01-01,9.2,Italy,Piemonte,ITA
+ITC1,2013-01-01,10.5,Italy,Piemonte,ITA
+ITC1,2014-01-01,11.3,Italy,Piemonte,ITA
+ITC1,2015-01-01,10.2,Italy,Piemonte,ITA
+ITC1,2016-01-01,9.3,Italy,Piemonte,ITA
+ITC1,2017-01-01,9.1,Italy,Piemonte,ITA
+ITC1,2018-01-01,8.2,Italy,Piemonte,ITA
+ITC1,2019-01-01,7.6,Italy,Piemonte,ITA
+ITC1,2020-01-01,7.5,Italy,Piemonte,ITA
+ITC1,2021-01-01,7.3,Italy,Piemonte,ITA
+ITC1,2022-01-01,6.5,Italy,Piemonte,ITA
+ITC1,2023-01-01,6.1,Italy,Piemonte,ITA
+ITC2,2012-01-01,7.1,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC2,2013-01-01,8.3,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC2,2014-01-01,8.9,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC2,2015-01-01,8.9,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC2,2016-01-01,8.7,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC2,2017-01-01,7.8,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC2,2018-01-01,7.0,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC2,2019-01-01,6.5,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC2,2020-01-01,5.8,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC2,2021-01-01,7.2,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC2,2022-01-01,5.3,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC2,2023-01-01,4.0,Italy,Valle d’Aosta/Vallée d’Aoste,ITA
+ITC3,2012-01-01,8.1,Italy,Liguria,ITA
+ITC3,2013-01-01,9.8,Italy,Liguria,ITA
+ITC3,2014-01-01,10.8,Italy,Liguria,ITA
+ITC3,2015-01-01,9.2,Italy,Liguria,ITA
+ITC3,2016-01-01,9.7,Italy,Liguria,ITA
+ITC3,2017-01-01,9.5,Italy,Liguria,ITA
+ITC3,2018-01-01,9.7,Italy,Liguria,ITA
+ITC3,2019-01-01,9.5,Italy,Liguria,ITA
+ITC3,2020-01-01,8.2,Italy,Liguria,ITA
+ITC3,2021-01-01,8.3,Italy,Liguria,ITA
+ITC3,2022-01-01,6.9,Italy,Liguria,ITA
+ITC3,2023-01-01,6.1,Italy,Liguria,ITA
+ITC4,2012-01-01,7.4,Italy,Lombardia,ITA
+ITC4,2013-01-01,8.0,Italy,Lombardia,ITA
+ITC4,2014-01-01,8.2,Italy,Lombardia,ITA
+ITC4,2015-01-01,7.9,Italy,Lombardia,ITA
+ITC4,2016-01-01,7.4,Italy,Lombardia,ITA
+ITC4,2017-01-01,6.4,Italy,Lombardia,ITA
+ITC4,2018-01-01,6.0,Italy,Lombardia,ITA
+ITC4,2019-01-01,5.6,Italy,Lombardia,ITA
+ITC4,2020-01-01,5.1,Italy,Lombardia,ITA
+ITC4,2021-01-01,5.9,Italy,Lombardia,ITA
+ITC4,2022-01-01,4.8,Italy,Lombardia,ITA
+ITC4,2023-01-01,4.0,Italy,Lombardia,ITA
+ITF1,2012-01-01,10.8,Italy,Abruzzo,ITA
+ITF1,2013-01-01,11.3,Italy,Abruzzo,ITA
+ITF1,2014-01-01,12.6,Italy,Abruzzo,ITA
+ITF1,2015-01-01,12.6,Italy,Abruzzo,ITA
+ITF1,2016-01-01,12.1,Italy,Abruzzo,ITA
+ITF1,2017-01-01,11.7,Italy,Abruzzo,ITA
+ITF1,2018-01-01,10.7,Italy,Abruzzo,ITA
+ITF1,2019-01-01,11.1,Italy,Abruzzo,ITA
+ITF1,2020-01-01,9.5,Italy,Abruzzo,ITA
+ITF1,2021-01-01,9.3,Italy,Abruzzo,ITA
+ITF1,2022-01-01,9.4,Italy,Abruzzo,ITA
+ITF1,2023-01-01,8.0,Italy,Abruzzo,ITA
+ITF2,2012-01-01,12.0,Italy,Molise,ITA
+ITF2,2013-01-01,15.6,Italy,Molise,ITA
+ITF2,2014-01-01,15.2,Italy,Molise,ITA
+ITF2,2015-01-01,14.3,Italy,Molise,ITA
+ITF2,2016-01-01,12.8,Italy,Molise,ITA
+ITF2,2017-01-01,14.6,Italy,Molise,ITA
+ITF2,2018-01-01,12.7,Italy,Molise,ITA
+ITF2,2019-01-01,12.0,Italy,Molise,ITA
+ITF2,2020-01-01,9.8,Italy,Molise,ITA
+ITF2,2021-01-01,10.9,Italy,Molise,ITA
+ITF2,2022-01-01,10.5,Italy,Molise,ITA
+ITF2,2023-01-01,9.6,Italy,Molise,ITA
+ITF3,2012-01-01,19.2,Italy,Campania,ITA
+ITF3,2013-01-01,21.5,Italy,Campania,ITA
+ITF3,2014-01-01,21.7,Italy,Campania,ITA
+ITF3,2015-01-01,19.8,Italy,Campania,ITA
+ITF3,2016-01-01,20.4,Italy,Campania,ITA
+ITF3,2017-01-01,20.9,Italy,Campania,ITA
+ITF3,2018-01-01,20.3,Italy,Campania,ITA
+ITF3,2019-01-01,20.0,Italy,Campania,ITA
+ITF3,2020-01-01,18.2,Italy,Campania,ITA
+ITF3,2021-01-01,19.3,Italy,Campania,ITA
+ITF3,2022-01-01,17.1,Italy,Campania,ITA
+ITF3,2023-01-01,17.4,Italy,Campania,ITA
+ITF4,2012-01-01,15.7,Italy,Puglia,ITA
+ITF4,2013-01-01,19.7,Italy,Puglia,ITA
+ITF4,2014-01-01,21.5,Italy,Puglia,ITA
+ITF4,2015-01-01,19.7,Italy,Puglia,ITA
+ITF4,2016-01-01,19.4,Italy,Puglia,ITA
+ITF4,2017-01-01,18.8,Italy,Puglia,ITA
+ITF4,2018-01-01,16.0,Italy,Puglia,ITA
+ITF4,2019-01-01,14.8,Italy,Puglia,ITA
+ITF4,2020-01-01,14.1,Italy,Puglia,ITA
+ITF4,2021-01-01,14.5,Italy,Puglia,ITA
+ITF4,2022-01-01,12.1,Italy,Puglia,ITA
+ITF4,2023-01-01,11.6,Italy,Puglia,ITA
+ITF5,2012-01-01,14.5,Italy,Basilicata,ITA
+ITF5,2013-01-01,15.2,Italy,Basilicata,ITA
+ITF5,2014-01-01,14.7,Italy,Basilicata,ITA
+ITF5,2015-01-01,13.7,Italy,Basilicata,ITA
+ITF5,2016-01-01,13.3,Italy,Basilicata,ITA
+ITF5,2017-01-01,12.8,Italy,Basilicata,ITA
+ITF5,2018-01-01,12.4,Italy,Basilicata,ITA
+ITF5,2019-01-01,10.8,Italy,Basilicata,ITA
+ITF5,2020-01-01,8.7,Italy,Basilicata,ITA
+ITF5,2021-01-01,8.2,Italy,Basilicata,ITA
+ITF5,2022-01-01,7.1,Italy,Basilicata,ITA
+ITF5,2023-01-01,7.5,Italy,Basilicata,ITA
+ITF6,2012-01-01,19.4,Italy,Calabria,ITA
+ITF6,2013-01-01,22.3,Italy,Calabria,ITA
+ITF6,2014-01-01,23.4,Italy,Calabria,ITA
+ITF6,2015-01-01,22.9,Italy,Calabria,ITA
+ITF6,2016-01-01,23.2,Italy,Calabria,ITA
+ITF6,2017-01-01,21.6,Italy,Calabria,ITA
+ITF6,2018-01-01,21.5,Italy,Calabria,ITA
+ITF6,2019-01-01,20.9,Italy,Calabria,ITA
+ITF6,2020-01-01,19.9,Italy,Calabria,ITA
+ITF6,2021-01-01,17.9,Italy,Calabria,ITA
+ITF6,2022-01-01,14.6,Italy,Calabria,ITA
+ITF6,2023-01-01,15.9,Italy,Calabria,ITA
+ITG1,2012-01-01,18.4,Italy,Sicilia,ITA
+ITG1,2013-01-01,21.0,Italy,Sicilia,ITA
+ITG1,2014-01-01,22.2,Italy,Sicilia,ITA
+ITG1,2015-01-01,21.4,Italy,Sicilia,ITA
+ITG1,2016-01-01,22.1,Italy,Sicilia,ITA
+ITG1,2017-01-01,21.5,Italy,Sicilia,ITA
+ITG1,2018-01-01,21.3,Italy,Sicilia,ITA
+ITG1,2019-01-01,19.9,Italy,Sicilia,ITA
+ITG1,2020-01-01,18.0,Italy,Sicilia,ITA
+ITG1,2021-01-01,18.7,Italy,Sicilia,ITA
+ITG1,2022-01-01,16.6,Italy,Sicilia,ITA
+ITG1,2023-01-01,15.8,Italy,Sicilia,ITA
+ITG2,2012-01-01,15.4,Italy,Sardegna,ITA
+ITG2,2013-01-01,17.5,Italy,Sardegna,ITA
+ITG2,2014-01-01,18.6,Italy,Sardegna,ITA
+ITG2,2015-01-01,17.4,Italy,Sardegna,ITA
+ITG2,2016-01-01,17.3,Italy,Sardegna,ITA
+ITG2,2017-01-01,17.0,Italy,Sardegna,ITA
+ITG2,2018-01-01,15.3,Italy,Sardegna,ITA
+ITG2,2019-01-01,14.7,Italy,Sardegna,ITA
+ITG2,2020-01-01,13.0,Italy,Sardegna,ITA
+ITG2,2021-01-01,13.5,Italy,Sardegna,ITA
+ITG2,2022-01-01,11.5,Italy,Sardegna,ITA
+ITG2,2023-01-01,10.0,Italy,Sardegna,ITA
+ITH1,2012-01-01,4.1,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH1,2013-01-01,4.4,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH1,2014-01-01,4.4,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH1,2015-01-01,3.8,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH1,2016-01-01,3.7,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH1,2017-01-01,3.1,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH1,2018-01-01,2.9,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH1,2019-01-01,2.9,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH1,2020-01-01,3.7,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH1,2021-01-01,3.8,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH1,2022-01-01,2.3,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH1,2023-01-01,2.0,Italy,Provincia Autonoma di Bolzano/Bozen,ITA
+ITH2,2012-01-01,6.1,Italy,Provincia Autonoma di Trento,ITA
+ITH2,2013-01-01,6.5,Italy,Provincia Autonoma di Trento,ITA
+ITH2,2014-01-01,6.9,Italy,Provincia Autonoma di Trento,ITA
+ITH2,2015-01-01,6.8,Italy,Provincia Autonoma di Trento,ITA
+ITH2,2016-01-01,6.8,Italy,Provincia Autonoma di Trento,ITA
+ITH2,2017-01-01,5.7,Italy,Provincia Autonoma di Trento,ITA
+ITH2,2018-01-01,4.8,Italy,Provincia Autonoma di Trento,ITA
+ITH2,2019-01-01,5.0,Italy,Provincia Autonoma di Trento,ITA
+ITH2,2020-01-01,5.3,Italy,Provincia Autonoma di Trento,ITA
+ITH2,2021-01-01,4.8,Italy,Provincia Autonoma di Trento,ITA
+ITH2,2022-01-01,3.8,Italy,Provincia Autonoma di Trento,ITA
+ITH2,2023-01-01,3.7,Italy,Provincia Autonoma di Trento,ITA
+ITH3,2012-01-01,6.4,Italy,Veneto,ITA
+ITH3,2013-01-01,7.6,Italy,Veneto,ITA
+ITH3,2014-01-01,7.5,Italy,Veneto,ITA
+ITH3,2015-01-01,7.1,Italy,Veneto,ITA
+ITH3,2016-01-01,6.8,Italy,Veneto,ITA
+ITH3,2017-01-01,6.3,Italy,Veneto,ITA
+ITH3,2018-01-01,6.4,Italy,Veneto,ITA
+ITH3,2019-01-01,5.6,Italy,Veneto,ITA
+ITH3,2020-01-01,5.8,Italy,Veneto,ITA
+ITH3,2021-01-01,5.3,Italy,Veneto,ITA
+ITH3,2022-01-01,4.2,Italy,Veneto,ITA
+ITH3,2023-01-01,4.2,Italy,Veneto,ITA
+ITH4,2012-01-01,6.7,Italy,Friuli-Venezia Giulia,ITA
+ITH4,2013-01-01,7.7,Italy,Friuli-Venezia Giulia,ITA
+ITH4,2014-01-01,8.0,Italy,Friuli-Venezia Giulia,ITA
+ITH4,2015-01-01,8.0,Italy,Friuli-Venezia Giulia,ITA
+ITH4,2016-01-01,7.5,Italy,Friuli-Venezia Giulia,ITA
+ITH4,2017-01-01,6.7,Italy,Friuli-Venezia Giulia,ITA
+ITH4,2018-01-01,6.6,Italy,Friuli-Venezia Giulia,ITA
+ITH4,2019-01-01,6.1,Italy,Friuli-Venezia Giulia,ITA
+ITH4,2020-01-01,5.6,Italy,Friuli-Venezia Giulia,ITA
+ITH4,2021-01-01,5.7,Italy,Friuli-Venezia Giulia,ITA
+ITH4,2022-01-01,5.3,Italy,Friuli-Venezia Giulia,ITA
+ITH4,2023-01-01,4.6,Italy,Friuli-Venezia Giulia,ITA
+ITH5,2012-01-01,7.0,Italy,Emilia-Romagna,ITA
+ITH5,2013-01-01,8.4,Italy,Emilia-Romagna,ITA
+ITH5,2014-01-01,8.3,Italy,Emilia-Romagna,ITA
+ITH5,2015-01-01,7.7,Italy,Emilia-Romagna,ITA
+ITH5,2016-01-01,6.9,Italy,Emilia-Romagna,ITA
+ITH5,2017-01-01,6.5,Italy,Emilia-Romagna,ITA
+ITH5,2018-01-01,5.8,Italy,Emilia-Romagna,ITA
+ITH5,2019-01-01,5.5,Italy,Emilia-Romagna,ITA
+ITH5,2020-01-01,5.8,Italy,Emilia-Romagna,ITA
+ITH5,2021-01-01,5.4,Italy,Emilia-Romagna,ITA
+ITH5,2022-01-01,5.0,Italy,Emilia-Romagna,ITA
+ITH5,2023-01-01,4.9,Italy,Emilia-Romagna,ITA
+ITI1,2012-01-01,7.8,Italy,Toscana,ITA
+ITI1,2013-01-01,8.7,Italy,Toscana,ITA
+ITI1,2014-01-01,10.1,Italy,Toscana,ITA
+ITI1,2015-01-01,9.2,Italy,Toscana,ITA
+ITI1,2016-01-01,9.5,Italy,Toscana,ITA
+ITI1,2017-01-01,8.6,Italy,Toscana,ITA
+ITI1,2018-01-01,7.3,Italy,Toscana,ITA
+ITI1,2019-01-01,6.7,Italy,Toscana,ITA
+ITI1,2020-01-01,6.7,Italy,Toscana,ITA
+ITI1,2021-01-01,7.5,Italy,Toscana,ITA
+ITI1,2022-01-01,6.0,Italy,Toscana,ITA
+ITI1,2023-01-01,5.2,Italy,Toscana,ITA
+ITI2,2012-01-01,9.5,Italy,Umbria,ITA
+ITI2,2013-01-01,10.3,Italy,Umbria,ITA
+ITI2,2014-01-01,11.3,Italy,Umbria,ITA
+ITI2,2015-01-01,10.4,Italy,Umbria,ITA
+ITI2,2016-01-01,9.6,Italy,Umbria,ITA
+ITI2,2017-01-01,10.5,Italy,Umbria,ITA
+ITI2,2018-01-01,9.2,Italy,Umbria,ITA
+ITI2,2019-01-01,8.4,Italy,Umbria,ITA
+ITI2,2020-01-01,8.1,Italy,Umbria,ITA
+ITI2,2021-01-01,6.6,Italy,Umbria,ITA
+ITI2,2022-01-01,7.1,Italy,Umbria,ITA
+ITI2,2023-01-01,6.0,Italy,Umbria,ITA
+ITI3,2012-01-01,9.1,Italy,Marche,ITA
+ITI3,2013-01-01,10.9,Italy,Marche,ITA
+ITI3,2014-01-01,10.1,Italy,Marche,ITA
+ITI3,2015-01-01,9.9,Italy,Marche,ITA
+ITI3,2016-01-01,10.6,Italy,Marche,ITA
+ITI3,2017-01-01,10.6,Italy,Marche,ITA
+ITI3,2018-01-01,8.0,Italy,Marche,ITA
+ITI3,2019-01-01,8.6,Italy,Marche,ITA
+ITI3,2020-01-01,7.4,Italy,Marche,ITA
+ITI3,2021-01-01,7.1,Italy,Marche,ITA
+ITI3,2022-01-01,6.2,Italy,Marche,ITA
+ITI3,2023-01-01,5.1,Italy,Marche,ITA
+ITI4,2012-01-01,10.6,Italy,Lazio,ITA
+ITI4,2013-01-01,12.0,Italy,Lazio,ITA
+ITI4,2014-01-01,12.5,Italy,Lazio,ITA
+ITI4,2015-01-01,11.8,Italy,Lazio,ITA
+ITI4,2016-01-01,11.1,Italy,Lazio,ITA
+ITI4,2017-01-01,10.7,Italy,Lazio,ITA
+ITI4,2018-01-01,11.1,Italy,Lazio,ITA
+ITI4,2019-01-01,9.9,Italy,Lazio,ITA
+ITI4,2020-01-01,9.2,Italy,Lazio,ITA
+ITI4,2021-01-01,10.0,Italy,Lazio,ITA
+ITI4,2022-01-01,7.7,Italy,Lazio,ITA
+ITI4,2023-01-01,7.1,Italy,Lazio,ITA
+LT00,2012-01-01,13.4,Lithuania,Lietuva (),LTU
+LT01,2013-01-01,9.7,Lithuania,Sostinės regionas,LTU
+LT01,2014-01-01,8.5,Lithuania,Sostinės regionas,LTU
+LT01,2015-01-01,7.6,Lithuania,Sostinės regionas,LTU
+LT01,2016-01-01,5.6,Lithuania,Sostinės regionas,LTU
+LT01,2017-01-01,4.8,Lithuania,Sostinės regionas,LTU
+LT01,2018-01-01,4.6,Lithuania,Sostinės regionas,LTU
+LT01,2019-01-01,4.4,Lithuania,Sostinės regionas,LTU
+LT01,2020-01-01,6.8,Lithuania,Sostinės regionas,LTU
+LT01,2021-01-01,4.8,Lithuania,Sostinės regionas,LTU
+LT01,2022-01-01,4.5,Lithuania,Sostinės regionas,LTU
+LT01,2023-01-01,4.9,Lithuania,Sostinės regionas,LTU
+LT02,2013-01-01,12.6,Lithuania,Vidurio ir vakarų Lietuvos regionas,LTU
+LT02,2014-01-01,11.6,Lithuania,Vidurio ir vakarų Lietuvos regionas,LTU
+LT02,2015-01-01,9.8,Lithuania,Vidurio ir vakarų Lietuvos regionas,LTU
+LT02,2016-01-01,8.8,Lithuania,Vidurio ir vakarų Lietuvos regionas,LTU
+LT02,2017-01-01,8.1,Lithuania,Vidurio ir vakarų Lietuvos regionas,LTU
+LT02,2018-01-01,6.9,Lithuania,Vidurio ir vakarų Lietuvos regionas,LTU
+LT02,2019-01-01,7.1,Lithuania,Vidurio ir vakarų Lietuvos regionas,LTU
+LT02,2020-01-01,9.3,Lithuania,Vidurio ir vakarų Lietuvos regionas,LTU
+LT02,2021-01-01,8.2,Lithuania,Vidurio ir vakarų Lietuvos regionas,LTU
+LT02,2022-01-01,6.6,Lithuania,Vidurio ir vakarų Lietuvos regionas,LTU
+LT02,2023-01-01,7.8,Lithuania,Vidurio ir vakarų Lietuvos regionas,LTU
+LU00,2012-01-01,5.1,Luxembourg,Luxembourg,LUX
+LU00,2013-01-01,5.8,Luxembourg,Luxembourg,LUX
+LU00,2014-01-01,5.9,Luxembourg,Luxembourg,LUX
+LU00,2015-01-01,6.7,Luxembourg,Luxembourg,LUX
+LU00,2016-01-01,6.3,Luxembourg,Luxembourg,LUX
+LU00,2017-01-01,5.5,Luxembourg,Luxembourg,LUX
+LU00,2018-01-01,5.6,Luxembourg,Luxembourg,LUX
+LU00,2019-01-01,5.6,Luxembourg,Luxembourg,LUX
+LU00,2020-01-01,6.8,Luxembourg,Luxembourg,LUX
+LU00,2021-01-01,5.2,Luxembourg,Luxembourg,LUX
+LU00,2022-01-01,4.6,Luxembourg,Luxembourg,LUX
+LU00,2023-01-01,5.2,Luxembourg,Luxembourg,LUX
+LV00,2012-01-01,15.0,Latvia,Latvija,LVA
+LV00,2013-01-01,11.9,Latvia,Latvija,LVA
+LV00,2014-01-01,10.8,Latvia,Latvija,LVA
+LV00,2015-01-01,9.9,Latvia,Latvija,LVA
+LV00,2016-01-01,9.6,Latvia,Latvija,LVA
+LV00,2017-01-01,8.7,Latvia,Latvija,LVA
+LV00,2018-01-01,7.4,Latvia,Latvija,LVA
+LV00,2019-01-01,6.3,Latvia,Latvija,LVA
+LV00,2020-01-01,8.1,Latvia,Latvija,LVA
+LV00,2021-01-01,7.5,Latvia,Latvija,LVA
+LV00,2022-01-01,6.8,Latvia,Latvija,LVA
+LV00,2023-01-01,6.5,Latvia,Latvija,LVA
+ME00,2012-01-01,20.0,Montenegro,Crna Gora,MNE
+ME00,2013-01-01,19.5,Montenegro,Crna Gora,MNE
+ME00,2014-01-01,18.0,Montenegro,Crna Gora,MNE
+ME00,2015-01-01,17.5,Montenegro,Crna Gora,MNE
+ME00,2016-01-01,17.7,Montenegro,Crna Gora,MNE
+ME00,2017-01-01,16.1,Montenegro,Crna Gora,MNE
+ME00,2018-01-01,15.2,Montenegro,Crna Gora,MNE
+ME00,2019-01-01,15.1,Montenegro,Crna Gora,MNE
+ME00,2020-01-01,17.9,Montenegro,Crna Gora,MNE
+MK00,2012-01-01,31.0,North Macedonia,Severna Makedonija,MKD
+MK00,2013-01-01,29.0,North Macedonia,Severna Makedonija,MKD
+MK00,2014-01-01,28.0,North Macedonia,Severna Makedonija,MKD
+MK00,2015-01-01,26.1,North Macedonia,Severna Makedonija,MKD
+MK00,2016-01-01,23.7,North Macedonia,Severna Makedonija,MKD
+MK00,2017-01-01,22.4,North Macedonia,Severna Makedonija,MKD
+MK00,2018-01-01,20.7,North Macedonia,Severna Makedonija,MKD
+MK00,2019-01-01,17.3,North Macedonia,Severna Makedonija,MKD
+MK00,2020-01-01,16.4,North Macedonia,Severna Makedonija,MKD
+MT00,2012-01-01,6.2,Malta,Malta,MLT
+MT00,2013-01-01,6.1,Malta,Malta,MLT
+MT00,2014-01-01,5.7,Malta,Malta,MLT
+MT00,2015-01-01,5.4,Malta,Malta,MLT
+MT00,2016-01-01,4.7,Malta,Malta,MLT
+MT00,2017-01-01,4.0,Malta,Malta,MLT
+MT00,2018-01-01,4.0,Malta,Malta,MLT
+MT00,2019-01-01,4.1,Malta,Malta,MLT
+MT00,2020-01-01,4.8,Malta,Malta,MLT
+MT00,2021-01-01,3.7,Malta,Malta,MLT
+MT00,2022-01-01,3.5,Malta,Malta,MLT
+MT00,2023-01-01,3.1,Malta,Malta,MLT
+NL11,2012-01-01,7.0,Netherlands,Groningen,NLD
+NL11,2013-01-01,8.2,Netherlands,Groningen,NLD
+NL11,2014-01-01,8.6,Netherlands,Groningen,NLD
+NL11,2015-01-01,9.1,Netherlands,Groningen,NLD
+NL11,2016-01-01,8.2,Netherlands,Groningen,NLD
+NL11,2017-01-01,7.2,Netherlands,Groningen,NLD
+NL11,2018-01-01,5.5,Netherlands,Groningen,NLD
+NL11,2019-01-01,5.1,Netherlands,Groningen,NLD
+NL11,2020-01-01,5.2,Netherlands,Groningen,NLD
+NL11,2021-01-01,5.3,Netherlands,Groningen,NLD
+NL11,2022-01-01,4.6,Netherlands,Groningen,NLD
+NL11,2023-01-01,4.2,Netherlands,Groningen,NLD
+NL12,2012-01-01,6.4,Netherlands,Friesland (NL),NLD
+NL12,2013-01-01,8.3,Netherlands,Friesland (NL),NLD
+NL12,2014-01-01,7.9,Netherlands,Friesland (NL),NLD
+NL12,2015-01-01,7.9,Netherlands,Friesland (NL),NLD
+NL12,2016-01-01,6.7,Netherlands,Friesland (NL),NLD
+NL12,2017-01-01,5.5,Netherlands,Friesland (NL),NLD
+NL12,2018-01-01,4.7,Netherlands,Friesland (NL),NLD
+NL12,2019-01-01,3.7,Netherlands,Friesland (NL),NLD
+NL12,2020-01-01,3.9,Netherlands,Friesland (NL),NLD
+NL12,2021-01-01,4.5,Netherlands,Friesland (NL),NLD
+NL12,2022-01-01,3.8,Netherlands,Friesland (NL),NLD
+NL12,2023-01-01,4.0,Netherlands,Friesland (NL),NLD
+NL13,2012-01-01,6.4,Netherlands,Drenthe,NLD
+NL13,2013-01-01,7.1,Netherlands,Drenthe,NLD
+NL13,2014-01-01,7.3,Netherlands,Drenthe,NLD
+NL13,2015-01-01,7.5,Netherlands,Drenthe,NLD
+NL13,2016-01-01,6.5,Netherlands,Drenthe,NLD
+NL13,2017-01-01,5.0,Netherlands,Drenthe,NLD
+NL13,2018-01-01,4.1,Netherlands,Drenthe,NLD
+NL13,2019-01-01,2.8,Netherlands,Drenthe,NLD
+NL13,2020-01-01,3.7,Netherlands,Drenthe,NLD
+NL13,2021-01-01,3.5,Netherlands,Drenthe,NLD
+NL13,2022-01-01,2.9,Netherlands,Drenthe,NLD
+NL13,2023-01-01,3.3,Netherlands,Drenthe,NLD
+NL21,2012-01-01,5.6,Netherlands,Overijssel,NLD
+NL21,2013-01-01,7.2,Netherlands,Overijssel,NLD
+NL21,2014-01-01,7.3,Netherlands,Overijssel,NLD
+NL21,2015-01-01,6.9,Netherlands,Overijssel,NLD
+NL21,2016-01-01,6.2,Netherlands,Overijssel,NLD
+NL21,2017-01-01,5.1,Netherlands,Overijssel,NLD
+NL21,2018-01-01,3.7,Netherlands,Overijssel,NLD
+NL21,2019-01-01,3.0,Netherlands,Overijssel,NLD
+NL21,2020-01-01,3.5,Netherlands,Overijssel,NLD
+NL21,2021-01-01,3.8,Netherlands,Overijssel,NLD
+NL21,2022-01-01,3.3,Netherlands,Overijssel,NLD
+NL21,2023-01-01,2.9,Netherlands,Overijssel,NLD
+NL22,2012-01-01,5.3,Netherlands,Gelderland,NLD
+NL22,2013-01-01,6.6,Netherlands,Gelderland,NLD
+NL22,2014-01-01,6.9,Netherlands,Gelderland,NLD
+NL22,2015-01-01,6.3,Netherlands,Gelderland,NLD
+NL22,2016-01-01,5.6,Netherlands,Gelderland,NLD
+NL22,2017-01-01,4.5,Netherlands,Gelderland,NLD
+NL22,2018-01-01,3.3,Netherlands,Gelderland,NLD
+NL22,2019-01-01,3.1,Netherlands,Gelderland,NLD
+NL22,2020-01-01,3.5,Netherlands,Gelderland,NLD
+NL22,2021-01-01,3.9,Netherlands,Gelderland,NLD
+NL22,2022-01-01,3.5,Netherlands,Gelderland,NLD
+NL22,2023-01-01,3.3,Netherlands,Gelderland,NLD
+NL23,2012-01-01,7.3,Netherlands,Flevoland,NLD
+NL23,2013-01-01,9.9,Netherlands,Flevoland,NLD
+NL23,2014-01-01,11.0,Netherlands,Flevoland,NLD
+NL23,2015-01-01,7.9,Netherlands,Flevoland,NLD
+NL23,2016-01-01,7.9,Netherlands,Flevoland,NLD
+NL23,2017-01-01,5.7,Netherlands,Flevoland,NLD
+NL23,2018-01-01,4.5,Netherlands,Flevoland,NLD
+NL23,2019-01-01,3.5,Netherlands,Flevoland,NLD
+NL23,2020-01-01,3.9,Netherlands,Flevoland,NLD
+NL23,2021-01-01,4.6,Netherlands,Flevoland,NLD
+NL23,2022-01-01,3.3,Netherlands,Flevoland,NLD
+NL23,2023-01-01,4.3,Netherlands,Flevoland,NLD
+NL31,2012-01-01,5.2,Netherlands,Utrecht (),NLD
+NL31,2013-01-01,6.4,Netherlands,Utrecht (),NLD
+NL31,2014-01-01,6.4,Netherlands,Utrecht (),NLD
+NL31,2015-01-01,6.4,Netherlands,Utrecht (),NLD
+NL31,2016-01-01,5.0,Netherlands,Utrecht (),NLD
+NL31,2017-01-01,4.2,Netherlands,Utrecht (),NLD
+NL31,2018-01-01,3.4,Netherlands,Utrecht (),NLD
+NL31,2019-01-01,2.9,Netherlands,Utrecht (),NLD
+NL31,2020-01-01,3.5,Netherlands,Utrecht (),NLD
+NL31,2021-01-01,4.0,Netherlands,Utrecht (),NLD
+NL31,2022-01-01,3.3,Netherlands,Utrecht (),NLD
+NL31,2023-01-01,3.3,Netherlands,Utrecht (),NLD
+NL32,2012-01-01,5.4,Netherlands,Noord-Holland,NLD
+NL32,2013-01-01,7.2,Netherlands,Noord-Holland,NLD
+NL32,2014-01-01,6.9,Netherlands,Noord-Holland,NLD
+NL32,2015-01-01,6.2,Netherlands,Noord-Holland,NLD
+NL32,2016-01-01,5.5,Netherlands,Noord-Holland,NLD
+NL32,2017-01-01,4.5,Netherlands,Noord-Holland,NLD
+NL32,2018-01-01,3.8,Netherlands,Noord-Holland,NLD
+NL32,2019-01-01,3.1,Netherlands,Noord-Holland,NLD
+NL32,2020-01-01,3.9,Netherlands,Noord-Holland,NLD
+NL32,2021-01-01,4.5,Netherlands,Noord-Holland,NLD
+NL32,2022-01-01,3.6,Netherlands,Noord-Holland,NLD
+NL32,2023-01-01,3.8,Netherlands,Noord-Holland,NLD
+NL33,2012-01-01,6.9,Netherlands,Zuid-Holland (),NLD
+NL33,2013-01-01,7.9,Netherlands,Zuid-Holland (),NLD
+NL33,2014-01-01,8.4,Netherlands,Zuid-Holland (),NLD
+NL33,2015-01-01,7.8,Netherlands,Zuid-Holland (),NLD
+NL33,2016-01-01,7.1,Netherlands,Zuid-Holland (),NLD
+NL33,2017-01-01,5.5,Netherlands,Zuid-Holland (),NLD
+NL33,2018-01-01,4.3,Netherlands,Zuid-Holland (),NLD
+NL33,2019-01-01,4.0,Netherlands,Zuid-Holland (),NLD
+NL33,2020-01-01,4.4,Netherlands,Zuid-Holland (),NLD
+NL33,2021-01-01,5.1,Netherlands,Zuid-Holland (),NLD
+NL33,2022-01-01,3.9,Netherlands,Zuid-Holland (),NLD
+NL33,2023-01-01,4.0,Netherlands,Zuid-Holland (),NLD
+NL34,2012-01-01,3.5,Netherlands,Zeeland,NLD
+NL34,2013-01-01,5.0,Netherlands,Zeeland,NLD
+NL34,2014-01-01,5.4,Netherlands,Zeeland,NLD
+NL34,2015-01-01,5.3,Netherlands,Zeeland,NLD
+NL34,2016-01-01,3.9,Netherlands,Zeeland,NLD
+NL34,2017-01-01,2.9,Netherlands,Zeeland,NLD
+NL34,2018-01-01,2.7,Netherlands,Zeeland,NLD
+NL34,2019-01-01,2.6,Netherlands,Zeeland,NLD
+NL34,2020-01-01,2.6,Netherlands,Zeeland,NLD
+NL34,2021-01-01,3.6,Netherlands,Zeeland,NLD
+NL34,2022-01-01,2.6,Netherlands,Zeeland,NLD
+NL34,2023-01-01,2.1,Netherlands,Zeeland,NLD
+NL41,2012-01-01,5.3,Netherlands,Noord-Brabant,NLD
+NL41,2013-01-01,6.7,Netherlands,Noord-Brabant,NLD
+NL41,2014-01-01,7.0,Netherlands,Noord-Brabant,NLD
+NL41,2015-01-01,6.5,Netherlands,Noord-Brabant,NLD
+NL41,2016-01-01,5.3,Netherlands,Noord-Brabant,NLD
+NL41,2017-01-01,4.2,Netherlands,Noord-Brabant,NLD
+NL41,2018-01-01,3.4,Netherlands,Noord-Brabant,NLD
+NL41,2019-01-01,3.2,Netherlands,Noord-Brabant,NLD
+NL41,2020-01-01,3.5,Netherlands,Noord-Brabant,NLD
+NL41,2021-01-01,3.2,Netherlands,Noord-Brabant,NLD
+NL41,2022-01-01,3.0,Netherlands,Noord-Brabant,NLD
+NL41,2023-01-01,3.2,Netherlands,Noord-Brabant,NLD
+NL42,2012-01-01,5.4,Netherlands,Limburg (NL),NLD
+NL42,2013-01-01,7.4,Netherlands,Limburg (NL),NLD
+NL42,2014-01-01,7.4,Netherlands,Limburg (NL),NLD
+NL42,2015-01-01,6.3,Netherlands,Limburg (NL),NLD
+NL42,2016-01-01,5.7,Netherlands,Limburg (NL),NLD
+NL42,2017-01-01,4.7,Netherlands,Limburg (NL),NLD
+NL42,2018-01-01,3.4,Netherlands,Limburg (NL),NLD
+NL42,2019-01-01,3.1,Netherlands,Limburg (NL),NLD
+NL42,2020-01-01,3.5,Netherlands,Limburg (NL),NLD
+NL42,2021-01-01,3.8,Netherlands,Limburg (NL),NLD
+NL42,2022-01-01,3.6,Netherlands,Limburg (NL),NLD
+NL42,2023-01-01,3.4,Netherlands,Limburg (NL),NLD
+NO01,2012-01-01,3.2,Norway,Oslo og Akershus (statistical region 2016),NOR
+NO01,2013-01-01,3.9,Norway,Oslo og Akershus (statistical region 2016),NOR
+NO01,2014-01-01,3.8,Norway,Oslo og Akershus (statistical region 2016),NOR
+NO01,2015-01-01,4.7,Norway,Oslo og Akershus (statistical region 2016),NOR
+NO02,2012-01-01,3.0,Norway,Innlandet,NOR
+NO02,2013-01-01,2.9,Norway,Innlandet,NOR
+NO02,2014-01-01,2.9,Norway,Innlandet,NOR
+NO02,2015-01-01,4.5,Norway,Innlandet,NOR
+NO02,2016-01-01,4.5,Norway,Innlandet,NOR
+NO02,2017-01-01,2.9,Norway,Innlandet,NOR
+NO02,2018-01-01,2.9,Norway,Innlandet,NOR
+NO02,2019-01-01,3.3,Norway,Innlandet,NOR
+NO02,2020-01-01,3.7,Norway,Innlandet,NOR
+NO02,2021-01-01,3.6,Norway,Innlandet,NOR
+NO02,2022-01-01,,Norway,Innlandet,NOR
+NO02,2023-01-01,3.0,Norway,Innlandet,NOR
+NO03,2012-01-01,3.5,Norway,Sør-Østlandet (statistical region 2016),NOR
+NO03,2013-01-01,3.9,Norway,Sør-Østlandet (statistical region 2016),NOR
+NO03,2014-01-01,4.1,Norway,Sør-Østlandet (statistical region 2016),NOR
+NO03,2015-01-01,4.5,Norway,Sør-Østlandet (statistical region 2016),NOR
+NO04,2012-01-01,2.7,Norway,Agder og Rogaland (statistical region 2016),NOR
+NO04,2013-01-01,3.2,Norway,Agder og Rogaland (statistical region 2016),NOR
+NO04,2014-01-01,3.1,Norway,Agder og Rogaland (statistical region 2016),NOR
+NO04,2015-01-01,4.6,Norway,Agder og Rogaland (statistical region 2016),NOR
+NO05,2012-01-01,2.9,Norway,Vestlandet (statistical region 2016),NOR
+NO05,2013-01-01,3.1,Norway,Vestlandet (statistical region 2016),NOR
+NO05,2014-01-01,3.0,Norway,Vestlandet (statistical region 2016),NOR
+NO05,2015-01-01,3.9,Norway,Vestlandet (statistical region 2016),NOR
+NO06,2012-01-01,3.3,Norway,Trøndelag,NOR
+NO06,2013-01-01,2.6,Norway,Trøndelag,NOR
+NO06,2014-01-01,3.8,Norway,Trøndelag,NOR
+NO06,2015-01-01,3.7,Norway,Trøndelag,NOR
+NO06,2016-01-01,4.0,Norway,Trøndelag,NOR
+NO06,2017-01-01,3.0,Norway,Trøndelag,NOR
+NO06,2018-01-01,3.1,Norway,Trøndelag,NOR
+NO06,2019-01-01,3.9,Norway,Trøndelag,NOR
+NO06,2020-01-01,3.6,Norway,Trøndelag,NOR
+NO06,2021-01-01,3.5,Norway,Trøndelag,NOR
+NO06,2022-01-01,2.5,Norway,Trøndelag,NOR
+NO06,2023-01-01,3.5,Norway,Trøndelag,NOR
+NO07,2012-01-01,3.3,Norway,Nord-Norge,NOR
+NO07,2013-01-01,3.2,Norway,Nord-Norge,NOR
+NO07,2014-01-01,3.3,Norway,Nord-Norge,NOR
+NO07,2015-01-01,3.4,Norway,Nord-Norge,NOR
+NO07,2016-01-01,3.2,Norway,Nord-Norge,NOR
+NO07,2017-01-01,3.2,Norway,Nord-Norge,NOR
+NO07,2018-01-01,3.3,Norway,Nord-Norge,NOR
+NO07,2019-01-01,3.0,Norway,Nord-Norge,NOR
+NO07,2020-01-01,3.5,Norway,Nord-Norge,NOR
+NO07,2021-01-01,3.8,Norway,Nord-Norge,NOR
+NO07,2022-01-01,2.2,Norway,Nord-Norge,NOR
+NO07,2023-01-01,2.8,Norway,Nord-Norge,NOR
+NO08,2016-01-01,4.7,Norway,Oslo og Viken,NOR
+NO08,2017-01-01,4.6,Norway,Oslo og Viken,NOR
+NO08,2018-01-01,4.1,Norway,Oslo og Viken,NOR
+NO08,2019-01-01,3.9,Norway,Oslo og Viken,NOR
+NO08,2020-01-01,5.0,Norway,Oslo og Viken,NOR
+NO08,2021-01-01,5.2,Norway,Oslo og Viken,NOR
+NO08,2022-01-01,3.8,Norway,Oslo og Viken,NOR
+NO08,2023-01-01,3.9,Norway,Oslo og Viken,NOR
+NO09,2016-01-01,5.2,Norway,Agder og Sør-Østlandet,NOR
+NO09,2017-01-01,4.6,Norway,Agder og Sør-Østlandet,NOR
+NO09,2018-01-01,4.0,Norway,Agder og Sør-Østlandet,NOR
+NO09,2019-01-01,3.7,Norway,Agder og Sør-Østlandet,NOR
+NO09,2020-01-01,4.3,Norway,Agder og Sør-Østlandet,NOR
+NO09,2021-01-01,4.4,Norway,Agder og Sør-Østlandet,NOR
+NO09,2022-01-01,3.7,Norway,Agder og Sør-Østlandet,NOR
+NO09,2023-01-01,3.6,Norway,Agder og Sør-Østlandet,NOR
+NO0A,2016-01-01,5.1,Norway,Vestlandet,NOR
+NO0A,2017-01-01,4.4,Norway,Vestlandet,NOR
+NO0A,2018-01-01,3.9,Norway,Vestlandet,NOR
+NO0A,2019-01-01,3.7,Norway,Vestlandet,NOR
+NO0A,2020-01-01,4.5,Norway,Vestlandet,NOR
+NO0A,2021-01-01,3.9,Norway,Vestlandet,NOR
+NO0A,2022-01-01,2.9,Norway,Vestlandet,NOR
+NO0A,2023-01-01,3.5,Norway,Vestlandet,NOR
+PL21,2012-01-01,10.4,Poland,Małopolskie,POL
+PL21,2013-01-01,10.9,Poland,Małopolskie,POL
+PL21,2014-01-01,9.1,Poland,Małopolskie,POL
+PL21,2015-01-01,7.1,Poland,Małopolskie,POL
+PL21,2016-01-01,5.2,Poland,Małopolskie,POL
+PL21,2017-01-01,4.2,Poland,Małopolskie,POL
+PL21,2018-01-01,2.9,Poland,Małopolskie,POL
+PL21,2019-01-01,2.9,Poland,Małopolskie,POL
+PL21,2020-01-01,2.7,Poland,Małopolskie,POL
+PL21,2021-01-01,3.2,Poland,Małopolskie,POL
+PL21,2022-01-01,2.4,Poland,Małopolskie,POL
+PL21,2023-01-01,2.3,Poland,Małopolskie,POL
+PL22,2012-01-01,9.4,Poland,Śląskie,POL
+PL22,2013-01-01,9.7,Poland,Śląskie,POL
+PL22,2014-01-01,8.6,Poland,Śląskie,POL
+PL22,2015-01-01,7.2,Poland,Śląskie,POL
+PL22,2016-01-01,5.4,Poland,Śląskie,POL
+PL22,2017-01-01,3.9,Poland,Śląskie,POL
+PL22,2018-01-01,3.4,Poland,Śląskie,POL
+PL22,2019-01-01,2.4,Poland,Śląskie,POL
+PL22,2020-01-01,2.7,Poland,Śląskie,POL
+PL22,2021-01-01,2.9,Poland,Śląskie,POL
+PL22,2022-01-01,2.2,Poland,Śląskie,POL
+PL22,2023-01-01,2.5,Poland,Śląskie,POL
+PL41,2012-01-01,8.5,Poland,Wielkopolskie,POL
+PL41,2013-01-01,8.8,Poland,Wielkopolskie,POL
+PL41,2014-01-01,7.7,Poland,Wielkopolskie,POL
+PL41,2015-01-01,5.8,Poland,Wielkopolskie,POL
+PL41,2016-01-01,4.8,Poland,Wielkopolskie,POL
+PL41,2017-01-01,3.1,Poland,Wielkopolskie,POL
+PL41,2018-01-01,2.2,Poland,Wielkopolskie,POL
+PL41,2019-01-01,2.6,Poland,Wielkopolskie,POL
+PL41,2020-01-01,1.8,Poland,Wielkopolskie,POL
+PL41,2021-01-01,2.3,Poland,Wielkopolskie,POL
+PL41,2022-01-01,2.0,Poland,Wielkopolskie,POL
+PL41,2023-01-01,2.7,Poland,Wielkopolskie,POL
+PL42,2012-01-01,10.9,Poland,Zachodniopomorskie,POL
+PL42,2013-01-01,10.1,Poland,Zachodniopomorskie,POL
+PL42,2014-01-01,8.4,Poland,Zachodniopomorskie,POL
+PL42,2015-01-01,7.5,Poland,Zachodniopomorskie,POL
+PL42,2016-01-01,6.9,Poland,Zachodniopomorskie,POL
+PL42,2017-01-01,4.6,Poland,Zachodniopomorskie,POL
+PL42,2018-01-01,3.8,Poland,Zachodniopomorskie,POL
+PL42,2019-01-01,3.1,Poland,Zachodniopomorskie,POL
+PL42,2020-01-01,3.4,Poland,Zachodniopomorskie,POL
+PL42,2021-01-01,3.5,Poland,Zachodniopomorskie,POL
+PL42,2022-01-01,2.3,Poland,Zachodniopomorskie,POL
+PL42,2023-01-01,2.2,Poland,Zachodniopomorskie,POL
+PL43,2012-01-01,9.0,Poland,Lubuskie,POL
+PL43,2013-01-01,9.7,Poland,Lubuskie,POL
+PL43,2014-01-01,8.3,Poland,Lubuskie,POL
+PL43,2015-01-01,6.4,Poland,Lubuskie,POL
+PL43,2016-01-01,4.7,Poland,Lubuskie,POL
+PL43,2017-01-01,3.7,Poland,Lubuskie,POL
+PL43,2018-01-01,3.0,Poland,Lubuskie,POL
+PL43,2019-01-01,2.0,Poland,Lubuskie,POL
+PL43,2020-01-01,,Poland,Lubuskie,POL
+PL43,2021-01-01,,Poland,Lubuskie,POL
+PL43,2022-01-01,,Poland,Lubuskie,POL
+PL43,2023-01-01,,Poland,Lubuskie,POL
+PL51,2012-01-01,11.1,Poland,Dolnośląskie,POL
+PL51,2013-01-01,11.3,Poland,Dolnośląskie,POL
+PL51,2014-01-01,9.1,Poland,Dolnośląskie,POL
+PL51,2015-01-01,7.0,Poland,Dolnośląskie,POL
+PL51,2016-01-01,5.5,Poland,Dolnośląskie,POL
+PL51,2017-01-01,4.7,Poland,Dolnośląskie,POL
+PL51,2018-01-01,3.3,Poland,Dolnośląskie,POL
+PL51,2019-01-01,3.3,Poland,Dolnośląskie,POL
+PL51,2020-01-01,3.2,Poland,Dolnośląskie,POL
+PL51,2021-01-01,4.0,Poland,Dolnośląskie,POL
+PL51,2022-01-01,3.5,Poland,Dolnośląskie,POL
+PL51,2023-01-01,3.0,Poland,Dolnośląskie,POL
+PL52,2012-01-01,9.5,Poland,Opolskie,POL
+PL52,2013-01-01,9.4,Poland,Opolskie,POL
+PL52,2014-01-01,7.8,Poland,Opolskie,POL
+PL52,2015-01-01,6.5,Poland,Opolskie,POL
+PL52,2016-01-01,5.0,Poland,Opolskie,POL
+PL52,2017-01-01,4.3,Poland,Opolskie,POL
+PL52,2018-01-01,3.2,Poland,Opolskie,POL
+PL52,2019-01-01,3.2,Poland,Opolskie,POL
+PL52,2020-01-01,2.8,Poland,Opolskie,POL
+PL52,2021-01-01,2.8,Poland,Opolskie,POL
+PL52,2022-01-01,2.7,Poland,Opolskie,POL
+PL52,2023-01-01,2.7,Poland,Opolskie,POL
+PL61,2012-01-01,11.9,Poland,Kujawsko-pomorskie,POL
+PL61,2013-01-01,12.4,Poland,Kujawsko-pomorskie,POL
+PL61,2014-01-01,10.7,Poland,Kujawsko-pomorskie,POL
+PL61,2015-01-01,7.9,Poland,Kujawsko-pomorskie,POL
+PL61,2016-01-01,7.4,Poland,Kujawsko-pomorskie,POL
+PL61,2017-01-01,5.5,Poland,Kujawsko-pomorskie,POL
+PL61,2018-01-01,4.3,Poland,Kujawsko-pomorskie,POL
+PL61,2019-01-01,3.9,Poland,Kujawsko-pomorskie,POL
+PL61,2020-01-01,3.1,Poland,Kujawsko-pomorskie,POL
+PL61,2021-01-01,4.5,Poland,Kujawsko-pomorskie,POL
+PL61,2022-01-01,3.9,Poland,Kujawsko-pomorskie,POL
+PL61,2023-01-01,3.8,Poland,Kujawsko-pomorskie,POL
+PL62,2012-01-01,11.0,Poland,Warmińsko-mazurskie,POL
+PL62,2013-01-01,11.4,Poland,Warmińsko-mazurskie,POL
+PL62,2014-01-01,9.8,Poland,Warmińsko-mazurskie,POL
+PL62,2015-01-01,9.5,Poland,Warmińsko-mazurskie,POL
+PL62,2016-01-01,8.8,Poland,Warmińsko-mazurskie,POL
+PL62,2017-01-01,7.2,Poland,Warmińsko-mazurskie,POL
+PL62,2018-01-01,5.6,Poland,Warmińsko-mazurskie,POL
+PL62,2019-01-01,3.3,Poland,Warmińsko-mazurskie,POL
+PL62,2020-01-01,3.0,Poland,Warmińsko-mazurskie,POL
+PL62,2021-01-01,3.5,Poland,Warmińsko-mazurskie,POL
+PL62,2022-01-01,3.4,Poland,Warmińsko-mazurskie,POL
+PL62,2023-01-01,2.6,Poland,Warmińsko-mazurskie,POL
+PL63,2012-01-01,9.5,Poland,Pomorskie,POL
+PL63,2013-01-01,10.0,Poland,Pomorskie,POL
+PL63,2014-01-01,8.6,Poland,Pomorskie,POL
+PL63,2015-01-01,6.6,Poland,Pomorskie,POL
+PL63,2016-01-01,5.7,Poland,Pomorskie,POL
+PL63,2017-01-01,4.2,Poland,Pomorskie,POL
+PL63,2018-01-01,3.0,Poland,Pomorskie,POL
+PL63,2019-01-01,2.8,Poland,Pomorskie,POL
+PL63,2020-01-01,3.2,Poland,Pomorskie,POL
+PL63,2021-01-01,2.4,Poland,Pomorskie,POL
+PL63,2022-01-01,1.9,Poland,Pomorskie,POL
+PL63,2023-01-01,1.9,Poland,Pomorskie,POL
+PL71,2012-01-01,11.1,Poland,Łódzkie,POL
+PL71,2013-01-01,11.1,Poland,Łódzkie,POL
+PL71,2014-01-01,8.9,Poland,Łódzkie,POL
+PL71,2015-01-01,7.7,Poland,Łódzkie,POL
+PL71,2016-01-01,5.5,Poland,Łódzkie,POL
+PL71,2017-01-01,4.6,Poland,Łódzkie,POL
+PL71,2018-01-01,4.3,Poland,Łódzkie,POL
+PL71,2019-01-01,3.6,Poland,Łódzkie,POL
+PL71,2020-01-01,3.1,Poland,Łódzkie,POL
+PL71,2021-01-01,4.4,Poland,Łódzkie,POL
+PL71,2022-01-01,3.5,Poland,Łódzkie,POL
+PL71,2023-01-01,3.8,Poland,Łódzkie,POL
+PL72,2012-01-01,13.1,Poland,Świętokrzyskie,POL
+PL72,2013-01-01,13.0,Poland,Świętokrzyskie,POL
+PL72,2014-01-01,11.4,Poland,Świętokrzyskie,POL
+PL72,2015-01-01,10.1,Poland,Świętokrzyskie,POL
+PL72,2016-01-01,8.9,Poland,Świętokrzyskie,POL
+PL72,2017-01-01,7.0,Poland,Świętokrzyskie,POL
+PL72,2018-01-01,5.8,Poland,Świętokrzyskie,POL
+PL72,2019-01-01,4.1,Poland,Świętokrzyskie,POL
+PL72,2020-01-01,4.2,Poland,Świętokrzyskie,POL
+PL72,2021-01-01,4.4,Poland,Świętokrzyskie,POL
+PL72,2022-01-01,3.8,Poland,Świętokrzyskie,POL
+PL72,2023-01-01,3.8,Poland,Świętokrzyskie,POL
+PL81,2012-01-01,10.5,Poland,Lubelskie,POL
+PL81,2013-01-01,10.3,Poland,Lubelskie,POL
+PL81,2014-01-01,9.9,Poland,Lubelskie,POL
+PL81,2015-01-01,9.3,Poland,Lubelskie,POL
+PL81,2016-01-01,8.0,Poland,Lubelskie,POL
+PL81,2017-01-01,7.2,Poland,Lubelskie,POL
+PL81,2018-01-01,6.3,Poland,Lubelskie,POL
+PL81,2019-01-01,5.4,Poland,Lubelskie,POL
+PL81,2020-01-01,5.6,Poland,Lubelskie,POL
+PL81,2021-01-01,5.2,Poland,Lubelskie,POL
+PL81,2022-01-01,4.8,Poland,Lubelskie,POL
+PL81,2023-01-01,4.0,Poland,Lubelskie,POL
+PL82,2012-01-01,13.2,Poland,Podkarpackie,POL
+PL82,2013-01-01,14.4,Poland,Podkarpackie,POL
+PL82,2014-01-01,14.0,Poland,Podkarpackie,POL
+PL82,2015-01-01,11.6,Poland,Podkarpackie,POL
+PL82,2016-01-01,9.6,Poland,Podkarpackie,POL
+PL82,2017-01-01,8.4,Poland,Podkarpackie,POL
+PL82,2018-01-01,6.5,Poland,Podkarpackie,POL
+PL82,2019-01-01,5.0,Poland,Podkarpackie,POL
+PL82,2020-01-01,4.3,Poland,Podkarpackie,POL
+PL82,2021-01-01,4.8,Poland,Podkarpackie,POL
+PL82,2022-01-01,4.7,Poland,Podkarpackie,POL
+PL82,2023-01-01,4.3,Poland,Podkarpackie,POL
+PL84,2012-01-01,9.2,Poland,Podlaskie,POL
+PL84,2013-01-01,9.9,Poland,Podlaskie,POL
+PL84,2014-01-01,9.1,Poland,Podlaskie,POL
+PL84,2015-01-01,7.0,Poland,Podlaskie,POL
+PL84,2016-01-01,6.7,Poland,Podlaskie,POL
+PL84,2017-01-01,4.7,Poland,Podlaskie,POL
+PL84,2018-01-01,3.2,Poland,Podlaskie,POL
+PL84,2019-01-01,3.0,Poland,Podlaskie,POL
+PL84,2020-01-01,2.8,Poland,Podlaskie,POL
+PL84,2021-01-01,3.2,Poland,Podlaskie,POL
+PL84,2022-01-01,2.5,Poland,Podlaskie,POL
+PL84,2023-01-01,2.3,Poland,Podlaskie,POL
+PL91,2013-01-01,5.9,Poland,Warszawski stołeczny,POL
+PL91,2014-01-01,5.8,Poland,Warszawski stołeczny,POL
+PL91,2015-01-01,4.9,Poland,Warszawski stołeczny,POL
+PL91,2016-01-01,3.6,Poland,Warszawski stołeczny,POL
+PL91,2017-01-01,3.5,Poland,Warszawski stołeczny,POL
+PL91,2018-01-01,2.4,Poland,Warszawski stołeczny,POL
+PL91,2019-01-01,2.1,Poland,Warszawski stołeczny,POL
+PL91,2020-01-01,2.6,Poland,Warszawski stołeczny,POL
+PL91,2021-01-01,2.1,Poland,Warszawski stołeczny,POL
+PL91,2022-01-01,2.0,Poland,Warszawski stołeczny,POL
+PL91,2023-01-01,1.9,Poland,Warszawski stołeczny,POL
+PL92,2013-01-01,10.5,Poland,Mazowiecki regionalny,POL
+PL92,2014-01-01,8.9,Poland,Mazowiecki regionalny,POL
+PL92,2015-01-01,8.3,Poland,Mazowiecki regionalny,POL
+PL92,2016-01-01,7.8,Poland,Mazowiecki regionalny,POL
+PL92,2017-01-01,6.4,Poland,Mazowiecki regionalny,POL
+PL92,2018-01-01,5.7,Poland,Mazowiecki regionalny,POL
+PL92,2019-01-01,4.5,Poland,Mazowiecki regionalny,POL
+PL92,2020-01-01,4.7,Poland,Mazowiecki regionalny,POL
+PL92,2021-01-01,3.8,Poland,Mazowiecki regionalny,POL
+PL92,2022-01-01,3.7,Poland,Mazowiecki regionalny,POL
+PL92,2023-01-01,3.1,Poland,Mazowiecki regionalny,POL
+PT11,2012-01-01,16.0,Portugal,Norte,PRT
+PT11,2013-01-01,17.1,Portugal,Norte,PRT
+PT11,2014-01-01,14.8,Portugal,Norte,PRT
+PT11,2015-01-01,13.7,Portugal,Norte,PRT
+PT11,2016-01-01,12.0,Portugal,Norte,PRT
+PT11,2017-01-01,9.8,Portugal,Norte,PRT
+PT11,2018-01-01,7.3,Portugal,Norte,PRT
+PT11,2019-01-01,6.7,Portugal,Norte,PRT
+PT11,2020-01-01,6.8,Portugal,Norte,PRT
+PT11,2021-01-01,6.7,Portugal,Norte,PRT
+PT11,2022-01-01,6.0,Portugal,Norte,PRT
+PT11,2023-01-01,7.0,Portugal,Norte,PRT
+PT15,2012-01-01,17.6,Portugal,Algarve,PRT
+PT15,2013-01-01,16.9,Portugal,Algarve,PRT
+PT15,2014-01-01,14.5,Portugal,Algarve,PRT
+PT15,2015-01-01,12.5,Portugal,Algarve,PRT
+PT15,2016-01-01,9.2,Portugal,Algarve,PRT
+PT15,2017-01-01,7.7,Portugal,Algarve,PRT
+PT15,2018-01-01,6.4,Portugal,Algarve,PRT
+PT15,2019-01-01,7.1,Portugal,Algarve,PRT
+PT15,2020-01-01,8.3,Portugal,Algarve,PRT
+PT15,2021-01-01,8.5,Portugal,Algarve,PRT
+PT15,2022-01-01,6.0,Portugal,Algarve,PRT
+PT15,2023-01-01,5.7,Portugal,Algarve,PRT
+PT16,2012-01-01,11.7,Portugal,Centro (PT) (),PRT
+PT16,2013-01-01,11.5,Portugal,Centro (PT) (),PRT
+PT16,2014-01-01,10.6,Portugal,Centro (PT) (),PRT
+PT16,2015-01-01,9.2,Portugal,Centro (PT) (),PRT
+PT16,2016-01-01,8.4,Portugal,Centro (PT) (),PRT
+PT16,2017-01-01,6.9,Portugal,Centro (PT) (),PRT
+PT16,2018-01-01,5.6,Portugal,Centro (PT) (),PRT
+PT16,2019-01-01,4.9,Portugal,Centro (PT) (),PRT
+PT16,2020-01-01,5.5,Portugal,Centro (PT) (),PRT
+PT16,2021-01-01,5.8,Portugal,Centro (PT) (),PRT
+PT16,2022-01-01,5.2,Portugal,Centro (PT) (),PRT
+PT16,2023-01-01,5.2,Portugal,Centro (PT) (),PRT
+PT17,2012-01-01,17.6,Portugal,Área Metropolitana de Lisboa (),PRT
+PT17,2013-01-01,18.5,Portugal,Área Metropolitana de Lisboa (),PRT
+PT17,2014-01-01,14.9,Portugal,Área Metropolitana de Lisboa (),PRT
+PT17,2015-01-01,13.1,Portugal,Área Metropolitana de Lisboa (),PRT
+PT17,2016-01-01,11.9,Portugal,Área Metropolitana de Lisboa (),PRT
+PT17,2017-01-01,9.5,Portugal,Área Metropolitana de Lisboa (),PRT
+PT17,2018-01-01,7.4,Portugal,Área Metropolitana de Lisboa (),PRT
+PT17,2019-01-01,7.1,Portugal,Área Metropolitana de Lisboa (),PRT
+PT17,2020-01-01,7.7,Portugal,Área Metropolitana de Lisboa (),PRT
+PT17,2021-01-01,6.9,Portugal,Área Metropolitana de Lisboa (),PRT
+PT17,2022-01-01,7.3,Portugal,Área Metropolitana de Lisboa (),PRT
+PT17,2023-01-01,7.2,Portugal,Área Metropolitana de Lisboa (),PRT
+PT18,2012-01-01,16.0,Portugal,Alentejo (),PRT
+PT18,2013-01-01,16.9,Portugal,Alentejo (),PRT
+PT18,2014-01-01,14.3,Portugal,Alentejo (),PRT
+PT18,2015-01-01,13.3,Portugal,Alentejo (),PRT
+PT18,2016-01-01,12.1,Portugal,Alentejo (),PRT
+PT18,2017-01-01,8.4,Portugal,Alentejo (),PRT
+PT18,2018-01-01,7.2,Portugal,Alentejo (),PRT
+PT18,2019-01-01,6.9,Portugal,Alentejo (),PRT
+PT18,2020-01-01,5.8,Portugal,Alentejo (),PRT
+PT18,2021-01-01,6.7,Portugal,Alentejo (),PRT
+PT18,2022-01-01,4.9,Portugal,Alentejo (),PRT
+PT18,2023-01-01,6.0,Portugal,Alentejo (),PRT
+PT20,2012-01-01,15.1,Portugal,Região Autónoma dos Açores,PRT
+PT20,2013-01-01,17.0,Portugal,Região Autónoma dos Açores,PRT
+PT20,2014-01-01,16.3,Portugal,Região Autónoma dos Açores,PRT
+PT20,2015-01-01,12.8,Portugal,Região Autónoma dos Açores,PRT
+PT20,2016-01-01,11.1,Portugal,Região Autónoma dos Açores,PRT
+PT20,2017-01-01,9.0,Portugal,Região Autónoma dos Açores,PRT
+PT20,2018-01-01,8.6,Portugal,Região Autónoma dos Açores,PRT
+PT20,2019-01-01,7.9,Portugal,Região Autónoma dos Açores,PRT
+PT20,2020-01-01,6.1,Portugal,Região Autónoma dos Açores,PRT
+PT20,2021-01-01,7.3,Portugal,Região Autónoma dos Açores,PRT
+PT20,2022-01-01,6.0,Portugal,Região Autónoma dos Açores,PRT
+PT20,2023-01-01,6.4,Portugal,Região Autónoma dos Açores,PRT
+PT30,2012-01-01,17.2,Portugal,Região Autónoma da Madeira,PRT
+PT30,2013-01-01,18.1,Portugal,Região Autónoma da Madeira,PRT
+PT30,2014-01-01,15.0,Portugal,Região Autónoma da Madeira,PRT
+PT30,2015-01-01,14.7,Portugal,Região Autónoma da Madeira,PRT
+PT30,2016-01-01,12.9,Portugal,Região Autónoma da Madeira,PRT
+PT30,2017-01-01,10.4,Portugal,Região Autónoma da Madeira,PRT
+PT30,2018-01-01,8.8,Portugal,Região Autónoma da Madeira,PRT
+PT30,2019-01-01,7.0,Portugal,Região Autónoma da Madeira,PRT
+PT30,2020-01-01,8.0,Portugal,Região Autónoma da Madeira,PRT
+PT30,2021-01-01,8.0,Portugal,Região Autónoma da Madeira,PRT
+PT30,2022-01-01,7.0,Portugal,Região Autónoma da Madeira,PRT
+PT30,2023-01-01,5.9,Portugal,Região Autónoma da Madeira,PRT
+RO11,2012-01-01,4.6,Romania,Nord-Vest,ROU
+RO11,2013-01-01,4.1,Romania,Nord-Vest,ROU
+RO11,2014-01-01,3.8,Romania,Nord-Vest,ROU
+RO11,2015-01-01,4.6,Romania,Nord-Vest,ROU
+RO11,2016-01-01,4.3,Romania,Nord-Vest,ROU
+RO11,2017-01-01,3.6,Romania,Nord-Vest,ROU
+RO11,2018-01-01,2.9,Romania,Nord-Vest,ROU
+RO11,2019-01-01,3.0,Romania,Nord-Vest,ROU
+RO11,2020-01-01,3.8,Romania,Nord-Vest,ROU
+RO11,2021-01-01,3.1,Romania,Nord-Vest,ROU
+RO11,2022-01-01,3.1,Romania,Nord-Vest,ROU
+RO11,2023-01-01,3.0,Romania,Nord-Vest,ROU
+RO12,2012-01-01,9.5,Romania,Centru,ROU
+RO12,2013-01-01,9.5,Romania,Centru,ROU
+RO12,2014-01-01,9.2,Romania,Centru,ROU
+RO12,2015-01-01,7.4,Romania,Centru,ROU
+RO12,2016-01-01,5.2,Romania,Centru,ROU
+RO12,2017-01-01,4.2,Romania,Centru,ROU
+RO12,2018-01-01,4.2,Romania,Centru,ROU
+RO12,2019-01-01,5.3,Romania,Centru,ROU
+RO12,2020-01-01,7.1,Romania,Centru,ROU
+RO12,2021-01-01,5.1,Romania,Centru,ROU
+RO12,2022-01-01,5.4,Romania,Centru,ROU
+RO12,2023-01-01,4.6,Romania,Centru,ROU
+RO21,2012-01-01,4.2,Romania,Nord-Est,ROU
+RO21,2013-01-01,4.4,Romania,Nord-Est,ROU
+RO21,2014-01-01,4.2,Romania,Nord-Est,ROU
+RO21,2015-01-01,3.6,Romania,Nord-Est,ROU
+RO21,2016-01-01,3.0,Romania,Nord-Est,ROU
+RO21,2017-01-01,2.9,Romania,Nord-Est,ROU
+RO21,2018-01-01,2.4,Romania,Nord-Est,ROU
+RO21,2019-01-01,2.1,Romania,Nord-Est,ROU
+RO21,2020-01-01,3.0,Romania,Nord-Est,ROU
+RO21,2021-01-01,6.8,Romania,Nord-Est,ROU
+RO21,2022-01-01,6.6,Romania,Nord-Est,ROU
+RO21,2023-01-01,5.9,Romania,Nord-Est,ROU
+RO22,2012-01-01,9.4,Romania,Sud-Est,ROU
+RO22,2013-01-01,9.5,Romania,Sud-Est,ROU
+RO22,2014-01-01,10.4,Romania,Sud-Est,ROU
+RO22,2015-01-01,9.0,Romania,Sud-Est,ROU
+RO22,2016-01-01,7.7,Romania,Sud-Est,ROU
+RO22,2017-01-01,6.5,Romania,Sud-Est,ROU
+RO22,2018-01-01,6.1,Romania,Sud-Est,ROU
+RO22,2019-01-01,6.4,Romania,Sud-Est,ROU
+RO22,2020-01-01,7.4,Romania,Sud-Est,ROU
+RO22,2021-01-01,6.0,Romania,Sud-Est,ROU
+RO22,2022-01-01,7.3,Romania,Sud-Est,ROU
+RO22,2023-01-01,9.1,Romania,Sud-Est,ROU
+RO31,2012-01-01,9.5,Romania,Sud-Muntenia,ROU
+RO31,2013-01-01,9.5,Romania,Sud-Muntenia,ROU
+RO31,2014-01-01,9.0,Romania,Sud-Muntenia,ROU
+RO31,2015-01-01,10.3,Romania,Sud-Muntenia,ROU
+RO31,2016-01-01,8.9,Romania,Sud-Muntenia,ROU
+RO31,2017-01-01,6.8,Romania,Sud-Muntenia,ROU
+RO31,2018-01-01,5.5,Romania,Sud-Muntenia,ROU
+RO31,2019-01-01,4.7,Romania,Sud-Muntenia,ROU
+RO31,2020-01-01,5.9,Romania,Sud-Muntenia,ROU
+RO31,2021-01-01,7.7,Romania,Sud-Muntenia,ROU
+RO31,2022-01-01,7.9,Romania,Sud-Muntenia,ROU
+RO31,2023-01-01,7.8,Romania,Sud-Muntenia,ROU
+RO32,2012-01-01,6.5,Romania,Bucureşti-Ilfov,ROU
+RO32,2013-01-01,8.0,Romania,Bucureşti-Ilfov,ROU
+RO32,2014-01-01,7.2,Romania,Bucureşti-Ilfov,ROU
+RO32,2015-01-01,5.3,Romania,Bucureşti-Ilfov,ROU
+RO32,2016-01-01,4.7,Romania,Bucureşti-Ilfov,ROU
+RO32,2017-01-01,4.3,Romania,Bucureşti-Ilfov,ROU
+RO32,2018-01-01,3.6,Romania,Bucureşti-Ilfov,ROU
+RO32,2019-01-01,2.5,Romania,Bucureşti-Ilfov,ROU
+RO32,2020-01-01,4.7,Romania,Bucureşti-Ilfov,ROU
+RO32,2021-01-01,3.5,Romania,Bucureşti-Ilfov,ROU
+RO32,2022-01-01,2.7,Romania,Bucureşti-Ilfov,ROU
+RO32,2023-01-01,2.8,Romania,Bucureşti-Ilfov,ROU
+RO41,2012-01-01,6.1,Romania,Sud-Vest Oltenia,ROU
+RO41,2013-01-01,7.0,Romania,Sud-Vest Oltenia,ROU
+RO41,2014-01-01,6.5,Romania,Sud-Vest Oltenia,ROU
+RO41,2015-01-01,10.1,Romania,Sud-Vest Oltenia,ROU
+RO41,2016-01-01,9.9,Romania,Sud-Vest Oltenia,ROU
+RO41,2017-01-01,7.7,Romania,Sud-Vest Oltenia,ROU
+RO41,2018-01-01,6.4,Romania,Sud-Vest Oltenia,ROU
+RO41,2019-01-01,5.3,Romania,Sud-Vest Oltenia,ROU
+RO41,2020-01-01,5.0,Romania,Sud-Vest Oltenia,ROU
+RO41,2021-01-01,9.2,Romania,Sud-Vest Oltenia,ROU
+RO41,2022-01-01,8.8,Romania,Sud-Vest Oltenia,ROU
+RO41,2023-01-01,8.9,Romania,Sud-Vest Oltenia,ROU
+RO42,2012-01-01,5.1,Romania,Vest,ROU
+RO42,2013-01-01,5.2,Romania,Vest,ROU
+RO42,2014-01-01,4.8,Romania,Vest,ROU
+RO42,2015-01-01,5.4,Romania,Vest,ROU
+RO42,2016-01-01,4.9,Romania,Vest,ROU
+RO42,2017-01-01,4.4,Romania,Vest,ROU
+RO42,2018-01-01,3.6,Romania,Vest,ROU
+RO42,2019-01-01,3.4,Romania,Vest,ROU
+RO42,2020-01-01,4.6,Romania,Vest,ROU
+RO42,2021-01-01,3.5,Romania,Vest,ROU
+RO42,2022-01-01,3.7,Romania,Vest,ROU
+RO42,2023-01-01,2.8,Romania,Vest,ROU
+RS11,2013-01-01,17.8,Serbia,Beogradski region,SRB
+RS11,2014-01-01,17.2,Serbia,Beogradski region,SRB
+RS11,2015-01-01,18.7,Serbia,Beogradski region,SRB
+RS11,2016-01-01,15.7,Serbia,Beogradski region,SRB
+RS11,2017-01-01,13.3,Serbia,Beogradski region,SRB
+RS11,2018-01-01,10.9,Serbia,Beogradski region,SRB
+RS11,2019-01-01,8.2,Serbia,Beogradski region,SRB
+RS11,2020-01-01,7.5,Serbia,Beogradski region,SRB
+RS11,2021-01-01,8.8,Serbia,Beogradski region,SRB
+RS11,2022-01-01,7.8,Serbia,Beogradski region,SRB
+RS11,2023-01-01,7.1,Serbia,Beogradski region,SRB
+RS12,2013-01-01,23.9,Serbia,Region Vojvodine,SRB
+RS12,2014-01-01,19.9,Serbia,Region Vojvodine,SRB
+RS12,2015-01-01,16.6,Serbia,Region Vojvodine,SRB
+RS12,2016-01-01,15.1,Serbia,Region Vojvodine,SRB
+RS12,2017-01-01,12.2,Serbia,Region Vojvodine,SRB
+RS12,2018-01-01,10.5,Serbia,Region Vojvodine,SRB
+RS12,2019-01-01,9.0,Serbia,Region Vojvodine,SRB
+RS12,2020-01-01,7.6,Serbia,Region Vojvodine,SRB
+RS12,2021-01-01,9.5,Serbia,Region Vojvodine,SRB
+RS12,2022-01-01,8.2,Serbia,Region Vojvodine,SRB
+RS12,2023-01-01,9.0,Serbia,Region Vojvodine,SRB
+RS21,2013-01-01,22.3,Serbia,Region Sumadije i Zapadne Srbije,SRB
+RS21,2014-01-01,18.0,Serbia,Region Sumadije i Zapadne Srbije,SRB
+RS21,2015-01-01,16.8,Serbia,Region Sumadije i Zapadne Srbije,SRB
+RS21,2016-01-01,14.7,Serbia,Region Sumadije i Zapadne Srbije,SRB
+RS21,2017-01-01,13.6,Serbia,Region Sumadije i Zapadne Srbije,SRB
+RS21,2018-01-01,13.8,Serbia,Region Sumadije i Zapadne Srbije,SRB
+RS21,2019-01-01,11.6,Serbia,Region Sumadije i Zapadne Srbije,SRB
+RS21,2020-01-01,9.8,Serbia,Region Sumadije i Zapadne Srbije,SRB
+RS21,2021-01-01,12.6,Serbia,Region Sumadije i Zapadne Srbije,SRB
+RS21,2022-01-01,10.4,Serbia,Region Sumadije i Zapadne Srbije,SRB
+RS21,2023-01-01,9.8,Serbia,Region Sumadije i Zapadne Srbije,SRB
+RS22,2013-01-01,24.0,Serbia,Region Juzne i Istocne Srbije,SRB
+RS22,2014-01-01,22.1,Serbia,Region Juzne i Istocne Srbije,SRB
+RS22,2015-01-01,18.8,Serbia,Region Juzne i Istocne Srbije,SRB
+RS22,2016-01-01,15.8,Serbia,Region Juzne i Istocne Srbije,SRB
+RS22,2017-01-01,15.2,Serbia,Region Juzne i Istocne Srbije,SRB
+RS22,2018-01-01,16.2,Serbia,Region Juzne i Istocne Srbije,SRB
+RS22,2019-01-01,13.1,Serbia,Region Juzne i Istocne Srbije,SRB
+RS22,2020-01-01,11.5,Serbia,Region Juzne i Istocne Srbije,SRB
+RS22,2021-01-01,13.6,Serbia,Region Juzne i Istocne Srbije,SRB
+RS22,2022-01-01,11.7,Serbia,Region Juzne i Istocne Srbije,SRB
+RS22,2023-01-01,12.8,Serbia,Region Juzne i Istocne Srbije,SRB
+SE11,2012-01-01,6.8,Sweden,Stockholm,SWE
+SE11,2013-01-01,6.9,Sweden,Stockholm,SWE
+SE11,2014-01-01,7.1,Sweden,Stockholm,SWE
+SE11,2015-01-01,7.0,Sweden,Stockholm,SWE
+SE11,2016-01-01,6.5,Sweden,Stockholm,SWE
+SE11,2017-01-01,6.3,Sweden,Stockholm,SWE
+SE11,2018-01-01,5.6,Sweden,Stockholm,SWE
+SE11,2019-01-01,6.1,Sweden,Stockholm,SWE
+SE11,2020-01-01,7.6,Sweden,Stockholm,SWE
+SE11,2021-01-01,8.2,Sweden,Stockholm,SWE
+SE11,2022-01-01,7.0,Sweden,Stockholm,SWE
+SE11,2023-01-01,6.9,Sweden,Stockholm,SWE
+SE12,2012-01-01,8.6,Sweden,Östra Mellansverige,SWE
+SE12,2013-01-01,8.8,Sweden,Östra Mellansverige,SWE
+SE12,2014-01-01,8.3,Sweden,Östra Mellansverige,SWE
+SE12,2015-01-01,7.9,Sweden,Östra Mellansverige,SWE
+SE12,2016-01-01,7.7,Sweden,Östra Mellansverige,SWE
+SE12,2017-01-01,7.6,Sweden,Östra Mellansverige,SWE
+SE12,2018-01-01,7.2,Sweden,Östra Mellansverige,SWE
+SE12,2019-01-01,7.3,Sweden,Östra Mellansverige,SWE
+SE12,2020-01-01,9.4,Sweden,Östra Mellansverige,SWE
+SE12,2021-01-01,9.7,Sweden,Östra Mellansverige,SWE
+SE12,2022-01-01,9.4,Sweden,Östra Mellansverige,SWE
+SE12,2023-01-01,9.0,Sweden,Östra Mellansverige,SWE
+SE21,2012-01-01,7.4,Sweden,Småland med öarna,SWE
+SE21,2013-01-01,7.1,Sweden,Småland med öarna,SWE
+SE21,2014-01-01,6.7,Sweden,Småland med öarna,SWE
+SE21,2015-01-01,6.0,Sweden,Småland med öarna,SWE
+SE21,2016-01-01,6.2,Sweden,Småland med öarna,SWE
+SE21,2017-01-01,5.5,Sweden,Småland med öarna,SWE
+SE21,2018-01-01,5.7,Sweden,Småland med öarna,SWE
+SE21,2019-01-01,6.3,Sweden,Småland med öarna,SWE
+SE21,2020-01-01,7.7,Sweden,Småland med öarna,SWE
+SE21,2021-01-01,7.5,Sweden,Småland med öarna,SWE
+SE21,2022-01-01,6.1,Sweden,Småland med öarna,SWE
+SE21,2023-01-01,6.8,Sweden,Småland med öarna,SWE
+SE22,2012-01-01,9.4,Sweden,Sydsverige,SWE
+SE22,2013-01-01,9.9,Sweden,Sydsverige,SWE
+SE22,2014-01-01,10.0,Sweden,Sydsverige,SWE
+SE22,2015-01-01,9.5,Sweden,Sydsverige,SWE
+SE22,2016-01-01,8.4,Sweden,Sydsverige,SWE
+SE22,2017-01-01,8.4,Sweden,Sydsverige,SWE
+SE22,2018-01-01,8.6,Sweden,Sydsverige,SWE
+SE22,2019-01-01,8.9,Sweden,Sydsverige,SWE
+SE22,2020-01-01,10.5,Sweden,Sydsverige,SWE
+SE22,2021-01-01,11.2,Sweden,Sydsverige,SWE
+SE22,2022-01-01,9.2,Sweden,Sydsverige,SWE
+SE22,2023-01-01,9.3,Sweden,Sydsverige,SWE
+SE23,2012-01-01,7.7,Sweden,Västsverige,SWE
+SE23,2013-01-01,8.0,Sweden,Västsverige,SWE
+SE23,2014-01-01,7.6,Sweden,Västsverige,SWE
+SE23,2015-01-01,6.6,Sweden,Västsverige,SWE
+SE23,2016-01-01,6.5,Sweden,Västsverige,SWE
+SE23,2017-01-01,6.0,Sweden,Västsverige,SWE
+SE23,2018-01-01,5.6,Sweden,Västsverige,SWE
+SE23,2019-01-01,6.1,Sweden,Västsverige,SWE
+SE23,2020-01-01,7.6,Sweden,Västsverige,SWE
+SE23,2021-01-01,8.4,Sweden,Västsverige,SWE
+SE23,2022-01-01,6.3,Sweden,Västsverige,SWE
+SE23,2023-01-01,7.3,Sweden,Västsverige,SWE
+SE31,2012-01-01,8.6,Sweden,Norra Mellansverige,SWE
+SE31,2013-01-01,8.8,Sweden,Norra Mellansverige,SWE
+SE31,2014-01-01,8.6,Sweden,Norra Mellansverige,SWE
+SE31,2015-01-01,7.9,Sweden,Norra Mellansverige,SWE
+SE31,2016-01-01,7.5,Sweden,Norra Mellansverige,SWE
+SE31,2017-01-01,6.9,Sweden,Norra Mellansverige,SWE
+SE31,2018-01-01,6.4,Sweden,Norra Mellansverige,SWE
+SE31,2019-01-01,7.3,Sweden,Norra Mellansverige,SWE
+SE31,2020-01-01,7.9,Sweden,Norra Mellansverige,SWE
+SE31,2021-01-01,9.7,Sweden,Norra Mellansverige,SWE
+SE31,2022-01-01,7.6,Sweden,Norra Mellansverige,SWE
+SE31,2023-01-01,7.2,Sweden,Norra Mellansverige,SWE
+SE32,2012-01-01,8.4,Sweden,Mellersta Norrland,SWE
+SE32,2013-01-01,7.2,Sweden,Mellersta Norrland,SWE
+SE32,2014-01-01,7.4,Sweden,Mellersta Norrland,SWE
+SE32,2015-01-01,7.1,Sweden,Mellersta Norrland,SWE
+SE32,2016-01-01,6.8,Sweden,Mellersta Norrland,SWE
+SE32,2017-01-01,6.2,Sweden,Mellersta Norrland,SWE
+SE32,2018-01-01,5.5,Sweden,Mellersta Norrland,SWE
+SE32,2019-01-01,6.7,Sweden,Mellersta Norrland,SWE
+SE32,2020-01-01,7.6,Sweden,Mellersta Norrland,SWE
+SE32,2021-01-01,6.2,Sweden,Mellersta Norrland,SWE
+SE32,2022-01-01,6.4,Sweden,Mellersta Norrland,SWE
+SE32,2023-01-01,6.4,Sweden,Mellersta Norrland,SWE
+SE33,2012-01-01,7.7,Sweden,Övre Norrland,SWE
+SE33,2013-01-01,7.2,Sweden,Övre Norrland,SWE
+SE33,2014-01-01,7.4,Sweden,Övre Norrland,SWE
+SE33,2015-01-01,7.2,Sweden,Övre Norrland,SWE
+SE33,2016-01-01,5.8,Sweden,Övre Norrland,SWE
+SE33,2017-01-01,5.9,Sweden,Övre Norrland,SWE
+SE33,2018-01-01,5.4,Sweden,Övre Norrland,SWE
+SE33,2019-01-01,6.1,Sweden,Övre Norrland,SWE
+SE33,2020-01-01,6.2,Sweden,Övre Norrland,SWE
+SE33,2021-01-01,6.2,Sweden,Övre Norrland,SWE
+SE33,2022-01-01,5.1,Sweden,Övre Norrland,SWE
+SE33,2023-01-01,5.7,Sweden,Övre Norrland,SWE
+SI03,2012-01-01,9.9,Slovenia,Vzhodna Slovenija,SVN
+SI03,2013-01-01,11.3,Slovenia,Vzhodna Slovenija,SVN
+SI03,2014-01-01,11.0,Slovenia,Vzhodna Slovenija,SVN
+SI03,2015-01-01,10.3,Slovenia,Vzhodna Slovenija,SVN
+SI03,2016-01-01,8.9,Slovenia,Vzhodna Slovenija,SVN
+SI03,2017-01-01,6.8,Slovenia,Vzhodna Slovenija,SVN
+SI03,2018-01-01,5.4,Slovenia,Vzhodna Slovenija,SVN
+SI03,2019-01-01,4.9,Slovenia,Vzhodna Slovenija,SVN
+SI03,2020-01-01,5.5,Slovenia,Vzhodna Slovenija,SVN
+SI03,2021-01-01,5.0,Slovenia,Vzhodna Slovenija,SVN
+SI03,2022-01-01,4.2,Slovenia,Vzhodna Slovenija,SVN
+SI03,2023-01-01,3.8,Slovenia,Vzhodna Slovenija,SVN
+SI04,2012-01-01,7.6,Slovenia,Zahodna Slovenija,SVN
+SI04,2013-01-01,8.7,Slovenia,Zahodna Slovenija,SVN
+SI04,2014-01-01,8.1,Slovenia,Zahodna Slovenija,SVN
+SI04,2015-01-01,7.5,Slovenia,Zahodna Slovenija,SVN
+SI04,2016-01-01,7.1,Slovenia,Zahodna Slovenija,SVN
+SI04,2017-01-01,6.3,Slovenia,Zahodna Slovenija,SVN
+SI04,2018-01-01,4.7,Slovenia,Zahodna Slovenija,SVN
+SI04,2019-01-01,4.0,Slovenia,Zahodna Slovenija,SVN
+SI04,2020-01-01,4.4,Slovenia,Zahodna Slovenija,SVN
+SI04,2021-01-01,4.5,Slovenia,Zahodna Slovenija,SVN
+SI04,2022-01-01,3.8,Slovenia,Zahodna Slovenija,SVN
+SI04,2023-01-01,3.5,Slovenia,Zahodna Slovenija,SVN
+SK01,2012-01-01,5.7,Slovakia,Bratislavský kraj,SVK
+SK01,2013-01-01,6.4,Slovakia,Bratislavský kraj,SVK
+SK01,2014-01-01,6.0,Slovakia,Bratislavský kraj,SVK
+SK01,2015-01-01,5.7,Slovakia,Bratislavský kraj,SVK
+SK01,2016-01-01,5.1,Slovakia,Bratislavský kraj,SVK
+SK01,2017-01-01,4.2,Slovakia,Bratislavský kraj,SVK
+SK01,2018-01-01,2.9,Slovakia,Bratislavský kraj,SVK
+SK01,2019-01-01,2.3,Slovakia,Bratislavský kraj,SVK
+SK01,2020-01-01,3.4,Slovakia,Bratislavský kraj,SVK
+SK01,2021-01-01,2.6,Slovakia,Bratislavský kraj,SVK
+SK01,2022-01-01,2.3,Slovakia,Bratislavský kraj,SVK
+SK01,2023-01-01,2.3,Slovakia,Bratislavský kraj,SVK
+SK02,2012-01-01,11.3,Slovakia,Západné Slovensko,SVK
+SK02,2013-01-01,11.7,Slovakia,Západné Slovensko,SVK
+SK02,2014-01-01,11.0,Slovakia,Západné Slovensko,SVK
+SK02,2015-01-01,9.7,Slovakia,Západné Slovensko,SVK
+SK02,2016-01-01,7.7,Slovakia,Západné Slovensko,SVK
+SK02,2017-01-01,5.5,Slovakia,Západné Slovensko,SVK
+SK02,2018-01-01,4.3,Slovakia,Západné Slovensko,SVK
+SK02,2019-01-01,4.0,Slovakia,Západné Slovensko,SVK
+SK02,2020-01-01,4.7,Slovakia,Západné Slovensko,SVK
+SK02,2021-01-01,4.7,Slovakia,Západné Slovensko,SVK
+SK02,2022-01-01,4.0,Slovakia,Západné Slovensko,SVK
+SK02,2023-01-01,3.6,Slovakia,Západné Slovensko,SVK
+SK03,2012-01-01,16.2,Slovakia,Stredné Slovensko,SVK
+SK03,2013-01-01,16.8,Slovakia,Stredné Slovensko,SVK
+SK03,2014-01-01,15.9,Slovakia,Stredné Slovensko,SVK
+SK03,2015-01-01,12.8,Slovakia,Stredné Slovensko,SVK
+SK03,2016-01-01,10.8,Slovakia,Stredné Slovensko,SVK
+SK03,2017-01-01,9.4,Slovakia,Stredné Slovensko,SVK
+SK03,2018-01-01,7.5,Slovakia,Stredné Slovensko,SVK
+SK03,2019-01-01,6.1,Slovakia,Stredné Slovensko,SVK
+SK03,2020-01-01,6.7,Slovakia,Stredné Slovensko,SVK
+SK03,2021-01-01,7.4,Slovakia,Stredné Slovensko,SVK
+SK03,2022-01-01,6.6,Slovakia,Stredné Slovensko,SVK
+SK03,2023-01-01,5.9,Slovakia,Stredné Slovensko,SVK
+SK04,2012-01-01,19.0,Slovakia,Východné Slovensko,SVK
+SK04,2013-01-01,18.5,Slovakia,Východné Slovensko,SVK
+SK04,2014-01-01,16.6,Slovakia,Východné Slovensko,SVK
+SK04,2015-01-01,15.0,Slovakia,Východné Slovensko,SVK
+SK04,2016-01-01,13.2,Slovakia,Východné Slovensko,SVK
+SK04,2017-01-01,12.0,Slovakia,Východné Slovensko,SVK
+SK04,2018-01-01,10.1,Slovakia,Východné Slovensko,SVK
+SK04,2019-01-01,9.1,Slovakia,Východné Slovensko,SVK
+SK04,2020-01-01,10.5,Slovakia,Východné Slovensko,SVK
+SK04,2021-01-01,10.9,Slovakia,Východné Slovensko,SVK
+SK04,2022-01-01,10.2,Slovakia,Východné Slovensko,SVK
+SK04,2023-01-01,10.4,Slovakia,Východné Slovensko,SVK
+TR10,2012-01-01,10.7,Türkiye,İstanbul,TUR
+TR10,2013-01-01,10.6,Türkiye,İstanbul,TUR
+TR10,2014-01-01,11.9,Türkiye,İstanbul,TUR
+TR10,2015-01-01,12.8,Türkiye,İstanbul,TUR
+TR10,2016-01-01,13.5,Türkiye,İstanbul,TUR
+TR10,2017-01-01,13.8,Türkiye,İstanbul,TUR
+TR10,2018-01-01,12.4,Türkiye,İstanbul,TUR
+TR10,2019-01-01,14.8,Türkiye,İstanbul,TUR
+TR10,2020-01-01,14.7,Türkiye,İstanbul,TUR
+TR10,2021-01-01,12.3,Türkiye,İstanbul,TUR
+TR10,2022-01-01,10.1,Türkiye,İstanbul,TUR
+TR10,2023-01-01,8.8,Türkiye,İstanbul,TUR
+TR21,2012-01-01,6.2,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR21,2013-01-01,6.4,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR21,2014-01-01,7.6,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR21,2015-01-01,7.3,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR21,2016-01-01,7.5,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR21,2017-01-01,8.3,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR21,2018-01-01,7.5,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR21,2019-01-01,11.1,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR21,2020-01-01,9.0,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR21,2021-01-01,9.2,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR21,2022-01-01,7.8,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR21,2023-01-01,7.6,Türkiye,"Tekirdağ, Edirne, Kırklareli",TUR
+TR22,2012-01-01,4.5,Türkiye,"Balıkesir, Çanakkale",TUR
+TR22,2013-01-01,5.6,Türkiye,"Balıkesir, Çanakkale",TUR
+TR22,2014-01-01,5.6,Türkiye,"Balıkesir, Çanakkale",TUR
+TR22,2015-01-01,5.3,Türkiye,"Balıkesir, Çanakkale",TUR
+TR22,2016-01-01,6.7,Türkiye,"Balıkesir, Çanakkale",TUR
+TR22,2017-01-01,5.9,Türkiye,"Balıkesir, Çanakkale",TUR
+TR22,2018-01-01,5.7,Türkiye,"Balıkesir, Çanakkale",TUR
+TR22,2019-01-01,8.3,Türkiye,"Balıkesir, Çanakkale",TUR
+TR22,2020-01-01,7.8,Türkiye,"Balıkesir, Çanakkale",TUR
+TR22,2021-01-01,8.0,Türkiye,"Balıkesir, Çanakkale",TUR
+TR22,2022-01-01,7.0,Türkiye,"Balıkesir, Çanakkale",TUR
+TR22,2023-01-01,6.1,Türkiye,"Balıkesir, Çanakkale",TUR
+TR31,2012-01-01,13.3,Türkiye,İzmir,TUR
+TR31,2013-01-01,14.3,Türkiye,İzmir,TUR
+TR31,2014-01-01,13.8,Türkiye,İzmir,TUR
+TR31,2015-01-01,14.9,Türkiye,İzmir,TUR
+TR31,2016-01-01,13.9,Türkiye,İzmir,TUR
+TR31,2017-01-01,14.0,Türkiye,İzmir,TUR
+TR31,2018-01-01,13.7,Türkiye,İzmir,TUR
+TR31,2019-01-01,15.9,Türkiye,İzmir,TUR
+TR31,2020-01-01,17.0,Türkiye,İzmir,TUR
+TR31,2021-01-01,14.5,Türkiye,İzmir,TUR
+TR31,2022-01-01,13.1,Türkiye,İzmir,TUR
+TR31,2023-01-01,11.4,Türkiye,İzmir,TUR
+TR32,2012-01-01,6.6,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR32,2013-01-01,6.0,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR32,2014-01-01,7.2,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR32,2015-01-01,6.8,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR32,2016-01-01,6.7,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR32,2017-01-01,7.1,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR32,2018-01-01,6.9,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR32,2019-01-01,9.2,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR32,2020-01-01,9.6,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR32,2021-01-01,10.0,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR32,2022-01-01,8.7,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR32,2023-01-01,8.1,Türkiye,"Aydın, Denizli, Muğla",TUR
+TR33,2012-01-01,4.1,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR33,2013-01-01,5.2,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR33,2014-01-01,3.9,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR33,2015-01-01,4.1,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR33,2016-01-01,4.9,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR33,2017-01-01,6.1,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR33,2018-01-01,6.8,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR33,2019-01-01,9.8,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR33,2020-01-01,8.3,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR33,2021-01-01,6.9,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR33,2022-01-01,7.2,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR33,2023-01-01,7.2,Türkiye,"Manisa, Afyonkarahisar, Kütahya, Uşak",TUR
+TR41,2012-01-01,6.4,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR41,2013-01-01,6.0,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR41,2014-01-01,6.2,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR41,2015-01-01,7.7,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR41,2016-01-01,9.0,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR41,2017-01-01,9.7,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR41,2018-01-01,8.9,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR41,2019-01-01,11.2,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR41,2020-01-01,9.7,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR41,2021-01-01,9.4,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR41,2022-01-01,8.9,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR41,2023-01-01,8.3,Türkiye,"Bursa, Eskişehir, Bilecik",TUR
+TR42,2012-01-01,8.9,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR42,2013-01-01,9.0,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR42,2014-01-01,9.9,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR42,2015-01-01,10.1,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR42,2016-01-01,10.6,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR42,2017-01-01,10.8,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR42,2018-01-01,10.1,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR42,2019-01-01,13.4,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR42,2020-01-01,12.2,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR42,2021-01-01,9.5,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR42,2022-01-01,10.2,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR42,2023-01-01,9.0,Türkiye,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TUR
+TR51,2012-01-01,8.3,Türkiye,Ankara,TUR
+TR51,2013-01-01,9.0,Türkiye,Ankara,TUR
+TR51,2014-01-01,11.5,Türkiye,Ankara,TUR
+TR51,2015-01-01,11.1,Türkiye,Ankara,TUR
+TR51,2016-01-01,11.3,Türkiye,Ankara,TUR
+TR51,2017-01-01,11.3,Türkiye,Ankara,TUR
+TR51,2018-01-01,10.1,Türkiye,Ankara,TUR
+TR51,2019-01-01,14.2,Türkiye,Ankara,TUR
+TR51,2020-01-01,14.8,Türkiye,Ankara,TUR
+TR51,2021-01-01,13.4,Türkiye,Ankara,TUR
+TR51,2022-01-01,12.2,Türkiye,Ankara,TUR
+TR51,2023-01-01,11.3,Türkiye,Ankara,TUR
+TR52,2012-01-01,5.0,Türkiye,"Konya, Karaman",TUR
+TR52,2013-01-01,3.8,Türkiye,"Konya, Karaman",TUR
+TR52,2014-01-01,5.5,Türkiye,"Konya, Karaman",TUR
+TR52,2015-01-01,6.5,Türkiye,"Konya, Karaman",TUR
+TR52,2016-01-01,6.1,Türkiye,"Konya, Karaman",TUR
+TR52,2017-01-01,5.9,Türkiye,"Konya, Karaman",TUR
+TR52,2018-01-01,5.8,Türkiye,"Konya, Karaman",TUR
+TR52,2019-01-01,7.9,Türkiye,"Konya, Karaman",TUR
+TR52,2020-01-01,7.8,Türkiye,"Konya, Karaman",TUR
+TR52,2021-01-01,7.9,Türkiye,"Konya, Karaman",TUR
+TR52,2022-01-01,7.5,Türkiye,"Konya, Karaman",TUR
+TR52,2023-01-01,6.0,Türkiye,"Konya, Karaman",TUR
+TR61,2012-01-01,7.3,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR61,2013-01-01,7.2,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR61,2014-01-01,8.4,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR61,2015-01-01,9.4,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR61,2016-01-01,11.4,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR61,2017-01-01,11.9,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR61,2018-01-01,11.4,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR61,2019-01-01,13.3,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR61,2020-01-01,12.2,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR61,2021-01-01,11.8,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR61,2022-01-01,9.3,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR61,2023-01-01,7.3,Türkiye,"Antalya, Isparta, Burdur",TUR
+TR62,2012-01-01,9.1,Türkiye,"Adana, Mersin",TUR
+TR62,2013-01-01,11.3,Türkiye,"Adana, Mersin",TUR
+TR62,2014-01-01,10.7,Türkiye,"Adana, Mersin",TUR
+TR62,2015-01-01,9.8,Türkiye,"Adana, Mersin",TUR
+TR62,2016-01-01,10.3,Türkiye,"Adana, Mersin",TUR
+TR62,2017-01-01,10.6,Türkiye,"Adana, Mersin",TUR
+TR62,2018-01-01,11.2,Türkiye,"Adana, Mersin",TUR
+TR62,2019-01-01,11.9,Türkiye,"Adana, Mersin",TUR
+TR62,2020-01-01,13.3,Türkiye,"Adana, Mersin",TUR
+TR62,2021-01-01,13.3,Türkiye,"Adana, Mersin",TUR
+TR62,2022-01-01,12.4,Türkiye,"Adana, Mersin",TUR
+TR62,2023-01-01,10.9,Türkiye,"Adana, Mersin",TUR
+TR63,2012-01-01,9.0,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR63,2013-01-01,10.8,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR63,2014-01-01,15.3,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR63,2015-01-01,16.3,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR63,2016-01-01,14.4,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR63,2017-01-01,11.5,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR63,2018-01-01,14.1,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR63,2019-01-01,18.1,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR63,2020-01-01,15.2,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR63,2021-01-01,17.0,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR63,2022-01-01,14.6,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR63,2023-01-01,15.3,Türkiye,"Hatay, Kahramanmaraş, Osmaniye",TUR
+TR71,2012-01-01,6.2,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR71,2013-01-01,5.5,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR71,2014-01-01,7.6,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR71,2015-01-01,9.9,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR71,2016-01-01,13.4,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR71,2017-01-01,11.3,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR71,2018-01-01,10.8,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR71,2019-01-01,13.1,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR71,2020-01-01,11.9,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR71,2021-01-01,12.8,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR71,2022-01-01,9.4,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR71,2023-01-01,8.6,Türkiye,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TUR
+TR72,2012-01-01,7.3,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR72,2013-01-01,8.4,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR72,2014-01-01,9.5,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR72,2015-01-01,9.7,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR72,2016-01-01,8.3,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR72,2017-01-01,11.7,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR72,2018-01-01,13.0,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR72,2019-01-01,14.3,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR72,2020-01-01,12.7,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR72,2021-01-01,11.7,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR72,2022-01-01,9.3,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR72,2023-01-01,9.4,Türkiye,"Kayseri, Sivas, Yozgat",TUR
+TR81,2012-01-01,6.5,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR81,2013-01-01,6.2,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR81,2014-01-01,6.0,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR81,2015-01-01,6.9,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR81,2016-01-01,8.7,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR81,2017-01-01,7.2,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR81,2018-01-01,8.1,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR81,2019-01-01,9.5,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR81,2020-01-01,9.2,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR81,2021-01-01,10.6,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR81,2022-01-01,11.2,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR81,2023-01-01,10.7,Türkiye,"Zonguldak, Karabük, Bartın",TUR
+TR82,2012-01-01,4.5,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR82,2013-01-01,5.6,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR82,2014-01-01,6.5,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR82,2015-01-01,6.8,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR82,2016-01-01,5.7,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR82,2017-01-01,4.5,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR82,2018-01-01,5.1,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR82,2019-01-01,7.5,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR82,2020-01-01,6.5,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR82,2021-01-01,6.1,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR82,2022-01-01,6.4,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR82,2023-01-01,5.0,Türkiye,"Kastamonu, Çankırı, Sinop",TUR
+TR83,2012-01-01,4.9,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR83,2013-01-01,5.5,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR83,2014-01-01,6.2,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR83,2015-01-01,6.6,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR83,2016-01-01,7.9,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR83,2017-01-01,6.7,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR83,2018-01-01,6.4,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR83,2019-01-01,8.3,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR83,2020-01-01,8.3,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR83,2021-01-01,7.8,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR83,2022-01-01,8.2,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR83,2023-01-01,8.6,Türkiye,"Samsun, Tokat, Çorum, Amasya",TUR
+TR90,2012-01-01,5.2,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TR90,2013-01-01,6.0,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TR90,2014-01-01,6.2,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TR90,2015-01-01,4.8,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TR90,2016-01-01,4.5,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TR90,2017-01-01,3.5,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TR90,2018-01-01,6.1,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TR90,2019-01-01,9.8,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TR90,2020-01-01,8.8,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TR90,2021-01-01,9.6,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TR90,2022-01-01,9.1,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TR90,2023-01-01,8.5,Türkiye,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TUR
+TRA1,2012-01-01,5.5,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA1,2013-01-01,6.1,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA1,2014-01-01,7.3,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA1,2015-01-01,6.0,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA1,2016-01-01,4.9,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA1,2017-01-01,5.3,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA1,2018-01-01,7.4,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA1,2019-01-01,11.2,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA1,2020-01-01,10.1,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA1,2021-01-01,9.9,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA1,2022-01-01,9.2,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA1,2023-01-01,7.5,Türkiye,"Erzurum, Erzincan, Bayburt",TUR
+TRA2,2012-01-01,6.3,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRA2,2013-01-01,5.6,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRA2,2014-01-01,3.3,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRA2,2015-01-01,3.9,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRA2,2016-01-01,4.8,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRA2,2017-01-01,5.5,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRA2,2018-01-01,5.3,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRA2,2019-01-01,9.5,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRA2,2020-01-01,11.4,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRA2,2021-01-01,14.0,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRA2,2022-01-01,12.9,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRA2,2023-01-01,11.7,Türkiye,"Ağrı, Kars, Iğdır, Ardahan",TUR
+TRB1,2012-01-01,5.8,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB1,2013-01-01,5.7,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB1,2014-01-01,7.5,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB1,2015-01-01,7.9,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB1,2016-01-01,8.8,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB1,2017-01-01,6.8,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB1,2018-01-01,8.0,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB1,2019-01-01,9.8,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB1,2020-01-01,10.5,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB1,2021-01-01,10.5,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB1,2022-01-01,8.2,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB1,2023-01-01,7.3,Türkiye,"Malatya, Elazığ, Bingöl, Tunceli",TUR
+TRB2,2012-01-01,7.5,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRB2,2013-01-01,9.2,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRB2,2014-01-01,13.4,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRB2,2015-01-01,9.7,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRB2,2016-01-01,9.1,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRB2,2017-01-01,12.6,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRB2,2018-01-01,21.6,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRB2,2019-01-01,25.7,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRB2,2020-01-01,23.6,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRB2,2021-01-01,20.4,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRB2,2022-01-01,19.3,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRB2,2023-01-01,17.5,Türkiye,"Van, Muş, Bitlis, Hakkari",TUR
+TRC1,2012-01-01,10.6,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC1,2013-01-01,6.2,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC1,2014-01-01,8.1,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC1,2015-01-01,9.7,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC1,2016-01-01,13.9,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC1,2017-01-01,14.3,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC1,2018-01-01,12.3,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC1,2019-01-01,15.1,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC1,2020-01-01,12.9,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC1,2021-01-01,10.2,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC1,2022-01-01,10.7,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC1,2023-01-01,10.0,Türkiye,"Gaziantep, Adıyaman, Kilis",TUR
+TRC2,2012-01-01,6.0,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC2,2013-01-01,16.0,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC2,2014-01-01,17.5,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC2,2015-01-01,17.4,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC2,2016-01-01,17.2,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC2,2017-01-01,13.8,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC2,2018-01-01,18.6,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC2,2019-01-01,23.2,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC2,2020-01-01,20.0,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC2,2021-01-01,14.8,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC2,2022-01-01,11.4,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC2,2023-01-01,10.8,Türkiye,"Şanlıurfa, Diyarbakır",TUR
+TRC3,2012-01-01,18.8,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+TRC3,2013-01-01,19.4,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+TRC3,2014-01-01,24.0,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+TRC3,2015-01-01,24.4,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+TRC3,2016-01-01,28.1,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+TRC3,2017-01-01,26.9,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+TRC3,2018-01-01,24.8,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+TRC3,2019-01-01,30.8,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+TRC3,2020-01-01,33.4,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+TRC3,2021-01-01,30.4,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+TRC3,2022-01-01,18.6,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+TRC3,2023-01-01,11.5,Türkiye,"Mardin, Batman, Şırnak, Siirt",TUR
+UKC1,2012-01-01,11.5,United Kingdom,Tees Valley and Durham (),GBR
+UKC1,2013-01-01,10.9,United Kingdom,Tees Valley and Durham (),GBR
+UKC1,2014-01-01,9.8,United Kingdom,Tees Valley and Durham (),GBR
+UKC1,2015-01-01,8.5,United Kingdom,Tees Valley and Durham (),GBR
+UKC1,2016-01-01,6.9,United Kingdom,Tees Valley and Durham (),GBR
+UKC1,2017-01-01,5.2,United Kingdom,Tees Valley and Durham (),GBR
+UKC1,2018-01-01,4.4,United Kingdom,Tees Valley and Durham (),GBR
+UKC1,2019-01-01,5.6,United Kingdom,Tees Valley and Durham (),GBR
+UKC2,2012-01-01,9.0,United Kingdom,Northumberland and Tyne and Wear (),GBR
+UKC2,2013-01-01,9.2,United Kingdom,Northumberland and Tyne and Wear (),GBR
+UKC2,2014-01-01,8.3,United Kingdom,Northumberland and Tyne and Wear (),GBR
+UKC2,2015-01-01,7.7,United Kingdom,Northumberland and Tyne and Wear (),GBR
+UKC2,2016-01-01,7.1,United Kingdom,Northumberland and Tyne and Wear (),GBR
+UKC2,2017-01-01,5.8,United Kingdom,Northumberland and Tyne and Wear (),GBR
+UKC2,2018-01-01,5.2,United Kingdom,Northumberland and Tyne and Wear (),GBR
+UKC2,2019-01-01,5.6,United Kingdom,Northumberland and Tyne and Wear (),GBR
+UKD1,2012-01-01,6.3,United Kingdom,Cumbria (),GBR
+UKD1,2013-01-01,5.1,United Kingdom,Cumbria (),GBR
+UKD1,2014-01-01,5.0,United Kingdom,Cumbria (),GBR
+UKD1,2015-01-01,4.2,United Kingdom,Cumbria (),GBR
+UKD1,2016-01-01,3.7,United Kingdom,Cumbria (),GBR
+UKD1,2017-01-01,3.4,United Kingdom,Cumbria (),GBR
+UKD1,2018-01-01,1.9,United Kingdom,Cumbria (),GBR
+UKD1,2019-01-01,2.0,United Kingdom,Cumbria (),GBR
+UKD3,2012-01-01,10.1,United Kingdom,Greater Manchester (),GBR
+UKD3,2013-01-01,9.4,United Kingdom,Greater Manchester (),GBR
+UKD3,2014-01-01,7.9,United Kingdom,Greater Manchester (),GBR
+UKD3,2015-01-01,6.5,United Kingdom,Greater Manchester (),GBR
+UKD3,2016-01-01,6.1,United Kingdom,Greater Manchester (),GBR
+UKD3,2017-01-01,4.0,United Kingdom,Greater Manchester (),GBR
+UKD3,2018-01-01,4.2,United Kingdom,Greater Manchester (),GBR
+UKD3,2019-01-01,5.1,United Kingdom,Greater Manchester (),GBR
+UKD4,2012-01-01,7.8,United Kingdom,Lancashire (),GBR
+UKD4,2013-01-01,7.2,United Kingdom,Lancashire (),GBR
+UKD4,2014-01-01,6.5,United Kingdom,Lancashire (),GBR
+UKD4,2015-01-01,4.5,United Kingdom,Lancashire (),GBR
+UKD4,2016-01-01,4.4,United Kingdom,Lancashire (),GBR
+UKD4,2017-01-01,4.2,United Kingdom,Lancashire (),GBR
+UKD4,2018-01-01,4.8,United Kingdom,Lancashire (),GBR
+UKD4,2019-01-01,3.7,United Kingdom,Lancashire (),GBR
+UKD6,2012-01-01,5.9,United Kingdom,Cheshire (),GBR
+UKD6,2013-01-01,5.2,United Kingdom,Cheshire (),GBR
+UKD6,2014-01-01,3.4,United Kingdom,Cheshire (),GBR
+UKD6,2015-01-01,3.5,United Kingdom,Cheshire (),GBR
+UKD6,2016-01-01,3.2,United Kingdom,Cheshire (),GBR
+UKD6,2017-01-01,3.1,United Kingdom,Cheshire (),GBR
+UKD6,2018-01-01,3.2,United Kingdom,Cheshire (),GBR
+UKD6,2019-01-01,3.2,United Kingdom,Cheshire (),GBR
+UKD7,2012-01-01,9.7,United Kingdom,Merseyside (),GBR
+UKD7,2013-01-01,8.9,United Kingdom,Merseyside (),GBR
+UKD7,2014-01-01,7.4,United Kingdom,Merseyside (),GBR
+UKD7,2015-01-01,5.8,United Kingdom,Merseyside (),GBR
+UKD7,2016-01-01,4.9,United Kingdom,Merseyside (),GBR
+UKD7,2017-01-01,5.2,United Kingdom,Merseyside (),GBR
+UKD7,2018-01-01,4.0,United Kingdom,Merseyside (),GBR
+UKD7,2019-01-01,3.8,United Kingdom,Merseyside (),GBR
+UKE1,2012-01-01,9.7,United Kingdom,East Yorkshire and Northern Lincolnshire (),GBR
+UKE1,2013-01-01,8.4,United Kingdom,East Yorkshire and Northern Lincolnshire (),GBR
+UKE1,2014-01-01,8.0,United Kingdom,East Yorkshire and Northern Lincolnshire (),GBR
+UKE1,2015-01-01,6.4,United Kingdom,East Yorkshire and Northern Lincolnshire (),GBR
+UKE1,2016-01-01,5.5,United Kingdom,East Yorkshire and Northern Lincolnshire (),GBR
+UKE1,2017-01-01,4.6,United Kingdom,East Yorkshire and Northern Lincolnshire (),GBR
+UKE1,2018-01-01,5.6,United Kingdom,East Yorkshire and Northern Lincolnshire (),GBR
+UKE1,2019-01-01,4.6,United Kingdom,East Yorkshire and Northern Lincolnshire (),GBR
+UKE2,2012-01-01,5.0,United Kingdom,North Yorkshire (),GBR
+UKE2,2013-01-01,4.4,United Kingdom,North Yorkshire (),GBR
+UKE2,2014-01-01,4.5,United Kingdom,North Yorkshire (),GBR
+UKE2,2015-01-01,3.1,United Kingdom,North Yorkshire (),GBR
+UKE2,2016-01-01,2.9,United Kingdom,North Yorkshire (),GBR
+UKE2,2017-01-01,4.1,United Kingdom,North Yorkshire (),GBR
+UKE2,2018-01-01,3.3,United Kingdom,North Yorkshire (),GBR
+UKE2,2019-01-01,2.7,United Kingdom,North Yorkshire (),GBR
+UKE3,2012-01-01,10.4,United Kingdom,South Yorkshire (),GBR
+UKE3,2013-01-01,10.5,United Kingdom,South Yorkshire (),GBR
+UKE3,2014-01-01,8.8,United Kingdom,South Yorkshire (),GBR
+UKE3,2015-01-01,7.4,United Kingdom,South Yorkshire (),GBR
+UKE3,2016-01-01,7.1,United Kingdom,South Yorkshire (),GBR
+UKE3,2017-01-01,5.6,United Kingdom,South Yorkshire (),GBR
+UKE3,2018-01-01,5.0,United Kingdom,South Yorkshire (),GBR
+UKE3,2019-01-01,5.1,United Kingdom,South Yorkshire (),GBR
+UKE4,2012-01-01,9.4,United Kingdom,West Yorkshire (),GBR
+UKE4,2013-01-01,9.3,United Kingdom,West Yorkshire (),GBR
+UKE4,2014-01-01,6.7,United Kingdom,West Yorkshire (),GBR
+UKE4,2015-01-01,6.6,United Kingdom,West Yorkshire (),GBR
+UKE4,2016-01-01,5.8,United Kingdom,West Yorkshire (),GBR
+UKE4,2017-01-01,4.8,United Kingdom,West Yorkshire (),GBR
+UKE4,2018-01-01,4.7,United Kingdom,West Yorkshire (),GBR
+UKE4,2019-01-01,4.6,United Kingdom,West Yorkshire (),GBR
+UKF1,2012-01-01,8.3,United Kingdom,Derbyshire and Nottinghamshire (),GBR
+UKF1,2013-01-01,7.2,United Kingdom,Derbyshire and Nottinghamshire (),GBR
+UKF1,2014-01-01,6.1,United Kingdom,Derbyshire and Nottinghamshire (),GBR
+UKF1,2015-01-01,4.8,United Kingdom,Derbyshire and Nottinghamshire (),GBR
+UKF1,2016-01-01,4.5,United Kingdom,Derbyshire and Nottinghamshire (),GBR
+UKF1,2017-01-01,3.6,United Kingdom,Derbyshire and Nottinghamshire (),GBR
+UKF1,2018-01-01,4.4,United Kingdom,Derbyshire and Nottinghamshire (),GBR
+UKF1,2019-01-01,3.9,United Kingdom,Derbyshire and Nottinghamshire (),GBR
+UKF2,2012-01-01,7.0,United Kingdom,"Leicestershire, Rutland and Northamptonshire ()",GBR
+UKF2,2013-01-01,7.8,United Kingdom,"Leicestershire, Rutland and Northamptonshire ()",GBR
+UKF2,2014-01-01,5.3,United Kingdom,"Leicestershire, Rutland and Northamptonshire ()",GBR
+UKF2,2015-01-01,4.4,United Kingdom,"Leicestershire, Rutland and Northamptonshire ()",GBR
+UKF2,2016-01-01,4.5,United Kingdom,"Leicestershire, Rutland and Northamptonshire ()",GBR
+UKF2,2017-01-01,4.6,United Kingdom,"Leicestershire, Rutland and Northamptonshire ()",GBR
+UKF2,2018-01-01,4.2,United Kingdom,"Leicestershire, Rutland and Northamptonshire ()",GBR
+UKF2,2019-01-01,4.2,United Kingdom,"Leicestershire, Rutland and Northamptonshire ()",GBR
+UKF3,2012-01-01,8.5,United Kingdom,Lincolnshire (),GBR
+UKF3,2013-01-01,6.4,United Kingdom,Lincolnshire (),GBR
+UKF3,2014-01-01,4.6,United Kingdom,Lincolnshire (),GBR
+UKF3,2015-01-01,4.5,United Kingdom,Lincolnshire (),GBR
+UKF3,2016-01-01,4.3,United Kingdom,Lincolnshire (),GBR
+UKF3,2017-01-01,3.7,United Kingdom,Lincolnshire (),GBR
+UKF3,2018-01-01,4.2,United Kingdom,Lincolnshire (),GBR
+UKF3,2019-01-01,3.6,United Kingdom,Lincolnshire (),GBR
+UKG1,2012-01-01,4.9,United Kingdom,"Herefordshire, Worcestershire and Warwickshire ()",GBR
+UKG1,2013-01-01,5.1,United Kingdom,"Herefordshire, Worcestershire and Warwickshire ()",GBR
+UKG1,2014-01-01,4.4,United Kingdom,"Herefordshire, Worcestershire and Warwickshire ()",GBR
+UKG1,2015-01-01,3.2,United Kingdom,"Herefordshire, Worcestershire and Warwickshire ()",GBR
+UKG1,2016-01-01,3.7,United Kingdom,"Herefordshire, Worcestershire and Warwickshire ()",GBR
+UKG1,2017-01-01,2.9,United Kingdom,"Herefordshire, Worcestershire and Warwickshire ()",GBR
+UKG1,2018-01-01,3.0,United Kingdom,"Herefordshire, Worcestershire and Warwickshire ()",GBR
+UKG1,2019-01-01,2.9,United Kingdom,"Herefordshire, Worcestershire and Warwickshire ()",GBR
+UKG2,2012-01-01,6.7,United Kingdom,Shropshire and Staffordshire (),GBR
+UKG2,2013-01-01,6.2,United Kingdom,Shropshire and Staffordshire (),GBR
+UKG2,2014-01-01,5.3,United Kingdom,Shropshire and Staffordshire (),GBR
+UKG2,2015-01-01,4.6,United Kingdom,Shropshire and Staffordshire (),GBR
+UKG2,2016-01-01,4.2,United Kingdom,Shropshire and Staffordshire (),GBR
+UKG2,2017-01-01,4.9,United Kingdom,Shropshire and Staffordshire (),GBR
+UKG2,2018-01-01,3.7,United Kingdom,Shropshire and Staffordshire (),GBR
+UKG2,2019-01-01,3.3,United Kingdom,Shropshire and Staffordshire (),GBR
+UKG3,2012-01-01,11.7,United Kingdom,West Midlands (),GBR
+UKG3,2013-01-01,13.0,United Kingdom,West Midlands (),GBR
+UKG3,2014-01-01,9.7,United Kingdom,West Midlands (),GBR
+UKG3,2015-01-01,7.9,United Kingdom,West Midlands (),GBR
+UKG3,2016-01-01,7.5,United Kingdom,West Midlands (),GBR
+UKG3,2017-01-01,7.2,United Kingdom,West Midlands (),GBR
+UKG3,2018-01-01,6.5,United Kingdom,West Midlands (),GBR
+UKG3,2019-01-01,5.9,United Kingdom,West Midlands (),GBR
+UKH1,2012-01-01,6.4,United Kingdom,East Anglia (),GBR
+UKH1,2013-01-01,6.2,United Kingdom,East Anglia (),GBR
+UKH1,2014-01-01,5.0,United Kingdom,East Anglia (),GBR
+UKH1,2015-01-01,4.3,United Kingdom,East Anglia (),GBR
+UKH1,2016-01-01,3.8,United Kingdom,East Anglia (),GBR
+UKH1,2017-01-01,3.9,United Kingdom,East Anglia (),GBR
+UKH1,2018-01-01,3.5,United Kingdom,East Anglia (),GBR
+UKH1,2019-01-01,2.9,United Kingdom,East Anglia (),GBR
+UKH2,2012-01-01,6.3,United Kingdom,Bedfordshire and Hertfordshire (),GBR
+UKH2,2013-01-01,5.6,United Kingdom,Bedfordshire and Hertfordshire (),GBR
+UKH2,2014-01-01,4.3,United Kingdom,Bedfordshire and Hertfordshire (),GBR
+UKH2,2015-01-01,3.8,United Kingdom,Bedfordshire and Hertfordshire (),GBR
+UKH2,2016-01-01,4.1,United Kingdom,Bedfordshire and Hertfordshire (),GBR
+UKH2,2017-01-01,3.7,United Kingdom,Bedfordshire and Hertfordshire (),GBR
+UKH2,2018-01-01,2.9,United Kingdom,Bedfordshire and Hertfordshire (),GBR
+UKH2,2019-01-01,2.7,United Kingdom,Bedfordshire and Hertfordshire (),GBR
+UKH3,2012-01-01,7.4,United Kingdom,Essex (),GBR
+UKH3,2013-01-01,6.3,United Kingdom,Essex (),GBR
+UKH3,2014-01-01,6.2,United Kingdom,Essex (),GBR
+UKH3,2015-01-01,4.3,United Kingdom,Essex (),GBR
+UKH3,2016-01-01,3.8,United Kingdom,Essex (),GBR
+UKH3,2017-01-01,4.2,United Kingdom,Essex (),GBR
+UKH3,2018-01-01,2.8,United Kingdom,Essex (),GBR
+UKH3,2019-01-01,3.2,United Kingdom,Essex (),GBR
+UKI3,2012-01-01,6.8,United Kingdom,Inner London - West (),GBR
+UKI3,2013-01-01,6.8,United Kingdom,Inner London - West (),GBR
+UKI3,2014-01-01,6.2,United Kingdom,Inner London - West (),GBR
+UKI3,2015-01-01,5.4,United Kingdom,Inner London - West (),GBR
+UKI3,2016-01-01,4.7,United Kingdom,Inner London - West (),GBR
+UKI3,2017-01-01,5.6,United Kingdom,Inner London - West (),GBR
+UKI3,2018-01-01,5.1,United Kingdom,Inner London - West (),GBR
+UKI3,2019-01-01,3.8,United Kingdom,Inner London - West (),GBR
+UKI4,2012-01-01,10.7,United Kingdom,Inner London - East (),GBR
+UKI4,2013-01-01,9.8,United Kingdom,Inner London - East (),GBR
+UKI4,2014-01-01,7.8,United Kingdom,Inner London - East (),GBR
+UKI4,2015-01-01,7.2,United Kingdom,Inner London - East (),GBR
+UKI4,2016-01-01,7.2,United Kingdom,Inner London - East (),GBR
+UKI4,2017-01-01,5.3,United Kingdom,Inner London - East (),GBR
+UKI4,2018-01-01,4.3,United Kingdom,Inner London - East (),GBR
+UKI4,2019-01-01,4.0,United Kingdom,Inner London - East (),GBR
+UKI5,2012-01-01,9.5,United Kingdom,Outer London - East and North East (),GBR
+UKI5,2013-01-01,9.5,United Kingdom,Outer London - East and North East (),GBR
+UKI5,2014-01-01,7.4,United Kingdom,Outer London - East and North East (),GBR
+UKI5,2015-01-01,7.5,United Kingdom,Outer London - East and North East (),GBR
+UKI5,2016-01-01,5.5,United Kingdom,Outer London - East and North East (),GBR
+UKI5,2017-01-01,5.6,United Kingdom,Outer London - East and North East (),GBR
+UKI5,2018-01-01,4.6,United Kingdom,Outer London - East and North East (),GBR
+UKI5,2019-01-01,4.4,United Kingdom,Outer London - East and North East (),GBR
+UKI6,2012-01-01,7.3,United Kingdom,Outer London - South (),GBR
+UKI6,2013-01-01,7.4,United Kingdom,Outer London - South (),GBR
+UKI6,2014-01-01,5.9,United Kingdom,Outer London - South (),GBR
+UKI6,2015-01-01,4.6,United Kingdom,Outer London - South (),GBR
+UKI6,2016-01-01,4.2,United Kingdom,Outer London - South (),GBR
+UKI6,2017-01-01,4.9,United Kingdom,Outer London - South (),GBR
+UKI6,2018-01-01,4.7,United Kingdom,Outer London - South (),GBR
+UKI6,2019-01-01,4.1,United Kingdom,Outer London - South (),GBR
+UKI7,2012-01-01,9.2,United Kingdom,Outer London - West and North West (),GBR
+UKI7,2013-01-01,8.4,United Kingdom,Outer London - West and North West (),GBR
+UKI7,2014-01-01,6.2,United Kingdom,Outer London - West and North West (),GBR
+UKI7,2015-01-01,5.5,United Kingdom,Outer London - West and North West (),GBR
+UKI7,2016-01-01,5.0,United Kingdom,Outer London - West and North West (),GBR
+UKI7,2017-01-01,4.9,United Kingdom,Outer London - West and North West (),GBR
+UKI7,2018-01-01,4.8,United Kingdom,Outer London - West and North West (),GBR
+UKI7,2019-01-01,5.1,United Kingdom,Outer London - West and North West (),GBR
+UKJ1,2012-01-01,5.7,United Kingdom,"Berkshire, Buckinghamshire and Oxfordshire ()",GBR
+UKJ1,2013-01-01,5.2,United Kingdom,"Berkshire, Buckinghamshire and Oxfordshire ()",GBR
+UKJ1,2014-01-01,4.2,United Kingdom,"Berkshire, Buckinghamshire and Oxfordshire ()",GBR
+UKJ1,2015-01-01,3.5,United Kingdom,"Berkshire, Buckinghamshire and Oxfordshire ()",GBR
+UKJ1,2016-01-01,2.7,United Kingdom,"Berkshire, Buckinghamshire and Oxfordshire ()",GBR
+UKJ1,2017-01-01,2.9,United Kingdom,"Berkshire, Buckinghamshire and Oxfordshire ()",GBR
+UKJ1,2018-01-01,3.0,United Kingdom,"Berkshire, Buckinghamshire and Oxfordshire ()",GBR
+UKJ1,2019-01-01,2.8,United Kingdom,"Berkshire, Buckinghamshire and Oxfordshire ()",GBR
+UKJ2,2012-01-01,5.9,United Kingdom,"Surrey, East and West Sussex ()",GBR
+UKJ2,2013-01-01,5.5,United Kingdom,"Surrey, East and West Sussex ()",GBR
+UKJ2,2014-01-01,4.6,United Kingdom,"Surrey, East and West Sussex ()",GBR
+UKJ2,2015-01-01,3.7,United Kingdom,"Surrey, East and West Sussex ()",GBR
+UKJ2,2016-01-01,3.5,United Kingdom,"Surrey, East and West Sussex ()",GBR
+UKJ2,2017-01-01,3.2,United Kingdom,"Surrey, East and West Sussex ()",GBR
+UKJ2,2018-01-01,3.6,United Kingdom,"Surrey, East and West Sussex ()",GBR
+UKJ2,2019-01-01,2.6,United Kingdom,"Surrey, East and West Sussex ()",GBR
+UKJ3,2012-01-01,6.3,United Kingdom,Hampshire and Isle of Wight (),GBR
+UKJ3,2013-01-01,5.7,United Kingdom,Hampshire and Isle of Wight (),GBR
+UKJ3,2014-01-01,4.2,United Kingdom,Hampshire and Isle of Wight (),GBR
+UKJ3,2015-01-01,4.1,United Kingdom,Hampshire and Isle of Wight (),GBR
+UKJ3,2016-01-01,3.7,United Kingdom,Hampshire and Isle of Wight (),GBR
+UKJ3,2017-01-01,3.1,United Kingdom,Hampshire and Isle of Wight (),GBR
+UKJ3,2018-01-01,2.7,United Kingdom,Hampshire and Isle of Wight (),GBR
+UKJ3,2019-01-01,3.2,United Kingdom,Hampshire and Isle of Wight (),GBR
+UKJ4,2012-01-01,8.0,United Kingdom,Kent (),GBR
+UKJ4,2013-01-01,7.6,United Kingdom,Kent (),GBR
+UKJ4,2014-01-01,5.7,United Kingdom,Kent (),GBR
+UKJ4,2015-01-01,5.3,United Kingdom,Kent (),GBR
+UKJ4,2016-01-01,4.5,United Kingdom,Kent (),GBR
+UKJ4,2017-01-01,3.7,United Kingdom,Kent (),GBR
+UKJ4,2018-01-01,4.3,United Kingdom,Kent (),GBR
+UKJ4,2019-01-01,3.9,United Kingdom,Kent (),GBR
+UKK1,2012-01-01,6.1,United Kingdom,"Gloucestershire, Wiltshire and Bristol/Bath area ()",GBR
+UKK1,2013-01-01,6.2,United Kingdom,"Gloucestershire, Wiltshire and Bristol/Bath area ()",GBR
+UKK1,2014-01-01,4.8,United Kingdom,"Gloucestershire, Wiltshire and Bristol/Bath area ()",GBR
+UKK1,2015-01-01,3.9,United Kingdom,"Gloucestershire, Wiltshire and Bristol/Bath area ()",GBR
+UKK1,2016-01-01,3.6,United Kingdom,"Gloucestershire, Wiltshire and Bristol/Bath area ()",GBR
+UKK1,2017-01-01,3.9,United Kingdom,"Gloucestershire, Wiltshire and Bristol/Bath area ()",GBR
+UKK1,2018-01-01,2.9,United Kingdom,"Gloucestershire, Wiltshire and Bristol/Bath area ()",GBR
+UKK1,2019-01-01,2.7,United Kingdom,"Gloucestershire, Wiltshire and Bristol/Bath area ()",GBR
+UKK2,2012-01-01,5.1,United Kingdom,Dorset and Somerset (),GBR
+UKK2,2013-01-01,5.4,United Kingdom,Dorset and Somerset (),GBR
+UKK2,2014-01-01,4.5,United Kingdom,Dorset and Somerset (),GBR
+UKK2,2015-01-01,3.9,United Kingdom,Dorset and Somerset (),GBR
+UKK2,2016-01-01,4.3,United Kingdom,Dorset and Somerset (),GBR
+UKK2,2017-01-01,2.8,United Kingdom,Dorset and Somerset (),GBR
+UKK2,2018-01-01,3.1,United Kingdom,Dorset and Somerset (),GBR
+UKK2,2019-01-01,2.1,United Kingdom,Dorset and Somerset (),GBR
+UKK3,2012-01-01,5.5,United Kingdom,Cornwall and Isles of Scilly (),GBR
+UKK3,2013-01-01,5.6,United Kingdom,Cornwall and Isles of Scilly (),GBR
+UKK3,2014-01-01,3.8,United Kingdom,Cornwall and Isles of Scilly (),GBR
+UKK3,2015-01-01,4.5,United Kingdom,Cornwall and Isles of Scilly (),GBR
+UKK3,2016-01-01,3.7,United Kingdom,Cornwall and Isles of Scilly (),GBR
+UKK3,2017-01-01,2.4,United Kingdom,Cornwall and Isles of Scilly (),GBR
+UKK3,2018-01-01,2.6,United Kingdom,Cornwall and Isles of Scilly (),GBR
+UKK3,2019-01-01,2.1,United Kingdom,Cornwall and Isles of Scilly (),GBR
+UKK4,2012-01-01,5.8,United Kingdom,Devon (),GBR
+UKK4,2013-01-01,7.0,United Kingdom,Devon (),GBR
+UKK4,2014-01-01,5.0,United Kingdom,Devon (),GBR
+UKK4,2015-01-01,3.7,United Kingdom,Devon (),GBR
+UKK4,2016-01-01,3.5,United Kingdom,Devon (),GBR
+UKK4,2017-01-01,4.0,United Kingdom,Devon (),GBR
+UKK4,2018-01-01,3.3,United Kingdom,Devon (),GBR
+UKK4,2019-01-01,3.0,United Kingdom,Devon (),GBR
+UKL1,2012-01-01,9.2,United Kingdom,West Wales and The Valleys (),GBR
+UKL1,2013-01-01,7.8,United Kingdom,West Wales and The Valleys (),GBR
+UKL1,2014-01-01,6.9,United Kingdom,West Wales and The Valleys (),GBR
+UKL1,2015-01-01,6.5,United Kingdom,West Wales and The Valleys (),GBR
+UKL1,2016-01-01,4.9,United Kingdom,West Wales and The Valleys (),GBR
+UKL1,2017-01-01,4.6,United Kingdom,West Wales and The Valleys (),GBR
+UKL1,2018-01-01,4.9,United Kingdom,West Wales and The Valleys (),GBR
+UKL1,2019-01-01,4.0,United Kingdom,West Wales and The Valleys (),GBR
+UKL2,2012-01-01,7.6,United Kingdom,East Wales (),GBR
+UKL2,2013-01-01,7.4,United Kingdom,East Wales (),GBR
+UKL2,2014-01-01,6.1,United Kingdom,East Wales (),GBR
+UKL2,2015-01-01,4.8,United Kingdom,East Wales (),GBR
+UKL2,2016-01-01,3.6,United Kingdom,East Wales (),GBR
+UKL2,2017-01-01,4.3,United Kingdom,East Wales (),GBR
+UKL2,2018-01-01,2.7,United Kingdom,East Wales (),GBR
+UKL2,2019-01-01,3.2,United Kingdom,East Wales (),GBR
+UKM2,2012-01-01,7.6,United Kingdom,Eastern Scotland (),GBR
+UKM3,2012-01-01,9.2,United Kingdom,South Western Scotland (),GBR
+UKM5,2012-01-01,4.7,United Kingdom,North Eastern Scotland (),GBR
+UKM5,2013-01-01,4.7,United Kingdom,North Eastern Scotland (),GBR
+UKM5,2014-01-01,4.0,United Kingdom,North Eastern Scotland (),GBR
+UKM5,2015-01-01,3.2,United Kingdom,North Eastern Scotland (),GBR
+UKM5,2016-01-01,5.1,United Kingdom,North Eastern Scotland (),GBR
+UKM5,2017-01-01,4.2,United Kingdom,North Eastern Scotland (),GBR
+UKM5,2018-01-01,3.5,United Kingdom,North Eastern Scotland (),GBR
+UKM5,2019-01-01,3.2,United Kingdom,North Eastern Scotland (),GBR
+UKM6,2012-01-01,8.1,United Kingdom,Highlands and Islands (),GBR
+UKM6,2013-01-01,4.4,United Kingdom,Highlands and Islands (),GBR
+UKM6,2014-01-01,3.9,United Kingdom,Highlands and Islands (),GBR
+UKM6,2015-01-01,2.8,United Kingdom,Highlands and Islands (),GBR
+UKM6,2016-01-01,3.5,United Kingdom,Highlands and Islands (),GBR
+UKM6,2017-01-01,2.6,United Kingdom,Highlands and Islands (),GBR
+UKM6,2018-01-01,2.2,United Kingdom,Highlands and Islands (),GBR
+UKM6,2019-01-01,,United Kingdom,Highlands and Islands (),GBR
+UKM7,2013-01-01,7.5,United Kingdom,Eastern Scotland (),GBR
+UKM7,2014-01-01,5.8,United Kingdom,Eastern Scotland (),GBR
+UKM7,2015-01-01,6.0,United Kingdom,Eastern Scotland (),GBR
+UKM7,2016-01-01,4.8,United Kingdom,Eastern Scotland (),GBR
+UKM7,2017-01-01,3.7,United Kingdom,Eastern Scotland (),GBR
+UKM7,2018-01-01,3.6,United Kingdom,Eastern Scotland (),GBR
+UKM7,2019-01-01,3.4,United Kingdom,Eastern Scotland (),GBR
+UKM8,2013-01-01,8.1,United Kingdom,West Central Scotland (),GBR
+UKM8,2014-01-01,7.8,United Kingdom,West Central Scotland (),GBR
+UKM8,2015-01-01,7.1,United Kingdom,West Central Scotland (),GBR
+UKM8,2016-01-01,5.3,United Kingdom,West Central Scotland (),GBR
+UKM8,2017-01-01,4.7,United Kingdom,West Central Scotland (),GBR
+UKM8,2018-01-01,5.1,United Kingdom,West Central Scotland (),GBR
+UKM8,2019-01-01,4.5,United Kingdom,West Central Scotland (),GBR
+UKM9,2013-01-01,7.8,United Kingdom,Southern Scotland (),GBR
+UKM9,2014-01-01,5.3,United Kingdom,Southern Scotland (),GBR
+UKM9,2015-01-01,6.0,United Kingdom,Southern Scotland (),GBR
+UKM9,2016-01-01,6.2,United Kingdom,Southern Scotland (),GBR
+UKM9,2017-01-01,4.7,United Kingdom,Southern Scotland (),GBR
+UKM9,2018-01-01,3.2,United Kingdom,Southern Scotland (),GBR
+UKM9,2019-01-01,3.1,United Kingdom,Southern Scotland (),GBR
+UKN0,2012-01-01,7.4,United Kingdom,Northern Ireland (UK) (),GBR
+UKN0,2013-01-01,7.5,United Kingdom,Northern Ireland (UK) (),GBR
+UKN0,2014-01-01,6.4,United Kingdom,Northern Ireland (UK) (),GBR
+UKN0,2015-01-01,6.1,United Kingdom,Northern Ireland (UK) (),GBR
+UKN0,2016-01-01,5.7,United Kingdom,Northern Ireland (UK) (),GBR
+UKN0,2017-01-01,4.5,United Kingdom,Northern Ireland (UK) (),GBR
+UKN0,2018-01-01,3.6,United Kingdom,Northern Ireland (UK) (),GBR
+UKN0,2019-01-01,2.7,United Kingdom,Northern Ireland (UK) (),GBR
