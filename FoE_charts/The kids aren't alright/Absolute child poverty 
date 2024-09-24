@@ -1,0 +1,454 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "color": {"field": "Housing Costs", "legend": null, "type": "nominal"},
+        "x": {
+          "axis": {
+            "labelExpr": "datum.label && (indexof(['1994/95', '1995/96', '1996/97', '1997/98', '1998/99', '1999/00', '2000/01', '2001/02', '2002/03', '2003/04', '2004/05', '2005/06', '2006/07', '2007/08', '2008/09', '2009/10', '2010/11', '2011/12', '2012/13', '2013/14', '2014/15', '2015/16', '2016/17', '2017/18', '2018/19', '2019/20', '2020/21', '2021/22', '2022/23'], datum.label) % 3 == 1 ? slice(datum.label, 2) : '')"
+          },
+          "field": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "title": "Percentage of children",
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"calculate": "datum.Value / 100", "as": "Value"}]
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+      "encoding": {
+        "color": {"field": "Housing Costs", "legend": null, "type": "nominal"},
+        "text": {"field": "Housing Costs", "type": "nominal"},
+        "x": {"aggregate": "max", "field": "Year", "type": "ordinal"},
+        "y": {
+          "aggregate": {"argmax": "Year"},
+          "field": "Value",
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"calculate": "datum.Value / 100", "as": "Value"}]
+    },
+    {
+      "data": {"name": "data-c5e7628832af192bed2ddceedb892a86"},
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": -5,
+        "yOffset": -30
+      },
+      "encoding": {"url": {"field": "img", "type": "nominal"}}
+    }
+  ],
+  "data": {"name": "data-c44682831a322a4a3ea3b06c8d120cf6"},
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-c44682831a322a4a3ea3b06c8d120cf6": [
+      {
+        "Year": "1994/95",
+        "Housing Costs": "Before housing costs",
+        "Value": 45.21
+      },
+      {
+        "Year": "1995/96",
+        "Housing Costs": "Before housing costs",
+        "Value": 44.69
+      },
+      {
+        "Year": "1996/97",
+        "Housing Costs": "Before housing costs",
+        "Value": 42.33
+      },
+      {
+        "Year": "1997/98",
+        "Housing Costs": "Before housing costs",
+        "Value": 40.73
+      },
+      {
+        "Year": "1998/99",
+        "Housing Costs": "Before housing costs",
+        "Value": 39.7
+      },
+      {
+        "Year": "1999/00",
+        "Housing Costs": "Before housing costs",
+        "Value": 37.2
+      },
+      {
+        "Year": "2000/01",
+        "Housing Costs": "Before housing costs",
+        "Value": 32.41
+      },
+      {
+        "Year": "2001/02",
+        "Housing Costs": "Before housing costs",
+        "Value": 29.12
+      },
+      {
+        "Year": "2002/03",
+        "Housing Costs": "Before housing costs",
+        "Value": 26.02
+      },
+      {
+        "Year": "2003/04",
+        "Housing Costs": "Before housing costs",
+        "Value": 25.01
+      },
+      {
+        "Year": "2004/05",
+        "Housing Costs": "Before housing costs",
+        "Value": 23.4
+      },
+      {
+        "Year": "2005/06",
+        "Housing Costs": "Before housing costs",
+        "Value": 23.75
+      },
+      {
+        "Year": "2006/07",
+        "Housing Costs": "Before housing costs",
+        "Value": 22.81
+      },
+      {
+        "Year": "2007/08",
+        "Housing Costs": "Before housing costs",
+        "Value": 22.26
+      },
+      {
+        "Year": "2008/09",
+        "Housing Costs": "Before housing costs",
+        "Value": 21.23
+      },
+      {
+        "Year": "2009/10",
+        "Housing Costs": "Before housing costs",
+        "Value": 18.89
+      },
+      {
+        "Year": "2010/11",
+        "Housing Costs": "Before housing costs",
+        "Value": 17.54
+      },
+      {
+        "Year": "2011/12",
+        "Housing Costs": "Before housing costs",
+        "Value": 19.24
+      },
+      {
+        "Year": "2012/13",
+        "Housing Costs": "Before housing costs",
+        "Value": 18.42
+      },
+      {
+        "Year": "2013/14",
+        "Housing Costs": "Before housing costs",
+        "Value": 17.59
+      },
+      {
+        "Year": "2014/15",
+        "Housing Costs": "Before housing costs",
+        "Value": 17.32
+      },
+      {
+        "Year": "2015/16",
+        "Housing Costs": "Before housing costs",
+        "Value": 17.09
+      },
+      {
+        "Year": "2016/17",
+        "Housing Costs": "Before housing costs",
+        "Value": 15.82
+      },
+      {
+        "Year": "2017/18",
+        "Housing Costs": "Before housing costs",
+        "Value": 17.94
+      },
+      {
+        "Year": "2018/19",
+        "Housing Costs": "Before housing costs",
+        "Value": 17.2
+      },
+      {
+        "Year": "2019/20",
+        "Housing Costs": "Before housing costs",
+        "Value": 17.41
+      },
+      {
+        "Year": "2020/21",
+        "Housing Costs": "Before housing costs",
+        "Value": 15.93
+      },
+      {
+        "Year": "2021/22",
+        "Housing Costs": "Before housing costs",
+        "Value": 15.53
+      },
+      {
+        "Year": "2022/23",
+        "Housing Costs": "Before housing costs",
+        "Value": 18.21
+      },
+      {
+        "Year": "1994/95",
+        "Housing Costs": "After housing costs",
+        "Value": 51.22
+      },
+      {
+        "Year": "1995/96",
+        "Housing Costs": "After housing costs",
+        "Value": 50.84
+      },
+      {
+        "Year": "1996/97",
+        "Housing Costs": "After housing costs",
+        "Value": 47.95
+      },
+      {
+        "Year": "1997/98",
+        "Housing Costs": "After housing costs",
+        "Value": 45.98
+      },
+      {
+        "Year": "1998/99",
+        "Housing Costs": "After housing costs",
+        "Value": 44.86
+      },
+      {
+        "Year": "1999/00",
+        "Housing Costs": "After housing costs",
+        "Value": 41.98
+      },
+      {
+        "Year": "2000/01",
+        "Housing Costs": "After housing costs",
+        "Value": 38.1
+      },
+      {
+        "Year": "2001/02",
+        "Housing Costs": "After housing costs",
+        "Value": 34.73
+      },
+      {
+        "Year": "2002/03",
+        "Housing Costs": "After housing costs",
+        "Value": 31.43
+      },
+      {
+        "Year": "2003/04",
+        "Housing Costs": "After housing costs",
+        "Value": 29.9
+      },
+      {
+        "Year": "2004/05",
+        "Housing Costs": "After housing costs",
+        "Value": 29.36
+      },
+      {
+        "Year": "2005/06",
+        "Housing Costs": "After housing costs",
+        "Value": 30.29
+      },
+      {
+        "Year": "2006/07",
+        "Housing Costs": "After housing costs",
+        "Value": 30.55
+      },
+      {
+        "Year": "2007/08",
+        "Housing Costs": "After housing costs",
+        "Value": 30.83
+      },
+      {
+        "Year": "2008/09",
+        "Housing Costs": "After housing costs",
+        "Value": 29.86
+      },
+      {
+        "Year": "2009/10",
+        "Housing Costs": "After housing costs",
+        "Value": 28.24
+      },
+      {
+        "Year": "2010/11",
+        "Housing Costs": "After housing costs",
+        "Value": 27.17
+      },
+      {
+        "Year": "2011/12",
+        "Housing Costs": "After housing costs",
+        "Value": 28.25
+      },
+      {
+        "Year": "2012/13",
+        "Housing Costs": "After housing costs",
+        "Value": 28.84
+      },
+      {
+        "Year": "2013/14",
+        "Housing Costs": "After housing costs",
+        "Value": 28.27
+      },
+      {
+        "Year": "2014/15",
+        "Housing Costs": "After housing costs",
+        "Value": 27.14
+      },
+      {
+        "Year": "2015/16",
+        "Housing Costs": "After housing costs",
+        "Value": 26.76
+      },
+      {
+        "Year": "2016/17",
+        "Housing Costs": "After housing costs",
+        "Value": 25.43
+      },
+      {
+        "Year": "2017/18",
+        "Housing Costs": "After housing costs",
+        "Value": 26.32
+      },
+      {
+        "Year": "2018/19",
+        "Housing Costs": "After housing costs",
+        "Value": 26.04
+      },
+      {
+        "Year": "2019/20",
+        "Housing Costs": "After housing costs",
+        "Value": 24.83
+      },
+      {
+        "Year": "2020/21",
+        "Housing Costs": "After housing costs",
+        "Value": 22.86
+      },
+      {
+        "Year": "2021/22",
+        "Housing Costs": "After housing costs",
+        "Value": 22.84
+      },
+      {
+        "Year": "2022/23",
+        "Housing Costs": "After housing costs",
+        "Value": 25.04
+      }
+    ],
+    "data-c5e7628832af192bed2ddceedb892a86": [
+      {
+        "x": 2.5,
+        "y": 0,
+        "img": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+      }
+    ]
+  },
+  "width": 430,
+  "height": 300
+}

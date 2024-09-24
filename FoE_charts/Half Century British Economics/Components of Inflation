@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/C26_C2b.csv"
+  },
+  "mark": {"type": "bar", "size": 11},
+  "width": 420,
+  "height": 300,
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": null},
+    "y": {"field": "value", "title": null, "type": "quantitative"},
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Food and non-alcoholic beverages",
+          "Alcohol and tobacco",
+          "Clothing and footwear",
+          "Housing and household services",
+          "Furniture and household goods",
+          "Transport",
+          "Recreation and culture",
+          "Restaurants and hotels",
+          "Other goods and services"
+        ],
+        "range": [
+          "#e6224b",
+          "#f4c245",
+          "#00a767",
+          "#179fdb",
+          "#36b7b4",
+          "#122b39",
+          "#eb5c2e",
+          "#0063af",
+          "#F4A19F"
+        ]
+      },
+      "title": null
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "title": "Date",
+        "timeUnit": "yearmonth"
+      },
+      {"field": "series", "type": "nominal", "title": "Price group"},
+      {"field": "value", "type": "quantitative", "title": "Percentage points"}
+    ]
+  }
+}

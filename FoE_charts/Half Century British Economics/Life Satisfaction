@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/A21_C6.csv"
+  },
+  "width": 80,
+  "height": 350,
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "country",
+      "type": "nominal",
+      "sort": [],
+      "title": "",
+      "spacing": 10
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "scale": {"domain": [0, 10]}
+    },
+    "x": {"field": "year", "axis": {"title": "", "labelAngle": 30}, "sort": []},
+    "color": {
+      "field": "year",
+      "legend": null,
+      "scale": {"range": ["#122b39", "#e54753"]}
+    },
+    "tooltip": [
+      {"field": "country", "type": "nominal", "title": "Country"},
+      {"field": "year", "type": "nominal", "title": "Year"},
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Life satisfaction (0-10)"
+      }
+    ]
+  },
+  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
+  

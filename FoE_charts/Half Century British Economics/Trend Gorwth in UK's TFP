@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "height": 300,
+  "width": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/N56_C2.csv"
+  },
+  "mark": {"type": "line", "color": "#e54753", "size": 2.3},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "sort": [],
+      "title": null,
+      "axis": {"grid": false, "labelAngle": 0}
+    },
+    "y": {
+      "field": "value2",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": true,
+        "labelFontSize": 11,
+        "format": "%",
+        "title": "TFP growth",
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleX": 5,
+        "titleY": 15
+      }
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "value2",
+        "type": "quantitative",
+        "title": "TFP growth",
+        "format": ".2%"
+      }
+    ]
+  }
+}

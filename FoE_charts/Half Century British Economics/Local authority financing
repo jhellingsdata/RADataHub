@@ -1,0 +1,186 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.18.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/LAD_Debt/LADs_2023.geojson",
+    "format": {"type": "json", "property": "features"}
+  },
+  "config": {"view": {"strokeOpacity": 0}},
+  "title": {
+    "text": "Local Authority Finances",
+    "subtitleFontWeight": "normal",
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "dx": 50,
+    "subtitle": [
+      "Left shows assets & borrowing; right shows debt-to-assets ratio",
+      "Excludes City of London & Shetland Islands. Source: DLUHC, 2024",
+      ""
+    ]
+  },
+  "transform": [
+    {
+      "lookup": "properties.LAD23CD",
+      "from": {
+        "fields": ["ONS code", "Assets", "Borrowing", "DebtToAssets", "Name"],
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/LAD_Debt/cleanedFinanceData_2023_lads.csv"
+        },
+        "key": "ONS code"
+      }
+    },
+    {
+      "filter": "datum.properties.LAD23NM != 'Shetland Islands' && datum.Assets > -1"
+    }
+  ],
+  "hconcat": [
+    {
+      "width": 250,
+      "height": 350,
+      "encoding": {
+        "x": {
+          "field": "Borrowing",
+          "scale": {"domainMax": 3700000},
+          "axis": {
+            "titleFontWeight": "normal",
+            "gridOpacity": 0.3,
+            "tickOpacity": 0,
+            "labelFontWeight": "lighter",
+            "labelExpr": "'£'+format(datum.value/1000000, ',.1f')+'B'"
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Assets",
+          "axis": {
+            "titleFontWeight": "normal",
+            "gridOpacity": 0.3,
+            "tickOpacity": 0,
+            "labelFontWeight": "lighter",
+            "labelExpr": "'£'+format(datum.value/1000000, ',.1f')+'B'"
+          },
+          "scale": {"domain": [0, 1000000]},
+          "type": "quantitative"
+        },
+        "color": {"field": "DebtToAssets", "type": "quantitative"}
+      },
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "point_paintbrush",
+              "select": {
+                "type": "point",
+                "fields": ["Name"],
+                "on": "pointerover"
+              }
+            },
+            {"name": "grid", "select": "interval", "bind": "scales"}
+          ],
+          "encoding": {
+            "opacity": {
+              "condition": [
+                {
+                  "test": "datum.Name == point_paintbrush.Name | !isValid(point_paintbrush.Name)",
+                  "value": 1
+                }
+              ],
+              "value": 0.2
+            }
+          },
+          "mark": {
+            "type": "circle",
+            "stroke": "rgba(0,0,0,0.8)",
+            "strokeWidth": 0.5,
+            "tooltip": {
+              "expr": "{'Authority': datum.properties.LAD23NM, 'Debt': '£'+format(datum.Borrowing*1000, ',.4r'), 'Assets': '£'+format(datum.Assets*1000, ',.4r'), 'Ratio': format(datum.DebtToAssets, ',.3r')}"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "opacity": 1,
+            "color": "black",
+            "fontWeight": "lighter",
+            "align": {"expr": "datum.Name == 'Birmingham'? 'center' : 'left'"},
+            "dy": {"expr": "datum.Name == 'Birmingham'? -10 : 0"},
+            "dx": {"expr": "datum.Name == 'Birmingham'? -3 : 5"}
+          },
+          "transform": [
+            {
+              "filter": "datum.Name == point_paintbrush.Name | indexof(['Birmingham', 'Leeds', 'Thurrock'], datum.Name) != -1"
+            }
+          ],
+          "encoding": {
+            "text": {"field": "Name"},
+            "opacity": {"value": 1},
+            "color": {"value": "black"}
+          }
+        }
+      ]
+    },
+    {
+      "height": 350,
+      "width": 250,
+      "projection": {"type": "identity", "reflectY": true},
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "point_paintbrush",
+              "select": {
+                "type": "point",
+                "fields": ["Name"],
+                "on": "pointerover"
+              }
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "tooltip": {
+              "expr": "{'Authority': datum.properties.LAD23NM, 'Debt': '£'+format(datum.Borrowing*1000, ',.4r'), 'Assets': '£'+format(datum.Assets*1000, ',.4r'), 'Ratio': format(datum.DebtToAssets, ',.3r')}"
+            },
+            "color": "red",
+            "stroke": "grey"
+          },
+          "encoding": {
+            "strokeWidth": {
+              "condition": [
+                {"test": "datum.Name == point_paintbrush.Name", "value": 1}
+              ],
+              "value": 0
+            },
+            "opacity": {
+              "condition": [
+                {
+                  "test": "datum.Name == point_paintbrush.Name | !isValid(point_paintbrush.Name)",
+                  "value": 1
+                }
+              ],
+              "value": 0.2
+            },
+            "color": {
+              "field": "DebtToAssets",
+              "legend": {
+                "titleFontWeight": "lighter",
+                "orient": "none",
+                "legendX": 250,
+                "legendY": -5,
+                "title": "Ratio",
+                "labelExpr": "datum.value == 50 ? '>50' : datum.value"
+              },
+              "scale": {
+                "domain": [0, 50],
+                "clamp": true,
+                "type": "linear",
+                "scheme": "lightmulti"
+              },
+              "type": "quantitative"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "width": "container"
+}

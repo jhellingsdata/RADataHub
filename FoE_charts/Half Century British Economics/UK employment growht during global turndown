@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Unemployment rate",
+    "subtitle": "Ages 16 and over, % | Source: ONS through ECO API",
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "transform": [
+    {"filter": "year(datum.date) > 2019"},
+    {
+      "calculate": "datum.value > 1? datum.value/100 : datum.value",
+      "as": "value"
+    }
+  ],
+  "height": 250,
+  "width": "container",
+  "background": "#ffffff",
+  "view": {"fill": "#ffffff"},
+  "data": {
+    "url": "https://api.economicsobservatory.com/gbr/unem?vega",
+    "format": {"type": "json"}
+  },
+  "layer": [
+    {"mark": {"type": "line", "color": "#f4134d", "strokeWidth": 2}},
+    {
+      "data": {
+        "values": [
+          {"date": 1680307200000, "text": "Mar-May", "value": 0.042},
+          {"date": 1680307200000, "text": "4%", "value": 0.039}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "size": 12,
+        "fontWeight": "normal",
+        "color": "#f4134d",
+        "align": "left",
+        "dx": 7,
+        "dy": -5
+      },
+      "encoding": {"text": {"field": "text"}}
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 1,
+        "strokeDash": [4, 12],
+        "color": "rgb(40,40,40"
+      },
+      "transform": [
+        {"filter": "datum.date == 1638316800000 | datum.date==1680307200000 "}
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "date": 1638316800000,
+            "date-end": 1680307200000,
+            "text": "Mar-May",
+            "value": 0.04
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 2,
+        "strokeDash": [4, 4],
+        "color": "rgb(40,40,40"
+      },
+      "encoding": {"x2": {"field": "date-end"}}
+    },
+    {
+      "mark": {"type": "circle", "size": 75, "color": "#f4134d"},
+      "transform": [{"filter": "datum.date == 1680307200000"}],
+      "encoding": {"opacity": {"value": 1}}
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "ticks": false,
+        "values": [1577836800000, 1638316800000, 1680307200000, 1612137600000],
+        "labelPadding": 6,
+        "labelSeparation": -10,
+        "labelOverlap": "greedy",
+        "grid": false,
+        "format": "%b %Y",
+        "title": "",
+        "titleColor": "#122B39"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {"format": "%", "title": "", "titleColor": "#122B39"}
+    }
+  },
+  "autosize": {"type": "fit", "contains": "padding", "resize": false}
+  

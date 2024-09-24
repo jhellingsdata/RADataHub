@@ -1,0 +1,368 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "dx": 24,
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "hconcat": [
+    {
+      "layer": [
+        {
+          "data": {"name": "data-a0a55d106695e8d630baff0f16eee66d"},
+          "mark": {"type": "rule", "color": "grey"},
+          "encoding": {"y": {"field": "y", "type": "quantitative"}}
+        },
+        {
+          "data": {"name": "data-32b17c34e6b14c490fa21e20fb49d998"},
+          "mark": {"type": "line"},
+          "encoding": {
+            "color": {
+              "field": "Tax",
+              "legend": null,
+              "scale": {"range": ["#122b39", "#179fdb", "#eb5c2e"]},
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "labelExpr": "datum.value % 2 === 0 ? datum.value : \"\""
+              },
+              "field": "Year",
+              "scale": {"padding": 0},
+              "type": "ordinal"
+            },
+            "y": {
+              "axis": {"format": "%"},
+              "field": "Value",
+              "type": "quantitative"
+            }
+          },
+          "title": {"text": "Real GDP", "anchor": "middle", "dx": 0}
+        },
+        {
+          "data": {"name": "data-15a8ec9ab3c744be1afb9a303640fcdc"},
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "bottom",
+            "dx": 5,
+            "dy": -3,
+            "opacity": 0.6
+          },
+          "encoding": {
+            "text": {"field": "text", "type": "nominal"},
+            "x": {"field": "x", "type": "ordinal"},
+            "y": {"field": "y", "type": "quantitative"}
+          }
+        }
+      ],
+      "width": 220
+    },
+    {
+      "layer": [
+        {
+          "data": {"name": "data-a0a55d106695e8d630baff0f16eee66d"},
+          "mark": {"type": "rule", "color": "grey"},
+          "encoding": {"y": {"field": "y", "type": "quantitative"}}
+        },
+        {
+          "data": {"name": "data-bf625a7a509ad05bd2bc6d169cf4e5c0"},
+          "mark": {"type": "line"},
+          "encoding": {
+            "color": {
+              "field": "Tax",
+              "legend": null,
+              "scale": {"range": ["#122b39", "#179fdb", "#eb5c2e"]},
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "labelExpr": "datum.value % 2 === 0 ? datum.value : \"\""
+              },
+              "field": "Year",
+              "scale": {"padding": 0},
+              "type": "ordinal"
+            },
+            "y": {
+              "axis": {"format": "%"},
+              "field": "Value",
+              "type": "quantitative"
+            }
+          },
+          "title": {
+            "text": "Potential Output",
+            "anchor": "middle",
+            "dx": 0,
+            "offset": -20
+          }
+        },
+        {
+          "data": {"name": "data-bf625a7a509ad05bd2bc6d169cf4e5c0"},
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 5,
+            "dy": 1
+          },
+          "encoding": {
+            "color": {
+              "field": "Tax",
+              "legend": null,
+              "scale": {"range": ["#122b39", "#179fdb", "#eb5c2e"]},
+              "type": "nominal"
+            },
+            "text": {
+              "aggregate": {"argmax": "Year"},
+              "field": "Tax",
+              "type": "nominal"
+            },
+            "x": {"aggregate": "max", "field": "Year", "type": "ordinal"},
+            "y": {
+              "aggregate": {"argmax": "Year"},
+              "field": "Value",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {"name": "data-5414bf9e447df1041fcec0a8c53c3da2"},
+          "mark": {
+            "type": "image",
+            "align": "right",
+            "baseline": "top",
+            "height": 40,
+            "opacity": 0.5,
+            "width": 40,
+            "xOffset": -5,
+            "yOffset": -30
+          },
+          "encoding": {"url": {"field": "img", "type": "nominal"}}
+        }
+      ],
+      "width": 220
+    }
+  ],
+  "resolve": {"scale": {"y": "shared"}},
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-a0a55d106695e8d630baff0f16eee66d": [{"y": 0}],
+    "data-32b17c34e6b14c490fa21e20fb49d998": [
+      {"Year": 0, "Tax": "Income Tax", "Value": -0.000289},
+      {"Year": 1, "Tax": "Income Tax", "Value": -0.000344},
+      {"Year": 2, "Tax": "Income Tax", "Value": -0.00042500000000000003},
+      {"Year": 3, "Tax": "Income Tax", "Value": -0.00048800000000000004},
+      {"Year": 4, "Tax": "Income Tax", "Value": -0.000505},
+      {"Year": 5, "Tax": "Income Tax", "Value": -0.00048800000000000004},
+      {"Year": 6, "Tax": "Income Tax", "Value": -0.000458},
+      {"Year": 7, "Tax": "Income Tax", "Value": -0.000417},
+      {"Year": 8, "Tax": "Income Tax", "Value": -0.00037400000000000004},
+      {"Year": 9, "Tax": "Income Tax", "Value": -0.000339},
+      {"Year": 10, "Tax": "Income Tax", "Value": -0.000306},
+      {"Year": 11, "Tax": "Income Tax", "Value": -0.000274},
+      {"Year": 12, "Tax": "Income Tax", "Value": -0.000247},
+      {"Year": 13, "Tax": "Income Tax", "Value": -0.000221},
+      {"Year": 14, "Tax": "Income Tax", "Value": -0.000194},
+      {"Year": 15, "Tax": "Income Tax", "Value": -0.000167},
+      {"Year": 16, "Tax": "Income Tax", "Value": -0.00014099999999999998},
+      {"Year": 17, "Tax": "Income Tax", "Value": -0.000115},
+      {"Year": 18, "Tax": "Income Tax", "Value": -0.000092},
+      {"Year": 19, "Tax": "Income Tax", "Value": -0.000073},
+      {"Year": 20, "Tax": "Income Tax", "Value": -0.00006},
+      {"Year": 0, "Tax": "Corporation Tax", "Value": -0.0006410000000000001},
+      {"Year": 1, "Tax": "Corporation Tax", "Value": -0.0017100000000000001},
+      {"Year": 2, "Tax": "Corporation Tax", "Value": -0.0019520000000000002},
+      {"Year": 3, "Tax": "Corporation Tax", "Value": -0.001804},
+      {"Year": 4, "Tax": "Corporation Tax", "Value": -0.001548},
+      {"Year": 5, "Tax": "Corporation Tax", "Value": -0.001363},
+      {"Year": 6, "Tax": "Corporation Tax", "Value": -0.0013020000000000002},
+      {"Year": 7, "Tax": "Corporation Tax", "Value": -0.001338},
+      {"Year": 8, "Tax": "Corporation Tax", "Value": -0.0014299999999999998},
+      {"Year": 9, "Tax": "Corporation Tax", "Value": -0.001553},
+      {"Year": 10, "Tax": "Corporation Tax", "Value": -0.001675},
+      {"Year": 11, "Tax": "Corporation Tax", "Value": -0.0017829999999999999},
+      {"Year": 12, "Tax": "Corporation Tax", "Value": -0.001872},
+      {"Year": 13, "Tax": "Corporation Tax", "Value": -0.001948},
+      {"Year": 14, "Tax": "Corporation Tax", "Value": -0.0020180000000000003},
+      {"Year": 15, "Tax": "Corporation Tax", "Value": -0.002083},
+      {"Year": 16, "Tax": "Corporation Tax", "Value": -0.0021460000000000003},
+      {"Year": 17, "Tax": "Corporation Tax", "Value": -0.0022},
+      {"Year": 18, "Tax": "Corporation Tax", "Value": -0.002255},
+      {"Year": 19, "Tax": "Corporation Tax", "Value": -0.002309},
+      {"Year": 20, "Tax": "Corporation Tax", "Value": -0.002366},
+      {"Year": 0, "Tax": "Indirect Tax", "Value": -0.001315},
+      {"Year": 1, "Tax": "Indirect Tax", "Value": -0.002188},
+      {"Year": 2, "Tax": "Indirect Tax", "Value": -0.002112},
+      {"Year": 3, "Tax": "Indirect Tax", "Value": -0.001689},
+      {"Year": 4, "Tax": "Indirect Tax", "Value": -0.001237},
+      {"Year": 5, "Tax": "Indirect Tax", "Value": -0.000903},
+      {"Year": 6, "Tax": "Indirect Tax", "Value": -0.000718},
+      {"Year": 7, "Tax": "Indirect Tax", "Value": -0.0006450000000000001},
+      {"Year": 8, "Tax": "Indirect Tax", "Value": -0.000639},
+      {"Year": 9, "Tax": "Indirect Tax", "Value": -0.000663},
+      {"Year": 10, "Tax": "Indirect Tax", "Value": -0.000691},
+      {"Year": 11, "Tax": "Indirect Tax", "Value": -0.000713},
+      {"Year": 12, "Tax": "Indirect Tax", "Value": -0.000724},
+      {"Year": 13, "Tax": "Indirect Tax", "Value": -0.000728},
+      {"Year": 14, "Tax": "Indirect Tax", "Value": -0.000726},
+      {"Year": 15, "Tax": "Indirect Tax", "Value": -0.0007199999999999999},
+      {"Year": 16, "Tax": "Indirect Tax", "Value": -0.000714},
+      {"Year": 17, "Tax": "Indirect Tax", "Value": -0.0007059999999999999},
+      {"Year": 18, "Tax": "Indirect Tax", "Value": -0.0006990000000000001},
+      {"Year": 19, "Tax": "Indirect Tax", "Value": -0.000691},
+      {"Year": 20, "Tax": "Indirect Tax", "Value": -0.000682}
+    ],
+    "data-15a8ec9ab3c744be1afb9a303640fcdc": [
+      {"x": 0, "y": -0.004, "text": "Years after tax change ?"}
+    ],
+    "data-bf625a7a509ad05bd2bc6d169cf4e5c0": [
+      {"Year": 0, "Tax": "Income Tax", "Value": 0.000007},
+      {"Year": 1, "Tax": "Income Tax", "Value": 0.000113},
+      {"Year": 2, "Tax": "Income Tax", "Value": 0.000248},
+      {"Year": 3, "Tax": "Income Tax", "Value": 0.00037699999999999995},
+      {"Year": 4, "Tax": "Income Tax", "Value": 0.00048800000000000004},
+      {"Year": 5, "Tax": "Income Tax", "Value": 0.000576},
+      {"Year": 6, "Tax": "Income Tax", "Value": 0.0006419999999999999},
+      {"Year": 7, "Tax": "Income Tax", "Value": 0.000688},
+      {"Year": 8, "Tax": "Income Tax", "Value": 0.000717},
+      {"Year": 9, "Tax": "Income Tax", "Value": 0.000732},
+      {"Year": 10, "Tax": "Income Tax", "Value": 0.000737},
+      {"Year": 11, "Tax": "Income Tax", "Value": 0.000736},
+      {"Year": 12, "Tax": "Income Tax", "Value": 0.000729},
+      {"Year": 13, "Tax": "Income Tax", "Value": 0.000721},
+      {"Year": 14, "Tax": "Income Tax", "Value": 0.000712},
+      {"Year": 15, "Tax": "Income Tax", "Value": 0.0007040000000000001},
+      {"Year": 16, "Tax": "Income Tax", "Value": 0.000696},
+      {"Year": 17, "Tax": "Income Tax", "Value": 0.000689},
+      {"Year": 18, "Tax": "Income Tax", "Value": 0.000684},
+      {"Year": 19, "Tax": "Income Tax", "Value": 0.000678},
+      {"Year": 20, "Tax": "Income Tax", "Value": 0.000672},
+      {"Year": 0, "Tax": "Corporation Tax", "Value": -0.00021600000000000002},
+      {"Year": 1, "Tax": "Corporation Tax", "Value": -0.000931},
+      {"Year": 2, "Tax": "Corporation Tax", "Value": -0.001676},
+      {"Year": 3, "Tax": "Corporation Tax", "Value": -0.002265},
+      {"Year": 4, "Tax": "Corporation Tax", "Value": -0.002696},
+      {"Year": 5, "Tax": "Corporation Tax", "Value": -0.003014},
+      {"Year": 6, "Tax": "Corporation Tax", "Value": -0.0032519999999999997},
+      {"Year": 7, "Tax": "Corporation Tax", "Value": -0.003432},
+      {"Year": 8, "Tax": "Corporation Tax", "Value": -0.003565},
+      {"Year": 9, "Tax": "Corporation Tax", "Value": -0.0036609999999999998},
+      {"Year": 10, "Tax": "Corporation Tax", "Value": -0.003727},
+      {"Year": 11, "Tax": "Corporation Tax", "Value": -0.003768},
+      {"Year": 12, "Tax": "Corporation Tax", "Value": -0.003792},
+      {"Year": 13, "Tax": "Corporation Tax", "Value": -0.0038050000000000002},
+      {"Year": 14, "Tax": "Corporation Tax", "Value": -0.003812},
+      {"Year": 15, "Tax": "Corporation Tax", "Value": -0.0038179999999999998},
+      {"Year": 16, "Tax": "Corporation Tax", "Value": -0.0038229999999999996},
+      {"Year": 17, "Tax": "Corporation Tax", "Value": -0.0038269999999999997},
+      {"Year": 18, "Tax": "Corporation Tax", "Value": -0.003832},
+      {"Year": 19, "Tax": "Corporation Tax", "Value": -0.0038369999999999997},
+      {"Year": 20, "Tax": "Corporation Tax", "Value": -0.003841},
+      {"Year": 0, "Tax": "Indirect Tax", "Value": -0.000125},
+      {"Year": 1, "Tax": "Indirect Tax", "Value": -0.000167},
+      {"Year": 2, "Tax": "Indirect Tax", "Value": -0.000112},
+      {"Year": 3, "Tax": "Indirect Tax", "Value": -0.000014},
+      {"Year": 4, "Tax": "Indirect Tax", "Value": 0.00007000000000000001},
+      {"Year": 5, "Tax": "Indirect Tax", "Value": 0.000117},
+      {"Year": 6, "Tax": "Indirect Tax", "Value": 0.000128},
+      {"Year": 7, "Tax": "Indirect Tax", "Value": 0.00010999999999999999},
+      {"Year": 8, "Tax": "Indirect Tax", "Value": 0.000077},
+      {"Year": 9, "Tax": "Indirect Tax", "Value": 0.000042},
+      {"Year": 10, "Tax": "Indirect Tax", "Value": 0.000011000000000000001},
+      {"Year": 11, "Tax": "Indirect Tax", "Value": -0.000015},
+      {"Year": 12, "Tax": "Indirect Tax", "Value": -0.000033},
+      {"Year": 13, "Tax": "Indirect Tax", "Value": -0.000047000000000000004},
+      {"Year": 14, "Tax": "Indirect Tax", "Value": -0.000057999999999999994},
+      {"Year": 15, "Tax": "Indirect Tax", "Value": -0.000069},
+      {"Year": 16, "Tax": "Indirect Tax", "Value": -0.00007900000000000001},
+      {"Year": 17, "Tax": "Indirect Tax", "Value": -0.000089},
+      {"Year": 18, "Tax": "Indirect Tax", "Value": -0.000097},
+      {"Year": 19, "Tax": "Indirect Tax", "Value": -0.000103},
+      {"Year": 20, "Tax": "Indirect Tax", "Value": -0.000103}
+    ],
+    "data-5414bf9e447df1041fcec0a8c53c3da2": [
+      {
+        "x": 15,
+        "y": 0,
+        "img": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+      }
+    ]
+  }
+}

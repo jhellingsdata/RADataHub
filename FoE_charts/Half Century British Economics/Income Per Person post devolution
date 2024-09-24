@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/T33_C1.csv"
+  },
+  "height": 300,
+  "width": 420,
+  "mark": {"type": "line", "size": 2.5},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "sort": [],
+      "title": null,
+      "axis": {"grid": false, "labelAngle": 0}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "scale": {"domain": [0, 15000]},
+      "axis": {
+        "grid": true,
+        "labelFontSize": 11,
+        "title": "Thousands",
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 10,
+        "titleX": 5,
+        "titleY": 15
+      }
+    },
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": {"labelLimit": 500, "orient": "bottom-right"},
+      "sort": [],
+      "title": null,
+      "scale": {
+        "range": [
+          "#e6224b",
+          "#122b39",
+          "#36b7b4",
+          "#179fdb",
+          "#f4c245",
+          "#0063af",
+          "#eb5c2e"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "timeUnit": "yearmonth",
+        "title": "Date"
+      },
+      {"field": "metric", "type": "nominal", "title": "Measure"},
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Union members (thousands)"
+      }
+    ]
+  }
+}
