@@ -1,0 +1,302 @@
+{
+    "config": {
+        "font": "Circular Std",
+        "mark": {
+            "line": {
+                "interpolate": "monotone"
+            }
+        },
+        "view": {
+            "stroke": "transparent",
+            "width": 400,
+            "height": 300
+        },
+        "range": {
+            "category": [
+                "#36B7B4",
+                "#E6224B",
+                "#F4C245",
+                "#0063AF",
+                "#00A767",
+                "#179FDB",
+                "#EB5C2E"
+            ],
+            "diverging": [
+                "#E6224B",
+                "#E54753",
+                "#C9C9C9",
+                "#179FDB",
+                "#122B39"
+            ],
+            "heatmap": [
+                "#C9C9C9",
+                "#179FDB",
+                "#0063AF",
+                "#122B39"
+            ],
+            "ordinal": [
+                "#00A767",
+                "#36B7B4",
+                "#179FDB",
+                "#0063AF",
+                "#243B5A"
+            ]
+        },
+        "axisX": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": false,
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleY": -15
+        },
+        "axisY": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [
+                1,
+                5
+            ],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -7
+        }
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "bar",
+                "stroke": "white",
+                "strokeWidth": 1
+            },
+            "encoding": {
+                "color": {
+                    "field": "View",
+                    "scale": {
+                        "domain": [
+                            "Trust",
+                            "Distrust"
+                        ],
+                        "range": [
+                            "#36b7b4",
+                            "#e6224b"
+                        ]
+                    },
+                    "type": "nominal"
+                },
+                "tooltip": [
+                    {
+                        "field": "Respondents",
+                        "title": "Respondent",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Category",
+                        "title": "Category",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "View",
+                        "title": "View",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "tooltip_temp",
+                        "format": ".0%",
+                        "title": "Percent of Repondents",
+                        "type": "quantitative"
+                    }
+                ],
+                "x": {
+                    "field": "Category",
+                    "type": "nominal"
+                },
+                "xOffset": {
+                    "field": "Respondents",
+                    "type": "ordinal"
+                },
+                "y": {
+                    "field": "Value",
+                    "title": "% favorable/unfavorable",
+                    "type": "quantitative"
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "center",
+                "baseline": "bottom",
+                "dy": -5
+            },
+            "encoding": {
+                "color": {
+                    "value": "black"
+                },
+                "text": {
+                    "field": "Respondents",
+                    "type": "nominal"
+                },
+                "tooltip": [
+                    {
+                        "field": "Respondents",
+                        "title": "Respondent",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "Category",
+                        "title": "Category",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "View",
+                        "title": "View",
+                        "type": "nominal"
+                    },
+                    {
+                        "field": "tooltip_temp",
+                        "format": ".0%",
+                        "title": "Percent of Repondents",
+                        "type": "quantitative"
+                    }
+                ],
+                "x": {
+                    "field": "Category",
+                    "type": "nominal"
+                },
+                "xOffset": {
+                    "field": "Respondents",
+                    "type": "ordinal"
+                },
+                "y": {
+                    "field": "Value",
+                    "title": "% favorable/unfavorable",
+                    "type": "quantitative"
+                }
+            },
+            "transform": [
+                {
+                    "filter": "(datum.View === 'Trust')"
+                }
+            ]
+        }
+    ],
+    "data": {
+        "name": "data-92f02f08a8e820ff7257d3ad620d4f48"
+    },
+    "width": 300,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+    "datasets": {
+        "data-92f02f08a8e820ff7257d3ad620d4f48": [
+            {
+                "Category": "People",
+                "Respondents": "G20",
+                "View": "Trust",
+                "Value": 0.57,
+                "tooltip_temp": 0.57
+            },
+            {
+                "Category": "Government",
+                "Respondents": "G20",
+                "View": "Trust",
+                "Value": 0.51,
+                "tooltip_temp": 0.51
+            },
+            {
+                "Category": "Institutions",
+                "Respondents": "G20",
+                "View": "Trust",
+                "Value": 0.56,
+                "tooltip_temp": 0.56
+            },
+            {
+                "Category": "People",
+                "Respondents": "G20",
+                "View": "Distrust",
+                "Value": -0.14,
+                "tooltip_temp": 0.14
+            },
+            {
+                "Category": "Government",
+                "Respondents": "G20",
+                "View": "Distrust",
+                "Value": -0.19,
+                "tooltip_temp": 0.19
+            },
+            {
+                "Category": "Institutions",
+                "Respondents": "G20",
+                "View": "Distrust",
+                "Value": -0.16,
+                "tooltip_temp": 0.16
+            },
+            {
+                "Category": "People",
+                "Respondents": "UK",
+                "View": "Trust",
+                "Value": 0.55,
+                "tooltip_temp": 0.55
+            },
+            {
+                "Category": "Government",
+                "Respondents": "UK",
+                "View": "Trust",
+                "Value": 0.47,
+                "tooltip_temp": 0.47
+            },
+            {
+                "Category": "Institutions",
+                "Respondents": "UK",
+                "View": "Trust",
+                "Value": 0.53,
+                "tooltip_temp": 0.53
+            },
+            {
+                "Category": "People",
+                "Respondents": "UK",
+                "View": "Distrust",
+                "Value": -0.21,
+                "tooltip_temp": 0.21
+            },
+            {
+                "Category": "Government",
+                "Respondents": "UK",
+                "View": "Distrust",
+                "Value": -0.34,
+                "tooltip_temp": 0.34
+            },
+            {
+                "Category": "Institutions",
+                "Respondents": "UK",
+                "View": "Distrust",
+                "Value": -0.25,
+                "tooltip_temp": 0.25
+            }
+        ]
+    }
+}
