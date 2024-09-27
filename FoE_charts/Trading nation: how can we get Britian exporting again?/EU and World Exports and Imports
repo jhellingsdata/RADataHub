@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/MW17668/MW17668.github.io/main/TotalTradeMW1.csv"
+  },
+  "height": 400,
+  "width": 430,
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Date", "type": "nominal", "axis": {"labelAngle": 35}},
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Value (£ Million)",
+      "scale": {"domain": [20000, 200000]}
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "scale": {"range": ["#5c267b", "#36b7b4", "#e6224b", "#00a767"]}
+    },
+    "tooltip": [
+      {"field": "Date", "type": "nominal", "title": "Date"},
+      {"field": "Value", "type": "quantitative", "title": "Value in £ Million"},
+      {"field": "Type"}
+    ]
+  }
+}
