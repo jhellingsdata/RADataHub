@@ -1,0 +1,218 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "fontStyle": "Book",
+      "anchor": "start",
+      "dx": 24,
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {"field": "colour", "scale": null, "type": "nominal"},
+        "opacity": {
+          "condition": {"param": "param_28", "value": 1, "empty": true},
+          "value": 0.9
+        },
+        "order": {"field": "order", "type": "ordinal"},
+        "x": {
+          "field": "country_wrap",
+          "sort": {"field": "order", "order": "ascending"},
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {
+            "title": "GDP per hour worked (2010 US$, PPPs)",
+            "format": "$d"
+          },
+          "field": "value",
+          "type": "quantitative"
+        }
+      },
+      "name": "view_26",
+      "transform": [{"filter": "(datum.country !== 'Euro Area')"}]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "bottom",
+        "dx": 0
+      },
+      "encoding": {
+        "color": {"field": "colour", "scale": null, "type": "nominal"},
+        "opacity": {"value": 1},
+        "order": {"field": "order", "type": "quantitative"},
+        "text": {"field": "value", "type": "quantitative"},
+        "x": {
+          "field": "country_wrap",
+          "sort": {"field": "order", "order": "ascending"},
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {
+            "title": "GDP per hour worked (2010 US$, PPPs)",
+            "format": "$d"
+          },
+          "field": "value",
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"filter": "(datum.country !== 'Euro Area')"}]
+    }
+  ],
+  "data": {"name": "data-764fd1849fcf1d9fe12552f34201aeef"},
+  "height": 300,
+  "params": [
+    {
+      "name": "param_28",
+      "select": {
+        "type": "point",
+        "clear": "mouseout",
+        "fields": ["country"],
+        "nearest": true,
+        "on": "mouseover"
+      },
+      "views": ["view_26"]
+    }
+  ],
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+  "datasets": {
+    "data-764fd1849fcf1d9fe12552f34201aeef": [
+      {
+        "country": "United States",
+        "value": 73.9,
+        "order": 1,
+        "colour": "#122b39",
+        "country_wrap": ["United", "States"]
+      },
+      {
+        "country": "Germany",
+        "value": 68.5,
+        "order": 2,
+        "colour": "#122b39",
+        "country_wrap": ["Germany"]
+      },
+      {
+        "country": "France",
+        "value": 65.2,
+        "order": 3,
+        "colour": "#122b39",
+        "country_wrap": ["France"]
+      },
+      {
+        "country": "United Kingdom",
+        "value": 60.5,
+        "order": 5,
+        "colour": "#e6224b",
+        "country_wrap": ["United", "Kingdom"]
+      },
+      {
+        "country": "Euro Area",
+        "value": 60.8,
+        "order": 4,
+        "colour": "#86a7d1",
+        "country_wrap": ["Euro Area"]
+      },
+      {
+        "country": "Italy",
+        "value": 54.2,
+        "order": 6,
+        "colour": "#122b39",
+        "country_wrap": ["Italy"]
+      },
+      {
+        "country": "Canada",
+        "value": 53.3,
+        "order": 7,
+        "colour": "#122b39",
+        "country_wrap": ["Canada"]
+      },
+      {
+        "country": "Japan",
+        "value": 48.1,
+        "order": 8,
+        "colour": "#122b39",
+        "country_wrap": ["Japan"]
+      }
+    ]
+  }
+}

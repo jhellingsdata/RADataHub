@@ -1,1 +1,790 @@
-
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "point": {"filled": true, "size": 80, "color": "#122b39", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "fontStyle": "book"
+    },
+    "legend": {"titleColor": "#122b39", "labelColor": "#122b39"}
+  },
+  "layer": [
+    {
+      "data": {"name": "data-06fd9f850666401b4599de5588b60692"},
+      "mark": {"type": "rule", "color": "dimgray"},
+      "encoding": {"y": {"field": "y", "type": "quantitative"}}
+    },
+    {
+      "data": {"name": "data-11412da12a8b4c157d5e01a6983bf5bf"},
+      "mark": {"type": "line", "color": "lightgrey"},
+      "encoding": {
+        "detail": {"field": "ISO3", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country", "title": "Country", "type": "nominal"},
+          {"field": "Year", "title": "Year", "type": "nominal"},
+          {"field": "Family type", "title": "Family type", "type": "nominal"},
+          {
+            "field": "Value",
+            "format": "~%",
+            "title": "Net costs",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {"labelAngle": -40, "labelOffset": 5},
+          "field": "ISO3",
+          "sort": {"field": "Rank", "order": "descending"},
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "title": "Net childcare costs, parents earning 67% of the average wage",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {"name": "data-11412da12a8b4c157d5e01a6983bf5bf"},
+      "mark": {"type": "point", "filled": true, "size": 100},
+      "encoding": {
+        "color": {
+          "condition": {
+            "param": "param_40",
+            "empty": true,
+            "field": "Family type",
+            "type": "nominal",
+            "scale": {"range": ["#911a24", "#e6959c"]},
+            "legend": {"orient": "top-left", "title": null}
+          },
+          "value": "lightgray"
+        },
+        "size": {
+          "condition": {"param": "param_40", "value": 80, "empty": true},
+          "value": 50
+        },
+        "tooltip": [
+          {"field": "Country", "title": "Country", "type": "nominal"},
+          {"field": "Year", "title": "Year", "type": "nominal"},
+          {"field": "Family type", "title": "Family type", "type": "nominal"},
+          {
+            "field": "Value",
+            "format": "~%",
+            "title": "Net costs",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {"labelAngle": -40, "labelOffset": 5},
+          "field": "ISO3",
+          "sort": {"field": "Rank", "order": "descending"},
+          "type": "nominal"
+        },
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "title": "Net childcare costs, parents earning 67% of the average wage",
+          "type": "quantitative"
+        }
+      },
+      "name": "view_40"
+    }
+  ],
+  "height": 300,
+  "params": [
+    {
+      "name": "param_40",
+      "select": {
+        "type": "point",
+        "clear": "mouseout",
+        "fields": ["Family type"],
+        "nearest": true,
+        "on": "mouseover"
+      },
+      "value": "Couple - 2 children",
+      "views": ["view_40"]
+    }
+  ],
+  "width": 550,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+  "datasets": {
+    "data-06fd9f850666401b4599de5588b60692": [{"y": 0}],
+    "data-11412da12a8b4c157d5e01a6983bf5bf": [
+      {
+        "ISO3": "AUS",
+        "Country": "Australia",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.17,
+        "Year": 2022,
+        "Rank": 9
+      },
+      {
+        "ISO3": "AUT",
+        "Country": "Austria",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.03,
+        "Year": 2022,
+        "Rank": 32
+      },
+      {
+        "ISO3": "BEL",
+        "Country": "Belgium",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.12,
+        "Year": 2022,
+        "Rank": 11
+      },
+      {
+        "ISO3": "CAN",
+        "Country": "Canada",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.18,
+        "Year": 2022,
+        "Rank": 8
+      },
+      {
+        "ISO3": "CZE",
+        "Country": "Czechia",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.27,
+        "Year": 2022,
+        "Rank": 4
+      },
+      {
+        "ISO3": "DNK",
+        "Country": "Denmark",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.11,
+        "Year": 2022,
+        "Rank": 13
+      },
+      {
+        "ISO3": "FIN",
+        "Country": "Finland",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.11,
+        "Year": 2022,
+        "Rank": 13
+      },
+      {
+        "ISO3": "FRA",
+        "Country": "France",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.09,
+        "Year": 2022,
+        "Rank": 17
+      },
+      {
+        "ISO3": "DEU",
+        "Country": "Germany",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.01,
+        "Year": 2022,
+        "Rank": 34
+      },
+      {
+        "ISO3": "GRC",
+        "Country": "Greece",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.05,
+        "Year": 2022,
+        "Rank": 26
+      },
+      {
+        "ISO3": "HUN",
+        "Country": "Hungary",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.07,
+        "Year": 2022,
+        "Rank": 24
+      },
+      {
+        "ISO3": "ISL",
+        "Country": "Iceland",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.05,
+        "Year": 2022,
+        "Rank": 26
+      },
+      {
+        "ISO3": "IRL",
+        "Country": "Ireland",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.28,
+        "Year": 2022,
+        "Rank": 3
+      },
+      {
+        "ISO3": "ITA",
+        "Country": "Italy",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0,
+        "Year": 2022,
+        "Rank": 35
+      },
+      {
+        "ISO3": "JPN",
+        "Country": "Japan",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.07,
+        "Year": 2022,
+        "Rank": 24
+      },
+      {
+        "ISO3": "KOR",
+        "Country": "Korea",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.05,
+        "Year": 2022,
+        "Rank": 26
+      },
+      {
+        "ISO3": "LUX",
+        "Country": "Luxembourg",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.03,
+        "Year": 2022,
+        "Rank": 32
+      },
+      {
+        "ISO3": "NLD",
+        "Country": "Netherlands",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.16,
+        "Year": 2022,
+        "Rank": 10
+      },
+      {
+        "ISO3": "NZL",
+        "Country": "New Zealand",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.37,
+        "Year": 2022,
+        "Rank": 1
+      },
+      {
+        "ISO3": "NOR",
+        "Country": "Norway",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.08,
+        "Year": 2022,
+        "Rank": 20
+      },
+      {
+        "ISO3": "POL",
+        "Country": "Poland",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.08,
+        "Year": 2022,
+        "Rank": 20
+      },
+      {
+        "ISO3": "PRT",
+        "Country": "Portugal",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.05,
+        "Year": 2022,
+        "Rank": 26
+      },
+      {
+        "ISO3": "SVK",
+        "Country": "Slovak Republic",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.12,
+        "Year": 2022,
+        "Rank": 11
+      },
+      {
+        "ISO3": "ESP",
+        "Country": "Spain",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.09,
+        "Year": 2022,
+        "Rank": 17
+      },
+      {
+        "ISO3": "SWE",
+        "Country": "Sweden",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.05,
+        "Year": 2022,
+        "Rank": 26
+      },
+      {
+        "ISO3": "CHE",
+        "Country": "Switzerland",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.22,
+        "Year": 2022,
+        "Rank": 7
+      },
+      {
+        "ISO3": "TUR",
+        "Country": "Türkiye",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": null,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "GBR",
+        "Country": "United Kingdom",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.25,
+        "Year": 2022,
+        "Rank": 6
+      },
+      {
+        "ISO3": "USA",
+        "Country": "United States",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.32,
+        "Year": 2022,
+        "Rank": 2
+      },
+      {
+        "ISO3": "EST",
+        "Country": "Estonia",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0,
+        "Year": 2022,
+        "Rank": 35
+      },
+      {
+        "ISO3": "ISR",
+        "Country": "Israel",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.11,
+        "Year": 2022,
+        "Rank": 13
+      },
+      {
+        "ISO3": "LVA",
+        "Country": "Latvia",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0,
+        "Year": 2022,
+        "Rank": 35
+      },
+      {
+        "ISO3": "LTU",
+        "Country": "Lithuania",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.08,
+        "Year": 2022,
+        "Rank": 20
+      },
+      {
+        "ISO3": "SVN",
+        "Country": "Slovenia",
+        "Family type": "Couple - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.08,
+        "Year": 2022,
+        "Rank": 20
+      },
+      {
+        "ISO3": "AUS",
+        "Country": "Australia",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.07,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "AUT",
+        "Country": "Austria",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.03,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "BEL",
+        "Country": "Belgium",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.05,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "CAN",
+        "Country": "Canada",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": -0.02,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "CZE",
+        "Country": "Czechia",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.27,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "DNK",
+        "Country": "Denmark",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.02,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "FIN",
+        "Country": "Finland",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.06,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "FRA",
+        "Country": "France",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.03,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "DEU",
+        "Country": "Germany",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.01,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "GRC",
+        "Country": "Greece",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "HUN",
+        "Country": "Hungary",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.07,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "ISL",
+        "Country": "Iceland",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.04,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "IRL",
+        "Country": "Ireland",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.04,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "ITA",
+        "Country": "Italy",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "JPN",
+        "Country": "Japan",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.01,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "KOR",
+        "Country": "Korea",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.05,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "LUX",
+        "Country": "Luxembourg",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "NLD",
+        "Country": "Netherlands",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.07,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "NZL",
+        "Country": "New Zealand",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.11,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "NOR",
+        "Country": "Norway",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.01,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "POL",
+        "Country": "Poland",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.08,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "PRT",
+        "Country": "Portugal",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "SVK",
+        "Country": "Slovak Republic",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.12,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "ESP",
+        "Country": "Spain",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.09,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "SWE",
+        "Country": "Sweden",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.03,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "CHE",
+        "Country": "Switzerland",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.07,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "TUR",
+        "Country": "Türkiye",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": null,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "GBR",
+        "Country": "United Kingdom",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.05,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "USA",
+        "Country": "United States",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.32,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "EST",
+        "Country": "Estonia",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "ISR",
+        "Country": "Israel",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.08,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "LVA",
+        "Country": "Latvia",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "LTU",
+        "Country": "Lithuania",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.05,
+        "Year": 2022,
+        "Rank": null
+      },
+      {
+        "ISO3": "SVN",
+        "Country": "Slovenia",
+        "Family type": "Single - 2 children",
+        "Earnings of the first adult": "67% of the Average Wage",
+        "Value": 0.08,
+        "Year": 2022,
+        "Rank": null
+      }
+    ]
+  }
+}

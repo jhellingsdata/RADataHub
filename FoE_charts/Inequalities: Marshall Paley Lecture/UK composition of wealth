@@ -1,1 +1,31 @@
-
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/Composition%20of%20wealth(2).csv"
+  },
+  "description": "Composition of wealth by asset type",
+  "height": 300,
+  "width": 400,
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Wealth category",
+      "type": "nominal",
+      "title": "Total wealth in £, (share of population)",
+      "sort": ""
+    },
+    "y": {
+      "field": "Percentage",
+      "aggregate": "sum",
+      "title": "%",
+      "scale": {"domain": [0, 100]}
+    },
+    "color": {
+      "field": "Asset type",
+      "type": "nominal",
+      "scale": {
+        "range": ["#e6224b", "#233a58", "#179fdb", "#f4c245", "#5c267b"]
+      }
+    }
+  }
+}
