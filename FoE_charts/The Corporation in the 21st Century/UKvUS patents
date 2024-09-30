@@ -1,0 +1,1130 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "dx": 24,
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {"titleColor": "#122b39", "labelColor": "#122b39"}
+  },
+  "layer": [
+    {
+      "data": {"name": "data-28df39b56e41114186068005b22b0fbb"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": -100,
+        "fontSize": 9,
+        "lineBreak": "|"
+      },
+      "encoding": {
+        "text": {"field": "label_wrapped", "type": "nominal"},
+        "x": {"field": "date", "type": "temporal"}
+      }
+    },
+    {
+      "data": {"name": "data-28df39b56e41114186068005b22b0fbb"},
+      "mark": {
+        "type": "rule",
+        "angle": 0,
+        "color": "#676A86",
+        "opacity": 0.5,
+        "size": 2
+      },
+      "encoding": {"x": {"field": "date", "type": "temporal"}}
+    },
+    {
+      "layer": [
+        {
+          "data": {"name": "data-d229f8507e595355bfea831cee7fd2e0"},
+          "mark": {"type": "line"},
+          "encoding": {
+            "color": {
+              "field": "country",
+              "legend": null,
+              "scale": {"range": ["#e6224b", "#179fdb"]},
+              "type": "nominal"
+            },
+            "x": {"field": "date", "type": "temporal"},
+            "y": {
+              "axis": {"title": "Applications", "titleX": 0, "titleY": -5},
+              "field": "applications",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {"name": "data-763b30f954c9d415f076d9e3a049bbac"},
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 7,
+            "dy": 0,
+            "fontSize": 11
+          },
+          "encoding": {
+            "text": {"field": "country", "type": "nominal"},
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "applications", "type": "quantitative"}
+          }
+        },
+        {
+          "data": {"name": "data-763b30f954c9d415f076d9e3a049bbac"},
+          "mark": {"type": "point"},
+          "encoding": {
+            "color": {"field": "country", "type": "nominal"},
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "applications", "type": "quantitative"}
+          }
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "data": {"name": "data-a70fc3dc80602989ac8f73eb79e53866"},
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "dx": 0,
+            "dy": 29,
+            "fontSize": 9,
+            "lineBreak": "|"
+          },
+          "encoding": {
+            "text": {"field": "label_wrapped", "type": "nominal"},
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "United States", "type": "quantitative"}
+          }
+        },
+        {
+          "data": {"name": "data-a70fc3dc80602989ac8f73eb79e53866"},
+          "mark": {
+            "type": "point",
+            "angle": 0,
+            "color": "#676A86",
+            "shape": "arrow",
+            "size": 200,
+            "yOffset": 12
+          },
+          "encoding": {
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "United States", "type": "quantitative"}
+          }
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "data": {"name": "data-d0608fdd19438ffc60638873f4ed1063"},
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "dx": -20,
+            "dy": -52,
+            "fontSize": 9,
+            "lineBreak": "|"
+          },
+          "encoding": {
+            "text": {"field": "label_wrapped", "type": "nominal"},
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "United States", "type": "quantitative"}
+          }
+        },
+        {
+          "data": {"name": "data-d0608fdd19438ffc60638873f4ed1063"},
+          "mark": {
+            "type": "point",
+            "angle": 180,
+            "color": "#676A86",
+            "shape": "arrow",
+            "size": 200,
+            "yOffset": -24
+          },
+          "encoding": {
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "United States", "type": "quantitative"}
+          }
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "data": {"name": "data-34862ffd36d3cf0f68a36b0a3d797692"},
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "dx": 38,
+            "dy": 5,
+            "fontSize": 9,
+            "lineBreak": "|"
+          },
+          "encoding": {
+            "text": {"field": "label_wrapped", "type": "nominal"},
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "United Kingdom", "type": "quantitative"}
+          }
+        },
+        {
+          "data": {"name": "data-34862ffd36d3cf0f68a36b0a3d797692"},
+          "mark": {
+            "type": "point",
+            "angle": 0,
+            "color": "#676A86",
+            "shape": "arrow",
+            "size": 200,
+            "yOffset": 10
+          },
+          "encoding": {
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "United Kingdom", "type": "quantitative"}
+          }
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "data": {"name": "data-a268a79f76ae8deccb8999c78cbae601"},
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "dx": 0,
+            "dy": 31,
+            "fontSize": 9,
+            "lineBreak": "|"
+          },
+          "encoding": {
+            "text": {"field": "label_wrapped", "type": "nominal"},
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "United Kingdom", "type": "quantitative"}
+          }
+        },
+        {
+          "data": {"name": "data-a268a79f76ae8deccb8999c78cbae601"},
+          "mark": {
+            "type": "point",
+            "angle": 0,
+            "color": "#676A86",
+            "shape": "arrow",
+            "size": 200,
+            "yOffset": 15
+          },
+          "encoding": {
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"field": "United Kingdom", "type": "quantitative"}
+          }
+        }
+      ]
+    },
+    {
+      "data": {"name": "data-dcbae142e5bbf49d726d3a54e933146d"},
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": -5,
+        "yOffset": -30
+      },
+      "encoding": {"url": {"field": "img", "type": "nominal"}}
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+  "datasets": {
+    "data-28df39b56e41114186068005b22b0fbb": [
+      {
+        "year": 1870,
+        "United Kingdom": 2180,
+        "United States": 12137,
+        "event": "Second Industrial Revolution begins",
+        "date": "1870-01-01T00:00:00",
+        "label_wrapped": "Second Industrial|Revolution begins"
+      }
+    ],
+    "data-d229f8507e595355bfea831cee7fd2e0": [
+      {
+        "year": 1853,
+        "date": "1853-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2187
+      },
+      {
+        "year": 1854,
+        "date": "1854-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 1878
+      },
+      {
+        "year": 1855,
+        "date": "1855-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2046
+      },
+      {
+        "year": 1856,
+        "date": "1856-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2094
+      },
+      {
+        "year": 1857,
+        "date": "1857-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2028
+      },
+      {
+        "year": 1858,
+        "date": "1858-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 1954
+      },
+      {
+        "year": 1859,
+        "date": "1859-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 1977
+      },
+      {
+        "year": 1860,
+        "date": "1860-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2063
+      },
+      {
+        "year": 1861,
+        "date": "1861-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2647
+      },
+      {
+        "year": 1862,
+        "date": "1862-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2191
+      },
+      {
+        "year": 1863,
+        "date": "1863-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2094
+      },
+      {
+        "year": 1864,
+        "date": "1864-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2024
+      },
+      {
+        "year": 1865,
+        "date": "1865-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2186
+      },
+      {
+        "year": 1866,
+        "date": "1866-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2124
+      },
+      {
+        "year": 1867,
+        "date": "1867-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2284
+      },
+      {
+        "year": 1868,
+        "date": "1868-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2490
+      },
+      {
+        "year": 1869,
+        "date": "1869-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2407
+      },
+      {
+        "year": 1870,
+        "date": "1870-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2180
+      },
+      {
+        "year": 1871,
+        "date": "1871-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2376
+      },
+      {
+        "year": 1872,
+        "date": "1872-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2771
+      },
+      {
+        "year": 1873,
+        "date": "1873-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 2974
+      },
+      {
+        "year": 1874,
+        "date": "1874-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 3162
+      },
+      {
+        "year": 1875,
+        "date": "1875-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 3112
+      },
+      {
+        "year": 1876,
+        "date": "1876-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 3435
+      },
+      {
+        "year": 1877,
+        "date": "1877-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 3317
+      },
+      {
+        "year": 1878,
+        "date": "1878-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 3509
+      },
+      {
+        "year": 1879,
+        "date": "1879-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 3524
+      },
+      {
+        "year": 1880,
+        "date": "1880-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 3741
+      },
+      {
+        "year": 1881,
+        "date": "1881-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 3950
+      },
+      {
+        "year": 1882,
+        "date": "1882-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 4337
+      },
+      {
+        "year": 1883,
+        "date": "1883-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 3962
+      },
+      {
+        "year": 1884,
+        "date": "1884-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 3721
+      },
+      {
+        "year": 1885,
+        "date": "1885-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 9308
+      },
+      {
+        "year": 1886,
+        "date": "1886-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 8923
+      },
+      {
+        "year": 1887,
+        "date": "1887-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 9226
+      },
+      {
+        "year": 1888,
+        "date": "1888-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 9309
+      },
+      {
+        "year": 1889,
+        "date": "1889-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 10081
+      },
+      {
+        "year": 1890,
+        "date": "1890-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 10646
+      },
+      {
+        "year": 1891,
+        "date": "1891-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 10643
+      },
+      {
+        "year": 1892,
+        "date": "1892-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 11164
+      },
+      {
+        "year": 1893,
+        "date": "1893-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 11600
+      },
+      {
+        "year": 1894,
+        "date": "1894-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 11699
+      },
+      {
+        "year": 1895,
+        "date": "1895-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 12191
+      },
+      {
+        "year": 1896,
+        "date": "1896-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 12473
+      },
+      {
+        "year": 1897,
+        "date": "1897-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 14210
+      },
+      {
+        "year": 1898,
+        "date": "1898-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 14063
+      },
+      {
+        "year": 1899,
+        "date": "1899-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 14160
+      },
+      {
+        "year": 1900,
+        "date": "1900-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 13170
+      },
+      {
+        "year": 1901,
+        "date": "1901-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 13062
+      },
+      {
+        "year": 1902,
+        "date": "1902-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 13764
+      },
+      {
+        "year": 1903,
+        "date": "1903-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 15718
+      },
+      {
+        "year": 1904,
+        "date": "1904-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 15089
+      },
+      {
+        "year": 1905,
+        "date": "1905-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 14786
+      },
+      {
+        "year": 1906,
+        "date": "1906-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 14707
+      },
+      {
+        "year": 1907,
+        "date": "1907-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 16272
+      },
+      {
+        "year": 1908,
+        "date": "1908-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 16284
+      },
+      {
+        "year": 1909,
+        "date": "1909-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 15065
+      },
+      {
+        "year": 1910,
+        "date": "1910-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 16269
+      },
+      {
+        "year": 1911,
+        "date": "1911-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 17164
+      },
+      {
+        "year": 1912,
+        "date": "1912-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 15814
+      },
+      {
+        "year": 1913,
+        "date": "1913-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 16599
+      },
+      {
+        "year": 1914,
+        "date": "1914-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 15036
+      },
+      {
+        "year": 1853,
+        "date": "1853-01-01T00:00:00",
+        "country": "United States",
+        "applications": 844
+      },
+      {
+        "year": 1854,
+        "date": "1854-01-01T00:00:00",
+        "country": "United States",
+        "applications": 1755
+      },
+      {
+        "year": 1855,
+        "date": "1855-01-01T00:00:00",
+        "country": "United States",
+        "applications": 1879
+      },
+      {
+        "year": 1856,
+        "date": "1856-01-01T00:00:00",
+        "country": "United States",
+        "applications": 2304
+      },
+      {
+        "year": 1857,
+        "date": "1857-01-01T00:00:00",
+        "country": "United States",
+        "applications": 2674
+      },
+      {
+        "year": 1858,
+        "date": "1858-01-01T00:00:00",
+        "country": "United States",
+        "applications": 3453
+      },
+      {
+        "year": 1859,
+        "date": "1859-01-01T00:00:00",
+        "country": "United States",
+        "applications": 4159
+      },
+      {
+        "year": 1860,
+        "date": "1860-01-01T00:00:00",
+        "country": "United States",
+        "applications": 4356
+      },
+      {
+        "year": 1861,
+        "date": "1861-01-01T00:00:00",
+        "country": "United States",
+        "applications": 3021
+      },
+      {
+        "year": 1862,
+        "date": "1862-01-01T00:00:00",
+        "country": "United States",
+        "applications": 3214
+      },
+      {
+        "year": 1863,
+        "date": "1863-01-01T00:00:00",
+        "country": "United States",
+        "applications": 3772
+      },
+      {
+        "year": 1864,
+        "date": "1864-01-01T00:00:00",
+        "country": "United States",
+        "applications": 4629
+      },
+      {
+        "year": 1865,
+        "date": "1865-01-01T00:00:00",
+        "country": "United States",
+        "applications": 6089
+      },
+      {
+        "year": 1866,
+        "date": "1866-01-01T00:00:00",
+        "country": "United States",
+        "applications": 8862
+      },
+      {
+        "year": 1867,
+        "date": "1867-01-01T00:00:00",
+        "country": "United States",
+        "applications": 12275
+      },
+      {
+        "year": 1868,
+        "date": "1868-01-01T00:00:00",
+        "country": "United States",
+        "applications": 12524
+      },
+      {
+        "year": 1869,
+        "date": "1869-01-01T00:00:00",
+        "country": "United States",
+        "applications": 12930
+      },
+      {
+        "year": 1870,
+        "date": "1870-01-01T00:00:00",
+        "country": "United States",
+        "applications": 12137
+      },
+      {
+        "year": 1871,
+        "date": "1871-01-01T00:00:00",
+        "country": "United States",
+        "applications": 11656
+      },
+      {
+        "year": 1872,
+        "date": "1872-01-01T00:00:00",
+        "country": "United States",
+        "applications": 12179
+      },
+      {
+        "year": 1873,
+        "date": "1873-01-01T00:00:00",
+        "country": "United States",
+        "applications": 11616
+      },
+      {
+        "year": 1874,
+        "date": "1874-01-01T00:00:00",
+        "country": "United States",
+        "applications": 12230
+      },
+      {
+        "year": 1875,
+        "date": "1875-01-01T00:00:00",
+        "country": "United States",
+        "applications": 13291
+      },
+      {
+        "year": 1876,
+        "date": "1876-01-01T00:00:00",
+        "country": "United States",
+        "applications": 14172
+      },
+      {
+        "year": 1877,
+        "date": "1877-01-01T00:00:00",
+        "country": "United States",
+        "applications": 12920
+      },
+      {
+        "year": 1878,
+        "date": "1878-01-01T00:00:00",
+        "country": "United States",
+        "applications": 12345
+      },
+      {
+        "year": 1879,
+        "date": "1879-01-01T00:00:00",
+        "country": "United States",
+        "applications": 12123
+      },
+      {
+        "year": 1880,
+        "date": "1880-01-01T00:00:00",
+        "country": "United States",
+        "applications": 12901
+      },
+      {
+        "year": 1881,
+        "date": "1881-01-01T00:00:00",
+        "country": "United States",
+        "applications": 15492
+      },
+      {
+        "year": 1882,
+        "date": "1882-01-01T00:00:00",
+        "country": "United States",
+        "applications": 18087
+      },
+      {
+        "year": 1883,
+        "date": "1883-01-01T00:00:00",
+        "country": "United States",
+        "applications": 21150
+      },
+      {
+        "year": 1884,
+        "date": "1884-01-01T00:00:00",
+        "country": "United States",
+        "applications": 19120
+      },
+      {
+        "year": 1885,
+        "date": "1885-01-01T00:00:00",
+        "country": "United States",
+        "applications": 23275
+      },
+      {
+        "year": 1886,
+        "date": "1886-01-01T00:00:00",
+        "country": "United States",
+        "applications": 21756
+      },
+      {
+        "year": 1887,
+        "date": "1887-01-01T00:00:00",
+        "country": "United States",
+        "applications": 20395
+      },
+      {
+        "year": 1888,
+        "date": "1888-01-01T00:00:00",
+        "country": "United States",
+        "applications": 19543
+      },
+      {
+        "year": 1889,
+        "date": "1889-01-01T00:00:00",
+        "country": "United States",
+        "applications": 23315
+      },
+      {
+        "year": 1890,
+        "date": "1890-01-01T00:00:00",
+        "country": "United States",
+        "applications": 25303
+      },
+      {
+        "year": 1891,
+        "date": "1891-01-01T00:00:00",
+        "country": "United States",
+        "applications": 22303
+      },
+      {
+        "year": 1892,
+        "date": "1892-01-01T00:00:00",
+        "country": "United States",
+        "applications": 22642
+      },
+      {
+        "year": 1893,
+        "date": "1893-01-01T00:00:00",
+        "country": "United States",
+        "applications": 22741
+      },
+      {
+        "year": 1894,
+        "date": "1894-01-01T00:00:00",
+        "country": "United States",
+        "applications": 19828
+      },
+      {
+        "year": 1895,
+        "date": "1895-01-01T00:00:00",
+        "country": "United States",
+        "applications": 20854
+      },
+      {
+        "year": 1896,
+        "date": "1896-01-01T00:00:00",
+        "country": "United States",
+        "applications": 21823
+      },
+      {
+        "year": 1897,
+        "date": "1897-01-01T00:00:00",
+        "country": "United States",
+        "applications": 22057
+      },
+      {
+        "year": 1898,
+        "date": "1898-01-01T00:00:00",
+        "country": "United States",
+        "applications": 20374
+      },
+      {
+        "year": 1899,
+        "date": "1899-01-01T00:00:00",
+        "country": "United States",
+        "applications": 23278
+      },
+      {
+        "year": 1900,
+        "date": "1900-01-01T00:00:00",
+        "country": "United States",
+        "applications": 24637
+      },
+      {
+        "year": 1901,
+        "date": "1901-01-01T00:00:00",
+        "country": "United States",
+        "applications": 25545
+      },
+      {
+        "year": 1902,
+        "date": "1902-01-01T00:00:00",
+        "country": "United States",
+        "applications": 27118
+      },
+      {
+        "year": 1903,
+        "date": "1903-01-01T00:00:00",
+        "country": "United States",
+        "applications": 31027
+      },
+      {
+        "year": 1904,
+        "date": "1904-01-01T00:00:00",
+        "country": "United States",
+        "applications": 30258
+      },
+      {
+        "year": 1905,
+        "date": "1905-01-01T00:00:00",
+        "country": "United States",
+        "applications": 29775
+      },
+      {
+        "year": 1906,
+        "date": "1906-01-01T00:00:00",
+        "country": "United States",
+        "applications": 31169
+      },
+      {
+        "year": 1907,
+        "date": "1907-01-01T00:00:00",
+        "country": "United States",
+        "applications": 35859
+      },
+      {
+        "year": 1908,
+        "date": "1908-01-01T00:00:00",
+        "country": "United States",
+        "applications": 32735
+      },
+      {
+        "year": 1909,
+        "date": "1909-01-01T00:00:00",
+        "country": "United States",
+        "applications": 36561
+      },
+      {
+        "year": 1910,
+        "date": "1910-01-01T00:00:00",
+        "country": "United States",
+        "applications": 35128
+      },
+      {
+        "year": 1911,
+        "date": "1911-01-01T00:00:00",
+        "country": "United States",
+        "applications": 32855
+      },
+      {
+        "year": 1912,
+        "date": "1912-01-01T00:00:00",
+        "country": "United States",
+        "applications": 36196
+      },
+      {
+        "year": 1913,
+        "date": "1913-01-01T00:00:00",
+        "country": "United States",
+        "applications": 33915
+      },
+      {
+        "year": 1914,
+        "date": "1914-01-01T00:00:00",
+        "country": "United States",
+        "applications": 39892
+      }
+    ],
+    "data-763b30f954c9d415f076d9e3a049bbac": [
+      {
+        "year": 1914,
+        "date": "1914-01-01T00:00:00",
+        "country": "United Kingdom",
+        "applications": 15036
+      },
+      {
+        "year": 1914,
+        "date": "1914-01-01T00:00:00",
+        "country": "United States",
+        "applications": 39892
+      }
+    ],
+    "data-a70fc3dc80602989ac8f73eb79e53866": [
+      {
+        "year": 1877,
+        "United Kingdom": 3317,
+        "United States": 12920,
+        "event": "Alexander Graham Bell's Telephone",
+        "date": "1877-01-01T00:00:00",
+        "label_wrapped": "Alexander Graham|Bell's Telephone"
+      }
+    ],
+    "data-d0608fdd19438ffc60638873f4ed1063": [
+      {
+        "year": 1879,
+        "United Kingdom": 3524,
+        "United States": 12123,
+        "event": "Thomas Edison's Electric Light Bulb",
+        "date": "1879-01-01T00:00:00",
+        "label_wrapped": "Thomas Edison's|Electric Light Bulb"
+      }
+    ],
+    "data-34862ffd36d3cf0f68a36b0a3d797692": [
+      {
+        "year": 1884,
+        "United Kingdom": 3721,
+        "United States": 19120,
+        "event": "Charles Parson's Steam Turbine",
+        "date": "1884-01-01T00:00:00",
+        "label_wrapped": "Charles Parson's|Steam Turbine"
+      }
+    ],
+    "data-a268a79f76ae8deccb8999c78cbae601": [
+      {
+        "year": 1900,
+        "United Kingdom": 13170,
+        "United States": 24637,
+        "event": "Guglielmo Marconi's Wireless Telegraph",
+        "date": "1900-01-01T00:00:00",
+        "label_wrapped": "Guglielmo Marconi's|Wireless Telegraph"
+      }
+    ],
+    "data-dcbae142e5bbf49d726d3a54e933146d": [
+      {
+        "x": 2.5,
+        "y": 2.5,
+        "img": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+      }
+    ]
+  },
+  "width": 400,
+  "height": 300
+}
