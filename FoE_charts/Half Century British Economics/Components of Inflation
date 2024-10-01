@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/C26_C2b.csv"
   },
   "mark": {"type": "bar", "size": 11},
-  "width": 480,
+  "width": 450,
   "height": 300,
   "title": {
     "text": "Source: ONS",
