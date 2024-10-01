@@ -16,15 +16,30 @@
       "discreteWidth": 400,
       "discreteHeight": 300
     },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
     "bar": {"color": "#179fdb"},
     "line": {"color": "#e6224b"},
     "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
     "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
     "geoshape": {"stroke": "white", "strokeWidth": 0.3},
     "rect": {"fill": "#d6d4d4", "opacity": 0.3},
     "axis": {
       "labelColor": "#676A86",
-      "labelFontSize": 11,
+      "labelFontSize": 12,
       "labelFont": "Circular Std",
       "labelOpacity": 0.7,
       "tickColor": "#676A86",
@@ -63,16 +78,16 @@
       "titleY": -5
     },
     "title": {
-      "color": "#676A86",
-      "subtitleColor": "#122b39E6",
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
       "font": "Circular Std",
       "subtitleFont": "Circular Std",
       "anchor": "start",
-      "dx": 24,
       "fontSize": 14,
       "subtitleFontSize": 12,
       "subtitlePadding": 4,
-      "offset": 0
+      "offset": 0,
+      "frame": "group"
     },
     "legend": {
       "titleColor": "#122b39",
@@ -81,7 +96,17 @@
       "labelFontSize": 11
     }
   },
-  "title": {"text": "The UK Productivity Gap"},
+  "title": {
+    "text": "Source: ONS, authors' calculations",
+    "fontStyle": "italic",
+    "color": "#676A8680",
+    "dx": 0,
+    "offset": 7,
+    "fontSize": 10,
+    "frame": "group",
+    "orient": "bottom",
+    "anchor": "start"
+  },
   "layer": [
     {
       "mark": {"type": "line", "color": "#179fdb"},
@@ -179,8 +204,8 @@
   ],
   "data": {"name": "data-2af848de5ca2281a5f09b8063c24bf3b"},
   "height": 300,
-  "width": "container",
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "datasets": {
     "data-2af848de5ca2281a5f09b8063c24bf3b": [
       {
