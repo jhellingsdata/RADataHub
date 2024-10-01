@@ -149,60 +149,96 @@
   "data": {
     "name": "data-292bc72e6d349caa2e23714e909c3e24"
   },
-  "mark": {
-    "type": "line",
-    "interpolate": "monotone",
-    "point": "transparent"
+  "title": {
+    "fontStyle": "italic",
+    "color": "#676A8680",
+    "dx": 0,
+    "offset": 7,
+    "text": "Source: Eurostat, Mitchell, 2007",
+    "fontSize": 10,
+    "frame": "group",
+    "orient": "bottom",
+    "anchor": "start"
   },
-  "encoding": {
-    "color": {
-      "field": "country",
-      "legend": {
-        "labelColor": "#122b39",
-        "labelFontSize": 11,
-        "orient": "top-left",
-        "symbolSize": 50,
-        "title": null,
-        "titleColor": "#122b39"
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "monotone",
+        "point": "transparent"
       },
-      "type": "nominal"
+      "encoding": {
+        "color": {
+          "field": "country",
+          "legend": null,
+          "type": "nominal"
+        },
+        "x": {
+          "axis": {
+            "domainColor": "#122b39",
+            "domainOpacity": 0.5,
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#122b39",
+            "tickColor": "#122b39",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": null
+          },
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "axis": {
+            "domainColor": "#122b39",
+            "gridColor": "#122b39",
+            "gridDash": [
+              1,
+              5
+            ],
+            "gridOpacity": 0.5,
+            "labelColor": "#122b39",
+            "labelPadding": 5,
+            "tickColor": "#122b39",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "title": null
+          },
+          "field": "value",
+          "type": "quantitative"
+        }
+      }
     },
-    "x": {
-      "axis": {
-        "domainColor": "#122b39",
-        "domainOpacity": 0.5,
-        "grid": false,
-        "labelAngle": 0,
-        "labelColor": "#122b39",
-        "tickColor": "#122b39",
-        "tickCount": 10,
-        "tickOpacity": 0.5,
-        "title": null
+    {
+      "mark": {
+        "type": "text",
+        "dy": {
+          "expr": "datum.country == 'Spain' ? 8 : datum.country == 'Italy' ? -6 : datum.country == 'Poland' ? -3 : 0"
+        }
       },
-      "field": "date",
-      "type": "temporal"
-    },
-    "y": {
-      "axis": {
-        "domainColor": "#122b39",
-        "gridColor": "#122b39",
-        "gridDash": [
-          1,
-          5
-        ],
-        "gridOpacity": 0.5,
-        "labelColor": "#122b39",
-        "labelPadding": 5,
-        "tickColor": "#122b39",
-        "tickCount": 8,
-        "tickOpacity": 0.5,
-        "ticks": false,
-        "title": null
-      },
-      "field": "value",
-      "type": "quantitative"
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "aggregate": "max"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "aggregate": {"argmax": "date"}  
+        },
+        "text": {
+          "field": "country",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "country",
+          "type": "nominal"
+        }
+      }
     }
-  },
+  ],
   "height": 300,
   "transform": [
     {
