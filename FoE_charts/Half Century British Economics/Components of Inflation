@@ -6,17 +6,6 @@
   "mark": {"type": "bar", "size": 11},
   "width": 450,
   "height": 300,
-  "title": {
-    "text": "Source: ONS",
-    "fontStyle": "italic",
-    "color": "#676A8680",
-    "dx": 0,
-    "offset": 7,
-    "fontSize": 10,
-    "frame": "group",
-    "orient": "bottom",
-    "anchor": "start"
-  },
   "encoding": {
     "x": {"field": "date", "type": "temporal", "title": null},
     "y": {"field": "value", "title": null, "type": "quantitative"},
@@ -154,7 +143,7 @@
       "titleColor": "#122b39",
       "title": null,
       "labelColor": "#122b39",
-      "labelFontSize": 10
+      "labelFontSize": 11
     }
   }
 }
