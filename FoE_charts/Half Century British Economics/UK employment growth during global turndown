@@ -114,8 +114,6 @@
   ],
   "height": 300,
   "width": 500,
-  "background": "#ffffff",
-  "view": {"fill": "#ffffff"},
   "data": {
     "url": "https://api.economicsobservatory.com/gbr/unem?vega",
     "format": {"type": "json"}
