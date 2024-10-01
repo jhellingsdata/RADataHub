@@ -1,46 +1,111 @@
 {
   "config": {
     "font": "Circular Std",
-    "axisX": {
-      "domainOpacity": 0.6,
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 12,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
       "grid": false,
       "labelAngle": 0,
-      "labelFontSize": 11,
       "tickCount": 10,
       "tickOpacity": 0.5,
       "title": null
     },
-    "axisY": {
-      "labelColor": "#122b39",
-      "tickColor": "#122b39",
-      "domainColor": "#122b39",
-      "domainOpacity": 0.6,
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
       "gridOpacity": 0.5,
-      "labelPadding": 5,
-      "labelFontSize": 11,
-      "tickCount": 8,
-      "tickOpacity": 0.5,
       "ticks": false,
-      "title": null,
-      "titleAlign": "left",
+      "labelPadding": 5,
+      "tickCount": 8,
       "titleAngle": 0,
+      "titleAlign": "left",
       "titleBaseline": "bottom",
-      "titleColor": "#122b39",
-      "titleFontSize": 12,
-      "titleOpacity": 0.9,
       "titleX": 0,
-      "titleY": -7
+      "titleY": -5
     },
-    "axisXQuantitative": {"grid": true, "gridOpacity": 0.5},
-    "view": {"stroke": null, "continuousWidth": 400, "continuousHeight": 300},
     "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
       "anchor": "start",
-      "fontSize": 12,
+      "fontSize": 14,
       "subtitleFontSize": 12,
-      "color": "#122b39",
-      "subtitleColor": "#122b39E6"
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
     },
-    "text": {"color": "#122b39", "fontSize": 12}
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "title": {
+    "text": "Source: The Conference Board Total Economy Database, April 2023",
+    "fontStyle": "italic",
+    "color": "#676A8680",
+    "dx": 0,
+    "offset": 7,
+    "fontSize": 10,
+    "frame": "group",
+    "orient": "bottom",
+    "anchor": "start"
   },
   "layer": [
     {
@@ -327,7 +392,7 @@
       "transform": [{"filter": "(datum.Country === 'Spain')"}]
     }
   ],
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "datasets": {
     "data-39d10a78f97aca34a868a8e6df04832e": [
       {
@@ -2294,6 +2359,6 @@
       }
     ]
   },
-  "width": 400,
+  "width": 500,
   "height": 300
 }
