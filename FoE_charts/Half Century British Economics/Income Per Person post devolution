@@ -1,67 +1,245 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/T33_C1.csv"
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "dx": 24,
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
   },
-  "height": 300,
-  "width": 420,
-  "mark": {"type": "line", "size": 2.5},
-  "encoding": {
-    "x": {
-      "field": "date",
-      "type": "temporal",
-      "sort": [],
-      "title": null,
-      "axis": {"grid": false, "labelAngle": 0}
-    },
-    "y": {
-      "field": "value",
-      "type": "quantitative",
-      "title": null,
-      "scale": {"domain": [0, 15000]},
-      "axis": {
-        "grid": true,
-        "labelFontSize": 11,
-        "title": "Thousands",
-        "titleAlign": "left",
-        "titleAngle": 0,
-        "titleBaseline": "bottom",
-        "titleColor": "#676A86",
-        "titleFontSize": 10,
-        "titleX": 5,
-        "titleY": 15
-      }
-    },
-    "color": {
-      "field": "metric",
-      "type": "nominal",
-      "legend": {"labelLimit": 500, "orient": "bottom-right"},
-      "sort": [],
-      "title": null,
-      "scale": {
-        "range": [
-          "#e6224b",
-          "#122b39",
-          "#36b7b4",
-          "#179fdb",
-          "#f4c245",
-          "#0063af",
-          "#eb5c2e"
-        ]
-      }
-    },
-    "tooltip": [
-      {
-        "field": "date",
-        "type": "temporal",
-        "timeUnit": "yearmonth",
-        "title": "Date"
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Article%20Charts/data/L69_C1_devolved_nations_relative_gdp.csv"
       },
-      {"field": "metric", "type": "nominal", "title": "Measure"},
+      "mark": {"type": "line"},
+      "encoding": {
+        "color": {
+          "field": "Country",
+          "legend": null,
+          "scale": {"range": ["#FEDD00", "#005EB8", "#C8102E"]},
+          "type": "nominal"
+        },
+        "x": {"field": "Date", "title": "", "type": "temporal"},
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "scale": {"domain": [0.5, 1.1]},
+          "title": "GDP per capita, relative to UK",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Article%20Charts/data/L69_C1_devolved_nations_relative_gdp.csv"
+      },
+      "mark": {"type": "point"},
+      "encoding": {
+        "color": {
+          "field": "Country",
+          "legend": null,
+          "scale": {"range": ["#FEDD00", "#005EB8", "#C8102E"]},
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {"param": "param_13", "value": 1, "empty": false},
+          "value": 0
+        },
+        "x": {"field": "Date", "title": "", "type": "temporal"},
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "scale": {"domain": [0.5, 1.1]},
+          "title": "GDP per capita, relative to UK",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Article%20Charts/data/L69_C1_devolved_nations_relative_gdp.csv"
+      },
+      "mark": {"type": "rule", "color": "gray"},
+      "encoding": {
+        "opacity": {
+          "condition": {"param": "param_13", "value": 0.3, "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Date",
+            "format": "%Y",
+            "title": "Year",
+            "type": "temporal"
+          },
+          {"field": "Scotland", "format": ".2%", "type": "quantitative"},
+          {
+            "field": "Northern Ireland",
+            "format": ".2%",
+            "type": "quantitative"
+          },
+          {"field": "Wales", "format": ".2%", "type": "quantitative"}
+        ],
+        "x": {"field": "Date", "type": "temporal"}
+      },
+      "name": "view_12",
+      "transform": [{"pivot": "Country", "value": "Value", "groupby": ["Date"]}]
+    },
+    {
+      "data": {"name": "data-7f9748e88c213fdcf925b11825f86fde"},
+      "mark": {
+        "type": "rule",
+        "color": "grey",
+        "size": 2,
+        "strokeDash": [4, 2]
+      },
+      "encoding": {"y": {"field": "y", "type": "quantitative"}}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Article%20Charts/data/L69_C1_devolved_nations_relative_gdp.csv"
+      },
+      "mark": {"type": "text"},
+      "encoding": {
+        "text": {"field": "Country", "type": "nominal"},
+        "x": {"aggregate": "max", "field": "Date", "type": "temporal"},
+        "y": {
+          "aggregate": {"argmax": "Date"},
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {"name": "data-c5e7628832af192bed2ddceedb892a86"},
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": -5,
+        "yOffset": -30
+      },
+      "encoding": {"url": {"field": "img", "type": "nominal"}}
+    },
+    {
+      "data": {"name": "data-7f9748e88c213fdcf925b11825f86fde"},
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": 5,
+        "dy": -7,
+        "opacity": 0.7
+      },
+      "encoding": {
+        "text": {"field": "text", "type": "nominal"},
+        "x": {"field": "x", "type": "nominal"},
+        "y": {"field": "y", "type": "quantitative"}
+      }
+    }
+  ],
+  "height": 300,
+  "params": [
+    {
+      "name": "param_13",
+      "select": {
+        "type": "point",
+        "fields": ["Date"],
+        "nearest": true,
+        "on": "pointerover"
+      },
+      "views": ["view_12"]
+    }
+  ],
+  "width": 450,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-7f9748e88c213fdcf925b11825f86fde": [
+      {"y": 1, "x": "2022-01-01", "text": "UK average"}
+    ],
+    "data-c5e7628832af192bed2ddceedb892a86": [
       {
-        "field": "value",
-        "type": "quantitative",
-        "title": "Union members (thousands)"
+        "x": 2.5,
+        "y": 0,
+        "img": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
       }
     ]
   }
