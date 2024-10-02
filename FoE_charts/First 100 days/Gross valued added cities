@@ -1,0 +1,218 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 12,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true, "gridOpacity": 0.1},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "color": "#36B7B4",
+        "opacity": 0.6,
+        "stroke": "black",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "color": {
+          "field": "type",
+          "legend": {
+            "direction": "horizontal",
+            "legendY": -22,
+            "orient": "none",
+            "title": "",
+            "titleColor": "#676A86",
+            "titleFont": "Circular Std",
+            "titleFontWeight": "normal",
+            "titleOrient": "left"
+          },
+          "scale": {
+            "domain": ["Local Authority", "City Region"],
+            "range": ["#36B7B4", "#E6224B"]
+          },
+          "type": "nominal"
+        },
+        "order": {"field": "type", "sort": "descending", "type": "nominal"},
+        "size": {
+          "field": "jobs",
+          "legend": {
+            "direction": "horizontal",
+            "labelExpr": "format(datum.value, ',.0s') + (datum.value == 1000000 ? ' jobs' : '')",
+            "legendY": -55,
+            "orient": "none",
+            "title": "",
+            "titleColor": "#676A86",
+            "titleFont": "Circular Std",
+            "titleFontWeight": "normal",
+            "titleOrient": "left"
+          },
+          "scale": {"range": [50, 900], "type": "linear", "zero": false},
+          "title": "Jobs",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "name", "type": "nominal"},
+          {"field": "gva_pj", "type": "quantitative"},
+          {"field": "jobs", "type": "quantitative"},
+          {"field": "type", "type": "nominal"}
+        ],
+        "x": {
+          "axis": {"labelExpr": "'£' + format(datum.value, ',.0f')"},
+          "field": "gva_pj",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "parent_name",
+          "sort": {"field": "parent_median", "order": "descending"},
+          "title": "",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "color": "#E6224B",
+        "dx": 5,
+        "dy": {"expr": "datum.parent_name == 'London' ? -20 : -15"},
+        "font": "Circular Std",
+        "fontSize": 10,
+        "fontWeight": "normal"
+      },
+      "encoding": {
+        "text": {"field": "label_high", "type": "nominal"},
+        "x": {"field": "gva_pj", "type": "quantitative"},
+        "y": {
+          "field": "parent_name",
+          "sort": {"field": "parent_median", "order": "descending"},
+          "title": "",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "color": "#E6224B",
+        "dx": -5,
+        "dy": {"expr": "datum.parent_name == 'London' ? -20 : -15"},
+        "font": "Circular Std",
+        "fontSize": 10,
+        "fontWeight": "normal"
+      },
+      "encoding": {
+        "text": {"field": "label_low", "type": "nominal"},
+        "x": {"field": "gva_pj", "type": "quantitative"},
+        "y": {
+          "field": "parent_name",
+          "sort": {"field": "parent_median", "order": "descending"},
+          "title": "",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Newsletters/newsletter_5/levelling_up/gva_lads_cities.csv"
+  },
+  "height": 500,
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json"
+}
