@@ -7,248 +7,475 @@
       "baseline": "middle",
       "dx": 7,
       "dy": 0,
-      "fontSize": 11
+      "fontSize": 15
     },
-    "view": {
-      "stroke": null,
-      "continuousWidth": 400,
-      "continuousHeight": 300,
-      "discreteWidth": 400,
-      "discreteHeight": 300
-    },
-    "bar": {"color": "#179fdb"},
-    "line": {"color": "#e6224b"},
-    "rule": {"color": "#676A86"},
-    "area": {"opacity": 0.3},
-    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "view": {"stroke": null, "continuousWidth": 250, "continuousHeight": 320},
     "geoshape": {"stroke": "white", "strokeWidth": 0.3},
-    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
-    "axis": {
-      "labelColor": "#676A86",
-      "labelFontSize": 11,
-      "labelFont": "Circular Std",
-      "labelOpacity": 0.7,
-      "tickColor": "#676A86",
-      "tickOpacity": 0.5,
-      "domainColor": "#676A86",
-      "domainOpacity": 0.5,
-      "gridColor": "#676A86",
-      "gridDash": [2, 2],
-      "gridOpacity": 0.5,
-      "title": null,
-      "titleColor": "#676A86",
-      "titleOpacity": 0.8,
-      "tickSize": 4
-    },
-    "axisXDiscrete": {
-      "grid": false,
-      "labelAngle": 0,
-      "tickCount": 10,
-      "tickOpacity": 0.5,
-      "title": null
-    },
-    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
-    "axisXTemporal": {"grid": false, "ticks": true},
-    "axisXQuantitative": {"grid": true},
-    "axisYQuantitative": {
-      "gridColor": "#676A86",
-      "gridDash": [1, 5],
-      "gridOpacity": 0.5,
-      "ticks": false,
-      "labelPadding": 5,
-      "tickCount": 8,
-      "titleAngle": 0,
-      "titleAlign": "left",
-      "titleBaseline": "bottom",
-      "titleX": 0,
-      "titleY": -5
-    },
     "title": {
       "color": "#676A86",
       "subtitleColor": "#122b39E6",
       "font": "Circular Std",
       "subtitleFont": "Circular Std",
-      "anchor": "start",
+      "anchor": "middle",
       "dx": 24,
-      "fontSize": 14,
+      "fontSize": 16,
       "subtitleFontSize": 12,
       "subtitlePadding": 4,
       "offset": 0
     },
     "legend": {
       "titleColor": "#122b39",
-      "title": null,
       "labelColor": "#122b39",
-      "labelFontSize": 11
+      "legendX": 230,
+      "legendY": 0,
+      "gradientLength": 180,
+      "tickCount": 5
     }
   },
-  "layer": [
+  "hconcat": [
     {
-      "data": {"name": "data-a0a55d106695e8d630baff0f16eee66d"},
-      "mark": {"type": "rule", "color": "grey"},
-      "encoding": {"y": {"field": "y", "type": "quantitative"}}
-    },
-    {
-      "data": {"name": "data-f71c58dd61ce28fdf708c98450f2c448"},
-      "mark": {"type": "line"},
-      "encoding": {
-        "color": {
-          "field": "Tax",
-          "legend": null,
-          "scale": {"range": ["#122b39", "#179fdb", "#eb5c2e"]},
-          "type": "nominal"
+      "layer": [
+        {
+          "mark": {"type": "geoshape", "color": "lightgrey"},
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "properties.NAME",
+                "title": "Country",
+                "type": "nominal"
+              }
+            ]
+          },
+          "transform": [
+            {"filter": "(datum.id !== 'RU')"},
+            {"filter": "(datum.id !== 'IS')"},
+            {"filter": "(datum.id !== 'AR')"},
+            {"filter": "(datum.id !== 'AZ')"},
+            {"filter": "(datum.id !== 'AM')"},
+            {"filter": "(datum.id !== 'GE')"},
+            {"filter": "(datum.id !== 'CY')"},
+            {"filter": "(datum.id !== 'IL')"}
+          ]
         },
-        "x": {"field": "Year", "scale": {"padding": 0}, "type": "ordinal"},
-        "y": {
-          "axis": {"format": "%", "title": "Real GDP, % change"},
-          "field": "Value",
-          "scale": {"domain": [-0.0025, 0.002]},
-          "type": "quantitative"
+        {
+          "mark": {"type": "geoshape", "color": "lightgrey"},
+          "encoding": {
+            "color": {
+              "field": "div_share",
+              "legend": {
+                "orient": "none",
+                "direction": "vertical",
+                "title": null,
+                "format": "%"
+              },
+              "scale": {"scheme": "yellowgreenblue"},
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "properties.NAME",
+                "title": "Country",
+                "type": "nominal"
+              },
+              {"field": "year", "title": "Year", "type": "nominal"},
+              {
+                "field": "div_share",
+                "format": ".1%",
+                "title": "Relative tax rate",
+                "type": "quantitative"
+              }
+            ]
+          },
+          "title": "2002",
+          "transform": [
+            {"filter": "(datum.id !== 'RU')"},
+            {"filter": "(datum.id !== 'IS')"},
+            {"filter": "(datum.id !== 'AR')"},
+            {"filter": "(datum.id !== 'AZ')"},
+            {"filter": "(datum.id !== 'AM')"},
+            {"filter": "(datum.id !== 'GE')"},
+            {"filter": "(datum.id !== 'CY')"},
+            {"filter": "(datum.id !== 'IL')"},
+            {
+              "lookup": "id",
+              "from": {
+                "data": {"name": "data-fb58f73ad882a2fc3160bede9ff9d328"},
+                "key": "ISO2",
+                "fields": ["year", "div_share"]
+              }
+            }
+          ]
         }
-      }
+      ]
     },
     {
-      "data": {"name": "data-f71c58dd61ce28fdf708c98450f2c448"},
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "baseline": "middle",
-        "dx": 6,
-        "dy": -1
-      },
-      "encoding": {
-        "color": {
-          "field": "Tax",
-          "scale": {"range": ["#122b39", "#179fdb", "#eb5c2e"]},
-          "type": "nominal"
+      "layer": [
+        {
+          "mark": {"type": "geoshape", "color": "lightgrey"},
+          "encoding": {
+            "tooltip": {"field": "id", "title": "Country", "type": "nominal"}
+          },
+          "transform": [
+            {"filter": "(datum.id !== 'RU')"},
+            {"filter": "(datum.id !== 'IS')"},
+            {"filter": "(datum.id !== 'AR')"},
+            {"filter": "(datum.id !== 'AZ')"},
+            {"filter": "(datum.id !== 'AM')"},
+            {"filter": "(datum.id !== 'GE')"},
+            {"filter": "(datum.id !== 'CY')"},
+            {"filter": "(datum.id !== 'IL')"}
+          ]
         },
-        "text": {
-          "aggregate": {"argmax": "Year"},
-          "field": "Tax",
-          "type": "nominal"
-        },
-        "x": {
-          "aggregate": "max",
-          "axis": [],
-          "field": "Year",
-          "type": "ordinal"
-        },
-        "y": {
-          "aggregate": {"argmax": "Year"},
-          "field": "Value",
-          "type": "quantitative"
+        {
+          "mark": {"type": "geoshape", "color": "lightgrey"},
+          "encoding": {
+            "color": {"field": "div_share", "type": "quantitative"},
+            "tooltip": [
+              {
+                "field": "properties.NAME",
+                "title": "Country",
+                "type": "nominal"
+              },
+              {"field": "year", "title": "Year", "type": "nominal"},
+              {
+                "field": "div_share",
+                "format": ".1%",
+                "title": "Share",
+                "type": "quantitative"
+              }
+            ]
+          },
+          "title": "2022",
+          "transform": [
+            {"filter": "(datum.id !== 'RU')"},
+            {"filter": "(datum.id !== 'IS')"},
+            {"filter": "(datum.id !== 'AR')"},
+            {"filter": "(datum.id !== 'AZ')"},
+            {"filter": "(datum.id !== 'AM')"},
+            {"filter": "(datum.id !== 'GE')"},
+            {"filter": "(datum.id !== 'CY')"},
+            {"filter": "(datum.id !== 'IL')"},
+            {
+              "lookup": "id",
+              "from": {
+                "data": {"name": "data-3ceb9a7c85fb88c67725bca1b2110016"},
+                "key": "ISO2",
+                "fields": ["year", "div_share"]
+              }
+            }
+          ]
         }
-      }
-    },
-    {
-      "data": {"name": "data-d8e3adc13ba14cb69437e1ff82f62be2"},
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "baseline": "bottom",
-        "dx": 5,
-        "dy": -3,
-        "opacity": 0.6
-      },
-      "encoding": {
-        "text": {"field": "text", "type": "nominal"},
-        "x": {"field": "x", "type": "ordinal"},
-        "y": {"field": "y", "type": "quantitative"}
-      }
-    },
-    {
-      "data": {"name": "data-5414bf9e447df1041fcec0a8c53c3da2"},
-      "mark": {
-        "type": "image",
-        "align": "right",
-        "baseline": "top",
-        "height": 40,
-        "opacity": 0.5,
-        "width": 40,
-        "xOffset": -5,
-        "yOffset": -30
-      },
-      "encoding": {"url": {"field": "img", "type": "nominal"}}
+      ]
     }
   ],
-  "height": 280,
-  "width": 420,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_europe.topojson",
+    "format": {"feature": "europe", "type": "topojson"}
+  },
+  "resolve": {"scale": {"color": "shared"}},
   "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
   "datasets": {
-    "data-a0a55d106695e8d630baff0f16eee66d": [{"y": 0}],
-    "data-f71c58dd61ce28fdf708c98450f2c448": [
-      {"Year": 0, "Tax": "Income Tax", "Value": 0.000105},
-      {"Year": 1, "Tax": "Income Tax", "Value": -0.000091},
-      {"Year": 2, "Tax": "Income Tax", "Value": -0.00021999999999999998},
-      {"Year": 3, "Tax": "Income Tax", "Value": -0.00026},
-      {"Year": 4, "Tax": "Income Tax", "Value": -0.000224},
-      {"Year": 5, "Tax": "Income Tax", "Value": -0.00013299999999999998},
-      {"Year": 6, "Tax": "Income Tax", "Value": -0.00003},
-      {"Year": 7, "Tax": "Income Tax", "Value": 0.000084},
-      {"Year": 8, "Tax": "Income Tax", "Value": 0.00019199999999999998},
-      {"Year": 9, "Tax": "Income Tax", "Value": 0.000294},
-      {"Year": 10, "Tax": "Income Tax", "Value": 0.00039},
-      {"Year": 11, "Tax": "Income Tax", "Value": 0.000486},
-      {"Year": 12, "Tax": "Income Tax", "Value": 0.00058},
-      {"Year": 13, "Tax": "Income Tax", "Value": 0.000678},
-      {"Year": 14, "Tax": "Income Tax", "Value": 0.000785},
-      {"Year": 15, "Tax": "Income Tax", "Value": 0.000895},
-      {"Year": 16, "Tax": "Income Tax", "Value": 0.001005},
-      {"Year": 17, "Tax": "Income Tax", "Value": 0.001111},
-      {"Year": 18, "Tax": "Income Tax", "Value": 0.0012180000000000001},
-      {"Year": 19, "Tax": "Income Tax", "Value": 0.0013189999999999999},
-      {"Year": 20, "Tax": "Income Tax", "Value": 0.0014169999999999999},
-      {"Year": 0, "Tax": "Corporation Tax", "Value": -0.000513},
-      {"Year": 1, "Tax": "Corporation Tax", "Value": -0.001586},
-      {"Year": 2, "Tax": "Corporation Tax", "Value": -0.0018440000000000002},
-      {"Year": 3, "Tax": "Corporation Tax", "Value": -0.001606},
-      {"Year": 4, "Tax": "Corporation Tax", "Value": -0.001235},
-      {"Year": 5, "Tax": "Corporation Tax", "Value": -0.000946},
-      {"Year": 6, "Tax": "Corporation Tax", "Value": -0.0008},
-      {"Year": 7, "Tax": "Corporation Tax", "Value": -0.000765},
-      {"Year": 8, "Tax": "Corporation Tax", "Value": -0.000789},
-      {"Year": 9, "Tax": "Corporation Tax", "Value": -0.000834},
-      {"Year": 10, "Tax": "Corporation Tax", "Value": -0.000866},
-      {"Year": 11, "Tax": "Corporation Tax", "Value": -0.000878},
-      {"Year": 12, "Tax": "Corporation Tax", "Value": -0.0008690000000000001},
-      {"Year": 13, "Tax": "Corporation Tax", "Value": -0.000841},
-      {"Year": 14, "Tax": "Corporation Tax", "Value": -0.0008010000000000001},
-      {"Year": 15, "Tax": "Corporation Tax", "Value": -0.0007530000000000001},
-      {"Year": 16, "Tax": "Corporation Tax", "Value": -0.000698},
-      {"Year": 17, "Tax": "Corporation Tax", "Value": -0.000628},
-      {"Year": 18, "Tax": "Corporation Tax", "Value": -0.000557},
-      {"Year": 19, "Tax": "Corporation Tax", "Value": -0.000482},
-      {"Year": 20, "Tax": "Corporation Tax", "Value": -0.000402},
-      {"Year": 0, "Tax": "Indirect Tax", "Value": -0.0009270000000000001},
-      {"Year": 1, "Tax": "Indirect Tax", "Value": -0.001997},
-      {"Year": 2, "Tax": "Indirect Tax", "Value": -0.001924},
-      {"Year": 3, "Tax": "Indirect Tax", "Value": -0.0014199999999999998},
-      {"Year": 4, "Tax": "Indirect Tax", "Value": -0.000867},
-      {"Year": 5, "Tax": "Indirect Tax", "Value": -0.000455},
-      {"Year": 6, "Tax": "Indirect Tax", "Value": -0.000214},
-      {"Year": 7, "Tax": "Indirect Tax", "Value": -0.000098},
-      {"Year": 8, "Tax": "Indirect Tax", "Value": -0.000047000000000000004},
-      {"Year": 9, "Tax": "Indirect Tax", "Value": -0.000016},
-      {"Year": 10, "Tax": "Indirect Tax", "Value": 0.000023},
-      {"Year": 11, "Tax": "Indirect Tax", "Value": 0.000075},
-      {"Year": 12, "Tax": "Indirect Tax", "Value": 0.000145},
-      {"Year": 13, "Tax": "Indirect Tax", "Value": 0.000226},
-      {"Year": 14, "Tax": "Indirect Tax", "Value": 0.000317},
-      {"Year": 15, "Tax": "Indirect Tax", "Value": 0.000412},
-      {"Year": 16, "Tax": "Indirect Tax", "Value": 0.0005070000000000001},
-      {"Year": 17, "Tax": "Indirect Tax", "Value": 0.000602},
-      {"Year": 18, "Tax": "Indirect Tax", "Value": 0.000696},
-      {"Year": 19, "Tax": "Indirect Tax", "Value": 0.00079},
-      {"Year": 20, "Tax": "Indirect Tax", "Value": 0.000891}
-    ],
-    "data-d8e3adc13ba14cb69437e1ff82f62be2": [
-      {"x": 0, "y": -0.0025, "text": "Years after tax change ?"}
-    ],
-    "data-5414bf9e447df1041fcec0a8c53c3da2": [
+    "data-fb58f73ad882a2fc3160bede9ff9d328": [
       {
-        "x": 15,
-        "y": 0,
-        "img": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+        "ISO2": "AT",
+        "ctrynm": "Austria",
+        "year": 2002,
+        "div_share": 0.32673266530036926
+      },
+      {
+        "ISO2": "BE",
+        "ctrynm": "Belgium",
+        "year": 2002,
+        "div_share": 0.1826145350933075
+      },
+      {
+        "ISO2": "CZ",
+        "ctrynm": "Czech Republic",
+        "year": 2002,
+        "div_share": 0.2503022849559784
+      },
+      {
+        "ISO2": "DK",
+        "ctrynm": "Denmark",
+        "year": 2002,
+        "div_share": 0.5008319616317749
+      },
+      {"ISO2": "EE", "ctrynm": "Estonia", "year": 2002, "div_share": 0},
+      {
+        "ISO2": "FI",
+        "ctrynm": "Finland",
+        "year": 2002,
+        "div_share": 0.0007828299421817064
+      },
+      {
+        "ISO2": "FR",
+        "ctrynm": "France",
+        "year": 2002,
+        "div_share": 0.39333000779151917
+      },
+      {
+        "ISO2": "DE",
+        "ctrynm": "Germany",
+        "year": 2002,
+        "div_share": 0.29198160767555237
+      },
+      {"ISO2": "GR", "ctrynm": "Greece", "year": 2002, "div_share": 0},
+      {
+        "ISO2": "HU",
+        "ctrynm": "Hungary",
+        "year": 2002,
+        "div_share": 0.6145610213279724
+      },
+      {
+        "ISO2": "IS",
+        "ctrynm": "Iceland",
+        "year": 2002,
+        "div_share": 0.3129771053791046
+      },
+      {
+        "ISO2": "IE",
+        "ctrynm": "Ireland",
+        "year": 2002,
+        "div_share": 0.6879875063896179
+      },
+      {
+        "ISO2": "IT",
+        "ctrynm": "Italy",
+        "year": 2002,
+        "div_share": 0.1818181872367859
+      },
+      {"ISO2": "LV", "ctrynm": "Latvia", "year": 2002, "div_share": 0},
+      {
+        "ISO2": "LT",
+        "ctrynm": "Lithuania",
+        "year": 2002,
+        "div_share": 0.45941805839538574
+      },
+      {
+        "ISO2": "LU",
+        "ctrynm": "Luxembourg",
+        "year": 2002,
+        "div_share": 0.30837729573249817
+      },
+      {
+        "ISO2": "NL",
+        "ctrynm": "Netherlands",
+        "year": 2002,
+        "div_share": 0.32186734676361084
+      },
+      {
+        "ISO2": "NO",
+        "ctrynm": "Norway",
+        "year": 2002,
+        "div_share": -0.00020576000679284334
+      },
+      {
+        "ISO2": "PL",
+        "ctrynm": "Poland",
+        "year": 2002,
+        "div_share": 0.2783505320549011
+      },
+      {
+        "ISO2": "PT",
+        "ctrynm": "Portugal",
+        "year": 2002,
+        "div_share": 0.2887931168079376
+      },
+      {
+        "ISO2": "SK",
+        "ctrynm": "Slovakia",
+        "year": 2002,
+        "div_share": 0.3103448152542114
+      },
+      {
+        "ISO2": "SI",
+        "ctrynm": "Slovenia",
+        "year": 2002,
+        "div_share": 0.4736841917037964
+      },
+      {
+        "ISO2": "ES",
+        "ctrynm": "Spain",
+        "year": 2002,
+        "div_share": 0.3356112241744995
+      },
+      {
+        "ISO2": "SE",
+        "ctrynm": "Sweden",
+        "year": 2002,
+        "div_share": 0.43548384308815
+      },
+      {
+        "ISO2": "CH",
+        "ctrynm": "Switzerland",
+        "year": 2002,
+        "div_share": 0.5593900084495544
+      },
+      {
+        "ISO2": "TR",
+        "ctrynm": "Turkey",
+        "year": 2002,
+        "div_share": 0.49213916063308716
+      },
+      {
+        "ISO2": "GB",
+        "ctrynm": "United Kingdom",
+        "year": 2002,
+        "div_share": 0.3684280514717102
+      }
+    ],
+    "data-3ceb9a7c85fb88c67725bca1b2110016": [
+      {
+        "ISO2": "AT",
+        "ctrynm": "Austria",
+        "year": 2022,
+        "div_share": 0.45205479860305786
+      },
+      {
+        "ISO2": "BE",
+        "ctrynm": "Belgium",
+        "year": 2022,
+        "div_share": 0.47369998693466187
+      },
+      {
+        "ISO2": "CZ",
+        "ctrynm": "Czech Republic",
+        "year": 2022,
+        "div_share": 0.49508368968963623
+      },
+      {
+        "ISO2": "DK",
+        "ctrynm": "Denmark",
+        "year": 2022,
+        "div_share": 0.5982000231742859
+      },
+      {"ISO2": "EE", "ctrynm": "Estonia", "year": 2022, "div_share": 0},
+      {
+        "ISO2": "FI",
+        "ctrynm": "Finland",
+        "year": 2022,
+        "div_share": 0.5361781120300293
+      },
+      {
+        "ISO2": "FR",
+        "ctrynm": "France",
+        "year": 2022,
+        "div_share": 0.4940689206123352
+      },
+      {
+        "ISO2": "DE",
+        "ctrynm": "Germany",
+        "year": 2022,
+        "div_share": 0.3816254734992981
+      },
+      {
+        "ISO2": "GR",
+        "ctrynm": "Greece",
+        "year": 2022,
+        "div_share": 0.15060000121593475
+      },
+      {
+        "ISO2": "HU",
+        "ctrynm": "Hungary",
+        "year": 2022,
+        "div_share": 0.6026489734649658
+      },
+      {
+        "ISO2": "IS",
+        "ctrynm": "Iceland",
+        "year": 2022,
+        "div_share": 0.46810001134872437
+      },
+      {
+        "ISO2": "IE",
+        "ctrynm": "Ireland",
+        "year": 2022,
+        "div_share": 0.7812000513076782
+      },
+      {
+        "ISO2": "IT",
+        "ctrynm": "Italy",
+        "year": 2022,
+        "div_share": 0.45155391097068787
+      },
+      {"ISO2": "LV", "ctrynm": "Latvia", "year": 2022, "div_share": 0},
+      {
+        "ISO2": "LT",
+        "ctrynm": "Lithuania",
+        "year": 2022,
+        "div_share": 0.4595000147819519
+      },
+      {
+        "ISO2": "LU",
+        "ctrynm": "Luxembourg",
+        "year": 2022,
+        "div_share": 0.3872627317905426
+      },
+      {
+        "ISO2": "NL",
+        "ctrynm": "Netherlands",
+        "year": 2022,
+        "div_share": 0.4361863434314728
+      },
+      {
+        "ISO2": "NO",
+        "ctrynm": "Norway",
+        "year": 2022,
+        "div_share": 0.5555999875068665
+      },
+      {
+        "ISO2": "PL",
+        "ctrynm": "Poland",
+        "year": 2022,
+        "div_share": 0.44749999046325684
+      },
+      {
+        "ISO2": "PT",
+        "ctrynm": "Portugal",
+        "year": 2022,
+        "div_share": 0.37845301628112793
+      },
+      {
+        "ISO2": "SK",
+        "ctrynm": "Slovakia",
+        "year": 2022,
+        "div_share": 0.2084999978542328
+      },
+      {
+        "ISO2": "SI",
+        "ctrynm": "Slovenia",
+        "year": 2022,
+        "div_share": 0.5396729111671448
+      },
+      {
+        "ISO2": "ES",
+        "ctrynm": "Spain",
+        "year": 2022,
+        "div_share": 0.43820226192474365
+      },
+      {
+        "ISO2": "SE",
+        "ctrynm": "Sweden",
+        "year": 2022,
+        "div_share": 0.5362449288368225
+      },
+      {
+        "ISO2": "CH",
+        "ctrynm": "Switzerland",
+        "year": 2022,
+        "div_share": 0.4759921133518219
+      },
+      {
+        "ISO2": "TR",
+        "ctrynm": "Turkey",
+        "year": 2022,
+        "div_share": 0.4009999930858612
+      },
+      {
+        "ISO2": "GB",
+        "ctrynm": "United Kingdom",
+        "year": 2022,
+        "div_share": 0.6265246272087097
       }
     ]
   }
