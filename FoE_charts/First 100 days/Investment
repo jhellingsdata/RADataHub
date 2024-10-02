@@ -1,5 +1,16 @@
 {
   "config": {"view": {"strokeWidth": 0}},
+  "title": {
+    "text": "Source: OECD",
+    "fontStyle": "italic",
+    "color": "#676A8680",
+    "dx": 0,
+    "offset": 7,
+    "fontSize": 10,
+    "frame": "group",
+    "orient": "bottom",
+    "anchor": "start"
+  },
   "layer": [
     {
       "mark": {"type": "area"},
@@ -11,17 +22,17 @@
         },
         "x": {
           "axis": {
-            "domainColor": "#122b39",
+            "domainColor": "#676A86",
             "domainOpacity": 0.5,
             "format": "d",
             "gridOpacity": 0,
             "labelAlign": "center",
             "labelAngle": 0,
-            "labelColor": "#122b39",
+            "labelColor": "#676A86",
             "labelFont": "Circular Std",
-            "labelFontSize": 11,
-            "labelPadding": 5,
-            "tickColor": "#122b39",
+            "labelFontSize": 12,
+            "labelPadding": 6,
+            "tickColor": "#676A86",
             "tickCount": 10,
             "tickSize": 0,
             "title": ""
@@ -65,46 +76,30 @@
           "value": 1.5
         },
         "x": {
-          "axis": {
-            "domainColor": "#122b39",
-            "domainOpacity": 0.5,
-            "format": "d",
-            "gridOpacity": 0,
-            "labelAlign": "center",
-            "labelAngle": 0,
-            "labelColor": "#122b39",
-            "labelFont": "Circular Std",
-            "labelFontSize": 11,
-            "labelPadding": 5,
-            "tickColor": "#122b39",
-            "tickCount": 10,
-            "tickSize": 0,
-            "title": ""
-          },
           "field": "Time",
           "scale": {"domainMax": 2021},
           "type": "quantitative"
         },
         "y": {
           "axis": {
-            "domainColor": "#122b39",
+            "domainColor": "#676A86",
             "domainOpacity": 0.5,
             "format": "%",
-            "gridColor": "#122b39",
+            "gridColor": "#676A86",
             "gridDash": [1, 5],
             "gridOpacity": 0.5,
-            "labelColor": "#122b39",
+            "labelColor": "#676A86",
             "labelFont": "Circular Std",
-            "labelFontSize": 11,
+            "labelFontSize": 12,
             "labelPadding": 5,
-            "tickColor": "#122b39",
+            "tickColor": "#676A86",
             "tickSize": 0,
             "title": "GFCF, % of GDP, 90-10 OECD percentiles shaded",
             "titleAlign": "left",
             "titleAngle": 0,
             "titleBaseline": "bottom",
-            "titleColor": "#122b39",
-            "titleOpacity": 0.9,
+            "titleColor": "#676A86",
+            "titleOpacity": 0.8,
             "titleX": 0,
             "titleY": -7
           },
@@ -196,8 +191,8 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "dx": 0,
-        "dy": {"expr": "{'FRA': 0, 'DEU': -10, 'POL': 5}[datum.LOCATION]"},
+        "dx": 6,
+        "dy": {"expr": "{'FRA': 0, 'DEU': -5, 'POL': 5, 'USA': 5}[datum.LOCATION]"},
         "font": "Circular Std",
         "fontSize": 11
       },
@@ -226,36 +221,17 @@
           "value": 0.8
         },
         "text": {"field": "Country", "type": "nominal"},
-        "x": {"value": 455},
+        "x": {
+            "field": "Time",
+            "type": "quantitative",
+            "aggregate": "max"
+        },
         "y": {
-          "axis": {
-            "domainColor": "#122b39",
-            "domainOpacity": 0.5,
-            "format": "%",
-            "gridColor": "#122b39",
-            "gridDash": [1, 5],
-            "gridOpacity": 0.5,
-            "labelColor": "#122b39",
-            "labelFont": "Circular Std",
-            "labelFontSize": 11,
-            "labelPadding": 5,
-            "tickColor": "#122b39",
-            "tickSize": 0,
-            "title": "GFCF, % of GDP, 90-10 OECD percentiles shaded",
-            "titleAlign": "left",
-            "titleAngle": 0,
-            "titleBaseline": "bottom",
-            "titleColor": "#122b39",
-            "titleOpacity": 0.9,
-            "titleX": 0,
-            "titleY": -7
-          },
           "field": "Value",
-          "scale": {"zero": true},
-          "type": "quantitative"
+          "type": "quantitative",
+          "aggregate": {"argmax": "Time"}
         }
-      },
-      "transform": [{"filter": "datum.Time == 2021"}]
+      }
     }
   ],
   "data": {"name": "data-e46d1ae20cc673a6409bcb7165fb74e1"},
