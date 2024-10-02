@@ -213,6 +213,6 @@
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Newsletters/newsletter_5/levelling_up/gva_lads_cities.csv"
   },
   "height": 500,
-  "width": 400,
+  "width": 380,
   "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json"
 }
