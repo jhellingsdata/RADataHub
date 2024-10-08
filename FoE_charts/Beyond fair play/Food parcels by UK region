@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/refs/heads/main/Data/UK%20Map%20Data/ITL1_UK_2021.json",
+    "format": {
+      "feature": "ITL1_UK_2021",
+      "type": "topojson"
+    }
+  },
+  "mark": {
+    "type": "geoshape"
+  },
+  "height": 400,
+  "width": 300,
+  "transform": [
+    {
+      "lookup": "properties.ITL121NM",
+      "from": {
+        "data": {
+          "values": [
+            {"id": "North East (England)", "value": 37, "pop": "2.7m", "foodParcels": 100114},
+            {"id": "North West (England)", "value": 34, "pop": "7.4m", "foodParcels": 252048},
+            {"id": "Yorkshire and The Humber", "value": 28, "pop": "5.5m", "foodParcels": 156120},
+            {"id": "East Midlands (England)", "value": 26, "pop": "4.9m", "foodParcels": 126877},
+            {"id": "West Midlands (England)", "value": 34, "pop": "6.1m", "foodParcels": 207655},
+            {"id": "East", "value": 36, "pop": "6.3m", "foodParcels": 223962},
+            {"id": "London", "value": 31, "pop": "9.1m", "foodParcels": 283563},
+            {"id": "South East (England)", "value": 28, "pop": "9.3m", "foodParcels": 258138},
+            {"id": "South West (England)", "value": 30, "pop": "5.8m", "foodParcels": 174805},
+            {"id": "Wales", "value": 42, "pop": "3.2m", "foodParcels": 131232},
+            {"id": "Scotland", "value": 36, "pop": "5.5m", "foodParcels": 197037},
+            {"id": "Northern Ireland", "value": 32, "pop": "1.9m", "foodParcels": 61597}
+          ]
+        },
+        "fields": ["id", "pop", "foodParcels", "value"],
+        "key": "id"
+      }
+    }
+  ],
+  "title": {
+    "text": "Food parcels",
+    "subtitle": "Per thousand people, 2021-22, source: The Trussel Trust"
+  },
+  "encoding": {
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "inferno",
+        "reverse": true
+      },
+      "legend": {
+        "title": null
+      }
+    },
+    "tooltip": [
+      {"field": "value", "title": "Food parcels per 1000 persons."}
+    ]
+  }
+}

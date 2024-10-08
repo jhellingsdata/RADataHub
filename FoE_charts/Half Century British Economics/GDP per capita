@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/A21_C3.csv"
+  },
+  "height": 350,
+  "width": 400,
+  "mark": {"type": "line"},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "sort": [],
+      "title": null,
+      "axis": {"grid": false, "labelAngle": 0}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {"domain": [0, 14]},
+      "axis": {
+        "grid": true,
+        "labelFontSize": 12,
+        "title": "%",
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleX": 5,
+        "titleY": 15
+      }
+    },
+    "color": {
+      "field": "country",
+      "type": "nominal",
+      "sort": [],
+      "title": null,
+      "scale": {
+        "range": [
+          "#e6224b",
+          "#36b7b4",
+          "#122b39",
+          "#f4c245",
+          "#179fdb",
+          "#00a767",
+          "#eb5c2e",
+          "#0063af",
+          "#5c267b",
+          "#F4A19F",
+          "#9adbd9",
+          "#AE93BD",
+          "#7fd3b3"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "title": "Year",
+        "timeUnit": "year"
+      },
+      {"field": "country", "type": "nominal", "title": "Country/region"},
+      {"field": "value", "type": "quantitative", "title": "Unemployment (%)"}
+    ]
+  }
+}

@@ -1,0 +1,375 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/LAD_Debt/LADs_2023.geojson",
+        "format": {
+            "type": "json",
+            "property": "features"
+        }
+    },
+    "config": {
+        "font": "Circular Std",
+        "text": {
+            "color": "#676A86",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 7,
+            "dy": 0,
+            "fontSize": 11
+        },
+        "view": {
+            "stroke": null,
+            "continuousWidth": 400,
+            "continuousHeight": 300,
+            "discreteWidth": 400,
+            "discreteHeight": 300
+        },
+        "range": {
+            "category": [
+                "#36B7B4",
+                "#E6224B",
+                "#F4C245",
+                "#0063AF",
+                "#00A767",
+                "#179FDB",
+                "#EB5C2E"
+            ],
+            "diverging": [
+                "#E6224B",
+                "#E54753",
+                "#C9C9C9",
+                "#179FDB",
+                "#122B39"
+            ],
+            "heatmap": [
+                "#C9C9C9",
+                "#179FDB",
+                "#0063AF",
+                "#122B39"
+            ],
+            "ordinal": [
+                "#00A767",
+                "#36B7B4",
+                "#179FDB",
+                "#0063AF",
+                "#243B5A"
+            ]
+        },
+        "bar": {
+            "color": "#179fdb"
+        },
+        "line": {
+            "color": "#e6224b"
+        },
+        "rule": {
+            "color": "#676A86"
+        },
+        "area": {
+            "opacity": 0.3
+        },
+        "point": {
+            "filled": true,
+            "size": 80,
+            "color": "#e6224b",
+            "opacity": 0.95
+        },
+        "geoshape": {
+            "stroke": "white",
+            "strokeWidth": 0.3
+        },
+        "rect": {
+            "fill": "#d6d4d4",
+            "opacity": 0.3
+        },
+        "axis": {
+            "labelColor": "#676A86",
+            "labelFontSize": 12,
+            "labelFont": "Circular Std",
+            "labelOpacity": 0.7,
+            "tickColor": "#676A86",
+            "tickOpacity": 0.5,
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [
+                2,
+                2
+            ],
+            "gridOpacity": 0.5,
+            "title": null,
+            "titleColor": "#676A86",
+            "titleOpacity": 0.8,
+            "tickSize": 4
+        },
+        "axisXDiscrete": {
+            "grid": false,
+            "labelAngle": 0,
+            "tickCount": 10,
+            "tickOpacity": 0.5
+        },
+        "axisYDiscrete": {
+            "ticks": false,
+            "labelPadding": 5
+        },
+        "axisXTemporal": {
+            "grid": false,
+            "ticks": true
+        },
+        "axisXQuantitative": {
+            "grid": true
+        },
+        "axisYQuantitative": {
+            "gridColor": "#676A86",
+            "gridDash": [
+                1,
+                5
+            ],
+            "gridOpacity": 0.5,
+            "ticks": false,
+            "labelPadding": 5,
+            "tickCount": 8
+        },
+        "title": {
+            "color": "#122b39E6",
+            "subtitleColor": "#676A86",
+            "font": "Circular Std",
+            "subtitleFont": "Circular Std",
+            "anchor": "start",
+            "fontSize": 14,
+            "subtitleFontSize": 12,
+            "subtitlePadding": 4,
+            "offset": 0,
+            "frame": "group"
+        },
+        "legend": {
+            "titleColor": "#122b39",
+            "title": null,
+            "labelColor": "#122b39",
+            "labelFontSize": 11
+        }
+    },
+    "title": {
+        "text": "Local Authority Finances",
+        "subtitleFontWeight": "normal",
+        "fontSize": 16,
+        "subtitleFontSize": 12,
+        "offset": -5,
+        "subtitle": [
+            "Left shows assets & borrowing; right shows debt-to-assets ratio",
+            "Excludes City of London & Shetland Islands. Source: DLUHC, 2024",
+            ""
+        ]
+    },
+    "transform": [
+        {
+            "lookup": "properties.LAD23CD",
+            "from": {
+                "fields": [
+                    "ONS code",
+                    "Assets",
+                    "Borrowing",
+                    "DebtToAssets",
+                    "Name"
+                ],
+                "data": {
+                    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/LAD_Debt/cleanedFinanceData_2023_lads.csv"
+                },
+                "key": "ONS code"
+            }
+        },
+        {
+            "filter": "datum.properties.LAD23NM != 'Shetland Islands' && datum.Assets > -1"
+        }
+    ],
+    "hconcat": [
+        {
+            "width": 250,
+            "height": 350,
+            "encoding": {
+                "x": {
+                    "field": "Borrowing",
+                    "scale": {
+                        "domainMax": 3700000
+                    },
+                    "axis": {
+                        "titleFontWeight": "normal",
+                        "title": "Borrowing",
+                        "gridOpacity": 0.3,
+                        "tickOpacity": 0,
+                        "labelFontWeight": "lighter",
+                        "labelExpr": "'\u00a3'+format(datum.value/1000000, ',.1f')+'B'"
+                    },
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "Assets",
+                    "axis": {
+                        "titleFontWeight": "normal",
+                        "title": "Assets",
+                        "gridOpacity": 0.3,
+                        "tickOpacity": 0,
+                        "labelFontWeight": "lighter",
+                        "labelExpr": "'\u00a3'+format(datum.value/1000000, ',.1f')+'B'"
+                    },
+                    "scale": {
+                        "domain": [
+                            0,
+                            1000000
+                        ]
+                    },
+                    "type": "quantitative"
+                },
+                "color": {
+                    "field": "DebtToAssets",
+                    "type": "quantitative"
+                }
+            },
+            "layer": [
+                {
+                    "params": [
+                        {
+                            "name": "point_paintbrush",
+                            "select": {
+                                "type": "point",
+                                "fields": [
+                                    "Name"
+                                ],
+                                "on": "pointerover"
+                            }
+                        },
+                        {
+                            "name": "grid",
+                            "select": "interval",
+                            "bind": "scales"
+                        }
+                    ],
+                    "encoding": {
+                        "opacity": {
+                            "condition": [
+                                {
+                                    "test": "datum.Name == point_paintbrush.Name | !isValid(point_paintbrush.Name)",
+                                    "value": 1
+                                }
+                            ],
+                            "value": 0.2
+                        }
+                    },
+                    "mark": {
+                        "type": "circle",
+                        "stroke": "rgba(0,0,0,0.8)",
+                        "strokeWidth": 0.5,
+                        "tooltip": {
+                            "expr": "{'Authority': datum.properties.LAD23NM, 'Debt': '\u00a3'+format(datum.Borrowing*1000, ',.4r'), 'Assets': '\u00a3'+format(datum.Assets*1000, ',.4r'), 'Ratio': format(datum.DebtToAssets, ',.3r')}"
+                        }
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "opacity": 1,
+                        "color": "black",
+                        "fontWeight": "lighter",
+                        "align": {
+                            "expr": "datum.Name == 'Birmingham'? 'center' : 'left'"
+                        },
+                        "dy": {
+                            "expr": "datum.Name == 'Birmingham'? -10 : 0"
+                        },
+                        "dx": {
+                            "expr": "datum.Name == 'Birmingham'? -3 : 5"
+                        }
+                    },
+                    "transform": [
+                        {
+                            "filter": "datum.Name == point_paintbrush.Name | indexof(['Birmingham', 'Leeds', 'Thurrock'], datum.Name) != -1"
+                        }
+                    ],
+                    "encoding": {
+                        "text": {
+                            "field": "Name"
+                        },
+                        "opacity": {
+                            "value": 1
+                        },
+                        "color": {
+                            "value": "black"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "height": 350,
+            "width": 250,
+            "projection": {
+                "type": "identity",
+                "reflectY": true
+            },
+            "layer": [
+                {
+                    "params": [
+                        {
+                            "name": "point_paintbrush",
+                            "select": {
+                                "type": "point",
+                                "fields": [
+                                    "Name"
+                                ],
+                                "on": "pointerover"
+                            }
+                        }
+                    ],
+                    "mark": {
+                        "type": "geoshape",
+                        "tooltip": {
+                            "expr": "{'Authority': datum.properties.LAD23NM, 'Debt': '\u00a3'+format(datum.Borrowing*1000, ',.4r'), 'Assets': '\u00a3'+format(datum.Assets*1000, ',.4r'), 'Ratio': format(datum.DebtToAssets, ',.3r')}"
+                        },
+                        "color": "red",
+                        "stroke": "grey"
+                    },
+                    "encoding": {
+                        "strokeWidth": {
+                            "condition": [
+                                {
+                                    "test": "datum.Name == point_paintbrush.Name",
+                                    "value": 1
+                                }
+                            ],
+                            "value": 0
+                        },
+                        "opacity": {
+                            "condition": [
+                                {
+                                    "test": "datum.Name == point_paintbrush.Name | !isValid(point_paintbrush.Name)",
+                                    "value": 1
+                                }
+                            ],
+                            "value": 0.2
+                        },
+                        "color": {
+                            "field": "DebtToAssets",
+                            "legend": {
+                                "titleFontWeight": "lighter",
+                                "orient": "none",
+                                "legendX": 250,
+                                "legendY": -5,
+                                "title": "Ratio",
+                                "labelExpr": "datum.value == 50 ? '>50' : datum.value"
+                            },
+                            "scale": {
+                                "domain": [
+                                    0,
+                                    50
+                                ],
+                                "clamp": true,
+                                "type": "linear",
+                                "scheme": "lightmulti"
+                            },
+                            "type": "quantitative"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

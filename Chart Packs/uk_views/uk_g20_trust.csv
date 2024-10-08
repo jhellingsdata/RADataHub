@@ -1,0 +1,13 @@
+Category,Respondents,View,Value
+People,G20,Trust,57
+Government,G20,Trust,51
+Institutions,G20,Trust,56
+People,G20,Distrust,-14
+Government,G20,Distrust,-19
+Institutions,G20,Distrust,-16
+People,UK,Trust,55
+Government,UK,Trust,47
+Institutions,UK,Trust,53
+People,UK,Distrust,-21
+Government,UK,Distrust,-34
+Institutions,UK,Distrust,-25

@@ -1,0 +1,310 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": {
+          "expr": "datum.Ethnicity == 'Indian' ? 3 : datum.Ethnicity == 'White British' ? -3 : 0"
+        },
+        "fontSize": 11
+      },
+      "encoding": {
+        "color": {"field": "Ethnicity", "legend": null, "type": "nominal"},
+        "opacity": {
+          "condition": {"param": "param_28", "value": 1, "empty": false},
+          "value": 0.5
+        },
+        "size": {"value": 11},
+        "text": {"field": "Ethnicity", "type": "nominal"},
+        "x": {"aggregate": "max", "field": "Year", "type": "ordinal"},
+        "y": {
+          "aggregate": {"argmax": "Year"},
+          "field": "Value",
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"calculate": "datum.Value / 100", "as": "Value"}]
+    },
+    {
+      "mark": {"type": "circle"},
+      "encoding": {
+        "color": {"field": "Ethnicity", "legend": null, "type": "nominal"},
+        "opacity": {"value": 0},
+        "x": {
+          "axis": {
+            "labelExpr": "datum.label && (indexof(['2004/05', '2005/06', '2006/07', '2007/08', '2008/09', '2009/10', '2010/11', '2011/12', '2012/13', '2013/14', '2014/15', '2015/16', '2016/17', '2017/18', '2018/19'], datum.label) % 2 == 0 ? datum.label : '')"
+          },
+          "field": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "title": "Percentage of children, BHC, 3-year average",
+          "type": "quantitative"
+        }
+      },
+      "name": "view_29",
+      "transform": [{"calculate": "datum.Value / 100", "as": "Value"}]
+    },
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "color": {"field": "Ethnicity", "legend": null, "type": "nominal"},
+        "opacity": {
+          "condition": {"param": "param_28", "value": 1, "empty": false},
+          "value": 0.5
+        },
+        "size": {
+          "condition": {"param": "param_28", "value": 3, "empty": false},
+          "value": 2
+        },
+        "x": {
+          "axis": {
+            "labelExpr": "datum.label && (indexof(['2004/05', '2005/06', '2006/07', '2007/08', '2008/09', '2009/10', '2010/11', '2011/12', '2012/13', '2013/14', '2014/15', '2015/16', '2016/17', '2017/18', '2018/19'], datum.label) % 2 == 0 ? datum.label : '')"
+          },
+          "field": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "axis": {"format": "%"},
+          "field": "Value",
+          "title": "Percentage of children, BHC, 3-year average",
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"calculate": "datum.Value / 100", "as": "Value"}]
+    },
+    {
+      "data": {"name": "data-c5e7628832af192bed2ddceedb892a86"},
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": -5,
+        "yOffset": -30
+      },
+      "encoding": {"url": {"field": "img", "type": "nominal"}}
+    }
+  ],
+  "data": {"name": "data-0b431bb037bfc6099480c6bb312d0da5"},
+  "height": 300,
+  "params": [
+    {
+      "name": "param_28",
+      "select": {
+        "type": "point",
+        "fields": ["Ethnicity"],
+        "nearest": true,
+        "on": "pointerover"
+      },
+      "value": "Pakistani",
+      "views": ["view_29"]
+    }
+  ],
+  "width": 430,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-0b431bb037bfc6099480c6bb312d0da5": [
+      {"Ethnicity": "White British", "Year": "2004/05", "Value": 19.02812},
+      {"Ethnicity": "Indian", "Year": "2004/05", "Value": 27.34587},
+      {"Ethnicity": "Pakistani", "Year": "2004/05", "Value": 57.43834},
+      {"Ethnicity": "Bangladeshi", "Year": "2004/05", "Value": 64.68681},
+      {"Ethnicity": "Black Caribbean", "Year": "2004/05", "Value": 25.88326},
+      {"Ethnicity": "Black African", "Year": "2004/05", "Value": 39.17482},
+      {"Ethnicity": "White British", "Year": "2005/06", "Value": 18.74929},
+      {"Ethnicity": "Indian", "Year": "2005/06", "Value": 29.39886},
+      {"Ethnicity": "Pakistani", "Year": "2005/06", "Value": 53.669},
+      {"Ethnicity": "Bangladeshi", "Year": "2005/06", "Value": 61.81226},
+      {"Ethnicity": "Black Caribbean", "Year": "2005/06", "Value": 28.72294},
+      {"Ethnicity": "Black African", "Year": "2005/06", "Value": 36.67249},
+      {"Ethnicity": "White British", "Year": "2006/07", "Value": 19.17348},
+      {"Ethnicity": "Indian", "Year": "2006/07", "Value": 26.924},
+      {"Ethnicity": "Pakistani", "Year": "2006/07", "Value": 54.75179},
+      {"Ethnicity": "Bangladeshi", "Year": "2006/07", "Value": 55.65889},
+      {"Ethnicity": "Black Caribbean", "Year": "2006/07", "Value": 26.5342},
+      {"Ethnicity": "Black African", "Year": "2006/07", "Value": 34.75611},
+      {"Ethnicity": "White British", "Year": "2007/08", "Value": 19.47646},
+      {"Ethnicity": "Indian", "Year": "2007/08", "Value": 28.30368},
+      {"Ethnicity": "Pakistani", "Year": "2007/08", "Value": 56.09951},
+      {"Ethnicity": "Bangladeshi", "Year": "2007/08", "Value": 62.66933},
+      {"Ethnicity": "Black Caribbean", "Year": "2007/08", "Value": 25.40027},
+      {"Ethnicity": "Black African", "Year": "2007/08", "Value": 33.77118},
+      {"Ethnicity": "White British", "Year": "2008/09", "Value": 19.36919},
+      {"Ethnicity": "Indian", "Year": "2008/09", "Value": 27.65336},
+      {"Ethnicity": "Pakistani", "Year": "2008/09", "Value": 54.73317},
+      {"Ethnicity": "Bangladeshi", "Year": "2008/09", "Value": 65.03476},
+      {"Ethnicity": "Black Caribbean", "Year": "2008/09", "Value": 25.33049},
+      {"Ethnicity": "Black African", "Year": "2008/09", "Value": 40.7546},
+      {"Ethnicity": "White British", "Year": "2009/10", "Value": 18.45853},
+      {"Ethnicity": "Indian", "Year": "2009/10", "Value": 26.93272},
+      {"Ethnicity": "Pakistani", "Year": "2009/10", "Value": 52.08889},
+      {"Ethnicity": "Bangladeshi", "Year": "2009/10", "Value": 59.88288},
+      {"Ethnicity": "Black Caribbean", "Year": "2009/10", "Value": 24.56352},
+      {"Ethnicity": "Black African", "Year": "2009/10", "Value": 37.19131},
+      {"Ethnicity": "White British", "Year": "2010/11", "Value": 16.98304},
+      {"Ethnicity": "Indian", "Year": "2010/11", "Value": 26.03},
+      {"Ethnicity": "Pakistani", "Year": "2010/11", "Value": 48.07075},
+      {"Ethnicity": "Bangladeshi", "Year": "2010/11", "Value": 51.3055},
+      {"Ethnicity": "Black Caribbean", "Year": "2010/11", "Value": 25.70542},
+      {"Ethnicity": "Black African", "Year": "2010/11", "Value": 34.4855},
+      {"Ethnicity": "White British", "Year": "2011/12", "Value": 15.6834},
+      {"Ethnicity": "Indian", "Year": "2011/12", "Value": 24.24661},
+      {"Ethnicity": "Pakistani", "Year": "2011/12", "Value": 47.30655},
+      {"Ethnicity": "Bangladeshi", "Year": "2011/12", "Value": 43.25574},
+      {"Ethnicity": "Black Caribbean", "Year": "2011/12", "Value": 19.86088},
+      {"Ethnicity": "Black African", "Year": "2011/12", "Value": 27.69614},
+      {"Ethnicity": "White British", "Year": "2012/13", "Value": 14.98588},
+      {"Ethnicity": "Indian", "Year": "2012/13", "Value": 22.63247},
+      {"Ethnicity": "Pakistani", "Year": "2012/13", "Value": 45.37216},
+      {"Ethnicity": "Bangladeshi", "Year": "2012/13", "Value": 43.88647},
+      {"Ethnicity": "Black Caribbean", "Year": "2012/13", "Value": 17.86131},
+      {"Ethnicity": "Black African", "Year": "2012/13", "Value": 24.96673},
+      {"Ethnicity": "White British", "Year": "2013/14", "Value": 14.79621},
+      {"Ethnicity": "Indian", "Year": "2013/14", "Value": 19.30478},
+      {"Ethnicity": "Pakistani", "Year": "2013/14", "Value": 42.27584},
+      {"Ethnicity": "Bangladeshi", "Year": "2013/14", "Value": 42.90557},
+      {"Ethnicity": "Black Caribbean", "Year": "2013/14", "Value": 20.0065},
+      {"Ethnicity": "Black African", "Year": "2013/14", "Value": 27.23064},
+      {"Ethnicity": "White British", "Year": "2014/15", "Value": 15.24284},
+      {"Ethnicity": "Indian", "Year": "2014/15", "Value": 21.643},
+      {"Ethnicity": "Pakistani", "Year": "2014/15", "Value": 41.13485},
+      {"Ethnicity": "Bangladeshi", "Year": "2014/15", "Value": 46.77637},
+      {"Ethnicity": "Black Caribbean", "Year": "2014/15", "Value": 19.81528},
+      {"Ethnicity": "Black African", "Year": "2014/15", "Value": 23.88896},
+      {"Ethnicity": "White British", "Year": "2015/16", "Value": 15.537},
+      {"Ethnicity": "Indian", "Year": "2015/16", "Value": 20.78415},
+      {"Ethnicity": "Pakistani", "Year": "2015/16", "Value": 43.17754},
+      {"Ethnicity": "Bangladeshi", "Year": "2015/16", "Value": 45.05218},
+      {"Ethnicity": "Black Caribbean", "Year": "2015/16", "Value": 18.72847},
+      {"Ethnicity": "Black African", "Year": "2015/16", "Value": 29.74769},
+      {"Ethnicity": "White British", "Year": "2016/17", "Value": 16.26803},
+      {"Ethnicity": "Indian", "Year": "2016/17", "Value": 19.38027},
+      {"Ethnicity": "Pakistani", "Year": "2016/17", "Value": 46.46725},
+      {"Ethnicity": "Bangladeshi", "Year": "2016/17", "Value": 41.88455},
+      {"Ethnicity": "Black Caribbean", "Year": "2016/17", "Value": 18.72115},
+      {"Ethnicity": "Black African", "Year": "2016/17", "Value": 29.7872},
+      {"Ethnicity": "White British", "Year": "2017/18", "Value": 16.98977},
+      {"Ethnicity": "Indian", "Year": "2017/18", "Value": 16.7395},
+      {"Ethnicity": "Pakistani", "Year": "2017/18", "Value": 48.47279},
+      {"Ethnicity": "Bangladeshi", "Year": "2017/18", "Value": 42.34875},
+      {"Ethnicity": "Black Caribbean", "Year": "2017/18", "Value": 25.2088},
+      {"Ethnicity": "Black African", "Year": "2017/18", "Value": 31.85768},
+      {"Ethnicity": "White British", "Year": "2018/19", "Value": 17.15728},
+      {"Ethnicity": "Indian", "Year": "2018/19", "Value": 16.26651},
+      {"Ethnicity": "Pakistani", "Year": "2018/19", "Value": 46.50904},
+      {"Ethnicity": "Bangladeshi", "Year": "2018/19", "Value": 42.22859},
+      {"Ethnicity": "Black Caribbean", "Year": "2018/19", "Value": 31.84509},
+      {"Ethnicity": "Black African", "Year": "2018/19", "Value": 28.71328}
+    ],
+    "data-c5e7628832af192bed2ddceedb892a86": [
+      {
+        "x": 2.5,
+        "y": 0,
+        "img": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+      }
+    ]
+  }
+}

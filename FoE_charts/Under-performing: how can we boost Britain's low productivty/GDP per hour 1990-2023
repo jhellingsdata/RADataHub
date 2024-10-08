@@ -1,0 +1,2364 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 12,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "title": {
+    "text": "Source: The Conference Board Total Economy Database, April 2023",
+    "fontStyle": "italic",
+    "color": "#676A8680",
+    "dx": 0,
+    "offset": 7,
+    "fontSize": 10,
+    "frame": "group",
+    "orient": "bottom",
+    "anchor": "start"
+  },
+  "layer": [
+    {
+      "data": {"name": "data-39d10a78f97aca34a868a8e6df04832e"},
+      "mark": {"type": "line", "point": true},
+      "encoding": {
+        "color": {
+          "field": "Country",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "UK",
+              "USA",
+              "Germany",
+              "France",
+              "Italy",
+              "Spain",
+              "Euro Area"
+            ],
+            "range": [
+              "#e6224b",
+              "#179fdb",
+              "#f4c245",
+              "#122b39",
+              "#36b7b4",
+              "#eb5c2e",
+              "#a8c0de"
+            ]
+          },
+          "type": "nominal"
+        },
+        "size": {
+          "condition": {"test": "(datum.Country === 'UK')", "value": 3},
+          "value": 1.6
+        },
+        "strokeDash": {
+          "condition": {
+            "test": "(datum.Country === 'Euro Area')",
+            "value": [2, 2]
+          },
+          "value": [0]
+        },
+        "tooltip": [
+          {"field": "Country", "title": "Country", "type": "nominal"},
+          {"field": "Year", "type": "nominal"},
+          {
+            "field": "GDP per hour",
+            "format": "$,.0f",
+            "title": "GDP per hour (US$, PPPs)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {
+          "axis": {
+            "title": "GDP per hour (US$, PPPs)",
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleFontSize": 11,
+            "titleOpacity": 0.9,
+            "titleX": 4,
+            "titleY": 14
+          },
+          "field": "GDP per hour",
+          "scale": {"padding": 20, "zero": false},
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {"name": "data-e7f6c84df76596d628a3e10e5ea4ebe4"},
+      "mark": {"type": "point", "filled": true, "opacity": 0.95, "size": 60},
+      "encoding": {
+        "color": {"field": "Country", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country", "title": "Country", "type": "nominal"},
+          {"field": "Year", "type": "nominal"},
+          {
+            "field": "GDP per hour",
+            "format": "$,.1f",
+            "title": "GDP per hour (US$, PPPs)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "GDP per hour", "type": "quantitative"}
+      }
+    },
+    {
+      "data": {"name": "data-e7f6c84df76596d628a3e10e5ea4ebe4"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "dy": -7,
+        "fontSize": 12
+      },
+      "encoding": {
+        "color": {"field": "Country", "type": "nominal"},
+        "text": {"field": "Country", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country", "title": "Country", "type": "nominal"},
+          {"field": "Year", "type": "nominal"},
+          {
+            "field": "GDP per hour",
+            "format": "$,.1f",
+            "title": "GDP per hour (US$, PPPs)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "GDP per hour", "type": "quantitative"}
+      },
+      "transform": [{"filter": "(datum.Country === 'Germany')"}]
+    },
+    {
+      "data": {"name": "data-e7f6c84df76596d628a3e10e5ea4ebe4"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "dy": 5,
+        "fontSize": 12
+      },
+      "encoding": {
+        "color": {"field": "Country", "type": "nominal"},
+        "text": {"field": "Country", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country", "title": "Country", "type": "nominal"},
+          {"field": "Year", "type": "nominal"},
+          {
+            "field": "GDP per hour",
+            "format": "$,.1f",
+            "title": "GDP per hour (US$, PPPs)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "GDP per hour", "type": "quantitative"}
+      },
+      "transform": [{"filter": "(datum.Country === 'USA')"}]
+    },
+    {
+      "data": {"name": "data-e7f6c84df76596d628a3e10e5ea4ebe4"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "dy": 0,
+        "fontSize": 12
+      },
+      "encoding": {
+        "color": {"field": "Country", "type": "nominal"},
+        "text": {"field": "Country", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country", "title": "Country", "type": "nominal"},
+          {"field": "Year", "type": "nominal"},
+          {
+            "field": "GDP per hour",
+            "format": "$,.1f",
+            "title": "GDP per hour (US$, PPPs)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "GDP per hour", "type": "quantitative"}
+      },
+      "transform": [{"filter": "(datum.Country === 'France')"}]
+    },
+    {
+      "data": {"name": "data-e7f6c84df76596d628a3e10e5ea4ebe4"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "dy": 0,
+        "fontSize": 12
+      },
+      "encoding": {
+        "color": {"field": "Country", "type": "nominal"},
+        "text": {"field": "Country", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country", "title": "Country", "type": "nominal"},
+          {"field": "Year", "type": "nominal"},
+          {
+            "field": "GDP per hour",
+            "format": "$,.1f",
+            "title": "GDP per hour (US$, PPPs)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "GDP per hour", "type": "quantitative"}
+      },
+      "transform": [{"filter": "(datum.Country === 'UK')"}]
+    },
+    {
+      "data": {"name": "data-e7f6c84df76596d628a3e10e5ea4ebe4"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "dy": 0,
+        "fontSize": 12
+      },
+      "encoding": {
+        "color": {"field": "Country", "type": "nominal"},
+        "text": {"field": "Country", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country", "title": "Country", "type": "nominal"},
+          {"field": "Year", "type": "nominal"},
+          {
+            "field": "GDP per hour",
+            "format": "$,.1f",
+            "title": "GDP per hour (US$, PPPs)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "GDP per hour", "type": "quantitative"}
+      },
+      "transform": [{"filter": "(datum.Country === 'Italy')"}]
+    },
+    {
+      "data": {"name": "data-e7f6c84df76596d628a3e10e5ea4ebe4"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": -100,
+        "dy": -5,
+        "fontSize": 12,
+        "opacity": 1
+      },
+      "encoding": {
+        "color": {"field": "Country", "type": "nominal"},
+        "text": {"field": "Country", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country", "title": "Country", "type": "nominal"},
+          {"field": "Year", "type": "nominal"},
+          {
+            "field": "GDP per hour",
+            "format": "$,.1f",
+            "title": "GDP per hour (US$, PPPs)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "GDP per hour", "type": "quantitative"}
+      },
+      "transform": [{"filter": "(datum.Country === 'Euro Area')"}]
+    },
+    {
+      "data": {"name": "data-e7f6c84df76596d628a3e10e5ea4ebe4"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "dy": 0,
+        "fontSize": 12
+      },
+      "encoding": {
+        "color": {"field": "Country", "type": "nominal"},
+        "text": {"field": "Country", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country", "title": "Country", "type": "nominal"},
+          {"field": "Year", "type": "nominal"},
+          {
+            "field": "GDP per hour",
+            "format": "$,.1f",
+            "title": "GDP per hour (US$, PPPs)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "GDP per hour", "type": "quantitative"}
+      },
+      "transform": [{"filter": "(datum.Country === 'Spain')"}]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-39d10a78f97aca34a868a8e6df04832e": [
+      {
+        "Date": "1990-01-01T00:00:00",
+        "Year": 1990,
+        "Country": "UK",
+        "GDP per hour": 50.02385259440571,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "1991-01-01T00:00:00",
+        "Year": 1991,
+        "Country": "UK",
+        "GDP per hour": 51.25834854542116,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "1992-01-01T00:00:00",
+        "Year": 1992,
+        "Country": "UK",
+        "GDP per hour": 52.714104763256024,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "1993-01-01T00:00:00",
+        "Year": 1993,
+        "Country": "UK",
+        "GDP per hour": 54.456040886162384,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "1994-01-01T00:00:00",
+        "Year": 1994,
+        "Country": "UK",
+        "GDP per hour": 55.57073409138708,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "1995-01-01T00:00:00",
+        "Year": 1995,
+        "Country": "UK",
+        "GDP per hour": 55.989622888024265,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "1996-01-01T00:00:00",
+        "Year": 1996,
+        "Country": "UK",
+        "GDP per hour": 56.54701770073082,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "1997-01-01T00:00:00",
+        "Year": 1997,
+        "Country": "UK",
+        "GDP per hour": 58.09715503745128,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "1998-01-01T00:00:00",
+        "Year": 1998,
+        "Country": "UK",
+        "GDP per hour": 59.47421570599126,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "1999-01-01T00:00:00",
+        "Year": 1999,
+        "Country": "UK",
+        "GDP per hour": 60.72289532456929,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2000-01-01T00:00:00",
+        "Year": 2000,
+        "Country": "UK",
+        "GDP per hour": 63.05972627048209,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2001-01-01T00:00:00",
+        "Year": 2001,
+        "Country": "UK",
+        "GDP per hour": 63.77515514000278,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2002-01-01T00:00:00",
+        "Year": 2002,
+        "Country": "UK",
+        "GDP per hour": 65.03398096374403,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2003-01-01T00:00:00",
+        "Year": 2003,
+        "Country": "UK",
+        "GDP per hour": 66.77078462269928,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2004-01-01T00:00:00",
+        "Year": 2004,
+        "Country": "UK",
+        "GDP per hour": 67.7050748112595,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2005-01-01T00:00:00",
+        "Year": 2005,
+        "Country": "UK",
+        "GDP per hour": 68.61686794660734,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2006-01-01T00:00:00",
+        "Year": 2006,
+        "Country": "UK",
+        "GDP per hour": 69.6463015890799,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2007-01-01T00:00:00",
+        "Year": 2007,
+        "Country": "UK",
+        "GDP per hour": 70.76942703299378,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2008-01-01T00:00:00",
+        "Year": 2008,
+        "Country": "UK",
+        "GDP per hour": 70.28863675005051,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2009-01-01T00:00:00",
+        "Year": 2009,
+        "Country": "UK",
+        "GDP per hour": 69.12758844936486,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2010-01-01T00:00:00",
+        "Year": 2010,
+        "Country": "UK",
+        "GDP per hour": 70.42220996769097,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2011-01-01T00:00:00",
+        "Year": 2011,
+        "Country": "UK",
+        "GDP per hour": 70.95893080270436,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2012-01-01T00:00:00",
+        "Year": 2012,
+        "Country": "UK",
+        "GDP per hour": 70.5586963353659,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2013-01-01T00:00:00",
+        "Year": 2013,
+        "Country": "UK",
+        "GDP per hour": 70.54776596525656,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2014-01-01T00:00:00",
+        "Year": 2014,
+        "Country": "UK",
+        "GDP per hour": 70.84896789519873,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2015-01-01T00:00:00",
+        "Year": 2015,
+        "Country": "UK",
+        "GDP per hour": 71.43938891722134,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2016-01-01T00:00:00",
+        "Year": 2016,
+        "Country": "UK",
+        "GDP per hour": 72.00760109691242,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2017-01-01T00:00:00",
+        "Year": 2017,
+        "Country": "UK",
+        "GDP per hour": 72.99103850882237,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2018-01-01T00:00:00",
+        "Year": 2018,
+        "Country": "UK",
+        "GDP per hour": 73.61486443675427,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2019-01-01T00:00:00",
+        "Year": 2019,
+        "Country": "UK",
+        "GDP per hour": 73.76499135393118,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2020-01-01T00:00:00",
+        "Year": 2020,
+        "Country": "UK",
+        "GDP per hour": 73.35159341994387,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2021-01-01T00:00:00",
+        "Year": 2021,
+        "Country": "UK",
+        "GDP per hour": 74.0194495678628,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2022-01-01T00:00:00",
+        "Year": 2022,
+        "Country": "UK",
+        "GDP per hour": 74.34255319154306,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "UK",
+        "GDP per hour": 74.301182213971,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "1990-01-01T00:00:00",
+        "Year": 1990,
+        "Country": "Germany",
+        "GDP per hour": 55.114838328124875,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "1991-01-01T00:00:00",
+        "Year": 1991,
+        "Country": "Germany",
+        "GDP per hour": 60.23435560244567,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "1992-01-01T00:00:00",
+        "Year": 1992,
+        "Country": "Germany",
+        "GDP per hour": 61.77192389054995,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "1993-01-01T00:00:00",
+        "Year": 1993,
+        "Country": "Germany",
+        "GDP per hour": 62.974626104406546,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "1994-01-01T00:00:00",
+        "Year": 1994,
+        "Country": "Germany",
+        "GDP per hour": 64.60438592830153,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "1995-01-01T00:00:00",
+        "Year": 1995,
+        "Country": "Germany",
+        "GDP per hour": 65.577486116609,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "1996-01-01T00:00:00",
+        "Year": 1996,
+        "Country": "Germany",
+        "GDP per hour": 66.68129768403517,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "1997-01-01T00:00:00",
+        "Year": 1997,
+        "Country": "Germany",
+        "GDP per hour": 68.31556545675829,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "1998-01-01T00:00:00",
+        "Year": 1998,
+        "Country": "Germany",
+        "GDP per hour": 69.01125636936182,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "1999-01-01T00:00:00",
+        "Year": 1999,
+        "Country": "Germany",
+        "GDP per hour": 69.79480986503987,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2000-01-01T00:00:00",
+        "Year": 2000,
+        "Country": "Germany",
+        "GDP per hour": 71.52501590561435,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2001-01-01T00:00:00",
+        "Year": 2001,
+        "Country": "Germany",
+        "GDP per hour": 73.32128357504676,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2002-01-01T00:00:00",
+        "Year": 2002,
+        "Country": "Germany",
+        "GDP per hour": 74.00103065979302,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2003-01-01T00:00:00",
+        "Year": 2003,
+        "Country": "Germany",
+        "GDP per hour": 74.57023077553742,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2004-01-01T00:00:00",
+        "Year": 2004,
+        "Country": "Germany",
+        "GDP per hour": 75.24935646489415,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2005-01-01T00:00:00",
+        "Year": 2005,
+        "Country": "Germany",
+        "GDP per hour": 76.43690505281877,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2006-01-01T00:00:00",
+        "Year": 2006,
+        "Country": "Germany",
+        "GDP per hour": 77.6593176068383,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2007-01-01T00:00:00",
+        "Year": 2007,
+        "Country": "Germany",
+        "GDP per hour": 78.57684593163398,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2008-01-01T00:00:00",
+        "Year": 2008,
+        "Country": "Germany",
+        "GDP per hour": 78.5972846072647,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2009-01-01T00:00:00",
+        "Year": 2009,
+        "Country": "Germany",
+        "GDP per hour": 76.23143540561182,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2010-01-01T00:00:00",
+        "Year": 2010,
+        "Country": "Germany",
+        "GDP per hour": 77.98870234091376,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2011-01-01T00:00:00",
+        "Year": 2011,
+        "Country": "Germany",
+        "GDP per hour": 80.01717986356266,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2012-01-01T00:00:00",
+        "Year": 2012,
+        "Country": "Germany",
+        "GDP per hour": 80.51086223032968,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2013-01-01T00:00:00",
+        "Year": 2013,
+        "Country": "Germany",
+        "GDP per hour": 80.89307077786758,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2014-01-01T00:00:00",
+        "Year": 2014,
+        "Country": "Germany",
+        "GDP per hour": 81.73146837894049,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2015-01-01T00:00:00",
+        "Year": 2015,
+        "Country": "Germany",
+        "GDP per hour": 82.14785788088466,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2016-01-01T00:00:00",
+        "Year": 2016,
+        "Country": "Germany",
+        "GDP per hour": 83.26123808224699,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2017-01-01T00:00:00",
+        "Year": 2017,
+        "Country": "Germany",
+        "GDP per hour": 84.74546538937355,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2018-01-01T00:00:00",
+        "Year": 2018,
+        "Country": "Germany",
+        "GDP per hour": 84.92091028634825,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2019-01-01T00:00:00",
+        "Year": 2019,
+        "Country": "Germany",
+        "GDP per hour": 85.56750118199112,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2020-01-01T00:00:00",
+        "Year": 2020,
+        "Country": "Germany",
+        "GDP per hour": 86.40729848927955,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2021-01-01T00:00:00",
+        "Year": 2021,
+        "Country": "Germany",
+        "GDP per hour": 87.15921538533411,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2022-01-01T00:00:00",
+        "Year": 2022,
+        "Country": "Germany",
+        "GDP per hour": 87.52110774292936,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "Germany",
+        "GDP per hour": 87.25996490635667,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "1990-01-01T00:00:00",
+        "Year": 1990,
+        "Country": "France",
+        "GDP per hour": 59.855536847782155,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "1991-01-01T00:00:00",
+        "Year": 1991,
+        "Country": "France",
+        "GDP per hour": 60.60549636122625,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "1992-01-01T00:00:00",
+        "Year": 1992,
+        "Country": "France",
+        "GDP per hour": 62.064222481819456,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "1993-01-01T00:00:00",
+        "Year": 1993,
+        "Country": "France",
+        "GDP per hour": 62.6417697861464,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "1994-01-01T00:00:00",
+        "Year": 1994,
+        "Country": "France",
+        "GDP per hour": 63.9343208130751,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "1995-01-01T00:00:00",
+        "Year": 1995,
+        "Country": "France",
+        "GDP per hour": 65.52412356607473,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "1996-01-01T00:00:00",
+        "Year": 1996,
+        "Country": "France",
+        "GDP per hour": 66.23809009796199,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "1997-01-01T00:00:00",
+        "Year": 1997,
+        "Country": "France",
+        "GDP per hour": 67.3340917486451,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "1998-01-01T00:00:00",
+        "Year": 1998,
+        "Country": "France",
+        "GDP per hour": 68.99963764859955,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "1999-01-01T00:00:00",
+        "Year": 1999,
+        "Country": "France",
+        "GDP per hour": 69.99395216673207,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2000-01-01T00:00:00",
+        "Year": 2000,
+        "Country": "France",
+        "GDP per hour": 71.84784577903723,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2001-01-01T00:00:00",
+        "Year": 2001,
+        "Country": "France",
+        "GDP per hour": 73.19212471571522,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2002-01-01T00:00:00",
+        "Year": 2002,
+        "Country": "France",
+        "GDP per hour": 75.32892881552281,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2003-01-01T00:00:00",
+        "Year": 2003,
+        "Country": "France",
+        "GDP per hour": 75.75887670726557,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2004-01-01T00:00:00",
+        "Year": 2004,
+        "Country": "France",
+        "GDP per hour": 76.5961083248708,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2005-01-01T00:00:00",
+        "Year": 2005,
+        "Country": "France",
+        "GDP per hour": 77.2759689648899,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2006-01-01T00:00:00",
+        "Year": 2006,
+        "Country": "France",
+        "GDP per hour": 79.19986853947724,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2007-01-01T00:00:00",
+        "Year": 2007,
+        "Country": "France",
+        "GDP per hour": 78.82868297539069,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2008-01-01T00:00:00",
+        "Year": 2008,
+        "Country": "France",
+        "GDP per hour": 78.32575092526312,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2009-01-01T00:00:00",
+        "Year": 2009,
+        "Country": "France",
+        "GDP per hour": 77.52463095425537,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2010-01-01T00:00:00",
+        "Year": 2010,
+        "Country": "France",
+        "GDP per hour": 78.52817576376681,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2011-01-01T00:00:00",
+        "Year": 2011,
+        "Country": "France",
+        "GDP per hour": 79.31448038905846,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2012-01-01T00:00:00",
+        "Year": 2012,
+        "Country": "France",
+        "GDP per hour": 79.57362031970894,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2013-01-01T00:00:00",
+        "Year": 2013,
+        "Country": "France",
+        "GDP per hour": 80.65125267756606,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2014-01-01T00:00:00",
+        "Year": 2014,
+        "Country": "France",
+        "GDP per hour": 81.42728028208023,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2015-01-01T00:00:00",
+        "Year": 2015,
+        "Country": "France",
+        "GDP per hour": 82.08790073831935,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2016-01-01T00:00:00",
+        "Year": 2016,
+        "Country": "France",
+        "GDP per hour": 82.31727496737666,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2017-01-01T00:00:00",
+        "Year": 2017,
+        "Country": "France",
+        "GDP per hour": 84.05398088949758,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2018-01-01T00:00:00",
+        "Year": 2018,
+        "Country": "France",
+        "GDP per hour": 84.39836918978754,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2019-01-01T00:00:00",
+        "Year": 2019,
+        "Country": "France",
+        "GDP per hour": 84.72762979313808,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2020-01-01T00:00:00",
+        "Year": 2020,
+        "Country": "France",
+        "GDP per hour": 85.15515650082507,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2021-01-01T00:00:00",
+        "Year": 2021,
+        "Country": "France",
+        "GDP per hour": 83.88352158985431,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2022-01-01T00:00:00",
+        "Year": 2022,
+        "Country": "France",
+        "GDP per hour": 82.50179920650766,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "France",
+        "GDP per hour": 82.4329888857509,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "1990-01-01T00:00:00",
+        "Year": 1990,
+        "Country": "USA",
+        "GDP per hour": 53.17544322595702,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "1991-01-01T00:00:00",
+        "Year": 1991,
+        "Country": "USA",
+        "GDP per hour": 53.80806763531834,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "1992-01-01T00:00:00",
+        "Year": 1992,
+        "Country": "USA",
+        "GDP per hour": 55.74743813916972,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "1993-01-01T00:00:00",
+        "Year": 1993,
+        "Country": "USA",
+        "GDP per hour": 55.99469073622354,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "1994-01-01T00:00:00",
+        "Year": 1994,
+        "Country": "USA",
+        "GDP per hour": 56.3772304264785,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "1995-01-01T00:00:00",
+        "Year": 1995,
+        "Country": "USA",
+        "GDP per hour": 56.72675240230847,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "1996-01-01T00:00:00",
+        "Year": 1996,
+        "Country": "USA",
+        "GDP per hour": 57.8145335786846,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "1997-01-01T00:00:00",
+        "Year": 1997,
+        "Country": "USA",
+        "GDP per hour": 58.87092983487214,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "1998-01-01T00:00:00",
+        "Year": 1998,
+        "Country": "USA",
+        "GDP per hour": 60.225327814433435,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "1999-01-01T00:00:00",
+        "Year": 1999,
+        "Country": "USA",
+        "GDP per hour": 62.02989452035354,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2000-01-01T00:00:00",
+        "Year": 2000,
+        "Country": "USA",
+        "GDP per hour": 63.60029975409066,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2001-01-01T00:00:00",
+        "Year": 2001,
+        "Country": "USA",
+        "GDP per hour": 64.95760254508922,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2002-01-01T00:00:00",
+        "Year": 2002,
+        "Country": "USA",
+        "GDP per hour": 66.9305557737609,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2003-01-01T00:00:00",
+        "Year": 2003,
+        "Country": "USA",
+        "GDP per hour": 69.15385344180265,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2004-01-01T00:00:00",
+        "Year": 2004,
+        "Country": "USA",
+        "GDP per hour": 71.02347897103633,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2005-01-01T00:00:00",
+        "Year": 2005,
+        "Country": "USA",
+        "GDP per hour": 72.42652832837959,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2006-01-01T00:00:00",
+        "Year": 2006,
+        "Country": "USA",
+        "GDP per hour": 73.04278942522967,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2007-01-01T00:00:00",
+        "Year": 2007,
+        "Country": "USA",
+        "GDP per hour": 73.8185659343572,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2008-01-01T00:00:00",
+        "Year": 2008,
+        "Country": "USA",
+        "GDP per hour": 74.91590942404905,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2009-01-01T00:00:00",
+        "Year": 2009,
+        "Country": "USA",
+        "GDP per hour": 77.42863337783821,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2010-01-01T00:00:00",
+        "Year": 2010,
+        "Country": "USA",
+        "GDP per hour": 79.47979440466547,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2011-01-01T00:00:00",
+        "Year": 2011,
+        "Country": "USA",
+        "GDP per hour": 79.46562704168299,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2012-01-01T00:00:00",
+        "Year": 2012,
+        "Country": "USA",
+        "GDP per hour": 79.73498053533675,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2013-01-01T00:00:00",
+        "Year": 2013,
+        "Country": "USA",
+        "GDP per hour": 80.14677846565192,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2014-01-01T00:00:00",
+        "Year": 2014,
+        "Country": "USA",
+        "GDP per hour": 80.39353501926146,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2015-01-01T00:00:00",
+        "Year": 2015,
+        "Country": "USA",
+        "GDP per hour": 80.88414357006829,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2016-01-01T00:00:00",
+        "Year": 2016,
+        "Country": "USA",
+        "GDP per hour": 81.25114366869096,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2017-01-01T00:00:00",
+        "Year": 2017,
+        "Country": "USA",
+        "GDP per hour": 82.09795160366403,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2018-01-01T00:00:00",
+        "Year": 2018,
+        "Country": "USA",
+        "GDP per hour": 82.93776244080051,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2019-01-01T00:00:00",
+        "Year": 2019,
+        "Country": "USA",
+        "GDP per hour": 84.04606234492687,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2020-01-01T00:00:00",
+        "Year": 2020,
+        "Country": "USA",
+        "GDP per hour": 87.43957412552946,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2021-01-01T00:00:00",
+        "Year": 2021,
+        "Country": "USA",
+        "GDP per hour": 88.68603871986974,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2022-01-01T00:00:00",
+        "Year": 2022,
+        "Country": "USA",
+        "GDP per hour": 87.72973447882015,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "USA",
+        "GDP per hour": 87.15344735546896,
+        "size": 1.5,
+        "colour": "#179fdb"
+      },
+      {
+        "Date": "1990-01-01T00:00:00",
+        "Year": 1990,
+        "Country": "Euro Area",
+        "GDP per hour": 56.04605479244916,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "1991-01-01T00:00:00",
+        "Year": 1991,
+        "Country": "Euro Area",
+        "GDP per hour": 57.8084044335826,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "1992-01-01T00:00:00",
+        "Year": 1992,
+        "Country": "Euro Area",
+        "GDP per hour": 58.85109595516471,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "1993-01-01T00:00:00",
+        "Year": 1993,
+        "Country": "Euro Area",
+        "GDP per hour": 59.71260626698418,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "1994-01-01T00:00:00",
+        "Year": 1994,
+        "Country": "Euro Area",
+        "GDP per hour": 61.25041269047105,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "1995-01-01T00:00:00",
+        "Year": 1995,
+        "Country": "Euro Area",
+        "GDP per hour": 59.55463378270798,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "1996-01-01T00:00:00",
+        "Year": 1996,
+        "Country": "Euro Area",
+        "GDP per hour": 60.277371249741215,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "1997-01-01T00:00:00",
+        "Year": 1997,
+        "Country": "Euro Area",
+        "GDP per hour": 61.460211110581426,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "1998-01-01T00:00:00",
+        "Year": 1998,
+        "Country": "Euro Area",
+        "GDP per hour": 62.1210929427238,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "1999-01-01T00:00:00",
+        "Year": 1999,
+        "Country": "Euro Area",
+        "GDP per hour": 62.92836648191514,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2000-01-01T00:00:00",
+        "Year": 2000,
+        "Country": "Euro Area",
+        "GDP per hour": 64.43900341554126,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2001-01-01T00:00:00",
+        "Year": 2001,
+        "Country": "Euro Area",
+        "GDP per hour": 65.44053201214749,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2002-01-01T00:00:00",
+        "Year": 2002,
+        "Country": "Euro Area",
+        "GDP per hour": 66.03061337256159,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2003-01-01T00:00:00",
+        "Year": 2003,
+        "Country": "Euro Area",
+        "GDP per hour": 66.434107666194,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2004-01-01T00:00:00",
+        "Year": 2004,
+        "Country": "Euro Area",
+        "GDP per hour": 67.24743632000529,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2005-01-01T00:00:00",
+        "Year": 2005,
+        "Country": "Euro Area",
+        "GDP per hour": 67.887673644792,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2006-01-01T00:00:00",
+        "Year": 2006,
+        "Country": "Euro Area",
+        "GDP per hour": 68.86876808100813,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2007-01-01T00:00:00",
+        "Year": 2007,
+        "Country": "Euro Area",
+        "GDP per hour": 69.53198057225858,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2008-01-01T00:00:00",
+        "Year": 2008,
+        "Country": "Euro Area",
+        "GDP per hour": 69.42494196959376,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2009-01-01T00:00:00",
+        "Year": 2009,
+        "Country": "Euro Area",
+        "GDP per hour": 68.5331024495733,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2010-01-01T00:00:00",
+        "Year": 2010,
+        "Country": "Euro Area",
+        "GDP per hour": 70.16319515080359,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2011-01-01T00:00:00",
+        "Year": 2011,
+        "Country": "Euro Area",
+        "GDP per hour": 71.1887526976953,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2012-01-01T00:00:00",
+        "Year": 2012,
+        "Country": "Euro Area",
+        "GDP per hour": 71.55855883058544,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2013-01-01T00:00:00",
+        "Year": 2013,
+        "Country": "Euro Area",
+        "GDP per hour": 72.2229690581555,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2014-01-01T00:00:00",
+        "Year": 2014,
+        "Country": "Euro Area",
+        "GDP per hour": 72.69318763493027,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2015-01-01T00:00:00",
+        "Year": 2015,
+        "Country": "Euro Area",
+        "GDP per hour": 73.26585575337346,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2016-01-01T00:00:00",
+        "Year": 2016,
+        "Country": "Euro Area",
+        "GDP per hour": 73.49646555820104,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2017-01-01T00:00:00",
+        "Year": 2017,
+        "Country": "Euro Area",
+        "GDP per hour": 74.51130256960695,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2018-01-01T00:00:00",
+        "Year": 2018,
+        "Country": "Euro Area",
+        "GDP per hour": 74.52595618784322,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2019-01-01T00:00:00",
+        "Year": 2019,
+        "Country": "Euro Area",
+        "GDP per hour": 74.96183744782083,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2020-01-01T00:00:00",
+        "Year": 2020,
+        "Country": "Euro Area",
+        "GDP per hour": 76.06239008100233,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2021-01-01T00:00:00",
+        "Year": 2021,
+        "Country": "Euro Area",
+        "GDP per hour": 75.86160320337812,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2022-01-01T00:00:00",
+        "Year": 2022,
+        "Country": "Euro Area",
+        "GDP per hour": 75.75422640235263,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "Euro Area",
+        "GDP per hour": 75.59320023626248,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "1990-01-01T00:00:00",
+        "Year": 1990,
+        "Country": "Italy",
+        "GDP per hour": 58.47667189940565,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "1991-01-01T00:00:00",
+        "Year": 1991,
+        "Country": "Italy",
+        "GDP per hour": 58.56741449975153,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "1992-01-01T00:00:00",
+        "Year": 1992,
+        "Country": "Italy",
+        "GDP per hour": 59.39022678898387,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "1993-01-01T00:00:00",
+        "Year": 1993,
+        "Country": "Italy",
+        "GDP per hour": 60.50445288407581,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "1994-01-01T00:00:00",
+        "Year": 1994,
+        "Country": "Italy",
+        "GDP per hour": 62.85047393981069,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "1995-01-01T00:00:00",
+        "Year": 1995,
+        "Country": "Italy",
+        "GDP per hour": 64.58966755299245,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "1996-01-01T00:00:00",
+        "Year": 1996,
+        "Country": "Italy",
+        "GDP per hour": 64.66346629268003,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "1997-01-01T00:00:00",
+        "Year": 1997,
+        "Country": "Italy",
+        "GDP per hour": 65.85685585271004,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "1998-01-01T00:00:00",
+        "Year": 1998,
+        "Country": "Italy",
+        "GDP per hour": 65.90204476916604,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "1999-01-01T00:00:00",
+        "Year": 1999,
+        "Country": "Italy",
+        "GDP per hour": 66.36550458129169,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2000-01-01T00:00:00",
+        "Year": 2000,
+        "Country": "Italy",
+        "GDP per hour": 68.27136322518864,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2001-01-01T00:00:00",
+        "Year": 2001,
+        "Country": "Italy",
+        "GDP per hour": 68.7291945349168,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2002-01-01T00:00:00",
+        "Year": 2002,
+        "Country": "Italy",
+        "GDP per hour": 68.19023818784646,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2003-01-01T00:00:00",
+        "Year": 2003,
+        "Country": "Italy",
+        "GDP per hour": 67.7070218406107,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2004-01-01T00:00:00",
+        "Year": 2004,
+        "Country": "Italy",
+        "GDP per hour": 68.27481231646352,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2005-01-01T00:00:00",
+        "Year": 2005,
+        "Country": "Italy",
+        "GDP per hour": 68.57985675220209,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2006-01-01T00:00:00",
+        "Year": 2006,
+        "Country": "Italy",
+        "GDP per hour": 68.42887545816086,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2007-01-01T00:00:00",
+        "Year": 2007,
+        "Country": "Italy",
+        "GDP per hour": 68.37686335823567,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2008-01-01T00:00:00",
+        "Year": 2008,
+        "Country": "Italy",
+        "GDP per hour": 67.98697701994232,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2009-01-01T00:00:00",
+        "Year": 2009,
+        "Country": "Italy",
+        "GDP per hour": 66.63263958239578,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2010-01-01T00:00:00",
+        "Year": 2010,
+        "Country": "Italy",
+        "GDP per hour": 68.14751431076236,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2011-01-01T00:00:00",
+        "Year": 2011,
+        "Country": "Italy",
+        "GDP per hour": 68.60757080689955,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2012-01-01T00:00:00",
+        "Year": 2012,
+        "Country": "Italy",
+        "GDP per hour": 68.2408384564922,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2013-01-01T00:00:00",
+        "Year": 2013,
+        "Country": "Italy",
+        "GDP per hour": 68.7832502217458,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2014-01-01T00:00:00",
+        "Year": 2014,
+        "Country": "Italy",
+        "GDP per hour": 68.83796574425428,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2015-01-01T00:00:00",
+        "Year": 2015,
+        "Country": "Italy",
+        "GDP per hour": 68.87883372270912,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2016-01-01T00:00:00",
+        "Year": 2016,
+        "Country": "Italy",
+        "GDP per hour": 68.66710453146634,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2017-01-01T00:00:00",
+        "Year": 2017,
+        "Country": "Italy",
+        "GDP per hour": 69.11007222910197,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2018-01-01T00:00:00",
+        "Year": 2018,
+        "Country": "Italy",
+        "GDP per hour": 69.10151379884354,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2019-01-01T00:00:00",
+        "Year": 2019,
+        "Country": "Italy",
+        "GDP per hour": 69.4448387416832,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2020-01-01T00:00:00",
+        "Year": 2020,
+        "Country": "Italy",
+        "GDP per hour": 71.59026587814172,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2021-01-01T00:00:00",
+        "Year": 2021,
+        "Country": "Italy",
+        "GDP per hour": 70.84366397980753,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2022-01-01T00:00:00",
+        "Year": 2022,
+        "Country": "Italy",
+        "GDP per hour": 70.65668066554727,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "Italy",
+        "GDP per hour": 70.60955866989,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "1990-01-01T00:00:00",
+        "Year": 1990,
+        "Country": "Spain",
+        "GDP per hour": 50.33388587368973,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "1991-01-01T00:00:00",
+        "Year": 1991,
+        "Country": "Spain",
+        "GDP per hour": 50.7410289155846,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "1992-01-01T00:00:00",
+        "Year": 1992,
+        "Country": "Spain",
+        "GDP per hour": 52.17218320173658,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "1993-01-01T00:00:00",
+        "Year": 1993,
+        "Country": "Spain",
+        "GDP per hour": 53.38643758705099,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "1994-01-01T00:00:00",
+        "Year": 1994,
+        "Country": "Spain",
+        "GDP per hour": 54.95102031925601,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "1995-01-01T00:00:00",
+        "Year": 1995,
+        "Country": "Spain",
+        "GDP per hour": 56.59413159576632,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "1996-01-01T00:00:00",
+        "Year": 1996,
+        "Country": "Spain",
+        "GDP per hour": 57.220899792359404,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "1997-01-01T00:00:00",
+        "Year": 1997,
+        "Country": "Spain",
+        "GDP per hour": 57.125188374314725,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "1998-01-01T00:00:00",
+        "Year": 1998,
+        "Country": "Spain",
+        "GDP per hour": 56.856045688648344,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "1999-01-01T00:00:00",
+        "Year": 1999,
+        "Country": "Spain",
+        "GDP per hour": 56.655659146808844,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2000-01-01T00:00:00",
+        "Year": 2000,
+        "Country": "Spain",
+        "GDP per hour": 56.919001752502304,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2001-01-01T00:00:00",
+        "Year": 2001,
+        "Country": "Spain",
+        "GDP per hour": 57.01018716586488,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2002-01-01T00:00:00",
+        "Year": 2002,
+        "Country": "Spain",
+        "GDP per hour": 57.09857534867906,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2003-01-01T00:00:00",
+        "Year": 2003,
+        "Country": "Spain",
+        "GDP per hour": 57.268507916975366,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2004-01-01T00:00:00",
+        "Year": 2004,
+        "Country": "Spain",
+        "GDP per hour": 57.452057275691665,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2005-01-01T00:00:00",
+        "Year": 2005,
+        "Country": "Spain",
+        "GDP per hour": 57.676488597442756,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2006-01-01T00:00:00",
+        "Year": 2006,
+        "Country": "Spain",
+        "GDP per hour": 58.01376066554905,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2007-01-01T00:00:00",
+        "Year": 2007,
+        "Country": "Spain",
+        "GDP per hour": 58.65496789882378,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2008-01-01T00:00:00",
+        "Year": 2008,
+        "Country": "Spain",
+        "GDP per hour": 58.80597662968171,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2009-01-01T00:00:00",
+        "Year": 2009,
+        "Country": "Spain",
+        "GDP per hour": 60.22324588482203,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2010-01-01T00:00:00",
+        "Year": 2010,
+        "Country": "Spain",
+        "GDP per hour": 61.75416891939597,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2011-01-01T00:00:00",
+        "Year": 2011,
+        "Country": "Spain",
+        "GDP per hour": 62.66581850539918,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2012-01-01T00:00:00",
+        "Year": 2012,
+        "Country": "Spain",
+        "GDP per hour": 63.874708900680154,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2013-01-01T00:00:00",
+        "Year": 2013,
+        "Country": "Spain",
+        "GDP per hour": 64.8172740035905,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2014-01-01T00:00:00",
+        "Year": 2014,
+        "Country": "Spain",
+        "GDP per hour": 65.01794868839758,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2015-01-01T00:00:00",
+        "Year": 2015,
+        "Country": "Spain",
+        "GDP per hour": 65.5343638897472,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2016-01-01T00:00:00",
+        "Year": 2016,
+        "Country": "Spain",
+        "GDP per hour": 65.83397425614476,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2017-01-01T00:00:00",
+        "Year": 2017,
+        "Country": "Spain",
+        "GDP per hour": 66.40918142373066,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2018-01-01T00:00:00",
+        "Year": 2018,
+        "Country": "Spain",
+        "GDP per hour": 66.25740872527841,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2019-01-01T00:00:00",
+        "Year": 2019,
+        "Country": "Spain",
+        "GDP per hour": 66.62494528629728,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2020-01-01T00:00:00",
+        "Year": 2020,
+        "Country": "Spain",
+        "GDP per hour": 66.64678072317156,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2021-01-01T00:00:00",
+        "Year": 2021,
+        "Country": "Spain",
+        "GDP per hour": 65.6108373117139,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2022-01-01T00:00:00",
+        "Year": 2022,
+        "Country": "Spain",
+        "GDP per hour": 66.49408930192887,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "Spain",
+        "GDP per hour": 66.37322600167566,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      }
+    ],
+    "data-e7f6c84df76596d628a3e10e5ea4ebe4": [
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "Euro Area",
+        "GDP per hour": 75.59320023626248,
+        "size": 2,
+        "colour": "#a8c0de"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "France",
+        "GDP per hour": 82.4329888857509,
+        "size": 1.5,
+        "colour": "#122b39"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "Germany",
+        "GDP per hour": 87.25996490635667,
+        "size": 1.5,
+        "colour": "#f4c245"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "Italy",
+        "GDP per hour": 70.60955866989,
+        "size": 1.5,
+        "colour": "#36b7b4"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "Spain",
+        "GDP per hour": 66.37322600167566,
+        "size": 1.5,
+        "colour": "#eb5c2e"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "UK",
+        "GDP per hour": 74.301182213971,
+        "size": 3,
+        "colour": "#e6224b"
+      },
+      {
+        "Date": "2023-01-01T00:00:00",
+        "Year": 2023,
+        "Country": "USA",
+        "GDP per hour": 87.15344735546896,
+        "size": 1.5,
+        "colour": "#179fdb"
+      }
+    ]
+  },
+  "width": 500,
+  "height": 300
+}

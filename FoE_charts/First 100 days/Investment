@@ -1,0 +1,6189 @@
+{
+  "config": {"view": {"strokeWidth": 0}},
+  "title": {
+    "text": "Source: OECD",
+    "fontStyle": "italic",
+    "color": "#676A8680",
+    "dx": 0,
+    "offset": 7,
+    "fontSize": 10,
+    "frame": "group",
+    "orient": "bottom",
+    "anchor": "start"
+  },
+  "layer": [
+    {
+      "mark": {"type": "area"},
+      "encoding": {
+        "color": {"value": "rgba(24, 42, 56, 0.1)"},
+        "opacity": {
+          "condition": {"test": "(datum.LOCATION === 'GBR')", "value": 1},
+          "value": 0.8
+        },
+        "x": {
+          "axis": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "format": "d",
+            "gridOpacity": 0,
+            "labelAlign": "center",
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelFont": "Circular Std",
+            "labelFontSize": 12,
+            "labelPadding": 6,
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickSize": 0,
+            "title": ""
+          },
+          "field": "Time",
+          "scale": {"domainMax": 2021},
+          "type": "quantitative"
+        },
+        "y": {"field": "low", "type": "quantitative"},
+        "y2": {"field": "high"}
+      }
+    },
+    {
+      "mark": {"type": "line", "clip": true},
+      "encoding": {
+        "color": {
+          "field": "LOCATION",
+          "legend": null,
+          "scale": {
+            "domain": ["GBR", "USA", "DEU", "FRA", "POL", "", "OTHER"],
+            "range": [
+              "#179fdb",
+              "#e6224b",
+              "#f4c245",
+              "#122b39",
+              "#eb5c2e",
+              "#36b7b4",
+              "#d6d4d4",
+              "rgba(24, 42, 56)",
+              "rgba(24, 42, 56, 0.2)"
+            ]
+          },
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {"test": "(datum.LOCATION === 'GBR')", "value": 1},
+          "value": 0.8
+        },
+        "size": {
+          "condition": {"test": "(datum.LOCATION === 'GBR')", "value": 3},
+          "value": 1.5
+        },
+        "x": {
+          "field": "Time",
+          "scale": {"domainMax": 2021},
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "format": "%",
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelFont": "Circular Std",
+            "labelFontSize": 12,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickSize": 0,
+            "title": "GFCF, % of GDP, 90-10 OECD percentiles shaded",
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -7
+          },
+          "field": "Value",
+          "scale": {"zero": true},
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {"type": "circle"},
+      "encoding": {
+        "color": {
+          "field": "LOCATION",
+          "legend": null,
+          "scale": {
+            "domain": ["GBR", "USA", "DEU", "FRA", "POL", "", "OTHER"],
+            "range": [
+              "#179fdb",
+              "#e6224b",
+              "#f4c245",
+              "#122b39",
+              "#eb5c2e",
+              "#36b7b4",
+              "#d6d4d4",
+              "rgba(24, 42, 56)",
+              "rgba(24, 42, 56, 0.2)"
+            ]
+          },
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {"test": "(datum.LOCATION === 'GBR')", "value": 1},
+          "value": 0.8
+        },
+        "x": {
+          "axis": {
+            "domainColor": "#122b39",
+            "domainOpacity": 0.5,
+            "format": "d",
+            "gridOpacity": 0,
+            "labelAlign": "center",
+            "labelAngle": 0,
+            "labelColor": "#122b39",
+            "labelFont": "Circular Std",
+            "labelFontSize": 11,
+            "labelPadding": 5,
+            "tickColor": "#122b39",
+            "tickCount": 10,
+            "tickSize": 0,
+            "title": ""
+          },
+          "field": "Time",
+          "scale": {"domainMax": 2021},
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "domainColor": "#122b39",
+            "domainOpacity": 0.5,
+            "format": "%",
+            "gridColor": "#122b39",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "labelColor": "#122b39",
+            "labelFont": "Circular Std",
+            "labelFontSize": 11,
+            "labelPadding": 5,
+            "tickColor": "#122b39",
+            "tickSize": 0,
+            "title": "GFCF, % of GDP, 90-10 OECD percentiles shaded",
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#122b39",
+            "titleOpacity": 0.9,
+            "titleX": 0,
+            "titleY": -7
+          },
+          "field": "Value",
+          "scale": {"zero": true},
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"filter": "datum.Time == 2021"}]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 6,
+        "dy": {"expr": "{'FRA': 0, 'DEU': -5, 'POL': 5, 'USA': 5}[datum.LOCATION]"},
+        "font": "Circular Std",
+        "fontSize": 11
+      },
+      "encoding": {
+        "color": {
+          "field": "LOCATION",
+          "legend": null,
+          "scale": {
+            "domain": ["GBR", "USA", "DEU", "FRA", "POL", "", "OTHER"],
+            "range": [
+              "#179fdb",
+              "#e6224b",
+              "#f4c245",
+              "#122b39",
+              "#eb5c2e",
+              "#36b7b4",
+              "#d6d4d4",
+              "rgba(24, 42, 56)",
+              "rgba(24, 42, 56, 0.2)"
+            ]
+          },
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {"test": "(datum.LOCATION === 'GBR')", "value": 1},
+          "value": 0.8
+        },
+        "text": {"field": "Country", "type": "nominal"},
+        "x": {
+            "field": "Time",
+            "type": "quantitative",
+            "aggregate": "max"
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "aggregate": {"argmax": "Time"}
+        }
+      }
+    }
+  ],
+  "data": {"name": "data-e46d1ae20cc673a6409bcb7165fb74e1"},
+  "height": 300,
+  "width": 450,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-e46d1ae20cc673a6409bcb7165fb74e1": [
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2000,
+        "Value": 0.23219398610262298,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2001,
+        "Value": 0.243084305732282,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2002,
+        "Value": 0.260637303879187,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2003,
+        "Value": 0.266450522220421,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2004,
+        "Value": 0.2702605397621,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2005,
+        "Value": 0.278080776531078,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2006,
+        "Value": 0.27416832370961997,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2007,
+        "Value": 0.282230550233939,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2008,
+        "Value": 0.276057850040555,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2011,
+        "Value": 0.274165164620685,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2013,
+        "Value": 0.268831982044255,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2014,
+        "Value": 0.262253858640243,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2015,
+        "Value": 0.253519376328024,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2016,
+        "Value": 0.240016647449324,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2017,
+        "Value": 0.243902889069186,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2018,
+        "Value": 0.23326927334811798,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2019,
+        "Value": 0.226359466746419,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2020,
+        "Value": 0.22449900717115198,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "AUS",
+        "Country": "Australia",
+        "Time": 2021,
+        "Value": 0.229315420057851,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2000,
+        "Value": 0.25611680881591203,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2001,
+        "Value": 0.247966217719998,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2002,
+        "Value": 0.23530570151386299,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2003,
+        "Value": 0.24108115647526598,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2004,
+        "Value": 0.23591508352484103,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2005,
+        "Value": 0.230521157470689,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2006,
+        "Value": 0.22600755830918398,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2007,
+        "Value": 0.229170276835207,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2008,
+        "Value": 0.23276465624832,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2009,
+        "Value": 0.224130082617233,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2010,
+        "Value": 0.215967237748965,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2011,
+        "Value": 0.224717154486786,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2012,
+        "Value": 0.22649292785658,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2013,
+        "Value": 0.230401975609289,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2014,
+        "Value": 0.22660552471773102,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2015,
+        "Value": 0.226967074577069,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2016,
+        "Value": 0.23096287428733098,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2017,
+        "Value": 0.236285407586874,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2018,
+        "Value": 0.240951292623908,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2019,
+        "Value": 0.24914392570673902,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2020,
+        "Value": 0.249784989547859,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "AUT",
+        "Country": "Austria",
+        "Time": 2021,
+        "Value": 0.258273821071893,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2000,
+        "Value": 0.225070638327085,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2001,
+        "Value": 0.22390270826894199,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2002,
+        "Value": 0.20696424121126,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2003,
+        "Value": 0.204941888377035,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2004,
+        "Value": 0.214618504095247,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2005,
+        "Value": 0.22153893592261098,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2006,
+        "Value": 0.223254390645591,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2007,
+        "Value": 0.232930144412895,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2008,
+        "Value": 0.241181419052712,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2009,
+        "Value": 0.227845014096345,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2010,
+        "Value": 0.22123086929810298,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2011,
+        "Value": 0.23010374824652502,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2012,
+        "Value": 0.22961887456635602,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2013,
+        "Value": 0.221730044797394,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2014,
+        "Value": 0.228058430290769,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2015,
+        "Value": 0.229634217691613,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2016,
+        "Value": 0.23277754436154902,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2017,
+        "Value": 0.232785028022688,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2018,
+        "Value": 0.236226738438451,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2019,
+        "Value": 0.242834350827209,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2020,
+        "Value": 0.241735920912934,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "BEL",
+        "Country": "Belgium",
+        "Time": 2021,
+        "Value": 0.24173572015185002,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2000,
+        "Value": 0.195991939034655,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2001,
+        "Value": 0.20151623835889101,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2002,
+        "Value": 0.199748009121266,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2003,
+        "Value": 0.200123212089768,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2004,
+        "Value": 0.20874487452937798,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2005,
+        "Value": 0.218371682411947,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2006,
+        "Value": 0.228847443946428,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2007,
+        "Value": 0.23338980934434,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2008,
+        "Value": 0.234690028792287,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2009,
+        "Value": 0.223069697467248,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2010,
+        "Value": 0.234612088007068,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2011,
+        "Value": 0.235104953995433,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2012,
+        "Value": 0.244942400972854,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2013,
+        "Value": 0.24187237514371202,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2014,
+        "Value": 0.243893171480447,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2015,
+        "Value": 0.23850593913610102,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2016,
+        "Value": 0.22772353970679401,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2017,
+        "Value": 0.226963325471202,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2018,
+        "Value": 0.226760598029678,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2019,
+        "Value": 0.22579977290439002,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2020,
+        "Value": 0.235207253897735,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "CAN",
+        "Country": "Canada",
+        "Time": 2021,
+        "Value": 0.240091121437605,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2004,
+        "Value": 0.287696475098946,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2005,
+        "Value": 0.287884621413251,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2006,
+        "Value": 0.284436943640978,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2007,
+        "Value": 0.299332328548558,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2008,
+        "Value": 0.292484033580188,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2011,
+        "Value": 0.267548641503888,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2012,
+        "Value": 0.26155368469656504,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2013,
+        "Value": 0.253598824566218,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2014,
+        "Value": 0.254036227445288,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2015,
+        "Value": 0.26538047268785403,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2016,
+        "Value": 0.24942644927226498,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2017,
+        "Value": 0.24916279296376298,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2018,
+        "Value": 0.262998864669868,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2019,
+        "Value": 0.270676429483356,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2020,
+        "Value": 0.265474202641348,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "CZE",
+        "Country": "Czech Republic",
+        "Time": 2021,
+        "Value": 0.260081126691579,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2000,
+        "Value": 0.215076148740662,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2001,
+        "Value": 0.21303376571690202,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2002,
+        "Value": 0.206389292857535,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2003,
+        "Value": 0.206993974823366,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2004,
+        "Value": 0.20662701800241698,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2005,
+        "Value": 0.211733752046214,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2006,
+        "Value": 0.232727181188088,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2007,
+        "Value": 0.235134016775694,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2008,
+        "Value": 0.229439447335049,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2009,
+        "Value": 0.201689001340804,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2010,
+        "Value": 0.181136889786562,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2011,
+        "Value": 0.181582284399495,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2012,
+        "Value": 0.187777009367082,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2013,
+        "Value": 0.190523918003991,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2014,
+        "Value": 0.191636561177251,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2015,
+        "Value": 0.198506293658923,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2016,
+        "Value": 0.210247728999034,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2017,
+        "Value": 0.212257099343119,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2018,
+        "Value": 0.217273015368914,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2019,
+        "Value": 0.212408576994106,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2020,
+        "Value": 0.221587946912742,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "DNK",
+        "Country": "Denmark",
+        "Time": 2021,
+        "Value": 0.221124198380556,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2000,
+        "Value": 0.23057416338077702,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2001,
+        "Value": 0.228752385430207,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2002,
+        "Value": 0.216020365556349,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2003,
+        "Value": 0.21783339593671103,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2004,
+        "Value": 0.22257775986092,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2005,
+        "Value": 0.22918020244463702,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2006,
+        "Value": 0.227638420562531,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2007,
+        "Value": 0.241954969209716,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2008,
+        "Value": 0.24493861477878198,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2009,
+        "Value": 0.22954986877362502,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2010,
+        "Value": 0.22296338423433198,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2011,
+        "Value": 0.226163900645461,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2012,
+        "Value": 0.230778413923805,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2013,
+        "Value": 0.220080167970987,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2014,
+        "Value": 0.214720368105869,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2015,
+        "Value": 0.212299832059985,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2016,
+        "Value": 0.227447843396868,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2017,
+        "Value": 0.233489909456874,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2018,
+        "Value": 0.24075010065878,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2019,
+        "Value": 0.238261804901233,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2020,
+        "Value": 0.240427998890933,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "FIN",
+        "Country": "Finland",
+        "Time": 2021,
+        "Value": 0.23584525930265499,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2000,
+        "Value": 0.215142856176682,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2001,
+        "Value": 0.21513327265635201,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2002,
+        "Value": 0.209533268380915,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2003,
+        "Value": 0.21034840979084599,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2004,
+        "Value": 0.213646678822243,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2005,
+        "Value": 0.217973786811861,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2006,
+        "Value": 0.224507629517285,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2007,
+        "Value": 0.23182665760085702,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2008,
+        "Value": 0.23596101145363801,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2009,
+        "Value": 0.22067503880868902,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2010,
+        "Value": 0.221054193151969,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2011,
+        "Value": 0.224238705499354,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2012,
+        "Value": 0.224581147872179,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2013,
+        "Value": 0.22041867778455299,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2014,
+        "Value": 0.218196872681433,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2015,
+        "Value": 0.21499277666991698,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2016,
+        "Value": 0.218153920386871,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2017,
+        "Value": 0.224956708957959,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2018,
+        "Value": 0.228926343012712,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2019,
+        "Value": 0.23477427916812801,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2020,
+        "Value": 0.232742493847699,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "FRA",
+        "Country": "France",
+        "Time": 2021,
+        "Value": 0.244671913954498,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2000,
+        "Value": 0.231143289285901,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2001,
+        "Value": 0.217781951080302,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2002,
+        "Value": 0.201217858897603,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2003,
+        "Value": 0.195233250586687,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2004,
+        "Value": 0.190910135601011,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2005,
+        "Value": 0.190766985242384,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2006,
+        "Value": 0.19802899693092102,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2007,
+        "Value": 0.200565301754316,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2008,
+        "Value": 0.203029660434559,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2009,
+        "Value": 0.19267539752957202,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2010,
+        "Value": 0.19542505069411897,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2011,
+        "Value": 0.203708475029329,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2012,
+        "Value": 0.203210930641713,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2013,
+        "Value": 0.199014708236257,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2014,
+        "Value": 0.200402742337135,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2015,
+        "Value": 0.200198269765843,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2016,
+        "Value": 0.202983022515424,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2017,
+        "Value": 0.20411488877189998,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2018,
+        "Value": 0.210652067331263,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2019,
+        "Value": 0.21316106859022899,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2020,
+        "Value": 0.21540721502586901,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "DEU",
+        "Country": "Germany",
+        "Time": 2021,
+        "Value": 0.212994512709229,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "GRC",
+        "Country": "Greece",
+        "Time": 2000,
+        "Value": 0.24641216478177502,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "GRC",
+        "Country": "Greece",
+        "Time": 2001,
+        "Value": 0.247367936020025,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "GRC",
+        "Country": "Greece",
+        "Time": 2002,
+        "Value": 0.23602497210989098,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "GRC",
+        "Country": "Greece",
+        "Time": 2003,
+        "Value": 0.253247775570847,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "GRC",
+        "Country": "Greece",
+        "Time": 2004,
+        "Value": 0.243950207476544,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "GRC",
+        "Country": "Greece",
+        "Time": 2005,
+        "Value": 0.208289511607109,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "GRC",
+        "Country": "Greece",
+        "Time": 2006,
+        "Value": 0.236858748870616,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "GRC",
+        "Country": "Greece",
+        "Time": 2007,
+        "Value": 0.26011850750618903,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "GRC",
+        "Country": "Greece",
+        "Time": 2008,
+        "Value": 0.238137324048888,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "GRC",
+        "Country": "Greece",
+        "Time": 2009,
+        "Value": 0.20791479523189502,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "GRC",
+        "Country": "Greece",
+        "Time": 2010,
+        "Value": 0.16559265868034997,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2000,
+        "Value": 0.255024072256698,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2001,
+        "Value": 0.24852390136829702,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2002,
+        "Value": 0.247144134869968,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2003,
+        "Value": 0.236251824423938,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2004,
+        "Value": 0.24040477575169303,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2005,
+        "Value": 0.23833932744134198,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2006,
+        "Value": 0.23492232149396203,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2007,
+        "Value": 0.23692643021116802,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2008,
+        "Value": 0.23344081000680203,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2009,
+        "Value": 0.226396580552545,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2010,
+        "Value": 0.20069460925600702,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2011,
+        "Value": 0.19537296007646202,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2012,
+        "Value": 0.19149697080326297,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2013,
+        "Value": 0.20796158975600298,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2014,
+        "Value": 0.22009807921771699,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2015,
+        "Value": 0.221722087035477,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2016,
+        "Value": 0.194948024211895,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2017,
+        "Value": 0.221480046331031,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2018,
+        "Value": 0.247309141439856,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2019,
+        "Value": 0.270027069365651,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2020,
+        "Value": 0.265176486539993,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "HUN",
+        "Country": "Hungary",
+        "Time": 2021,
+        "Value": 0.27241239671198697,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2000,
+        "Value": 0.24555243957175002,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2001,
+        "Value": 0.231708619714533,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2002,
+        "Value": 0.198081488764598,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2003,
+        "Value": 0.214324199987698,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2004,
+        "Value": 0.248839776911001,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2005,
+        "Value": 0.29608157695959997,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2007,
+        "Value": 0.294240778675408,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2008,
+        "Value": 0.253671853620482,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2012,
+        "Value": 0.15982918294103998,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2014,
+        "Value": 0.17158264042417598,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2015,
+        "Value": 0.19333024798046503,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2016,
+        "Value": 0.209356602019684,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2017,
+        "Value": 0.217725009908981,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2018,
+        "Value": 0.218372913004513,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2019,
+        "Value": 0.208505632054894,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2020,
+        "Value": 0.21281442037829,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "ISL",
+        "Country": "Iceland",
+        "Time": 2021,
+        "Value": 0.22304580474508998,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2000,
+        "Value": 0.237420481635044,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2001,
+        "Value": 0.23936390733455798,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2002,
+        "Value": 0.235931445848827,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2003,
+        "Value": 0.249111440961711,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2004,
+        "Value": 0.269501931154351,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2005,
+        "Value": 0.29828926318437,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2006,
+        "Value": 0.309866918811569,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2007,
+        "Value": 0.287070823485777,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2008,
+        "Value": 0.248421188254276,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2009,
+        "Value": 0.2116312443083,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2010,
+        "Value": 0.175770580758773,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2012,
+        "Value": 0.19622765077036403,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2013,
+        "Value": 0.186153206378445,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2014,
+        "Value": 0.20594899144895099,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2015,
+        "Value": 0.240468416230734,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "IRL",
+        "Country": "Ireland",
+        "Time": 2021,
+        "Value": 0.22333107581664202,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2000,
+        "Value": 0.20730803522057598,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2001,
+        "Value": 0.207210700595214,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2002,
+        "Value": 0.21363399271058298,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2003,
+        "Value": 0.208753150872177,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2004,
+        "Value": 0.209641270271889,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2005,
+        "Value": 0.21281654229784197,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2006,
+        "Value": 0.215803728092491,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2007,
+        "Value": 0.21660557288716797,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2008,
+        "Value": 0.212778792005419,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2009,
+        "Value": 0.201105159917297,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2010,
+        "Value": 0.200242242282747,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2011,
+        "Value": 0.197138715145081,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2012,
+        "Value": 0.18309059446044798,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2013,
+        "Value": 0.172045869688649,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2014,
+        "Value": 0.167221680938053,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2015,
+        "Value": 0.16935467014628303,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2016,
+        "Value": 0.171709969673074,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2017,
+        "Value": 0.174807761497111,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2018,
+        "Value": 0.178461369797931,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2019,
+        "Value": 0.179892394088215,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2020,
+        "Value": 0.17968916949858801,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "ITA",
+        "Country": "Italy",
+        "Time": 2021,
+        "Value": 0.20491174967192,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2000,
+        "Value": 0.284871419080841,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2001,
+        "Value": 0.277309731011096,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2002,
+        "Value": 0.262604182019213,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2003,
+        "Value": 0.257133538154767,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2004,
+        "Value": 0.253239274810451,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2005,
+        "Value": 0.259010440257525,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2006,
+        "Value": 0.260446863446433,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2007,
+        "Value": 0.254051268567059,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2008,
+        "Value": 0.252928155191183,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2009,
+        "Value": 0.23624293447427,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2010,
+        "Value": 0.226196594231882,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2011,
+        "Value": 0.233511623002885,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2012,
+        "Value": 0.237736492973571,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2013,
+        "Value": 0.24556526963011302,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2014,
+        "Value": 0.250845490939861,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2015,
+        "Value": 0.249714561746572,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2016,
+        "Value": 0.247606842913738,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2017,
+        "Value": 0.250073498435107,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2018,
+        "Value": 0.252677675892842,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2019,
+        "Value": 0.255475785734924,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2020,
+        "Value": 0.255174533614898,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "JPN",
+        "Country": "Japan",
+        "Time": 2021,
+        "Value": 0.255939930754581,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "KOR",
+        "Country": "Korea",
+        "Time": 2005,
+        "Value": 0.304768468839763,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "KOR",
+        "Country": "Korea",
+        "Time": 2006,
+        "Value": 0.304934310459959,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "KOR",
+        "Country": "Korea",
+        "Time": 2007,
+        "Value": 0.301535744812924,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2000,
+        "Value": 0.20625060607472498,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2001,
+        "Value": 0.218791594885554,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2002,
+        "Value": 0.21302678723289803,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2003,
+        "Value": 0.210489975573913,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2004,
+        "Value": 0.212432820905258,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2005,
+        "Value": 0.193477913830151,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2009,
+        "Value": 0.180192474186727,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2010,
+        "Value": 0.168240877972083,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2011,
+        "Value": 0.19213253764947003,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2012,
+        "Value": 0.191775316113029,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2013,
+        "Value": 0.184542729429366,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2014,
+        "Value": 0.19151735497309802,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2015,
+        "Value": 0.173094554675767,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2016,
+        "Value": 0.1728483889537,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2017,
+        "Value": 0.178113229941338,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2019,
+        "Value": 0.18080135439258602,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "LUX",
+        "Country": "Luxembourg",
+        "Time": 2021,
+        "Value": 0.18182167818348202,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2000,
+        "Value": 0.214888896290959,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2001,
+        "Value": 0.199337005054382,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2002,
+        "Value": 0.19269423900320898,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2003,
+        "Value": 0.197779020767717,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2004,
+        "Value": 0.20476459589096901,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2005,
+        "Value": 0.20703707148948802,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2006,
+        "Value": 0.21543338102357498,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2007,
+        "Value": 0.219419050263272,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2008,
+        "Value": 0.231643911989187,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2009,
+        "Value": 0.2212647405096,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2010,
+        "Value": 0.21582700563463,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2011,
+        "Value": 0.222739147502091,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2012,
+        "Value": 0.22840437160748897,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2013,
+        "Value": 0.212524652350746,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2014,
+        "Value": 0.209978574072175,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2015,
+        "Value": 0.22430708779022102,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2016,
+        "Value": 0.228022572860896,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2017,
+        "Value": 0.22092168982906,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2018,
+        "Value": 0.22015572466327502,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2019,
+        "Value": 0.206080338950302,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2020,
+        "Value": 0.188942676272953,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "MEX",
+        "Country": "Mexico",
+        "Time": 2021,
+        "Value": 0.20199127484398702,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2000,
+        "Value": 0.225341642939158,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2001,
+        "Value": 0.221436412724303,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2002,
+        "Value": 0.210834562205545,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2003,
+        "Value": 0.20599442288566902,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2004,
+        "Value": 0.202922427572239,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2005,
+        "Value": 0.204134090178858,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2006,
+        "Value": 0.210409445963192,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2007,
+        "Value": 0.232934412196973,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2008,
+        "Value": 0.221170337361982,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2009,
+        "Value": 0.21305866122955902,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2010,
+        "Value": 0.196965833159936,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2011,
+        "Value": 0.20137339530936,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2012,
+        "Value": 0.187613137590625,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2013,
+        "Value": 0.183563651559588,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2014,
+        "Value": 0.175915778188099,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2015,
+        "Value": 0.22105975582891801,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2016,
+        "Value": 0.200010729356225,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2017,
+        "Value": 0.20141001915610202,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2018,
+        "Value": 0.204257952652952,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2019,
+        "Value": 0.21254158697751102,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2020,
+        "Value": 0.21711297754008002,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "NLD",
+        "Country": "Netherlands",
+        "Time": 2021,
+        "Value": 0.211816854604996,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2000,
+        "Value": 0.20850474386468498,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2001,
+        "Value": 0.214867300640189,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2002,
+        "Value": 0.219372544958241,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2003,
+        "Value": 0.23257117548546,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2004,
+        "Value": 0.24217936192651301,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2005,
+        "Value": 0.247457606314097,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2006,
+        "Value": 0.23913397362851999,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2007,
+        "Value": 0.239129386681523,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2008,
+        "Value": 0.227004424358257,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2009,
+        "Value": 0.20173334842979598,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2010,
+        "Value": 0.197509614344307,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2011,
+        "Value": 0.199652622931581,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2012,
+        "Value": 0.207573716371862,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2013,
+        "Value": 0.213448056634249,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2014,
+        "Value": 0.224749660032142,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2015,
+        "Value": 0.228648077073706,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2016,
+        "Value": 0.22547931773024,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2017,
+        "Value": 0.229225789363246,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2018,
+        "Value": 0.234891307542345,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2019,
+        "Value": 0.23473598891240102,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2020,
+        "Value": 0.231706535179446,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "NZL",
+        "Country": "New Zealand",
+        "Time": 2021,
+        "Value": 0.24892950814635198,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2000,
+        "Value": 0.197994608821495,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2001,
+        "Value": 0.194990387487649,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2002,
+        "Value": 0.193890591984758,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2003,
+        "Value": 0.188415702283426,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2004,
+        "Value": 0.195897597648484,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2005,
+        "Value": 0.202992232993179,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2006,
+        "Value": 0.208689402666492,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2007,
+        "Value": 0.234914035999041,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2008,
+        "Value": 0.224854555543479,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2009,
+        "Value": 0.23153019700685998,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2010,
+        "Value": 0.20637833443555198,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2011,
+        "Value": 0.213819281554801,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2012,
+        "Value": 0.223052199034421,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2013,
+        "Value": 0.234320551008224,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2014,
+        "Value": 0.237087320543897,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2015,
+        "Value": 0.23689573421106702,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2016,
+        "Value": 0.25058511858820604,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2017,
+        "Value": 0.243563320185983,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2018,
+        "Value": 0.237742134177864,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2019,
+        "Value": 0.266268216540907,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2020,
+        "Value": 0.274365570585644,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "NOR",
+        "Country": "Norway",
+        "Time": 2021,
+        "Value": 0.23203422910898902,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2000,
+        "Value": 0.236929896871405,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2001,
+        "Value": 0.204409709960233,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2002,
+        "Value": 0.184079565237733,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2003,
+        "Value": 0.181421988025762,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2004,
+        "Value": 0.18331974051834202,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2005,
+        "Value": 0.18893016869756601,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2006,
+        "Value": 0.204049630130415,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2007,
+        "Value": 0.224651960239426,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2008,
+        "Value": 0.231058416843566,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2009,
+        "Value": 0.21443486816931198,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2010,
+        "Value": 0.19722553765839698,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2011,
+        "Value": 0.204930868842931,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2012,
+        "Value": 0.19582213861015302,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2013,
+        "Value": 0.18972275762732502,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2014,
+        "Value": 0.201272880805762,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2015,
+        "Value": 0.20419456304827802,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2016,
+        "Value": 0.184701638512739,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2017,
+        "Value": 0.175698534492237,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2018,
+        "Value": 0.187352868978503,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2019,
+        "Value": 0.18917086011224898,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2020,
+        "Value": 0.183126631965477,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "POL",
+        "Country": "Poland",
+        "Time": 2021,
+        "Value": 0.16811221212920502,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2000,
+        "Value": 0.280030505913879,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2001,
+        "Value": 0.273815897887365,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2002,
+        "Value": 0.258571046731868,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2003,
+        "Value": 0.237604429031882,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2004,
+        "Value": 0.234240673865132,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2005,
+        "Value": 0.231265756274961,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2006,
+        "Value": 0.225328535552248,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2007,
+        "Value": 0.225096224343179,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2008,
+        "Value": 0.228522358901842,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2009,
+        "Value": 0.212015952644164,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2010,
+        "Value": 0.205738214631317,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2011,
+        "Value": 0.184202528742093,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2017,
+        "Value": 0.16783976153577299,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2018,
+        "Value": 0.17522527230225698,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2019,
+        "Value": 0.181062277801355,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2020,
+        "Value": 0.192050773638204,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "PRT",
+        "Country": "Portugal",
+        "Time": 2021,
+        "Value": 0.201985085997959,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2000,
+        "Value": 0.261099286388548,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2002,
+        "Value": 0.27623102372118596,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2003,
+        "Value": 0.243522788053028,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2004,
+        "Value": 0.238382958992819,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2005,
+        "Value": 0.262011469236098,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2006,
+        "Value": 0.255776020567259,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2007,
+        "Value": 0.254273506573875,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2008,
+        "Value": 0.247506733217735,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2009,
+        "Value": 0.208013184197791,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2010,
+        "Value": 0.210172706160887,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2011,
+        "Value": 0.231753359847567,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2012,
+        "Value": 0.203685136972936,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2013,
+        "Value": 0.204641514783853,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2014,
+        "Value": 0.204774821201164,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2015,
+        "Value": 0.236764666092105,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2016,
+        "Value": 0.210315087281459,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2017,
+        "Value": 0.211047430717302,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2018,
+        "Value": 0.209039289847699,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2019,
+        "Value": 0.214894230243199,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2020,
+        "Value": 0.194878304564047,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "SVK",
+        "Country": "Slovak Republic",
+        "Time": 2021,
+        "Value": 0.192055294280912,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2000,
+        "Value": 0.259408413354305,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2001,
+        "Value": 0.25877291214034903,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2002,
+        "Value": 0.261557570388712,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2003,
+        "Value": 0.27098618164050303,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2004,
+        "Value": 0.27807622897315304,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2005,
+        "Value": 0.290115888487389,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2006,
+        "Value": 0.300273056106505,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2007,
+        "Value": 0.298622365158307,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2008,
+        "Value": 0.278364657096944,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2009,
+        "Value": 0.231132221040789,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2010,
+        "Value": 0.21788947421901,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2011,
+        "Value": 0.200217529656512,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2012,
+        "Value": 0.18527520017379398,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2013,
+        "Value": 0.17364945031582,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2014,
+        "Value": 0.17771990920078098,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2015,
+        "Value": 0.180060699828957,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2016,
+        "Value": 0.179508623319754,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2017,
+        "Value": 0.186609456237118,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2018,
+        "Value": 0.19437159999634498,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2019,
+        "Value": 0.200320671080912,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2020,
+        "Value": 0.204226950608127,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "ESP",
+        "Country": "Spain",
+        "Time": 2021,
+        "Value": 0.201023488697445,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2000,
+        "Value": 0.22259816763982,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2001,
+        "Value": 0.22679912498587101,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2002,
+        "Value": 0.220525751865809,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2003,
+        "Value": 0.216456060936154,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2004,
+        "Value": 0.218820335284436,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2005,
+        "Value": 0.22411564318332602,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2006,
+        "Value": 0.232293760899622,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2007,
+        "Value": 0.24166470397960702,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2008,
+        "Value": 0.245463627697008,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2009,
+        "Value": 0.22493787350347902,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2010,
+        "Value": 0.22490409480014598,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2011,
+        "Value": 0.228939846911335,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2012,
+        "Value": 0.227235227830726,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2013,
+        "Value": 0.224454837991551,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2014,
+        "Value": 0.232284677401177,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2015,
+        "Value": 0.23753435653812802,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2016,
+        "Value": 0.242105208321301,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2017,
+        "Value": 0.251364837125472,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2018,
+        "Value": 0.251796385730316,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2019,
+        "Value": 0.244097623998959,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2020,
+        "Value": 0.251155394679965,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "SWE",
+        "Country": "Sweden",
+        "Time": 2021,
+        "Value": 0.255918373595978,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2000,
+        "Value": 0.275120429587696,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2001,
+        "Value": 0.268655926994514,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2002,
+        "Value": 0.270789343194828,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2003,
+        "Value": 0.26530065001712,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2004,
+        "Value": 0.27311864479750797,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2005,
+        "Value": 0.272629980574945,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2006,
+        "Value": 0.270602553446201,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2007,
+        "Value": 0.27207257649809,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2008,
+        "Value": 0.267342723960095,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2009,
+        "Value": 0.252148516404917,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2010,
+        "Value": 0.251886290560148,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2011,
+        "Value": 0.255188489805225,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2012,
+        "Value": 0.262689032126867,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2013,
+        "Value": 0.26227602853481696,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2014,
+        "Value": 0.26418189854630897,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2015,
+        "Value": 0.264112041843483,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2017,
+        "Value": 0.271488888707629,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2018,
+        "Value": 0.266026939112546,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2019,
+        "Value": 0.266222042522884,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2020,
+        "Value": 0.269939095682844,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "CHE",
+        "Country": "Switzerland",
+        "Time": 2021,
+        "Value": 0.263365697638048,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2000,
+        "Value": 0.22211352208333998,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2002,
+        "Value": 0.194746956866501,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2003,
+        "Value": 0.206781400688341,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2004,
+        "Value": 0.251781419342553,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2005,
+        "Value": 0.264103579147063,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2006,
+        "Value": 0.28470854791948796,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2007,
+        "Value": 0.278876440548593,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2008,
+        "Value": 0.26651527570857,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2009,
+        "Value": 0.22229403923625998,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2010,
+        "Value": 0.246354587446519,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2012,
+        "Value": 0.270584142491541,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2019,
+        "Value": 0.259072466366298,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "TUR",
+        "Country": "Türkiye",
+        "Time": 2020,
+        "Value": 0.274055874672312,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2000,
+        "Value": 0.178093703213803,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2001,
+        "Value": 0.17742848791809,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2002,
+        "Value": 0.17718238197675198,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2003,
+        "Value": 0.175107721797234,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2004,
+        "Value": 0.174777357657468,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2005,
+        "Value": 0.17591076025791602,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2006,
+        "Value": 0.178282761722184,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2007,
+        "Value": 0.181470468466054,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2008,
+        "Value": 0.17648845381526101,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2009,
+        "Value": 0.16145898571928502,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2010,
+        "Value": 0.16057288755794802,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2011,
+        "Value": 0.157116306485664,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2012,
+        "Value": 0.157563538861479,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2013,
+        "Value": 0.15967790919415,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2014,
+        "Value": 0.165723318052911,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2015,
+        "Value": 0.173744593522088,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2016,
+        "Value": 0.179048977101843,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2017,
+        "Value": 0.182480328761545,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2018,
+        "Value": 0.17995784982047097,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2019,
+        "Value": 0.18193257505525,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2020,
+        "Value": 0.174637692179017,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "GBR",
+        "Country": "United Kingdom",
+        "Time": 2021,
+        "Value": 0.176809558688644,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2000,
+        "Value": 0.231462794870174,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2001,
+        "Value": 0.225385088106337,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2002,
+        "Value": 0.215399006030501,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2003,
+        "Value": 0.216226056064488,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2004,
+        "Value": 0.221277370028278,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2005,
+        "Value": 0.22934640837162001,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2006,
+        "Value": 0.23038173633353,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2007,
+        "Value": 0.223230143949646,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2008,
+        "Value": 0.21235472613082,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2009,
+        "Value": 0.18810135358539198,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2010,
+        "Value": 0.183139377645115,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2011,
+        "Value": 0.187369833492642,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2012,
+        "Value": 0.195126052281381,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2013,
+        "Value": 0.19722420851719602,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2014,
+        "Value": 0.202999460932783,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2015,
+        "Value": 0.20449161247352,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2016,
+        "Value": 0.20372834473364299,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2017,
+        "Value": 0.20648161501749399,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2018,
+        "Value": 0.20918140882863098,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2019,
+        "Value": 0.209787944198618,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2020,
+        "Value": 0.21316015964313098,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "USA",
+        "Country": "United States",
+        "Time": 2021,
+        "Value": 0.211861970370165,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2000,
+        "Value": 0.22043083364611502,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2001,
+        "Value": 0.2248808088332,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2002,
+        "Value": 0.22274504895207697,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2003,
+        "Value": 0.220896272477707,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2004,
+        "Value": 0.21398579280906802,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2005,
+        "Value": 0.233687952192739,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2006,
+        "Value": 0.21064706019894,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2007,
+        "Value": 0.21979843266088,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2008,
+        "Value": 0.26881065298566503,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2009,
+        "Value": 0.241203156039041,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2010,
+        "Value": 0.230154606044624,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2011,
+        "Value": 0.247203922130611,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2012,
+        "Value": 0.267526624060432,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2013,
+        "Value": 0.26348682807658,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2014,
+        "Value": 0.254735403211621,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2015,
+        "Value": 0.254703710407419,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2016,
+        "Value": 0.241291976168778,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2017,
+        "Value": 0.222576646322422,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2018,
+        "Value": 0.230497926474622,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2019,
+        "Value": 0.245220319792899,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2020,
+        "Value": 0.225468342714258,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "CHL",
+        "Country": "Chile",
+        "Time": 2021,
+        "Value": 0.231434085193804,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "EST",
+        "Country": "Estonia",
+        "Time": 2000,
+        "Value": 0.26687198092035397,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "EST",
+        "Country": "Estonia",
+        "Time": 2001,
+        "Value": 0.274308914041577,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "EST",
+        "Country": "Estonia",
+        "Time": 2009,
+        "Value": 0.22678244971348702,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "EST",
+        "Country": "Estonia",
+        "Time": 2010,
+        "Value": 0.21234219616651998,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "EST",
+        "Country": "Estonia",
+        "Time": 2011,
+        "Value": 0.264577318917045,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "EST",
+        "Country": "Estonia",
+        "Time": 2014,
+        "Value": 0.25743932156391297,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "EST",
+        "Country": "Estonia",
+        "Time": 2015,
+        "Value": 0.244941840169474,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "EST",
+        "Country": "Estonia",
+        "Time": 2016,
+        "Value": 0.244305082596949,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "EST",
+        "Country": "Estonia",
+        "Time": 2017,
+        "Value": 0.259182409194302,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "EST",
+        "Country": "Estonia",
+        "Time": 2018,
+        "Value": 0.270949191011957,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "EST",
+        "Country": "Estonia",
+        "Time": 2019,
+        "Value": 0.254118719930978,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2000,
+        "Value": 0.24022646825191799,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2001,
+        "Value": 0.234999520528257,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2002,
+        "Value": 0.232579904995258,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2003,
+        "Value": 0.221417382262244,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2004,
+        "Value": 0.214927224960961,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2005,
+        "Value": 0.21975018693988102,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2006,
+        "Value": 0.22315056584202,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2007,
+        "Value": 0.23014830521902802,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2008,
+        "Value": 0.22571347295537803,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2009,
+        "Value": 0.21075476708636098,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2010,
+        "Value": 0.212561776800956,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2011,
+        "Value": 0.226115033466319,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2012,
+        "Value": 0.233355925715437,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2013,
+        "Value": 0.22437951372265602,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2014,
+        "Value": 0.218051990217043,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2015,
+        "Value": 0.21032119428547,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2016,
+        "Value": 0.223343111977965,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2017,
+        "Value": 0.220016587315506,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2018,
+        "Value": 0.232339016652314,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2019,
+        "Value": 0.22891154301249098,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2020,
+        "Value": 0.224201791253352,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "ISR",
+        "Country": "Israel",
+        "Time": 2021,
+        "Value": 0.234528442247794,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2000,
+        "Value": 0.274153091094458,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2001,
+        "Value": 0.26351144143606303,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2002,
+        "Value": 0.245727471726436,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2003,
+        "Value": 0.250311236962174,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2004,
+        "Value": 0.260155315202031,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2005,
+        "Value": 0.265929496359748,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2006,
+        "Value": 0.277455456694095,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2007,
+        "Value": 0.286512342952005,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2008,
+        "Value": 0.294429667469525,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2009,
+        "Value": 0.241306184207972,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2010,
+        "Value": 0.210815852805936,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2011,
+        "Value": 0.199444231040182,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2012,
+        "Value": 0.190317162598683,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2013,
+        "Value": 0.196335949232753,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2014,
+        "Value": 0.19107577867689202,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2015,
+        "Value": 0.18654590844916602,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2016,
+        "Value": 0.173791192162571,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2017,
+        "Value": 0.183203742929429,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2018,
+        "Value": 0.19333039682404798,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2019,
+        "Value": 0.19584697265756,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2020,
+        "Value": 0.189026999077327,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "SVN",
+        "Country": "Slovenia",
+        "Time": 2021,
+        "Value": 0.20240719235114799,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2000,
+        "Value": 0.249798000981943,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2001,
+        "Value": 0.271170255991799,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2002,
+        "Value": 0.243055595520892,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2004,
+        "Value": 0.286006782075902,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2009,
+        "Value": 0.222250332772109,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2010,
+        "Value": 0.190516957588077,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2011,
+        "Value": 0.22999603886946599,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2012,
+        "Value": 0.260257330023481,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2013,
+        "Value": 0.242765467937018,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2014,
+        "Value": 0.227965132960636,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2015,
+        "Value": 0.218630122409048,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2016,
+        "Value": 0.193080147603714,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2017,
+        "Value": 0.20599258270304202,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2018,
+        "Value": 0.221182420185674,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2019,
+        "Value": 0.22028854987406402,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2020,
+        "Value": 0.22425329098376,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "LVA",
+        "Country": "Latvia",
+        "Time": 2021,
+        "Value": 0.22373757282393603,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2000,
+        "Value": 0.191491159168285,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2001,
+        "Value": 0.205405527562793,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2002,
+        "Value": 0.207207044657569,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2003,
+        "Value": 0.21563247252643902,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2004,
+        "Value": 0.229202791049788,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2005,
+        "Value": 0.23409906469715,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2006,
+        "Value": 0.259544578527183,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2007,
+        "Value": 0.28605044994040296,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2008,
+        "Value": 0.260664515431264,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2009,
+        "Value": 0.17884956909022,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2010,
+        "Value": 0.16859266938103398,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2011,
+        "Value": 0.18459884679296099,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2012,
+        "Value": 0.173241679950712,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2013,
+        "Value": 0.184216931502201,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2014,
+        "Value": 0.188699922013043,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2015,
+        "Value": 0.196111662624638,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2016,
+        "Value": 0.198576941813767,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2017,
+        "Value": 0.201147914324525,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2018,
+        "Value": 0.209400664460505,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2019,
+        "Value": 0.215040603299273,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2020,
+        "Value": 0.213818970133697,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "LTU",
+        "Country": "Lithuania",
+        "Time": 2021,
+        "Value": 0.217065242941129,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2000,
+        "Value": 0.196895820526764,
+        "low": 0.1966246560791313,
+        "high": 0.27659345248555095
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2001,
+        "Value": 0.198348156806269,
+        "low": 0.197340826010683,
+        "high": 0.2752091591324327
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2002,
+        "Value": 0.19783996615036797,
+        "low": 0.19353168609029328,
+        "high": 0.2724218473527354
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2003,
+        "Value": 0.197901755210378,
+        "low": 0.1931879860957087,
+        "high": 0.26781122004644564
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2004,
+        "Value": 0.198781564478268,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2005,
+        "Value": 0.19951802434142302,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2006,
+        "Value": 0.202930668010762,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2007,
+        "Value": 0.223649992803716,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2008,
+        "Value": 0.237449715293857,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2009,
+        "Value": 0.210035629737532,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2010,
+        "Value": 0.194564092872103,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2011,
+        "Value": 0.194325156619233,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2012,
+        "Value": 0.200288559027168,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2013,
+        "Value": 0.198156100830026,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2014,
+        "Value": 0.198399495600829,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2015,
+        "Value": 0.18988926248020502,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2016,
+        "Value": 0.188245430062206,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2017,
+        "Value": 0.181777606896744,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2018,
+        "Value": 0.182028667597924,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "CRI",
+        "Country": "Costa Rica",
+        "Time": 2021,
+        "Value": 0.178112733158449,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2004,
+        "Value": 0.193090893874964,
+        "low": 0.195055586516428,
+        "high": 0.28045539490397775
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2005,
+        "Value": 0.20956154315033199,
+        "low": 0.1977059911880414,
+        "high": 0.29674388282703096
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2006,
+        "Value": 0.225775935262733,
+        "low": 0.2037139414945191,
+        "high": 0.30641409296544203
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2007,
+        "Value": 0.240773758127074,
+        "low": 0.21857500705044078,
+        "high": 0.2988353541753823
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2008,
+        "Value": 0.219137810195697,
+        "low": 0.2126515722430393,
+        "high": 0.2930677237469891
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2009,
+        "Value": 0.226467081627038,
+        "low": 0.1857286897657925,
+        "high": 0.24455888386705554
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2010,
+        "Value": 0.220429732014851,
+        "low": 0.1684871319583487,
+        "high": 0.24801409838060773
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2011,
+        "Value": 0.21915825421672502,
+        "low": 0.17717681231589272,
+        "high": 0.26546871569309793
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2012,
+        "Value": 0.211252094876723,
+        "low": 0.1692179308478104,
+        "high": 0.2684438795897647
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2013,
+        "Value": 0.21338397099537498,
+        "low": 0.1683354815402993,
+        "high": 0.26509037426688253
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2014,
+        "Value": 0.22670509881334802,
+        "low": 0.1702743525783391,
+        "high": 0.258883682686812
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2015,
+        "Value": 0.233747819041323,
+        "low": 0.1735495818681917,
+        "high": 0.25752620983823826
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2016,
+        "Value": 0.221296577145622,
+        "low": 0.1735083511999097,
+        "high": 0.25490903347090876
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2017,
+        "Value": 0.217227919184852,
+        "low": 0.17738882130660769,
+        "high": 0.26287435304830015
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2018,
+        "Value": 0.212278710779912,
+        "low": 0.17950890581370899,
+        "high": 0.26750361468236933
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2019,
+        "Value": 0.21269107264817,
+        "low": 0.1809840007787243,
+        "high": 0.26739587238833024
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2020,
+        "Value": 0.183070372902013,
+        "low": 0.17817372630271672,
+        "high": 0.2741487834463116
+      },
+      {
+        "LOCATION": "COL",
+        "Country": "Colombia",
+        "Time": 2021,
+        "Value": 0.18983620468461002,
+        "low": 0.18070899467597212,
+        "high": 0.26607970736022973
+      }
+    ]
+  }
+}

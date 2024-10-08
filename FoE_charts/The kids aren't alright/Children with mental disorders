@@ -1,0 +1,196 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 12,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "data": {"name": "data-f6f026f8f98ac2a40e732a0c6031a47c"},
+  "mark": {"type": "bar"},
+  "encoding": {
+    "color": {
+      "field": "series",
+      "legend": {
+        "direction": "horizontal",
+        "legendX": 0,
+        "legendY": -15,
+        "orient": "none",
+        "title": null
+      },
+      "scale": {"range": ["#36B7B4", "#E6224B"]},
+      "title": null,
+      "type": "nominal"
+    },
+    "column": {
+      "field": "age",
+      "header": {"labelColor": "#676A86", "orient": "bottom"},
+      "sort": {"field": "order", "order": "ascending"},
+      "title": null,
+      "type": "nominal"
+    },
+    "x": {
+      "axis": {"labels": false, "ticks": false},
+      "field": "series",
+      "title": null,
+      "type": "nominal"
+    },
+    "y": {
+      "axis": {"format": "%"},
+      "field": "value",
+      "title": null,
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "title": {
+    "text": "Children and young people with probable mental disorders",
+    "anchor": "start",
+    "subtitle": ["England only, 2023 responses", "Source: NHS England SDQ", ""],
+    "subtitleColor": "#676A86"
+  },
+  "width": 120,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-f6f026f8f98ac2a40e732a0c6031a47c": [
+      {
+        "age": "8 to 10",
+        "order": 0,
+        "series": "Boys/young men",
+        "value": 0.177
+      },
+      {
+        "age": "11 to 16",
+        "order": 1,
+        "series": "Boys/young men",
+        "value": 0.223
+      },
+      {
+        "age": "17 to 19",
+        "order": 3,
+        "series": "Boys/young men",
+        "value": 0.154
+      },
+      {
+        "age": "20 to 25",
+        "order": 4,
+        "series": "Boys/young men",
+        "value": 0.134
+      },
+      {
+        "age": "8 to 10",
+        "order": 0,
+        "series": "Girls/young women",
+        "value": 0.136
+      },
+      {
+        "age": "11 to 16",
+        "order": 1,
+        "series": "Girls/young women",
+        "value": 0.22899999999999998
+      },
+      {
+        "age": "17 to 19",
+        "order": 3,
+        "series": "Girls/young women",
+        "value": 0.316
+      },
+      {
+        "age": "20 to 25",
+        "order": 4,
+        "series": "Girls/young women",
+        "value": 0.304
+      }
+    ]
+  }
+}

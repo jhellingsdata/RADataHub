@@ -1,0 +1,482 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 15
+    },
+    "view": {"stroke": null, "continuousWidth": 250, "continuousHeight": 320},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "title": {
+      "color": "#676A86",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "middle",
+      "dx": 24,
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "labelColor": "#122b39",
+      "legendX": 230,
+      "legendY": 0,
+      "gradientLength": 180,
+      "tickCount": 5
+    }
+  },
+  "hconcat": [
+    {
+      "layer": [
+        {
+          "mark": {"type": "geoshape", "color": "lightgrey"},
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "properties.NAME",
+                "title": "Country",
+                "type": "nominal"
+              }
+            ]
+          },
+          "transform": [
+            {"filter": "(datum.id !== 'RU')"},
+            {"filter": "(datum.id !== 'IS')"},
+            {"filter": "(datum.id !== 'AR')"},
+            {"filter": "(datum.id !== 'AZ')"},
+            {"filter": "(datum.id !== 'AM')"},
+            {"filter": "(datum.id !== 'GE')"},
+            {"filter": "(datum.id !== 'CY')"},
+            {"filter": "(datum.id !== 'IL')"}
+          ]
+        },
+        {
+          "mark": {"type": "geoshape", "color": "lightgrey"},
+          "encoding": {
+            "color": {
+              "field": "div_share",
+              "legend": {
+                "orient": "none",
+                "direction": "vertical",
+                "title": null,
+                "format": "%"
+              },
+              "scale": {"scheme": "yellowgreenblue"},
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "properties.NAME",
+                "title": "Country",
+                "type": "nominal"
+              },
+              {"field": "year", "title": "Year", "type": "nominal"},
+              {
+                "field": "div_share",
+                "format": ".1%",
+                "title": "Relative tax rate",
+                "type": "quantitative"
+              }
+            ]
+          },
+          "title": "2002",
+          "transform": [
+            {"filter": "(datum.id !== 'RU')"},
+            {"filter": "(datum.id !== 'IS')"},
+            {"filter": "(datum.id !== 'AR')"},
+            {"filter": "(datum.id !== 'AZ')"},
+            {"filter": "(datum.id !== 'AM')"},
+            {"filter": "(datum.id !== 'GE')"},
+            {"filter": "(datum.id !== 'CY')"},
+            {"filter": "(datum.id !== 'IL')"},
+            {
+              "lookup": "id",
+              "from": {
+                "data": {"name": "data-fb58f73ad882a2fc3160bede9ff9d328"},
+                "key": "ISO2",
+                "fields": ["year", "div_share"]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "mark": {"type": "geoshape", "color": "lightgrey"},
+          "encoding": {
+            "tooltip": {"field": "id", "title": "Country", "type": "nominal"}
+          },
+          "transform": [
+            {"filter": "(datum.id !== 'RU')"},
+            {"filter": "(datum.id !== 'IS')"},
+            {"filter": "(datum.id !== 'AR')"},
+            {"filter": "(datum.id !== 'AZ')"},
+            {"filter": "(datum.id !== 'AM')"},
+            {"filter": "(datum.id !== 'GE')"},
+            {"filter": "(datum.id !== 'CY')"},
+            {"filter": "(datum.id !== 'IL')"}
+          ]
+        },
+        {
+          "mark": {"type": "geoshape", "color": "lightgrey"},
+          "encoding": {
+            "color": {"field": "div_share", "type": "quantitative"},
+            "tooltip": [
+              {
+                "field": "properties.NAME",
+                "title": "Country",
+                "type": "nominal"
+              },
+              {"field": "year", "title": "Year", "type": "nominal"},
+              {
+                "field": "div_share",
+                "format": ".1%",
+                "title": "Share",
+                "type": "quantitative"
+              }
+            ]
+          },
+          "title": "2022",
+          "transform": [
+            {"filter": "(datum.id !== 'RU')"},
+            {"filter": "(datum.id !== 'IS')"},
+            {"filter": "(datum.id !== 'AR')"},
+            {"filter": "(datum.id !== 'AZ')"},
+            {"filter": "(datum.id !== 'AM')"},
+            {"filter": "(datum.id !== 'GE')"},
+            {"filter": "(datum.id !== 'CY')"},
+            {"filter": "(datum.id !== 'IL')"},
+            {
+              "lookup": "id",
+              "from": {
+                "data": {"name": "data-3ceb9a7c85fb88c67725bca1b2110016"},
+                "key": "ISO2",
+                "fields": ["year", "div_share"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch8_Trends/data/chart8_x_europe.topojson",
+    "format": {"feature": "europe", "type": "topojson"}
+  },
+  "resolve": {"scale": {"color": "shared"}},
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-fb58f73ad882a2fc3160bede9ff9d328": [
+      {
+        "ISO2": "AT",
+        "ctrynm": "Austria",
+        "year": 2002,
+        "div_share": 0.32673266530036926
+      },
+      {
+        "ISO2": "BE",
+        "ctrynm": "Belgium",
+        "year": 2002,
+        "div_share": 0.1826145350933075
+      },
+      {
+        "ISO2": "CZ",
+        "ctrynm": "Czech Republic",
+        "year": 2002,
+        "div_share": 0.2503022849559784
+      },
+      {
+        "ISO2": "DK",
+        "ctrynm": "Denmark",
+        "year": 2002,
+        "div_share": 0.5008319616317749
+      },
+      {"ISO2": "EE", "ctrynm": "Estonia", "year": 2002, "div_share": 0},
+      {
+        "ISO2": "FI",
+        "ctrynm": "Finland",
+        "year": 2002,
+        "div_share": 0.0007828299421817064
+      },
+      {
+        "ISO2": "FR",
+        "ctrynm": "France",
+        "year": 2002,
+        "div_share": 0.39333000779151917
+      },
+      {
+        "ISO2": "DE",
+        "ctrynm": "Germany",
+        "year": 2002,
+        "div_share": 0.29198160767555237
+      },
+      {"ISO2": "GR", "ctrynm": "Greece", "year": 2002, "div_share": 0},
+      {
+        "ISO2": "HU",
+        "ctrynm": "Hungary",
+        "year": 2002,
+        "div_share": 0.6145610213279724
+      },
+      {
+        "ISO2": "IS",
+        "ctrynm": "Iceland",
+        "year": 2002,
+        "div_share": 0.3129771053791046
+      },
+      {
+        "ISO2": "IE",
+        "ctrynm": "Ireland",
+        "year": 2002,
+        "div_share": 0.6879875063896179
+      },
+      {
+        "ISO2": "IT",
+        "ctrynm": "Italy",
+        "year": 2002,
+        "div_share": 0.1818181872367859
+      },
+      {"ISO2": "LV", "ctrynm": "Latvia", "year": 2002, "div_share": 0},
+      {
+        "ISO2": "LT",
+        "ctrynm": "Lithuania",
+        "year": 2002,
+        "div_share": 0.45941805839538574
+      },
+      {
+        "ISO2": "LU",
+        "ctrynm": "Luxembourg",
+        "year": 2002,
+        "div_share": 0.30837729573249817
+      },
+      {
+        "ISO2": "NL",
+        "ctrynm": "Netherlands",
+        "year": 2002,
+        "div_share": 0.32186734676361084
+      },
+      {
+        "ISO2": "NO",
+        "ctrynm": "Norway",
+        "year": 2002,
+        "div_share": -0.00020576000679284334
+      },
+      {
+        "ISO2": "PL",
+        "ctrynm": "Poland",
+        "year": 2002,
+        "div_share": 0.2783505320549011
+      },
+      {
+        "ISO2": "PT",
+        "ctrynm": "Portugal",
+        "year": 2002,
+        "div_share": 0.2887931168079376
+      },
+      {
+        "ISO2": "SK",
+        "ctrynm": "Slovakia",
+        "year": 2002,
+        "div_share": 0.3103448152542114
+      },
+      {
+        "ISO2": "SI",
+        "ctrynm": "Slovenia",
+        "year": 2002,
+        "div_share": 0.4736841917037964
+      },
+      {
+        "ISO2": "ES",
+        "ctrynm": "Spain",
+        "year": 2002,
+        "div_share": 0.3356112241744995
+      },
+      {
+        "ISO2": "SE",
+        "ctrynm": "Sweden",
+        "year": 2002,
+        "div_share": 0.43548384308815
+      },
+      {
+        "ISO2": "CH",
+        "ctrynm": "Switzerland",
+        "year": 2002,
+        "div_share": 0.5593900084495544
+      },
+      {
+        "ISO2": "TR",
+        "ctrynm": "Turkey",
+        "year": 2002,
+        "div_share": 0.49213916063308716
+      },
+      {
+        "ISO2": "GB",
+        "ctrynm": "United Kingdom",
+        "year": 2002,
+        "div_share": 0.3684280514717102
+      }
+    ],
+    "data-3ceb9a7c85fb88c67725bca1b2110016": [
+      {
+        "ISO2": "AT",
+        "ctrynm": "Austria",
+        "year": 2022,
+        "div_share": 0.45205479860305786
+      },
+      {
+        "ISO2": "BE",
+        "ctrynm": "Belgium",
+        "year": 2022,
+        "div_share": 0.47369998693466187
+      },
+      {
+        "ISO2": "CZ",
+        "ctrynm": "Czech Republic",
+        "year": 2022,
+        "div_share": 0.49508368968963623
+      },
+      {
+        "ISO2": "DK",
+        "ctrynm": "Denmark",
+        "year": 2022,
+        "div_share": 0.5982000231742859
+      },
+      {"ISO2": "EE", "ctrynm": "Estonia", "year": 2022, "div_share": 0},
+      {
+        "ISO2": "FI",
+        "ctrynm": "Finland",
+        "year": 2022,
+        "div_share": 0.5361781120300293
+      },
+      {
+        "ISO2": "FR",
+        "ctrynm": "France",
+        "year": 2022,
+        "div_share": 0.4940689206123352
+      },
+      {
+        "ISO2": "DE",
+        "ctrynm": "Germany",
+        "year": 2022,
+        "div_share": 0.3816254734992981
+      },
+      {
+        "ISO2": "GR",
+        "ctrynm": "Greece",
+        "year": 2022,
+        "div_share": 0.15060000121593475
+      },
+      {
+        "ISO2": "HU",
+        "ctrynm": "Hungary",
+        "year": 2022,
+        "div_share": 0.6026489734649658
+      },
+      {
+        "ISO2": "IS",
+        "ctrynm": "Iceland",
+        "year": 2022,
+        "div_share": 0.46810001134872437
+      },
+      {
+        "ISO2": "IE",
+        "ctrynm": "Ireland",
+        "year": 2022,
+        "div_share": 0.7812000513076782
+      },
+      {
+        "ISO2": "IT",
+        "ctrynm": "Italy",
+        "year": 2022,
+        "div_share": 0.45155391097068787
+      },
+      {"ISO2": "LV", "ctrynm": "Latvia", "year": 2022, "div_share": 0},
+      {
+        "ISO2": "LT",
+        "ctrynm": "Lithuania",
+        "year": 2022,
+        "div_share": 0.4595000147819519
+      },
+      {
+        "ISO2": "LU",
+        "ctrynm": "Luxembourg",
+        "year": 2022,
+        "div_share": 0.3872627317905426
+      },
+      {
+        "ISO2": "NL",
+        "ctrynm": "Netherlands",
+        "year": 2022,
+        "div_share": 0.4361863434314728
+      },
+      {
+        "ISO2": "NO",
+        "ctrynm": "Norway",
+        "year": 2022,
+        "div_share": 0.5555999875068665
+      },
+      {
+        "ISO2": "PL",
+        "ctrynm": "Poland",
+        "year": 2022,
+        "div_share": 0.44749999046325684
+      },
+      {
+        "ISO2": "PT",
+        "ctrynm": "Portugal",
+        "year": 2022,
+        "div_share": 0.37845301628112793
+      },
+      {
+        "ISO2": "SK",
+        "ctrynm": "Slovakia",
+        "year": 2022,
+        "div_share": 0.2084999978542328
+      },
+      {
+        "ISO2": "SI",
+        "ctrynm": "Slovenia",
+        "year": 2022,
+        "div_share": 0.5396729111671448
+      },
+      {
+        "ISO2": "ES",
+        "ctrynm": "Spain",
+        "year": 2022,
+        "div_share": 0.43820226192474365
+      },
+      {
+        "ISO2": "SE",
+        "ctrynm": "Sweden",
+        "year": 2022,
+        "div_share": 0.5362449288368225
+      },
+      {
+        "ISO2": "CH",
+        "ctrynm": "Switzerland",
+        "year": 2022,
+        "div_share": 0.4759921133518219
+      },
+      {
+        "ISO2": "TR",
+        "ctrynm": "Turkey",
+        "year": 2022,
+        "div_share": 0.4009999930858612
+      },
+      {
+        "ISO2": "GB",
+        "ctrynm": "United Kingdom",
+        "year": 2022,
+        "div_share": 0.6265246272087097
+      }
+    ]
+  }
+}

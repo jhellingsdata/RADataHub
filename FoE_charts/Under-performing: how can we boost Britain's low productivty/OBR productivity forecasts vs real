@@ -1,0 +1,6887 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 12,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "title": {
+    "text": "Source: Martinez et al, 2021",
+    "fontStyle": "italic",
+    "color": "#676A8680",
+    "dx": 0,
+    "offset": 7,
+    "fontSize": 10,
+    "frame": "group",
+    "orient": "bottom",
+    "anchor": "start"
+  },
+  "data": {
+    "values": [
+      {
+        "Date": "2009-01-01",
+        "Series": "x1a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x1a",
+        "Value": 99.48979592,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x1a",
+        "Value": 100.3061224,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x1a",
+        "Value": 100.9183673,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x1",
+        "Value": 100.9183673,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x1",
+        "Value": 101.122449,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x1",
+        "Value": 101.4285714,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x1",
+        "Value": 101.8367347,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x1",
+        "Value": 102.3469388,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x1",
+        "Value": 102.8571429,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x1",
+        "Value": 103.4693878,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x1",
+        "Value": 104.1836735,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x1",
+        "Value": 104.7959184,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x1",
+        "Value": 105.3061224,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x1",
+        "Value": 105.8163265,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x1",
+        "Value": 106.5306122,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x1",
+        "Value": 107.0408163,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x1",
+        "Value": 107.5510204,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x1",
+        "Value": 108.1632653,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x1",
+        "Value": 108.6734694,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x1",
+        "Value": 109.0816327,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x1",
+        "Value": 109.6938776,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x1",
+        "Value": 110.1020408,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x1",
+        "Value": 110.7142857,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x1",
+        "Value": 111.2244898,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x2a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x2a",
+        "Value": 99.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x2a",
+        "Value": 100.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x2a",
+        "Value": 100.8,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x2a",
+        "Value": 101,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x2a",
+        "Value": 101.3,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x2",
+        "Value": 101.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x2",
+        "Value": 101.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x2",
+        "Value": 102.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x2",
+        "Value": 102.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x2",
+        "Value": 103.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x2",
+        "Value": 103.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x2",
+        "Value": 104.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x2",
+        "Value": 105.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x2",
+        "Value": 105.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x2",
+        "Value": 106.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x2",
+        "Value": 106.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x2",
+        "Value": 107.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x2",
+        "Value": 107.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x2",
+        "Value": 108.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x2",
+        "Value": 109.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x2",
+        "Value": 109.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x2",
+        "Value": 110.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x2",
+        "Value": 110.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x2",
+        "Value": 111.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x2",
+        "Value": 112.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x2",
+        "Value": 112.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x3a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x3a",
+        "Value": 99.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x3a",
+        "Value": 100.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x3a",
+        "Value": 100.8,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x3a",
+        "Value": 101.2,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x3a",
+        "Value": 101.2,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x3a",
+        "Value": 101.6,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x3a",
+        "Value": 100.8,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x3",
+        "Value": 100.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x3",
+        "Value": 102.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x3",
+        "Value": 102.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x3",
+        "Value": 103.4,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x3",
+        "Value": 104.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x3",
+        "Value": 104.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x3",
+        "Value": 105.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x3",
+        "Value": 105.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x3",
+        "Value": 106.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x3",
+        "Value": 106.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x3",
+        "Value": 107.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x3",
+        "Value": 107.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x3",
+        "Value": 108.4,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x3",
+        "Value": 109.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x3",
+        "Value": 109.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x3",
+        "Value": 110.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x3",
+        "Value": 110.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x3",
+        "Value": 111.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x3",
+        "Value": 112.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x3",
+        "Value": 112.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x3",
+        "Value": 113.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x4a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x4a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x4a",
+        "Value": 100.9,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x4a",
+        "Value": 101.6,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x4a",
+        "Value": 101.8,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x4a",
+        "Value": 102,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x4a",
+        "Value": 102.3,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x4a",
+        "Value": 102,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x4a",
+        "Value": 102.3,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x4a",
+        "Value": 103.8,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x4",
+        "Value": 103.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x4",
+        "Value": 104,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x4",
+        "Value": 103.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x4",
+        "Value": 103.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x4",
+        "Value": 103.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x4",
+        "Value": 105.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x4",
+        "Value": 105,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x4",
+        "Value": 105.4,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x4",
+        "Value": 106,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x4",
+        "Value": 106.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x4",
+        "Value": 107.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x4",
+        "Value": 107.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x4",
+        "Value": 108.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x4",
+        "Value": 108.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x4",
+        "Value": 109.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x4",
+        "Value": 110.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x4",
+        "Value": 110.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x4",
+        "Value": 111.4,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x4",
+        "Value": 112,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x4",
+        "Value": 112.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x4",
+        "Value": 113.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x5a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x5a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x5a",
+        "Value": 100.9,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x5a",
+        "Value": 101.6,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x5a",
+        "Value": 102,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x5a",
+        "Value": 102.3,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x5a",
+        "Value": 102.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x5a",
+        "Value": 102.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x5a",
+        "Value": 102.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x5a",
+        "Value": 104.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x5a",
+        "Value": 104.3,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x5a",
+        "Value": 103.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x5",
+        "Value": 103.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x5",
+        "Value": 104.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x5",
+        "Value": 104.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x5",
+        "Value": 105.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x5",
+        "Value": 105.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x5",
+        "Value": 105.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x5",
+        "Value": 106.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x5",
+        "Value": 106.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x5",
+        "Value": 107.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x5",
+        "Value": 107.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x5",
+        "Value": 108.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x5",
+        "Value": 109.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x5",
+        "Value": 109.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x5",
+        "Value": 110.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x5",
+        "Value": 110.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x5",
+        "Value": 111.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x5",
+        "Value": 112.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x5",
+        "Value": 112.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x5",
+        "Value": 113.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x5",
+        "Value": 114.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x5",
+        "Value": 114.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x6a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x6a",
+        "Value": 100.2,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x6a",
+        "Value": 101.2,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x6a",
+        "Value": 101.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x6a",
+        "Value": 102.3,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x6a",
+        "Value": 102.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x6a",
+        "Value": 102.5,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x6a",
+        "Value": 101.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x6a",
+        "Value": 102.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x6a",
+        "Value": 104,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x6a",
+        "Value": 103.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x6a",
+        "Value": 103.3,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x6a",
+        "Value": 102.3,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x6a",
+        "Value": 101.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x6",
+        "Value": 101.4,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x6",
+        "Value": 101.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x6",
+        "Value": 101.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x6",
+        "Value": 101.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x6",
+        "Value": 102.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x6",
+        "Value": 102.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x6",
+        "Value": 103.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x6",
+        "Value": 103.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x6",
+        "Value": 104.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x6",
+        "Value": 104.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x6",
+        "Value": 105.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x6",
+        "Value": 105.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x6",
+        "Value": 106.4,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x6",
+        "Value": 106.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x6",
+        "Value": 107.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x6",
+        "Value": 108.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x6",
+        "Value": 108.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x6",
+        "Value": 109.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x6",
+        "Value": 110,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x6",
+        "Value": 110.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x6",
+        "Value": 111.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x7a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x7a",
+        "Value": 100.2,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x7a",
+        "Value": 101.2,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x7a",
+        "Value": 101.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x7a",
+        "Value": 102.3,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x7a",
+        "Value": 102.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x7a",
+        "Value": 102.5,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x7a",
+        "Value": 101.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x7a",
+        "Value": 102.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x7a",
+        "Value": 103.8,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x7a",
+        "Value": 103.6,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x7a",
+        "Value": 103.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x7a",
+        "Value": 102.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x7a",
+        "Value": 101.6,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x7a",
+        "Value": 101.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x7a",
+        "Value": 101.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x7",
+        "Value": 101.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x7",
+        "Value": 101.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x7",
+        "Value": 101.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x7",
+        "Value": 101.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x7",
+        "Value": 102,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x7",
+        "Value": 102.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x7",
+        "Value": 103.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x7",
+        "Value": 103.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x7",
+        "Value": 104.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x7",
+        "Value": 104.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x7",
+        "Value": 105.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x7",
+        "Value": 105.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x7",
+        "Value": 106.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x7",
+        "Value": 107.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x7",
+        "Value": 107.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x7",
+        "Value": 108.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x7",
+        "Value": 109,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x7",
+        "Value": 109.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x7",
+        "Value": 110.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x7",
+        "Value": 110.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x7",
+        "Value": 111.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x8a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x8a",
+        "Value": 99.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x8a",
+        "Value": 100.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x8a",
+        "Value": 100.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x8a",
+        "Value": 101.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x8a",
+        "Value": 101.6,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x8a",
+        "Value": 101.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x8a",
+        "Value": 101.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x8a",
+        "Value": 101.6,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x8a",
+        "Value": 103.2,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x8a",
+        "Value": 103.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x8a",
+        "Value": 102.8,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x8a",
+        "Value": 102.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x8a",
+        "Value": 101.2,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x8a",
+        "Value": 100.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x8a",
+        "Value": 100.3,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x8a",
+        "Value": 100.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x8a",
+        "Value": 100.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x8",
+        "Value": 100.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x8",
+        "Value": 100.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x8",
+        "Value": 101,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x8",
+        "Value": 101.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x8",
+        "Value": 102,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x8",
+        "Value": 102.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x8",
+        "Value": 103,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x8",
+        "Value": 103.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x8",
+        "Value": 104,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x8",
+        "Value": 104.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x8",
+        "Value": 105.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x8",
+        "Value": 105.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x8",
+        "Value": 106.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x8",
+        "Value": 107,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x8",
+        "Value": 107.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x8",
+        "Value": 108.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x8",
+        "Value": 109,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x8",
+        "Value": 109.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x8",
+        "Value": 110.4,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x8",
+        "Value": 111.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x8",
+        "Value": 111.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x9a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x9a",
+        "Value": 99.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x9a",
+        "Value": 100.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x9a",
+        "Value": 100.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x9a",
+        "Value": 101.4,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x9a",
+        "Value": 101.6,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x9a",
+        "Value": 101.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x9a",
+        "Value": 101.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x9a",
+        "Value": 101.6,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x9a",
+        "Value": 103.2,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x9a",
+        "Value": 103.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x9a",
+        "Value": 102.8,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x9a",
+        "Value": 102,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x9a",
+        "Value": 101.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x9a",
+        "Value": 100.8,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x9a",
+        "Value": 100.6,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x9a",
+        "Value": 100.7,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x9a",
+        "Value": 101.1,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x9a",
+        "Value": 100.9,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x9a",
+        "Value": 101.2,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x9",
+        "Value": 101.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x9",
+        "Value": 101.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x9",
+        "Value": 101.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x9",
+        "Value": 102.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x9",
+        "Value": 102.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x9",
+        "Value": 103.4,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x9",
+        "Value": 104,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x9",
+        "Value": 104.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x9",
+        "Value": 105.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x9",
+        "Value": 105.8,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x9",
+        "Value": 106.5,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x9",
+        "Value": 107.2,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x9",
+        "Value": 107.9,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x9",
+        "Value": 108.6,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x9",
+        "Value": 109.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x9",
+        "Value": 110,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x9",
+        "Value": 110.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x9",
+        "Value": 111.4,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x9",
+        "Value": 112.1,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "x9",
+        "Value": 112.7,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x9",
+        "Value": 113.3,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x10a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x10a",
+        "Value": 100.1019368,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x10a",
+        "Value": 100.9174312,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x10a",
+        "Value": 101.1213048,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x10a",
+        "Value": 102.038736,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x10a",
+        "Value": 102.2426096,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x10a",
+        "Value": 102.6503568,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x10a",
+        "Value": 102.2426096,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x10a",
+        "Value": 102.8542304,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x10a",
+        "Value": 104.3832824,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x10a",
+        "Value": 104.6890928,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x10a",
+        "Value": 104.3832824,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x10a",
+        "Value": 103.9755352,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x10a",
+        "Value": 103.2619776,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x10a",
+        "Value": 103.1600408,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x10a",
+        "Value": 102.4464832,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x10a",
+        "Value": 102.8542304,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x10a",
+        "Value": 103.3639144,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x10a",
+        "Value": 103.1600408,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x10a",
+        "Value": 103.4658512,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x10a",
+        "Value": 103.2619776,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x10a",
+        "Value": 103.3639144,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x10",
+        "Value": 103.3639144,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x10",
+        "Value": 103.9755352,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x10",
+        "Value": 104.2813456,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x10",
+        "Value": 104.587156,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x10",
+        "Value": 104.8929664,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x10",
+        "Value": 105.3007136,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x10",
+        "Value": 105.7084608,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x10",
+        "Value": 106.2181448,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x10",
+        "Value": 106.7278287,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x10",
+        "Value": 107.3394495,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x10",
+        "Value": 107.9510703,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x10",
+        "Value": 108.6646279,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x10",
+        "Value": 109.3781855,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x10",
+        "Value": 109.9898063,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x10",
+        "Value": 110.6014271,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x10",
+        "Value": 111.2130479,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x10",
+        "Value": 111.8246687,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "x10",
+        "Value": 112.4362895,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x10",
+        "Value": 113.0479103,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-01-01",
+        "Series": "x10",
+        "Value": 113.7614679,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-04-01",
+        "Series": "x10",
+        "Value": 114.4750255,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x11a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x11a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x11a",
+        "Value": 100.814664,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x11a",
+        "Value": 101.0183299,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x11a",
+        "Value": 101.9348269,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x11a",
+        "Value": 102.1384929,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x11a",
+        "Value": 102.5458248,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x11a",
+        "Value": 102.2403259,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x11a",
+        "Value": 102.8513238,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x11a",
+        "Value": 104.3788187,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x11a",
+        "Value": 104.6843177,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x11a",
+        "Value": 104.3788187,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x11a",
+        "Value": 103.9714868,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x11a",
+        "Value": 103.1568228,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x11a",
+        "Value": 103.0549898,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x11a",
+        "Value": 102.3421589,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x11a",
+        "Value": 102.8513238,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x11a",
+        "Value": 103.2586558,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x11a",
+        "Value": 102.9531568,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x11a",
+        "Value": 102.9531568,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x11a",
+        "Value": 102.8513238,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x11a",
+        "Value": 102.8513238,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x11a",
+        "Value": 103.4623218,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x11a",
+        "Value": 103.1568228,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x11",
+        "Value": 103.1568228,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x11",
+        "Value": 103.4623218,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x11",
+        "Value": 103.7678208,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x11",
+        "Value": 104.1751527,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x11",
+        "Value": 104.6843177,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x11",
+        "Value": 105.2953157,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x11",
+        "Value": 105.8044807,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x11",
+        "Value": 106.5173116,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x11",
+        "Value": 107.2301426,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x11",
+        "Value": 107.8411405,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x11",
+        "Value": 108.5539715,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x11",
+        "Value": 109.2668024,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x11",
+        "Value": 109.9796334,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x11",
+        "Value": 110.5906314,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x11",
+        "Value": 111.3034623,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "x11",
+        "Value": 112.0162933,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x11",
+        "Value": 112.6272912,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-01-01",
+        "Series": "x11",
+        "Value": 113.3401222,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-04-01",
+        "Series": "x11",
+        "Value": 113.9511202,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-07-01",
+        "Series": "x11",
+        "Value": 114.6639511,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-10-01",
+        "Series": "x11",
+        "Value": 115.2749491,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x12a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x12a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x12a",
+        "Value": 100.814664,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x12a",
+        "Value": 100.9164969,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x12a",
+        "Value": 101.5274949,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x12a",
+        "Value": 101.8329939,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x12a",
+        "Value": 102.1384929,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x12a",
+        "Value": 101.9348269,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x12a",
+        "Value": 102.5458248,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x12a",
+        "Value": 104.1751527,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x12a",
+        "Value": 104.3788187,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x12a",
+        "Value": 104.2769857,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x12a",
+        "Value": 103.8696538,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x12a",
+        "Value": 103.2586558,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x12a",
+        "Value": 103.1568228,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x12a",
+        "Value": 102.6476578,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x12a",
+        "Value": 103.3604888,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x12a",
+        "Value": 104.0733198,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x12a",
+        "Value": 103.7678208,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x12a",
+        "Value": 104.0733198,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x12a",
+        "Value": 103.7678208,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x12a",
+        "Value": 103.8696538,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x12a",
+        "Value": 104.4806517,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x12a",
+        "Value": 104.2769857,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x12a",
+        "Value": 104.3788187,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x12a",
+        "Value": 105.0916497,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x12",
+        "Value": 105.0916497,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x12",
+        "Value": 105.6008147,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x12",
+        "Value": 105.7026477,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x12",
+        "Value": 106.0081466,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x12",
+        "Value": 106.5173116,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x12",
+        "Value": 107.0264766,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x12",
+        "Value": 107.5356415,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x12",
+        "Value": 107.9429735,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x12",
+        "Value": 108.4521385,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x12",
+        "Value": 109.0631365,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x12",
+        "Value": 109.6741344,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x12",
+        "Value": 110.2851324,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x12",
+        "Value": 110.8961303,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "x12",
+        "Value": 111.5071283,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x12",
+        "Value": 112.1181263,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-01-01",
+        "Series": "x12",
+        "Value": 112.7291242,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-04-01",
+        "Series": "x12",
+        "Value": 113.3401222,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-07-01",
+        "Series": "x12",
+        "Value": 113.9511202,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-10-01",
+        "Series": "x12",
+        "Value": 114.5621181,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-01-01",
+        "Series": "x12",
+        "Value": 115.1731161,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-04-01",
+        "Series": "x12",
+        "Value": 115.7841141,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x13a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x13a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x13a",
+        "Value": 100.8154944,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x13a",
+        "Value": 100.9174312,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x13a",
+        "Value": 101.529052,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x13a",
+        "Value": 101.8348624,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x13a",
+        "Value": 102.1406728,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x13a",
+        "Value": 101.9367992,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x13a",
+        "Value": 102.4464832,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x13a",
+        "Value": 104.077472,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x13a",
+        "Value": 104.2813456,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x13a",
+        "Value": 104.1794088,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x13a",
+        "Value": 103.7716616,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x13a",
+        "Value": 103.1600408,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x13a",
+        "Value": 103.058104,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x13a",
+        "Value": 102.54842,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x13a",
+        "Value": 103.2619776,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x13a",
+        "Value": 103.9755352,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x13a",
+        "Value": 103.6697248,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x13a",
+        "Value": 103.9755352,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x13a",
+        "Value": 103.6697248,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x13a",
+        "Value": 103.6697248,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x13a",
+        "Value": 104.2813456,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x13a",
+        "Value": 104.077472,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x13a",
+        "Value": 104.2813456,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x13a",
+        "Value": 104.9949032,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x13a",
+        "Value": 105.5045872,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x13a",
+        "Value": 104.2813456,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x13",
+        "Value": 104.2813456,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x13",
+        "Value": 104.9949032,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x13",
+        "Value": 105.7084608,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x13",
+        "Value": 106.3200815,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x13",
+        "Value": 106.7278287,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x13",
+        "Value": 107.1355759,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x13",
+        "Value": 107.5433231,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x13",
+        "Value": 108.0530071,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x13",
+        "Value": 108.5626911,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x13",
+        "Value": 109.1743119,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x13",
+        "Value": 109.7859327,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "x13",
+        "Value": 110.3975535,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x13",
+        "Value": 111.0091743,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-01-01",
+        "Series": "x13",
+        "Value": 111.6207951,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-04-01",
+        "Series": "x13",
+        "Value": 112.1304791,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-07-01",
+        "Series": "x13",
+        "Value": 112.6401631,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-10-01",
+        "Series": "x13",
+        "Value": 113.1498471,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-01-01",
+        "Series": "x13",
+        "Value": 113.7614679,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-04-01",
+        "Series": "x13",
+        "Value": 114.3730887,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-07-01",
+        "Series": "x13",
+        "Value": 114.9847095,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-10-01",
+        "Series": "x13",
+        "Value": 115.5963303,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x14a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x14a",
+        "Value": 100.1002795,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x14a",
+        "Value": 100.9046428,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x14a",
+        "Value": 101.0658195,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x14a",
+        "Value": 101.869109,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x14a",
+        "Value": 102.2365548,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x14a",
+        "Value": 102.6231506,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x14a",
+        "Value": 102.6254458,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x14a",
+        "Value": 103.1203316,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x14a",
+        "Value": 104.3120321,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x14a",
+        "Value": 103.9442279,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x14a",
+        "Value": 103.729976,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x14a",
+        "Value": 103.4966322,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x14a",
+        "Value": 103.0737227,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x14a",
+        "Value": 103.2887888,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x14a",
+        "Value": 102.9273261,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x14a",
+        "Value": 103.0762548,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x14a",
+        "Value": 103.0845121,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x14a",
+        "Value": 102.4179758,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x14a",
+        "Value": 102.9114722,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x14a",
+        "Value": 102.9198636,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x14a",
+        "Value": 103.1501381,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x14a",
+        "Value": 103.8467484,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x14a",
+        "Value": 104.2590641,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x14a",
+        "Value": 104.0696495,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x14a",
+        "Value": 104.6098751,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x14a",
+        "Value": 104.8475646,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x14a",
+        "Value": 103.9825277,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x14a",
+        "Value": 104.4620062,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x14a",
+        "Value": 105.054505,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x14",
+        "Value": 105.054505,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x14",
+        "Value": 105.6385411,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x14",
+        "Value": 105.9371898,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x14",
+        "Value": 106.2285914,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x14",
+        "Value": 106.5325791,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x14",
+        "Value": 106.838658,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x14",
+        "Value": 107.1540945,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x14",
+        "Value": 107.5446366,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x14",
+        "Value": 107.9803188,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "x14",
+        "Value": 108.4280756,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x14",
+        "Value": 108.8855177,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-01-01",
+        "Series": "x14",
+        "Value": 109.3753686,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-04-01",
+        "Series": "x14",
+        "Value": 109.8693082,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-07-01",
+        "Series": "x14",
+        "Value": 110.3577201,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-10-01",
+        "Series": "x14",
+        "Value": 110.9152949,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-01-01",
+        "Series": "x14",
+        "Value": 111.4891978,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-04-01",
+        "Series": "x14",
+        "Value": 112.089239,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-07-01",
+        "Series": "x14",
+        "Value": 112.6900781,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-10-01",
+        "Series": "x14",
+        "Value": 113.2497961,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-01-01",
+        "Series": "x14",
+        "Value": 113.8174524,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-04-01",
+        "Series": "x14",
+        "Value": 114.3910612,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x15a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x15a",
+        "Value": 100.1002795,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x15a",
+        "Value": 100.9046428,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x15a",
+        "Value": 101.0658195,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x15a",
+        "Value": 101.869109,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x15a",
+        "Value": 102.2365548,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x15a",
+        "Value": 102.6231506,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x15a",
+        "Value": 102.6254458,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x15a",
+        "Value": 103.1203316,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x15a",
+        "Value": 104.3120321,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x15a",
+        "Value": 103.9442279,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x15a",
+        "Value": 103.729976,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x15a",
+        "Value": 103.4966322,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x15a",
+        "Value": 103.0737227,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x15a",
+        "Value": 103.2887888,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x15a",
+        "Value": 102.9273261,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x15a",
+        "Value": 103.0762548,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x15a",
+        "Value": 103.0845121,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x15a",
+        "Value": 102.4179758,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x15a",
+        "Value": 102.9114722,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x15a",
+        "Value": 102.9198636,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x15a",
+        "Value": 103.1501381,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x15a",
+        "Value": 103.8467484,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x15a",
+        "Value": 104.2590641,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x15a",
+        "Value": 104.0637004,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x15a",
+        "Value": 104.5829317,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x15a",
+        "Value": 104.7810565,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x15a",
+        "Value": 103.9346324,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x15a",
+        "Value": 104.2168525,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x15a",
+        "Value": 104.7470244,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x15a",
+        "Value": 104.9312941,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x15a",
+        "Value": 105.4663977,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x15",
+        "Value": 105.4663977,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x15",
+        "Value": 105.9727135,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x15",
+        "Value": 106.3222305,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x15",
+        "Value": 106.6690056,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x15",
+        "Value": 107.0306878,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x15",
+        "Value": 107.4117655,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x15",
+        "Value": 107.8243265,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "x15",
+        "Value": 108.2631239,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x15",
+        "Value": 108.7014539,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-01-01",
+        "Series": "x15",
+        "Value": 109.1416549,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-04-01",
+        "Series": "x15",
+        "Value": 109.5908594,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-07-01",
+        "Series": "x15",
+        "Value": 110.0583344,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-10-01",
+        "Series": "x15",
+        "Value": 110.5454697,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-01-01",
+        "Series": "x15",
+        "Value": 111.0645999,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-04-01",
+        "Series": "x15",
+        "Value": 111.5817219,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-07-01",
+        "Series": "x15",
+        "Value": 112.1024071,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-10-01",
+        "Series": "x15",
+        "Value": 112.6393353,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-01-01",
+        "Series": "x15",
+        "Value": 113.1720645,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-04-01",
+        "Series": "x15",
+        "Value": 113.7058787,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-07-01",
+        "Series": "x15",
+        "Value": 114.2358668,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-10-01",
+        "Series": "x15",
+        "Value": 114.761246,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x16a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x16a",
+        "Value": 100.0561049,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x16a",
+        "Value": 100.7985906,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x16a",
+        "Value": 100.9341804,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x16a",
+        "Value": 101.6503006,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x16a",
+        "Value": 101.8131669,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x16a",
+        "Value": 102.0630067,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x16a",
+        "Value": 102.0396469,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x16a",
+        "Value": 102.5218503,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x16a",
+        "Value": 103.7089782,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x16a",
+        "Value": 103.3613906,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x16a",
+        "Value": 103.0104383,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x16a",
+        "Value": 103.2255756,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x16a",
+        "Value": 102.4639178,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x16a",
+        "Value": 102.6068421,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x16a",
+        "Value": 102.245356,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x16a",
+        "Value": 102.5479199,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x16a",
+        "Value": 102.5497245,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x16a",
+        "Value": 101.9033075,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x16a",
+        "Value": 102.4006153,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x16a",
+        "Value": 102.6477754,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x16a",
+        "Value": 102.7464526,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x16a",
+        "Value": 103.3276445,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x16a",
+        "Value": 103.8921409,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x16a",
+        "Value": 103.8225317,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x16a",
+        "Value": 104.4685092,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x16a",
+        "Value": 104.5491012,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x16a",
+        "Value": 103.4093701,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x16a",
+        "Value": 103.9526666,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x16a",
+        "Value": 104.1695935,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x16a",
+        "Value": 104.1548058,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x16a",
+        "Value": 104.6350903,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x16a",
+        "Value": 104.0795072,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x16a",
+        "Value": 103.9350091,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x16",
+        "Value": 103.9350091,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x16",
+        "Value": 104.3423843,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x16",
+        "Value": 104.587508,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x16",
+        "Value": 104.7793986,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x16",
+        "Value": 104.9938114,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "x16",
+        "Value": 105.2259365,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x16",
+        "Value": 105.5445194,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-01-01",
+        "Series": "x16",
+        "Value": 105.8058046,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-04-01",
+        "Series": "x16",
+        "Value": 106.0674359,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-07-01",
+        "Series": "x16",
+        "Value": 106.3783828,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-10-01",
+        "Series": "x16",
+        "Value": 106.6893794,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-01-01",
+        "Series": "x16",
+        "Value": 107.0009792,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-04-01",
+        "Series": "x16",
+        "Value": 107.3010119,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-07-01",
+        "Series": "x16",
+        "Value": 107.603932,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-10-01",
+        "Series": "x16",
+        "Value": 107.9305881,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-01-01",
+        "Series": "x16",
+        "Value": 108.2851821,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-04-01",
+        "Series": "x16",
+        "Value": 108.6333144,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-07-01",
+        "Series": "x16",
+        "Value": 108.9867206,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-10-01",
+        "Series": "x16",
+        "Value": 109.3345416,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-01-01",
+        "Series": "x16",
+        "Value": 109.6923684,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-04-01",
+        "Series": "x16",
+        "Value": 110.0672088,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x17a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x17a",
+        "Value": 100.0561049,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x17a",
+        "Value": 100.7985906,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x17a",
+        "Value": 100.9341804,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x17a",
+        "Value": 101.6503006,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x17a",
+        "Value": 101.8131669,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x17a",
+        "Value": 102.0630067,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x17a",
+        "Value": 102.0396469,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x17a",
+        "Value": 102.5218503,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x17a",
+        "Value": 103.7089782,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x17a",
+        "Value": 103.3613906,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x17a",
+        "Value": 103.0104383,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x17a",
+        "Value": 103.2255756,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x17a",
+        "Value": 102.4639178,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x17a",
+        "Value": 102.6068421,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x17a",
+        "Value": 102.245356,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x17a",
+        "Value": 102.5479199,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x17a",
+        "Value": 102.5497245,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x17a",
+        "Value": 101.9033075,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x17a",
+        "Value": 102.4006153,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x17a",
+        "Value": 102.6477754,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x17a",
+        "Value": 102.7464526,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x17a",
+        "Value": 103.3276445,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x17a",
+        "Value": 103.8921409,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x17a",
+        "Value": 103.8225317,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x17a",
+        "Value": 104.4685092,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x17a",
+        "Value": 104.5491012,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x17a",
+        "Value": 103.4093701,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x17a",
+        "Value": 104.0116864,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x17a",
+        "Value": 104.1846171,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x17a",
+        "Value": 104.3376972,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x17a",
+        "Value": 105.0111089,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x17a",
+        "Value": 104.4269081,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x17a",
+        "Value": 104.2482216,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x17a",
+        "Value": 105.2864727,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x17a",
+        "Value": 106.0638327,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x17",
+        "Value": 106.0638327,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x17",
+        "Value": 105.4287586,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x17",
+        "Value": 105.6981567,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "x17",
+        "Value": 105.9524812,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x17",
+        "Value": 106.2035054,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-01-01",
+        "Series": "x17",
+        "Value": 106.4344155,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-04-01",
+        "Series": "x17",
+        "Value": 106.6734205,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-07-01",
+        "Series": "x17",
+        "Value": 106.9213532,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-10-01",
+        "Series": "x17",
+        "Value": 107.185233,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-01-01",
+        "Series": "x17",
+        "Value": 107.4761063,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-04-01",
+        "Series": "x17",
+        "Value": 107.7513786,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-07-01",
+        "Series": "x17",
+        "Value": 108.0445461,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-10-01",
+        "Series": "x17",
+        "Value": 108.3403172,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-01-01",
+        "Series": "x17",
+        "Value": 108.6376743,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-04-01",
+        "Series": "x17",
+        "Value": 108.9703044,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-07-01",
+        "Series": "x17",
+        "Value": 109.3192944,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-10-01",
+        "Series": "x17",
+        "Value": 109.6443846,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-01-01",
+        "Series": "x17",
+        "Value": 109.9727412,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-04-01",
+        "Series": "x17",
+        "Value": 110.3041658,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-07-01",
+        "Series": "x17",
+        "Value": 110.6379076,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-10-01",
+        "Series": "x17",
+        "Value": 110.9754937,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x18a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x18a",
+        "Value": 100.0516978,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x18a",
+        "Value": 100.8605353,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x18a",
+        "Value": 101.0319733,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x18a",
+        "Value": 101.6817494,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x18a",
+        "Value": 101.7974329,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x18a",
+        "Value": 102.0774214,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x18a",
+        "Value": 101.9951254,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x18a",
+        "Value": 102.6154684,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x18a",
+        "Value": 103.806433,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x18a",
+        "Value": 103.3240703,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x18a",
+        "Value": 103.0356482,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x18a",
+        "Value": 103.2883497,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x18a",
+        "Value": 102.5695933,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x18a",
+        "Value": 102.515578,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x18a",
+        "Value": 102.1526458,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x18a",
+        "Value": 102.4887368,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x18a",
+        "Value": 102.4947124,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x18a",
+        "Value": 101.9311426,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x18a",
+        "Value": 102.3460713,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x18a",
+        "Value": 102.4849567,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x18a",
+        "Value": 102.5711381,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x18a",
+        "Value": 103.1171378,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x18a",
+        "Value": 103.5768413,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x18a",
+        "Value": 103.5931771,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x18a",
+        "Value": 104.3410026,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x18a",
+        "Value": 104.5032324,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x18a",
+        "Value": 103.2440987,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x18a",
+        "Value": 103.9591429,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x18a",
+        "Value": 104.1276317,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x18a",
+        "Value": 104.4034419,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x18a",
+        "Value": 105.2028114,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x18a",
+        "Value": 104.8161436,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x18a",
+        "Value": 104.6145312,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x18a",
+        "Value": 105.5132513,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x18a",
+        "Value": 106.25829,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x18a",
+        "Value": 105.6376428,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x18a",
+        "Value": 106.1350312,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x18",
+        "Value": 106.1350312,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "x18",
+        "Value": 106.3217261,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x18",
+        "Value": 106.4493032,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-01-01",
+        "Series": "x18",
+        "Value": 106.6522329,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-04-01",
+        "Series": "x18",
+        "Value": 106.8867648,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-07-01",
+        "Series": "x18",
+        "Value": 107.091226,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-10-01",
+        "Series": "x18",
+        "Value": 107.312486,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-01-01",
+        "Series": "x18",
+        "Value": 107.535288,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-04-01",
+        "Series": "x18",
+        "Value": 107.7852374,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-07-01",
+        "Series": "x18",
+        "Value": 108.0461545,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-10-01",
+        "Series": "x18",
+        "Value": 108.3087773,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-01-01",
+        "Series": "x18",
+        "Value": 108.5784536,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-04-01",
+        "Series": "x18",
+        "Value": 108.8522188,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-07-01",
+        "Series": "x18",
+        "Value": 109.1264065,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-10-01",
+        "Series": "x18",
+        "Value": 109.4153452,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-01-01",
+        "Series": "x18",
+        "Value": 109.7203153,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-04-01",
+        "Series": "x18",
+        "Value": 110.0299725,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-07-01",
+        "Series": "x18",
+        "Value": 110.3434749,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-10-01",
+        "Series": "x18",
+        "Value": 110.6636973,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2023-01-01",
+        "Series": "x18",
+        "Value": 111.0029619,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2023-04-01",
+        "Series": "x18",
+        "Value": 111.3569333,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "x19a",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "x19a",
+        "Value": 100.0563015,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "x19a",
+        "Value": 100.8584698,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "x19a",
+        "Value": 101.0373121,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "x19a",
+        "Value": 101.6810581,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "x19a",
+        "Value": 101.8039568,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "x19a",
+        "Value": 102.0750975,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "x19a",
+        "Value": 102.0014928,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "x19a",
+        "Value": 102.6189799,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "x19a",
+        "Value": 103.8122047,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "x19a",
+        "Value": 103.2955325,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "x19a",
+        "Value": 103.4247491,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "x19a",
+        "Value": 103.3618306,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "x19a",
+        "Value": 102.5150921,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "x19a",
+        "Value": 102.5585062,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "x19a",
+        "Value": 102.1261414,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "x19a",
+        "Value": 102.4786702,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "x19a",
+        "Value": 102.4879764,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "x19a",
+        "Value": 101.9844907,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "x19a",
+        "Value": 102.3148331,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "x19a",
+        "Value": 102.4629743,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "x19a",
+        "Value": 102.5469466,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "x19a",
+        "Value": 103.2016964,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "x19a",
+        "Value": 103.5258836,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "x19a",
+        "Value": 103.5680469,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "x19a",
+        "Value": 104.3151634,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "x19a",
+        "Value": 104.5972234,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "x19a",
+        "Value": 103.1019052,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "x19a",
+        "Value": 103.9368384,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "x19a",
+        "Value": 104.1184214,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "x19a",
+        "Value": 104.4925294,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "x19a",
+        "Value": 105.1073087,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "x19a",
+        "Value": 104.8518525,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "x19a",
+        "Value": 104.5579295,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "x19a",
+        "Value": 106.147897,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "x19a",
+        "Value": 106.3855681,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "x19a",
+        "Value": 105.9178665,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "x19a",
+        "Value": 106.1819859,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "x19a",
+        "Value": 105.9061846,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x19a",
+        "Value": 106.1804952,
+        "Forecast": false,
+        "Real_Time": true
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "x19",
+        "Value": 106.1804952,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-01-01",
+        "Series": "x19",
+        "Value": 106.4673687,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-04-01",
+        "Series": "x19",
+        "Value": 106.7319399,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-07-01",
+        "Series": "x19",
+        "Value": 107.0269955,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-10-01",
+        "Series": "x19",
+        "Value": 107.2247111,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-01-01",
+        "Series": "x19",
+        "Value": 107.457132,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-04-01",
+        "Series": "x19",
+        "Value": 107.7293119,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-07-01",
+        "Series": "x19",
+        "Value": 108.0147862,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-10-01",
+        "Series": "x19",
+        "Value": 108.3058626,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-01-01",
+        "Series": "x19",
+        "Value": 108.6113476,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-04-01",
+        "Series": "x19",
+        "Value": 108.9228811,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-07-01",
+        "Series": "x19",
+        "Value": 109.2432884,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2021-10-01",
+        "Series": "x19",
+        "Value": 109.5780411,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-01-01",
+        "Series": "x19",
+        "Value": 109.9151368,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-04-01",
+        "Series": "x19",
+        "Value": 110.2623952,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-07-01",
+        "Series": "x19",
+        "Value": 110.6081806,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2022-10-01",
+        "Series": "x19",
+        "Value": 110.954646,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2023-01-01",
+        "Series": "x19",
+        "Value": 111.3075625,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2023-04-01",
+        "Series": "x19",
+        "Value": 111.6743813,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2023-07-01",
+        "Series": "x19",
+        "Value": 112.0368093,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "2023-10-01",
+        "Series": "x19",
+        "Value": 112.4132415,
+        "Forecast": true,
+        "Real_Time": false
+      },
+      {
+        "Date": "1997-01-01",
+        "Series": "actual",
+        "Value": 80.10642359,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "1997-04-01",
+        "Series": "actual",
+        "Value": 80.45725804,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "1997-07-01",
+        "Series": "actual",
+        "Value": 80.61698724,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "1997-10-01",
+        "Series": "actual",
+        "Value": 81.44079857,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "1998-01-01",
+        "Series": "actual",
+        "Value": 81.60709974,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "1998-04-01",
+        "Series": "actual",
+        "Value": 82.49461964,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "1998-07-01",
+        "Series": "actual",
+        "Value": 82.94005844,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "1998-10-01",
+        "Series": "actual",
+        "Value": 84.10025339,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "1999-01-01",
+        "Series": "actual",
+        "Value": 83.95917364,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "1999-04-01",
+        "Series": "actual",
+        "Value": 83.85606449,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "1999-07-01",
+        "Series": "actual",
+        "Value": 85.12518973,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "1999-10-01",
+        "Series": "actual",
+        "Value": 86.29467527,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2000-01-01",
+        "Series": "actual",
+        "Value": 88.31562793,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2000-04-01",
+        "Series": "actual",
+        "Value": 87.87739063,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2000-07-01",
+        "Series": "actual",
+        "Value": 88.00896537,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2000-10-01",
+        "Series": "actual",
+        "Value": 87.52695332,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2001-01-01",
+        "Series": "actual",
+        "Value": 89.03258286,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2001-04-01",
+        "Series": "actual",
+        "Value": 89.2269476,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2001-07-01",
+        "Series": "actual",
+        "Value": 90.01360166,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2001-10-01",
+        "Series": "actual",
+        "Value": 90.62841311,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2002-01-01",
+        "Series": "actual",
+        "Value": 91.17960975,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2002-04-01",
+        "Series": "actual",
+        "Value": 92.05432913,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2002-07-01",
+        "Series": "actual",
+        "Value": 92.23456258,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2002-10-01",
+        "Series": "actual",
+        "Value": 92.74184558,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2003-01-01",
+        "Series": "actual",
+        "Value": 93.55679836,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2003-04-01",
+        "Series": "actual",
+        "Value": 94.22588746,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2003-07-01",
+        "Series": "actual",
+        "Value": 95.15166198,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2003-10-01",
+        "Series": "actual",
+        "Value": 96.29697883,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2004-01-01",
+        "Series": "actual",
+        "Value": 95.87312388,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2004-04-01",
+        "Series": "actual",
+        "Value": 96.59246208,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2004-07-01",
+        "Series": "actual",
+        "Value": 96.83224873,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2004-10-01",
+        "Series": "actual",
+        "Value": 96.17666351,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2005-01-01",
+        "Series": "actual",
+        "Value": 97.00566197,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2005-04-01",
+        "Series": "actual",
+        "Value": 98.31417064,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2005-07-01",
+        "Series": "actual",
+        "Value": 98.94330236,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2005-10-01",
+        "Series": "actual",
+        "Value": 100.5552167,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2006-01-01",
+        "Series": "actual",
+        "Value": 100.6096152,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2006-04-01",
+        "Series": "actual",
+        "Value": 100.9414986,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2006-07-01",
+        "Series": "actual",
+        "Value": 100.8594144,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2006-10-01",
+        "Series": "actual",
+        "Value": 100.7690998,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2007-01-01",
+        "Series": "actual",
+        "Value": 101.6234482,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2007-04-01",
+        "Series": "actual",
+        "Value": 101.9332231,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2007-07-01",
+        "Series": "actual",
+        "Value": 102.500799,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2007-10-01",
+        "Series": "actual",
+        "Value": 103.242028,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2008-01-01",
+        "Series": "actual",
+        "Value": 102.5429878,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2008-04-01",
+        "Series": "actual",
+        "Value": 102.9550382,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2008-07-01",
+        "Series": "actual",
+        "Value": 101.3168917,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2008-10-01",
+        "Series": "actual",
+        "Value": 99.96861986,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-01-01",
+        "Series": "actual",
+        "Value": 100,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-04-01",
+        "Series": "actual",
+        "Value": 100.0209642,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-07-01",
+        "Series": "actual",
+        "Value": 100.7127216,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2009-10-01",
+        "Series": "actual",
+        "Value": 100.9800191,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2010-01-01",
+        "Series": "actual",
+        "Value": 101.7931729,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2010-04-01",
+        "Series": "actual",
+        "Value": 102.0896822,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2010-07-01",
+        "Series": "actual",
+        "Value": 102.4472623,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2010-10-01",
+        "Series": "actual",
+        "Value": 102.2883672,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-01-01",
+        "Series": "actual",
+        "Value": 103.043991,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-04-01",
+        "Series": "actual",
+        "Value": 104.2948258,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-07-01",
+        "Series": "actual",
+        "Value": 103.8661183,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2011-10-01",
+        "Series": "actual",
+        "Value": 104.1532776,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-01-01",
+        "Series": "actual",
+        "Value": 103.8514627,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-04-01",
+        "Series": "actual",
+        "Value": 103.1169302,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-07-01",
+        "Series": "actual",
+        "Value": 103.4591861,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2012-10-01",
+        "Series": "actual",
+        "Value": 103.0624147,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-01-01",
+        "Series": "actual",
+        "Value": 103.7240738,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-04-01",
+        "Series": "actual",
+        "Value": 104.0242947,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-07-01",
+        "Series": "actual",
+        "Value": 103.6321779,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2013-10-01",
+        "Series": "actual",
+        "Value": 103.7595434,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-01-01",
+        "Series": "actual",
+        "Value": 103.6088871,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-04-01",
+        "Series": "actual",
+        "Value": 103.4447309,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-07-01",
+        "Series": "actual",
+        "Value": 103.7166616,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2014-10-01",
+        "Series": "actual",
+        "Value": 103.6618615,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-01-01",
+        "Series": "actual",
+        "Value": 103.779816,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-04-01",
+        "Series": "actual",
+        "Value": 104.5716525,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-07-01",
+        "Series": "actual",
+        "Value": 104.8870141,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2015-10-01",
+        "Series": "actual",
+        "Value": 103.5732093,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-01-01",
+        "Series": "actual",
+        "Value": 104.3800628,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-04-01",
+        "Series": "actual",
+        "Value": 104.6050778,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-07-01",
+        "Series": "actual",
+        "Value": 104.8973275,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2016-10-01",
+        "Series": "actual",
+        "Value": 105.2924112,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-01-01",
+        "Series": "actual",
+        "Value": 105.2304297,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-04-01",
+        "Series": "actual",
+        "Value": 104.9309508,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-07-01",
+        "Series": "actual",
+        "Value": 106.3361231,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2017-10-01",
+        "Series": "actual",
+        "Value": 106.5220174,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-01-01",
+        "Series": "actual",
+        "Value": 106.0388214,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-04-01",
+        "Series": "actual",
+        "Value": 106.389334,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-07-01",
+        "Series": "actual",
+        "Value": 106.0981934,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2018-10-01",
+        "Series": "actual",
+        "Value": 106.5205274,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-01-01",
+        "Series": "actual",
+        "Value": 105.9690414,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-04-01",
+        "Series": "actual",
+        "Value": 105.9488446,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-07-01",
+        "Series": "actual",
+        "Value": 106.4890294,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2019-10-01",
+        "Series": "actual",
+        "Value": 106.7455358,
+        "Forecast": false,
+        "Real_Time": false
+      },
+      {
+        "Date": "2020-01-01",
+        "Series": "actual",
+        "Value": 105.3784437,
+        "Forecast": false,
+        "Real_Time": false
+      }
+    ]
+  },
+  "width": 500,
+  "height": 300,
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 0.5},
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "format": "%Y",
+            "grid": false,
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"domainMin": 80, "domainMax": 120},
+          "axis": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "format": "",
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "title": null,
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -18
+          }
+        },
+        "color": {
+          "field": "Series",
+          "scale": {"range": ["rgb(110,177,222)"]},
+          "legend": null
+        }
+      },
+      "transform": [{"filter": "datum.Forecast"}]
+    },
+    {
+      "mark": {"type": "line", "strokeWidth": 0.5},
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "format": "%Y",
+            "grid": false,
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"domainMin": 80, "domainMax": 120},
+          "axis": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "format": "",
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "title": null,
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -18
+          }
+        },
+        "color": {"value": "purple"},
+        "detail": {"field": "Series", "type": "nominal"}
+      },
+      "transform": [{"filter": "datum.Real_Time"}]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "size": 11,
+        "fontWeight": "normal",
+        "color": "#676A86"
+      },
+      "data": {"values": []},
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "format": "%Y",
+            "grid": false,
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"domainMin": 80, "domainMax": 120},
+          "axis": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "format": "",
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "title": null,
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -18
+          }
+        },
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "size": 11,
+        "fontWeight": "normal",
+        "color": "#676A86"
+      },
+      "data": {
+        "values": [
+          {
+            "Date": "2019-12-01",
+            "Series": "actual",
+            "Value": 105.5,
+            "label": "Productivity Outcomes"
+          },
+          {
+            "Date": "2019-09-24",
+            "Series": "fit",
+            "Value": 116.5,
+            "label": "OBR Forecasts"
+          },
+          {
+            "Date": "2015-08-24",
+            "Series": "real",
+            "Value": 102,
+            "label": "'Real Time' Data"
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "Date",
+          "type": "temporal",
+          "axis": {
+            "format": "%Y",
+            "grid": false,
+            "domainColor": "#919ae4",
+            "domainOpacity": 0.5,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15
+          }
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"domainMin": 80, "domainMax": 120},
+          "axis": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "format": "",
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "title": null,
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -18
+          }
+        },
+        "color": {
+          "legend": null,
+          "condition": [
+            {"value": "rgb(110,177,222)", "test": "datum.Series == 'fit'"},
+            {"value": "rgb(40,40,40)", "test": "datum.Series == 'actual'"},
+            {"value": "purple", "test": "datum.Series == 'real'"}
+          ]
+        },
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "layer": [
+        {
+          "mark": {"type": "line"},
+          "encoding": {
+            "x": {
+              "field": "Date",
+              "type": "temporal",
+              "axis": {
+                "format": "%Y",
+                "grid": false,
+                "domainColor": "#919ae4",
+                "domainOpacity": 0.5,
+                "labelAngle": 0,
+                "labelColor": "#676A86",
+                "labelOpacity": 0.7,
+                "orient": "bottom",
+                "tickColor": "#676A86",
+                "tickCount": 10,
+                "tickOpacity": 0.5,
+                "title": "",
+                "titleAlign": "center",
+                "titleAnchor": "middle",
+                "titleColor": "#676A86",
+                "titleFontSize": 12,
+                "titleOpacity": 0.8,
+                "titleX": 207,
+                "titleY": -15
+              }
+            },
+            "y": {
+              "field": "Value",
+              "type": "quantitative",
+              "scale": {"domainMin": 80, "domainMax": 120},
+              "axis": {
+                "domainColor": "#676A86",
+                "domainOpacity": 0.5,
+                "format": "",
+                "gridColor": "#676A86",
+                "gridDash": [1, 5],
+                "gridOpacity": 0.5,
+                "labelColor": "#676A86",
+                "labelOpacity": 0.7,
+                "labelPadding": 5,
+                "tickColor": "#676A86",
+                "tickCount": 8,
+                "tickOpacity": 0.5,
+                "ticks": false,
+                "title": null,
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#676A86",
+                "titleFontSize": 12,
+                "titleOpacity": 0.8,
+                "titleX": 0,
+                "titleY": -18
+              }
+            },
+            "color": {"value": "darkgray"},
+            "strokeDash": {"field": "Series", "legend": null}
+          },
+          "transform": [
+            {"filter": "datum.Series == 'actual' | datum.Series == 'fit'"}
+          ]
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontWeight": "lighter",
+        "align": "left",
+        "color": "#676A86",
+        "fontSize": 11
+      },
+      "data": {"values": [{"Value": 0}]},
+      "encoding": {
+        "x": {"value": 1},
+        "y": {"value": -10}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "image": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/main/guidelines/logos/eco-icon-dark.png"
+          }
+        ]
+      },
+      "mark": {
+        "type": "image",
+        "align": "right",
+        "baseline": "top",
+        "height": 40,
+        "opacity": 0.5,
+        "width": 40,
+        "xOffset": 105,
+        "yOffset": -33
+      },
+      "encoding": {
+        "x": {"value": 450},
+        "y": {"value": -10},
+        "url": {"field": "image", "type": "nominal"}
+      }
+    }
+  ]
+}

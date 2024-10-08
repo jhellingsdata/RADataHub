@@ -1,0 +1,401 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "hconcat": [
+    {
+      "mark": {"type": "bar", "width": 50},
+      "encoding": {
+        "color": {
+          "field": "entitlement",
+          "legend": {"orient": "top"},
+          "scale": {
+            "domain": [
+              "Disadvantage only",
+              "Both",
+              "Work-based only",
+              "Not eligible"
+            ],
+            "range": ["#e8647c", "#f4c245", "#0d98ba", "#c0c5ca"]
+          },
+          "type": "nominal"
+        },
+        "order": {
+          "field": "colour_order",
+          "sort": "descending",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "quintile", "title": "Income quintile", "type": "ordinal"},
+          {"field": "entitlement", "title": "Entitlement", "type": "nominal"},
+          {
+            "field": "share",
+            "format": ".0%",
+            "title": "Eligibility",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "quintile", "type": "ordinal"},
+        "y": {
+          "axis": {"format": "%"},
+          "field": "share",
+          "scale": {"domain": [0, 1]},
+          "type": "quantitative"
+        }
+      },
+      "height": 280,
+      "transform": [{"filter": "(datum.quintile === 'Not in paid work')"}],
+      "width": 70
+    },
+    {
+      "mark": {"type": "bar", "width": 50},
+      "encoding": {
+        "color": {
+          "field": "entitlement",
+          "scale": {
+            "domain": [
+              "Disadvantage only",
+              "Both",
+              "Work-based only",
+              "Not eligible"
+            ],
+            "range": ["#e8647c", "#f4c245", "#0d98ba", "#c0c5ca"]
+          },
+          "type": "nominal"
+        },
+        "order": {
+          "field": "colour_order",
+          "sort": "descending",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "quintile", "title": "Income quintile", "type": "ordinal"},
+          {"field": "entitlement", "title": "Entitlement", "type": "nominal"},
+          {
+            "field": "share",
+            "format": ".0%",
+            "title": "Eligibility",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "quintile",
+          "sort": {"field": "order", "order": "ascending"},
+          "type": "ordinal"
+        },
+        "y": {
+          "axis": {"domain": false, "labels": false},
+          "field": "share",
+          "scale": {"domain": [0, 1]},
+          "type": "quantitative"
+        }
+      },
+      "height": 280,
+      "transform": [{"filter": "(datum.quintile !== 'Not in paid work')"}],
+      "width": 350
+    }
+  ],
+  "data": {"name": "data-46a3b95566e0e5e3a1132795f2761a25"},
+  "resolve": {"axis": {"y": "shared"}, "scale": {"y": "shared"}},
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-46a3b95566e0e5e3a1132795f2761a25": [
+      {
+        "quintile": "Not in paid work",
+        "offset": 0,
+        "order": 0,
+        "entitlement": "Disadvantage only",
+        "share": 0.8508558100000001,
+        "colour": "#FFC857",
+        "colour_order": 4
+      },
+      {
+        "quintile": "Not in paid work",
+        "offset": 0,
+        "order": 0,
+        "entitlement": "Both",
+        "share": null,
+        "colour": "#FF6F61",
+        "colour_order": 3
+      },
+      {
+        "quintile": "Not in paid work",
+        "offset": 0,
+        "order": 0,
+        "entitlement": "Work-based only",
+        "share": null,
+        "colour": "#6A0572",
+        "colour_order": 2
+      },
+      {
+        "quintile": "Not in paid work",
+        "offset": 0,
+        "order": 0,
+        "entitlement": "Not eligible",
+        "share": 0.14914419,
+        "colour": "#3C1053",
+        "colour_order": 1
+      },
+      {
+        "quintile": "Poorest",
+        "offset": 1,
+        "order": 1,
+        "entitlement": "Disadvantage only",
+        "share": 0.49479337,
+        "colour": "#FFC857",
+        "colour_order": 4
+      },
+      {
+        "quintile": "Poorest",
+        "offset": 1,
+        "order": 1,
+        "entitlement": "Both",
+        "share": 0.21402024,
+        "colour": "#FF6F61",
+        "colour_order": 3
+      },
+      {
+        "quintile": "Poorest",
+        "offset": 1,
+        "order": 1,
+        "entitlement": "Work-based only",
+        "share": 0.07972852999999999,
+        "colour": "#6A0572",
+        "colour_order": 2
+      },
+      {
+        "quintile": "Poorest",
+        "offset": 1,
+        "order": 1,
+        "entitlement": "Not eligible",
+        "share": 0.21145786,
+        "colour": "#3C1053",
+        "colour_order": 1
+      },
+      {
+        "quintile": "2nd",
+        "offset": 1,
+        "order": 2,
+        "entitlement": "Disadvantage only",
+        "share": 0.11278515,
+        "colour": "#FFC857",
+        "colour_order": 4
+      },
+      {
+        "quintile": "2nd",
+        "offset": 1,
+        "order": 2,
+        "entitlement": "Both",
+        "share": 0.082995787,
+        "colour": "#FF6F61",
+        "colour_order": 3
+      },
+      {
+        "quintile": "2nd",
+        "offset": 1,
+        "order": 2,
+        "entitlement": "Work-based only",
+        "share": 0.3680449,
+        "colour": "#6A0572",
+        "colour_order": 2
+      },
+      {
+        "quintile": "2nd",
+        "offset": 1,
+        "order": 2,
+        "entitlement": "Not eligible",
+        "share": 0.43617413,
+        "colour": "#3C1053",
+        "colour_order": 1
+      },
+      {
+        "quintile": "3rd",
+        "offset": 1,
+        "order": 3,
+        "entitlement": "Disadvantage only",
+        "share": 0.028774359,
+        "colour": "#FFC857",
+        "colour_order": 4
+      },
+      {
+        "quintile": "3rd",
+        "offset": 1,
+        "order": 3,
+        "entitlement": "Both",
+        "share": 0.015140267,
+        "colour": "#FF6F61",
+        "colour_order": 3
+      },
+      {
+        "quintile": "3rd",
+        "offset": 1,
+        "order": 3,
+        "entitlement": "Work-based only",
+        "share": 0.6690128,
+        "colour": "#6A0572",
+        "colour_order": 2
+      },
+      {
+        "quintile": "3rd",
+        "offset": 1,
+        "order": 3,
+        "entitlement": "Not eligible",
+        "share": 0.2870726,
+        "colour": "#3C1053",
+        "colour_order": 1
+      },
+      {
+        "quintile": "4th",
+        "offset": 1,
+        "order": 4,
+        "entitlement": "Disadvantage only",
+        "share": null,
+        "colour": "#FFC857",
+        "colour_order": 4
+      },
+      {
+        "quintile": "4th",
+        "offset": 1,
+        "order": 4,
+        "entitlement": "Both",
+        "share": null,
+        "colour": "#FF6F61",
+        "colour_order": 3
+      },
+      {
+        "quintile": "4th",
+        "offset": 1,
+        "order": 4,
+        "entitlement": "Work-based only",
+        "share": 0.6356471,
+        "colour": "#6A0572",
+        "colour_order": 2
+      },
+      {
+        "quintile": "4th",
+        "offset": 1,
+        "order": 4,
+        "entitlement": "Not eligible",
+        "share": 0.36435287000000005,
+        "colour": "#3C1053",
+        "colour_order": 1
+      },
+      {
+        "quintile": "Richest",
+        "offset": 1,
+        "order": 5,
+        "entitlement": "Disadvantage only",
+        "share": null,
+        "colour": "#FFC857",
+        "colour_order": 4
+      },
+      {
+        "quintile": "Richest",
+        "offset": 1,
+        "order": 5,
+        "entitlement": "Both",
+        "share": null,
+        "colour": "#FF6F61",
+        "colour_order": 3
+      },
+      {
+        "quintile": "Richest",
+        "offset": 1,
+        "order": 5,
+        "entitlement": "Work-based only",
+        "share": 0.704492,
+        "colour": "#6A0572",
+        "colour_order": 2
+      },
+      {
+        "quintile": "Richest",
+        "offset": 1,
+        "order": 5,
+        "entitlement": "Not eligible",
+        "share": 0.29550798,
+        "colour": "#3C1053",
+        "colour_order": 1
+      }
+    ]
+  }
+}

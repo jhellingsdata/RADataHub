@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/N30_C1a-formatted.csv"
+  },
+  "width": {"step": 2},
+  "height": 300,
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "Year",
+      "type": "nominal",
+      "spacing": -10,
+      "title": null,
+      "sort": []
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": null,
+      "scale": {"domain": [0, 10]},
+      "axis": {"grid": false}
+    },
+    "x": {
+      "field": "Journal",
+      "type": "nominal",
+      "axis": {"title": "", "labelColor": "white", "ticks": false},
+      "sort": "-y"
+    },
+    "color": {
+      "field": "Journal",
+      "scale": {"scheme": "yellowgreenblue"},
+      "legend": {"orient": "right"}
+    },
+    "tooltip": [
+      {"field": "Year", "type": "nominal"},
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Number of environment articles"
+      },
+      {"field": "Journal", "type": "nominal"}
+    ]
+  },
+  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
+}

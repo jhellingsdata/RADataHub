@@ -1,0 +1,1644 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {"line": {"interpolate": "monotone"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": false,
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "color": {"field": "Country", "legend": null, "type": "nominal"},
+        "x": {"axis": [], "field": "Date", "type": "temporal"},
+        "y": {
+          "axis": {
+            "format": "%",
+            "title": "Gross fixed capital formation (% of GDP)"
+          },
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 3,
+        "dy": {"expr": "datum.Country == 'US' ? 5  : 0"}
+      },
+      "encoding": {
+        "color": {"field": "Country", "legend": null, "type": "nominal"},
+        "text": {"field": "Country", "type": "nominal"},
+        "x": {"axis": [], "field": "Date", "type": "temporal"},
+        "y": {
+          "axis": {
+            "format": "%",
+            "title": "Gross fixed capital formation (% of GDP)"
+          },
+          "field": "Value",
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"filter": "year(datum.Date) == 2023"}]
+    }
+  ],
+  "data": {"name": "data-9993651d943c48749d5b41e6f59d310c"},
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-9993651d943c48749d5b41e6f59d310c": [
+      {
+        "Year": 1960,
+        "Country": "UK",
+        "Value": 0.17800000000000002,
+        "Date": "1960-01-01T00:00:00"
+      },
+      {
+        "Year": 1961,
+        "Country": "UK",
+        "Value": 0.179,
+        "Date": "1961-01-01T00:00:00"
+      },
+      {
+        "Year": 1962,
+        "Country": "UK",
+        "Value": 0.182,
+        "Date": "1962-01-01T00:00:00"
+      },
+      {
+        "Year": 1963,
+        "Country": "UK",
+        "Value": 0.18600000000000003,
+        "Date": "1963-01-01T00:00:00"
+      },
+      {
+        "Year": 1964,
+        "Country": "UK",
+        "Value": 0.18899999999999997,
+        "Date": "1964-01-01T00:00:00"
+      },
+      {
+        "Year": 1965,
+        "Country": "UK",
+        "Value": 0.193,
+        "Date": "1965-01-01T00:00:00"
+      },
+      {
+        "Year": 1966,
+        "Country": "UK",
+        "Value": 0.19899999999999998,
+        "Date": "1966-01-01T00:00:00"
+      },
+      {
+        "Year": 1967,
+        "Country": "UK",
+        "Value": 0.2,
+        "Date": "1967-01-01T00:00:00"
+      },
+      {
+        "Year": 1968,
+        "Country": "UK",
+        "Value": 0.205,
+        "Date": "1968-01-01T00:00:00"
+      },
+      {
+        "Year": 1969,
+        "Country": "UK",
+        "Value": 0.21,
+        "Date": "1969-01-01T00:00:00"
+      },
+      {
+        "Year": 1970,
+        "Country": "UK",
+        "Value": 0.214,
+        "Date": "1970-01-01T00:00:00"
+      },
+      {
+        "Year": 1971,
+        "Country": "UK",
+        "Value": 0.218,
+        "Date": "1971-01-01T00:00:00"
+      },
+      {
+        "Year": 1972,
+        "Country": "UK",
+        "Value": 0.223,
+        "Date": "1972-01-01T00:00:00"
+      },
+      {
+        "Year": 1973,
+        "Country": "UK",
+        "Value": 0.22,
+        "Date": "1973-01-01T00:00:00"
+      },
+      {
+        "Year": 1974,
+        "Country": "UK",
+        "Value": 0.215,
+        "Date": "1974-01-01T00:00:00"
+      },
+      {
+        "Year": 1975,
+        "Country": "UK",
+        "Value": 0.21,
+        "Date": "1975-01-01T00:00:00"
+      },
+      {
+        "Year": 1976,
+        "Country": "UK",
+        "Value": 0.205,
+        "Date": "1976-01-01T00:00:00"
+      },
+      {
+        "Year": 1977,
+        "Country": "UK",
+        "Value": 0.201,
+        "Date": "1977-01-01T00:00:00"
+      },
+      {
+        "Year": 1978,
+        "Country": "UK",
+        "Value": 0.2,
+        "Date": "1978-01-01T00:00:00"
+      },
+      {
+        "Year": 1979,
+        "Country": "UK",
+        "Value": 0.198,
+        "Date": "1979-01-01T00:00:00"
+      },
+      {
+        "Year": 1980,
+        "Country": "UK",
+        "Value": 0.196,
+        "Date": "1980-01-01T00:00:00"
+      },
+      {
+        "Year": 1981,
+        "Country": "UK",
+        "Value": 0.193,
+        "Date": "1981-01-01T00:00:00"
+      },
+      {
+        "Year": 1982,
+        "Country": "UK",
+        "Value": 0.191,
+        "Date": "1982-01-01T00:00:00"
+      },
+      {
+        "Year": 1983,
+        "Country": "UK",
+        "Value": 0.191,
+        "Date": "1983-01-01T00:00:00"
+      },
+      {
+        "Year": 1984,
+        "Country": "UK",
+        "Value": 0.193,
+        "Date": "1984-01-01T00:00:00"
+      },
+      {
+        "Year": 1985,
+        "Country": "UK",
+        "Value": 0.198,
+        "Date": "1985-01-01T00:00:00"
+      },
+      {
+        "Year": 1986,
+        "Country": "UK",
+        "Value": 0.20600000000000002,
+        "Date": "1986-01-01T00:00:00"
+      },
+      {
+        "Year": 1987,
+        "Country": "UK",
+        "Value": 0.215,
+        "Date": "1987-01-01T00:00:00"
+      },
+      {
+        "Year": 1988,
+        "Country": "UK",
+        "Value": 0.222,
+        "Date": "1988-01-01T00:00:00"
+      },
+      {
+        "Year": 1989,
+        "Country": "UK",
+        "Value": 0.225,
+        "Date": "1989-01-01T00:00:00"
+      },
+      {
+        "Year": 1990,
+        "Country": "UK",
+        "Value": 0.221,
+        "Date": "1990-01-01T00:00:00"
+      },
+      {
+        "Year": 1991,
+        "Country": "UK",
+        "Value": 0.213,
+        "Date": "1991-01-01T00:00:00"
+      },
+      {
+        "Year": 1992,
+        "Country": "UK",
+        "Value": 0.201,
+        "Date": "1992-01-01T00:00:00"
+      },
+      {
+        "Year": 1993,
+        "Country": "UK",
+        "Value": 0.19,
+        "Date": "1993-01-01T00:00:00"
+      },
+      {
+        "Year": 1994,
+        "Country": "UK",
+        "Value": 0.18600000000000003,
+        "Date": "1994-01-01T00:00:00"
+      },
+      {
+        "Year": 1995,
+        "Country": "UK",
+        "Value": 0.18100000000000002,
+        "Date": "1995-01-01T00:00:00"
+      },
+      {
+        "Year": 1996,
+        "Country": "UK",
+        "Value": 0.179,
+        "Date": "1996-01-01T00:00:00"
+      },
+      {
+        "Year": 1997,
+        "Country": "UK",
+        "Value": 0.177,
+        "Date": "1997-01-01T00:00:00"
+      },
+      {
+        "Year": 1998,
+        "Country": "UK",
+        "Value": 0.17600000000000002,
+        "Date": "1998-01-01T00:00:00"
+      },
+      {
+        "Year": 1999,
+        "Country": "UK",
+        "Value": 0.174,
+        "Date": "1999-01-01T00:00:00"
+      },
+      {
+        "Year": 2000,
+        "Country": "UK",
+        "Value": 0.175,
+        "Date": "2000-01-01T00:00:00"
+      },
+      {
+        "Year": 2001,
+        "Country": "UK",
+        "Value": 0.175,
+        "Date": "2001-01-01T00:00:00"
+      },
+      {
+        "Year": 2002,
+        "Country": "UK",
+        "Value": 0.175,
+        "Date": "2002-01-01T00:00:00"
+      },
+      {
+        "Year": 2003,
+        "Country": "UK",
+        "Value": 0.174,
+        "Date": "2003-01-01T00:00:00"
+      },
+      {
+        "Year": 2004,
+        "Country": "UK",
+        "Value": 0.174,
+        "Date": "2004-01-01T00:00:00"
+      },
+      {
+        "Year": 2005,
+        "Country": "UK",
+        "Value": 0.175,
+        "Date": "2005-01-01T00:00:00"
+      },
+      {
+        "Year": 2006,
+        "Country": "UK",
+        "Value": 0.175,
+        "Date": "2006-01-01T00:00:00"
+      },
+      {
+        "Year": 2007,
+        "Country": "UK",
+        "Value": 0.17300000000000001,
+        "Date": "2007-01-01T00:00:00"
+      },
+      {
+        "Year": 2008,
+        "Country": "UK",
+        "Value": 0.16899999999999998,
+        "Date": "2008-01-01T00:00:00"
+      },
+      {
+        "Year": 2009,
+        "Country": "UK",
+        "Value": 0.166,
+        "Date": "2009-01-01T00:00:00"
+      },
+      {
+        "Year": 2010,
+        "Country": "UK",
+        "Value": 0.161,
+        "Date": "2010-01-01T00:00:00"
+      },
+      {
+        "Year": 2011,
+        "Country": "UK",
+        "Value": 0.158,
+        "Date": "2011-01-01T00:00:00"
+      },
+      {
+        "Year": 2012,
+        "Country": "UK",
+        "Value": 0.159,
+        "Date": "2012-01-01T00:00:00"
+      },
+      {
+        "Year": 2013,
+        "Country": "UK",
+        "Value": 0.162,
+        "Date": "2013-01-01T00:00:00"
+      },
+      {
+        "Year": 2014,
+        "Country": "UK",
+        "Value": 0.166,
+        "Date": "2014-01-01T00:00:00"
+      },
+      {
+        "Year": 2015,
+        "Country": "UK",
+        "Value": 0.17,
+        "Date": "2015-01-01T00:00:00"
+      },
+      {
+        "Year": 2016,
+        "Country": "UK",
+        "Value": 0.174,
+        "Date": "2016-01-01T00:00:00"
+      },
+      {
+        "Year": 2017,
+        "Country": "UK",
+        "Value": 0.177,
+        "Date": "2017-01-01T00:00:00"
+      },
+      {
+        "Year": 2018,
+        "Country": "UK",
+        "Value": 0.17600000000000002,
+        "Date": "2018-01-01T00:00:00"
+      },
+      {
+        "Year": 2019,
+        "Country": "UK",
+        "Value": 0.175,
+        "Date": "2019-01-01T00:00:00"
+      },
+      {
+        "Year": 2020,
+        "Country": "UK",
+        "Value": 0.17300000000000001,
+        "Date": "2020-01-01T00:00:00"
+      },
+      {
+        "Year": 2021,
+        "Country": "UK",
+        "Value": 0.172,
+        "Date": "2021-01-01T00:00:00"
+      },
+      {
+        "Year": 2022,
+        "Country": "UK",
+        "Value": 0.17,
+        "Date": "2022-01-01T00:00:00"
+      },
+      {
+        "Year": 2023,
+        "Country": "UK",
+        "Value": 0.17,
+        "Date": "2023-01-01T00:00:00"
+      },
+      {
+        "Year": 1960,
+        "Country": "US",
+        "Value": 0.22,
+        "Date": "1960-01-01T00:00:00"
+      },
+      {
+        "Year": 1961,
+        "Country": "US",
+        "Value": 0.221,
+        "Date": "1961-01-01T00:00:00"
+      },
+      {
+        "Year": 1962,
+        "Country": "US",
+        "Value": 0.222,
+        "Date": "1962-01-01T00:00:00"
+      },
+      {
+        "Year": 1963,
+        "Country": "US",
+        "Value": 0.223,
+        "Date": "1963-01-01T00:00:00"
+      },
+      {
+        "Year": 1964,
+        "Country": "US",
+        "Value": 0.22399999999999998,
+        "Date": "1964-01-01T00:00:00"
+      },
+      {
+        "Year": 1965,
+        "Country": "US",
+        "Value": 0.22399999999999998,
+        "Date": "1965-01-01T00:00:00"
+      },
+      {
+        "Year": 1966,
+        "Country": "US",
+        "Value": 0.22399999999999998,
+        "Date": "1966-01-01T00:00:00"
+      },
+      {
+        "Year": 1967,
+        "Country": "US",
+        "Value": 0.223,
+        "Date": "1967-01-01T00:00:00"
+      },
+      {
+        "Year": 1968,
+        "Country": "US",
+        "Value": 0.22,
+        "Date": "1968-01-01T00:00:00"
+      },
+      {
+        "Year": 1969,
+        "Country": "US",
+        "Value": 0.217,
+        "Date": "1969-01-01T00:00:00"
+      },
+      {
+        "Year": 1970,
+        "Country": "US",
+        "Value": 0.217,
+        "Date": "1970-01-01T00:00:00"
+      },
+      {
+        "Year": 1971,
+        "Country": "US",
+        "Value": 0.217,
+        "Date": "1971-01-01T00:00:00"
+      },
+      {
+        "Year": 1972,
+        "Country": "US",
+        "Value": 0.217,
+        "Date": "1972-01-01T00:00:00"
+      },
+      {
+        "Year": 1973,
+        "Country": "US",
+        "Value": 0.215,
+        "Date": "1973-01-01T00:00:00"
+      },
+      {
+        "Year": 1974,
+        "Country": "US",
+        "Value": 0.215,
+        "Date": "1974-01-01T00:00:00"
+      },
+      {
+        "Year": 1975,
+        "Country": "US",
+        "Value": 0.21600000000000003,
+        "Date": "1975-01-01T00:00:00"
+      },
+      {
+        "Year": 1976,
+        "Country": "US",
+        "Value": 0.22,
+        "Date": "1976-01-01T00:00:00"
+      },
+      {
+        "Year": 1977,
+        "Country": "US",
+        "Value": 0.225,
+        "Date": "1977-01-01T00:00:00"
+      },
+      {
+        "Year": 1978,
+        "Country": "US",
+        "Value": 0.231,
+        "Date": "1978-01-01T00:00:00"
+      },
+      {
+        "Year": 1979,
+        "Country": "US",
+        "Value": 0.235,
+        "Date": "1979-01-01T00:00:00"
+      },
+      {
+        "Year": 1980,
+        "Country": "US",
+        "Value": 0.235,
+        "Date": "1980-01-01T00:00:00"
+      },
+      {
+        "Year": 1981,
+        "Country": "US",
+        "Value": 0.23199999999999998,
+        "Date": "1981-01-01T00:00:00"
+      },
+      {
+        "Year": 1982,
+        "Country": "US",
+        "Value": 0.231,
+        "Date": "1982-01-01T00:00:00"
+      },
+      {
+        "Year": 1983,
+        "Country": "US",
+        "Value": 0.231,
+        "Date": "1983-01-01T00:00:00"
+      },
+      {
+        "Year": 1984,
+        "Country": "US",
+        "Value": 0.231,
+        "Date": "1984-01-01T00:00:00"
+      },
+      {
+        "Year": 1985,
+        "Country": "US",
+        "Value": 0.23199999999999998,
+        "Date": "1985-01-01T00:00:00"
+      },
+      {
+        "Year": 1986,
+        "Country": "US",
+        "Value": 0.233,
+        "Date": "1986-01-01T00:00:00"
+      },
+      {
+        "Year": 1987,
+        "Country": "US",
+        "Value": 0.23,
+        "Date": "1987-01-01T00:00:00"
+      },
+      {
+        "Year": 1988,
+        "Country": "US",
+        "Value": 0.225,
+        "Date": "1988-01-01T00:00:00"
+      },
+      {
+        "Year": 1989,
+        "Country": "US",
+        "Value": 0.218,
+        "Date": "1989-01-01T00:00:00"
+      },
+      {
+        "Year": 1990,
+        "Country": "US",
+        "Value": 0.21100000000000002,
+        "Date": "1990-01-01T00:00:00"
+      },
+      {
+        "Year": 1991,
+        "Country": "US",
+        "Value": 0.207,
+        "Date": "1991-01-01T00:00:00"
+      },
+      {
+        "Year": 1992,
+        "Country": "US",
+        "Value": 0.203,
+        "Date": "1992-01-01T00:00:00"
+      },
+      {
+        "Year": 1993,
+        "Country": "US",
+        "Value": 0.203,
+        "Date": "1993-01-01T00:00:00"
+      },
+      {
+        "Year": 1994,
+        "Country": "US",
+        "Value": 0.205,
+        "Date": "1994-01-01T00:00:00"
+      },
+      {
+        "Year": 1995,
+        "Country": "US",
+        "Value": 0.209,
+        "Date": "1995-01-01T00:00:00"
+      },
+      {
+        "Year": 1996,
+        "Country": "US",
+        "Value": 0.213,
+        "Date": "1996-01-01T00:00:00"
+      },
+      {
+        "Year": 1997,
+        "Country": "US",
+        "Value": 0.218,
+        "Date": "1997-01-01T00:00:00"
+      },
+      {
+        "Year": 1998,
+        "Country": "US",
+        "Value": 0.222,
+        "Date": "1998-01-01T00:00:00"
+      },
+      {
+        "Year": 1999,
+        "Country": "US",
+        "Value": 0.225,
+        "Date": "1999-01-01T00:00:00"
+      },
+      {
+        "Year": 2000,
+        "Country": "US",
+        "Value": 0.225,
+        "Date": "2000-01-01T00:00:00"
+      },
+      {
+        "Year": 2001,
+        "Country": "US",
+        "Value": 0.223,
+        "Date": "2001-01-01T00:00:00"
+      },
+      {
+        "Year": 2002,
+        "Country": "US",
+        "Value": 0.222,
+        "Date": "2002-01-01T00:00:00"
+      },
+      {
+        "Year": 2003,
+        "Country": "US",
+        "Value": 0.222,
+        "Date": "2003-01-01T00:00:00"
+      },
+      {
+        "Year": 2004,
+        "Country": "US",
+        "Value": 0.223,
+        "Date": "2004-01-01T00:00:00"
+      },
+      {
+        "Year": 2005,
+        "Country": "US",
+        "Value": 0.22399999999999998,
+        "Date": "2005-01-01T00:00:00"
+      },
+      {
+        "Year": 2006,
+        "Country": "US",
+        "Value": 0.223,
+        "Date": "2006-01-01T00:00:00"
+      },
+      {
+        "Year": 2007,
+        "Country": "US",
+        "Value": 0.217,
+        "Date": "2007-01-01T00:00:00"
+      },
+      {
+        "Year": 2008,
+        "Country": "US",
+        "Value": 0.207,
+        "Date": "2008-01-01T00:00:00"
+      },
+      {
+        "Year": 2009,
+        "Country": "US",
+        "Value": 0.19899999999999998,
+        "Date": "2009-01-01T00:00:00"
+      },
+      {
+        "Year": 2010,
+        "Country": "US",
+        "Value": 0.193,
+        "Date": "2010-01-01T00:00:00"
+      },
+      {
+        "Year": 2011,
+        "Country": "US",
+        "Value": 0.19,
+        "Date": "2011-01-01T00:00:00"
+      },
+      {
+        "Year": 2012,
+        "Country": "US",
+        "Value": 0.193,
+        "Date": "2012-01-01T00:00:00"
+      },
+      {
+        "Year": 2013,
+        "Country": "US",
+        "Value": 0.19699999999999998,
+        "Date": "2013-01-01T00:00:00"
+      },
+      {
+        "Year": 2014,
+        "Country": "US",
+        "Value": 0.201,
+        "Date": "2014-01-01T00:00:00"
+      },
+      {
+        "Year": 2015,
+        "Country": "US",
+        "Value": 0.203,
+        "Date": "2015-01-01T00:00:00"
+      },
+      {
+        "Year": 2016,
+        "Country": "US",
+        "Value": 0.205,
+        "Date": "2016-01-01T00:00:00"
+      },
+      {
+        "Year": 2017,
+        "Country": "US",
+        "Value": 0.207,
+        "Date": "2017-01-01T00:00:00"
+      },
+      {
+        "Year": 2018,
+        "Country": "US",
+        "Value": 0.209,
+        "Date": "2018-01-01T00:00:00"
+      },
+      {
+        "Year": 2019,
+        "Country": "US",
+        "Value": 0.21100000000000002,
+        "Date": "2019-01-01T00:00:00"
+      },
+      {
+        "Year": 2020,
+        "Country": "US",
+        "Value": 0.213,
+        "Date": "2020-01-01T00:00:00"
+      },
+      {
+        "Year": 2021,
+        "Country": "US",
+        "Value": 0.215,
+        "Date": "2021-01-01T00:00:00"
+      },
+      {
+        "Year": 2022,
+        "Country": "US",
+        "Value": 0.21600000000000003,
+        "Date": "2022-01-01T00:00:00"
+      },
+      {
+        "Year": 2023,
+        "Country": "US",
+        "Value": 0.21600000000000003,
+        "Date": "2023-01-01T00:00:00"
+      },
+      {
+        "Year": 1960,
+        "Country": "France",
+        "Value": 0.23399999999999999,
+        "Date": "1960-01-01T00:00:00"
+      },
+      {
+        "Year": 1961,
+        "Country": "France",
+        "Value": 0.237,
+        "Date": "1961-01-01T00:00:00"
+      },
+      {
+        "Year": 1962,
+        "Country": "France",
+        "Value": 0.24,
+        "Date": "1962-01-01T00:00:00"
+      },
+      {
+        "Year": 1963,
+        "Country": "France",
+        "Value": 0.247,
+        "Date": "1963-01-01T00:00:00"
+      },
+      {
+        "Year": 1964,
+        "Country": "France",
+        "Value": 0.251,
+        "Date": "1964-01-01T00:00:00"
+      },
+      {
+        "Year": 1965,
+        "Country": "France",
+        "Value": 0.257,
+        "Date": "1965-01-01T00:00:00"
+      },
+      {
+        "Year": 1966,
+        "Country": "France",
+        "Value": 0.261,
+        "Date": "1966-01-01T00:00:00"
+      },
+      {
+        "Year": 1967,
+        "Country": "France",
+        "Value": 0.262,
+        "Date": "1967-01-01T00:00:00"
+      },
+      {
+        "Year": 1968,
+        "Country": "France",
+        "Value": 0.261,
+        "Date": "1968-01-01T00:00:00"
+      },
+      {
+        "Year": 1969,
+        "Country": "France",
+        "Value": 0.261,
+        "Date": "1969-01-01T00:00:00"
+      },
+      {
+        "Year": 1970,
+        "Country": "France",
+        "Value": 0.26,
+        "Date": "1970-01-01T00:00:00"
+      },
+      {
+        "Year": 1971,
+        "Country": "France",
+        "Value": 0.26,
+        "Date": "1971-01-01T00:00:00"
+      },
+      {
+        "Year": 1972,
+        "Country": "France",
+        "Value": 0.261,
+        "Date": "1972-01-01T00:00:00"
+      },
+      {
+        "Year": 1973,
+        "Country": "France",
+        "Value": 0.261,
+        "Date": "1973-01-01T00:00:00"
+      },
+      {
+        "Year": 1974,
+        "Country": "France",
+        "Value": 0.259,
+        "Date": "1974-01-01T00:00:00"
+      },
+      {
+        "Year": 1975,
+        "Country": "France",
+        "Value": 0.255,
+        "Date": "1975-01-01T00:00:00"
+      },
+      {
+        "Year": 1976,
+        "Country": "France",
+        "Value": 0.25,
+        "Date": "1976-01-01T00:00:00"
+      },
+      {
+        "Year": 1977,
+        "Country": "France",
+        "Value": 0.244,
+        "Date": "1977-01-01T00:00:00"
+      },
+      {
+        "Year": 1978,
+        "Country": "France",
+        "Value": 0.242,
+        "Date": "1978-01-01T00:00:00"
+      },
+      {
+        "Year": 1979,
+        "Country": "France",
+        "Value": 0.239,
+        "Date": "1979-01-01T00:00:00"
+      },
+      {
+        "Year": 1980,
+        "Country": "France",
+        "Value": 0.23800000000000002,
+        "Date": "1980-01-01T00:00:00"
+      },
+      {
+        "Year": 1981,
+        "Country": "France",
+        "Value": 0.23399999999999999,
+        "Date": "1981-01-01T00:00:00"
+      },
+      {
+        "Year": 1982,
+        "Country": "France",
+        "Value": 0.23,
+        "Date": "1982-01-01T00:00:00"
+      },
+      {
+        "Year": 1983,
+        "Country": "France",
+        "Value": 0.223,
+        "Date": "1983-01-01T00:00:00"
+      },
+      {
+        "Year": 1984,
+        "Country": "France",
+        "Value": 0.218,
+        "Date": "1984-01-01T00:00:00"
+      },
+      {
+        "Year": 1985,
+        "Country": "France",
+        "Value": 0.215,
+        "Date": "1985-01-01T00:00:00"
+      },
+      {
+        "Year": 1986,
+        "Country": "France",
+        "Value": 0.21600000000000003,
+        "Date": "1986-01-01T00:00:00"
+      },
+      {
+        "Year": 1987,
+        "Country": "France",
+        "Value": 0.22,
+        "Date": "1987-01-01T00:00:00"
+      },
+      {
+        "Year": 1988,
+        "Country": "France",
+        "Value": 0.22399999999999998,
+        "Date": "1988-01-01T00:00:00"
+      },
+      {
+        "Year": 1989,
+        "Country": "France",
+        "Value": 0.228,
+        "Date": "1989-01-01T00:00:00"
+      },
+      {
+        "Year": 1990,
+        "Country": "France",
+        "Value": 0.22899999999999998,
+        "Date": "1990-01-01T00:00:00"
+      },
+      {
+        "Year": 1991,
+        "Country": "France",
+        "Value": 0.225,
+        "Date": "1991-01-01T00:00:00"
+      },
+      {
+        "Year": 1992,
+        "Country": "France",
+        "Value": 0.22,
+        "Date": "1992-01-01T00:00:00"
+      },
+      {
+        "Year": 1993,
+        "Country": "France",
+        "Value": 0.213,
+        "Date": "1993-01-01T00:00:00"
+      },
+      {
+        "Year": 1994,
+        "Country": "France",
+        "Value": 0.20600000000000002,
+        "Date": "1994-01-01T00:00:00"
+      },
+      {
+        "Year": 1995,
+        "Country": "France",
+        "Value": 0.201,
+        "Date": "1995-01-01T00:00:00"
+      },
+      {
+        "Year": 1996,
+        "Country": "France",
+        "Value": 0.2,
+        "Date": "1996-01-01T00:00:00"
+      },
+      {
+        "Year": 1997,
+        "Country": "France",
+        "Value": 0.2,
+        "Date": "1997-01-01T00:00:00"
+      },
+      {
+        "Year": 1998,
+        "Country": "France",
+        "Value": 0.203,
+        "Date": "1998-01-01T00:00:00"
+      },
+      {
+        "Year": 1999,
+        "Country": "France",
+        "Value": 0.207,
+        "Date": "1999-01-01T00:00:00"
+      },
+      {
+        "Year": 2000,
+        "Country": "France",
+        "Value": 0.209,
+        "Date": "2000-01-01T00:00:00"
+      },
+      {
+        "Year": 2001,
+        "Country": "France",
+        "Value": 0.212,
+        "Date": "2001-01-01T00:00:00"
+      },
+      {
+        "Year": 2002,
+        "Country": "France",
+        "Value": 0.213,
+        "Date": "2002-01-01T00:00:00"
+      },
+      {
+        "Year": 2003,
+        "Country": "France",
+        "Value": 0.213,
+        "Date": "2003-01-01T00:00:00"
+      },
+      {
+        "Year": 2004,
+        "Country": "France",
+        "Value": 0.215,
+        "Date": "2004-01-01T00:00:00"
+      },
+      {
+        "Year": 2005,
+        "Country": "France",
+        "Value": 0.22,
+        "Date": "2005-01-01T00:00:00"
+      },
+      {
+        "Year": 2006,
+        "Country": "France",
+        "Value": 0.225,
+        "Date": "2006-01-01T00:00:00"
+      },
+      {
+        "Year": 2007,
+        "Country": "France",
+        "Value": 0.226,
+        "Date": "2007-01-01T00:00:00"
+      },
+      {
+        "Year": 2008,
+        "Country": "France",
+        "Value": 0.22699999999999998,
+        "Date": "2008-01-01T00:00:00"
+      },
+      {
+        "Year": 2009,
+        "Country": "France",
+        "Value": 0.22699999999999998,
+        "Date": "2009-01-01T00:00:00"
+      },
+      {
+        "Year": 2010,
+        "Country": "France",
+        "Value": 0.225,
+        "Date": "2010-01-01T00:00:00"
+      },
+      {
+        "Year": 2011,
+        "Country": "France",
+        "Value": 0.222,
+        "Date": "2011-01-01T00:00:00"
+      },
+      {
+        "Year": 2012,
+        "Country": "France",
+        "Value": 0.222,
+        "Date": "2012-01-01T00:00:00"
+      },
+      {
+        "Year": 2013,
+        "Country": "France",
+        "Value": 0.22,
+        "Date": "2013-01-01T00:00:00"
+      },
+      {
+        "Year": 2014,
+        "Country": "France",
+        "Value": 0.21899999999999997,
+        "Date": "2014-01-01T00:00:00"
+      },
+      {
+        "Year": 2015,
+        "Country": "France",
+        "Value": 0.21899999999999997,
+        "Date": "2015-01-01T00:00:00"
+      },
+      {
+        "Year": 2016,
+        "Country": "France",
+        "Value": 0.221,
+        "Date": "2016-01-01T00:00:00"
+      },
+      {
+        "Year": 2017,
+        "Country": "France",
+        "Value": 0.22399999999999998,
+        "Date": "2017-01-01T00:00:00"
+      },
+      {
+        "Year": 2018,
+        "Country": "France",
+        "Value": 0.22699999999999998,
+        "Date": "2018-01-01T00:00:00"
+      },
+      {
+        "Year": 2019,
+        "Country": "France",
+        "Value": 0.23199999999999998,
+        "Date": "2019-01-01T00:00:00"
+      },
+      {
+        "Year": 2020,
+        "Country": "France",
+        "Value": 0.23600000000000002,
+        "Date": "2020-01-01T00:00:00"
+      },
+      {
+        "Year": 2021,
+        "Country": "France",
+        "Value": 0.24,
+        "Date": "2021-01-01T00:00:00"
+      },
+      {
+        "Year": 2022,
+        "Country": "France",
+        "Value": 0.24100000000000002,
+        "Date": "2022-01-01T00:00:00"
+      },
+      {
+        "Year": 2023,
+        "Country": "France",
+        "Value": 0.245,
+        "Date": "2023-01-01T00:00:00"
+      },
+      {
+        "Year": 1960,
+        "Country": "Germany",
+        "Value": 0.251,
+        "Date": "1960-01-01T00:00:00"
+      },
+      {
+        "Year": 1961,
+        "Country": "Germany",
+        "Value": 0.252,
+        "Date": "1961-01-01T00:00:00"
+      },
+      {
+        "Year": 1962,
+        "Country": "Germany",
+        "Value": 0.255,
+        "Date": "1962-01-01T00:00:00"
+      },
+      {
+        "Year": 1963,
+        "Country": "Germany",
+        "Value": 0.259,
+        "Date": "1963-01-01T00:00:00"
+      },
+      {
+        "Year": 1964,
+        "Country": "Germany",
+        "Value": 0.259,
+        "Date": "1964-01-01T00:00:00"
+      },
+      {
+        "Year": 1965,
+        "Country": "Germany",
+        "Value": 0.254,
+        "Date": "1965-01-01T00:00:00"
+      },
+      {
+        "Year": 1966,
+        "Country": "Germany",
+        "Value": 0.248,
+        "Date": "1966-01-01T00:00:00"
+      },
+      {
+        "Year": 1967,
+        "Country": "Germany",
+        "Value": 0.24100000000000002,
+        "Date": "1967-01-01T00:00:00"
+      },
+      {
+        "Year": 1968,
+        "Country": "Germany",
+        "Value": 0.24,
+        "Date": "1968-01-01T00:00:00"
+      },
+      {
+        "Year": 1969,
+        "Country": "Germany",
+        "Value": 0.24100000000000002,
+        "Date": "1969-01-01T00:00:00"
+      },
+      {
+        "Year": 1970,
+        "Country": "Germany",
+        "Value": 0.24600000000000002,
+        "Date": "1970-01-01T00:00:00"
+      },
+      {
+        "Year": 1971,
+        "Country": "Germany",
+        "Value": 0.249,
+        "Date": "1971-01-01T00:00:00"
+      },
+      {
+        "Year": 1972,
+        "Country": "Germany",
+        "Value": 0.24600000000000002,
+        "Date": "1972-01-01T00:00:00"
+      },
+      {
+        "Year": 1973,
+        "Country": "Germany",
+        "Value": 0.23600000000000002,
+        "Date": "1973-01-01T00:00:00"
+      },
+      {
+        "Year": 1974,
+        "Country": "Germany",
+        "Value": 0.225,
+        "Date": "1974-01-01T00:00:00"
+      },
+      {
+        "Year": 1975,
+        "Country": "Germany",
+        "Value": 0.215,
+        "Date": "1975-01-01T00:00:00"
+      },
+      {
+        "Year": 1976,
+        "Country": "Germany",
+        "Value": 0.209,
+        "Date": "1976-01-01T00:00:00"
+      },
+      {
+        "Year": 1977,
+        "Country": "Germany",
+        "Value": 0.21,
+        "Date": "1977-01-01T00:00:00"
+      },
+      {
+        "Year": 1978,
+        "Country": "Germany",
+        "Value": 0.214,
+        "Date": "1978-01-01T00:00:00"
+      },
+      {
+        "Year": 1979,
+        "Country": "Germany",
+        "Value": 0.21600000000000003,
+        "Date": "1979-01-01T00:00:00"
+      },
+      {
+        "Year": 1980,
+        "Country": "Germany",
+        "Value": 0.215,
+        "Date": "1980-01-01T00:00:00"
+      },
+      {
+        "Year": 1981,
+        "Country": "Germany",
+        "Value": 0.214,
+        "Date": "1981-01-01T00:00:00"
+      },
+      {
+        "Year": 1982,
+        "Country": "Germany",
+        "Value": 0.21,
+        "Date": "1982-01-01T00:00:00"
+      },
+      {
+        "Year": 1983,
+        "Country": "Germany",
+        "Value": 0.205,
+        "Date": "1983-01-01T00:00:00"
+      },
+      {
+        "Year": 1984,
+        "Country": "Germany",
+        "Value": 0.201,
+        "Date": "1984-01-01T00:00:00"
+      },
+      {
+        "Year": 1985,
+        "Country": "Germany",
+        "Value": 0.19899999999999998,
+        "Date": "1985-01-01T00:00:00"
+      },
+      {
+        "Year": 1986,
+        "Country": "Germany",
+        "Value": 0.198,
+        "Date": "1986-01-01T00:00:00"
+      },
+      {
+        "Year": 1987,
+        "Country": "Germany",
+        "Value": 0.19899999999999998,
+        "Date": "1987-01-01T00:00:00"
+      },
+      {
+        "Year": 1988,
+        "Country": "Germany",
+        "Value": 0.20199999999999999,
+        "Date": "1988-01-01T00:00:00"
+      },
+      {
+        "Year": 1989,
+        "Country": "Germany",
+        "Value": 0.213,
+        "Date": "1989-01-01T00:00:00"
+      },
+      {
+        "Year": 1990,
+        "Country": "Germany",
+        "Value": 0.22399999999999998,
+        "Date": "1990-01-01T00:00:00"
+      },
+      {
+        "Year": 1991,
+        "Country": "Germany",
+        "Value": 0.23199999999999998,
+        "Date": "1991-01-01T00:00:00"
+      },
+      {
+        "Year": 1992,
+        "Country": "Germany",
+        "Value": 0.239,
+        "Date": "1992-01-01T00:00:00"
+      },
+      {
+        "Year": 1993,
+        "Country": "Germany",
+        "Value": 0.244,
+        "Date": "1993-01-01T00:00:00"
+      },
+      {
+        "Year": 1994,
+        "Country": "Germany",
+        "Value": 0.24,
+        "Date": "1994-01-01T00:00:00"
+      },
+      {
+        "Year": 1995,
+        "Country": "Germany",
+        "Value": 0.235,
+        "Date": "1995-01-01T00:00:00"
+      },
+      {
+        "Year": 1996,
+        "Country": "Germany",
+        "Value": 0.23199999999999998,
+        "Date": "1996-01-01T00:00:00"
+      },
+      {
+        "Year": 1997,
+        "Country": "Germany",
+        "Value": 0.23,
+        "Date": "1997-01-01T00:00:00"
+      },
+      {
+        "Year": 1998,
+        "Country": "Germany",
+        "Value": 0.22899999999999998,
+        "Date": "1998-01-01T00:00:00"
+      },
+      {
+        "Year": 1999,
+        "Country": "Germany",
+        "Value": 0.22699999999999998,
+        "Date": "1999-01-01T00:00:00"
+      },
+      {
+        "Year": 2000,
+        "Country": "Germany",
+        "Value": 0.222,
+        "Date": "2000-01-01T00:00:00"
+      },
+      {
+        "Year": 2001,
+        "Country": "Germany",
+        "Value": 0.215,
+        "Date": "2001-01-01T00:00:00"
+      },
+      {
+        "Year": 2002,
+        "Country": "Germany",
+        "Value": 0.207,
+        "Date": "2002-01-01T00:00:00"
+      },
+      {
+        "Year": 2003,
+        "Country": "Germany",
+        "Value": 0.19899999999999998,
+        "Date": "2003-01-01T00:00:00"
+      },
+      {
+        "Year": 2004,
+        "Country": "Germany",
+        "Value": 0.195,
+        "Date": "2004-01-01T00:00:00"
+      },
+      {
+        "Year": 2005,
+        "Country": "Germany",
+        "Value": 0.195,
+        "Date": "2005-01-01T00:00:00"
+      },
+      {
+        "Year": 2006,
+        "Country": "Germany",
+        "Value": 0.19699999999999998,
+        "Date": "2006-01-01T00:00:00"
+      },
+      {
+        "Year": 2007,
+        "Country": "Germany",
+        "Value": 0.19699999999999998,
+        "Date": "2007-01-01T00:00:00"
+      },
+      {
+        "Year": 2008,
+        "Country": "Germany",
+        "Value": 0.198,
+        "Date": "2008-01-01T00:00:00"
+      },
+      {
+        "Year": 2009,
+        "Country": "Germany",
+        "Value": 0.19899999999999998,
+        "Date": "2009-01-01T00:00:00"
+      },
+      {
+        "Year": 2010,
+        "Country": "Germany",
+        "Value": 0.2,
+        "Date": "2010-01-01T00:00:00"
+      },
+      {
+        "Year": 2011,
+        "Country": "Germany",
+        "Value": 0.19899999999999998,
+        "Date": "2011-01-01T00:00:00"
+      },
+      {
+        "Year": 2012,
+        "Country": "Germany",
+        "Value": 0.2,
+        "Date": "2012-01-01T00:00:00"
+      },
+      {
+        "Year": 2013,
+        "Country": "Germany",
+        "Value": 0.201,
+        "Date": "2013-01-01T00:00:00"
+      },
+      {
+        "Year": 2014,
+        "Country": "Germany",
+        "Value": 0.201,
+        "Date": "2014-01-01T00:00:00"
+      },
+      {
+        "Year": 2015,
+        "Country": "Germany",
+        "Value": 0.201,
+        "Date": "2015-01-01T00:00:00"
+      },
+      {
+        "Year": 2016,
+        "Country": "Germany",
+        "Value": 0.204,
+        "Date": "2016-01-01T00:00:00"
+      },
+      {
+        "Year": 2017,
+        "Country": "Germany",
+        "Value": 0.20600000000000002,
+        "Date": "2017-01-01T00:00:00"
+      },
+      {
+        "Year": 2018,
+        "Country": "Germany",
+        "Value": 0.21,
+        "Date": "2018-01-01T00:00:00"
+      },
+      {
+        "Year": 2019,
+        "Country": "Germany",
+        "Value": 0.213,
+        "Date": "2019-01-01T00:00:00"
+      },
+      {
+        "Year": 2020,
+        "Country": "Germany",
+        "Value": 0.21600000000000003,
+        "Date": "2020-01-01T00:00:00"
+      },
+      {
+        "Year": 2021,
+        "Country": "Germany",
+        "Value": 0.218,
+        "Date": "2021-01-01T00:00:00"
+      },
+      {
+        "Year": 2022,
+        "Country": "Germany",
+        "Value": 0.21899999999999997,
+        "Date": "2022-01-01T00:00:00"
+      },
+      {
+        "Year": 2023,
+        "Country": "Germany",
+        "Value": 0.22,
+        "Date": "2023-01-01T00:00:00"
+      }
+    ]
+  }
+}

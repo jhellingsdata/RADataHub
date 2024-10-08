@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/J38_C2.csv"
+  },
+  "width": {"step": 25},
+  "height": 300,
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "School type",
+      "type": "nominal",
+      "title": "",
+      "spacing": 10
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Value",
+      "type": "quantitative",
+      "title": "",
+      "scale": {"domain": [0, 100]}
+    },
+    "x": {
+      "field": "Year",
+      "type": "nominal",
+      "axis": {"title": "", "labelColor": "white", "ticks": false}
+    },
+    "color": {
+      "field": "Year",
+      "title": "",
+      "scale": {"range": ["#36b7b4", "#e6224b", "#00a767"]}
+    },
+    "tooltip": [
+      {"field": "Year", "type": "nominal", "title": "Year"},
+      {"field": "School type", "type": "nominal"},
+      {"field": "Value", "type": "quantitative", "title": "Share"}
+    ]
+  },
+  "config": {"view": {"stroke": "transparent"}, "axis": {"domainWidth": 1}}
+}
