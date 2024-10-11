@@ -20,3 +20,6 @@ __pycache__/
 e4e/.DS_Store
 ChartOfTheDay/templates/cpi/geckodriver.log
 .vscode/settings.json
+
+
+Map Builder/uk_lads_2024.geojson
