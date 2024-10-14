@@ -1,1 +1,318 @@
-{"config": {"font": "Circular Std", "mark": {"line": {"interpolate": "monotone"}}, "view": {"stroke": "transparent", "width": 400, "height": 300}, "range": {"category": ["#36B7B4", "#E6224B", "#F4C245", "#0063AF", "#00A767", "#179FDB", "#EB5C2E"], "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"], "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"], "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]}, "axisX": {"domainColor": "#676A86", "domainOpacity": 0.5, "grid": false, "labelAngle": 0, "labelColor": "#676A86", "labelOpacity": 0.7, "orient": "bottom", "tickColor": "#676A86", "tickCount": 10, "tickOpacity": 0.5, "title": false, "titleAlign": "center", "titleAnchor": "middle", "titleColor": "#676A86", "titleFontSize": 12, "titleOpacity": 0.8, "titleY": -15}, "axisY": {"domainColor": "#676A86", "domainOpacity": 0.5, "gridColor": "#676A86", "gridDash": [1, 5], "gridOpacity": 0.5, "labelColor": "#676A86", "labelOpacity": 0.7, "labelPadding": 5, "tickColor": "#676A86", "tickCount": 8, "tickOpacity": 0.5, "ticks": false, "titleAlign": "left", "titleAngle": 0, "titleBaseline": "bottom", "titleColor": "#676A86", "titleFontSize": 12, "titleOpacity": 0.8, "titleX": 0, "titleY": -7}}, "data": {"name": "data-b6071c72633132de943aefcd4c99014b"}, "mark": {"type": "line"}, "encoding": {"color": {"field": "Country", "type": "nominal"}, "x": {"field": "Year", "type": "ordinal"}, "y": {"field": "gdp_pc", "type": "quantitative"}}, "height": 400, "title": "GDP per capita by country", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-b6071c72633132de943aefcd4c99014b": [{"Year": 2004, "Country": "South Korea", "gdp_pc": 942.89}, {"Year": 2005, "Country": "South Korea", "gdp_pc": 995.18}, {"Year": 2006, "Country": "South Korea", "gdp_pc": 1045.66}, {"Year": 2007, "Country": "South Korea", "gdp_pc": 1134.54}, {"Year": 2008, "Country": "South Korea", "gdp_pc": 1202.97}, {"Year": 2009, "Country": "South Korea", "gdp_pc": 1255.31}, {"Year": 2010, "Country": "South Korea", "gdp_pc": 1379.46}, {"Year": 2011, "Country": "South Korea", "gdp_pc": 1448.58}, {"Year": 2012, "Country": "South Korea", "gdp_pc": 1504.67}, {"Year": 2013, "Country": "South Korea", "gdp_pc": 1570.94}, {"Year": 2014, "Country": "South Korea", "gdp_pc": 1638.48}, {"Year": 2015, "Country": "South Korea", "gdp_pc": 1740.78}, {"Year": 2016, "Country": "South Korea", "gdp_pc": 1833.03}, {"Year": 2017, "Country": "South Korea", "gdp_pc": 1934.23}, {"Year": 2018, "Country": "South Korea", "gdp_pc": 2006.97}, {"Year": 2019, "Country": "South Korea", "gdp_pc": 2040.59}, {"Year": 2020, "Country": "South Korea", "gdp_pc": 2058.47}, {"Year": 2021, "Country": "South Korea", "gdp_pc": 2221.91}, {"Year": 2022, "Country": "South Korea", "gdp_pc": 2323.78}, {"Year": 2023, "Country": "South Korea", "gdp_pc": 2401.19}, {"Year": 2004, "Country": "North Korea", "gdp_pc": 23.71}, {"Year": 2005, "Country": "North Korea", "gdp_pc": 24.73}, {"Year": 2006, "Country": "North Korea", "gdp_pc": 24.36}, {"Year": 2007, "Country": "North Korea", "gdp_pc": 24.76}, {"Year": 2008, "Country": "North Korea", "gdp_pc": 27.24}, {"Year": 2009, "Country": "North Korea", "gdp_pc": 28.48}, {"Year": 2010, "Country": "North Korea", "gdp_pc": 29.88}, {"Year": 2011, "Country": "North Korea", "gdp_pc": 32.23}, {"Year": 2012, "Country": "North Korea", "gdp_pc": 33.21}, {"Year": 2013, "Country": "North Korea", "gdp_pc": 33.61}, {"Year": 2014, "Country": "North Korea", "gdp_pc": 33.95}, {"Year": 2015, "Country": "North Korea", "gdp_pc": 34.14}, {"Year": 2016, "Country": "North Korea", "gdp_pc": 36.1}, {"Year": 2017, "Country": "North Korea", "gdp_pc": 36.38}, {"Year": 2018, "Country": "North Korea", "gdp_pc": 35.67}, {"Year": 2019, "Country": "North Korea", "gdp_pc": 35.28}, {"Year": 2020, "Country": "North Korea", "gdp_pc": 34.66}, {"Year": 2021, "Country": "North Korea", "gdp_pc": 35.89}, {"Year": 2022, "Country": "North Korea", "gdp_pc": 36.21}, {"Year": 2023, "Country": "North Korea", "gdp_pc": 40.19}]}}
+{
+    "config": {
+        "font": "Circular Std",
+        "mark": {
+            "line": {
+                "interpolate": "monotone"
+            }
+        },
+        "view": {
+            "stroke": "transparent",
+            "width": 400,
+            "height": 300
+        },
+        "range": {
+            "category": [
+                "#36B7B4",
+                "#E6224B",
+                "#F4C245",
+                "#0063AF",
+                "#00A767",
+                "#179FDB",
+                "#EB5C2E"
+            ],
+            "diverging": [
+                "#E6224B",
+                "#E54753",
+                "#C9C9C9",
+                "#179FDB",
+                "#122B39"
+            ],
+            "heatmap": [
+                "#C9C9C9",
+                "#179FDB",
+                "#0063AF",
+                "#122B39"
+            ],
+            "ordinal": [
+                "#00A767",
+                "#36B7B4",
+                "#179FDB",
+                "#0063AF",
+                "#243B5A"
+            ]
+        },
+        "axisX": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": false,
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleY": -15
+        },
+        "axisY": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [
+                1,
+                5
+            ],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -7
+        }
+    },
+    "data": {
+        "name": "data-b6071c72633132de943aefcd4c99014b"
+    },
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "color": {
+            "field": "Country",
+            "type": "nominal"
+        },
+        "x": {
+            "field": "Year",
+            "type": "ordinal"
+        },
+        "y": {
+            "field": "gdp_pc",
+            "type": "quantitative"
+        }
+    },
+    "height": 400,
+    "title": "GDP per capita by country",
+    "width": 600,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+    "datasets": {
+        "data-b6071c72633132de943aefcd4c99014b": [
+            {
+                "Year": 2004,
+                "Country": "South Korea",
+                "gdp_pc": 942.89
+            },
+            {
+                "Year": 2005,
+                "Country": "South Korea",
+                "gdp_pc": 995.18
+            },
+            {
+                "Year": 2006,
+                "Country": "South Korea",
+                "gdp_pc": 1045.66
+            },
+            {
+                "Year": 2007,
+                "Country": "South Korea",
+                "gdp_pc": 1134.54
+            },
+            {
+                "Year": 2008,
+                "Country": "South Korea",
+                "gdp_pc": 1202.97
+            },
+            {
+                "Year": 2009,
+                "Country": "South Korea",
+                "gdp_pc": 1255.31
+            },
+            {
+                "Year": 2010,
+                "Country": "South Korea",
+                "gdp_pc": 1379.46
+            },
+            {
+                "Year": 2011,
+                "Country": "South Korea",
+                "gdp_pc": 1448.58
+            },
+            {
+                "Year": 2012,
+                "Country": "South Korea",
+                "gdp_pc": 1504.67
+            },
+            {
+                "Year": 2013,
+                "Country": "South Korea",
+                "gdp_pc": 1570.94
+            },
+            {
+                "Year": 2014,
+                "Country": "South Korea",
+                "gdp_pc": 1638.48
+            },
+            {
+                "Year": 2015,
+                "Country": "South Korea",
+                "gdp_pc": 1740.78
+            },
+            {
+                "Year": 2016,
+                "Country": "South Korea",
+                "gdp_pc": 1833.03
+            },
+            {
+                "Year": 2017,
+                "Country": "South Korea",
+                "gdp_pc": 1934.23
+            },
+            {
+                "Year": 2018,
+                "Country": "South Korea",
+                "gdp_pc": 2006.97
+            },
+            {
+                "Year": 2019,
+                "Country": "South Korea",
+                "gdp_pc": 2040.59
+            },
+            {
+                "Year": 2020,
+                "Country": "South Korea",
+                "gdp_pc": 2058.47
+            },
+            {
+                "Year": 2021,
+                "Country": "South Korea",
+                "gdp_pc": 2221.91
+            },
+            {
+                "Year": 2022,
+                "Country": "South Korea",
+                "gdp_pc": 2323.78
+            },
+            {
+                "Year": 2023,
+                "Country": "South Korea",
+                "gdp_pc": 2401.19
+            },
+            {
+                "Year": 2004,
+                "Country": "North Korea",
+                "gdp_pc": 23.71
+            },
+            {
+                "Year": 2005,
+                "Country": "North Korea",
+                "gdp_pc": 24.73
+            },
+            {
+                "Year": 2006,
+                "Country": "North Korea",
+                "gdp_pc": 24.36
+            },
+            {
+                "Year": 2007,
+                "Country": "North Korea",
+                "gdp_pc": 24.76
+            },
+            {
+                "Year": 2008,
+                "Country": "North Korea",
+                "gdp_pc": 27.24
+            },
+            {
+                "Year": 2009,
+                "Country": "North Korea",
+                "gdp_pc": 28.48
+            },
+            {
+                "Year": 2010,
+                "Country": "North Korea",
+                "gdp_pc": 29.88
+            },
+            {
+                "Year": 2011,
+                "Country": "North Korea",
+                "gdp_pc": 32.23
+            },
+            {
+                "Year": 2012,
+                "Country": "North Korea",
+                "gdp_pc": 33.21
+            },
+            {
+                "Year": 2013,
+                "Country": "North Korea",
+                "gdp_pc": 33.61
+            },
+            {
+                "Year": 2014,
+                "Country": "North Korea",
+                "gdp_pc": 33.95
+            },
+            {
+                "Year": 2015,
+                "Country": "North Korea",
+                "gdp_pc": 34.14
+            },
+            {
+                "Year": 2016,
+                "Country": "North Korea",
+                "gdp_pc": 36.1
+            },
+            {
+                "Year": 2017,
+                "Country": "North Korea",
+                "gdp_pc": 36.38
+            },
+            {
+                "Year": 2018,
+                "Country": "North Korea",
+                "gdp_pc": 35.67
+            },
+            {
+                "Year": 2019,
+                "Country": "North Korea",
+                "gdp_pc": 35.28
+            },
+            {
+                "Year": 2020,
+                "Country": "North Korea",
+                "gdp_pc": 34.66
+            },
+            {
+                "Year": 2021,
+                "Country": "North Korea",
+                "gdp_pc": 35.89
+            },
+            {
+                "Year": 2022,
+                "Country": "North Korea",
+                "gdp_pc": 36.21
+            },
+            {
+                "Year": 2023,
+                "Country": "North Korea",
+                "gdp_pc": 40.19
+            }
+        ]
+    }
+}
