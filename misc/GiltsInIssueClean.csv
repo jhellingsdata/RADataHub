@@ -1,87 +1,88 @@
-type,code,redemptionDate,issueDate,divDates,divNextDate,issueAmount,baseRPI,amountINCinfUplift,rawType,extra,giltType,coupon,issueYear,totalCumulative,id
-2½% Index-linked Treasury Stock 2024,GB0008983024, 17-Jul-2024, 30-Dec-1986,17 Jan/Jul, 06-Jan-2023,6821.0,97.66793409379,22363.0,2½% Index-linked ,reasury Stock 2024,Index Linked,,1986.0,6821.0,1
-4 1/8% Index-linked Treasury Stock 2030,GB0008932666, 22-Jul-2030, 12-Jun-1992,22 Jan/Jul, 12-Jan-2023,4841.0,135.1,11474.0,4 1/8% Index-linked ,reasury Stock 2030,Index Linked,1/8,1992.0,11662.0,2
-6% Treasury Stock 2028,GB0002404191, 07-Dec-2028, 29-Jan-1998,7 Jun/Dec, 28-Nov-2022,20256.0,,,6% ,reasury Stock 2028,6%,,1998.0,31918.0,3
-4¼% Treasury Stock 2032,GB0004893086, 07-Jun-2032, 25-May-2000,7 Jun/Dec, 28-Nov-2022,40331.0,,,4¼% ,reasury Stock 2032,4¼%,,2000.0,72249.0,4
-5% Treasury Stock 2025,GB0030880693, 07-Mar-2025, 27-Sep-2001,7 Mar/Sep, 24-Feb-2023,37339.0,,,5% ,reasury Stock 2025,5%,,2001.0,109588.0,5
-2% Index-linked Treasury Stock 2035,GB0031790826, 26-Jan-2035, 11-Jul-2002,26 Jan/Jul, 17-Jan-2023,9084.0,173.6,16755.0,2% Index-linked ,reasury Stock 2035,Index Linked,,2002.0,118672.0,6
-4¼% Treasury Stock 2036,GB0032452392, 07-Mar-2036, 27-Feb-2003,7 Mar/Sep, 24-Feb-2023,31682.0,,,4¼% ,reasury Stock 2036,4¼%,,2003.0,150354.0,7
-4¾% Treasury Stock 2038,GB00B00NY175, 07-Dec-2038, 23-Apr-2004,7 Jun/Dec, 28-Nov-2022,26827.0,,,4¾% ,reasury Stock 2038,4¾%,,2004.0,177181.0,8
-1¼% Index-linked Treasury Gilt 2055,GB00B0CNHZ09, 22-Nov-2055, 23-Sep-2005,22 May/Nov, 11-Nov-2022,10169.0,192.2,18227.0,1¼% Index-linked ,reasury Gilt 2055,Index Linked,,2005.0,187350.0,9
-4¼% Treasury Gilt 2055,GB00B06YGN05, 07-Dec-2055, 27-May-2005,7 Jun/Dec, 28-Nov-2022,27671.0,,,4¼% ,reasury Gilt 2055,4¼%,,2005.0,215021.0,10
-4¼% Treasury Gilt 2027,GB00B16NNR78, 07-Dec-2027, 06-Sep-2006,7 Jun/Dec, 28-Nov-2022,33003.0,,,4¼% ,reasury Gilt 2027,4¼%,,2006.0,248024.0,11
-1¼% Index-linked Treasury Gilt 2027,GB00B128DH60, 22-Nov-2027, 26-Apr-2006,22 May/Nov, 11-Nov-2022,14170.0,194.06667,25154.0,1¼% Index-linked ,reasury Gilt 2027,Index Linked,,2006.0,262194.0,12
-4¼% Treasury Gilt 2046,GB00B128DP45, 07-Dec-2046, 12-May-2006,7 Jun/Dec, 28-Nov-2022,25124.0,,,4¼% ,reasury Gilt 2046,4¼%,,2006.0,287318.0,13
-4¾% Treasury Gilt 2030,GB00B24FF097, 07-Dec-2030, 03-Oct-2007,7 Jun/Dec, 28-Nov-2022,42819.0,,,4¾% ,reasury Gilt 2030,4¾%,,2007.0,330137.0,14
-4½% Treasury Gilt 2042,GB00B1VWPJ53, 07-Dec-2042, 06-Jun-2007,7 Jun/Dec, 28-Nov-2022,28354.0,,,4½% ,reasury Gilt 2042,4½%,,2007.0,358491.0,15
-1 1/8% Index-linked Treasury Gilt 2037,GB00B1L6W962, 22-Nov-2037, 21-Feb-2007,22 May/Nov, 11-Nov-2022,13066.0,202.24286,22255.0,1 1/8% Index-linked ,reasury Gilt 2037,Index Linked,1/8,2007.0,371557.0,16
-0¾% Index-linked Treasury Gilt 2047,GB00B24FFM16, 22-Nov-2047, 21-Nov-2007,22 May/Nov, 11-Nov-2022,11687.0,207.76667,19377.0,0¾% Index-linked ,reasury Gilt 2047,Index Linked,,2007.0,383244.0,17
-1 7/8% Index-linked Treasury Gilt 2022,GB00B1Z5HQ14, 22-Nov-2022, 11-Jul-2007,22 May/Nov, 11-Nov-2022,15743.0,205.65806,26554.0,1 7/8% Index-linked ,reasury Gilt 2022,Index Linked,7/8,2007.0,398987.0,18
-4¼% Treasury Gilt 2049,GB00B39R3707, 07-Dec-2049, 03-Sep-2008,7 Jun/Dec, 28-Nov-2022,21047.0,,,4¼% ,reasury Gilt 2049,4¼%,,2008.0,420034.0,19
-1¼% Index-linked Treasury Gilt 2032,GB00B3D4VD98, 22-Nov-2032, 29-Oct-2008,22 May/Nov, 11-Nov-2022,14657.0,217.13226,23254.0,1¼% Index-linked ,reasury Gilt 2032,Index Linked,,2008.0,434691.0,20
-4¼% Treasury Gilt 2039,GB00B3KJDS62, 07-Sep-2039, 05-Mar-2009,7 Mar/Sep, 24-Feb-2023,24235.0,,,4¼% ,reasury Gilt 2039,4¼%,,2009.0,458926.0,21
-0½% Index-linked Treasury Gilt 2050,GB00B421JZ66, 22-Mar-2050, 25-Sep-2009,22 Mar/Sep, 13-Mar-2023,12221.0,213.4,19729.0,0½% Index-linked ,reasury Gilt 2050,Index Linked,,2009.0,471147.0,22
-4½% Treasury Gilt 2034,GB00B52WS153, 07-Sep-2034, 17-Jun-2009,7 Mar/Sep, 24-Feb-2023,36261.0,,,4½% ,reasury Gilt 2034,4½%,,2009.0,507408.0,23
-4% Treasury Gilt 2060,GB00B54QLM75, 22-Jan-2060, 22-Oct-2009,22 Jan/Jul, 12-Jan-2023,25132.0,,,4% ,reasury Gilt 2060,4%,,2009.0,532540.0,24
-0 5/8% Index-linked Treasury Gilt 2042,GB00B3MYD345, 22-Nov-2042, 24-Jul-2009,22 May/Nov, 11-Nov-2022,12559.0,212.46452,20364.0,0 5/8% Index-linked ,reasury Gilt 2042,Index Linked,5/8,2009.0,545099.0,25
-0 5/8% Index-linked Treasury Gilt 2040,GB00B3LZBF68, 22-Mar-2040, 28-Jan-2010,22 Mar/Sep, 13-Mar-2023,14090.0,216.52258,22417.0,0 5/8% Index-linked ,reasury Gilt 2040,Index Linked,5/8,2010.0,559189.0,26
-4¼% Treasury Gilt 2040,GB00B6460505, 07-Dec-2040, 30-Jun-2010,7 Jun/Dec, 28-Nov-2022,26449.0,,,4¼% ,reasury Gilt 2040,4¼%,,2010.0,585638.0,27
-0 1/8% Index-linked Treasury Gilt 2029,GB00B3Y1JG82, 22-Mar-2029, 23-Nov-2011,22 Mar/Sep, 13-Mar-2023,15459.0,237.42,22430.0,0 1/8% Index-linked ,reasury Gilt 2029,Index Linked,1/8,2011.0,601097.0,28
-3¾% Treasury Gilt 2052,GB00B6RNH572, 22-Jul-2052, 28-Sep-2011,22 Jan/Jul, 12-Jan-2023,25114.0,,,3¾% ,reasury Gilt 2052,3¾%,,2011.0,626211.0,29
-0¾% Index-linked Treasury Gilt 2034,GB00B46CGH68, 22-Mar-2034, 25-May-2011,22 Mar/Sep, 13-Mar-2023,14570.0,232.22903,21614.0,0¾% Index-linked ,reasury Gilt 2034,Index Linked,,2011.0,640781.0,30
-0 3/8% Index-linked Treasury Gilt 2062,GB00B4PTCY75, 22-Mar-2062, 26-Oct-2011,22 Mar/Sep, 13-Mar-2023,12480.0,235.82903,18230.0,0 3/8% Index-linked ,reasury Gilt 2062,Index Linked,3/8,2011.0,653261.0,31
-0 1/8% Index-linked Treasury Gilt 2024,GB00B85SFQ54, 22-Mar-2024, 12-Oct-2012,22 Mar/Sep, 13-Mar-2023,15244.0,242.41935,21662.0,0 1/8% Index-linked ,reasury Gilt 2024,Index Linked,1/8,2012.0,668505.0,32
-3¼% Treasury Gilt 2044,GB00B84Z9V04, 22-Jan-2044, 24-Oct-2012,22 Jan/Jul, 12-Jan-2023,29109.0,,,3¼% ,reasury Gilt 2044,3¼%,,2012.0,697614.0,33
-0¼% Index-linked Treasury Gilt 2052,GB00B73ZYW09, 22-Mar-2052, 26-Sep-2012,22 Mar/Sep, 13-Mar-2023,12366.0,242.05,17600.0,0¼% Index-linked ,reasury Gilt 2052,Index Linked,,2012.0,709980.0,34
-0 1/8% Index-linked Treasury Gilt 2044,GB00B7RN0G65, 22-Mar-2044, 25-Jul-2012,22 Mar/Sep, 13-Mar-2023,15726.0,242.42258,22346.0,0 1/8% Index-linked ,reasury Gilt 2044,Index Linked,1/8,2012.0,725706.0,35
-3½% Treasury Gilt 2068,GB00BBJNQY21, 22-Jul-2068, 26-Jun-2013,22 Jan/Jul, 12-Jan-2023,20743.0,,,3½% ,reasury Gilt 2068,3½%,,2013.0,746449.0,36
-0 1/8% Index-linked Treasury Gilt 2068,GB00BDX8CX86, 22-Mar-2068, 25-Sep-2013,22 Mar/Sep, 13-Mar-2023,12600.0,249.7,17383.0,0 1/8% Index-linked ,reasury Gilt 2068,Index Linked,1/8,2013.0,759049.0,37
-3½% Treasury Gilt 2045,GB00BN65R313, 22-Jan-2045, 25-Jun-2014,22 Jan/Jul, 12-Jan-2023,29404.0,,,3½% ,reasury Gilt 2045,3½%,,2014.0,788453.0,38
-2¾% Treasury Gilt 2024,GB00BHBFH458, 07-Sep-2024, 12-Mar-2014,7 Mar/Sep, 24-Feb-2023,35806.0,,,2¾% ,reasury Gilt 2024,2¾%,,2014.0,824259.0,39
-0 1/8% Index-linked Treasury Gilt 2058,GB00BP9DLZ64, 22-Mar-2058, 30-Jul-2014,22 Mar/Sep, 13-Mar-2023,10953.0,255.8871,14746.0,0 1/8% Index-linked ,reasury Gilt 2058,Index Linked,1/8,2014.0,835212.0,40
-0 1/8% Index-linked Treasury Gilt 2046,GB00BYMWG366, 22-Mar-2046, 24-Jun-2015,22 Mar/Sep, 13-Mar-2023,13486.0,257.79,18021.0,0 1/8% Index-linked ,reasury Gilt 2046,Index Linked,1/8,2015.0,848698.0,41
-0 1/8% Index-linked Treasury Gilt 2026,GB00BYY5F144, 22-Mar-2026, 16-Jul-2015,22 Mar/Sep, 13-Mar-2023,13455.0,258.24194,17948.0,0 1/8% Index-linked ,reasury Gilt 2026,Index Linked,1/8,2015.0,862153.0,42
-2½% Treasury Gilt 2065,GB00BYYMZX75, 22-Jul-2065, 21-Oct-2015,22 Jan/Jul, 12-Jan-2023,20575.0,,,2½% ,reasury Gilt 2065,2½%,,2015.0,882728.0,43
-2% Treasury Gilt 2025,GB00BTHH2R79, 07-Sep-2025, 20-Mar-2015,7 Mar/Sep, 24-Feb-2023,39934.0,,,2% ,reasury Gilt 2025,2%,,2015.0,922662.0,44
-0 1/8% Index-Linked Treasury Gilt 2056,GB00BYVP4K94, 22-Nov-2056, 30-Nov-2016,22 May/Nov, 11-Nov-2022,7147.0,264.88333,9294.0,0 1/8% Index-Linked ,reasury Gilt 2056,Index Linked,1/8,2016.0,929809.0,45
-0 1/8% Index-linked Treasury Gilt 2036,GB00BYZW3J87, 22-Nov-2036, 11-Mar-2016,22 May/Nov, 11-Nov-2022,13905.0,260.01935,18422.0,0 1/8% Index-linked ,reasury Gilt 2036,Index Linked,1/8,2016.0,943714.0,46
-1½% Treasury Gilt 2026,GB00BYZW3G56, 22-Jul-2026, 18-Feb-2016,22 Jan/Jul, 12-Jan-2023,43651.0,,,1½% ,reasury Gilt 2026,1½%,,2016.0,987365.0,47
-1¾% Treasury Gilt 2037,GB00BZB26Y51, 07-Sep-2037, 09-Nov-2016,7 Mar/Sep, 24-Feb-2023,31968.0,,,1¾% ,reasury Gilt 2037,1¾%,,2016.0,1019333.0,48
-1½% Treasury Gilt 2047,GB00BDCHBW80, 22-Jul-2047, 21-Sep-2016,22 Jan/Jul, 12-Jan-2023,25721.0,,,1½% ,reasury Gilt 2047,1½%,,2016.0,1045054.0,49
-0 1/8% Index-linked Treasury Gilt 2065,GB00BD9MZZ71, 22-Nov-2065, 24-Feb-2016,22 May/Nov, 11-Nov-2022,8125.0,260.43448,10747.0,0 1/8% Index-linked ,reasury Gilt 2065,Index Linked,1/8,2016.0,1053179.0,50
-0 1/8% Index-linked Treasury Gilt 2048,GB00BZ13DV40, 10-Aug-2048, 08-Nov-2017,10 Feb/Aug, 01-Feb-2023,11781.0,274.79333,14769.0,0 1/8% Index-linked ,reasury Gilt 2048,Index Linked,1/8,2017.0,1064960.0,51
-1¼% Treasury Gilt 2027,GB00BDRHNP05, 22-Jul-2027, 15-Mar-2017,22 Jan/Jul, 12-Jan-2023,40987.0,,,1¼% ,reasury Gilt 2027,1¼%,,2017.0,1105947.0,52
-1¾% Treasury Gilt 2057,GB00BD0XH204, 22-Jul-2057, 25-Jan-2017,22 Jan/Jul, 12-Jan-2023,30741.0,,,1¾% ,reasury Gilt 2057,1¾%,,2017.0,1136688.0,53
-1 5/8% Treasury Gilt 2028,GB00BFX0ZL78, 22-Oct-2028, 16-Mar-2018,22 Apr/Oct, 13-Oct-2022,37855.0,,,1 5/8% ,reasury Gilt 2028,1 5/8%,5/8,2018.0,1174543.0,54
-0 1/8% Index-linked Treasury Gilt 2041,GB00BGDYHF49, 10-Aug-2041, 12-Jul-2018,10 Feb/Aug, 01-Feb-2023,12447.0,280.05484,15311.0,0 1/8% Index-linked ,reasury Gilt 2041,Index Linked,1/8,2018.0,1186990.0,55
-1 5/8% Treasury Gilt 2071,GB00BFMCN652, 22-Oct-2071, 16-May-2018,22 Apr/Oct, 13-Oct-2022,24158.0,,,1 5/8% ,reasury Gilt 2071,1 5/8%,5/8,2018.0,1211148.0,56
-1¾% Treasury Gilt 2049,GB00BFWFPP71, 22-Jan-2049, 12-Sep-2018,22 Jan/Jul, 12-Jan-2023,30224.0,,,1¾% ,reasury Gilt 2049,1¾%,,2018.0,1241372.0,57
-1% Treasury Gilt 2024,GB00BFWFPL34, 22-Apr-2024, 25-Jul-2018,22 Apr/Oct, 13-Oct-2022,35638.0,,,1% ,reasury Gilt 2024,1%,,2018.0,1277010.0,58
-0 1/8% Index-linked Treasury Gilt 2028,GB00BZ1NTB69, 10-Aug-2028, 21-Jun-2018,10 Feb/Aug, 01-Feb-2023,17937.0,279.23333,22129.0,0 1/8% Index-linked ,reasury Gilt 2028,Index Linked,1/8,2018.0,1294947.0,59
-0 5/8% Treasury Gilt 2025,GB00BK5CVX03, 07-Jun-2025, 03-Jul-2019,7 Jun/Dec, 28-Nov-2022,44623.0,,,0 5/8% ,reasury Gilt 2025,0 5/8%,5/8,2019.0,1339570.0,60
-0 7/8% Treasury Gilt 2029,GB00BJMHB534, 22-Oct-2029, 19-Jun-2019,22 Apr/Oct, 13-Oct-2022,43620.0,,,0 7/8% ,reasury Gilt 2029,0 7/8%,7/8,2019.0,1383190.0,61
-1 5/8% Treasury Gilt 2054,GB00BJLR0J16, 22-Oct-2054, 15-May-2019,22 Apr/Oct, 13-Oct-2022,24581.0,,,1 5/8% ,reasury Gilt 2054,1 5/8%,5/8,2019.0,1407771.0,62
-0 1/8% Treasury Gilt 2024,GB00BMGR2791, 31-Jan-2024, 07-Oct-2020,31 Jan/Jul, 20-Jan-2023,35551.0,,,0 1/8% ,reasury Gilt 2024,0 1/8%,1/8,2020.0,1443322.0,63
-0½% Treasury Gilt 2061,GB00BMBL1D50, 22-Oct-2061, 20-May-2020,22 Apr/Oct, 13-Oct-2022,23386.0,,,0½% ,reasury Gilt 2061,0½%,,2020.0,1466708.0,64
-0 5/8% Treasury Gilt 2050,GB00BMBL1F74, 22-Oct-2050, 10-Jun-2020,22 Apr/Oct, 13-Oct-2022,31916.0,,,0 5/8% ,reasury Gilt 2050,0 5/8%,5/8,2020.0,1498624.0,65
-0 1/8% Treasury Gilt 2026,GB00BL68HJ26, 30-Jan-2026, 03-Jun-2020,30 Jan/Jul, 19-Jan-2023,35316.0,,,0 1/8% ,reasury Gilt 2026,0 1/8%,1/8,2020.0,1533940.0,66
-1¼ % Treasury Gilt 2041,GB00BJQWYH73, 22-Oct-2041, 22-Jan-2020,22 Apr/Oct, 13-Oct-2022,33817.0,,,1¼ % ,reasury Gilt 2041,1¼ %,,2020.0,1567757.0,67
-0 5/8% Treasury Gilt 2035,GB00BMGR2916, 31-Jul-2035, 09-Sep-2020,31 Jan/Jul, 20-Jan-2023,34817.0,,,0 5/8% ,reasury Gilt 2035,0 5/8%,5/8,2020.0,1602574.0,68
-0 1/8% Treasury Gilt 2028,GB00BMBL1G81, 31-Jan-2028, 12-Jun-2020,31 Jan/Jul, 20-Jan-2023,31032.0,,,0 1/8% ,reasury Gilt 2028,0 1/8%,1/8,2020.0,1633606.0,69
-0 3/8% Treasury Gilt 2030,GB00BL68HH02, 22-Oct-2030, 13-May-2020,22 Apr/Oct, 13-Oct-2022,38904.0,,,0 3/8% ,reasury Gilt 2030,0 3/8%,3/8,2020.0,1672510.0,70
-0¼% Treasury Gilt 2031,GB00BMGR2809, 31-Jul-2031, 13-Nov-2020,31 Jan/Jul, 20-Jan-2023,40636.0,,,0¼% ,reasury Gilt 2031,0¼%,,2020.0,1713146.0,71
-0 1/8% Index-linked Treasury Gilt 2051,GB00BNNGP882, 22-Mar-2051, 10-Feb-2021,22 Mar/Sep, 13-Mar-2023,6639.0,294.11071,7776.0,0 1/8% Index-linked ,reasury Gilt 2051,Index Linked,1/8,2021.0,1719785.0,72
-0¼% Treasury Gilt 2025,GB00BLPK7110, 31-Jan-2025, 02-Jul-2021,31 Jan/Jul, 20-Jan-2023,29353.0,,,0¼% ,reasury Gilt 2025,0¼%,,2021.0,1749138.0,73
-0 1/8% Index-linked Treasury Gilt 2073,GB00BM8Z2W66, 22-Mar-2073, 24-Nov-2021,22 Mar/Sep, 13-Mar-2023,2900.0,308.32,3240.0,0 1/8% Index-linked ,reasury Gilt 2073,Index Linked,1/8,2021.0,1752038.0,74
-0 3/8% Treasury Gilt 2026,GB00BNNGP668, 22-Oct-2026, 03-Mar-2021,22 Apr/Oct, 13-Oct-2022,32890.0,,,0 3/8% ,reasury Gilt 2026,0 3/8%,3/8,2021.0,1784928.0,75
-0½% Treasury Gilt 2029,GB00BLPK7227, 31-Jan-2029, 02-Sep-2021,31 Jan/Jul, 20-Jan-2023,17544.0,,,0½% ,reasury Gilt 2029,0½%,,2021.0,1802472.0,76
-1¼% Treasury Gilt 2051,GB00BLH38158, 31-Jul-2051, 28-Apr-2021,31 Jan/Jul, 20-Jan-2023,26049.0,,,1¼% ,reasury Gilt 2051,1¼%,,2021.0,1828521.0,77
-1% Treasury Gilt 2032,GB00BM8Z2T38, 31-Jan-2032, 02-Dec-2021,31 Jan/Jul, 20-Jan-2023,28957.0,,,1% ,reasury Gilt 2032,1%,,2021.0,1857478.0,78
-0 7/8% Green Gilt 2033,GB00BM8Z2S21, 31-Jul-2033, 22-Sep-2021,31 Jan/Jul, 20-Jan-2023,12742.0,,,0 7/8% Green Gilt 2033,,0 7/8% Green Gilt 2033,7/8,2021.0,1870220.0,79
-1 1/8% Treasury Gilt 2039,GB00BLPK7334, 31-Jan-2039, 14-Jul-2021,31 Jan/Jul, 20-Jan-2023,14816.0,,,1 1/8% ,reasury Gilt 2039,1 1/8%,1/8,2021.0,1885036.0,80
-0 7/8% Treasury Gilt 2046,GB00BNNGP775, 31-Jan-2046, 20-Jan-2021,31 Jan/Jul, 20-Jan-2023,20733.0,,,0 7/8% ,reasury Gilt 2046,0 7/8%,7/8,2021.0,1905769.0,81
-1½% Green Gilt 2053,GB00BM8Z2V59, 31-Jul-2053, 22-Oct-2021,31 Jan/Jul, 20-Jan-2023,10854.0,,,1½% Green Gilt 2053,,1½% Green Gilt 2053,,2021.0,1916623.0,82
-0 1/8% Index-linked Treasury Gilt 2039,GB00BLH38265, 22-Mar-2039, 26-May-2021,22 Mar/Sep, 13-Mar-2023,6303.0,296.72581,7317.0,0 1/8% Index-linked ,reasury Gilt 2039,Index Linked,1/8,2021.0,1922926.0,83
-0 1/8% Index-linked Treasury Gilt 2031,GB00BNNGP551, 10-Aug-2031, 28-Jan-2021,10 Feb/Aug, 01-Feb-2023,9563.0,293.60323,11221.0,0 1/8% Index-linked ,reasury Gilt 2031,Index Linked,1/8,2021.0,1932489.0,84
-4 1/8% Treasury Gilt 2027,GB00BL6C7720, 29-Jan-2027, 13-Oct-2022,29 Jan/Jul, 19-Jan-2023,4445.0,,,4 1/8% ,reasury Gilt 2027,4 1/8%,1/8,2022.0,1936934.0,85
-1 1/8% Treasury Gilt 2073,GB00BLBDX619, 22-Oct-2073, 09-Feb-2022,22 Apr/Oct, 13-Oct-2022,10107.0,,,1 1/8% ,reasury Gilt 2073,1 1/8%,1/8,2022.0,1947041.0,86
+type,code,redemptionDate,issueDate,divDates,divNextDate,issueAmount,baseRPI,amountINCinfUplift,giltType,coupon,issueYear,totalCumulative
+2½% Index-linked Treasury Stock 2024,GB0008983024, 17-Jul-2024, 30-Dec-1986,17 Jan/Jul, 06-Jan-2023,6821.0,97.66793409379,22363.0,Index-linked Treasury Stock 2024,2.5,1986.0,6821.0
+4 1/8% Index-linked Treasury Stock 2030,GB0008932666, 22-Jul-2030, 12-Jun-1992,22 Jan/Jul, 12-Jan-2023,4841.0,135.1,11474.0,Index-linked Treasury Stock 2030,4.125,1992.0,11662.0
+6% Treasury Stock 2028,GB0002404191, 07-Dec-2028, 29-Jan-1998,7 Jun/Dec, 28-Nov-2022,20256.0,,,Treasury Stock 2028,6.0,1998.0,31918.0
+4¼% Treasury Stock 2032,GB0004893086, 07-Jun-2032, 25-May-2000,7 Jun/Dec, 28-Nov-2022,40331.0,,,Treasury Stock 2032,4.25,2000.0,72249.0
+5% Treasury Stock 2025,GB0030880693, 07-Mar-2025, 27-Sep-2001,7 Mar/Sep, 24-Feb-2023,37339.0,,,Treasury Stock 2025,5.0,2001.0,109588.0
+2% Index-linked Treasury Stock 2035,GB0031790826, 26-Jan-2035, 11-Jul-2002,26 Jan/Jul, 17-Jan-2023,9084.0,173.6,16755.0,Index-linked Treasury Stock 2035,2.0,2002.0,118672.0
+4¼% Treasury Stock 2036,GB0032452392, 07-Mar-2036, 27-Feb-2003,7 Mar/Sep, 24-Feb-2023,31682.0,,,Treasury Stock 2036,4.25,2003.0,150354.0
+4¾% Treasury Stock 2038,GB00B00NY175, 07-Dec-2038, 23-Apr-2004,7 Jun/Dec, 28-Nov-2022,26827.0,,,Treasury Stock 2038,4.75,2004.0,177181.0
+4¼% Treasury Gilt 2055,GB00B06YGN05, 07-Dec-2055, 27-May-2005,7 Jun/Dec, 28-Nov-2022,27671.0,,,Treasury Gilt 2055,4.25,2005.0,204852.0
+1¼% Index-linked Treasury Gilt 2055,GB00B0CNHZ09, 22-Nov-2055, 23-Sep-2005,22 May/Nov, 11-Nov-2022,10169.0,192.2,18227.0,Index-linked Treasury Gilt 2055,1.25,2005.0,215021.0
+4¼% Treasury Gilt 2046,GB00B128DP45, 07-Dec-2046, 12-May-2006,7 Jun/Dec, 28-Nov-2022,25124.0,,,Treasury Gilt 2046,4.25,2006.0,240145.0
+4¼% Treasury Gilt 2027,GB00B16NNR78, 07-Dec-2027, 06-Sep-2006,7 Jun/Dec, 28-Nov-2022,33003.0,,,Treasury Gilt 2027,4.25,2006.0,273148.0
+1¼% Index-linked Treasury Gilt 2027,GB00B128DH60, 22-Nov-2027, 26-Apr-2006,22 May/Nov, 11-Nov-2022,14170.0,194.06667,25154.0,Index-linked Treasury Gilt 2027,1.25,2006.0,287318.0
+1 1/8% Index-linked Treasury Gilt 2037,GB00B1L6W962, 22-Nov-2037, 21-Feb-2007,22 May/Nov, 11-Nov-2022,13066.0,202.24286,22255.0,Index-linked Treasury Gilt 2037,1.125,2007.0,300384.0
+1 7/8% Index-linked Treasury Gilt 2022,GB00B1Z5HQ14, 22-Nov-2022, 11-Jul-2007,22 May/Nov, 11-Nov-2022,15743.0,205.65806,26554.0,Index-linked Treasury Gilt 2022,1.875,2007.0,316127.0
+0¾% Index-linked Treasury Gilt 2047,GB00B24FFM16, 22-Nov-2047, 21-Nov-2007,22 May/Nov, 11-Nov-2022,11687.0,207.76667,19377.0,Index-linked Treasury Gilt 2047,0.75,2007.0,327814.0
+4½% Treasury Gilt 2042,GB00B1VWPJ53, 07-Dec-2042, 06-Jun-2007,7 Jun/Dec, 28-Nov-2022,28354.0,,,Treasury Gilt 2042,4.5,2007.0,356168.0
+4¾% Treasury Gilt 2030,GB00B24FF097, 07-Dec-2030, 03-Oct-2007,7 Jun/Dec, 28-Nov-2022,42819.0,,,Treasury Gilt 2030,4.75,2007.0,398987.0
+4¼% Treasury Gilt 2049,GB00B39R3707, 07-Dec-2049, 03-Sep-2008,7 Jun/Dec, 28-Nov-2022,21047.0,,,Treasury Gilt 2049,4.25,2008.0,420034.0
+1¼% Index-linked Treasury Gilt 2032,GB00B3D4VD98, 22-Nov-2032, 29-Oct-2008,22 May/Nov, 11-Nov-2022,14657.0,217.13226,23254.0,Index-linked Treasury Gilt 2032,1.25,2008.0,434691.0
+4½% Treasury Gilt 2034,GB00B52WS153, 07-Sep-2034, 17-Jun-2009,7 Mar/Sep, 24-Feb-2023,36261.0,,,Treasury Gilt 2034,4.5,2009.0,470952.0
+0½% Index-linked Treasury Gilt 2050,GB00B421JZ66, 22-Mar-2050, 25-Sep-2009,22 Mar/Sep, 13-Mar-2023,12221.0,213.4,19729.0,Index-linked Treasury Gilt 2050,0.5,2009.0,483173.0
+0 5/8% Index-linked Treasury Gilt 2042,GB00B3MYD345, 22-Nov-2042, 24-Jul-2009,22 May/Nov, 11-Nov-2022,12559.0,212.46452,20364.0,Index-linked Treasury Gilt 2042,0.625,2009.0,495732.0
+4% Treasury Gilt 2060,GB00B54QLM75, 22-Jan-2060, 22-Oct-2009,22 Jan/Jul, 12-Jan-2023,25132.0,,,Treasury Gilt 2060,4.0,2009.0,520864.0
+4¼% Treasury Gilt 2039,GB00B3KJDS62, 07-Sep-2039, 05-Mar-2009,7 Mar/Sep, 24-Feb-2023,24235.0,,,Treasury Gilt 2039,4.25,2009.0,545099.0
+0 5/8% Index-linked Treasury Gilt 2040,GB00B3LZBF68, 22-Mar-2040, 28-Jan-2010,22 Mar/Sep, 13-Mar-2023,14090.0,216.52258,22417.0,Index-linked Treasury Gilt 2040,0.625,2010.0,559189.0
+4¼% Treasury Gilt 2040,GB00B6460505, 07-Dec-2040, 30-Jun-2010,7 Jun/Dec, 28-Nov-2022,26449.0,,,Treasury Gilt 2040,4.25,2010.0,585638.0
+3¾% Treasury Gilt 2052,GB00B6RNH572, 22-Jul-2052, 28-Sep-2011,22 Jan/Jul, 12-Jan-2023,25114.0,,,Treasury Gilt 2052,3.75,2011.0,610752.0
+0 1/8% Index-linked Treasury Gilt 2029,GB00B3Y1JG82, 22-Mar-2029, 23-Nov-2011,22 Mar/Sep, 13-Mar-2023,15459.0,237.42,22430.0,Index-linked Treasury Gilt 2029,0.125,2011.0,626211.0
+0¾% Index-linked Treasury Gilt 2034,GB00B46CGH68, 22-Mar-2034, 25-May-2011,22 Mar/Sep, 13-Mar-2023,14570.0,232.22903,21614.0,Index-linked Treasury Gilt 2034,0.75,2011.0,640781.0
+0 3/8% Index-linked Treasury Gilt 2062,GB00B4PTCY75, 22-Mar-2062, 26-Oct-2011,22 Mar/Sep, 13-Mar-2023,12480.0,235.82903,18230.0,Index-linked Treasury Gilt 2062,0.375,2011.0,653261.0
+0¼% Index-linked Treasury Gilt 2052,GB00B73ZYW09, 22-Mar-2052, 26-Sep-2012,22 Mar/Sep, 13-Mar-2023,12366.0,242.05,17600.0,Index-linked Treasury Gilt 2052,0.25,2012.0,665627.0
+0 1/8% Index-linked Treasury Gilt 2044,GB00B7RN0G65, 22-Mar-2044, 25-Jul-2012,22 Mar/Sep, 13-Mar-2023,15726.0,242.42258,22346.0,Index-linked Treasury Gilt 2044,0.125,2012.0,681353.0
+3¼% Treasury Gilt 2044,GB00B84Z9V04, 22-Jan-2044, 24-Oct-2012,22 Jan/Jul, 12-Jan-2023,29109.0,,,Treasury Gilt 2044,3.25,2012.0,710462.0
+0 1/8% Index-linked Treasury Gilt 2024,GB00B85SFQ54, 22-Mar-2024, 12-Oct-2012,22 Mar/Sep, 13-Mar-2023,15244.0,242.41935,21662.0,Index-linked Treasury Gilt 2024,0.125,2012.0,725706.0
+3½% Treasury Gilt 2068,GB00BBJNQY21, 22-Jul-2068, 26-Jun-2013,22 Jan/Jul, 12-Jan-2023,20743.0,,,Treasury Gilt 2068,3.5,2013.0,746449.0
+2¼% Treasury Gilt 2023,GB00B7Z53659, 07-Sep-2023, 12-Jun-2013,7 Mar/Sep, 24-Feb-2023,35922.0,,,Treasury Gilt 2023,2.25,2013.0,782371.0
+0 1/8% Index-linked Treasury Gilt 2068,GB00BDX8CX86, 22-Mar-2068, 25-Sep-2013,22 Mar/Sep, 13-Mar-2023,12600.0,249.7,17383.0,Index-linked Treasury Gilt 2068,0.125,2013.0,794971.0
+2¾% Treasury Gilt 2024,GB00BHBFH458, 07-Sep-2024, 12-Mar-2014,7 Mar/Sep, 24-Feb-2023,35806.0,,,Treasury Gilt 2024,2.75,2014.0,830777.0
+3½% Treasury Gilt 2045,GB00BN65R313, 22-Jan-2045, 25-Jun-2014,22 Jan/Jul, 12-Jan-2023,29404.0,,,Treasury Gilt 2045,3.5,2014.0,860181.0
+0 1/8% Index-linked Treasury Gilt 2058,GB00BP9DLZ64, 22-Mar-2058, 30-Jul-2014,22 Mar/Sep, 13-Mar-2023,10953.0,255.8871,14746.0,Index-linked Treasury Gilt 2058,0.125,2014.0,871134.0
+0 1/8% Index-linked Treasury Gilt 2046,GB00BYMWG366, 22-Mar-2046, 24-Jun-2015,22 Mar/Sep, 13-Mar-2023,13486.0,257.79,18021.0,Index-linked Treasury Gilt 2046,0.125,2015.0,884620.0
+2% Treasury Gilt 2025,GB00BTHH2R79, 07-Sep-2025, 20-Mar-2015,7 Mar/Sep, 24-Feb-2023,39934.0,,,Treasury Gilt 2025,2.0,2015.0,924554.0
+2½% Treasury Gilt 2065,GB00BYYMZX75, 22-Jul-2065, 21-Oct-2015,22 Jan/Jul, 12-Jan-2023,20575.0,,,Treasury Gilt 2065,2.5,2015.0,945129.0
+0 1/8% Index-linked Treasury Gilt 2026,GB00BYY5F144, 22-Mar-2026, 16-Jul-2015,22 Mar/Sep, 13-Mar-2023,13455.0,258.24194,17948.0,Index-linked Treasury Gilt 2026,0.125,2015.0,958584.0
+0 1/8% Index-linked Treasury Gilt 2065,GB00BD9MZZ71, 22-Nov-2065, 24-Feb-2016,22 May/Nov, 11-Nov-2022,8125.0,260.43448,10747.0,Index-linked Treasury Gilt 2065,0.125,2016.0,966709.0
+1¾% Treasury Gilt 2037,GB00BZB26Y51, 07-Sep-2037, 09-Nov-2016,7 Mar/Sep, 24-Feb-2023,31968.0,,,Treasury Gilt 2037,1.75,2016.0,998677.0
+0 1/8% Index-Linked Treasury Gilt 2056,GB00BYVP4K94, 22-Nov-2056, 30-Nov-2016,22 May/Nov, 11-Nov-2022,7147.0,264.88333,9294.0,Index-Linked Treasury Gilt 2056,0.125,2016.0,1005824.0
+0 1/8% Index-linked Treasury Gilt 2036,GB00BYZW3J87, 22-Nov-2036, 11-Mar-2016,22 May/Nov, 11-Nov-2022,13905.0,260.01935,18422.0,Index-linked Treasury Gilt 2036,0.125,2016.0,1019729.0
+1½% Treasury Gilt 2026,GB00BYZW3G56, 22-Jul-2026, 18-Feb-2016,22 Jan/Jul, 12-Jan-2023,43651.0,,,Treasury Gilt 2026,1.5,2016.0,1063380.0
+1½% Treasury Gilt 2047,GB00BDCHBW80, 22-Jul-2047, 21-Sep-2016,22 Jan/Jul, 12-Jan-2023,25721.0,,,Treasury Gilt 2047,1.5,2016.0,1089101.0
+0¾% Treasury Gilt 2023,GB00BF0HZ991, 22-Jul-2023, 20-Jul-2017,22 Jan/Jul, 12-Jan-2023,34359.0,,,Treasury Gilt 2023,0.75,2017.0,1123460.0
+0 1/8% Index-linked Treasury Gilt 2048,GB00BZ13DV40, 10-Aug-2048, 08-Nov-2017,10 Feb/Aug, 01-Feb-2023,11781.0,274.79333,14769.0,Index-linked Treasury Gilt 2048,0.125,2017.0,1135241.0
+1¾% Treasury Gilt 2057,GB00BD0XH204, 22-Jul-2057, 25-Jan-2017,22 Jan/Jul, 12-Jan-2023,30741.0,,,Treasury Gilt 2057,1.75,2017.0,1165982.0
+1¼% Treasury Gilt 2027,GB00BDRHNP05, 22-Jul-2027, 15-Mar-2017,22 Jan/Jul, 12-Jan-2023,40987.0,,,Treasury Gilt 2027,1.25,2017.0,1206969.0
+1 5/8% Treasury Gilt 2071,GB00BFMCN652, 22-Oct-2071, 16-May-2018,22 Apr/Oct, 13-Oct-2022,24158.0,,,Treasury Gilt 2071,1.625,2018.0,1231127.0
+1% Treasury Gilt 2024,GB00BFWFPL34, 22-Apr-2024, 25-Jul-2018,22 Apr/Oct, 13-Oct-2022,35638.0,,,Treasury Gilt 2024,1.0,2018.0,1266765.0
+0 1/8% Index-linked Treasury Gilt 2041,GB00BGDYHF49, 10-Aug-2041, 12-Jul-2018,10 Feb/Aug, 01-Feb-2023,12447.0,280.05484,15311.0,Index-linked Treasury Gilt 2041,0.125,2018.0,1279212.0
+1¾% Treasury Gilt 2049,GB00BFWFPP71, 22-Jan-2049, 12-Sep-2018,22 Jan/Jul, 12-Jan-2023,30224.0,,,Treasury Gilt 2049,1.75,2018.0,1309436.0
+0 1/8% Index-linked Treasury Gilt 2028,GB00BZ1NTB69, 10-Aug-2028, 21-Jun-2018,10 Feb/Aug, 01-Feb-2023,17937.0,279.23333,22129.0,Index-linked Treasury Gilt 2028,0.125,2018.0,1327373.0
+1 5/8% Treasury Gilt 2028,GB00BFX0ZL78, 22-Oct-2028, 16-Mar-2018,22 Apr/Oct, 13-Oct-2022,37855.0,,,Treasury Gilt 2028,1.625,2018.0,1365228.0
+0 7/8% Treasury Gilt 2029,GB00BJMHB534, 22-Oct-2029, 19-Jun-2019,22 Apr/Oct, 13-Oct-2022,43620.0,,,Treasury Gilt 2029,0.875,2019.0,1408848.0
+0 5/8% Treasury Gilt 2025,GB00BK5CVX03, 07-Jun-2025, 03-Jul-2019,7 Jun/Dec, 28-Nov-2022,44623.0,,,Treasury Gilt 2025,0.625,2019.0,1453471.0
+1 5/8% Treasury Gilt 2054,GB00BJLR0J16, 22-Oct-2054, 15-May-2019,22 Apr/Oct, 13-Oct-2022,24581.0,,,Treasury Gilt 2054,1.625,2019.0,1478052.0
+0 1/8% Treasury Gilt 2023,GB00BL68HG94, 31-Jan-2023, 08-Apr-2020,31 Jan/Jul, 20-Jan-2023,33824.0,,,Treasury Gilt 2023,0.125,2020.0,1511876.0
+0 5/8% Treasury Gilt 2050,GB00BMBL1F74, 22-Oct-2050, 10-Jun-2020,22 Apr/Oct, 13-Oct-2022,31916.0,,,Treasury Gilt 2050,0.625,2020.0,1543792.0
+0 1/8% Treasury Gilt 2024,GB00BMGR2791, 31-Jan-2024, 07-Oct-2020,31 Jan/Jul, 20-Jan-2023,35551.0,,,Treasury Gilt 2024,0.125,2020.0,1579343.0
+0½% Treasury Gilt 2061,GB00BMBL1D50, 22-Oct-2061, 20-May-2020,22 Apr/Oct, 13-Oct-2022,23386.0,,,Treasury Gilt 2061,0.5,2020.0,1602729.0
+1¼ % Treasury Gilt 2041,GB00BJQWYH73, 22-Oct-2041, 22-Jan-2020,22 Apr/Oct, 13-Oct-2022,33817.0,,,Treasury Gilt 2041,1.25,2020.0,1636546.0
+0 1/8% Treasury Gilt 2026,GB00BL68HJ26, 30-Jan-2026, 03-Jun-2020,30 Jan/Jul, 19-Jan-2023,35316.0,,,Treasury Gilt 2026,0.125,2020.0,1671862.0
+0 5/8% Treasury Gilt 2035,GB00BMGR2916, 31-Jul-2035, 09-Sep-2020,31 Jan/Jul, 20-Jan-2023,34817.0,,,Treasury Gilt 2035,0.625,2020.0,1706679.0
+0¼% Treasury Gilt 2031,GB00BMGR2809, 31-Jul-2031, 13-Nov-2020,31 Jan/Jul, 20-Jan-2023,40636.0,,,Treasury Gilt 2031,0.25,2020.0,1747315.0
+0 1/8% Treasury Gilt 2028,GB00BMBL1G81, 31-Jan-2028, 12-Jun-2020,31 Jan/Jul, 20-Jan-2023,31032.0,,,Treasury Gilt 2028,0.125,2020.0,1778347.0
+0 3/8% Treasury Gilt 2030,GB00BL68HH02, 22-Oct-2030, 13-May-2020,22 Apr/Oct, 13-Oct-2022,38904.0,,,Treasury Gilt 2030,0.375,2020.0,1817251.0
+0 1/8% Index-linked Treasury Gilt 2073,GB00BM8Z2W66, 22-Mar-2073, 24-Nov-2021,22 Mar/Sep, 13-Mar-2023,2900.0,308.32,3240.0,Index-linked Treasury Gilt 2073,0.125,2021.0,1820151.0
+0¼% Treasury Gilt 2025,GB00BLPK7110, 31-Jan-2025, 02-Jul-2021,31 Jan/Jul, 20-Jan-2023,29353.0,,,Treasury Gilt 2025,0.25,2021.0,1849504.0
+0 3/8% Treasury Gilt 2026,GB00BNNGP668, 22-Oct-2026, 03-Mar-2021,22 Apr/Oct, 13-Oct-2022,32890.0,,,Treasury Gilt 2026,0.375,2021.0,1882394.0
+0 1/8% Index-linked Treasury Gilt 2051,GB00BNNGP882, 22-Mar-2051, 10-Feb-2021,22 Mar/Sep, 13-Mar-2023,6639.0,294.11071,7776.0,Index-linked Treasury Gilt 2051,0.125,2021.0,1889033.0
+0 1/8% Index-linked Treasury Gilt 2031,GB00BNNGP551, 10-Aug-2031, 28-Jan-2021,10 Feb/Aug, 01-Feb-2023,9563.0,293.60323,11221.0,Index-linked Treasury Gilt 2031,0.125,2021.0,1898596.0
+1% Treasury Gilt 2032,GB00BM8Z2T38, 31-Jan-2032, 02-Dec-2021,31 Jan/Jul, 20-Jan-2023,28957.0,,,Treasury Gilt 2032,1.0,2021.0,1927553.0
+1 1/8% Treasury Gilt 2039,GB00BLPK7334, 31-Jan-2039, 14-Jul-2021,31 Jan/Jul, 20-Jan-2023,14816.0,,,Treasury Gilt 2039,1.125,2021.0,1942369.0
+0 7/8% Treasury Gilt 2046,GB00BNNGP775, 31-Jan-2046, 20-Jan-2021,31 Jan/Jul, 20-Jan-2023,20733.0,,,Treasury Gilt 2046,0.875,2021.0,1963102.0
+1¼% Treasury Gilt 2051,GB00BLH38158, 31-Jul-2051, 28-Apr-2021,31 Jan/Jul, 20-Jan-2023,26049.0,,,Treasury Gilt 2051,1.25,2021.0,1989151.0
+0 1/8% Index-linked Treasury Gilt 2039,GB00BLH38265, 22-Mar-2039, 26-May-2021,22 Mar/Sep, 13-Mar-2023,6303.0,296.72581,7317.0,Index-linked Treasury Gilt 2039,0.125,2021.0,1995454.0
+0½% Treasury Gilt 2029,GB00BLPK7227, 31-Jan-2029, 02-Sep-2021,31 Jan/Jul, 20-Jan-2023,17544.0,,,Treasury Gilt 2029,0.5,2021.0,2012998.0
+4 1/8% Treasury Gilt 2027,GB00BL6C7720, 29-Jan-2027, 13-Oct-2022,29 Jan/Jul, 19-Jan-2023,4445.0,,,Treasury Gilt 2027,4.125,2022.0,2017443.0
+1 1/8% Treasury Gilt 2073,GB00BLBDX619, 22-Oct-2073, 09-Feb-2022,22 Apr/Oct, 13-Oct-2022,10107.0,,,Treasury Gilt 2073,1.125,2022.0,2027550.0
