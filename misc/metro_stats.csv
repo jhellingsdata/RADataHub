@@ -1,0 +1,449 @@
+date,system,value,location
+1989,Docklands Light Railway,6.6,London
+1990,Docklands Light Railway,8.5,London
+1991,Docklands Light Railway,8.0,London
+1992,Docklands Light Railway,7.9,London
+1993,Docklands Light Railway,6.9,London
+1994,Docklands Light Railway,8.3,London
+1995,Docklands Light Railway,11.3,London
+1996,Docklands Light Railway,14.5,London
+1997,Docklands Light Railway,16.7,London
+1998,Docklands Light Railway,21.0,London
+1999,Docklands Light Railway,27.6,London
+2000,Docklands Light Railway,31.3,London
+2001,Docklands Light Railway,38.4,London
+2002,Docklands Light Railway,41.3,London
+2003,Docklands Light Railway,45.7,London
+2004,Docklands Light Railway,48.5,London
+2005,Docklands Light Railway,50.1,London
+2006,Docklands Light Railway,53.5,London
+2007,Docklands Light Railway,63.9,London
+2008,Docklands Light Railway,66.6,London
+2009,Docklands Light Railway,67.8,London
+2010,Docklands Light Railway,69.4,London
+2011,Docklands Light Railway,78.3,London
+2012,Docklands Light Railway,86.1,London
+2013,Docklands Light Railway,100.0,London
+2014,Docklands Light Railway,101.6,London
+2015,Docklands Light Railway,110.2,London
+2016,Docklands Light Railway,116.9,London
+2017,Docklands Light Railway,122.3,London
+2018,Docklands Light Railway,119.6,London
+2019,Docklands Light Railway,121.8,London
+2020,Docklands Light Railway,116.8,London
+2021,Docklands Light Railway,39.7,London
+2022,Docklands Light Railway,77.2,London
+2023,Docklands Light Railway,92.3,London
+2024,Docklands Light Railway,98.9,London
+2001,London Trams,15.0,London
+2002,London Trams,18.2,London
+2003,London Trams,18.7,London
+2004,London Trams,19.8,London
+2005,London Trams,22.0,London
+2006,London Trams,22.5,London
+2007,London Trams,24.6,London
+2008,London Trams,27.2,London
+2009,London Trams,27.2,London
+2010,London Trams,25.8,London
+2011,London Trams,27.9,London
+2012,London Trams,28.6,London
+2013,London Trams,30.1,London
+2014,London Trams,31.2,London
+2015,London Trams,30.7,London
+2016,London Trams,27.0,London
+2017,London Trams,29.5,London
+2018,London Trams,29.1,London
+2019,London Trams,28.7,London
+2020,London Trams,27.2,London
+2021,London Trams,11.6,London
+2022,London Trams,19.1,London
+2023,London Trams,20.9,London
+2024,London Trams,20.0,London
+2004,Nottingham Express Transit,0.4,Nottingham
+2005,Nottingham Express Transit,8.5,Nottingham
+2006,Nottingham Express Transit,9.8,Nottingham
+2007,Nottingham Express Transit,10.1,Nottingham
+2008,Nottingham Express Transit,10.2,Nottingham
+2009,Nottingham Express Transit,9.8,Nottingham
+2010,Nottingham Express Transit,9.0,Nottingham
+2011,Nottingham Express Transit,9.7,Nottingham
+2012,Nottingham Express Transit,9.0,Nottingham
+2013,Nottingham Express Transit,7.4,Nottingham
+2014,Nottingham Express Transit,7.9,Nottingham
+2015,Nottingham Express Transit,8.1,Nottingham
+2016,Nottingham Express Transit,12.2,Nottingham
+2017,Nottingham Express Transit,16.4,Nottingham
+2018,Nottingham Express Transit,17.8,Nottingham
+2019,Nottingham Express Transit,18.8,Nottingham
+2020,Nottingham Express Transit,18.7,Nottingham
+2021,Nottingham Express Transit,3.4,Nottingham
+2022,Nottingham Express Transit,9.1,Nottingham
+2023,Nottingham Express Transit,14.4,Nottingham
+2024,Nottingham Express Transit,15.5,Nottingham
+2000,West Midlands Metro,4.8,
+2001,West Midlands Metro,5.4,
+2002,West Midlands Metro,4.8,
+2003,West Midlands Metro,4.9,
+2004,West Midlands Metro,5.1,
+2005,West Midlands Metro,5.0,
+2006,West Midlands Metro,5.1,
+2007,West Midlands Metro,4.9,
+2008,West Midlands Metro,4.8,
+2009,West Midlands Metro,4.7,
+2010,West Midlands Metro,4.7,
+2011,West Midlands Metro,4.8,
+2012,West Midlands Metro,4.9,
+2013,West Midlands Metro,4.8,
+2014,West Midlands Metro,4.7,
+2015,West Midlands Metro,4.4,
+2016,West Midlands Metro,4.8,
+2017,West Midlands Metro,6.2,
+2018,West Midlands Metro,5.7,
+2019,West Midlands Metro,8.3,
+2020,West Midlands Metro,8.0,
+2021,West Midlands Metro,3.4,
+2022,West Midlands Metro,4.7,
+2023,West Midlands Metro,5.4,
+2024,West Midlands Metro,8.3,
+1995,Sheffield Supertram,2.2,Sheffield
+1996,Sheffield Supertram,5.3,Sheffield
+1997,Sheffield Supertram,7.8,Sheffield
+1998,Sheffield Supertram,9.2,Sheffield
+1999,Sheffield Supertram,10.4,Sheffield
+2000,Sheffield Supertram,10.9,Sheffield
+2001,Sheffield Supertram,11.1,Sheffield
+2002,Sheffield Supertram,11.4,Sheffield
+2003,Sheffield Supertram,11.5,Sheffield
+2004,Sheffield Supertram,12.3,Sheffield
+2005,Sheffield Supertram,12.8,Sheffield
+2006,Sheffield Supertram,13.1,Sheffield
+2007,Sheffield Supertram,14.0,Sheffield
+2008,Sheffield Supertram,14.8,Sheffield
+2009,Sheffield Supertram,15.0,Sheffield
+2010,Sheffield Supertram,14.7,Sheffield
+2011,Sheffield Supertram,15.0,Sheffield
+2012,Sheffield Supertram,15.0,Sheffield
+2013,Sheffield Supertram,14.4,Sheffield
+2014,Sheffield Supertram,12.6,Sheffield
+2015,Sheffield Supertram,11.5,Sheffield
+2016,Sheffield Supertram,11.6,Sheffield
+2017,Sheffield Supertram,12.6,Sheffield
+2018,Sheffield Supertram,12.3,Sheffield
+2019,Sheffield Supertram,11.9,Sheffield
+2020,Sheffield Supertram,10.5,Sheffield
+2021,Sheffield Supertram,2.8,Sheffield
+2022,Sheffield Supertram,6.9,Sheffield
+2023,Sheffield Supertram,8.4,Sheffield
+2024,Sheffield Supertram,8.7,Sheffield
+1984,Tyne and Wear Metro,49.8,Tyne and Wear
+1985,Tyne and Wear Metro,57.2,Tyne and Wear
+1986,Tyne and Wear Metro,59.1,Tyne and Wear
+1987,Tyne and Wear Metro,46.4,Tyne and Wear
+1988,Tyne and Wear Metro,44.9,Tyne and Wear
+1989,Tyne and Wear Metro,45.4,Tyne and Wear
+1990,Tyne and Wear Metro,45.5,Tyne and Wear
+1991,Tyne and Wear Metro,43.6,Tyne and Wear
+1992,Tyne and Wear Metro,40.6,Tyne and Wear
+1993,Tyne and Wear Metro,38.9,Tyne and Wear
+1994,Tyne and Wear Metro,38.3,Tyne and Wear
+1995,Tyne and Wear Metro,37.0,Tyne and Wear
+1996,Tyne and Wear Metro,35.9,Tyne and Wear
+1997,Tyne and Wear Metro,35.4,Tyne and Wear
+1998,Tyne and Wear Metro,35.0,Tyne and Wear
+1999,Tyne and Wear Metro,33.8,Tyne and Wear
+2000,Tyne and Wear Metro,32.7,Tyne and Wear
+2001,Tyne and Wear Metro,32.5,Tyne and Wear
+2002,Tyne and Wear Metro,33.4,Tyne and Wear
+2003,Tyne and Wear Metro,36.6,Tyne and Wear
+2004,Tyne and Wear Metro,37.9,Tyne and Wear
+2005,Tyne and Wear Metro,36.8,Tyne and Wear
+2006,Tyne and Wear Metro,35.8,Tyne and Wear
+2007,Tyne and Wear Metro,37.9,Tyne and Wear
+2008,Tyne and Wear Metro,39.8,Tyne and Wear
+2009,Tyne and Wear Metro,40.6,Tyne and Wear
+2010,Tyne and Wear Metro,40.8,Tyne and Wear
+2011,Tyne and Wear Metro,39.9,Tyne and Wear
+2012,Tyne and Wear Metro,37.9,Tyne and Wear
+2013,Tyne and Wear Metro,37.0,Tyne and Wear
+2014,Tyne and Wear Metro,35.7,Tyne and Wear
+2015,Tyne and Wear Metro,38.1,Tyne and Wear
+2016,Tyne and Wear Metro,40.3,Tyne and Wear
+2017,Tyne and Wear Metro,37.7,Tyne and Wear
+2018,Tyne and Wear Metro,36.4,Tyne and Wear
+2019,Tyne and Wear Metro,36.4,Tyne and Wear
+2020,Tyne and Wear Metro,33.1,Tyne and Wear
+2021,Tyne and Wear Metro,9.4,Tyne and Wear
+2022,Tyne and Wear Metro,24.3,Tyne and Wear
+2023,Tyne and Wear Metro,29.3,Tyne and Wear
+2024,Tyne and Wear Metro,30.7,Tyne and Wear
+1993,Manchester Metrolink,8.1,
+1994,Manchester Metrolink,11.3,
+1995,Manchester Metrolink,12.3,
+1996,Manchester Metrolink,12.6,
+1997,Manchester Metrolink,13.4,
+1998,Manchester Metrolink,13.8,
+1999,Manchester Metrolink,13.2,
+2000,Manchester Metrolink,14.2,
+2001,Manchester Metrolink,17.2,
+2002,Manchester Metrolink,18.2,
+2003,Manchester Metrolink,18.8,
+2004,Manchester Metrolink,18.9,
+2005,Manchester Metrolink,19.7,
+2006,Manchester Metrolink,19.9,
+2007,Manchester Metrolink,19.8,
+2008,Manchester Metrolink,20.0,
+2009,Manchester Metrolink,21.1,
+2010,Manchester Metrolink,19.6,
+2011,Manchester Metrolink,19.2,
+2012,Manchester Metrolink,22.3,
+2013,Manchester Metrolink,25.0,
+2014,Manchester Metrolink,29.2,
+2015,Manchester Metrolink,31.2,
+2016,Manchester Metrolink,34.3,
+2017,Manchester Metrolink,37.8,
+2018,Manchester Metrolink,41.2,
+2019,Manchester Metrolink,43.7,
+2020,Manchester Metrolink,44.3,
+2021,Manchester Metrolink,10.3,
+2022,Manchester Metrolink,26.0,
+2023,Manchester Metrolink,36.0,
+2024,Manchester Metrolink,42.0,
+1984,Blackpool Tramway,6.2,Blackpool
+1985,Blackpool Tramway,6.0,Blackpool
+1986,Blackpool Tramway,6.2,Blackpool
+1987,Blackpool Tramway,6.2,Blackpool
+1988,Blackpool Tramway,5.4,Blackpool
+1989,Blackpool Tramway,5.4,Blackpool
+1990,Blackpool Tramway,5.6,Blackpool
+1991,Blackpool Tramway,5.8,Blackpool
+1992,Blackpool Tramway,5.0,Blackpool
+1993,Blackpool Tramway,5.2,Blackpool
+1994,Blackpool Tramway,5.5,Blackpool
+1995,Blackpool Tramway,5.4,Blackpool
+1996,Blackpool Tramway,4.9,Blackpool
+1997,Blackpool Tramway,4.9,Blackpool
+1998,Blackpool Tramway,4.7,Blackpool
+1999,Blackpool Tramway,4.4,Blackpool
+2000,Blackpool Tramway,4.3,Blackpool
+2001,Blackpool Tramway,4.1,Blackpool
+2002,Blackpool Tramway,4.9,Blackpool
+2003,Blackpool Tramway,4.5,Blackpool
+2004,Blackpool Tramway,3.7,Blackpool
+2005,Blackpool Tramway,3.9,Blackpool
+2006,Blackpool Tramway,3.6,Blackpool
+2007,Blackpool Tramway,3.4,Blackpool
+2008,Blackpool Tramway,2.9,Blackpool
+2009,Blackpool Tramway,2.3,Blackpool
+2010,Blackpool Tramway,2.2,Blackpool
+2011,Blackpool Tramway,1.6,Blackpool
+2012,Blackpool Tramway,1.1,Blackpool
+2013,Blackpool Tramway,3.7,Blackpool
+2014,Blackpool Tramway,4.3,Blackpool
+2015,Blackpool Tramway,4.1,Blackpool
+2016,Blackpool Tramway,4.9,Blackpool
+2017,Blackpool Tramway,5.1,Blackpool
+2018,Blackpool Tramway,5.2,Blackpool
+2019,Blackpool Tramway,5.2,Blackpool
+2020,Blackpool Tramway,4.8,Blackpool
+2021,Blackpool Tramway,1.1,Blackpool
+2022,Blackpool Tramway,4.2,Blackpool
+2023,Blackpool Tramway,4.9,Blackpool
+2024,Blackpool Tramway,4.7,Blackpool
+1984,England outside of London,56.0,
+1985,England outside of London,63.2,
+1986,England outside of London,65.3,
+1987,England outside of London,52.6,
+1988,England outside of London,50.3,
+1989,England outside of London,50.8,
+1990,England outside of London,51.1,
+1991,England outside of London,49.4,
+1992,England outside of London,45.6,
+1993,England outside of London,52.2,
+1994,England outside of London,55.1,
+1995,England outside of London,56.9,
+1996,England outside of London,58.7,
+1997,England outside of London,61.5,
+1998,England outside of London,62.7,
+1999,England outside of London,61.7,
+2000,England outside of London,66.9,
+2001,England outside of London,70.3,
+2002,England outside of London,72.7,
+2003,England outside of London,76.3,
+2004,England outside of London,78.3,
+2005,England outside of London,86.6,
+2006,England outside of London,87.3,
+2007,England outside of London,90.1,
+2008,England outside of London,92.5,
+2009,England outside of London,93.6,
+2010,England outside of London,91.0,
+2011,England outside of London,90.3,
+2012,England outside of London,90.1,
+2013,England outside of London,92.3,
+2014,England outside of London,94.4,
+2015,England outside of London,97.3,
+2016,England outside of London,108.1,
+2017,England outside of London,115.9,
+2018,England outside of London,118.6,
+2019,England outside of London,124.4,
+2020,England outside of London,119.4,
+2021,England outside of London,30.4,
+2022,England outside of London,75.2,
+2023,England outside of London,98.3,
+2024,England outside of London,109.9,
+1984,England,56.0,
+1985,England,63.2,
+1986,England,65.3,
+1987,England,52.6,
+1988,England,50.3,
+1989,England,57.4,
+1990,England,59.6,
+1991,England,57.4,
+1992,England,53.5,
+1993,England,59.1,
+1994,England,63.4,
+1995,England,68.2,
+1996,England,73.2,
+1997,England,78.2,
+1998,England,83.7,
+1999,England,89.3,
+2000,England,98.2,
+2001,England,123.6,
+2002,England,132.2,
+2003,England,140.7,
+2004,England,146.5,
+2005,England,158.7,
+2006,England,163.4,
+2007,England,178.6,
+2008,England,186.2,
+2009,England,188.6,
+2010,England,186.2,
+2011,England,196.5,
+2012,England,204.8,
+2013,England,222.5,
+2014,England,227.1,
+2015,England,238.2,
+2016,England,252.0,
+2017,England,267.7,
+2018,England,267.2,
+2019,England,274.8,
+2020,England,263.4,
+2021,England,81.7,
+2022,England,171.5,
+2023,England,211.5,
+2024,England,228.8,
+2015,Edinburgh Trams,4.1,Edinburgh
+2016,Edinburgh Trams,5.3,Edinburgh
+2017,Edinburgh Trams,5.8,Edinburgh
+2018,Edinburgh Trams,6.8,Edinburgh
+2019,Edinburgh Trams,7.5,Edinburgh
+2020,Edinburgh Trams,7.1,Edinburgh
+2021,Edinburgh Trams,0.9,Edinburgh
+2022,Edinburgh Trams,2.8,Edinburgh
+2023,Edinburgh Trams,5.3,Edinburgh
+2024,Edinburgh Trams,10.1,Edinburgh
+1984,Great Britain,56.0,
+1985,Great Britain,63.2,
+1986,Great Britain,65.3,
+1987,Great Britain,52.6,
+1988,Great Britain,50.3,
+1989,Great Britain,57.4,
+1990,Great Britain,59.6,
+1991,Great Britain,57.4,
+1992,Great Britain,53.5,
+1993,Great Britain,59.1,
+1994,Great Britain,63.4,
+1995,Great Britain,68.2,
+1996,Great Britain,73.2,
+1997,Great Britain,78.2,
+1998,Great Britain,83.7,
+1999,Great Britain,89.3,
+2000,Great Britain,98.2,
+2001,Great Britain,123.6,
+2002,Great Britain,132.2,
+2003,Great Britain,140.7,
+2004,Great Britain,146.5,
+2005,Great Britain,158.7,
+2006,Great Britain,163.4,
+2007,Great Britain,178.6,
+2008,Great Britain,186.2,
+2009,Great Britain,188.6,
+2010,Great Britain,186.2,
+2011,Great Britain,196.5,
+2012,Great Britain,204.8,
+2013,Great Britain,222.5,
+2014,Great Britain,227.1,
+2015,Great Britain,242.4,
+2016,Great Britain,257.3,
+2017,Great Britain,273.5,
+2018,Great Britain,274.0,
+2019,Great Britain,282.3,
+2020,Great Britain,270.6,
+2021,Great Britain,82.6,
+2022,Great Britain,174.3,
+2023,Great Britain,216.8,
+2024,Great Britain,238.9,
+2001,London Underground,970.0,London
+2002,London Underground,953.0,London
+2003,London Underground,942.0,London
+2004,London Underground,948.0,London
+2005,London Underground,976.0,London
+2006,London Underground,970.0,London
+2007,London Underground,1040.0,London
+2008,London Underground,1096.0,London
+2009,London Underground,1089.0,London
+2010,London Underground,1059.0,London
+2011,London Underground,1107.0,London
+2012,London Underground,1171.0,London
+2013,London Underground,1229.0,London
+2014,London Underground,1265.0,London
+2015,London Underground,1305.4,London
+2016,London Underground,1349.3,London
+2017,London Underground,1377.9,London
+2018,London Underground,1394.6,London
+2019,London Underground,1384.0,London
+2020,London Underground,1337.0,London
+2021,London Underground,296.1,London
+2022,London Underground,748.0,London
+2023,London Underground,1065.1,London
+2024,London Underground,1180.8,London
+1984,Glasgow Subway,12.3,Glasgow
+1985,Glasgow Subway,12.7,Glasgow
+1986,Glasgow Subway,13.1,Glasgow
+1987,Glasgow Subway,13.7,Glasgow
+1988,Glasgow Subway,13.6,Glasgow
+1989,Glasgow Subway,13.6,Glasgow
+1990,Glasgow Subway,13.5,Glasgow
+1991,Glasgow Subway,13.7,Glasgow
+1992,Glasgow Subway,13.6,Glasgow
+1993,Glasgow Subway,13.5,Glasgow
+1994,Glasgow Subway,14.3,Glasgow
+1995,Glasgow Subway,14.7,Glasgow
+1996,Glasgow Subway,14.3,Glasgow
+1997,Glasgow Subway,13.7,Glasgow
+1998,Glasgow Subway,14.1,Glasgow
+1999,Glasgow Subway,14.6,Glasgow
+2000,Glasgow Subway,14.7,Glasgow
+2001,Glasgow Subway,14.4,Glasgow
+2002,Glasgow Subway,13.8,Glasgow
+2003,Glasgow Subway,13.4,Glasgow
+2004,Glasgow Subway,13.3,Glasgow
+2005,Glasgow Subway,13.3,Glasgow
+2006,Glasgow Subway,13.2,Glasgow
+2007,Glasgow Subway,13.5,Glasgow
+2008,Glasgow Subway,14.5,Glasgow
+2009,Glasgow Subway,14.1,Glasgow
+2010,Glasgow Subway,13.1,Glasgow
+2011,Glasgow Subway,13.0,Glasgow
+2012,Glasgow Subway,12.9,Glasgow
+2013,Glasgow Subway,12.6,Glasgow
+2014,Glasgow Subway,12.7,Glasgow
+2015,Glasgow Subway,13.0,Glasgow
+2016,Glasgow Subway,11.4,Glasgow
+2017,Glasgow Subway,11.1,Glasgow
+2018,Glasgow Subway,12.7,Glasgow
+2019,Glasgow Subway,13.1,Glasgow
+2020,Glasgow Subway,12.7,Glasgow
+2021,Glasgow Subway,2.5,Glasgow
+2022,Glasgow Subway,8.0,Glasgow
+2023,Glasgow Subway,11.9,Glasgow
+2024,Glasgow Subway,13.4,Glasgow
