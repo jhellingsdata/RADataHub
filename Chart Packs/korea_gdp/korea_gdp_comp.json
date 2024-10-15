@@ -1,0 +1,116 @@
+{
+    "config": {
+      "font": "Circular Std",
+      "view": {
+        "stroke": "transparent",
+        "width": 400,
+        "height": 300
+      },
+      "range": {
+        "category": [
+          "#36B7B4",
+          "#E6224B",
+          "#F4C245",
+          "#0063AF",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ],
+        "diverging": [
+          "#E6224B",
+          "#E54753",
+          "#C9C9C9",
+          "#179FDB",
+          "#122B39"
+        ],
+        "heatmap": [
+          "#C9C9C9",
+          "#179FDB",
+          "#0063AF",
+          "#122B39"
+        ],
+        "ordinal": [
+          "#00A767",
+          "#36B7B4",
+          "#179FDB",
+          "#0063AF",
+          "#243B5A"
+        ]
+      },
+      "axisX": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "grid": false,
+        "labelAngle": 45,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "orient": "bottom",
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "title": false,
+        "titleAlign": "center",
+        "titleAnchor": "middle",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleY": -15
+      },
+      "axisY": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "labelPadding": 5,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "ticks": false,
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleX": 0,
+        "titleY": -7
+      }
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Chart%20Packs/korea_gdp/korea_gdp_comp_long.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "axis": {"labelAngle": -45}
+      },
+      "y": {
+        "field": "gdp_pc",
+        "type": "quantitative",
+        "axis": {
+          "title": "GDP Per Captia",
+          "labelExpr": "datum.value < 1000 ? datum.value : (datum.value / 1000) + 'k'"}
+      },
+      "color": {
+        "field": "Country",
+        "type": "nominal",
+        "scale": {
+          "domain": ["South Korea", "North Korea"],
+          "range": ["#36B7B4", "#E6224B"]
+        }
+      },
+      "xOffset": {"field": "Country"}
+    },
+    "height": 400,
+    "width": 600,
+    "title": {
+      "text": "GDP Per Captia in the Korean Peninsula",
+      "subtitle": ["In trillion South Korean won.","Source: KOSIS, Bank of Korea."],
+      "anchor": "start"
+    },
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json"
+  }
