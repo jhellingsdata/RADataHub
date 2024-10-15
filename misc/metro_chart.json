@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/misc/metro_stats.csv"},
+  "height": 350,
+  "view": {"stroke":null},
+  "width": 350,
+  "title": {
+    "text": "UK Transit - more than the Tube",
+    "subtitle": [
+      "Trams, metro, and light rail, excluding the London Underground",
+      "Source: ORR",
+      ""
+    ],
+    "anchor": "start",
+    "frame":"group"    
+  },
+  "transform": [
+    {
+      "filter":"datum.value < 250"
+    }
+  ],
+  "mark":{
+    "type": "line"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title":null,
+      "axis":{
+        "title":null,
+        "grid": false
+      }
+    },
+    "y": {"field": "value", 
+    "axis":{
+      "labelExpr": "datum.label + 'M' + (datum.value == 120 ? ' rides' : '')"
+    },
+    "type" :"quantitative", "title":null},
+    "color":{"field":"system", "title":null}
+  }}
