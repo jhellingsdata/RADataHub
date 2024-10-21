@@ -1,0 +1,120 @@
+id,name,level
+BE1,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,1
+BE2,Vlaams Gewest,1
+BE3,Région wallonne,1
+BEZ,Extra-Regio,1
+BG3,Северна и Югоизточна България,1
+BG4,Югозападна и Южна централна България,1
+BGZ,Extra-Regio,1
+CZ0,Česko,1
+CZZ,Extra-Regio,1
+DK0,Danmark,1
+DKZ,Extra-Regio,1
+DE1,Baden-Württemberg,1
+DE2,Bayern,1
+DE3,Berlin,1
+DE4,Brandenburg,1
+DE5,Bremen,1
+DE6,Hamburg,1
+DE7,Hessen,1
+DE8,Mecklenburg-Vorpommern,1
+DE9,Niedersachsen,1
+DEA,Nordrhein-Westfalen,1
+DEB,Rheinland-Pfalz,1
+DEC,Saarland,1
+DED,Sachsen,1
+DEE,Sachsen-Anhalt,1
+DEF,Schleswig-Holstein,1
+DEG,Thüringen,1
+DEZ,Extra-Regio,1
+EE0,Eesti,1
+EEZ,Extra-Regio,1
+IE0,Ireland,1
+IEZ,Extra-Regio,1
+EL3,Αττική,1
+EL4,"Νησιά Αιγαίου, Κρήτη",1
+EL5,Βόρεια Ελλάδα,1
+EL6,Κεντρική Ελλάδα,1
+ELZ,Extra-Regio,1
+ES1,Noroeste,1
+ES2,Noreste,1
+ES3,Comunidad de Madrid,1
+ES4,Centro (ES),1
+ES5,Este,1
+ES6,Sur,1
+ES7,Canarias,1
+ESZ,Extra-Regio,1
+FR1,Ile-de-France,1
+FRB,Centre — Val de Loire,1
+FRC,Bourgogne-Franche-Comté,1
+FRD,Normandie,1
+FRE,Hauts-de-France,1
+FRF,Grand Est,1
+FRG,Pays de la Loire,1
+FRH,Bretagne,1
+FRI,Nouvelle-Aquitaine,1
+FRJ,Occitanie,1
+FRK,Auvergne-Rhône-Alpes,1
+FRL,Provence-Alpes-Côte d’Azur,1
+FRM,Corse,1
+FRY,RUP FR — Régions Ultrapériphériques Françaises,1
+FRZ,Extra-Regio,1
+HR0,Hrvatska,1
+HRZ,Extra-Regio,1
+ITC,Nord-Ovest,1
+ITF,Sud,1
+ITG,Isole,1
+ITH,Nord-Est,1
+ITI,Centro (IT),1
+ITZ,Extra-Regio,1
+CY0,Κύπρος,1
+CYZ,Extra-Regio,1
+LV0,Latvija,1
+LVZ,Extra-Regio,1
+LT0,Lietuva,1
+LTZ,Extra-Regio,1
+LU0,Luxembourg,1
+LUZ,Extra-Regio,1
+HU1,Közép-Magyarország,1
+HU2,Dunántúl,1
+HU3,Alföld és Észak,1
+HUZ,Extra-Regio,1
+MT0,Malta,1
+MTZ,Extra-Regio,1
+NL1,Noord-Nederland,1
+NL2,Oost-Nederland,1
+NL3,West-Nederland,1
+NL4,Zuid-Nederland,1
+NLZ,Extra-Regio,1
+AT1,Ostösterreich,1
+AT2,Südösterreich,1
+AT3,Westösterreich,1
+ATZ,Extra-Regio,1
+PL2,Makroregion południowy,1
+PL4,Makroregion północno-zachodni,1
+PL5,Makroregion południowo-zachodni,1
+PL6,Makroregion północny,1
+PL7,Makroregion centralny,1
+PL8,Makroregion wschodni,1
+PL9,Makroregion województwo mazowieckie,1
+PLZ,Extra-Regio,1
+PT1,Continente,1
+PT2,Região Autónoma dos Açores,1
+PT3,Região Autónoma da Madeira,1
+PTZ,Extra-Regio,1
+RO1,Macroregiunea Unu,1
+RO2,Macroregiunea Doi,1
+RO3,Macroregiunea Trei,1
+RO4,Macroregiunea Patru,1
+ROZ,Extra-Regio,1
+SI0,Slovenija,1
+SIZ,Extra-Regio,1
+SK0,Slovensko,1
+SKZ,Extra-Regio,1
+FI1,Manner-Suomi,1
+FI2,Åland,1
+FIZ,Extra-Regio,1
+SE1,Östra Sverige,1
+SE2,Södra Sverige,1
+SE3,Norra Sverige,1
+SEZ,Extra-Regio,1

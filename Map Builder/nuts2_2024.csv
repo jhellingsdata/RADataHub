@@ -1,0 +1,272 @@
+id,name,level
+BE10,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,2
+BE21,Prov. Antwerpen,2
+BE22,Prov. Limburg (BE),2
+BE23,Prov. Oost-Vlaanderen,2
+BE24,Prov. Vlaams-Brabant,2
+BE25,Prov. West-Vlaanderen,2
+BE31,Prov. Brabant wallon,2
+BE32,Prov. Hainaut,2
+BE33,Prov. Liège,2
+BE34,Prov. Luxembourg (BE),2
+BE35,Prov. Namur,2
+BEZZ,Extra-Regio,2
+BG31,Северозападен,2
+BG32,Северен централен,2
+BG33,Североизточен,2
+BG34,Югоизточен,2
+BG41,Югозападен,2
+BG42,Южен централен,2
+BGZZ,Extra-Regio,2
+CZ01,Praha,2
+CZ02,Střední Čechy,2
+CZ03,Jihozápad,2
+CZ04,Severozápad,2
+CZ05,Severovýchod,2
+CZ06,Jihovýchod,2
+CZ07,Střední Morava,2
+CZ08,Moravskoslezsko,2
+CZZZ,Extra-Regio,2
+DK01,Hovedstaden,2
+DK02,Sjælland,2
+DK03,Syddanmark,2
+DK04,Midtjylland,2
+DK05,Nordjylland,2
+DKZZ,Extra-Regio,2
+DE11,Stuttgart,2
+DE12,Karlsruhe,2
+DE13,Freiburg,2
+DE14,Tübingen,2
+DE21,Oberbayern,2
+DE22,Niederbayern,2
+DE23,Oberpfalz,2
+DE24,Oberfranken,2
+DE25,Mittelfranken,2
+DE26,Unterfranken,2
+DE27,Schwaben,2
+DE30,Berlin,2
+DE40,Brandenburg,2
+DE50,Bremen,2
+DE60,Hamburg,2
+DE71,Darmstadt,2
+DE72,Gießen,2
+DE73,Kassel,2
+DE80,Mecklenburg-Vorpommern,2
+DE91,Braunschweig,2
+DE92,Hannover,2
+DE93,Lüneburg,2
+DE94,Weser-Ems,2
+DEA1,Düsseldorf,2
+DEA2,Köln,2
+DEA3,Münster,2
+DEA4,Detmold,2
+DEA5,Arnsberg,2
+DEB1,Koblenz,2
+DEB2,Trier,2
+DEB3,Rheinhessen-Pfalz,2
+DEC0,Saarland,2
+DED2,Dresden,2
+DED4,Chemnitz,2
+DED5,Leipzig,2
+DEE0,Sachsen-Anhalt,2
+DEF0,Schleswig-Holstein,2
+DEG0,Thüringen,2
+DEZZ,Extra-Regio,2
+EE00,Eesti,2
+EEZZ,Extra-Regio,2
+IE04,Northern and Western,2
+IE05,Southern,2
+IE06,Eastern and Midland,2
+IEZZ,Extra-Regio,2
+EL30,Aττική,2
+EL41,Βόρειο Αιγαίο,2
+EL42,Νότιο Αιγαίο,2
+EL43,Κρήτη,2
+EL51,"Aνατολική Μακεδονία, Θράκη",2
+EL52,Κεντρική Μακεδονία,2
+EL53,Δυτική Μακεδονία,2
+EL54,Ήπειρος,2
+EL61,Θεσσαλία,2
+EL62,Ιόνια Νησιά,2
+EL63,Δυτική Ελλάδα,2
+EL64,Στερεά Ελλάδα,2
+EL65,Πελοπόννησος,2
+ELZZ,Extra-Regio,2
+ES11,Galicia,2
+ES12,Principado de Asturias,2
+ES13,Cantabria,2
+ES21,País Vasco,2
+ES22,Comunidad Foral de Navarra,2
+ES23,La Rioja,2
+ES24,Aragón,2
+ES30,Comunidad de Madrid,2
+ES41,Castilla y León,2
+ES42,Castilla-La Mancha,2
+ES43,Extremadura,2
+ES51,Cataluña,2
+ES52,Comunitat Valenciana,2
+ES53,Illes Balears,2
+ES61,Andalucía,2
+ES62,Región de Murcia,2
+ES63,Ciudad de Ceuta,2
+ES64,Ciudad de Melilla,2
+ES70,Canarias,2
+ESZZ,Extra-Regio,2
+FR10,Ile-de-France,2
+FRB0,Centre — Val de Loire,2
+FRC1,Bourgogne,2
+FRC2,Franche-Comté,2
+FRD1,Basse-Normandie,2
+FRD2,Haute-Normandie,2
+FRE1,Nord-Pas de Calais,2
+FRE2,Picardie,2
+FRF1,Alsace,2
+FRF2,Champagne-Ardenne,2
+FRF3,Lorraine,2
+FRG0,Pays de la Loire,2
+FRH0,Bretagne,2
+FRI1,Aquitaine,2
+FRI2,Limousin,2
+FRI3,Poitou-Charentes,2
+FRJ1,Languedoc-Roussillon,2
+FRJ2,Midi-Pyrénées,2
+FRK1,Auvergne,2
+FRK2,Rhône-Alpes,2
+FRL0,Provence-Alpes-Côte d’Azur,2
+FRM0,Corse,2
+FRY1,Guadeloupe,2
+FRY2,Martinique,2
+FRY3,Guyane,2
+FRY4,La Réunion,2
+FRY5,Mayotte,2
+FRZZ,Extra-Regio,2
+HR02,Panonska Hrvatska,2
+HR03,Jadranska Hrvatska,2
+HR05,Grad Zagreb,2
+HR06,Sjeverna Hrvatska,2
+HRZZ,Extra-Regio,2
+ITC1,Piemonte,2
+ITC2,Valle d’Aosta/Vallée d’Aoste,2
+ITC3,Liguria,2
+ITC4,Lombardia,2
+ITF1,Abruzzo,2
+ITF2,Molise,2
+ITF3,Campania,2
+ITF4,Puglia,2
+ITF5,Basilicata,2
+ITF6,Calabria,2
+ITG1,Sicilia,2
+ITG2,Sardegna,2
+ITH1,Provincia Autonoma di Bolzano/Bozen,2
+ITH2,Provincia Autonoma di Trento,2
+ITH3,Veneto,2
+ITH4,Friuli-Venezia Giulia,2
+ITH5,Emilia-Romagna,2
+ITI1,Toscana,2
+ITI2,Umbria,2
+ITI3,Marche,2
+ITI4,Lazio,2
+ITZZ,Extra-Regio,2
+CY00,Κύπρος,2
+CYZZ,Extra-Regio,2
+LV00,Latvija,2
+LVZZ,Extra-Regio,2
+LT01,Sostinės regionas,2
+LT02,Vidurio ir vakarų Lietuvos regionas,2
+LTZZ,Extra-Regio,2
+LU00,Luxembourg,2
+LUZZ,Extra-Regio,2
+HU11,Budapest,2
+HU12,Pest,2
+HU21,Közép-Dunántúl,2
+HU22,Nyugat-Dunántúl,2
+HU23,Dél-Dunántúl,2
+HU31,Észak-Magyarország,2
+HU32,Észak-Alföld,2
+HU33,Dél-Alföld,2
+HUZZ,Extra-Regio,2
+MT00,Malta,2
+MTZZ,Extra-Regio,2
+NL11,Groningen,2
+NL12,Friesland (NL),2
+NL13,Drenthe,2
+NL21,Overijssel,2
+NL22,Gelderland,2
+NL23,Flevoland,2
+NL32,Noord-Holland,2
+NL34,Zeeland,2
+NL35,Utrecht,2
+NL36,Zuid-Holland,2
+NL41,Noord-Brabant,2
+NL42,Limburg (NL),2
+NLZZ,Extra-Regio,2
+AT11,Burgenland,2
+AT12,Niederösterreich,2
+AT13,Wien,2
+AT21,Kärnten,2
+AT22,Steiermark,2
+AT31,Oberösterreich,2
+AT32,Salzburg,2
+AT33,Tirol,2
+AT34,Vorarlberg,2
+ATZZ,Extra-Regio,2
+PL21,Małopolskie,2
+PL22,Śląskie,2
+PL41,Wielkopolskie,2
+PL42,Zachodniopomorskie,2
+PL43,Lubuskie,2
+PL51,Dolnośląskie,2
+PL52,Opolskie,2
+PL61,Kujawsko-pomorskie,2
+PL62,Warmińsko-mazurskie,2
+PL63,Pomorskie,2
+PL71,Łódzkie,2
+PL72,Świętokrzyskie,2
+PL81,Lubelskie,2
+PL82,Podkarpackie,2
+PL84,Podlaskie,2
+PL91,Warszawski stołeczny,2
+PL92,Mazowiecki regionalny,2
+PLZZ,Extra-Regio,2
+PT11,Norte,2
+PT15,Algarve,2
+PT19,Centro (PT),2
+PT1A,Grande Lisboa,2
+PT1B,Península de Setúbal,2
+PT1C,Alentejo,2
+PT1D,Oeste e Vale do Tejo,2
+PT20,Região Autónoma dos Açores,2
+PT30,Região Autónoma da Madeira,2
+PTZZ,Extra-Regio,2
+RO11,Nord-Vest,2
+RO12,Centru,2
+RO21,Nord-Est,2
+RO22,Sud-Est,2
+RO31,Sud-Muntenia,2
+RO32,Bucureşti-Ilfov,2
+RO41,Sud-Vest Oltenia,2
+RO42,Vest,2
+ROZZ,Extra-Regio,2
+SI03,Vzhodna Slovenija,2
+SI04,Zahodna Slovenija,2
+SIZZ,Extra-Regio,2
+SK01,Bratislavský kraj,2
+SK02,Západné Slovensko,2
+SK03,Stredné Slovensko,2
+SK04,Východné Slovensko,2
+SKZZ,Extra-Regio,2
+FI19,Länsi-Suomi,2
+FI1B,Helsinki-Uusimaa,2
+FI1C,Etelä-Suomi,2
+FI1D,Pohjois- ja Itä-Suomi,2
+FI20,Åland,2
+FIZZ,Extra-Regio,2
+SE11,Stockholm,2
+SE12,Östra Mellansverige,2
+SE21,Småland med öarna,2
+SE22,Sydsverige,2
+SE23,Västsverige,2
+SE31,Norra Mellansverige,2
+SE32,Mellersta Norrland,2
+SE33,Övre Norrland,2
+SEZZ,Extra-Regio,2
