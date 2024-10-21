@@ -15735,7 +15735,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "AT1",
+                        "id": "AT1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.94056324358,
                         "SHAPE_LEN": 9.53405997073
@@ -15753,7 +15753,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "AT2",
+                        "id": "AT2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 3.09701419409,
                         "SHAPE_LEN": 9.7616838951
@@ -15775,7 +15775,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "AT3",
+                        "id": "AT3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 4.10890527593,
                         "SHAPE_LEN": 16.6428671319
@@ -15805,7 +15805,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "BE3",
+                        "id": "BE3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.19060725358,
                         "SHAPE_LEN": 9.20293155278
@@ -15826,7 +15826,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "BG3",
+                        "id": "BG3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 7.5037102699,
                         "SHAPE_LEN": 16.9053059325
@@ -15845,7 +15845,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "BG4",
+                        "id": "BG4",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 4.7374808307,
                         "SHAPE_LEN": 11.5242072777
@@ -15860,7 +15860,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "CY0",
+                        "id": "CY0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.878547019024,
                         "SHAPE_LEN": 5.83093139812
@@ -15881,7 +15881,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "CZ0",
+                        "id": "CZ0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 9.85407163081,
                         "SHAPE_LEN": 17.3294302971
@@ -15903,7 +15903,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "CH0",
+                        "id": "CH0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 4.88721750373,
                         "SHAPE_LEN": 13.39682568
@@ -15918,7 +15918,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "BE1",
+                        "id": "BE1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.00302471512961,
                         "SHAPE_LEN": 0.493682162315
@@ -15944,7 +15944,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "BE2",
+                        "id": "BE2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.72470830463,
                         "SHAPE_LEN": 7.85102938643
@@ -15976,7 +15976,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "DE8",
+                        "id": "DE8",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 3.21364124189,
                         "SHAPE_LEN": 13.3120506311
@@ -16007,7 +16007,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DE9",
+                        "id": "DE9",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 6.27225938538,
                         "SHAPE_LEN": 17.8805604202
@@ -16027,7 +16027,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DEA",
+                        "id": "DEA",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 4.46273077362,
                         "SHAPE_LEN": 12.1282181866
@@ -16046,7 +16046,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DE1",
+                        "id": "DE1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 4.42148851569,
                         "SHAPE_LEN": 9.97707210506
@@ -16066,7 +16066,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DE2",
+                        "id": "DE2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 8.51294163941,
                         "SHAPE_LEN": 17.5443289328
@@ -16081,7 +16081,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DE3",
+                        "id": "DE3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.110168847705,
                         "SHAPE_LEN": 1.40958564946
@@ -16103,7 +16103,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DE4",
+                        "id": "DE4",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 3.87565509606,
                         "SHAPE_LEN": 11.6715531899
@@ -16126,7 +16126,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "DE5",
+                        "id": "DE5",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.0612262295127,
                         "SHAPE_LEN": 1.76656281046
@@ -16142,7 +16142,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DE6",
+                        "id": "DE6",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.0754843237068,
                         "SHAPE_LEN": 1.34870769215
@@ -16162,7 +16162,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DE7",
+                        "id": "DE7",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.68440140766,
                         "SHAPE_LEN": 8.82887373531
@@ -16183,7 +16183,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DEB",
+                        "id": "DEB",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.46718641429,
                         "SHAPE_LEN": 8.19420084873
@@ -16202,7 +16202,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DEG",
+                        "id": "DEG",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.05802907599,
                         "SHAPE_LEN": 8.23291011002
@@ -16240,7 +16240,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "DK0",
+                        "id": "DK0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 5.59886938163,
                         "SHAPE_LEN": 33.2484238583
@@ -16268,7 +16268,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "EE0",
+                        "id": "EE0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 6.93883073087,
                         "SHAPE_LEN": 17.3750347655
@@ -16292,7 +16292,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "EL3",
+                        "id": "EL3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.349990482495,
                         "SHAPE_LEN": 4.11811841123
@@ -16339,7 +16339,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "EL4",
+                        "id": "EL4",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.18768899792,
                         "SHAPE_LEN": 13.9733443587
@@ -16366,7 +16366,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "EL5",
+                        "id": "EL5",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 5.52304863054,
                         "SHAPE_LEN": 20.8627648371
@@ -16417,7 +16417,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "EL6",
+                        "id": "EL6",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 5.84357013068,
                         "SHAPE_LEN": 28.3432960344
@@ -16435,7 +16435,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "ES1",
+                        "id": "ES1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 5.10932210777,
                         "SHAPE_LEN": 16.2252477086
@@ -16454,7 +16454,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "ES2",
+                        "id": "ES2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 7.73144282332,
                         "SHAPE_LEN": 14.658468562
@@ -16469,7 +16469,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "ES3",
+                        "id": "ES3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.812724790658,
                         "SHAPE_LEN": 4.32668763009
@@ -16486,7 +16486,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DEC",
+                        "id": "DEC",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.321613830253,
                         "SHAPE_LEN": 2.64664249277
@@ -16507,7 +16507,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DED",
+                        "id": "DED",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.33772084505,
                         "SHAPE_LEN": 9.00332850707
@@ -16525,7 +16525,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DEE",
+                        "id": "DEE",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.72983999607,
                         "SHAPE_LEN": 8.79586880201
@@ -16546,7 +16546,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "DEF",
+                        "id": "DEF",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.07192772466,
                         "SHAPE_LEN": 8.32640217384
@@ -16568,7 +16568,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "FR6",
+                        "id": "FR6",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 11.8789682494,
                         "SHAPE_LEN": 17.7463988788
@@ -16588,7 +16588,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "FR7",
+                        "id": "FR7",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 8.23234563125,
                         "SHAPE_LEN": 16.8389421689
@@ -16615,7 +16615,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "FR8",
+                        "id": "FR8",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 7.62662917567,
                         "SHAPE_LEN": 23.4369397915
@@ -16657,7 +16657,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "FRA",
+                        "id": "FRA",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 7.28536211839,
                         "SHAPE_LEN": 16.8260370478
@@ -16688,7 +16688,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "HR0",
+                        "id": "HR0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 6.27095154868,
                         "SHAPE_LEN": 27.3351270139
@@ -16710,7 +16710,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "ES4",
+                        "id": "ES4",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 22.8180761173,
                         "SHAPE_LEN": 31.0297545065
@@ -16748,7 +16748,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "ES5",
+                        "id": "ES5",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 6.28681523868,
                         "SHAPE_LEN": 22.0314416853
@@ -16778,7 +16778,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "ES6",
+                        "id": "ES6",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 10.1837262004,
                         "SHAPE_LEN": 17.9666525522
@@ -16825,7 +16825,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "ES7",
+                        "id": "ES7",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.581451062767,
                         "SHAPE_LEN": 9.15373346569
@@ -16842,7 +16842,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "FI1",
+                        "id": "FI1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 61.2971727613,
                         "SHAPE_LEN": 51.1540911229
@@ -16857,7 +16857,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "FI2",
+                        "id": "FI2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.144539654431,
                         "SHAPE_LEN": 1.72365985858
@@ -16872,7 +16872,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "FR1",
+                        "id": "FR1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.46444370405,
                         "SHAPE_LEN": 5.23839280907
@@ -16896,7 +16896,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "FR2",
+                        "id": "FR2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 17.8281109099,
                         "SHAPE_LEN": 30.5063548789
@@ -16916,7 +16916,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "FR3",
+                        "id": "FR3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.54194314288,
                         "SHAPE_LEN": 6.43424027182
@@ -16938,7 +16938,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "FR4",
+                        "id": "FR4",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 5.88318751269,
                         "SHAPE_LEN": 12.4740951319
@@ -16955,7 +16955,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "FR5",
+                        "id": "FR5",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 9.91061827208,
                         "SHAPE_LEN": 18.9070341116
@@ -16972,7 +16972,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "HU1",
+                        "id": "HU1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.863302933649,
                         "SHAPE_LEN": 4.10655738632
@@ -16992,7 +16992,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "HU2",
+                        "id": "HU2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 4.31377565468,
                         "SHAPE_LEN": 9.32251745963
@@ -17014,7 +17014,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "HU3",
+                        "id": "HU3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 5.84226099892,
                         "SHAPE_LEN": 13.2434117271
@@ -17030,7 +17030,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "IE0",
+                        "id": "IE0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 9.35682111373,
                         "SHAPE_LEN": 24.5137708524
@@ -17046,7 +17046,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "ITF",
+                        "id": "ITF",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 7.76554618345,
                         "SHAPE_LEN": 20.516959983
@@ -17068,7 +17068,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "ITG",
+                        "id": "ITG",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 5.11153895806,
                         "SHAPE_LEN": 15.5196852972
@@ -17091,7 +17091,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "ITH",
+                        "id": "ITH",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 7.1090756829,
                         "SHAPE_LEN": 19.5663079898
@@ -17115,7 +17115,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "ITI",
+                        "id": "ITI",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 6.33140759553,
                         "SHAPE_LEN": 14.0181138018
@@ -17131,7 +17131,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "LI0",
+                        "id": "LI0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.0189726305387,
                         "SHAPE_LEN": 0.597772729116
@@ -17149,7 +17149,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "LT0",
+                        "id": "LT0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 9.11831989462,
                         "SHAPE_LEN": 14.7462669985
@@ -17167,7 +17167,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "LU0",
+                        "id": "LU0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.334562602948,
                         "SHAPE_LEN": 2.34710743195
@@ -17185,7 +17185,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "LV0",
+                        "id": "LV0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 9.60205681199,
                         "SHAPE_LEN": 18.2246422222
@@ -17201,7 +17201,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "ME0",
+                        "id": "ME0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.46919018022,
                         "SHAPE_LEN": 5.89019509358
@@ -17218,7 +17218,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "MK0",
+                        "id": "MK0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.70884348404,
                         "SHAPE_LEN": 6.70983097007
@@ -17240,7 +17240,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "MT0",
+                        "id": "MT0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.0251866693234,
                         "SHAPE_LEN": 1.05686311101
@@ -17258,7 +17258,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "NL1",
+                        "id": "NL1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.12198002137,
                         "SHAPE_LEN": 4.96284475009
@@ -17277,7 +17277,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "NL2",
+                        "id": "NL2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.46019485675,
                         "SHAPE_LEN": 6.53269045452
@@ -17292,7 +17292,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "IS0",
+                        "id": "IS0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 19.5823054202,
                         "SHAPE_LEN": 42.7650159661
@@ -17312,7 +17312,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "ITC",
+                        "id": "ITC",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 6.68473353585,
                         "SHAPE_LEN": 17.1356662484
@@ -17331,7 +17331,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "PL5",
+                        "id": "PL5",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 3.83741154114,
                         "SHAPE_LEN": 10.978364321
@@ -17349,7 +17349,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "PL6",
+                        "id": "PL6",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 8.14210024579,
                         "SHAPE_LEN": 17.5522939752
@@ -17367,7 +17367,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "PT1",
+                        "id": "PT1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 9.31861382968,
                         "SHAPE_LEN": 17.9613633114
@@ -17382,7 +17382,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "PT2",
+                        "id": "PT2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.0439399922416,
                         "SHAPE_LEN": 1.48085390341
@@ -17397,7 +17397,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "PT3",
+                        "id": "PT3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.0550188568202,
                         "SHAPE_LEN": 1.11196618179
@@ -17416,7 +17416,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "RO1",
+                        "id": "RO1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 8.05386428598,
                         "SHAPE_LEN": 12.7418179266
@@ -17434,7 +17434,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "RO2",
+                        "id": "RO2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 8.34952834643,
                         "SHAPE_LEN": 17.2443908003
@@ -17452,7 +17452,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "RO3",
+                        "id": "RO3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 4.14173980187,
                         "SHAPE_LEN": 10.0459472466
@@ -17471,7 +17471,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "RO4",
+                        "id": "RO4",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 6.93616372615,
                         "SHAPE_LEN": 13.9495964542
@@ -17498,7 +17498,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "NL3",
+                        "id": "NL3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.22674453319,
                         "SHAPE_LEN": 9.6691880805
@@ -17517,7 +17517,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "NL4",
+                        "id": "NL4",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.930530413897,
                         "SHAPE_LEN": 5.92775010687
@@ -17567,7 +17567,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "NO0",
+                        "id": "NO0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 55.9838279017,
                         "SHAPE_LEN": 166.537394279
@@ -17586,7 +17586,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "PL1",
+                        "id": "PL1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 7.04343313819,
                         "SHAPE_LEN": 13.7039180622
@@ -17605,7 +17605,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "PL2",
+                        "id": "PL2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 3.39450004581,
                         "SHAPE_LEN": 9.21836485534
@@ -17625,7 +17625,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "PL3",
+                        "id": "PL3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 9.88880917622,
                         "SHAPE_LEN": 21.4364826057
@@ -17648,7 +17648,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "PL4",
+                        "id": "PL4",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 8.96359473988,
                         "SHAPE_LEN": 15.9574634674
@@ -17665,7 +17665,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "SE1",
+                        "id": "SE1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 7.6648856094,
                         "SHAPE_LEN": 18.1355650578
@@ -17695,7 +17695,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "SE2",
+                        "id": "SE2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 12.5635036565,
                         "SHAPE_LEN": 26.444577975
@@ -17717,7 +17717,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "SK0",
+                        "id": "SK0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 5.95783910452,
                         "SHAPE_LEN": 13.4472835294
@@ -17741,7 +17741,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "TR1",
+                        "id": "TR1",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.635730770594,
                         "SHAPE_LEN": 4.87024398447
@@ -17770,7 +17770,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "TR2",
+                        "id": "TR2",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 4.579164777,
                         "SHAPE_LEN": 16.8351962426
@@ -17789,7 +17789,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "TR3",
+                        "id": "TR3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 9.12009428475,
                         "SHAPE_LEN": 21.6883571686
@@ -17810,7 +17810,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "TR4",
+                        "id": "TR4",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 5.14587501387,
                         "SHAPE_LEN": 15.4662318942
@@ -17829,7 +17829,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "TR5",
+                        "id": "TR5",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 7.7779817104,
                         "SHAPE_LEN": 16.8500214368
@@ -17849,7 +17849,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "TR6",
+                        "id": "TR6",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 9.03551239812,
                         "SHAPE_LEN": 27.3195071491
@@ -17869,7 +17869,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "TR7",
+                        "id": "TR7",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 9.45333977171,
                         "SHAPE_LEN": 16.9018960647
@@ -17888,7 +17888,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "TR8",
+                        "id": "TR8",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 8.02484354804,
                         "SHAPE_LEN": 15.605980006
@@ -17906,7 +17906,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "TR9",
+                        "id": "TR9",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 3.81807358941,
                         "SHAPE_LEN": 13.8823640195
@@ -17924,7 +17924,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "TRA",
+                        "id": "TRA",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 7.48327500968,
                         "SHAPE_LEN": 17.8303575657
@@ -17943,7 +17943,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "TRB",
+                        "id": "TRB",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 8.41900566962,
                         "SHAPE_LEN": 20.6506210916
@@ -17960,7 +17960,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "TRC",
+                        "id": "TRC",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 7.71640630013,
                         "SHAPE_LEN": 16.6352468686
@@ -17978,7 +17978,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "UKC",
+                        "id": "UKC",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.14146047987,
                         "SHAPE_LEN": 5.74234874984
@@ -17997,7 +17997,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "SE3",
+                        "id": "SE3",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 58.2090154988,
                         "SHAPE_LEN": 45.1905492581
@@ -18017,7 +18017,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "SI0",
+                        "id": "SI0",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.29714419791,
                         "SHAPE_LEN": 9.36830697837
@@ -18038,7 +18038,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "UKD",
+                        "id": "UKD",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.92985669092,
                         "SHAPE_LEN": 8.64318543861
@@ -18056,7 +18056,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "UKE",
+                        "id": "UKE",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.12376823527,
                         "SHAPE_LEN": 8.28625907227
@@ -18076,7 +18076,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "UKF",
+                        "id": "UKF",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.09916441718,
                         "SHAPE_LEN": 7.27858987634
@@ -18095,7 +18095,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "UKG",
+                        "id": "UKG",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.70636120804,
                         "SHAPE_LEN": 5.77470782845
@@ -18114,7 +18114,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "UKH",
+                        "id": "UKH",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.39062742389,
                         "SHAPE_LEN": 8.43591919646
@@ -18130,7 +18130,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "UKI",
+                        "id": "UKI",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 0.202723101494,
                         "SHAPE_LEN": 2.06825609743
@@ -18158,7 +18158,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "UKJ",
+                        "id": "UKJ",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.34846795416,
                         "SHAPE_LEN": 11.5018125992
@@ -18176,7 +18176,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "UKK",
+                        "id": "UKK",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 3.16405684108,
                         "SHAPE_LEN": 11.3657412761
@@ -18194,7 +18194,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "UKL",
+                        "id": "UKL",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 2.60665836629,
                         "SHAPE_LEN": 12.0472297864
@@ -18233,7 +18233,7 @@
                     ],
                     "type": "MultiPolygon",
                     "properties": {
-                        "NUTS_ID": "UKM",
+                        "id": "UKM",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 10.7659037242,
                         "SHAPE_LEN": 41.2335910481
@@ -18249,7 +18249,7 @@
                     ],
                     "type": "Polygon",
                     "properties": {
-                        "NUTS_ID": "UKN",
+                        "id": "UKN",
                         "STAT_LEVL_": 1,
                         "SHAPE_AREA": 1.88082099117,
                         "SHAPE_LEN": 7.41041947305
