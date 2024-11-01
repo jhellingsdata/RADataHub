@@ -1,0 +1,82 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/misc/WorldBank%20API%20Example/gdp_co2_pop_region.csv"
+    },
+    "title": {
+        "text": "Output: economic and environmental",
+        "subtitle": [
+            "GDP per capita (2021 PPP) and CO2 emissions, (excluding land use change and forestry)",
+            "Source: World Bank",
+            ""
+        ],
+        "anchor": "start",
+        "frame": "group"
+    },
+    "width": 500,
+    "height": 350,
+    "mark": {
+        "type": "circle",
+        "tooltip": true
+    },
+    "transform": [
+        {
+            "filter": "year(datum.date) == 2022 & datum.co2 > 0"
+        }
+    ],
+    "encoding": {
+        "x": {
+            "field": "gdp_pc",
+            "title": "GDP Per Capita, 2021 PPP (log scale)",
+            "type": "quantitative",
+            "axis": {
+                "gridOpacity": 0.3,
+                "format": "$,.0f",
+                "titleFontWeight": "normal"
+            },
+            "scale": {
+                "type": "log",
+                "domain": [
+                    250,
+                    200000
+                ]
+            }
+        },
+        "y": {
+            "field": "co2",
+            "title": "C02 per capita (log scale)",
+            "type": "quantitative",
+            "axis": {
+                "titleFontWeight": "normal",
+                "gridOpacity": 0.3
+            },
+            "scale": {
+                "type": "log",
+                "domain": [
+                    0.01,
+                    100
+                ]
+            }
+        },
+        "size": {
+            "field": "pop",
+            "title": "Population",
+            "scale": {
+                "domain": [
+                    0,
+                    1500000000
+                ]
+            },
+            "type": "quantitative"
+        },
+        "tooltip": [
+            {
+                "field": "country"
+            }
+        ],
+        "color": {
+            "field": "region",
+            "title": "Region"
+        }
+    }
+}
