@@ -4,9 +4,9 @@
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/elections_inflation/2024_elections.csv"
   },
   "title": {
-    "text": "2024 Elections: Incumbent Vote Loss and Peak Inflation",
+    "text": "The great readjustment of 2024",
     "subtitle": [
-      "High-Income OECD Countries",
+      "Swings against incumbents and inflation, high-income OECD countries with elections in 2024",
       "Source: John-Burn Murdoch, FT and Trading Economics",
       ""
     ],
@@ -16,27 +16,43 @@
   },
   "layer": [
     {
-      "mark": {"type": "circle", "size": 150},
+      "mark": {
+        "type": "circle",
+        "size": 150
+      },
       "encoding": {
         "x": {
           "field": "max_inflation",
           "type": "quantitative",
           "axis": {
-            "title": "Peak Inflation Since Last Election (%)",
-            "grid": false
+            "title": "Peak year-on-year inflation since last election (%)",
+            "grid": false,
+            "values": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+            
           },
-          "scale": {"domain": [3, 13]}
+          "scale": {
+            "domain": [3, 13]
+          }
+
         },
         "y": {
           "field": "loss_margin",
           "type": "quantitative",
-          "axis": {"title": "Vote Share Swing (p.p.)", "grid": false},
-          "scale": {"domain": [-25, 0]}
+          "axis": {
+            "title": "Vote share swing from last election (p.p.)",
+            "grid": false
+          },
+          "scale": {
+            "domain": [-25, 0]
+          }
         },
         "color": {
           "field": "US",
           "type": "nominal",
-          "scale": {"domain": ["US", "Other"], "range": ["#e6224b", "#36b7b4"]}
+          "scale": {
+            "domain": ["US", "Other"],
+            "range": ["#e6224b", "#36b7b4"]
+          }
         },
         "tooltip": [
           {"field": "party", "type": "nominal", "title": "Party"},
@@ -46,7 +62,7 @@
             "field": "loss_margin",
             "type": "quantitative",
             "title": "2024 Vote Share Swing",
-            "format": ".1f"
+            "format": ".1f",
           },
           {
             "field": "max_inflation",
@@ -67,17 +83,31 @@
         "opacity": 0.7
       },
       "encoding": {
-        "x": {"field": "max_inflation", "type": "quantitative"},
-        "y": {"field": "loss_margin", "type": "quantitative"},
-        "text": {"field": "country", "type": "nominal"},
+        "x": {
+          "field": "max_inflation",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "loss_margin",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "country",
+          "type": "nominal"
+        },
         "color": {
           "field": "US",
           "type": "nominal",
-          "scale": {"domain": ["US", "Other"], "range": ["#e6224b", "#36b7b4"]}
+          "scale": {
+            "domain": ["US", "Other"],
+            "range": ["#e6224b", "#36b7b4"]
+          }
         }
       }
     }
   ],
+  "height": 400,
+  "width": 600,
   "config": {
     "font": "Circular Std",
     "text": {
@@ -90,9 +120,9 @@
     },
     "view": {
       "stroke": null,
-      "continuousWidth": 400,
+      "continuousWidth": 600,
       "continuousHeight": 300,
-      "discreteWidth": 400,
+      "discreteWidth": 600,
       "discreteHeight": 300
     },
     "bar": {"color": "#179fdb"},
@@ -154,6 +184,8 @@
       "offset": 0,
       "frame": "group"
     },
-    "legend": {"disable": true}
+    "legend": {
+      "disable": true
+    }
   }
 }
