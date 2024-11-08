@@ -1,9 +1,9 @@
 ISO,country,party,vote_share_2024,vote_share_last_election,loss_margin,max_inflation,US
-USA,United States,Democratic Party,,,-3.7,9.1,US
-PRT,Portugal,Socialist Party,28,41.4,-13.4,10.14,Other
-JPN,Japan,Liberal Democratic Party,,,-7.9,4.3,Other
-FIN,Finland,National Coalition,51.62,62.64,-11.02,9.1,Other
-BEL,Belgium,Vivaldi Coalition,,,-3.1,12.27,Other
-FRA,France,Ensemble,,,-4.7,6.3,Other
-GBR,United Kingdom,Conservatives,,,-19.9,11.1,Other
-AUT,Austria,Austrian People's Party,,,-11.2,11.2,Other
+USA,United States,Democratic Party,,,3.7,9.1,US
+PRT,Portugal,Socialist Party,28,41.4,13.4,10.14,Other
+JPN,Japan,Liberal Democratic Party,,,7.9,4.3,Other
+FIN,Finland,National Coalition,51.62,62.64,11.02,9.1,Other
+BEL,Belgium,Vivaldi Coalition,,,3.1,12.27,Other
+FRA,France,Ensemble,,,4.7,6.3,Other
+GBR,United Kingdom,Conservatives,,,19.9,11.1,Other
+AUT,Austria,Austrian People's Party,,,11.2,11.2,Other
