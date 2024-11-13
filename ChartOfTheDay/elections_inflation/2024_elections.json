@@ -1,0 +1,191 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/elections_inflation/2024_elections.csv"
+  },
+  "title": {
+    "text": "The great readjustment of 2024",
+    "subtitle": [
+      "Swings against incumbents and inflation, high-income OECD countries with elections in 2024",
+      "Source: John-Burn Murdoch, FT and Trading Economics",
+      ""
+    ],
+    "fontSize": 18,
+    "subtitleFontSize": 14,
+    "subtitleFontWeight": "normal"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 150
+      },
+      "encoding": {
+        "x": {
+          "field": "max_inflation",
+          "type": "quantitative",
+          "axis": {
+            "title": "Peak year-on-year inflation since last election (%)",
+            "grid": false,
+            "values": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+            
+          },
+          "scale": {
+            "domain": [3, 13]
+          }
+
+        },
+        "y": {
+          "field": "loss_margin",
+          "type": "quantitative",
+          "axis": {
+            "title": "Vote share swing from last election (p.p.)",
+            "grid": false
+          },
+          "scale": {
+            "domain": [-25, 0]
+          }
+        },
+        "color": {
+          "field": "US",
+          "type": "nominal",
+          "scale": {
+            "domain": ["US", "Other"],
+            "range": ["#e6224b", "#36b7b4"]
+          }
+        },
+        "tooltip": [
+          {"field": "party", "type": "nominal", "title": "Party"},
+          {"field": "country", "type": "nominal", "title": "Country"},
+          {"field": "election_type", "type": "nominal", "title": "Election"},
+          {
+            "field": "loss_margin",
+            "type": "quantitative",
+            "title": "2024 Vote Share Swing",
+            "format": ".1f",
+          },
+          {
+            "field": "max_inflation",
+            "type": "quantitative",
+            "title": "Highest Inflation Since 2020",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 7,
+        "dy": -5,
+        "fontSize": 11,
+        "font": "Circular Std",
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "max_inflation",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "loss_margin",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "country",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "US",
+          "type": "nominal",
+          "scale": {
+            "domain": ["US", "Other"],
+            "range": ["#e6224b", "#36b7b4"]
+          }
+        }
+      }
+    }
+  ],
+  "height": 400,
+  "width": 600,
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 600,
+      "continuousHeight": 300,
+      "discreteWidth": 600,
+      "discreteHeight": 300
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "disable": true
+    }
+  }
+}
