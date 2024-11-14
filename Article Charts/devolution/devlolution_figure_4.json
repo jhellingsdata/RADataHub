@@ -87,7 +87,12 @@
           "labelFont": "Circular Std",
           "labelColor": "#676A86"
         }
-      }
+      },
+        "tooltip": [
+            {"field": "Value", "type": "quantitative", "format": ".0%", "title": "Share"},
+            {"field": "Region", "type": "nominal"},
+            {"field": "Qualifications", "type": "nominal"}
+        ]
     },
     "mark": "bar"
   }

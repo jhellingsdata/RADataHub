@@ -11,15 +11,26 @@
     "encoding": {
       "x": {
         "field": "Year",
-        "type": "temporal"
+        "type": "temporal",
+        "axis":{
+          "grid": false
+        }
         },
       "y": {
         "field": "Value",
+        "scale": {
+          "domainMax":110
+        },
         "type": "quantitative"
         },
       "color": {
         "field": "Region",
-        "type": "nominal"}
+        "type": "nominal"
+        }, 
+       "tooltip": [
+        {"field": "Region", "type": "nominal"},
+        {"field": "Value", "type": "quantitative", "title": "Output per hour, 1998-2022"}
+       ] 
     },
     "height":300,
     "width":400,
@@ -53,7 +64,7 @@
           "title": null,
           "titleColor": "#676A86",
           "titleOpacity": 0.8,
-          "tickSize": 4
+          "tickSize": 4,
         },
         "axisXDiscrete": {
           "grid": false,
