@@ -64,7 +64,7 @@
           "title": null,
           "titleColor": "#676A86",
           "titleOpacity": 0.8,
-          "tickSize": 4,
+          "tickSize": 4
         },
         "axisXDiscrete": {
           "grid": false,
