@@ -1,0 +1,93 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/devolution/devolution_figure_4.csv"
+    },
+    "transform": [
+      {
+        "filter": "datum.Region !== 'United Kingdom'"
+      }
+    ],
+    "height": 300,
+    "width": 400,
+    "config": {
+      "font": "Circular Std",
+      "view": {"stroke": "transparent"},
+      "range": {
+        "category": [
+          "#E6224B",
+          "#F4C245",
+          "#36B7B4",
+          "#0063AF",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ]
+      },
+      "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Circular Std",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [2, 2],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXDiscrete": {
+        "grid": false,
+        "labelAngle": 0,
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+      "axisXQuantitative": {"grid": true},
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
+      }
+    },
+    "encoding": {
+      "y": {
+        "field": "Region",
+        "type": "nominal",
+        "sort": "-x"
+      },
+      "x": {
+        "field": "Value",
+        "type": "quantitative",
+        "stack": "normalize",
+        "axis": {
+          "format": ".0%"
+        }
+      },
+      "color": {
+        "field": "Qualifications",
+        "type": "nominal",
+        "legend": {
+          "orient": "bottom",
+          "labelFont": "Circular Std",
+          "labelColor": "#676A86"
+        }
+      }
+    },
+    "mark": "bar"
+  }
