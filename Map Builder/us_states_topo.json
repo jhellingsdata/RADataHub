@@ -26213,7 +26213,7 @@
         ]
     },
     "objects": {
-        "states": {
+        "geog": {
             "type": "GeometryCollection",
             "geometries": [
                 {
