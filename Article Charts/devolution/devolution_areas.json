@@ -4,7 +4,7 @@
       {
         "title": "Policy Areas",
         "data": {
-          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/devolution/devolution_areas.csv"
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/devolution/devolution_table_1.csv"
         },
         "transform": [
           {
