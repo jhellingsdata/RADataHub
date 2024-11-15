@@ -60,7 +60,7 @@
       }
     },
     "data": {
-      "url": "data-https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/devolution/devolution_figure_3.csv"
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/devolution/devolution_figure_3.csv"
     },
     "mark": {
       "type": "bar",
@@ -70,6 +70,7 @@
     "encoding": {
       "color": {
         "field": "Series",
+        "title":"Measure",
         "scale": {
           "domain": ["Real GVA", "Hours worked per week"],
           "range": ["#36b7b4", "#e6224b"]
@@ -83,8 +84,8 @@
           "type": "nominal"
           },
         {
-          "field": "Measure",
-          "title": "Series",
+          "field": "Series",
+          "title": "Measure",
           "type": "nominal"
           },
         {
@@ -96,7 +97,11 @@
       ],
       "x": {
         "field": "Region",
-        "type": "nominal"
+        "type": "nominal",
+        "axis":{
+            "labelAngle": -45,
+            "title":null
+        }
       },
       "y": {
         "field": "Value",
