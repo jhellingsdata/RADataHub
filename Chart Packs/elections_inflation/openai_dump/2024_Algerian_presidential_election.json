@@ -1,0 +1,34 @@
+{
+    "id": "chatcmpl-AQzuk4qDAxTJm0zqWJvpeCv3fzV9x",
+    "choices": [
+        {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "{\n    \"election\": \"2024 Algerian presidential election\",\n    \"party\": \"Independent\",\n    \"country\": \"Algeria\",\n    \"iso3\": \"DZA\",\n    \"democracy\": \"partly free\",\n    \"economy\": \"developing\",\n    \"election_type\": \"individual head of state\",\n    \"swing\": 0.03,\n    \"message\": \"The swing is calculated based on the percentage difference from the previous election in 2019, where Tebboune won with 58.13% of the vote. In 2024, he won with 84.30%, indicating a swing of approximately 26.17 percentage points in favor of the incumbent. However, the swing requested is typically for the incumbent party, and since Tebboune is an Independent, the swing is not applicable in the traditional sense.\"\n}",
+                "refusal": null,
+                "role": "assistant"
+            }
+        }
+    ],
+    "created": 1730997890,
+    "model": "gpt-4o-2024-08-06",
+    "object": "chat.completion",
+    "system_fingerprint": "fp_159d8341cc",
+    "usage": {
+        "completion_tokens": 180,
+        "prompt_tokens": 9332,
+        "total_tokens": 9512,
+        "prompt_tokens_details": {
+            "cached_tokens": 9088,
+            "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "id": "chatcmpl-AR003f3mAYxlzpIy5SLLh6a2nOYAl",
+    "choices": [
+        {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+                "content": "{\n    \"election\": \"2024 Pakistani provincial elections\",\n    \"party\": \"N/A\",\n    \"country\": \"Pakistan\",\n    \"iso3\": \"PAK\",\n    \"democracy\": \"partly free\",\n    \"economy\": \"developing\",\n    \"election_type\": \"local\",\n    \"swing\": null,\n    \"message\": \"The document does not provide information on the incumbent party or any swing data.\"\n}",
+                "refusal": null,
+                "role": "assistant"
+            }
+        }
+    ],
+    "created": 1730998219,
+    "model": "gpt-4o-2024-08-06",
+    "object": "chat.completion",
+    "system_fingerprint": "fp_159d8341cc",
+    "usage": {
+        "completion_tokens": 93,
+        "prompt_tokens": 1430,
+        "total_tokens": 1523,
+        "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+        }
+    }
+}
