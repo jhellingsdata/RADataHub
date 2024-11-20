@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Map%20Builder/eu_nuts2_topo.json",
+    "format": {"type": "topojson", "feature": "geog"}
+  },
+  "params": [
+    {
+      "name": "yearSelect",
+      "value": 2023,
+      "bind": {
+        "input": "range",
+        "min": 2012,
+        "max": 2023,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "lookup": "properties.id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Map%20Builder/unemp_nuts2_euro_wide.csv",
+          "format": {"type": "csv"}
+        },
+        "key": "id",
+        "fields": [
+          "country",
+          "name",
+          "2012-01-01",
+          "2013-01-01",
+          "2014-01-01",
+          "2015-01-01",
+          "2016-01-01",
+          "2017-01-01",
+          "2018-01-01",
+          "2019-01-01",
+          "2020-01-01",
+          "2021-01-01",
+          "2022-01-01",
+          "2023-01-01"
+        ]
+      }
+    },
+    {"calculate": "datum[yearSelect + '-01-01']", "as": "value"}
+  ],
+  "title": {
+    "text": "Unemployment rate in Europe",
+    "anchor": "start",
+    "fontSize": 16,
+    "fontWeight": "normal",
+    "subtitle": ["NUTS2 regions", "Source: Eurostat"],
+    "subtitleColor": "rgb(143, 143, 143)"
+  },
+  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Unemployment Rate (%)",
+      "scale": {"scheme": "viridis", "reverse": true, "domain": [0, 40]}
+    },
+    "tooltip": [
+      {"field": "name", "type": "nominal", "title": "Region"},
+      {"field": "country", "type": "nominal", "title": "Country"},
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Unemployment Rate (%)"
+      }
+    ]
+  },
+  "projection": {"type": "mercator"},
+  "config": {}
+}
