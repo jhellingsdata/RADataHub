@@ -1,0 +1,98 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Median income by state",
+      "anchor": "start",
+      "subtitleFontWeight": "lighter",
+      "subtitle": ["Data: US Census Bureau", ""]
+    },
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Map%20Builder/data%20collection-%20Map%20Builder%20copy/US%20Census/us_state_median_income.csv"
+    },
+    "params": [
+      {
+        "name": "year",
+        "value": 2023,
+        "bind": {
+          "input": "range",
+          "min": 2017,
+          "max": 2023,
+          "step": 1,
+          "name": "Year:"
+        }
+      }
+    ],
+    "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Map%20Builder/us_states_topo.json",
+          "format": {
+            "type": "topojson",
+            "feature": "geog"
+          }
+        },
+        "key": "id",
+        "fields": ["type", "properties", "geometry", "arcs"]
+      }
+    },
+    {"filter": "datum.year == year"}
+  ],
+    "encoding": {
+      "color": {
+        "field": "value",
+        "type": "quantitative",
+        "legend": {
+          "title": null,
+          "labelFontWeight": "lighter",
+          "labelExpr": "'$'+datum.label",
+          "orient": "none",
+          "legendX": 0,
+          "legendY": -10,
+          "direction": "horizontal",
+          "gradientLength": 200
+        },
+        "scale":{
+          "scheme":"greenblue"
+        }  
+      },
+      "tooltip":[
+        {
+          "field":"name",
+          "title":"State"
+        },
+        {
+          "field":"value",
+          "title":"Median Income",
+          "format":"$,.0f"
+        }
+      ]
+    },
+    "projection": {"type": "albersUsa"},
+    "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.3},
+    "config": {
+        "font": "Montserrat, sans-serif",
+        "view": {
+          "stroke": "transparent"
+        },
+        "background": "#f7f7f7",
+        "legend": {
+          "titleFont": "Montserrat, sans-serif",
+          "titleFontSize": 14,
+          "titleColor": "#122b39",
+          "title": null,
+          "labelColor": "#122b39",
+          "labelFontSize": 12
+        },
+        "title": {
+          "font": "Montserrat-Bold, sans-serif",
+          "color":"#122b39",
+          "fontSize": 16,
+          "subtitleFontSize": 14,
+          "subtitleColor": "#676A86"
+        }
+      },
+  }
