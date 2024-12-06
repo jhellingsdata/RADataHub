@@ -1,0 +1,131 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+        "font": "Circular Std",
+        "view": {
+            "stroke": "transparent"
+        },
+        "range": {
+            "category": [
+                "#36B7B4",
+                "#E6224B",
+                "#F4C245",
+                "#0063AF",
+                "#00A767",
+                "#179FDB",
+                "#EB5C2E"
+            ]
+        },
+        "point": {
+            "filled": true,
+            "size": 80,
+            "color": "#e6224b",
+            "opacity": 0.95
+        },
+        "axis": {
+            "labelColor": "#676A86",
+            "labelFontSize": 11,
+            "labelFont": "Circular Std",
+            "labelOpacity": 0.7,
+            "tickColor": "#676A86",
+            "tickOpacity": 0.5,
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [
+                2,
+                2
+            ],
+            "gridOpacity": 0.5,
+            "title": null,
+            "titleColor": "#676A86",
+            "titleOpacity": 0.8,
+            "tickSize": 4
+        },
+        "axisXDiscrete": {
+            "grid": false,
+            "labelAngle": 0,
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": null
+        },
+        "axisYDiscrete": {
+            "ticks": false,
+            "labelPadding": 5
+        },
+        "axisXQuantitative": {
+            "grid": true
+        },
+        "axisXTemporal": {
+            "grid": false
+        },
+        "axisYQuantitative": {
+            "gridColor": "#676A86",
+            "gridDash": [
+                1,
+                5
+            ],
+            "gridOpacity": 0.5,
+            "ticks": false,
+            "labelPadding": 5,
+            "tickCount": 8,
+            "titleAngle": 0,
+            "titleAlign": "left",
+            "titleBaseline": "bottom",
+            "titleX": 0,
+            "titleY": -5,
+            "format": ".0%"
+        },
+        "legend": {
+            "titleColor": "#122b39",
+            "title": null,
+            "labelColor": "#122b39",
+            "labelFontSize": 11
+        }
+    },
+    "height": "400",
+    "width": "600",
+    "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/F62/beveridge_curve_data.csv"
+    },
+    "transform": [
+        {
+            "filter": "datum.unemployment != 0"
+        }
+    ],
+    "mark": {
+        "type": "line",
+        "color": "#0063AF"
+    },
+    "encoding": {
+        "x": {
+            "field": "date",
+            "type": "temporal",
+        },
+        "y": {
+            "field": "unemployment",
+            "type": "quantitative"
+        },
+        "tooltip": [
+            {
+                "field": "date",
+                "type": "temporal",
+                "title": "Date",
+                "format": "%b %Y"
+            },
+            {
+                "field": "unemployment",
+                "type": "quantitative",
+                "title": "Unemployment rate",
+                "format": ".1%"
+            }
+        ]
+    },
+    "title": {
+        "text": "UK unemployment since 2014",
+        "subtitle": [
+            "Source: ONS",
+            ""
+        ]
+    }
+}
