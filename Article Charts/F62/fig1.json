@@ -100,7 +100,7 @@
     "encoding": {
         "x": {
             "field": "date",
-            "type": "temporal",
+            "type": "temporal"
         },
         "y": {
             "field": "unemployment",
