@@ -77,7 +77,7 @@
   "height": "400",
   "width": "600",
   "title": {
-      "text": "UK Beveridge curves",
+      "text": "Job creation and the Beveridge curve since the great resignation",
       "subtitle": ["Source: ONS and author's calculations", ""]
   },
   "data": {"url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/F62/beveridge_curve_data.csv"},
