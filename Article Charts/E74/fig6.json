@@ -1,0 +1,177 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "values": [
+            {
+                "date": "2024-10-01",
+                "series": "Going without essentials",
+                "value": 7
+            },
+            {
+                "date": "2024-10-01",
+                "series": "Including food insecurity",
+                "value": 5.4
+            },
+            {
+                "date": "2024-10-01",
+                "series": "In arrears",
+                "value": 4.3
+            }
+        ]
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "bar",
+                "width": 70,
+                "opacity": 0.9
+            },
+            "encoding": {
+                "x": {
+                    "field": "series",
+                    "type": "nominal",
+                    "title": null
+                },
+                "y": {
+                    "field": "value",
+                    "type": "quantitative",
+                    "title": "Millions of low-income households",
+                    "axis": {
+                        "grid": true
+                    },
+                    "scale": {
+                        "domain": [
+                            0,
+                            8
+                        ]
+                    }
+                },
+                "color": {
+                    "field": "series",
+                    "type": "nominal",
+                    "legend": null
+                },
+                "tooltip": [
+                    {
+                        "field": "series",
+                        "type": "nominal",
+                        "title": "Category"
+                    },
+                    {
+                        "field": "labelValue",
+                        "type": "nominal",
+                        "title": "Value"
+                    }
+                ]
+            },
+            "transform": [
+                {
+                    "calculate": "format(datum.value, '.1f') + 'm'",
+                    "as": "labelValue"
+                }
+            ]
+        },
+        {
+            "transform": [
+                {
+                    "calculate": "format(datum.value, '.1f') + 'm'",
+                    "as": "label"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "align": "center",
+                "baseline": "bottom",
+                "dx": 0,
+                "dy": -5,
+                "color": "black",
+                "fontSize": 12
+            },
+            "encoding": {
+                "text": {
+                    "field": "label",
+                    "type": "nominal"
+                },
+                "x": {
+                    "field": "series",
+                    "type": "nominal"
+                },
+                "y": {
+                    "field": "value",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "field": "series",
+                    "type": "nominal"
+                }
+            }
+        }
+    ],
+    "config": {
+        "font": "Circular Std",
+        "view": {
+            "stroke": "transparent"
+        },
+        "range": {
+            "category": [
+                "#36B7B4",
+                "#E6224B",
+                "#F4C245",
+                "#0063AF",
+                "#00A767",
+                "#179FDB",
+                "#EB5C2E"
+            ]
+        },
+        "axis": {
+            "labelColor": "#676A86",
+            "labelFontSize": 11,
+            "labelFont": "Circular Std",
+            "labelOpacity": 0.7,
+            "tickColor": "#676A86",
+            "tickOpacity": 0.5,
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [
+                2,
+                2
+            ],
+            "gridOpacity": 0.5,
+            "titleColor": "#676A86",
+            "titleOpacity": 0.8,
+            "tickSize": 4
+        },
+        "axisXDiscrete": {
+            "grid": false,
+            "labelAngle": 0,
+            "tickCount": 10,
+            "tickOpacity": 0.5
+        },
+        "scale": {
+            "zero": true
+        },
+        "axisYDiscrete": {
+            "ticks": false,
+            "labelPadding": 5
+        },
+        "axisYQuantitative": {
+            "gridColor": "#676A86",
+            "gridDash": [
+                1,
+                5
+            ],
+            "gridOpacity": 0.5,
+            "ticks": false,
+            "labelPadding": 5,
+            "tickCount": 8,
+            "titleAngle": 0,
+            "titleAlign": "left",
+            "titleBaseline": "bottom",
+            "titleX": 0,
+            "titleY": -5
+        }
+    },
+    "width": 450,
+    "height": 300
+}
