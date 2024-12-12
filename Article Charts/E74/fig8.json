@@ -1,14 +1,14 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/E74/fig2_data.csv"
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/E74/fig8_data.csv"
     },
     "layer": [
       {
         "mark": {"type": "line", "color": "#36B7B4"},
         "encoding": {
           "x": {"field": "date", "type": "temporal", "title": null},
-          "y": {"field": "rate", "type": "quantitative", "title": "Bank Rate"},
+          "y": {"field": "value", "type": "quantitative", "title": "Confidence Index"},
           "tooltip": [
             {
               "field": "date",
@@ -17,10 +17,10 @@
               "format": "%b %Y"
             },
             {
-              "field": "rate",
+              "field": "value",
               "type": "quantitative",
-              "title": "Bank Rate",
-              "format": ".1%"
+              "title": "Confidence Index",
+              "format": ".0f"
             }
           ]
         }
@@ -78,7 +78,7 @@
         "titleBaseline": "bottom",
         "titleX": 0,
         "titleY": -5,
-        "format": ".0%",
+        "format": ".0f",
         "grid": true
       },
       "legend": {
