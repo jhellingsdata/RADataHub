@@ -1,5 +1,118 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+    "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/E74/fig7_data.csv"
+    },
+    "encoding": {
+        "x": {
+            "field": "date",
+            "type": "temporal",
+            "title": null
+        },
+        "y": {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Sales index (2019=100)"
+        },
+        "color": {
+            "condition": {
+                "param": "hover",
+                "field": "series",
+                "type": "nominal",
+                "legend": null
+            },
+            "value": "grey"
+        },
+        "opacity": {
+            "condition": {
+                "param": "hover",
+                "value": 1
+            },
+            "value": 0.2
+        }
+    },
+    "layer": [
+        {
+            "description": "transparent layer to make it easier to trigger selection",
+            "params": [
+                {
+                    "name": "hover",
+                    "select": {
+                        "type": "point",
+                        "fields": [
+                            "series"
+                        ],
+                        "on": "pointerover"
+                    }
+                }
+            ],
+            "mark": {
+                "type": "line",
+                "strokeWidth": 8,
+                "stroke": "transparent"
+            }
+        },
+        {
+            "mark": {
+                "type": "line",
+                "tooltip": {
+                    "content": "data"
+                },
+                "nearest": true
+            },
+            "encoding": {
+                "tooltip": [
+                    {
+                        "field": "date",
+                        "type": "temporal",
+                        "title": "Date",
+                        "format": "%b %Y"
+                    },
+                    {
+                        "field": "value",
+                        "type": "quantitative",
+                        "title": "Index",
+                        "format": ".0f"
+                    }
+                ]
+            }
+        },
+        {
+            "encoding": {
+                "x": {
+                    "aggregate": "max",
+                    "field": "date"
+                },
+                "y": {
+                    "aggregate": {
+                        "argmax": "date"
+                    },
+                    "field": "value"
+                }
+            },
+            "layer": [
+                {
+                    "mark": {
+                        "type": "circle"
+                    }
+                },
+                {
+                    "mark": {
+                        "type": "text",
+                        "align": "left",
+                        "dx": 4
+                    },
+                    "encoding": {
+                        "text": {
+                            "field": "series",
+                            "type": "nominal"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
     "config": {
         "font": "Circular Std",
         "view": {
@@ -42,11 +155,19 @@
             "tickOpacity": 0.5
         },
         "scale": {
-            "zero": true
+            "zero": false,
+            "continuousPadding": 10
         },
         "axisYDiscrete": {
             "ticks": false,
             "labelPadding": 5
+        },
+        "axisXQuantitative": {
+            "grid": false,
+            "format": ".0f"
+        },
+        "axisXTemporal": {
+            "grid": false
         },
         "axisYQuantitative": {
             "gridColor": "#676A86",
@@ -62,9 +183,18 @@
             "titleAlign": "left",
             "titleBaseline": "bottom",
             "titleX": 0,
-            "titleY": -5
+            "titleY": -5,
+            "format": ".0f",
+            "grid": true
+        },
+        "legend": {
+            "titleColor": "#122b39",
+            "title": null,
+            "labelColor": "#122b39",
+            "labelFontSize": 11,
+            "orient": "top-right"
         }
     },
-    "width": 450,
-    "height": 300
+    "width": "450",
+    "height": "300"
 }
