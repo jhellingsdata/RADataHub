@@ -1,6 +1,5 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
     "data": {
         "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/E74/fig3_data.csv"
     },
@@ -13,16 +12,11 @@
         "y": {
             "field": "value",
             "type": "quantitative",
-            "title": "Inflation"
+            "title": "Annual Growth"
         },
         "color": {
-            "condition": {
-                "param": "hover",
-                "field": "series",
-                "type": "nominal",
-                "legend": null
-            },
-            "value": "grey"
+            "field": "series",
+            "type": "nominal"
         },
         "opacity": {
             "condition": {
@@ -34,7 +28,6 @@
     },
     "layer": [
         {
-            "description": "transparent layer to make it easier to trigger selection",
             "params": [
                 {
                     "name": "hover",
@@ -72,7 +65,7 @@
                     {
                         "field": "value",
                         "type": "quantitative",
-                        "title": "Inflation",
+                        "title": "Growth",
                         "format": ".1%"
                     }
                 ]
@@ -91,26 +84,9 @@
                     "field": "value"
                 }
             },
-            "layer": [
-                {
-                    "mark": {
-                        "type": "circle"
-                    }
-                },
-                {
-                    "mark": {
-                        "type": "text",
-                        "align": "left",
-                        "dx": 4
-                    },
-                    "encoding": {
-                        "text": {
-                            "field": "series",
-                            "type": "nominal"
-                        }
-                    }
-                }
-            ]
+            "mark": {
+                "type": "circle"
+            }
         }
     ],
     "config": {
@@ -139,10 +115,7 @@
             "domainColor": "#676A86",
             "domainOpacity": 0.5,
             "gridColor": "#676A86",
-            "gridDash": [
-                2,
-                2
-            ],
+            "gridDash": [2, 2],
             "gridOpacity": 0.5,
             "titleColor": "#676A86",
             "titleOpacity": 0.8,
@@ -171,10 +144,7 @@
         },
         "axisYQuantitative": {
             "gridColor": "#676A86",
-            "gridDash": [
-                1,
-                5
-            ],
+            "gridDash": [1, 5],
             "gridOpacity": 0.5,
             "ticks": false,
             "labelPadding": 5,
@@ -192,7 +162,7 @@
             "title": null,
             "labelColor": "#122b39",
             "labelFontSize": 11,
-            "orient": "top-right"
+            "orient": "top"
         }
     },
     "width": "450",
