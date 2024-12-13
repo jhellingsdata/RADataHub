@@ -1,0 +1,992 @@
+{
+    "config": {
+        "background": "#122B39",
+        "font": "Circular Std",
+        "title": {
+            "color": "#b4c8d8",
+            "fontSize": 14,
+            "fontWeight": 400
+        },
+        "mark": {
+            "line": {
+                "interpolate": "monotone"
+            }
+        },
+        "view": {
+            "stroke": "transparent",
+            "width": 400,
+            "height": 300
+        },
+        "range": {
+            "category": [
+                "#36B7B4",
+                "#E6224B",
+                "#F4C245",
+                "#0063AF",
+                "#00A767",
+                "#179FDB",
+                "#EB5C2E"
+            ],
+            "diverging": [
+                "#E6224B",
+                "#E54753",
+                "#C9C9C9",
+                "#179FDB",
+                "#122B39"
+            ],
+            "heatmap": [
+                "#C9C9C9",
+                "#179FDB",
+                "#0063AF",
+                "#122B39"
+            ],
+            "ordinal": [
+                "#00A767",
+                "#36B7B4",
+                "#179FDB",
+                "#0063AF",
+                "#243B5A"
+            ]
+        },
+        "axisX": {
+            "domainColor": "#b4c8d8",
+            "domainOpacity": 0.5,
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#b4c8d8",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#b4c8d8",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": "",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#b4c8d8",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 207,
+            "titleY": -15
+        },
+        "axisY": {
+            "domainColor": "#b4c8d8",
+            "domainOpacity": 0.5,
+            "format": ".0f",
+            "gridColor": "#b4c8d8",
+            "gridDash": [
+                1,
+                5
+            ],
+            "gridOpacity": 0.5,
+            "labelColor": "#b4c8d8",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#b4c8d8",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "title": "FAO price index",
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#b4c8d8",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -7
+        }
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "line"
+            },
+            "encoding": {
+                "color": {
+                    "field": "series",
+                    "legend": null,
+                    "title": "",
+                    "type": "nominal"
+                },
+                "x": {
+                    "field": "Year",
+                    "title": "",
+                    "type": "temporal"
+                },
+                "y": {
+                    "axis": {
+                        "labelExpr": "format(datum.value, ',.0f') + ' $/GB'"
+                    },
+                    "field": "value",
+                    "scale": {
+                        "type": "log"
+                    },
+                    "title": "Price per GB",
+                    "type": "quantitative"
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 5
+            },
+            "encoding": {
+                "color": {
+                    "field": "series",
+                    "legend": null,
+                    "title": "",
+                    "type": "nominal"
+                },
+                "text": {
+                    "field": "label",
+                    "type": "nominal"
+                },
+                "x": {
+                    "field": "Year",
+                    "title": "",
+                    "type": "temporal"
+                },
+                "y": {
+                    "axis": {
+                        "labelExpr": "format(datum.value, ',.0f') + ' $/GB'"
+                    },
+                    "field": "value",
+                    "scale": {
+                        "type": "log"
+                    },
+                    "title": "Price per GB",
+                    "type": "quantitative"
+                }
+            }
+        }
+    ],
+    "background": "rgba(0,0,0,0)",
+    "data": {
+        "name": "data-57500eea76a98ed1fc06ba7dc086c672"
+    },
+    "height": 400,
+    "width": 800,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+    "datasets": {
+        "data-57500eea76a98ed1fc06ba7dc086c672": [
+            {
+                "Year": "1957-01-01T00:00:00",
+                "series": " Memory",
+                "value": 3786967000000000.0,
+                "label": ""
+            },
+            {
+                "Year": "1959-01-01T00:00:00",
+                "series": " Memory",
+                "value": 603280640000000.0,
+                "label": ""
+            },
+            {
+                "Year": "1960-01-01T00:00:00",
+                "series": " Memory",
+                "value": 45880510000000.0,
+                "label": ""
+            },
+            {
+                "Year": "1965-01-01T00:00:00",
+                "series": " Memory",
+                "value": 21704915000000.0,
+                "label": ""
+            },
+            {
+                "Year": "1970-01-01T00:00:00",
+                "series": " Memory",
+                "value": 4892935600000.0,
+                "label": ""
+            },
+            {
+                "Year": "1973-01-01T00:00:00",
+                "series": " Memory",
+                "value": 2327901600000.0,
+                "label": ""
+            },
+            {
+                "Year": "1974-01-01T00:00:00",
+                "series": " Memory",
+                "value": 1651140100000.0,
+                "label": ""
+            },
+            {
+                "Year": "1975-01-01T00:00:00",
+                "series": " Memory",
+                "value": 240071620000.0,
+                "label": ""
+            },
+            {
+                "Year": "1976-01-01T00:00:00",
+                "series": " Memory",
+                "value": 104782720000.0,
+                "label": ""
+            },
+            {
+                "Year": "1977-01-01T00:00:00",
+                "series": " Memory",
+                "value": 98385980000.0,
+                "label": ""
+            },
+            {
+                "Year": "1978-01-01T00:00:00",
+                "series": " Memory",
+                "value": 60305523000.0,
+                "label": ""
+            },
+            {
+                "Year": "1979-01-01T00:00:00",
+                "series": " Memory",
+                "value": 23907269000.0,
+                "label": ""
+            },
+            {
+                "Year": "1980-01-01T00:00:00",
+                "series": " Memory",
+                "value": 20351056000.0,
+                "label": ""
+            },
+            {
+                "Year": "1981-01-01T00:00:00",
+                "series": " Memory",
+                "value": 12749707000.0,
+                "label": ""
+            },
+            {
+                "Year": "1982-01-01T00:00:00",
+                "series": " Memory",
+                "value": 5310322700.0,
+                "label": ""
+            },
+            {
+                "Year": "1983-01-01T00:00:00",
+                "series": " Memory",
+                "value": 5145041400.0,
+                "label": ""
+            },
+            {
+                "Year": "1984-01-01T00:00:00",
+                "series": " Memory",
+                "value": 3315175000.0,
+                "label": ""
+            },
+            {
+                "Year": "1985-01-01T00:00:00",
+                "series": " Memory",
+                "value": 720613060.0,
+                "label": ""
+            },
+            {
+                "Year": "1986-01-01T00:00:00",
+                "series": " Memory",
+                "value": 447454300.0,
+                "label": ""
+            },
+            {
+                "Year": "1987-01-01T00:00:00",
+                "series": " Memory",
+                "value": 302942900.0,
+                "label": ""
+            },
+            {
+                "Year": "1988-01-01T00:00:00",
+                "series": " Memory",
+                "value": 291073660.0,
+                "label": ""
+            },
+            {
+                "Year": "1989-01-01T00:00:00",
+                "series": " Memory",
+                "value": 236176510.0,
+                "label": ""
+            },
+            {
+                "Year": "1990-01-01T00:00:00",
+                "series": " Memory",
+                "value": 90127496.0,
+                "label": ""
+            },
+            {
+                "Year": "1991-01-01T00:00:00",
+                "series": " Memory",
+                "value": 75538730.0,
+                "label": ""
+            },
+            {
+                "Year": "1992-01-01T00:00:00",
+                "series": " Memory",
+                "value": 48417580.0,
+                "label": ""
+            },
+            {
+                "Year": "1993-01-01T00:00:00",
+                "series": " Memory",
+                "value": 47029436.0,
+                "label": ""
+            },
+            {
+                "Year": "1994-01-01T00:00:00",
+                "series": " Memory",
+                "value": 45834332.0,
+                "label": ""
+            },
+            {
+                "Year": "1995-01-01T00:00:00",
+                "series": " Memory",
+                "value": 44583576.0,
+                "label": ""
+            },
+            {
+                "Year": "1996-01-01T00:00:00",
+                "series": " Memory",
+                "value": 8662792.0,
+                "label": ""
+            },
+            {
+                "Year": "1997-01-01T00:00:00",
+                "series": " Memory",
+                "value": 3476658.2,
+                "label": ""
+            },
+            {
+                "Year": "1998-01-01T00:00:00",
+                "series": " Memory",
+                "value": 1339636.6,
+                "label": ""
+            },
+            {
+                "Year": "1999-01-01T00:00:00",
+                "series": " Memory",
+                "value": 1213723.6,
+                "label": ""
+            },
+            {
+                "Year": "2000-01-01T00:00:00",
+                "series": " Memory",
+                "value": 1045032.9,
+                "label": ""
+            },
+            {
+                "Year": "2001-01-01T00:00:00",
+                "series": " Memory",
+                "value": 215708.97,
+                "label": ""
+            },
+            {
+                "Year": "2002-01-01T00:00:00",
+                "series": " Memory",
+                "value": 192163.72,
+                "label": ""
+            },
+            {
+                "Year": "2003-01-01T00:00:00",
+                "series": " Memory",
+                "value": 107166.31,
+                "label": ""
+            },
+            {
+                "Year": "2004-01-01T00:00:00",
+                "series": " Memory",
+                "value": 104372.016,
+                "label": ""
+            },
+            {
+                "Year": "2005-01-01T00:00:00",
+                "series": " Memory",
+                "value": 100947.14,
+                "label": ""
+            },
+            {
+                "Year": "2006-01-01T00:00:00",
+                "series": " Memory",
+                "value": 93398.016,
+                "label": ""
+            },
+            {
+                "Year": "2007-01-01T00:00:00",
+                "series": " Memory",
+                "value": 30443.912,
+                "label": ""
+            },
+            {
+                "Year": "2008-01-01T00:00:00",
+                "series": " Memory",
+                "value": 11736.141,
+                "label": ""
+            },
+            {
+                "Year": "2009-01-01T00:00:00",
+                "series": " Memory",
+                "value": 11778.016,
+                "label": ""
+            },
+            {
+                "Year": "2010-01-01T00:00:00",
+                "series": " Memory",
+                "value": 11587.969,
+                "label": ""
+            },
+            {
+                "Year": "2011-01-01T00:00:00",
+                "series": " Memory",
+                "value": 5897.578,
+                "label": ""
+            },
+            {
+                "Year": "2012-01-01T00:00:00",
+                "series": " Memory",
+                "value": 4126.761,
+                "label": ""
+            },
+            {
+                "Year": "2013-01-01T00:00:00",
+                "series": " Memory",
+                "value": 4067.1836,
+                "label": ""
+            },
+            {
+                "Year": "2014-01-01T00:00:00",
+                "series": " Memory",
+                "value": 4002.2583,
+                "label": ""
+            },
+            {
+                "Year": "2015-01-01T00:00:00",
+                "series": " Memory",
+                "value": 3997.5159,
+                "label": ""
+            },
+            {
+                "Year": "2016-01-01T00:00:00",
+                "series": " Memory",
+                "value": 2961.1106,
+                "label": ""
+            },
+            {
+                "Year": "2017-01-01T00:00:00",
+                "series": " Memory",
+                "value": 2899.351,
+                "label": ""
+            },
+            {
+                "Year": "2018-01-01T00:00:00",
+                "series": " Memory",
+                "value": 2830.2207,
+                "label": ""
+            },
+            {
+                "Year": "2019-01-01T00:00:00",
+                "series": " Memory",
+                "value": 2779.844,
+                "label": ""
+            },
+            {
+                "Year": "2020-01-01T00:00:00",
+                "series": " Memory",
+                "value": 2745.97,
+                "label": ""
+            },
+            {
+                "Year": "2021-01-01T00:00:00",
+                "series": " Memory",
+                "value": 2477.3096,
+                "label": ""
+            },
+            {
+                "Year": "2022-01-01T00:00:00",
+                "series": " Memory",
+                "value": 1861.9323,
+                "label": ""
+            },
+            {
+                "Year": "2023-01-01T00:00:00",
+                "series": " Memory",
+                "value": 1088.4369,
+                "label": " Memory"
+            },
+            {
+                "Year": "2003-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 269289.7,
+                "label": ""
+            },
+            {
+                "Year": "2004-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 262268.12,
+                "label": ""
+            },
+            {
+                "Year": "2005-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 100921.24,
+                "label": ""
+            },
+            {
+                "Year": "2006-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 18793.69,
+                "label": ""
+            },
+            {
+                "Year": "2007-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 9139.2705,
+                "label": ""
+            },
+            {
+                "Year": "2008-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 2200.7112,
+                "label": ""
+            },
+            {
+                "Year": "2009-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 1950.4845,
+                "label": ""
+            },
+            {
+                "Year": "2010-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 1412.2747,
+                "label": ""
+            },
+            {
+                "Year": "2011-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 1158.3726,
+                "label": ""
+            },
+            {
+                "Year": "2012-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 653.2789,
+                "label": ""
+            },
+            {
+                "Year": "2013-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 508.39658,
+                "label": ""
+            },
+            {
+                "Year": "2014-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 366.16135,
+                "label": ""
+            },
+            {
+                "Year": "2015-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 158.12556,
+                "label": ""
+            },
+            {
+                "Year": "2016-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 156.15555,
+                "label": ""
+            },
+            {
+                "Year": "2017-01-01T00:00:00",
+                "series": " Flash Memory",
+                "value": 152.89864,
+                "label": " Flash Memory"
+            },
+            {
+                "Year": "1956-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 87592750000.0,
+                "label": ""
+            },
+            {
+                "Year": "1959-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 67477360000.0,
+                "label": ""
+            },
+            {
+                "Year": "1960-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 31503645000.0,
+                "label": ""
+            },
+            {
+                "Year": "1964-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 29360284000.0,
+                "label": ""
+            },
+            {
+                "Year": "1966-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 8350479000.0,
+                "label": ""
+            },
+            {
+                "Year": "1970-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 1731185200.0,
+                "label": ""
+            },
+            {
+                "Year": "1973-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 1513812400.0,
+                "label": ""
+            },
+            {
+                "Year": "1974-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 971034000.0,
+                "label": ""
+            },
+            {
+                "Year": "1975-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 889688500.0,
+                "label": ""
+            },
+            {
+                "Year": "1979-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 659732200.0,
+                "label": ""
+            },
+            {
+                "Year": "1980-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 581010050.0,
+                "label": ""
+            },
+            {
+                "Year": "1981-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 526588640.0,
+                "label": ""
+            },
+            {
+                "Year": "1982-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 496166530.0,
+                "label": ""
+            },
+            {
+                "Year": "1983-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 311560860.0,
+                "label": ""
+            },
+            {
+                "Year": "1984-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 93426150.0,
+                "label": ""
+            },
+            {
+                "Year": "1985-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 75532904.0,
+                "label": ""
+            },
+            {
+                "Year": "1986-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 43564812.0,
+                "label": ""
+            },
+            {
+                "Year": "1987-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 34090570.0,
+                "label": ""
+            },
+            {
+                "Year": "1988-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 21812290.0,
+                "label": ""
+            },
+            {
+                "Year": "1989-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 15623316.0,
+                "label": ""
+            },
+            {
+                "Year": "1990-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 6475771.0,
+                "label": ""
+            },
+            {
+                "Year": "1991-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 5305764.0,
+                "label": ""
+            },
+            {
+                "Year": "1992-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 2581349.0,
+                "label": ""
+            },
+            {
+                "Year": "1993-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 1285968.9,
+                "label": ""
+            },
+            {
+                "Year": "1994-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 756436.25,
+                "label": ""
+            },
+            {
+                "Year": "1995-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 363201.0,
+                "label": ""
+            },
+            {
+                "Year": "1996-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 210547.08,
+                "label": ""
+            },
+            {
+                "Year": "1997-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 78017.58,
+                "label": ""
+            },
+            {
+                "Year": "1998-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 39444.86,
+                "label": ""
+            },
+            {
+                "Year": "1999-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 13730.564,
+                "label": ""
+            },
+            {
+                "Year": "2000-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 6119.577,
+                "label": ""
+            },
+            {
+                "Year": "2001-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 3785.6985,
+                "label": ""
+            },
+            {
+                "Year": "2002-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 1750.5924,
+                "label": ""
+            },
+            {
+                "Year": "2003-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 1055.0634,
+                "label": ""
+            },
+            {
+                "Year": "2004-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 834.98285,
+                "label": ""
+            },
+            {
+                "Year": "2005-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 538.3847,
+                "label": ""
+            },
+            {
+                "Year": "2006-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 280.8012,
+                "label": ""
+            },
+            {
+                "Year": "2007-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 249.62117,
+                "label": ""
+            },
+            {
+                "Year": "2008-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 120.196144,
+                "label": ""
+            },
+            {
+                "Year": "2009-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 84.4339,
+                "label": ""
+            },
+            {
+                "Year": "2010-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 53.410732,
+                "label": ""
+            },
+            {
+                "Year": "2011-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 42.180378,
+                "label": ""
+            },
+            {
+                "Year": "2012-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 41.32522,
+                "label": ""
+            },
+            {
+                "Year": "2013-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 40.72861,
+                "label": ""
+            },
+            {
+                "Year": "2014-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 38.26366,
+                "label": ""
+            },
+            {
+                "Year": "2015-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 30.935,
+                "label": ""
+            },
+            {
+                "Year": "2016-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 29.870235,
+                "label": ""
+            },
+            {
+                "Year": "2017-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 26.396421,
+                "label": ""
+            },
+            {
+                "Year": "2018-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 24.087029,
+                "label": ""
+            },
+            {
+                "Year": "2019-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 18.981298,
+                "label": ""
+            },
+            {
+                "Year": "2020-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 16.25,
+                "label": ""
+            },
+            {
+                "Year": "2021-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 15.520852,
+                "label": ""
+            },
+            {
+                "Year": "2022-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 12.63745,
+                "label": ""
+            },
+            {
+                "Year": "2023-01-01T00:00:00",
+                "series": " Disk Drives",
+                "value": 10.617405,
+                "label": " Disk Drives"
+            },
+            {
+                "Year": "2013-01-01T00:00:00",
+                "series": " Solid-State Drives",
+                "value": 694.31946,
+                "label": ""
+            },
+            {
+                "Year": "2014-01-01T00:00:00",
+                "series": " Solid-State Drives",
+                "value": 409.94592,
+                "label": ""
+            },
+            {
+                "Year": "2015-01-01T00:00:00",
+                "series": " Solid-State Drives",
+                "value": 272.9443,
+                "label": ""
+            },
+            {
+                "Year": "2016-01-01T00:00:00",
+                "series": " Solid-State Drives",
+                "value": 219.02322,
+                "label": ""
+            },
+            {
+                "Year": "2017-01-01T00:00:00",
+                "series": " Solid-State Drives",
+                "value": 214.45508,
+                "label": ""
+            },
+            {
+                "Year": "2018-01-01T00:00:00",
+                "series": " Solid-State Drives",
+                "value": 107.34549,
+                "label": ""
+            },
+            {
+                "Year": "2019-01-01T00:00:00",
+                "series": " Solid-State Drives",
+                "value": 80.13651,
+                "label": ""
+            },
+            {
+                "Year": "2020-01-01T00:00:00",
+                "series": " Solid-State Drives",
+                "value": 74.99,
+                "label": ""
+            },
+            {
+                "Year": "2021-01-01T00:00:00",
+                "series": " Solid-State Drives",
+                "value": 71.62515,
+                "label": ""
+            },
+            {
+                "Year": "2022-01-01T00:00:00",
+                "series": " Solid-State Drives",
+                "value": 39.796032,
+                "label": ""
+            },
+            {
+                "Year": "2023-01-01T00:00:00",
+                "series": " Solid-State Drives",
+                "value": 25.906467,
+                "label": " Solid-State Drives"
+            }
+        ]
+    }
+}
