@@ -1,8 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/E74/fig8_data.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/E74/fig4_data.csv"
   },
+  "transform": [
+    {"calculate": "toNumber(datum.value)",
+    "as": "value"}
+  ],
   "layer": [
     {
       "mark": {"type": "line", "color": "#36B7B4"},
@@ -11,22 +15,8 @@
         "y": {
           "field": "value",
           "type": "quantitative",
-          "title": "Confidence Index"
-        },
-        "tooltip": [
-          {
-            "field": "date",
-            "type": "temporal",
-            "title": "Date",
-            "format": "%b %Y"
-          },
-          {
-            "field": "value",
-            "type": "quantitative",
-            "title": "Confidence Index",
-            "format": ".0f"
-          }
-        ]
+          "title": "ASDA Income Tracker"
+        }
       }
     },
     {
@@ -41,31 +31,6 @@
           "sort": [{"field": "date", "order": "descending"}]
         },
         {"filter": "datum.rank == 1"}
-      ]
-    },
-    {
-      "mark": {
-        "type": "text",
-        "color": "#36B7B4",
-        "dx": 5,
-        "dy": 0,
-        "align": "left"
-      },
-      "encoding": {
-        "x": {"field": "date", "type": "temporal"},
-        "y": {"field": "value", "type": "quantitative"},
-        "text": {"field": "date_value", "type": "nominal"}
-      },
-      "transform": [
-        {
-          "window": [{"op": "rank", "as": "rank"}],
-          "sort": [{"field": "date", "order": "descending"}]
-        },
-        {"filter": "datum.rank == 1"},
-        {
-          "calculate": "timeFormat(datum.date, '%b %Y') + ': ' + floor(datum.value)",
-          "as": "date_value"
-        }
       ]
     }
   ],
