@@ -1,0 +1,606 @@
+date,series,value
+2014-10-01,Electricity,100.2
+2014-11-01,Electricity,100.2
+2014-12-01,Electricity,100.2
+2015-01-01,Electricity,100.2
+2015-02-01,Electricity,100.2
+2015-03-01,Electricity,100.2
+2015-04-01,Electricity,100.0
+2015-05-01,Electricity,100.0
+2015-06-01,Electricity,99.9
+2015-07-01,Electricity,99.9
+2015-08-01,Electricity,99.9
+2015-09-01,Electricity,99.9
+2015-10-01,Electricity,99.9
+2015-11-01,Electricity,99.9
+2015-12-01,Electricity,99.9
+2016-01-01,Electricity,99.9
+2016-02-01,Electricity,99.9
+2016-03-01,Electricity,99.9
+2016-04-01,Electricity,99.7
+2016-05-01,Electricity,99.7
+2016-06-01,Electricity,99.7
+2016-07-01,Electricity,99.7
+2016-08-01,Electricity,99.7
+2016-09-01,Electricity,99.7
+2016-10-01,Electricity,99.7
+2016-11-01,Electricity,99.7
+2016-12-01,Electricity,99.7
+2017-01-01,Electricity,99.7
+2017-02-01,Electricity,99.7
+2017-03-01,Electricity,100.7
+2017-04-01,Electricity,103.2
+2017-05-01,Electricity,107.4
+2017-06-01,Electricity,107.4
+2017-07-01,Electricity,108.7
+2017-08-01,Electricity,108.7
+2017-09-01,Electricity,108.7
+2017-10-01,Electricity,111.1
+2017-11-01,Electricity,111.1
+2017-12-01,Electricity,111.1
+2018-01-01,Electricity,111.1
+2018-02-01,Electricity,111.1
+2018-03-01,Electricity,111.1
+2018-04-01,Electricity,112.1
+2018-05-01,Electricity,112.2
+2018-06-01,Electricity,114.7
+2018-07-01,Electricity,116.7
+2018-08-01,Electricity,116.7
+2018-09-01,Electricity,118.8
+2018-10-01,Electricity,121.2
+2018-11-01,Electricity,121.2
+2018-12-01,Electricity,121.2
+2019-01-01,Electricity,115.3
+2019-02-01,Electricity,115.4
+2019-03-01,Electricity,115.4
+2019-04-01,Electricity,127.9
+2019-05-01,Electricity,127.9
+2019-06-01,Electricity,127.9
+2019-07-01,Electricity,127.9
+2019-08-01,Electricity,127.9
+2019-09-01,Electricity,127.9
+2019-10-01,Electricity,125.2
+2019-11-01,Electricity,125.2
+2019-12-01,Electricity,125.2
+2020-01-01,Electricity,125.2
+2020-02-01,Electricity,125.2
+2020-03-01,Electricity,125.2
+2020-04-01,Electricity,125.4
+2020-05-01,Electricity,125.4
+2020-06-01,Electricity,125.4
+2020-07-01,Electricity,125.3
+2020-08-01,Electricity,125.3
+2020-09-01,Electricity,125.3
+2020-10-01,Electricity,121.2
+2020-11-01,Electricity,121.2
+2020-12-01,Electricity,121.2
+2021-01-01,Electricity,121.2
+2021-02-01,Electricity,121.2
+2021-03-01,Electricity,121.2
+2021-04-01,Electricity,132.3
+2021-05-01,Electricity,132.3
+2021-06-01,Electricity,132.3
+2021-07-01,Electricity,132.5
+2021-08-01,Electricity,132.5
+2021-09-01,Electricity,132.5
+2021-10-01,Electricity,144.0
+2021-11-01,Electricity,144.0
+2021-12-01,Electricity,144.0
+2022-01-01,Electricity,144.5
+2022-02-01,Electricity,144.5
+2022-03-01,Electricity,144.5
+2022-04-01,Electricity,203.2
+2022-05-01,Electricity,203.2
+2022-06-01,Electricity,203.2
+2022-07-01,Electricity,204.1
+2022-08-01,Electricity,204.1
+2022-09-01,Electricity,204.1
+2022-10-01,Electricity,238.6
+2022-11-01,Electricity,238.1
+2022-12-01,Electricity,238.1
+2023-01-01,Electricity,240.9
+2023-02-01,Electricity,240.9
+2023-03-01,Electricity,240.9
+2023-04-01,Electricity,238.3
+2023-05-01,Electricity,238.3
+2023-06-01,Electricity,238.3
+2023-07-01,Electricity,217.7
+2023-08-01,Electricity,217.7
+2023-09-01,Electricity,217.7
+2023-10-01,Electricity,201.4
+2023-11-01,Electricity,201.4
+2023-12-01,Electricity,201.4
+2024-01-01,Electricity,209.6
+2024-02-01,Electricity,209.6
+2024-03-01,Electricity,209.6
+2024-04-01,Electricity,188.1
+2024-05-01,Electricity,188.1
+2024-06-01,Electricity,188.1
+2024-07-01,Electricity,175.3
+2024-08-01,Electricity,175.3
+2024-09-01,Electricity,175.3
+2024-10-01,Electricity,188.8
+2014-10-01,Gas,104.6
+2014-11-01,Gas,104.6
+2014-12-01,Gas,104.6
+2015-01-01,Gas,104.1
+2015-02-01,Gas,103.4
+2015-03-01,Gas,100.7
+2015-04-01,Gas,100.6
+2015-05-01,Gas,100.0
+2015-06-01,Gas,100.0
+2015-07-01,Gas,100.0
+2015-08-01,Gas,100.0
+2015-09-01,Gas,97.8
+2015-10-01,Gas,97.8
+2015-11-01,Gas,97.8
+2015-12-01,Gas,97.8
+2016-01-01,Gas,97.8
+2016-02-01,Gas,97.1
+2016-03-01,Gas,94.6
+2016-04-01,Gas,93.3
+2016-05-01,Gas,93.3
+2016-06-01,Gas,93.3
+2016-07-01,Gas,93.3
+2016-08-01,Gas,93.3
+2016-09-01,Gas,93.3
+2016-10-01,Gas,93.3
+2016-11-01,Gas,93.3
+2016-12-01,Gas,93.3
+2017-01-01,Gas,92.9
+2017-02-01,Gas,92.9
+2017-03-01,Gas,92.9
+2017-04-01,Gas,92.4
+2017-05-01,Gas,92.8
+2017-06-01,Gas,92.8
+2017-07-01,Gas,93.3
+2017-08-01,Gas,93.3
+2017-09-01,Gas,93.3
+2017-10-01,Gas,93.3
+2017-11-01,Gas,93.4
+2017-12-01,Gas,93.4
+2018-01-01,Gas,93.5
+2018-02-01,Gas,93.5
+2018-03-01,Gas,93.5
+2018-04-01,Gas,93.8
+2018-05-01,Gas,93.9
+2018-06-01,Gas,96.2
+2018-07-01,Gas,97.3
+2018-08-01,Gas,97.3
+2018-09-01,Gas,98.4
+2018-10-01,Gas,100.4
+2018-11-01,Gas,100.4
+2018-12-01,Gas,100.4
+2019-01-01,Gas,91.9
+2019-02-01,Gas,92.0
+2019-03-01,Gas,92.0
+2019-04-01,Gas,100.5
+2019-05-01,Gas,100.5
+2019-06-01,Gas,100.5
+2019-07-01,Gas,100.5
+2019-08-01,Gas,100.5
+2019-09-01,Gas,100.5
+2019-10-01,Gas,91.7
+2019-11-01,Gas,91.7
+2019-12-01,Gas,91.7
+2020-01-01,Gas,91.7
+2020-02-01,Gas,91.7
+2020-03-01,Gas,91.7
+2020-04-01,Gas,88.4
+2020-05-01,Gas,88.5
+2020-06-01,Gas,88.5
+2020-07-01,Gas,88.4
+2020-08-01,Gas,88.4
+2020-09-01,Gas,88.4
+2020-10-01,Gas,77.6
+2020-11-01,Gas,77.6
+2020-12-01,Gas,77.6
+2021-01-01,Gas,77.6
+2021-02-01,Gas,77.6
+2021-03-01,Gas,77.6
+2021-04-01,Gas,84.9
+2021-05-01,Gas,84.9
+2021-06-01,Gas,84.9
+2021-07-01,Gas,84.9
+2021-08-01,Gas,84.9
+2021-09-01,Gas,84.9
+2021-10-01,Gas,99.4
+2021-11-01,Gas,99.4
+2021-12-01,Gas,99.4
+2022-01-01,Gas,99.5
+2022-02-01,Gas,99.5
+2022-03-01,Gas,99.5
+2022-04-01,Gas,165.9
+2022-05-01,Gas,165.9
+2022-06-01,Gas,165.9
+2022-07-01,Gas,166.1
+2022-08-01,Gas,166.1
+2022-09-01,Gas,166.1
+2022-10-01,Gas,227.4
+2022-11-01,Gas,227.4
+2022-12-01,Gas,227.4
+2023-01-01,Gas,228.2
+2023-02-01,Gas,228.2
+2023-03-01,Gas,228.2
+2023-04-01,Gas,225.9
+2023-05-01,Gas,225.9
+2023-06-01,Gas,225.9
+2023-07-01,Gas,168.9
+2023-08-01,Gas,168.9
+2023-09-01,Gas,168.9
+2023-10-01,Gas,157.0
+2023-11-01,Gas,157.0
+2023-12-01,Gas,157.0
+2024-01-01,Gas,167.7
+2024-02-01,Gas,167.7
+2024-03-01,Gas,167.7
+2024-04-01,Gas,141.3
+2024-05-01,Gas,141.3
+2024-06-01,Gas,141.3
+2024-07-01,Gas,130.3
+2024-08-01,Gas,130.3
+2024-09-01,Gas,130.3
+2024-10-01,Gas,145.5
+2014-10-01,Solid fuels,101.0
+2014-11-01,Solid fuels,101.1
+2014-12-01,Solid fuels,101.1
+2015-01-01,Solid fuels,101.0
+2015-02-01,Solid fuels,101.0
+2015-03-01,Solid fuels,101.1
+2015-04-01,Solid fuels,101.2
+2015-05-01,Solid fuels,99.1
+2015-06-01,Solid fuels,98.8
+2015-07-01,Solid fuels,98.7
+2015-08-01,Solid fuels,98.7
+2015-09-01,Solid fuels,99.0
+2015-10-01,Solid fuels,100.3
+2015-11-01,Solid fuels,100.5
+2015-12-01,Solid fuels,100.5
+2016-01-01,Solid fuels,100.5
+2016-02-01,Solid fuels,100.6
+2016-03-01,Solid fuels,100.4
+2016-04-01,Solid fuels,100.6
+2016-05-01,Solid fuels,99.4
+2016-06-01,Solid fuels,98.6
+2016-07-01,Solid fuels,97.8
+2016-08-01,Solid fuels,97.9
+2016-09-01,Solid fuels,98.7
+2016-10-01,Solid fuels,100.4
+2016-11-01,Solid fuels,101.1
+2016-12-01,Solid fuels,101.7
+2017-01-01,Solid fuels,101.9
+2017-02-01,Solid fuels,102.4
+2017-03-01,Solid fuels,102.4
+2017-04-01,Solid fuels,102.5
+2017-05-01,Solid fuels,101.1
+2017-06-01,Solid fuels,100.9
+2017-07-01,Solid fuels,100.8
+2017-08-01,Solid fuels,100.8
+2017-09-01,Solid fuels,100.8
+2017-10-01,Solid fuels,102.9
+2017-11-01,Solid fuels,104.0
+2017-12-01,Solid fuels,104.3
+2018-01-01,Solid fuels,104.5
+2018-02-01,Solid fuels,104.5
+2018-03-01,Solid fuels,104.8
+2018-04-01,Solid fuels,104.7
+2018-05-01,Solid fuels,101.8
+2018-06-01,Solid fuels,101.6
+2018-07-01,Solid fuels,102.2
+2018-08-01,Solid fuels,102.4
+2018-09-01,Solid fuels,102.0
+2018-10-01,Solid fuels,105.7
+2018-11-01,Solid fuels,104.9
+2018-12-01,Solid fuels,107.0
+2019-01-01,Solid fuels,107.0
+2019-02-01,Solid fuels,107.1
+2019-03-01,Solid fuels,107.4
+2019-04-01,Solid fuels,105.6
+2019-05-01,Solid fuels,106.5
+2019-06-01,Solid fuels,107.1
+2019-07-01,Solid fuels,106.9
+2019-08-01,Solid fuels,106.2
+2019-09-01,Solid fuels,106.6
+2019-10-01,Solid fuels,108.2
+2019-11-01,Solid fuels,110.8
+2019-12-01,Solid fuels,111.4
+2020-01-01,Solid fuels,110.4
+2020-02-01,Solid fuels,111.6
+2020-03-01,Solid fuels,111.6
+2020-04-01,Solid fuels,111.5
+2020-05-01,Solid fuels,111.5
+2020-06-01,Solid fuels,111.4
+2020-07-01,Solid fuels,111.8
+2020-08-01,Solid fuels,110.9
+2020-09-01,Solid fuels,111.9
+2020-10-01,Solid fuels,113.5
+2020-11-01,Solid fuels,115.1
+2020-12-01,Solid fuels,114.7
+2021-01-01,Solid fuels,114.8
+2021-02-01,Solid fuels,114.6
+2021-03-01,Solid fuels,114.8
+2021-04-01,Solid fuels,114.9
+2021-05-01,Solid fuels,114.8
+2021-06-01,Solid fuels,115.1
+2021-07-01,Solid fuels,115.1
+2021-08-01,Solid fuels,115.0
+2021-09-01,Solid fuels,115.6
+2021-10-01,Solid fuels,116.8
+2021-11-01,Solid fuels,117.3
+2021-12-01,Solid fuels,120.5
+2022-01-01,Solid fuels,121.1
+2022-02-01,Solid fuels,123.3
+2022-03-01,Solid fuels,127.7
+2022-04-01,Solid fuels,130.2
+2022-05-01,Solid fuels,133.9
+2022-06-01,Solid fuels,140.8
+2022-07-01,Solid fuels,146.1
+2022-08-01,Solid fuels,149.3
+2022-09-01,Solid fuels,152.2
+2022-10-01,Solid fuels,159.3
+2022-11-01,Solid fuels,159.2
+2022-12-01,Solid fuels,158.8
+2023-01-01,Solid fuels,160.9
+2023-02-01,Solid fuels,162.3
+2023-03-01,Solid fuels,159.7
+2023-04-01,Solid fuels,159.6
+2023-05-01,Solid fuels,159.1
+2023-06-01,Solid fuels,158.6
+2023-07-01,Solid fuels,157.9
+2023-08-01,Solid fuels,158.6
+2023-09-01,Solid fuels,158.5
+2023-10-01,Solid fuels,156.0
+2023-11-01,Solid fuels,155.1
+2023-12-01,Solid fuels,155.8
+2024-01-01,Solid fuels,154.3
+2024-02-01,Solid fuels,154.5
+2024-03-01,Solid fuels,155.0
+2024-04-01,Solid fuels,155.8
+2024-05-01,Solid fuels,155.2
+2024-06-01,Solid fuels,154.6
+2024-07-01,Solid fuels,154.1
+2024-08-01,Solid fuels,153.9
+2024-09-01,Solid fuels,154.0
+2024-10-01,Solid fuels,153.6
+2014-10-01,Liquid fuels,133.9
+2014-11-01,Liquid fuels,132.2
+2014-12-01,Liquid fuels,121.5
+2015-01-01,Liquid fuels,106.0
+2015-02-01,Liquid fuels,111.3
+2015-03-01,Liquid fuels,108.0
+2015-04-01,Liquid fuels,108.2
+2015-05-01,Liquid fuels,109.8
+2015-06-01,Liquid fuels,106.9
+2015-07-01,Liquid fuels,102.4
+2015-08-01,Liquid fuels,91.0
+2015-09-01,Liquid fuels,92.4
+2015-10-01,Liquid fuels,92.5
+2015-11-01,Liquid fuels,89.3
+2015-12-01,Liquid fuels,82.3
+2016-01-01,Liquid fuels,74.9
+2016-02-01,Liquid fuels,71.7
+2016-03-01,Liquid fuels,77.3
+2016-04-01,Liquid fuels,79.1
+2016-05-01,Liquid fuels,84.0
+2016-06-01,Liquid fuels,90.8
+2016-07-01,Liquid fuels,91.0
+2016-08-01,Liquid fuels,89.2
+2016-09-01,Liquid fuels,93.2
+2016-10-01,Liquid fuels,106.3
+2016-11-01,Liquid fuels,102.0
+2016-12-01,Liquid fuels,110.8
+2017-01-01,Liquid fuels,117.4
+2017-02-01,Liquid fuels,115.6
+2017-03-01,Liquid fuels,109.8
+2017-04-01,Liquid fuels,110.0
+2017-05-01,Liquid fuels,102.4
+2017-06-01,Liquid fuels,100.5
+2017-07-01,Liquid fuels,99.7
+2017-08-01,Liquid fuels,104.3
+2017-09-01,Liquid fuels,108.6
+2017-10-01,Liquid fuels,109.7
+2017-11-01,Liquid fuels,119.8
+2017-12-01,Liquid fuels,129.1
+2018-01-01,Liquid fuels,130.7
+2018-02-01,Liquid fuels,128.5
+2018-03-01,Liquid fuels,135.1
+2018-04-01,Liquid fuels,135.6
+2018-05-01,Liquid fuels,140.4
+2018-06-01,Liquid fuels,139.1
+2018-07-01,Liquid fuels,135.5
+2018-08-01,Liquid fuels,137.2
+2018-09-01,Liquid fuels,143.9
+2018-10-01,Liquid fuels,154.3
+2018-11-01,Liquid fuels,145.7
+2018-12-01,Liquid fuels,136.5
+2019-01-01,Liquid fuels,131.7
+2019-02-01,Liquid fuels,134.7
+2019-03-01,Liquid fuels,135.6
+2019-04-01,Liquid fuels,136.2
+2019-05-01,Liquid fuels,138.4
+2019-06-01,Liquid fuels,132.9
+2019-07-01,Liquid fuels,132.1
+2019-08-01,Liquid fuels,134.2
+2019-09-01,Liquid fuels,134.3
+2019-10-01,Liquid fuels,139.2
+2019-11-01,Liquid fuels,134.9
+2019-12-01,Liquid fuels,135.0
+2020-01-01,Liquid fuels,139.6
+2020-02-01,Liquid fuels,124.1
+2020-03-01,Liquid fuels,102.0
+2020-04-01,Liquid fuels,79.3
+2020-05-01,Liquid fuels,74.2
+2020-06-01,Liquid fuels,86.7
+2020-07-01,Liquid fuels,87.4
+2020-08-01,Liquid fuels,87.2
+2020-09-01,Liquid fuels,83.5
+2020-10-01,Liquid fuels,87.2
+2020-11-01,Liquid fuels,82.5
+2020-12-01,Liquid fuels,97.4
+2021-01-01,Liquid fuels,104.8
+2021-02-01,Liquid fuels,112.7
+2021-03-01,Liquid fuels,115.9
+2021-04-01,Liquid fuels,110.8
+2021-05-01,Liquid fuels,116.0
+2021-06-01,Liquid fuels,119.6
+2021-07-01,Liquid fuels,120.2
+2021-08-01,Liquid fuels,118.7
+2021-09-01,Liquid fuels,124.1
+2021-10-01,Liquid fuels,147.4
+2021-11-01,Liquid fuels,152.9
+2021-12-01,Liquid fuels,148.2
+2022-01-01,Liquid fuels,154.0
+2022-02-01,Liquid fuels,172.2
+2022-03-01,Liquid fuels,248.0
+2022-04-01,Liquid fuels,237.0
+2022-05-01,Liquid fuels,258.2
+2022-06-01,Liquid fuels,273.7
+2022-07-01,Liquid fuels,257.3
+2022-08-01,Liquid fuels,221.1
+2022-09-01,Liquid fuels,251.1
+2022-10-01,Liquid fuels,250.7
+2022-11-01,Liquid fuels,239.5
+2022-12-01,Liquid fuels,218.0
+2023-01-01,Liquid fuels,215.9
+2023-02-01,Liquid fuels,205.8
+2023-03-01,Liquid fuels,192.1
+2023-04-01,Liquid fuels,172.7
+2023-05-01,Liquid fuels,156.8
+2023-06-01,Liquid fuels,149.0
+2023-07-01,Liquid fuels,158.7
+2023-08-01,Liquid fuels,186.7
+2023-09-01,Liquid fuels,201.4
+2023-10-01,Liquid fuels,204.7
+2023-11-01,Liquid fuels,192.6
+2023-12-01,Liquid fuels,183.8
+2024-01-01,Liquid fuels,178.2
+2024-02-01,Liquid fuels,187.5
+2024-03-01,Liquid fuels,176.1
+2024-04-01,Liquid fuels,178.6
+2024-05-01,Liquid fuels,167.9
+2024-06-01,Liquid fuels,158.6
+2024-07-01,Liquid fuels,168.6
+2024-08-01,Liquid fuels,156.3
+2024-09-01,Liquid fuels,150.0
+2024-10-01,Liquid fuels,155.0
+2014-10-01,Domestic fuels,103.1
+2014-11-01,Domestic fuels,103.0
+2014-12-01,Domestic fuels,102.7
+2015-01-01,Domestic fuels,102.1
+2015-02-01,Domestic fuels,101.9
+2015-03-01,Domestic fuels,100.6
+2015-04-01,Domestic fuels,100.5
+2015-05-01,Domestic fuels,100.2
+2015-06-01,Domestic fuels,100.1
+2015-07-01,Domestic fuels,100.0
+2015-08-01,Domestic fuels,99.7
+2015-09-01,Domestic fuels,98.8
+2015-10-01,Domestic fuels,98.8
+2015-11-01,Domestic fuels,98.7
+2015-12-01,Domestic fuels,98.6
+2016-01-01,Domestic fuels,98.3
+2016-02-01,Domestic fuels,97.9
+2016-03-01,Domestic fuels,96.9
+2016-04-01,Domestic fuels,96.3
+2016-05-01,Domestic fuels,96.4
+2016-06-01,Domestic fuels,96.7
+2016-07-01,Domestic fuels,96.7
+2016-08-01,Domestic fuels,96.6
+2016-09-01,Domestic fuels,96.8
+2016-10-01,Domestic fuels,97.3
+2016-11-01,Domestic fuels,97.2
+2016-12-01,Domestic fuels,97.5
+2017-01-01,Domestic fuels,97.5
+2017-02-01,Domestic fuels,97.5
+2017-03-01,Domestic fuels,97.8
+2017-04-01,Domestic fuels,98.8
+2017-05-01,Domestic fuels,100.8
+2017-06-01,Domestic fuels,100.8
+2017-07-01,Domestic fuels,101.6
+2017-08-01,Domestic fuels,101.7
+2017-09-01,Domestic fuels,101.8
+2017-10-01,Domestic fuels,103.1
+2017-11-01,Domestic fuels,103.4
+2017-12-01,Domestic fuels,103.6
+2018-01-01,Domestic fuels,103.7
+2018-02-01,Domestic fuels,103.7
+2018-03-01,Domestic fuels,103.8
+2018-04-01,Domestic fuels,104.5
+2018-05-01,Domestic fuels,104.6
+2018-06-01,Domestic fuels,106.9
+2018-07-01,Domestic fuels,108.3
+2018-08-01,Domestic fuels,108.3
+2018-09-01,Domestic fuels,110.0
+2018-10-01,Domestic fuels,112.4
+2018-11-01,Domestic fuels,112.2
+2018-12-01,Domestic fuels,112.0
+2019-01-01,Domestic fuels,105.2
+2019-02-01,Domestic fuels,105.4
+2019-03-01,Domestic fuels,105.4
+2019-04-01,Domestic fuels,115.4
+2019-05-01,Domestic fuels,115.5
+2019-06-01,Domestic fuels,115.4
+2019-07-01,Domestic fuels,115.3
+2019-08-01,Domestic fuels,115.4
+2019-09-01,Domestic fuels,115.4
+2019-10-01,Domestic fuels,110.3
+2019-11-01,Domestic fuels,110.3
+2019-12-01,Domestic fuels,110.3
+2020-01-01,Domestic fuels,110.4
+2020-02-01,Domestic fuels,110.0
+2020-03-01,Domestic fuels,109.5
+2020-04-01,Domestic fuels,107.5
+2020-05-01,Domestic fuels,107.4
+2020-06-01,Domestic fuels,107.7
+2020-07-01,Domestic fuels,107.7
+2020-08-01,Domestic fuels,107.6
+2020-09-01,Domestic fuels,107.6
+2020-10-01,Domestic fuels,100.6
+2020-11-01,Domestic fuels,100.5
+2020-12-01,Domestic fuels,100.9
+2021-01-01,Domestic fuels,101.1
+2021-02-01,Domestic fuels,101.4
+2021-03-01,Domestic fuels,101.5
+2021-04-01,Domestic fuels,110.1
+2021-05-01,Domestic fuels,110.2
+2021-06-01,Domestic fuels,110.3
+2021-07-01,Domestic fuels,110.5
+2021-08-01,Domestic fuels,110.4
+2021-09-01,Domestic fuels,110.6
+2021-10-01,Domestic fuels,123.7
+2021-11-01,Domestic fuels,123.9
+2021-12-01,Domestic fuels,123.8
+2022-01-01,Domestic fuels,124.3
+2022-02-01,Domestic fuels,124.8
+2022-03-01,Domestic fuels,126.6
+2022-04-01,Domestic fuels,186.7
+2022-05-01,Domestic fuels,187.3
+2022-06-01,Domestic fuels,187.8
+2022-07-01,Domestic fuels,188.1
+2022-08-01,Domestic fuels,187.4
+2022-09-01,Domestic fuels,188.2
+2022-10-01,Domestic fuels,234.6
+2022-11-01,Domestic fuels,234.2
+2022-12-01,Domestic fuels,233.7
+2023-01-01,Domestic fuels,235.5
+2023-02-01,Domestic fuels,235.3
+2023-03-01,Domestic fuels,234.9
+2023-04-01,Domestic fuels,232.1
+2023-05-01,Domestic fuels,231.7
+2023-06-01,Domestic fuels,231.6
+2023-07-01,Domestic fuels,196.7
+2023-08-01,Domestic fuels,197.3
+2023-09-01,Domestic fuels,197.6
+2023-10-01,Domestic fuels,183.9
+2023-11-01,Domestic fuels,183.6
+2023-12-01,Domestic fuels,183.4
+2024-01-01,Domestic fuels,192.3
+2024-02-01,Domestic fuels,192.6
+2024-03-01,Domestic fuels,192.3
+2024-04-01,Domestic fuels,169.2
+2024-05-01,Domestic fuels,168.9
+2024-06-01,Domestic fuels,168.6
+2024-07-01,Domestic fuels,157.2
+2024-08-01,Domestic fuels,156.8
+2024-09-01,Domestic fuels,156.7
+2024-10-01,Domestic fuels,170.8
