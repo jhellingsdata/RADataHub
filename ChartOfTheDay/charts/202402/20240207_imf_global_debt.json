@@ -1,0 +1,95 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "config": {
+      "axis": {
+        "domainColor": "#b4c8d8",
+        "domainOpacity": 0.5,
+        "tickOpacity": 0.5, 
+        "labelFontSize": 11,
+        "tickSize": 4,
+        "tickColor": "#b4c8d8",
+        "labelColor": "#b4c8d8"
+      },
+      "axisQuantitative": {
+        "gridDash": [1,5]
+      },
+      "text": {
+        "color": "#b4c8d8"
+      },
+      "title": {
+        "color": "#b4c8d8",
+        "fontSize": 14,
+        "subtitlePadding": 4,
+        "subtitleFontSize": 12,
+        "subtitleColor": "#b4c8d8",
+        "anchor": "start",
+        "dx": 24
+      },
+      "legend": {
+        "labelColor": "#b4c8d8",
+        "symbolSize": 100,
+        "labelFontSize": 11
+      }
+    },
+  
+    "title": {
+      "text": "Global Debt",
+      "subtitle": ["Total debt outstanding, by sector. Source: IMF"],
+      "dx": 34
+    },
+  
+    "view": {"stroke":"transparent"},
+  
+    "width": 450,
+    "height": 300,
+  
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/Global_IMF_Debt.csv"
+    },
+  
+    "transform": [
+      {"fold":["hh", "nfc", "gov"], "as": ["var", "val"]}
+    ],
+  
+    "background": "#122b39",
+    "mark": {
+      "type":"area",
+      "width":5},
+    
+     
+      "encoding": {
+      
+      "x": {
+        "field": "year",
+        "type": "temporal", 
+        "title": null,
+        "axis":{
+          "grid": false
+        }
+       },
+      
+      "y": {
+        "field": "val",
+        "title": null,
+        "type": "quantitative",
+        "axis":{
+          "format":".0%",
+          "gridColor":"lightgray",
+          "zindex": 0,
+          "gridWidth":0.5}
+      },
+      
+      "color": {
+        "field": "var",
+        "type": "nominal",
+        "legend": {
+          "orient": "top-left",
+          "columns":3,
+          "labelExpr": "{'hh':'Households','gov':'Governments','nfc':'Companies'}[datum.label]"},
+        "scale": {"scheme": "inferno", "reverse": true},
+        "title": null
+      }
+    }
+  }

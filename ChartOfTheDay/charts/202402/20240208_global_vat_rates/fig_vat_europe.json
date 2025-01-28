@@ -1,0 +1,88 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+      "title": {
+        "text": "Value Added Taxes",
+        "subtitle": ["Standard VAT / Goods Sales Tax", "Source: IMF"],
+        "fontSize":16,
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 12,
+        "anchor": "start",
+        "color": "black"
+      },
+      "width": 400,
+      "height": 300,
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_4_world_map_gdp_world_countries.geojson",
+        "format": {"property": "features"}
+      },
+      "projection": {
+        "type": "mercator",
+        "center": [13.5, 53.5],
+        "scale": 300
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "gbp(25, 25, 25)",
+        "strokeWidth": 0.2
+      },
+      "encoding": {
+        "tooltip": [
+          {"field": "COUNTRY", "title": "Country: "},
+          {"field": "vat_cleaned", "title": "Standard VAT Rate (%)", "format": "~%"}
+        ],
+        "color": {
+          "condition": {
+            "value": "lightgray",
+            "test": "datum.vat_cleaned == '-0.001' "
+          },
+          "field": "vat_cleaned",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "viridis",
+            "reverse": false,
+            "domain": [0, 0.3]
+          },
+          "title": "%",
+          "legend": {
+            "orient": "none",
+            "legendX": 125,
+            "legendY": 300,
+            "gradientLength": 250,
+            "direction": "horizontal",
+            "title": null,
+            "format": "%"
+          }
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.ISO3",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/ChartOfTheDay/charts/202402/20240207_global_vat_rates/imf_vat_europe.csv"
+            },
+            "key": "ISO3",
+            "fields": ["Continent", "vat_cleaned"]
+          },
+          "default": "-0.001"
+        },
+        {
+          "filter": "datum.Continent == 'Europe'"
+        },
+        {
+          "calculate": "datum.Standard_VAT == '' ? '-0.001' : datum.Standard_VAT ",
+          "as": "Standard_VAT"
+        },
+        {
+          "calculate": "datum.Standard_VAT > 0 ? datum.Standard_VAT/100 : datum.Standard_VAT",
+          "as": "Standard_VAT"
+        },
+        {"fold": ["Standard_VAT"], "as": ["Year", "Value"]},
+        {"calculate": "toNumber(datum.Value)", "as": "Value_N"},
+        {
+          "calculate": "datum.Standard_VAT >= 0 ? datum.Standard_VAT*100+'%' : 'no data' ",
+          "as": "tooltip_Standard_VAT"
+        }
+      ]
+  }

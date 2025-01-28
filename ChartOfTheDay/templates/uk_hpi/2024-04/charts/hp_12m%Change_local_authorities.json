@@ -1,0 +1,398 @@
+{
+  "config": {
+    "background": "#fff",
+    "font": "Circular Std",
+    "text": {
+      "color": "#122b39",
+      "font": "Circular Std",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 350,
+      "continuousHeight": 280,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#122b39"
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "axis": {
+      "labelColor": "#122b39",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "tickColor": "#122b39",
+      "tickOpacity": 0.5,
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridColor": "#122b39",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#122b39",
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#122b39",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8
+    },
+    "title": {
+      "color": "#122b39",
+      "subtitleColor": "#122b39E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "frame": "group",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "labelColor": "#122b39"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-9c00aa9dc2b1c1a0b4bf9b34ead12925"
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#b4c8d8",
+        "size": 1.7
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "layer": [
+        {
+          "data": {
+            "name": "data-31a75adedd95cdd7fc9a757930c38661"
+          },
+          "mark": {
+            "type": "bar"
+          },
+          "encoding": {
+            "color": {
+              "field": "color",
+              "scale": null,
+              "type": "nominal"
+            },
+            "tooltip": [
+              {
+                "field": "RegionName",
+                "title": "Region",
+                "type": "nominal"
+              },
+              {
+                "field": "12m%Change",
+                "format": ".2%",
+                "title": "12m Change",
+                "type": "quantitative"
+              },
+              {
+                "field": "AveragePriceStr",
+                "title": "Average Price",
+                "type": "nominal"
+              }
+            ],
+            "x": {
+              "axis": {
+                "format": "%",
+                "gridOpacity": 0.6
+              },
+              "field": "12m%Change",
+              "scale": {
+                "padding": 10
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "RegionName",
+              "sort": "-x",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-9c00aa9dc2b1c1a0b4bf9b34ead12925"
+          },
+          "mark": {
+            "type": "rule",
+            "color": "#b4c8d8",
+            "size": 0.7
+          },
+          "encoding": {
+            "x": {
+              "field": "x",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-a2b24aba6ff5c7b9e3cc223cf03da0fd"
+          },
+          "mark": {
+            "type": "text",
+            "align": {
+              "expr": "datum[\"12m%Change\"] > 0 ? \"left\" : \"right\""
+            },
+            "dx": 5,
+            "dy": 1
+          },
+          "encoding": {
+            "text": {
+              "field": "text",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "format": "%",
+                "gridOpacity": 0.6
+              },
+              "field": "12m%Change",
+              "scale": {
+                "padding": 10
+              },
+              "type": "quantitative"
+            }
+          }
+        }
+      ],
+      "title": {
+        "text": "UK House Price Growth by Local Authority",
+        "subtitle": [
+          "Largest changes, 12-months to April 2024",
+          "Source: HM Land Registry"
+        ]
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+  "datasets": {
+    "data-9c00aa9dc2b1c1a0b4bf9b34ead12925": [
+      {
+        "x": 0
+      }
+    ],
+    "data-31a75adedd95cdd7fc9a757930c38661": [
+      {
+        "Date": "2024-04-01",
+        "RegionName": "Kensington and Chelsea",
+        "AreaCode": "E09000020",
+        "AveragePrice": 1109723.0,
+        "Index": 84.5,
+        "IndexSA": null,
+        "1m%Change": -8.0,
+        "12m%Change": -0.17600000000000002,
+        "AveragePriceStr": "\u00a31,109,723",
+        "color": "#e6224b",
+        "text": "-17.6%"
+      },
+      {
+        "Date": "2024-04-01",
+        "RegionName": "Hammersmith and Fulham",
+        "AreaCode": "E09000013",
+        "AveragePrice": 766538.0,
+        "Index": 104.7,
+        "IndexSA": null,
+        "1m%Change": 2.6,
+        "12m%Change": -0.161,
+        "AveragePriceStr": "\u00a3766,538",
+        "color": "#e6224b",
+        "text": "-16.1%"
+      },
+      {
+        "Date": "2024-04-01",
+        "RegionName": "City of Westminster",
+        "AreaCode": "E09000033",
+        "AveragePrice": 969527.0,
+        "Index": 99.3,
+        "IndexSA": null,
+        "1m%Change": 3.1,
+        "12m%Change": -0.147,
+        "AveragePriceStr": "\u00a3969,527",
+        "color": "#e6224b",
+        "text": "-14.7%"
+      },
+      {
+        "Date": "2024-04-01",
+        "RegionName": "Camden",
+        "AreaCode": "E09000007",
+        "AveragePrice": 762130.0,
+        "Index": 99.0,
+        "IndexSA": null,
+        "1m%Change": 3.2,
+        "12m%Change": -0.129,
+        "AveragePriceStr": "\u00a3762,130",
+        "color": "#e6224b",
+        "text": "-12.9%"
+      },
+      {
+        "Date": "2024-04-01",
+        "RegionName": "Merthyr Tydfil",
+        "AreaCode": "W06000024",
+        "AveragePrice": 136643.0,
+        "Index": 151.1,
+        "IndexSA": null,
+        "1m%Change": 1.4,
+        "12m%Change": -0.11599999999999999,
+        "AveragePriceStr": "\u00a3136,643",
+        "color": "#e6224b",
+        "text": "-11.6%"
+      },
+      {
+        "Date": "2024-04-01",
+        "RegionName": "Hyndburn",
+        "AreaCode": "E07000120",
+        "AveragePrice": 133541.0,
+        "Index": 156.7,
+        "IndexSA": null,
+        "1m%Change": 5.6,
+        "12m%Change": 0.096,
+        "AveragePriceStr": "\u00a3133,541",
+        "color": "#36b7b4",
+        "text": "9.6%"
+      },
+      {
+        "Date": "2024-04-01",
+        "RegionName": "West Lancashire",
+        "AreaCode": "E07000127",
+        "AveragePrice": 237516.0,
+        "Index": 152.3,
+        "IndexSA": null,
+        "1m%Change": 0.0,
+        "12m%Change": 0.1,
+        "AveragePriceStr": "\u00a3237,516",
+        "color": "#36b7b4",
+        "text": "10.0%"
+      },
+      {
+        "Date": "2024-04-01",
+        "RegionName": "Inverclyde",
+        "AreaCode": "S12000018",
+        "AveragePrice": 122852.0,
+        "Index": 128.1,
+        "IndexSA": null,
+        "1m%Change": -2.2,
+        "12m%Change": 0.106,
+        "AveragePriceStr": "\u00a3122,852",
+        "color": "#36b7b4",
+        "text": "10.6%"
+      },
+      {
+        "Date": "2024-04-01",
+        "RegionName": "Ribble Valley",
+        "AreaCode": "E07000124",
+        "AveragePrice": 272905.0,
+        "Index": 136.2,
+        "IndexSA": null,
+        "1m%Change": 2.2,
+        "12m%Change": 0.106,
+        "AveragePriceStr": "\u00a3272,905",
+        "color": "#36b7b4",
+        "text": "10.6%"
+      },
+      {
+        "Date": "2024-04-01",
+        "RegionName": "Clackmannanshire",
+        "AreaCode": "S12000005",
+        "AveragePrice": 171126.0,
+        "Index": 160.8,
+        "IndexSA": null,
+        "1m%Change": 3.0,
+        "12m%Change": 0.11599999999999999,
+        "AveragePriceStr": "\u00a3171,126",
+        "color": "#36b7b4",
+        "text": "11.6%"
+      },
+      {
+        "Date": "2024-04-01",
+        "RegionName": "United Kingdom",
+        "AreaCode": "K02000001",
+        "AveragePrice": 281373.0,
+        "Index": 147.6,
+        "IndexSA": 148.0,
+        "1m%Change": 0.3,
+        "12m%Change": 0.011000000000000001,
+        "AveragePriceStr": "\u00a3281,373",
+        "color": "#b4c8d8",
+        "text": "1.1% UK average"
+      }
+    ],
+    "data-a2b24aba6ff5c7b9e3cc223cf03da0fd": [
+      {
+        "Date": "2024-04-01",
+        "RegionName": "United Kingdom",
+        "AreaCode": "K02000001",
+        "AveragePrice": 281373.0,
+        "Index": 147.6,
+        "IndexSA": 148.0,
+        "1m%Change": 0.3,
+        "12m%Change": 0.011000000000000001,
+        "AveragePriceStr": "\u00a3281,373",
+        "color": "#b4c8d8",
+        "text": "1.1% UK average"
+      }
+    ]
+  },
+  "width": 400,
+  "height": 300
+}

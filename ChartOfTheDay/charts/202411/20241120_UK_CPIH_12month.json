@@ -1,0 +1,879 @@
+{
+  "config": {
+    "background": "#122b39",
+    "font": "Circular Std",
+    "axis": {
+      "labelColor": "#b4c8d8",
+      "tickColor": "#b4c8d8",
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "title": null
+    },
+    "axisX": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5
+    },
+    "axisY": {
+      "gridColor": "#b4c8d8",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "format": "%"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 350,
+      "continuousHeight": 280
+    },
+    "title": {
+      "anchor": "start",
+      "dx": 24,
+      "fontSize": 12,
+      "subtitleFontSize": 12,
+      "color": "#b4c8d8",
+      "subtitleColor": "#b4c8d8E6",
+      "subtitlePadding": 4,
+      "offset": -1
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "name": "data-22809bcd2ef0e2c0809141a67b31d708"
+      },
+      "mark": {
+        "type": "line",
+        "interpolate": "monotone"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-b447407ba695ab667920d4f51d1f7868"
+      },
+      "mark": {
+        "type": "point",
+        "color": "#e6224b",
+        "filled": true,
+        "opacity": 0.9,
+        "size": 60
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-b447407ba695ab667920d4f51d1f7868"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "color": "#b4c8d8",
+        "dx": 7,
+        "dy": 0,
+        "fontSize": 14
+      },
+      "encoding": {
+        "text": {
+          "field": "value",
+          "format": ".1%",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-b447407ba695ab667920d4f51d1f7868"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "color": "#b4c8d8",
+        "dx": 7,
+        "dy": -16,
+        "fontSize": 14
+      },
+      "encoding": {
+        "text": {
+          "field": "date",
+          "format": "%B",
+          "type": "temporal"
+        },
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "title": {
+    "text": "UK Inflation",
+    "subtitle": "CPIH 12-month percent change | Source: ONS via ECO API",
+    "dx": 24
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-22809bcd2ef0e2c0809141a67b31d708": [
+      {
+        "date": "2015-01-01T00:00:00",
+        "value": 0.005,
+        "year": "2015",
+        "month": "January"
+      },
+      {
+        "date": "2015-02-01T00:00:00",
+        "value": 0.004,
+        "year": "2015",
+        "month": "February"
+      },
+      {
+        "date": "2015-03-01T00:00:00",
+        "value": 0.003,
+        "year": "2015",
+        "month": "March"
+      },
+      {
+        "date": "2015-04-01T00:00:00",
+        "value": 0.003,
+        "year": "2015",
+        "month": "April"
+      },
+      {
+        "date": "2015-05-01T00:00:00",
+        "value": 0.004,
+        "year": "2015",
+        "month": "May"
+      },
+      {
+        "date": "2015-06-01T00:00:00",
+        "value": 0.003,
+        "year": "2015",
+        "month": "June"
+      },
+      {
+        "date": "2015-07-01T00:00:00",
+        "value": 0.005,
+        "year": "2015",
+        "month": "July"
+      },
+      {
+        "date": "2015-08-01T00:00:00",
+        "value": 0.004,
+        "year": "2015",
+        "month": "August"
+      },
+      {
+        "date": "2015-09-01T00:00:00",
+        "value": 0.002,
+        "year": "2015",
+        "month": "September"
+      },
+      {
+        "date": "2015-10-01T00:00:00",
+        "value": 0.002,
+        "year": "2015",
+        "month": "October"
+      },
+      {
+        "date": "2015-11-01T00:00:00",
+        "value": 0.004,
+        "year": "2015",
+        "month": "November"
+      },
+      {
+        "date": "2015-12-01T00:00:00",
+        "value": 0.005,
+        "year": "2015",
+        "month": "December"
+      },
+      {
+        "date": "2016-01-01T00:00:00",
+        "value": 0.006,
+        "year": "2016",
+        "month": "January"
+      },
+      {
+        "date": "2016-02-01T00:00:00",
+        "value": 0.006,
+        "year": "2016",
+        "month": "February"
+      },
+      {
+        "date": "2016-03-01T00:00:00",
+        "value": 0.008,
+        "year": "2016",
+        "month": "March"
+      },
+      {
+        "date": "2016-04-01T00:00:00",
+        "value": 0.006999999999999999,
+        "year": "2016",
+        "month": "April"
+      },
+      {
+        "date": "2016-05-01T00:00:00",
+        "value": 0.006999999999999999,
+        "year": "2016",
+        "month": "May"
+      },
+      {
+        "date": "2016-06-01T00:00:00",
+        "value": 0.008,
+        "year": "2016",
+        "month": "June"
+      },
+      {
+        "date": "2016-07-01T00:00:00",
+        "value": 0.009000000000000001,
+        "year": "2016",
+        "month": "July"
+      },
+      {
+        "date": "2016-08-01T00:00:00",
+        "value": 0.01,
+        "year": "2016",
+        "month": "August"
+      },
+      {
+        "date": "2016-09-01T00:00:00",
+        "value": 0.013000000000000001,
+        "year": "2016",
+        "month": "September"
+      },
+      {
+        "date": "2016-10-01T00:00:00",
+        "value": 0.013000000000000001,
+        "year": "2016",
+        "month": "October"
+      },
+      {
+        "date": "2016-11-01T00:00:00",
+        "value": 0.015,
+        "year": "2016",
+        "month": "November"
+      },
+      {
+        "date": "2016-12-01T00:00:00",
+        "value": 0.018000000000000002,
+        "year": "2016",
+        "month": "December"
+      },
+      {
+        "date": "2017-01-01T00:00:00",
+        "value": 0.019,
+        "year": "2017",
+        "month": "January"
+      },
+      {
+        "date": "2017-02-01T00:00:00",
+        "value": 0.023,
+        "year": "2017",
+        "month": "February"
+      },
+      {
+        "date": "2017-03-01T00:00:00",
+        "value": 0.023,
+        "year": "2017",
+        "month": "March"
+      },
+      {
+        "date": "2017-04-01T00:00:00",
+        "value": 0.026000000000000002,
+        "year": "2017",
+        "month": "April"
+      },
+      {
+        "date": "2017-05-01T00:00:00",
+        "value": 0.027000000000000003,
+        "year": "2017",
+        "month": "May"
+      },
+      {
+        "date": "2017-06-01T00:00:00",
+        "value": 0.026000000000000002,
+        "year": "2017",
+        "month": "June"
+      },
+      {
+        "date": "2017-07-01T00:00:00",
+        "value": 0.026000000000000002,
+        "year": "2017",
+        "month": "July"
+      },
+      {
+        "date": "2017-08-01T00:00:00",
+        "value": 0.027000000000000003,
+        "year": "2017",
+        "month": "August"
+      },
+      {
+        "date": "2017-09-01T00:00:00",
+        "value": 0.027999999999999997,
+        "year": "2017",
+        "month": "September"
+      },
+      {
+        "date": "2017-10-01T00:00:00",
+        "value": 0.027999999999999997,
+        "year": "2017",
+        "month": "October"
+      },
+      {
+        "date": "2017-11-01T00:00:00",
+        "value": 0.027999999999999997,
+        "year": "2017",
+        "month": "November"
+      },
+      {
+        "date": "2017-12-01T00:00:00",
+        "value": 0.027000000000000003,
+        "year": "2017",
+        "month": "December"
+      },
+      {
+        "date": "2018-01-01T00:00:00",
+        "value": 0.027000000000000003,
+        "year": "2018",
+        "month": "January"
+      },
+      {
+        "date": "2018-02-01T00:00:00",
+        "value": 0.025,
+        "year": "2018",
+        "month": "February"
+      },
+      {
+        "date": "2018-03-01T00:00:00",
+        "value": 0.023,
+        "year": "2018",
+        "month": "March"
+      },
+      {
+        "date": "2018-04-01T00:00:00",
+        "value": 0.022000000000000002,
+        "year": "2018",
+        "month": "April"
+      },
+      {
+        "date": "2018-05-01T00:00:00",
+        "value": 0.023,
+        "year": "2018",
+        "month": "May"
+      },
+      {
+        "date": "2018-06-01T00:00:00",
+        "value": 0.023,
+        "year": "2018",
+        "month": "June"
+      },
+      {
+        "date": "2018-07-01T00:00:00",
+        "value": 0.023,
+        "year": "2018",
+        "month": "July"
+      },
+      {
+        "date": "2018-08-01T00:00:00",
+        "value": 0.024,
+        "year": "2018",
+        "month": "August"
+      },
+      {
+        "date": "2018-09-01T00:00:00",
+        "value": 0.022000000000000002,
+        "year": "2018",
+        "month": "September"
+      },
+      {
+        "date": "2018-10-01T00:00:00",
+        "value": 0.022000000000000002,
+        "year": "2018",
+        "month": "October"
+      },
+      {
+        "date": "2018-11-01T00:00:00",
+        "value": 0.022000000000000002,
+        "year": "2018",
+        "month": "November"
+      },
+      {
+        "date": "2018-12-01T00:00:00",
+        "value": 0.02,
+        "year": "2018",
+        "month": "December"
+      },
+      {
+        "date": "2019-01-01T00:00:00",
+        "value": 0.018000000000000002,
+        "year": "2019",
+        "month": "January"
+      },
+      {
+        "date": "2019-02-01T00:00:00",
+        "value": 0.018000000000000002,
+        "year": "2019",
+        "month": "February"
+      },
+      {
+        "date": "2019-03-01T00:00:00",
+        "value": 0.018000000000000002,
+        "year": "2019",
+        "month": "March"
+      },
+      {
+        "date": "2019-04-01T00:00:00",
+        "value": 0.02,
+        "year": "2019",
+        "month": "April"
+      },
+      {
+        "date": "2019-05-01T00:00:00",
+        "value": 0.019,
+        "year": "2019",
+        "month": "May"
+      },
+      {
+        "date": "2019-06-01T00:00:00",
+        "value": 0.019,
+        "year": "2019",
+        "month": "June"
+      },
+      {
+        "date": "2019-07-01T00:00:00",
+        "value": 0.02,
+        "year": "2019",
+        "month": "July"
+      },
+      {
+        "date": "2019-08-01T00:00:00",
+        "value": 0.017,
+        "year": "2019",
+        "month": "August"
+      },
+      {
+        "date": "2019-09-01T00:00:00",
+        "value": 0.017,
+        "year": "2019",
+        "month": "September"
+      },
+      {
+        "date": "2019-10-01T00:00:00",
+        "value": 0.015,
+        "year": "2019",
+        "month": "October"
+      },
+      {
+        "date": "2019-11-01T00:00:00",
+        "value": 0.015,
+        "year": "2019",
+        "month": "November"
+      },
+      {
+        "date": "2019-12-01T00:00:00",
+        "value": 0.013999999999999999,
+        "year": "2019",
+        "month": "December"
+      },
+      {
+        "date": "2020-01-01T00:00:00",
+        "value": 0.018000000000000002,
+        "year": "2020",
+        "month": "January"
+      },
+      {
+        "date": "2020-02-01T00:00:00",
+        "value": 0.017,
+        "year": "2020",
+        "month": "February"
+      },
+      {
+        "date": "2020-03-01T00:00:00",
+        "value": 0.015,
+        "year": "2020",
+        "month": "March"
+      },
+      {
+        "date": "2020-04-01T00:00:00",
+        "value": 0.009000000000000001,
+        "year": "2020",
+        "month": "April"
+      },
+      {
+        "date": "2020-05-01T00:00:00",
+        "value": 0.006999999999999999,
+        "year": "2020",
+        "month": "May"
+      },
+      {
+        "date": "2020-06-01T00:00:00",
+        "value": 0.008,
+        "year": "2020",
+        "month": "June"
+      },
+      {
+        "date": "2020-07-01T00:00:00",
+        "value": 0.011000000000000001,
+        "year": "2020",
+        "month": "July"
+      },
+      {
+        "date": "2020-08-01T00:00:00",
+        "value": 0.005,
+        "year": "2020",
+        "month": "August"
+      },
+      {
+        "date": "2020-09-01T00:00:00",
+        "value": 0.006999999999999999,
+        "year": "2020",
+        "month": "September"
+      },
+      {
+        "date": "2020-10-01T00:00:00",
+        "value": 0.009000000000000001,
+        "year": "2020",
+        "month": "October"
+      },
+      {
+        "date": "2020-11-01T00:00:00",
+        "value": 0.006,
+        "year": "2020",
+        "month": "November"
+      },
+      {
+        "date": "2020-12-01T00:00:00",
+        "value": 0.008,
+        "year": "2020",
+        "month": "December"
+      },
+      {
+        "date": "2021-01-01T00:00:00",
+        "value": 0.009000000000000001,
+        "year": "2021",
+        "month": "January"
+      },
+      {
+        "date": "2021-02-01T00:00:00",
+        "value": 0.006999999999999999,
+        "year": "2021",
+        "month": "February"
+      },
+      {
+        "date": "2021-03-01T00:00:00",
+        "value": 0.01,
+        "year": "2021",
+        "month": "March"
+      },
+      {
+        "date": "2021-04-01T00:00:00",
+        "value": 0.016,
+        "year": "2021",
+        "month": "April"
+      },
+      {
+        "date": "2021-05-01T00:00:00",
+        "value": 0.021,
+        "year": "2021",
+        "month": "May"
+      },
+      {
+        "date": "2021-06-01T00:00:00",
+        "value": 0.024,
+        "year": "2021",
+        "month": "June"
+      },
+      {
+        "date": "2021-07-01T00:00:00",
+        "value": 0.021,
+        "year": "2021",
+        "month": "July"
+      },
+      {
+        "date": "2021-08-01T00:00:00",
+        "value": 0.03,
+        "year": "2021",
+        "month": "August"
+      },
+      {
+        "date": "2021-09-01T00:00:00",
+        "value": 0.028999999999999998,
+        "year": "2021",
+        "month": "September"
+      },
+      {
+        "date": "2021-10-01T00:00:00",
+        "value": 0.038,
+        "year": "2021",
+        "month": "October"
+      },
+      {
+        "date": "2021-11-01T00:00:00",
+        "value": 0.046,
+        "year": "2021",
+        "month": "November"
+      },
+      {
+        "date": "2021-12-01T00:00:00",
+        "value": 0.048,
+        "year": "2021",
+        "month": "December"
+      },
+      {
+        "date": "2022-01-01T00:00:00",
+        "value": 0.049,
+        "year": "2022",
+        "month": "January"
+      },
+      {
+        "date": "2022-02-01T00:00:00",
+        "value": 0.055,
+        "year": "2022",
+        "month": "February"
+      },
+      {
+        "date": "2022-03-01T00:00:00",
+        "value": 0.062,
+        "year": "2022",
+        "month": "March"
+      },
+      {
+        "date": "2022-04-01T00:00:00",
+        "value": 0.078,
+        "year": "2022",
+        "month": "April"
+      },
+      {
+        "date": "2022-05-01T00:00:00",
+        "value": 0.079,
+        "year": "2022",
+        "month": "May"
+      },
+      {
+        "date": "2022-06-01T00:00:00",
+        "value": 0.08199999999999999,
+        "year": "2022",
+        "month": "June"
+      },
+      {
+        "date": "2022-07-01T00:00:00",
+        "value": 0.08800000000000001,
+        "year": "2022",
+        "month": "July"
+      },
+      {
+        "date": "2022-08-01T00:00:00",
+        "value": 0.086,
+        "year": "2022",
+        "month": "August"
+      },
+      {
+        "date": "2022-09-01T00:00:00",
+        "value": 0.08800000000000001,
+        "year": "2022",
+        "month": "September"
+      },
+      {
+        "date": "2022-10-01T00:00:00",
+        "value": 0.096,
+        "year": "2022",
+        "month": "October"
+      },
+      {
+        "date": "2022-11-01T00:00:00",
+        "value": 0.09300000000000001,
+        "year": "2022",
+        "month": "November"
+      },
+      {
+        "date": "2022-12-01T00:00:00",
+        "value": 0.092,
+        "year": "2022",
+        "month": "December"
+      },
+      {
+        "date": "2023-01-01T00:00:00",
+        "value": 0.08800000000000001,
+        "year": "2023",
+        "month": "January"
+      },
+      {
+        "date": "2023-02-01T00:00:00",
+        "value": 0.092,
+        "year": "2023",
+        "month": "February"
+      },
+      {
+        "date": "2023-03-01T00:00:00",
+        "value": 0.08900000000000001,
+        "year": "2023",
+        "month": "March"
+      },
+      {
+        "date": "2023-04-01T00:00:00",
+        "value": 0.078,
+        "year": "2023",
+        "month": "April"
+      },
+      {
+        "date": "2023-05-01T00:00:00",
+        "value": 0.079,
+        "year": "2023",
+        "month": "May"
+      },
+      {
+        "date": "2023-06-01T00:00:00",
+        "value": 0.073,
+        "year": "2023",
+        "month": "June"
+      },
+      {
+        "date": "2023-07-01T00:00:00",
+        "value": 0.064,
+        "year": "2023",
+        "month": "July"
+      },
+      {
+        "date": "2023-08-01T00:00:00",
+        "value": 0.063,
+        "year": "2023",
+        "month": "August"
+      },
+      {
+        "date": "2023-09-01T00:00:00",
+        "value": 0.063,
+        "year": "2023",
+        "month": "September"
+      },
+      {
+        "date": "2023-10-01T00:00:00",
+        "value": 0.047,
+        "year": "2023",
+        "month": "October"
+      },
+      {
+        "date": "2023-11-01T00:00:00",
+        "value": 0.042,
+        "year": "2023",
+        "month": "November"
+      },
+      {
+        "date": "2023-12-01T00:00:00",
+        "value": 0.042,
+        "year": "2023",
+        "month": "December"
+      },
+      {
+        "date": "2024-01-01T00:00:00",
+        "value": 0.042,
+        "year": "2024",
+        "month": "January"
+      },
+      {
+        "date": "2024-02-01T00:00:00",
+        "value": 0.038,
+        "year": "2024",
+        "month": "February"
+      },
+      {
+        "date": "2024-03-01T00:00:00",
+        "value": 0.038,
+        "year": "2024",
+        "month": "March"
+      },
+      {
+        "date": "2024-04-01T00:00:00",
+        "value": 0.03,
+        "year": "2024",
+        "month": "April"
+      },
+      {
+        "date": "2024-05-01T00:00:00",
+        "value": 0.027999999999999997,
+        "year": "2024",
+        "month": "May"
+      },
+      {
+        "date": "2024-06-01T00:00:00",
+        "value": 0.027999999999999997,
+        "year": "2024",
+        "month": "June"
+      },
+      {
+        "date": "2024-07-01T00:00:00",
+        "value": 0.031,
+        "year": "2024",
+        "month": "July"
+      },
+      {
+        "date": "2024-08-01T00:00:00",
+        "value": 0.031,
+        "year": "2024",
+        "month": "August"
+      },
+      {
+        "date": "2024-09-01T00:00:00",
+        "value": 0.026000000000000002,
+        "year": "2024",
+        "month": "September"
+      },
+      {
+        "date": "2024-10-01T00:00:00",
+        "value": 0.032,
+        "year": "2024",
+        "month": "October"
+      }
+    ],
+    "data-b447407ba695ab667920d4f51d1f7868": [
+      {
+        "date": "2024-10-01T00:00:00",
+        "value": 0.032,
+        "year": "2024",
+        "month": "October"
+      }
+    ]
+  },
+  "width": 350,
+  "height": 280
+}

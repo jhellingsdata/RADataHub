@@ -12,8 +12,12 @@ import country_converter as coco    # for converting between country codes <-> c
 # styles = alt_style.EcoStyles()
 # styles.register_and_enable_theme()
 
+
 class EcoStyles:
     def __init__(self) -> None:
+    
+        # Remove Altair warning about max 5000 rows
+        alt.data_transformers.disable_max_rows()
 
         self.eco_colours = {
             "red": "#e6224b",                       # light red
@@ -136,7 +140,6 @@ class EcoStyles:
                     'color': text,
                     'font': 'Circular Std',
                     'align': 'left',
-                    'baseline': 'middle',
                     'dx': 7,
                     'dy': 0,
                     'fontSize': 11
@@ -217,7 +220,7 @@ class EcoStyles:
                     'font': 'Circular Std',
                     'subtitleFont': 'Circular Std',
                     'anchor': 'start',
-                    'dx': 24,
+                    'frame': 'group',
                     'fontSize': 14,
                     'subtitleFontSize': 12,
                     'subtitlePadding': 4,
@@ -230,7 +233,7 @@ class EcoStyles:
             }
         }
     
-    def register_and_enable_theme(self, theme_name: str="custom_theme", dark_mode: bool=False):
+    def register_and_enable_theme(self, theme_name: str="cotd", dark_mode: bool=False):
         """
         Registers and enables the custom theme.
         @param dark_mode: True for dark mode, False for light mode

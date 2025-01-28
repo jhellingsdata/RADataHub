@@ -1,0 +1,304 @@
+{
+  "config": {
+    "background": "#122b39",
+    "font": "Circular Std",
+    "text": {
+      "color": "#b4c8d8",
+      "font": "Circular Std",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 350,
+      "continuousHeight": 280,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#b4c8d8"
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "axis": {
+      "labelColor": "#b4c8d8",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "tickColor": "#b4c8d8",
+      "tickOpacity": 0.5,
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "gridColor": "#b4c8d8",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#b4c8d8",
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#b4c8d8",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8
+    },
+    "title": {
+      "color": "#b4c8d8",
+      "subtitleColor": "#b4c8d8E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "frame": "group",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#b4c8d8",
+      "labelColor": "#b4c8d8"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "axis": {
+            "labelExpr": "format(datum.value / 1000,  \".0f\") + \"m\"",
+            "tickCount": 6
+          },
+          "field": "value",
+          "scale": {
+            "domain": [
+              26000,
+              34000
+            ]
+          },
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "Workers",
+        "anchor": "start",
+        "frame": "group",
+        "offset": 7,
+        "subtitle": "Persons employed, 16+, seasonally adjusted | Source: ONS via ECO API",
+        "subtitleFontSize": 12
+      },
+      "transform": [
+        {
+          "calculate": "year(datum.date)",
+          "as": "year"
+        },
+        {
+          "filter": "datum.year > 2014"
+        },
+        {
+          "calculate": "datum.value",
+          "as": "value"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "point",
+        "size": 40
+      },
+      "encoding": {
+        "x": {
+          "aggregate": "max",
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "date"
+          },
+          "field": "value",
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "Workers",
+        "anchor": "start",
+        "frame": "group",
+        "offset": 7,
+        "subtitle": "Persons employed, 16+, seasonally adjusted | Source: ONS via ECO API",
+        "subtitleFontSize": 12
+      },
+      "transform": [
+        {
+          "calculate": "year(datum.date)",
+          "as": "year"
+        },
+        {
+          "filter": "datum.year > 2014"
+        },
+        {
+          "calculate": "datum.value",
+          "as": "value"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 12
+      },
+      "encoding": {
+        "text": {
+          "aggregate": {
+            "argmax": "date"
+          },
+          "field": "text_label",
+          "type": "nominal"
+        },
+        "x": {
+          "aggregate": "max",
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "date"
+          },
+          "field": "value",
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "Workers",
+        "anchor": "start",
+        "frame": "group",
+        "offset": 7,
+        "subtitle": "Persons employed, 16+, seasonally adjusted | Source: ONS via ECO API",
+        "subtitleFontSize": 12
+      },
+      "transform": [
+        {
+          "calculate": "year(datum.date)",
+          "as": "year"
+        },
+        {
+          "filter": "datum.year > 2014"
+        },
+        {
+          "calculate": "datum.value",
+          "as": "value"
+        },
+        {
+          "calculate": "format(datum.value / 1000,  \".1f\") + \"m\"",
+          "as": "text_label"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dy": -13,
+        "fontSize": 13
+      },
+      "encoding": {
+        "text": {
+          "aggregate": {
+            "argmax": "date"
+          },
+          "field": "date",
+          "format": "%b %Y",
+          "timeUnit": "yearmonth",
+          "type": "temporal"
+        },
+        "x": {
+          "aggregate": "max",
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "date"
+          },
+          "field": "value",
+          "type": "quantitative"
+        }
+      },
+      "title": {
+        "text": "Workers",
+        "anchor": "start",
+        "frame": "group",
+        "offset": 7,
+        "subtitle": "Persons employed, 16+, seasonally adjusted | Source: ONS via ECO API",
+        "subtitleFontSize": 12
+      },
+      "transform": [
+        {
+          "calculate": "year(datum.date)",
+          "as": "year"
+        },
+        {
+          "filter": "datum.year > 2014"
+        },
+        {
+          "calculate": "datum.value",
+          "as": "value"
+        }
+      ]
+    }
+  ],
+  "data": {
+    "url": "https://api.economicsobservatory.com/gbr/empd?vega"
+  },
+  "width": 380,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+  "height": 300
+}

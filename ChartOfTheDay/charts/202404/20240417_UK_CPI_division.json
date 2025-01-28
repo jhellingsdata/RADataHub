@@ -1,0 +1,364 @@
+{
+  "config": {
+    "background": "#122b39",
+    "font": "Circular Std",
+    "text": {
+      "color": "#b4c8d8",
+      "font": "Circular Std",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 350,
+      "continuousHeight": 280,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#b4c8d8"
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "axis": {
+      "labelColor": "#b4c8d8",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "tickColor": "#b4c8d8",
+      "tickOpacity": 0.5,
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "gridColor": "#b4c8d8",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#b4c8d8",
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#b4c8d8",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8
+    },
+    "title": {
+      "color": "#b4c8d8",
+      "subtitleColor": "#b4c8d8E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "dx": 24,
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#b4c8d8",
+      "labelColor": "#b4c8d8"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "(datum.Division === 'CPI All items')",
+            "value": "#e6224b"
+          },
+          "value": "#36b7b4"
+        },
+        "x": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "Mar 2024",
+          "scale": {
+            "padding": 20
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Division",
+          "sort": {
+            "field": "Rank",
+            "order": "ascending"
+          },
+          "type": "nominal"
+        }
+      },
+      "title": {
+        "text": "UK Inflation by Division",
+        "dx": 0,
+        "frame": "group",
+        "subtitle": "CPI major divisons, 12-month percent change | Source: ONS"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5
+      },
+      "encoding": {
+        "color": {
+          "value": "#b4c8d8"
+        },
+        "opacity": {
+          "condition": {
+            "test": "(datum['Mar 2024'] > 0)",
+            "value": 1
+          },
+          "value": 0
+        },
+        "text": {
+          "field": "Mar 2024",
+          "format": ".1%",
+          "type": "quantitative"
+        },
+        "x": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "Mar 2024",
+          "scale": {
+            "padding": 20
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Division",
+          "sort": {
+            "field": "Rank",
+            "order": "ascending"
+          },
+          "type": "nominal"
+        }
+      },
+      "title": {
+        "text": "UK Inflation by Division",
+        "dx": 0,
+        "frame": "group",
+        "subtitle": "CPI major divisons, 12-month percent change | Source: ONS"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -4
+      },
+      "encoding": {
+        "color": {
+          "value": "#b4c8d8"
+        },
+        "opacity": {
+          "condition": {
+            "test": "(datum['Mar 2024'] < 0)",
+            "value": 1
+          },
+          "value": 0
+        },
+        "text": {
+          "field": "Mar 2024",
+          "format": ".1%",
+          "type": "quantitative"
+        },
+        "x": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "Mar 2024",
+          "scale": {
+            "padding": 20
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Division",
+          "sort": {
+            "field": "Rank",
+            "order": "ascending"
+          },
+          "type": "nominal"
+        }
+      },
+      "title": {
+        "text": "UK Inflation by Division",
+        "dx": 0,
+        "frame": "group",
+        "subtitle": "CPI major divisons, 12-month percent change | Source: ONS"
+      }
+    }
+  ],
+  "data": {
+    "name": "data-c5bee1832e91ecdd3dfdca0cb2bc75c4"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+  "datasets": {
+    "data-c5bee1832e91ecdd3dfdca0cb2bc75c4": [
+      {
+        "Division": "CPI All items",
+        "Feb 2024": 0.034,
+        "Mar 2024": 0.032,
+        "group": "CPI division",
+        "Rank": 12
+      },
+      {
+        "Division": "Food and drink",
+        "Feb 2024": 0.05,
+        "Mar 2024": 0.04,
+        "group": "CPI division",
+        "Rank": 9
+      },
+      {
+        "Division": "Alcohol and tobacco",
+        "Feb 2024": 0.11900000000000001,
+        "Mar 2024": 0.121,
+        "group": "CPI division",
+        "Rank": 1
+      },
+      {
+        "Division": "Clothing and footwear",
+        "Feb 2024": 0.05,
+        "Mar 2024": 0.04,
+        "group": "CPI division",
+        "Rank": 9
+      },
+      {
+        "Division": "Household services",
+        "Feb 2024": -0.017,
+        "Mar 2024": -0.016,
+        "group": "CPI division",
+        "Rank": 16
+      },
+      {
+        "Division": "Household goods",
+        "Feb 2024": 0.0,
+        "Mar 2024": -0.009000000000000001,
+        "group": "CPI division",
+        "Rank": 15
+      },
+      {
+        "Division": "Health",
+        "Feb 2024": 0.065,
+        "Mar 2024": 0.066,
+        "group": "CPI division",
+        "Rank": 3
+      },
+      {
+        "Division": "Transport",
+        "Feb 2024": -0.001,
+        "Mar 2024": 0.001,
+        "group": "CPI division",
+        "Rank": 14
+      },
+      {
+        "Division": "Communication",
+        "Feb 2024": 0.055999999999999994,
+        "Mar 2024": 0.075,
+        "group": "CPI division",
+        "Rank": 2
+      },
+      {
+        "Division": "Recreation and culture",
+        "Feb 2024": 0.054000000000000006,
+        "Mar 2024": 0.053,
+        "group": "CPI division",
+        "Rank": 6
+      },
+      {
+        "Division": "Education",
+        "Feb 2024": 0.045,
+        "Mar 2024": 0.045,
+        "group": "CPI division",
+        "Rank": 7
+      },
+      {
+        "Division": "Restaurants and hotels",
+        "Feb 2024": 0.06,
+        "Mar 2024": 0.057999999999999996,
+        "group": "CPI division",
+        "Rank": 5
+      },
+      {
+        "Division": "Misc. goods and services",
+        "Feb 2024": 0.036000000000000004,
+        "Mar 2024": 0.034,
+        "group": "CPI division",
+        "Rank": 11
+      },
+      {
+        "Division": "All goods",
+        "Feb 2024": 0.011000000000000001,
+        "Mar 2024": 0.008,
+        "group": "Aggregated",
+        "Rank": 13
+      },
+      {
+        "Division": "All services",
+        "Feb 2024": 0.061,
+        "Mar 2024": 0.06,
+        "group": "Aggregated",
+        "Rank": 4
+      },
+      {
+        "Division": "Core CPI",
+        "Feb 2024": 0.045,
+        "Mar 2024": 0.042,
+        "group": "Aggregated",
+        "Rank": 8
+      }
+    ]
+  },
+  "width": 350,
+  "height": 280
+}

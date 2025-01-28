@@ -1,0 +1,240 @@
+{
+  "config": {
+    "background": "#122b39",
+    "font": "Circular Std",
+    "text": {
+
+    },
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#b4c8d8",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "tickColor": "#b4c8d8",
+      "tickOpacity": 0.5,
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "gridColor": "#b4c8d8",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#b4c8d8",
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    }
+  },
+  "width": 350,
+  "height": 280,
+  "title": {
+    "text": "UK Inflation by Division",
+    "subtitle": "CPI major divisons, 12-month percent change | Source: ONS",
+    "frame": "group",
+    "color": "#b4c8d8",
+    "subtitleColor": "#b4c8d8E6",
+    "font": "Circular Std",
+    "subtitleFont": "Circular Std",
+    "anchor": "start",
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 5
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "(datum.Division === 'CPI All items')",
+            "value": "#e6224b"
+          },
+          "value": "#36b7b4"
+        },
+        "x": {
+          "axis": {
+            "format": "%",
+            "grid": true
+          },
+          "field": "Sep 2024",
+          "scale": {
+            "padding": 20
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Division",
+          "sort": {
+            "field": "Rank",
+            "order": "ascending"
+          },
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": {
+          "expr": "(datum['Sep 2024'] > 0) ? 'left' : 'right'"
+        },
+        "baseline": "middle",
+        "dx": {
+          "expr": "(datum['Sep 2024'] > 0) ? 5 : -3"
+        },
+        "color": "#b4c8d8",
+        "font": "Circular Std",
+        "dy": 0,
+        "fontSize": 11
+      },
+      "encoding": {
+        "color": {
+          "value": "#b4c8d8"
+        },
+        "text": {
+          "field": "Sep 2024",
+          "format": ".1%",
+          "type": "quantitative"
+        },
+        "x": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "Sep 2024",
+          "scale": {
+            "padding": 20
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Division",
+          "sort": {
+            "field": "Rank",
+            "order": "ascending"
+          },
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "data": {
+    "name": "data-e1cf7ac059491ffd236a2710c9bb95bf"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-e1cf7ac059491ffd236a2710c9bb95bf": [
+      {
+        "Division": "CPI All items",
+        "Aug 2024": 0.022000000000000002,
+        "Sep 2024": 0.017,
+        "Rank": 11
+      },
+      {
+        "Division": "Food and non-alc. drink",
+        "Aug 2024": 0.013000000000000001,
+        "Sep 2024": 0.019,
+        "Rank": 10
+      },
+      {
+        "Division": "Alcohol and tobacco",
+        "Aug 2024": 0.057999999999999996,
+        "Sep 2024": 0.049,
+        "Rank": 3
+      },
+      {
+        "Division": "Clothing and footwear",
+        "Aug 2024": 0.016,
+        "Sep 2024": 0.008,
+        "Rank": 12
+      },
+      {
+        "Division": "Household services",
+        "Aug 2024": -0.016,
+        "Sep 2024": -0.017,
+        "Rank": 15
+      },
+      {
+        "Division": "Household goods",
+        "Aug 2024": -0.013000000000000001,
+        "Sep 2024": -0.01,
+        "Rank": 13
+      },
+      {
+        "Division": "Health",
+        "Aug 2024": 0.055,
+        "Sep 2024": 0.052000000000000005,
+        "Rank": 1
+      },
+      {
+        "Division": "Transport",
+        "Aug 2024": 0.013000000000000001,
+        "Sep 2024": -0.022000000000000002,
+        "Rank": 16
+      },
+      {
+        "Division": "Communication",
+        "Aug 2024": 0.040999999999999995,
+        "Sep 2024": 0.052000000000000005,
+        "Rank": 1
+      },
+      {
+        "Division": "Recreation and culture",
+        "Aug 2024": 0.04,
+        "Sep 2024": 0.038,
+        "Rank": 7
+      },
+      {
+        "Division": "Education",
+        "Aug 2024": 0.045,
+        "Sep 2024": 0.044000000000000004,
+        "Rank": 5
+      },
+      {
+        "Division": "Restaurants and hotels",
+        "Aug 2024": 0.043,
+        "Sep 2024": 0.040999999999999995,
+        "Rank": 6
+      },
+      {
+        "Division": "Misc. goods and services",
+        "Aug 2024": 0.033,
+        "Sep 2024": 0.033,
+        "Rank": 8
+      },
+      {
+        "Division": "All goods",
+        "Aug 2024": -0.009000000000000001,
+        "Sep 2024": -0.013999999999999999,
+        "Rank": 14
+      },
+      {
+        "Division": "All services",
+        "Aug 2024": 0.055999999999999994,
+        "Sep 2024": 0.049,
+        "Rank": 3
+      },
+      {
+        "Division": "Core CPI",
+        "Aug 2024": 0.036000000000000004,
+        "Sep 2024": 0.032,
+        "Rank": 9
+      }
+    ]
+  }
+}

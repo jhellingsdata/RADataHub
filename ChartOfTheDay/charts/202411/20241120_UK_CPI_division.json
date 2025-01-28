@@ -1,0 +1,347 @@
+{
+  "config": {
+    "background": "#122b39",
+    "font": "Circular Std",
+    "text": {
+      "color": "#b4c8d8",
+      "font": "Circular Std",
+      "align": "left",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 350,
+      "continuousHeight": 280,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#b4c8d8"
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "axis": {
+      "labelColor": "#b4c8d8",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "tickColor": "#b4c8d8",
+      "tickOpacity": 0.5,
+      "domainColor": "#b4c8d8",
+      "domainOpacity": 0.5,
+      "gridColor": "#b4c8d8",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#b4c8d8",
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#b4c8d8",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8
+    },
+    "title": {
+      "color": "#b4c8d8",
+      "subtitleColor": "#b4c8d8E6",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "frame": "group",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0
+    },
+    "legend": {
+      "titleColor": "#b4c8d8",
+      "labelColor": "#b4c8d8"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "(datum.Division === 'CPI All items')",
+            "value": "#e6224b"
+          },
+          "value": "#36b7b4"
+        },
+        "x": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "Oct 2024",
+          "scale": {
+            "padding": 20
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Division",
+          "sort": {
+            "field": "Rank",
+            "order": "ascending"
+          },
+          "type": "nominal"
+        }
+      },
+      "title": {
+        "text": "UK Inflation by Division",
+        "dx": 0,
+        "frame": "group",
+        "subtitle": "CPI major divisons, 12-month percent change | Source: ONS"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5
+      },
+      "encoding": {
+        "color": {
+          "value": "#b4c8d8"
+        },
+        "opacity": {
+          "condition": {
+            "test": "(datum['Oct 2024'] > 0)",
+            "value": 1
+          },
+          "value": 0
+        },
+        "text": {
+          "field": "Oct 2024",
+          "format": ".1%",
+          "type": "quantitative"
+        },
+        "x": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "Oct 2024",
+          "scale": {
+            "padding": 20
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Division",
+          "sort": {
+            "field": "Rank",
+            "order": "ascending"
+          },
+          "type": "nominal"
+        }
+      },
+      "title": {
+        "text": "UK Inflation by Division",
+        "dx": 0,
+        "frame": "group",
+        "subtitle": "CPI major divisons, 12-month percent change | Source: ONS"
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -4
+      },
+      "encoding": {
+        "color": {
+          "value": "#b4c8d8"
+        },
+        "opacity": {
+          "condition": {
+            "test": "(datum['Oct 2024'] < 0)",
+            "value": 1
+          },
+          "value": 0
+        },
+        "text": {
+          "field": "Oct 2024",
+          "format": ".1%",
+          "type": "quantitative"
+        },
+        "x": {
+          "axis": {
+            "format": "%"
+          },
+          "field": "Oct 2024",
+          "scale": {
+            "padding": 20
+          },
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Division",
+          "sort": {
+            "field": "Rank",
+            "order": "ascending"
+          },
+          "type": "nominal"
+        }
+      },
+      "title": {
+        "text": "UK Inflation by Division",
+        "dx": 0,
+        "frame": "group",
+        "subtitle": "CPI major divisons, 12-month percent change | Source: ONS"
+      }
+    }
+  ],
+  "data": {
+    "name": "data-bee6010c6a7bdde3735c55d40b63b935"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "datasets": {
+    "data-bee6010c6a7bdde3735c55d40b63b935": [
+      {
+        "Division": "CPI All items",
+        "Sep 2024": 0.017,
+        "Oct 2024": 0.023,
+        "Rank": 11
+      },
+      {
+        "Division": "Food and non-alc. drink",
+        "Sep 2024": 0.019,
+        "Oct 2024": 0.019,
+        "Rank": 12
+      },
+      {
+        "Division": "Alcohol and tobacco",
+        "Sep 2024": 0.049,
+        "Oct 2024": 0.053,
+        "Rank": 2
+      },
+      {
+        "Division": "Clothing and footwear",
+        "Sep 2024": 0.008,
+        "Oct 2024": 0.01,
+        "Rank": 13
+      },
+      {
+        "Division": "Household services",
+        "Sep 2024": -0.017,
+        "Oct 2024": 0.028999999999999998,
+        "Rank": 9
+      },
+      {
+        "Division": "Household goods",
+        "Sep 2024": -0.01,
+        "Oct 2024": -0.005,
+        "Rank": 15
+      },
+      {
+        "Division": "Health",
+        "Sep 2024": 0.052000000000000005,
+        "Oct 2024": 0.055999999999999994,
+        "Rank": 1
+      },
+      {
+        "Division": "Transport",
+        "Sep 2024": -0.022000000000000002,
+        "Oct 2024": -0.019,
+        "Rank": 16
+      },
+      {
+        "Division": "Communication",
+        "Sep 2024": 0.052000000000000005,
+        "Oct 2024": 0.046,
+        "Rank": 5
+      },
+      {
+        "Division": "Recreation and culture",
+        "Sep 2024": 0.038,
+        "Oct 2024": 0.03,
+        "Rank": 8
+      },
+      {
+        "Division": "Education",
+        "Sep 2024": 0.044000000000000004,
+        "Oct 2024": 0.05,
+        "Rank": 3
+      },
+      {
+        "Division": "Restaurants and hotels",
+        "Sep 2024": 0.040999999999999995,
+        "Oct 2024": 0.043,
+        "Rank": 6
+      },
+      {
+        "Division": "Misc. goods and services",
+        "Sep 2024": 0.033,
+        "Oct 2024": 0.028999999999999998,
+        "Rank": 9
+      },
+      {
+        "Division": "All goods",
+        "Sep 2024": -0.013999999999999999,
+        "Oct 2024": -0.003,
+        "Rank": 14
+      },
+      {
+        "Division": "All services",
+        "Sep 2024": 0.049,
+        "Oct 2024": 0.05,
+        "Rank": 3
+      },
+      {
+        "Division": "CPI exc food, energy, alcohol and tobacco (core CPI)",
+        "Sep 2024": 0.032,
+        "Oct 2024": 0.033,
+        "Rank": 7
+      }
+    ]
+  },
+  "width": 350,
+  "height": 280
+}

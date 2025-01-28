@@ -1,0 +1,252 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+      "font": "Circular Std",
+      "text": {
+        "color": "#676A86",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "dy": 0,
+        "fontSize": 11
+      },
+      "view": {
+        "stroke": null,
+        "continuousWidth": 360,
+        "continuousHeight": 360,
+        "discreteWidth": 360,
+        "discreteHeight": 360
+      },
+      "range": {
+        "category": [
+          "#36B7B4",
+          "#E6224B",
+          "#F4C245",
+          "#0063AF",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ],
+        "diverging": [
+          "#E6224B",
+          "#E54753",
+          "#C9C9C9",
+          "#179FDB",
+          "#122B39"
+        ],
+        "heatmap": [
+          "#C9C9C9",
+          "#179FDB",
+          "#0063AF",
+          "#122B39"
+        ],
+        "ordinal": [
+          "#00A767",
+          "#36B7B4",
+          "#179FDB",
+          "#0063AF",
+          "#243B5A"
+        ]
+      },
+      "bar": {
+        "color": "#179fdb"
+      },
+      "line": {
+        "color": "#e6224b"
+      },
+      "rule": {
+        "color": "#676A86"
+      },
+      "area": {
+        "opacity": 0.3
+      },
+      "point": {
+        "filled": true,
+        "size": 80,
+        "color": "#e6224b",
+        "opacity": 0.95
+      },
+      "geoshape": {
+        "stroke": "white",
+        "strokeWidth": 0.3
+      },
+      "rect": {
+        "fill": "#d6d4d4",
+        "opacity": 0.3
+      },
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Circular Std",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [
+          2,
+          2
+        ],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXDiscrete": {
+        "grid": false,
+        "labelAngle": 0,
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "axisYDiscrete": {
+        "ticks": false,
+        "labelPadding": 5
+      },
+      "axisXTemporal": {
+        "grid": false,
+        "ticks": true
+      },
+      "axisXQuantitative": {
+        "grid": true
+      },
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [
+          1,
+          5
+        ],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
+      },
+      "title": {
+        "color": "#122b39E6",
+        "subtitleColor": "#676A86",
+        "font": "Circular Std",
+        "subtitleFont": "Circular Std",
+        "anchor": "start",
+        "fontSize": 14,
+        "subtitleFontSize": 12,
+        "subtitlePadding": 4,
+        "offset": 0,
+        "frame": "group"
+      },
+      "legend": {
+        "titleColor": "#122b39",
+        "title": null,
+        "labelColor": "#122b39",
+        "labelFontSize": 11
+      }
+    },
+    "title": {
+      "text": "Popularity of Olympic sports by gender",
+      "anchor": "start",
+      "fontSize": 16,
+      "fontWeight": "normal",
+      "subtitle": ["Share of global fans. Source: YouGov 2021"],
+      "subtitleColor": "#676A86"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/hcantekin/hcantekin.github.io/main/sport_gender_data.csv"
+    },
+    "layer": [
+      {
+        "mark": {"type": "rect", "color": "#36B7B4", "opacity": 0.006},
+        "encoding": {
+          "x": {"value": 0},
+          "x2": {"value": 180},
+          "y": {"value": 0},
+          "y2": {"value": 180}
+        }
+      },
+      {
+        "mark": {"type": "rect", "color": "#E6224B", "opacity": 0.005},
+        "encoding": {
+          "x": {"value": 360},
+          "x2": {"value": 180},
+          "y": {"value": 180},
+          "y2": {"value": 360}
+        }
+      },
+      {
+        "mark": "circle",
+        "encoding": {
+          "x": {"field": "Men", "type": "quantitative", "title": ""},
+          "y": {"field": "Women", "type": "quantitative", "title": ""}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "color": "#494c60",
+          "dx": 5,
+          "dy": {
+            "expr": "datum.sport == 'Golf' ? 6 : datum.sport == 'Rugby Sevens' ? -7 : datum.sport == 'Equestrian Jumping' ? -9 : datum.sport == 'Surfing' ? -2 : datum.sport == 'Hockey' ? -2 : 0"
+          }
+        },
+        "encoding": {
+          "x": {
+            "field": "Men",
+            "type": "quantitative",
+            "axis": {
+              "grid": false,
+              "labelExpr": "datum.value + '%'"
+            },
+            "scale": {"domain": [0, 40]}
+          },
+          "y": {
+            "field": "Women",
+            "type": "quantitative",
+            "axis": {
+              "labelExpr": "datum.value + '%'"
+            }
+          },
+          "text": {"field": "sport", "type": "nominal"}
+        }
+      },
+      {
+        "data": {"values": [{"text": "↑ More popular with women"}]},
+        "mark": {
+          "type": "text",
+          "fontSize": 13,
+          "align": "left",
+          "baseline": "top",
+          "dx": 5,
+          "dy": 5,
+          "color": "#676A86"
+        },
+        "encoding": {
+          "x": {"value": 0},
+          "y": {"value": 0},
+          "text": {"field": "text"}
+        }
+      },
+      {
+        "data": {"values": [{"text": "More popular with men →"}]},
+        "mark": {
+          "type": "text",
+          "fontSize": 13,
+          "align": "right",
+          "baseline": "top",
+          "dx": 5,
+          "dy": 5,
+          "color": "#676A86"
+        },
+        "encoding": {
+          "x": {"value": 340},
+          "y": {"value": 340},
+          "text": {"field": "text"}
+        }
+      }
+    ]
+  }

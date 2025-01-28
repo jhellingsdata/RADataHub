@@ -48,6 +48,17 @@ class EconDataAPI:
             }]
         }
 
+        self.quarters_lookup = {
+            'Q1': '01-01',
+            'Q2': '04-01',
+            'Q3': '07-01',
+            'Q4': '10-01',
+            'q1': '01-01',
+            'q2': '04-01',
+            'q3': '07-01',
+            'q4': '10-01'
+        }
+
     # Define getters and setters
     def get_fred_api_key(self) -> str:
         '''Returns API key set for FRED.'''
@@ -103,32 +114,52 @@ class EconDataAPI:
         
         return df
     
-    def get_ons_data(self, dataset_id: str, series_id: str) -> pd.DataFrame:
+    def get_ons_data(self, series_id: str, time_period: str) -> pd.DataFrame:
         """Get data from ONS API, return as pandas dataframe
+
+        Args:
+            dataset_id (str): The dataset ID (no longer needed)
+            series_id (str): The series ID
+            time_period (str): The time period to retrieve data for. Options are 'm' for monthly, 'q' for quarterly, and 'y' for yearly.
         """
 
         try:
             # Use ONS API to get monthly data
-            url = f'https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/{series_id}/dataset/{dataset_id}/data'
+            # url = f'https://eco-cors-proxy.netlify.app/proxy?url=https://api.ons.gov.uk/timeseries/{series_id}/dataset/{dataset_id}/data'
+            url = f'https://eco-cors-proxy.netlify.app/proxy?url=https://economicsobservatory.github.io/api/ons.html?code={series_id}&format=json&data_only=true'
             # read data at api into dataframe, relevant data is in the 'months' key
             # Make a GET request to fetch the raw JSON content
-            json_data = requests.get(url).json()
+            response = requests.get(url)
+            json_data = response.json()
         except:
-            url = 'https://api.ons.gov.uk/timeseries/{series_id}/dataset/{dataset_id}/data'
-            json_data = requests.get(url).json()
+            print('Failed to make API call')
+            return response.status_code, response.text
+            # url = f'https://api.ons.gov.uk/timeseries/{series_id}/dataset/{dataset_id}/data'
+            # json_data = requests.get(url).json()
+        time_period = time_period.lower()
+        if time_period == 'm':
+            # Extract data from the 'months' key
+            series_data = json_data['months']
+            # Convert the JSON data to a pandas DataFrame
+            df = pd.DataFrame.from_dict(series_data)
+            # Clean data set, convert date from yyyy mmm to yyyy-mm-dd
+            df['date'] = pd.to_datetime(df['date'], format='%Y %b')
+            # drop unnecessary columns
+            df.drop(columns=['label', 'quarter', 'sourceDataset', 'updateDate'], inplace=True)
 
-        # Extract data from the 'months' key
-        months_data = json_data['months']
+        elif time_period == 'q':
+            # Extract data from the 'quarters' key
+            series_data = json_data['quarters']
+            df = pd.DataFrame.from_dict(series_data)
 
-        # Convert the JSON data to a pandas DataFrame
-        df = pd.DataFrame.from_dict(months_data)
+            # Replace string in `date` according to the lookup
+            df['year'] + df['quarter'].map(self.quarters_lookup)
 
-        # Clean data set, convert date from yyyy mmm to yyyy-mm-dd
-        df['date'] = pd.to_datetime(df['date'], format='%Y %b')
-
-        # drop unnecessary columns
-        df.drop(columns=['label', 'quarter', 'sourceDataset', 'updateDate'], inplace=True)
-
+        elif time_period == 'y':
+            # Extract data from the 'years' key
+            series_data = json_data['years']
+            df = pd.DataFrame.from_dict(series_data)
+        
         # convert value column to float
         df['value'] = df['value'].astype(float)
 
