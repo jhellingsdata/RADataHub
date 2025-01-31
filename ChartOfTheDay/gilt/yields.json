@@ -100,14 +100,6 @@
   },
   "height": 300,
   "width": 450,
-  "title":{
-    "text":"10-year gilt yields hit highest level since the 2008 financial crisis",
-    "subtitle":[
-      "Source: UK Debt Management Office",
-      ""
-    ],
-    "anchor": "start"
-  },
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/gilt/yields.csv"
   },
