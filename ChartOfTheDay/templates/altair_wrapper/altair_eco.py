@@ -53,7 +53,8 @@ class CustomChart:
                         'tickColor': detail,
                         'domainColor': detail,
                         'domainOpacity': 0.5,
-                        'title': None
+                        'title': None,
+                        'labelFontSize':12,
                     },
                     'axisX': {
                         'grid': False,
@@ -115,7 +116,7 @@ class CustomChart:
         )
 
 
-    def create_line_chart(self, x, y, title="", subtitle="", titleDx=24, y_format="%", interpolate='monotone', add_recessions=False, show_month=False):
+    def create_line_chart(self, x, y, title="", subtitle="", titleDx=24, y_format="%", text_format=".1%", interpolate='monotone', add_recessions=False, show_month=False):
 
         # convert 'date' column to datetime (if 'date' column exists)
         if 'date' in self.data.columns:
@@ -162,7 +163,7 @@ class CustomChart:
             color=self.detail
             
         ).encode(
-            text=alt.Text(y, format=".1%")
+            text=alt.Text(y, format=text_format)
         )
         self.chart += text_value
         
