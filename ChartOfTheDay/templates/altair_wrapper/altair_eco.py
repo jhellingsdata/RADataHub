@@ -83,7 +83,7 @@ class CustomChart:
                     'title': {
                         'anchor': 'start',
                         'dx': 24,
-                        'fontSize': 12,
+                        'fontSize': 14,
                         'subtitleFontSize': 12,
                         'color': detail,
                         'subtitleColor': subtitle_colour,
