@@ -1,0 +1,166 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "CPI and rent inflation over time.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/rent_inflation.csv"
+    },
+    "transform": [
+      {"filter": "toDate(datum.date) >= toDate('2016-01-01')"},
+      {"pivot": "metric", "value": "yoy_change", "groupby": ["date"]}
+    ],
+    "height": 400,
+    "width": 600,
+    "layer": [
+      {
+        "transform": [{"fold": ["Rent", "CPI"], "as": ["metric", "yoy_change"]}],
+        "encoding": {
+          "x": {
+            "field": "date",
+            "type": "temporal",
+            "axis": {"grid": false, "tickCount": "year"}
+          },
+          "y": {
+            "field": "yoy_change",
+            "type": "quantitative",
+            "axis": {"format": ".0%"}
+          },
+          "color": {
+            "field": "metric",
+            "type": "nominal",
+            "legend": {"title": "Inflation"},
+            "scale": {"domain": ["Rent", "CPI"]}
+          },
+          "tooltip": [
+            {
+              "field": "date",
+              "type": "temporal",
+              "title": "Month",
+              "timeUnit": "yearmonth"
+            },
+            {
+              "field": "Rent",
+              "type": "quantitative",
+              "title": "Rent Inflation",
+              "format": ".2%"
+            },
+            {
+              "field": "CPI",
+              "type": "quantitative",
+              "title": "CPI Inflation",
+              "format": ".2%"
+            }
+          ]
+        },
+        "layer": [
+          {"mark": {"type": "line", "strokeWidth": 2.5}},
+          {
+            "transform": [{"filter": {"param": "hover", "empty": false}}],
+            "mark": {"type": "point", "size": 100, "filled": true}
+          }
+        ]
+      },
+      {
+        "mark": "rule",
+        "encoding": {
+          "x": {"field": "date", "type": "temporal"},
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {
+              "field": "date",
+              "type": "temporal",
+              "title": "Month",
+              "timeUnit": "yearmonth"
+            },
+            {
+              "field": "Rent",
+              "type": "quantitative",
+              "title": "Rent Inflation",
+              "format": ".2%"
+            },
+            {
+              "field": "CPI",
+              "type": "quantitative",
+              "title": "CPI Inflation",
+              "format": ".2%"
+            }
+          ]
+        },
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["date"],
+              "nearest": true,
+              "on": "pointerover",
+              "clear": "pointerout"
+            }
+          }
+        ]
+      }
+    ],
+    "config": {
+      "font": "Circular Std",
+      "view": {"stroke": "transparent"},
+      "range": {
+        "category": [
+          "#36B7B4",
+          "#E6224B",
+          "#F4C245",
+          "#0063AF",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ]
+      },
+      "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Circular Std",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [2, 2],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXDiscrete": {
+        "grid": false,
+        "labelAngle": 0,
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+      "axisXQuantitative": {"grid": true},
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
+      },
+      "legend": {
+        "titleColor": "#122b39",
+        "title": null,
+        "labelColor": "#122b39",
+        "labelFontSize": 11
+      }
+    }
+  }

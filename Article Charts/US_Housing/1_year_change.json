@@ -1,0 +1,92 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 400,
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/county_dorling_topo.json",
+          "format": {"type": "topojson", "feature": "county_dorling"}
+        },
+        "mark": {
+          "type": "geoshape",
+          "stroke": "black",
+          "strokeWidth": 0.2,
+          "fill": "#f7f7f7"
+        },
+        "projection": {"type": "identity", "reflectY": true}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/zori_county_most_recent_clean.csv"
+        },
+        "transform": [
+          {
+            "lookup": "fips",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/county_dorling_topo.json",
+                "format": {"type": "topojson", "feature": "county_dorling"}
+              },
+              "key": "properties.fips",
+              "fields": ["type", "geometry", "properties"]
+            }
+          },
+          {"filter": "datum.zori_1yc != 0"}
+        ],
+        "encoding": {
+          "color": {
+            "field": "zori_1yc",
+            "type": "quantitative",
+            "legend": {
+              "title": null,
+              "format": ".0%",
+              "orient": "right",
+              "direction": "vertical",
+              "offset": 20,
+              "gradientLength": 200
+            },
+            "scale": {
+              "scheme": "purpleorange",
+              "domainMax": 0.1,
+              "domainMid": 0,
+              "domainMin": -0.04
+            }
+          },
+          "tooltip": [
+            {"field": "properties.name", "title": "County"},
+            {"field": "zori", "title": "Rent index", "format": "$,.0f"},
+            {
+              "field": "zori_1yc",
+              "title": "Change since last year",
+              "format": ".2%"
+            }
+          ]
+        },
+        "projection": {"type": "identity", "reflectY": true},
+        "mark": {"type": "geoshape", "stroke": null, "strokeWidth": 0.5}
+      }
+    ],
+    "config": {
+        "font": "Circular Std",
+        "view": {"stroke": "transparent"},
+        "range": {
+          "category": [
+            "#36B7B4",
+            "#E6224B",
+            "#F4C245",
+            "#0063AF",
+            "#00A767",
+            "#179FDB",
+            "#EB5C2E"
+          ]
+        },
+        "legend": {
+          "titleColor": "#122b39",
+          "title": null,
+          "labelColor": "#122b39",
+          "labelFontSize": 11,
+          "labelFontWeight":"lighter"
+        }
+      }
+  }

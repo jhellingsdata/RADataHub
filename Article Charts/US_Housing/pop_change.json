@@ -1,0 +1,79 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/state_pop_change.csv"
+    },
+    "transform": [
+      {
+        "lookup": "id",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/tiles_topo_24.json",
+            "format": {"type": "topojson", "feature": "tiles"}
+          },
+          "key": "id",
+          "fields": ["type", "properties", "geometry", "arcs"]
+        }
+      }
+    ],
+    "params": [{"name": "hover", "select": {"type": "point", "on": "mouseover"}}],
+    "encoding": {
+      "color": {
+        "field": "change",
+        "type": "quantitative",
+        "legend": {
+          "title": null,
+          "format": ".0%",
+          "orient": "right",
+          "direction": "vertical",
+          "gradientLength": 200
+        },
+        "scale": {"scheme": "purpleorange", "reverse": true, "domainMid": 0.02}
+      },
+      "strokeWidth": {
+        "condition": {"param": "hover", "empty": false, "value": 1},
+        "value": 0.15
+      },
+      "tooltip": [
+        {"field": "name", "title": "State", "type": "nominal"},
+        {
+          "field": "change",
+          "title": "% pop. change",
+          "type": "quantitative",
+          "format": ".2%"
+        },
+        {
+          "field": "total_change",
+          "title": "Absolute pop. change",
+          "type": "quantitative",
+          "format": ","
+        }
+      ]
+    },
+    "projection": {"type": "identity", "reflectY": true},
+    "mark": {"type": "geoshape", "stroke": "white"},
+   "config": {
+      "font": "Circular Std",
+      "view": {"stroke": "transparent"},
+      "range": {
+        "category": [
+          "#36B7B4",
+          "#E6224B",
+          "#F4C245",
+          "#0063AF",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ]
+      },
+      "legend": {
+        "titleColor": "#122b39",
+        "title": null,
+        "labelColor": "#122b39",
+        "labelFontSize": 11,
+        "labelFontWeight":"lighter"
+      }
+    }
+  }
