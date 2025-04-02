@@ -1,15 +1,34 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-    "description": "Two vertically concatenated charts that show a histogram of precipitation in Seattle and the relationship between min and max temperature.",
     "data": {
       "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/happiness/whr.csv"
     },
     "vconcat": [
       {
+        "mark": {"type": "image", "width": 40, "height": 40, "opacity": 0.5},
+        "data": {
+          "values": [
+            {
+              "url": "https://raw.githubusercontent.com/EconomicsObservatory/ECOvisualisations/refs/heads/main/guidelines/logos/eco-icon-dark.png"
+            }
+          ]
+        },
+        "encoding": {
+          "x": {"value": 300},
+          "y": {"value": 0},
+          "url": {"field": "url"}
+        }
+      },
+      {
         "transform": [{"filter": "datum.Rank <= 10"}],
         "mark": "bar",
         "encoding": {
-          "y": {"field": "Country name", "type": "nominal", "title": null, "sort": {"field": "Rank", "order": "ascending"}},
+          "y": {
+            "field": "Country name",
+            "type": "nominal",
+            "title": null,
+            "sort": {"field": "Rank", "order": "ascending"}
+          },
           "x": {"field": "Score", "type": "quantitative"},
           "color": {"field": "Factor"}
         }
@@ -18,8 +37,18 @@
         "transform": [{"filter": "datum.Rank >= 138"}],
         "mark": "bar",
         "encoding": {
-          "y": {"field": "Country name", "type": "nominal", "title": null, "sort": {"field": "Rank", "order": "ascending"}},
-          "x": {"field": "Score", "type": "quantitative", "scale": {"domain": [0, 8]}, "title":null},
+          "y": {
+            "field": "Country name",
+            "type": "nominal",
+            "title": null,
+            "sort": {"field": "Rank", "order": "ascending"}
+          },
+          "x": {
+            "field": "Score",
+            "type": "quantitative",
+            "scale": {"domain": [0, 8]},
+            "title": null
+          },
           "color": {"field": "Factor"}
         }
       }
