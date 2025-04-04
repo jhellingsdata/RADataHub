@@ -4,49 +4,74 @@
         "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/stock_selloff/closes.csv"
     },
     "transform": [
-        {
-            "filter": "datum.Indexed_Close != 0"
-        },
-        {
-            "filter": "datum.Date < '2025-04-04'"
-        }
-    ],
-    "height": 400,
-    "width": 600,
-    "mark": {
-        "type": "line",
-        "strokeWidth": 2
+    {"filter": "datum.Indexed_Close != 0"}
+  ],
+  "height": 400,
+  "width": 600,
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "temporal", 
+      "axis": {"grid": false},
+      "title":null
+      },
+    "y": {
+      "field": "Indexed_Close", 
+      "type": "quantitative",
+      "scale": {"zero": false},
+      "title": "Stocks Index (Trump Inauguration = 100)"
     },
-    "encoding": {
-        "x": {
-            "field": "Date",
-            "type": "temporal",
-            "axis": {
-                "grid": false
-            }
-        },
-        "y": {
-            "field": "Indexed_Close",
-            "type": "quantitative",
-            "scale": {
-                "zero": false
-            }
-        },
-        "color": {
-            "field": "Index",
-            "type": "nominal",
-            "scale": {
-                "domain": [
-                    "US",
-                    "UK",
-                    "Germany",
-                    "China",
-                    "Canada",
-                    "Japan"
-                ]
-            }
-        }
+    "color": {
+      "field": "Index",
+      "type": "nominal",
+      "scale": {
+        "domain": ["US", "UK", "Germany", "China", "Canada", "Japan"]
+      },
+      "legend": null
     },
+    "opacity": {
+      "condition": {
+        "param": "hover",
+        "value": 1
+      },
+      "value": 0.7
+    }
+  },
+  "layer": [
+    {
+      "params": [{
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "fields": ["Index"],
+          "on": "pointerover"
+        }
+      }],
+      "mark": {"type": "line", "strokeWidth": 6, "stroke": "transparent"}
+    },
+    {
+      "mark": {"type": "line", "strokeWidth": 2}
+    },
+    {
+      "transform": [
+        {
+          "window": [{"op": "rank", "as": "ranking"}],
+          "sort": [{"field": "Date", "order": "descending"}],
+          "groupby": ["Index"]
+        },
+        {"filter": "datum.ranking === 1"}
+      ],
+      "layer": [
+        {
+          "mark": {"type": "circle", "size": 80}
+        },
+        {
+          "mark": {"type": "text", "align": "left", "dx": 8},
+          "encoding": {"text": {"field": "Index", "type": "nominal"}}
+        }
+      ]
+    }
+  ],
     "config": {
         "font": "Circular Std",
         "view": {
