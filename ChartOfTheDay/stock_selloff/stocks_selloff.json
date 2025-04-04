@@ -1,81 +1,75 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
     "data": {
-        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/stock_selloff/closes.csv"
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/stock_selloff/closes.csv"
     },
-    "transform": [
-    {"filter": "datum.Indexed_Close != 0"}
-  ],
-  "height": 400,
-  "width": 600,
-  "encoding": {
-    "x": {
-      "field": "Date",
-      "type": "temporal", 
-      "axis": {"grid": false},
-      "title":null
-      },
-    "y": {
-      "field": "Indexed_Close", 
-      "type": "quantitative",
-      "scale": {"zero": false},
-      "title": "Stocks Index (Trump Inauguration = 100)"
+    "transform": [{"filter": "datum.Value != 0"}],
+    "height": 400,
+    "width": 600,
+    "title": {
+      "text": "Stock Markets Since Trump's Inauguration",
+      "subtitle": ["Source: Yahoo Finance", ""],
+      "anchor": "start",
+      "subtitleColor":"#676A86",
+      "fontSize": 22,
+      "fontWeight":"lighter",
+      "subtitleFontSize":14,
+      "subtitleFontWeight":"lighter"
     },
-    "color": {
-      "field": "Index",
-      "type": "nominal",
-      "scale": {
-        "domain": ["US", "UK", "Germany", "China", "Canada", "Japan"]
-      },
-      "legend": null
-    },
-    "opacity": {
-      "condition": {
-        "param": "hover",
-        "value": 1
-      },
-      "value": 0.7
-    }
-  },
-  "layer": [
-    {
-      "params": [{
-        "name": "hover",
-        "select": {
-          "type": "point",
-          "fields": ["Index"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 6, "stroke": "transparent"}
-    },
-    {
-      "mark": {"type": "line", "strokeWidth": 2}
-    },
-    {
-      "transform": [
-        {
-          "window": [{"op": "rank", "as": "ranking"}],
-          "sort": [{"field": "Date", "order": "descending"}],
-          "groupby": ["Index"]
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title": null
+        
         },
-        {"filter": "datum.ranking === 1"}
-      ],
-      "layer": [
-        {
-          "mark": {"type": "circle", "size": 80}
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Stock Market Performance (Trump Inauguration = 100)",
+        "scale": {"zero": false}
+      },
+      "color": {"field": "Index", "type": "nominal", "legend": null}
+    },
+    "layer": [
+      {
+        "description": "transparent layer to make it easier to trigger selection",
+        "params": [
+          {
+            "name": "hover",
+            "value": [{"Index": "AAPL"}],
+            "select": {"type": "point", "fields": ["Index"], "on": "pointerover"}
+          }
+        ],
+        "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+      },
+      {"mark": "line"},
+      {
+        "encoding": {
+          "x": {"aggregate": "max", "field": "Date"},
+          "y": {"aggregate": {"argmax": "Date"}, "field": "Value"}
         },
-        {
-          "mark": {"type": "text", "align": "left", "dx": 8},
-          "encoding": {"text": {"field": "Index", "type": "nominal"}}
-        }
-      ]
-    }
-  ],
+        "layer": [
+          {"mark": {"type": "circle", "size": 60}},
+          {
+            "mark": {"type": "text", "align": "left", "dx": 4},
+            "encoding": {"text": {"field": "Index", "type": "nominal"}}
+          }
+        ]
+      }
+    ],
     "config": {
         "font": "Circular Std",
+        "mark": {
+            "line": {
+                "interpolate": "monotone"
+            }
+        },
         "view": {
-            "stroke": "transparent"
+            "stroke": "transparent",
+            "width": 400,
+            "height": 300
         },
         "range": {
             "category": [
@@ -117,9 +111,9 @@
             "labelOpacity": 0.7,
             "orient": "bottom",
             "tickColor": "#676A86",
-            "tickCount": 10,
+            "tickCount": 3,
             "tickOpacity": 0.5,
-            "labelFontSize": 13,
+            "title": false,
             "titleAlign": "center",
             "titleAnchor": "middle",
             "titleColor": "#676A86",
@@ -139,7 +133,6 @@
             "labelColor": "#676A86",
             "labelOpacity": 0.7,
             "labelPadding": 5,
-            "labelFontSize": 13,
             "tickColor": "#676A86",
             "tickCount": 8,
             "tickOpacity": 0.5,
@@ -154,4 +147,4 @@
             "titleY": -7
         }
     }
-}
+  }
