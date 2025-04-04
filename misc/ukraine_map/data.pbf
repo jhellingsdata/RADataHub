@@ -1,0 +1,866 @@
+<html lang="en">
+<head>
+  <title>Query: AssessedRussianAdvance_Merge45 (ID: 75)</title>
+  <link href='/ESRI.ArcGIS.SDS.REST.css' rel='stylesheet' type='text/css'>
+  <link rel='SHORTCUT ICON' href='/favicon.ico'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+</head>
+<body>
+<table width="100%" id="userTable" class="userTable">
+<tr>
+<td class="titlecell">ArcGIS REST Services Directory</td>
+</tr>
+</table>
+<table id="navTable" class="navTable" width="100%">
+<tbody>
+<tr valign="top">
+<td class="breadcrumbs">
+<span id="homeBreadcrumbs"><a href="/SaBe5HMtmnbqSWlu/ArcGIS/rest/services">Home</a> > <a href="/SaBe5HMtmnbqSWlu/ArcGIS/rest/services">services</a> </span>> <a href="/SaBe5HMtmnbqSWlu/ArcGIS/rest/services/UkrainianCoTTimelapse_FEB_2022_to_DEC_2024_view/FeatureServer">UkrainianCoTTimelapse_FEB_2022_to_DEC_2024_view (FeatureServer)</a> > <a href="/SaBe5HMtmnbqSWlu/ArcGIS/rest/services/UkrainianCoTTimelapse_FEB_2022_to_DEC_2024_view/FeatureServer/75">AssessedRussianAdvance_Merge45</a> > <a href="/SaBe5HMtmnbqSWlu/ArcGIS/rest/services/UkrainianCoTTimelapse_FEB_2022_to_DEC_2024_view/FeatureServer/75/query"><i>query</i></a> </td>
+<td align="right">
+ | <a href="http://resources.arcgis.com/en/help/arcgis-rest-api/" target="_blank">API Reference</a></td>
+</tr>
+</tbody>
+</table>
+<div class='restHeader'>
+<h2>Query: AssessedRussianAdvance_Merge45 (ID: 75)</h2>
+</div>
+<div class='restBody'>
+<form>
+<table class='formTable'>
+<tr>
+<td>
+Where:
+</td>
+<td>
+<input type="text" name="where" value="1=1" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Object IDs:
+</td>
+<td>
+<input type="text" name="objectIds" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Time:
+</td>
+<td>
+<input type="text" name="time" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>Time Relation:</td>
+<td>
+<select name="timeRelation">
+<option value="esriTimeRelationOverlaps" selected='true'>esriTimeRelationOverlaps</option>
+<option value="esriTimeRelationOverlapsStartWithinEnd">esriTimeRelationOverlapsStartWithinEnd</option>
+<option value="esriTimeRelationAfterStartOverlapsEnd">esriTimeRelationAfterStartOverlapsEnd</option>
+<option value="esriTimeRelationWithin">esriTimeRelationWithin</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Input Geometry:</td>
+<td><textarea name='geometry' rows='5' cols='55' ></textarea></td>
+</tr>
+<tr>
+<td>Geometry Type:</td>
+<td>
+<select name="geometryType">
+<option value="esriGeometryEnvelope" selected='true'>Envelope</option>
+<option value="esriGeometryPoint">Point</option>
+<option value="esriGeometryPolyline">Polyline</option>
+<option value="esriGeometryPolygon">Polygon</option>
+<option value="esriGeometryMultipoint">Multipoint</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+Input Spatial Reference:
+</td>
+<td>
+<input type="text" name="inSR" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>Spatial Relationship:</td>
+<td>
+<select name="spatialRel">
+<option value="esriSpatialRelIntersects" selected='true'>Intersects</option>
+<option value="esriSpatialRelContains">Contains</option>
+<option value="esriSpatialRelCrosses">Crosses</option>
+<option value="esriSpatialRelEnvelopeIntersects">Envelope Intersects</option>
+<option value="esriSpatialRelIndexIntersects">Index Intersects</option>
+<option value="esriSpatialRelOverlaps">Overlaps</option>
+<option value="esriSpatialRelTouches">Touches</option>
+<option value="esriSpatialRelWithin">Within</option>
+<option value="esriSpatialRelDisjoint">Disjoint</option>
+<option value="esriSpatialRelRelation">Relation</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Result Type: </td>
+<td>
+<select name="resultType">
+<option value="none">None</option>
+<option value="standard">Standard</option>
+<option value="tile" selected='true'>Tile</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+Distance:
+</td>
+<td>
+<input type="text" name="distance" value="0.0" size="30" />
+</td>
+</tr>
+<tr>
+<td>Units:</td>
+<td>
+<select name="units">
+<option value="esriSRUnit_Meter" selected='true'>Meters</option>
+<option value="esriSRUnit_StatuteMile">Miles</option>
+<option value="esriSRUnit_Foot">Feet</option>
+<option value="esriSRUnit_Kilometer">Kilometers</option>
+<option value="esriSRUnit_NauticalMile">Nautical Miles</option>
+<option value="esriSRUnit_USNauticalMile">US NauticalMiles</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+Relation:
+</td>
+<td>
+<input type="text" name="relationParam" value="" size="30" />
+</td>
+</tr>
+<tr>
+<td>Return Geodetic:</td>
+<td>
+<input type="radio" name="returnGeodetic" value="true"/>True&nbsp;
+<input type="radio" name="returnGeodetic" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>
+Out Fields:
+</td>
+<td>
+<input type="text" name="outFields" value="OBJECTID,datetime" size="75" />
+</td>
+</tr>
+<tr>
+<td>Return Geometry:</td>
+<td>
+<input type="radio" name="returnGeometry" value="true" checked='true'/>True&nbsp;
+<input type="radio" name="returnGeometry" value="false"/>False</td>
+</tr>
+<tr>
+<td>Return Centroid:</td>
+<td>
+<input type="radio" name="returnCentroid" value="true"/>True&nbsp;
+<input type="radio" name="returnCentroid" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Envelope:</td>
+<td>
+<input type="radio" name="returnEnvelope" value="true"/>True&nbsp;
+<input type="radio" name="returnEnvelope" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Feature Encoding:</td>
+<td>
+<select name="featureEncoding">
+<option value="esriDefault" selected="true">esriDefault</option>
+<option value="esriCompressedShapeBuffer">esriCompressedShapeBuffer</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Geometry MultiPatch Option:</td>
+<td>
+<select name="multipatchOption">
+<option value="none" >None</option>
+<option value="xyFootprint" selected="true">xyFootprint</option>
+<option value="stripMaterials" >stripMaterials</option>
+<option value="embedMaterials" >embedMaterials</option>
+<option value="externalizeTextures" >externalizeTextures</option>
+<option value="extent" >extent</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+Max Allowable Offset:
+</td>
+<td>
+<input type="text" name="maxAllowableOffset" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Geometry Precision:
+</td>
+<td>
+<input type="text" name="geometryPrecision" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Output Spatial Reference:
+</td>
+<td>
+<input type="text" name="outSR" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Default Spatial Reference:
+</td>
+<td>
+<input type="text" name="defaultSR" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Datum Transformation:
+</td>
+<td>
+<input type="text" name="datumTransformation" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>Apply VCS Projection:</td>
+<td>
+<input type="radio" name="applyVCSProjection" value="true"/>True&nbsp;
+<input type="radio" name="applyVCSProjection" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return IDs Only:</td>
+<td>
+<input type="radio" name="returnIdsOnly" value="true"/>True&nbsp;
+<input type="radio" name="returnIdsOnly" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Unique IDs Only:</td>
+<td>
+<input type="radio" name="returnUniqueIdsOnly" value="true"/>True&nbsp;
+<input type="radio" name="returnUniqueIdsOnly" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Count Only:</td>
+<td>
+<input type="radio" name="returnCountOnly" value="true"/>True&nbsp;
+<input type="radio" name="returnCountOnly" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Extent Only:</td>
+<td>
+<input type="radio" name="returnExtentOnly" value="true"/>True&nbsp;
+<input type="radio" name="returnExtentOnly" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Query Geometry:</td>
+<td>
+<input type="radio" name="returnQueryGeometry" value="true"/>True&nbsp;
+<input type="radio" name="returnQueryGeometry" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Distinct Values:</td>
+<td>
+<input type="radio" name="returnDistinctValues" value="true"/>True&nbsp;
+<input type="radio" name="returnDistinctValues" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Cache Hint</td>
+<td>
+<input type="radio" name="cacheHint" value="true"/>True&nbsp;
+<input type="radio" name="cacheHint" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>
+Collation:
+</td>
+<td>
+<input type="text" name="collation" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Order By Fields:
+</td>
+<td>
+<input type="text" name="orderByFields" value="OBJECTID" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Group By Fields (For Statistics):
+</td>
+<td>
+<input type="text" name="groupByFieldsForStatistics" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>Output Statistics:</td>
+<td><textarea name='outStatistics' rows='5' cols='55' ></textarea></td>
+</tr>
+<tr>
+<td>
+Having:
+</td>
+<td>
+<input type="text" name="having" value="" size="75" />
+</td>
+</tr>
+<tr>
+<td>
+Result Offset:
+</td>
+<td>
+<input type="text" name="resultOffset" value="0" size="30" />
+</td>
+</tr>
+<tr>
+<td>
+Result Record Count:
+</td>
+<td>
+<input type="text" name="resultRecordCount" value="100" size="30" />
+</td>
+</tr>
+<tr>
+<td>ReturnZ:</td>
+<td>
+<input type="radio" name="returnZ" value="true"/>True&nbsp;
+<input type="radio" name="returnZ" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>ReturnM:</td>
+<td>
+<input type="radio" name="returnM" value="true"/>True&nbsp;
+<input type="radio" name="returnM" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return True Curves:</td>
+<td>
+<input type="radio" name="returnTrueCurves" value="true"/>True&nbsp;
+<input type="radio" name="returnTrueCurves" value="false" checked='true'/>False</td>
+</tr>
+<tr>
+<td>Return Exceeded Limit Features:</td>
+<td>
+<input type="radio" name="returnExceededLimitFeatures" value="true" checked='true'/>True&nbsp;
+<input type="radio" name="returnExceededLimitFeatures" value="false"/>False</td>
+</tr>
+<tr>
+<td>Quantization Parameters:</td>
+<td><textarea name='quantizationParameters' rows='5' cols='55' ></textarea></td>
+</tr>
+<tr>
+<td>SQL Format:</td>
+<td>
+<select name="sqlFormat">
+<option value="none" >none</option>
+<option value="standard" >standard</option>
+<option value="native" >native</option>
+</select>
+</td>
+</tr>
+<tr id="formatComboRow">
+<td>Format: </td>
+<td>
+<select name="f">
+<option value="html" selected='true'>HTML</option>
+<option value="pjson">JSON</option>
+<option value="pgeojson">GEOJSON</option>
+<option value="pbf">PBF</option>
+</select>
+</td>
+</tr>
+<tr><td colspan='2' align='left'>
+<input type='submit' value='Query (GET)' />
+<input type='submit' onclick='this.form.method = "post";' value='Query (POST)' />
+</td></tr>
+</table>
+<input type="hidden" id="token" name="token" value="" />
+</form>
+<i>displaying top 50 of 100 results</i><br/><br/>
+<table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>1</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[232080.9036247365,2380893.6512920652],[232126.43468013732,2380879.4626744189],[232156.3561256851,2380864.3500211225]<i>...185 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>2</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[29566.035432901263,2284124.9772187825],[29635.880307511543,2284067.5458794143],[29750.082832636428,2284003.9147726051]<i>...41 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>3</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[56444.446967784519,2294075.2000771891],[56445.980367274635,2294075.9251657813],[56561.352190372185,2294123.8270018208]<i>...826 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>4</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[26191.687671366759,2283767.4343013344],[26249.548406870977,2283784.0153100947],[26286.666078655864,2283794.6523905909]<i>...388 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>5</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[35987.841082083149,2284884.4515215051],[36078.326192940178,2284943.3306942037],[36091.11759264936,2284950.0223765834]<i>...28 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>6</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[6623.0510210006032,2268145.0388093083],[6479.5659663429542,2268151.4219726254],[6390.9946226619359,2268174.4642925095]<i>...532 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>7</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[10128.919011139835,2277462.4677151525],[10197.705509758613,2277494.5991902947],[10326.543501278618,2277554.7847801647]<i>...112 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>8</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-2748.4773322867404,2269496.196826857],[-2760.8693206520693,2269503.9416231],[-2768.9561182896141,2269513.9996872903]<i>...449 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>9</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3534.5862248739868,2268280.1203972725],[-3559.46396734711,2268290.18757689],[-3587.0176983945712,2268305.5012908876]<i>...914 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>10</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-1751.6519928094058,2268707.2477867436],[-1667.0250997573894,2268683.5698216162],[-1645.1161252716265,2268677.9458859363]<i>...247 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>11</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-4135.5289224776789,2273374.8067226764],[-4120.4207693970529,2273382.206869944],[-4048.6938697254809,2273399.3811736712]<i>...153 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>12</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-4159.9899940202886,2273114.4837087658],[-4105.9711276502057,2273148.6405261452],[-4072.8982310870779,2273151.5261849272]<i>...97 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>13</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3107.9985692422488,2272637.4648235659],[-3009.9670027809043,2272755.2172692548],[-3004.1993783760117,2272766.6334070219]<i>...208 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>14</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-1656.8026838549122,2273528.5028698533],[-1680.8158029238693,2273527.4295251053],[-1694.2866220309515,2273529.2223859881]<i>...190 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>15</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-1803.0342238912126,2272136.882970484],[-1745.9623200069764,2272093.9797665291],[-1702.479625165317,2272056.7325899238]<i>...201 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>16</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-1983.9301786168944,2272340.908604126],[-1956.0069262263423,2272323.8810757329],[-1941.9901932680805,2272309.903014523]<i>...33 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>17</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[674.38432983556413,2272703.0736865983],[679.54897574786446,2272699.1478298162],[684.6024336637638,2272699.4357307144]<i>...962 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>18</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-1317.8192055943946,2272172.1632122095],[-1316.5815902495524,2272177.5794282244],[-1314.0875036049401,2272180.2491794331]<i>...102 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>19</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-781.29921230947366,2272204.9829980582],[-774.40399050607812,2272210.2991706668],[-758.01649044422084,2272209.4247303992]<i>...4 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>20</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-4428.1224903322873,2271300.5341789811],[-4448.7045670372609,2271324.0135706537],[-4462.2459704839566,2271350.573474736]<i>...80 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>21</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3398.3144118253258,2270949.5687229843],[-3395.735069776827,2270953.4315175931],[-3392.2680322063388,2270954.71452255]<i>...19 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>22</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3437.1394903720357,2270965.1382107148],[-3438.1895701998437,2270966.6462771422],[-3437.3701807756152,2270968.8814970283]<i>...38 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>23</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3553.3662691596837,2271011.3564149262],[-3550.279032450635,2271018.4674247475],[-3549.5473667062761,2271019.2323751734]<i>...209 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>24</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3596.5821246295236,2271026.6942745158],[-3594.3650244546589,2271027.1220099842],[-3591.7342251845112,2271024.9092284357]<i>...36 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>25</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3252.8173048632452,2271178.3057229621],[-3246.9920141599723,2271181.4343777732],[-3245.2267186449317,2271185.0738314721]<i>...860 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>26</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3342.6745748934918,2271254.7312774477],[-3341.6500261769397,2271251.9954659585],[-3339.3077103935648,2271251.1817028713]<i>...54 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>27</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3029.5221199833322,2270917.9690775936],[-3027.4414940563438,2270918.9823212051],[-3023.1730781879742,2270917.4516880815]<i>...8 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>28</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3047.0733157813374,2270894.2652224554],[-3045.426827932999,2270895.1046804376],[-3043.1832682139066,2270897.9593176567]<i>...18 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>29</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-2466.2122757664765,2270741.5470989025],[-2464.8731733637687,2270743.5369670573],[-2462.5294186631509,2270745.0289975987]<i>...7 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>30</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-4389.06951403807,2271048.5265264944],[-4377.5487751440087,2271047.9970662007],[-4355.0388335767493,2271050.8442009618]<i>...1411 more...</i><br/>
+Ring1:[-4312.0036096111,2270972.6917683925],[-4312.3591996805335,2270972.5338208987],[-4315.1784277480619,2270970.0487112738]<i>...416 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>31</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-4439.0838964282884,2270874.3847168796],[-4435.5818938907469,2270878.3975923378],[-4427.9917835833912,2270880.5878188177]<i>...30 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>32</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-4759.5469704393763,2270779.9190712036],[-4756.5273824044853,2270783.3420780045],[-4756.8711316175759,2270785.4013765426]<i>...14 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>33</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-4673.9001231710135,2270784.0164676541],[-4672.9115260881663,2270791.0292152367],[-4668.4683101920527,2270794.8619189272]<i>...48 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>34</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3698.2022744427668,2270331.1339057479],[-3694.7120011906954,2270334.6798896212],[-3692.9480783033941,2270334.4288711012]<i>...52 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>35</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-3383.2266703092318,2270296.2685085163],[-3379.8452327199047,2270298.079096436],[-3375.1243248096434,2270298.1435696976]<i>...12 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>36</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-4237.1360247731209,2270384.7346778987],[-4234.266028217884,2270385.3729793224],[-4231.6561028202123,2270384.0207249997]<i>...115 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>37</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-4885.9979905924411,2270723.6657791403],[-4884.920170230791,2270725.3524260279],[-4884.7988698409754,2270727.0149011305]<i>...16 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>38</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[-4866.475466683798,2270701.688721722],[-4864.3583191919315,2270702.4140306935],[-4861.595930501353,2270702.817712679]<i>...60 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>39</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[335705.6795747751,2406412.982095609],[335756.38708489545,2406418.70137416],[336067.70906622149,2406465.8270060522]<i>...1128 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>40</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[396384.2989917571,2460568.7933283444],[396369.76141305966,2460778.9378686445],[396361.21131846949,2460927.4753749659]<i>...1035 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>41</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[392145.04488075129,2435595.0805070624],[392170.77206905477,2435588.4516973319],[392174.94747666368,2435588.1405102317]<i>...1316 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>42</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[401125.309783321,2643273.1824216591],[401147.72747584281,2643312.4392714477],[401158.26983100543,2643331.6552686966]<i>...4 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>43</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[401164.04702150961,2643343.59122677],[401164.04898738209,2643343.5961927678],[401169.56293022865,2643351.6649665674]<i>...10 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>44</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[420424.20482879772,2579772.4920082204],[420422.26222862123,2579783.4823866664],[420422.249231103,2579800.6884838156]<i>...1228 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>45</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[424263.07888071949,2572486.4556027027],[424186.88517114485,2572500.3630670812],[424142.20438274083,2572508.5190222971]<i>...164 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>46</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[442147.28166896838,2542464.6466977922],[442142.95172960195,2542477.8806920024],[442141.79926902475,2542501.0638692146]<i>...942 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>47</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[417057.1726286012,2502690.5475172536],[417056.84737313574,2502707.9906942225],[417056.241980927,2502724.4284639736]<i>...1475 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>48</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[422438.19729208446,2485393.5530025749],[422418.80981683906,2485403.7356219194],[422404.48908222857,2485415.1223673942]<i>...272 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>49</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[412500.07277567417,2465052.5624943194],[412518.23367994954,2465070.6259293943],[412528.80271433125,2465097.4171168115]<i>...60 more...</i><br/>
+</td></tr>
+</table><br/>
+<hr/><table class='ftrTable'>
+<tr><td>OBJECTID:</td><td>50</td></tr>
+<tr class='odd'><td>datetime:</td><td>5/29/2024 12:00:00 AM</td></tr>
+<tr><td><i>geometry</i></td>
+<td>
+<i>Polygon:</i><br/>
+Ring0:[395095.30421247933,2435152.3639197666],[395095.30117932969,2435152.3511834531],[395165.3517819129,2435793.2705755122]<i>...3 more...</i><br/>
+</td></tr>
+</table><br/>
+<script>
+function removeElement(id) {
+element = document.getElementById(id);
+if (element != null) {
+element.parentNode.removeChild(element);
+}}
+if ( window.location !== window.parent.location ){
+removeElement('homeBreadcrumbs');
+removeElement('servicesBreadcrumb');
+removeElement('viewInSection');
+jsonLinkTable = document.getElementById('jsonLinkTable'); 
+if (jsonLinkTable != null) {
+jsonLinkTable.innerHTML = '<table><tr><td class="apiref"><a href="?f=pjson&token=" target="_self">JSON</a></td></tr></table>'; 
+}
+removeElement('userTable');
+}
+</script>
+</div>
+</body>
+</html>

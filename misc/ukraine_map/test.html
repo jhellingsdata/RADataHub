@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukraine War Control Map</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        #slider-container {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="slider-container">
+        <input type="range" id="slider" min="0" max="33" step="1">
+        <span id="date-label"></span>
+    </div>
+    
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZm0tZHMiLCJhIjoiY2xvbXIwb3piMm93aTJscndvYnFncjh4NSJ9.ZYcFieW_kfpK-uB6PhVkLA';
+        
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v11',
+            center: [32.5, 48.5],
+            zoom: 5
+        });
+        
+        const dates = [
+            '2022-03-31', '2022-04-30', '2022-05-31', '2022-06-30', '2022-07-31', '2022-08-31',
+            '2022-09-30', '2022-10-31', '2022-11-30', '2022-12-31', '2023-01-31', '2023-02-28',
+            '2023-03-31', '2023-04-30', '2023-05-31', '2023-06-30', '2023-07-31', '2023-08-31',
+            '2023-09-30', '2023-10-31', '2023-11-30', '2023-12-31', '2024-01-31', '2024-02-29',
+            '2024-03-31', '2024-04-30', '2024-05-31', '2024-06-30', '2024-07-31', '2024-08-31',
+            '2024-09-30', '2024-10-31', '2024-11-30', '2024-12-31'
+        ];
+        
+        const slider = document.getElementById('slider');
+        const dateLabel = document.getElementById('date-label');
+        
+        function loadGeoJSON(date) {
+            const url = `https://eco-temp-cache.s3.eu-west-2.amazonaws.com/ukraine_war/${date}.geojson`;
+            
+            if (map.getSource('regions')) {
+                map.getSource('regions').setData(url);
+            } else {
+                map.addSource('regions', { type: 'geojson', data: url });
+                map.addLayer({
+                    id: 'regions-layer',
+                    type: 'fill',
+                    source: 'regions',
+                    paint: {
+                        'fill-color': '#ff0000',
+                        'fill-opacity': 0.5
+                    }
+                });
+            }
+        }
+        
+        slider.addEventListener('input', (e) => {
+            const index = parseInt(e.target.value);
+            const selectedDate = dates[index];
+            dateLabel.textContent = selectedDate;
+            loadGeoJSON(selectedDate);
+        });
+        
+        map.on('load', () => {
+            slider.value = dates.length - 1;
+            dateLabel.textContent = dates[dates.length - 1];
+            loadGeoJSON(dates[dates.length - 1]);
+        });
+    </script>
+</body>
+</html>
