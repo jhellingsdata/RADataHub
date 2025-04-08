@@ -38,20 +38,20 @@
         "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
         "encoding": {
           "color": {
+            "legend": {"title": "Percentile", "symbolStrokeWidth": 0},
             "field": "percentile",
             "type": "nominal",
             "scale": {
               "domain": ["<75", "75-90", "90-95", "95-99", "99+"],
-              "range": ["#C9C9C9", "#179FDB", "#0063AF", "#0063AF", "#0063AF"]
+              "scheme": "lightgreyteal"
+            }
             },
-            "legend": {"title": "Percentile", "symbolStrokeWidth": 0}
-          },
-          "tooltip": [
+            "tooltip": [
             {"field": "NUTS_NAME", "type": "nominal", "title": "Region"},
             {"field": "percentile", "type": "nominal", "title": "Percentile"}
           ]
+          }
         }
-      }
     ],
     "config": {
       "font": "Circular Std",
