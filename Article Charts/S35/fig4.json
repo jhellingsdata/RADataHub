@@ -1,0 +1,311 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "description": "Sector metrics with economy average as reference line",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/fig4_data.csv"
+    },
+    "transform": [{"filter": "datum.sector !== 'economy'"}],
+    "vconcat": [
+      {
+        "transform": [
+          {"filter": "datum.var === 'HHI'"},
+          {
+            "window": [{"op": "rank", "as": "rank"}],
+            "sort": [{"field": "val", "order": "ascending"}]
+          }
+        ],
+        "layer": [
+          {
+            "mark": {"type": "bar", "color": "#36B7B4"},
+            "title": {"text": "HHI"},
+            "encoding": {
+              "y": {
+                "field": "sector",
+                "type": "nominal",
+                "sort": {"field": "rank"},
+                "title": null
+              },
+              "x": {"field": "val", "type": "quantitative", "title": null},
+              "tooltip": [
+                  {
+                    "field": "sector",
+                    "type": "nominal",
+                    "title": "Sector"
+                  },
+                  {
+                    "field": "val",
+                    "type": "quantitative",
+                    "title": "HHI",
+                    "format":".0f"
+                  }
+                ]
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/fig4_data.csv"
+            },
+            "transform": [
+              {"filter": "datum.sector === 'economy' && datum.var === 'HHI'"}
+            ],
+            "mark": {
+              "type": "rule",
+              "strokeDash": [6, 4],
+              "size": 2,
+              "color": "#E6224B"
+            },
+            "encoding": {
+              "x": {"field": "val", "type": "quantitative", "title": null},
+              "tooltip": [
+                {
+                  "field": "val",
+                  "type": "quantitative",
+                  "title": "Economy Average"
+                }
+              ]
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/fig4_data.csv"
+            },
+            "transform": [
+              {"filter": "datum.sector === 'economy' && datum.var === 'HHI'"}
+            ],
+            "mark": {
+              "type": "text",
+              "align": "left",
+              "baseline": "top",
+              "dx": 5,
+              "dy": -10,
+              "fontSize": 11,
+              "fontStyle": "italic"
+            },
+            "encoding": {"x": {"field": "val", "type": "quantitative"}}
+          }
+        ]
+      },
+      {
+        "transform": [
+          {"filter": "datum.var === 'C10'"},
+          {
+            "window": [{"op": "rank", "as": "rank"}],
+            "sort": [{"field": "val", "order": "ascending"}]
+          }
+        ],
+        "layer": [
+          {
+            "mark": {"type": "bar", "color": "#36B7B4"},
+            "title": {"text": "Concentration Ratio 10"},
+            "encoding": {
+              "y": {
+                "field": "sector",
+                "type": "nominal",
+                "sort": {"field": "rank"},
+                "title": null
+              },
+              "x": {
+                "field": "val",
+                "type": "quantitative",
+                "title": "Concentration Ratio (C10)"
+              },
+              "tooltip": [
+                  {
+                    "field": "sector",
+                    "type": "nominal",
+                    "title": "Sector"
+                  },
+                  {
+                    "field": "val",
+                    "type": "quantitative",
+                    "title": "Concentration Ratio",
+                    "format":".2f"
+                  }
+                ]
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/fig4_data.csv"
+            },
+            "transform": [
+              {"filter": "datum.sector === 'economy' && datum.var === 'C10'"}
+            ],
+            "mark": {
+              "type": "rule",
+              "strokeDash": [6, 4],
+              "size": 2,
+              "color": "#E6224B"
+            },
+            "encoding": {
+              "x": {"field": "val", "type": "quantitative", "title": null},
+              "tooltip": [
+                {
+                  "field": "val",
+                  "type": "quantitative",
+                  "title": "Economy Average"
+                }
+              ]
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/fig4_data.csv"
+            },
+            "transform": [
+              {"filter": "datum.sector === 'economy' && datum.var === 'C10'"}
+            ],
+            "mark": {
+              "type": "text",
+              "align": "left",
+              "baseline": "top",
+              "dx": 5,
+              "dy": -10,
+              "fontSize": 11,
+              "fontStyle": "italic"
+            },
+            "encoding": {"x": {"field": "val", "type": "quantitative"}}
+          }
+        ]
+      },
+      {
+        "transform": [
+          {"filter": "datum.var === 'markup'"},
+          {
+            "window": [{"op": "rank", "as": "rank"}],
+            "sort": [{"field": "val", "order": "ascending"}]
+          }
+        ],
+        "layer": [
+          {
+            "mark": {"type": "bar", "color": "#36B7B4"},
+            "title": {"text": "Markup"},
+            "encoding": {
+              "y": {
+                "field": "sector",
+                "type": "nominal",
+                "sort": {"field": "rank"},
+                "title": null
+              },
+              "x": {"field": "val", "type": "quantitative", "title": "Markup"},
+              "tooltip": [
+                  {
+                    "field": "sector",
+                    "type": "nominal",
+                    "title": "Sector"
+                  },
+                  {
+                    "field": "val",
+                    "type": "quantitative",
+                    "title": "Markup",
+                    "format":".2f"
+                  }
+                ]
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/fig4_data.csv"
+            },
+            "transform": [
+              {"filter": "datum.sector === 'economy' && datum.var === 'markup'"}
+            ],
+            "mark": {
+              "type": "rule",
+              "strokeDash": [6, 4],
+              "size": 2,
+              "color": "#E6224B"
+            },
+            "encoding": {
+              "x": {"field": "val", "type": "quantitative", "title": null},
+              "tooltip": [
+                {
+                  "field": "val",
+                  "type": "quantitative",
+                  "title": "Economy Average"
+                }
+              ]
+            }
+          },
+          {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/fig4_data.csv"
+            },
+            "transform": [
+              {"filter": "datum.sector === 'economy' && datum.var === 'markup'"}
+            ],
+            "mark": {
+              "type": "text",
+              "align": "left",
+              "baseline": "top",
+              "dx": 5,
+              "dy": -10,
+              "fontSize": 11,
+              "fontStyle": "italic"
+            },
+            "encoding": {"x": {"field": "val", "type": "quantitative"}}
+          }
+        ]
+      }
+    ],
+    "config": {
+      "font": "Circular Std",
+      "view": {"stroke": "transparent"},
+      "range": {
+        "category": [
+          "#36B7B4",
+          "#E6224B",
+          "#F4C245",
+          "#0063AF",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ],
+        "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#0063AF"],
+        "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#0063AF"],
+        "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+      },
+      "axisX": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "grid": false,
+        "labelAngle": 0,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "orient": "bottom",
+        "tickColor": "#676A86",
+        "tickCount": 3,
+        "tickOpacity": 0.5,
+        "labelFontSize": 13,
+        "titleAlign": "center",
+        "titleAnchor": "middle",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleY": -15
+      },
+      "axisY": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "labelPadding": 5,
+        "labelFontSize": 13,
+        "tickColor": "#676A86",
+        "tickCount": 8,
+        "tickOpacity": 0.5,
+        "ticks": false,
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleX": 0,
+        "titleY": -7
+      }
+    }
+  }

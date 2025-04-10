@@ -1,0 +1,223 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "description": "Instrument types in a 2x2 grid",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/fig1_data.csv"
+    },
+    "concat": [
+      {
+        "vconcat": [
+          {
+            "transform": [
+              {"filter": "datum.Instrumenttype === 'Tax expenditures'"}
+            ],
+            "mark": "bar",
+            "encoding": {
+              "x": {
+                "field": "perc_type",
+                "type": "quantitative",
+                "title": "Expenditure (% of GDP)",
+                "axis": {"format": ".0%"}
+              },
+              "y": {
+                "field": "country",
+                "type": "nominal",
+                "sort": "-x",
+                "title": null
+              },
+              "opacity": {"value": 1},
+              "color": {
+                "condition": {
+                  "test": "datum.country === 'United Kingdom'",
+                  "value": "#0063AF"
+                },
+                "value": "lightgray"
+              },
+              "tooltip": [
+                {"field": "country", "type": "nominal", "title": "Country"},
+                {
+                  "field": "perc_type",
+                  "type": "quantitative",
+                  "title": "Expenditure (% of GDP)",
+                  "format": ".1%"
+                }
+              ]
+            },
+            "title": "Tax Expenditures"
+          },
+          {
+            "transform": [{"filter": "datum.Instrumenttype === 'Guarantees'"}],
+            "mark": "bar",
+            "encoding": {
+              "x": {
+                "field": "perc_type",
+                "type": "quantitative",
+                "title": "Expenditure (% of GDP)",
+                "axis": {"format": ".0%"}
+              },
+              "y": {
+                "field": "country",
+                "type": "nominal",
+                "sort": "-x",
+                "title": null
+              },
+              "opacity": {"value": 1},
+              "color": {
+                "condition": {
+                  "test": "datum.country === 'United Kingdom'",
+                  "value": "#0063AF"
+                },
+                "value": "lightgray"
+              },
+              "tooltip": [
+                {"field": "country", "type": "nominal", "title": "Country"},
+                {
+                  "field": "perc_type",
+                  "type": "quantitative",
+                  "title": "Expenditure (% of GDP)",
+                  "format": ".1%"
+                }
+              ]
+            },
+            "title": "Guarantees"
+          }
+        ]
+      },
+      {
+        "vconcat": [
+          {
+            "transform": [{"filter": "datum.Instrumenttype === 'Grants'"}],
+            "mark": "bar",
+            "encoding": {
+              "x": {
+                "field": "perc_type",
+                "type": "quantitative",
+                "title": "Expenditure (% of GDP)",
+                "axis": {"format": ".0%"}
+              },
+              "y": {
+                "field": "country",
+                "type": "nominal",
+                "sort": "-x",
+                "title": null
+              },
+              "opacity": {"value": 1},
+              "color": {
+                "condition": {
+                  "test": "datum.country === 'United Kingdom'",
+                  "value": "#0063AF"
+                },
+                "value": "lightgray"
+              },
+              "tooltip": [
+                {"field": "country", "type": "nominal", "title": "Country"},
+                {
+                  "field": "perc_type",
+                  "type": "quantitative",
+                  "title": "Expenditure (% of GDP)",
+                  "format": ".1%"
+                }
+              ]
+            },
+            "title": "Grants"
+          },
+          {
+            "transform": [{"filter": "datum.Instrumenttype === 'Loans'"}],
+            "mark": "bar",
+            "encoding": {
+              "x": {
+                "field": "perc_type",
+                "type": "quantitative",
+                "title": "Expenditure (% of GDP)",
+                "axis": {"format": ".0%"}
+              },
+              "y": {
+                "field": "country",
+                "type": "nominal",
+                "sort": "-x",
+                "title": null
+              },
+              "opacity": {"value": 1},
+              "color": {
+                "condition": {
+                  "test": "datum.country === 'United Kingdom'",
+                  "value": "#0063AF"
+                },
+                "value": "lightgray"
+              },
+              "tooltip": [
+                {"field": "country", "type": "nominal", "title": "Country"},
+                {
+                  "field": "perc_type",
+                  "type": "quantitative",
+                  "title": "Expenditure (% of GDP)",
+                  "format": ".1%"
+                }
+              ]
+            },
+            "title": "Loans"
+          }
+        ]
+      }
+    ],
+    "config": {
+      "font": "Circular Std",
+      "view": {"stroke": "transparent"},
+      "range": {
+        "category": [
+          "#36B7B4",
+          "#E6224B",
+          "#F4C245",
+          "#0063AF",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ],
+        "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#0063AF"],
+        "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#0063AF"],
+        "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+      },
+      "axisX": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "grid": false,
+        "labelAngle": 0,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "orient": "bottom",
+        "tickColor": "#676A86",
+        "tickCount": 3,
+        "tickOpacity": 0.5,
+        "labelFontSize": 13,
+        "titleAlign": "center",
+        "titleAnchor": "middle",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleY": -15
+      },
+      "axisY": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "labelPadding": 5,
+        "labelFontSize": 13,
+        "tickColor": "#676A86",
+        "tickCount": 8,
+        "tickOpacity": 0.5,
+        "ticks": false,
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleX": 0,
+        "titleY": -7
+      }
+    }
+  }

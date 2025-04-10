@@ -1,0 +1,144 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/fig2_data.csv"
+    },
+    "width": 400,
+    "height": 300,
+    "encoding": {
+      "x": {
+        "field": "log(lab prod)",
+        "type": "nominal",
+        "title": null,
+        "sort": ["t-2", "t-1", "t", "t+1", "t+2"]
+      }
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "rule",
+          "color": "#C9C9C9",
+          "size": 4
+        },
+        "encoding": {
+          "y": {
+            "field": "Lower (95)",
+            "type": "quantitative",
+            "scale": {"zero": false}
+          },
+          "y2": {"field": "Upper (95)"}
+        }
+      },
+      {
+        "mark": {
+          "type": "rule",
+          "color": "#179FDB",
+          "size": 5
+        },
+        "encoding": {
+          "y": {
+            "field": "Lower (90)",
+            "type": "quantitative",
+            "scale": {"zero": false}
+          },
+          "y2": {"field": "Upper (90)"}
+        }
+      },
+      {
+        "mark": {
+          "type": "rule",
+          "color": "#0063AF",
+          "size": 6
+        },
+        "encoding": {
+          "y": {
+            "field": "Lower (80)",
+            "type": "quantitative",
+            "scale": {"zero": false},
+            "title": null
+          },
+          "y2": {"field": "Upper (80)"}
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "color": "#0063AF",
+          "size": 150,
+          "opacity":1
+        },
+        "encoding": {
+          "y": {"field": "Coefficient", "type": "quantitative"},
+          "tooltip": [
+            {"field": "log(lab prod)", "type": "nominal", "title": "Period"},
+            {"field": "Coefficient", "type": "quantitative", "format": ".4f"},
+            {"field": "Lower (95)", "type": "quantitative", "format": ".4f", "title": "95% CI Lower"},
+            {"field": "Upper (95)", "type": "quantitative", "format": ".4f", "title": "95% CI Upper"},
+            {"field": "Lower (80)", "type": "quantitative", "format": ".4f", "title": "80% CI Lower"},
+            {"field": "Upper (80)", "type": "quantitative", "format": ".4f", "title": "80% CI Upper"}
+          ]
+        }
+      }
+    ],
+    "config": {
+        "font": "Circular Std",
+        "view": {"stroke": "transparent"},
+        "range": {
+          "category": [
+            "#36B7B4",
+            "#E6224B",
+            "#F4C245",
+            "#0063AF",
+            "#00A767",
+            "#179FDB",
+            "#EB5C2E"
+          ],
+          "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+          "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+          "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+        },
+        "axisX": {
+          "domainColor": "#676A86",
+          "domainOpacity": 0.5,
+          "grid": false,
+          "labelAngle": 0,
+          "labelColor": "#676A86",
+          "labelOpacity": 0.7,
+          "orient": "bottom",
+          "tickColor": "#676A86",
+          "tickCount": 10,
+          "tickOpacity": 0.5,
+          "labelFontSize": 13,
+          "titleAlign": "center",
+          "titleAnchor": "middle",
+          "titleColor": "#676A86",
+          "titleFontSize": 12,
+          "titleOpacity": 0.8,
+          "titleY": -15
+        },
+        "axisY": {
+          "domainColor": "#676A86",
+          "domainOpacity": 0.5,
+          "gridColor": "#676A86",
+          "gridDash": [1, 5],
+          "gridOpacity": 0.5,
+          "labelColor": "#676A86",
+          "labelOpacity": 0.7,
+          "labelPadding": 5,
+          "labelFontSize": 13,
+          "tickColor": "#676A86",
+          "tickCount": 8,
+          "tickOpacity": 0.5,
+          "ticks": false,
+          "titleAlign": "left",
+          "titleAngle": 0,
+          "titleBaseline": "bottom",
+          "titleColor": "#676A86",
+          "titleFontSize": 12,
+          "titleOpacity": 0.8,
+          "titleX": 0,
+          "titleY": -7
+        }
+      }
+  }
