@@ -1,4 +1,4 @@
-date,code,area_name,index,monthly_change,annual_change,rental_price
+date,code,id,index,monthly_change,annual_change,rental_price
 2015-01-01,W92000004,Wales,82.173314,[x],[x],541
 2015-02-01,W92000004,Wales,82.517554,0.418919,[x],544
 2015-03-01,W92000004,Wales,82.598976,0.098673,[x],544
