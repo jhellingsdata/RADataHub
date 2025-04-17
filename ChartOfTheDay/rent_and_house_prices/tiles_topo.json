@@ -5814,9 +5814,9 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "Eastern",
+                    "id": "East of England",
                     "properties": {
-                        "name": "Eastern",
+                        "name": "East of England",
                         "tilegramValue": 58
                     },
                     "arcs": [
