@@ -1,0 +1,65 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Annual Change in Home Prices",
+      "anchor": "start",
+      "subtitle": [
+        "Regions sized approximately by population",
+        "Data from ONS. Most recent data from February 2025.",
+        ""
+      ],
+      "subtitleColor": "#676A86",
+      "fontSize": 22,
+      "fontWeight": "lighter",
+      "subtitleFontSize": 14,
+      "subtitleFontWeight": "lighter"
+    },
+    "width": 350,
+    "height": 450,
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/rent_and_house_prices/tiles_topo.json",
+          "format": {"type": "topojson", "feature": "tiles"}
+        },
+        "transform": [
+          {
+            "lookup": "properties.tilegramValue",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/rent_and_house_prices/region_homeprices.csv"
+              },
+              "key": "id",
+              "fields": ["value", "region", "date"]
+            }
+          }
+        ],
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+        "encoding": {
+          "color": {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Annual Change (%)",
+            "legend": {
+              "format": ".0%",
+              "orient": "right",
+              "direction": "vertical",
+              "gradientLength": 200
+            },
+            "scale": {"scheme": "yellowgreenblue"}
+          },
+          "tooltip": [
+            {"field": "region", "type": "nominal", "title": "Region"},
+            {
+              "field": "value",
+              "type": "quantitative",
+              "title": "Price Change",
+              "format": ".1%"
+            }
+          ]
+        }
+      }
+    ],
+    "projection": {"type": "identity", "reflectY": true},
+    "config": {"font": "Circular Std", "view": {"stroke": "transparent"}}
+  }

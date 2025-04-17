@@ -1,0 +1,70 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Annual Change in Rental Prices",
+      "anchor": "start",
+      "subtitle": [
+        "Regions sized approximately by population",
+        "Data from ONS. Most recent data from March 2025.",
+        ""
+      ],
+      "subtitleColor": "#676A86",
+      "fontSize": 22,
+      "fontWeight": "lighter",
+      "subtitleFontSize": 14,
+      "subtitleFontWeight": "lighter"
+    },
+    "width": 350,
+    "height": 450,
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/rent_and_house_prices/tiles_topo.json",
+          "format": {"type": "topojson", "feature": "tiles"}
+        },
+        "transform": [
+          {
+            "lookup": "id",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/rent_and_house_prices/region_rent.csv"
+              },
+              "key": "area_name",
+              "fields": ["annual_change", "rental_price", "date"]
+            }
+          }
+        ],
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+        "encoding": {
+          "color": {
+            "field": "annual_change",
+            "type": "quantitative",
+            "legend": {
+              "title": "Annual Change (%)",
+              "format": ".0%",
+              "orient": "right",
+              "direction": "vertical",
+              "gradientLength": 200
+            },
+            "scale": {"scheme": "yellowgreenblue", "reverse": false}
+          },
+          "tooltip": [
+            {"field": "id", "type": "nominal", "title": "Region"},
+            {
+              "field": "annual_change",
+              "type": "quantitative",
+              "title": "Annual Change",
+              "format": ".2%"
+            },
+            {
+              "field": "rental_price",
+              "type": "quantitative",
+              "title": "Average Rent (£)"
+            }
+          ]
+        }
+      }
+    ],
+    "projection": {"type": "identity", "reflectY": true},
+    "config": {"font": "Circular Std", "view": {"stroke": "transparent"}}
+  }
