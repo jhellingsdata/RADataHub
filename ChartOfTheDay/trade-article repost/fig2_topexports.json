@@ -1,0 +1,168 @@
+{
+  "title": {
+    "text": "UK: Top Exports to the United States",
+    "subtitle": ["SITC Level 2", "Source: UN COMTRADE"],
+    "anchor": "start",
+    "frame": "group",
+    "fontSize": 22,
+    "font": "Circular Std",
+    "subtitleFont": "Circular Std",
+    "subtitleFontSize": 13,
+    "subtitleColor": "#676A86",
+    "subtitlePadding": 5,
+    "color": "#243B5A"
+  },
+  "config": {
+    "font": "Circular Std",
+    "mark": {"line": {"interpolate": "monotone"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": false,
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "layer": [
+    {
+      "data": {"name": "data-4b8720648ace71118514237585a4088b"},
+      "mark": {"type": "bar", "color": "#36B7B4"},
+      "encoding": {
+        "x": {
+          "axis": {"format": "$", "labelExpr": "datum.label + 'B' "},
+          "field": "Trade Value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Section",
+          "sort": {"field": "Trade Value", "order": "descending"},
+          "title": "",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {"name": "data-d25dc1f74d69ef5cd1f0bbfe0eacba65"},
+      "mark": {
+        "type": "image",
+        "baseline": "bottom",
+        "height": 30,
+        "opacity": 0.5,
+        "width": 90
+      },
+      "encoding": {
+        "url": {"field": "url", "type": "nominal"},
+        "x": {"value": 325},
+        "y": {"value": -10}
+      }
+    }
+  ],
+  "height": 350,
+  "width": 400,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-4b8720648ace71118514237585a4088b": [
+      {
+        "Section ID": 1,
+        "Section": "Animal Products",
+        "Trade Value": 3.849909608
+      },
+      {
+        "Section ID": 2,
+        "Section": "Vegetable Products",
+        "Trade Value": 19.5095306
+      },
+      {
+        "Section ID": 3,
+        "Section": "Animal and Vegetable Bi-Products",
+        "Trade Value": 0.533827165
+      },
+      {"Section ID": 4, "Section": "Foodstuffs", "Trade Value": 20.800394477},
+      {
+        "Section ID": 5,
+        "Section": "Mineral Products",
+        "Trade Value": 26.013336462
+      },
+      {
+        "Section ID": 6,
+        "Section": "Chemical Products",
+        "Trade Value": 6.84134465
+      },
+      {
+        "Section ID": 7,
+        "Section": "Plastics and Rubbers",
+        "Trade Value": 12.923856661
+      },
+      {"Section ID": 8, "Section": "Animal Hides", "Trade Value": 0.487190222},
+      {"Section ID": 9, "Section": "Wood Products", "Trade Value": 0.763917656},
+      {"Section ID": 10, "Section": "Paper Goods", "Trade Value": 2.433081657},
+      {"Section ID": 11, "Section": "Textiles", "Trade Value": 5.5286812},
+      {
+        "Section ID": 12,
+        "Section": "Footwear and Headwear",
+        "Trade Value": 1.179234373
+      },
+      {
+        "Section ID": 13,
+        "Section": "Stone And Glass",
+        "Trade Value": 4.417826676
+      },
+      {
+        "Section ID": 14,
+        "Section": "Precious Metals",
+        "Trade Value": 4.118921187
+      },
+      {"Section ID": 15, "Section": "Metals", "Trade Value": 18.625917782}
+    ]
+  }
+}

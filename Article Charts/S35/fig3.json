@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": 600,
+    "width": 400,
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/uk_itl3.json",
+          "format": {"type": "topojson", "feature": "geog"}
+        },
+        "mark": {
+          "type": "geoshape",
+          "stroke": "white",
+          "strokeWidth": 0.5,
+          "fill": "#e2e2e2"
+        },
+        "projection": {"type": "mercator"}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/uk_itl3.json",
+          "format": {"type": "topojson", "feature": "geog"}
+        },
+        "transform": [
+          {
+            "lookup": "properties.id",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/S35/fig3_data.csv"
+              },
+              "key": "ITL_ID",
+              "fields": ["percentile", "NUTS_NAME"]
+            }
+          },
+          {"filter": "datum.percentile != null"}
+        ],
+        "projection": {"type": "mercator"},
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+        "encoding": {
+          "color": {
+            "legend": {"title": "Percentile", "symbolStrokeWidth": 0},
+            "field": "percentile",
+            "type": "nominal",
+            "scale": {
+              "domain": ["<75", "75-90", "90-95", "95-99", "99+"],
+              "scheme": "lightgreyteal"
+            }
+            },
+            "tooltip": [
+            {"field": "NUTS_NAME", "type": "nominal", "title": "Region"},
+            {"field": "percentile", "type": "nominal", "title": "Percentile"}
+          ]
+          }
+        }
+    ],
+    "config": {
+      "font": "Circular Std",
+      "view": {"stroke": "transparent"}
+    }
+  }

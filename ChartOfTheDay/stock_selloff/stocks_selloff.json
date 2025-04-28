@@ -1,0 +1,150 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/ChartOfTheDay/stock_selloff/closes.csv"
+    },
+    "transform": [{"filter": "datum.Value != 0"}],
+    "height": 400,
+    "width": 600,
+    "title": {
+      "text": "Stock Markets Since Trump's Inauguration",
+      "subtitle": ["Source: Yahoo Finance", ""],
+      "anchor": "start",
+      "subtitleColor":"#676A86",
+      "fontSize": 22,
+      "fontWeight":"lighter",
+      "subtitleFontSize":14,
+      "subtitleFontWeight":"lighter"
+    },
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title": null
+        
+        },
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Stock Market Performance (Trump Inauguration = 100)",
+        "scale": {"zero": false}
+      },
+      "color": {"field": "Index", "type": "nominal", "legend": null}
+    },
+    "layer": [
+      {
+        "description": "transparent layer to make it easier to trigger selection",
+        "params": [
+          {
+            "name": "hover",
+            "value": [{"Index": "AAPL"}],
+            "select": {"type": "point", "fields": ["Index"], "on": "pointerover"}
+          }
+        ],
+        "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+      },
+      {"mark": "line"},
+      {
+        "encoding": {
+          "x": {"aggregate": "max", "field": "Date"},
+          "y": {"aggregate": {"argmax": "Date"}, "field": "Value"}
+        },
+        "layer": [
+          {"mark": {"type": "circle", "size": 60}},
+          {
+            "mark": {"type": "text", "align": "left", "dx": 4},
+            "encoding": {"text": {"field": "Index", "type": "nominal"}}
+          }
+        ]
+      }
+    ],
+    "config": {
+        "font": "Circular Std",
+        "mark": {
+            "line": {
+                "interpolate": "monotone"
+            }
+        },
+        "view": {
+            "stroke": "transparent",
+            "width": 400,
+            "height": 300
+        },
+        "range": {
+            "category": [
+                "#36B7B4",
+                "#E6224B",
+                "#F4C245",
+                "#0063AF",
+                "#00A767",
+                "#179FDB",
+                "#EB5C2E"
+            ],
+            "diverging": [
+                "#E6224B",
+                "#E54753",
+                "#C9C9C9",
+                "#179FDB",
+                "#122B39"
+            ],
+            "heatmap": [
+                "#C9C9C9",
+                "#179FDB",
+                "#0063AF",
+                "#122B39"
+            ],
+            "ordinal": [
+                "#00A767",
+                "#36B7B4",
+                "#179FDB",
+                "#0063AF",
+                "#243B5A"
+            ]
+        },
+        "axisX": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 3,
+            "tickOpacity": 0.5,
+            "title": false,
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleY": -15
+        },
+        "axisY": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [
+                1,
+                5
+            ],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -7
+        }
+    }
+  }

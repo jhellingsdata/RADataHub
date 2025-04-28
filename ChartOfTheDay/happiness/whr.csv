@@ -1,0 +1,141 @@
+Country name,Rank,Factor,Score,Top/Bottom
+Finland,1,Log GDP per capita,1.749,Top 10
+Denmark,2,Log GDP per capita,1.825,Top 10
+Iceland,3,Log GDP per capita,1.799,Top 10
+Sweden,4,Log GDP per capita,1.783,Top 10
+Netherlands,5,Log GDP per capita,1.822,Top 10
+Costa Rica,6,Log GDP per capita,1.492,Top 10
+Norway,7,Log GDP per capita,1.902,Top 10
+Israel,8,Log GDP per capita,1.695,Top 10
+Luxembourg,9,Log GDP per capita,2.028,Top 10
+Mexico,10,Log GDP per capita,1.435,Top 10
+Finland,1,Social support,1.783,Top 10
+Denmark,2,Social support,1.748,Top 10
+Iceland,3,Social support,1.84,Top 10
+Sweden,4,Social support,1.698,Top 10
+Netherlands,5,Social support,1.667,Top 10
+Costa Rica,6,Social support,1.6,Top 10
+Norway,7,Social support,1.711,Top 10
+Israel,8,Social support,1.743,Top 10
+Luxembourg,9,Social support,1.558,Top 10
+Mexico,10,Social support,1.504,Top 10
+Finland,1,Healthy life expectancy,0.824,Top 10
+Denmark,2,Healthy life expectancy,0.82,Top 10
+Iceland,3,Healthy life expectancy,0.873,Top 10
+Sweden,4,Healthy life expectancy,0.889,Top 10
+Netherlands,5,Healthy life expectancy,0.844,Top 10
+Costa Rica,6,Healthy life expectancy,0.68,Top 10
+Norway,7,Healthy life expectancy,0.863,Top 10
+Israel,8,Healthy life expectancy,0.824,Top 10
+Luxembourg,9,Healthy life expectancy,0.864,Top 10
+Mexico,10,Healthy life expectancy,0.55,Top 10
+Finland,1,Freedom to make life choices,0.986,Top 10
+Denmark,2,Freedom to make life choices,0.955,Top 10
+Iceland,3,Freedom to make life choices,0.971,Top 10
+Sweden,4,Freedom to make life choices,0.952,Top 10
+Netherlands,5,Freedom to make life choices,0.86,Top 10
+Costa Rica,6,Freedom to make life choices,0.948,Top 10
+Norway,7,Freedom to make life choices,0.962,Top 10
+Israel,8,Freedom to make life choices,0.74,Top 10
+Luxembourg,9,Freedom to make life choices,0.931,Top 10
+Mexico,10,Freedom to make life choices,0.879,Top 10
+Finland,1,Generosity,0.11,Top 10
+Denmark,2,Generosity,0.15,Top 10
+Iceland,3,Generosity,0.201,Top 10
+Sweden,4,Generosity,0.17,Top 10
+Netherlands,5,Generosity,0.186,Top 10
+Costa Rica,6,Generosity,0.067,Top 10
+Norway,7,Generosity,0.168,Top 10
+Israel,8,Generosity,0.144,Top 10
+Luxembourg,9,Generosity,0.117,Top 10
+Mexico,10,Generosity,0.057,Top 10
+Finland,1,Perceptions of corruption,0.502,Top 10
+Denmark,2,Perceptions of corruption,0.488,Top 10
+Iceland,3,Perceptions of corruption,0.173,Top 10
+Sweden,4,Perceptions of corruption,0.467,Top 10
+Netherlands,5,Perceptions of corruption,0.344,Top 10
+Costa Rica,6,Perceptions of corruption,0.118,Top 10
+Norway,7,Perceptions of corruption,0.425,Top 10
+Israel,8,Perceptions of corruption,0.193,Top 10
+Luxembourg,9,Perceptions of corruption,0.397,Top 10
+Mexico,10,Perceptions of corruption,0.118,Top 10
+Finland,1,Dystopia + residual,1.782,Top 10
+Denmark,2,Dystopia + residual,1.535,Top 10
+Iceland,3,Dystopia + residual,1.659,Top 10
+Sweden,4,Dystopia + residual,1.385,Top 10
+Netherlands,5,Dystopia + residual,1.583,Top 10
+Costa Rica,6,Dystopia + residual,2.369,Top 10
+Norway,7,Dystopia + residual,1.231,Top 10
+Israel,8,Dystopia + residual,1.895,Top 10
+Luxembourg,9,Dystopia + residual,1.227,Top 10
+Mexico,10,Dystopia + residual,2.438,Top 10
+Lesotho,138,Log GDP per capita,0.737,Bottom 10
+Comoros,139,Log GDP per capita,0.835,Bottom 10
+Yemen,140,Log GDP per capita,0.631,Bottom 10
+DR Congo,141,Log GDP per capita,0.544,Bottom 10
+Botswana,142,Log GDP per capita,1.388,Bottom 10
+Zimbabwe,143,Log GDP per capita,0.827,Bottom 10
+Malawi,144,Log GDP per capita,0.588,Bottom 10
+Lebanon,145,Log GDP per capita,1.223,Bottom 10
+Sierra Leone,146,Log GDP per capita,0.786,Bottom 10
+Afghanistan,147,Log GDP per capita,0.649,Bottom 10
+Lesotho,138,Social support,1.131,Bottom 10
+Comoros,139,Social support,0.501,Bottom 10
+Yemen,140,Social support,1.482,Bottom 10
+DR Congo,141,Social support,0.929,Bottom 10
+Botswana,142,Social support,1.146,Bottom 10
+Zimbabwe,143,Social support,0.961,Bottom 10
+Malawi,144,Social support,0.489,Bottom 10
+Lebanon,145,Social support,0.984,Bottom 10
+Sierra Leone,146,Social support,0.692,Bottom 10
+Afghanistan,147,Social support,0.0,Bottom 10
+Lesotho,138,Healthy life expectancy,0.0,Bottom 10
+Comoros,139,Healthy life expectancy,0.428,Bottom 10
+Yemen,140,Healthy life expectancy,0.375,Bottom 10
+DR Congo,141,Healthy life expectancy,0.278,Bottom 10
+Botswana,142,Healthy life expectancy,0.094,Bottom 10
+Zimbabwe,143,Healthy life expectancy,0.178,Bottom 10
+Malawi,144,Healthy life expectancy,0.28,Bottom 10
+Lebanon,145,Healthy life expectancy,0.44,Bottom 10
+Sierra Leone,146,Healthy life expectancy,0.327,Bottom 10
+Afghanistan,147,Healthy life expectancy,0.155,Bottom 10
+Lesotho,138,Freedom to make life choices,0.606,Bottom 10
+Comoros,139,Freedom to make life choices,0.26,Bottom 10
+Yemen,140,Freedom to make life choices,0.447,Bottom 10
+DR Congo,141,Freedom to make life choices,0.6,Bottom 10
+Botswana,142,Freedom to make life choices,0.697,Bottom 10
+Zimbabwe,143,Freedom to make life choices,0.598,Bottom 10
+Malawi,144,Freedom to make life choices,0.677,Bottom 10
+Lebanon,145,Freedom to make life choices,0.279,Bottom 10
+Sierra Leone,146,Freedom to make life choices,0.613,Bottom 10
+Afghanistan,147,Freedom to make life choices,0.0,Bottom 10
+Lesotho,138,Generosity,0.065,Bottom 10
+Comoros,139,Generosity,0.117,Bottom 10
+Yemen,140,Generosity,0.066,Bottom 10
+DR Congo,141,Generosity,0.151,Bottom 10
+Botswana,142,Generosity,0.018,Bottom 10
+Zimbabwe,143,Generosity,0.065,Bottom 10
+Malawi,144,Generosity,0.115,Bottom 10
+Lebanon,145,Generosity,0.071,Bottom 10
+Sierra Leone,146,Generosity,0.138,Bottom 10
+Afghanistan,147,Generosity,0.075,Bottom 10
+Lesotho,138,Perceptions of corruption,0.072,Bottom 10
+Comoros,139,Perceptions of corruption,0.164,Bottom 10
+Yemen,140,Perceptions of corruption,0.106,Bottom 10
+DR Congo,141,Perceptions of corruption,0.061,Bottom 10
+Botswana,142,Perceptions of corruption,0.083,Bottom 10
+Zimbabwe,143,Perceptions of corruption,0.131,Bottom 10
+Malawi,144,Perceptions of corruption,0.136,Bottom 10
+Lebanon,145,Perceptions of corruption,0.041,Bottom 10
+Sierra Leone,146,Perceptions of corruption,0.052,Bottom 10
+Afghanistan,147,Perceptions of corruption,0.135,Bottom 10
+Lesotho,138,Dystopia + residual,1.145,Bottom 10
+Comoros,139,Dystopia + residual,1.45,Bottom 10
+Yemen,140,Dystopia + residual,0.454,Bottom 10
+DR Congo,141,Dystopia + residual,0.906,Bottom 10
+Botswana,142,Dystopia + residual,0.012,Bottom 10
+Zimbabwe,143,Dystopia + residual,0.636,Bottom 10
+Malawi,144,Dystopia + residual,0.975,Bottom 10
+Lebanon,145,Dystopia + residual,0.15,Bottom 10
+Sierra Leone,146,Dystopia + residual,0.391,Bottom 10
+Afghanistan,147,Dystopia + residual,0.348,Bottom 10

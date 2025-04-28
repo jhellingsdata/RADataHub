@@ -1,0 +1,89 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": null,
+    "width": 600,
+    "height": 400,
+    "params": [
+      {
+        "name": "year",
+        "value": 2023,
+        "bind": {
+          "input": "range",
+          "min": 2015,
+          "max": 2023,
+          "step": 1,
+          "name": "Year:"
+        }
+      }
+    ],
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/county_dorling_topo.json",
+          "format": {"type": "topojson", "feature": "county_dorling"}
+        },
+        "mark": {
+          "type": "geoshape",
+          "stroke": "black",
+          "strokeWidth": 0.2,
+          "fill": "#f7f7f7"
+        },
+        "projection": {"type": "identity", "reflectY": true}
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/rent_burden_county.csv"
+        },
+        "transform": [
+          {
+            "lookup": "id",
+            "from": {
+              "data": {
+                "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/county_dorling_topo.json",
+                "format": {"type": "topojson", "feature": "county_dorling"}
+              },
+              "key": "properties.fips",
+              "fields": ["type", "geometry", "properties"]
+            }
+          },
+          {"filter": "datum.year == year"}
+        ],
+        "encoding": {
+          "color": {
+            "field": "value",
+            "type": "quantitative",
+            "legend": {
+              "title": null,
+              "format": ".0%",
+              "orient": "right",
+              "direction": "vertical",
+              "offset": 20,
+              "gradientLength": 200,
+              "labelFontWeight": "light"
+            },
+            "scale": {
+              "scheme": "purpleorange",
+              "domainMax": 0.4,
+              "domainMin": 0.2
+            }
+          },
+          "tooltip": [
+            {"field": "properties.name", "title": "County"},
+            {"field": "value", "title": "Rent as % of income", "format": ".1%"}
+          ]
+        },
+        "projection": {"type": "identity", "reflectY": true},
+        "mark": {"type": "geoshape", "stroke": null, "strokeWidth": 0.5}
+      }
+    ],
+    "config": {
+      "font": "Circular Std",
+      "view": {"stroke": "transparent"},
+      "legend": {
+        "titleColor": "#122b39",
+        "title": null,
+        "labelColor": "#122b39",
+        "labelFontSize": 11
+      }
+    }
+  }

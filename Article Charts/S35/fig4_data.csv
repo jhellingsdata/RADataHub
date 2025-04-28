@@ -1,0 +1,22 @@
+sector,var,val
+economy,HHI,1100.7239990234375
+Advanced Manufacturing,HHI,1690.555908203125
+Clean energy,HHI,487.3470153808594
+Creative industries,HHI,411.9609375
+Digital and technologies,HHI,1070.163818359375
+Life sciences,HHI,1089.195556640625
+Professional and business services,HHI,427.35418701171875
+economy,C10,0.5737832188606262
+Advanced Manufacturing,C10,0.7342131733894348
+Clean energy,C10,0.4698699116706848
+Creative industries,C10,0.3589726686477661
+Digital and technologies,C10,0.5171666145324707
+Life sciences,C10,0.5883575677871704
+Professional and business services,C10,0.31827250123023987
+economy,markup,1.1695393323898315
+Advanced Manufacturing,markup,1.0795897245407104
+Clean energy,markup,0.8078785538673401
+Creative industries,markup,0.8692197203636169
+Digital and technologies,markup,1.0100269317626953
+Life sciences,markup,1.0184634923934937
+Professional and business services,markup,1.3993682861328125
