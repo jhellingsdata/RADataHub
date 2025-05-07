@@ -715,8 +715,8 @@
         {
             "id": "ARE",
             "name": "United Arab Emirates",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "United Arab Emirates",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -1415,8 +1415,8 @@
         {
             "id": "ATF",
             "name": "French Southern and Antarctic Lands",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "French Southern and Antarctic Lands",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -1465,8 +1465,8 @@
         {
             "id": "AUS",
             "name": "Australia",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Australia",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -2449,8 +2449,8 @@
         {
             "id": "AUT",
             "name": "Austria",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Austria",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -2873,8 +2873,8 @@
         {
             "id": "BEL",
             "name": "Belgium",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Belgium",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -3515,8 +3515,8 @@
         {
             "id": "BHS",
             "name": "The Bahamas",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "The Bahamas",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -5089,8 +5089,8 @@
         {
             "id": "BRN",
             "name": "Brunei",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Brunei",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -5637,8 +5637,8 @@
         {
             "id": "CAN",
             "name": "Canada",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Canada",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -8949,8 +8949,8 @@
         {
             "id": "CHE",
             "name": "Switzerland",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Switzerland",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -9059,8 +9059,8 @@
         {
             "id": "CHL",
             "name": "Chile",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Chile",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -11473,8 +11473,8 @@
         {
             "id": "COG",
             "name": "Republic of the Congo",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Republic of the Congo",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -12437,8 +12437,8 @@
         {
             "id": "-99",
             "name": "Northern Cyprus",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Northern Cyprus",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -12515,8 +12515,8 @@
         {
             "id": "CYP",
             "name": "Cyprus",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Cyprus",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -12589,8 +12589,8 @@
         {
             "id": "CZE",
             "name": "Czech Republic",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Czech Republic",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -12743,8 +12743,8 @@
         {
             "id": "DEU",
             "name": "Germany",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Germany",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -13063,8 +13063,8 @@
         {
             "id": "DNK",
             "name": "Denmark",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Denmark",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -14013,8 +14013,8 @@
         {
             "id": "ESP",
             "name": "Spain",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Spain",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -14231,8 +14231,8 @@
         {
             "id": "EST",
             "name": "Estonia",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Estonia",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -14563,8 +14563,8 @@
         {
             "id": "FIN",
             "name": "Finland",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Finland",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -14841,8 +14841,8 @@
         {
             "id": "FLK",
             "name": "Falkland Islands",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Falkland Islands",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -14895,8 +14895,8 @@
         {
             "id": "FRA",
             "name": "France",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "France",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -15353,8 +15353,8 @@
         {
             "id": "GBR",
             "name": "United Kingdom",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "United Kingdom",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -16115,8 +16115,8 @@
         {
             "id": "GMB",
             "name": "Gambia",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Gambia",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -16193,8 +16193,8 @@
         {
             "id": "GNB",
             "name": "Guinea Bissau",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Guinea Bissau",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -16325,8 +16325,8 @@
         {
             "id": "GRC",
             "name": "Greece",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Greece",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -16561,8 +16561,8 @@
         {
             "id": "GRL",
             "name": "Greenland",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Greenland",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -17257,8 +17257,8 @@
         {
             "id": "GUY",
             "name": "Guyana",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Guyana",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -17673,8 +17673,8 @@
         {
             "id": "HRV",
             "name": "Croatia",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Croatia",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -17953,8 +17953,8 @@
         {
             "id": "HUN",
             "name": "Hungary",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Hungary",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -19713,8 +19713,8 @@
         {
             "id": "IRL",
             "name": "Ireland",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Ireland",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -20227,8 +20227,8 @@
         {
             "id": "ISL",
             "name": "Iceland",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Iceland",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -20321,8 +20321,8 @@
         {
             "id": "ISR",
             "name": "Israel",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Israel",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -20427,8 +20427,8 @@
         {
             "id": "ITA",
             "name": "Italy",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Italy",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -20947,8 +20947,8 @@
         {
             "id": "JPN",
             "name": "Japan",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Japan",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -22091,8 +22091,8 @@
         {
             "id": "KOR",
             "name": "South Korea",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "South Korea",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -22181,8 +22181,8 @@
         {
             "id": "-99",
             "name": "Kosovo",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Kosovo",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -22279,8 +22279,8 @@
         {
             "id": "KWT",
             "name": "Kuwait",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Kuwait",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -23025,8 +23025,8 @@
         {
             "id": "LTU",
             "name": "Lithuania",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Lithuania",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -23115,8 +23115,8 @@
         {
             "id": "LUX",
             "name": "Luxembourg",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Luxembourg",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -23157,8 +23157,8 @@
         {
             "id": "LVA",
             "name": "Latvia",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Latvia",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -24555,8 +24555,8 @@
         {
             "id": "MKD",
             "name": "Macedonia",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Macedonia",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -26725,8 +26725,8 @@
         {
             "id": "NCL",
             "name": "New Caledonia",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "New Caledonia",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -27505,8 +27505,8 @@
         {
             "id": "NLD",
             "name": "Netherlands",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Netherlands",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -27575,8 +27575,8 @@
         {
             "id": "NOR",
             "name": "Norway",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Norway",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -28061,8 +28061,8 @@
         {
             "id": "NZL",
             "name": "New Zealand",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "New Zealand",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -28345,8 +28345,8 @@
         {
             "id": "OMN",
             "name": "Oman",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Oman",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -28831,8 +28831,8 @@
         {
             "id": "PAN",
             "name": "Panama",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Panama",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -30203,8 +30203,8 @@
         {
             "id": "POL",
             "name": "Poland",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Poland",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -30397,8 +30397,8 @@
         {
             "id": "PRI",
             "name": "Puerto Rico",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Puerto Rico",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -30633,8 +30633,8 @@
         {
             "id": "PRT",
             "name": "Portugal",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Portugal",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -30925,8 +30925,8 @@
         {
             "id": "QAT",
             "name": "Qatar",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Qatar",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -30975,8 +30975,8 @@
         {
             "id": "ROU",
             "name": "Romania",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Romania",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -33687,8 +33687,8 @@
         {
             "id": "-99",
             "name": "Western Sahara",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Western Sahara",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -33813,8 +33813,8 @@
         {
             "id": "SAU",
             "name": "Saudi Arabia",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Saudi Arabia",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -35293,8 +35293,8 @@
         {
             "id": "-99",
             "name": "Somaliland",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Somaliland",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -35561,8 +35561,8 @@
         {
             "id": "SRB",
             "name": "Republic of Serbia",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Republic of Serbia",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -35877,8 +35877,8 @@
         {
             "id": "SVK",
             "name": "Slovakia",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Slovakia",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -36023,8 +36023,8 @@
         {
             "id": "SVN",
             "name": "Slovenia",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Slovenia",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -36109,8 +36109,8 @@
         {
             "id": "SWE",
             "name": "Sweden",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Sweden",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -37477,8 +37477,8 @@
         {
             "id": "TLS",
             "name": "East Timor",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "East Timor",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -37535,8 +37535,8 @@
         {
             "id": "TTO",
             "name": "Trinidad and Tobago",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Trinidad and Tobago",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -38007,8 +38007,8 @@
         {
             "id": "TWN",
             "name": "Taiwan",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Taiwan",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -38795,8 +38795,8 @@
         {
             "id": "URY",
             "name": "Uruguay",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "Uruguay",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
@@ -38893,8 +38893,8 @@
         {
             "id": "USA",
             "name": "United States of America",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "United States of America",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "MultiPolygon",
@@ -41591,8 +41591,8 @@
         {
             "id": "PSE",
             "name": "West Bank",
-            "recipient_country": null,
-            "dah_22": 999.0,
+            "recipient_country": "West Bank",
+            "dah_22": 0.0,
             "type": "Feature",
             "geometry": {
                 "type": "Polygon",
