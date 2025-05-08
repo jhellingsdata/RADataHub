@@ -1,0 +1,398 @@
+{
+  "title": {
+    "text": "‘Do you support or oppose retaliatory tariffs on US goods?’",
+    "subtitle": [
+      "Poll of 9,452 adults in Denmark, Sweden, Spain, France, Great Britain, Germany and Italy",
+      "Source: YouGov 2025"
+    ],
+    "anchor": "start",
+    "frame": "group",
+    "fontSize": 22,
+    "font": "Circular Std",
+    "subtitleFont": "Circular Std",
+    "subtitleFontSize": 13,
+    "subtitleColor": "#676A86",
+    "subtitlePadding": 5,
+    "color": "#243B5A"
+  },
+  "config": {
+    "font": "Circular Std",
+    "mark": {"line": {"interpolate": "monotone"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": false,
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.7,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "layer": [
+    {
+      "data": {"name": "data-082483d47a46b4ed220a059266a5a4ef"},
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {
+          "field": "Response",
+          "legend": {
+            "orient": "top",
+            "title": "",
+            "values": [
+              "Strongly support",
+              "Somewhat support",
+              "Don't know",
+              "Somewhat oppose",
+              "Strongly oppose"
+            ]
+          },
+          "scale": {
+            "domain": [
+              "Strongly oppose",
+              "Somewhat oppose",
+              "Don't know",
+              "Somewhat support",
+              "Strongly support"
+            ],
+            "range": ["#E6224B", "#F58A9D", "#C9C9C9", "#A0DDDB", "#36B7B4"]
+          },
+          "type": "nominal"
+        },
+        "order": {
+          "field": "response_order",
+          "sort": "descending",
+          "type": "ordinal"
+        },
+        "x": {
+          "axis": {"format": "%"},
+          "field": "value",
+          "title": null,
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Country",
+          "sort": {"field": "country_order", "order": "descending"},
+          "title": null,
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {"name": "data-0b9635549045b9e552e2a6a33bee687b"},
+      "mark": {
+        "type": "rule",
+        "color": "#676A86",
+        "strokeDash": [3, 5],
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "axis": {"format": "%"},
+          "field": "x",
+          "title": null,
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "height": 250,
+  "width": 420,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-082483d47a46b4ed220a059266a5a4ef": [
+      {
+        "Country": "Great Britain",
+        "Response": "Strongly support",
+        "value": 0.41,
+        "response_order": 4,
+        "country_order": 2
+      },
+      {
+        "Country": "France",
+        "Response": "Strongly support",
+        "value": 0.4163,
+        "response_order": 4,
+        "country_order": 3
+      },
+      {
+        "Country": "Germany",
+        "Response": "Strongly support",
+        "value": 0.37,
+        "response_order": 4,
+        "country_order": 1
+      },
+      {
+        "Country": "Denmark",
+        "Response": "Strongly support",
+        "value": 0.51,
+        "response_order": 4,
+        "country_order": 6
+      },
+      {
+        "Country": "Sweden",
+        "Response": "Strongly support",
+        "value": 0.46,
+        "response_order": 4,
+        "country_order": 5
+      },
+      {
+        "Country": "Spain",
+        "Response": "Strongly support",
+        "value": 0.43,
+        "response_order": 4,
+        "country_order": 4
+      },
+      {
+        "Country": "Italy",
+        "Response": "Strongly support",
+        "value": 0.31,
+        "response_order": 4,
+        "country_order": 0
+      },
+      {
+        "Country": "Great Britain",
+        "Response": "Somewhat support",
+        "value": 0.3,
+        "response_order": 3,
+        "country_order": 2
+      },
+      {
+        "Country": "France",
+        "Response": "Somewhat support",
+        "value": 0.2559,
+        "response_order": 3,
+        "country_order": 3
+      },
+      {
+        "Country": "Germany",
+        "Response": "Somewhat support",
+        "value": 0.31,
+        "response_order": 3,
+        "country_order": 1
+      },
+      {
+        "Country": "Denmark",
+        "Response": "Somewhat support",
+        "value": 0.28,
+        "response_order": 3,
+        "country_order": 6
+      },
+      {
+        "Country": "Sweden",
+        "Response": "Somewhat support",
+        "value": 0.27,
+        "response_order": 3,
+        "country_order": 5
+      },
+      {
+        "Country": "Spain",
+        "Response": "Somewhat support",
+        "value": 0.27,
+        "response_order": 3,
+        "country_order": 4
+      },
+      {
+        "Country": "Italy",
+        "Response": "Somewhat support",
+        "value": 0.25,
+        "response_order": 3,
+        "country_order": 0
+      },
+      {
+        "Country": "Great Britain",
+        "Response": "Don't know",
+        "value": 0.18,
+        "response_order": 2,
+        "country_order": 2
+      },
+      {
+        "Country": "France",
+        "Response": "Don't know",
+        "value": 0.1592,
+        "response_order": 2,
+        "country_order": 3
+      },
+      {
+        "Country": "Germany",
+        "Response": "Don't know",
+        "value": 0.15,
+        "response_order": 2,
+        "country_order": 1
+      },
+      {
+        "Country": "Denmark",
+        "Response": "Don't know",
+        "value": 0.12,
+        "response_order": 2,
+        "country_order": 6
+      },
+      {
+        "Country": "Sweden",
+        "Response": "Don't know",
+        "value": 0.15,
+        "response_order": 2,
+        "country_order": 5
+      },
+      {
+        "Country": "Spain",
+        "Response": "Don't know",
+        "value": 0.12,
+        "response_order": 2,
+        "country_order": 4
+      },
+      {
+        "Country": "Italy",
+        "Response": "Don't know",
+        "value": 0.21,
+        "response_order": 2,
+        "country_order": 0
+      },
+      {
+        "Country": "Great Britain",
+        "Response": "Somewhat oppose",
+        "value": 0.07,
+        "response_order": 1,
+        "country_order": 2
+      },
+      {
+        "Country": "France",
+        "Response": "Somewhat oppose",
+        "value": 0.09939999999999999,
+        "response_order": 1,
+        "country_order": 3
+      },
+      {
+        "Country": "Germany",
+        "Response": "Somewhat oppose",
+        "value": 0.12,
+        "response_order": 1,
+        "country_order": 1
+      },
+      {
+        "Country": "Denmark",
+        "Response": "Somewhat oppose",
+        "value": 0.06,
+        "response_order": 1,
+        "country_order": 6
+      },
+      {
+        "Country": "Sweden",
+        "Response": "Somewhat oppose",
+        "value": 0.07,
+        "response_order": 1,
+        "country_order": 5
+      },
+      {
+        "Country": "Spain",
+        "Response": "Somewhat oppose",
+        "value": 0.11,
+        "response_order": 1,
+        "country_order": 4
+      },
+      {
+        "Country": "Italy",
+        "Response": "Somewhat oppose",
+        "value": 0.13,
+        "response_order": 1,
+        "country_order": 0
+      },
+      {
+        "Country": "Great Britain",
+        "Response": "Strongly oppose",
+        "value": 0.04,
+        "response_order": 0,
+        "country_order": 2
+      },
+      {
+        "Country": "France",
+        "Response": "Strongly oppose",
+        "value": 0.0692,
+        "response_order": 0,
+        "country_order": 3
+      },
+      {
+        "Country": "Germany",
+        "Response": "Strongly oppose",
+        "value": 0.05,
+        "response_order": 0,
+        "country_order": 1
+      },
+      {
+        "Country": "Denmark",
+        "Response": "Strongly oppose",
+        "value": 0.03,
+        "response_order": 0,
+        "country_order": 6
+      },
+      {
+        "Country": "Sweden",
+        "Response": "Strongly oppose",
+        "value": 0.05,
+        "response_order": 0,
+        "country_order": 5
+      },
+      {
+        "Country": "Spain",
+        "Response": "Strongly oppose",
+        "value": 0.07,
+        "response_order": 0,
+        "country_order": 4
+      },
+      {
+        "Country": "Italy",
+        "Response": "Strongly oppose",
+        "value": 0.1,
+        "response_order": 0,
+        "country_order": 0
+      }
+    ],
+    "data-0b9635549045b9e552e2a6a33bee687b": [{"x": 0.5}]
+  }
+}

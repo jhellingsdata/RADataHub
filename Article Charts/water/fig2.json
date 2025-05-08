@@ -1,0 +1,129 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "projection": {"type": "naturalEarth1"},
+    "description": "",
+    "data": {
+      "url": "https://raw.githubusercontent.com/SamBickelBarlow/SamBickelBarlow.github.io/refs/heads/main/Project/Write_up/water_stress_map/water_stress_map_clean_data.csv"
+    },
+    "width": 600,
+    "height": 300,
+    "transform": [
+      {
+        "lookup": "ISO3",
+        "from": {
+          "key": "properties.ISO3",
+          "fields": ["type", "geometry", "properties"],
+          "data": {
+            "url": "https://raw.githubusercontent.com/mclass-user/mclass-user.github.io/refs/heads/main/maps/map_world.geojson",
+            "format": {"property": "features"}
+          }
+        }
+      }
+    ],
+    "layer": [
+      {
+        "mark": {
+          "type": "geoshape",
+          "stroke": "black",
+          "fill": "lightgrey",
+          "strokeWidth": 0.25
+        },
+        "encoding": {
+          "tooltip": [
+            {"field": "properties.COUNTRY", "title": "Country"}
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "geoshape",
+          "stroke": "black",
+          "strokeWidth": 0.25
+        },
+        "encoding": {
+          "color": {
+            "field": "Water Stress net change",
+            "type": "quantitative",
+            "scale": {
+              "domain": [-50, 0, 50],
+              "range": ["#2D4A9A", "#FFFFFF", "#D14C2F"]
+            },
+            "legend": {
+              "title": "water stress Δ",
+              "format": ".1f"
+            }
+          },
+          "tooltip": [
+            {"field": "properties.COUNTRY", "title": "Country"},
+            {"field": "Water Stress pct change", "title": "Pct change in water stress", "format": ".1%"},
+            {"field": "Water Stress net change", "title": "Net change in water stress", "format": ".1f"},
+            {"field": "Water Stress 2022", "title": "Water Stress Score in 2022", "format": ".1f"},
+            {"field": "Water Stress 2002", "title": "Water Stress Score in 2002", "format": ".1f"}
+          ]
+        }
+      }
+    ],
+    "config": {
+          "font": "Circular Std",
+          "view": {"stroke": "transparent"},
+          "range": {
+            "category": [
+              "#36B7B4",
+              "#E6224B",
+              "#F4C245",
+              "#0063AF",
+              "#00A767",
+              "#179FDB",
+              "#EB5C2E"
+            ]
+          },
+          "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+          "axis": {
+            "labelColor": "#676A86",
+            "labelFontSize": 11,
+            "labelFont": "Circular Std",
+            "labelOpacity": 0.7,
+            "tickColor": "#676A86",
+            "tickOpacity": 0.5,
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [2, 2],
+            "gridOpacity": 0.5,
+            "title": null,
+            "titleColor": "#676A86",
+            "titleOpacity": 0.8,
+            "tickSize": 4
+          },
+          "axisXDiscrete": {
+            "grid": false,
+            "labelAngle": 0,
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": null
+          },
+          "axisXTemporal": {"grid": false, "tickCount": 5},
+          "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+          "axisXQuantitative": {"grid": true},
+          "axisYQuantitative": {
+            "gridColor": "#676A86",
+            "gridDash": [1, 5],
+            "gridOpacity": 0.5,
+            "ticks": false,
+            "labelPadding": 5,
+            "tickCount": 5,
+            "titleAngle": 0,
+            "titleAlign": "left",
+            "titleBaseline": "bottom",
+            "titleX": 0,
+            "titleY": -5,
+            "format": "~s"
+          },
+          "legend": {
+            "titleColor": "#122b39",
+            "title": null,
+            "labelColor": "#122b39",
+            "labelFontSize": 11
+          }
+        }
+  }

@@ -1,0 +1,604 @@
+{
+    "data": [
+        {
+            "country": "Angola",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.1
+        },
+        {
+            "country": "Bangladesh",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.031
+        },
+        {
+            "country": "Brazil",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Central African Republic",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.8640000000000001
+        },
+        {
+            "country": "China",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Democratic Republic of the Congo",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.46799999999999997
+        },
+        {
+            "country": "Congo",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.691
+        },
+        {
+            "country": "Ethiopia",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.125
+        },
+        {
+            "country": "Gabon",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.581
+        },
+        {
+            "country": "Indonesia",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.13
+        },
+        {
+            "country": "India",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.04
+        },
+        {
+            "country": "Kenya",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.14300000000000002
+        },
+        {
+            "country": "Cambodia",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.16899999999999998
+        },
+        {
+            "country": "Liberia",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.23199999999999998
+        },
+        {
+            "country": "Lesotho",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.128
+        },
+        {
+            "country": "Myanmar",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.261
+        },
+        {
+            "country": "Mongolia",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.284
+        },
+        {
+            "country": "Mozambique",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.5760000000000001
+        },
+        {
+            "country": "Namibia",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.05
+        },
+        {
+            "country": "Nigeria",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.287
+        },
+        {
+            "country": "Pakistan",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.89
+        },
+        {
+            "country": "Philippines",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.237
+        },
+        {
+            "country": "Russian Federation",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Thailand",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.165
+        },
+        {
+            "country": "United Republic of Tanzania",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.317
+        },
+        {
+            "country": "Uganda",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.284
+        },
+        {
+            "country": "Viet Nam",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.11199999999999999
+        },
+        {
+            "country": "South Africa",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.318
+        },
+        {
+            "country": "Zambia",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.306
+        },
+        {
+            "country": "Zimbabwe",
+            "Funding Source": "The Global Fund",
+            "Percentage": 0.17800000000000002
+        },
+        {
+            "country": "Angola",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Bangladesh",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.06
+        },
+        {
+            "country": "Brazil",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Central African Republic",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.006
+        },
+        {
+            "country": "China",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.001
+        },
+        {
+            "country": "Democratic Republic of the Congo",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.107
+        },
+        {
+            "country": "Congo",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Ethiopia",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.175
+        },
+        {
+            "country": "Gabon",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.024
+        },
+        {
+            "country": "Indonesia",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.05
+        },
+        {
+            "country": "India",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.049
+        },
+        {
+            "country": "Kenya",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.049
+        },
+        {
+            "country": "Cambodia",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.19699999999999998
+        },
+        {
+            "country": "Liberia",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.002
+        },
+        {
+            "country": "Lesotho",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.059000000000000004
+        },
+        {
+            "country": "Myanmar",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.14
+        },
+        {
+            "country": "Mongolia",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Mozambique",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.282
+        },
+        {
+            "country": "Namibia",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.021
+        },
+        {
+            "country": "Nigeria",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.064
+        },
+        {
+            "country": "Pakistan",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.006999999999999999
+        },
+        {
+            "country": "Philippines",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.066
+        },
+        {
+            "country": "Russian Federation",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Thailand",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.0
+        },
+        {
+            "country": "United Republic of Tanzania",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.249
+        },
+        {
+            "country": "Uganda",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.322
+        },
+        {
+            "country": "Viet Nam",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.008
+        },
+        {
+            "country": "South Africa",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.132
+        },
+        {
+            "country": "Zambia",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.298
+        },
+        {
+            "country": "Zimbabwe",
+            "Funding Source": "International funding excl. Global Fund",
+            "Percentage": 0.034
+        },
+        {
+            "country": "Angola",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.9
+        },
+        {
+            "country": "Bangladesh",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.1
+        },
+        {
+            "country": "Brazil",
+            "Funding Source": "Domestic funding",
+            "Percentage": 1.0
+        },
+        {
+            "country": "Central African Republic",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.034
+        },
+        {
+            "country": "China",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.902
+        },
+        {
+            "country": "Democratic Republic of the Congo",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.027000000000000003
+        },
+        {
+            "country": "Congo",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.309
+        },
+        {
+            "country": "Ethiopia",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.098
+        },
+        {
+            "country": "Gabon",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.1
+        },
+        {
+            "country": "Indonesia",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.261
+        },
+        {
+            "country": "India",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.9109999999999999
+        },
+        {
+            "country": "Kenya",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.018000000000000002
+        },
+        {
+            "country": "Cambodia",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.163
+        },
+        {
+            "country": "Liberia",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Lesotho",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.09
+        },
+        {
+            "country": "Myanmar",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.047
+        },
+        {
+            "country": "Mongolia",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.614
+        },
+        {
+            "country": "Mozambique",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.142
+        },
+        {
+            "country": "Namibia",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.336
+        },
+        {
+            "country": "Nigeria",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.048
+        },
+        {
+            "country": "Pakistan",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.102
+        },
+        {
+            "country": "Philippines",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.34600000000000003
+        },
+        {
+            "country": "Russian Federation",
+            "Funding Source": "Domestic funding",
+            "Percentage": 1.0
+        },
+        {
+            "country": "Thailand",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.835
+        },
+        {
+            "country": "United Republic of Tanzania",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.125
+        },
+        {
+            "country": "Uganda",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.128
+        },
+        {
+            "country": "Viet Nam",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.051
+        },
+        {
+            "country": "South Africa",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.55
+        },
+        {
+            "country": "Zambia",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.297
+        },
+        {
+            "country": "Zimbabwe",
+            "Funding Source": "Domestic funding",
+            "Percentage": 0.017
+        },
+        {
+            "country": "Angola",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Bangladesh",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.8079999999999999
+        },
+        {
+            "country": "Brazil",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Central African Republic",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.096
+        },
+        {
+            "country": "China",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.09699999999999999
+        },
+        {
+            "country": "Democratic Republic of the Congo",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.39799999999999996
+        },
+        {
+            "country": "Congo",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Ethiopia",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.602
+        },
+        {
+            "country": "Gabon",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.295
+        },
+        {
+            "country": "Indonesia",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.5589999999999999
+        },
+        {
+            "country": "India",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Kenya",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.7909999999999999
+        },
+        {
+            "country": "Cambodia",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.47
+        },
+        {
+            "country": "Liberia",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.7659999999999999
+        },
+        {
+            "country": "Lesotho",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.722
+        },
+        {
+            "country": "Myanmar",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.552
+        },
+        {
+            "country": "Mongolia",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.102
+        },
+        {
+            "country": "Mozambique",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Namibia",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.594
+        },
+        {
+            "country": "Nigeria",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.6
+        },
+        {
+            "country": "Pakistan",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Philippines",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.35100000000000003
+        },
+        {
+            "country": "Russian Federation",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Thailand",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.0
+        },
+        {
+            "country": "United Republic of Tanzania",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.308
+        },
+        {
+            "country": "Uganda",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.266
+        },
+        {
+            "country": "Viet Nam",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.828
+        },
+        {
+            "country": "South Africa",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.0
+        },
+        {
+            "country": "Zambia",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.099
+        },
+        {
+            "country": "Zimbabwe",
+            "Funding Source": "Funding Gap",
+            "Percentage": 0.7709999999999999
+        }
+    ]
+}

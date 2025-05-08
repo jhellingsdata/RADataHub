@@ -1,0 +1,141 @@
+{
+    "config": {
+        "font": "Circular Std",
+        "mark": {
+            "line": {
+                "interpolate": "monotone"
+            }
+        },
+        "view": {
+            "stroke": "transparent"
+        },
+        "range": {
+            "category": [
+                "#36B7B4",
+                "#E6224B",
+                "#F4C245",
+                "#0063AF",
+                "#00A767",
+                "#179FDB",
+                "#EB5C2E"
+            ],
+            "diverging": [
+                "#E6224B",
+                "#E54753",
+                "#C9C9C9",
+                "#179FDB",
+                "#122B39"
+            ],
+            "heatmap": [
+                "#C9C9C9",
+                "#179FDB",
+                "#0063AF",
+                "#122B39"
+            ],
+            "ordinal": [
+                "#00A767",
+                "#36B7B4",
+                "#179FDB",
+                "#0063AF",
+                "#243B5A"
+            ]
+        },
+        "axisX": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "grid": false,
+            "labelAngle": 0,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "orient": "bottom",
+            "tickColor": "#676A86",
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": false,
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleY": -15
+        },
+        "axisY": {
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [
+                1,
+                5
+            ],
+            "gridOpacity": 0.5,
+            "labelColor": "#676A86",
+            "labelOpacity": 0.7,
+            "labelPadding": 5,
+            "tickColor": "#676A86",
+            "tickCount": 8,
+            "tickOpacity": 0.5,
+            "ticks": false,
+            "titleAlign": "left",
+            "titleAngle": 0,
+            "titleBaseline": "bottom",
+            "titleColor": "#676A86",
+            "titleFontSize": 12,
+            "titleOpacity": 0.8,
+            "titleX": 0,
+            "titleY": -7
+        }
+    },
+    "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/aid/dah_map.json",
+        "format": {
+            "type": "json",
+            "property": "data"
+        }
+    },
+    "mark": {
+        "type": "geoshape"
+    },
+    "encoding": {
+        "color": {
+            "condition": {
+                "test": "(datum.dah_22 === 0.0)",
+                "value": "grey"
+            },
+            "field": "dah_22",
+            "legend": {
+                "direction": "horizontal",
+                "orient": "top-left",
+                "format":"~s"
+            },
+            "scale": {
+                "domain": [
+                    100,
+                    1500000
+                ],
+                "scheme": "viridis",
+                "reverse": true
+            },
+            "title": "Assistance (2022 USD)",
+            "type": "quantitative"
+        },
+        "tooltip": [
+            {
+                "field": "recipient_country",
+                "type": "nominal",
+                "title": "Recipient"
+            },
+            {
+                "field": "dah_22",
+                "type": "quantitative",
+                "title": "Assistance",
+                "format": "$,"
+            }
+        ]
+    },
+    "projection": {
+        "type": "naturalEarth1"
+    },
+    "width": 600,
+    "height": 400,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json"
+}

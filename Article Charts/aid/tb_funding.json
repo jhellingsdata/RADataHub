@@ -1,0 +1,151 @@
+{
+    "config": {
+      "font": "Circular Std",
+      "mark": {"line": {"interpolate": "monotone"}},
+      "view": {"stroke": "transparent"},
+      "range": {
+        "category": [
+          "#36B7B4",     
+          "#0063AF",
+          "#F4C245",
+          "#E6224B",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ],
+        "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+        "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+        "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+      },
+      "axisX": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "grid": false,
+        "labelAngle": 0,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "orient": "bottom",
+        "tickColor": "#676A86",
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": false,
+        "titleAlign": "center",
+        "titleAnchor": "middle",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleY": -15
+      },
+      "axisY": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "labelPadding": 5,
+        "tickColor": "#676A86",
+        "tickCount": 8,
+        "tickOpacity": 0.5,
+        "ticks": false,
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleX": 0,
+        "titleY": -7
+      }
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/aid/tb_data.json",
+      "format": {"type": "json", "property": "data"}
+    },
+    "mark": {"type": "bar"},
+    "encoding": {
+      "color": {
+        "field": "Funding Source",
+        "legend": {"direction": "horizontal", "orient": "top", "title": null},
+        "scale": {
+          "domain": [
+            "The Global Fund",
+            "International funding excl. Global Fund",
+            "Domestic funding",
+            "Funding Gap"
+          ]
+        },
+        "type": "nominal"
+      },
+      "order": {
+        "field": "Funding Source",
+        "sort": "descending",
+        "type": "ordinal"
+      },
+      "x": {
+        "axis": {"format": "%"},
+        "field": "Percentage",
+        "type": "quantitative",
+        "scale": {"domain": [0, 1]}
+      },
+      "y": {
+        "field": "country",
+        "sort": [
+          "Pakistan",
+          "Central African Republic",
+          "Congo",
+          "Gabon",
+          "Mozambique",
+          "Democratic Republic of the Congo",
+          "South Africa",
+          "United Republic of Tanzania",
+          "Zambia",
+          "Nigeria",
+          "Mongolia",
+          "Uganda",
+          "Myanmar",
+          "Philippines",
+          "Liberia",
+          "Zimbabwe",
+          "Cambodia",
+          "Thailand",
+          "Kenya",
+          "Indonesia",
+          "Lesotho",
+          "Ethiopia",
+          "Viet Nam",
+          "Angola",
+          "Namibia",
+          "India",
+          "Bangladesh",
+          "China",
+          "Brazil",
+          "Russian Federation"
+        ],
+        "title": null,
+        "type": "nominal"
+      },
+      "tooltip": [
+    {
+      "field": "country",
+      "type": "nominal",
+      "title": "Country"
+    },
+    {
+      "field": "Funding Source",
+      "type": "nominal",
+      "title": "Source"
+    },
+    {
+      "field": "Percentage",
+      "type": "quantitative",
+      "title": "Percentage",
+      "format": ".1%"
+    }
+  ]
+    },
+    "height": 400,
+    "width": 600,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json"
+  }

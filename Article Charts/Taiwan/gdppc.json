@@ -1,0 +1,170 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "description": "GDP per capita comparison between Taiwan and G20 Average",
+    "data": {"url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/Taiwan/gdp_taiwan.csv"},
+    "transform": [
+      {"filter": "toDate(datum.Year) >= toDate('2000-01-01')"},
+      {"pivot": "Country", "value": "GDP per capita", "groupby": ["Year"]}
+    ],
+    "height": 400,
+    "width": 600,
+    "layer": [
+      {
+        "transform": [{"fold": ["Taiwan", "G20 Average"], "as": ["Country", "GDP per capita"]}],
+        "encoding": {
+          "x": {
+            "field": "Year", 
+            "type": "temporal",
+            "axis": {"grid": false, "tickCount": 4}
+          },
+          "y": {
+            "field": "GDP per capita", 
+            "type": "quantitative",
+            "title": "GDP per capita, current prices"
+          },
+          "color": {
+            "field": "Country",
+            "type": "nominal",
+            "legend": {"title": null},
+            "scale": {"domain": [ "G20 Average","Taiwan"]}
+          },
+          "tooltip": [
+            {
+              "field": "Year",
+              "type": "temporal",
+              "title": "Year",
+              "format":"%Y"
+            },
+            {
+              "field": "G20 Average",
+              "type": "quantitative",
+              "title": "G20 Average",
+              "format": "$,.0f"
+            },
+            {
+              "field": "Taiwan",
+              "type": "quantitative",
+              "title": "Taiwan",
+              "format": "$,.0f"
+            }
+          ]
+        },
+        "layer": [
+          {"mark": {"type": "line", "strokeWidth": 2.5}},
+          {
+            "transform": [{"filter": {"param": "hover", "empty": false}}],
+            "mark": {"type": "point", "size": 100, "filled": true}
+          }
+        ]
+      },
+      {
+        "mark": "rule",
+        "encoding": {
+          "x": {"field": "Year", "type": "temporal"},
+          "opacity": {
+            "condition": {"value": 0.3, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {
+              "field": "Year",
+              "type": "temporal",
+              "title": "Year",
+              "format":"%Y"
+            },
+            {
+              "field": "G20 Average",
+              "type": "quantitative",
+              "title": "G20 Average",
+              "format": "$,.0f"
+            },
+            {
+              "field": "Taiwan",
+              "type": "quantitative",
+              "title": "Taiwan",
+              "format": "$,.0f"
+            }
+          ]
+        },
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["Year"],
+              "nearest": true,
+              "on": "pointerover",
+              "clear": "pointerout"
+            }
+          }
+        ]
+      }
+    ],
+    "config": {
+        "font": "Circular Std",
+        "view": {"stroke": "transparent"},
+        "range": {
+          "category": [
+            "#36B7B4",
+            "#E6224B",
+            "#F4C245",
+            "#0063AF",
+            "#00A767",
+            "#179FDB",
+            "#EB5C2E"
+          ]
+        },
+        "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+        "axis": {
+          "labelColor": "#676A86",
+          "labelFontSize": 11,
+          "labelFont": "Circular Std",
+          "labelOpacity": 0.7,
+          "tickColor": "#676A86",
+          "tickOpacity": 0.5,
+          "domainColor": "#676A86",
+          "domainOpacity": 0.5,
+          "gridColor": "#676A86",
+          "gridDash": [2, 2],
+          "gridOpacity": 0.5,
+          "title": null,
+          "titleColor": "#676A86",
+          "titleOpacity": 0.8,
+          "tickSize": 4
+        },
+        "axisXDiscrete": {
+          "grid": false,
+          "labelAngle": 0,
+          "tickCount": 10,
+          "tickOpacity": 0.5,
+          "title": null
+        },
+        "axisXTemporal": {
+          "grid": false,
+          "tickCount": 5
+        },
+        "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+        "axisXQuantitative": {"grid": true},
+        "axisYQuantitative": {
+          "gridColor": "#676A86",
+          "gridDash": [1, 5],
+          "gridOpacity": 0.5,
+          "ticks": false,
+          "labelPadding": 5,
+          "tickCount": 8,
+          "titleAngle": 0,
+          "titleAlign": "left",
+          "titleBaseline": "bottom",
+          "titleX": 0,
+          "titleY": -5,
+          "format": "~s"
+        },
+        "legend": {
+          "titleColor": "#122b39",
+          "title": null,
+          "labelColor": "#122b39",
+          "labelFontSize": 11
+        }
+      }
+  }
+  

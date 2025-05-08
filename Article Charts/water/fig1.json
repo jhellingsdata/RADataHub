@@ -1,0 +1,174 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Monthly Data Trends by Year with gradient legend",
+    "width": 500,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/SamBickelBarlow/SamBickelBarlow.github.io/refs/heads/main/Project/Write_up/TWS/TWS_raw_data.csv"
+    },
+  
+        "transform": [
+      {
+        "filter": "datum.value != ''"
+      },
+      {
+        "calculate": "split(datum.date, '-')[0]",
+        "as": "year"
+      },
+      {
+        "calculate": "toNumber(split(datum.date, '-')[0])",
+        "as": "yearNum"
+      },
+      {
+        "calculate": "split(datum.date, '-')[1]",
+        "as": "month"
+      },
+      {
+        "lookup": "month",
+        "from": {
+          "data": {
+            "values": [
+              {"month": "01", "month_name": "January"},
+              {"month": "02", "month_name": "February"},
+              {"month": "03", "month_name": "March"},
+              {"month": "04", "month_name": "April"},
+              {"month": "05", "month_name": "May"},
+              {"month": "06", "month_name": "June"},
+              {"month": "07", "month_name": "July"},
+              {"month": "08", "month_name": "August"},
+              {"month": "09", "month_name": "September"},
+              {"month": "10", "month_name": "October"},
+              {"month": "11", "month_name": "November"},
+              {"month": "12", "month_name": "December"}
+            ]
+          },
+          "key": "month",
+          "fields": ["month_name"]
+        }
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "month_name",
+        "type": "ordinal",
+        "title": "",
+        "sort": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ],
+        "axis": {
+          "labelAngle": -45
+        }
+      },
+      "y": {
+        "field": "value", 
+        "type": "quantitative", 
+        "title": "Difference from 2003-2006 average",
+        "axis": {
+          "titleFontSize": 10,
+          "titleAngle": 0,
+          "titlePadding": 80
+        }
+      },
+      "color": {
+        "field": "yearNum",
+        "type": "quantitative",
+        "scale": {
+          "scheme": "blues",
+          "domain": [2002, 2024]
+        },
+        "legend": {
+          "gradientOpacity": 1,
+          "type": "gradient",
+          "direction": "horizontal",
+          "gradientLength": 200,
+          "gradientThickness": 15,
+          "format": "d",
+          "values": [2002, 2024]
+        },
+        "title": ""
+      },
+      "tooltip": [
+        {"field": "year", "type": "nominal", "title": "Year"},
+        {"field": "month_name", "type": "ordinal", "title": "Month"},
+        {"field": "value", "type": "quantitative", "title": "Storage value", "format": ".2f"}
+      ]
+    },
+    "mark": {
+      "type": "line",
+      "point": true
+    },
+    "config": {
+      "font": "Circular Std",
+      "view": {"stroke": "transparent"},
+      "range": {
+        "category": [
+          "#36B7B4",
+          "#E6224B",
+          "#F4C245",
+          "#0063AF",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ]
+      },
+      "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Circular Std",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [2, 2],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXDiscrete": {
+        "grid": false,
+        "labelAngle": 0,
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "axisXTemporal": {"grid": false, "tickCount": 5},
+      "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+      "axisXQuantitative": {"grid": true},
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 5,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5,
+        "format": "~s"
+      },
+      "legend": {
+        "titleColor": "#122b39",
+        "title": null,
+        "labelColor": "#122b39",
+        "labelFontSize": 11
+      }
+    }
+  }
