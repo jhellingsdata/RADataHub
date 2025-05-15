@@ -1,0 +1,91 @@
+{
+    "cacheTime": "2025-05-01T09:33:31.2852285+00:00",
+    "agr": "1w",
+    "span": "10y",
+    "allow_intraday": false,
+    "allow_interval": null,
+    "isIntraday": false,
+    "chartFrequency": "yearly",
+    "series": [
+        {
+            "symbol": "CHINAGDPDEF:TE",
+            "name": "CN GDP Deflator",
+            "shortname": "CN GDP Deflator",
+            "full_name": "China GDP Deflator",
+            "data": [
+                [
+                    1451520000,
+                    621.686,
+                    null,
+                    null
+                ],
+                [
+                    1483142400,
+                    630.435,
+                    null,
+                    null
+                ],
+                [
+                    1514678400,
+                    657.119,
+                    null,
+                    null
+                ],
+                [
+                    1546214400,
+                    680.117,
+                    null,
+                    null
+                ],
+                [
+                    1577750400,
+                    688.868,
+                    null,
+                    null
+                ],
+                [
+                    1609372800,
+                    692.261,
+                    null,
+                    null
+                ],
+                [
+                    1640908800,
+                    723.774,
+                    null,
+                    null
+                ],
+                [
+                    1672444800,
+                    736.699,
+                    null,
+                    null
+                ]
+            ],
+            "unit": null,
+            "decimals": null,
+            "frequency": "yearly",
+            "type": "te",
+            "allowed_candles": true,
+            "supported_resolutions": null,
+            "timezone": null,
+            "has_daily": false,
+            "allowed_interval": null,
+            "value": null,
+            "converted_value": null,
+            "last": null,
+            "ticker": null,
+            "description": null,
+            "has_weekly_and_monthly": false,
+            "has_no_volume": false,
+            "has_intraday": false,
+            "industry": null,
+            "minmov": null,
+            "sector": null,
+            "pricescale": 0.0,
+            "minmov2": 0.0,
+            "ieconomics_url": null,
+            "chart_type": null
+        }
+    ]
+}
