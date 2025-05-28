@@ -1,0 +1,187 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Single time series with interactive features.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/regions/fig2.csv"
+  },
+  "height": 400,
+  "width": 600,
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": {"grid": false},
+          "title": null
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Average speed of regional convergence",
+          "axis": {"format": ".0%"}
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Year",
+            "timeUnit": "year"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Average speed of regional convergence",
+            "format": ".0%"
+          }
+        ]
+      },
+      "layer": [
+        {"mark": {"type": "line", "strokeWidth": 2.5, "color": "#36B7B4"}},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": {"type": "point", "size": 100, "filled": true}
+        }
+      ]
+    },
+    {
+      "transform": [
+        {"aggregate": [{"op": "argmax", "field": "date", "as": "last_point"}]},
+        {"calculate": "datum.last_point.date", "as": "last_date"},
+        {"calculate": "datum.last_point.value", "as": "last_value"}
+      ],
+      "encoding": {
+        "x": {"field": "last_date", "type": "temporal"},
+        "y": {
+          "field": "last_value",
+          "type": "quantitative",
+          "axis": {"format": ".0%"}
+        }
+      },
+      "layer": [
+        {"mark": {"type": "point", "size": 100, "filled": true}},
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 8,
+            "fontSize": 11,
+            "fontWeight": "bold",
+            "color": "#36B7B4"
+          },
+          "encoding": {
+            "text": {
+              "field": "last_value",
+              "type": "quantitative",
+              "format": ".0%"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "x": {"field": "date", "type": "temporal"},
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Year",
+            "timeUnit": "year"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Average speed of regional convergence",
+            "format": ".0%"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["date"],
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "font": "Circular Std",
+    "view": {"stroke": "transparent"},
+    "title": {"anchor": "start", "subtitleColor": "#676A86"},
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "legend": {
+      "orient": "none",
+      "direction": "horizontal",
+      "legendX": 0,
+      "legendY": -15,
+      "titleOrient": "left",
+      "titleColor": "#676A86",
+      "titleOpacity": 0.9
+    },
+    "axisX": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "grid": false,
+      "labelAngle": 0,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.9,
+      "orient": "bottom",
+      "tickColor": "#676A86",
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "titleAlign": "center",
+      "titleAnchor": "middle",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleY": -15
+    },
+    "axisY": {
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelColor": "#676A86",
+      "labelOpacity": 0.9,
+      "labelPadding": 5,
+      "tickColor": "#676A86",
+      "tickCount": 8,
+      "tickOpacity": 0.5,
+      "ticks": false,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#676A86",
+      "titleFontSize": 12,
+      "titleOpacity": 0.8,
+      "titleX": 0,
+      "titleY": -7
+    }
+  }
+}
