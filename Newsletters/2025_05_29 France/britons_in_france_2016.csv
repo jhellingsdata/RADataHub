@@ -1,0 +1,1668 @@
+﻿id,name,nominal,pct
+01004,Ambérieu-en-Bugey,29 ,0.1
+01033,Valserhône,95 ,0.3
+01034,Belley,62 ,0.2
+01053,Bourg-en-Bresse,41 ,0.0
+01093,Châtillon-sur-Chalaronne,< 20,0.0
+01134,Crottet - Pont-de-Veyle,< 20,0.0
+01143,Divonne-les-Bains,356 ,3.5
+01173,Gex,717 ,2.8
+01185,Plateau d'Hauteville,< 20,0.1
+01202,Lagnieu,< 20,0.0
+01244,Meximieux,< 20,0.0
+01266,Montrevel-en-Bresse,20 ,0.1
+01269,Nantua,< 20,0.0
+01283,Oyonnax,< 20,0.0
+01305,Pont-de-Vaux,< 20,0.0
+01333,Saint-André-de-Corcy,< 20,0.1
+01348,Saint-Didier-sur-Chalaronne - Thoissey,< 20,0.0
+01443,Villars-les-Dombes,< 20,0.0
+01457,Vonnas,< 20,0.0
+02018,Pinon,< 20,0.0
+02095,Bohain-en-Vermandois,< 20,0.0
+02141,La Capelle,< 20,0.1
+02163,Charly-sur-Marne,< 20,0.0
+02168,Château-Thierry,24 ,0.1
+02173,Chauny,< 20,0.0
+02305,Fère-en-Tardenois,< 20,0.1
+02361,Guise,< 20,0.0
+02381,Hirson,< 20,0.0
+02408,Laon,< 20,0.0
+02468,Marle,< 20,0.0
+02558,Le Nouvion-en-Thiérache,< 20,0.0
+02691,Saint-Quentin,22 ,0.0
+02722,Soissons,< 20,0.0
+02738,Tergnier,< 20,0.0
+02789,Vervins,< 20,0.0
+02795,Vic-sur-Aisne,< 20,0.1
+02810,Villers-Cotterêts,< 20,0.1
+03036,Bourbon-l'Archambault,27 ,0.4
+03082,Commentry,< 20,0.1
+03084,Cosne-d'Allier,36 ,0.4
+03102,Dompierre-sur-Besbre,< 20,0.1
+03118,Gannat,51 ,0.2
+03138,Lapalisse,< 20,0.1
+03165,Le Mayet-de-Montagne,< 20,0.2
+03185,Montluçon,43 ,0.1
+03186,Montmarault,21 ,0.3
+03190,Moulins,33 ,0.1
+03236,Saint-Germain-des-Fossés,< 20,0.0
+03254,Saint-Pourçain-sur-Sioule,21 ,0.1
+03298,Varennes-sur-Allier,< 20,0.1
+03310,Vichy,44 ,0.1
+04019,Barcelonnette,< 20,0.2
+04039,Castellane,s,s
+04049,Château-Arnoux-Saint-Auban,< 20,0.1
+04070,Digne-les-Bains,33 ,0.1
+04088,Forcalquier,58 ,0.4
+04094,Gréoux-les-Bains,< 20,0.3
+04112,Manosque,116 ,0.3
+04143,Oraison,< 20,0.1
+04166,Riez,< 20,0.2
+04173,Saint-André-les-Alpes,22 ,0.4
+04209,Sisteron,< 20,0.1
+05006,L'Argentière-la-Bessée,35 ,0.5
+05023,Briançon,114 ,0.6
+05046,Embrun,< 20,0.1
+05061,Gap,29 ,0.0
+05065,Guillestre,< 20,0.1
+05070,Laragne-Montéglin,42 ,0.4
+05132,Saint-Bonnet-en-Champsaur,< 20,0.0
+05179,Veynes,32 ,0.3
+06083,Menton,465 ,0.6
+06088,Nice,4.796 ,0.5
+06099,Puget-Théniers,32 ,0.2
+06163,Tende,s,s
+07010,Annonay,< 20,0.0
+07019,Aubenas,95 ,0.1
+07042,Bourg-Saint-Andéol,< 20,0.2
+07064,Le Cheylard,< 20,0.1
+07129,Lamastre,21 ,0.2
+07186,Privas,< 20,0.1
+07201,Ruoms,< 20,0.1
+07204,Saint-Agrève,s,s
+07324,Tournon-sur-Rhône,24 ,0.1
+07330,Vallon-Pont-d'Arc,46 ,0.6
+07334,Les Vans,24 ,0.2
+07338,Vernoux-en-Vivarais,< 20,0.1
+07349,La Voulte-sur-Rhône,< 20,0.1
+08090,Carignan,< 20,0.0
+08105,Charleville-Mézières,< 20,0.0
+08185,Fumay,< 20,0.0
+08190,Givet,< 20,0.0
+08302,Monthermé,< 20,0.0
+08328,Nouzonville,< 20,0.0
+08362,Rethel,< 20,0.0
+08363,Revin,< 20,0.0
+08367,Rocroi,s,s
+08409,Sedan,< 20,0.0
+08490,Vouziers,< 20,0.0
+08491,Vrigne-aux-Bois,< 20,0.0
+09032,Ax-les-Thermes,s,s
+09122,Foix,112 ,0.5
+09160,Lavelanet,307 ,1.5
+09167,Lézat-sur-Lèze,29 ,0.3
+09185,Mazères,78 ,0.8
+09194,Mirepoix,301 ,3.2
+09225,Pamiers,113 ,0.3
+09261,Saint-Girons,207 ,0.8
+09282,Saverdun,33 ,0.4
+09306,Tarascon-sur-Ariège,50 ,0.4
+10003,Aix-en-Othe,< 20,0.1
+10006,Arcis-sur-Aube,< 20,0.0
+10033,Bar-sur-Aube,< 20,0.0
+10034,Bar-sur-Seine,< 20,0.1
+10064,Brienne-le-Château,< 20,0.0
+10268,Nogent-sur-Seine,< 20,0.0
+10323,Romilly-sur-Seine,< 20,0.0
+10387,Troyes,32 ,0.0
+11049,Bram,274 ,1.5
+11069,Carcassonne,288 ,0.4
+11076,Castelnaudary,149 ,0.6
+11106,Coursan,28 ,0.2
+11129,Espéraza,266 ,3.4
+11202,Leucate,48 ,0.7
+11203,Lézignan-Corbières,622 ,1.4
+11206,Limoux,454 ,1.9
+11262,Narbonne,185 ,0.2
+11266,Port-la-Nouvelle,< 20,0.1
+11304,Quillan,299 ,3.3
+11315,Rieux-Minervois,312 ,2.3
+11379,Sigean,57 ,0.4
+11397,Trèbes,139 ,1.0
+12033,Bozouls,s,s
+12056,Baraqueville,< 20,0.1
+12089,Decazeville,55 ,0.3
+12094,Entraygues-sur-Truyère,s,s
+12096,Espalion,< 20,0.2
+12119,Laguiole,s,s
+12120,Laissac,< 20,0.1
+12138,Marcillac-Vallon,58 ,0.5
+12145,Millau,46 ,0.1
+12148,Montbazens,28 ,0.5
+12164,Mur-de-Barrez,< 20,0.2
+12169,Naucelle,39 ,0.6
+12185,Pont-de-Salars,< 20,0.2
+12197,Réquista,49 ,0.4
+12198,Rieupeyroux,111 ,1.7
+12199,Rignac,27 ,0.5
+12202,Rodez,< 20,0.0
+12208,Saint-Affrique,38 ,0.2
+12224,Saint-Geniez-d'Olt,s,s
+12270,Sévérac-le-Château,< 20,0.1
+12300,Villefranche-de-Rouergue,508 ,1.6
+13004,Arles,61 ,0.1
+13022,Cassis,< 20,0.2
+13035,Eyguières,< 20,0.1
+13037,La Fare-les-Oliviers,< 20,0.1
+13050,Lambesc,21 ,0.2
+13051,Lançon-Provence,< 20,0.1
+13053,Mallemort,< 20,0.1
+13055,Marseille - Aix-en-Provence,1.186 ,0.1
+13074,Peyrolles-en-Provence,< 20,0.1
+13078,Port-Saint-Louis-du-Rhône,< 20,0.0
+13084,La Roque-d'Anthéron,< 20,0.1
+13091,Saint-Cannat,35 ,0.3
+13097,Saint-Martin-de-Crau,< 20,0.0
+13100,Saint-Rémy-de-Provence,61 ,0.4
+13103,Salon-de-Provence,38 ,0.1
+13104,Sausset-les-Pins - Carry-le-Rouet,< 20,0.1
+13105,Sénas,< 20,0.1
+13119,Carnoux-en-Provence,< 20,0.1
+14020,Argences,< 20,0.0
+14027,Aunay-sur-Odon,40 ,0.4
+14047,Bayeux,98 ,0.2
+14118,Caen,189 ,0.1
+14174,Condé-en-Normandie,243 ,0.9
+14191,Courseulles-sur-Mer,< 20,0.1
+14225,Dives-sur-Mer,59 ,0.1
+14228,Douvres-la-Délivrande - Luc-sur-Mer,20 ,0.1
+14258,Falaise,129 ,0.4
+14333,Honfleur,51 ,0.3
+14342,Isigny-sur-Mer,< 20,0.2
+14366,Lisieux,43 ,0.1
+14370,Le Molay-Littry,45 ,0.5
+14371,Livarot-Pays-d'Auge,47 ,0.7
+14431,Mézidon-Canon,< 20,0.1
+14478,Orbec,42 ,0.3
+14488,Ouistreham,23 ,0.1
+14514,Pont-l'Évêque,< 20,0.2
+14654,Saint-Pierre-sur-Dives,36 ,0.3
+14689,Thury-Harcourt,34 ,0.3
+14712,Troarn,< 20,0.0
+14752,Villers-Bocage,49 ,0.2
+14762,Vire Normandie,420 ,1.2
+15014,Aurillac,76 ,0.1
+15119,Massiac,< 20,0.1
+15120,Mauriac,43 ,0.3
+15122,Maurs,61 ,0.5
+15138,Murat,< 20,0.1
+15162,Riom-ès-Montagnes,< 20,0.1
+15187,Saint-Flour,< 20,0.1
+16015,Angoulême,643 ,0.4
+16028,Barbezieux-Saint-Hilaire,244 ,1.3
+16070,Chabanais,471 ,6.2
+16073,Chalais,615 ,5.6
+16078,Champniers,32 ,0.2
+16085,Chasseneuil-sur-Bonnieure,449 ,4.8
+16090,Châteauneuf-sur-Charente,135 ,1.4
+16102,Cognac,220 ,0.5
+16106,Confolens,714 ,6.5
+16167,Jarnac,241 ,1.1
+16192,Terres-de-Haute-Charente,208 ,3.8
+16206,Mansle,399 ,3.7
+16223,Montbron,417 ,4.7
+16281,La Rochefoucauld-en-Angoumois,133 ,0.9
+16286,Rouillac,140 ,1.6
+16292,Ruffec,959 ,5.1
+17003,Aigrefeuille-d'Aunis,22 ,0.1
+17019,Ars-en-Ré,s,s
+17024,Aulnay,233 ,3.6
+17093,Le Château-d'Oléron,< 20,0.1
+17131,Cozes,100 ,0.8
+17140,Dolus-d'Oléron,s,s
+17161,La Flotte,22 ,0.2
+17168,Fouras,< 20,0.1
+17172,Gémozac,102 ,1.1
+17197,Jonzac,127 ,0.8
+17218,Marans,23 ,0.1
+17219,Marennes-Hiers-Brouage,< 20,0.1
+17224,Matha,359 ,2.9
+17240,Montendre,109 ,0.9
+17241,Montguyon,139 ,1.3
+17283,Pons,234 ,1.2
+17299,Rochefort,49 ,0.1
+17300,La Rochelle,187 ,0.1
+17306,Royan,85 ,0.2
+17347,Saint-Jean-d'Angély,321 ,1.4
+17385,Saint-Pierre-d'Oléron,< 20,0.1
+17397,Saint-Savinien,183 ,1.1
+17415,Saintes,190 ,0.3
+17421,Saujon,55 ,0.2
+17434,Surgères,126 ,0.4
+17452,La Tremblade,20 ,0.1
+18003,Les Aix-d'Angillon,< 20,0.1
+18015,Aubigny-sur-Nère,< 20,0.1
+18033,Bourges,64 ,0.1
+18057,Châteaumeillant,138 ,1.4
+18087,Dun-sur-Auron,< 20,0.1
+18108,La Guerche-sur-l'Aubois,< 20,0.0
+18109,Henrichemont,s,s
+18141,Mehun-sur-Yèvre,< 20,0.1
+18197,Saint-Amand-Montrond,41 ,0.1
+18207,Saint-Florent-sur-Cher,< 20,0.0
+18241,Sancerre,< 20,0.1
+18242,Sancoins,50 ,0.6
+18279,Vierzon,46 ,0.1
+19005,Allassac,< 20,0.0
+19010,Argentat,121 ,1.3
+19019,Beaulieu-sur-Dordogne,s,s
+19028,Bort-les-Orgues,< 20,0.1
+19031,Brive-la-Gaillarde,73 ,0.1
+19073,Égletons,54 ,0.4
+19121,Lubersac,159 ,1.9
+19136,Meymac,s,s
+19138,Meyssac,76 ,1.3
+19148,Neuvic,s,s
+19153,Objat,125 ,0.9
+19269,Treignac,156 ,3.1
+19272,Tulle,62 ,0.2
+19275,Ussel,35 ,0.2
+19276,Uzerche,237 ,1.4
+2A004,Ajaccio,33 ,0.0
+2A130,Grosseto-Prugna,< 20,0.1
+2A247,Porto-Vecchio,< 20,0.0
+2A249,Propriano,< 20,0.0
+2B033,Bastia,< 20,0.0
+2B050,Calvi,39 ,0.2
+2B096,Corte,< 20,0.0
+2B123,Ghisonaccia,< 20,0.0
+2B207,Penta-di-Casinca,< 20,0.0
+21023,Arnay-le-Duc,32 ,0.4
+21038,Auxonne,< 20,0.1
+21054,Beaune,80 ,0.2
+21154,Châtillon-sur-Seine,67 ,0.3
+21231,Dijon,198 ,0.1
+21292,Genlis,< 20,0.0
+21317,Is-sur-Tille,< 20,0.1
+21425,Montbard,28 ,0.2
+21464,Nuits-Saint-Georges,24 ,0.1
+21501,Pouilly-en-Auxois,77 ,0.8
+21554,Saint-Jean-de-Losne,31 ,0.2
+21584,Saulieu,60 ,0.5
+21603,Semur-en-Auxois,55 ,0.4
+21607,Seurre,< 20,0.1
+21663,Venarey-les-Laumes,30 ,0.3
+22004,Bégard,170 ,0.9
+22007,Binic,33 ,0.2
+22020,Broons,197 ,1.6
+22025,Callac,602 ,7.8
+22046,Le Mené,171 ,2.4
+22050,Dinan,453 ,0.7
+22054,Erquy,s,s
+22070,Guingamp,263 ,0.7
+22093,Lamballe-Armor,119 ,0.3
+22113,Lannion,93 ,0.1
+22121,Lanvollon,24 ,0.3
+22136,Loudéac,555 ,1.5
+22143,Matignon,59 ,0.4
+22147,Merdrignac,201 ,3.0
+22162,Paimpol,58 ,0.2
+22172,Plancoët,145 ,0.9
+22186,Pléneuf-Val-André,< 20,0.1
+22194,Plestin-les-Grèves,134 ,0.9
+22203,Ploeuc-sur-Lié,55 ,0.9
+22206,Châtelaudren-Plouagat,21 ,0.2
+22207,Plouaret,43 ,0.7
+22222,Plouha,< 20,0.2
+22251,Pordic,< 20,0.1
+22262,Quintin,75 ,0.4
+22266,Rostrenen,945 ,4.7
+22278,Saint-Brieuc,62 ,0.1
+22362,Tréguier,84 ,0.5
+23008,Aubusson,337 ,1.5
+23013,Auzances,127 ,1.4
+23030,Bourganeuf,300 ,3.3
+23031,Boussac,184 ,2.1
+23075,Dun-le-Palestel,186 ,3.1
+23076,Évaux-les-Bains,105 ,1.4
+23096,Guéret,359 ,0.9
+23176,La Souterraine,747 ,3.3
+24035,Belvès,159 ,2.3
+24037,Bergerac,909 ,1.1
+24064,Brantôme,220 ,2.0
+24067,Le Bugue,364 ,2.8
+24164,Excideuil,354 ,2.7
+24167,Eymet,851 ,9.0
+24223,Lalinde,413 ,2.7
+24291,Montignac,176 ,1.8
+24294,Montpon-Ménestérol,219 ,1.3
+24299,Mussidan,138 ,1.3
+24309,Neuvic,142 ,1.3
+24311,Nontron,838 ,5.2
+24322,Périgueux,149 ,0.2
+24352,Ribérac,1.223 ,4.8
+24354,La Roche-Chalais - Saint-Aigulin,193 ,2.1
+24372,Saint-Astier,58 ,0.4
+24396,Saint-Cyprien,s,s
+24520,Sarlat-la-Canéda,342 ,1.2
+24547,Terrasson-Lavilledieu,114 ,0.6
+24551,Thiviers,304 ,2.7
+24571,Vergt,40 ,0.8
+25047,Baume-les-Dames,< 20,0.0
+25056,Besançon,71 ,0.0
+25315,L'Isle-sur-le-Doubs,< 20,0.0
+25334,Levier,s,s
+25356,Maîche,< 20,0.0
+25388,Montbéliard,30 ,0.0
+25411,Morteau,< 20,0.0
+25434,Ornans,< 20,0.1
+25462,Pontarlier,23 ,0.0
+25463,Pont-de-Roide-Vermondans,< 20,0.0
+25527,Saint-Vit,< 20,0.0
+25532,Saône,< 20,0.0
+25578,Valdahon,< 20,0.0
+26037,Beaumont-lès-Valence,< 20,0.1
+26063,Buis-les-Baronnies,59 ,1.0
+26064,Chabeuil,< 20,0.0
+26108,Crest,48 ,0.2
+26113,Die,50 ,0.4
+26114,Dieulefit,28 ,0.4
+26116,Donzère,< 20,0.0
+26165,Livron-sur-Drôme,< 20,0.1
+26198,Montélimar,61 ,0.1
+26220,Nyons,67 ,0.5
+26235,Pierrelatte,< 20,0.0
+26281,Romans-sur-Isère,44 ,0.1
+26301,Saint-Donat-sur-l'Herbasse,< 20,0.0
+26307,Saint-Jean-en-Royans,< 20,0.1
+26324,Saint-Paul-Trois-Châteaux,26 ,0.2
+26325,Saint-Rambert-d'Albon,< 20,0.0
+26333,Saint-Vallier,< 20,0.0
+26362,Valence,47 ,0.0
+27016,Les Andelys,< 20,0.1
+27051,Beaumont-le-Roger,24 ,0.1
+27056,Bernay,44 ,0.2
+27103,Bourg-Achard,< 20,0.0
+27112,Breteuil,< 20,0.1
+27116,Brionne,23 ,0.1
+27165,Conches-en-Ouche,< 20,0.0
+27198,Mesnils-sur-Iton,< 20,0.0
+27226,Étrépagny,< 20,0.0
+27229,Évreux,25 ,0.0
+27230,Ézy-sur-Eure,20 ,0.1
+27246,Fleury-sur-Andelle,< 20,0.1
+27275,Gaillon,< 20,0.0
+27284,Gisors,< 20,0.0
+27375,Louviers,41 ,0.1
+27428,Le Neubourg,< 20,0.0
+27448,Pacy-sur-Eure,20 ,0.1
+27467,Pont-Audemer,127 ,0.2
+27469,Pont-de-l'Arche,< 20,0.0
+27493,Romilly-sur-Andelle,< 20,0.0
+27507,Saint-André-de-l'Eure,< 20,0.0
+27679,Verneuil-sur-Avre,22 ,0.1
+27681,Vernon,50 ,0.1
+28015,Auneau,< 20,0.0
+28051,Bonneval,< 20,0.0
+28061,Brou,< 20,0.1
+28085,Chartres,68 ,0.1
+28088,Châteaudun,< 20,0.1
+28089,Châteauneuf-en-Thymerais,< 20,0.0
+28103,Cloyes-sur-le-Loir,< 20,0.1
+28116,Courville-sur-Eure,< 20,0.1
+28134,Dreux,< 20,0.0
+28140,Épernon,58 ,0.3
+28196,Illiers-Combray,< 20,0.0
+28199,Janville,< 20,0.0
+28214,La Loupe,< 20,0.1
+28227,Maintenon,< 20,0.1
+28279,Nogent-le-Roi,< 20,0.1
+28280,Nogent-le-Rotrou,36 ,0.1
+28348,Saint-Lubin-des-Joncherets - Nonancourt,< 20,0.1
+28373,Senonches,s,s
+28422,Voves,< 20,0.0
+29004,Bannalec,36 ,0.5
+29019,Brest,116 ,0.1
+29020,Briec,< 20,0.2
+29024,Carhaix-Plouguer,204 ,1.4
+29026,Châteaulin,63 ,0.5
+29027,Châteauneuf-du-Faou,275 ,2.4
+29039,Concarneau,21 ,0.1
+29042,Crozon,60 ,0.4
+29046,Douarnenez,52 ,0.2
+29053,Le Faou,< 20,0.2
+29058,Fouesnant,< 20,0.1
+29069,Guilers,< 20,0.0
+29081,Huelgoat,525 ,6.8
+29103,Landerneau,21 ,0.1
+29105,Landivisiau,42 ,0.2
+29124,Lesneven,31 ,0.1
+29147,Mellac,32 ,0.5
+29150,Moëlan-sur-Mer,32 ,0.3
+29151,Morlaix,113 ,0.2
+29158,Penmarch,< 20,0.1
+29160,Plabennec,< 20,0.0
+29162,Pleyben,62 ,0.9
+29174,Plonéour-Lanvern,< 20,0.1
+29178,Ploudalmézeau,< 20,0.1
+29185,Plouescat,25 ,0.2
+29195,Plouguerneau - Lannilis,< 20,0.1
+29197,Plouhinec - Audierne,88 ,0.4
+29199,Plouigneau,< 20,0.2
+29217,Pont-Aven,28 ,0.3
+29220,Pont-l'Abbé,< 20,0.1
+29232,Quimper,71 ,0.1
+29233,Quimperlé,24 ,0.1
+29241,Rosporden,31 ,0.2
+29259,Saint-Pol-de-Léon,28 ,0.1
+29260,Saint-Renan,< 20,0.1
+29274,Scaër,92 ,0.9
+29302,Pont-de-Buis-lès-Quimerch,< 20,0.2
+30003,Aigues-Mortes,< 20,0.1
+30007,Alès,284 ,0.2
+30028,Bagnols-sur-Cèze,69 ,0.2
+30032,Beaucaire,29 ,0.1
+30034,Bellegarde,< 20,0.0
+30037,Bessèges,< 20,0.2
+30062,Calvisson,35 ,0.3
+30132,La Grand-Combe,31 ,0.2
+30141,Laudun-l'Ardoise,< 20,0.1
+30155,Manduel,< 20,0.1
+30189,Nîmes,117 ,0.1
+30202,Pont-Saint-Esprit,24 ,0.1
+30210,Quissac,55 ,0.5
+30212,Remoulins,45 ,0.2
+30221,Roquemaure,< 20,0.0
+30258,Saint-Gilles,20 ,0.1
+30263,Saint-Hippolyte-du-Fort,39 ,0.5
+30269,Saint-Jean-du-Gard,s,s
+30321,Sommières,57 ,0.3
+30334,Uzès,235 ,0.9
+30341,Vauvert,< 20,0.0
+30344,Vergèze,< 20,0.1
+30350,Le Vigan,39 ,0.3
+31020,Aspet,50 ,1.0
+31033,Auterive,< 20,0.1
+31042,Bagnères-de-Luchon,41 ,0.5
+31066,Bessières,< 20,0.0
+31080,Boulogne-sur-Gesse,381 ,4.3
+31098,Cadours,62 ,1.0
+31106,Caraman,31 ,0.3
+31107,Carbonne,< 20,0.1
+31118,Castelnau-d'Estrétefonds,< 20,0.1
+31135,Cazères,70 ,0.4
+31187,Fonsorbes,87 ,0.5
+31202,Fronton,< 20,0.0
+31232,Grenade,85 ,0.6
+31239,L'Isle-en-Dodon,167 ,2.6
+31324,Martres-Tolosane,81 ,0.9
+31358,Montastruc-la-Conseillère,< 20,0.1
+31375,Montesquieu-Volvestre,42 ,0.8
+31390,Montréjeau,117 ,0.6
+31396,Nailloux,< 20,0.2
+31451,Revel,70 ,0.3
+31454,Rieumes,20 ,0.1
+31483,Saint-Gaudens,112 ,0.4
+31499,Saint-Lys,50 ,0.3
+31523,Salies-du-Salat,43 ,0.4
+31555,Toulouse,2.698 ,0.3
+31572,Venerque,< 20,0.0
+31573,Verfeil,< 20,0.1
+31582,Villefranche-de-Lauragais,42 ,0.3
+31584,Villemur-sur-Tarn,38 ,0.3
+32013,Auch,114 ,0.3
+32096,Cazaubon,88 ,1.1
+32107,Condom,240 ,1.7
+32119,Eauze,142 ,1.5
+32132,Fleurance,138 ,1.0
+32147,Gimont,63 ,0.6
+32160,L'Isle-Jourdain,181 ,1.1
+32208,Lectoure,129 ,1.7
+32213,Lombez,s,s
+32233,Marciac,s,s
+32242,Masseube,111 ,1.7
+32249,Mauvezin,56 ,0.8
+32256,Mirande,268 ,2.1
+32296,Nogaro,185 ,2.0
+32319,Plaisance,s,s
+32344,Riscle,s,s
+32410,Samatan,48 ,0.9
+32462,Vic-Fezensac,192 ,1.7
+33005,Andernos-les-Bains,20 ,0.1
+33011,Arès,< 20,0.1
+33036,Bazas,51 ,0.2
+33051,Biganos,< 20,0.0
+33058,Blaye,41 ,0.2
+33063,Bordeaux,1.143 ,0.1
+33067,Bourg,23 ,0.2
+33081,Cadillac,21 ,0.1
+33104,Castelnau-de-Médoc,< 20,0.1
+33108,Castillon-la-Bataille,272 ,1.1
+33123,Cézac,32 ,0.1
+33138,Coutras,27 ,0.1
+33140,Créon,41 ,0.2
+33213,La Brède,< 20,0.1
+33214,Lacanau,24 ,0.3
+33227,Langon,50 ,0.1
+33236,Lège-Cap-Ferret,< 20,0.1
+33240,Lesparre-Médoc,54 ,0.2
+33243,Libourne,148 ,0.2
+33289,Monségur,165 ,3.3
+33314,Pauillac,29 ,0.2
+33327,Podensac,< 20,0.0
+33334,Portets,< 20,0.1
+33352,La Réole,76 ,0.5
+33366,Saint-André-de-Cubzac,32 ,0.1
+33389,Saint-Ciers-sur-Gironde,204 ,1.3
+33478,Saint-Seurin-sur-l'Isle,55 ,0.6
+33498,Salles,< 20,0.0
+33506,Sauveterre-de-Guyenne,59 ,0.9
+33514,Soulac-sur-Mer,< 20,0.2
+33529,La Teste-de-Buch - Arcachon,40 ,0.1
+34003,Agde,100 ,0.4
+34022,Baillargues,23 ,0.2
+34028,Bédarieux,229 ,1.0
+34031,Bessan,28 ,0.3
+34032,Béziers,247 ,0.2
+34052,Capestang,146 ,1.1
+34058,Castries,48 ,0.2
+34079,Clermont-l'Hérault,62 ,0.5
+34088,Cournonterral,< 20,0.0
+34101,Florensac,29 ,0.3
+34111,Ganges,50 ,0.3
+34114,Gignac,80 ,0.4
+34142,Lodève,226 ,1.4
+34145,Lunel,91 ,0.1
+34147,Magalas,285 ,1.2
+34150,Marseillan,78 ,1.0
+34154,Mauguio,39 ,0.2
+34157,Mèze,< 20,0.1
+34162,Montagnac,47 ,0.9
+34172,Montpellier,772 ,0.2
+34192,Palavas-les-Flots,< 20,0.1
+34194,Paulhan,90 ,0.6
+34199,Pézenas,207 ,1.0
+34239,Saint-André-de-Sangonis,23 ,0.3
+34245,Saint-Chinian,113 ,2.1
+34276,Saint-Mathieu-de-Tréviers,< 20,0.1
+34284,Saint-Pons-de-Thomières,143 ,1.8
+34299,Sérignan,21 ,0.1
+34300,Servian,69 ,0.5
+34301,Sète,64 ,0.1
+34332,Vias,< 20,0.2
+34344,Le Grau-du-Roi,< 20,0.1
+35001,Acigné,20 ,0.2
+35004,Val-Couesnon,76 ,1.1
+35006,Argentré-du-Plessis,< 20,0.0
+35012,Bain-de-Bretagne,24 ,0.1
+35023,Bédée,< 20,0.0
+35024,Betton,< 20,0.1
+35049,Cancale,< 20,0.1
+35068,Châteaubourg,< 20,0.0
+35069,Châteaugiron,< 20,0.1
+35085,Combourg,83 ,0.5
+35093,Dinard,89 ,0.2
+35095,Dol-de-Bretagne,102 ,0.3
+35115,Fougères,38 ,0.1
+35125,La Guerche-de-Bretagne,84 ,0.5
+35126,Guichen,< 20,0.1
+35129,Guipry,< 20,0.2
+35136,Janzé,< 20,0.1
+35152,Liffré,33 ,0.1
+35162,Louvigné-du-Désert,272 ,2.5
+35168,Maure-de-Bretagne,< 20,0.2
+35184,Montauban-de-Bretagne,61 ,0.3
+35188,Montfort-sur-Meu,< 20,0.0
+35196,Mordelles,< 20,0.0
+35219,Pipriac,< 20,0.2
+35223,Plélan-le-Grand,< 20,0.1
+35236,Redon,196 ,0.5
+35238,Rennes,360 ,0.1
+35239,Retiers,53 ,0.4
+35240,Le Rheu,< 20,0.1
+35253,Saint-Aubin-du-Cormier,< 20,0.1
+35257,Saint-Brice-en-Coglès,45 ,0.4
+35288,Saint-Malo,63 ,0.1
+35297,Saint-Méen-le-Grand,47 ,0.4
+35337,Tinténiac,66 ,0.4
+35352,Vern-sur-Seiche,< 20,0.0
+35360,Vitré,25 ,0.1
+36001,Aigurande,155 ,3.0
+36006,Argenton-sur-Creuse,328 ,1.1
+36018,Le Blanc,151 ,0.9
+36031,Buzançais,51 ,0.3
+36034,Chabris,< 20,0.2
+36044,Châteauroux,34 ,0.0
+36045,Châtillon-sur-Indre,42 ,0.5
+36046,La Châtre,112 ,0.5
+36088,Issoudun,30 ,0.1
+36093,Levroux,22 ,0.3
+36228,Valençay,45 ,0.6
+37014,Azay-le-Rideau,< 20,0.1
+37022,Beaumont-en-Véron,< 20,0.1
+37031,Bourgueil,74 ,0.4
+37063,Château-Renault,< 20,0.1
+37072,Chinon,37 ,0.3
+37104,Esvres,26 ,0.2
+37115,Descartes,72 ,0.4
+37119,L'Île-Bouchard,< 20,0.2
+37123,Langeais,28 ,0.1
+37130,Ligueil,70 ,0.9
+37132,Loches,58 ,0.3
+37159,Monts,< 20,0.0
+37167,Neuillé-Pont-Pierre,< 20,0.1
+37196,Richelieu,92 ,1.1
+37226,Sainte-Maure-de-Touraine,< 20,0.1
+37261,Tours,304 ,0.1
+38001,Les Abrets,21 ,0.1
+38006,Allevard,23 ,0.1
+38012,Aoste,< 20,0.1
+38013,Apprieu - Le Grand-Lemps,23 ,0.1
+38022,Les Avenières Veyrins-Thuellin,< 20,0.1
+38034,Beaurepaire,< 20,0.0
+38052,Le Bourg-d'Oisans,134 ,1.3
+38053,Bourgoin-Jallieu,44 ,0.1
+38085,Charvieu-Chavagneux,< 20,0.0
+38130,La Côte-Saint-André,< 20,0.1
+38138,Crémieu,36 ,0.2
+38140,Crolles,34 ,0.3
+38185,Grenoble,696 ,0.1
+38189,Heyrieux,< 20,0.1
+38226,Mens,s,s
+38247,Montalieu-Vercieu,< 20,0.1
+38261,Morestel,22 ,0.1
+38269,La Mure,< 20,0.1
+38314,Pontcharra,22 ,0.1
+38315,Le Pont-de-Beauvoisin,46 ,0.2
+38384,Saint-Étienne-de-Saint-Geoirs,< 20,0.1
+38399,Saint-Jean-de-Bournay,< 20,0.0
+38412,Saint-Laurent-du-Pont,< 20,0.1
+38416,Saint-Marcellin,40 ,0.1
+38509,La Tour-du-Pin,< 20,0.0
+38511,Le Touvet,54 ,0.2
+38517,Tullins,21 ,0.2
+38544,Vienne,47 ,0.0
+38545,Vif,26 ,0.1
+38548,Villard-de-Lans,< 20,0.1
+38553,Villefontaine,< 20,0.0
+38562,Vizille,81 ,0.3
+39013,Arbois,< 20,0.0
+39056,Bletterans,< 20,0.1
+39097,Champagnole,< 20,0.1
+39128,Chaussin,< 20,0.0
+39154,Clairvaux-les-Lacs,< 20,0.2
+39198,Dole,< 20,0.0
+39300,Lons-le-Saunier,23 ,0.0
+39368,Morez,< 20,0.1
+39434,Poligny,< 20,0.1
+39470,Les Rousses,s,s
+39475,Saint-Amour,27 ,0.1
+39478,Saint-Claude,20 ,0.1
+39487,Saint-Laurent-en-Grandvaux,< 20,0.1
+39500,Salins-les-Bains,< 20,0.1
+39526,Tavaux,< 20,0.0
+40001,Aire-sur-l'Adour,62 ,0.4
+40046,Biscarrosse,37 ,0.2
+40065,Capbreton,40 ,0.3
+40088,Dax,49 ,0.1
+40119,Hagetmau,47 ,0.3
+40133,Labenne,31 ,0.4
+40134,Labouheyre,< 20,0.1
+40184,Mimizan,72 ,0.4
+40192,Mont-de-Marsan,34 ,0.1
+40194,Montfort-en-Chalosse,< 20,0.1
+40197,Morcenx-la-Nouvelle,< 20,0.1
+40201,Mugron,< 20,0.2
+40217,Parentis-en-Born,< 20,0.2
+40224,Peyrehorade,39 ,0.2
+40233,Pouillon,27 ,0.3
+40245,Roquefort,23 ,0.3
+40282,Saint-Sever,< 20,0.1
+40284,Saint-Vincent-de-Tyrosse,81 ,0.3
+40310,Soustons,70 ,0.4
+40313,Tartas,< 20,0.1
+40331,Villeneuve-de-Marsan,< 20,0.2
+41018,Blois,46 ,0.0
+41025,Bracieux,< 20,0.0
+41059,Le Controis-en-Sologne,< 20,0.1
+41106,Lamotte-Beuvron,< 20,0.0
+41136,Mer,< 20,0.0
+41143,Mondoubleau,< 20,0.1
+41149,Montoire-sur-le-Loir,22 ,0.2
+41151,Montrichard,72 ,0.4
+41167,Onzain,23 ,0.2
+41194,Romorantin-Lanthenay,< 20,0.1
+41198,Saint-Aignan,36 ,0.3
+41232,Salbris,< 20,0.1
+41242,Selles-sur-Cher,28 ,0.3
+41269,Vendôme,23 ,0.0
+42011,Balbigny,< 20,0.0
+42019,Boën-sur-Lignon,< 20,0.0
+42023,Bourg-Argental,< 20,0.0
+42052,Charlieu,20 ,0.1
+42059,Chazelles-sur-Lyon,< 20,0.0
+42094,Feurs,< 20,0.0
+42147,Montbrison,< 20,0.0
+42149,Montrond-les-Bains,< 20,0.0
+42159,Noirétable,s,s
+42165,Panissières,< 20,0.1
+42168,Pélussin,< 20,0.0
+42187,Roanne,42 ,0.0
+42204,Saint-Bonnet-le-Château,< 20,0.0
+42218,Saint-Étienne,127 ,0.0
+42279,Saint-Just-Saint-Rambert,26 ,0.0
+43040,Brioude,33 ,0.2
+43051,Le Chambon-sur-Lignon,s,s
+43080,Craponne-sur-Arzon,< 20,0.1
+43087,Dunières,< 20,0.0
+43112,Langeac,20 ,0.2
+43137,Monistrol-sur-Loire,< 20,0.0
+43157,Le Puy-en-Velay,39 ,0.0
+43162,Retournac,s,s
+43177,Saint-Didier-en-Velay,s,s
+43200,Saint-Julien-Chapteuil,s,s
+43224,Sainte-Sigolène,< 20,0.0
+43234,Saugues,s,s
+43244,Tence,s,s
+43268,Yssingeaux,< 20,0.1
+44002,Aigrefeuille-sur-Maine,< 20,0.0
+44003,Ancenis-Saint-Géréon,24 ,0.1
+44015,Blain,< 20,0.1
+44036,Châteaubriant,162 ,0.5
+44043,Clisson,< 20,0.0
+44051,Derval,64 ,0.6
+44067,Guémené-Penfao,85 ,0.5
+44072,Herbignac,27 ,0.1
+44081,Legé,< 20,0.2
+44087,Machecoul,< 20,0.1
+44109,Nantes,518 ,0.1
+44110,Nort-sur-Erdre,26 ,0.1
+44113,Nozay,22 ,0.1
+44129,Pontchâteau,24 ,0.1
+44131,Pornic,< 20,0.1
+44154,Saint-Brevin-les-Pins,21 ,0.1
+44158,Saint-Étienne-de-Montluc,< 20,0.1
+44161,Saint-Gildas-des-Bois,22 ,0.2
+44169,Saint-Julien-de-Concelles,< 20,0.0
+44180,Vallons-de-l'Erdre,25 ,0.3
+44184,Saint-Nazaire,103 ,0.1
+44186,Sainte-Pazanne,< 20,0.1
+44187,Saint-Père-en-Retz,< 20,0.1
+44188,Saint-Philbert-de-Grand-Lieu,< 20,0.0
+44195,Savenay,< 20,0.1
+44209,Treillières,< 20,0.1
+44211,La Turballe,< 20,0.0
+44212,Vallet,< 20,0.1
+44213,Varades,< 20,0.1
+44223,Geneston,< 20,0.0
+45028,Beaugency,< 20,0.0
+45030,Beaune-la-Rolande,< 20,0.0
+45031,Bellegarde - Quiers-sur-Bézonde,< 20,0.0
+45053,Briare,< 20,0.1
+45082,Châteauneuf-sur-Loire,< 20,0.0
+45083,Château-Renard,< 20,0.1
+45085,Châtillon-Coligny,< 20,0.1
+45115,Courtenay,< 20,0.0
+45145,Ferrières-en-Gâtinais,< 20,0.0
+45146,La Ferté-Saint-Aubin,< 20,0.0
+45155,Gien,< 20,0.1
+45173,Jargeau,< 20,0.1
+45187,Lorris,< 20,0.0
+45191,Malesherbes,< 20,0.1
+45203,Meung-sur-Loire,< 20,0.0
+45208,Montargis,< 20,0.0
+45224,Neuville-aux-Bois,< 20,0.0
+45234,Orléans,89 ,0.0
+45248,Patay,< 20,0.0
+45252,Pithiviers,< 20,0.0
+45258,Puiseaux,< 20,0.1
+45315,Sully-sur-Loire,< 20,0.0
+46029,Biars-sur-Cère,48 ,0.5
+46042,Cahors,366 ,0.7
+46102,Figeac,255 ,0.8
+46127,Gourdon,542 ,3.1
+46128,Gramat,100 ,0.8
+46143,Lacapelle-Marival,27 ,0.5
+46201,Montcuq,317 ,3.5
+46225,Prayssac,372 ,3.2
+46231,Puy-l'Évêque,s,s
+46251,Saint-Céré,55 ,0.6
+46309,Souillac,183 ,1.5
+46330,Vayrac,103 ,1.1
+47001,Agen,242 ,0.2
+47004,Aiguillon,78 ,0.5
+47052,Casteljaloux,86 ,0.6
+47057,Castillonnès,407 ,5.7
+47086,Duras,s,s
+47106,Fumel,359 ,1.7
+47157,Marmande,134 ,0.3
+47168,Miramont-de-Guyenne,399 ,3.4
+47175,Monflanquin,268 ,4.0
+47195,Nérac,145 ,0.6
+47310,Tonneins,95 ,0.4
+47323,Villeneuve-sur-Lot,599 ,1.0
+47324,Villeréal,221 ,4.4
+48034,La Canourgue,< 20,0.1
+48061,Florac Trois Rivières,< 20,0.1
+48080,Langogne,< 20,0.0
+48092,Marvejols,< 20,0.1
+48095,Mende,< 20,0.0
+48140,Saint-Chély-d'Apcher,< 20,0.0
+49007,Angers,172 ,0.1
+49018,Baugé-en-Anjou,112 ,0.7
+49021,Beaufort-en-Vallée,28 ,0.1
+49023,Beaupréau,< 20,0.0
+49050,Brissac-Quincé,< 20,0.1
+49054,Candé,< 20,0.2
+49063,Chalonnes-sur-Loire,< 20,0.1
+49080,Les Hauts-d'Anjou,28 ,0.2
+49092,Chemillé-en-Anjou,< 20,0.0
+49099,Cholet,< 20,0.0
+49125,Doué-la-Fontaine,50 ,0.3
+49127,Durtal,20 ,0.2
+49176,Le Lion-d'Angers,< 20,0.1
+49180,Longué-Jumelles,93 ,0.6
+49183,Le Louroux-Béconnais,< 20,0.1
+49214,Montreuil-Juigné,< 20,0.1
+49215,Montreuil-Bellay,56 ,0.5
+49228,Noyant,189 ,3.3
+49244,Mauges-sur-Loire,< 20,0.0
+49248,Pouancé,142 ,1.2
+49261,Les Rosiers-sur-Loire,46 ,0.5
+49283,Saint-Georges-sur-Loire,< 20,0.1
+49301,Sèvremoine,< 20,0.0
+49313,Saint-Pierre-Montlimart,< 20,0.0
+49323,Saint-Sylvain-d'Anjou,< 20,0.0
+49328,Saumur,80 ,0.2
+49331,Segré,48 ,0.2
+49333,Seiches-sur-le-Loir,< 20,0.0
+49345,Bellevigne-en-Layon,< 20,0.1
+49347,Tiercé,< 20,0.0
+49373,Lys-Haut-Layon,99 ,0.7
+50003,Agon-Coutainville,< 20,0.2
+50025,Avranches,149 ,0.5
+50031,Barneville-Carteret,82 ,0.9
+50074,Brécey,154 ,2.1
+50076,Bréhal,89 ,0.7
+50082,Bricquebec,27 ,0.3
+50099,Carentan-les-Marais,185 ,0.8
+50129,Cherbourg-en-Cotentin,51 ,0.0
+50147,Coutances,115 ,0.4
+50218,Granville,30 ,0.1
+50236,La Haye,135 ,0.9
+50237,La Haye-Pesnel,53 ,0.5
+50341,Montebourg,< 20,0.1
+50359,Mortain-Bocage,422 ,4.1
+50394,Périers,111 ,0.9
+50402,Les Pieux,< 20,0.1
+50410,Pontorson,184 ,1.6
+50484,Saint-Hilaire-du-Harcouët,284 ,1.8
+50487,Saint-James,126 ,1.6
+50502,Saint-Lô,276 ,0.5
+50539,Saint-Pierre-Église,s,s
+50551,Saint-Sauveur-le-Vicomte,61 ,1.1
+50562,Saint-Vaast-la-Hougue,27 ,0.3
+50582,Sourdeval,s,s
+50601,Torigni-sur-Vire,124 ,0.6
+50615,Valognes,25 ,0.2
+50639,Villedieu-les-Poêles,312 ,1.9
+51030,Ay,< 20,0.0
+51108,Châlons-en-Champagne,23 ,0.0
+51217,Dormans,< 20,0.0
+51230,Épernay,< 20,0.0
+51248,Fère-Champenoise,< 20,0.0
+51250,Fismes,< 20,0.0
+51380,Montmirail,< 20,0.0
+51388,Mourmelon-le-Grand,< 20,0.0
+51454,Reims,136 ,0.0
+51507,Sainte-Menehould,< 20,0.0
+51535,Sézanne,< 20,0.0
+51559,Suippes,< 20,0.0
+51612,Vertus,< 20,0.0
+51649,Vitry-le-François,< 20,0.0
+52060,Bourbonne-les-Bains,< 20,0.1
+52093,Chalindrey,< 20,0.0
+52121,Chaumont,< 20,0.0
+52197,Fayl-Billot,s,s
+52250,Joinville,< 20,0.0
+52269,Langres,< 20,0.1
+52331,Montier-en-Der,< 20,0.2
+52332,Val-de-Meuse,< 20,0.1
+52353,Nogent,< 20,0.0
+52448,Saint-Dizier,< 20,0.0
+52550,Wassy,< 20,0.0
+53003,Ambrières-les-Vallées,276 ,3.9
+53062,Château-Gontier-sur-Mayenne,68 ,0.2
+53077,Cossé-le-Vivien,23 ,0.2
+53084,Craon,36 ,0.4
+53096,Ernée,170 ,1.0
+53097,Évron,159 ,0.6
+53107,Gorron,340 ,4.7
+53127,Lassay-les-Châteaux,s,s
+53130,Laval,99 ,0.1
+53147,Mayenne,61 ,0.2
+53152,Meslay-du-Maine,45 ,0.4
+53185,Pré-en-Pail,128 ,1.8
+53188,Renazé,98 ,1.5
+53271,Villaines-la-Juhel,255 ,2.3
+54039,Baccarat,< 20,0.0
+54076,Blainville-sur-l'Eau,< 20,0.0
+54099,Briey,< 20,0.0
+54159,Dombasle-sur-Meurthe,< 20,0.0
+54273,Jarny,< 20,0.0
+54280,Joeuf,< 20,0.0
+54322,Longuyon,21 ,0.1
+54323,Longwy,21 ,0.0
+54328,Ludres,< 20,0.0
+54329,Lunéville,< 20,0.0
+54395,Nancy,106 ,0.0
+54397,Neuves-Maisons,< 20,0.0
+54425,Piennes,< 20,0.0
+54431,Pont-à-Mousson,< 20,0.0
+54528,Toul,< 20,0.0
+54563,Vézelise,< 20,0.0
+54580,Villerupt,< 20,0.0
+55029,Bar-le-Duc,< 20,0.0
+55122,Commercy,< 20,0.0
+55181,Étain,< 20,0.0
+55291,Ligny-en-Barrois,< 20,0.0
+55427,Revigny-sur-Ornain,< 20,0.0
+55463,Saint-Mihiel,< 20,0.0
+55502,Stenay,< 20,0.0
+55533,Vaucouleurs,< 20,0.0
+55545,Verdun,< 20,0.0
+56003,Arradon,< 20,0.1
+56007,Auray,79 ,0.2
+56010,Baud,311 ,1.6
+56013,Belz,< 20,0.1
+56034,Carnac,21 ,0.2
+56036,Caudan,< 20,0.0
+56053,Elven,21 ,0.1
+56057,Le Faouët,188 ,1.7
+56061,La Gacilly,140 ,1.0
+56066,Gourin,s,s
+56067,Grand-Champ,< 20,0.1
+56073,Guémené-sur-Scorff,627 ,5.1
+56075,Guer,62 ,0.6
+56083,Hennebont,28 ,0.1
+56091,Josselin,299 ,2.5
+56117,Locminé,208 ,0.6
+56121,Lorient,65 ,0.0
+56124,Malestroit,141 ,1.0
+56127,Mauron,151 ,2.1
+56143,Muzillac,32 ,0.2
+56152,Le Palais,< 20,0.0
+56164,Ploeren,< 20,0.1
+56165,Ploërmel,159 ,0.7
+56166,Plouay,27 ,0.2
+56177,Pluvigner,22 ,0.1
+56178,Pontivy,428 ,1.2
+56184,Questembert,132 ,0.6
+56186,Quiberon,< 20,0.0
+56193,Riantec - Locmiquélic,< 20,0.1
+56195,La Roche-Bernard,39 ,0.3
+56240,Sarzeau,24 ,0.2
+56251,Theix,< 20,0.1
+56260,Vannes,56 ,0.1
+57089,Bitche,< 20,0.1
+57097,Boulay-Moselle,< 20,0.0
+57106,Bouzonville,< 20,0.0
+57132,Château-Salins,< 20,0.0
+57160,Creutzwald,< 20,0.0
+57177,Dieuze,< 20,0.0
+57207,Farébersviller,< 20,0.0
+57209,Faulquemont,< 20,0.0
+57227,Forbach,< 20,0.0
+57269,Guénange,< 20,0.0
+57323,Hettange-Grande,25 ,0.2
+57413,Longeville-lès-Saint-Avold,s,s
+57463,Metz,91 ,0.0
+57483,Morhange,< 20,0.0
+57540,Phalsbourg,< 20,0.0
+57556,Puttelange-aux-Lacs,< 20,0.0
+57572,Rémilly,< 20,0.0
+57589,Rohrbach-lès-Bitche,< 20,0.0
+57606,Saint-Avold,< 20,0.0
+57628,Sarralbe,< 20,0.0
+57630,Sarrebourg,< 20,0.0
+57631,Sarreguemines,21 ,0.0
+57650,Sierck-les-Bains,< 20,0.1
+57672,Thionville,66 ,0.0
+58059,La Charité-sur-Loire,26 ,0.1
+58062,Château-Chinon (Ville),34 ,0.5
+58079,Clamecy,65 ,0.3
+58083,Corbigny,40 ,0.4
+58086,Cosne-Cours-sur-Loire,22 ,0.1
+58095,Decize,37 ,0.1
+58134,Imphy,< 20,0.0
+58149,Luzy,25 ,0.5
+58182,Moulins-Engilbert,31 ,0.4
+58194,Nevers,20 ,0.0
+58218,Prémery,s,s
+58264,Saint-Pierre-le-Moûtier,< 20,0.1
+59011,Annoeullin,< 20,0.0
+59015,Arleux,< 20,0.0
+59017,Armentières,< 20,0.0
+59036,Avesnes-sur-Helpe,< 20,0.0
+59053,Bavay,< 20,0.0
+59067,Bergues,< 20,0.0
+59094,Bourbourg,< 20,0.0
+59122,Cambrai,33 ,0.0
+59135,Cassel,< 20,0.1
+59136,Le Cateau-Cambrésis,< 20,0.0
+59139,Caudry,< 20,0.0
+59168,Cysoing,< 20,0.0
+59178,Douai - Lens,52 ,0.0
+59183,Dunkerque,56 ,0.0
+59239,Flines-lez-Raches,< 20,0.0
+59249,Fourmies,< 20,0.0
+59295,Hazebrouck,< 20,0.0
+59309,Hondschoote,< 20,0.0
+59331,Landrecies,< 20,0.0
+59350,Lille,616 ,0.1
+59375,Marchiennes,< 20,0.0
+59392,Maubeuge,< 20,0.0
+59449,Orchies,< 20,0.0
+59466,Pont-à-Marcq,< 20,0.1
+59481,Le Quesnoy,< 20,0.0
+59526,Saint-Amand-les-Eaux,< 20,0.0
+59571,Solesmes,< 20,0.0
+59580,Steenvoorde,< 20,0.0
+59586,Templeuve-en-Pévèle,< 20,0.1
+59606,Valenciennes,77 ,0.0
+59653,Wavrin,< 20,0.0
+59663,Wormhout,< 20,0.0
+60057,Beauvais,61 ,0.1
+60103,Bresles,< 20,0.1
+60104,Breteuil,< 20,0.0
+60141,Chantilly,178 ,0.5
+60143,Chaumont-en-Vexin,< 20,0.1
+60157,Clermont,< 20,0.0
+60159,Compiègne,45 ,0.0
+60175,Creil,50 ,0.0
+60176,Crépy-en-Valois,47 ,0.1
+60178,Crèvecoeur-le-Grand,< 20,0.1
+60188,Trosly-Breuil,25 ,0.2
+60223,Estrées-Saint-Denis,< 20,0.0
+60245,Formerie,< 20,0.1
+60286,Grandvilliers,< 20,0.1
+60395,Méru,< 20,0.0
+60439,Mouy,< 20,0.1
+60471,Noyon,< 20,0.0
+60482,Orry-la-Ville,< 20,0.2
+60500,Le Plessis-Belleville,< 20,0.1
+60509,Pont-Sainte-Maxence,46 ,0.2
+60533,Ressons-sur-Matz,< 20,0.1
+60581,Saint-Just-en-Chaussée,< 20,0.0
+60589,Saint-Maximin,s,s
+60612,Senlis,72 ,0.4
+61001,Alençon,76 ,0.1
+61006,Argentan,96 ,0.3
+61038,Bellême,< 20,0.2
+61145,Domfront en Poiraie,432 ,3.5
+61168,La Ferté-Macé,127 ,0.7
+61169,Flers,37 ,0.1
+61181,Gacé,36 ,0.6
+61214,L'Aigle,43 ,0.1
+61230,Longny les Villages,s,s
+61293,Mortagne-au-Perche,78 ,0.3
+61464,Sées,30 ,0.2
+61483,Bagnoles de l'Orne Normandie,141 ,1.6
+61486,Tinchebray,166 ,2.0
+61508,Vimoutiers,109 ,1.4
+62038,Ardres,46 ,0.2
+62041,Arras,95 ,0.1
+62045,Aubigny-en-Artois,< 20,0.0
+62057,Audruicq,< 20,0.1
+62060,Auxi-le-Château,53 ,0.6
+62063,Avesnes-le-Comte,< 20,0.1
+62080,Bapaume,33 ,0.1
+62108,Berck,53 ,0.1
+62119,Béthune,76 ,0.0
+62160,Boulogne-sur-Mer,66 ,0.1
+62193,Calais,97 ,0.1
+62268,Desvres,59 ,0.2
+62297,Éperlecques - Watten,< 20,0.1
+62361,Frévent,54 ,0.6
+62364,Fruges,45 ,0.4
+62397,Guînes,< 20,0.1
+62447,Hesdin,182 ,1.0
+62534,Lumbres,42 ,0.2
+62560,Marquise,49 ,0.2
+62588,Montreuil,95 ,0.4
+62604,Neufchâtel-Hardelot,< 20,0.2
+62765,Saint-Omer,69 ,0.1
+62767,Saint-Pol-sur-Ternoise,44 ,0.2
+62861,Vimy,< 20,0.0
+62893,Wimereux,26 ,0.2
+63001,Aigueperse,< 20,0.1
+63003,Ambert,78 ,0.5
+63010,Arlanc,26 ,0.4
+63038,Besse-et-Saint-Anastaise,< 20,0.1
+63040,Billom,< 20,0.1
+63047,La Bourboule,< 20,0.1
+63050,Brassac-les-Mines,33 ,0.1
+63113,Clermont-Ferrand,268 ,0.1
+63125,Courpière,28 ,0.2
+63178,Issoire,44 ,0.1
+63195,Lezoux,< 20,0.0
+63210,Maringues,< 20,0.0
+63214,Veyre-Monton,< 20,0.1
+63231,La Monnerie-le-Montel,24 ,0.2
+63236,Mont-Dore,s,s
+63283,Pontaumur,s,s
+63284,Pont-du-Château,< 20,0.1
+63285,Pontgibaud,< 20,0.1
+63291,Puy-Guillaume,< 20,0.2
+63300,Riom,58 ,0.1
+63338,Saint-Éloy-les-Mines,56 ,0.5
+63349,Saint-Georges-de-Mons,< 20,0.0
+63354,Saint-Gervais-d'Auvergne,s,s
+63430,Thiers,< 20,0.0
+63457,Vic-le-Comte,< 20,0.1
+64061,Artix,25 ,0.2
+64062,Arudy,25 ,0.2
+64063,Arzacq-Arraziguet,21 ,0.4
+64102,Bayonne,448 ,0.2
+64160,Cambo-les-Bains,< 20,0.1
+64233,Garlin,34 ,0.6
+64256,Hasparren,21 ,0.1
+64331,Lembeye,73 ,1.2
+64371,Mauléon-Licharre,42 ,0.3
+64410,Mourenx,39 ,0.2
+64416,Navarrenx,71 ,1.2
+64422,Oloron-Sainte-Marie,82 ,0.3
+64430,Orthez,94 ,0.3
+64445,Pau,463 ,0.2
+64453,Pontacq,< 20,0.1
+64485,Saint-Jean-Pied-de-Port,25 ,0.2
+64493,Saint-Palais,38 ,0.3
+64499,Salies-de-Béarn,107 ,0.9
+64513,Sauveterre-de-Béarn,s,s
+65025,Argelès-Gazost,61 ,0.5
+65031,Arreau,< 20,0.1
+65059,Bagnères-de-Bigorre,154 ,0.8
+65258,Lannemezan,159 ,0.8
+65286,Lourdes,45 ,0.2
+65295,Luz-Saint-Sauveur,s,s
+65304,Maubourguet,172 ,2.6
+65440,Tarbes,110 ,0.1
+65447,Tournay,22 ,0.4
+65452,Trie-sur-Baïse,s,s
+65460,Vic-en-Bigorre,113 ,0.6
+66003,Amélie-les-Bains-Palalda,198 ,2.0
+66016,Banyuls-sur-Mer,36 ,0.6
+66024,Le Boulou,57 ,0.6
+66037,Canet-en-Roussillon,28 ,0.1
+66049,Céret,256 ,1.6
+66088,Ille-sur-Têt,119 ,0.9
+66108,Millas,< 20,0.1
+66124,Font-Romeu-Odeillo-Via,25 ,0.2
+66136,Perpignan,337 ,0.1
+66149,Prades,263 ,1.3
+66171,Saint-Cyprien,467 ,0.6
+66180,Saint-Laurent-de-la-Salanque,34 ,0.1
+66210,Thuir,73 ,0.5
+67021,Barr,< 20,0.0
+67028,Benfeld,< 20,0.0
+67061,Bouxwiller,< 20,0.2
+67066,La Broque,< 20,0.0
+67067,Brumath,< 20,0.1
+67105,Drulingen,< 20,0.1
+67130,Erstein,< 20,0.0
+67152,Geispolsheim,< 20,0.0
+67180,Haguenau,46 ,0.0
+67202,Hochfelden,< 20,0.0
+67222,Ingwiller,< 20,0.1
+67281,Marckolsheim,< 20,0.0
+67282,Marlenheim,< 20,0.1
+67300,Molsheim,30 ,0.1
+67348,Obernai,< 20,0.1
+67372,Pfaffenhoffen,< 20,0.0
+67388,Reichshoffen - Niederbronn-les-Bains,< 20,0.0
+67411,Rosheim,< 20,0.1
+67434,Sarre-Union,< 20,0.0
+67437,Saverne,< 20,0.0
+67462,Sélestat,< 20,0.0
+67463,Seltz,< 20,0.1
+67474,Soultz-sous-Forêts,< 20,0.1
+67482,Strasbourg,765 ,0.2
+67495,Truchtersheim,< 20,0.1
+67507,Villé,< 20,0.0
+67519,La Wantzenau,29 ,0.3
+67520,Wasselonne,< 20,0.1
+67544,Wissembourg,< 20,0.1
+67550,Woerth,< 20,0.1
+68004,Altkirch,89 ,0.2
+68063,Thann - Cernay,< 20,0.0
+68066,Colmar,60 ,0.1
+68068,Dannemarie,< 20,0.0
+68082,Ensisheim,< 20,0.0
+68112,Guebwiller,30 ,0.1
+68162,Kaysersberg,< 20,0.0
+68201,Masevaux,< 20,0.0
+68224,Mulhouse,100 ,0.0
+68226,Munster,< 20,0.0
+68269,Ribeauvillé,< 20,0.0
+68287,Rouffach,< 20,0.0
+68292,Saint-Amarin,< 20,0.0
+68297,Saint-Louis,550 ,0.9
+68298,Sainte-Marie-aux-Mines,< 20,0.0
+68309,Sierentz,142 ,0.7
+68352,Neuf-Brisach,< 20,0.1
+69006,Amplepuis,< 20,0.0
+69010,L'Arbresle,33 ,0.1
+69018,Beaujeu,< 20,0.1
+69019,Belleville-en-Beaujolais,34 ,0.1
+69024,Le Bois-d'Oingt,35 ,0.2
+69066,Cours-la-Ville,< 20,0.1
+69123,Lyon,1.789 ,0.1
+69141,Mornant,< 20,0.1
+69220,Saint-Laurent-de-Chamousset,< 20,0.1
+69227,Saint-Martin-en-Haut,< 20,0.1
+69238,Saint-Symphorien-sur-Coise,< 20,0.0
+69243,Tarare,< 20,0.0
+69248,Thizy-les-Bourgs,< 20,0.0
+69287,Saint-Laurent-de-Mure,< 20,0.1
+70120,Champagney - Ronchamp,< 20,0.2
+70198,Dampierre-sur-Salon,< 20,0.1
+70279,Gray,< 20,0.0
+70285,Héricourt,< 20,0.0
+70292,Jussey,< 20,0.1
+70310,Lure,< 20,0.0
+70311,Luxeuil-les-Bains,< 20,0.0
+70334,Marnay,< 20,0.0
+70421,Port-sur-Saône,< 20,0.0
+70447,Rioz,< 20,0.0
+70467,Saint-Loup-sur-Semouse,< 20,0.1
+70550,Vesoul,< 20,0.0
+70561,Villersexel,< 20,0.0
+71014,Autun,100 ,0.4
+71047,Bourbon-Lancy,20 ,0.2
+71070,Buxy,< 20,0.1
+71073,Chagny,47 ,0.2
+71076,Chalon-sur-Saône,44 ,0.0
+71090,La Chapelle-de-Guinchay - Crêches-sur-Saône,25 ,0.1
+71106,Charolles,42 ,0.5
+71120,Chauffailles,< 20,0.1
+71133,La Clayette,43 ,0.4
+71137,Cluny,74 ,0.5
+71153,Le Creusot,26 ,0.1
+71158,Cuisery,20 ,0.3
+71176,Digoin,< 20,0.1
+71192,Étang-sur-Arroux,30 ,0.5
+71221,Givry,< 20,0.1
+71230,Gueugnon,< 20,0.1
+71263,Louhans,48 ,0.2
+71270,Mâcon,36 ,0.0
+71275,Marcigny,47 ,0.5
+71306,Montceau-les-Mines,< 20,0.0
+71310,Montchanin,< 20,0.1
+71342,Paray-le-Monial,< 20,0.0
+71351,Pierre-de-Bresse,< 20,0.1
+71417,Saint-Gengoux-le-National,64 ,0.8
+71419,Saint-Germain-du-Bois,36 ,0.3
+71512,Sennecey-le-Grand,< 20,0.1
+71543,Tournus,35 ,0.3
+72029,Beaumont-sur-Sarthe,< 20,0.1
+72039,Bonnétable,< 20,0.1
+72054,Champagné,< 20,0.0
+72068,La Chartre-sur-le-Loir,44 ,0.6
+72071,Château-du-Loir,68 ,0.3
+72089,Conlie,< 20,0.0
+72090,Connerré,< 20,0.1
+72124,Écommoy,21 ,0.1
+72132,La Ferté-Bernard,< 20,0.1
+72138,Fresnay-sur-Sarthe,34 ,0.3
+72143,Le Grand-Lucé,20 ,0.3
+72154,La Flèche,25 ,0.1
+72168,Loué,< 20,0.2
+72176,Le Lude,30 ,0.4
+72180,Mamers,< 20,0.1
+72181,Le Mans,91 ,0.0
+72189,Marolles-les-Braults,s,s
+72231,Parigné-l'Évêque,< 20,0.0
+72264,Sablé-sur-Sarthe,55 ,0.2
+72269,Saint-Calais,< 20,0.1
+72334,Sillé-le-Guillaume,71 ,0.8
+72346,La Suze-sur-Sarthe,< 20,0.1
+72373,Vibraye,< 20,0.1
+73006,Aime,128 ,1.6
+73010,Entrelacs,< 20,0.1
+73011,Albertville,52 ,0.1
+73054,Bourg-Saint-Maurice,560 ,3.2
+73055,Bozel,246 ,3.7
+73065,Chambéry,171 ,0.1
+73157,Modane,< 20,0.1
+73171,Montmélian,< 20,0.1
+73181,Moûtiers,181 ,1.0
+73248,Saint-Jean-de-Maurienne,< 20,0.1
+73261,Saint-Michel-de-Maurienne,s,s
+73270,Saint-Pierre-d'Albigny,< 20,0.1
+73303,Ugine,< 20,0.1
+73330,Yenne,< 20,0.1
+74001,Abondance,s,s
+74010,Annecy,479 ,0.2
+74012,Annemasse,"2,059 ",1.1
+74043,Bons-en-Chablais,41 ,0.3
+74056,Chamonix-Mont-Blanc,602 ,5.0
+74081,Cluses,149 ,0.1
+74096,Cruseilles,151 ,0.5
+74105,Douvaine,219 ,1.1
+74123,Faverges,37 ,0.3
+74191,Morzine,794 ,9.3
+74225,Rumilly,26 ,0.1
+74256,Sallanches,319 ,0.7
+74258,Samoëns,s,s
+74269,Seyssel,148 ,0.5
+74276,Taninges,s,s
+74280,Thônes,94 ,0.5
+74281,Thonon-les-Bains,293 ,0.3
+74311,Viuz-en-Sallaz,70 ,0.3
+75056,Paris,16.855 ,0.2
+76034,Val-de-Scie,< 20,0.1
+76035,Aumale,< 20,0.1
+76051,Bacqueville-en-Caux,< 20,0.0
+76057,Barentin,< 20,0.0
+76101,Blangy-sur-Bresle,< 20,0.1
+76114,Bolbec,< 20,0.0
+76146,Buchy,< 20,0.0
+76159,Cany-Barville,< 20,0.0
+76164,Rives-en-Seine,< 20,0.1
+76196,Criquetot-l'Esneval,< 20,0.1
+76217,Dieppe,63 ,0.1
+76219,Doudeville,< 20,0.1
+76222,Duclair,< 20,0.0
+76255,Eu,< 20,0.1
+76258,Fauville-en-Caux,< 20,0.0
+76259,Fécamp,< 20,0.0
+76276,Forges-les-Eaux,< 20,0.1
+76302,Goderville,< 20,0.0
+76312,Gournay-en-Bray,23 ,0.1
+76351,Le Havre,79 ,0.0
+76384,Lillebonne,< 20,0.0
+76400,Luneray,< 20,0.1
+76462,Neufchâtel-en-Bray,64 ,0.4
+76482,Offranville,< 20,0.2
+76540,Rouen,285 ,0.1
+76647,Saint-Romain-de-Colbosc,< 20,0.1
+76648,Saint-Saëns,< 20,0.1
+76655,Saint-Valery-en-Caux,22 ,0.2
+76752,Yerville,< 20,0.1
+76758,Yvetot,< 20,0.0
+77037,Bois-le-Roi,33 ,0.4
+77051,Bray-sur-Seine,< 20,0.1
+77053,Brie-Comte-Robert,< 20,0.0
+77079,Champagne-sur-Seine,64 ,0.2
+77088,La Chapelle-la-Reine,31 ,0.5
+77100,Le Châtelet-en-Brie,< 20,0.1
+77118,Claye-Souilly,< 20,0.0
+77131,Coulommiers,47 ,0.1
+77153,Dammartin-en-Goële,27 ,0.1
+77171,Esbly,92 ,0.2
+77182,La Ferté-Gaucher,< 20,0.0
+77183,La Ferté-sous-Jouarre,33 ,0.1
+77186,Fontainebleau,198 ,0.5
+77192,Fontenay-Trésigny,< 20,0.0
+77257,Lizy-sur-Ourcq,< 20,0.0
+77284,Meaux,46 ,0.0
+77305,Montereau-Fault-Yonne,20 ,0.0
+77317,Mormant,< 20,0.0
+77327,Nangis,< 20,0.0
+77333,Nemours,63 ,0.2
+77379,Provins,< 20,0.0
+77393,Rozay-en-Brie,< 20,0.0
+77437,Saint-Soupplets,< 20,0.0
+77449,Serris,182 ,0.7
+77458,Souppes-sur-Loing,< 20,0.1
+77470,Gretz-Armainvilliers,< 20,0.0
+78217,Épône,< 20,0.1
+78220,Les Essarts-le-Roi,< 20,0.2
+78265,Garancières - La Queue-les-Yvelines,23 ,0.2
+78310,Houdan,42 ,0.2
+78380,Maule,81 ,0.3
+78420,Montfort-l'Amaury,51 ,0.9
+78455,Noisy-le-Roi,163 ,1.0
+78486,Le Perray-en-Yvelines,< 20,0.1
+78517,Rambouillet,34 ,0.1
+78531,Rosny-sur-Seine,25 ,0.1
+78537,Saint-Arnoult-en-Yvelines,29 ,0.3
+79005,Airvault,158 ,1.3
+79048,La Crèche,< 20,0.1
+79049,Bressuire,114 ,0.5
+79057,Brioux-sur-Boutonne,70 ,1.4
+79061,Celles-sur-Belle,27 ,0.3
+79062,Cerizay,91 ,0.7
+79079,Mauléon,< 20,0.0
+79083,Chef-Boutonne,460 ,6.6
+79101,Coulonges-sur-l'Autize,132 ,1.5
+79174,Melle,251 ,1.8
+79179,Moncoutant-sur-Sèvre,346 ,2.6
+79184,La Mothe-Saint-Héray,61 ,1.2
+79191,Niort,168 ,0.1
+79195,Nueil-les-Aubiers,64 ,0.6
+79202,Parthenay,268 ,0.9
+79270,Saint-Maixent-l'École,167 ,0.8
+79307,Sauzé-Vaussais,461 ,8.1
+79311,Secondigny,275 ,2.7
+79329,Thouars,157 ,0.5
+80001,Abbeville,< 20,0.0
+80016,Albert,32 ,0.1
+80021,Amiens,84 ,0.0
+80212,Corbie,< 20,0.0
+80253,Doullens,20 ,0.1
+80308,Feuquières-en-Vimeu - Fressenneville,< 20,0.0
+80318,Flixecourt,< 20,0.0
+80368,Friville-Escarbotin,< 20,0.0
+80373,Gamaches,< 20,0.0
+80410,Ham,< 20,0.0
+80561,Montdidier,< 20,0.1
+80570,Moreuil,< 20,0.0
+80606,Oisemont,< 20,0.1
+80620,Péronne,< 20,0.1
+80630,Poix-de-Picardie,< 20,0.0
+80680,Rosières-en-Santerre,< 20,0.0
+80685,Roye,< 20,0.0
+80688,Rue,< 20,0.1
+80721,Saint-Valery-sur-Somme,< 20,0.2
+80799,Villers-Bretonneux,< 20,0.0
+81003,Alban,s,s
+81004,Albi,117 ,0.1
+81037,Brassac,26 ,0.4
+81060,Carmaux,367 ,1.2
+81065,Castres,110 ,0.2
+81099,Gaillac,268 ,0.9
+81105,Graulhet,31 ,0.2
+81120,Labruguière,< 20,0.1
+81124,Lacaune,< 20,0.1
+81140,Lavaur,67 ,0.4
+81163,Mazamet,160 ,0.5
+81219,Puylaurens,78 ,0.7
+81220,Rabastens,102 ,0.6
+81222,Réalmont,62 ,0.4
+81271,Saint-Sulpice-la-Pointe,28 ,0.2
+81308,Valence-d'Albigeois,s,s
+82013,Beaumont-de-Lomagne,139 ,1.4
+82033,Castelsarrasin,142 ,0.3
+82037,Caussade,202 ,0.9
+82079,Labastide-Saint-Pierre,29 ,0.3
+82087,Lafrançaise,34 ,0.3
+82121,Montauban,44 ,0.1
+82125,Montech,< 20,0.1
+82134,Nègrepelisse,37 ,0.2
+82155,Saint-Antonin-Noble-Val,s,s
+82186,Valence,339 ,1.6
+82190,Verdun-sur-Garonne,45 ,0.3
+83007,Aups,35 ,0.5
+83012,Barjols,28 ,0.3
+83019,Bormes-les-Mimosas - Le Lavandou,49 ,0.3
+83023,Brignoles,35 ,0.1
+83032,Carcès,83 ,1.1
+83036,Cavalaire-sur-Mer,41 ,0.4
+83042,Cogolin,115 ,0.9
+83050,Draguignan,335 ,0.4
+83055,Fayence,231 ,1.3
+83061,Fréjus,174 ,0.2
+83064,Garéoult,33 ,0.2
+83071,La Londe-les-Maures,< 20,0.1
+83072,Lorgues,176 ,1.3
+83073,Le Luc,48 ,0.2
+83081,Montauroux,157 ,1.6
+83091,Pierrefeu-du-Var,23 ,0.3
+83092,Carnoules,< 20,0.1
+83104,Rians,< 20,0.1
+83106,Rocbaron,s,s
+83107,Roquebrune-sur-Argens,80 ,0.6
+83115,Sainte-Maxime,219 ,0.9
+83116,Saint-Maximin-la-Sainte-Baume,40 ,0.1
+83119,Saint-Tropez,55 ,0.6
+83121,Salernes,106 ,1.4
+83137,Toulon,600 ,0.1
+83150,Vinon-sur-Verdon,28 ,0.4
+84003,Apt,137 ,0.5
+84007,Avignon,611 ,0.1
+84019,Bollène,21 ,0.1
+84026,Cadenet,75 ,0.5
+84069,Malaucène,s,s
+84089,Pertuis,42 ,0.1
+84091,Piolenc,< 20,0.0
+84123,Sault,32 ,0.5
+84133,La Tour-d'Aigues,31 ,0.3
+84137,Vaison-la-Romaine,83 ,0.6
+84138,Valréas,33 ,0.1
+85001,L'Aiguillon-sur-Mer,< 20,0.3
+85003,Aizenay,77 ,0.4
+85018,Beauvoir-sur-Mer,< 20,0.1
+85035,Bretignolles-sur-Mer,26 ,0.3
+85047,Challans,67 ,0.2
+85051,Chantonnay,164 ,0.8
+85059,La Châtaigneraie,392 ,2.4
+85084,Essarts en Bocage,26 ,0.2
+85092,Fontenay-le-Comte,376 ,0.9
+85109,Les Herbiers,< 20,0.0
+85113,L'Île-d'Yeu,s,s
+85114,Jard-sur-Mer,s,s
+85128,Luçon,94 ,0.4
+85135,Mareuil-sur-Lay-Dissais,57 ,0.7
+85146,Montaigu-Vendée,24 ,0.1
+85151,Mortagne-sur-Sèvre,< 20,0.0
+85152,La Mothe-Achard,33 ,0.2
+85156,Moutiers-les-Mauxfaits,105 ,0.7
+85163,Noirmoutier-en-l'Île,< 20,0.0
+85178,Le Poiré-sur-Vie,30 ,0.1
+85182,Pouzauges,60 ,0.3
+85191,La Roche-sur-Yon,83 ,0.1
+85194,Les Sables-d'Olonne,41 ,0.1
+85215,Saint-Fulgent,< 20,0.1
+85223,Sainte-Hermine,96 ,1.6
+85226,Saint-Hilaire-de-Riez,68 ,0.2
+85234,Saint-Jean-de-Monts,< 20,0.1
+85288,Talmont-Saint-Hilaire,< 20,0.2
+85294,La Tranche-sur-Mer,24 ,0.4
+86066,Châtellerault,57 ,0.1
+86070,Chauvigny,86 ,0.3
+86078,Civray,925 ,7.1
+86082,Couhé,313 ,3.4
+86103,Gençay,76 ,0.9
+86112,L'Isle-Jourdain,375 ,6.3
+86128,Lencloître,56 ,0.5
+86137,Loudun,101 ,0.6
+86139,Lusignan,37 ,0.3
+86140,Lussac-les-Châteaux,128 ,1.3
+86160,Mirebeau,29 ,0.3
+86165,Montmorillon,434 ,3.4
+86177,Neuville-de-Poitou,21 ,0.1
+86194,Poitiers,215 ,0.1
+86207,La Roche-Posay,148 ,0.9
+86293,Vivonne,< 20,0.1
+86294,Vouillé,103 ,0.7
+87001,Aixe-sur-Vienne,34 ,0.2
+87002,Ambazac,37 ,0.4
+87011,Bellac,584 ,3.4
+87014,Bessines-sur-Gartempe,106 ,1.5
+87032,Châlus,446 ,5.2
+87040,Châteauneuf-la-Forêt,170 ,2.7
+87041,Châteauponsac,s,s
+87059,Le Dorat,794 ,9.3
+87064,Eymoutiers,209 ,4.0
+87085,Limoges,284 ,0.1
+87106,Nexon,61 ,0.6
+87126,Rochechouart,922 ,6.4
+87154,Saint-Junien,266 ,1.2
+87161,Saint-Léonard-de-Noblat,87 ,0.8
+87187,Saint-Yrieix-la-Perche,465 ,3.3
+88075,La Bresse,< 20,0.0
+88078,Bruyères,< 20,0.1
+88090,Charmes,< 20,0.0
+88095,Châtenois,< 20,0.0
+88114,Contrexéville,< 20,0.0
+88160,Épinal,36 ,0.0
+88196,Gérardmer,< 20,0.1
+88304,Mirecourt,< 20,0.0
+88319,Moyenmoutier,< 20,0.0
+88321,Neufchâteau,< 20,0.0
+88367,Rambervillers,< 20,0.0
+88372,Raon-l'Étape,< 20,0.0
+88383,Remiremont,< 20,0.0
+88413,Saint-Dié-des-Vosges,23 ,0.0
+88468,Le Thillot,< 20,0.0
+88516,Vittel,< 20,0.0
+89003,Aillant-sur-Tholon,< 20,0.0
+89024,Auxerre,64 ,0.1
+89025,Avallon,98 ,0.4
+89068,Chablis,< 20,0.1
+89086,Charny,< 20,0.1
+89206,Joigny,< 20,0.0
+89257,Migennes,< 20,0.1
+89309,Pont-sur-Yonne,< 20,0.0
+89345,Saint-Florentin,< 20,0.1
+89368,Saint-Sauveur-en-Puisaye,22 ,0.2
+89387,Sens,26 ,0.0
+89418,Tonnerre,31 ,0.2
+89419,Toucy,< 20,0.2
+89464,Villeneuve-sur-Yonne,< 20,0.1
+90009,Beaucourt,< 20,0.0
+90010,Belfort,67 ,0.1
+90033,Delle,< 20,0.0
+90052,Giromagny,< 20,0.0
+91016,Angerville,< 20,0.0
+91045,Ballancourt-sur-Essonne,< 20,0.0
+91200,Dourdan,< 20,0.1
+91223,Étampes,24 ,0.1
+91226,Étréchy,23 ,0.1
+91338,Limours,44 ,0.2
+91405,Milly-la-Forêt,52 ,0.3
+91540,Saint-Chéron,< 20,0.0
+95250,Fosses,24 ,0.1
+95351,Louvres,< 20,0.0
+95355,Magny-en-Vexin,< 20,0.1
+95370,Marines,22 ,0.2
+95487,Persan - Beaumont-sur-Oise,37 ,0.1
+95652,Viarmes,< 20,0.1
+97101,Pointe-à-Pitre - Les Abymes,79 ,0.0
+97105,Basse-Terre,< 20,0.0
+97107,Capesterre-Belle-Eau,< 20,0.0
+97112,Grand-Bourg,< 20,0.0
+97129,Sainte-Rose,< 20,0.0
+97209,Fort-de-France,30 ,0.0
+97213,Le Lamentin,< 20,0.0
+97222,Le Robert,59 ,0.0
+97228,Sainte-Marie,< 20,0.0
+97302,Cayenne,66 ,0.0
+97304,Kourou,< 20,0.0
+97311,Saint-Laurent-du-Maroni,< 20,0.0
+97404,L'Étang-Salé,< 20,0.0
+97405,Petite-Île,< 20,0.0
+97409,Saint-André,< 20,0.0
+97410,Saint-Benoît,< 20,0.0
+97411,Saint-Denis,75 ,0.0
+97412,Saint-Joseph,< 20,0.0
+97413,Saint-Leu,< 20,0.0
+97414,Saint-Louis,< 20,0.0
+97415,Saint-Paul,27 ,0.0
+97416,Saint-Pierre,31 ,0.0
+976,Mayotte,< 20,0.0
+,,,
+,,,
+,,,

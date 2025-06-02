@@ -21,3 +21,7 @@ e4e/.DS_Store
 ChartOfTheDay/templates/cpi/geckodriver.log
 .vscode/settings.json
 Newsletters/2025_04_11/dataset_2025-04-08T09_02_24.750240431Z_DEFAULT_INTEGRATION_IMF.STA_BOP_AGG_9.0.1.csv
+Newsletters/2025_05_29 France/estat_lfst_r_lfsd2pwc.tsv
+Newsletters/2025_05_29 France/estat_lfst_r_lfsd2pwc_en.csv
+Newsletters/2025_05_29 France/RP2021_indreg.parquet
+Newsletters/2025_05_29 France/RP1968-2021.parquet

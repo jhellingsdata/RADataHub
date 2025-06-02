@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Hex Map</title>
+    <style>
+        :root {
+            --min-width: 700px;
+            --min-height: 500px;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            min-width: var(--min-width);
+            min-height: var(--min-height);
+            overflow-x: hidden;
+        }
+
+        body {
+            max-width: 100%;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .map-container {
+            position: relative;
+            min-height: 500px;
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .hexMap {
+            width: 65%;
+            min-width: 450px;
+            height: 100%;
+            min-height: 400px;
+        }
+
+        #normalMap {
+            width: 30%;
+            min-width: 200px;
+            height: 100%;
+            min-height: 400px;
+            margin-right: 2%;
+        }
+
+        @media (max-width: 900px) {
+            .map-container {
+                flex-direction: column;
+                height: auto;
+            }
+            
+            #normalMap, .hexMap {
+                width: 100%;
+                height: 50vh;
+                min-height: 250px;
+            }
+        }
+
+        .info {
+            padding-top: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            z-index: 2;
+            position: relative;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #tooltip {
+            position: absolute;
+            opacity: 0;
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            pointer-events: none;
+            z-index: 1000;
+            font-size: 0.9rem;
+        }
+
+        #tooltip h4 {
+            margin: 0 0 5px 0;
+            font-size: 1rem;
+        }
+
+        #tooltip p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Toggle Line */
+        .toggle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem auto;
+            position: relative;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+            position: relative;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: -12px;
+        }
+
+        .circle-button {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid #000;
+            background-color: white;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .circle-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Add this style to highlight the active button */
+        .circle-button.active {
+            background-color: #000;
+        }
+
+        .label {
+            margin-top: 15px;
+            font-size: 14px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .button1 {
+            left: 0%;
+        }
+
+        .button2 {
+            left: 33%;
+        }
+
+        .button3 {
+            left: 66%;
+        }
+
+        .button4 {
+            left: 95%;
+        }
+
+        #supermarketSelect {
+            opacity: 1; /* Visible by default */
+            position: absolute;
+            top: 20px;
+            right: 5%;
+            min-width: 120px;
+            width: 15%;
+            max-width: 200px;
+            height: 40px;
+            z-index: 3;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        #sources {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 5%;
+            text-align: left;
+            font-size: 0.8rem;
+            border-top: 1px solid #eee;
+            z-index: 3;
+        }
+
+        #sources p {
+            margin: 0;
+            color: rgba(0, 0, 0, 0.7);
+            font-weight: lighter;
+        }
+
+        /* Text styles for visualization annotations */
+        .vizView {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+        <div id="tooltip">
+            <h4 id="name"></h4>
+            <p id="party"></p>
+        </div>
+
+        <select id="supermarketSelect" onchange="groupBySupermarket(this.value)">
+            <!-- 'aldi', 'asda', 'co-operative', 'iceland', 'lidl',
+       'marks and spencer', 'morrisons', 'sainsburys', 'tesco', 'waitrose' -->
+            <option value="tesco">Tesco</option>
+            <option value="sainsburys">Sainsburys</option>
+            <option value="morrisons">Morrisons</option>
+            <option value="lidl">Lidl</option>
+            <option value="waitrose" selected>Waitrose</option>
+            <option value="iceland">Iceland</option>
+            <option value="marks and spencer">M&S</option>  
+
+        </select>
+
+          <div id="container">
+        <div class="map-container">
+            <svg class="normalMap" overflow="visible" id="normalMap"></svg>
+            <svg class="hexMap" overflow="visible" id="hexMap"></svg>
+        </div>
+        <div class="info">
+            <!-- <div class="info-box">
+                <h2>Information 1</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, distinctio aut molestias, consequatur vitae.</p>
+            </div>
+            <div class="info-box">
+                <h2>Information 2</h2>
+                <p>This is the second info box containing additional information.</p>
+            </div>
+            <div class="info-box">
+                <h2>Information 1</h2>
+                <p>This is the first info box containing information about the constituencies.</p>
+            </div>
+            <div class="info-box">
+                <h2>Information 2</h2>
+                <p>This is the second info box containing additional information.</p>
+            </div>
+
+            <div class="info-box">
+                <h2>Information 1</h2>
+                <p>This is the first info box containing information about the constituencies.</p>
+            </div>
+            <div class="info-box">
+                <h2>Information 2</h2>
+                <p>This is the second info box containing additional information.</p>
+            </div>
+
+            <div class="info-box">
+                <h2>Information 1</h2>
+                <p>This is the first info box containing information about the constituencies.</p>
+            </div>
+            <div class="info-box">
+                <h2>Information 2</h2>
+                <p>This is the second info box containing additional information.</p>
+            </div>
+ -->
+            <!-- Add more info boxes as needed -->
+        </div>
+    </div>
+
+    <div class="toggle-container">
+        <div class="line">
+            <div class="button-container button1">
+                <button class="circle-button" onclick="resetHexMap()"></button>
+                <div class="label">Start</div>
+            </div>
+            <div class="button-container button2">
+                <button class="circle-button" onclick="drawHexBarGraph('employment_rate_quintile')"> </button>
+                <div class="label">Employment</div>
+            </div>
+            <div class="button-container button3">
+                <button class="circle-button" onclick="drawHexBarGraph('rqf4_rate_quintile')"></button>
+                <div class="label"> Education </div>
+            </div>
+            <div class="button-container button4">
+                <button class="circle-button active" onclick="groupBySupermarket()"></button>
+                <div class="label">Supermarkets</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sources">
+        <p>
+            Data: ONS, Geolytix | Hex Map:  Automatic Knowledge
+        </p>
+    </div>
+
+
+
+    <script src="d3.v7.js"></script>
+    <script>
+        // Use responsive sizing with a minimum size
+        function getMapDimensions() {
+            const hexMapElem = document.querySelector('.hexMap');
+            const normalMapElem = document.querySelector('.normalMap');
+            
+            // Get dimensions that respect minimum sizes
+            const hexWidth = Math.max(450, hexMapElem.clientWidth);
+            const hexHeight = Math.max(400, hexMapElem.clientHeight);
+            
+            const normalWidth = Math.max(200, normalMapElem.clientWidth);
+            const normalHeight = Math.max(400, normalMapElem.clientHeight);
+            
+            return {
+                hexWidth,
+                hexHeight,
+                normalWidth,
+                normalHeight
+            };
+        }
+        
+        // Get initial dimensions
+        const dimensions = getMapDimensions();
+        
+        // Create SVGs with responsive dimensions
+        const hexSvg = d3.select('.hexMap')
+            .attr('width', '100%')
+            .attr('height', '100%')
+            .attr('viewBox', `0 0 ${dimensions.hexWidth} ${dimensions.hexHeight}`)
+            .attr('preserveAspectRatio', 'xMidYMid meet');
+
+        const normalSvg = d3.select('.normalMap')
+            .attr('width', '100%')
+            .attr('height', '100%')
+            .attr('viewBox', `0 0 ${dimensions.normalWidth} ${dimensions.normalHeight}`)
+            .attr('preserveAspectRatio', 'xMidYMid meet');
+            
+        // Define width and height variables for consistent use in the visualization
+        const width = dimensions.hexWidth;
+        const height = dimensions.hexHeight;
+
+        const projection = d3.geoIdentity().reflectY(true).fitSize([width, height], { type: 'FeatureCollection', features: [] });
+        const path = d3.geoPath().projection(projection);
+
+        // Define a color scale for the major parties
+        const colorScale = d3.scaleOrdinal()
+            .domain(['Lab', 'LD', 'Con', 'DUP', 'SNP', 'SF', 'SDLP', 'Green', 'PC', 'Spkr', 'All'])
+            .range([
+                'rgb(220, 67, 67)',
+                'rgb(233, 190, 32)',  // LD
+                'rgb(67, 169, 220)',  // Con
+                'rgb(212, 106, 75)',  // DUP
+                '#ffdd00',  // SNP
+                'rgb(49, 103, 96)',  // SF
+                'rgb(34, 135, 37)',  // SDLP
+                'rgb(30, 180, 40)',  // Green
+                'rgb(0,91,84)',  // PC
+                '#cccccc',  // Spkr
+                'rgb(233, 190, 32)'   // All
+            ]);
+
+
+        function updateTooltipContents(properties) {
+            //console.log(properties);
+
+            d3.select("#name").text(properties.PCON24NM || properties.BCName);
+            d3.select("#party").text(csvMap.get(properties.PCON24CD || properties.GSScode));
+            d3.select("#tooltip").style("border-color", 'rgba(255, 255, 255, 0.8)');
+            d3.select("#tooltip").style("background-color", colorScale(csvMap.get(properties.PCON24CD || properties.GSScode)));
+        }
+
+        const tooltip = d3.select("#tooltip");
+
+        // Function to update active button
+        function updateActiveButton(buttonNumber) {
+            // Remove active class from all buttons
+            document.querySelectorAll('.circle-button').forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Add active class to the clicked button
+            document.querySelector(`.button${buttonNumber} .circle-button`).classList.add('active');
+        }
+
+        // Load the CSV file
+        d3.csv('indicators_post_election.csv').then(csvData => {
+            // make the csv data available globally
+            window.csvData = csvData;
+            csvMap = new Map();
+            csvData.forEach(d => {
+                csvMap.set(d.GSScode, d.winner_2024);
+            });
+
+
+            // draw the normal map first
+            d3.json("buc_const.geojson").then(geojson => {
+                projection.fitSize([width, height * 1.2], geojson);
+
+                normalSvg.selectAll('.constituency')
+                    .data(geojson.features)
+                    .enter().append('path')
+                    .attr('d', path)
+                    .style("transform", "translate(-100px, 0px)")
+                    .attr('stroke', '#ccc')
+                    .attr('class', 'constituency')
+                    .attr('stroke-width', 0.25)
+                    .attr('fill', d => {
+                        const winner = csvMap.get(d.properties.PCON24CD);
+                        return winner ? colorScale(winner) : '#ddd'; // Default to light grey if no match
+                    }).on('mouseover', function (event, d) {
+
+                        tooltip.transition()
+                            .duration(200)
+                            .style("opacity", .9);
+
+                        tooltip.style("left", (event.pageX - 40) + "px")
+                            .style("top", (event.pageY) + "px");
+
+                        // select the normal and hex with the same GSS code and give them a red border
+                        const id = d.properties.PCON24CD;
+                        d3.selectAll(`.constituency, .hex`)
+                            .filter(e => e.properties.GSScode === id || e.properties.PCON24CD === id)
+                            .attr('stroke', 'white')
+                            .attr('stroke-width', e => e.properties.GSScode === id ? 5 : 2)
+                            .raise();
+
+
+                        updateTooltipContents(d.properties);
+
+
+                    }).on('mouseout', function (d) {
+                        d3.selectAll(`.constituency, .hex`)
+                            .attr('stroke', '#ccc')
+                            .attr('stroke-width', 0.25);
+
+                        tooltip.transition()
+                            .duration(500)
+                            .style("opacity", 0);
+                    });
+
+                // draw the hex map - Load the GeoJSON file
+                d3.json('hexes.geojson').then(geojson => {
+                    projection.fitSize([width, height], geojson);
+
+                    // add each col of the csv data to the properties of the geojson by matching the GSS code
+                    csvData.forEach(d => {
+                        const feature = geojson.features.find(f => f.properties.GSScode === d.GSScode);
+                        if (feature) {
+                            Object.keys(d).forEach(key => {
+                                feature.properties[key] = d[key];
+                            });
+                        }
+                    });
+
+                    //party_order = ['Con', 'Lab', 'SNP', 'LD']
+                    party_order = ['LD', 'SNP', 'Lab', 'Con']
+
+                    geojson.features.sort((a, b) => {
+                        //return (a.properties.winner_2024=='Con') -( b.properties.winner_2024=='Con')
+                        return party_order.indexOf(b.properties.winner_2024) - party_order.indexOf(a.properties.winner_2024)
+                    })
+
+                    hexSvg.selectAll('.hex')
+                        .data(geojson.features)
+                        .enter().append('path')
+                        .attr('d', path)
+                        .attr("class", "hex")
+                        .attr('stroke', '#ccc')
+                        .attr('fill', d => {
+                            const winner = csvMap.get(d.properties.GSScode);
+                            return winner ? colorScale(winner) : '#ddd'; // Default to light grey if no match
+                        }).on('mouseover', function (event, d) {
+                            tooltip.transition()
+                                .duration(200)
+                                .style("opacity", .9);
+
+                            tooltip.style("left", (event.pageX - 40) + "px")
+                                .style("top", (event.pageY) + "px");
+
+                            // select the normal and hex with the same GSS code and give them a red border
+                            const id = d.properties.GSScode;
+
+                            d3.selectAll(`.constituency, .hex`)
+                                .filter(e => e.properties.GSScode === id || e.properties.PCON24CD === id)
+                                .attr('stroke', 'white')
+                                .attr('stroke-width', e => e.properties.GSScode === id ? 5 : 2)
+                                .raise();
+
+                            updateTooltipContents(d.properties);
+                        }).on('mouseout', function (d) {
+                            d3.selectAll(`.constituency, .hex`)
+                                .attr('stroke', '#ccc')
+                                .attr('stroke-width', 0.25);
+
+                            tooltip.transition()
+                                .duration(500)
+                                .style("opacity", 0);
+                        });
+
+                    // After drawing the hex map, initialize the supermarket view to avoid race conditions
+                    setTimeout(() => {
+                        groupBySupermarket('waitrose');
+                        updateActiveButton(4);
+                    }, 500);
+                });
+            });
+        });
+
+        function getTranslateNeededForXY(element, x, y, rotation = 120) {
+
+            // what's the current position - according to its bounding box
+            const bbox = element.node().getBBox();
+            const currentX = bbox.x + bbox.width / 2;
+            const currentY = bbox.y + bbox.height / 2;
+
+            // what's the difference between the current position and the desired position
+            const dx = x - currentX;
+            const dy = y - currentY;
+
+            // return the correct translation with them rotated around their center
+            return `translate(${dx}, ${dy}) rotate(${rotation}, ${x}, ${y})`;
+        }
+
+        function getTranslateNeededForXY(element, x, y, rotation = 60) {
+            try {
+                // what's the current position - according to its bounding box
+                const bbox = element.node().getBBox();
+                const currentX = bbox.x + bbox.width / 2;
+                const currentY = bbox.y + bbox.height / 2;
+
+                // what's the difference between the current position and the desired position
+                const dx = x - currentX;
+                const dy = y - currentY;
+
+                // return the correct translation with them rotated around their center
+                return `translate(${dx}, ${dy})`;
+            } catch (error) {
+                // Log the error and the ID of the element
+                console.error(`Error processing element with ID`, error);
+                // Optionally, you can rethrow the error if you want to handle it further up
+                // throw error;
+            }
+        }
+
+        function rearrangeHexes() {
+            // If a hex's properties.fid is even move it to 200, 200 + a random number between 0 and 100
+            // If a hex's properties.fid is odd move it to 400, 400 + a random number between 0 and 100
+
+            hexSvg.selectAll('.hex')
+                .transition()
+                .duration(1000)
+                .attr('transform', function (d) {
+                    const selection = d3.select(this);
+                    const neededTranslate = getTranslateNeededForXY(
+                        selection,
+                        d.properties.fid % 2 === 0 ? 200 + Math.random() * 100 : 400 + Math.random() * 100,
+                        d.properties.fid % 2 === 0 ? 200 + Math.random() * 100 : 400 + Math.random() * 100
+                    );
+                    return neededTranslate;
+                });
+        }
+
+        axisSettings = {
+            'employment_rate_quintile': {
+                "title": "Employment Rate (16-64)",
+                "rangeOrder": ['Lowest Quintile (<70.0%)', 'Second Quintile (70.0%-74.7%)', 'Third Quintile (74.7%-78.2%)', 'Fourth Quintile (78.2%-81.9%)', 'Highest Quintile (81.9%+)']
+            },
+            'rqf4_rate_quintile': {
+                "title": "Graduates (RQF4+, %)",
+                "rangeOrder": ['Lowest Quintile (<35.3%)', 'Second Quintile (35.3%-42.3%)', 'Third Quintile (42.3%-48.3%)', 'Fourth Quintile (48.3%-57.9%)', 'Highest Quintile (57.9%+)']
+            },
+        }
+
+        function resetHexMap() {
+            removeVizProps();
+            updateActiveButton(1);
+            
+            d3.selectAll('.hex')
+                .transition()
+                .duration(2000)
+                .attr('transform', function (d) {
+                    return "translate(0, 0)"
+                });
+        }
+
+        function removeVizProps() {
+            d3.selectAll(".vizView").remove();
+            d3.select('#supermarketSelect').style("opacity", 0);
+        }
+
+        function drawHexBarGraph(yAttr) {
+            removeVizProps();
+            
+            // Update active button based on which attribute is being visualized
+            if (yAttr === 'employment_rate_quintile') {
+                updateActiveButton(2);
+            } else if (yAttr === 'rqf4_rate_quintile') {
+                updateActiveButton(3);
+            }
+
+            const width = document.querySelector('.hexMap').clientWidth;
+            const plotAreaPadding = {
+                'left': 150,
+                'right': 50,
+                'top': 50,
+                'bottom': 50
+            };
+
+            yAttr = yAttr || 'employment_rate_quintile';
+
+            // get the unique values of the y attribute
+            const yValues = [...new Set(csvData.map(d => d[yAttr]))];
+
+            console.log(`yValues: ${yValues}`);
+
+            // y axis: the quintiles (nominal)
+            const y = d3.scaleBand()
+                .domain(axisSettings[yAttr].rangeOrder)
+                .range([height - plotAreaPadding.bottom, plotAreaPadding.top])
+                .padding(0.1);
+
+            // x axis - [0, the number of hexes in the largest quintile]
+            const maxHexCount = d3.max(yValues, d => csvData.filter(e => e[yAttr] === d).length);
+            const x = d3.scaleLinear()
+                .domain([0, Math.ceil(maxHexCount / 100) * 100])
+                .range([plotAreaPadding.left, width - plotAreaPadding.right]);
+
+            const hexWidth = d3.select('.hex').node().getBBox().width;
+            const hexHeight = d3.select('.hex').node().getBBox().height;
+
+            // Create a counter for each y value
+            const counters = {};
+            yValues.forEach(value => {
+                counters[value] = 0;
+            });
+
+            // Add the x axis
+            const xAxis = d3.axisBottom(x)
+                .ticks(0)
+                .tickSize(0);
+
+            // Add the y axis
+            const yAxis = d3.axisLeft(y)
+                .ticks(0)
+                .tickSize(0);
+
+            const axisG = hexSvg.append('g')
+
+            axisG.style("opacity", 0)
+                .transition()
+                .duration(2000)
+                .style("opacity", 1);
+
+
+            axisG.append('g')
+                .attr('class', 'y-axis vizView')
+                .attr('transform', `translate(${plotAreaPadding.left - 0.5 * hexWidth}, 0)`)
+                .call(yAxis)
+                .append('text')
+                .attr('class', 'axis-label')
+                .attr('transform', 'rotate(-90)')
+                .attr('x', 285)
+                .attr('y', 30)
+                .attr('fill', 'black')
+                .attr('text-anchor', 'left')
+                .attr('font-weight', 'bold')
+                .attr('font-size', '24px')
+                .text(axisSettings[yAttr].title);
+
+            // Style the axis lines to be thin and gray
+            axisG.selectAll('.x-axis path, .y-axis path')
+                .attr('stroke', 'gray')
+                .attr('stroke-width', 1);
+
+            // Adjust the y-axis labels to be centered
+            axisG.selectAll('.y-axis text')
+                .attr('transform', function (d) {
+                    const yValue = d;
+                    const count = csvData.filter(e => e[yAttr] === yValue).length;
+                    const rowIndex = Math.floor(count / 60); // Number of full rows
+                    const midpoint = (rowIndex * hexHeight) / 2;
+                    return `translate(0, ${-midpoint})`;
+                });
+
+
+            // Rearrange the hexes to the target x and y positions
+            hexSvg.selectAll('.hex')
+                .attr("opacity", function (d) {
+                    // if the property is null or undefined return 0
+                    return d.properties[yAttr] ? 1 : 0;
+                })
+                .transition()
+                .duration(2000)
+                .attr('transform', function (d) {
+                    const selection = d3.select(this);
+                    const yValue = d.properties[yAttr];
+                    const index = counters[yValue]++;
+                    const rowIndex = Math.floor(index / 20);
+                    const colIndex = index % 20;
+                    let xPosition = plotAreaPadding.left + colIndex * hexWidth * 1.5; // Increment by hex width with left padding
+                    let yPosition = y(yValue) + rowIndex * hexHeight + rowIndex * -0.5 * hexHeight; // Increment by hex height with top padding
+
+                    // Accumulate offsets for every other row within each y group
+                    if (rowIndex % 2 === 1) {
+                        xPosition += hexWidth * 0.75;
+                    }
+
+                    //yPosition += rowIndexYPositionOffsets[rowIndex];
+
+                    const neededTranslate = getTranslateNeededForXY(
+                        selection,
+                        xPosition,
+                        yPosition
+                    );
+                    return neededTranslate;
+                });
+        }
+
+        // Ring stuff
+
+
+        // Handle window resize events
+        window.addEventListener('resize', function() {
+            // Recalculate dimensions and update visualizations
+            const newDimensions = getMapDimensions();
+            
+            // Update SVG viewBoxes
+            hexSvg.attr('viewBox', `0 0 ${newDimensions.hexWidth} ${newDimensions.hexHeight}`);
+            normalSvg.attr('viewBox', `0 0 ${newDimensions.normalWidth} ${newDimensions.normalHeight}`);
+            
+            // Redraw current visualization based on active button
+            const activeButton = document.querySelector('.circle-button.active');
+            if (activeButton) {
+                const buttonContainer = activeButton.closest('.button-container');
+                if (buttonContainer.classList.contains('button4')) {
+                    // Supermarkets is active, get current selection
+                    const currentSelection = document.getElementById('supermarketSelect').value;
+                    groupBySupermarket(currentSelection);
+                } else if (buttonContainer.classList.contains('button3')) {
+                    drawHexBarGraph('rqf4_rate_quintile');
+                } else if (buttonContainer.classList.contains('button2')) {
+                    drawHexBarGraph('employment_rate_quintile');
+                } else if (buttonContainer.classList.contains('button1')) {
+                    resetHexMap();
+                }
+            }
+        });
+
+        function hexCoordsToXY(coords, hexWidth = 1) {
+            // Separate the coordinates into a_coords and b_coords
+            const aCoords = coords.map(d => d[0]);
+            const bCoords = coords.map(d => d[1]);
+
+            // Compute the x and y coordinates
+
+            // x_coords = (-h * np.sqrt(3) / 2) * a_coords
+            // y_coords = (-h / 2) * a_coords + h * b_coords
+
+            const xCoords = aCoords.map((a, i) => -hexWidth * Math.sqrt(3) / 2 * a);
+            const yCoords = aCoords.map((a, i) => -0.5 * hexWidth * a + hexWidth * bCoords[i]);
+
+            // Stack x and y coordinates into a single array of shape (N, 2)
+            const convertedCoords = xCoords.map((x, i) => [x, yCoords[i]]);
+
+            return convertedCoords;
+        }
+
+        function getHexCoords(n, numberOfRings = null) {
+            const hexCoords = [];
+
+            // How many rings are needed for n hexes?
+            if (numberOfRings === null) {
+                numberOfRings = Math.ceil((3 + Math.sqrt(12 * n - 3)) / 6);
+                console.log(`${numberOfRings} needed for ${n} hexes`);
+            }
+
+            for (let a = numberOfRings - 1; a >= -numberOfRings; a--) {
+                const bStart = a > 0 ? -numberOfRings + 1 + a : -numberOfRings + 1;
+                const bEnd = a > 0 ? numberOfRings - 1 : numberOfRings - 1 + a;
+                for (let b = bStart; b <= bEnd; b++) {
+                    hexCoords.push([a, b]);
+                }
+            }
+
+            return hexCoords;
+        }
+
+        function getRingNumbers(numberOfRings) {
+            const ringNumbers = [];
+            let existingRings = [];
+
+            for (let a = numberOfRings; a > 0; a--) {
+                ringNumbers.push([...existingRings, ...Array(a).fill(a), ...existingRings.slice().reverse()]);
+                existingRings = [...existingRings, a];
+            }
+
+            // Reverse the list excluding the last element
+            const reversedPart = ringNumbers.slice(0, -1).reverse();
+
+            // Append the reversed part to the original list
+            const completeRingNumbers = [...ringNumbers, ...reversedPart];
+
+            return [].concat(...completeRingNumbers);
+        }
+
+        function buildHexRing(hexes = null, center = null) {
+            // Calculate responsive center position if not provided
+            if (!center) {
+                // Default to center of the hexMap SVG
+                center = [width / 2, height / 2];
+            } else {
+                // Adjust center position based on current dimensions
+                const widthRatio = dimensions.hexWidth / 1000; // Assuming original design was for 1000px
+                const heightRatio = dimensions.hexHeight / 600; // Assuming original height was 600px
+                
+                center = [
+                    center[0] * widthRatio,
+                    center[1] * heightRatio
+                ];
+            }
+            
+            // How many hexes do we need? - how long is the selection of hexes?
+            hexes = hexes ? hexes : d3.selectAll('.hex');
+            const n = hexes.size();
+
+            // Let's get the coordinates for the hexes
+            let hexCoords = getHexCoords(n);
+
+            // Get the ring numbers for each hex
+            const numberOfRings = Math.ceil((3 + Math.sqrt(12 * n - 3)) / 6);
+            ringNumbers = getRingNumbers(numberOfRings);
+
+            // Sort the hexCoords by ring number 
+            hexCoords = hexCoords.map((d, i) => [d, ringNumbers[i]]).sort((a, b) => a[1] - b[1]).map(d => d[0]);
+            ringNumbers = ringNumbers.sort((a, b) => a - b);
+
+            // Let's get the x and y coordinates for the hexes
+            // Use a fixed small multiplier for consistent hex spacing
+            const hexElem = d3.select('.hex').node();
+            // Calculate hexWidth based on element size
+            const hexBBox = hexElem.getBBox();
+            // Use a multiplier that creates the proper hex pattern as in the screenshot
+            // The multiplier controls how tightly packed the hexes are
+            const hexWidth = Math.min(hexBBox.width, hexBBox.height) * 0.65;
+            const xyCoords = hexCoordsToXY(hexCoords, hexWidth);
+
+            // And move the hexes to the new positions
+            hexes
+                .transition()
+                .duration(1000)
+                .attr("ringNumber", function (d, i) {
+                    return ringNumbers[i]
+                }).attr('transform', function (d, i) {
+                    const selection = d3.select(this);
+                    const neededTranslate = getTranslateNeededForXY(
+                        selection,
+                        xyCoords[i][0] + center[0],
+                        xyCoords[i][1] + center[1]
+                    );
+                    return neededTranslate;
+                });
+        }
+
+        function groupBySupermarket(supermarket = 'waitrose') {
+            removeVizProps();
+            updateActiveButton(4);
+            
+            d3.select("#supermarketSelect").transition().duration(1000).style("opacity", 1).node().value = supermarket;
+
+            const hexes = d3.selectAll('.hex');
+
+            has_hexes = hexes.filter(d => d.properties[`has_${supermarket}`] == 'True');
+            hasnt_hexes = hexes.filter(d => d.properties[`has_${supermarket}`] != 'True');
+
+            // Adjust the centers to create the hexagonal pattern shown in the screenshot
+            // Position the "Has supermarket" group higher and more centered
+            const hasCenter = [width * 0.5, height * 0.3];
+            // Position the "No supermarket" group lower and to the right
+            const hasntCenter = [width * 0.75, height * 0.6];
+            
+            // Build two hex rings - one for the hexes with the supermarket and one for the hexes without
+            buildHexRing(has_hexes, hasCenter);
+            buildHexRing(hasnt_hexes, hasntCenter);
+
+            has_con_pct = d3.mean(has_hexes.data(), d => d.properties['winner_2024'] == 'Con');
+            hasnt_con_pct = d3.mean(hasnt_hexes.data(), d => d.properties['winner_2024'] == 'Con');
+
+            // Add the titles and subtitles with fixed positions relative to centers
+            // "Has a Supermarket" label
+            hexSvg.append('text')
+                .attr('x', hasCenter[0]+40)
+                .attr('y', hasCenter[1] )
+                .attr("class", "vizView")
+                .attr('text-anchor', 'middle')
+                .attr('font-family', "Arial, sans-serif")
+                .attr('font-size', '18px')
+                .text(`Has a ${supermarket.slice(0, 1).toUpperCase() + supermarket.slice(1)}`);
+
+            // "Has a Supermarket" stats
+            hexSvg.append('text')
+                .attr('x', hasCenter[0]+40)
+                .attr('y', hasCenter[1] +20)
+                .attr("class", "vizView")
+                .attr('text-anchor', 'middle')
+                .attr('font-family', "Arial, sans-serif")
+                .attr('font-size', '14px')
+                .html(`${(has_hexes.data().filter(d => d.properties['winner_2024'] == 'Con').length)}/${has_hexes.data().length} Con (${(has_con_pct * 100).toFixed(0)}%)`)
+
+            // "No Supermarket" label
+            hexSvg.append('text')
+                .attr('x', hasntCenter[0]+40)
+                .attr('y', hasntCenter[1]+20)
+                .attr("class", "vizView")
+                .attr('text-anchor', 'middle')
+                .attr('font-family', "Arial, sans-serif")
+                .attr('font-size', '18px')
+                .text(`No ${supermarket.slice(0, 1).toUpperCase() + supermarket.slice(1)}`);
+
+            // "No Supermarket" stats
+            hexSvg.append('text')
+                .attr('x', hasntCenter[0]+40)
+                .attr('y', hasntCenter[1] +40)
+                .attr("class", "vizView")
+                .attr('text-anchor', 'middle')
+                .attr('font-family', "Arial, sans-serif")
+                .attr('font-size', '14px')
+                .html(`${(hasnt_hexes.data().filter(d => d.properties['winner_2024'] == 'Con').length)}/${hasnt_hexes.data().length} Con (${(hasnt_con_pct * 100).toFixed(0)}%)`)
+        }
+
+        // Instead of calling groupBySupermarket at the end of the script, it's now initialized
+        // within the callback after loading the geojson data
+    </script>
+
+</body>
+
+</html>
