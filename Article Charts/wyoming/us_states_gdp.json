@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/wyoming/us_states_gdp.csv"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/wyoming/us_states_topo.json",
+        "format": {"type": "topojson", "feature": "geog"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": {"expr": "datum.id === '56' ? 'black' : 'whitesmoke'"},
+        "strokeWidth": {"expr": "datum.id === '56' ? 1.5 : 0.3"}
+      }
+    },
+    {
+      "transform": [
+        {
+          "lookup": "id",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/wyoming/us_states_topo.json",
+              "format": {"type": "topojson", "feature": "geog"}
+            },
+            "key": "id",
+            "fields": ["type", "properties", "geometry", "arcs"]
+          }
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "gdp",
+          "type": "quantitative",
+          "legend": {
+            "title": "Millions 2017 USD",
+            "labelFontWeight": "lighter",
+            "format": "~s",
+            "orient": "none",
+            "legendX": 0,
+            "legendY": -10,
+            "direction": "horizontal",
+            "gradientLength": 200,
+            "tickCount": 6
+          },
+          "scale": {"scheme": "yellowgreenblue", "type": "symlog"}
+        },
+        "tooltip": [
+          {"field": "name", "title": "State"},
+          {"field": "gdp", "title": "Real GDP (Millions 2017 USD)", "format": ","}
+        ]
+      },
+      "projection": {"type": "albersUsa"},
+      "mark": {
+        "type": "geoshape",
+        "stroke": {"expr": "datum.id === '56' ? 'black' : 'whitesmoke'"},
+        "strokeWidth": {"expr": "datum.id === '56' ? 1 : 0.3"}
+      }
+    }
+  ],
+  "config": {
+        "font": "Circular Std",
+        "view": {"stroke": "transparent"},
+        "range": {
+          "category": [
+            "#36B7B4",
+            "#E6224B",
+            "#F4C245",
+            "#0063AF",
+            "#00A767",
+            "#179FDB",
+            "#EB5C2E"
+          ]
+        },
+        "legend": {
+          "titleColor": "#122b39",
+          "title": null,
+          "labelColor": "#122b39",
+          "labelFontSize": 11,
+          "labelFontWeight":"lighter"
+        }
+      }
+}
