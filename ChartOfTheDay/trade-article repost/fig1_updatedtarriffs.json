@@ -1,8 +1,8 @@
 {
   "title": {
-    "text": "Reciprocal Tariffs: Major US Trading Partners",
+    "text": "US: Pause on Reciprocal Tariffs",
     "subtitle": [
-      " Top 15 trading partners, excl. Mexico and Canada. *EU countries subject to same tariff.",
+      "Revisions to originally imposed rates for major trading partners, excl. Mexico and Canada.",
       "Source:  US Census Bureau"
     ],
     "anchor": "start",
@@ -122,7 +122,14 @@
           "field": "tariff_reciprocal",
           "type": "quantitative"
         },
-        "y": {"field": "Country", "sort": "-x", "type": "nominal"}
+        "y": {"field": "Country", "sort": "-x", "type": "nominal"},
+        "color": {
+          "condition": {
+            "test": "datum.Country === 'China'",
+            "value": "#E6224B"
+          },
+          "value": "#36b7b4"
+        }
       },
       "transform": [
         {"calculate": "datum.tariff_reciprocal + \"%\"", "as": "label"}
@@ -161,7 +168,7 @@
         "ISO3": "CHN",
         "id": "CHN",
         "tariff_charged": 67,
-        "tariff_reciprocal": 34,
+        "tariff_reciprocal": 125,
         "Country_clean": "China"
       },
       {
@@ -180,7 +187,7 @@
       },
       {
         "Rank": "5 ",
-        "Country": "Germany*",
+        "Country": "Germany",
         "Exports": 12.1,
         "Imports": 26.3,
         "Total Trade": 38.4,
@@ -208,7 +215,7 @@
       },
       {
         "Rank": "7 ",
-        "Country": "Ireland*",
+        "Country": "Ireland",
         "Exports": 2.5,
         "Imports": 28.9,
         "Total Trade": 31.4,
@@ -292,7 +299,7 @@
       },
       {
         "Rank": "13 ",
-        "Country": "Netherlands*",
+        "Country": "Netherlands",
         "Exports": 14,
         "Imports": 5.7,
         "Total Trade": 19.7,
@@ -306,7 +313,7 @@
       },
       {
         "Rank": "14 ",
-        "Country": "France*",
+        "Country": "France",
         "Exports": 8,
         "Imports": 9.7,
         "Total Trade": 17.6,
@@ -320,7 +327,7 @@
       },
       {
         "Rank": "15 ",
-        "Country": "Italy*",
+        "Country": "Italy",
         "Exports": 5.1,
         "Imports": 12.4,
         "Total Trade": 17.5,
