@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blockade Map D3 Frame</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <style>
+            @font-face {
+      font-family: 'Circular Std';
+      src: url('circular-std/CircularStd-Book.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+
+        body {
+            font-family: "Circular Std", sans-serif;
+        }
+    </style>
+</head>
+<body>
+      <div id="custom-legend" style="display: flex; align-items: center; gap: 0.8em; margin-bottom: 1em;">
+    <span style="display: flex; align-items: center; gap: 0.5em;">
+      <span style="width: 18px; height: 18px; border-radius: 50%; background: #E6224B; display: inline-block; border: 2px solid #333;"></span>
+      <span style="font-size: 0.8em;">UK</span>
+    </span>
+    <span style="display: flex; align-items: center; gap: 0.5em;">
+      <span style="width: 18px; height: 18px; border-radius: 50%; background: #008066; display: inline-block; border: 2px solid #333;"></span>
+      <span style="font-size: 0.8em;">Directly administered</span>
+    </span>
+    <span style="display: flex; align-items: center; gap: 0.5em;">
+      <span style="width: 18px; height: 18px; border-radius: 50%; background: #36b7b4; display: inline-block; border: 2px solid #333;"></span>
+      <span style="font-size: 0.8em;">Client states</span>
+    </span>
+    <span style="display: flex; align-items: center; gap: 0.5em;">
+      <span style="width: 18px; height: 18px; border-radius: 50%; background: #8be0db; display: inline-block; border: 2px solid #333;"></span>
+      <span style="font-size: 0.8em;">Continental System</span>
+    </span>
+  </div>
+  <div id="svg-container"></div>
+<script>
+  // Load the SVG file
+  d3.xml("Continental_Blockade_(1812).svg").then(data => {
+    // Append SVG to the container
+    const svgNode = data.documentElement;
+    document.getElementById("svg-container").appendChild(svgNode);
+
+// 0
+// "#c0c0c0"
+// 1
+// "#008066"
+// 2
+// "#49c946"
+// 3
+// "#008000"
+// 4
+// "#ffffff"
+
+    const rebinds = {
+  "#008000": "#008066",   // dark green → deep teal (most intense)
+  "#49c946": "#36b7b4",   // bright green → teal (medium)
+  "#008066": "#8be0db",   // teal → light teal (less intense)
+    };
+    // Find all elements that might have a fill (either as attribute or in style)
+    const fills = new Set();
+    svgNode.querySelectorAll('*').forEach(el => {
+      // Check for fill attribute
+      const fillAttr = el.getAttribute('fill');
+      if (fillAttr && fillAttr !== 'none') {
+        fills.add(fillAttr);
+        if (rebinds[fillAttr]) {
+          el.setAttribute('fill', rebinds[fillAttr]);
+        }
+      }
+
+      // Check for style attribute
+      const style = el.getAttribute('style');
+      if (style) {
+        const match = style.match(/fill:([^;]+);?/);
+        if (match && match[1] && match[1] !== 'none') {
+          const origFill = match[1].trim();
+          fills.add(origFill);
+          if (rebinds[origFill]) {
+            // Replace fill in style string
+            const newStyle = style.replace(/fill:([^;]+);?/, `fill:${rebinds[origFill]};`);
+            el.setAttribute('style', newStyle);
+          }
+        }
+      }
+    });
+
+    // Shade United Kingdom of Great Britain and Ireland in #E6224B
+    const ukGroup = svgNode.querySelector('g[id="United Kingdom of Great Britain and Ireland"]');
+    if (ukGroup) {
+      ukGroup.querySelectorAll('path').forEach(path => {
+        path.setAttribute('fill', '#E6224B');
+        // If style attribute has fill, override it too
+        let style = path.getAttribute('style');
+        if (style) {
+          // Remove any fill:...; from style
+          style = style.replace(/fill:[^;]+;?/g, '');
+          path.setAttribute('style', style);
+        }
+      });
+    }
+
+    // Log unique fill colors
+    console.log("Unique fill colors:", Array.from(fills));
+  });
+</script>
+</body>
+</html>
