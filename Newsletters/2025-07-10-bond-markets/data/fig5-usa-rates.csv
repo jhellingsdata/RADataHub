@@ -1,0 +1,829 @@
+date,value,series
+1991-01-31,0.080206,US 10-year| bond yield
+1991-02-28,0.080449,US 10-year| bond yield
+1991-03-31,0.080641,US 10-year| bond yield
+1991-04-30,0.08017899999999999,US 10-year| bond yield
+1991-05-31,0.080614,US 10-year| bond yield
+1991-06-30,0.08231999999999999,US 10-year| bond yield
+1991-07-31,0.081567,US 10-year| bond yield
+1991-08-31,0.07814499999999999,US 10-year| bond yield
+1991-09-30,0.07452,US 10-year| bond yield
+1991-10-31,0.074222,US 10-year| bond yield
+1991-11-30,0.073736,US 10-year| bond yield
+1991-12-31,0.066992,US 10-year| bond yield
+1992-01-31,0.07276099999999999,US 10-year| bond yield
+1992-02-29,0.07252399999999999,US 10-year| bond yield
+1992-03-31,0.075305,US 10-year| bond yield
+1992-04-30,0.075832,US 10-year| bond yield
+1992-05-31,0.073224,US 10-year| bond yield
+1992-06-30,0.071234,US 10-year| bond yield
+1992-07-31,0.066961,US 10-year| bond yield
+1992-08-31,0.066041,US 10-year| bond yield
+1992-09-30,0.063543,US 10-year| bond yield
+1992-10-31,0.067889,US 10-year| bond yield
+1992-11-30,0.069281,US 10-year| bond yield
+1992-12-31,0.06690299999999999,US 10-year| bond yield
+1993-01-31,0.063612,US 10-year| bond yield
+1993-02-28,0.060134999999999994,US 10-year| bond yield
+1993-03-31,0.060239,US 10-year| bond yield
+1993-04-30,0.060092999999999994,US 10-year| bond yield
+1993-05-31,0.061103,US 10-year| bond yield
+1993-06-30,0.057782,US 10-year| bond yield
+1993-07-31,0.058095,US 10-year| bond yield
+1993-08-31,0.054456,US 10-year| bond yield
+1993-09-30,0.053741000000000004,US 10-year| bond yield
+1993-10-31,0.054204,US 10-year| bond yield
+1993-11-30,0.058168,US 10-year| bond yield
+1993-12-31,0.057874999999999996,US 10-year| bond yield
+1994-01-31,0.056447000000000004,US 10-year| bond yield
+1994-02-28,0.061331,US 10-year| bond yield
+1994-03-31,0.06738000000000001,US 10-year| bond yield
+1994-04-30,0.07041,US 10-year| bond yield
+1994-05-31,0.07152,US 10-year| bond yield
+1994-06-30,0.07325,US 10-year| bond yield
+1994-07-31,0.07113,US 10-year| bond yield
+1994-08-31,0.07178,US 10-year| bond yield
+1994-09-30,0.07608,US 10-year| bond yield
+1994-10-31,0.07812000000000001,US 10-year| bond yield
+1994-11-30,0.07905999999999999,US 10-year| bond yield
+1994-12-31,0.07831,US 10-year| bond yield
+1995-01-31,0.07579,US 10-year| bond yield
+1995-02-28,0.07205,US 10-year| bond yield
+1995-03-31,0.07198,US 10-year| bond yield
+1995-04-30,0.07055,US 10-year| bond yield
+1995-05-31,0.06286,US 10-year| bond yield
+1995-06-30,0.06207,US 10-year| bond yield
+1995-07-31,0.06424,US 10-year| bond yield
+1995-08-31,0.06286,US 10-year| bond yield
+1995-09-30,0.06182000000000001,US 10-year| bond yield
+1995-10-31,0.06024,US 10-year| bond yield
+1995-11-30,0.05745,US 10-year| bond yield
+1995-12-31,0.05575,US 10-year| bond yield
+1996-01-31,0.0558,US 10-year| bond yield
+1996-02-29,0.061,US 10-year| bond yield
+1996-03-31,0.0633,US 10-year| bond yield
+1996-04-30,0.0667,US 10-year| bond yield
+1996-05-31,0.06849999999999999,US 10-year| bond yield
+1996-06-30,0.0672,US 10-year| bond yield
+1996-07-31,0.068,US 10-year| bond yield
+1996-08-31,0.06945,US 10-year| bond yield
+1996-09-30,0.067,US 10-year| bond yield
+1996-10-31,0.0634,US 10-year| bond yield
+1996-11-30,0.0605,US 10-year| bond yield
+1996-12-31,0.0643,US 10-year| bond yield
+1997-01-31,0.065,US 10-year| bond yield
+1997-02-28,0.06556000000000001,US 10-year| bond yield
+1997-03-31,0.06907,US 10-year| bond yield
+1997-04-30,0.0672,US 10-year| bond yield
+1997-05-31,0.06663000000000001,US 10-year| bond yield
+1997-06-30,0.06502,US 10-year| bond yield
+1997-07-31,0.060129999999999996,US 10-year| bond yield
+1997-08-31,0.06339,US 10-year| bond yield
+1997-09-30,0.06103,US 10-year| bond yield
+1997-10-31,0.05835,US 10-year| bond yield
+1997-11-30,0.0588,US 10-year| bond yield
+1997-12-31,0.05744,US 10-year| bond yield
+1998-01-31,0.05516,US 10-year| bond yield
+1998-02-28,0.05624,US 10-year| bond yield
+1998-03-31,0.056580000000000005,US 10-year| bond yield
+1998-04-30,0.0582,US 10-year| bond yield
+1998-05-31,0.05558,US 10-year| bond yield
+1998-06-30,0.0545,US 10-year| bond yield
+1998-07-31,0.054939999999999996,US 10-year| bond yield
+1998-08-31,0.05048,US 10-year| bond yield
+1998-09-30,0.04429,US 10-year| bond yield
+1998-10-31,0.046029999999999995,US 10-year| bond yield
+1998-11-30,0.04718,US 10-year| bond yield
+1998-12-31,0.04658,US 10-year| bond yield
+1999-01-31,0.046529999999999995,US 10-year| bond yield
+1999-02-28,0.052939999999999994,US 10-year| bond yield
+1999-03-31,0.05242,US 10-year| bond yield
+1999-04-30,0.0535,US 10-year| bond yield
+1999-05-31,0.05624,US 10-year| bond yield
+1999-06-30,0.05785,US 10-year| bond yield
+1999-07-31,0.05902,US 10-year| bond yield
+1999-08-31,0.05974,US 10-year| bond yield
+1999-09-30,0.05881,US 10-year| bond yield
+1999-10-31,0.06027999999999999,US 10-year| bond yield
+1999-11-30,0.06193,US 10-year| bond yield
+1999-12-31,0.06434999999999999,US 10-year| bond yield
+2000-01-31,0.06662,US 10-year| bond yield
+2000-02-29,0.06409,US 10-year| bond yield
+2000-03-31,0.06002,US 10-year| bond yield
+2000-04-30,0.062182,US 10-year| bond yield
+2000-05-31,0.06285199999999999,US 10-year| bond yield
+2000-06-30,0.060270000000000004,US 10-year| bond yield
+2000-07-31,0.060390625,US 10-year| bond yield
+2000-08-31,0.057265625,US 10-year| bond yield
+2000-09-30,0.058078000000000005,US 10-year| bond yield
+2000-10-31,0.057578125,US 10-year| bond yield
+2000-11-30,0.054765625,US 10-year| bond yield
+2000-12-31,0.051116,US 10-year| bond yield
+2001-01-31,0.0502734375,US 10-year| bond yield
+2001-02-28,0.0490234375,US 10-year| bond yield
+2001-03-31,0.049146,US 10-year| bond yield
+2001-04-30,0.053359375,US 10-year| bond yield
+2001-05-31,0.053828125,US 10-year| bond yield
+2001-06-30,0.053475,US 10-year| bond yield
+2001-07-31,0.050553999999999995,US 10-year| bond yield
+2001-08-31,0.0484,US 10-year| bond yield
+2001-09-30,0.045902000000000005,US 10-year| bond yield
+2001-10-31,0.042421875,US 10-year| bond yield
+2001-11-30,0.047537,US 10-year| bond yield
+2001-12-31,0.050292,US 10-year| bond yield
+2002-01-31,0.050456,US 10-year| bond yield
+2002-02-28,0.048737,US 10-year| bond yield
+2002-03-31,0.05406,US 10-year| bond yield
+2002-04-30,0.050892999999999994,US 10-year| bond yield
+2002-05-31,0.050446,US 10-year| bond yield
+2002-06-30,0.048088,US 10-year| bond yield
+2002-07-31,0.044593,US 10-year| bond yield
+2002-08-31,0.041297,US 10-year| bond yield
+2002-09-30,0.036001,US 10-year| bond yield
+2002-10-31,0.038949,US 10-year| bond yield
+2002-11-30,0.042108999999999994,US 10-year| bond yield
+2002-12-31,0.038181,US 10-year| bond yield
+2003-01-31,0.039659,US 10-year| bond yield
+2003-02-28,0.03692,US 10-year| bond yield
+2003-03-31,0.038019,US 10-year| bond yield
+2003-04-30,0.038397,US 10-year| bond yield
+2003-05-31,0.033728,US 10-year| bond yield
+2003-06-30,0.035161,US 10-year| bond yield
+2003-07-31,0.044085,US 10-year| bond yield
+2003-08-31,0.044000000000000004,US 10-year| bond yield
+2003-09-30,0.039395,US 10-year| bond yield
+2003-10-31,0.04285845689,US 10-year| bond yield
+2003-11-30,0.04238400787,US 10-year| bond yield
+2003-12-31,0.04251934458,US 10-year| bond yield
+2004-01-31,0.041266,US 10-year| bond yield
+2004-02-29,0.039716,US 10-year| bond yield
+2004-03-31,0.038405,US 10-year| bond yield
+2004-04-30,0.044875,US 10-year| bond yield
+2004-05-31,0.045919999999999996,US 10-year| bond yield
+2004-06-30,0.045826000000000006,US 10-year| bond yield
+2004-07-31,0.044729,US 10-year| bond yield
+2004-08-31,0.04119,US 10-year| bond yield
+2004-09-30,0.04123,US 10-year| bond yield
+2004-10-31,0.040220000000000006,US 10-year| bond yield
+2004-11-30,0.04353,US 10-year| bond yield
+2004-12-31,0.04218,US 10-year| bond yield
+2005-01-31,0.041319999999999996,US 10-year| bond yield
+2005-02-28,0.04383,US 10-year| bond yield
+2005-03-31,0.04486,US 10-year| bond yield
+2005-04-30,0.04206000000000001,US 10-year| bond yield
+2005-05-31,0.03987,US 10-year| bond yield
+2005-06-30,0.03919,US 10-year| bond yield
+2005-07-31,0.042839999999999996,US 10-year| bond yield
+2005-08-31,0.04016,US 10-year| bond yield
+2005-09-30,0.04332,US 10-year| bond yield
+2005-10-31,0.04559,US 10-year| bond yield
+2005-11-30,0.0449,US 10-year| bond yield
+2005-12-31,0.04399,US 10-year| bond yield
+2006-01-31,0.04521,US 10-year| bond yield
+2006-02-28,0.045570000000000006,US 10-year| bond yield
+2006-03-31,0.04853,US 10-year| bond yield
+2006-04-30,0.050570000000000004,US 10-year| bond yield
+2006-05-31,0.051210000000000006,US 10-year| bond yield
+2006-06-30,0.051449999999999996,US 10-year| bond yield
+2006-07-31,0.04988000000000001,US 10-year| bond yield
+2006-08-31,0.047317,US 10-year| bond yield
+2006-09-30,0.046334999999999994,US 10-year| bond yield
+2006-10-31,0.04604,US 10-year| bond yield
+2006-11-30,0.04462,US 10-year| bond yield
+2006-12-31,0.047001999999999995,US 10-year| bond yield
+2007-01-31,0.048140999999999996,US 10-year| bond yield
+2007-02-28,0.045774999999999996,US 10-year| bond yield
+2007-03-31,0.046483,US 10-year| bond yield
+2007-04-30,0.046282,US 10-year| bond yield
+2007-05-31,0.048920000000000005,US 10-year| bond yield
+2007-06-30,0.050265000000000004,US 10-year| bond yield
+2007-07-31,0.047327,US 10-year| bond yield
+2007-08-31,0.045272,US 10-year| bond yield
+2007-09-30,0.045944000000000006,US 10-year| bond yield
+2007-10-31,0.044728000000000004,US 10-year| bond yield
+2007-11-30,0.039492,US 10-year| bond yield
+2007-12-31,0.040347,US 10-year| bond yield
+2008-01-31,0.035968,US 10-year| bond yield
+2008-02-29,0.035186,US 10-year| bond yield
+2008-03-31,0.03445,US 10-year| bond yield
+2008-04-30,0.037336999999999995,US 10-year| bond yield
+2008-05-31,0.040673,US 10-year| bond yield
+2008-06-30,0.039749,US 10-year| bond yield
+2008-07-31,0.039579,US 10-year| bond yield
+2008-08-31,0.038247,US 10-year| bond yield
+2008-09-30,0.038220000000000004,US 10-year| bond yield
+2008-10-31,0.039740000000000004,US 10-year| bond yield
+2008-11-30,0.029220000000000003,US 10-year| bond yield
+2008-12-31,0.022189999999999998,US 10-year| bond yield
+2009-01-31,0.02851,US 10-year| bond yield
+2009-02-28,0.0302,US 10-year| bond yield
+2009-03-31,0.026680000000000002,US 10-year| bond yield
+2009-04-30,0.031190000000000002,US 10-year| bond yield
+2009-05-31,0.03461,US 10-year| bond yield
+2009-06-30,0.03536,US 10-year| bond yield
+2009-07-31,0.03481,US 10-year| bond yield
+2009-08-31,0.03403,US 10-year| bond yield
+2009-09-30,0.03305,US 10-year| bond yield
+2009-10-31,0.03388,US 10-year| bond yield
+2009-11-30,0.03198,US 10-year| bond yield
+2009-12-31,0.03837,US 10-year| bond yield
+2010-01-31,0.03588,US 10-year| bond yield
+2010-02-28,0.03619,US 10-year| bond yield
+2010-03-31,0.03833,US 10-year| bond yield
+2010-04-30,0.03659,US 10-year| bond yield
+2010-05-31,0.03303,US 10-year| bond yield
+2010-06-30,0.02935,US 10-year| bond yield
+2010-07-31,0.02905,US 10-year| bond yield
+2010-08-31,0.024700000000000003,US 10-year| bond yield
+2010-09-30,0.02512,US 10-year| bond yield
+2010-10-31,0.02603,US 10-year| bond yield
+2010-11-30,0.027970000000000002,US 10-year| bond yield
+2010-12-31,0.03288,US 10-year| bond yield
+2011-01-31,0.03374,US 10-year| bond yield
+2011-02-28,0.03422,US 10-year| bond yield
+2011-03-31,0.03468,US 10-year| bond yield
+2011-04-30,0.0329,US 10-year| bond yield
+2011-05-31,0.030590000000000003,US 10-year| bond yield
+2011-06-30,0.0316,US 10-year| bond yield
+2011-07-31,0.02793,US 10-year| bond yield
+2011-08-31,0.02234,US 10-year| bond yield
+2011-09-30,0.01917,US 10-year| bond yield
+2011-10-31,0.02116,US 10-year| bond yield
+2011-11-30,0.020720000000000002,US 10-year| bond yield
+2011-12-31,0.01876,US 10-year| bond yield
+2012-01-31,0.01795,US 10-year| bond yield
+2012-02-29,0.01974,US 10-year| bond yield
+2012-03-31,0.02214,US 10-year| bond yield
+2012-04-30,0.01919,US 10-year| bond yield
+2012-05-31,0.015629999999999998,US 10-year| bond yield
+2012-06-30,0.01643,US 10-year| bond yield
+2012-07-31,0.0147,US 10-year| bond yield
+2012-08-31,0.01548,US 10-year| bond yield
+2012-09-30,0.01633,US 10-year| bond yield
+2012-10-31,0.01694,US 10-year| bond yield
+2012-11-30,0.01613,US 10-year| bond yield
+2012-12-31,0.01757,US 10-year| bond yield
+2013-01-31,0.01985,US 10-year| bond yield
+2013-02-28,0.01881,US 10-year| bond yield
+2013-03-31,0.018520000000000002,US 10-year| bond yield
+2013-04-30,0.016730000000000002,US 10-year| bond yield
+2013-05-31,0.021320000000000002,US 10-year| bond yield
+2013-06-30,0.02487,US 10-year| bond yield
+2013-07-31,0.02588,US 10-year| bond yield
+2013-08-31,0.02789,US 10-year| bond yield
+2013-09-30,0.026150000000000003,US 10-year| bond yield
+2013-10-31,0.02543,US 10-year| bond yield
+2013-11-30,0.02741,US 10-year| bond yield
+2013-12-31,0.030059999999999996,US 10-year| bond yield
+2014-01-31,0.02666,US 10-year| bond yield
+2014-02-28,0.026600000000000002,US 10-year| bond yield
+2014-03-31,0.02724,US 10-year| bond yield
+2014-04-30,0.02648,US 10-year| bond yield
+2014-05-31,0.024569999999999998,US 10-year| bond yield
+2014-06-30,0.025160000000000002,US 10-year| bond yield
+2014-07-31,0.02558,US 10-year| bond yield
+2014-08-31,0.023450000000000002,US 10-year| bond yield
+2014-09-30,0.02508,US 10-year| bond yield
+2014-10-31,0.02335,US 10-year| bond yield
+2014-11-30,0.02196,US 10-year| bond yield
+2014-12-31,0.02174,US 10-year| bond yield
+2015-01-31,0.0168,US 10-year| bond yield
+2015-02-28,0.020019999999999996,US 10-year| bond yield
+2015-03-31,0.01934,US 10-year| bond yield
+2015-04-30,0.02044,US 10-year| bond yield
+2015-05-31,0.020950000000000003,US 10-year| bond yield
+2015-06-30,0.023330000000000004,US 10-year| bond yield
+2015-07-31,0.02205,US 10-year| bond yield
+2015-08-31,0.022000000000000002,US 10-year| bond yield
+2015-09-30,0.0206,US 10-year| bond yield
+2015-10-31,0.021509999999999998,US 10-year| bond yield
+2015-11-30,0.02218,US 10-year| bond yield
+2015-12-31,0.02275,US 10-year| bond yield
+2016-01-31,0.019299999999999998,US 10-year| bond yield
+2016-02-29,0.0174,US 10-year| bond yield
+2016-03-31,0.01784,US 10-year| bond yield
+2016-04-30,0.018189999999999998,US 10-year| bond yield
+2016-05-31,0.018340000000000002,US 10-year| bond yield
+2016-06-30,0.01492,US 10-year| bond yield
+2016-07-31,0.01458,US 10-year| bond yield
+2016-08-31,0.01568,US 10-year| bond yield
+2016-09-30,0.01606,US 10-year| bond yield
+2016-10-31,0.018340000000000002,US 10-year| bond yield
+2016-11-30,0.02367,US 10-year| bond yield
+2016-12-31,0.024319999999999998,US 10-year| bond yield
+2017-01-31,0.02451,US 10-year| bond yield
+2017-02-28,0.02358,US 10-year| bond yield
+2017-03-31,0.02395,US 10-year| bond yield
+2017-04-30,0.02282,US 10-year| bond yield
+2017-05-31,0.02198,US 10-year| bond yield
+2017-06-30,0.02302,US 10-year| bond yield
+2017-07-31,0.02292,US 10-year| bond yield
+2017-08-31,0.02122,US 10-year| bond yield
+2017-09-30,0.02326,US 10-year| bond yield
+2017-10-31,0.02376,US 10-year| bond yield
+2017-11-30,0.02415,US 10-year| bond yield
+2017-12-31,0.02411,US 10-year| bond yield
+2018-01-31,0.027200000000000002,US 10-year| bond yield
+2018-02-28,0.028679999999999997,US 10-year| bond yield
+2018-03-31,0.027440000000000003,US 10-year| bond yield
+2018-04-30,0.02936,US 10-year| bond yield
+2018-05-31,0.028220000000000002,US 10-year| bond yield
+2018-06-30,0.02851,US 10-year| bond yield
+2018-07-31,0.02964,US 10-year| bond yield
+2018-08-31,0.028530000000000003,US 10-year| bond yield
+2018-09-30,0.03056,US 10-year| bond yield
+2018-10-31,0.03159,US 10-year| bond yield
+2018-11-30,0.03013,US 10-year| bond yield
+2018-12-31,0.02691,US 10-year| bond yield
+2019-01-31,0.02635,US 10-year| bond yield
+2019-02-28,0.02711,US 10-year| bond yield
+2019-03-31,0.02414,US 10-year| bond yield
+2019-04-30,0.025070000000000002,US 10-year| bond yield
+2019-05-31,0.021419999999999998,US 10-year| bond yield
+2019-06-30,0.02,US 10-year| bond yield
+2019-07-31,0.02021,US 10-year| bond yield
+2019-08-31,0.01506,US 10-year| bond yield
+2019-09-30,0.016730000000000002,US 10-year| bond yield
+2019-10-31,0.01691,US 10-year| bond yield
+2019-11-30,0.01776,US 10-year| bond yield
+2019-12-31,0.0191,US 10-year| bond yield
+2020-01-31,0.015189999999999999,US 10-year| bond yield
+2020-02-29,0.01126,US 10-year| bond yield
+2020-03-31,0.00699,US 10-year| bond yield
+2020-04-30,0.00625,US 10-year| bond yield
+2020-05-31,0.00644,US 10-year| bond yield
+2020-06-30,0.00653,US 10-year| bond yield
+2020-07-31,0.00536,US 10-year| bond yield
+2020-08-31,0.0069299999999999995,US 10-year| bond yield
+2020-09-30,0.006770000000000001,US 10-year| bond yield
+2020-10-31,0.00859,US 10-year| bond yield
+2020-11-30,0.00842,US 10-year| bond yield
+2020-12-31,0.00912,US 10-year| bond yield
+2021-01-31,0.01094,US 10-year| bond yield
+2021-02-28,0.01456,US 10-year| bond yield
+2021-03-31,0.01746,US 10-year| bond yield
+2021-04-30,0.01631,US 10-year| bond yield
+2021-05-31,0.01593,US 10-year| bond yield
+2021-06-30,0.01444,US 10-year| bond yield
+2021-07-31,0.012390000000000002,US 10-year| bond yield
+2021-08-31,0.01302,US 10-year| bond yield
+2021-09-30,0.015269999999999999,US 10-year| bond yield
+2021-10-31,0.015560000000000001,US 10-year| bond yield
+2021-11-30,0.014410000000000001,US 10-year| bond yield
+2021-12-31,0.01498,US 10-year| bond yield
+2022-01-31,0.01782,US 10-year| bond yield
+2022-02-28,0.01839,US 10-year| bond yield
+2022-03-31,0.023250000000000003,US 10-year| bond yield
+2022-04-30,0.028849999999999997,US 10-year| bond yield
+2022-05-31,0.02844,US 10-year| bond yield
+2022-06-30,0.029740000000000003,US 10-year| bond yield
+2022-07-31,0.02642,US 10-year| bond yield
+2022-08-31,0.03132,US 10-year| bond yield
+2022-09-30,0.03804,US 10-year| bond yield
+2022-10-31,0.04077,US 10-year| bond yield
+2022-11-30,0.03701,US 10-year| bond yield
+2022-12-31,0.03831,US 10-year| bond yield
+2023-01-31,0.03529,US 10-year| bond yield
+2023-02-28,0.03914,US 10-year| bond yield
+2023-03-31,0.0349,US 10-year| bond yield
+2023-04-30,0.03452,US 10-year| bond yield
+2023-05-31,0.03637,US 10-year| bond yield
+2023-06-30,0.03819,US 10-year| bond yield
+2023-07-31,0.03957,US 10-year| bond yield
+2023-08-31,0.04091,US 10-year| bond yield
+2023-09-30,0.04571,US 10-year| bond yield
+2023-10-31,0.04875,US 10-year| bond yield
+2023-11-30,0.0435,US 10-year| bond yield
+2023-12-31,0.038599999999999995,US 10-year| bond yield
+2024-01-31,0.03965,US 10-year| bond yield
+2024-02-29,0.042519999999999995,US 10-year| bond yield
+2024-03-31,0.04194,US 10-year| bond yield
+2024-04-30,0.04684,US 10-year| bond yield
+2024-05-31,0.04511999999999999,US 10-year| bond yield
+2024-06-30,0.043429999999999996,US 10-year| bond yield
+2024-07-31,0.04105,US 10-year| bond yield
+2024-08-31,0.03911,US 10-year| bond yield
+2024-09-30,0.03802,US 10-year| bond yield
+2024-10-31,0.042839999999999996,US 10-year| bond yield
+2024-11-30,0.04194,US 10-year| bond yield
+2024-12-31,0.04577,US 10-year| bond yield
+2025-01-31,0.04567,US 10-year| bond yield
+2025-02-28,0.04229,US 10-year| bond yield
+2025-03-31,0.04245,US 10-year| bond yield
+2025-04-30,0.041749999999999995,US 10-year| bond yield
+2025-05-31,0.044180000000000004,US 10-year| bond yield
+2025-06-30,0.04226,US 10-year| bond yield
+1991-01-01,0.0691,Fed Funds Rate
+1991-02-01,0.0625,Fed Funds Rate
+1991-03-01,0.061200000000000004,Fed Funds Rate
+1991-04-01,0.0591,Fed Funds Rate
+1991-05-01,0.057800000000000004,Fed Funds Rate
+1991-06-01,0.059000000000000004,Fed Funds Rate
+1991-07-01,0.0582,Fed Funds Rate
+1991-08-01,0.056600000000000004,Fed Funds Rate
+1991-09-01,0.0545,Fed Funds Rate
+1991-10-01,0.0521,Fed Funds Rate
+1991-11-01,0.0481,Fed Funds Rate
+1991-12-01,0.0443,Fed Funds Rate
+1992-01-01,0.0403,Fed Funds Rate
+1992-02-01,0.0406,Fed Funds Rate
+1992-03-01,0.0398,Fed Funds Rate
+1992-04-01,0.0373,Fed Funds Rate
+1992-05-01,0.0382,Fed Funds Rate
+1992-06-01,0.037599999999999995,Fed Funds Rate
+1992-07-01,0.0325,Fed Funds Rate
+1992-08-01,0.033,Fed Funds Rate
+1992-09-01,0.0322,Fed Funds Rate
+1992-10-01,0.031,Fed Funds Rate
+1992-11-01,0.030899999999999997,Fed Funds Rate
+1992-12-01,0.0292,Fed Funds Rate
+1993-01-01,0.0302,Fed Funds Rate
+1993-02-01,0.030299999999999997,Fed Funds Rate
+1993-03-01,0.030699999999999998,Fed Funds Rate
+1993-04-01,0.0296,Fed Funds Rate
+1993-05-01,0.03,Fed Funds Rate
+1993-06-01,0.0304,Fed Funds Rate
+1993-07-01,0.030600000000000002,Fed Funds Rate
+1993-08-01,0.030299999999999997,Fed Funds Rate
+1993-09-01,0.030899999999999997,Fed Funds Rate
+1993-10-01,0.029900000000000003,Fed Funds Rate
+1993-11-01,0.0302,Fed Funds Rate
+1993-12-01,0.0296,Fed Funds Rate
+1994-01-01,0.0305,Fed Funds Rate
+1994-02-01,0.0325,Fed Funds Rate
+1994-03-01,0.0334,Fed Funds Rate
+1994-04-01,0.0356,Fed Funds Rate
+1994-05-01,0.0401,Fed Funds Rate
+1994-06-01,0.0425,Fed Funds Rate
+1994-07-01,0.0426,Fed Funds Rate
+1994-08-01,0.0447,Fed Funds Rate
+1994-09-01,0.0473,Fed Funds Rate
+1994-10-01,0.047599999999999996,Fed Funds Rate
+1994-11-01,0.0529,Fed Funds Rate
+1994-12-01,0.0545,Fed Funds Rate
+1995-01-01,0.0553,Fed Funds Rate
+1995-02-01,0.0592,Fed Funds Rate
+1995-03-01,0.059800000000000006,Fed Funds Rate
+1995-04-01,0.0605,Fed Funds Rate
+1995-05-01,0.0601,Fed Funds Rate
+1995-06-01,0.06,Fed Funds Rate
+1995-07-01,0.058499999999999996,Fed Funds Rate
+1995-08-01,0.0574,Fed Funds Rate
+1995-09-01,0.057999999999999996,Fed Funds Rate
+1995-10-01,0.0576,Fed Funds Rate
+1995-11-01,0.057999999999999996,Fed Funds Rate
+1995-12-01,0.055999999999999994,Fed Funds Rate
+1996-01-01,0.0556,Fed Funds Rate
+1996-02-01,0.052199999999999996,Fed Funds Rate
+1996-03-01,0.053099999999999994,Fed Funds Rate
+1996-04-01,0.052199999999999996,Fed Funds Rate
+1996-05-01,0.0524,Fed Funds Rate
+1996-06-01,0.0527,Fed Funds Rate
+1996-07-01,0.054000000000000006,Fed Funds Rate
+1996-08-01,0.052199999999999996,Fed Funds Rate
+1996-09-01,0.053,Fed Funds Rate
+1996-10-01,0.0524,Fed Funds Rate
+1996-11-01,0.053099999999999994,Fed Funds Rate
+1996-12-01,0.0529,Fed Funds Rate
+1997-01-01,0.0525,Fed Funds Rate
+1997-02-01,0.0519,Fed Funds Rate
+1997-03-01,0.053899999999999997,Fed Funds Rate
+1997-04-01,0.055099999999999996,Fed Funds Rate
+1997-05-01,0.055,Fed Funds Rate
+1997-06-01,0.0556,Fed Funds Rate
+1997-07-01,0.0552,Fed Funds Rate
+1997-08-01,0.0554,Fed Funds Rate
+1997-09-01,0.0554,Fed Funds Rate
+1997-10-01,0.055,Fed Funds Rate
+1997-11-01,0.0552,Fed Funds Rate
+1997-12-01,0.055,Fed Funds Rate
+1998-01-01,0.0556,Fed Funds Rate
+1998-02-01,0.055099999999999996,Fed Funds Rate
+1998-03-01,0.054900000000000004,Fed Funds Rate
+1998-04-01,0.0545,Fed Funds Rate
+1998-05-01,0.054900000000000004,Fed Funds Rate
+1998-06-01,0.0556,Fed Funds Rate
+1998-07-01,0.0554,Fed Funds Rate
+1998-08-01,0.0555,Fed Funds Rate
+1998-09-01,0.055099999999999996,Fed Funds Rate
+1998-10-01,0.0507,Fed Funds Rate
+1998-11-01,0.0483,Fed Funds Rate
+1998-12-01,0.046799999999999994,Fed Funds Rate
+1999-01-01,0.0463,Fed Funds Rate
+1999-02-01,0.047599999999999996,Fed Funds Rate
+1999-03-01,0.0481,Fed Funds Rate
+1999-04-01,0.047400000000000005,Fed Funds Rate
+1999-05-01,0.047400000000000005,Fed Funds Rate
+1999-06-01,0.047599999999999996,Fed Funds Rate
+1999-07-01,0.0499,Fed Funds Rate
+1999-08-01,0.0507,Fed Funds Rate
+1999-09-01,0.052199999999999996,Fed Funds Rate
+1999-10-01,0.052000000000000005,Fed Funds Rate
+1999-11-01,0.0542,Fed Funds Rate
+1999-12-01,0.053,Fed Funds Rate
+2000-01-01,0.0545,Fed Funds Rate
+2000-02-01,0.057300000000000004,Fed Funds Rate
+2000-03-01,0.058499999999999996,Fed Funds Rate
+2000-04-01,0.0602,Fed Funds Rate
+2000-05-01,0.06269999999999999,Fed Funds Rate
+2000-06-01,0.0653,Fed Funds Rate
+2000-07-01,0.0654,Fed Funds Rate
+2000-08-01,0.065,Fed Funds Rate
+2000-09-01,0.0652,Fed Funds Rate
+2000-10-01,0.06509999999999999,Fed Funds Rate
+2000-11-01,0.06509999999999999,Fed Funds Rate
+2000-12-01,0.064,Fed Funds Rate
+2001-01-01,0.059800000000000006,Fed Funds Rate
+2001-02-01,0.054900000000000004,Fed Funds Rate
+2001-03-01,0.053099999999999994,Fed Funds Rate
+2001-04-01,0.048,Fed Funds Rate
+2001-05-01,0.0421,Fed Funds Rate
+2001-06-01,0.0397,Fed Funds Rate
+2001-07-01,0.0377,Fed Funds Rate
+2001-08-01,0.0365,Fed Funds Rate
+2001-09-01,0.030699999999999998,Fed Funds Rate
+2001-10-01,0.024900000000000002,Fed Funds Rate
+2001-11-01,0.0209,Fed Funds Rate
+2001-12-01,0.0182,Fed Funds Rate
+2002-01-01,0.0173,Fed Funds Rate
+2002-02-01,0.0174,Fed Funds Rate
+2002-03-01,0.0173,Fed Funds Rate
+2002-04-01,0.0175,Fed Funds Rate
+2002-05-01,0.0175,Fed Funds Rate
+2002-06-01,0.0175,Fed Funds Rate
+2002-07-01,0.0173,Fed Funds Rate
+2002-08-01,0.0174,Fed Funds Rate
+2002-09-01,0.0175,Fed Funds Rate
+2002-10-01,0.0175,Fed Funds Rate
+2002-11-01,0.0134,Fed Funds Rate
+2002-12-01,0.0124,Fed Funds Rate
+2003-01-01,0.0124,Fed Funds Rate
+2003-02-01,0.0126,Fed Funds Rate
+2003-03-01,0.0125,Fed Funds Rate
+2003-04-01,0.0126,Fed Funds Rate
+2003-05-01,0.0126,Fed Funds Rate
+2003-06-01,0.012199999999999999,Fed Funds Rate
+2003-07-01,0.0101,Fed Funds Rate
+2003-08-01,0.0103,Fed Funds Rate
+2003-09-01,0.0101,Fed Funds Rate
+2003-10-01,0.0101,Fed Funds Rate
+2003-11-01,0.01,Fed Funds Rate
+2003-12-01,0.0098,Fed Funds Rate
+2004-01-01,0.01,Fed Funds Rate
+2004-02-01,0.0101,Fed Funds Rate
+2004-03-01,0.01,Fed Funds Rate
+2004-04-01,0.01,Fed Funds Rate
+2004-05-01,0.01,Fed Funds Rate
+2004-06-01,0.0103,Fed Funds Rate
+2004-07-01,0.0126,Fed Funds Rate
+2004-08-01,0.0143,Fed Funds Rate
+2004-09-01,0.0161,Fed Funds Rate
+2004-10-01,0.0176,Fed Funds Rate
+2004-11-01,0.019299999999999998,Fed Funds Rate
+2004-12-01,0.0216,Fed Funds Rate
+2005-01-01,0.022799999999999997,Fed Funds Rate
+2005-02-01,0.025,Fed Funds Rate
+2005-03-01,0.0263,Fed Funds Rate
+2005-04-01,0.0279,Fed Funds Rate
+2005-05-01,0.03,Fed Funds Rate
+2005-06-01,0.0304,Fed Funds Rate
+2005-07-01,0.0326,Fed Funds Rate
+2005-08-01,0.035,Fed Funds Rate
+2005-09-01,0.0362,Fed Funds Rate
+2005-10-01,0.0378,Fed Funds Rate
+2005-11-01,0.04,Fed Funds Rate
+2005-12-01,0.0416,Fed Funds Rate
+2006-01-01,0.0429,Fed Funds Rate
+2006-02-01,0.0449,Fed Funds Rate
+2006-03-01,0.045899999999999996,Fed Funds Rate
+2006-04-01,0.0479,Fed Funds Rate
+2006-05-01,0.049400000000000006,Fed Funds Rate
+2006-06-01,0.0499,Fed Funds Rate
+2006-07-01,0.0524,Fed Funds Rate
+2006-08-01,0.0525,Fed Funds Rate
+2006-09-01,0.0525,Fed Funds Rate
+2006-10-01,0.0525,Fed Funds Rate
+2006-11-01,0.0525,Fed Funds Rate
+2006-12-01,0.0524,Fed Funds Rate
+2007-01-01,0.0525,Fed Funds Rate
+2007-02-01,0.0526,Fed Funds Rate
+2007-03-01,0.0526,Fed Funds Rate
+2007-04-01,0.0525,Fed Funds Rate
+2007-05-01,0.0525,Fed Funds Rate
+2007-06-01,0.0525,Fed Funds Rate
+2007-07-01,0.0526,Fed Funds Rate
+2007-08-01,0.050199999999999995,Fed Funds Rate
+2007-09-01,0.049400000000000006,Fed Funds Rate
+2007-10-01,0.047599999999999996,Fed Funds Rate
+2007-11-01,0.0449,Fed Funds Rate
+2007-12-01,0.0424,Fed Funds Rate
+2008-01-01,0.0394,Fed Funds Rate
+2008-02-01,0.0298,Fed Funds Rate
+2008-03-01,0.026099999999999998,Fed Funds Rate
+2008-04-01,0.022799999999999997,Fed Funds Rate
+2008-05-01,0.019799999999999998,Fed Funds Rate
+2008-06-01,0.02,Fed Funds Rate
+2008-07-01,0.020099999999999996,Fed Funds Rate
+2008-08-01,0.02,Fed Funds Rate
+2008-09-01,0.0181,Fed Funds Rate
+2008-10-01,0.0097,Fed Funds Rate
+2008-11-01,0.0039000000000000003,Fed Funds Rate
+2008-12-01,0.0016,Fed Funds Rate
+2009-01-01,0.0015,Fed Funds Rate
+2009-02-01,0.0022,Fed Funds Rate
+2009-03-01,0.0018,Fed Funds Rate
+2009-04-01,0.0015,Fed Funds Rate
+2009-05-01,0.0018,Fed Funds Rate
+2009-06-01,0.0021,Fed Funds Rate
+2009-07-01,0.0016,Fed Funds Rate
+2009-08-01,0.0016,Fed Funds Rate
+2009-09-01,0.0015,Fed Funds Rate
+2009-10-01,0.0012,Fed Funds Rate
+2009-11-01,0.0012,Fed Funds Rate
+2009-12-01,0.0012,Fed Funds Rate
+2010-01-01,0.0011,Fed Funds Rate
+2010-02-01,0.0013,Fed Funds Rate
+2010-03-01,0.0016,Fed Funds Rate
+2010-04-01,0.002,Fed Funds Rate
+2010-05-01,0.002,Fed Funds Rate
+2010-06-01,0.0018,Fed Funds Rate
+2010-07-01,0.0018,Fed Funds Rate
+2010-08-01,0.0019,Fed Funds Rate
+2010-09-01,0.0019,Fed Funds Rate
+2010-10-01,0.0019,Fed Funds Rate
+2010-11-01,0.0019,Fed Funds Rate
+2010-12-01,0.0018,Fed Funds Rate
+2011-01-01,0.0017000000000000001,Fed Funds Rate
+2011-02-01,0.0016,Fed Funds Rate
+2011-03-01,0.0014000000000000002,Fed Funds Rate
+2011-04-01,0.001,Fed Funds Rate
+2011-05-01,0.0009,Fed Funds Rate
+2011-06-01,0.0009,Fed Funds Rate
+2011-07-01,0.0007000000000000001,Fed Funds Rate
+2011-08-01,0.001,Fed Funds Rate
+2011-09-01,0.0008,Fed Funds Rate
+2011-10-01,0.0007000000000000001,Fed Funds Rate
+2011-11-01,0.0008,Fed Funds Rate
+2011-12-01,0.0007000000000000001,Fed Funds Rate
+2012-01-01,0.0008,Fed Funds Rate
+2012-02-01,0.001,Fed Funds Rate
+2012-03-01,0.0013,Fed Funds Rate
+2012-04-01,0.0014000000000000002,Fed Funds Rate
+2012-05-01,0.0016,Fed Funds Rate
+2012-06-01,0.0016,Fed Funds Rate
+2012-07-01,0.0016,Fed Funds Rate
+2012-08-01,0.0013,Fed Funds Rate
+2012-09-01,0.0014000000000000002,Fed Funds Rate
+2012-10-01,0.0016,Fed Funds Rate
+2012-11-01,0.0016,Fed Funds Rate
+2012-12-01,0.0016,Fed Funds Rate
+2013-01-01,0.0014000000000000002,Fed Funds Rate
+2013-02-01,0.0015,Fed Funds Rate
+2013-03-01,0.0014000000000000002,Fed Funds Rate
+2013-04-01,0.0015,Fed Funds Rate
+2013-05-01,0.0011,Fed Funds Rate
+2013-06-01,0.0009,Fed Funds Rate
+2013-07-01,0.0009,Fed Funds Rate
+2013-08-01,0.0008,Fed Funds Rate
+2013-09-01,0.0008,Fed Funds Rate
+2013-10-01,0.0009,Fed Funds Rate
+2013-11-01,0.0008,Fed Funds Rate
+2013-12-01,0.0009,Fed Funds Rate
+2014-01-01,0.0007000000000000001,Fed Funds Rate
+2014-02-01,0.0007000000000000001,Fed Funds Rate
+2014-03-01,0.0008,Fed Funds Rate
+2014-04-01,0.0009,Fed Funds Rate
+2014-05-01,0.0009,Fed Funds Rate
+2014-06-01,0.001,Fed Funds Rate
+2014-07-01,0.0009,Fed Funds Rate
+2014-08-01,0.0009,Fed Funds Rate
+2014-09-01,0.0009,Fed Funds Rate
+2014-10-01,0.0009,Fed Funds Rate
+2014-11-01,0.0009,Fed Funds Rate
+2014-12-01,0.0012,Fed Funds Rate
+2015-01-01,0.0011,Fed Funds Rate
+2015-02-01,0.0011,Fed Funds Rate
+2015-03-01,0.0011,Fed Funds Rate
+2015-04-01,0.0012,Fed Funds Rate
+2015-05-01,0.0012,Fed Funds Rate
+2015-06-01,0.0013,Fed Funds Rate
+2015-07-01,0.0013,Fed Funds Rate
+2015-08-01,0.0014000000000000002,Fed Funds Rate
+2015-09-01,0.0014000000000000002,Fed Funds Rate
+2015-10-01,0.0012,Fed Funds Rate
+2015-11-01,0.0012,Fed Funds Rate
+2015-12-01,0.0024,Fed Funds Rate
+2016-01-01,0.0034000000000000002,Fed Funds Rate
+2016-02-01,0.0038,Fed Funds Rate
+2016-03-01,0.0036,Fed Funds Rate
+2016-04-01,0.0037,Fed Funds Rate
+2016-05-01,0.0037,Fed Funds Rate
+2016-06-01,0.0038,Fed Funds Rate
+2016-07-01,0.0039000000000000003,Fed Funds Rate
+2016-08-01,0.004,Fed Funds Rate
+2016-09-01,0.004,Fed Funds Rate
+2016-10-01,0.004,Fed Funds Rate
+2016-11-01,0.0040999999999999995,Fed Funds Rate
+2016-12-01,0.0054,Fed Funds Rate
+2017-01-01,0.006500000000000001,Fed Funds Rate
+2017-02-01,0.0066,Fed Funds Rate
+2017-03-01,0.0079,Fed Funds Rate
+2017-04-01,0.009000000000000001,Fed Funds Rate
+2017-05-01,0.0091,Fed Funds Rate
+2017-06-01,0.0104,Fed Funds Rate
+2017-07-01,0.0115,Fed Funds Rate
+2017-08-01,0.0116,Fed Funds Rate
+2017-09-01,0.0115,Fed Funds Rate
+2017-10-01,0.0115,Fed Funds Rate
+2017-11-01,0.0116,Fed Funds Rate
+2017-12-01,0.013000000000000001,Fed Funds Rate
+2018-01-01,0.0141,Fed Funds Rate
+2018-02-01,0.014199999999999999,Fed Funds Rate
+2018-03-01,0.0151,Fed Funds Rate
+2018-04-01,0.0169,Fed Funds Rate
+2018-05-01,0.017,Fed Funds Rate
+2018-06-01,0.0182,Fed Funds Rate
+2018-07-01,0.0191,Fed Funds Rate
+2018-08-01,0.0191,Fed Funds Rate
+2018-09-01,0.0195,Fed Funds Rate
+2018-10-01,0.0219,Fed Funds Rate
+2018-11-01,0.022000000000000002,Fed Funds Rate
+2018-12-01,0.0227,Fed Funds Rate
+2019-01-01,0.024,Fed Funds Rate
+2019-02-01,0.024,Fed Funds Rate
+2019-03-01,0.0241,Fed Funds Rate
+2019-04-01,0.0242,Fed Funds Rate
+2019-05-01,0.0239,Fed Funds Rate
+2019-06-01,0.023799999999999998,Fed Funds Rate
+2019-07-01,0.024,Fed Funds Rate
+2019-08-01,0.0213,Fed Funds Rate
+2019-09-01,0.0204,Fed Funds Rate
+2019-10-01,0.0183,Fed Funds Rate
+2019-11-01,0.0155,Fed Funds Rate
+2019-12-01,0.0155,Fed Funds Rate
+2020-01-01,0.0155,Fed Funds Rate
+2020-02-01,0.0158,Fed Funds Rate
+2020-03-01,0.006500000000000001,Fed Funds Rate
+2020-04-01,0.0005,Fed Funds Rate
+2020-05-01,0.0005,Fed Funds Rate
+2020-06-01,0.0008,Fed Funds Rate
+2020-07-01,0.0009,Fed Funds Rate
+2020-08-01,0.001,Fed Funds Rate
+2020-09-01,0.0009,Fed Funds Rate
+2020-10-01,0.0009,Fed Funds Rate
+2020-11-01,0.0009,Fed Funds Rate
+2020-12-01,0.0009,Fed Funds Rate
+2021-01-01,0.0009,Fed Funds Rate
+2021-02-01,0.0008,Fed Funds Rate
+2021-03-01,0.0007000000000000001,Fed Funds Rate
+2021-04-01,0.0007000000000000001,Fed Funds Rate
+2021-05-01,0.0006,Fed Funds Rate
+2021-06-01,0.0008,Fed Funds Rate
+2021-07-01,0.001,Fed Funds Rate
+2021-08-01,0.0009,Fed Funds Rate
+2021-09-01,0.0008,Fed Funds Rate
+2021-10-01,0.0008,Fed Funds Rate
+2021-11-01,0.0008,Fed Funds Rate
+2021-12-01,0.0008,Fed Funds Rate
+2022-01-01,0.0008,Fed Funds Rate
+2022-02-01,0.0008,Fed Funds Rate
+2022-03-01,0.002,Fed Funds Rate
+2022-04-01,0.0033,Fed Funds Rate
+2022-05-01,0.0077,Fed Funds Rate
+2022-06-01,0.0121,Fed Funds Rate
+2022-07-01,0.0168,Fed Funds Rate
+2022-08-01,0.0233,Fed Funds Rate
+2022-09-01,0.0256,Fed Funds Rate
+2022-10-01,0.0308,Fed Funds Rate
+2022-11-01,0.0378,Fed Funds Rate
+2022-12-01,0.040999999999999995,Fed Funds Rate
+2023-01-01,0.0433,Fed Funds Rate
+2023-02-01,0.045700000000000005,Fed Funds Rate
+2023-03-01,0.04650000000000001,Fed Funds Rate
+2023-04-01,0.0483,Fed Funds Rate
+2023-05-01,0.0506,Fed Funds Rate
+2023-06-01,0.0508,Fed Funds Rate
+2023-07-01,0.0512,Fed Funds Rate
+2023-08-01,0.0533,Fed Funds Rate
+2023-09-01,0.0533,Fed Funds Rate
+2023-10-01,0.0533,Fed Funds Rate
+2023-11-01,0.0533,Fed Funds Rate
+2023-12-01,0.0533,Fed Funds Rate
+2024-01-01,0.0533,Fed Funds Rate
+2024-02-01,0.0533,Fed Funds Rate
+2024-03-01,0.0533,Fed Funds Rate
+2024-04-01,0.0533,Fed Funds Rate
+2024-05-01,0.0533,Fed Funds Rate
+2024-06-01,0.0533,Fed Funds Rate
+2024-07-01,0.0533,Fed Funds Rate
+2024-08-01,0.0533,Fed Funds Rate
+2024-09-01,0.0513,Fed Funds Rate
+2024-10-01,0.0483,Fed Funds Rate
+2024-11-01,0.0464,Fed Funds Rate
+2024-12-01,0.044800000000000006,Fed Funds Rate
+2025-01-01,0.0433,Fed Funds Rate
+2025-02-01,0.0433,Fed Funds Rate
+2025-03-01,0.0433,Fed Funds Rate
+2025-04-01,0.0433,Fed Funds Rate
+2025-05-01,0.0433,Fed Funds Rate
+2025-06-01,0.0433,Fed Funds Rate
