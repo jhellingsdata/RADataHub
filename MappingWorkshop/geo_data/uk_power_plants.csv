@@ -1,0 +1,2752 @@
+name,latitude,longitude,capacity_mw,primary_fuel,fuel_category
+14 Tullywiggan Road,54.6221,-6.7398,1.0,Biomass,Biomass
+Path Head,54.9648,-1.7281,1.0,Waste,Biomass
+Park Lane,52.684,-1.7649,1.0,Solar,Solar
+PROMISED LAND FARM,53.5113,-2.7378,1.0,Wind,Wind
+PG4 St Bedes Power Generation (Extension 2),54.8908,-1.5853,1.0,Waste,Biomass
+PG2 Bolam Power Generation,54.6027,-1.7059,1.0,Waste,Biomass
+Oxcroft Solar Farm,53.2585,-1.2924,1.0,Storage,Storage
+Greenhill Anaerobic Digestion Plant,50.7219,-1.2896,1.0,Biomass,Biomass
+Ongar Landfill Scheme,51.6982,0.2595,1.0,Waste,Biomass
+Cranfield Airfield,52.0672,-0.612,1.0,Solar,Solar
+North Of Field Barn,52.03,-1.4748,1.0,Solar,Solar
+Twin Elm Solar Farm,51.358,-2.7959,1.0,Solar,Solar
+Craigahulliar Landfill Gas,55.1965,-6.6106,1.0,Waste,Biomass
+Ufton,52.2477,-1.4434,1.0,Waste,Biomass
+Bryn Pica AD / Tomorrow's Valley (Waste AD) - resubmission,51.7383,-3.436,1.0,Biomass,Biomass
+New Holland,58.9133,-2.8689,1.0,Wind,Wind
+Waen Biogas (Waste AD),53.2632,-3.4263,1.0,Biomass,Biomass
+Nectar Way Regional Distribution Centre,52.22,-0.9617,1.0,Solar,Solar
+Hatch Penn Farm PV,52.0212,-0.0136,1.0,Solar,Solar
+Moorhouse Farm,55.9039,-2.2508,1.0,Wind,Wind
+McCain Foods AD Plant (AD),52.5594,-0.1752,1.0,Biomass,Biomass
+Wapsey's Wood II Landfill Site,51.5905,-0.5954,1.0,Waste,Biomass
+Wapsey's Wood III,51.5896,-0.5954,1.0,Waste,Biomass
+Mark's Quarry,54.8124,-1.5114,1.0,Waste,Biomass
+Manor Farm (Keinton Mandeville),51.0696,-2.6409,1.0,Solar,Solar
+Magherafelt,54.769,-6.6477,1.0,Wind,Wind
+Pebsham (Extension),50.8533,0.5204,1.0,Waste,Biomass
+Highfields South Landfill Gas,52.6234,-1.9363,1.0,Waste,Biomass
+Pengelly Barton Farm,50.1422,-5.3398,1.0,Biomass,Biomass
+Priest Weston,52.5693,-3.0504,1.0,Solar,Solar
+Squabb Wood,50.9919,-1.5241,1.0,Waste,Biomass
+Spring Farm (biomass),52.7013,1.195,1.0,Biomass,Biomass
+Soothills Landfill,53.718,-1.5999,1.0,Waste,Biomass
+Folly Lane,52.7227,0.9224,1.0,Waste,Biomass
+Daventry,52.2563,-1.187,1.0,Biomass,Biomass
+Deerdykes Composting and Organics Recycling Facility (Waste AD),55.9704,-3.9575,1.0,Biomass,Biomass
+Sunnyside wind cluster,55.379,-3.9489,1.0,Wind,Wind
+Former Pluckley Landfill Site,51.1772,0.7553,1.0,Waste,Biomass
+Shakespeare Farm Landfill Site,51.4638,0.6115,1.0,Waste,Biomass
+Fen Farm Solar Park,53.4233,0.069,1.0,Solar,Solar
+DPD Distribution Centre,52.5068,-2.009,1.0,Solar,Solar
+Dengemarsh Road,50.9351,0.9099,1.0,Solar,Solar
+Sefter Farm AD Plant (Farm AD),50.789,-0.7373,1.0,Biomass,Biomass
+Berry Court Solar Farm - energy storage,51.3257,-1.1099,1.0,Storage,Storage
+Scorton,54.3993,-1.6087,1.0,Waste,Biomass
+Thameside DC,51.4924,0.027,1.0,Solar,Solar
+Billinge Hill Quarry Landfill Scheme,53.5062,-2.7176,1.0,Waste,Biomass
+GlaxoSmithKline (Waste AD),55.5945,-4.6302,1.0,Biomass,Biomass
+Glen Fyne 'Merk' Hydro,56.238,-5.0681,1.0,Hydro,Hydro
+Goonabarn Farm Wind Turbines,50.3497,-4.9606,1.0,Wind,Wind
+Rickfield Farm solar park,52.0035,-1.4136,1.0,Solar,Solar
+Rhosygilwen Solar Farm,52.0352,-4.6212,1.0,Solar,Solar
+Bloodhills - repowering,52.707,1.6644,1.0,Wind,Wind
+Grain Harvesters Ltd,51.2667,1.2312,1.0,Solar,Solar
+Gravel Pit Farm (Resubmission),54.02,-0.9579,1.0,Biomass,Biomass
+European Marine Energy Centre (EMEC),58.7329,-3.3248,1.0,Wave and Tidal,Other
+Connon Bridge Landfill,50.4353,-4.5487,1.0,Waste,Biomass
+Hammerfest (EMEC),58.9628,-3.4937,1.0,Wave and Tidal,Other
+Capel Landfill,51.1385,-0.325,1.0,Waste,Biomass
+Little Belhus Restoration Site,51.5225,0.2776,1.0,Wind,Wind
+Leacann Hydro,56.1725,-5.1883,1.0,Hydro,Hydro
+Horncliffe Quarry,53.6842,-2.2947,1.0,Waste,Biomass
+Horncliffe Quarry (Extension),53.6842,-2.2947,1.0,Waste,Biomass
+Whiddon Farm,50.7524,-4.2773,1.0,Solar,Solar
+Chapman's Well,54.8518,-1.732,1.0,Waste,Biomass
+Whitman Laboratories,51.006,-0.9515,1.0,Solar,Solar
+Land at Mill Farm,51.2291,-2.8218,1.0,Solar,Solar
+East Midlands Airport,52.8262,-1.3427,1.0,Wind,Wind
+Willersey solar farm,52.0545,-1.8476,1.0,Storage,Storage
+Wilnecote Landfill Site,52.6019,-1.684,1.0,Waste,Biomass
+Hywind 2,57.5108,-1.8028,1.0,Storage,Storage
+Land at Green Farm,52.0181,-2.77,1.0,Solar,Solar
+Land at Barnham,50.8226,-0.6514,1.0,Solar,Solar
+Chelworth Industrial Estate Solar Park,51.6276,-1.8876,1.0,Solar,Solar
+Immingham Landfill Scheme,53.6133,-0.186,1.0,Waste,Biomass
+Land Adjacent to Thomas Swan and Co Ltd.,54.8548,-1.8143,1.0,Biomass,Biomass
+Abbots moor Farm Anaerobic Digester (Farm AD),52.839,-2.93,1.0,Biomass,Biomass
+Innerwick Hydro,56.6003,-4.3052,1.0,Hydro,Hydro
+Knolton Farmhouse Cheese Solar Farm,52.9588,-2.9559,1.0,Solar,Solar
+Wothersome Grange Farm House AD - crops,53.877,-1.3939,1.0,Biomass,Biomass
+Kilsby Landfill Scheme,52.3207,-1.1681,1.0,Waste,Biomass
+Wyke Farms Biogas (Farm AD),51.1117,-2.4819,1.0,Biomass,Biomass
+Killan Farm Solar Array Extens,51.6265,-4.0459,1.0,Solar,Solar
+Dryholme Farm (Farm AD),54.8563,-3.3586,1.0,Biomass,Biomass
+Clifton Hall,53.5207,-2.3146,1.0,Waste,Biomass
+Yonderton Farm,57.4308,-1.9419,1.0,Wind,Wind
+Loch An Laoigh Hydro,57.4036,-5.304,1.0,Hydro,Hydro
+Hogsbrook Farm - Farm AD,50.6928,-3.3841,1.0,Biomass,Biomass
+Huddlesford Farm,52.6839,-1.7755,1.0,Solar,Solar
+Station Works AD,51.9485,0.3275,1.0,Biomass,Biomass
+Long Sutton Butterfly And Wildlife Park (extension),52.7904,0.1359,1.0,Solar,Solar
+Lower Coombe Farm (Bean Field),50.8832,-2.8379,1.0,Solar,Solar
+Carr Farm (Farm AD),53.7485,-2.9288,1.0,Biomass,Biomass
+Lower Melville Wood,56.2926,-3.1325,1.0,Waste,Biomass
+Lower Coombe Farm Solar,50.8852,-2.8311,1.0,Solar,Solar
+Lodge Farm 1,51.7263,-5.0609,1.0,Wind,Wind
+Carines Farm Solar Array,50.3833,-5.1111,1.0,Solar,Solar
+Rudge Hill Farm,50.9129,-2.3126,1.02,Solar,Solar
+West Bradley,50.9163,-3.5707,1.03,Solar,Solar
+ABP Ellesmere Abbatoir,52.8543,-2.8986,1.1,Biomass,Biomass
+Reservoir Road (Farm AD),54.3203,-6.2893,1.1,Biomass,Biomass
+Lower Ufford Lane,52.1366,1.3657,1.1,Solar,Solar
+Ugley,51.9341,0.2168,1.1,Waste,Biomass
+Longreach STW - extension,51.4664,0.2322,1.1,Waste,Biomass
+Buttermilk Farm,51.9469,-0.0487,1.1,Biomass,Biomass
+Meadow Hall Power,53.426,-1.407,1.1,Waste,Biomass
+Lount/Smoile,52.7646,-1.4353,1.1,Waste,Biomass
+Summercourt Solar Farm (Glebe Farm),50.3734,-4.9579,1.1,Solar,Solar
+Westbury Landfill Scheme,51.2724,-2.1705,1.1,Waste,Biomass
+Beinn Eagagach Hydro,56.6439,-3.8218,1.1,Hydro,Hydro
+Majors Hill/Turners Hill Solar Farm,51.1104,-0.1088,1.1,Solar,Solar
+Land at Grange Farm,53.3361,-0.5363,1.1,Biomass,Biomass
+Wigley Farm,52.3867,-2.6987,1.1,Biomass,Biomass
+Bruach Caorainn Hydro Scheme,56.1744,-4.5474,1.1,Hydro,Hydro
+Bourne Park AD (AD),50.7771,-2.3941,1.1,Biomass,Biomass
+Nevis Range,56.847,-4.9453,1.1,Hydro,Hydro
+Trinity Hall Farm,51.9188,-0.5656,1.1,Biomass,Biomass
+PG2 Bolam Power Generator (Extension),54.6027,-1.7059,1.1,Waste,Biomass
+Allerton Waste Recovery Park (Waste AD),54.0326,-1.3805,1.1,Biomass,Biomass
+Cranford,52.3759,-0.6338,1.1,Waste,Biomass
+Cradley Heath,52.4686,-2.082,1.1,Biomass,Biomass
+Whiteparish,51.0195,-1.6949,1.1,Waste,Biomass
+Broadgate Solar Farm,50.8523,-3.7396,1.1,Solar,Solar
+Arlesey Landfill Site,52.0017,-0.2767,1.1,Waste,Biomass
+Southcombe Farm,50.8861,-4.2151,1.2,Solar,Solar
+Foxhall Landfill Site,52.0491,1.2639,1.2,Waste,Biomass
+Higher Pirzwell Solar Farm,50.8745,-3.3154,1.2,Solar,Solar
+Chamber 16 (Cold Store),52.7398,0.4204,1.2,Solar,Solar
+Slough Sewage Treatment Works,51.5067,-0.6376,1.2,Waste,Biomass
+Basingstoke Sewage Treatment Works,51.2917,-1.0343,1.2,Biomass,Biomass
+Loch Dubh,57.4667,-4.0833,1.2,Hydro,Hydro
+Macphie of Glenbervie,56.9152,-2.3876,1.2,Biomass,Biomass
+Invervar Hydro - resubmission,56.6061,-4.1769,1.2,Hydro,Hydro
+Barton Solar Farm,50.9461,-3.3141,1.2,Solar,Solar
+Cairnmore Solar Park (extension),57.3081,-2.8238,1.2,Solar,Solar
+HENDRA HOLIDAY PARK SOLAR FARM,50.3996,-5.0556,1.2,Solar,Solar
+Offham Landfill Site Phase II,51.2919,0.3593,1.2,Waste,Biomass
+Langwell Estate hydro scheme,57.9695,-5.0632,1.2,Hydro,Hydro
+Green Waste Composting Facility (Waste AD),51.2168,-1.0653,1.2,Biomass,Biomass
+Bootham Lane,53.5861,-1.0105,1.2,Waste,Biomass
+St Nicholas Court Farm (AD) - resubmission,51.3561,1.244,1.2,Biomass,Biomass
+Rampton Hospital Energy Centre,53.2904,-0.8382,1.2,Biomass,Biomass
+Chelker Reservoir (Retention of Turbines),53.9624,-1.9142,1.2,Wind,Wind
+Pennington Recycling Centre,50.7387,-1.5632,1.2,Solar,Solar
+Haverigg Repowering (Haverigg II),54.204,-3.3245,1.2,Wind,Wind
+MMD Shipping Services,50.8102,-1.09,1.2,Solar,Solar
+Lackford Landfill Scheme,52.2923,0.6379,1.2,Waste,Biomass
+Land at Hill Farm,52.725,-1.4457,1.2,Solar,Solar
+Hillsmoor Solar Farm,50.8112,-4.0867,1.2,Solar,Solar
+Runfold Landfill,51.2184,-0.7628,1.2,Waste,Biomass
+Netley Landfill Site  Hampshire (Extension),50.8894,-1.3374,1.2,Waste,Biomass
+Colchester STW,51.8759,0.9331,1.2,Waste,Biomass
+Glapwell,53.1999,-1.3099,1.2,Waste,Biomass
+Helland Meads - resubmission,51.0174,-2.9591,1.2,Solar,Solar
+SeaGen Tidal Farm,54.3518,-5.539,1.2,Wave and Tidal,Other
+Parkwood Landfill Scheme,53.4039,-1.4795,1.2,Waste,Biomass
+Rhug Estate,52.9875,-3.4446,1.2,Solar,Solar
+Judkins Landfill Site Phase 3,52.5319,-1.4811,1.2,Waste,Biomass
+Barkip Landfill Site,55.7181,-4.7186,1.2,Waste,Biomass
+Airport Road West,54.626,-5.8729,1.2,Biomass,Biomass
+Tredown Solar Farm,50.6102,-4.2707,1.2,Solar,Solar
+The Haven,52.129,-2.3184,1.2,Wind,Wind
+Trowbridge Sewage Treatment Works,51.3279,-2.2182,1.2,Waste,Biomass
+The Nurseries  Green Tye,51.8459,0.0918,1.2,Biomass,Biomass
+Swancote Farm,52.5427,-2.3814,1.2,Biomass,Biomass
+Winterbrook,51.5868,-1.1314,1.2,Solar,Solar
+Aldi Distribution Centre - Neston,53.2894,-3.0322,1.2,Solar,Solar
+Tythegston Landfill Site,51.4964,-3.6566,1.2,Waste,Biomass
+West Roucan Farm,55.0951,-3.5336,1.2,Biomass,Biomass
+Alan Bartlett & Sons Solar,52.4511,0.0379,1.2,Solar,Solar
+Aldi Distribution Centre - Darlington,54.5485,-1.5739,1.2,Solar,Solar
+Whinney Hill Waste Disposal Site,53.7685,-2.3717,1.2,Waste,Biomass
+Aveley,51.504,0.2333,1.2,Waste,Biomass
+Swindon Sewerage Treatment Works,51.5679,-1.8085,1.2,Biomass,Biomass
+Kerry Falls,57.7203,-5.6792,1.25,Hydro,Hydro
+Attlebridge Landfill Site,52.6999,1.1776,1.3,Waste,Biomass
+Sidegate Lane Landfill Site,52.3232,-0.6589,1.3,Waste,Biomass
+Saltend Wind Turbine,53.7444,-0.2365,1.3,Wind,Wind
+Brookfield Farm AD Plant (Farm AD),52.7752,-2.2312,1.3,Biomass,Biomass
+Gilford Road,54.4105,-6.4131,1.3,Solar,Solar
+Betton Abbots,52.6702,-2.7201,1.3,Waste,Biomass
+Norton Fields Farm,52.1643,-2.1427,1.3,Wind,Wind
+Ulnes Walton Energy,53.6767,-2.7675,1.3,Waste,Biomass
+Ben Glas,56.3299,-4.7172,1.3,Hydro,Hydro
+Garlaff Landfill,55.4297,-4.3041,1.3,Waste,Biomass
+Little White Alice Solar Park,50.1707,-5.2253,1.3,Solar,Solar
+Aldi Distribution Centre,55.8787,-3.6482,1.3,Solar,Solar
+Hopton Road Industrial Estate,51.3713,-1.9676,1.3,Solar,Solar
+Meece Landfill,52.9023,-2.2185,1.3,Waste,Biomass
+Seamer Carr,54.2269,-0.4169,1.3,Waste,Biomass
+Crockers Hele,50.8423,-4.0951,1.3,Solar,Solar
+Fleetwood Water Treatment Works,53.9091,-3.0187,1.3,Solar,Solar
+Loftsome Bridge,53.7568,-0.9377,1.3,Wind,Wind
+Westcott Venture Park Phase 2 & 3,51.8454,-0.9557,1.3,Solar,Solar
+Boston Landfill Scheme,52.9522,0.005,1.3,Waste,Biomass
+Chelker Reservoir,53.9624,-1.9142,1.3,Wind,Wind
+Great Hele Farm AD farm waste,51.0051,-3.8238,1.3,Biomass,Biomass
+Lowbrook Farm Anaerobic Digester (Farm AD),50.8832,-2.3022,1.3,Biomass,Biomass
+Allt Cheanna Mhuir Hydro,56.9748,-5.12,1.3,Hydro,Hydro
+Roxwell Landfill Scheme,51.7631,0.4055,1.3,Waste,Biomass
+Clifton Marsh Wastewater Treatment Works,53.7511,-2.8259,1.3,Solar,Solar
+Allt Ladaidh Hydro,57.0604,-4.9225,1.3,Hydro,Hydro
+Carnoch,56.6868,-5.5073,1.35,Hydro,Hydro
+Chelson Meadow 2,50.3709,-4.1161,1.4,Waste,Biomass
+North Tamar Environ Project - Holsworthy  (Farm AD),50.828,-4.352,1.4,Biomass,Biomass
+Granville Landfill Site,52.705,-2.4084,1.4,Waste,Biomass
+Lidsey Landfill,50.8227,-0.681,1.4,Waste,Biomass
+Gelliargwellt Uchaf Farm AD,51.6645,-3.2693,1.4,Biomass,Biomass
+Bootham Lane Phase 2,53.5861,-1.0105,1.4,Waste,Biomass
+River Taodail Hydro,57.4231,-5.4216,1.4,Hydro,Hydro
+Rolls Royce Filton Campus Building 184,51.5246,-2.5713,1.4,Solar,Solar
+Ellicombe Farm,50.8309,-3.7844,1.4,Solar,Solar
+Dura Park Bynea Industrial Site,51.6676,-4.0897,1.4,Solar,Solar
+East Dagenham Docks AD (AD),51.5212,0.1375,1.4,Biomass,Biomass
+Innerhadden Burn Hydro,56.6302,-4.1868,1.4,Hydro,Hydro
+ReFood - Dagenham Docks Biogas (Waste AD),51.5241,0.1364,1.4,Biomass,Biomass
+Sytchwythy Fields,52.1008,-1.9146,1.4,Solar,Solar
+Marsh Farm  (Farm AD),53.0336,0.1569,1.4,Biomass,Biomass
+Springfield Farm,51.5824,-0.5575,1.4,Waste,Biomass
+Nant y Caws Landfill Site,51.8369,-4.2192,1.4,Waste,Biomass
+Holiday Moss Gas to Energy II,53.5122,-2.7705,1.4,Waste,Biomass
+Donich Water Hydro,56.1726,-4.8768,1.4,Hydro,Hydro
+Vantage Point,51.8676,-2.4853,1.4,Solar,Solar
+Clann Solar Farm,50.4408,-4.7776,1.4,Solar,Solar
+Staples Anaerobic Digestion CHP Plant (Waste AD),53.0346,0.0312,1.4,Biomass,Biomass
+Symonds Farm Power Ltd (Farm AD),52.2572,0.6371,1.4,Biomass,Biomass
+Dogsthorpe South Landfill Site 2,52.602,-0.2214,1.4,Waste,Biomass
+Blatchworthy,51.1461,-4.1377,1.41,Solar,Solar
+Wheal Jane,50.2376,-5.1228,1.42,Solar,Solar
+Fen Road Solar Farm,52.9658,-0.0717,1.44,Solar,Solar
+Bodtegir,53.0175,-3.4988,1.5,Wind,Wind
+Thorfinn Wind Farm - NM1500,59.1131,-3.1438,1.5,Wind,Wind
+Carousel Dairy AD Plant (Farm AD),51.2184,-1.1299,1.5,Biomass,Biomass
+Higher Hill Farm (extension),51.0794,-2.6955,1.5,Solar,Solar
+Higher Knapp Farm,51.0193,-2.9962,1.5,Solar,Solar
+March,52.5713,0.1215,1.5,Wind,Wind
+Fairoak Landfill,50.9632,-1.2823,1.5,Waste,Biomass
+Manor Farm (Farm AD),52.8353,0.0816,1.5,Biomass,Biomass
+Double Arches Quarry Wind Turbine,51.9519,-0.6343,1.5,Wind,Wind
+Ecotech,52.6567,0.6833,1.5,Wind,Wind
+Bonerbo Wind Turbines (resubmission),56.2594,-2.7467,1.5,Wind,Wind
+Land at Whatton Road,52.828,-1.287,1.5,Solar,Solar
+FMC Technologies,56.0564,-3.4466,1.5,Wind,Wind
+Pure Malt Products AD,55.9566,-2.7707,1.5,Biomass,Biomass
+F M C Land  Pitreavie Business Park,56.054,-3.4443,1.5,Wind,Wind
+Boddington Reservoir,52.1742,-1.2793,1.5,Wind,Wind
+Quarrendon Fields,51.8424,-0.836,1.5,Wind,Wind
+West of Rhiwfelin Fach Farm,51.5589,-3.3914,1.5,Wind,Wind
+Double H Nurseries Biomass Plant,50.7508,-1.6781,1.5,Biomass,Biomass
+Longlands Lane,51.5633,-3.7479,1.5,Wind,Wind
+Pinguin Foods,52.9651,-0.0195,1.5,Solar,Solar
+Plusterwine House - Anaerobic Digestion Plant (Retrospective),51.6908,-2.5877,1.5,Biomass,Biomass
+Land at Soho Farm,51.2311,-2.4367,1.5,Solar,Solar
+Noble Foods,56.1641,-3.1593,1.5,Wind,Wind
+Newton Margate,50.4709,-4.6998,1.5,Solar,Solar
+Newstead and Annesley Wind Turbine,53.0753,-1.2178,1.5,Wind,Wind
+Cattlegate Farm Biogas (Farm AD),51.696,-0.1116,1.5,Biomass,Biomass
+Nethercott Farm,50.7443,-4.3354,1.5,Wind,Wind
+Bromham House Farm,51.3917,-2.0373,1.5,Biomass,Biomass
+Greenvale AP Wind Turbine - resubmission,52.5207,-0.0046,1.5,Wind,Wind
+Burnhills Landfill Scheme (L4),54.956,-1.7579,1.5,Waste,Biomass
+Hitchin,51.9769,-0.298,1.5,Waste,Biomass
+Monan Hill Wind Turbines,57.9417,-6.8318,1.5,Wind,Wind
+Millerhill AD (Waste AD),55.9255,-3.0834,1.5,Biomass,Biomass
+Leeming Bar (Waste AD),54.2912,-1.5425,1.5,Biomass,Biomass
+Meteor Business Park,51.8965,-2.1712,1.5,Storage,Storage
+Austrey House Farm,52.6438,-1.558,1.5,Biomass,Biomass
+Ardtornish Estate-Upgrade to existing,56.5583,-5.6873,1.5,Hydro,Hydro
+Aldi - Cardiff,51.5002,-3.1181,1.5,Solar,Solar
+Albury Landfill,51.2242,-0.4906,1.5,Waste,Biomass
+Mayton Wood Landfill Site,52.7381,1.3256,1.5,Waste,Biomass
+Higher Hatherleigh Solar Farm extension,51.0438,-2.4107,1.5,Solar,Solar
+Marston Vale Country Park Wind Turbine,52.0647,-0.5354,1.5,Wind,Wind
+Marshill Farm,55.6871,-3.9334,1.5,Wind,Wind
+Craigannet Farm Wind Turbine,56.0455,-4.0685,1.5,Wind,Wind
+Codford Biogas (Waste AD),51.1725,-2.0152,1.5,Biomass,Biomass
+Blue Gates Farm,51.8631,1.0042,1.5,Wind,Wind
+Allt Garbh hydro,57.2559,-5.0186,1.5,Hydro,Hydro
+Reepham Road (Waste AD),52.7008,1.2028,1.5,Biomass,Biomass
+Taunton Racecourse,50.9942,-3.0874,1.5,Solar,Solar
+Aberporth Solar Farm,52.1234,-4.5632,1.5,Solar,Solar
+Skeddoway Farm Wind Turbine,56.1665,-3.1593,1.5,Wind,Wind
+Glenfiddich Distillery,57.4549,-3.123,1.5,Biomass,Biomass
+Southrigg,55.8711,-3.7295,1.5,Wind,Wind
+Southdown Quarry,50.3562,-4.202,1.5,Solar,Solar
+Eas a Ghaill,56.4044,-4.925,1.5,Hydro,Hydro
+Ferneylea Farm,55.9148,-2.4178,1.5,Wind,Wind
+Wythegill,54.6741,-3.5231,1.5,Wind,Wind
+Fernbrook AD Plant (Waste AD),52.4119,-0.7662,1.5,Biomass,Biomass
+Land North East Of Penrose Far,50.3767,-4.957,1.5,Solar,Solar
+BV Dairy  (Farm AD),51.0112,-2.1828,1.5,Biomass,Biomass
+Fanny House Farm/Heysham Moss,54.0379,-2.8719,1.5,Wind,Wind
+Skeddoway Farm Wind Turbine (Resubmission),56.1665,-3.1593,1.5,Wind,Wind
+Badachro hydro scheme - resubmission,57.6778,-5.7076,1.5,Hydro,Hydro
+Land South East Of Water Treatment Works Bridge End,54.9733,-2.0818,1.5,Biomass,Biomass
+Fenmarc Fenland AD Plant (Waste AD),52.568,0.0621,1.5,Biomass,Biomass
+Goldthorpe,53.5295,-1.3165,1.5,Solar,Solar
+Singleton Birch (Farm AD),53.5909,-0.3571,1.5,Biomass,Biomass
+Derriford Hospital,50.4167,-4.1137,1.5,Biomass,Biomass
+Severn Trent Water - Stoke Bardolph Wind Turbine,52.9758,-1.044,1.5,Wind,Wind
+Four Burrows Solar farm (Extension 1),50.3039,-5.1383,1.5,Solar,Solar
+Gortahurk Road,54.2195,-7.5402,1.5,Biomass,Biomass
+Standen Heath,50.6915,-1.3595,1.5,Waste,Biomass
+Blackborough End Landfill Site,52.7032,0.4732,1.5,Waste,Biomass
+Easter Melrose Wind Energy Project,57.6606,-2.4175,1.5,Wind,Wind
+K L Technologies Wind Turbine,52.7712,0.3857,1.5,Wind,Wind
+Crossness,51.508,0.1377,1.5,Solar,Solar
+Pont Andrew,51.7753,-4.1376,1.54,Solar,Solar
+Limberlost,51.3811,-1.2325,1.59,Solar,Solar
+Alscot,52.175,-1.679,1.6,Biomass,Biomass
+Danes Moss Landfill Site,53.2404,-2.1453,1.6,Waste,Biomass
+Bretby Power,52.7867,-1.5848,1.6,Waste,Biomass
+Maw Green Landfill Site,53.1139,-2.4228,1.6,Waste,Biomass
+Walpole Landfill,51.1839,-2.9829,1.6,Waste,Biomass
+Orton Park Farm,54.869,-3.0067,1.6,Wind,Wind
+Lawrence Landfill,51.7745,-5.0008,1.6,Wind,Wind
+Salford Road,53.5799,-2.4269,1.6,Solar,Solar
+Gowy Landfill Site,53.2376,-2.8315,1.6,Waste,Biomass
+Halifax Farm,52.6398,-1.3252,1.6,Wind,Wind
+Myreton Crossroads,57.599,-2.8425,1.6,Wind,Wind
+Mountsorrel Landfill Site,52.7296,-1.1559,1.6,Waste,Biomass
+North Red Bog,57.5876,-2.0091,1.6,Wind,Wind
+Wingmoor Farm (Waste AD),51.9461,-2.0833,1.6,Biomass,Biomass
+Walpole Landfill AD (Waste AD),51.1839,-2.9829,1.6,Biomass,Biomass
+Waresley Landfill Site,52.3344,-2.2153,1.6,Waste,Biomass
+Rossendale Power,53.6842,-2.2947,1.6,Waste,Biomass
+West Kingsmill Farm Solar Park,50.4414,-4.243,1.6,Solar,Solar
+Princes Gate Spring Water,51.772,-4.6844,1.6,Wind,Wind
+Trelow Farm,50.4899,-4.9298,1.6,Solar,Solar
+Easter Tolmauds,57.157,-2.6219,1.6,Wind,Wind
+Promens,52.4375,1.5957,1.65,Solar,Solar
+Beeston Weir Hydro Scheme,52.9122,-1.2087,1.7,Hydro,Hydro
+Oakfield Farm - extension,53.7722,-2.8066,1.7,Solar,Solar
+Land South West Of Apollo Business Park,52.0794,-1.4169,1.7,Solar,Solar
+Western International Market,51.496,-0.4081,1.7,Solar,Solar
+Lochhead Landfill CHP,56.0969,-3.4694,1.7,Biomass,Biomass
+Seaview Farm,51.4955,-3.6958,1.7,Solar,Solar
+The Limes Wind Turbines,53.7518,-0.2348,1.7,Wind,Wind
+Beckley Solar Farm,50.7618,-1.6798,1.7,Solar,Solar
+Amcor Flexibles,51.5224,-2.5266,1.7,Solar,Solar
+Long Sutton Butterfly And Wildlife Park,52.79,0.1348,1.7,Solar,Solar
+Charlton Lane Eco Park (Waste AD),51.4045,-0.4407,1.7,Biomass,Biomass
+Trevemper,50.3949,-5.0693,1.7,Solar,Solar
+Upper Wheedlemont Farm,57.3233,-2.8752,1.7,Wind,Wind
+Hill of Balquhindachy extension,57.4724,-2.241,1.7,Wind,Wind
+Iwade Solar Farm,51.3671,0.6542,1.7,Solar,Solar
+Ikea Distribution Centre - resubmission,53.5406,-1.0314,1.7,Solar,Solar
+Tiln Farm Retford (extension),53.3482,-0.9281,1.7,Solar,Solar
+Roskrow Barton,50.1773,-5.1316,1.7,Wind,Wind
+Connaught Road,54.7661,-6.3071,1.7,Wind,Wind
+Pierces Farm,51.4006,-1.0222,1.74,Solar,Solar
+Benbole,50.5401,-4.7826,1.74,Solar,Solar
+Mucomir,56.9107,-4.9852,1.75,Hydro,Hydro
+Walton,51.4041,-0.3977,1.79,Solar,Solar
+Barns of Ayre Wind Turbines (2),58.9217,-2.7156,1.8,Wind,Wind
+Decoy Farm (Farm AD),52.6969,-0.1371,1.8,Biomass,Biomass
+Mackies Dairy PV,57.3779,-2.3891,1.8,Solar,Solar
+Walnut Yard (Phase 1),52.7997,-1.3642,1.8,Solar,Solar
+Edwin Richards Landfill Scheme,52.4899,-2.0603,1.8,Waste,Biomass
+Myres Hill,55.6919,-4.279,1.8,Wind,Wind
+Lowther Farms,52.3599,-1.0243,1.8,Solar,Solar
+Kingspan,53.2897,-3.2008,1.8,Wind,Wind
+Burntstump Landfill Scheme,53.0441,-1.1289,1.8,Waste,Biomass
+Waltham Point Distribution Centre,51.6794,-0.0088,1.8,Solar,Solar
+Manor Farm (Castle Cary),51.0806,-2.5102,1.8,Solar,Solar
+Moorhouse Lane - resubmission,51.5149,-2.6576,1.8,Solar,Solar
+Kia Ora Farm,50.8545,-3.4082,1.8,Solar,Solar
+Ardley Fields Farm Landfill Site,51.9433,-1.2086,1.8,Waste,Biomass
+Kirkheaton,55.0865,-1.989,1.8,Wind,Wind
+Marshwood Farm,50.8394,-2.937,1.8,Solar,Solar
+Somerton,52.7099,1.6545,1.8,Wind,Wind
+Heathrow Airport Biomass CHP,51.4592,-0.4595,1.8,Biomass,Biomass
+CRAYSMARSH SOLAR FARM,51.3626,-2.0947,1.8,Solar,Solar
+Slaughtergate Farm,51.0459,-2.3119,1.8,Solar,Solar
+Flotta,58.8412,-3.0973,1.8,Wind,Wind
+Swaffham II,52.6577,0.7007,1.8,Wind,Wind
+Whinney Hill II Energy,53.7703,-2.3656,1.8,Waste,Biomass
+Bentwaters Park (extension),52.1253,1.4428,1.8,Biomass,Biomass
+Portley Ford Landfill Site,52.3871,-1.0331,1.8,Waste,Biomass
+Patteson Court Landfill Site,51.2435,-0.149,1.8,Waste,Biomass
+ParkerSteel Shoreham Plant,50.8281,-0.2152,1.8,Solar,Solar
+Porvair International Ltd,52.77,0.3876,1.8,Solar,Solar
+Rolls Royce Filton Campus Building 185,51.5246,-2.5713,1.8,Solar,Solar
+Ongar Landfill Scheme 2,51.6977,0.2588,1.8,Waste,Biomass
+Chelson Meadow Gas to Energy Scheme,50.3709,-4.1161,1.8,Waste,Biomass
+Distington Landfill,54.6044,-3.5109,1.8,Waste,Biomass
+Severn Road Solar Park,51.5325,-2.6689,1.8,Solar,Solar
+Gallowhill,59.2766,-2.9822,1.8,Wind,Wind
+Creathorne Farm  - Solar Farm,50.7956,-4.5451,1.8,Solar,Solar
+Blakenhall Park Solar Farm,52.7604,-1.7443,1.8,Solar,Solar
+The Stables,52.5766,-1.4068,1.8,Solar,Solar
+Queen's Park Road Energy,53.797,-2.2278,1.8,Waste,Biomass
+Elstow Landfill Site,52.1033,-0.4713,1.8,Waste,Biomass
+Ramsey,52.4469,-0.1063,1.8,Wind,Wind
+Barr Farm Limited,52.6691,-2.1267,1.88,Solar,Solar
+Binn Landfill,56.3103,-3.3335,1.9,Waste,Biomass
+Brenkley Landfill,55.069,-1.6743,1.9,Waste,Biomass
+Greengairs Landfill Scheme Phase II,55.905,-3.945,1.9,Waste,Biomass
+Shelford Landfill Scheme,51.2981,1.0999,1.9,Waste,Biomass
+Greengairs Landfill Scheme Phase I,55.8152,-3.9405,1.9,Waste,Biomass
+Warren Quarry Landfill Gas Scheme,52.5978,-1.2086,1.9,Waste,Biomass
+Ederline Hydro,56.1778,-5.3402,1.9,Hydro,Hydro
+Briar Solar Farm,52.6452,1.2582,1.9,Solar,Solar
+Thornton Waste Recovery Park (Waste AD),53.8948,-3.0151,1.9,Biomass,Biomass
+River Coiltie Hydro Scheme,57.3167,-4.5048,1.9,Hydro,Hydro
+Derrydarroch,56.8322,-5.0801,1.9,Hydro,Hydro
+Luson Farm,50.3617,-3.9413,1.9,Solar,Solar
+Queens Park Energy,53.7994,-2.2196,1.9,Waste,Biomass
+Rowley,53.7955,-2.2215,1.9,Waste,Biomass
+High Heavens Landfill,51.6009,-0.7987,1.9,Waste,Biomass
+Bruar Hydro Scheme,56.8315,-3.9299,1.9,Hydro,Hydro
+Dimmer Landfill Site,51.0752,-2.5538,1.9,Waste,Biomass
+Farington Waste Recovery Park (Waste AD),53.703,-2.7373,1.9,Biomass,Biomass
+Northampton General Hospital,52.2365,-0.8819,1.9,Biomass,Biomass
+Dogsthorpe South Landfill Site,52.6015,-0.2222,1.9,Waste,Biomass
+Colnbrook Landfill,51.489,-0.528,1.9,Waste,Biomass
+Turret water treatment works,56.373,-3.8393,1.9,Hydro,Hydro
+Testwood Water Supply Works,50.9325,-1.4979,1.9,Solar,Solar
+Shearman Field,54.6099,-3.508,1.9,Waste,Biomass
+Stables,50.6971,-1.422,1.97,Solar,Solar
+Loch Eilde Mor Hydro (Kinlochleven extension),56.7298,-4.9172,2.0,Hydro,Hydro
+Willand AD,50.8923,-3.3801,2.0,Biomass,Biomass
+Inver Hydro,55.8681,-6.0909,2.0,Hydro,Hydro
+Abhainn Gleann Nam Fiadh,56.7839,-4.7711,2.0,Hydro,Hydro
+Drumjohn,54.941,-3.9278,2.0,Hydro,Hydro
+Lochay Compensation Set,54.9667,-3.4667,2.0,Hydro,Hydro
+Hill of Easterton Extension,57.3761,-2.3933,2.0,Wind,Wind
+Hollamoor Farm (PV),51.0506,-4.0744,2.0,Solar,Solar
+Clearwell Farm - solar,51.5617,-3.0894,2.0,Solar,Solar
+Wooton,52.1925,-0.8881,2.0,Waste,Biomass
+Lochhead,56.0985,-3.4724,2.0,Waste,Biomass
+Colwick Industrial Estate (Farm and Food waste),52.9523,-1.0578,2.0,Biomass,Biomass
+Weston Landfill Site,52.2244,-1.0194,2.0,Waste,Biomass
+Keltneyburn Hydro,56.6139,-4.0027,2.0,Hydro,Hydro
+Celcon Blocks Ltd,53.677,-1.0841,2.0,Wind,Wind
+Long Hill Road,52.5731,0.0893,2.0,Wind,Wind
+Chonais Hydro,57.4917,-5.2603,2.0,Hydro,Hydro
+Lincoln Landfill Scheme,53.1974,-0.6093,2.0,Waste,Biomass
+Worksopp,53.2998,-1.0757,2.0,Wind,Wind
+EPSRC Willenhall,52.585,-2.0576,2.0,Storage,Storage
+Westwood AD Plant (Farm AD),52.2622,-0.5634,2.0,Biomass,Biomass
+Lancaster University (wind),54.0072,-2.7795,2.0,Wind,Wind
+Chaorach Hydro,56.3944,-4.4925,2.0,Hydro,Hydro
+Compton Bassett Landfill,51.438,-1.9726,2.0,Waste,Biomass
+Wolseley National Distribution Centre,52.2736,-1.5357,2.0,Solar,Solar
+Immingham,53.6133,-0.186,2.0,Waste,Biomass
+Dunsfold,51.1193,-0.5448,2.0,Solar,Solar
+Horton Landfill Site,50.8985,-0.2878,2.0,Waste,Biomass
+Lochhead Landfill Scheme,56.647,-2.8408,2.0,Waste,Biomass
+Inchdairnie,56.1782,-3.2115,2.0,Biomass,Biomass
+Drummond Moor Landfill,55.8822,-3.0774,2.0,Waste,Biomass
+Flint Landfill Site Castle Park,53.256,-3.1392,2.0,Solar,Solar
+Crockbrack,54.6145,-6.9552,2.0,Wind,Wind
+Glapwell Power,53.1963,-1.3099,2.0,Waste,Biomass
+Salford Refuse Treatment Plant (AD),53.4953,-2.2873,2.0,Biomass,Biomass
+Birkhall Estate,57.0045,-3.0814,2.0,Hydro,Hydro
+Goathill Quarry Turbine,56.0864,-3.3203,2.0,Wind,Wind
+Goldenhaye Field Solar Farm,50.8739,-2.9058,2.0,Solar,Solar
+River Pattack (resubmission),56.9166,-4.3855,2.0,Hydro,Hydro
+River Lochy Hydro,56.4049,-4.9226,2.0,Hydro,Hydro
+Risley,53.4376,-2.5024,2.0,Waste,Biomass
+Rexton Cross,50.6755,-4.2466,2.0,Solar,Solar
+BAE Samlesbury Aerodrome,53.7709,-2.5782,2.0,Solar,Solar
+Fall of Warness Tidal Demonstrator (EMEC),59.1399,-2.8057,2.0,Wave and Tidal,Other
+Reliance Street Mechanical Biological Treatment Facility (MBT),53.5041,-2.1807,2.0,Biomass,Biomass
+Blyth T2,55.1254,-1.4952,2.0,Wind,Wind
+Prosper Demulder Limited Anaerobic Digestion Plant (Waste AD),53.5369,-1.1374,2.0,Biomass,Biomass
+Westcott Venture Park,51.8499,-0.9785,2.0,Biomass,Biomass
+Green's Lodge Farm,52.724,-1.3125,2.0,Biomass,Biomass
+Dewlay Cheese,53.8883,-2.786,2.0,Wind,Wind
+Sandhill Anaerobic Digestion Plant (Waste AD),53.992,-0.4985,2.0,Biomass,Biomass
+GreenPark,51.419,-0.9855,2.0,Wind,Wind
+Sandhill Solar Park,51.0605,-3.1973,2.0,Solar,Solar
+Ghuilbinn Hydro Scheme,56.8878,-4.5765,2.0,Hydro,Hydro
+Station Farm Landfill Scheme,52.3085,-0.2266,2.0,Waste,Biomass
+Stags Holt Extension,52.5698,0.1233,2.0,Wind,Wind
+St Day II,50.2375,-5.1606,2.0,Waste,Biomass
+Stoke Bardolph energy crop (Farm AD),52.9759,-1.0396,2.0,Biomass,Biomass
+Deep Moor Gas to Energy,50.9722,-4.0994,2.0,Waste,Biomass
+South View Farm,54.2703,-0.7586,2.0,Biomass,Biomass
+South Manchester Resource Recovery Centre (AD),53.3944,-2.2461,2.0,Biomass,Biomass
+Summerway Drove,51.1227,-2.9657,2.0,Solar,Solar
+Deerplay Landfill Site,53.7509,-2.2199,2.0,Waste,Biomass
+Skibeden,53.9705,-1.981,2.0,Waste,Biomass
+Ford Motor Company Ltd (Extension),51.5287,0.1504,2.0,Wind,Wind
+Danes Moss Landfill Site (Extension),53.2404,-2.1453,2.0,Waste,Biomass
+Shooters,51.2544,-2.5834,2.0,Wind,Wind
+Sharpness Docks,51.7237,-2.4829,2.0,Wind,Wind
+Forss,58.5927,-3.5259,2.0,Wind,Wind
+Garbhaig Hydro Scheme,57.6813,-5.5196,2.0,Hydro,Hydro
+Bentwaters Park,52.13,1.4303,2.0,Biomass,Biomass
+Sandy Lane Generation Plant,52.3838,-2.0719,2.0,Waste,Biomass
+Avondale Quarry (Pilot),55.9903,-3.6789,2.0,Biomass,Biomass
+Docksway Landfill Scheme,51.5623,-3.004,2.0,Waste,Biomass
+Morrisons roof mounted solar,51.3717,0.7454,2.0,Solar,Solar
+Dunkeswell Airfield,50.8645,-3.227,2.0,Solar,Solar
+Burbo Bank Energy Storage,53.4123,-3.0551,2.0,Storage,Storage
+Halstead Renewable Power Project (Waste AD),51.9421,0.6578,2.0,Biomass,Biomass
+Greengairs Landfill Scheme Phase III,55.905,-3.945,2.0,Waste,Biomass
+Newry Biomass Phase 1 (Gasification),54.2175,-6.3367,2.0,Biomass,Biomass
+Uisge Dubh Hydro,57.3742,-5.3271,2.0,Hydro,Hydro
+Nissan Motors Plant Extn,54.9139,-1.4808,2.0,Wind,Wind
+Buslingthorpe Power Station (Leeds North),53.8143,-1.5426,2.0,Biomass,Biomass
+Ardtalnaig Hydro Scheme (resubmission),56.5256,-4.1335,2.0,Hydro,Hydro
+Grudie,57.6499,-5.4127,2.0,Hydro,Hydro
+Broockhurst Wood,51.0892,-0.3522,2.0,Waste,Biomass
+Morayhill AD,57.5182,-4.0889,2.0,Biomass,Biomass
+Oak Grove Biomass Facility,52.7686,1.3564,2.0,Biomass,Biomass
+Oatslie Landfill Gas,55.8556,-3.1645,2.0,Waste,Biomass
+Costessey Landfill Gas Project 2,52.6514,1.194,2.0,Waste,Biomass
+Maw Green Landfill Site  Cheshire (Extension),53.1139,-2.4228,2.0,Waste,Biomass
+Milton Landfill Site,52.2406,0.1561,2.0,Waste,Biomass
+Heathfield 'A' Landfill,50.6992,-3.5589,2.0,Waste,Biomass
+Briton Ferry,51.6422,-3.831,2.0,Waste,Biomass
+Auchencarroch Landfill Extension,55.9972,-4.5326,2.0,Waste,Biomass
+PG4 St Bedes Power Generation,54.8908,-1.5868,2.0,Waste,Biomass
+Bredbury Park Way - AD Stockport (Waste AD),53.4274,-2.1143,2.0,Biomass,Biomass
+PG4 St Bedes Power Generation (Extension),54.8908,-1.5884,2.0,Waste,Biomass
+Morfa Farm,51.4216,-3.4977,2.0,Solar,Solar
+Enfield Farm,50.7077,-3.4406,2.0,Biomass,Biomass
+West Hill  Flotta,58.827,-3.1231,2.0,Wind,Wind
+Lune Power,54.0556,-2.834,2.0,Waste,Biomass
+Cardiff Organic Waste Treatment Project (resubmission),51.4772,-3.1365,2.0,Biomass,Biomass
+Greengairs Landfill Scheme Phase IV,55.905,-3.945,2.0,Waste,Biomass
+Merevale & Blyth Estate (Waste AD),52.5711,-1.5867,2.0,Biomass,Biomass
+Langley Priory Solar Farm,52.4485,1.6747,2.02,Solar,Solar
+Rodbaston,52.7024,-2.1172,2.05,Wind,Wind
+Kilmelfort,56.2727,-5.4897,2.08,Hydro,Hydro
+Markley Group (Premiere Kitckens) Biomass,51.8101,-2.282,2.1,Biomass,Biomass
+Weddington Farm,52.2176,-1.4083,2.1,Solar,Solar
+Staveley Power,53.2739,-1.3612,2.1,Waste,Biomass
+Skelbrooke Landfill Gas Project,53.5994,-1.2308,2.1,Waste,Biomass
+Land Off Ingarsby Lane,52.6337,-0.9985,2.1,Solar,Solar
+Kirkless Power,53.5474,-2.5901,2.1,Waste,Biomass
+Cassington AD (Waste AD),51.7996,-1.3303,2.1,Biomass,Biomass
+Culligran Compensation Set,57.346,-4.7627,2.1,Hydro,Hydro
+Ruabon,52.9977,-3.0444,2.1,Waste,Biomass
+Tyrone Energy 1,54.8521,-7.4065,2.1,Biomass,Biomass
+Risley Sets 13 & 14,53.4354,-2.5057,2.1,Waste,Biomass
+Auchencarroch Landfill,55.9968,-4.5334,2.1,Waste,Biomass
+BH Energy - Biogas (AD),54.6193,-5.7889,2.1,Biomass,Biomass
+Aveley Landfill Scheme,51.5039,0.2348,2.1,Waste,Biomass
+Langlands Solar Farm,50.8973,-3.3609,2.1,Solar,Solar
+Allt Fionn - resubmission,56.3492,-4.7007,2.1,Hydro,Hydro
+Gore Cross - AD,50.6756,-1.2524,2.2,Biomass,Biomass
+Greengairs Landfill Scheme Phase VI,55.905,-3.945,2.2,Waste,Biomass
+Greengairs Landfill Scheme Phase V,55.905,-3.945,2.2,Waste,Biomass
+Heathfield 'C' Landfill Scheme,50.5744,-3.6099,2.2,Waste,Biomass
+Dunbar,55.9725,-2.4566,2.2,Waste,Biomass
+Beckton Sewage Treatment Works,51.5256,0.0799,2.2,Wind,Wind
+Loch Ericht,56.824,-4.372,2.2,Hydro,Hydro
+Stud Farm  Rufford (Farm AD),53.1583,-1.0285,2.2,Biomass,Biomass
+Swancote Farm AD (Farm AD),52.5428,-2.3818,2.2,Biomass,Biomass
+Tarbothill Landfill Site,57.2122,-2.0745,2.2,Waste,Biomass
+The Rosti Factory,55.7247,-3.9606,2.2,Wind,Wind
+Bennett Bank Landfill Site (lfg),54.1603,-3.2037,2.2,Waste,Biomass
+Salford Road Solar Farm (resubmission),53.2189,-1.915,2.2,Solar,Solar
+Barkip Anaerobic Digestor (Waste AD),55.7181,-4.7186,2.2,Biomass,Biomass
+Black Dog,57.2205,-2.0604,2.2,Waste,Biomass
+Bletchley Phase II,51.9791,-0.7653,2.2,Waste,Biomass
+Northwick Estate (Extension),52.0196,-1.8032,2.2,Solar,Solar
+Land At Court Farm,51.4979,-3.5174,2.2,Solar,Solar
+Broadley Copse,50.8736,-0.8489,2.2,Biomass,Biomass
+Bonnyrigg,55.8865,-3.1255,2.2,Waste,Biomass
+Briton / Neath,51.6431,-3.8325,2.2,Waste,Biomass
+Braevallich,56.2112,-5.2805,2.2,Hydro,Hydro
+Land at Box Road,51.7184,-2.3606,2.2,Solar,Solar
+Cotesbach Landfill Gas Project,52.4227,-1.2114,2.3,Waste,Biomass
+Sibelco Brassington,53.0909,-1.6284,2.3,Wind,Wind
+Ness point Wind Turbine 1,52.4804,1.761,2.3,Wind,Wind
+Courtstone Wind Turbine,57.392,-2.261,2.3,Wind,Wind
+G24 Innovations Turbine,51.5067,-3.1042,2.3,Wind,Wind
+Gairnieston Farm,57.5936,-2.424,2.3,Wind,Wind
+Pen y Bont,52.9671,-3.0556,2.3,Waste,Biomass
+Sandy Lane Landfill Scheme,51.5038,0.2434,2.3,Waste,Biomass
+Bewick Drift,55.2152,-1.5572,2.3,Wind,Wind
+Mawdesley Moss,53.6335,-2.7803,2.3,Wind,Wind
+Bidston Moss Landfill Scheme,53.4101,-3.0756,2.3,Waste,Biomass
+Bogenlea Farm,57.5663,-2.2999,2.3,Wind,Wind
+Bygrave Lodge Farm Anaerobic Digestion Facility (Farm AD),52.0025,-0.1428,2.3,Biomass,Biomass
+Crowmarsh Battle Farm (Farm AD),51.611,-1.1033,2.3,Biomass,Biomass
+Mornflake Oats Wind Turbine,57.6599,-2.6462,2.3,Wind,Wind
+Dagenham,51.5187,0.1508,2.3,Wind,Wind
+Rye Meads Sewerage Treatment Works,51.7749,0.0171,2.3,Biomass,Biomass
+Burgar Hill (land Near)  Evie,59.1176,-3.1492,2.3,Wind,Wind
+Dimmer Landfill Gas Scheme,51.0761,-2.5538,2.3,Waste,Biomass
+Hunstrete (Wilmington Farm),51.3516,-2.5039,2.3,Solar,Solar
+Arlesey Landfill Gas (Extension),52.003,-0.2703,2.3,Waste,Biomass
+Land near Ventonteague (Resubmission),50.3208,-5.0556,2.3,Wind,Wind
+Wind Turbine 1,54.6879,-6.0196,2.3,Wind,Wind
+Auchinlea Landfill Site,55.8096,-3.9004,2.3,Waste,Biomass
+Withnell LFS,53.7113,-2.5486,2.3,Waste,Biomass
+Land Adjacent Claypits Farm (b) (Birch Estate),51.845,0.8046,2.3,Solar,Solar
+Tow Law,54.7638,-1.8228,2.3,Wind,Wind
+Thorfinn Wind Farm - NM2000,59.109,-3.1404,2.3,Wind,Wind
+Denhill,57.4112,-2.341,2.3,Wind,Wind
+Kibblesworth Landfill Site,54.9026,-1.6039,2.3,Waste,Biomass
+ANP Newport Wind Turbine,51.5559,-2.9738,2.3,Wind,Wind
+Withyhedge Generation Plant,51.8577,-4.9522,2.4,Waste,Biomass
+West Knock Wind Cluster,57.4938,-2.0268,2.4,Wind,Wind
+Paulsgrove Landfill Site,50.8365,-1.0925,2.4,Waste,Biomass
+Dunlop Landfill Gas Scheme,55.7319,-4.4763,2.4,Waste,Biomass
+Plascow wind cluster (resubmission),54.9563,-3.7602,2.4,Wind,Wind
+Poole Generation Plant,50.9875,-3.2095,2.4,Waste,Biomass
+Bourne Farm,50.7756,-2.3952,2.4,Solar,Solar
+Brockholes Wind Cluster,55.8666,-2.2879,2.4,Wind,Wind
+Barling Hall Farm,51.5801,0.7928,2.4,Waste,Biomass
+Rosehill Wind Turbines,56.055,-3.8281,2.4,Wind,Wind
+Waverley Wood II,52.3395,-1.4716,2.4,Waste,Biomass
+Wallingford (Waste AD),51.614,-1.1122,2.4,Biomass,Biomass
+St John's Well,57.4266,-2.3252,2.4,Wind,Wind
+Upper Ardgrain Wind Farm,57.4064,-2.0598,2.4,Wind,Wind
+Trumps Farm (AD),51.382,-0.5722,2.4,Biomass,Biomass
+Auchinderran Wind Farm,57.5814,-2.6468,2.4,Wind,Wind
+Energen biogas cumbernauld,55.9697,-3.958,2.4,Biomass,Biomass
+Gawnsmoss Cluster,57.6223,-2.613,2.4,Wind,Wind
+Garrogie,57.1859,-4.4818,2.4,Hydro,Hydro
+Cumbernauld BioPlant  (Waste AD),55.9704,-3.9575,2.4,Biomass,Biomass
+Farnham Landfill,51.1956,-0.8279,2.4,Waste,Biomass
+Storr Lochs,57.3,-6.25,2.4,Hydro,Hydro
+Sidegate Lane,52.3231,-0.656,2.4,Waste,Biomass
+West Hill Farm,51.1504,-4.1312,2.4,Solar,Solar
+Broughall Fields Farm,52.9625,-2.6624,2.4,Biomass,Biomass
+Kaimes Landfill Site,55.8837,-3.3956,2.4,Waste,Biomass
+May Farm Anaerobic Digester (Farm AD),52.4546,0.3521,2.4,Biomass,Biomass
+Mullardoch Tunnel,57.3387,-4.9449,2.4,Hydro,Hydro
+High Hedley I,54.7637,-1.7575,2.4,Wind,Wind
+Knottingley B,53.7028,-1.2423,2.4,Solar,Solar
+Cairnhill Farm solar park,57.5603,-2.3723,2.4,Solar,Solar
+LADEHEAD FARM - WIND TURBINES,55.6495,-3.9221,2.4,Wind,Wind
+Mains of Hatton,57.6153,-2.0667,2.4,Wind,Wind
+Langley Hall Farm,51.6633,-1.0978,2.4,Solar,Solar
+Lussa,56.0328,-5.787,2.4,Hydro,Hydro
+Lodge Farm (Broughton),52.3703,-0.1314,2.4,Solar,Solar
+Castle of Auchry Farm,57.2828,-2.4477,2.4,Wind,Wind
+Coleshill STW (Waste AD),52.519,-1.7116,2.4,Biomass,Biomass
+Harewood Whin Landfill Site,53.9576,-1.1724,2.4,Waste,Biomass
+Crimp,50.9119,-4.4881,2.43,Wind,Wind
+Balcas Timber Biomass CHP Plant,54.3073,-7.6639,2.5,Biomass,Biomass
+A C Shropshire (Farm AD),52.586,-1.2375,2.5,Biomass,Biomass
+Corkey Wind Farm Extension (Resubmission),55.0445,-6.2797,2.5,Wind,Wind
+Inverlael,57.8235,-5.0553,2.5,Hydro,Hydro
+Cuaich,56.9562,-4.211,2.5,Hydro,Hydro
+West Mill,51.8836,0.2417,2.5,Waste,Biomass
+Land West of Roberts Wall Far,51.6712,-4.7464,2.5,Solar,Solar
+Screwfix Direct,52.9752,-2.171,2.5,Solar,Solar
+Maesgwyn Wind Farm - extension,51.7406,-3.6442,2.5,Wind,Wind
+B&Q Swindon DC,51.5996,-1.7429,2.5,Solar,Solar
+Severn Trent STW,52.698,-1.1179,2.5,Wind,Wind
+Damhead Farm,55.8539,-3.9335,2.5,Wind,Wind
+Newthorpe Wind Turbine,52.9988,-1.2979,2.5,Wind,Wind
+Hill of Easterton,57.3761,-2.3933,2.5,Wind,Wind
+London Southend Airport (resubmission),51.5755,0.6938,2.5,Solar,Solar
+Lathom (Pilkington Technical Centre),53.5688,-2.8247,2.5,Solar,Solar
+GlaxoSmithKline Wind Project (Turbine 4),55.5929,-4.6182,2.5,Wind,Wind
+Carver Hay  moss lane,53.7066,-2.7814,2.5,Solar,Solar
+Trenoweth Solar Farm,50.3973,-4.7489,2.5,Solar,Solar
+Langstone Court Road Solar Farm,51.6009,-2.9121,2.5,Solar,Solar
+Next Distribution Centre Doncaster,53.538,-1.0335,2.5,Solar,Solar
+Crossness Sewage Works Turbine,51.5022,0.1421,2.5,Wind,Wind
+Nash Waste Water Treatment Works Turbine,51.5511,-2.9591,2.5,Wind,Wind
+Hawkers Farm,51.2256,-2.7641,2.5,Solar,Solar
+Craig Wind Farm (Extension),54.8685,-5.0871,2.5,Wind,Wind
+Crockagarron Ext,54.5516,-7.009,2.5,Wind,Wind
+Harlock Hill Wind Farm,54.2049,-3.1467,2.5,Wind,Wind
+Rise Carr  Darlington / CLNR EES3-1,54.5463,-1.5592,2.5,Storage,Storage
+Bradgate Quarry Landfill Gas Scheme,52.6727,-1.2428,2.5,Waste,Biomass
+Moel Maelogen A,53.1363,-3.725,2.6,Wind,Wind
+Hollies,53.143,0.2411,2.6,Wind,Wind
+Colsterworth Landfill Gas Project,52.8087,-0.6589,2.6,Waste,Biomass
+Stone Hill,50.9201,0.2268,2.6,Solar,Solar
+Harbour Road,55.5471,-4.6814,2.6,Biomass,Biomass
+Ben Aketil Extension,57.4298,-6.4583,2.6,Wind,Wind
+Pitts Farm (revised application),51.2138,-2.5858,2.6,Solar,Solar
+Somersal Mill Farm,52.916,-1.7946,2.6,Solar,Solar
+Sundon Landfill Site,51.9435,-0.4913,2.6,Waste,Biomass
+Harn Hill Quarry Landfill Site,51.5894,-2.5932,2.6,Waste,Biomass
+Darracott Moor,50.9299,-4.513,2.6,Wind,Wind
+Land to the East of Burton Lane,52.8033,-1.1116,2.6,Solar,Solar
+Cairnmore Farm,57.3153,-2.8137,2.6,Wind,Wind
+Ipswich Hospital Energy Centre,52.0568,1.1979,2.6,Biomass,Biomass
+Land at Darran Farm,51.6882,-3.1804,2.6,Solar,Solar
+High Sharpley,54.8403,-1.3375,2.6,Wind,Wind
+Eccleshall Biomass,52.8746,-2.2467,2.6,Biomass,Biomass
+Westmill Qaurry,51.8222,-0.0574,2.6,Waste,Biomass
+Cranham Golf Course Solar Park,51.5587,0.2827,2.6,Solar,Solar
+Rufford Lane,53.1881,-1.0072,2.6,Solar,Solar
+Advanced Manufacturing Research Centre,53.3876,-1.3779,2.6,Wind,Wind
+Woodlands Wind Farm,55.6333,-3.9105,2.6,Wind,Wind
+Hafoty Ucha '2' and '3' Wind Turbine,52.9962,-3.5883,2.6,Wind,Wind
+Mendennick Solar,50.355,-4.2407,2.64,Solar,Solar
+Snettisham Solar Farm,52.868,0.9202,2.7,Solar,Solar
+Loch Sminig Wind Project,58.3836,-6.493,2.7,Wind,Wind
+Brynpica Landfill Site,51.6579,-3.4832,2.7,Waste,Biomass
+Hare Hill (B),54.7616,-1.4151,2.7,Wind,Wind
+Thornton Lane,52.6843,-1.3142,2.7,Solar,Solar
+Norlands Lane Landfill Site,51.4153,-0.5275,2.7,Waste,Biomass
+Bu Farm,59.0973,-2.6601,2.7,Wind,Wind
+Lower Pennington Farm,50.74,-1.5529,2.7,Solar,Solar
+Coton Park Solar Farm,52.7585,-1.5977,2.7,Solar,Solar
+Black Bush Farm,52.5497,-0.1479,2.7,Solar,Solar
+Bootham Lane Landfill,53.5897,-1.0089,2.7,Waste,Biomass
+Judkins Landfill Scheme,52.5319,-1.4825,2.7,Waste,Biomass
+Silent Valley Landfill Scheme,51.7557,-3.1821,2.7,Waste,Biomass
+Rothiesholm,59.0973,-2.6601,2.7,Wind,Wind
+Narborough Landfill,52.5728,-1.2268,2.7,Waste,Biomass
+Bellhouse Pit Landfill Scheme,51.8753,0.8198,2.7,Waste,Biomass
+Woodtown,50.7762,-1.8718,2.72,Solar,Solar
+Holmside,54.8471,-1.6776,2.75,Wind,Wind
+Hare Hill RO,54.7616,-1.4151,2.75,Wind,Wind
+Norton Hall,52.1011,-1.787,2.8,Solar,Solar
+Wick Lane Solar Ltd,51.2698,-2.9624,2.8,Solar,Solar
+Babergh Home Solar Scheme,52.0486,0.9444,2.8,Solar,Solar
+Dorket Head,53.0215,-1.1144,2.8,Waste,Biomass
+Highfields Farm (Braintree),51.8248,0.7195,2.8,Solar,Solar
+Efford Landfill (Newmilton),50.7577,-1.6682,2.8,Waste,Biomass
+Lount solar farm,52.7561,-1.4405,2.8,Solar,Solar
+Land at Morfa Camp,52.59,-4.0967,2.8,Solar,Solar
+Sharland Farm,50.8418,-3.7608,2.8,Solar,Solar
+Preston Road AD Plant (Waste AD),54.6058,-1.5803,2.8,Biomass,Biomass
+Summerston Landfill,55.9174,-4.2737,2.8,Waste,Biomass
+Hill End Farm,51.3118,-1.1114,2.8,Solar,Solar
+Elan Valley Hydro Scheme,52.2946,-3.6144,2.9,Hydro,Hydro
+Trumps Farm Landfill Scheme,51.3853,-0.573,2.9,Waste,Biomass
+Sandys Moor,51.0385,-3.3063,2.9,Solar,Solar
+Scouthead Power Plant,53.5551,-2.0392,2.9,Waste,Biomass
+Eckland Lodge Farm,52.4584,-0.843,2.9,Solar,Solar
+Candles/Coalmoor Landfill,52.666,-2.4997,2.9,Waste,Biomass
+Llandulas Landfill Scheme,53.2922,-3.6367,2.9,Waste,Biomass
+Gallymoor Landfill,53.8459,-0.7262,2.9,Waste,Biomass
+Holiday Moss Landfill Gas Scheme,53.5122,-2.7705,2.9,Waste,Biomass
+Fell View Farm (Phase 2),53.7915,-2.6236,2.9,Solar,Solar
+Chynoweth Farm,50.3045,-5.0815,2.9,Solar,Solar
+Great Knowles,50.8042,-4.3769,2.92,Solar,Solar
+King's Yard,51.5359,-0.0056,3.0,Biomass,Biomass
+Rigby Landfill,53.6098,-2.6178,3.0,Waste,Biomass
+Godley Water Treatment Works,53.4551,-2.0585,3.0,Solar,Solar
+North of Newton Farm,50.7449,-2.0951,3.0,Solar,Solar
+Ratty's Lane Sustainable Enery Facility (Waste AD),51.7671,0.0003,3.0,Biomass,Biomass
+Granville Ecopark,54.491,-6.8121,3.0,Biomass,Biomass
+River E,57.2135,-4.4506,3.0,Hydro,Hydro
+Godmanchester,52.3227,-0.1571,3.0,Waste,Biomass
+Yardwall Manor,51.2217,-2.9116,3.0,Solar,Solar
+Redhill 2,51.2354,-0.1464,3.0,Waste,Biomass
+Lednock,56.3745,-3.9975,3.0,Hydro,Hydro
+Houghton-le-Spring Landfill Site,54.8438,-1.4515,3.0,Waste,Biomass
+Forest Farm,50.9429,-1.2027,3.0,Solar,Solar
+Stormy Down (Waste AD),51.5072,-3.6713,3.0,Biomass,Biomass
+Sutton Grange AD Plant,53.3631,-0.9601,3.0,Biomass,Biomass
+Pebsham,50.8533,0.5204,3.0,Waste,Biomass
+Seaforth,53.4652,-3.0393,3.0,Wind,Wind
+Ling Hall 1,52.3514,-1.3422,3.0,Waste,Biomass
+Tengore Lane - resubmission,51.0428,-2.792,3.0,Solar,Solar
+Garlaff Landfill (Extension),55.4297,-4.3041,3.0,Waste,Biomass
+Land at Ingles Hill Farm,52.7565,-1.4899,3.0,Solar,Solar
+Tiree,56.4992,-6.8692,3.0,Oil,Oil
+Esholt WWTW,53.846,-1.7114,3.0,Waste,Biomass
+Higher Trevartha Farm,50.4517,-4.4281,3.0,Solar,Solar
+Energy Works Hull - Wind Turbine,53.7585,-0.3304,3.0,Wind,Wind
+Energy Works Hull - AD (Waste AD),53.7585,-0.3304,3.0,Biomass,Biomass
+Prosper Demulder Limited Anaerobic Digestion Plant (Waste AD) - extension,53.5369,-1.1374,3.0,Biomass,Biomass
+Gremista Wind Farm,60.1924,-1.1671,3.0,Wind,Wind
+Tully Quarry,54.8371,-6.1986,3.0,Biomass,Biomass
+United Mines Landfill Scheme,50.239,-5.1778,3.0,Waste,Biomass
+Trackwork Limited (EfW),53.5779,-1.0685,3.0,Waste,Biomass
+Sutton Landfill Site,53.1259,-1.2819,3.0,Waste,Biomass
+Lady Hole Farm,53.0089,-1.6909,3.0,Solar,Solar
+Butchersfield Landfill Site,53.3977,-2.4842,3.0,Waste,Biomass
+BMW UK Manufacturing Ltd,51.7328,-1.1947,3.0,Solar,Solar
+Blackawton Solar Farm,50.3641,-3.6421,3.0,Solar,Solar
+Achanalt,57.6108,-4.916,3.0,Hydro,Hydro
+Beacon Hill,50.7546,-2.0297,3.0,Waste,Biomass
+Deephams Sewerage Treatment Works,51.6265,-0.0415,3.0,Biomass,Biomass
+Caddington Solar Farm (Phase 1),51.86,-0.4633,3.0,Solar,Solar
+Coursers Farm AD Plant (Waste AD),51.7267,-0.2575,3.0,Biomass,Biomass
+Cia Aig,56.9537,-5.0076,3.0,Hydro,Hydro
+Carrington Farm AD,53.0709,-0.0531,3.0,Biomass,Biomass
+Bronwylfa Reservoir,53.0318,-3.0594,3.0,Solar,Solar
+Bromborough Dock Landfill Scheme,53.3561,-2.9796,3.0,Waste,Biomass
+Chapel Farm Landfill,51.6159,-1.8093,3.0,Waste,Biomass
+Croda Chemicals Europe,53.6823,-1.0072,3.0,Wind,Wind
+Dimmer Anaerobic Digestor (Waste AD),51.0801,-2.5561,3.0,Biomass,Biomass
+Blazer Fuels,53.1213,-3.323,3.0,Biomass,Biomass
+Chard Solar Park,50.8859,-2.9434,3.0,Solar,Solar
+Douglas Water,56.2149,-5.1533,3.0,Hydro,Hydro
+Cathkin Braes,55.7971,-4.2153,3.0,Wind,Wind
+Cadland 2,50.8095,-1.3599,3.02,Solar,Solar
+Ketton Solar Phase 2,52.6441,-0.5588,3.09,Solar,Solar
+Nether Mill Farm (resubmission),50.8993,-3.3952,3.1,Solar,Solar
+Hawksland Solar,50.5027,-4.8918,3.1,Solar,Solar
+Arden Quarry Landfill,53.3718,-1.9681,3.1,Waste,Biomass
+Willsland Solar farm,50.8166,-4.13,3.2,Solar,Solar
+Newlincs EfW,53.6019,-0.1638,3.2,Waste,Biomass
+Cottonmount Quarry,54.682,-6.0171,3.2,Waste,Biomass
+PwllfaWatkin Landfill Gas Site,51.7355,-3.8602,3.2,Waste,Biomass
+Felinfach,52.1972,-4.1689,3.2,Biomass,Biomass
+Kirton Solar PV Farm,52.9323,-0.0966,3.2,Solar,Solar
+Skelmonae Wind Farm,57.4208,-2.1898,3.2,Wind,Wind
+Clifton Marsh Wastewater Treatment Works,53.7497,-2.8319,3.2,Solar,Solar
+Castle Pill - Repowering,51.72,-5.0128,3.2,Wind,Wind
+Otterham Down Wind Farm (Resubmission),50.6849,-4.6103,3.2,Wind,Wind
+Chawton Farm Solar Farm,50.735,-1.302,3.2,Solar,Solar
+St Johns Wells Wind Cluster Extension,57.4182,-2.3353,3.2,Wind,Wind
+Eco Composting,50.786,-1.8569,3.2,Biomass,Biomass
+Cuileig Hydro Scheme,57.7633,-5.0392,3.3,Hydro,Hydro
+Bypass Nurseries Solar Farm,52.1024,-1.9201,3.3,Solar,Solar
+Redcourt Farm,51.8493,-4.3548,3.3,Solar,Solar
+Danes Farm,53.3224,-0.6975,3.3,Solar,Solar
+Clifton Marsh Energy,53.752,-2.8037,3.3,Waste,Biomass
+Cannington Cold Stores,51.1444,-3.0969,3.3,Biomass,Biomass
+Week Farm Solar Park,50.9517,-4.1195,3.3,Solar,Solar
+Margate,50.4671,-4.6976,3.37,Solar,Solar
+Land To The North Of Dairy House Farm,53.1042,-2.5118,3.4,Solar,Solar
+Twinwoods Heat & Power CHP,52.1926,-0.4911,3.4,Waste,Biomass
+Haverigg 3,54.204,-3.3245,3.4,Wind,Wind
+Wisbech Solar Park,52.6379,0.1621,3.4,Solar,Solar
+Pingry Farm - Phase 2,51.7819,-2.623,3.4,Solar,Solar
+Pingry Farm - Phase 1,51.7819,-2.623,3.4,Solar,Solar
+Hill and Moor Landfill Scheme,52.133,-2.0306,3.4,Waste,Biomass
+Blyth Harbour Wind Farm (re-power),55.1205,-1.4906,3.4,Wind,Wind
+Corntown Farm,51.4796,-3.5305,3.4,Solar,Solar
+Land adjacent to Church Road,51.5612,-2.6576,3.5,Solar,Solar
+Sands Farm Quarry Landfill Site,51.4389,-1.9784,3.5,Waste,Biomass
+Westbury (Closed) Landfill Site,51.273,-2.1608,3.5,Solar,Solar
+Blaby Solar Farm,52.5654,-1.13,3.5,Solar,Solar
+Winnard's Perch,50.4626,-4.926,3.5,Solar,Solar
+Ld NW Of Ratcliffe House Farm,52.5946,-1.5079,3.5,Solar,Solar
+Higher Hatherleigh Solar Farm,51.0437,-2.4272,3.5,Solar,Solar
+Brocklesby - Crosslands Lane,53.7782,-0.6639,3.5,Biomass,Biomass
+Exeter EfW,50.7035,-3.5222,3.5,Waste,Biomass
+Chelveston Airfield - extension,52.3021,-0.5196,3.5,Solar,Solar
+Pulteney Distillery,58.4347,-3.0855,3.5,Biomass,Biomass
+Grove Farm (solar),51.0766,-3.2622,3.5,Solar,Solar
+Black Rock,57.6692,-4.3504,3.5,Hydro,Hydro
+Wheal Alfred Road Solar Farm,50.1769,-5.3872,3.5,Solar,Solar
+Kingairloch,56.6214,-5.5289,3.5,Hydro,Hydro
+Whitley Farm (2 of 2),51.1285,-2.7844,3.5,Solar,Solar
+Southleigh Landfill,50.8678,-0.9526,3.5,Waste,Biomass
+Land to the west of Ashfordby Business Park,52.7785,-0.938,3.5,Solar,Solar
+Eastacombe,50.773,-4.3353,3.58,Solar,Solar
+Safran Landing Systems Service,51.8978,-2.1717,3.6,Biomass,Biomass
+Trenouth Farm,50.4944,-4.962,3.6,Solar,Solar
+Pond Farm Solar Farm,52.9011,1.1682,3.6,Solar,Solar
+Weston Airfield Wind Turbines,52.6953,1.0915,3.6,Wind,Wind
+Land NW Of Pickhill Bridge Farm,53.0242,-2.9255,3.6,Solar,Solar
+Parc Cynog,51.7569,-4.5297,3.6,Wind,Wind
+Gelli Gron,52.9348,-4.354,3.6,Solar,Solar
+Brookbarn,50.8196,-0.5449,3.63,Solar,Solar
+Culworth,52.1095,-1.2047,3.64,Solar,Solar
+Henbury Quarry,50.7735,-2.0477,3.68,Solar,Solar
+Bromborough Dock,53.348,-2.9806,3.7,Waste,Biomass
+Worleston,53.1088,-2.5033,3.7,Solar,Solar
+Burradale Hill,60.1648,-1.2361,3.7,Wind,Wind
+Treguff,51.4308,-3.4073,3.74,Solar,Solar
+Overton Solar Park,51.2497,-1.2739,3.75,Solar,Solar
+Mucking Gas 2 Landfill Scheme,51.4939,0.4244,3.8,Waste,Biomass
+Burnhills Landfill (L5),54.956,-1.7579,3.8,Waste,Biomass
+Caergarw Farm,51.5401,-3.6997,3.8,Solar,Solar
+Cairnmore Solar Park,57.3086,-2.8272,3.8,Solar,Solar
+Lyreco - Telford Distribution Centre,52.706,-2.4221,3.8,Solar,Solar
+Land To The North Of Moor Farm,52.8045,-2.8657,3.8,Solar,Solar
+Asfordby North,52.7832,-0.9359,3.8,Solar,Solar
+Toyota Motor Manufacturing Uk - Deeside,53.2279,-3.0248,3.8,Solar,Solar
+Winnards Perch Solar Farm,50.4624,-4.9199,3.8,Solar,Solar
+Winterton Landfill Site,53.6694,-0.6181,3.8,Waste,Biomass
+Stormy Down Solar Farm,51.512,-3.6708,3.8,Solar,Solar
+PG1-Coxhoe Waste Disposal Site,54.7242,-1.4923,3.8,Waste,Biomass
+Rookery Farm,50.8061,-0.6235,3.8,Solar,Solar
+Philip Dennis Food Service,51.065,-4.0878,3.8,Storage,Storage
+Bombardier Factory,54.6688,-5.9426,3.8,Solar,Solar
+Braich Ddu,52.5951,-3.9576,3.9,Wind,Wind
+Peckfield Quarry Landfill Scheme,53.7825,-1.3413,3.9,Waste,Biomass
+Abbots Ripton Solar Farm (ext.),52.3726,-0.1943,3.9,Solar,Solar
+Caegarw,51.5377,-3.7163,3.9,Solar,Solar
+Rainham Landfill Scheme  Phase I,51.4903,0.1938,3.9,Waste,Biomass
+Arnish Moor,58.1766,-6.4383,3.9,Wind,Wind
+Reydon Farm (resubmission),52.3403,1.6467,3.9,Solar,Solar
+East Culkae,54.79,-4.445,3.9,Solar,Solar
+Blaen Bowi Wind Farm,51.9971,-4.4413,3.9,Wind,Wind
+Bilbster,58.4488,-3.2498,3.9,Wind,Wind
+Llancayo Solar Farm,51.7227,-2.9165,3.9,Solar,Solar
+Bellhouse South,51.8643,0.8293,3.9,Waste,Biomass
+Brazier Landfill Scheme,51.8157,-0.056,3.9,Waste,Biomass
+Dartmoor Bio Power,50.4514,-4.1128,3.9,Biomass,Biomass
+Greenoakhill,55.839,-4.1318,3.9,Waste,Biomass
+High Pow,54.7895,-3.1912,3.9,Wind,Wind
+New Row Farm,51.2042,-2.5281,3.9,Solar,Solar
+Mucking Gas 3 Landfill Scheme,51.4939,0.4244,3.9,Waste,Biomass
+Homestead,52.1026,-0.9232,3.95,Solar,Solar
+Great Orton,54.8706,-3.072,3.96,Wind,Wind
+New Mains of Guynd,56.574,-2.7091,3.99,Solar,Solar
+Inverfarigaig,57.2799,-4.455,4.0,Hydro,Hydro
+Salt Ayre,54.0556,-2.834,4.0,Waste,Biomass
+Land South of Knock Lane,52.1636,-0.9225,4.0,Solar,Solar
+Riverside Sewage Treatment Works Digestion Plant,51.5164,0.1855,4.0,Waste,Biomass
+Greendykeside,55.912,-3.9032,4.0,Wind,Wind
+Cockett Valley,51.637,-4.013,4.0,Solar,Solar
+Lower Stanley Farm,51.9799,-1.9979,4.0,Solar,Solar
+Lubreoch,56.5419,-4.5174,4.0,Hydro,Hydro
+Arreton A,50.6711,-1.276,4.0,Solar,Solar
+Greencroft Estate Turbines,54.8497,-1.7487,4.0,Wind,Wind
+Great Orton,54.8715,-3.0767,4.0,Wind,Wind
+Seaton Road Solar Farm,52.5853,-0.709,4.0,Solar,Solar
+Avondale,55.905,-3.945,4.0,Waste,Biomass
+Norlands Lane Landfill Site (Extension),51.4115,-0.5139,4.0,Waste,Biomass
+Garlenick,50.3069,-4.8851,4.0,Wind,Wind
+Walmoor Farm solar park,53.3026,-0.9195,4.0,Solar,Solar
+Sesswick A,53.0318,-2.9146,4.0,Solar,Solar
+Beechgrove Farm,50.7904,-2.9226,4.0,Solar,Solar
+Land north of Ashton Road,51.3219,-2.1549,4.0,Solar,Solar
+Land to North West of Lodge Farm (Park Farm),51.6198,-2.9922,4.0,Solar,Solar
+Dundee,56.4836,-2.8938,4.0,Wind,Wind
+Dalchonzie,56.3734,-4.0411,4.0,Hydro,Hydro
+Shroton,50.9243,-2.2124,4.0,Solar,Solar
+Chapel Lane Parley Solar Farm Phase 3,50.8032,-1.8644,4.0,Solar,Solar
+Seamer Wind Farm - Hambleton,54.4959,-1.2624,4.0,Wind,Wind
+Ranson Moor Wind Farm (Phase 2),52.5106,0.0373,4.0,Wind,Wind
+Sron Mor,57.0569,-4.23,4.0,Hydro,Hydro
+Lamby Way Landfill Site,51.4983,-3.1222,4.0,Waste,Biomass
+High Meadow Farm,54.5912,-1.3775,4.0,Solar,Solar
+Park Farm,50.8059,-0.717,4.0,Solar,Solar
+Kellygreen Farm,50.5629,-4.7479,4.0,Solar,Solar
+Highampton A,50.8172,-4.1164,4.0,Solar,Solar
+Pebble Hall Farm - resubmission - Food Waste AD,52.455,-1.0283,4.0,Biomass,Biomass
+Middle Balbeggie,56.1537,-3.1645,4.0,Wind,Wind
+Kinblethmont,56.615,-2.5987,4.0,Solar,Solar
+Pen Bryn Oer Wind Farm,51.7749,-3.2759,4.0,Wind,Wind
+Barnby Moor,53.3564,-0.9954,4.0,Solar,Solar
+Oakdale,51.6869,-3.1714,4.0,Wind,Wind
+Workington (Eastman),54.6712,-3.5401,4.0,Wind,Wind
+Otherton Farm,52.1854,-2.2862,4.0,Solar,Solar
+Weldon Phase 1 and 2,52.4866,-0.6422,4.0,Waste,Biomass
+Wheat Leasows Solar Park,52.7207,-2.4863,4.0,Solar,Solar
+Bolton Road Waste Treatment and Renewable Energy Facility (Waste AD),53.508,-1.3157,4.0,Biomass,Biomass
+East Youlstone,50.9173,-4.4465,4.0,Wind,Wind
+North Moor Farm AD Plant (Farm AD),53.5745,-0.7941,4.0,Biomass,Biomass
+M1 J18 Wind Turbines,52.3495,-1.1577,4.0,Wind,Wind
+MSD Cramlington,55.1035,-1.6222,4.0,Wind,Wind
+North Pickenham Airfield,52.6256,0.7335,4.0,Wind,Wind
+Burnfoot Hill Extension,56.2154,-3.7689,4.0,Wind,Wind
+Lairg,58.0287,-4.4146,4.0,Hydro,Hydro
+Maldie,58.2603,-4.9819,4.0,Hydro,Hydro
+Nissan Wind Farm,54.9139,-1.4808,4.0,Wind,Wind
+Wormit Solar Farm,56.4157,-2.9627,4.0,Solar,Solar
+Knostrop Sewage Treatment Works,53.7815,-1.4912,4.0,Biomass,Biomass
+The Fall of Warness Tidal Scheme  (EMEC),59.1399,-2.8057,4.0,Wave and Tidal,Other
+Agricultural Land at Trecastle,51.5238,-3.4252,4.0,Solar,Solar
+French Farm,52.6635,-0.1043,4.03,Wind,Wind
+High Haswell Wind Farm,54.7875,-1.4312,4.06,Wind,Wind
+Wambrook Farm,50.8744,-2.9875,4.1,Solar,Solar
+Great Eppleton (ex NFFO),54.8273,-1.4272,4.1,Wind,Wind
+Great Eppleton RO,54.8273,-1.4272,4.1,Wind,Wind
+Brickyard Barn (resubmission),52.2506,-1.5558,4.1,Solar,Solar
+Lower Slade Farm,50.2933,-3.7671,4.1,Solar,Solar
+Seghill Village Waste Disposal Site phase 1 and 2,55.0623,-1.535,4.1,Waste,Biomass
+Long Meadow Farm,51.8452,-0.6478,4.1,Solar,Solar
+Manmoel Road Solar Park,51.7037,-3.1793,4.1,Solar,Solar
+Ernesettle Solar Farm,50.4118,-4.1823,4.1,Solar,Solar
+Orchard End Windfarm,53.9001,-2.8657,4.1,Wind,Wind
+Wind Farm Africa Alive,52.4148,1.7028,4.1,Wind,Wind
+Wiggin Hill Solar Farm - Phase 2,52.356,-0.0785,4.1,Solar,Solar
+Pilsworth Quarry Landfill Scheme,53.5836,-2.2583,4.1,Waste,Biomass
+Frome St Quintin,50.83,-2.561,4.1,Solar,Solar
+Bumpers 2,51.7478,-0.8948,4.1,Solar,Solar
+Bystock Solar Farm,50.6473,-3.3825,4.1,Solar,Solar
+Radcliffe,52.9356,-1.0591,4.16,Solar,Solar
+Oxcroft,53.2639,-1.3044,4.19,Solar,Solar
+Brockhampton,51.935,-2.0884,4.2,Solar,Solar
+William's Farm,53.029,-2.9213,4.2,Solar,Solar
+Milborne Port Solar Farm,50.9755,-2.4541,4.2,Solar,Solar
+Land South Off Ollerton Road,53.1874,-1.0553,4.2,Solar,Solar
+Hamptworth,50.966,-1.675,4.2,Solar,Solar
+Heywood,53.596,-2.196,4.2,Solar,Solar
+Land West of Parsonage Wood,50.79,-4.3993,4.2,Solar,Solar
+Siddick Wind Farm,54.6741,-3.543,4.2,Wind,Wind
+Fullenton Solar Farm,51.1558,-1.4581,4.2,Solar,Solar
+Barn Farm - resubmission,51.9392,1.1364,4.2,Solar,Solar
+Berry Court Farm,51.328,-1.1122,4.2,Solar,Solar
+Francis Court,50.7668,-3.4657,4.22,Solar,Solar
+Fell View,53.7918,-2.6203,4.26,Solar,Solar
+Tollgate Farm,52.2347,-1.5442,4.3,Solar,Solar
+Hammar's Hill,59.0957,-3.0727,4.3,Wind,Wind
+Marchington Solar Farm,52.878,-1.832,4.3,Solar,Solar
+Stoneyhill Landfill Site,57.459,-1.8724,4.3,Waste,Biomass
+Ardoch and Over Enoch Wind Farm (Over Enoch),55.7102,-4.2521,4.3,Wind,Wind
+Thame solar farm,51.7478,-0.9348,4.3,Solar,Solar
+Jameson Road,53.9032,-3.0167,4.3,Waste,Biomass
+St Francis,50.8749,0.4534,4.33,Solar,Solar
+Primrose Hill,53.2743,-0.2944,4.35,Solar,Solar
+Langton (FIT),51.9647,-4.9931,4.35,Solar,Solar
+Burton Farm,52.2135,-1.7372,4.4,Solar,Solar
+Himley Wood Landfill Site,52.5159,-2.1503,4.4,Waste,Biomass
+Trefinnick,50.5423,-4.3492,4.4,Solar,Solar
+Huntingfield Solar Farm,52.6421,0.8481,4.4,Solar,Solar
+Llyn Brianne Dam,52.1203,-3.7699,4.4,Hydro,Hydro
+Fferm Bryn Bachau,52.9075,-4.334,4.4,Solar,Solar
+Land west of Welton Road,54.8089,-3.0022,4.4,Solar,Solar
+Hungerford,51.2798,-0.8805,4.47,Solar,Solar
+Land at High Point Farm,52.3354,-2.4943,4.5,Solar,Solar
+Four Burrows,50.3039,-5.1414,4.5,Wind,Wind
+Stangate Landfill Site,51.2833,0.2972,4.5,Waste,Biomass
+Little Byth,57.607,-2.2901,4.5,Wind,Wind
+Land To The South Of Todderstaffe,53.8233,-2.9621,4.5,Solar,Solar
+Four Burrows Wind Farm,50.2889,-5.1374,4.5,Wind,Wind
+Port of Barry (Resubmission) - Site 1,51.3962,-3.2543,4.5,Solar,Solar
+BIOSSENCE SOLAR PARK,51.3202,0.4816,4.5,Solar,Solar
+Loscar,53.3145,-1.236,4.5,Wind,Wind
+Llyn Celyn,52.9438,-3.6712,4.5,Hydro,Hydro
+Lovedean Farm,50.9121,-1.0341,4.5,Solar,Solar
+Ockendon 'B' Landfill Scheme,51.5141,0.3117,4.5,Waste,Biomass
+Coventry,52.3962,-1.4915,4.5,Waste,Biomass
+Durrants Farm Solar,50.7099,-1.3664,4.5,Solar,Solar
+Keith Hill (resubmission),55.8173,-2.8255,4.5,Wind,Wind
+North Yell Wind Farm (Garth Community Wind Farm),60.6661,-1.0052,4.5,Wind,Wind
+Brookhurst Wood (Waste AD),51.1028,-0.3263,4.5,Biomass,Biomass
+Southill Solar (resubmission),51.8588,-1.475,4.5,Solar,Solar
+Collacott Farm,51.0534,-4.1253,4.5,Solar,Solar
+West Quarry,53.5817,-2.7235,4.5,Waste,Biomass
+New Barn Farm - Burnley,53.7732,-2.3034,4.5,Wind,Wind
+Marston,52.9692,-0.6907,4.51,Solar,Solar
+Goonhilly Solar,50.0465,-5.218,4.51,Solar,Solar
+Cleave Farm,51.0039,-4.1408,4.56,Solar,Solar
+Maes Bach,51.5639,-3.2916,4.56,Solar,Solar
+Puriton,51.1757,-2.9675,4.57,Solar,Solar
+Greenhill Croft,57.5946,-2.2011,4.6,Wind,Wind
+Haddo,57.4287,-2.3076,4.6,Wind,Wind
+Bentwaters CHP,52.1299,1.4303,4.6,Biomass,Biomass
+Toyota Solar Farm,52.8771,-1.5746,4.6,Solar,Solar
+Parklands,51.5574,-2.5519,4.6,Solar,Solar
+Brotherton (formerly Paul Matthew Hill wind turbines),56.8147,-2.3718,4.6,Wind,Wind
+Strath of Brydock,57.6262,-2.5811,4.6,Wind,Wind
+Newton Marsh Wind Project,53.5093,0.009,4.6,Wind,Wind
+Ballymena,54.8795,-6.2332,4.6,Wind,Wind
+Muirake,57.6114,-2.7244,4.6,Wind,Wind
+Clondermot Turbines,54.9679,-7.3129,4.6,Wind,Wind
+Mossmorran,56.0905,-3.3177,4.6,Wind,Wind
+Milton of Fisherie Wind Cluster,57.6204,-2.4191,4.6,Wind,Wind
+The Michelin Tyre Factory - Ballymena,54.8728,-6.1986,4.6,Wind,Wind
+Land East Of Honeysome Road,52.4569,0.0393,4.6,Solar,Solar
+Land at Beech Farm,51.6054,-1.7366,4.6,Solar,Solar
+Standford Hill,51.395,0.8509,4.6,Wind,Wind
+Netherton of Windyhills,57.6027,-2.8559,4.6,Wind,Wind
+Ystgellog Farm Wind Farm,53.3938,-4.4003,4.6,Wind,Wind
+Woodlands Barton Wind Project,50.4253,-4.8141,4.6,Wind,Wind
+Yonderton Wind Cluster,57.587,-2.4166,4.6,Wind,Wind
+Grange Solar Farm,53.0282,-0.8145,4.6,Solar,Solar
+Droop Hill Wind Farm x,56.9229,-2.4007,4.6,Wind,Wind
+Far Old Park Farm Wind Farm,54.1839,-3.1814,4.6,Wind,Wind
+Barton Close Solar Park,51.1539,-4.174,4.61,Solar,Solar
+Monty's Farm  Taunton,51.0319,-3.1666,4.61,Solar,Solar
+Trickey Warren,50.9269,-3.1381,4.63,Solar,Solar
+Oakham,51.5458,-2.5796,4.64,Solar,Solar
+Knockworthy Farm Solar Park,50.9853,-4.1224,4.65,Solar,Solar
+Raglington Farm Solar Park,50.9179,-1.2323,4.65,Solar,Solar
+Little Irchester,52.2894,-0.6548,4.68,Solar,Solar
+Turves/Burtnhouse Solar Farm extension,52.5295,-0.0262,4.7,Solar,Solar
+FPV00411EN Bracknell Forest,51.455,-0.695,4.7,Solar,Solar
+Anthony Estate Solar Farm - resubmission,50.3502,-4.2498,4.7,Solar,Solar
+Land off Ford Lane,51.3058,0.3443,4.7,Solar,Solar
+Brook Hall Farm (resubmission),51.2802,-2.214,4.7,Solar,Solar
+Mynydd Y Gwrhyd Windfarm (resubmission),51.7784,-3.8472,4.7,Wind,Wind
+Lowca Wind Farm,54.5974,-3.571,4.7,Wind,Wind
+Nanterrow Farm,50.2179,-5.3681,4.7,Solar,Solar
+Land at Dayfields Farm,53.0269,-1.6572,4.7,Solar,Solar
+National Wind Turbine Test Site,55.6907,-4.2844,4.7,Wind,Wind
+Pen Rhiw,51.6725,-3.3811,4.75,Solar,Solar
+Upper Clayhill,50.9159,0.0554,4.75,Solar,Solar
+Bentley Estate,50.9335,0.1108,4.78,Solar,Solar
+Rainbow,52.0702,-1.861,4.79,Solar,Solar
+Teeside Green Energy Plant (Waste AD),54.5815,-1.2469,4.8,Biomass,Biomass
+Nissan Test Track,54.9206,-1.4669,4.8,Solar,Solar
+Bambers,53.3213,0.2384,4.8,Wind,Wind
+STRETE FARM SOLAR FARM,50.7459,-3.3587,4.8,Solar,Solar
+Ryston Estate Solar Park,52.5944,0.3953,4.8,Solar,Solar
+Liverton Farm,50.6339,-3.3711,4.8,Solar,Solar
+Kirkby Moor,54.2575,-3.1357,4.8,Wind,Wind
+Red Hill Farm,50.9549,-3.3028,4.8,Solar,Solar
+Pogbie Wind Farm 2,55.8395,-2.8421,4.8,Wind,Wind
+Wraysbury Landfill,51.4478,-0.5433,4.8,Solar,Solar
+Crow Trees Farm,53.1073,-1.2991,4.8,Solar,Solar
+VENTNOR ROAD SOLAR PARK,50.642,-1.2043,4.8,Solar,Solar
+Trethosa Farm Solar Park,50.3557,-4.8988,4.8,Solar,Solar
+Mid Suffolk Home Solar Scheme,52.1541,1.0391,4.8,Solar,Solar
+Five Oaks,51.055,-0.441,4.8,Solar,Solar
+Morton Wood Farm,52.1813,-1.9568,4.8,Solar,Solar
+New Rendy Farm,51.0074,-3.2012,4.8,Solar,Solar
+Crookedstone,54.6707,-6.1985,4.83,Solar,Solar
+Wyld Meadow Solar Park,50.7792,-2.9354,4.84,Solar,Solar
+Oak Cottage,51.8233,-4.8613,4.87,Solar,Solar
+Grantham Solar Park,52.9712,-0.7225,4.88,Solar,Solar
+Temple Normanton (England),53.2071,-1.3724,4.89,Solar,Solar
+Grange Farm Solar Farm,51.0059,-3.2219,4.9,Solar,Solar
+Stob House Farm,54.6333,-1.2958,4.9,Solar,Solar
+Newport (Began Road),51.5508,-3.1003,4.9,Solar,Solar
+Hill of Lybster,58.6024,-3.6881,4.9,Wind,Wind
+Ebbsfleet Farm Solar Farm,51.3157,1.3458,4.9,Solar,Solar
+Enderby Warren Phase II,52.597,-1.2101,4.9,Waste,Biomass
+Dale Farm,54.6538,-6.7392,4.9,Solar,Solar
+Woodlands Barton Solar Farm,50.4239,-4.8051,4.9,Solar,Solar
+Staining Wood Farm,53.7805,-2.9599,4.9,Solar,Solar
+Lower End Farm,51.3066,-2.0387,4.9,Solar,Solar
+Upper Pant-Ysgawen Farm/Crumlin,51.6718,-3.1523,4.9,Solar,Solar
+Skegness Solar Park,53.1551,0.2965,4.9,Solar,Solar
+Place Barton Farm,50.3601,-3.7473,4.9,Solar,Solar
+Nefyn (Tyddyn Cae),52.9138,-4.4789,4.92,Solar,Solar
+Fanny House,54.0521,-2.8783,4.94,Solar,Solar
+Skylark,52.2012,-0.0735,4.94,Solar,Solar
+Ashby,52.7227,-1.4853,4.95,Solar,Solar
+30 Acres,53.2062,-1.1968,4.96,Solar,Solar
+Askern,53.6208,-1.1602,4.97,Solar,Solar
+Church Farm - Slapton,51.8718,-0.6326,4.98,Solar,Solar
+Brackagh Quarry,54.8112,-6.7082,4.98,Wind,Wind
+Blue House,54.6326,-1.2684,4.98,Solar,Solar
+Bodmin,50.4835,-4.7335,4.98,Solar,Solar
+Cotgrave,52.918,-1.05,4.98,Solar,Solar
+Stripe,54.4175,-1.6989,4.98,Solar,Solar
+East Appleton,54.3569,-1.6374,4.98,Solar,Solar
+Ellough Solar Farm Phase Two,52.4388,1.6059,4.99,Solar,Solar
+Thornborough Grounds (England),52.0078,-0.9272,4.99,Solar,Solar
+Bowden Lane Solar Park,50.9818,-2.4287,4.99,Solar,Solar
+Higher Hill Solar Park,51.0763,-2.6892,4.99,Solar,Solar
+Wilburton,52.3449,0.1662,4.99,Solar,Solar
+Chittering,52.3152,0.2177,4.99,Solar,Solar
+Lee Moor,50.4472,-4.0131,4.99,Solar,Solar
+Woden Park,51.4679,-3.2432,4.99,Solar,Solar
+Common Farm,51.5353,-1.8036,4.99,Solar,Solar
+Cwrt Henllys,51.6214,-3.0794,4.99,Solar,Solar
+Manor Farm Eggington,50.3371,-4.8363,4.99,Solar,Solar
+Bedborough,50.8173,-1.9243,4.99,Solar,Solar
+Moorhouse Farm,54.614,-3.53,5.0,Solar,Solar
+Forest Heath Solar Farm,52.2794,0.3914,5.0,Solar,Solar
+Astley Solar Farm,52.4672,-2.3239,5.0,Solar,Solar
+Jubilee Farm  Barnby Moor,53.3659,-1.033,5.0,Solar,Solar
+Trowle Common,51.3265,-2.2331,5.0,Solar,Solar
+Burrowton Farm,50.7613,-3.4208,5.0,Solar,Solar
+The Old Airfield,52.6919,1.1039,5.0,Solar,Solar
+Cantelupe Solar Farm,52.1721,0.0673,5.0,Solar,Solar
+Jordanston Solar Farm,51.6754,-4.7959,5.0,Solar,Solar
+Manor Farm - Shripney,50.8148,-0.6825,5.0,Solar,Solar
+Meadow Farm (Thorpe Lanton),52.5433,0.544,5.0,Solar,Solar
+Ffos Las,51.725,-4.2386,5.0,Solar,Solar
+Lower Venn Farm,52.1386,-2.6694,5.0,Solar,Solar
+Invergordon Pellet Mill,57.7054,-4.1599,5.0,Biomass,Biomass
+Clapton Farm Solar Park,51.0567,-2.3472,5.0,Solar,Solar
+Melton Waste Park (resubmission),53.7172,-0.5336,5.0,Wind,Wind
+Bury Green Farm Solar,52.4514,-0.137,5.0,Solar,Solar
+Merston,50.8181,-0.7317,5.0,Solar,Solar
+Mill Farm (resubmission),51.9074,-0.0466,5.0,Solar,Solar
+Winham Farm - resubmission,50.8245,-3.3974,5.0,Solar,Solar
+Middle Treworder Farm,50.5036,-4.8437,5.0,Solar,Solar
+Ford Farm Solar Farm,50.4796,-4.3783,5.0,Solar,Solar
+Canopus Farm,53.0099,-0.055,5.0,Solar,Solar
+The Manor of Cadland Estate,50.8051,-1.3603,5.0,Solar,Solar
+Manor Farm (Horton),52.1752,-0.7804,5.0,Solar,Solar
+The Breck,53.2813,-1.3619,5.0,Solar,Solar
+Manor Farm (Dorset),51.0541,-2.3179,5.0,Solar,Solar
+Decoy Farm,52.698,-0.1329,5.0,Solar,Solar
+Twin Yards Solar Farm,53.1188,-1.3214,5.0,Solar,Solar
+Mamhilad Solar Farm,51.7126,-2.9935,5.0,Solar,Solar
+Malmesbury Solar,51.6243,-2.1089,5.0,Solar,Solar
+Middle Balbeggie,56.1479,-3.1467,5.0,Solar,Solar
+Misson Solar Farm,53.4454,-0.981,5.0,Solar,Solar
+Flixborough Industrial Estate,53.6201,-0.6947,5.0,Solar,Solar
+Tump Solar Farm,51.6451,-2.653,5.0,Solar,Solar
+Kentishes Solar Farm,51.9059,0.6024,5.0,Solar,Solar
+Moneystone Quarry Solar Farm (resubmission),53.0133,-1.9333,5.0,Solar,Solar
+Airfield Farm PV,52.4746,0.9501,5.0,Solar,Solar
+Caldecote Manor Farm,52.2104,-0.2071,5.0,Solar,Solar
+Aspatria Creamery,54.7581,-3.3309,5.0,Biomass,Biomass
+Turves Solar Farm (Resubmission),52.5303,-0.0262,5.0,Solar,Solar
+Baglan Bay Solar Farm - Phase 1,51.6094,-3.8295,5.0,Solar,Solar
+Sywell (England),52.3033,-0.7775,5.0,Solar,Solar
+Marshborough Farm solar park (resubmission),51.2774,1.3072,5.0,Solar,Solar
+Kernow Solar Farm,50.4298,-5.0054,5.0,Solar,Solar
+Fields Farm (Agden),52.9957,-2.7248,5.0,Solar,Solar
+The Kickles,52.0962,-0.7429,5.0,Solar,Solar
+Mill Hill Farm,54.0956,-1.0323,5.0,Solar,Solar
+Caddington Solar Farm (Phase 2),51.8564,-0.4686,5.0,Solar,Solar
+Balhearty Solar,56.143,-3.712,5.0,Solar,Solar
+Bake Farm Solar Park,51.0483,-1.8335,5.0,Solar,Solar
+Gravel Works  Wasing Estate,51.3797,-1.1932,5.0,Solar,Solar
+Lower Marsh Farm,51.0667,-3.1167,5.0,Solar,Solar
+Galton Manor Solar Park,50.6699,-2.3064,5.0,Solar,Solar
+Land Parcel North of Goddards,50.977,-0.1684,5.0,Solar,Solar
+Land Opposite Tyn Y Pistyll,52.9874,-3.0704,5.0,Solar,Solar
+Land of coal pit lane,53.9275,-2.2596,5.0,Solar,Solar
+Chilton Cantelo Solar Park,50.9945,-2.6027,5.0,Solar,Solar
+Land Off Folly Lane,53.1061,-0.0199,5.0,Solar,Solar
+Land North of the Wood at Averill Farm,53.1469,-1.3955,5.0,Solar,Solar
+Land North of Sandhutton Lane,54.237,-1.3985,5.0,Solar,Solar
+Cwm Derwyn Farm,51.4162,-3.3144,5.0,Solar,Solar
+Land North of Chiltern Greeen,51.8617,-0.352,5.0,Solar,Solar
+Land East of White Horse Lane,52.6051,1.3064,5.0,Solar,Solar
+Land East of Lawn Lane,52.6405,-2.1418,5.0,Solar,Solar
+Land off Moss Land (resubmission),53.8457,-2.7596,5.0,Solar,Solar
+Land East Of Wadbrook Farm,50.8117,-2.959,5.0,Solar,Solar
+Gib Lane Solar farm (Extension),51.8274,-0.7363,5.0,Solar,Solar
+Land At Swanland Road,51.6966,-0.2221,5.0,Solar,Solar
+Land off Moss Side Lane (resubmission),53.775,-2.9298,5.0,Solar,Solar
+Land south of Brick Kiln Road,52.5526,1.2496,5.0,Solar,Solar
+Land off Hooklands Lane,50.9524,-0.3855,5.0,Solar,Solar
+Land at Wreay,54.8195,-2.8971,5.0,Solar,Solar
+Chester Energy (East Woolley Farm),50.9235,-4.4863,5.0,Solar,Solar
+Land South of Highfield House,54.1481,-1.2324,5.0,Solar,Solar
+Wick Farm (Burnham on Crouch),51.6272,0.843,5.0,Solar,Solar
+Land at Lostock Works (Northwich Facility),53.2638,-2.4824,5.0,Biomass,Biomass
+Land at Meadow Farm,52.5173,-0.9199,5.0,Solar,Solar
+Land at Biggin Lane,52.4451,-0.1326,5.0,Solar,Solar
+Land at Newlands Farm,50.6278,-2.4948,5.0,Solar,Solar
+Chelwood Solar Farm,51.3484,-2.5157,5.0,Solar,Solar
+Land at Ash Row Farm,53.7968,-1.2174,5.0,Solar,Solar
+Trefullock Solar Farm,50.3666,-4.9565,5.0,Solar,Solar
+Land at Oldstone Farm,50.3515,-3.6621,5.0,Solar,Solar
+Cherry Tree Farm,53.2373,-1.3425,5.0,Solar,Solar
+Land at Pollington Airfield,53.6735,-1.0666,5.0,Solar,Solar
+Land West Side of Axe and Cleaver Lane,51.2921,-2.2118,5.0,Solar,Solar
+Land West Of Hunger Hill Farm,54.5069,-1.4851,5.0,Solar,Solar
+Land at Stalbridge Park,50.9724,-2.3816,5.0,Solar,Solar
+Land at Sutor Farm,51.0357,-2.3917,5.0,Solar,Solar
+Land at Tangmere Airfield,50.8481,-0.7019,5.0,Solar,Solar
+Land To The East Of Back Lane,53.2267,-1.3743,5.0,Solar,Solar
+Land South of Pogmore Spinney,52.4985,-1.5989,5.0,Solar,Solar
+Land at Woodhouse Farm,54.535,-1.0758,5.0,Solar,Solar
+Land At Guston Court Farm,51.1487,1.3283,5.0,Solar,Solar
+Carlam Hill Education CIC,53.8085,-0.3158,5.0,Solar,Solar
+Wickfield Farm,51.5415,-1.8708,5.0,Solar,Solar
+Land At Cwm Bargoed,51.7461,-3.3172,5.0,Solar,Solar
+Llancadle Farm,51.4066,-3.3862,5.0,Solar,Solar
+Wilbees Farm (resubmission),50.8404,0.1907,5.0,Solar,Solar
+Foyers Falls,57.2461,-4.4901,5.0,Hydro,Hydro
+Glasgow Renewable Energy and Recycling Centre (Waste AD),55.834,-4.2447,5.0,Biomass,Biomass
+Avonmouth Port II,51.5383,-2.6739,5.0,Wind,Wind
+Kinmel 2 CIC,53.2868,-3.5252,5.0,Solar,Solar
+Kinmel 1 CIC,53.2868,-3.5252,5.0,Solar,Solar
+Kingspan Insulation Solar Installation,53.7944,-1.2259,5.0,Solar,Solar
+Knottingley A,53.7028,-1.2423,5.0,Solar,Solar
+Foxcombe Farm Solar Park,50.8024,-4.2937,5.0,Solar,Solar
+Thorne Colliery,53.635,-0.935,5.0,Solar,Solar
+Kingmoor Park,54.9302,-2.972,5.0,Solar,Solar
+Awre,51.77,-2.447,5.0,Solar,Solar
+Ayshford Court Farm,50.9319,-3.3459,5.0,Solar,Solar
+Thompson House Equestrian farm,53.5976,-2.684,5.0,Solar,Solar
+Kinegar Quarry (resubmission),55.9348,-2.3637,5.0,Wind,Wind
+Carlton Farm Solar farm,52.8048,1.3987,5.0,Solar,Solar
+Lower Bodiniel Farm,50.48,-4.7383,5.0,Solar,Solar
+Kingsland Barton Solar Farm (resubmission),51.0181,-3.865,5.0,Solar,Solar
+Chittering Solar Farm,52.3181,0.2211,5.0,Solar,Solar
+Littlewood Lane Solar,53.1812,-1.2038,5.0,Solar,Solar
+Frog's Loke Solar Farm,52.7984,1.3979,5.0,Solar,Solar
+Langage Solar Farm,50.3891,-4.0089,5.0,Solar,Solar
+Land At Chiddinglye Farm,50.9985,-0.067,5.0,Solar,Solar
+Land At Bake Farm,50.4018,-4.3562,5.0,Solar,Solar
+Land At  Actrees Farm,51.6815,-2.4194,5.0,Solar,Solar
+Tower Hayes Farm,52.6852,-1.3175,5.0,Solar,Solar
+Chapel Farm,51.613,-1.8167,5.0,Solar,Solar
+Land Adjacent Claypits Farm (a),51.8433,0.805,5.0,Solar,Solar
+Lawrence End Park,51.8733,-0.3578,5.0,Solar,Solar
+Widehurst Farm,51.1593,0.5089,5.0,Solar,Solar
+Lee Farm,50.6925,-1.4491,5.0,Solar,Solar
+Liddeston Ridge Solar Park (Milford Haven),51.7184,-5.0439,5.0,Solar,Solar
+Lake Farm,51.4982,-2.0907,5.0,Solar,Solar
+Tonedale Farm,50.9798,-3.248,5.0,Solar,Solar
+Lindridge Farm,52.6427,-1.3116,5.0,Solar,Solar
+Lains Farm,51.1987,-1.6116,5.0,Solar,Solar
+Yorkley Solar Park,51.7459,-2.5356,5.0,Solar,Solar
+Causilgey Solar Farm,50.2863,-5.1209,5.0,Solar,Solar
+Averhill Farm,53.1481,-1.387,5.0,Solar,Solar
+Frying Down Copse Solar Farm,51.2142,-1.0694,5.0,Solar,Solar
+Land At Debdale Lane,53.1602,-1.2161,5.0,Solar,Solar
+Kingston Farm,51.3466,-2.2442,5.0,Solar,Solar
+House O'Hill,57.6219,-2.0425,5.0,Wind,Wind
+Winsdon Farm,50.698,-4.4494,5.0,Solar,Solar
+Handley Park - resubmission,52.1079,-1.0207,5.0,Solar,Solar
+Blackwell Grange Solar Farm,52.0879,-1.6673,5.0,Solar,Solar
+Easingwold,54.1482,-1.2324,5.0,Solar,Solar
+Westfield Farm,53.8726,-2.7654,5.0,Solar,Solar
+Southern Counties Shooting Ground Phase 2 (resubmission),50.822,-2.5562,5.0,Solar,Solar
+Southbrook Solar Farm,51.5873,-2.7227,5.0,Solar,Solar
+Rock Farm / Goldborough Farm (Rookwood),51.5196,-1.8807,5.0,Solar,Solar
+South of Henley Hall,52.3809,-2.6753,5.0,Solar,Solar
+Rookery Business Park,52.5353,1.0661,5.0,Solar,Solar
+Rosedew Farm,51.3976,-3.4707,5.0,Solar,Solar
+Hall Farm Solar Farm (Newbold Verdon),52.6303,-1.3482,5.0,Solar,Solar
+Cross Roads Plantation,50.9069,-1.8404,5.0,Solar,Solar
+Rotherdale Farm,52.1525,-2.0465,5.0,Solar,Solar
+Royston Solar Farm (Phase 1) (a),52.065,-0.0223,5.0,Solar,Solar
+Binsted,50.8338,-0.6061,5.0,Solar,Solar
+Bilsthorpe (Land off Forest Lane),53.1271,-1.042,5.0,Solar,Solar
+Haigh Hall Solar Farm (Resubmission),53.7119,-1.5715,5.0,Solar,Solar
+Ring O Bells Farm,51.489,-2.3961,5.0,Solar,Solar
+Rushmoor Lane Farm (Cheshire Coppice),52.7272,-2.5528,5.0,Solar,Solar
+Rigged Hill,55.0219,-6.8198,5.0,Wind,Wind
+East Langford Farm,50.8701,-4.4271,5.0,Solar,Solar
+Warleigh Barton Solar Farm,50.4344,-4.1618,5.0,Solar,Solar
+Bommertown Solar Farm,51.0189,-3.6846,5.0,Solar,Solar
+Heathlands,54.9444,-2.9786,5.0,Solar,Solar
+Ebnal Lodge (resubmission),52.9001,-3.0152,5.0,Solar,Solar
+Ebbsfleet Solar Farm,51.3105,1.3389,5.0,Solar,Solar
+Bolsovermoor Quarry,53.2398,-1.2544,5.0,Solar,Solar
+Worsted Farm,51.1245,0.0155,5.0,Solar,Solar
+Pylle Southern solar park (Lower Easton Farm),51.1463,-2.5395,5.0,Solar,Solar
+Rampisham North,50.8099,-2.6388,5.0,Solar,Solar
+Bodden,19.2905,-81.2453,5.0,Solar,Solar
+Crossways Solar Park,50.7,-2.3243,5.0,Solar,Solar
+Barugh Farm,54.1751,-1.4955,5.0,Solar,Solar
+Springhill Solar Park (Northwick),52.0188,-1.8025,5.0,Solar,Solar
+Barvills Solar Farm (resubmission),51.4721,0.4234,5.0,Solar,Solar
+Ravens Close,54.1308,-2.552,5.0,Solar,Solar
+Basin Bridge Farm,52.5614,-1.4184,5.0,Solar,Solar
+Redhall Industrial Estate,53.6967,-0.0637,5.0,Solar,Solar
+Sowerby Lodge Farm,54.1389,-3.2399,5.0,Solar,Solar
+Ryder Point Quarry Wind Turbines,53.0916,-1.6214,5.0,Wind,Wind
+Solutia,51.5666,-2.9626,5.0,Wind,Wind
+Solar Farm at Fields Farm (Phase 1),52.2449,-1.4102,5.0,Solar,Solar
+Dunore,54.681,-6.231,5.0,Solar,Solar
+Sedbury Park,51.639,-2.6551,5.0,Solar,Solar
+Bent Spur Solar Farm,53.5331,-2.376,5.0,Solar,Solar
+Shacks Barn Solar Farm,52.1021,-1.0049,5.0,Solar,Solar
+West Strathore Solar Limited,56.1648,-3.151,5.0,Solar,Solar
+Green Farm (resubmission),51.9119,1.1535,5.0,Solar,Solar
+Green Croft Solar Farm,54.8476,-1.7367,5.0,Solar,Solar
+Greaves Solar Farm,54.2859,-2.6851,5.0,Solar,Solar
+West Venn Solar Farm (resubmission),50.7544,-4.2994,5.0,Solar,Solar
+West Woodlands,51.1948,-2.3184,5.0,Solar,Solar
+Great Seabrook Farm,51.8502,-0.6484,5.0,Solar,Solar
+Granox Biogas Plant,53.3525,-2.7467,5.0,Biomass,Biomass
+Shortheath Solar Park,52.7305,-1.5524,5.0,Solar,Solar
+Short Hazel Solar Farm,52.7755,-1.5111,5.0,Solar,Solar
+Sherburn,54.1793,-0.525,5.0,Solar,Solar
+Granville Road Solar Farm,52.7091,-2.4123,5.0,Solar,Solar
+Sheriffhales,52.7067,-2.3689,5.0,Solar,Solar
+Bentley Estate 2,53.105,-2.4728,5.0,Solar,Solar
+Site To North East Of  Lochcraigs Farm,55.6575,-4.7432,5.0,Solar,Solar
+Creswell Solar Park (resubmission),53.2558,-1.2074,5.0,Solar,Solar
+Cressing Solar Farm (Phase 1),51.8408,0.6011,5.0,Solar,Solar
+Andover Solar Farm,51.2112,-1.5364,5.0,Solar,Solar
+Safeguard Bradwall,53.1589,-2.3824,5.0,Solar,Solar
+Hadley Farm,52.9609,-2.7241,5.0,Solar,Solar
+Eaglescliffe Solar Farm,54.5409,-1.3552,5.0,Solar,Solar
+Salford Lodge,52.1567,-1.9314,5.0,Solar,Solar
+Gypsom Solar Farm,52.7397,-1.1161,5.0,Solar,Solar
+Biglis Farm,51.4233,-3.2395,5.0,Solar,Solar
+West Ditchen Farm (resubmission),50.7238,-4.4054,5.0,Solar,Solar
+NOTTINGTON LANE SOLAR FARM,50.6433,-2.5063,5.0,Solar,Solar
+Salhouse Solar Farm,52.6887,1.4,5.0,Solar,Solar
+Smith Hall Farm Solar Park,53.0124,-1.6025,5.0,Solar,Solar
+Betty Hill,58.5356,-4.1947,5.0,Wind,Wind
+Grove Solar Park (Phase 1),50.9636,-1.479,5.0,Solar,Solar
+Bessy Bell 1,54.704,-7.4405,5.0,Wind,Wind
+Slieve Rushen Phase 1 Wind Farm,54.1903,-7.6284,5.0,Wind,Wind
+Saxley Farm,51.161,-1.5363,5.0,Solar,Solar
+School Aycliffe,54.6077,-1.5968,5.0,Solar,Solar
+Berthlwyd Farm,51.5834,-3.3322,5.0,Solar,Solar
+Bidwell Solar Farm - resubmission,50.4391,-3.7313,5.0,Solar,Solar
+Pressock Farm,56.635,-2.7043,5.0,Solar,Solar
+Drakelow Solar Farm,52.7742,-1.6535,5.0,Solar,Solar
+Port of Barry (Resubmission) - Site 2,51.3962,-3.2543,5.0,Solar,Solar
+Desford Solar Farm,52.64,-1.2586,5.0,Solar,Solar
+Stragglethorpe,52.9264,-1.0508,5.0,Solar,Solar
+North Tenement,51.7771,-4.9882,5.0,Solar,Solar
+North Wayton Farm,50.442,-4.217,5.0,Solar,Solar
+Witches Solar Farm,51.9733,-2.6747,5.0,Solar,Solar
+Northmoor,50.751,-4.4506,5.0,Solar,Solar
+Oakfield Farm,53.7719,-2.8103,5.0,Solar,Solar
+Holtwood Farm,52.8882,-1.8077,5.0,Solar,Solar
+Oaklands Plantation,50.7055,-2.1436,5.0,Solar,Solar
+Stoneshill Farm (resubmission),50.8783,-3.3846,5.0,Solar,Solar
+Holly Farm Solar Park,50.688,-2.3171,5.0,Solar,Solar
+Stonepit Farm,52.1339,-0.8471,5.0,Solar,Solar
+Colpmans Farm,52.4056,-0.5611,5.0,Solar,Solar
+Oulton Airfield Solar Farm (Phase 1),52.7975,1.1839,5.0,Solar,Solar
+Outwood Farm (Phase 1),51.6219,0.4467,5.0,Solar,Solar
+Oving Solar Farm,50.8373,-0.7054,5.0,Solar,Solar
+Owenreagh Wind Farm,54.8097,-7.339,5.0,Wind,Wind
+Cold Harbour,54.1698,-1.3156,5.0,Solar,Solar
+Potters Bar Solar Farm,51.7091,-0.2051,5.0,Solar,Solar
+Strettington Solar Farm,50.8571,-0.7298,5.0,Solar,Solar
+Ninnis Farm Solar,50.3197,-4.8354,5.0,Solar,Solar
+Nanthenfoel Farms,52.1511,-4.1352,5.0,Solar,Solar
+Burgar Hill,59.1176,-3.1492,5.0,Wind,Wind
+Sudforth Lane (Kellingley Solar Farm),53.7028,-1.2009,5.0,Solar,Solar
+Hurst Farm,51.7286,-2.5074,5.0,Solar,Solar
+Bunn's Hill Solar Park,52.7984,1.3979,5.0,Solar,Solar
+Bumpers Farm Phase 1,51.7483,-0.8963,5.0,Solar,Solar
+Derby Sewage Treatment Works,52.9081,-1.4131,5.0,Wind,Wind
+Newlands Farm (East Devon),50.7726,-2.951,5.0,Solar,Solar
+Cobbs Cross Solar Park,51.1124,-3.0371,5.0,Solar,Solar
+Newlands Farm Solar Park,50.8313,-1.1961,5.0,Solar,Solar
+Fambridge Road/Canewdon Road,51.6202,0.6974,5.0,Solar,Solar
+Humphrey Group,52.3367,1.1266,5.0,Wind,Wind
+Brynwhilach solar park,51.6866,-3.9582,5.0,Solar,Solar
+Newton Down,51.5022,-3.669,5.0,Wind,Wind
+Newton Downs Farm,50.3264,-4.0303,5.0,Solar,Solar
+Howton,50.4424,-4.282,5.0,Solar,Solar
+Land at Gilley's Mill Dam,50.3942,-4.8455,5.0,Solar,Solar
+Upper Wick Solar Farm,51.6668,-2.4082,5.0,Solar,Solar
+Aller Court Farm Solar Park,51.0576,-2.8652,5.0,Solar,Solar
+Owls Lodge Farm Extension,51.1876,-1.3674,5.0,Solar,Solar
+PARK WOOD SOLAR FARM,51.1052,-2.6728,5.0,Solar,Solar
+Woolbridge Solar Park,50.6886,-2.2235,5.0,Solar,Solar
+Pensipple Farm,50.4073,-4.4518,5.0,Solar,Solar
+Penycae Solar Farm,52.9888,-3.0596,5.0,Solar,Solar
+St Helen's Lane,54.6741,-3.5263,5.0,Solar,Solar
+Peterlee Solar Farm,54.7752,-1.3655,5.0,Solar,Solar
+Eggington,51.9245,-0.6115,5.0,Solar,Solar
+Corby Knowe,54.7902,-6.1778,5.0,Wind,Wind
+Pilsworth Landfill Site,53.5771,-2.2699,5.0,Storage,Storage
+Dolmans Hill (Redbridge Farm) Solar Arrays,50.7504,-2.1031,5.0,Solar,Solar
+Corkey,55.0436,-6.2873,5.0,Wind,Wind
+Pollington Solar Farm,53.6821,-1.0867,5.0,Solar,Solar
+High Dyke (Mill Farm),52.8826,-0.5994,5.0,Solar,Solar
+Polmaugan Farm,50.4295,-4.6633,5.0,Solar,Solar
+Westmill Farm - PV,51.6188,-1.644,5.0,Solar,Solar
+Bourne Park (Solar),50.7779,-2.3943,5.0,Solar,Solar
+Hewas Solar Farm,50.3414,-4.9303,5.0,Solar,Solar
+Popehill Farm,51.7737,-4.9877,5.0,Solar,Solar
+British Sugar - Bury,52.2543,0.727,5.0,Biomass,Biomass
+Higher Tregarne Solar Farm,50.1217,-5.1351,5.0,Solar,Solar
+Cooper House Farm,53.7664,-2.8762,5.0,Solar,Solar
+Highwood Lane,50.99,-1.5059,5.0,Solar,Solar
+Walland Farm,50.9758,-4.3468,5.0,Solar,Solar
+Arla Dairy Site,51.8206,-0.7382,5.0,Biomass,Biomass
+Woodhouse Fields Farm,52.9491,-1.8698,5.0,Solar,Solar
+Padleywood Farm,53.1481,-1.387,5.0,Solar,Solar
+Pant-Y-Moch Farm,51.5998,-3.7646,5.0,Solar,Solar
+Parc Cynog,51.7592,-4.5337,5.0,Solar,Solar
+Park Wall Solar Park,51.1195,-2.971,5.0,Solar,Solar
+Elliot's Hill,54.7389,-6.119,5.0,Wind,Wind
+Bratton Fleming Solar Farm,51.1252,-3.9249,5.0,Solar,Solar
+Land at Five Oaks Farm,51.0463,-0.4342,5.0,Solar,Solar
+Elton solar farm,52.9481,-0.8477,5.0,Solar,Solar
+Bransholme Solar CIC,53.8085,-0.3158,5.0,Solar,Solar
+Hill Hall Farm,51.9634,0.4035,5.0,Solar,Solar
+Stantway Solar Farm,51.8212,-2.3998,5.0,Solar,Solar
+Stanton solar park,51.6183,-1.7514,5.0,Solar,Solar
+Hill Farm,51.9621,-1.3333,5.0,Solar,Solar
+Parkhill Solar Farm,56.6038,-2.586,5.0,Solar,Solar
+Shelswell,51.974,-1.116,5.06,Solar,Solar
+Little Neath,51.662,-5.01,5.1,Solar,Solar
+Owenreagh Extension,54.8066,-7.3341,5.1,Wind,Wind
+Brookhurst Wood Gas to Energy,51.1023,-0.326,5.1,Waste,Biomass
+Pogbie Wind Farm 1,55.8218,-2.833,5.1,Wind,Wind
+Dean Group Business Park - Hartlepool,54.6477,-1.2058,5.1,Biomass,Biomass
+Imperial Park,54.5822,-1.185,5.1,Biomass,Biomass
+Tullynaskeagh,54.303,-5.625,5.1,Solar,Solar
+Hall Farm,52.0529,-1.1533,5.1,Solar,Solar
+Jaguar,52.6353,-2.1434,5.1,Solar,Solar
+High Hedley II,54.7637,-1.7575,5.2,Wind,Wind
+Hatchlands Farm,50.4236,-3.7849,5.2,Solar,Solar
+Hardingham Solar Farm - extension,52.6032,1.0304,5.2,Solar,Solar
+Connon Bridge Landfill Gas Project,50.4344,-4.55,5.2,Waste,Biomass
+Southern Law,54.7222,-1.4349,5.2,Wind,Wind
+Clochnahill Wind Farm,56.9335,-2.2906,5.2,Wind,Wind
+Hill of Lybster (Extension),58.6024,-3.6881,5.2,Wind,Wind
+Forss Extension,58.5927,-3.5259,5.2,Wind,Wind
+Skelton Grange Landfill,53.7705,-1.4462,5.2,Waste,Biomass
+Trimdon,54.7204,-1.4426,5.2,Wind,Wind
+Beaford Brook Solar Park,50.9217,-4.0387,5.2,Solar,Solar
+Tavells Lane Solar Farm,50.8941,-1.4585,5.3,Solar,Solar
+Tooleys Farm,51.885,0.3944,5.3,Solar,Solar
+Abbey Fields Farm,51.3187,0.9029,5.3,Solar,Solar
+Warrington Home Solar Scheme,53.3873,-2.6029,5.3,Solar,Solar
+Wogaston Solar Farm,51.6685,-5.0209,5.3,Solar,Solar
+ROOKERY FARM SOLAR FARM,52.3184,-0.3831,5.3,Solar,Solar
+Whitehead Landfill,53.4918,-2.4491,5.3,Waste,Biomass
+LITTLE TREVEASE SOLAR PARK,50.1421,-5.1935,5.3,Solar,Solar
+Bradford Solar Park,50.7807,-4.4415,5.3,Solar,Solar
+Oldside Wind Farm,54.6596,-3.5564,5.4,Wind,Wind
+NI Cluster Lough Road,54.5584,-6.1909,5.4,Solar,Solar
+Sutton Montis Road Solar Park / Sutton Bridge Solar Farm,51.0133,-2.5647,5.4,Solar,Solar
+Dillington,50.944,-2.893,5.4,Solar,Solar
+Barley Wood Farm Lane (Gaston Lane - resubmission),51.1147,-0.9782,5.4,Solar,Solar
+Shipton Bellinger - Park House Corner Solar Farm,51.1947,-1.666,5.4,Solar,Solar
+Wrexham Social Housing PV,53.0409,-2.9899,5.4,Solar,Solar
+Crapnell Farm Solar Farm,51.2091,-2.5784,5.4,Solar,Solar
+Dyffryn Brodyn,51.9112,-4.5907,5.4,Wind,Wind
+Salcey Farm,52.1466,-0.7565,5.46,Solar,Solar
+Cardiff Waste Water Treatment,51.4855,-3.1464,5.5,Waste,Biomass
+Marsh House Solar Park,51.2056,-0.8486,5.5,Solar,Solar
+High Volts RO,54.6936,-1.3003,5.5,Wind,Wind
+Bodwen Solar Park,50.4115,-4.7786,5.5,Solar,Solar
+Masons Power Plant Landfill Scheme,52.1089,1.0813,5.5,Waste,Biomass
+Diageo Biomass Energy Project,56.1897,-3.0559,5.5,Biomass,Biomass
+Huntspill Level Solar Park,51.1943,-2.962,5.5,Solar,Solar
+Pentre farm,51.7587,-4.1224,5.5,Solar,Solar
+Bulls Head North,52.1542,-0.8107,5.51,Solar,Solar
+Birch Airfield,51.837,0.7886,5.6,Solar,Solar
+Trysglwyn,53.3748,-4.3465,5.6,Wind,Wind
+Sutton Courtenay Landfill Scheme,51.6317,-1.2674,5.6,Waste,Biomass
+Acharn Forest Killin Biomass Plant,56.4529,-4.3342,5.6,Biomass,Biomass
+Oak Grove Farm,51.6107,-2.7209,5.7,Solar,Solar
+Torrance Farm Wind Park Extension,55.8766,-3.7452,5.7,Wind,Wind
+Crossness Sewage Works,51.5022,0.1421,5.7,Waste,Biomass
+Bilsthorpe,53.142,-1.0252,5.74,Solar,Solar
+Gedling,52.9902,-1.083,5.74,Solar,Solar
+Limes Farm Wickham Solar,52.7739,-0.3186,5.76,Solar,Solar
+Beckton STW Enhanced Sludge Digestion,51.5256,0.0799,5.8,Waste,Biomass
+Land of Green Lane,52.8755,-1.781,5.8,Solar,Solar
+Tredinnick Fields,50.4067,-4.7582,5.8,Solar,Solar
+Moss Thorn Farm,54.6678,-2.7983,5.8,Solar,Solar
+Grange Farm,50.711,-4.4233,5.8,Solar,Solar
+Mogden STW,51.4643,-0.3402,5.8,Waste,Biomass
+Taplins Farm solar park,51.2885,-0.8835,5.9,Solar,Solar
+Crundale / Fenton Home Farm (extension),51.8236,-4.9284,5.9,Solar,Solar
+Risley '4' Landfill Scheme,53.4372,-2.5057,5.9,Waste,Biomass
+289 Finvoy Road,54.9638,-6.493,5.9,Solar,Solar
+Lendrum's Bridge,54.3927,-7.1834,5.9,Wind,Wind
+North East of Ainderby Steeple,54.3236,-1.4877,5.9,Solar,Solar
+Land South Of Bryn Cyrnau Isaf (resubmission),51.8338,-4.2807,5.9,Solar,Solar
+NI Cluster Moira Road,54.6077,-6.1899,5.94,Solar,Solar
+Holwell Hill,51.1983,-2.384,6.0,Solar,Solar
+Tangy Wind Farm Extension/Tangy 2,55.4786,-5.5305,6.0,Wind,Wind
+Cleveland Potash,54.5561,-0.8216,6.0,Storage,Storage
+Ranson Moor (phase 1),52.5127,0.0314,6.0,Wind,Wind
+Rhewl Farm,51.634,-2.7312,6.0,Solar,Solar
+Gowy Landfill Site  Cheshire (Extension),53.2376,-2.8315,6.0,Waste,Biomass
+Decoy Farm House Solar Modules,50.8291,-0.692,6.0,Solar,Solar
+Hameldon Hill Extension,53.771,-2.3062,6.0,Wind,Wind
+AMBLESTON SOLAR PANELS,51.8992,-4.8665,6.0,Solar,Solar
+South Kirkby Business Park (Waste AD),53.6027,-1.3407,6.0,Biomass,Biomass
+Carcant Wind Farm,55.7648,-3.0176,6.0,Wind,Wind
+Whitton Mawr,51.4413,-3.324,6.0,Solar,Solar
+Whites Landfill Site (Canford),50.7681,-1.9588,6.0,Waste,Biomass
+Lochhead,55.6959,-3.9823,6.0,Wind,Wind
+Loch Gair,56.0696,-5.3294,6.0,Hydro,Hydro
+Llynfi Afan Renewable Energy Park,51.6427,-3.6147,6.0,Wind,Wind
+Srondoire Community Wind Farm,55.9341,-5.4805,6.0,Wind,Wind
+Hazlehead,53.5316,-1.7312,6.0,Wind,Wind
+Inner Sound Phase 1A (MeyGen),58.7418,-3.116,6.0,Wave and Tidal,Other
+Drapers Farm Solar Park,51.8562,0.4983,6.0,Solar,Solar
+Ardrossan Extension,55.6439,-4.8061,6.0,Wind,Wind
+Land at East Farm - extension,51.1751,-2.011,6.0,Solar,Solar
+Pen-Y-Fan A,51.7008,-3.1691,6.0,Solar,Solar
+Howdon STW,55.0074,-1.4319,6.0,Waste,Biomass
+Crown Farm,52.6637,-1.369,6.0,Solar,Solar
+Tregassow Farm - Solar Modules,50.3069,-5.0152,6.0,Solar,Solar
+Bowmore,56.1833,-2.5667,6.0,Oil,Oil
+St Fergus Moss Wind Farm,57.572,-1.9111,6.0,Wind,Wind
+Nancrossa Farm solar park,50.1601,-5.1833,6.0,Solar,Solar
+Sutton Courtney,51.6334,-1.2544,6.0,Waste,Biomass
+Ballyboley Solar (Carrowdore),54.5716,-5.5692,6.0,Solar,Solar
+Poplars Anaerobic Digestion Facility (Waste AD),52.6841,-2.01,6.0,Biomass,Biomass
+Dorking Battery Energy Storage System,51.2304,-0.3548,6.0,Storage,Storage
+Winscales Moor,54.6423,-3.4968,6.0,Wind,Wind
+Boundary Lane,54.8478,-1.9282,6.0,Wind,Wind
+Grange Farm,50.7131,-1.26,6.0,Solar,Solar
+Stonebyres,55.6667,-3.85,6.0,Hydro,Hydro
+Rhyd-y-Pandy Solar Farm,51.6965,-3.9394,6.0,Solar,Solar
+Avonmouth Port,51.5166,-2.7027,6.0,Wind,Wind
+Seamer Windfarm - Stockton on Tees,54.4942,-1.2585,6.0,Wind,Wind
+Blenches Mill Solar Park,51.2746,-2.1899,6.08,Solar,Solar
+GDL Wymeswold Solar Farm/land off the A6006,52.8095,-1.0875,6.1,Solar,Solar
+East Midlands Distribution Centre,52.8505,-1.3576,6.1,Solar,Solar
+Reaches Farm Solar Park,52.5594,0.5641,6.1,Solar,Solar
+Yerbeston Gate Farm,51.7473,-4.7945,6.1,Solar,Solar
+Race farm,50.7482,-2.0614,6.1,Solar,Solar
+Rew Farm Solar Farm,50.4189,-4.6895,6.1,Solar,Solar
+Flimby,54.6871,-3.514,6.15,Wind,Wind
+Langunnett,50.3913,-4.596,6.17,Solar,Solar
+Common Barn Wind Farm,52.2773,-0.2877,6.2,Wind,Wind
+Thorne Farm,51.3386,1.3476,6.2,Solar,Solar
+Achairn,58.4385,-3.2015,6.2,Wind,Wind
+Golden Hill,51.6849,-4.9078,6.2,Solar,Solar
+Westnewton,54.7795,-3.3463,6.2,Wind,Wind
+Land east of Littledown Business Park,51.0195,-2.1882,6.2,Solar,Solar
+Arna Wood Solar,54.0223,-2.8228,6.2,Solar,Solar
+Redlands Farm,51.1129,-2.8192,6.2,Solar,Solar
+Morton House (Marchington),52.8738,-1.7764,6.2,Solar,Solar
+Burnthouse Farm,52.5373,-0.0337,6.21,Wind,Wind
+South Sharpley Wind Farm,54.8404,-1.4022,6.23,Wind,Wind
+SPD 4 Gelliwern,51.7,-3.9928,6.24,Solar,Solar
+Four Burrows,50.29,-5.146,6.3,Solar,Solar
+Chalcroft Solar Park,50.9494,-1.3079,6.3,Solar,Solar
+Manor Farm (Wiltshire) - resubmission,51.4095,-2.2189,6.3,Solar,Solar
+Four Burrows Farm  (Extension 2),50.2917,-5.1392,6.3,Solar,Solar
+Marley Thatch Solar Farm,50.4248,-3.8093,6.3,Solar,Solar
+Saron,51.7953,-4.0184,6.33,Solar,Solar
+QE2 Reservoir,51.3897,-0.3096,6.34,Solar,Solar
+Millour Hill Community Windfarm (Extension) resubmission,55.7358,-4.7809,6.4,Wind,Wind
+Crugmore Farm,52.0918,-4.6206,6.4,Solar,Solar
+Redbridge Road,50.694,-2.313,6.4,Solar,Solar
+Ark Hill,56.5709,-3.0481,6.4,Wind,Wind
+Solar farm at land at The Willows  Uttoxeter,52.896,-1.8403,6.4,Solar,Solar
+Horsacott Farm Solar Park,51.0642,-4.1088,6.4,Solar,Solar
+Land between Orton Park Farm,54.8753,-2.9876,6.4,Solar,Solar
+Penrhys Wind Farm/Ferndale Power Factory,51.6511,-3.4512,6.4,Wind,Wind
+Callington Solar Farm,50.5072,-4.326,6.4,Solar,Solar
+Hazard Farm,50.4202,-3.761,6.4,Solar,Solar
+Knockcairn Road,54.6088,-6.1672,6.5,Solar,Solar
+Parkview solar park,50.5047,-3.7497,6.5,Solar,Solar
+Avonmouth,51.5097,-2.6908,6.5,Biomass,Biomass
+Henley Solar Farm,52.4861,-2.8034,6.5,Solar,Solar
+Westmill Wind Farm,51.6158,-1.6661,6.5,Wind,Wind
+Avonmouth Low Carbon Energy Facility - Phase 2,51.5097,-2.6908,6.5,Biomass,Biomass
+High Leas,53.3199,0.0947,6.5,Solar,Solar
+Lambrigg,54.3363,-2.6351,6.5,Wind,Wind
+Metheringham Heath (Farm AD),53.1334,-0.4721,6.5,Biomass,Biomass
+Treswarrow Solar Park,50.5679,-4.8498,6.5,Solar,Solar
+Fairfield,54.5788,-3.5204,6.5,Wind,Wind
+Holbrook Community Renewable Energy Centre,53.3308,-1.3323,6.5,Biomass,Biomass
+South Antrim Solar Park - Phase 1,54.6943,-6.2341,6.5,Solar,Solar
+West Carclaze Solar Farm,50.3629,-4.7862,6.5,Solar,Solar
+Sawmills Solar Farm,50.5921,-3.5337,6.5,Solar,Solar
+Roanhead Farm,54.1745,-3.2097,6.5,Solar,Solar
+Royd Moor,53.5322,-1.6696,6.5,Wind,Wind
+Whitchurch,51.2799,-2.5256,6.52,Solar,Solar
+Parkhouse Corner (Orta Solar),51.1955,-1.6752,6.6,Solar,Solar
+Cold Northcott,50.6455,-4.5467,6.6,Wind,Wind
+East Lenham Solar Farm,51.2274,0.7119,6.6,Solar,Solar
+Capel Grange Solar Park,51.1781,0.3596,6.6,Solar,Solar
+Caswell Farm Solar Park,50.8878,-2.5962,6.7,Solar,Solar
+CRINACOTT SOLAR FARM (Pyworthy),50.7904,-4.4014,6.7,Solar,Solar
+Home Farm,51.4745,-3.2928,6.7,Solar,Solar
+Pen-Y-Cae,51.7874,-4.0291,6.76,Solar,Solar
+Higher Bye,51.1726,-3.3597,6.79,Solar,Solar
+The Sawmill,52.8404,-1.0338,6.8,Biomass,Biomass
+Wiggin Hill Solar Farm - Phase 1,52.3557,-0.0774,6.8,Solar,Solar
+Land to the south of Hill Farm (resubmission),52.2061,-0.9772,6.8,Solar,Solar
+Muirhall Extension,55.7584,-3.6055,6.8,Wind,Wind
+Land at Poles Hole Farm,51.2903,-2.2314,6.8,Solar,Solar
+Jacksbank Wind Farm (Glenbervie),56.9399,-2.3866,6.8,Wind,Wind
+Land At Rymes Farm (Phase 2)/Grange Solar Farm,51.92,-2.3737,6.8,Solar,Solar
+Parabel North Beer Solar Farm,50.7013,-4.4025,6.8,Solar,Solar
+Ashlawn Farm,51.2557,-2.9041,6.8,Solar,Solar
+East Farm,51.1783,-2.0196,6.84,Solar,Solar
+Shielburn Farm,57.4998,-2.542,6.9,Wind,Wind
+Spicer Hill Wind Farm,53.5368,-1.6922,6.9,Wind,Wind
+Hill of Fiddes,57.3109,-2.1096,6.9,Wind,Wind
+Hill of Skilmafilly Cloffrickford (Denmore) Wind Farm,57.4535,-2.1647,6.9,Wind,Wind
+Clentrie Wind Farm (Gevens),56.1177,-3.2526,6.9,Wind,Wind
+Hill of Auquhirie,56.9552,-3.1772,6.9,Wind,Wind
+Glenbuck II,55.0101,-6.4124,6.9,Wind,Wind
+Oaklands Farm - resubmission,51.1682,0.8078,6.9,Solar,Solar
+Deuchries,57.5907,-2.6157,6.9,Wind,Wind
+Alveston Wind Park,51.5723,-2.4999,6.9,Wind,Wind
+Lochcarnan Community Windfarm,57.2337,-7.3479,6.9,Wind,Wind
+Slieveglass,54.6355,-7.5692,6.9,Wind,Wind
+Land At Rymes Farm (Phase 1),51.9184,-2.3715,6.9,Solar,Solar
+Strath of Brydock,57.6262,-2.5811,6.9,Wind,Wind
+Auchadaduie Wind Farm,55.5447,-5.6602,6.9,Wind,Wind
+Hoprigshiels Community Wind Farm,55.9207,-2.3915,6.9,Wind,Wind
+Eshmore,54.5506,-6.943,6.9,Wind,Wind
+East Fairlee,50.7106,-1.1375,6.98,Solar,Solar
+West Hall Solar Farm,51.3949,-3.4049,7.0,Solar,Solar
+Field House Solar / Hursley Road,51.0087,-1.3915,7.0,Solar,Solar
+Hullavington Solar Park,51.5431,-2.1651,7.0,Solar,Solar
+RUDGE FARM SOLAR FARM,51.4204,-1.6067,7.0,Solar,Solar
+Trigon Solar Farm,50.7108,-2.1739,7.0,Solar,Solar
+Pyde Drove,51.1781,-2.9237,7.0,Solar,Solar
+Carnemough Farm Solar Park,50.3316,-4.9292,7.0,Solar,Solar
+Westover Farm - resubmission,51.1621,-1.5062,7.0,Solar,Solar
+St Columb Major Solar Farm,50.4229,-4.9278,7.0,Solar,Solar
+Ballinderry Road Solar Phase 2 (Lisburn),54.5132,-6.0883,7.0,Solar,Solar
+Garvinack Farm Solar Park,50.2897,-5.1207,7.0,Solar,Solar
+Milton Keynes Waste Recovery Park,52.0672,-0.8149,7.0,Biomass,Biomass
+SAUNDERCROFT SOLAR FARM,50.765,-3.3985,7.0,Solar,Solar
+Weycock Road,51.4178,-3.3075,7.0,Solar,Solar
+Levenmouth demonstration turbine (Fife Energy Park),56.1607,-2.958,7.0,Wind,Wind
+Trecatti,51.7431,-3.2814,7.0,Waste,Biomass
+Shooters Bottom Solar Park,51.2588,-2.5864,7.0,Solar,Solar
+Abbots Ann,51.1636,-1.5123,7.0,Solar,Solar
+Kenardington Place Farm,51.0612,0.8125,7.0,Solar,Solar
+Wally Corner Landfill Site,51.6574,-1.1619,7.0,Solar,Solar
+Wilmingham Lane Solar Farm,50.6872,-1.4855,7.0,Solar,Solar
+Goose Willow Farm - extension,51.633,-1.3488,7.0,Solar,Solar
+Laughton Level,50.8684,0.1202,7.0,Solar,Solar
+Land At Potash Farm,52.0167,-0.8641,7.0,Solar,Solar
+Altamuskin Extension,54.5128,-7.1113,7.1,Wind,Wind
+Congresbury Solar Farm,51.3501,-2.8246,7.1,Solar,Solar
+Altamuskin,54.5222,-7.0946,7.1,Wind,Wind
+Newnton Dairy,51.6265,-2.113,7.18,Solar,Solar
+Office Field,50.7569,-1.7037,7.2,Solar,Solar
+Huntington Water Treatment Works,53.1696,-2.8661,7.2,Solar,Solar
+Potato Pot,54.6027,-3.5031,7.2,Wind,Wind
+Trench Farm,52.9454,-2.9179,7.2,Solar,Solar
+M1 Wind Farm,52.1617,-0.8617,7.2,Wind,Wind
+Ardoch and Over Enoch Wind Farm (Ardoch),55.72,-4.2537,7.2,Wind,Wind
+Towerbrook Farm (Banwell Solar Farm),51.3315,-2.8547,7.2,Solar,Solar
+Millar Farm,54.7415,-6.2388,7.21,Solar,Solar
+Peterborough EfW,52.5752,-0.2062,7.3,Waste,Biomass
+West Hill Farm (solar),51.1461,-4.1377,7.3,Solar,Solar
+Creacombe Solar Farm,50.3332,-3.9763,7.3,Solar,Solar
+Avenue Farm,52.5757,1.389,7.3,Solar,Solar
+Lendrum's Bridge Extension,54.3938,-7.1489,7.3,Wind,Wind
+Hope Solar Farm,50.211,-5.3661,7.3,Solar,Solar
+South Cathkin Landfill Site,55.7912,-4.1946,7.4,Waste,Biomass
+Dudley EfW,52.4998,-2.0854,7.4,Waste,Biomass
+Garn Solar Farm,51.4537,-3.3886,7.4,Solar,Solar
+Far Marsh Farm (Resubmission),53.6775,-0.1141,7.5,Wind,Wind
+Sinfin Lane,52.893,-1.4795,7.5,Biomass,Biomass
+Dunsland Cross Wind Farm,50.8079,-4.2597,7.5,Wind,Wind
+Lairg Wind Farm,58.0027,-4.3487,7.5,Wind,Wind
+Wapsey's Wood,51.5902,-0.5963,7.5,Waste,Biomass
+Shepham Lane (Resubmission),50.8295,0.2709,7.5,Wind,Wind
+Tedder Hill,53.7523,-0.0265,7.5,Wind,Wind
+Fasnakyle Compensation Set,57.3272,-4.7946,7.5,Hydro,Hydro
+Sutton Mawr Farm,51.4186,-3.327,7.5,Solar,Solar
+Heysham South Wind Farm,54.0342,-2.865,7.5,Wind,Wind
+Cuckoo Grove Farm,51.8099,-5.0074,7.5,Solar,Solar
+Burton Wold Wind Farm South,52.3536,-0.6565,7.5,Wind,Wind
+Blantyre Muir Wind Farm extension,55.7416,-4.09,7.5,Wind,Wind
+Culmhead Solar Farm (Resubmission),50.9261,-3.128,7.5,Solar,Solar
+Tullo Wind Farm North Extension (Shiels Wind Farm),56.844,-2.4101,7.5,Wind,Wind
+Former Westhampnett Landfill,50.8474,-0.7433,7.5,Solar,Solar
+Clapham solar farm,52.1767,-0.4844,7.5,Solar,Solar
+Beddingham 'B' Landfill Scheme,50.849,0.0513,7.5,Waste,Biomass
+Crockbaravally Wind Farm,54.553,-7.0477,7.5,Wind,Wind
+Blackstone Edge,53.5433,-1.7062,7.5,Wind,Wind
+GlaxoSmithKline Wind Project,55.5979,-4.6339,7.5,Wind,Wind
+BROWNIELEYS - 3 WIND TURBINES,56.8399,-2.3791,7.5,Wind,Wind
+Maesgwyn solar farm,51.7658,-3.6212,7.5,Solar,Solar
+Whitley (Ashcott Farm) Solar Park,51.1303,-2.7953,7.57,Solar,Solar
+Priors Byne Farm,50.9463,-0.3422,7.6,Solar,Solar
+Rodbourne Rail Farm - Solar Park,51.5612,-2.0994,7.6,Solar,Solar
+West Farm,51.6987,-4.9012,7.63,Solar,Solar
+Abergelli,51.7007,-3.9476,7.68,Solar,Solar
+Nanteague Farm,50.3062,-5.0951,7.7,Solar,Solar
+Upper Huntingford Farm,51.6436,-2.4065,7.7,Solar,Solar
+St John Hill,56.8935,-2.2724,7.7,Wind,Wind
+Hagshaw Hill (S15) Wind Farm  Lanarkshire,55.5554,-3.9203,7.8,Wind,Wind
+Lough Hill,54.6343,-7.6052,7.8,Wind,Wind
+Arpley Landfill Scheme 'B',53.3718,-2.6432,7.9,Waste,Biomass
+Claypit Moor Solar Farm (Lexham),52.745,0.7758,7.9,Solar,Solar
+Arpley Landfill Scheme 'A',53.3718,-2.6432,7.9,Waste,Biomass
+Gaur,56.6785,-4.5085,7.9,Hydro,Hydro
+Bolton EfW,53.567,-2.4076,8.0,Waste,Biomass
+Shelford Generation Plant II,51.2994,1.0999,8.0,Waste,Biomass
+Hampole Wind Farm,53.5766,-1.255,8.0,Wind,Wind
+Coombeshead Solar Farm,50.386,-3.7664,8.0,Solar,Solar
+Mynydd Brombil,51.583,-3.7457,8.0,Wind,Wind
+Lambs Hill,54.5462,-1.3263,8.0,Wind,Wind
+Marr Windfarm,53.533,-1.2397,8.0,Wind,Wind
+Llwyn Du Solar Farm,52.1084,-4.5236,8.0,Solar,Solar
+Stonebarrow Farm,50.7855,-2.9249,8.0,Solar,Solar
+Chineham ERF,51.292,-1.0377,8.0,Waste,Biomass
+Wolverhampton EfW,52.5969,-2.125,8.0,Waste,Biomass
+Sheepbridge Court Farm,51.3895,-0.961,8.0,Solar,Solar
+Foxburrow Farm,52.0467,1.2846,8.0,Solar,Solar
+Beckton STW Biodiesel Power Plant,51.5178,0.0935,8.0,Biomass,Biomass
+Tiln Farm solar park,53.3468,-0.9294,8.0,Solar,Solar
+Buckwell,51.6638,-2.8365,8.0,Solar,Solar
+Iwood Lane Solar Farm,51.3593,-2.7913,8.0,Solar,Solar
+The Grange,51.372,-2.8763,8.0,Solar,Solar
+Old Rides solar Farm,51.3929,0.8695,8.0,Solar,Solar
+Gover Farm Solar Park,50.2887,-5.1967,8.0,Solar,Solar
+Loicher Lane,53.4443,-1.4523,8.0,Biomass,Biomass
+Coombe Farm,50.6582,-3.3934,8.0,Solar,Solar
+Battlefield EfW,52.7426,-2.7272,8.0,Waste,Biomass
+Striven,56.0093,-5.1199,8.0,Hydro,Hydro
+Langley,54.8237,-1.6758,8.0,Wind,Wind
+Bentham Farm,51.6055,-1.8987,8.0,Solar,Solar
+Hunciecroft Farm,53.2601,-1.1878,8.0,Solar,Solar
+Kenninghall Solar Farm,52.4329,0.9909,8.0,Solar,Solar
+Deepdale Farm,53.0276,-0.3991,8.0,Solar,Solar
+Arkwright Solar Farm,53.2479,-1.3464,8.0,Solar,Solar
+Broomhill,54.7502,-1.7607,8.0,Wind,Wind
+Chapel Hill,51.6423,-4.9484,8.0,Solar,Solar
+Yarburgh,53.4075,0.0188,8.09,Solar,Solar
+Bay Farm,52.3163,0.4989,8.1,Solar,Solar
+Nowhere Farm,52.9259,-0.1057,8.1,Solar,Solar
+Tower Hill Farm,51.5973,-2.4724,8.1,Solar,Solar
+Horam,50.9313,0.2377,8.12,Solar,Solar
+Pencoose,50.1987,-5.1691,8.14,Solar,Solar
+Port of Sheerness Wind Farm Ltd,51.443,0.7479,8.2,Wind,Wind
+Berwick solar farm,50.856,0.1748,8.2,Solar,Solar
+Hayford Farm - extension,52.6868,-2.942,8.2,Solar,Solar
+Carsington,53.0845,-1.6336,8.2,Wind,Wind
+Withernwick extension,53.859,-0.1656,8.2,Wind,Wind
+Chiplow,52.8569,0.6908,8.2,Wind,Wind
+Wear Point,51.7021,-4.9965,8.2,Wind,Wind
+Halse Farm,51.0517,-3.2126,8.2,Solar,Solar
+Ramsey 2 Wind Farm,52.4681,-0.1224,8.2,Wind,Wind
+Low Spinney,52.5024,-1.1792,8.2,Wind,Wind
+Avonmouth Wind Power,51.5115,-2.6735,8.2,Wind,Wind
+Barlockhart Moor,54.8657,-4.7879,8.2,Wind,Wind
+Lower House,51.7342,-2.9459,8.22,Solar,Solar
+Capeland Farm,51.1312,-3.9082,8.3,Solar,Solar
+Hydes,51.938,0.398,8.3,Solar,Solar
+Carloggas Farm Solar Park,50.3513,-4.8759,8.3,Solar,Solar
+Baldovie,56.4867,-2.9028,8.3,Waste,Biomass
+Bowerhouse Farm,51.345,-2.8611,8.3,Solar,Solar
+Canada Farm,50.8378,-2.2282,8.3,Solar,Solar
+Rothes Bio-Plant,57.5264,-3.2078,8.3,Biomass,Biomass
+Muirhall South,55.7584,-3.6055,8.3,Wind,Wind
+Parc Cynog Extension,51.7592,-4.5337,8.4,Wind,Wind
+Beinn Ghlas,56.3823,-5.2977,8.4,Wind,Wind
+Sisters,55.2499,-1.6182,8.4,Wind,Wind
+Land at Heywood Grange,52.997,-2.0604,8.4,Solar,Solar
+Penrhiwarwydd Farm,51.6327,-3.1582,8.5,Solar,Solar
+Land East of Horton Road,52.2055,-0.7951,8.5,Solar,Solar
+Laurelhill,54.4025,-6.2622,8.5,Solar,Solar
+Ockendon Area III,51.5248,0.318,8.5,Waste,Biomass
+Roxby Gas to Energy,53.6416,-0.625,8.5,Waste,Biomass
+Packington Generation Plant Phase 3,52.4697,-1.6908,8.5,Waste,Biomass
+Court Farm (Resubmission),51.6011,-2.8787,8.5,Solar,Solar
+Drumduff,55.9043,-3.779,8.5,Wind,Wind
+Wellingborough Solar Farm,52.2816,-0.6938,8.53,Solar,Solar
+Park Spring,53.574,-1.4021,8.55,Wind,Wind
+Fawley Waste to Energy Plant,50.8485,-1.3796,8.6,Waste,Biomass
+Airfield Farm (Podington) (Resubmission),52.2363,-0.6089,8.6,Wind,Wind
+Playters,52.4393,1.5874,8.63,Solar,Solar
+Five Oaks,51.0595,-0.446,8.7,Oil,Oil
+Thatcham,51.4037,-1.2605,8.7,Oil,Oil
+Somerton Door Farm,51.0673,-2.7573,8.7,Solar,Solar
+Balls Wood Solar Farm,50.3497,-4.037,8.7,Solar,Solar
+Braydon Manor Farm,51.5885,-1.9362,8.7,Solar,Solar
+Natewood Farm,50.845,0.2357,8.9,Solar,Solar
+Roskrow Farm,50.1808,-5.1326,8.9,Solar,Solar
+Hayford Farm,52.6895,-2.9445,8.9,Solar,Solar
+Brook Farm,51.8539,-1.1318,8.91,Solar,Solar
+Epwell,52.0665,-1.4658,8.99,Solar,Solar
+Burton Pedwardine,52.9722,-0.3555,8.99,Solar,Solar
+Bendealt Wind Farm  Highland,57.7055,-4.4267,9.0,Wind,Wind
+Avonmouth Port - extension,51.5029,-2.6988,9.0,Wind,Wind
+Loch Carnan  South Uist,57.25,-7.35,9.0,Oil,Oil
+Thornton Power Station,53.8819,-2.9975,9.0,Biomass,Biomass
+Bessy Bell 2,54.705,-7.4265,9.0,Wind,Wind
+King George Dock,53.7424,-0.2835,9.0,Biomass,Biomass
+Woodforde Farm,52.698,1.09,9.0,Solar,Solar
+Bin Mountain Wind Farm,54.6414,-7.6054,9.0,Wind,Wind
+Rotherdale Farm - extension,52.1536,-2.0341,9.0,Solar,Solar
+Southern Counties Shooting Ground Phase 1 (resubmission),50.8212,-2.5557,9.0,Solar,Solar
+Whittlesey,52.558,-0.1719,9.0,Wind,Wind
+Torrance Farm,55.8718,-3.7461,9.0,Wind,Wind
+Tappaghan Extension,54.5471,-7.6956,9.0,Wind,Wind
+Rectory Farm/Emberton,52.1367,-0.6927,9.0,Solar,Solar
+Barnsley 1.5,53.568,-1.5146,9.0,Biomass,Biomass
+Point Wind / Beinn Ghrideag Farm,58.2079,-6.4807,9.0,Wind,Wind
+Liberty Steel Power Station,51.5611,-2.9625,9.0,Biomass,Biomass
+Cefn Betingau Farm,51.7942,-3.9437,9.0,Solar,Solar
+Eastcroft EfW (Lines 1 & 2),52.9461,-1.1353,9.0,Waste,Biomass
+Lindhurst,53.1175,-1.1516,9.0,Wind,Wind
+Taff Ely,51.5694,-3.4648,9.0,Wind,Wind
+Abbey Farm,52.4193,-0.2366,9.0,Solar,Solar
+Hawton Wind Farm,53.0482,-0.8142,9.0,Wind,Wind
+Ketton Solar Farm,52.6441,-0.5588,9.04,Solar,Solar
+Trehawke Barton (Doddycross) Solar Farm,50.4359,-4.3788,9.1,Solar,Solar
+Marsh Farm Hilperton,51.3422,-2.1856,9.1,Solar,Solar
+Out Newton,53.6689,0.0994,9.1,Wind,Wind
+Balmurrie Fell Wind Farm,54.8725,-4.5165,9.1,Wind,Wind
+Westwood,53.2228,-0.9266,9.18,Solar,Solar
+Paddock Wood,51.1726,0.412,9.2,Solar,Solar
+Galsworthy,50.9187,-4.2715,9.2,Wind,Wind
+Ovenden Moor,53.7708,-1.9408,9.2,Wind,Wind
+Manston Solar Farm extension (Westwood),51.3519,1.3745,9.2,Solar,Solar
+Lochend  Wind Farm,58.5951,-3.2629,9.2,Wind,Wind
+Wern Ddu Wind Farm,53.0255,-3.4059,9.2,Wind,Wind
+Welton Of Creuchies,56.637,-3.2794,9.2,Wind,Wind
+Land at Overside and Greenwellheads Farms,57.5822,-1.8993,9.2,Wind,Wind
+Thornog Windfarm Extension,54.6064,-7.5596,9.2,Wind,Wind
+Gawcott Fields Farm,51.9885,-1.005,9.2,Solar,Solar
+Hellrigg,54.8533,-3.3475,9.2,Wind,Wind
+Dalby,52.8065,-1.0343,9.2,Wind,Wind
+Port of Tilbury,51.4573,0.3368,9.2,Wind,Wind
+Delabole (Repowering),50.6378,-4.7053,9.2,Wind,Wind
+Glenbuck,55.0101,-6.4124,9.2,Wind,Wind
+Thornog Windfarm,54.6064,-7.5596,9.2,Wind,Wind
+NEILSTON WIND FARM,55.7541,-4.4667,9.2,Wind,Wind
+Hunters Race Solar Park,50.8621,-0.7927,9.3,Solar,Solar
+Wisbridge Farm,52.008,-0.0134,9.3,Solar,Solar
+Sevor Farm,51.5923,-1.7161,9.3,Solar,Solar
+Teyrdan,53.268,-3.686,9.3,Solar,Solar
+Llangwyryfon,52.3069,-4.0292,9.35,Wind,Wind
+Mynydd Portref,51.5564,-3.4597,9.35,Wind,Wind
+Wilton,50.4016,-4.3787,9.48,Solar,Solar
+SPD 3 Grange Farm,53.144,-0.1605,9.5,Solar,Solar
+Hawkers Farm (resubmission),51.2244,-2.7639,9.5,Solar,Solar
+Vine Street EfW,53.6565,-1.7775,9.5,Waste,Biomass
+Bears Down,50.4703,-4.9556,9.6,Wind,Wind
+Hill of Tillymorgan (Kirkton Farm) Wind turbines (resubmission),57.3441,-2.6104,9.6,Wind,Wind
+High Penn Solar Park,51.4512,-1.986,9.6,Solar,Solar
+Kerriers Solar Park,50.4424,-4.8164,9.6,Solar,Solar
+Coal Clough Wind Farm,53.7497,-2.15,9.6,Wind,Wind
+Bambers Farm,53.3213,0.2384,9.6,Wind,Wind
+Welbeck Colliery,53.2239,-1.1377,9.6,Solar,Solar
+Lochelbank,56.3054,-3.4329,9.6,Wind,Wind
+Minsworth Sewage Treatment Works,52.5318,-1.754,9.7,Waste,Biomass
+Southfield Solar Park,51.0141,-2.6086,9.76,Solar,Solar
+Westfield,56.1431,-3.2569,9.8,Wind,Wind
+Manston,51.3519,1.3674,9.83,Solar,Solar
+Owls Lodge,51.1843,-1.3737,10.0,Solar,Solar
+Great Houndbeare Farm,50.7326,-3.3512,10.0,Solar,Solar
+Woodlands Farm Solar Park,51.3252,1.124,10.0,Solar,Solar
+Bristol STW (Waste AD),51.5128,-2.67,10.0,Biomass,Biomass
+Craig Wind Farm,55.1641,-3.069,10.0,Wind,Wind
+Hill Farm - Energy Barn,52.7279,-1.4589,10.0,Storage,Storage
+Charlesfield Biomass CHP Plant,55.5605,-2.6533,10.0,Biomass,Biomass
+Wathegar wind farm,58.4393,-3.2257,10.0,Wind,Wind
+Bottom Plain,50.7127,-2.1654,10.0,Solar,Solar
+Port of Liverpool,53.4496,-3.005,10.0,Wind,Wind
+Woolley Hill,52.3398,-0.308,10.0,Wind,Wind
+Land On The East Side Of Fosse Way,52.2537,-1.4809,10.0,Solar,Solar
+Beatrice Demonstrator,58.2528,-2.8884,10.0,Wind,Wind
+Spurness Extension,59.1893,-2.6925,10.0,Wind,Wind
+Chelveston Renewable Energy Park Wind Farm (Bedford),52.3076,-0.5373,10.0,Wind,Wind
+Lilbourne Wind Farm,52.3942,-1.1669,10.0,Wind,Wind
+Fforch Nest Wind Farm pt1,51.611,-3.4947,10.0,Wind,Wind
+Leverton Farm - Energy Barn,53.26,-0.564,10.0,Storage,Storage
+Tullo Wind Farm South (Ext.),56.8274,-2.4049,10.0,Wind,Wind
+Twemlows,52.9379,-2.6436,10.0,Solar,Solar
+Millennium Extension,57.1502,-4.8912,10.0,Wind,Wind
+Ford Farm (Ashurst),50.9428,-0.3223,10.0,Solar,Solar
+Teesside EfW (extension),54.5969,-1.2583,10.0,Waste,Biomass
+Langar Lane,52.9027,-0.9508,10.0,Solar,Solar
+Clayhill Farm,51.9874,-0.4818,10.0,Solar,Solar
+Stowbridge Farm - Extension (Phase 1),52.331,0.2258,10.0,Solar,Solar
+Chippenham,51.46,-2.1247,10.0,Gas,Gas
+Glenurquhart and Strathglass Wind Farm project,57.2791,-4.7511,10.0,Wind,Wind
+Stowbridge Farm - Extension (Phase 2),52.3336,0.2256,10.0,Solar,Solar
+Hoplass Farm,51.6698,-5.0127,10.0,Solar,Solar
+Tilmanstone Colliery,51.2098,1.2764,10.0,Solar,Solar
+Bryn Titli,52.3672,-3.5656,10.0,Wind,Wind
+Carn Vean,50.1799,-5.1875,10.0,Wind,Wind
+Cwmcaesingrug Farm,51.6351,-3.1698,10.0,Solar,Solar
+Lands West of Belfast Road,54.6356,-6.1148,10.0,Solar,Solar
+Hurcott Copse Solar Farm,50.9373,-2.866,10.0,Solar,Solar
+Achlachan Wind Farm,58.4489,-3.4546,10.0,Wind,Wind
+Brockaghboy Wind Farm - extension,54.8991,-6.8692,10.0,Wind,Wind
+Cairnborrow - resubmission,57.4639,-2.8992,10.0,Wind,Wind
+Triangle Solar Farm Park,52.3285,0.3173,10.0,Solar,Solar
+Cleator,54.5034,-3.5293,10.0,Storage,Storage
+Kings Barn Farm - Energy Barn,50.8898,-0.3172,10.0,Storage,Storage
+Land At Ferry Farm,50.7577,-0.7845,10.0,Solar,Solar
+Wolf Bog,54.8043,-6.0806,10.0,Wind,Wind
+Orchard Farm,51.3698,0.6989,10.0,Solar,Solar
+Cassley,57.9768,-4.5832,10.0,Hydro,Hydro
+Steventon,51.6334,-1.3613,10.04,Solar,Solar
+Chisbon,51.8285,1.1847,10.1,Solar,Solar
+Pitchford,52.6223,-2.7131,10.2,Solar,Solar
+Reaps Moss Wind Farm (resubmitted),53.7002,-2.1671,10.2,Wind,Wind
+Meikle Carewe,57.0188,-2.2783,10.2,Wind,Wind
+Burton Pidsea (Wadworth Hill) Wind Farm,53.7492,-0.1135,10.2,Wind,Wind
+Hall Farm  East Beckham,52.9134,1.1868,10.2,Solar,Solar
+Watchfield Lawn,51.2253,-2.9446,10.2,Solar,Solar
+Mynydd Gorddu,52.4663,-3.971,10.2,Wind,Wind
+Condover (Green Farm),52.6569,-2.7298,10.2,Solar,Solar
+Hill Farm Solar Park,50.6975,-1.1322,10.2,Solar,Solar
+Earls Hall Farm,51.8092,1.1109,10.25,Wind,Wind
+Butterwick Moor Circuit 1,54.6652,-1.375,10.25,Wind,Wind
+Butterwick Moor Circuit 2,54.6652,-1.375,10.25,Wind,Wind
+St Breock,50.4956,-4.8213,10.26,Wind,Wind
+Denzell Downs Windfarm,50.4659,-4.9615,10.26,Wind,Wind
+Birmingham Bio-Power Plant,52.4624,-1.8417,10.3,Biomass,Biomass
+Hook Moor,53.8119,-1.3355,10.3,Wind,Wind
+Boardinghouse Wind Farm,52.5351,0.0606,10.3,Wind,Wind
+Stonish Hill Re-submission (Bilsthorpe),53.1511,-1.0146,10.3,Wind,Wind
+Sancton Hill Wind Farm,53.8451,-0.6099,10.38,Wind,Wind
+Wharrels Hill Wind Farm,54.7231,-3.2746,10.4,Wind,Wind
+The Elms,52.2142,-1.4455,10.4,Solar,Solar
+Danes Farm - extension,53.3224,-0.6975,10.5,Solar,Solar
+Tiddiecross Solar Farm,52.7035,-2.5747,10.5,Solar,Solar
+Lower Basset Down Farm,51.5245,-1.7914,10.5,Solar,Solar
+The Flit,51.8046,-1.294,10.5,Solar,Solar
+Manor Farm (Monmouthshire),51.8346,-2.9253,10.5,Solar,Solar
+Bluegates Solar Park,51.8607,1.005,10.5,Solar,Solar
+Riverside Industrial Estate Gasification Plant,52.9572,-0.0129,10.5,Biomass,Biomass
+Fieldscale,50.6772,-1.2454,10.6,Solar,Solar
+Partridge Farm,51.1022,0.9765,10.6,Solar,Solar
+Skegness,53.148,0.2348,10.68,Solar,Solar
+L'Field Stewartby Landfill Site,52.0788,-0.5203,10.7,Waste,Biomass
+Homestead Farm,50.694,-1.4431,10.7,Solar,Solar
+Upper Meadowley Farm,52.5295,-2.4909,10.7,Solar,Solar
+Monksham Solar Farm,51.1846,-2.3358,10.7,Solar,Solar
+Rudbaxton Solar Park,51.8501,-4.9524,10.8,Solar,Solar
+Lower Severalls Farm,50.8989,-2.7772,10.8,Solar,Solar
+Allt Dearg Wind Farmers LLP,55.9334,-5.4774,10.8,Wind,Wind
+Hyde Farm,52.1763,-0.7033,10.8,Solar,Solar
+Trequite,50.4263,-4.3656,10.99,Solar,Solar
+Teiges,54.3031,-7.3985,11.0,Wind,Wind
+Wilsom Farm,51.1424,-0.9501,11.0,Solar,Solar
+Grove Solar Park (Phase 2),50.9636,-1.479,11.0,Solar,Solar
+Battens Farm Solar Park,51.482,-2.165,11.0,Solar,Solar
+South Lees Farm,51.4017,0.8064,11.0,Solar,Solar
+Cashlie,56.5431,-4.4651,11.0,Hydro,Hydro
+North Norfolk Business Centre Solar Park,52.9011,1.307,11.0,Solar,Solar
+Penare Farm Solar Farm,50.3037,-5.0755,11.0,Solar,Solar
+Land to the north and south of Cakers Lane (Wilsom),51.1424,-0.9501,11.0,Solar,Solar
+Brogborough Phase III,52.0517,-0.5868,11.0,Waste,Biomass
+Brogborough Phase IV,52.0553,-0.5867,11.0,Waste,Biomass
+Holton Airfield,52.3606,1.5258,11.0,Solar,Solar
+Norrington,51.3833,-2.1701,11.14,Solar,Solar
+Calvert Phase II,51.9003,-0.9927,11.2,Waste,Biomass
+Welbeck,53.2406,-1.108,11.26,Solar,Solar
+South Newton Farm,50.7355,-2.0976,11.3,Solar,Solar
+Bobbing solar farm,51.3581,0.6889,11.3,Solar,Solar
+Lincoln Farm,53.1427,0.2023,11.4,Solar,Solar
+Puriton Landfill Solar Farm,51.1788,-2.9784,11.4,Solar,Solar
+Furness Wind Farm/High Winds (Harlock Repowering),54.2091,-3.1476,11.5,Wind,Wind
+Goose Willow Farm,51.6359,-1.3569,11.5,Solar,Solar
+Pashley Farm,50.8732,0.4275,11.5,Solar,Solar
+Burntstalk Solar Park,52.6732,0.6271,11.5,Solar,Solar
+Upper Holton Wind Farm,52.3665,1.5311,11.5,Wind,Wind
+Knowlton,51.2349,1.2649,11.54,Solar,Solar
+Pitsea Landfill Scheme,51.537,0.5104,11.6,Waste,Biomass
+Cross Green ERF,53.7882,-1.5036,11.6,Waste,Biomass
+Stratton Hall Solar Park,52.0088,1.2869,11.6,Solar,Solar
+North Farm (Spetisbury),50.8182,-2.1698,11.6,Solar,Solar
+Hendre Fawr Farm,51.7409,-3.5913,11.6,Solar,Solar
+Altahullion Extension,54.9626,-7.0341,11.7,Wind,Wind
+Moel Maelogen A Phase 2,53.1363,-3.725,11.7,Wind,Wind
+Spaldington,53.7952,-0.7998,11.75,Wind,Wind
+Derriton Fields Solar Farm,50.8026,-4.3678,11.8,Solar,Solar
+Chancery Farm (Ardleigh),51.9104,0.9938,11.9,Solar,Solar
+Eakring Solar Farm,53.1547,-1.014,11.9,Solar,Solar
+UK Solar (Lower Newton) LLP,52.9473,-2.0203,11.93,Solar,Solar
+JG Pears' animal rendering facility,53.2138,-0.7981,12.0,Biomass,Biomass
+Carsfad,54.941,-3.9278,12.0,Hydro,Hydro
+Bishops Sutton,51.0827,-1.1511,12.0,Solar,Solar
+Leverton Ings,53.0199,0.0633,12.0,Solar,Solar
+Cloonty Wind Farm,55.1185,-6.3958,12.0,Wind,Wind
+KERNICK MICA DAM - SOLAR FARM,50.3534,-4.9043,12.0,Solar,Solar
+Gunfleet Sands 3,51.703,1.1919,12.0,Wind,Wind
+Tallentire,54.7069,-3.3595,12.0,Wind,Wind
+Monnaboy Wind Farm,54.9791,-7.1341,12.0,Wind,Wind
+Moor House Wind Farm (resubmission),54.5746,-1.4972,12.0,Wind,Wind
+Barmoor,55.6373,-2.0251,12.0,Wind,Wind
+Upper Farm solar park,51.1721,-1.0997,12.0,Solar,Solar
+Bishop's Waltham Solar Farm,50.9443,-1.2081,12.0,Solar,Solar
+Middleton,55.7751,-4.3426,12.0,Wind,Wind
+Armistead Wind Farm,54.276,-2.6388,12.0,Wind,Wind
+Glass Moor 2,52.5186,-0.1088,12.0,Wind,Wind
+Spittleborough Farm,51.5464,-1.8814,12.0,Solar,Solar
+Spriggs Farm,51.9671,0.3686,12.0,Solar,Solar
+Mynydd Portref Wind Farm extension,51.5604,-3.4496,12.0,Wind,Wind
+Rydon Farm,50.5068,-3.6353,12.0,Solar,Solar
+Mount Mill Farm - resubmission,52.0394,-0.8943,12.0,Solar,Solar
+Tod Hill Farm Wind Turbines,56.0325,-3.8621,12.0,Wind,Wind
+Bakers Farm (solar),50.7644,-0.7931,12.0,Solar,Solar
+Methlick Farmers Wind Energy Project,57.4276,-2.2431,12.0,Wind,Wind
+MALMAYNES HALL FARM,51.4551,0.6142,12.0,Solar,Solar
+Gedney Marsh,52.8362,0.1068,12.0,Wind,Wind
+Goonhilly Downs Wind Farm,50.0504,-5.2002,12.09,Wind,Wind
+Littleton,50.8449,-2.1671,12.1,Solar,Solar
+Shoals Hook Farm,51.8135,-4.9417,12.1,Solar,Solar
+Fairwinds,51.5641,0.3896,12.2,Solar,Solar
+Highfields Farm (Colchester),51.8248,0.7195,12.2,Solar,Solar
+Hale Farm Solar,50.7784,-1.864,12.23,Solar,Solar
+Muirhall,55.7669,-3.5858,12.3,Wind,Wind
+Condover Airfield,52.6327,-2.7301,12.3,Solar,Solar
+Grange Resubmission,53.6379,-0.7001,12.3,Wind,Wind
+Chediston Hall Solar Park,52.3522,1.4737,12.3,Solar,Solar
+Boscombe Airfield,51.1514,-1.7379,12.3,Solar,Solar
+Rhodders,56.2042,-3.7824,12.3,Wind,Wind
+Winwick,52.3657,-1.0622,12.3,Wind,Wind
+Sober Hill,53.8349,-0.5967,12.3,Wind,Wind
+Dummuie,57.4511,-2.6915,12.3,Wind,Wind
+Lodge Farm - Orston,52.966,-0.8324,12.4,Solar,Solar
+Todmorden,53.7006,-2.159,12.5,Wind,Wind
+Westfield Biomass Power Station,56.1417,-3.3051,12.5,Biomass,Biomass
+Toggam Farm,52.4334,0.5009,12.5,Solar,Solar
+Crockdun,54.5689,-7.0494,12.5,Wind,Wind
+Chelveston Renewable Energy Park Wind Farm (East Northamptonshire),52.3012,-0.5366,12.5,Wind,Wind
+Red Gap Moor Wind Farm,54.6468,-1.3206,12.5,Wind,Wind
+Watford Lodge,52.3265,-1.1069,12.5,Wind,Wind
+Speyside Biomass CHP Plant,57.4947,-3.2089,12.5,Biomass,Biomass
+Levenseat EfW,55.779,-3.678,12.5,Biomass,Biomass
+Westerfield Farm - resubmission,51.7854,-1.6082,12.5,Solar,Solar
+Crannaford Solar Farm,50.7599,-3.4048,12.5,Solar,Solar
+New Stone House,51.868,-1.1824,12.5,Solar,Solar
+Gordonstown,57.4619,-2.4828,12.5,Wind,Wind
+Kelmarsh Wind Farm (Resubmission),52.4028,-0.9598,12.5,Wind,Wind
+Gosfield Airfield,51.9558,0.5797,12.6,Solar,Solar
+Bodorgan Solar Farm,53.1787,-4.4148,12.6,Solar,Solar
+Roves Farm (Solar) - resubmission,51.5978,-1.6983,12.7,Solar,Solar
+Grange Farm (Lincolnshire),52.746,0.0509,12.7,Solar,Solar
+Hunterston Test Centre,55.736,-4.888,13.0,Wind,Wind
+Wedgehill Farm,50.8613,-1.9008,13.0,Solar,Solar
+Elwick,54.7005,-1.2898,13.0,Solar,Solar
+Ballygarvey Road,54.8839,-6.2536,13.0,Solar,Solar
+Errol Estate,56.3677,-3.2771,13.0,Solar,Solar
+Boulfruich,58.2999,-3.4434,13.0,Wind,Wind
+Rowles Farm solar park,51.8441,-1.2258,13.0,Solar,Solar
+Luscott Barton,51.1105,-4.1205,13.0,Solar,Solar
+Chisbon Solar Farm (Frowick Lane),51.8219,1.0873,13.0,Solar,Solar
+Fiskerton Solar Farm,53.2439,-0.4287,13.04,Solar,Solar
+Burthy,50.3609,-4.9461,13.08,Solar,Solar
+Folly Farm,51.8395,-0.7395,13.1,Solar,Solar
+Hoback Farm,52.1191,-0.0291,13.1,Solar,Solar
+Langford Solar Farm,52.0405,-0.2532,13.18,Solar,Solar
+Eynsham Solar Farm,51.794,-1.4264,13.2,Solar,Solar
+Hallburn Farm (resubmission),55.0096,-2.9153,13.2,Wind,Wind
+Homeland Solar Farm,50.847,-1.8648,13.2,Solar,Solar
+Hare Hill,55.3628,-4.1263,13.2,Wind,Wind
+Hendai Farm,51.6745,-3.2765,13.4,Solar,Solar
+Roundponds Farm Solar Park,51.3801,-2.1627,13.5,Solar,Solar
+Ballinderry Road Solar Phase 1 (Lisburn),54.5181,-6.0994,13.5,Solar,Solar
+Clawdd Ddu,51.7708,-4.038,13.52,Solar,Solar
+Foston,52.9961,-0.5975,13.6,Solar,Solar
+Crook Hill (Revised Application - Calderdale MBC) 1 of 2,53.6681,-2.1117,13.6,Wind,Wind
+Honington Solar Farm,52.3396,0.7886,13.6,Solar,Solar
+Carn Hill,54.7313,-5.9118,13.8,Wind,Wind
+Inishative,54.5669,-7.0096,13.8,Wind,Wind
+Pentland Road,58.2572,-6.5108,13.8,Wind,Wind
+Crystal Rig 3,55.9264,-2.5345,13.8,Wind,Wind
+Eglish Mountain,54.8838,-7.2136,13.8,Wind,Wind
+Cregganconroe,54.6226,-6.9791,13.8,Wind,Wind
+Ewe Hill I,55.1071,-3.3339,13.8,Wind,Wind
+Seegronan,54.6333,-6.3,13.8,Wind,Wind
+Parciau Farm Solar Park,53.1653,-4.2414,13.9,Solar,Solar
+Nova Scotia Farm solar park,52.6618,1.7012,13.9,Solar,Solar
+Packington Solar Farm,52.7073,-1.4725,13.9,Solar,Solar
+Kiln Pit Hill,54.886,-1.9144,14.0,Wind,Wind
+Portsmouth ERF,50.822,-1.0542,14.0,Waste,Biomass
+Dunbar Power Plant,55.9747,-2.4604,14.0,Waste,Biomass
+Western Wood Energy Plant,51.5675,-3.7626,14.0,Biomass,Biomass
+Combermere Abbey,52.9994,-2.5962,14.0,Solar,Solar
+Marsh Farm,51.6264,-2.1108,14.0,Solar,Solar
+Pates Hill,55.8164,-3.6113,14.0,Wind,Wind
+Glanford,53.5411,-0.5056,14.0,Biomass,Biomass
+Walkway,54.6636,-1.3969,14.0,Wind,Wind
+Hafod-Y-Dafal Farm,51.7258,-3.1582,14.0,Solar,Solar
+Newnham Estate,50.4085,-4.0295,14.0,Solar,Solar
+Earlstoun,54.941,-3.9278,14.0,Hydro,Hydro
+Grange,52.7506,0.1662,14.0,Wind,Wind
+Littlewood Farm,52.1267,-0.8052,14.0,Solar,Solar
+Milton Keynes Wind Farm,52.1328,-0.6865,14.0,Wind,Wind
+Pitsea Tipp,51.5371,0.5089,14.0,Waste,Biomass
+Whitemill Wind Farm,52.5926,0.1406,14.0,Wind,Wind
+Goose Willow,51.636,-1.355,14.1,Solar,Solar
+Stoke-on-Trent EfW,52.9887,-2.1832,14.2,Waste,Biomass
+Egmanton Solar Farm - resubmission,53.2113,-0.8798,14.2,Solar,Solar
+Little Morton Solar Farm,53.3039,-0.9932,14.3,Solar,Solar
+Eye Suffolk,52.3334,1.1278,14.3,Biomass,Biomass
+Bankend Rig,55.5783,-4.1342,14.3,Wind,Wind
+New Albion Wind Farm,52.4502,-0.7554,14.4,Wind,Wind
+Bassingbourn Solar Farm,52.0701,-0.0423,14.4,Solar,Solar
+Burton Wold Wind Farm - Northern Extension (resubmission),52.3616,-0.6518,14.4,Wind,Wind
+Charity Farm - CfD,52.8244,-2.8096,14.4,Solar,Solar
+Tullymurdoch Wind Farm,56.6549,-3.3134,14.4,Wind,Wind
+Mepal CHP,52.4284,0.0878,14.4,Biomass,Biomass
+North Pickenham,52.6292,0.7321,14.4,Wind,Wind
+Javelin Park EfW,51.7925,-2.2907,14.5,Waste,Biomass
+Mynydd Clogau,52.5784,-3.4285,14.5,Wind,Wind
+Lodge Farm (Poulshot),51.6176,-2.0531,14.5,Solar,Solar
+Bilsham Farm,50.8138,-0.6357,14.5,Solar,Solar
+Wick Farm Solar Park,51.2871,-2.9813,14.6,Solar,Solar
+Waterloo solar park,52.1493,-0.2563,14.6,Solar,Solar
+Atherstone,52.6131,-1.559,14.7,Solar,Solar
+Brynteg,51.7128,-4.1781,14.79,Solar,Solar
+Hill Farm Solar Park (VoWH),51.6166,-1.348,14.8,Solar,Solar
+Hardingham Solar Farm,52.6041,1.0351,14.8,Solar,Solar
+Ellough Solar Farm,52.434,1.6055,14.88,Solar,Solar
+SPD 2 Hall Farm,52.4976,1.3092,14.91,Solar,Solar
+Pitlochry,56.6991,-3.7406,15.0,Hydro,Hydro
+Glebe Farm Solar Energy Park,52.2526,-0.5893,15.0,Solar,Solar
+Hammond Court Farm,51.5389,-2.5314,15.0,Solar,Solar
+Cnoc Donn Arnicle,55.58,-5.5681,15.0,Wind,Wind
+Kingsburn,56.089,-4.1231,15.0,Wind,Wind
+Ora More,54.3385,-7.8959,15.0,Wind,Wind
+Court Colman solar park,51.5227,-3.6187,15.0,Solar,Solar
+Manor Farm - Pertenhall,52.2679,-0.4234,15.0,Solar,Solar
+Nant,55.9846,-4.821,15.0,Hydro,Hydro
+Cowie Biomass Facility,56.0769,-3.8639,15.0,Biomass,Biomass
+Scottow East2,52.755,1.363,15.0,Solar,Solar
+Molly Mountain,54.1979,-7.6365,15.0,Wind,Wind
+Wingates,55.2753,-1.7964,15.0,Wind,Wind
+Crockandun,54.7395,-6.7719,15.0,Wind,Wind
+Crockagarran,54.5502,-7.0168,15.0,Wind,Wind
+Nutberry,55.5995,-3.9216,15.0,Wind,Wind
+Garves Mountain Farm,55.0018,-6.5649,15.0,Wind,Wind
+Gortfinbar,54.544,-7.0197,15.0,Wind,Wind
+Evermore Renewable Energy (CHP) / Lisahally Power Station,55.0346,-7.2512,15.0,Biomass,Biomass
+Torr Achilty,57.554,-4.5984,15.0,Hydro,Hydro
+Bryn yr Odyn Solar Farm,53.2333,-4.4047,15.0,Solar,Solar
+Black Law Extension - 1b,55.7622,-3.7626,15.0,Wind,Wind
+Curryfree Wind Farm,54.9293,-7.3167,15.0,Wind,Wind
+Jacks Lane,52.8841,0.6874,15.0,Wind,Wind
+Lockleaze Energy Storage,51.4849,-2.5716,15.0,Storage,Storage
+Clachan Flats,56.2881,-4.9429,15.03,Wind,Wind
+Cemmaes,52.6579,-3.6721,15.3,Wind,Wind
+Cemmaes 'C' Wind Farm,52.6399,-3.6743,15.3,Wind,Wind
+Carscreugh Renewable Energy Park,54.8591,-4.728,15.3,Wind,Wind
+Hook Valley Solar Park,51.0486,-2.4349,15.3,Solar,Solar
+Castle Combe,51.4936,-2.2174,15.33,Solar,Solar
+EnviRecover,52.3264,-2.2131,15.5,Waste,Biomass
+Carno 'A'and 'B' Wind Farm  (Extension),52.5423,-3.5792,15.6,Wind,Wind
+Bowbeat (Emly Bank),55.7117,-3.1336,15.6,Wind,Wind
+Hagshaw Hill 1,55.5553,-3.9201,15.6,Wind,Wind
+Bowbeat (Roughside),55.7117,-3.1336,15.6,Wind,Wind
+Deucheran Hill,55.6293,-5.544,15.75,Wind,Wind
+Pingewood Road South,51.4175,-1.0144,15.8,Solar,Solar
+Albrighton Solar farm,52.6395,-2.2507,15.8,Solar,Solar
+Prestop Park,52.7568,-1.499,15.85,Solar,Solar
+Coldham,52.603,0.1149,16.0,Wind,Wind
+Coal Clough RP,53.7497,-2.15,16.0,Wind,Wind
+Discovery Park,51.2839,1.3457,16.0,Biomass,Biomass
+Goosey Lodge Industrial Estate,52.0207,-0.5994,16.0,Biomass,Biomass
+Parc Adfer EfW,53.2368,-3.0343,16.0,Waste,Biomass
+Fen Farm,53.4233,0.069,16.0,Wind,Wind
+Deeping,52.7326,-0.2257,16.0,Wind,Wind
+Coldham,52.5972,0.0951,16.0,Wind,Wind
+Langhope Rig,55.4707,-2.9399,16.0,Wind,Wind
+Caton Moor Windfarm Repowering,54.0698,-2.654,16.0,Wind,Wind
+Glass Moor,52.5186,-0.1088,16.0,Wind,Wind
+Church Hill,54.654,-7.7128,16.0,Wind,Wind
+Chelveston Airfield,52.3027,-0.5253,16.0,Solar,Solar
+Kirkwall,58.9848,-2.9587,16.0,Oil,Oil
+Bagmoor,53.6277,-0.6672,16.0,Wind,Wind
+Marchwood ERF,50.8981,-1.4553,16.0,Waste,Biomass
+Earlseat,56.1737,-3.0813,16.0,Wind,Wind
+Knabs Ridge,53.999,-1.6496,16.0,Wind,Wind
+Crucis Farm,51.7241,-1.9132,16.06,Solar,Solar
+Shantavny Scotch,54.4766,-7.09,16.1,Wind,Wind
+Hare Hill 2,55.3628,-4.1263,16.15,Wind,Wind
+Boyndie,57.6607,-2.6518,16.3,Wind,Wind
+Cotton Farm,52.2615,-0.1952,16.4,Wind,Wind
+Bishopthorpe,53.5099,-0.0007,16.4,Wind,Wind
+Bryn Du,52.4147,-3.707,16.4,Wind,Wind
+Lincoln EFW,53.1992,-0.6071,16.4,Waste,Biomass
+Yelvertoft,52.3748,-1.1511,16.4,Wind,Wind
+Gayton Le Marsh Wind Farm,53.3626,0.166,16.4,Wind,Wind
+Finlarig,56.2441,-4.2164,16.5,Hydro,Hydro
+Croydon / Church Farm (Royston),52.1285,-0.0797,16.5,Solar,Solar
+Stokes Marsh Farm,51.3076,-2.0846,16.6,Solar,Solar
+Turweston Solar Farm,52.0328,-1.1053,16.7,Solar,Solar
+Boyndie Airfield,57.6653,-2.639,16.7,Wind,Wind
+Odell Glebe Solar Farm,52.2317,-0.5968,16.8,Solar,Solar
+Carno 'A' Wind Farm,52.5423,-3.5792,16.8,Wind,Wind
+Callagheen,54.4178,-8.093,16.9,Wind,Wind
+Hadley Farm (Orta Membury Solar Farm),51.4806,-1.564,17.0,Solar,Solar
+Watnall,53.0164,-1.2319,17.0,Solar,Solar
+Culligran,57.346,-4.7627,17.0,Hydro,Hydro
+Meall an Tuirc Wind Farm,57.71,-4.427,17.0,Wind,Wind
+Little Barford GT,52.2046,-0.2693,17.0,Gas,Gas
+Littlebourne,51.2738,1.1439,17.0,Solar,Solar
+Livishie,57.2202,-4.6474,17.0,Hydro,Hydro
+Liberty Steel Dalzell,55.7884,-3.9822,17.0,Biomass,Biomass
+Rainham Phase II,51.4903,0.1938,17.0,Waste,Biomass
+Roos,53.7518,-0.0697,17.1,Wind,Wind
+Dun Law 1,55.8065,-2.846,17.16,Wind,Wind
+Scottow W II,52.756,1.353,17.2,Solar,Solar
+Fforch Nest Wind Farm pt2,51.6065,-3.496,17.5,Wind,Wind
+Turncole,51.6515,0.8678,17.5,Wind,Wind
+Parham Airfield (Great Glenham),52.1965,1.4101,17.5,Solar,Solar
+Tullo,56.9639,-2.2108,17.5,Wind,Wind
+Castle Eaton Farm,51.6491,-1.7907,17.8,Solar,Solar
+Altaveedan Wind Farm,55.0847,-6.2578,17.9,Wind,Wind
+Waterditch Solar Farm,50.7592,-1.7518,18.0,Solar,Solar
+Withernwick,53.8457,-0.1726,18.0,Wind,Wind
+Millour Hill Community Windfarm (Re-submission),55.7307,-4.775,18.0,Wind,Wind
+Chilton Energy Plant,54.668,-1.5666,18.0,Biomass,Biomass
+Den Brook,50.7801,-3.8666,18.0,Wind,Wind
+Wardlaw Wood,55.7225,-4.7895,18.0,Wind,Wind
+Molehill Farm,51.3566,1.0854,18.0,Solar,Solar
+Edintore Wind Farm,57.5057,-2.9625,18.0,Wind,Wind
+Orrin,57.5294,-4.5585,18.0,Hydro,Hydro
+Caeremlyn Solar Farm,51.8279,-4.6334,18.0,Solar,Solar
+Whitemoor,53.8146,-0.9922,18.0,Biomass,Biomass
+Lochluichart (Extension),57.6801,-4.8414,18.0,Wind,Wind
+Bann Road (Rasharkin),54.9592,-6.5147,18.0,Solar,Solar
+Uskmouth Power Station,51.5485,-2.9492,18.0,Biomass,Biomass
+Pitworthy Farm Solar Park,50.8214,-4.4275,18.0,Solar,Solar
+Llynfi Renewable Energy Park  Land at Mynydd Caerau,51.6449,-3.6211,18.0,Wind,Wind
+Christchurch Energy,50.7555,-1.7502,18.0,Solar,Solar
+Wether Hill,55.2231,-4.0452,18.2,Wind,Wind
+Sundorne,52.7349,-2.708,18.23,Solar,Solar
+North Quay ERF,50.7961,0.0944,18.3,Waste,Biomass
+Home Farm (Merton - solar),51.8648,-1.1438,18.3,Solar,Solar
+Fenland Farm,52.312,0.222,18.4,Solar,Solar
+Glenconway,54.976,-7.0296,18.4,Wind,Wind
+KELLAS WIND FARM,57.5677,-3.396,18.4,Wind,Wind
+Kildrummy,57.2253,-2.7029,18.4,Wind,Wind
+Batsworthy Cross,50.9717,-3.6891,18.45,Wind,Wind
+Wathegar 2 Wind Farm,58.4352,-3.2159,18.5,Wind,Wind
+North Steads Wind Farm,55.265,-1.6248,18.5,Wind,Wind
+Shin,57.9333,-4.4,18.6,Hydro,Hydro
+Wix Lodge,51.9128,1.1241,18.7,Solar,Solar
+Tangy,55.4953,-5.6666,18.7,Wind,Wind
+Six Hills Solar Farm,52.7806,-1.0262,18.7,Solar,Solar
+Rolleston Park Farm,52.8397,-1.6854,18.7,Solar,Solar
+Slieve Divena Phase 2 Wind Farm,54.5086,-7.1064,18.8,Wind,Wind
+Boxted Airfield,51.9431,0.9296,18.8,Solar,Solar
+Branston solar park,53.1813,-0.4736,18.9,Solar,Solar
+Hadlow Solar Park,51.1869,0.3409,18.92,Solar,Solar
+Pentylands Farm,51.653,-1.7305,19.0,Solar,Solar
+Aspatria,54.778,-3.3241,19.0,Solar,Solar
+Beckton Gas Pressure Reduction Station,51.5182,0.0885,19.0,Biomass,Biomass
+Pearie Law,55.8205,-3.5624,19.2,Wind,Wind
+Teesside EfW,54.5969,-1.2583,19.2,Waste,Biomass
+Sheffield ERF,53.3867,-1.4482,19.3,Waste,Biomass
+An Suidhe,56.2187,-5.2194,19.3,Wind,Wind
+Mingay Farm - extension,52.3351,0.1571,19.3,Solar,Solar
+Newton Ferrers,50.4741,-4.3163,19.5,Solar,Solar
+Artfield Fell,54.9704,-4.7746,19.5,Wind,Wind
+Kinlochleven Hydro Power Station,56.7146,-4.9634,19.5,Hydro,Hydro
+Chelveston Renewable Energy Park - Solar Extension,52.3041,-0.5286,19.5,Solar,Solar
+Netherfield Lane,53.2311,-1.0914,19.7,Solar,Solar
+Penny Hill Lane,53.3834,-1.2975,19.8,Wind,Wind
+Says Court,51.5336,-2.4494,19.81,Solar,Solar
+Kilmorack,57.4632,-4.5121,20.0,Hydro,Hydro
+Hunter's Hill,54.439,-7.3415,20.0,Wind,Wind
+Invergarry,57.0721,-4.774,20.0,Hydro,Hydro
+Cockhill Solar Farm,51.3315,-2.224,20.0,Solar,Solar
+Claredown Farm,52.0707,0.6078,20.0,Storage,Storage
+Lascar Works,53.5975,-2.2951,20.0,Storage,Storage
+Craigengelt,56.0543,-4.0497,20.0,Wind,Wind
+Aston House Solar Farm,52.8817,-1.743,20.0,Solar,Solar
+Stags Holt,52.5698,0.1233,20.0,Wind,Wind
+Carland Cross RP,50.3509,-5.0306,20.0,Wind,Wind
+Pant y wal extension,51.5872,-3.522,20.0,Wind,Wind
+Great Blakenham EfW,52.1039,1.0984,20.0,Waste,Biomass
+Noriker Power Staunch,53.0329,-2.2433,20.0,Storage,Storage
+Aigas,57.4574,-4.5453,20.0,Hydro,Hydro
+Cornwall ERC,50.3725,-4.8894,20.0,Waste,Biomass
+Scottow West,52.756,1.353,20.0,Solar,Solar
+Screggagh,54.4624,-7.3329,20.0,Wind,Wind
+Sycamore Farm,50.9924,0.8763,20.0,Solar,Solar
+Land approx 75m South of 141,54.6863,-7.0886,20.0,Wind,Wind
+Land at Carnegie Road,53.4199,-2.9276,20.0,Storage,Storage
+Chapel Lane Parley Solar Farm Phase 1,50.7918,-1.8612,20.0,Solar,Solar
+Burton Wold Windfarm,52.3608,-0.6431,20.0,Wind,Wind
+Ceannacroc,57.1582,-4.9317,20.0,Hydro,Hydro
+Land to the west of Clay Hill Pit / Larport Farm,52.054,-2.622,20.0,Storage,Storage
+Widnes 3MG Biomass/Mersey Bioenergy (CHP) Plant,53.3546,-2.7513,20.0,Biomass,Biomass
+Broxburn,55.9192,-3.4554,20.0,Storage,Storage
+North Creake Airfield (Resubmission),52.9057,0.8302,20.0,Solar,Solar
+Langford Wind Farm,52.059,-0.2453,20.0,Wind,Wind
+Haverton Hill Incinerator,54.5945,-1.2602,20.1,Waste,Biomass
+Balderton,53.048,-0.8107,20.3,Biomass,Biomass
+Llyn Alaw,53.3534,-4.4379,20.4,Wind,Wind
+Verwood Solar Farm,50.8652,-1.883,20.4,Solar,Solar
+Llanbabo Wind Farm,53.3544,-4.4656,20.4,Wind,Wind
+Cour Wind Farm,55.6807,-5.4849,20.5,Wind,Wind
+Wandylaw,55.5196,-1.7642,20.5,Wind,Wind
+Bradwell,51.7098,0.821,20.5,Wind,Wind
+Sixpenny Wood,53.738,-0.8114,20.5,Wind,Wind
+Gaultney Solar Park,52.4488,-0.7982,20.5,Solar,Solar
+Ewe Hill II,55.1071,-3.3339,20.7,Wind,Wind
+Middlewick,51.6631,0.8925,20.7,Wind,Wind
+Crystal Rig Extension II,55.9129,-2.5455,20.7,Wind,Wind
+Townlands of Carrickatane,54.8949,-7.1997,20.7,Wind,Wind
+Lackford Estate Solar Park,52.2888,0.611,20.9,Solar,Solar
+Rathsherry (Revised Application),54.9515,-6.1757,21.0,Wind,Wind
+North East Energy Recovery Centre (adjacent to Teesside EfW),54.5969,-1.2583,21.0,Waste,Biomass
+Grange Farm (Avon),51.5397,-2.5227,21.0,Solar,Solar
+Dunmore,55.0687,-6.889,21.0,Wind,Wind
+Tir Mostyn & Foel Goch,53.117,-3.4911,21.25,Wind,Wind
+Langenhoe Solar Farm,51.8141,0.9368,21.3,Solar,Solar
+Chalgrove Solar,51.6705,-1.0597,21.34,Solar,Solar
+Ince Bio Power,53.2827,-2.8189,21.5,Biomass,Biomass
+Windy Standard,55.2971,-4.1829,21.6,Wind,Wind
+North Rhins,54.8771,-5.0881,22.0,Wind,Wind
+Mount Farm,52.0719,-1.9102,22.0,Solar,Solar
+Tonge Corner Farm,51.3551,0.7808,22.0,Solar,Solar
+Swinford,52.4119,-1.1663,22.0,Wind,Wind
+Glen App,55.0007,-4.9897,22.0,Wind,Wind
+Elginny Hill Resubmission,54.9326,-6.1929,22.0,Wind,Wind
+Greatmoor EfW,51.9143,-0.9989,22.0,Waste,Biomass
+Hull Biomass Plant (Tansterne power station),53.819,-0.1465,22.0,Biomass,Biomass
+Glenkerie,55.5385,-3.4205,22.0,Wind,Wind
+Chelveston II,52.305,-0.53,22.1,Solar,Solar
+Bury Lane,52.0796,0.002,22.22,Solar,Solar
+Mynydd Bwllfa Wind Farm - Resubmission,51.7147,-3.5098,22.5,Wind,Wind
+Freasdail Wind Farm,55.777,-5.4706,22.5,Wind,Wind
+Burn of Whilk,58.3568,-3.2039,22.5,Wind,Wind
+North Yard EfW,50.3971,-4.1849,22.5,Waste,Biomass
+Alltwalis,51.8555,-4.3053,23.0,Wind,Wind
+Blaengwen (Re-Submission),51.9778,-4.238,23.0,Wind,Wind
+Four Ashes EfW,52.674,-2.1177,23.0,Waste,Biomass
+Hayle Wave Hub (Test Site),50.205,-5.4423,23.0,Wave and Tidal,Other
+Crook Hill (Revised Application - Rochdale MBC) 2 of 2,53.6705,-2.1148,23.8,Wind,Wind
+Beinneun Windfarm Extension,57.0956,-4.9655,23.8,Wind,Wind
+Inverclyde Wind Farm (Corlic Hill),55.9185,-4.7289,24.0,Wind,Wind
+Hyndburn Wind Farm,53.7143,-2.389,24.0,Wind,Wind
+Ardrossan,55.6439,-4.8061,24.0,Wind,Wind
+Kendoon,55.0736,-4.1408,24.0,Hydro,Hydro
+Rusholme,53.7303,-0.948,24.0,Wind,Wind
+Red Tile,52.4305,-0.0292,24.0,Wind,Wind
+Stowbridge Farm,52.329,0.2182,24.0,Solar,Solar
+Glenlee,54.941,-3.9278,24.0,Hydro,Hydro
+Stornoway,58.2092,-6.3865,24.0,Oil,Oil
+Maerdy,51.6978,-3.5179,24.0,Wind,Wind
+Tiers Cross Solar Farm,51.7491,-5.0407,24.0,Solar,Solar
+West Durham Wind Farm,54.7638,-1.815,24.0,Wind,Wind
+Gib Lane (Aston Clinton solar park),51.8106,-0.7338,24.2,Solar,Solar
+Tirgwynt,52.6105,-3.4791,24.6,Wind,Wind
+Hall Farm Routh,53.8737,-0.3609,24.6,Wind,Wind
+Abbots Ripton,52.3787,-0.1982,24.67,Solar,Solar
+Rosehall,57.9956,-4.547,24.7,Wind,Wind
+Little Raith Farm,56.1194,-3.2522,25.0,Wind,Wind
+Keadby GT,53.5944,-0.7504,25.0,Gas,Gas
+Minnygap (Resubmission),55.2488,-3.5148,25.0,Wind,Wind
+Pant y wal,51.6129,-3.505,25.0,Wind,Wind
+Tynemouth Energy Storage System (TESS),55.026,-1.5031,25.0,Storage,Storage
+Easter Tulloch Wind Farm (Tullo Extension),56.8364,-2.3957,25.0,Wind,Wind
+Bann Road (Tullaghans Road),54.9985,-6.4404,25.0,Solar,Solar
+Ridham CHP Plant,51.3823,0.7588,25.0,Biomass,Biomass
+Energy Works (Hull),53.7585,-0.3304,25.0,Biomass,Biomass
+Inverawe,57.0363,-5.6812,25.0,Hydro,Hydro
+Castlecraig,54.6309,-7.5872,25.0,Wind,Wind
+Gruig,55.0188,-6.2857,25.0,Wind,Wind
+Drayton Manor Farm,52.2003,-1.7751,25.0,Solar,Solar
+St. Johns Hill,56.8886,-2.2724,25.0,Wind,Wind
+Hillside Solar Farm,54.5601,-6.1807,25.2,Solar,Solar
+Whiteside Hill,55.3574,-4.0294,25.3,Wind,Wind
+Former Maghaberry Airfield,54.5058,-6.1863,25.7,Solar,Solar
+Glens of Foudland,57.4253,-2.6361,26.0,Wind,Wind
+Caledonian Papermill,55.5796,-4.6395,26.0,Biomass,Biomass
+Dungavel,55.6086,-4.0977,26.0,Wind,Wind
+Wadlow,52.166,0.316,26.0,Wind,Wind
+Ardley EfW,51.8813,-1.2304,26.0,Waste,Biomass
+Beddington EfW,51.3805,-0.1472,26.0,Waste,Biomass
+Altahullion,54.9702,-6.9996,26.0,Wind,Wind
+Lynemouth,55.2016,-1.5396,26.0,Wind,Wind
+Bicker Fen,52.9379,-0.2178,26.0,Wind,Wind
+Glebe,52.251,-0.586,26.0,Solar,Solar
+Burnhead Moss,55.9121,-3.7748,26.0,Wind,Wind
+Wryde Croft,52.6422,-0.0323,26.0,Wind,Wind
+Hagshaw Hill 2,55.5666,-3.9203,26.0,Wind,Wind
+South Creake,52.8619,0.7713,26.0,Solar,Solar
+Maesgwyn,51.7365,-3.6596,26.0,Wind,Wind
+Bad a Cheo Wind Farm,58.4205,-3.4292,26.7,Wind,Wind
+Green Knowes,56.2492,-3.6663,27.0,Wind,Wind
+Lynt Farm,51.6625,-1.7004,27.0,Solar,Solar
+Allerton Waste Recovery Park (EfW),54.0326,-1.3805,27.0,Waste,Biomass
+Walkers Wood Solar Park,53.3124,-0.9997,27.0,Solar,Solar
+Laceby Solar Farm,53.5251,-0.1461,27.1,Solar,Solar
+Glenchamber,54.9634,-4.7543,27.5,Wind,Wind
+Ben Aketil,57.4298,-6.4583,27.6,Wind,Wind
+Long Mountain,54.9841,-6.442,27.6,Wind,Wind
+Toddleburn,55.7686,-2.8774,27.6,Wind,Wind
+Hill of Glaschyle Wind Farm,57.5105,-3.6156,27.6,Wind,Wind
+Assel Valley,55.2265,-4.7787,27.6,Wind,Wind
+Glenconway 2 (formerly Altahullion Phase III),54.9705,-7.0348,27.6,Wind,Wind
+Calder Water Community Wind Farm,55.6374,-4.2119,28.0,Wind,Wind
+Kelburn,55.7563,-4.8062,28.0,Wind,Wind
+Crighshane,54.6399,-7.7526,28.0,Wind,Wind
+Tappaghan Wind Farm,54.5471,-7.6956,28.5,Wind,Wind
+Hillhouse Farm,51.7357,-2.3624,28.5,Solar,Solar
+Drone Hill,55.8979,-2.2619,28.6,Wind,Wind
+Black Hill,55.7992,-2.4322,28.6,Wind,Wind
+Twin Rivers,53.6082,-0.905,28.7,Wind,Wind
+Penmanshiel Wind Farm,55.8969,-2.3213,28.7,Wind,Wind
+Elms Farm,51.6051,-1.4003,29.0,Solar,Solar
+Beinn an Tuirc 1,55.5732,-5.5874,29.7,Wind,Wind
+Fraisthorpe Wind Farm,54.0479,-0.2307,29.7,Wind,Wind
+Beinn Tharsuinn,57.7882,-4.2482,29.75,Wind,Wind
+Dun Law 2,55.7868,-2.8423,29.75,Wind,Wind
+Cruach Mhor,56.039,-5.1559,29.75,Wind,Wind
+Beinn Tharsuinn Windfarm Project,57.8053,-4.329,29.8,Wind,Wind
+Coire Na Cloiche Wind Farm,57.7696,-4.3732,29.9,Wind,Wind
+Stroupster,58.5719,-3.137,29.9,Wind,Wind
+Hill of Stroupster Windfarm,58.5793,-3.1324,29.9,Wind,Wind
+Quixwood Moor,55.8674,-2.3527,29.9,Wind,Wind
+Lissett,54.0071,-0.2885,29.95,Wind,Wind
+Slieve Divena,54.5086,-7.1064,30.0,Wind,Wind
+Roughside Hill,55.7046,-3.0677,30.0,Wind,Wind
+Troughton Farm,51.9592,-2.1215,30.0,Solar,Solar
+Rose And Crown Farm,52.7121,0.1965,30.0,Solar,Solar
+West Browncastle,55.659,-4.2091,30.0,Wind,Wind
+Curraghamulkin (Dooish Wind Farm),54.5778,-7.5141,30.0,Wind,Wind
+Hywind Scotland Pilot Park (Hywind 2) Demonstrator,57.5075,-1.4426,30.0,Wind,Wind
+Tyseley ERF,52.4557,-1.8499,30.0,Waste,Biomass
+Trident Park,51.4726,-3.1506,30.0,Waste,Biomass
+Copley Farm,53.0222,-0.7353,30.0,Solar,Solar
+Burnfoot Hill,56.2091,-3.7728,30.1,Wind,Wind
+Exning,52.2502,0.3486,30.28,Solar,Solar
+Dalswinton,55.1841,-3.6506,30.8,Wind,Wind
+Tormywheel,55.8048,-3.6721,30.8,Wind,Wind
+Beck Burn (resubmission),55.0107,-3.0263,31.0,Wind,Wind
+Llandinam Windfarm,52.4421,-3.4308,31.0,Wind,Wind
+Fenton Home Farm,51.8195,-4.9189,31.3,Solar,Solar
+Broxted Solar Park,52.1314,0.5172,31.59,Solar,Solar
+Munceys Farm,52.0649,0.011,31.6,Solar,Solar
+Black Peak Farm,52.0782,0.0489,31.8,Solar,Solar
+SELCHP ERF,51.4846,-0.0454,32.0,Cogeneration,Gas
+Dolgarrog,53.1912,-3.8426,32.0,Hydro,Hydro
+Severnside Energy Recovery Centre,51.5406,-2.6553,32.0,Waste,Biomass
+Ffynnon Oer,51.683,-3.6287,32.0,Wind,Wind
+Calliachar,56.6277,-3.8761,32.2,Wind,Wind
+Baglan Bay OCGT,51.5924,-3.7802,32.3,Gas,Gas
+Sanquhar Community Windfarm,55.3442,-4.0466,32.4,Wind,Wind
+Ermine Street Farm solar park,53.0152,-0.5214,32.5,Solar,Solar
+Mynydd Y Gwair Wind Farm (resubmission),51.7492,-3.9381,32.8,Wind,Wind
+Tongland,55.0736,-4.1408,33.0,Hydro,Hydro
+Blackburn Meadows,53.4201,-1.3985,33.0,Biomass,Biomass
+Goole Fields,53.6659,-0.8893,33.0,Wind,Wind
+Ardwick Railway Goods Yard Incinerator (Newhaven EFW Plant),53.474,-2.2079,33.5,Waste,Biomass
+Carno,52.5494,-3.6082,33.6,Wind,Wind
+Coltishall 1,52.7551,1.3569,33.68,Solar,Solar
+Wymeswold Airfield,52.8033,-1.1116,34.0,Solar,Solar
+Halsary Wind Farm,58.4309,-3.4444,34.0,Wind,Wind
+Ratcliffe GT,52.8653,-1.255,34.0,Gas,Gas
+Garreg Lwyd,52.4131,-3.2841,34.0,Wind,Wind
+Tummel,56.7075,-4.021,34.0,Hydro,Hydro
+Mynydd y Betws,51.7728,-3.929,34.5,Wind,Wind
+Tievenameenta,54.705,-7.591,34.5,Wind,Wind
+Water Eaton Farm / Port Farm,51.6433,-1.8178,34.8,Solar,Solar
+Goole Fields 2,53.6768,-0.8868,34.85,Wind,Wind
+Port of Tyne,54.9773,-1.4559,35.0,Storage,Storage
+Airies Farm,54.8021,-4.6577,35.0,Wind,Wind
+Aberthaw Power Station Biomass,51.3875,-3.4066,35.0,Biomass,Biomass
+Slough,51.5095,-0.5954,35.0,Cogeneration,Gas
+Maentwrog,52.946,-3.9879,35.3,Hydro,Hydro
+Auchrobert Wind Farm,55.624,-3.9842,36.0,Wind,Wind
+Chapel Lane Parley Solar Farm Phase 2,50.7959,-1.8563,36.0,Solar,Solar
+Great Glen Scheme,57.2016,-4.7213,36.0,Hydro,Hydro
+Green Rigg,55.1323,-2.127,36.0,Wind,Wind
+Andershaw,55.5093,-3.8463,36.3,Wind,Wind
+Novar 2,57.71,-4.427,36.8,Wind,Wind
+Drumderg,56.6222,-3.232,36.8,Wind,Wind
+Minsca,55.1221,-3.3529,36.8,Wind,Wind
+Clashindarroch,57.3665,-2.8661,36.9,Wind,Wind
+Glenmoriston,57.1971,-4.8694,37.0,Hydro,Hydro
+Kencot Hill Solar Farm (revised application),51.7601,-1.6396,37.0,Solar,Solar
+Lakeside EfW,51.4872,-0.5251,37.0,Waste,Biomass
+Earlsburn,56.0708,-4.0955,37.5,Wind,Wind
+Brockaghboy Wind Farm,54.9806,-6.765,37.5,Wind,Wind
+Brenig Wind Farm (Resubmission),53.109,-3.5031,37.6,Wind,Wind
+Deanie,57.5167,-4.9333,38.0,Hydro,Hydro
+Raventhorpe Farm,53.5604,-0.5813,38.0,Solar,Solar
+Achany,58.0019,-4.5,38.0,Wind,Wind
+Elean,52.3979,0.1297,38.0,Biomass,Biomass
+Longpark,55.6692,-2.8275,38.0,Wind,Wind
+Wilton 10,54.5674,-1.0967,38.0,Biomass,Biomass
+Great Wilbraham Solar Farm,52.1845,0.2699,38.1,Solar,Solar
+Pollnalaght (Cornavarrow),54.5683,-7.441,38.4,Wind,Wind
+Tom Nan Clach (redesign),57.3929,-3.8917,39.0,Wind,Wind
+Oldbury,52.5169,-2.0288,40.0,Biomass,Biomass
+Brigg Renewable Energy Plant (Re-submission),53.5423,-0.5096,40.0,Biomass,Biomass
+Clachan,56.3,-5.5833,40.0,Hydro,Hydro
+Millennium Windfarm,57.1552,-4.8836,40.0,Wind,Wind
+Sleaford Renewable Energy Plant,52.999,-0.3827,40.0,Biomass,Biomass
+Cowdown Lane,51.1961,-1.4601,40.0,Solar,Solar
+Huggin's Hall,51.0936,0.5083,40.0,Storage,Storage
+West Burton GT,53.3631,-0.7976,40.0,Gas,Gas
+Margam Green Energy Plant,51.5633,-3.7479,40.0,Biomass,Biomass
+Fairburn,57.5329,-4.6315,40.0,Wind,Wind
+Scottow,52.756,1.353,40.3,Solar,Solar
+Bloxwich Battery,52.5901,-2.01,41.0,Storage,Storage
+Canworthy Water,50.7035,-4.4906,41.0,Solar,Solar
+Edinbane,57.4691,-6.4322,41.0,Wind,Wind
+Rothes 2,57.5373,-3.363,41.4,Wind,Wind
+Blyth Offshore Wind Test Site,55.167,-1.3644,41.5,Wind,Wind
+Thetford,52.4486,0.7253,41.5,Biomass,Biomass
+SAICA Paper Mill,53.4251,-2.4195,41.6,Biomass,Biomass
+Templeborough Biomass Power Plant- Rotherham,53.4226,-1.3734,42.0,Biomass,Biomass
+Windyhill Road (Dunbeg) Wind Farm,55.0804,-6.8886,42.0,Wind,Wind
+A'Chruach,56.1528,-5.3102,42.6,Wind,Wind
+Tilbury Green Power,51.4604,0.3497,43.0,Biomass,Biomass
+Beinn an Tuirc 2,55.5732,-5.5874,43.7,Wind,Wind
+Tween Bridge,53.6223,-0.9356,44.0,Wind,Wind
+Snetterton Biomass Plant,52.4791,0.9544,44.2,Biomass,Biomass
+Burghfield,51.4563,-0.9711,45.0,Oil,Oil
+Vine Farm Solar Park,52.1112,-0.0691,45.0,Solar,Solar
+Chickerell,50.6114,-2.4533,45.0,Oil,Oil
+Rannoch,56.6333,-4.3667,45.0,Hydro,Hydro
+Lochay,54.9667,-3.4667,46.0,Hydro,Hydro
+Landmead Farm (East Hanney),51.644,-1.3736,46.0,Solar,Solar
+Carraig Gheal,56.339,-5.2945,46.0,Wind,Wind
+Corriemoillie,57.6687,-4.773,47.5,Wind,Wind
+Kilbraur Windfarm,58.0404,-4.0588,47.5,Wind,Wind
+Aikengall,55.9172,-2.4901,48.0,Wind,Wind
+Southwick Estate,50.8844,-1.0813,48.0,Solar,Solar
+Hill of Towie,57.6228,-3.341,48.3,Wind,Wind
+Causeymire,58.4435,-3.0854,48.3,Wind,Wind
+Wilton 11 EfW,54.5674,-1.0967,49.0,Waste,Biomass
+Roosecote,54.1052,-3.19,49.0,Storage,Storage
+Pelham,51.9374,0.1192,49.0,Storage,Storage
+Iggesund Paperboard CHP Plant,54.664,-3.5473,49.0,Biomass,Biomass
+Eveley,51.1076,-1.5302,49.33,Solar,Solar
+Kentish Flats Extension,51.45,1.08,49.5,Wind,Wind
+Snarlton Farm (Melksham solar farm),51.3734,-2.0897,49.6,Solar,Solar
+K3 CHP Facility (Kemsley EfW),51.3669,0.7589,49.9,Waste,Biomass
+West Raynham,52.7905,0.7448,49.9,Solar,Solar
+Creyke Beck,53.7983,-0.421,49.9,Storage,Storage
+Thornhill,53.6908,-1.6291,50.0,Gas,Gas
+Wroughton Airfield Solar Park,51.5104,-1.8124,50.0,Solar,Solar
+Steven's Croft,55.1524,-3.3809,50.0,Cogeneration,Gas
+Camster,58.4087,-3.2715,50.0,Wind,Wind
+Afton Wind Farm,55.3116,-4.1743,50.0,Wind,Wind
+Fibrepower  Slough,51.5244,-0.6277,50.0,Waste,Biomass
+Frodsham Wind Farm Ltd,53.3006,-2.7689,50.4,Wind,Wind
+Middle Muir Wind Farm,55.5129,-3.804,51.0,Wind,Wind
+Aberthaw GT,51.3875,-3.4068,51.0,Gas,Gas
+Allington EFW,51.2865,0.4904,51.0,Waste,Biomass
+Rothes,57.5373,-3.363,51.0,Wind,Wind
+Harburnhead Wind Farm,55.8087,-3.5322,51.7,Wind,Wind
+Owl's Hatch Solar Park,51.3516,1.0986,51.94,Solar,Solar
+Baillie,58.5679,-3.677,52.5,Wind,Wind
+Coolkeeragh OCGT,55.0437,-7.2487,53.0,Gas,Gas
+Blackcraig,55.1199,-4.0321,53.0,Wind,Wind
+Middlemoor,55.4986,-1.7678,54.0,Wind,Wind
+Slieve Rushen Extension,54.1903,-7.6284,54.0,Wind,Wind
+Ray,55.1822,-2.0714,54.4,Wind,Wind
+Black Law 2,55.7622,-3.7626,55.42,Wind,Wind
+Rheidol,52.4076,-3.8772,55.98,Hydro,Hydro
+Mark Hill,55.1284,-4.7463,56.0,Wind,Wind
+Grain GT,51.4444,0.7114,56.0,Gas,Gas
+Sandbach,53.1623,-2.4037,56.0,Gas,Gas
+Castleford,53.7259,-1.3626,56.0,Gas,Gas
+Brechfa Forest West,51.9606,-4.1234,57.4,Wind,Wind
+Mid Hill I,56.9688,-2.4862,57.5,Wind,Wind
+Blackburn,53.75,-2.4833,59.0,Gas,Gas
+Cefn Croes,52.405,-3.7507,59.0,Wind,Wind
+Little Cheyne Court,50.9638,0.8227,59.8,Wind,Wind
+Scroby Sands,52.6439,1.7889,60.0,Wind,Wind
+Edmonton,51.6163,-0.0404,60.0,Waste,Biomass
+North Hoyle,53.4172,-3.4486,60.0,Wind,Wind
+Moy,57.3888,-4.0488,60.0,Wind,Wind
+Aikengall II  Wester Dod Community Wind Farm,55.9172,-2.4901,60.8,Wind,Wind
+Clunie,57.55,-2.6167,61.2,Hydro,Hydro
+Windy Standard II Wind Farm (Brockloch Rig Phase 1),55.2922,-4.2031,61.5,Wind,Wind
+Teesside,54.6453,-1.0955,62.0,Wind,Wind
+Crystal Rig,55.883,-2.5075,63.0,Wind,Wind
+Paul's Hill,57.4462,-3.4762,64.0,Wind,Wind
+Gunfleet Sands 2,51.7272,1.2459,65.0,Wind,Wind
+Markinch CHP,56.2012,-3.1623,65.0,Cogeneration,Gas
+Scout Moor,53.669,-2.2679,65.0,Wind,Wind
+Millennium,57.1552,-4.8836,65.0,Wind,Wind
+Fullabrook Down Wind Farm,51.1569,-4.1027,66.0,Wind,Wind
+Galawhistle,55.5396,-3.9754,66.0,Wind,Wind
+Berry Burn,57.4466,-3.4754,66.7,Wind,Wind
+Lerwick,60.1545,-1.1494,67.0,Oil,Oil
+Kilbraur,57.9924,-3.9787,67.5,Wind,Wind
+Strathy North,58.49,-4.0336,67.65,Wind,Wind
+Keadby,53.6118,-0.7637,68.0,Wind,Wind
+Dersalloch,55.3043,-4.4882,69.0,Wind,Wind
+Lochluichart,57.6546,-4.8167,69.0,Wind,Wind
+Corriegarth,57.1901,-4.3596,69.0,Wind,Wind
+MOD Lyneham,51.5066,-1.968,69.8,Solar,Solar
+Gordonbush,58.0595,-3.9591,70.0,Wind,Wind
+Riverside Resource Recovery Facility (RRRF),51.4683,0.1178,72.0,Waste,Biomass
+Braes of Doune Wind Farm,56.2698,-4.0589,72.0,Wind,Wind
+Shotwick,53.2409,-3.0227,72.21,Solar,Solar
+Slieve Kirk,54.9203,-7.2889,73.6,Wind,Wind
+Drax GT,53.7364,-0.9981,75.0,Gas,Gas
+Mid Hill,56.9688,-2.4862,75.9,Wind,Wind
+Ferrybridge Multi-fuel,53.7164,-1.2819,79.0,Biomass,Biomass
+Runcorn EfW,53.3257,-2.7524,81.0,Waste,Biomass
+Beinneun,57.0956,-4.9655,85.0,Wind,Wind
+Kype Muir Wind Farm,55.6327,-4.0361,88.4,Wind,Wind
+Robin Rigg West,54.7473,-3.7293,90.0,Wind,Wind
+Rhyl Flats,53.3776,-3.6402,90.0,Wind,Wind
+Robin Rigg East,54.7642,-3.6955,90.0,Wind,Wind
+Barrow,53.9915,-3.2983,90.0,Wind,Wind
+Burbo Bank,53.4882,-3.1849,90.0,Wind,Wind
+Kentish Flats,51.4606,1.0938,90.0,Wind,Wind
+Farr,57.3339,-4.103,92.0,Wind,Wind
+European Offshore Wind Deployment Centre (EOWDC) (Aberdeen Bay - Demonstration site),57.1462,-2.0728,93.2,Wind,Wind
+Dunmaglass,57.2515,-4.2558,94.1,Wind,Wind
+Lynn,53.1356,0.4515,97.0,Wind,Wind
+Inner Dowsing,53.188,0.4465,97.0,Wind,Wind
+Didcot GT,51.6246,-1.2683,100.0,Gas,Gas
+Glendoe,57.1437,-4.6592,100.0,Hydro,Hydro
+Gunfleet Sands 1,51.7308,1.218,108.0,Wind,Wind
+Whitelee Windfarm Extension phase 2,55.6394,-4.3176,109.0,Wind,Wind
+Bhlaraidh (previously Balmacaan),57.2191,-4.5819,110.0,Wind,Wind
+Ballylumford B OCGT,54.845,-5.787,116.0,Gas,Gas
+Hadyard Hill,55.2568,-4.7319,119.6,Wind,Wind
+Arecleoch,55.0688,-4.7971,120.0,Wind,Wind
+Black Law,55.7622,-3.7626,124.2,Wind,Wind
+Harestanes,55.239,-3.5742,136.0,Wind,Wind
+Crystal Rig 2,55.8995,-2.5293,138.0,Wind,Wind
+Indian Queens,50.3955,-4.8996,140.0,Oil,Oil
+Cowes,50.7469,-1.2862,140.0,Gas,Gas
+Kilroot OCGT,54.7251,-5.7643,142.0,Gas,Gas
+Fallago Rig,55.8313,-2.688,144.0,Wind,Wind
+Taylor's Lane GT,51.5459,-0.2575,144.0,Gas,Gas
+Glanford Brigg,53.5411,-0.5055,150.0,Gas,Gas
+Ormonde,54.0889,-3.4386,150.0,Wind,Wind
+Sloy,56.2512,-4.7117,152.5,Hydro,Hydro
+Clyde Wind Farm Extension (Clyde 2),55.5041,-3.5479,172.8,Wind,Wind
+Dorenell Wind Farm (Previously Site A and B Scaut Hill),57.3509,-3.1317,177.0,Wind,Wind
+Fellside CHP,54.4184,-3.4883,180.0,Cogeneration,Gas
+Walney 2,54.0807,-3.609,184.0,Wind,Wind
+Walney 1,54.0394,-3.5158,184.0,Wind,Wind
+Griffin,56.5812,-3.7338,188.6,Wind,Wind
+Westermost Rough,53.0977,0.5615,210.0,Wind,Wind
+Whitelee 2,55.6772,-4.2868,217.02,Wind,Wind
+Humber Gateway,53.3875,0.5006,219.0,Wind,Wind
+Stronelairg Wind Farm,57.1269,-4.5264,228.0,Wind,Wind
+Pen y Cymoedd,51.6555,-3.6957,228.0,Wind,Wind
+Uskmouth Power,51.5491,-2.9705,230.0,Coal,Coal
+Barry,51.4089,-3.2301,235.0,Gas,Gas
+Kilgallioch wind farm,54.9885,-4.8017,239.0,Wind,Wind
+Peterborough,52.5769,-0.204,240.0,Gas,Gas
+Burbo Bank Extension (Burbo Bank 2),53.48,-3.27,258.0,Wind,Wind
+Lincs,53.1842,0.4981,270.0,Wind,Wind
+Race Bank (Phase 1),53.136,0.5892,286.5,Wind,Wind
+Foyers,57.2618,-4.4835,300.0,Hydro,Hydro
+Thanet,51.4299,1.6334,300.0,Wind,Wind
+Sheringham Shoal BMU 1 & 2,53.1353,1.1479,316.0,Wind,Wind
+Whitelee,55.6812,-4.2791,322.0,Wind,Wind
+Clyde Wind Farm,55.4416,-3.5427,350.0,Wind,Wind
+Galloper Wind Farm,51.88,2.04,353.0,Wind,Wind
+Ffestiniog,52.9807,-3.9686,360.0,Hydro,Hydro
+West of Duddon Sands,53.9851,-3.462,389.0,Wind,Wind
+Cottam Development Centre,53.3051,-0.7858,395.0,Gas,Gas
+EFDA JJET Fusion Flywheel,51.6579,-1.2287,400.0,Storage,Storage
+Rampion Offshore Wind Farm (Hastings Zone),50.64,-0.18,400.0,Wind,Wind
+Corby,52.5104,-0.6814,401.0,Gas,Gas
+Dudgeon East,53.1175,0.6135,402.0,Wind,Wind
+Enfield,51.6625,-0.0225,408.0,Gas,Gas
+Coolkeeragh,55.0437,-7.2487,408.0,Gas,Gas
+Seabank 2,51.5392,-2.67,410.0,Gas,Gas
+Great Yarmouth,52.5839,1.7338,420.0,Gas,Gas
+Shoreham,50.8292,-0.2311,420.0,Gas,Gas
+Cruachan,56.394,-5.115,440.0,Hydro,Hydro
+Cruachan,56.4112,-5.1135,440.0,Hydro,Hydro
+Greater Gabbard,51.9176,1.9284,504.0,Wind,Wind
+Deeside,53.2332,-3.0547,515.0,Gas,Gas
+Baglan Bay CCGT,51.6145,-3.8352,520.0,Gas,Gas
+Kilroot,54.7255,-5.7653,520.0,Coal,Coal
+Ballylumford B,54.845,-5.787,540.0,Gas,Gas
+Gwynt y Mor,53.454,-3.6266,576.0,Wind,Wind
+Beatrice,58.0882,-2.9502,588.0,Wind,Wind
+Killingholme,53.6535,-0.2556,600.0,Gas,Gas
+Ballylumford C,54.8428,-5.7853,616.0,Gas,Gas
+London Array,51.6217,1.4958,630.0,Wind,Wind
+Walney 3,54.09,-3.74,660.0,Wind,Wind
+Medway,51.4396,0.6894,700.0,Gas,Gas
+Rye House,51.7626,0.0094,715.0,Gas,Gas
+Little Barford,52.2046,-0.2693,720.0,Gas,Gas
+Coryton,51.5119,0.5079,800.0,Gas,Gas
+Damhead Creek,51.4249,0.6014,805.0,Gas,Gas
+Rocksavage,53.3147,-2.7232,810.0,Gas,Gas
+Seabank 1,51.5392,-2.67,812.0,Gas,Gas
+Sutton Bridge,52.7579,0.1923,819.0,Gas,Gas
+Marchwood,50.8998,-1.4384,842.0,Gas,Gas
+Severn Power,51.5475,-2.975,850.0,Gas,Gas
+Spalding,52.773,-0.1441,880.0,Gas,Gas
+Carrington,53.4366,-2.4077,900.0,Gas,Gas
+Langage,50.3882,-4.0118,905.0,Gas,Gas
+Hinkley Point B,51.2085,-3.1334,955.0,Nuclear,Nuclear
+Hunterston B,55.7204,-4.8964,965.0,Nuclear,Nuclear
+Dungeness B,50.9133,0.964,1050.0,Nuclear,Nuclear
+Heysham 1,54.0285,-2.916,1155.0,Nuclear,Nuclear
+Hartlepool,54.6341,-1.1801,1180.0,Nuclear,Nuclear
+Peterhead,57.4772,-1.7889,1180.0,Gas,Gas
+Torness,55.9679,-2.4086,1185.0,Nuclear,Nuclear
+Sizewell B,52.2145,1.6206,1198.0,Nuclear,Nuclear
+Hornsea 1 - Heron & Njord,53.6815,1.4207,1200.0,Wind,Wind
+Saltend,53.735,-0.2432,1200.0,Gas,Gas
+Heysham 2,54.0285,-2.916,1230.0,Nuclear,Nuclear
+VPI Immingham,53.6366,-0.2395,1240.0,Cogeneration,Gas
+South Humber Bank,53.6008,-0.1446,1310.0,Gas,Gas
+West Burton CCGT,53.3631,-0.7976,1332.0,Gas,Gas
+Connahs Quay,53.2317,-3.0815,1380.0,Gas,Gas
+Grain CHP,51.4444,0.7114,1404.0,Cogeneration,Gas
+Didcot B,51.6246,-1.2683,1470.0,Gas,Gas
+Aberthaw B,51.3873,-3.4049,1586.0,Coal,Coal
+Dinorwig,53.1186,-4.1139,1728.0,Hydro,Hydro
+Staythorpe C,53.073,-0.8585,1772.0,Gas,Gas
+Dinorwig,53.1181,-4.1032,1800.0,Hydro,Hydro
+Eggborough,53.7116,-1.1269,1960.0,Coal,Coal
+Drax,53.7356,-0.9911,1980.0,Coal,Coal
+Ratcliffe,52.8653,-1.255,2000.0,Coal,Coal
+Cottam,53.304,-0.7815,2008.0,Coal,Coal
+West Burton,53.3604,-0.8102,2012.0,Coal,Coal
+Pembroke,51.685,-4.99,2180.0,Gas,Gas
