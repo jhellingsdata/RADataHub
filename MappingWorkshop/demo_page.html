@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Maps - Vega-Lite Demo</title>
+    
+    <!-- Vega-Lite and Vega-Embed -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: left;
+        }
+        
+        h2 {
+            color: #555;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        
+        .viz-container {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+        
+        .viz-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scotland and Wales Regional Analysis</h1>
+    
+    <!-- Configuration -->
+    <script>
+        // Base path for data files - empty by default for relative paths
+        const BASE_PATH = "";
+    </script>
+    
+    <!-- Base Maps Section -->
+    <section id="base-maps">
+        <h2>Country Boundaries</h2>
+        
+        <div class="viz-container">
+            <div id="scotland-map"></div>
+        </div>
+        
+        <div class="viz-container">
+            <div id="wales-map"></div>
+        </div>
+        
+        <div class="viz-container">
+            <div id="scotland-lad-map"></div>
+        </div>
+        
+        <div class="viz-container">
+            <div id="wales-lad-map"></div>
+        </div>
+    </section>
+    
+    <!-- Choropleth Maps Section -->
+    <section id="choropleth-maps">
+        <h2>Local Authority Districts</h2>
+        
+        <div class="viz-container">
+            <div id="scotland-choropleth"></div>
+        </div>
+        
+        <div class="viz-container">
+            <div id="wales-choropleth"></div>
+        </div>
+    </section>
+    
+    <!-- Interactive Choropleth Maps Section -->
+    <section id="interactive-choropleth-maps">
+        <h2>Regional Economic Indicators</h2>
+        
+        <div class="viz-container">
+            <div id="scotland-interactive-choropleth"></div>
+        </div>
+        
+        <div class="viz-container">
+            <div id="wales-interactive-choropleth"></div>
+        </div>
+    </section>
+    
+    <!-- Wales MSOA Population Density Section -->
+    <section id="wales-msoa-density">
+        <h2>Wales Population Density (MSOA Level)</h2>
+        
+        <div class="viz-container">
+            <div id="wales-msoa-density"></div>
+        </div>
+    </section>
+    
+    <script>
+        // Scotland Map Specification (using TopoJSON)
+        const scotlandSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "title": "Scotland",
+            "width": 500,
+            "height": 400,
+            "data": {
+                "url": BASE_PATH + "geo_data/scotland.topojson",
+                "format": {"type": "topojson", "feature": "data"}
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "#e0f3ff",
+                "stroke": "#0066cc",
+                "strokeWidth": 1
+            },
+            "projection": {
+                "type": "mercator"
+            }
+        };
+        
+        // Wales Map Specification (using TopoJSON)
+        const walesSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "title": "Wales",
+            "width": 500,
+            "height": 400,
+            "data": {
+                "url": BASE_PATH + "geo_data/wales.topojson",
+                "format": {"type": "topojson", "feature": "data"}
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "#ffe0e0",
+                "stroke": "#cc0000",
+                "strokeWidth": 1
+            },
+            "projection": {
+                "type": "mercator"
+            }
+        };
+        
+        // Scotland LAD Base Map Specification
+        const scotlandLadSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "title": "Scotland Local Authorities",
+            "width": 500,
+            "height": 600,
+            "data": {
+                "url": BASE_PATH + "geo_data/LAD_SCT_2025_05.topojson",
+                "format": {"type": "topojson", "feature": "object_name"}
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "#f0f8ff",
+                "stroke": "#0066cc",
+                "strokeWidth": 0.5
+            },
+            "projection": {
+                "type": "mercator"
+            }
+        };
+        
+        // Wales LAD Base Map Specification
+        const walesLadSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "title": "Wales Local Authorities",
+            "width": 500,
+            "height": 600,
+            "data": {
+                "url": BASE_PATH + "geo_data/LAD_WLS_2025_05.topojson",
+                "format": {"type": "topojson", "feature": "object_name"}
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "#fff0f0",
+                "stroke": "#cc0000",
+                "strokeWidth": 0.5
+            },
+            "projection": {
+                "type": "mercator"
+            }
+        };
+        
+        // Scotland LAD Choropleth - Wages
+        const scotlandChoroplethSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "title": "Scotland Wages by Local Authority (2024)",
+            "width": 500,
+            "height": 600,
+            "data": {
+                "url": BASE_PATH + "series_data/wages_LAD_SCT.csv"
+            },
+            "transform": [{
+                "lookup": "geo_id",
+                "from": {
+                    "data": {
+                        "url": BASE_PATH + "geo_data/LAD_SCT_2025_05.topojson",
+                        "format": {"type": "topojson", "feature": "object_name"}
+                    },
+                    "key": "properties.LAD25CD",
+                    "fields": ["type", "geometry", "properties"]
+                }
+            }, {
+                "filter": "datum.date == 2024"
+            }],
+            "mark": {
+                "type": "geoshape",
+                "stroke": "white",
+                "strokeWidth": 0.5
+            },
+            "encoding": {
+                "color": {
+                    "field": "value",
+                    "type": "quantitative",
+                    "scale": {"scheme": "blues"},
+                    "title": "Wages (£)"
+                },
+                "tooltip": [
+                    {"field": "properties.LAD25NM", "type": "nominal", "title": "Local Authority District"},
+                    {"field": "value", "type": "quantitative", "title": "Wages (£)"},
+                    {"field": "date", "type": "quantitative", "title": "Year"}
+                ]
+            },
+            "projection": {
+                "type": "mercator"
+            }
+        };
+        
+        // Wales LAD Choropleth - Wages
+        const walesChoroplethSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "title": "Wales Wages by Local Authority (2024)",
+            "width": 500,
+            "height": 600,
+            "data": {
+                "url": BASE_PATH + "series_data/wages_LAD_WLS.csv"
+            },
+            "transform": [{
+                "lookup": "geo_id",
+                "from": {
+                    "data": {
+                        "url": BASE_PATH + "geo_data/LAD_WLS_2025_05.topojson",
+                        "format": {"type": "topojson", "feature": "object_name"}
+                    },
+                    "key": "properties.LAD25CD",
+                    "fields": ["type", "geometry", "properties"]
+                }
+            }, {
+                "filter": "datum.date == 2024"
+            }],
+            "mark": {
+                "type": "geoshape",
+                "stroke": "white",
+                "strokeWidth": 0.5
+            },
+            "encoding": {
+                "color": {
+                    "field": "value",
+                    "type": "quantitative",
+                    "scale": {"scheme": "reds"},
+                    "title": "Wages (£)"
+                },
+                "tooltip": [
+                    {"field": "properties.LAD25NM", "type": "nominal", "title": "Local Authority District"},
+                    {"field": "value", "type": "quantitative", "title": "Wages (£)"},
+                    {"field": "date", "type": "quantitative", "title": "Year"}
+                ]
+            },
+            "projection": {
+                "type": "mercator"
+            }
+        };
+        
+        // Scotland Interactive Choropleth - Multiple Metrics
+        const scotlandInteractiveSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "title": "Scotland Wages Over Time",
+            "width": 500,
+            "height": 600,
+            "params": [
+                {
+                    "name": "year_select",
+                    "value": 2024,
+                    "bind": {
+                        "input": "range",
+                        "min": 2020,
+                        "max": 2024,
+                        "step": 1,
+                        "name": "Year: "
+                    }
+                }
+            ],
+            "projection": {
+                "type": "mercator"
+            },
+            "layer": [
+                {
+                    "data": {
+                        "url": BASE_PATH + "geo_data/LAD_SCT_2025_05.topojson",
+                        "format": {"type": "topojson", "feature": "object_name"}
+                    },
+                    "mark": {
+                        "type": "geoshape",
+                        "fill": "lightgrey",
+                        "stroke": "white",
+                        "strokeWidth": 0.5
+                    }
+                },
+                {
+                    "data": {
+                        "url": BASE_PATH + "series_data/wages_LAD_SCT.csv"
+                    },
+                    "transform": [
+                        {
+                            "filter": "datum.date == year_select"
+                        },
+                        {
+                            "lookup": "geo_id",
+                            "from": {
+                                "data": {
+                                    "url": BASE_PATH + "geo_data/LAD_SCT_2025_05.topojson",
+                                    "format": {"type": "topojson", "feature": "object_name"}
+                                },
+                                "key": "properties.LAD25CD"
+                            },
+                            "as": "geo"
+                        }
+                    ],
+                    "mark": {
+                        "type": "geoshape",
+                        "stroke": "white",
+                        "strokeWidth": 0.5
+                    },
+                    "encoding": {
+                        "shape": {"field": "geo", "type": "geojson"},
+                        "color": {
+                            "field": "value",
+                            "type": "quantitative",
+                            "scale": {"scheme": "viridis"},
+                            "title": "Wages (£)"
+                        },
+                        "tooltip": [
+                            {"field": "geo.properties.LAD25NM", "type": "nominal", "title": "Local Authority District"},
+                            {"field": "value", "type": "quantitative", "title": "Wages (£)", "format": ",.0f"},
+                            {"field": "date", "type": "quantitative", "title": "Year"}
+                        ]
+                    }
+                }
+            ]
+        };
+        
+        // Wales Interactive Choropleth - Multiple Metrics
+        const walesInteractiveSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "title": "Wales Wages Over Time",
+            "width": 500,
+            "height": 600,
+            "params": [
+                {
+                    "name": "year_select",
+                    "value": 2024,
+                    "bind": {
+                        "input": "range",
+                        "min": 2020,
+                        "max": 2024,
+                        "step": 1,
+                        "name": "Year: "
+                    }
+                }
+            ],
+            "projection": {
+                "type": "mercator"
+            },
+            "layer": [
+                {
+                    "data": {
+                        "url": BASE_PATH + "geo_data/LAD_WLS_2025_05.topojson",
+                        "format": {"type": "topojson", "feature": "object_name"}
+                    },
+                    "mark": {
+                        "type": "geoshape",
+                        "fill": "lightgrey",
+                        "stroke": "white",
+                        "strokeWidth": 0.5
+                    }
+                },
+                {
+                    "data": {
+                        "url": BASE_PATH + "series_data/wages_LAD_WLS.csv"
+                    },
+                    "transform": [
+                        {
+                            "filter": "datum.date == year_select"
+                        },
+                        {
+                            "lookup": "geo_id",
+                            "from": {
+                                "data": {
+                                    "url": BASE_PATH + "geo_data/LAD_WLS_2025_05.topojson",
+                                    "format": {"type": "topojson", "feature": "object_name"}
+                                },
+                                "key": "properties.LAD25CD"
+                            },
+                            "as": "geo"
+                        }
+                    ],
+                    "mark": {
+                        "type": "geoshape",
+                        "stroke": "white",
+                        "strokeWidth": 0.5
+                    },
+                    "encoding": {
+                        "shape": {"field": "geo", "type": "geojson"},
+                        "color": {
+                            "field": "value",
+                            "type": "quantitative",
+                            "scale": {"scheme": "plasma"},
+                            "title": "Wages (£)"
+                        },
+                        "tooltip": [
+                            {"field": "geo.properties.LAD25NM", "type": "nominal", "title": "Local Authority District"},
+                            {"field": "value", "type": "quantitative", "title": "Wages (£)", "format": ",.0f"},
+                            {"field": "date", "type": "quantitative", "title": "Year"}
+                        ]
+                    }
+                }
+            ]
+        };
+        
+        // Wales MSOA Population Density Choropleth
+        const walesMSOADensitySpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "title": "Wales Population Density by MSOA (2021 Census)",
+            "width": 500,
+            "height": 600,
+            "data": {
+                "url": BASE_PATH + "series_data/wales_pop_density_msoa.csv"
+            },
+            "transform": [
+                {
+                    "lookup": "geo_id",
+                    "from": {
+                        "data": {
+                            "url": BASE_PATH + "geo_data/MSOA_WLS_2021.topojson",
+                            "format": {"type": "topojson", "feature": "data"}
+                        },
+                        "key": "properties.MSOA21CD"
+                    },
+                    "as": "geo"
+                }
+            ],
+            "mark": {
+                "type": "geoshape",
+                "stroke": "white",
+                "strokeWidth": 0.2
+            },
+            "encoding": {
+                "color": {
+                    "field": "value",
+                    "type": "quantitative",
+                    "scale": {
+                        "scheme": "oranges",
+                        "type": "log"
+                    },
+                    "title": "Population Density (people per km²)"
+                },
+                "tooltip": [
+                    {"field": "value", "type": "quantitative", "title": "Pop. Density", "format": ".1f"},
+                    {"field": "geo_id", "type": "nominal", "title": "MSOA Code"}
+                ]
+            },
+            "projection": {
+                "type": "mercator"
+            }
+        };
+        
+        
+        // Embed the visualizations
+        vegaEmbed('#scotland-map', scotlandSpec);
+        vegaEmbed('#wales-map', walesSpec);
+        vegaEmbed('#scotland-lad-map', scotlandLadSpec);
+        vegaEmbed('#wales-lad-map', walesLadSpec);
+        vegaEmbed('#scotland-choropleth', scotlandChoroplethSpec);
+        vegaEmbed('#wales-choropleth', walesChoroplethSpec);
+        vegaEmbed('#scotland-interactive-choropleth', scotlandInteractiveSpec);
+        vegaEmbed('#wales-interactive-choropleth', walesInteractiveSpec);
+        vegaEmbed('#wales-msoa-density', walesMSOADensitySpec);
+    </script>
+    
+</body>
+</html>
