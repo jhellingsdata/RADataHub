@@ -60,12 +60,12 @@
     }
   },
   "mark": {"type": "line", "color": "#36B7B4"},
-  "background": "rgb(247, 247, 247)",
+  "background": "transparent",
   "encoding": {
     "x": {"axis": {"format": "%Y"}, "field": "date", "type": "temporal"},
     "y": {
       "axis": {
-        "format": ".1%"
+        "format": "%"
       },
       "field": "value",
       "title": "",
@@ -75,7 +75,7 @@
   "width": "container",
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%201/productivity_growth.csv",
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%201/productivity_growth.csv"
   },
   "autosize": {"type": "fit", "contains": "padding", "resize": false}
 }
