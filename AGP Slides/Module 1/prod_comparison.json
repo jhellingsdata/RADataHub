@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "background": "transparent",
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%201/g7_investment_share_gdp.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/AGP%20Slides/Module%201/g7_labor_productivity_long.csv"
   },
   "autosize": {"type": "fit", "contains": "padding", "resize": false},
   "layer": [
@@ -12,7 +12,7 @@
         "x": {"axis": {"format": "%Y"}, "field": "year", "type": "temporal"},
         "y": {
           "axis": {"format": "%"},
-          "field": "value",
+          "field": "indexed_2000",
           "title": "Investment (% of GDP)",
           "type": "quantitative"
         },
@@ -37,7 +37,7 @@
           "groupby": ["country"]
         },
         {"calculate": "datum.last.year", "as": "year"},
-        {"calculate": "datum.last.value", "as": "value"}
+        {"calculate": "datum.last.indexed_2000", "as": "value"}
       ],
       "mark": {"type": "circle", "size": 50},
       "encoding": {
@@ -60,7 +60,7 @@
           "groupby": ["country"]
         },
         {"calculate": "datum.last.year", "as": "year"},
-        {"calculate": "datum.last.value", "as": "value"},
+        {"calculate": "datum.last.indexed_2000", "as": "value"},
         {"filter": "datum.country === 'United Kingdom'"}
       ],
       "mark": {"type": "text", "align": "left", "dx": 8, "baseline": "middle", "fontWeight": "bold"},
