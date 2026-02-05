@@ -2,12 +2,15 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "background": "transparent",
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/AGP%20Slides/Module%201/g7_labor_productivity_long.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%201/g7_labor_productivity_long.csv"
   },
   "autosize": {"type": "fit", "contains": "padding", "resize": false},
+  "transform": [
+    {"filter": "datum.country === 'United Kingdom' || datum.country === 'United States'"}
+  ],
   "layer": [
     {
-      "mark": {"type": "line"},
+      "mark": {"type": "line", "strokeWidth": 2},
       "encoding": {
         "x": {"axis": {"format": "%Y"}, "field": "year", "type": "temporal"},
         "y": {
@@ -19,14 +22,6 @@
         "color": {
           "field": "country",
           "legend": null
-        },
-        "strokeWidth": {
-          "condition": {"test": "datum.country === 'United Kingdom'", "value": 3},
-          "value": 2
-        },
-        "opacity": {
-          "condition": {"test": "datum.country === 'United Kingdom'", "value": 1},
-          "value": 0.6
         }
       }
     },
@@ -46,10 +41,6 @@
         "color": {
           "field": "country",
           "legend": null
-        },
-        "opacity": {
-          "condition": {"test": "datum.country === 'United Kingdom'", "value": 1},
-          "value": 0.6
         }
       }
     },
@@ -60,8 +51,7 @@
           "groupby": ["country"]
         },
         {"calculate": "datum.last.year", "as": "year"},
-        {"calculate": "datum.last.indexed_2000", "as": "value"},
-        {"filter": "datum.country === 'United Kingdom'"}
+        {"calculate": "datum.last.indexed_2000", "as": "value"}
       ],
       "mark": {"type": "text", "align": "left", "dx": 8, "baseline": "middle", "fontWeight": "bold"},
       "encoding": {
