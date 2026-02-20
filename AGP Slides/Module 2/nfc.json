@@ -3,8 +3,11 @@
   "width": 600, "height": 400,
   "data": {"url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%202/uk_us_nfc_finance_long.csv"},
   "transform": [
-    {"filter": "datum.Value !== null && datum.Value !== ''"},
-    {"filter": "datum.indicator === 'Total credit to NFCs (% of GDP)'"}
+    {"filter": "datum.value !== null && datum.value !== ''"},
+    {"filter": "datum.indicator === 'NFC debt securities outstanding (USD bn)'"},
+    {"calculate": "year(datum.date) == 2010 ? datum.value : null", "as": "base_check"},
+    {"joinaggregate": [{"op": "mean", "field": "base_check", "as": "base_value"}], "groupby": ["country"]},
+    {"calculate": "(datum.value / datum.base_value) * 100", "as": "indexed_value"}
   ],
   "mark": {
     "type": "line",
@@ -16,23 +19,18 @@
       "type": "temporal"
     },
     "y": {
-      "aggregate": "sum",
-      "field": "value",
-      "title": "Total credit to NFCs (% of GDP)",
-      "type": "quantitative",
-      "axis":{
-        "format":"~s"
-      }
+      "field": "indexed_value",
+      "title": "NFC debt securities outstanding (2010 = 100)",
+      "type": "quantitative"
     },
     "color": {
       "field": "country",
       "legend": {
         "labelLimit": 0,
         "orient": "top-left",
-        "symbolSize": 200,
-        "symbolStrokeWidth": 2.5,
+        "symbolSize": 100,
+        "symbolStrokeWidth":2.5,
         "title":"Country"
-        
       }
     }
   },
