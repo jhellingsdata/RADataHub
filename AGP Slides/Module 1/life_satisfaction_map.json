@@ -9,7 +9,7 @@
       "lookup": "properties.LAD21CD",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%201/life_satisfaction.csv"
+          "url": "life_satisfaction.csv"
         },
         "key": "id",
         "fields": ["id", "country", "life_satisfaction"]
@@ -28,25 +28,29 @@
       },
       "encoding": {
         "color": {
-          "field": "life_satisfaction",
-          "type": "quantitative",
-          "legend": {
-            "title": "Life satisfaction (out of 10)",
-            "titleFontWeight": "normal",
-            "labelExpr": "(datum.value == 6.5 ? '<' : datum.value == 8.0 ? '>' : '') + format(datum.value, '.1f')",
-            "values": [6.5, 7.0, 7.5, 8.0]
+          "condition": {
+            "test": "isValid(datum.life_satisfaction) && datum.life_satisfaction > 0",
+            "field": "life_satisfaction",
+            "type": "quantitative",
+            "legend": {
+              "title": "Life satisfaction (out of 10)",
+              "titleFontWeight": "normal",
+              "labelExpr": "(datum.value == 6.5 ? '<' : datum.value == 8.0 ? '>' : '') + format(datum.value, '.1f')",
+              "values": [6.5, 7.0, 7.5, 8.0]
+            },
+            "scale": {
+              "clamp": true,
+              "domain": [6.5, 8.0],
+              "type": "linear",
+              "range": [
+                "rgb(235, 61, 75)",
+                "rgb(230, 189, 81)",
+                "rgb(73, 191, 161)",
+                "rgb(111, 181, 219)"
+              ]
+            }
           },
-          "scale": {
-            "clamp": true,
-            "domain": [6.5, 8.0],
-            "type": "linear",
-            "range": [
-              "rgb(235, 61, 75)",
-              "rgb(230, 189, 81)",
-              "rgb(73, 191, 161)",
-              "rgb(111, 181, 219)"
-            ]
-          }
+          "value": "lightgrey"
         },
         "tooltip": [
           {"field": "country", "title": "Local Authority"},
