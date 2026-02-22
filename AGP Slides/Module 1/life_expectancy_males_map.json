@@ -4,24 +4,31 @@
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Productivity/map%20of%20the%20day/lad_2021.geojson",
     "format": {"type": "json", "property": "features"}
   },
-  "transform": [
-    {
-      "lookup": "properties.LAD21CD",
-      "from": {
-        "data": {
-          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%201/life_satisfaction.csv"
-        },
-        "key": "id",
-        "fields": ["id", "country", "life_satisfaction"]
-      }
-    }
-  ],
   "projection": {"type": "identity", "reflectY": true},
   "layer": [
     {
       "mark": {
         "type": "geoshape",
-        "color": "lightgrey",
+        "fill": "lightgrey",
+        "stroke": "grey",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "transform": [
+        {
+          "lookup": "properties.LAD21CD",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%201/life_expectancy_males_birth.csv"
+            },
+            "key": "id",
+            "fields": ["id", "country", "life_expectancy"]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
         "stroke": "grey",
         "strokeWidth": 0.5,
         "clip": true
@@ -29,18 +36,18 @@
       "encoding": {
         "color": {
           "condition": {
-            "test": "isValid(datum.life_satisfaction) && datum.life_satisfaction > 0",
-            "field": "life_satisfaction",
+            "test": "isValid(datum.life_expectancy) && datum.life_expectancy > 0",
+            "field": "life_expectancy",
             "type": "quantitative",
             "legend": {
-              "title": "Life satisfaction (out of 10)",
+              "title": "Life expectancy at birth (males)",
               "titleFontWeight": "normal",
-              "labelExpr": "(datum.value == 6.5 ? '<' : datum.value == 8.0 ? '>' : '') + format(datum.value, '.1f')",
-              "values": [6.5, 7.0, 7.5, 8.0]
+              "labelExpr": "(datum.value == 74 ? '<' : datum.value == 84 ? '>' : '') + format(datum.value, '.0f')",
+              "values": [74, 77, 80, 84]
             },
             "scale": {
               "clamp": true,
-              "domain": [6.5, 8.0],
+              "domain": [74, 84],
               "type": "linear",
               "range": [
                 "rgb(235, 61, 75)",
@@ -54,7 +61,7 @@
         },
         "tooltip": [
           {"field": "country", "title": "Local Authority"},
-          {"field": "life_satisfaction", "title": "Life satisfaction", "format": ".2f"}
+          {"field": "life_expectancy", "title": "Life expectancy (males)", "format": ".1f"}
         ]
       }
     }
