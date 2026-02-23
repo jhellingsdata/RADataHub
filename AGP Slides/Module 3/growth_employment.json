@@ -1,0 +1,261 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "UK Real GDP and Total Weekly Hours Worked",
+    "anchor": "start",
+    "subtitle": "Last 20 years | Source: ONS via Economics Observatory API",
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "height": 500,
+  "width": 900,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "background": "#ffffff",
+  "view": {
+    "fill": "#ffffff",
+    "strokeOpacity": 0
+  },
+  "encoding": {
+    "x": {
+      "field": "date_parsed",
+      "type": "temporal",
+      "axis": {
+        "title": "",
+        "format": "%Y Q%q",
+        "grid": false,
+        "labelColor": "#122B39"
+      }
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://api.economicsobservatory.com/gbr/gdp_r?vega",
+        "format": {
+          "type": "json"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "toDate(datum.date)",
+          "as": "date_parsed"
+        },
+        {
+          "filter": "datum.date_parsed >= timeOffset('year', now(), -20)"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "color": "#1f77b4",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          },
+          "axis": {
+            "title": "Real GDP (GBP millions, CVM SA)",
+            "titleColor": "#1f77b4",
+            "labelColor": "#1f77b4",
+            "grid": false
+          }
+        },
+        "tooltip": [
+          {
+            "field": "date_parsed",
+            "type": "temporal",
+            "title": "Period",
+            "format": "%Y Q%q"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Real GDP"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://api.economicsobservatory.com/gbr/hours?vega",
+        "format": {
+          "type": "json"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "toDate(datum.date)",
+          "as": "date_parsed"
+        },
+        {
+          "filter": "datum.date_parsed >= timeOffset('year', now(), -20)"
+        },
+        {
+          "calculate": "datum.value > 100000 ? datum.value / 1000000 : datum.value",
+          "as": "hours_millions"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "color": "#d62728",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "y": {
+          "field": "hours_millions",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          },
+          "axis": {
+            "title": "Total Weekly Hours Worked (millions)",
+            "orient": "right",
+            "titleColor": "#d62728",
+            "labelColor": "#d62728",
+            "grid": false
+          }
+        },
+        "tooltip": [
+          {
+            "field": "date_parsed",
+            "type": "temporal",
+            "title": "Period",
+            "format": "%Y Q%q"
+          },
+          {
+            "field": "hours_millions",
+            "type": "quantitative",
+            "title": "Weekly Hours (m)"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://api.economicsobservatory.com/gbr/gdp_r?vega",
+        "format": {
+          "type": "json"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "toDate(datum.date)",
+          "as": "date_parsed"
+        },
+        {
+          "filter": "datum.date_parsed >= timeOffset('year', now(), -20)"
+        },
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "as": "rn"
+            }
+          ],
+          "sort": [
+            {
+              "field": "date_parsed",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.rn == 1"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "dy": -8,
+        "fontWeight": "bold",
+        "color": "#1f77b4"
+      },
+      "encoding": {
+        "x": {
+          "field": "date_parsed",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "GDP"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://api.economicsobservatory.com/gbr/hours?vega",
+        "format": {
+          "type": "json"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "toDate(datum.date)",
+          "as": "date_parsed"
+        },
+        {
+          "filter": "datum.date_parsed >= timeOffset('year', now(), -20)"
+        },
+        {
+          "calculate": "datum.value > 100000 ? datum.value / 1000000 : datum.value",
+          "as": "hours_millions"
+        },
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "as": "rn"
+            }
+          ],
+          "sort": [
+            {
+              "field": "date_parsed",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.rn == 1"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "dy": 8,
+        "fontWeight": "bold",
+        "color": "#d62728"
+      },
+      "encoding": {
+        "x": {
+          "field": "date_parsed",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "hours_millions",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Hours"
+        }
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

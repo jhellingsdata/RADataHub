@@ -1,0 +1,124 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#ffffff",
+  "config": {
+    "view": {
+      "fill": "#ffffff",
+      "strokeOpacity": 0
+    }
+  },
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "hconcat": [
+    {
+      "title": {
+        "text": "Employment rate",
+        "anchor": "start",
+        "subtitle": "Ages 16 and over, % | Source: ONS via ECO API",
+        "fontSize": 14,
+        "subtitleFontSize": 12,
+        "color": "#000000",
+        "subtitleColor": "#000000"
+      },
+      "height": 320,
+      "width": 300,
+      "data": {
+        "url": "https://api.economicsobservatory.com/gbr/empl?vega",
+        "format": { "type": "json" }
+      },
+      "transform": [{ "filter": "year(datum.date) >= 2005" }],
+      "mark": {
+        "type": "line",
+        "color": "#f4134d",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": { "title": "", "grid": false }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "scale": { "domainMin": 57 },
+          "axis": { "title": "", "grid": false }
+        }
+      }
+    },
+    {
+      "title": {
+        "text": "Unemployment rate",
+        "anchor": "start",
+        "subtitle": "Ages 16 and over, % | Source: ONS via ECO API",
+        "fontSize": 14,
+        "subtitleFontSize": 12,
+        "color": "#000000",
+        "subtitleColor": "#000000"
+      },
+      "height": 320,
+      "width": 300,
+      "data": {
+        "url": "https://api.economicsobservatory.com/gbr/unem?vega",
+        "format": { "type": "json" }
+      },
+      "transform": [{ "filter": "year(datum.date) >= 2005" }],
+      "mark": {
+        "type": "line",
+        "color": "#f4134d",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": { "title": "", "grid": false }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "scale": { "domainMin": 3 },
+          "axis": { "title": "", "grid": false }
+        }
+      }
+    },
+    {
+      "title": {
+        "text": "Inactivity rate",
+        "anchor": "start",
+        "subtitle": "Ages 16 and over, % | Source: ONS via ECO API",
+        "fontSize": 14,
+        "subtitleFontSize": 12,
+        "color": "#000000",
+        "subtitleColor": "#000000"
+      },
+      "height": 320,
+      "width": 300,
+      "data": {
+        "url": "https://api.economicsobservatory.com/gbr/inac?vega",
+        "format": { "type": "json" }
+      },
+      "transform": [{ "filter": "year(datum.date) >= 2005" }],
+      "mark": {
+        "type": "line",
+        "color": "#f4134d",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": { "title": "", "grid": false }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "scale": { "domainMin": 19 },
+          "axis": { "title": "", "grid": false }
+        }
+      }
+    }
+  ]
+}

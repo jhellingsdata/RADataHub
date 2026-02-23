@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Graduates",
+    "anchor": "start",
+    "subtitle": "Population with NVQ4+  | Source: ONS through ECO API",
+    "fontSize": "14",
+    "subtitleFontSize": "12",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "height": "250",
+  "width": "container",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "background": "#ffffff",
+  "view": {
+    "fill": "#ffffff",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "url": "https://api.economicsobservatory.com/gbr/nvq4?vega",
+    "format": {
+      "type": "json"
+    }
+  },
+  "mark": {
+    "type": "line",
+    "color": "#f4134d",
+    "strokeWidth": "2"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": "",
+        "titleColor": "#122B39",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "domainMin": 7500000
+      },
+      "axis": {
+        "title": "",
+        "titleColor": "#122B39",
+        "grid": false
+      }
+    }
+  }
+}
