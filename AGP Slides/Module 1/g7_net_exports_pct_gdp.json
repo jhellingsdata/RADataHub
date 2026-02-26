@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "background": "transparent",
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%201/gfcf_pct_gdp_chart.csv"
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%201/net_exports_pct_gdp_chart.csv"
   },
   "autosize": {"type": "fit", "contains": "padding", "resize": false},
   "layer": [
@@ -25,7 +25,7 @@
           "field": "value",
           "type": "quantitative",
           "axis": {"format": "%"},
-          "title": "Investment (% of GDP)"
+          "title": "Net Exports (% of GDP)"
         },
         "color": {
           "field": "country",

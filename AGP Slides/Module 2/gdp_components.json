@@ -1,4 +1,31 @@
 {
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "A simple donut chart with embedded data.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%202/gdp_components_latest.csv"
+  },
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative", "stack": true},
+    "color": {
+      "field": "component",
+      "type": "nominal",
+      "legend": {
+        "orient": "top",
+        "title": "Component"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "arc", "innerRadius": 100, "outerRadius": 150}
+    },
+    {
+      "mark": {"type": "text", "radius": 175, "fontSize": 13},
+      "encoding": {
+        "text": {"field": "value", "type": "quantitative", "format": ",.0f"}
+      }
+    }
+  ],
   "config": {
     "font": "Circular Std",
     "mark": {"line": {"interpolate": "monotone"}},
@@ -58,25 +85,5 @@
       "titleX": 0,
       "titleY": -7
     }
-  },
-  "mark": {"type": "line", "color": "#36B7B4"},
-  "background": "transparent",
-  "encoding": {
-    "x": {"axis": {"format": "%Y"}, "field": "date", "type": "temporal"},
-    "y": {
-      "field": "uk_tfp",
-      "title": "UK Total Factor Productivity (2021=1)",
-      "type": "quantitative",
-      "scale": {"zero": false}
-    }
-  },
-  "width": "container",
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
-  "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%201/uk_total_factor_productivity.csv"
-  },
-  "transform": [{"filter": "toDate(datum.date) >= toDate('1980-01-01')"}],
-  "autosize": {"type": "fit", "contains": "padding", "resize": false},
-  "height":400,
-  "width":600
+  }
 }

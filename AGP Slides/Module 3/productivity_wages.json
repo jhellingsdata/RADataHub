@@ -1,0 +1,103 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Real Weekly Wages & Productivity",
+    "anchor": "start",
+    "subtitle": "Average weekly wage, constant prices, £ (left) | Productivity index (right) | Source: ONS through ECO API",
+    "fontSize": "14",
+    "subtitleFontSize": "12",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "height": 500,
+  "width": 900,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "background": "#ffffff",
+  "view": {
+    "fill": "#ffffff",
+    "strokeOpacity": 0
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://api.economicsobservatory.com/gbr/wage_r?vega",
+        "format": {
+          "type": "json"
+        }
+      },
+      "transform": [
+        {"filter": "year(datum.date) >= 2005"}
+      ],
+      "mark": {
+        "type": "line",
+        "color": "#f4134d",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": {
+            "title": "",
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          },
+          "axis": {
+            "title": "Weekly Wage (£)",
+            "titleColor": "#f4134d",
+            "grid": false
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "https://api.economicsobservatory.com/gbr/prod?vega",
+        "format": {
+          "type": "json"
+        }
+      },
+      "transform": [
+        {"filter": "year(datum.date) >= 2005"}
+      ],
+      "mark": {
+        "type": "line",
+        "color": "#1a85ff",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          },
+          "axis": {
+            "title": "Productivity Index",
+            "titleColor": "#1a85ff",
+            "orient": "right",
+            "grid": false
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#ffffff",
+  "config": {
+    "view": {
+      "fill": "#ffffff",
+      "strokeOpacity": 0
+    },
+    "header": {
+      "labelFontSize": 14,
+      "labelColor": "#000000"
+    }
+  },
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "title": {
+    "text": "UK PISA scores by subject",
+    "anchor": "start",
+    "subtitle": "Rankings comparison 2000–2022 (Mathematics, Science, Reading) | Source: Wikipedia (PISA)",
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "data": {
+    "values": [
+      { "subject": "Mathematics", "year": 2000, "rank": 7, "score": 529 },
+      { "subject": "Mathematics", "year": 2003, "rank": 17, "score": 508 },
+      { "subject": "Mathematics", "year": 2006, "rank": 23, "score": 495 },
+      { "subject": "Mathematics", "year": 2009, "rank": 26, "score": 492 },
+      { "subject": "Mathematics", "year": 2012, "rank": 24, "score": 494 },
+      { "subject": "Mathematics", "year": 2015, "rank": 27, "score": 492 },
+      { "subject": "Mathematics", "year": 2018, "rank": 18, "score": 502 },
+      { "subject": "Mathematics", "year": 2022, "rank": 14, "score": 489 },
+      { "subject": "Science", "year": 2006, "rank": 13, "score": 515 },
+      { "subject": "Science", "year": 2009, "rank": 14, "score": 514 },
+      { "subject": "Science", "year": 2012, "rank": 19, "score": 514 },
+      { "subject": "Science", "year": 2015, "rank": 15, "score": 509 },
+      { "subject": "Science", "year": 2018, "rank": 14, "score": 505 },
+      { "subject": "Science", "year": 2022, "rank": 15, "score": 500 },
+      { "subject": "Reading", "year": 2000, "rank": 8, "score": 523 },
+      { "subject": "Reading", "year": 2003, "rank": 10, "score": 507 },
+      { "subject": "Reading", "year": 2006, "rank": 16, "score": 495 },
+      { "subject": "Reading", "year": 2009, "rank": 23, "score": 494 },
+      { "subject": "Reading", "year": 2012, "rank": 21, "score": 499 },
+      { "subject": "Reading", "year": 2015, "rank": 22, "score": 498 },
+      { "subject": "Reading", "year": 2018, "rank": 14, "score": 504 },
+      { "subject": "Reading", "year": 2022, "rank": 13, "score": 494 }
+    ]
+  },
+  "facet": {
+    "column": {
+      "field": "subject",
+      "type": "nominal",
+      "sort": ["Mathematics", "Science", "Reading"],
+      "title": ""
+    }
+  },
+  "resolve": {
+    "scale": { "y": "independent" }
+  },
+  "spec": {
+    "height": 320,
+    "width": 280,
+    "mark": {
+      "type": "line",
+      "color": "#f4134d",
+      "strokeWidth": 2,
+      "point": {
+        "filled": true,
+        "fill": "#f4134d",
+        "size": 64
+      }
+    },
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "ordinal",
+        "axis": { "title": "", "grid": false, "labelAngle": 0 }
+      },
+      "y": {
+        "field": "score",
+        "type": "quantitative",
+        "scale": { "domainMin": 450 },
+        "axis": { "title": "Score", "grid": false }
+      },
+      "tooltip": [
+        { "field": "subject", "type": "nominal", "title": "Subject" },
+        { "field": "year", "type": "ordinal", "title": "Year" },
+        { "field": "score", "type": "quantitative", "title": "UK score" },
+        { "field": "rank", "type": "quantitative", "title": "UK rank" }
+      ]
+    }
+  }
+}

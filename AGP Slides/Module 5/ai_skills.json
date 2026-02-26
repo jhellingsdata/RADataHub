@@ -1,0 +1,561 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "background": "white",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 120, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "layer": [
+    {
+      "data": {"name": "data-f43cfbdc08b5dd2695ced1291745e886"},
+      "mark": {"type": "point", "filled": true},
+      "encoding": {
+        "color": {
+          "field": "region",
+          "legend": {"direction": "horizontal", "orient": "top", "title": ""},
+          "scale": {
+            "domain": ["UK", "Germany", "France", "Canada", "USA", "Italy"],
+            "range": [
+              "#36B7B4",
+              "#E6224B",
+              "#F4C245",
+              "#0063AF",
+              "#00A767",
+              "#EB5C2E"
+            ]
+          },
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {
+            "test": "((datum.code === 'GB') || (datum.region === 'United Kingdom'))",
+            "value": 1
+          },
+          "value": 0.6
+        },
+        "size": {
+          "condition": {
+            "test": "((datum.code === 'GB') || (datum.region === 'United Kingdom'))",
+            "value": 240
+          },
+          "value": 120
+        },
+        "tooltip": [
+          {"field": "industry", "title": "Industry", "type": "nominal"},
+          {"field": "region", "title": "Country", "type": "nominal"},
+          {
+            "field": "value",
+            "format": ".2f",
+            "title": "AI talent (%)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "grid": false,
+            "labelAlign": "left",
+            "labelExpr": "format(datum.value, ',') + (datum.value == 5 ? '% of members' :'%')"
+          },
+          "field": "value",
+          "title": "",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "industry",
+          "sort": [
+            "Technology, information & media",
+            "Financial services",
+            "Professional services",
+            "Education",
+            "Manufacturing",
+            "Transport, logistics & supply",
+            "Hospitals & health care"
+          ],
+          "title": "",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {"name": "data-43f5156479a154f8f48bb6b8593cf45c"},
+      "mark": {
+        "type": "point",
+        "filled": false,
+        "size": 300,
+        "stroke": "#122b39",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "tooltip": [
+          {"field": "industry", "title": "Industry", "type": "nominal"},
+          {"field": "region", "title": "Country", "type": "nominal"},
+          {
+            "field": "value",
+            "format": ".2f",
+            "title": "AI talent (%)",
+            "type": "quantitative"
+          }
+        ],
+        "x": {"field": "value", "type": "quantitative"},
+        "y": {
+          "field": "industry",
+          "sort": [
+            "Technology, information & media",
+            "Financial services",
+            "Professional services",
+            "Education",
+            "Manufacturing",
+            "Transport, logistics & supply",
+            "Hospitals & health care"
+          ],
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "height": 400,
+  "title": "",
+  "width": 650,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-f43cfbdc08b5dd2695ced1291745e886": [
+      {
+        "year": 2025,
+        "industry": "Manufacturing",
+        "code": "FR",
+        "region": "France",
+        "value": 1.85
+      },
+      {
+        "year": 2025,
+        "industry": "Manufacturing",
+        "code": "DE",
+        "region": "Germany",
+        "value": 2.28
+      },
+      {
+        "year": 2025,
+        "industry": "Manufacturing",
+        "code": "US",
+        "region": "USA",
+        "value": 1.9
+      },
+      {
+        "year": 2025,
+        "industry": "Manufacturing",
+        "code": "CA",
+        "region": "Canada",
+        "value": 1.71
+      },
+      {
+        "year": 2025,
+        "industry": "Manufacturing",
+        "code": "GB",
+        "region": "UK",
+        "value": 1.54
+      },
+      {
+        "year": 2025,
+        "industry": "Manufacturing",
+        "code": "IT",
+        "region": "Italy",
+        "value": 0.8
+      },
+      {
+        "year": 2025,
+        "industry": "Education",
+        "code": "FR",
+        "region": "France",
+        "value": 2.3
+      },
+      {
+        "year": 2025,
+        "industry": "Education",
+        "code": "CA",
+        "region": "Canada",
+        "value": 3.09
+      },
+      {
+        "year": 2025,
+        "industry": "Education",
+        "code": "DE",
+        "region": "Germany",
+        "value": 2.7
+      },
+      {
+        "year": 2025,
+        "industry": "Education",
+        "code": "US",
+        "region": "USA",
+        "value": 2.58
+      },
+      {
+        "year": 2025,
+        "industry": "Education",
+        "code": "GB",
+        "region": "UK",
+        "value": 2.3
+      },
+      {
+        "year": 2025,
+        "industry": "Education",
+        "code": "IT",
+        "region": "Italy",
+        "value": 1.56
+      },
+      {
+        "year": 2025,
+        "industry": "Financial services",
+        "code": "GB",
+        "region": "UK",
+        "value": 4.36
+      },
+      {
+        "year": 2025,
+        "industry": "Financial services",
+        "code": "US",
+        "region": "USA",
+        "value": 3.38
+      },
+      {
+        "year": 2025,
+        "industry": "Financial services",
+        "code": "CA",
+        "region": "Canada",
+        "value": 3.44
+      },
+      {
+        "year": 2025,
+        "industry": "Financial services",
+        "code": "FR",
+        "region": "France",
+        "value": 2.48
+      },
+      {
+        "year": 2025,
+        "industry": "Financial services",
+        "code": "DE",
+        "region": "Germany",
+        "value": 2.47
+      },
+      {
+        "year": 2025,
+        "industry": "Financial services",
+        "code": "IT",
+        "region": "Italy",
+        "value": 1.59
+      },
+      {
+        "year": 2025,
+        "industry": "Hospitals & health care",
+        "code": "US",
+        "region": "USA",
+        "value": 0.9
+      },
+      {
+        "year": 2025,
+        "industry": "Hospitals & health care",
+        "code": "DE",
+        "region": "Germany",
+        "value": 0.99
+      },
+      {
+        "year": 2025,
+        "industry": "Hospitals & health care",
+        "code": "CA",
+        "region": "Canada",
+        "value": 0.92
+      },
+      {
+        "year": 2025,
+        "industry": "Hospitals & health care",
+        "code": "GB",
+        "region": "UK",
+        "value": 0.87
+      },
+      {
+        "year": 2025,
+        "industry": "Hospitals & health care",
+        "code": "FR",
+        "region": "France",
+        "value": 0.61
+      },
+      {
+        "year": 2025,
+        "industry": "Hospitals & health care",
+        "code": "IT",
+        "region": "Italy",
+        "value": 0.36
+      },
+      {
+        "year": 2025,
+        "industry": "Professional services",
+        "code": "FR",
+        "region": "France",
+        "value": 3.63
+      },
+      {
+        "year": 2025,
+        "industry": "Professional services",
+        "code": "DE",
+        "region": "Germany",
+        "value": 3.63
+      },
+      {
+        "year": 2025,
+        "industry": "Professional services",
+        "code": "GB",
+        "region": "UK",
+        "value": 2.95
+      },
+      {
+        "year": 2025,
+        "industry": "Professional services",
+        "code": "US",
+        "region": "USA",
+        "value": 2.92
+      },
+      {
+        "year": 2025,
+        "industry": "Professional services",
+        "code": "CA",
+        "region": "Canada",
+        "value": 2.97
+      },
+      {
+        "year": 2025,
+        "industry": "Professional services",
+        "code": "IT",
+        "region": "Italy",
+        "value": 2.1
+      },
+      {
+        "year": 2025,
+        "industry": "Technology, information & media",
+        "code": "US",
+        "region": "USA",
+        "value": 5.16
+      },
+      {
+        "year": 2025,
+        "industry": "Technology, information & media",
+        "code": "CA",
+        "region": "Canada",
+        "value": 5.4
+      },
+      {
+        "year": 2025,
+        "industry": "Technology, information & media",
+        "code": "DE",
+        "region": "Germany",
+        "value": 4.89
+      },
+      {
+        "year": 2025,
+        "industry": "Technology, information & media",
+        "code": "GB",
+        "region": "UK",
+        "value": 4.42
+      },
+      {
+        "year": 2025,
+        "industry": "Technology, information & media",
+        "code": "FR",
+        "region": "France",
+        "value": 3.82
+      },
+      {
+        "year": 2025,
+        "industry": "Technology, information & media",
+        "code": "IT",
+        "region": "Italy",
+        "value": 2.49
+      },
+      {
+        "year": 2025,
+        "industry": "Transport, logistics & supply",
+        "code": "DE",
+        "region": "Germany",
+        "value": 1.55
+      },
+      {
+        "year": 2025,
+        "industry": "Transport, logistics & supply",
+        "code": "GB",
+        "region": "UK",
+        "value": 1.23
+      },
+      {
+        "year": 2025,
+        "industry": "Transport, logistics & supply",
+        "code": "CA",
+        "region": "Canada",
+        "value": 1.28
+      },
+      {
+        "year": 2025,
+        "industry": "Transport, logistics & supply",
+        "code": "US",
+        "region": "USA",
+        "value": 1.1
+      },
+      {
+        "year": 2025,
+        "industry": "Transport, logistics & supply",
+        "code": "FR",
+        "region": "France",
+        "value": 1.02
+      },
+      {
+        "year": 2025,
+        "industry": "Transport, logistics & supply",
+        "code": "IT",
+        "region": "Italy",
+        "value": 0.53
+      }
+    ],
+    "data-43f5156479a154f8f48bb6b8593cf45c": [
+      {
+        "year": 2025,
+        "industry": "Manufacturing",
+        "code": "GB",
+        "region": "UK",
+        "value": 1.54
+      },
+      {
+        "year": 2025,
+        "industry": "Education",
+        "code": "GB",
+        "region": "UK",
+        "value": 2.3
+      },
+      {
+        "year": 2025,
+        "industry": "Financial services",
+        "code": "GB",
+        "region": "UK",
+        "value": 4.36
+      },
+      {
+        "year": 2025,
+        "industry": "Hospitals & health care",
+        "code": "GB",
+        "region": "UK",
+        "value": 0.87
+      },
+      {
+        "year": 2025,
+        "industry": "Professional services",
+        "code": "GB",
+        "region": "UK",
+        "value": 2.95
+      },
+      {
+        "year": 2025,
+        "industry": "Technology, information & media",
+        "code": "GB",
+        "region": "UK",
+        "value": 4.42
+      },
+      {
+        "year": 2025,
+        "industry": "Transport, logistics & supply",
+        "code": "GB",
+        "region": "UK",
+        "value": 1.23
+      }
+    ]
+  }
+}

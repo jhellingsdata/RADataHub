@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Chart%20Packs/Productivity/map%20of%20the%20day/lad_2021.geojson",
+    "format": {"type": "json", "property": "features"}
+  },
+  "projection": {"type": "identity", "reflectY": true},
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgrey",
+        "stroke": "grey",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "transform": [
+        {
+          "lookup": "properties.LAD21CD",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/AGP%20Slides/Module%201/life_expectancy_males_birth.csv"
+            },
+            "key": "id",
+            "fields": ["id", "country", "life_expectancy"]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "grey",
+        "strokeWidth": 0.5,
+        "clip": true
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "isValid(datum.life_expectancy) && datum.life_expectancy > 0",
+            "field": "life_expectancy",
+            "type": "quantitative",
+            "legend": {
+              "title": "Life expectancy at birth (males)",
+              "titleFontWeight": "normal",
+              "labelExpr": "(datum.value == 74 ? '<' : datum.value == 84 ? '>' : '') + format(datum.value, '.0f')",
+              "values": [74, 77, 80, 84]
+            },
+            "scale": {
+              "clamp": true,
+              "domain": [74, 84],
+              "type": "linear",
+              "range": [
+                "rgb(235, 61, 75)",
+                "rgb(230, 189, 81)",
+                "rgb(73, 191, 161)",
+                "rgb(111, 181, 219)"
+              ]
+            }
+          },
+          "value": "lightgrey"
+        },
+        "tooltip": [
+          {"field": "country", "title": "Local Authority"},
+          {"field": "life_expectancy", "title": "Life expectancy (males)", "format": ".1f"}
+        ]
+      }
+    }
+  ],
+  "width": 600,
+  "height": 800,
+  "config": {"view": {"strokeWidth": 0}, "font": "Circular Std"},
+  "autosize": {"type": "fit", "contains": "padding", "resize": false}
+}
