@@ -6,7 +6,7 @@
   },
   "autosize": {"type": "fit", "contains": "padding", "resize": false},
   "transform": [
-    {"filter": "datum.country === 'United Kingdom' || datum.country === 'United States'"}
+    {"filter": "year(datum.year) >= 2000"}
   ],
   "layer": [
     {
@@ -14,10 +14,10 @@
       "encoding": {
         "x": {"axis": {"format": "%Y"}, "field": "year", "type": "temporal"},
         "y": {
-          "axis": {"format": "%"},
-          "field": "indexed_2000",
-          "title": "Investment (% of GDP)",
-          "type": "quantitative"
+          "field": "indexed_2010",
+          "title": "GDP Per Worker (Indexed 2010)",
+          "type": "quantitative",
+          "scale": {"domainMin": 50}
         },
         "color": {
           "field": "country",
@@ -32,7 +32,7 @@
           "groupby": ["country"]
         },
         {"calculate": "datum.last.year", "as": "year"},
-        {"calculate": "datum.last.indexed_2000", "as": "value"}
+        {"calculate": "datum.last.indexed_2010", "as": "value"}
       ],
       "mark": {"type": "circle", "size": 50},
       "encoding": {
@@ -46,12 +46,13 @@
     },
     {
       "transform": [
+        {"filter": "datum.country === 'United Kingdom' || datum.country === 'United States'"},
         {
           "aggregate": [{"op": "argmax", "field": "year", "as": "last"}],
           "groupby": ["country"]
         },
         {"calculate": "datum.last.year", "as": "year"},
-        {"calculate": "datum.last.indexed_2000", "as": "value"}
+        {"calculate": "datum.last.indexed_2010", "as": "value"}
       ],
       "mark": {"type": "text", "align": "left", "dx": 8, "baseline": "middle", "fontWeight": "bold"},
       "encoding": {
