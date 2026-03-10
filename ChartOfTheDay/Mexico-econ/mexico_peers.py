@@ -13,7 +13,7 @@ sys.path.append(".")  # Adjust if eco_style.py is elsewhere
 import eco_style
 
 # ─── Register and enable the OECD-style theme ───
-#alt.themes.enable('report')
+alt.themes.enable('report')
 
 # ─── DATA PATH ───
 DATA_PATH = '/Users/alonso/Desktop/LSE/Growth/Course_Database_Newest.csv'
@@ -64,6 +64,14 @@ df = df[df['year'] >= BASE_YEAR].copy()
 all_iso_needed = set(individual_countries + lac_countries + dynamic_asia_countries)
 df_filtered = df[df['iso'].isin(all_iso_needed)].copy()
 
+# ── Save dataset filtered ──
+df_filtered.to_csv('mexico_peers_data.csv', index=False)
+# -------------------------
+# Import the filtered dataset
+df_filtered = pd.read_csv('mexico_peers_data.csv')
+# -------------------------
+
+# indexing function to convert to index with base year = 100
 def build_index(group_df, base_year=BASE_YEAR):
     """Convert levels to index = 100 in base_year."""
     base_vals = group_df[group_df['year'] == base_year].set_index('iso')['gdp_pc_ppp']
@@ -104,11 +112,11 @@ chart_df = pd.DataFrame(records)
 # Define the line order and colors (OECD-style palette)
 line_order = ['Mexico', 'Chile', 'Costa Rica', 'Dynamic Asia', 'LAC']
 color_map = {
-    'Mexico':        eco_style.pallete['nominal_1'],  # blue
+    'Dynamic Asia':  eco_style.pallete['nominal_1'],  # blue
     'Chile':         eco_style.pallete['nominal_2'],  # red
     'Costa Rica':    eco_style.pallete['nominal_3'],  # yellow
-    'Dynamic Asia':  eco_style.pallete['nominal_4'],  # dark navy
-    'LAC':           eco_style.pallete['nominal_6'],  # teal
+    'LAC':        eco_style.pallete['nominal_4'],  # dark navy
+    'Mexico':           eco_style.pallete['nominal_6'],  # teal
 }
 
 # Get the last data point per group for end-of-line labels
@@ -155,7 +163,7 @@ labels = (
 # Horizontal baseline at y = 100
 baseline = (
     alt.Chart(pd.DataFrame({'y': [100]}))
-    .mark_rule(color=eco_style.pallete['domain'], strokeWidth=1, opacity=0.9, strokeDash=[1, 0])
+    .mark_rule(color=eco_style.pallete['domain'], strokeWidth=2, opacity=0.9, strokeDash=[1, 0])
     .encode(y='y:Q')
 )
 
