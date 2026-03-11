@@ -35,6 +35,9 @@ lac_countries = ['CHL', 'COL', 'CRI', 'ARG', 'BRA', 'PER']
 # Group 2: Dynamic Asia — simple average (India, Indonesia, Malaysia, Philippines, Thailand, Viet Nam)
 dynamic_asia_countries = ['IND', 'IDN', 'MYS', 'PHL', 'THA', 'VNM']
 
+#UK and US
+uk_us = ['GBR', 'USA']
+
 # Labels for individual countries (maps ISO code → display name)
 country_labels = {
     'MEX': 'Mexico',
@@ -106,7 +109,7 @@ for _, row in asia_df.iterrows():
 chart_df = pd.DataFrame(records)
 
 ## ──────────────────────────────────────────────────
-# CHART
+# CHART 1 — ORIGINAL (unchanged)
 # ──────────────────────────────────────────────────
 
 # Define the line order and colors (OECD-style palette)
@@ -189,4 +192,120 @@ chart.save('mexico_peers_chart.png', scale_factor=3, ppi=300)
 chart.save('mexico_peers_chart.svg', scale_factor=3, ppi=300)
 
 
+## ──────────────────────────────────────────────────
+# CHART 2 — WITH UK AND US ADDED
+# ──────────────────────────────────────────────────
 
+# Expand the dataset to include GBR and USA
+all_iso_needed_v2 = set(individual_countries + lac_countries + dynamic_asia_countries + uk_us)
+df_filtered_v2 = df[df['iso'].isin(all_iso_needed_v2)].copy()
+
+df_filtered_v2.to_csv('mexico_peers_with_uk_us_data.csv', index=False)
+df_filtered_v2 = pd.read_csv('mexico_peers_with_uk_us_data.csv')
+
+df_indexed_v2 = build_index(df_filtered_v2)
+
+# Build records: start from the original records, then add UK and US
+records_v2 = list(records)  # copy original records (MEX, CHL, CRI, LAC, Dynamic Asia)
+
+# Labels for UK and US
+country_labels_v2 = {
+    'GBR': 'United Kingdom',
+    'USA': 'United States',
+}
+
+for iso in uk_us:
+    tmp = df_indexed_v2[df_indexed_v2['iso'] == iso][['year', 'index']].dropna()
+    label = country_labels_v2[iso]
+    for _, row in tmp.iterrows():
+        records_v2.append({'year': int(row['year']), 'index': row['index'], 'group': label})
+
+chart_df_v2 = pd.DataFrame(records_v2)
+
+# Line order and colors — UK/US use their predefined eco_style colors
+# Reassign remaining series to avoid color clashes
+line_order_v2 = [
+    'Mexico', 'Chile', 'Costa Rica',
+    'Dynamic Asia', 'LAC',
+    'United Kingdom'
+]
+
+color_map_v2 = {
+    'United Kingdom':  eco_style.pallete['United Kingdom'],  # nominal_1 — #179fdb blue
+    'United States':   eco_style.pallete['United States'],   # nominal_2 — #e6224b red
+    'Chile':           eco_style.pallete['nominal_3'],       # #f4c245 — yellow
+    'Dynamic Asia':    eco_style.pallete['nominal_5'],       # #eb5c2e — orange
+    'LAC':             eco_style.pallete['nominal_4'],       # #122b39 — dark navy
+    'Mexico':          eco_style.pallete['nominal_6'],       # #36b7b4 — teal
+    'Costa Rica':      "grey",         # #d6d4d4 — grey
+}
+
+# Last common year for end-of-line labels
+last_year_v2 = chart_df_v2.groupby('group')['year'].max().min()
+label_df_v2 = chart_df_v2[chart_df_v2['year'] == last_year_v2].copy()
+
+# Lines
+lines_v2 = (
+    alt.Chart(chart_df_v2)
+    .mark_line(strokeWidth=2.5)
+    .encode(
+        x=alt.X('year:O', title='', axis=alt.Axis(values=list(range(2000, 2025, 5)))),
+        y=alt.Y('index:Q', title='Index, 2000 = 100',
+                 scale=alt.Scale(domain=[75, 275])),
+        color=alt.Color(
+            'group:N',
+            scale=alt.Scale(domain=line_order_v2, range=[color_map_v2[g] for g in line_order_v2]),
+            legend=None
+        ),
+        strokeDash=alt.condition(
+            alt.datum.group == 'LAC',
+            alt.value([5, 3]),
+            alt.value([0])
+        ),
+    )
+)
+
+# End-of-line text labels
+labels_v2 = (
+    alt.Chart(label_df_v2)
+    .mark_text(align='left', dx=6, fontSize=11, fontWeight=500)
+    .encode(
+        x=alt.X('year:O'),
+        y=alt.Y('index:Q'),
+        text=alt.Text('group:N'),
+        color=alt.Color(
+            'group:N',
+            scale=alt.Scale(domain=line_order_v2, range=[color_map_v2[g] for g in line_order_v2]),
+            legend=None
+        ),
+    )
+)
+
+# Horizontal baseline at y = 100
+baseline_v2 = (
+    alt.Chart(pd.DataFrame({'y': [100]}))
+    .mark_rule(color=eco_style.pallete['domain'], strokeWidth=2, opacity=0.9, strokeDash=[1, 0])
+    .encode(y='y:Q')
+)
+
+chart_v2 = (
+    (baseline_v2 + lines_v2 + labels_v2)
+    .properties(
+        title={
+            "text": "Mexico's GDP per capita has barely grown compared to peers",
+            "subtitle": [
+                "Index of real PPP-adjusted GDP per capita",
+                "Constant 2017 international $, PPP"
+            ],
+        },
+        width=500,
+        height=320,
+    )
+)
+
+chart_v2
+# Save Chart 2
+chart_v2.save('mexico_peers_uk_us_chart.png', scale_factor=3, ppi=300)
+chart_v2.save('mexico_peers_uk_us_chart.svg', scale_factor=3, ppi=300)
+print("Chart 1 saved to mexico_peers_chart.png and .svg")
+print("Chart 2 saved to mexico_peers_uk_us_chart.png and .svg")
