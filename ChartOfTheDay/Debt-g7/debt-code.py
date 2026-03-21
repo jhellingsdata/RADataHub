@@ -162,6 +162,12 @@ chart = (
 
 chart
 
+# ── Export high-res SVG ──────────────────────────────────────────────────
+svg = vlc.vegalite_to_svg(chart.to_dict())
+
+svg_path = SAVE_PATH.replace(".png", ".svg")
+with open(svg_path, "w") as f:
+    f.write(svg)
 # ── Export high-res PNG ──────────────────────────────────────────────────
 png = vlc.vegalite_to_png(chart.to_dict(), scale=3, ppi=300)
 
