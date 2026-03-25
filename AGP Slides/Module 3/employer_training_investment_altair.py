@@ -30,7 +30,6 @@ chart = (
     .encode(
         x=alt.X(
             "time_period:O",
-            title="Year",
             axis=alt.Axis(labelAngle=0),
         ),
         xOffset=alt.XOffset("series:N", sort=series_order),
@@ -44,6 +43,7 @@ chart = (
             "series:N",
             title=None,
             sort=series_order,
+            orient='top-right'
         ),
         tooltip=[
             alt.Tooltip("time_period:O", title="Year"),
