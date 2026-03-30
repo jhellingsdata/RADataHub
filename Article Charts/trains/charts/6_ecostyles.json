@@ -1,0 +1,285 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4,
+      "grid": false
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    },
+    "background": "#ececec"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "color": "#0b5d7c",
+        "size": 28
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "Sector",
+            "type": "nominal"
+          },
+          {
+            "field": "city_centre_share",
+            "format": ".2%",
+            "title": "City centre share",
+            "type": "quantitative"
+          },
+          {
+            "field": "uk_share",
+            "format": ".2%",
+            "title": "Share of UK total",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "format": ".0%",
+            "tickCount": 7
+          },
+          "field": "city_centre_share",
+          "scale": {
+            "domain": [
+              0,
+              0.6
+            ]
+          },
+          "title": "Share of businesses in a cutting-edge sector that are located in a city centre",
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {
+            "format": ".1%",
+            "tickCount": 10
+          },
+          "field": "uk_share",
+          "scale": {
+            "domain": [
+              0,
+              0.045
+            ]
+          },
+          "title": "Share of UK total",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "toNumber(replace(datum['Share in City Centres (Registered)'], '%', '')) / 100",
+          "as": "city_centre_share"
+        },
+        {
+          "calculate": "toNumber(replace(datum['Northumberland, Durham and Tyne & Wear'], '%', '')) / 100",
+          "as": "uk_share"
+        },
+        {
+          "filter": "datum.Sector != null && trim(datum.Sector) !== '' && datum.Sector !== 'All Business Share' && isValid(datum.city_centre_share) && isValid(datum.uk_share)"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "black",
+        "strokeWidth": 1.8
+      },
+      "encoding": {
+        "y": {
+          "field": "all_business_share",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum['All business share'] != null && trim(datum['All business share']) !== ''"
+        },
+        {
+          "calculate": "toNumber(replace(datum['All business share'], '%', '')) / 100",
+          "as": "all_business_share"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "color": "black",
+        "dy": -4,
+        "fontSize": 10
+      },
+      "encoding": {
+        "text": {
+          "value": "North East's share of all businesses"
+        },
+        "x": {
+          "datum": 0.595
+        },
+        "y": {
+          "field": "all_business_share",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum['All business share'] != null && trim(datum['All business share']) !== ''"
+        },
+        {
+          "calculate": "toNumber(replace(datum['All business share'], '%', '')) / 100",
+          "as": "all_business_share"
+        }
+      ]
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/trains/data/6.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 320,
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json"
+}
