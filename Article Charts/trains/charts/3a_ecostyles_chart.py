@@ -1,376 +1,131 @@
-{
-  "config": {
-    "font": "Circular Std",
-    "text": {
-      "color": "#676A86",
-      "align": "left",
-      "baseline": "middle",
-      "dx": 7,
-      "dy": 0,
-      "fontSize": 11
-    },
-    "view": {
-      "stroke": null,
-      "continuousWidth": 400,
-      "continuousHeight": 300,
-      "discreteWidth": 400,
-      "discreteHeight": 300
-    },
-    "range": {
-      "category": [
-        "#36B7B4",
-        "#E6224B",
-        "#F4C245",
-        "#0063AF",
-        "#00A767",
-        "#179FDB",
-        "#EB5C2E"
-      ],
-      "diverging": [
-        "#E6224B",
-        "#E54753",
-        "#C9C9C9",
-        "#179FDB",
-        "#122B39"
-      ],
-      "heatmap": [
-        "#C9C9C9",
-        "#179FDB",
-        "#0063AF",
-        "#122B39"
-      ],
-      "ordinal": [
-        "#00A767",
-        "#36B7B4",
-        "#179FDB",
-        "#0063AF",
-        "#243B5A"
-      ]
-    },
-    "bar": {
-      "color": "#179fdb"
-    },
-    "line": {
-      "color": "#e6224b"
-    },
-    "rule": {
-      "color": "#676A86"
-    },
-    "area": {
-      "opacity": 0.3
-    },
-    "point": {
-      "filled": true,
-      "size": 80,
-      "color": "#e6224b",
-      "opacity": 0.95
-    },
-    "geoshape": {
-      "stroke": "white",
-      "strokeWidth": 0.3
-    },
-    "rect": {
-      "fill": "#d6d4d4",
-      "opacity": 0.3
-    },
-    "axis": {
-      "labelColor": "#676A86",
-      "labelFontSize": 11,
-      "labelFont": "Circular Std",
-      "labelOpacity": 0.7,
-      "tickColor": "#676A86",
-      "tickOpacity": 0.5,
-      "domainColor": "#676A86",
-      "domainOpacity": 0.5,
-      "gridColor": "#676A86",
-      "gridDash": [
-        2,
-        2
-      ],
-      "gridOpacity": 0.5,
-      "title": null,
-      "titleColor": "#676A86",
-      "titleOpacity": 0.8,
-      "tickSize": 4,
-      "grid": false
-    },
-    "axisXDiscrete": {
-      "grid": false,
-      "labelAngle": 0,
-      "tickCount": 10,
-      "tickOpacity": 0.5,
-      "title": null
-    },
-    "axisYDiscrete": {
-      "ticks": false,
-      "labelPadding": 5
-    },
-    "axisXTemporal": {
-      "grid": false,
-      "ticks": true
-    },
-    "axisXQuantitative": {
-      "grid": true
-    },
-    "axisYQuantitative": {
-      "gridColor": "#676A86",
-      "gridDash": [
-        1,
-        5
-      ],
-      "gridOpacity": 0.5,
-      "ticks": false,
-      "labelPadding": 5,
-      "tickCount": 8,
-      "titleAngle": 0,
-      "titleAlign": "left",
-      "titleBaseline": "bottom",
-      "titleX": 0,
-      "titleY": -5
-    },
-    "title": {
-      "color": "#676A86E6",
-      "subtitleColor": "#676A86",
-      "font": "Circular Std",
-      "subtitleFont": "Circular Std",
-      "anchor": "start",
-      "fontSize": 14,
-      "subtitleFontSize": 12,
-      "subtitlePadding": 4,
-      "offset": 0,
-      "frame": "group"
-    },
-    "legend": {
-      "titleColor": "#122b39",
-      "title": null,
-      "labelColor": "#122b39",
-      "labelFontSize": 11
-    },
-    "background": "#ececec"
-  },
-  "layer": [
-    {
-      "mark": {
-        "type": "area",
-        "opacity": 0.9
-      },
-      "encoding": {
-        "color": {
-          "field": "series",
-          "legend": {
-            "direction": "horizontal",
-            "orient": "bottom",
-            "symbolType": "square"
-          },
-          "scale": {
-            "domain": [
-              "West Leeds",
-              "Leamside",
-              "Current stations"
-            ],
-            "range": [
-              "#1f7a1f",
-              "#e07b39",
-              "#9ac7d8"
-            ]
-          },
-          "title": null,
-          "type": "nominal"
-        },
-        "order": {
-          "field": "series",
-          "sort": "ascending",
-          "type": "nominal"
-        },
-        "x": {
-          "axis": {
-            "format": ",d",
-            "tickCount": 9
-          },
-          "field": "Population_num",
-          "scale": {
-            "domain": [
-              0,
-              160000
-            ]
-          },
-          "title": "Population within 1km",
-          "type": "quantitative"
-        },
-        "x2": {
-          "value": 0
-        },
-        "y": {
-          "axis": null,
-          "field": "rank",
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "calculate": "toNumber(datum.Population)",
-          "as": "Population_num"
-        },
-        {
-          "calculate": "datum['Current/Leamside'] === 'Current' ? 'Current stations' : datum['Current/Leamside']",
-          "as": "series"
-        },
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "field": "",
-              "as": "rank"
-            }
-          ],
-          "sort": [
-            {
-              "field": "Population_num",
-              "order": "descending"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "rule",
-        "color": "#6f6f6f",
-        "opacity": 1.0,
-        "strokeCap": "round",
-        "strokeWidth": 1.2
-      },
-      "encoding": {
-        "x": {
-          "field": "Population_num",
-          "type": "quantitative"
-        },
-        "x2": {
-          "field": "label_x"
-        },
-        "y": {
-          "field": "rank",
-          "type": "quantitative"
-        },
-        "y2": {
-          "field": "rank"
-        }
-      },
-      "transform": [
-        {
-          "calculate": "toNumber(datum.Population)",
-          "as": "Population_num"
-        },
-        {
-          "calculate": "datum['Current/Leamside'] === 'Current' ? 'Current stations' : datum['Current/Leamside']",
-          "as": "series"
-        },
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "field": "",
-              "as": "rank"
-            }
-          ],
-          "sort": [
-            {
-              "field": "Population_num",
-              "order": "descending"
-            }
-          ]
-        },
-        {
-          "filter": "datum.Labels != null && trim(datum.Labels) !== ''"
-        },
-        {
-          "calculate": "datum.Population_num + 25000",
-          "as": "label_x"
-        }
-      ]
-    },
-    {
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "baseline": "middle",
-        "dx": 3,
-        "fontSize": 10,
-        "fontWeight": "bold"
-      },
-      "encoding": {
-        "color": {
-          "field": "series",
-          "legend": null,
-          "scale": {
-            "domain": [
-              "West Leeds",
-              "Leamside",
-              "Current stations"
-            ],
-            "range": [
-              "#1f7a1f",
-              "#e07b39",
-              "#9ac7d8"
-            ]
-          },
-          "type": "nominal"
-        },
-        "text": {
-          "field": "Labels",
-          "type": "nominal"
-        },
-        "x": {
-          "field": "label_x",
-          "type": "quantitative"
-        },
-        "y": {
-          "field": "rank",
-          "type": "quantitative"
-        }
-      },
-      "transform": [
-        {
-          "calculate": "toNumber(datum.Population)",
-          "as": "Population_num"
-        },
-        {
-          "calculate": "datum['Current/Leamside'] === 'Current' ? 'Current stations' : datum['Current/Leamside']",
-          "as": "series"
-        },
-        {
-          "window": [
-            {
-              "op": "row_number",
-              "field": "",
-              "as": "rank"
-            }
-          ],
-          "sort": [
-            {
-              "field": "Population_num",
-              "order": "descending"
-            }
-          ]
-        },
-        {
-          "filter": "datum.Labels != null && trim(datum.Labels) !== ''"
-        },
-        {
-          "calculate": "datum.Population_num + 25000",
-          "as": "label_x"
-        }
-      ]
-    }
-  ],
-  "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/trains/data/3a.csv",
-    "format": {
-      "type": "csv"
-    }
-  },
-  "height": 520,
-  "title": "Population within 1km of a station",
-  "width": 540,
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json"
-}
+import sys
+import json
+from pathlib import Path
+
+import altair as alt
+import pandas as pd
+
+
+def load_ecostyles():
+    """Import EcoStyles, with a fallback to a local clone path if needed."""
+    try:
+        from ecostyles import EcoStyles  # type: ignore
+        return EcoStyles
+    except ModuleNotFoundError:
+        fallback = Path('/tmp/ecostyles_repo/src')
+        if fallback.exists():
+            sys.path.insert(0, str(fallback))
+            from ecostyles import EcoStyles  # type: ignore
+            return EcoStyles
+        raise
+
+
+EcoStyles = load_ecostyles()
+styles = EcoStyles()
+styles.register_and_enable_theme(theme_name='article')
+
+# Load and prepare data.
+DATA_URL = 'https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/trains/data/3a.csv'
+
+colour_domain = ['West Leeds', 'Leamside', 'Current stations']
+colour_range = ['#1f7a1f', '#e07b39', '#9ac7d8']
+
+def build_chart(data_source: object) -> alt.Chart:
+    base = (
+        alt.Chart(data_source)
+        .transform_calculate(
+            Population_num='toNumber(datum.Population)',
+            series="datum['Current/Leamside'] === 'Current' ? 'Current stations' : datum['Current/Leamside']",
+        )
+        .transform_window(
+            rank='row_number()',
+            sort=[alt.SortField('Population_num', order='descending')],
+        )
+    )
+    
+    # Base area chart.
+    area = (
+        base
+        .mark_area(opacity=0.9)
+        .encode(
+            x=alt.X(
+                'Population_num:Q',
+                title='Population within 1km',
+                scale=alt.Scale(domain=[0, 160000]),
+                axis=alt.Axis(format=',d', tickCount=9),
+            ),
+            x2=alt.value(0),
+            y=alt.Y('rank:Q', axis=None),
+            color=alt.Color(
+                'series:N',
+                title=None,
+                scale=alt.Scale(domain=colour_domain, range=colour_range),
+                legend=alt.Legend(orient='bottom', direction='horizontal', symbolType='square'),
+            ),
+            order=alt.Order('series:N', sort='ascending'),
+        )
+    )
+    
+    # Label rows with manual offset tweaks so labels do not overlap.
+    label_base = (
+        base
+        .transform_filter("datum.Labels != null && trim(datum.Labels) !== ''")
+        .transform_calculate(label_x='datum.Population_num + 25000')
+    )
+    
+    connectors = (
+        label_base
+        .mark_rule(color='#6f6f6f', strokeCap='round', strokeWidth=1.2, opacity=1.0)
+        .encode(
+            x='Population_num:Q',
+            y='rank:Q',
+            x2='label_x:Q',
+            y2='rank:Q',
+        )
+    )
+    
+    labels = (
+        label_base
+        .mark_text(
+            align='left',
+            baseline='middle',
+            dx=3,
+            fontSize=10,
+            fontWeight='bold',
+        )
+        .encode(
+            x='label_x:Q',
+            y='rank:Q',
+            text='Labels:N',
+            color=alt.Color(
+                'series:N',
+                scale=alt.Scale(domain=colour_domain, range=colour_range),
+                legend=None,
+            ),
+        )
+    )
+    
+    return (
+        (area + connectors + labels)
+        .properties(
+            width=540,
+            height=520,
+            title='Population within 1km of a station',
+        )
+        .configure(background='#ececec')
+        .configure_axis(grid=False)
+    )
+
+
+url_data = alt.UrlData(DATA_URL, format=alt.DataFormat(type='csv'))
+chart_json = build_chart(url_data)
+
+df_png = pd.read_csv(DATA_URL, encoding='utf-8-sig')
+chart_png = build_chart(df_png)
+
+# Save outputs
+styles.save(chart_png, path='charts', name='3a_ecostyles', width=540, height=520)
+with open('charts/3a_ecostyles.json', 'w', encoding='utf-8') as f:
+    json.dump(chart_json.to_dict(), f, separators=(',', ':'))
+
+print('Saved charts/3a_ecostyles.json and charts/3a_ecostyles.png')
