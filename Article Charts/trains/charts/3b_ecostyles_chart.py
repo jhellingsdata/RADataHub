@@ -55,6 +55,7 @@ colour_range = ['#1f7a1f', '#e07b39', '#9ac7d8']
 # Base area chart.
 area = (
     alt.Chart(plot_df)
+    .transform_filter("datum.series === 'Current stations'")
     .mark_area(opacity=0.9)
     .encode(
         x=alt.X(
@@ -67,30 +68,45 @@ area = (
         ),
         x2=alt.value(0),
         y=alt.Y('rank:Q', axis=None),
+        color=alt.value('#9ac7d8'),
+    )
+)
+
+
+marker_df = (
+    plot_df.loc[
+        (plot_df['series'] != 'Current stations')
+        & plot_df['Labels'].notna()
+        & (plot_df['Labels'].str.strip() != '')
+    ]
+    .copy()
+)
+marker_df['zero'] = 0
+marker_df = marker_df.sort_values('share', ascending=True).reset_index(drop=True)
+
+markers = (
+    alt.Chart(marker_df)
+    .mark_rule(strokeWidth=1.8)
+    .encode(
+        x='zero:Q',
+        x2='share:Q',
+        y='rank:Q',
         color=alt.Color(
             'series:N',
             title=None,
             scale=alt.Scale(domain=colour_domain, range=colour_range),
             legend=alt.Legend(orient='bottom', direction='horizontal', symbolType='square'),
         ),
-        order=alt.Order('series:N', sort='ascending'),
     )
 )
 
-# Label rows with manual offset tweaks to reduce overlap.
-label_df = (
-    plot_df.loc[plot_df['Labels'].notna() & (plot_df['Labels'].str.strip() != '')]
-    .copy()
-    .sort_values('share', ascending=True)
-    .reset_index(drop=True)
-)
-
+label_df = marker_df.copy()
 label_df['label_x'] = label_df['share'] + 0.10
 label_df['label_y'] = label_df['rank']
 
 connectors = (
     alt.Chart(label_df)
-    .mark_rule(color='#6f6f6f', strokeCap='round', strokeWidth=1.2, opacity=1.0)
+    .mark_rule(color='#8d8d8d', strokeWidth=0.8)
     .encode(
         x='share:Q',
         y='rank:Q',
@@ -101,21 +117,16 @@ connectors = (
 
 labels = (
     alt.Chart(label_df)
-    .mark_text(align='left', baseline='middle', dx=3, fontSize=10, fontWeight='bold')
+    .mark_text(align='left', baseline='middle', dx=3, fontSize=10, color='#444')
     .encode(
         x='label_x:Q',
         y='label_y:Q',
         text='Labels:N',
-        color=alt.Color(
-            'series:N',
-            scale=alt.Scale(domain=colour_domain, range=colour_range),
-            legend=None,
-        ),
     )
 )
 
 chart = (
-    (area + connectors + labels)
+    (area + markers + connectors + labels)
     .properties(
         width=540,
         height=520,
@@ -125,7 +136,7 @@ chart = (
     .configure_axis(grid=False)
 )
 
-# URL-backed JSON chart spec.
+
 url_base = (
     alt.Chart(alt.UrlData(DATA_URL, format=alt.DataFormat(type='csv')))
     .transform_calculate(
@@ -148,6 +159,7 @@ url_base = (
 
 url_area = (
     url_base
+    .transform_filter("datum.series === 'Current stations'")
     .mark_area(opacity=0.9)
     .encode(
         x=alt.X(
@@ -161,25 +173,41 @@ url_area = (
         ),
         x2=alt.value(0),
         y=alt.Y('rank:Q', axis=None),
+        color=alt.value('#9ac7d8'),
+    )
+)
+
+url_marker_base = (
+    url_base
+    .transform_filter("datum.series !== 'Current stations'")
+    .transform_filter("datum.Labels != null && trim(datum.Labels) !== ''")
+    .transform_calculate(zero='0')
+)
+
+url_markers = (
+    url_marker_base
+    .mark_rule(strokeWidth=1.8)
+    .encode(
+        x='zero:Q',
+        x2='share:Q',
+        y='rank:Q',
         color=alt.Color(
             'series:N',
             title=None,
             scale=alt.Scale(domain=colour_domain, range=colour_range),
             legend=alt.Legend(orient='bottom', direction='horizontal', symbolType='square'),
         ),
-        order=alt.Order('series:N', sort='ascending'),
     )
 )
 
 url_label_base = (
-    url_base
-    .transform_filter("datum.Labels != null && trim(datum.Labels) !== ''")
+    url_marker_base
     .transform_calculate(label_x='datum.share + 0.10')
 )
 
 url_connectors = (
     url_label_base
-    .mark_rule(color='#6f6f6f', strokeCap='round', strokeWidth=1.2, opacity=1.0)
+    .mark_rule(color='#8d8d8d', strokeWidth=0.8)
     .encode(
         x='share:Q',
         y='rank:Q',
@@ -190,21 +218,16 @@ url_connectors = (
 
 url_labels = (
     url_label_base
-    .mark_text(align='left', baseline='middle', dx=3, fontSize=10, fontWeight='bold')
+    .mark_text(align='left', baseline='middle', dx=3, fontSize=10, color='#444')
     .encode(
         x='label_x:Q',
         y='rank:Q',
         text='Labels:N',
-        color=alt.Color(
-            'series:N',
-            scale=alt.Scale(domain=colour_domain, range=colour_range),
-            legend=None,
-        ),
     )
 )
 
 chart_json = (
-    (url_area + url_connectors + url_labels)
+    (url_area + url_markers + url_connectors + url_labels)
     .properties(
         width=540,
         height=520,
@@ -214,9 +237,9 @@ chart_json = (
     .configure_axis(grid=False)
 )
 
-# Save outputs.
+
 styles.save(chart, path='charts', name='3b_ecostyles', width=540, height=520)
 with open('charts/3b_ecostyles.json', 'w', encoding='utf-8') as f:
-    json.dump(chart_json.to_dict(), f, separators=(',', ':'))
+    json.dump(chart_json.to_dict(), f, indent=2)
 
 print('Saved charts/3b_ecostyles.json and charts/3b_ecostyles.png')
