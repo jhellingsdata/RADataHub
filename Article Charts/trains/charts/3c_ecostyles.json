@@ -1,0 +1,502 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4,
+      "grid": false
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    },
+    "background": "#ececec"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "opacity": 0.9
+      },
+      "encoding": {
+        "color": {
+          "value": "#9ac7d8"
+        },
+        "x": {
+          "axis": {
+            "format": ",d",
+            "tickCount": 4
+          },
+          "field": "wage",
+          "scale": {
+            "domain": [
+              0,
+              1500
+            ]
+          },
+          "title": "Median wage, 2025 (\u00a3)",
+          "type": "quantitative"
+        },
+        "x2": {
+          "value": 0
+        },
+        "y": {
+          "axis": null,
+          "field": "rank",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.WAGES",
+          "as": "station"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 1\"])",
+          "as": "wage"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 2\"])",
+          "as": "sn"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 3\"])",
+          "as": "leeds"
+        },
+        {
+          "calculate": "datum[\"Unnamed: 5\"]",
+          "as": "labels"
+        },
+        {
+          "filter": "datum.station != null && datum.station !== 'Local authority' && isValid(datum.wage)"
+        },
+        {
+          "calculate": "datum.leeds > 0 ? 'Leeds' : datum.sn > 0 ? 'Sunderland/Newcastle' : 'Other local authorities'",
+          "as": "series"
+        },
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "field": "",
+              "as": "rank"
+            }
+          ],
+          "sort": [
+            {
+              "field": "wage",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.series === 'Other local authorities'"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 1.8
+      },
+      "encoding": {
+        "color": {
+          "field": "series",
+          "legend": {
+            "direction": "horizontal",
+            "orient": "bottom",
+            "symbolType": "square"
+          },
+          "scale": {
+            "domain": [
+              "Leeds",
+              "Sunderland/Newcastle",
+              "Other local authorities"
+            ],
+            "range": [
+              "#1f7a1f",
+              "#e07b39",
+              "#9ac7d8"
+            ]
+          },
+          "title": null,
+          "type": "nominal"
+        },
+        "x": {
+          "field": "zero",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "wage"
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.WAGES",
+          "as": "station"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 1\"])",
+          "as": "wage"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 2\"])",
+          "as": "sn"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 3\"])",
+          "as": "leeds"
+        },
+        {
+          "calculate": "datum[\"Unnamed: 5\"]",
+          "as": "labels"
+        },
+        {
+          "filter": "datum.station != null && datum.station !== 'Local authority' && isValid(datum.wage)"
+        },
+        {
+          "calculate": "datum.leeds > 0 ? 'Leeds' : datum.sn > 0 ? 'Sunderland/Newcastle' : 'Other local authorities'",
+          "as": "series"
+        },
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "field": "",
+              "as": "rank"
+            }
+          ],
+          "sort": [
+            {
+              "field": "wage",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.series !== 'Other local authorities'"
+        },
+        {
+          "filter": "datum.labels != null && trim(datum.labels) !== ''"
+        },
+        {
+          "calculate": "0",
+          "as": "zero"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#8d8d8d",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "x": {
+          "field": "wage",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "label_x"
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "rank"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.WAGES",
+          "as": "station"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 1\"])",
+          "as": "wage"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 2\"])",
+          "as": "sn"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 3\"])",
+          "as": "leeds"
+        },
+        {
+          "calculate": "datum[\"Unnamed: 5\"]",
+          "as": "labels"
+        },
+        {
+          "filter": "datum.station != null && datum.station !== 'Local authority' && isValid(datum.wage)"
+        },
+        {
+          "calculate": "datum.leeds > 0 ? 'Leeds' : datum.sn > 0 ? 'Sunderland/Newcastle' : 'Other local authorities'",
+          "as": "series"
+        },
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "field": "",
+              "as": "rank"
+            }
+          ],
+          "sort": [
+            {
+              "field": "wage",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.series !== 'Other local authorities'"
+        },
+        {
+          "filter": "datum.labels != null && trim(datum.labels) !== ''"
+        },
+        {
+          "calculate": "0",
+          "as": "zero"
+        },
+        {
+          "calculate": "datum.wage + 170",
+          "as": "label_x"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "color": "#444",
+        "dx": 3,
+        "fontSize": 10
+      },
+      "encoding": {
+        "text": {
+          "field": "labels",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "label_x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.WAGES",
+          "as": "station"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 1\"])",
+          "as": "wage"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 2\"])",
+          "as": "sn"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 3\"])",
+          "as": "leeds"
+        },
+        {
+          "calculate": "datum[\"Unnamed: 5\"]",
+          "as": "labels"
+        },
+        {
+          "filter": "datum.station != null && datum.station !== 'Local authority' && isValid(datum.wage)"
+        },
+        {
+          "calculate": "datum.leeds > 0 ? 'Leeds' : datum.sn > 0 ? 'Sunderland/Newcastle' : 'Other local authorities'",
+          "as": "series"
+        },
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "field": "",
+              "as": "rank"
+            }
+          ],
+          "sort": [
+            {
+              "field": "wage",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.series !== 'Other local authorities'"
+        },
+        {
+          "filter": "datum.labels != null && trim(datum.labels) !== ''"
+        },
+        {
+          "calculate": "0",
+          "as": "zero"
+        },
+        {
+          "calculate": "datum.wage + 170",
+          "as": "label_x"
+        }
+      ]
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/trains/data/3c.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "height": 420,
+  "title": "Median wage",
+  "width": 330,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json"
+}
