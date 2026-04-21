@@ -1,0 +1,19 @@
+Time period: 01/01/2020 - 12/02/2025
+
+Lines:
+All London Underground Lines
+
+Service Status Messages notes:
+The messages relate to the Train Service only.
+There can be multiple rows relating to the same disruption.
+Every time the service status message is updated another row is created.
+There may be different status messages for different sections of a line at the same time.
+"A separate row will be created for each level of service status, meaning you can have overlapping messages for the same time period.  Therefore the sum of disruption minutes will result in some double counting."
+The Status Message Details are based on what was reported on the station Electronic Service Update Board (ESUB) screens.
+The status message is based on an assessment of the level of service being offered at the time compared to set criteria guidelines.
+"If an incident spans multiple traffic days, a new record could be created for each day.  Therefore the same incident could have multiple records if it goes across multiple days."
+
+COVID19: Impact on services
+"During the coronavirus response, train services were amended as required. "
+"Night Tube services were stopped and restarted in the following months: Central and Victoria in November 2021, Jubilee in May 2022, Northern in June 2022, and Piccadilly in July 2022."
+The Waterloo & City line was also closed and was gradually reintroduced from June 2021.
