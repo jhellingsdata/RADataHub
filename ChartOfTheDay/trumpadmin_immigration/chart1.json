@@ -1,0 +1,233 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Comparing Daily Arrest Averages of Trump 1.0 and 2.0",
+  "title": {
+    "text": "Comparing Daily Arrest Averages of Trump 1.0 and 2.0",
+    "subtitle": "The chart shows the seven-day rolling average of the number of daily ICE administrative arrests."
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/hannahjliu/hannahjliu.github.io/refs/heads/main/data/dailyarrestscombined.csv"
+  },
+  "transform": [
+    {"filter": "datum.days_since_jan20 > -250 && datum.days_since_jan20 < 268"}
+  ],
+  "height": 400,
+  "width": 680,
+  "layer": [
+    {
+      "mark": {"type": "rect", "fill": "#f4f4f4", "opacity": 0.5},
+      "encoding": {
+        "x": {"datum": -250, "type": "quantitative"},
+        "x2": {"datum": 0},
+        "y": {"datum": 1300, "type": "quantitative"},
+        "y2": {"datum": 0}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "dx": 6,
+        "dy": 6,
+        "fontSize": 12,
+        "fontWeight": 500,
+        "fill": "#666"
+      },
+      "encoding": {
+        "x": {"datum": -245},
+        "y": {"datum": 1250},
+        "text": {"value": "Pre-Inauguration"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "dx": 6,
+        "dy": 6,
+        "fontSize": 12,
+        "fontWeight": 500,
+        "fill": "#666"
+      },
+      "encoding": {
+        "x": {"datum": 5},
+        "y": {"datum": 1250},
+        "text": {"value": "Post-Inauguration"}
+      }
+    },
+    {
+      "encoding": {
+        "x": {"field": "days_since_jan20", "type": "quantitative"},
+        "y": {
+          "field": "week_rolling_avg",
+          "type": "quantitative",
+          "title": "Average Daily Arrests"
+        },
+        "color": {
+          "field": "Administration",
+          "type": "nominal",
+          "legend": {"title": "Term"}
+        },
+        "tooltip": [
+          {"field": "Month_Day", "type": "nominal", "title": "Date"},
+          {
+            "field": "week_rolling_avg",
+            "type": "quantitative",
+            "title": "Arrests"
+          }
+        ]
+      },
+      "layer": [
+        {"mark": {"type": "line", "strokeWidth": 2.5}},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": {"type": "point", "size": 100, "filled": true}
+        }
+      ]
+    },
+    {
+      "data": {"values": [{"days_since_jan20": 0}]},
+      "mark": {
+        "type": "rule",
+        "color": "tomato",
+        "strokeWidth": 1,
+        "strokeDash": [6.4]
+      },
+      "encoding": {"x": {"field": "days_since_jan20", "type": "quantitative"}}
+    },
+    {
+      "mark": {"type": "rule"},
+      "transform": [
+        {
+          "calculate": "replace(datum.Administration, '.0', '')",
+          "as": "Administration"
+        },
+        {
+          "pivot": "Administration",
+          "value": "week_rolling_avg",
+          "groupby": ["days_since_jan20"]
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "days_since_jan20",
+          "type": "quantitative",
+          "title": "Days since inauguration"
+        },
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "days_since_jan20",
+            "type": "quantitative",
+            "title": "Days Since Inauguration"
+          },
+          {
+            "field": "Trump 1",
+            "title": "First Term Arrests",
+            "type": "quantitative"
+          },
+          {
+            "field": "Trump 2",
+            "title": "Second Term Arrests",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["days_since_jan20", "Trump 1.0", "Trump 2.0"],
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "font": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "numberFormat": ".0f",
+    "view": {"stroke": "transparent"},
+    "background": "white",
+    "range": {
+      "category": [
+        "#155263",
+        "#ff6f3c",
+        "#ff9a3c",
+        "#ffc93c",
+        "#0a0a0a",
+        "#8b4513"
+      ]
+    },
+    "point": {"filled": true, "opacity": 0.95},
+    "axis": {
+      "labelColor": "#0a0a0a",
+      "labelFontSize": 11,
+      "labelFont": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "labelOpacity": 1,
+      "tickColor": "#0a0a0a",
+      "tickOpacity": 0.6,
+      "domainColor": "#0a0a0a",
+      "domainOpacity": 0.6,
+      "gridColor": "#bfbfbf",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.8,
+      "title": null,
+      "titleColor": "#0a0a0a",
+      "titleFont": "'Besley', 'Merriweather', serif",
+      "titleOpacity": 1,
+      "titleFontWeight": 500,
+      "tickSize": 5
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.6,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#d0d0d0",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.8,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": -90,
+      "titleAlign": "center",
+      "titleBaseline": "middle"
+    },
+    "legend": {
+      "titleFont": "'Besley', 'Merriweather', serif",
+      "titleFontSize": 15,
+      "titleFontWeight": 500,
+      "titleColor": "#0a0a0a",
+      "title": null,
+      "labelFont": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "labelColor": "#0a0a0a",
+      "labelFontSize": 12
+    },
+    "title": {
+      "font": "'Besley', 'Garamond', 'Georgia'",
+      "fontSize": 20,
+      "fontWeight": 500,
+      "color": "#0a0a0a",
+      "subtitleFont": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "subtitleFontSize": 14,
+      "subtitleColor": "#0a0a0a",
+      "anchor": "start",
+      "offset": 10
+    },
+    "mark": {"tooltip": true}
+  }
+}
