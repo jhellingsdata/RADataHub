@@ -1,0 +1,208 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "ICE Arrests by Area of Responsibility: Trump 1.0 vs 2.0",
+    "anchor": "start",
+    "subtitle": "Note: The Harlingen AOR was added from parts of San Antonio and Houston in FY2022."
+  },
+  "vconcat": [
+    {
+      "title": {"text": "Trump 1.0", "anchor": "start"},
+      "width": 710,
+      "height": 400,
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/hannahjliu/hannahjliu.github.io/refs/heads/main/data/ice-aor-shp1.json",
+            "format": {"feature": "ice-aor-shp", "type": "topojson"}
+          },
+          "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.3},
+          "encoding": {"color": {"value": "lightgrey"}},
+          "projection": {"type": "albersUsa"}
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/hannahjliu/hannahjliu.github.io/refs/heads/main/data/aordf.csv"
+          },
+          "transform": [
+            {
+              "lookup": "aor_nam",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/hannahjliu/hannahjliu.github.io/refs/heads/main/data/ice-aor-shp1.json",
+                  "format": {"feature": "ice-aor-shp", "type": "topojson"}
+                },
+                "key": "properties.aor_nam",
+                "fields": ["type", "geometry", "properties"]
+              }
+            },
+            {"filter": "datum.administration == 'Trump 1.0'"}
+          ],
+          "mark": {"type": "geoshape", "stroke": "white"},
+          "encoding": {
+            "strokeWidth": {"value": 0.5},
+            "color": {
+              "field": "arrests",
+              "type": "quantitative",
+              "title": "ICE Arrests",
+              "legend": {
+                "title": null,
+                "orient": "right",
+                "direction": "vertical",
+                "offset": 20,
+                "gradientLength": 200
+              },
+              "scale": {"scheme": "orangered"}
+            },
+            "tooltip": [
+              {
+                "field": "properties.aor_nam",
+                "type": "nominal",
+                "title": "Area of Responsibility"
+              },
+              {"field": "arrests", "type": "quantitative", "title": "ICE Arrests"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": {"text": "Trump 2.0", "anchor": "start"},
+      "width": 710,
+      "height": 400,
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/hannahjliu/hannahjliu.github.io/refs/heads/main/data/ice-aor-shp1.json",
+            "format": {"feature": "ice-aor-shp", "type": "topojson"}
+          },
+          "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.3},
+          "encoding": {"color": {"value": "lightgrey"}},
+          "projection": {"type": "albersUsa"}
+        },
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/hannahjliu/hannahjliu.github.io/refs/heads/main/data/aordf.csv"
+          },
+          "transform": [
+            {
+              "lookup": "aor_nam",
+              "from": {
+                "data": {
+                  "url": "https://raw.githubusercontent.com/hannahjliu/hannahjliu.github.io/refs/heads/main/data/ice-aor-shp1.json",
+                  "format": {"feature": "ice-aor-shp", "type": "topojson"}
+                },
+                "key": "properties.aor_nam",
+                "fields": ["type", "geometry", "properties"]
+              }
+            },
+            {"filter": "datum.administration == 'Trump 2.0'"}
+          ],
+          "mark": {"type": "geoshape", "stroke": "white"},
+          "encoding": {
+            "strokeWidth": {"value": 0.5},
+            "color": {
+              "field": "arrests",
+              "type": "quantitative",
+              "title": "ICE Arrests",
+              "legend": {
+                "title": null,
+                "orient": "right",
+                "direction": "vertical",
+                "offset": 20,
+                "gradientLength": 200
+              },
+              "scale": {"scheme": "orangered"}
+            },
+            "tooltip": [
+              {
+                "field": "properties.aor_nam",
+                "type": "nominal",
+                "title": "Area of Responsibility"
+              },
+              {"field": "arrests", "type": "quantitative", "title": "ICE Arrests"}
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "font": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "numberFormat": ".0f",
+    "view": {"stroke": "transparent"},
+    "background": "white",
+    "range": {
+      "category": [
+        "#155263",
+        "#ff6f3c",
+        "#ff9a3c",
+        "#ffc93c",
+        "#0a0a0a",
+        "#8b4513"
+      ]
+    },
+    "point": {"filled": true, "opacity": 0.95},
+    "axis": {
+      "labelColor": "#0a0a0a",
+      "labelFontSize": 11,
+      "labelFont": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "labelOpacity": 1,
+      "tickColor": "#0a0a0a",
+      "tickOpacity": 0.6,
+      "domainColor": "#0a0a0a",
+      "domainOpacity": 0.6,
+      "gridColor": "#d0d0d0",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.8,
+      "title": null,
+      "titleColor": "#0a0a0a",
+      "titleFont": "'Besley', 'Merriweather', serif",
+      "titleOpacity": 1,
+      "titleFontWeight": 500,
+      "tickSize": 5
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.6,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#d0d0d0",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.8,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": -90,
+      "titleAlign": "center",
+      "titleBaseline": "middle"
+    },
+    "legend": {
+      "titleFont": "'Besley', 'Merriweather', serif",
+      "titleFontSize": 15,
+      "titleFontWeight": 500,
+      "titleColor": "#0a0a0a",
+      "title": null,
+      "labelFont": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "labelColor": "#0a0a0a",
+      "labelFontSize": 12
+    },
+    "title": {
+      "font": "'Besley', 'Garamond', 'Georgia'",
+      "fontSize": 20,
+      "fontWeight": 500,
+      "color": "#0a0a0a",
+      "subtitleFont": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "subtitleFontSize": 14,
+      "subtitleColor": "#0a0a0a",
+      "anchor": "start",
+      "offset": 10
+    },
+    "mark": {"tooltip": true}
+  }
+}
