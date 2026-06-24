@@ -24,7 +24,7 @@ EcoStyles = load_ecostyles()
 styles = EcoStyles()
 styles.register_and_enable_theme(theme_name='article')
 
-# Load and prepare data (real header starts on row 2).
+# Load and prepare data 
 DATA_URL = 'https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/Article%20Charts/trains/data/3c.csv'
 
 df = pd.read_csv(DATA_URL, encoding='utf-8-sig', header=1)
@@ -36,7 +36,7 @@ for col in ['Other local authorities', 'Sunderland/Newcastle', 'Leeds']:
 
 df['wage'] = df['Other local authorities']
 
-# Category used for colouring highlighted local authorities.
+
 df['series'] = 'Other local authorities'
 df.loc[df['Sunderland/Newcastle'] > 0, 'series'] = 'Sunderland/Newcastle'
 df.loc[df['Leeds'] > 0, 'series'] = 'Leeds'
@@ -52,6 +52,7 @@ colour_range = ['#1f7a1f', '#e07b39', '#9ac7d8']
 
 area = (
     alt.Chart(plot_df)
+    .transform_filter("datum.series === 'Other local authorities'")
     .mark_area(opacity=0.9)
     .encode(
         x=alt.X(
@@ -62,29 +63,44 @@ area = (
         ),
         x2=alt.value(0),
         y=alt.Y('rank:Q', axis=None),
+        color=alt.value('#9ac7d8'),
+    )
+)
+
+marker_df = (
+    plot_df.loc[
+        (plot_df['series'] != 'Other local authorities')
+        & plot_df['Labels'].notna()
+        & (plot_df['Labels'].str.strip() != '')
+    ]
+    .copy()
+)
+marker_df['zero'] = 0
+marker_df = marker_df.sort_values('wage', ascending=True).reset_index(drop=True)
+
+markers = (
+    alt.Chart(marker_df)
+    .mark_rule(strokeWidth=1.8)
+    .encode(
+        x='zero:Q',
+        x2='wage:Q',
+        y='rank:Q',
         color=alt.Color(
             'series:N',
             title=None,
             scale=alt.Scale(domain=colour_domain, range=colour_range),
             legend=alt.Legend(orient='bottom', direction='horizontal', symbolType='square'),
         ),
-        order=alt.Order('series:N', sort='ascending'),
     )
 )
 
-label_df = (
-    plot_df.loc[plot_df['Labels'].notna() & (plot_df['Labels'].str.strip() != '')]
-    .copy()
-    .sort_values('wage', ascending=True)
-    .reset_index(drop=True)
-)
-
+label_df = marker_df.copy()
 label_df['label_x'] = label_df['wage'] + 170
 label_df['label_y'] = label_df['rank']
 
 connectors = (
     alt.Chart(label_df)
-    .mark_rule(color='#6f6f6f', strokeCap='round', strokeWidth=1.2, opacity=1.0)
+    .mark_rule(color='#8d8d8d', strokeWidth=0.8)
     .encode(
         x='wage:Q',
         y='rank:Q',
@@ -95,21 +111,16 @@ connectors = (
 
 labels = (
     alt.Chart(label_df)
-    .mark_text(align='left', baseline='middle', dx=3, fontSize=10, fontWeight='bold')
+    .mark_text(align='left', baseline='middle', dx=3, fontSize=10, color='#444')
     .encode(
         x='label_x:Q',
         y='label_y:Q',
         text='Labels:N',
-        color=alt.Color(
-            'series:N',
-            scale=alt.Scale(domain=colour_domain, range=colour_range),
-            legend=None,
-        ),
     )
 )
 
 chart = (
-    (area + connectors + labels)
+    (area + markers + connectors + labels)
     .properties(
         width=330,
         height=420,
@@ -119,7 +130,7 @@ chart = (
     .configure_axis(grid=False)
 )
 
-# URL-backed JSON chart spec (raw CSV includes an extra first row).
+
 url_base = (
     alt.Chart(alt.UrlData(DATA_URL, format=alt.DataFormat(type='csv')))
     .transform_calculate(
@@ -141,6 +152,7 @@ url_base = (
 
 url_area = (
     url_base
+    .transform_filter("datum.series === 'Other local authorities'")
     .mark_area(opacity=0.9)
     .encode(
         x=alt.X(
@@ -151,25 +163,41 @@ url_area = (
         ),
         x2=alt.value(0),
         y=alt.Y('rank:Q', axis=None),
+        color=alt.value('#9ac7d8'),
+    )
+)
+
+url_marker_base = (
+    url_base
+    .transform_filter("datum.series !== 'Other local authorities'")
+    .transform_filter("datum.labels != null && trim(datum.labels) !== ''")
+    .transform_calculate(zero='0')
+)
+
+url_markers = (
+    url_marker_base
+    .mark_rule(strokeWidth=1.8)
+    .encode(
+        x='zero:Q',
+        x2='wage:Q',
+        y='rank:Q',
         color=alt.Color(
             'series:N',
             title=None,
             scale=alt.Scale(domain=colour_domain, range=colour_range),
             legend=alt.Legend(orient='bottom', direction='horizontal', symbolType='square'),
         ),
-        order=alt.Order('series:N', sort='ascending'),
     )
 )
 
 url_label_base = (
-    url_base
-    .transform_filter("datum.labels != null && trim(datum.labels) !== ''")
+    url_marker_base
     .transform_calculate(label_x='datum.wage + 170')
 )
 
 url_connectors = (
     url_label_base
-    .mark_rule(color='#6f6f6f', strokeCap='round', strokeWidth=1.2, opacity=1.0)
+    .mark_rule(color='#8d8d8d', strokeWidth=0.8)
     .encode(
         x='wage:Q',
         y='rank:Q',
@@ -180,21 +208,16 @@ url_connectors = (
 
 url_labels = (
     url_label_base
-    .mark_text(align='left', baseline='middle', dx=3, fontSize=10, fontWeight='bold')
+    .mark_text(align='left', baseline='middle', dx=3, fontSize=10, color='#444')
     .encode(
         x='label_x:Q',
         y='rank:Q',
         text='labels:N',
-        color=alt.Color(
-            'series:N',
-            scale=alt.Scale(domain=colour_domain, range=colour_range),
-            legend=None,
-        ),
     )
 )
 
 chart_json = (
-    (url_area + url_connectors + url_labels)
+    (url_area + url_markers + url_connectors + url_labels)
     .properties(
         width=330,
         height=420,
@@ -206,6 +229,6 @@ chart_json = (
 
 styles.save(chart, path='charts', name='3c_ecostyles', width=330, height=420)
 with open('charts/3c_ecostyles.json', 'w', encoding='utf-8') as f:
-    json.dump(chart_json.to_dict(), f, separators=(',', ':'))
+    json.dump(chart_json.to_dict(), f, indent=2)
 
 print('Saved charts/3c_ecostyles.json and charts/3c_ecostyles.png')

@@ -43,9 +43,10 @@ def build_chart(data_source: object) -> alt.Chart:
         )
     )
     
-    # Base area chart.
+    
     area = (
         base
+        .transform_filter("datum.series === 'Current stations'")
         .mark_area(opacity=0.9)
         .encode(
             x=alt.X(
@@ -56,26 +57,42 @@ def build_chart(data_source: object) -> alt.Chart:
             ),
             x2=alt.value(0),
             y=alt.Y('rank:Q', axis=None),
+            color=alt.value('#9ac7d8'),
+        )
+    )
+
+    marker_base = (
+        base
+        .transform_filter("datum.series !== 'Current stations'")
+        .transform_filter("datum.Labels != null && trim(datum.Labels) !== ''")
+        .transform_calculate(zero='0')
+    )
+
+   
+    markers = (
+        marker_base
+        .mark_rule(strokeWidth=1.8)
+        .encode(
+            x='zero:Q',
+            x2='Population_num:Q',
+            y='rank:Q',
             color=alt.Color(
                 'series:N',
                 title=None,
                 scale=alt.Scale(domain=colour_domain, range=colour_range),
                 legend=alt.Legend(orient='bottom', direction='horizontal', symbolType='square'),
             ),
-            order=alt.Order('series:N', sort='ascending'),
         )
     )
-    
-    # Label rows with manual offset tweaks so labels do not overlap.
+
     label_base = (
-        base
-        .transform_filter("datum.Labels != null && trim(datum.Labels) !== ''")
+        marker_base
         .transform_calculate(label_x='datum.Population_num + 25000')
     )
     
     connectors = (
         label_base
-        .mark_rule(color='#6f6f6f', strokeCap='round', strokeWidth=1.2, opacity=1.0)
+        .mark_rule(color='#8d8d8d', strokeWidth=0.8)
         .encode(
             x='Population_num:Q',
             y='rank:Q',
@@ -91,22 +108,17 @@ def build_chart(data_source: object) -> alt.Chart:
             baseline='middle',
             dx=3,
             fontSize=10,
-            fontWeight='bold',
+            color='#444',
         )
         .encode(
             x='label_x:Q',
             y='rank:Q',
             text='Labels:N',
-            color=alt.Color(
-                'series:N',
-                scale=alt.Scale(domain=colour_domain, range=colour_range),
-                legend=None,
-            ),
         )
     )
     
     return (
-        (area + connectors + labels)
+        (area + markers + connectors + labels)
         .properties(
             width=540,
             height=520,
@@ -126,6 +138,6 @@ chart_png = build_chart(df_png)
 # Save outputs
 styles.save(chart_png, path='charts', name='3a_ecostyles', width=540, height=520)
 with open('charts/3a_ecostyles.json', 'w', encoding='utf-8') as f:
-    json.dump(chart_json.to_dict(), f, separators=(',', ':'))
+    json.dump(chart_json.to_dict(), f, indent=2)
 
 print('Saved charts/3a_ecostyles.json and charts/3a_ecostyles.png')

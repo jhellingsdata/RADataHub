@@ -156,31 +156,7 @@
       },
       "encoding": {
         "color": {
-          "field": "series",
-          "legend": {
-            "direction": "horizontal",
-            "orient": "bottom",
-            "symbolType": "square"
-          },
-          "scale": {
-            "domain": [
-              "Leeds",
-              "Sunderland/Newcastle",
-              "Other local authorities"
-            ],
-            "range": [
-              "#1f7a1f",
-              "#e07b39",
-              "#9ac7d8"
-            ]
-          },
-          "title": null,
-          "type": "nominal"
-        },
-        "order": {
-          "field": "series",
-          "sort": "ascending",
-          "type": "nominal"
+          "value": "#9ac7d8"
         },
         "x": {
           "axis": {
@@ -194,7 +170,7 @@
               1500
             ]
           },
-          "title": "Median wage, 2025 (£)",
+          "title": "Median wage, 2025 (\u00a3)",
           "type": "quantitative"
         },
         "x2": {
@@ -248,16 +224,112 @@
               "order": "descending"
             }
           ]
+        },
+        {
+          "filter": "datum.series === 'Other local authorities'"
         }
       ]
     },
     {
       "mark": {
         "type": "rule",
-        "color": "#6f6f6f",
-        "opacity": 1.0,
-        "strokeCap": "round",
-        "strokeWidth": 1.2
+        "strokeWidth": 1.8
+      },
+      "encoding": {
+        "color": {
+          "field": "series",
+          "legend": {
+            "direction": "horizontal",
+            "orient": "bottom",
+            "symbolType": "square"
+          },
+          "scale": {
+            "domain": [
+              "Leeds",
+              "Sunderland/Newcastle",
+              "Other local authorities"
+            ],
+            "range": [
+              "#1f7a1f",
+              "#e07b39",
+              "#9ac7d8"
+            ]
+          },
+          "title": null,
+          "type": "nominal"
+        },
+        "x": {
+          "field": "zero",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "wage"
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.WAGES",
+          "as": "station"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 1\"])",
+          "as": "wage"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 2\"])",
+          "as": "sn"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 3\"])",
+          "as": "leeds"
+        },
+        {
+          "calculate": "datum[\"Unnamed: 5\"]",
+          "as": "labels"
+        },
+        {
+          "filter": "datum.station != null && datum.station !== 'Local authority' && isValid(datum.wage)"
+        },
+        {
+          "calculate": "datum.leeds > 0 ? 'Leeds' : datum.sn > 0 ? 'Sunderland/Newcastle' : 'Other local authorities'",
+          "as": "series"
+        },
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "field": "",
+              "as": "rank"
+            }
+          ],
+          "sort": [
+            {
+              "field": "wage",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.series !== 'Other local authorities'"
+        },
+        {
+          "filter": "datum.labels != null && trim(datum.labels) !== ''"
+        },
+        {
+          "calculate": "0",
+          "as": "zero"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#8d8d8d",
+        "strokeWidth": 0.8
       },
       "encoding": {
         "x": {
@@ -319,7 +391,14 @@
           ]
         },
         {
+          "filter": "datum.series !== 'Other local authorities'"
+        },
+        {
           "filter": "datum.labels != null && trim(datum.labels) !== ''"
+        },
+        {
+          "calculate": "0",
+          "as": "zero"
         },
         {
           "calculate": "datum.wage + 170",
@@ -332,28 +411,11 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
+        "color": "#444",
         "dx": 3,
-        "fontSize": 10,
-        "fontWeight": "bold"
+        "fontSize": 10
       },
       "encoding": {
-        "color": {
-          "field": "series",
-          "legend": null,
-          "scale": {
-            "domain": [
-              "Leeds",
-              "Sunderland/Newcastle",
-              "Other local authorities"
-            ],
-            "range": [
-              "#1f7a1f",
-              "#e07b39",
-              "#9ac7d8"
-            ]
-          },
-          "type": "nominal"
-        },
         "text": {
           "field": "labels",
           "type": "nominal"
@@ -411,7 +473,14 @@
           ]
         },
         {
+          "filter": "datum.series !== 'Other local authorities'"
+        },
+        {
           "filter": "datum.labels != null && trim(datum.labels) !== ''"
+        },
+        {
+          "calculate": "0",
+          "as": "zero"
         },
         {
           "calculate": "datum.wage + 170",

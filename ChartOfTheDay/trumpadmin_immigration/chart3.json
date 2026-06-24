@@ -1,0 +1,178 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Criminal record of ICE arrests over time",
+    "subtitle": [
+      "Seven-day rolling average of daily ICE administrative arrests.",
+      "Categorization of violent crimes is from the National Crime Information Center (NCIC)"
+    ]
+  },
+  "data": {"url": "https://raw.githubusercontent.com/hannahjliu/hannahjliu.github.io/refs/heads/main/data/area_chart_data.csv"},
+  "vconcat": [
+    {
+      "width": 750,
+      "height": 220,
+      "title": {"text": "Trump 1.0", "anchor": "start", "fontSize": 15, "fontWeight": 600},
+      "transform": [
+        {"filter": "datum.Administration == 'Trump 1'"},
+        {"filter": "datum['Apprehension AOR'] == 'National'"},
+        {
+          "calculate": "datum.Type == 'No Criminal Charges' ? 1 : datum.Type == 'Convicted - Non-violent' ? 2 : datum.Type == 'Convicted - Violent crime' ? 3 : 4",
+          "as": "TypeOrder"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {"type": "area", "fillOpacity": 0.8},
+          "encoding": {
+            "x": {
+              "field": "Apprehension Date",
+              "type": "temporal",
+              "axis": {"labels": false, "ticks": false, "title": null}
+            },
+            "y": {"field": "Week Rolling Average", "type": "quantitative", "scale": {"domain": [0, 1200]}},
+            "color": {
+              "field": "Type",
+              "type": "nominal",
+              "legend": null,
+              "scale": {
+                "domain": ["Convicted - Non-violent", "Convicted - Violent crime", "No Criminal Charges", "Pending Charges"],
+                "range": ["#4e79a7", "#a0cbe8", "#f28e2b", "#ffbe7d"]
+              }
+            },
+            "order": {
+              "field": "TypeOrder",
+              "type": "quantitative",
+              "sort": "descending"
+            }
+          }
+        },
+        {
+          "mark": {"type": "rule", "color": "red", "strokeWidth": 1.5, "strokeDash": [4, 3]},
+          "data": {"values": [{"inauguration": "2017-01-20"}]},
+          "encoding": {
+            "x": {"field": "inauguration", "type": "temporal"}
+          }
+        }
+      ]
+    },
+    {
+      "width": 750,
+      "height": 220,
+      "title": {"text": "Trump 2.0", "anchor": "start", "fontSize": 15, "fontWeight": 600},
+      "transform": [
+        {"filter": "datum.Administration == 'Trump 2'"},
+        {"filter": "datum['Apprehension AOR'] == 'National'"},
+        {
+          "calculate": "datum.Type == 'No Criminal Charges' ? 1 : datum.Type == 'Convicted - Non-violent' ? 2 : datum.Type == 'Convicted - Violent crime' ? 3 : 4",
+          "as": "TypeOrder"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {"type": "area", "fillOpacity": 0.8},
+          "encoding": {
+            "x": {"field": "Apprehension Date", "type": "temporal"},
+            "y": {"field": "Week Rolling Average", "type": "quantitative", "scale": {"domain": [0, 1200]}},
+            "color": {
+              "field": "Type",
+              "type": "nominal",
+              "legend": {"orient": "bottom"},
+              "scale": {
+                "domain": ["Convicted - Non-violent", "Convicted - Violent crime", "No Criminal Charges", "Pending Charges"],
+                "range": ["#4e79a7", "#a0cbe8", "#f28e2b", "#ffbe7d"]
+              }
+            },
+            "order": {
+              "field": "TypeOrder",
+              "type": "quantitative",
+              "sort": "descending"
+            }
+          }
+        },
+        {
+          "mark": {"type": "rule", "color": "red", "strokeWidth": 1.5, "strokeDash": [4, 3]},
+          "data": {"values": [{"inauguration": "2025-01-20"}]},
+          "encoding": {
+            "x": {"field": "inauguration", "type": "temporal"}
+          }
+        }
+      ]
+    }
+  ],
+  "resolve": {"scale": {"color": "shared"}},
+  "config": {
+    "font": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "numberFormat": ".0f",
+    "view": {"stroke": "transparent"},
+    "background": "white",
+    "point": {"filled": true, "opacity": 0.95},
+    "header": {
+      "titleFont": "'Besley', 'Garamond', 'Georgia'",
+      "titleFontSize": 15,
+      "titleFontWeight": 600,
+      "titleColor": "#0a0a0a",
+      "labelFont": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    },
+    "axis": {
+      "labelColor": "#0a0a0a",
+      "labelFontSize": 11,
+      "labelFont": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "labelOpacity": 1,
+      "tickColor": "#0a0a0a",
+      "tickOpacity": 0.6,
+      "domainColor": "#0a0a0a",
+      "domainOpacity": 0.6,
+      "gridColor": "#d0d0d0",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.8,
+      "title": null,
+      "titleColor": "#0a0a0a",
+      "titleFont": "'Besley', 'Merriweather', serif",
+      "titleOpacity": 1,
+      "titleFontWeight": 500,
+      "tickSize": 5
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.6,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#d0d0d0",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.8,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": -90,
+      "titleAlign": "center",
+      "titleBaseline": "middle"
+    },
+    "legend": {
+      "titleFont": "'Besley', 'Merriweather', serif",
+      "titleFontSize": 15,
+      "titleFontWeight": 500,
+      "titleColor": "#0a0a0a",
+      "title": null,
+      "labelFont": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "labelColor": "#0a0a0a",
+      "labelFontSize": 12
+    },
+    "title": {
+      "font": "'Besley', 'Garamond', 'Georgia'",
+      "fontSize": 20,
+      "fontWeight": 500,
+      "color": "#0a0a0a",
+      "subtitleFont": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      "subtitleFontSize": 14,
+      "subtitleColor": "#0a0a0a",
+      "anchor": "start",
+      "offset": 10
+    }
+  }
+}

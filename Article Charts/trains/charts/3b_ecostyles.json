@@ -156,31 +156,7 @@
       },
       "encoding": {
         "color": {
-          "field": "series",
-          "legend": {
-            "direction": "horizontal",
-            "orient": "bottom",
-            "symbolType": "square"
-          },
-          "scale": {
-            "domain": [
-              "West Leeds",
-              "Leamside",
-              "Current stations"
-            ],
-            "range": [
-              "#1f7a1f",
-              "#e07b39",
-              "#9ac7d8"
-            ]
-          },
-          "title": null,
-          "type": "nominal"
-        },
-        "order": {
-          "field": "series",
-          "sort": "ascending",
-          "type": "nominal"
+          "value": "#9ac7d8"
         },
         "x": {
           "axis": {
@@ -244,16 +220,105 @@
               "order": "descending"
             }
           ]
+        },
+        {
+          "filter": "datum.series === 'Current stations'"
         }
       ]
     },
     {
       "mark": {
         "type": "rule",
-        "color": "#6f6f6f",
-        "opacity": 1.0,
-        "strokeCap": "round",
-        "strokeWidth": 1.2
+        "strokeWidth": 1.8
+      },
+      "encoding": {
+        "color": {
+          "field": "series",
+          "legend": {
+            "direction": "horizontal",
+            "orient": "bottom",
+            "symbolType": "square"
+          },
+          "scale": {
+            "domain": [
+              "West Leeds",
+              "Leamside",
+              "Current stations"
+            ],
+            "range": [
+              "#1f7a1f",
+              "#e07b39",
+              "#9ac7d8"
+            ]
+          },
+          "title": null,
+          "type": "nominal"
+        },
+        "x": {
+          "field": "zero",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "share"
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "toNumber(replace(datum['Share level 4+'], '%', '')) / 100",
+          "as": "current_share"
+        },
+        {
+          "calculate": "toNumber(datum['West Leeds'])",
+          "as": "west_leeds_share"
+        },
+        {
+          "calculate": "toNumber(datum['Leamside'])",
+          "as": "leamside_share"
+        },
+        {
+          "calculate": "datum['Current/Leamside'] === 'West Leeds' ? datum.west_leeds_share : datum['Current/Leamside'] === 'Leamside' ? datum.leamside_share : datum.current_share",
+          "as": "share"
+        },
+        {
+          "calculate": "datum['Current/Leamside'] === 'Current' ? 'Current stations' : datum['Current/Leamside']",
+          "as": "series"
+        },
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "field": "",
+              "as": "rank"
+            }
+          ],
+          "sort": [
+            {
+              "field": "share",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.series !== 'Current stations'"
+        },
+        {
+          "filter": "datum.Labels != null && trim(datum.Labels) !== ''"
+        },
+        {
+          "calculate": "0",
+          "as": "zero"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#8d8d8d",
+        "strokeWidth": 0.8
       },
       "encoding": {
         "x": {
@@ -308,7 +373,14 @@
           ]
         },
         {
+          "filter": "datum.series !== 'Current stations'"
+        },
+        {
           "filter": "datum.Labels != null && trim(datum.Labels) !== ''"
+        },
+        {
+          "calculate": "0",
+          "as": "zero"
         },
         {
           "calculate": "datum.share + 0.10",
@@ -321,28 +393,11 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
+        "color": "#444",
         "dx": 3,
-        "fontSize": 10,
-        "fontWeight": "bold"
+        "fontSize": 10
       },
       "encoding": {
-        "color": {
-          "field": "series",
-          "legend": null,
-          "scale": {
-            "domain": [
-              "West Leeds",
-              "Leamside",
-              "Current stations"
-            ],
-            "range": [
-              "#1f7a1f",
-              "#e07b39",
-              "#9ac7d8"
-            ]
-          },
-          "type": "nominal"
-        },
         "text": {
           "field": "Labels",
           "type": "nominal"
@@ -393,7 +448,14 @@
           ]
         },
         {
+          "filter": "datum.series !== 'Current stations'"
+        },
+        {
           "filter": "datum.Labels != null && trim(datum.Labels) !== ''"
+        },
+        {
+          "calculate": "0",
+          "as": "zero"
         },
         {
           "calculate": "datum.share + 0.10",

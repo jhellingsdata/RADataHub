@@ -156,31 +156,7 @@
       },
       "encoding": {
         "color": {
-          "field": "series",
-          "legend": {
-            "direction": "horizontal",
-            "orient": "bottom",
-            "symbolType": "square"
-          },
-          "scale": {
-            "domain": [
-              "Leeds",
-              "Sunderland/Newcastle",
-              "Other stations"
-            ],
-            "range": [
-              "#1f7a1f",
-              "#e07b39",
-              "#9ac7d8"
-            ]
-          },
-          "title": null,
-          "type": "nominal"
-        },
-        "order": {
-          "field": "series",
-          "sort": "ascending",
-          "type": "nominal"
+          "value": "#9ac7d8"
         },
         "x": {
           "axis": {
@@ -244,16 +220,113 @@
               "order": "descending"
             }
           ]
+        },
+        {
+          "filter": "datum.series === 'Other stations'"
         }
       ]
     },
     {
       "mark": {
         "type": "rule",
-        "color": "#6f6f6f",
-        "opacity": 1.0,
-        "strokeCap": "round",
-        "strokeWidth": 1.2
+        "strokeWidth": 1.8
+      },
+      "encoding": {
+        "color": {
+          "field": "series",
+          "legend": {
+            "direction": "horizontal",
+            "orient": "bottom",
+            "symbolType": "square"
+          },
+          "scale": {
+            "domain": [
+              "Leeds",
+              "Sunderland/Newcastle",
+              "Other stations"
+            ],
+            "range": [
+              "#1f7a1f",
+              "#e07b39",
+              "#9ac7d8"
+            ]
+          },
+          "title": null,
+          "type": "nominal"
+        },
+        "x": {
+          "field": "zero",
+          "type": "quantitative"
+        },
+        "x2": {
+          "field": "jobs"
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum[\"Unnamed: 1\"]",
+          "as": "station"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 2\"])",
+          "as": "jobs"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 3\"])",
+          "as": "sn"
+        },
+        {
+          "calculate": "toNumber(datum[\"Unnamed: 4\"])",
+          "as": "leeds"
+        },
+        {
+          "filter": "datum.station != null && isValid(datum.jobs)"
+        },
+        {
+          "calculate": "datum.leeds > 0 ? 'Leeds' : datum.sn > 0 ? 'Sunderland/Newcastle' : 'Other stations'",
+          "as": "series"
+        },
+        {
+          "window": [
+            {
+              "op": "row_number",
+              "field": "",
+              "as": "rank"
+            }
+          ],
+          "sort": [
+            {
+              "field": "jobs",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.station === 'Leeds' || datum.station === 'Newcastle' || datum.station === 'Sunderland'"
+        },
+        {
+          "calculate": "datum.station === 'Leeds' ? 100000 : datum.station === 'Newcastle' ? 115000 : 130000",
+          "as": "label_offset"
+        },
+        {
+          "calculate": "0",
+          "as": "zero"
+        },
+        {
+          "calculate": "datum.jobs + datum.label_offset",
+          "as": "label_x"
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#8d8d8d",
+        "strokeWidth": 0.8
       },
       "encoding": {
         "x": {
@@ -318,6 +391,10 @@
           "as": "label_offset"
         },
         {
+          "calculate": "0",
+          "as": "zero"
+        },
+        {
           "calculate": "datum.jobs + datum.label_offset",
           "as": "label_x"
         }
@@ -328,28 +405,11 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
+        "color": "#444",
         "dx": 3,
-        "fontSize": 10,
-        "fontWeight": "bold"
+        "fontSize": 10
       },
       "encoding": {
-        "color": {
-          "field": "series",
-          "legend": null,
-          "scale": {
-            "domain": [
-              "Leeds",
-              "Sunderland/Newcastle",
-              "Other stations"
-            ],
-            "range": [
-              "#1f7a1f",
-              "#e07b39",
-              "#9ac7d8"
-            ]
-          },
-          "type": "nominal"
-        },
         "text": {
           "field": "station",
           "type": "nominal"
@@ -408,6 +468,10 @@
         {
           "calculate": "datum.station === 'Leeds' ? 100000 : datum.station === 'Newcastle' ? 115000 : 130000",
           "as": "label_offset"
+        },
+        {
+          "calculate": "0",
+          "as": "zero"
         },
         {
           "calculate": "datum.jobs + datum.label_offset",
