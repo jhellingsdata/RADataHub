@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MSA Evidence Base</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+
+<header id="page-header">
+  <div id="wordmark">England's Mayoral<br>Strategic Authorities</div>
+  <div id="place-selector">
+    <span id="place-label">Place</span>
+    <div class="select-wrap">
+      <select id="msa-select"></select>
+    </div>
+  </div>
+</header>
+
+<div id="content">
+
+  <div id="authority-header">
+    <div id="breadcrumb"></div>
+    <div id="authority-name-row">
+      <h1 id="authority-name"></h1>
+      <span id="tier-pill" class="tier-pill"></span>
+    </div>
+    <div id="meta-row"></div>
+  </div>
+
+  <div id="map-section">
+    <div id="boundary-map"></div>
+    <div id="map-caption"></div>
+  </div>
+
+  <div id="indicators-sections"></div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// ── Config ─────────────────────────────────────────────────────────────────
+const DATA_PATH         = '../data/processed/msa_all_indicators.json';
+const CA_GEOJSON_PATH   = '../data/processed/ca.geojson';
+const LAD_GEOJSON_PATH  = '../data/processed/lad.geojson';
+const COUNTRIES_PATH    = '../data/processed/countries.geojson';
+const DEFAULT_MSA_ID    = 'ynyca';
+const TIERS             = ['Established', 'Existing', 'DPP'];
+
+const fmtInt   = v => Math.round(v).toLocaleString('en-GB');
+const fmtDec1  = v => v.toLocaleString('en-GB', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+
+// Indicator table definitions, in display order, grouped by `group`.
+// better: 'higher' | 'lower' | 'context' — drives delta colour + comparison wording.
+// benchmarkKey/benchmarkValue → "vs England" column; omit when no benchmark exists (cell shows "Pending").
+// changeKey → "Change" column pulls a different indicator field representing change-over-time
+//   (only gva_ph_2023 has one available — gva_growth_2018_23). Omit elsewhere (cell shows "Pending").
+// rankKey looks up msa.ranks; omit to show "Pending" in the Rank column.
+const INDICATOR_CONFIG = [
+  {
+    group: 'Snapshot', key: 'pop_2024', label: 'Population', sourceYear: 'ONS, mid-2024 estimate',
+    unit: '', format: fmtInt, better: 'context',
+    benchmarkKey: 'pop_2024', rankKey: 'pop_2024',
+  },
+  {
+    group: 'Snapshot', key: 'density_2024', label: 'Population density', sourceYear: 'ONS, mid-2024 estimate',
+    unit: 'people per km²', format: fmtDec1, better: 'context',
+    benchmarkKey: 'density_2024', rankKey: 'density_2024',
+  },
+  {
+    group: 'Economy', key: 'gva_ph_2023', label: 'GVA per head', sourceYear: 'ONS, 2023',
+    unit: '', format: v => '£' + fmtInt(v), better: 'higher',
+    benchmarkKey: 'gva_ph_2023', rankKey: 'gva_ph_2023',
+    changeKey: 'gva_growth_2018_23', changeSinceLabel: 'since 2018',
+  },
+  {
+    group: 'Economy', key: 'gva_index_eng', label: 'GVA England index', sourceYear: 'ONS, 2023 · England = 100',
+    unit: '', format: fmtDec1, better: 'higher',
+    benchmarkValue: 100,
+  },
+  {
+    group: 'Economy', key: 'gva_growth_2018_23', label: 'GVA growth 2018–23', sourceYear: 'ONS, 2018–2023',
+    unit: '', format: v => fmtDec1(v) + '%', better: 'higher',
+    benchmarkKey: 'gva_growth_2018_23', rankKey: 'gva_growth_2018_23',
+  },
+  {
+    group: 'Deprivation', key: 'imd_pct_decile1', label: '% LSOAs most deprived 10%', sourceYear: 'MHCLG, IMD 2025',
+    unit: '', format: v => fmtDec1(v) + '%', better: 'lower',
+    benchmarkKey: 'imd_pct_decile1', rankKey: 'imd_pct_decile1',
+  },
+  {
+    group: 'Deprivation', key: 'imd_avg_rank', label: 'IMD average rank', sourceYear: 'MHCLG, IMD 2025',
+    unit: 'national LSOA rank', format: fmtInt, better: 'higher',
+  },
+];
+
+// ── State ──────────────────────────────────────────────────────────────────
+let DATA = null;
+let boundaryMap = null;
+let boundaryLayer = null;
+let englandLayer = null;
+let cachedCaGeo = null, cachedLadGeo = null, cachedCountriesGeo = null;
+
+// ── Load ───────────────────────────────────────────────────────────────────
+async function loadJSON(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error(`Failed to load ${path}: ${res.status}`);
+  return res.json();
+}
+
+async function init() {
+  try {
+    DATA = await loadJSON(DATA_PATH);
+  } catch (err) {
+    console.error(err);
+    alert(`Could not load ${DATA_PATH}.\n\nRun "python scripts/build_dashboard_data.py" first, then reload via Live Server.`);
+    return;
+  }
+
+  populateDropdown();
+
+  const select = document.getElementById('msa-select');
+  select.addEventListener('change', e => renderProfile(e.target.value));
+
+  const defaultMsa = DATA.msas.find(m => m.id === DEFAULT_MSA_ID) || DATA.msas[0];
+  select.value = defaultMsa.id;
+  renderProfile(defaultMsa.id);
+}
+
+function populateDropdown() {
+  const select = document.getElementById('msa-select');
+  TIERS.forEach(tier => {
+    const group = document.createElement('optgroup');
+    group.label = tier;
+    DATA.msas.filter(m => m.tier === tier).forEach(m => {
+      const opt = document.createElement('option');
+      opt.value = m.id;
+      opt.textContent = m.name;
+      group.appendChild(opt);
+    });
+    select.appendChild(group);
+  });
+}
+
+// ── Render: profile (fade transition) ───────────────────────────────────────
+function renderProfile(id) {
+  const msa = DATA.msas.find(m => m.id === id);
+  if (!msa) return;
+  const content = document.getElementById('content');
+  content.classList.add('fading');
+  setTimeout(() => {
+    renderAuthorityHeader(msa);
+    renderIndicatorTable(msa);
+    renderBoundaryMap(msa);
+    content.classList.remove('fading');
+  }, 180);
+}
+
+// ── Render: authority header ─────────────────────────────────────────────────
+function renderAuthorityHeader(msa) {
+  document.getElementById('breadcrumb').textContent = `England · ${msa.gss_code} · ${msa.tier}`;
+  document.getElementById('authority-name').textContent = msa.name;
+
+  const pill = document.getElementById('tier-pill');
+  pill.textContent = msa.tier;
+  pill.className = `tier-pill tier-${msa.tier.toLowerCase()}`;
+
+  const parts = [
+    `Mayor: ${msa.mayor}`,
+    `Established: ${msa.established}`,
+    `Deal Level: ${msa.deal_level}`,
+    `Area: ${msa.area_km2.toLocaleString('en-GB')} km²`,
+  ];
+  let html = parts
+    .map(p => `<span>${p}</span>`)
+    .join('<span class="meta-sep">·</span>');
+  if (msa.website) {
+    html += `<span class="meta-sep">·</span><a href="${msa.website}" target="_blank" rel="noopener">Website</a>`;
+  }
+  document.getElementById('meta-row').innerHTML = html;
+}
+
+// ── Render: indicator table ──────────────────────────────────────────────────
+function renderIndicatorTable(msa) {
+  const container = document.getElementById('indicators-sections');
+  container.innerHTML = '';
+  const benchmarks = DATA.metadata.england_benchmarks;
+
+  const table = document.createElement('table');
+  table.id = 'indicator-table';
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th class="col-indicator">Indicator</th>
+        <th class="col-latest">Latest</th>
+        <th class="col-vs-england">vs England</th>
+        <th class="col-change">Change</th>
+        <th class="col-rank">Rank in MSAs</th>
+      </tr>
+    </thead>
+  `;
+
+  const tbody = document.createElement('tbody');
+  let currentGroup = null;
+
+  INDICATOR_CONFIG.forEach(cfg => {
+    if (cfg.group !== currentGroup) {
+      currentGroup = cfg.group;
+      const groupRow = document.createElement('tr');
+      groupRow.className = 'group-row';
+      groupRow.innerHTML = `<td colspan="5">${cfg.group}</td>`;
+      tbody.appendChild(groupRow);
+    }
+
+    const value = msa.indicators[cfg.key];
+    const row = document.createElement('tr');
+    row.className = 'indicator-row';
+
+    if (value === null || value === undefined) {
+      row.innerHTML = `
+        <td class="cell-indicator">
+          <div class="ind-name">${cfg.label}</div>
+          <div class="ind-source">${cfg.sourceYear}</div>
+        </td>
+        <td colspan="4"><span class="pending">Pending</span></td>
+      `;
+      tbody.appendChild(row);
+      return;
+    }
+
+    // LATEST
+    const latestHtml = `
+      <span class="latest-value">${cfg.format(value)}</span>
+      ${cfg.unit ? `<div class="latest-unit">${cfg.unit}</div>` : ''}
+    `;
+
+    // VS ENGLAND
+    const benchmark = cfg.benchmarkKey ? benchmarks[cfg.benchmarkKey]
+                     : (cfg.benchmarkValue !== undefined ? cfg.benchmarkValue : null);
+    let vsEnglandHtml = `<span class="pending">Pending</span>`;
+    if (benchmark !== null && benchmark !== undefined) {
+      const diff     = ((value - benchmark) / benchmark) * 100;
+      const diffAbs  = fmtDec1(Math.abs(diff));
+      const sign     = diff >= 0 ? '+' : '−';
+      const aboveBelow = diff >= 0 ? 'above' : 'below';
+      let colourClass = 'neutral';
+      if (cfg.better === 'higher') colourClass = diff >= 0 ? 'pos' : 'neg';
+      else if (cfg.better === 'lower') colourClass = diff <= 0 ? 'pos' : 'neg';
+      vsEnglandHtml = `
+        <span class="delta ${colourClass}">${sign}${diffAbs}%</span>
+        <div class="sub-line">${aboveBelow} England (${cfg.format(benchmark)})</div>
+      `;
+    }
+
+    // CHANGE (time-based — only populated where a real change-over-time field exists)
+    let changeHtml = `<span class="pending">Pending</span>`;
+    if (cfg.changeKey) {
+      const changeVal = msa.indicators[cfg.changeKey];
+      if (changeVal !== null && changeVal !== undefined) {
+        const sign = changeVal >= 0 ? '+' : '−';
+        const colourClass = changeVal >= 0 ? 'pos' : 'neg';
+        changeHtml = `
+          <span class="delta ${colourClass}">${sign}${fmtDec1(Math.abs(changeVal))}%</span>
+          <div class="sub-line">${cfg.changeSinceLabel}</div>
+        `;
+      }
+    }
+
+    // RANK
+    const rank = cfg.rankKey ? msa.ranks[cfg.rankKey] : null;
+    const rankHtml = (rank !== null && rank !== undefined)
+      ? `<span class="rank-num">${rank}</span><span class="rank-denom"> / 20</span>`
+      : `<span class="pending">Pending</span>`;
+
+    row.innerHTML = `
+      <td class="cell-indicator">
+        <div class="ind-name">${cfg.label}</div>
+        <div class="ind-source">${cfg.sourceYear}</div>
+      </td>
+      <td class="cell-latest">${latestHtml}</td>
+      <td class="cell-vs-england">${vsEnglandHtml}</td>
+      <td class="cell-change">${changeHtml}</td>
+      <td class="cell-rank">${rankHtml}</td>
+    `;
+    tbody.appendChild(row);
+  });
+
+  table.appendChild(tbody);
+  container.appendChild(table);
+}
+
+// ── Render: boundary map ────────────────────────────────────────────────────
+async function renderBoundaryMap(msa) {
+  const captionEl = document.getElementById('map-caption');
+
+  if (!boundaryMap) {
+    boundaryMap = L.map('boundary-map', {
+      attributionControl: false,
+      zoomControl: true,
+    });
+  }
+
+  if (boundaryLayer) { boundaryMap.removeLayer(boundaryLayer); boundaryLayer = null; }
+  if (englandLayer)  { boundaryMap.removeLayer(englandLayer);  englandLayer  = null; }
+
+  try {
+    if (!cachedCountriesGeo) cachedCountriesGeo = await loadJSON(COUNTRIES_PATH);
+    englandLayer = L.geoJSON(cachedCountriesGeo, {
+      filter: f => f.properties.is_england,
+      style: { fillColor: '#D9D9D9', fillOpacity: 1, color: '#bbbbbb', weight: 0.5 },
+      interactive: false,
+    }).addTo(boundaryMap);
+
+    let targetLayer;
+    if (msa.gss_code === 'TBC') {
+      captionEl.textContent = 'Boundary not yet statutory — approximate boundary shown using constituent local authorities.';
+
+      if (!cachedLadGeo) cachedLadGeo = await loadJSON(LAD_GEOJSON_PATH);
+      const codes = new Set(msa.constituent_lad_codes || []);
+      targetLayer = L.geoJSON(cachedLadGeo, {
+        filter: f => codes.has(f.properties.LAD25CD),
+        style: { fillColor: '#2A9D8F', fillOpacity: 0.75, color: '#ffffff', weight: 1 },
+      }).addTo(boundaryMap);
+    } else {
+      captionEl.textContent = 'Statutory boundary — ONS Combined Authorities (December 2025).';
+
+      if (!cachedCaGeo) cachedCaGeo = await loadJSON(CA_GEOJSON_PATH);
+      targetLayer = L.geoJSON(cachedCaGeo, {
+        filter: f => f.properties.CAUTH25CD === msa.gss_code,
+        style: { fillColor: '#2A9D8F', fillOpacity: 0.75, color: '#ffffff', weight: 1.5 },
+      }).addTo(boundaryMap);
+    }
+
+    boundaryLayer = targetLayer;
+    const bounds = targetLayer.getBounds();
+    if (bounds.isValid()) {
+      boundaryMap.fitBounds(bounds, { padding: [20, 20] });
+    } else {
+      boundaryMap.setView([53.0, -1.5], 6);
+    }
+  } catch (err) {
+    console.error('Boundary map load error:', err);
+  }
+
+  // Container may have been laid out after Leaflet measured it (e.g. first paint) — re-measure.
+  setTimeout(() => boundaryMap.invalidateSize(), 200);
+}
+
+// ── Go ─────────────────────────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>

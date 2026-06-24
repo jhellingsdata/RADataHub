@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MSA Interactive Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app">
+
+  <!-- Header -->
+  <div id="header">
+    <div id="header-title">
+      <span id="header-main">MSA Research Project</span>
+      <span id="header-sub">Mayoral Strategic Authorities — England</span>
+    </div>
+    <div id="controls">
+      <div class="control-group">
+        <span class="control-label">Boundaries</span>
+        <button class="layer-btn active" data-layer="ca">Combined Authorities</button>
+        <button class="layer-btn" data-layer="lad">Local Authority Districts</button>
+        <button class="layer-btn" data-layer="msoa">MSOAs</button>
+        <button class="layer-btn" data-layer="lsoa">LSOAs</button>
+      </div>
+      <div class="control-divider"></div>
+      <div class="control-group">
+        <span class="control-label">Colour by</span>
+        <button class="colour-btn active" data-colour="uniform">MSA Status</button>
+        <button class="colour-btn" data-colour="deal">Status</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map + sidebar -->
+  <div id="map-container">
+    <div id="map"></div>
+    <div id="sidebar">
+      <div id="sidebar-default">
+        <div id="sidebar-icon">🗺</div>
+        <p>Click any area to explore its data.</p>
+        <p class="sidebar-hint">Toggle boundary level and colour mode using the controls above.</p>
+      </div>
+      <div id="sidebar-content" class="hidden">
+        <div id="sidebar-header">
+          <div id="sidebar-name"></div>
+          <div id="sidebar-gss"></div>
+          <div id="sidebar-badge-row">
+            <span id="sidebar-deal-badge" class="badge"></span>
+            <span id="sidebar-status-badge" class="badge"></span>
+          </div>
+        </div>
+        <div id="sidebar-body">
+          <div class="sidebar-section-title">Area Details</div>
+          <div class="sidebar-row">
+            <span class="sidebar-label">GSS Code</span>
+            <span class="sidebar-value" id="detail-gss"></span>
+          </div>
+          <div class="sidebar-row" id="ca-row">
+            <span class="sidebar-label">CA / DPP Area</span>
+            <span class="sidebar-value" id="detail-ca"></span>
+          </div>
+          <div class="sidebar-row" id="deal-row">
+            <span class="sidebar-label">Status</span>
+            <span class="sidebar-value" id="detail-deal"></span>
+          </div>
+          <div class="sidebar-section-title" style="margin-top:18px;">
+            Indicators
+            <span class="sidebar-coming-soon">coming soon</span>
+          </div>
+          <div class="sidebar-placeholder">
+            <div class="placeholder-row"></div>
+            <div class="placeholder-row short"></div>
+            <div class="placeholder-row"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div id="legend">
+    <div class="legend-title">Legend</div>
+    <div id="legend-items"></div>
+  </div>
+
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/map.js"></script>
+</body>
+</html>

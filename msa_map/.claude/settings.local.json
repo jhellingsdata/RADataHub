@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(stat -f \"mtime=%Sm\" \"data/analysis/MSA_Indicator_Tracker.xlsx\")",
+      "Bash(/Users/h.cantekin/.conda/envs/charts/bin/python -c ' *)",
+      "Bash(/Users/h.cantekin/.conda/envs/charts/bin/jupyter nbconvert *)",
+      "Bash(grep -i \"england\" data/processed/msa_population_ranks.csv data/processed/msa_imd_ranks.csv data/processed/msa_gva_ranks.csv)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(curl -sf http://localhost:8743/dashboard/index.html)",
+      "Read(//private/tmp/**)",
+      "Bash(node -e \"require\\('playwright'\\); console.log\\('playwright available'\\)\")",
+      "Bash(npm ls *)",
+      "Bash(python3 -c \"import playwright; print\\('python playwright available'\\)\")",
+      "Bash(curl -sf -m 5 https://pypi.org)",
+      "Bash(pip3 install *)"
+    ]
+  }
+}
