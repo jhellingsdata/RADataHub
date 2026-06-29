@@ -1,0 +1,363 @@
+﻿ITL125CD,ITL125NM,ITL225CD,ITL225NM,ITL325CD,ITL325NM,LAU125CD,LAU125NM,LAD24CD,LAD24NM,ObjectId
+TLC,North East (England),TLC3,Tees Valley,TLC31,Hartlepool and Stockton-on-Tees,E06000001,Hartlepool,E06000001,Hartlepool,1
+TLC,North East (England),TLC3,Tees Valley,TLC31,Hartlepool and Stockton-on-Tees,E06000004,Stockton-on-Tees,E06000004,Stockton-on-Tees,2
+TLC,North East (England),TLC3,Tees Valley,TLC32,South Teesside,E06000002,Middlesbrough,E06000002,Middlesbrough,3
+TLC,North East (England),TLC3,Tees Valley,TLC32,South Teesside,E06000003,Redcar and Cleveland,E06000003,Redcar and Cleveland,4
+TLC,North East (England),TLC3,Tees Valley,TLC33,Darlington,E06000005,Darlington,E06000005,Darlington,5
+TLC,North East (England),TLC4,"Northumberland, Durham and Tyne & Wear",TLC41,Durham,E06000047,County Durham,E06000047,County Durham,6
+TLC,North East (England),TLC4,"Northumberland, Durham and Tyne & Wear",TLC42,Northumberland,E06000057,Northumberland,E06000057,Northumberland,7
+TLC,North East (England),TLC4,"Northumberland, Durham and Tyne & Wear",TLC43,Tyneside,E08000021,Newcastle upon Tyne,E08000021,Newcastle upon Tyne,8
+TLC,North East (England),TLC4,"Northumberland, Durham and Tyne & Wear",TLC43,Tyneside,E08000022,North Tyneside,E08000022,North Tyneside,9
+TLC,North East (England),TLC4,"Northumberland, Durham and Tyne & Wear",TLC43,Tyneside,E08000023,South Tyneside,E08000023,South Tyneside,10
+TLC,North East (England),TLC4,"Northumberland, Durham and Tyne & Wear",TLC43,Tyneside,E08000037,Gateshead,E08000037,Gateshead,11
+TLC,North East (England),TLC4,"Northumberland, Durham and Tyne & Wear",TLC44,Sunderland,E08000024,Sunderland,E08000024,Sunderland,12
+TLD,North West (England),TLD1,Cumbria,TLD13,Cumberland,E06000063,Cumberland,E06000063,Cumberland,13
+TLD,North West (England),TLD1,Cumbria,TLD14,Westmorland and Furness,E06000064,Westmorland and Furness,E06000064,Westmorland and Furness,14
+TLD,North West (England),TLD3,Greater Manchester,TLD33,Manchester,E08000003,Manchester,E08000003,Manchester,15
+TLD,North West (England),TLD3,Greater Manchester,TLD34,Greater Manchester South West,E08000006,Salford,E08000006,Salford,16
+TLD,North West (England),TLD3,Greater Manchester,TLD34,Greater Manchester South West,E08000009,Trafford,E08000009,Trafford,17
+TLD,North West (England),TLD3,Greater Manchester,TLD35,Greater Manchester South East,E08000007,Stockport,E08000007,Stockport,18
+TLD,North West (England),TLD3,Greater Manchester,TLD35,Greater Manchester South East,E08000008,Tameside,E08000008,Tameside,19
+TLD,North West (England),TLD3,Greater Manchester,TLD36,Greater Manchester North West,E08000001,Bolton,E08000001,Bolton,20
+TLD,North West (England),TLD3,Greater Manchester,TLD36,Greater Manchester North West,E08000010,Wigan,E08000010,Wigan,21
+TLD,North West (England),TLD3,Greater Manchester,TLD37,Greater Manchester North East,E08000002,Bury,E08000002,Bury,22
+TLD,North West (England),TLD3,Greater Manchester,TLD37,Greater Manchester North East,E08000004,Oldham,E08000004,Oldham,23
+TLD,North West (England),TLD3,Greater Manchester,TLD37,Greater Manchester North East,E08000005,Rochdale,E08000005,Rochdale,24
+TLD,North West (England),TLD4,Lancashire,TLD41,Blackburn with Darwen,E06000008,Blackburn with Darwen,E06000008,Blackburn with Darwen,25
+TLD,North West (England),TLD4,Lancashire,TLD42,Blackpool,E06000009,Blackpool,E06000009,Blackpool,26
+TLD,North West (England),TLD4,Lancashire,TLD44,Lancaster and Wyre,E07000121,Lancaster,E07000121,Lancaster,27
+TLD,North West (England),TLD4,Lancashire,TLD44,Lancaster and Wyre,E07000128,Wyre,E07000128,Wyre,28
+TLD,North West (England),TLD4,Lancashire,TLD45,Mid Lancashire,E07000119,Fylde,E07000119,Fylde,29
+TLD,North West (England),TLD4,Lancashire,TLD45,Mid Lancashire,E07000123,Preston,E07000123,Preston,30
+TLD,North West (England),TLD4,Lancashire,TLD45,Mid Lancashire,E07000124,Ribble Valley,E07000124,Ribble Valley,31
+TLD,North West (England),TLD4,Lancashire,TLD45,Mid Lancashire,E07000126,South Ribble,E07000126,South Ribble,32
+TLD,North West (England),TLD4,Lancashire,TLD46,East Lancashire,E07000117,Burnley,E07000117,Burnley,33
+TLD,North West (England),TLD4,Lancashire,TLD46,East Lancashire,E07000120,Hyndburn,E07000120,Hyndburn,34
+TLD,North West (England),TLD4,Lancashire,TLD46,East Lancashire,E07000122,Pendle,E07000122,Pendle,35
+TLD,North West (England),TLD4,Lancashire,TLD46,East Lancashire,E07000125,Rossendale,E07000125,Rossendale,36
+TLD,North West (England),TLD4,Lancashire,TLD47,Chorley and West Lancashire,E07000118,Chorley,E07000118,Chorley,37
+TLD,North West (England),TLD4,Lancashire,TLD47,Chorley and West Lancashire,E07000127,West Lancashire,E07000127,West Lancashire,38
+TLD,North West (England),TLD6,Cheshire,TLD61,Warrington,E06000007,Warrington,E06000007,Warrington,39
+TLD,North West (England),TLD6,Cheshire,TLD62,Cheshire East,E06000049,Cheshire East,E06000049,Cheshire East,40
+TLD,North West (England),TLD6,Cheshire,TLD63,Cheshire West and Chester,E06000050,Cheshire West and Chester,E06000050,Cheshire West and Chester,41
+TLD,North West (England),TLD7,Merseyside,TLD71,East Merseyside,E06000006,Halton,E06000006,Halton,42
+TLD,North West (England),TLD7,Merseyside,TLD71,East Merseyside,E08000011,Knowsley,E08000011,Knowsley,43
+TLD,North West (England),TLD7,Merseyside,TLD71,East Merseyside,E08000013,St. Helens,E08000013,St. Helens,44
+TLD,North West (England),TLD7,Merseyside,TLD72,Liverpool,E08000012,Liverpool,E08000012,Liverpool,45
+TLD,North West (England),TLD7,Merseyside,TLD73,Sefton,E08000014,Sefton,E08000014,Sefton,46
+TLD,North West (England),TLD7,Merseyside,TLD74,Wirral,E08000015,Wirral,E08000015,Wirral,47
+TLE,Yorkshire and The Humber,TLE1,East Yorkshire and Northern Lincolnshire,TLE11,"Kingston upon Hull, City of",E06000010,"Kingston upon Hull, City of",E06000010,"Kingston upon Hull, City of",48
+TLE,Yorkshire and The Humber,TLE1,East Yorkshire and Northern Lincolnshire,TLE12,East Riding of Yorkshire,E06000011,East Riding of Yorkshire,E06000011,East Riding of Yorkshire,49
+TLE,Yorkshire and The Humber,TLE1,East Yorkshire and Northern Lincolnshire,TLE13,North and North East Lincolnshire,E06000012,North East Lincolnshire,E06000012,North East Lincolnshire,50
+TLE,Yorkshire and The Humber,TLE1,East Yorkshire and Northern Lincolnshire,TLE13,North and North East Lincolnshire,E06000013,North Lincolnshire,E06000013,North Lincolnshire,51
+TLE,Yorkshire and The Humber,TLE2,North Yorkshire,TLE21,York,E06000014,York,E06000014,York,52
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG13,Warwickshire CC,E07000218,North Warwickshire,E07000218,North Warwickshire,53
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG13,Warwickshire CC,E07000219,Nuneaton and Bedworth,E07000219,Nuneaton and Bedworth,54
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG13,Warwickshire CC,E07000220,Rugby,E07000220,Rugby,55
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG13,Warwickshire CC,E07000221,Stratford-on-Avon,E07000221,Stratford-on-Avon,56
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG13,Warwickshire CC,E07000222,Warwick,E07000222,Warwick,57
+TLG,West Midlands (England),TLG2,Shropshire and Staffordshire,TLG21,Telford and Wrekin,E06000020,Telford and Wrekin,E06000020,Telford and Wrekin,58
+TLG,West Midlands (England),TLG2,Shropshire and Staffordshire,TLG22,Shropshire,E06000051,Shropshire,E06000051,Shropshire,59
+TLG,West Midlands (England),TLG2,Shropshire and Staffordshire,TLG23,Stoke-on-Trent,E06000021,Stoke-on-Trent,E06000021,Stoke-on-Trent,60
+TLG,West Midlands (England),TLG2,Shropshire and Staffordshire,TLG24,Staffordshire CC,E07000192,Cannock Chase,E07000192,Cannock Chase,61
+TLG,West Midlands (England),TLG2,Shropshire and Staffordshire,TLG24,Staffordshire CC,E07000193,East Staffordshire,E07000193,East Staffordshire,62
+TLG,West Midlands (England),TLG2,Shropshire and Staffordshire,TLG24,Staffordshire CC,E07000194,Lichfield,E07000194,Lichfield,63
+TLG,West Midlands (England),TLG2,Shropshire and Staffordshire,TLG24,Staffordshire CC,E07000195,Newcastle-under-Lyme,E07000195,Newcastle-under-Lyme,64
+TLG,West Midlands (England),TLG2,Shropshire and Staffordshire,TLG24,Staffordshire CC,E07000196,South Staffordshire,E07000196,South Staffordshire,65
+TLG,West Midlands (England),TLG2,Shropshire and Staffordshire,TLG24,Staffordshire CC,E07000197,Stafford,E07000197,Stafford,66
+TLG,West Midlands (England),TLG2,Shropshire and Staffordshire,TLG24,Staffordshire CC,E07000198,Staffordshire Moorlands,E07000198,Staffordshire Moorlands,67
+TLG,West Midlands (England),TLG2,Shropshire and Staffordshire,TLG24,Staffordshire CC,E07000199,Tamworth,E07000199,Tamworth,68
+TLG,West Midlands (England),TLG3,West Midlands,TLG31,Birmingham,E08000025,Birmingham,E08000025,Birmingham,69
+TLG,West Midlands (England),TLG3,West Midlands,TLG32,Solihull,E08000029,Solihull,E08000029,Solihull,70
+TLG,West Midlands (England),TLG3,West Midlands,TLG33,Coventry,E08000026,Coventry,E08000026,Coventry,71
+TLG,West Midlands (England),TLG3,West Midlands,TLG36,Dudley,E08000027,Dudley,E08000027,Dudley,72
+TLG,West Midlands (England),TLG3,West Midlands,TLG37,Sandwell,E08000028,Sandwell,E08000028,Sandwell,73
+TLG,West Midlands (England),TLG3,West Midlands,TLG38,Walsall,E08000030,Walsall,E08000030,Walsall,74
+TLG,West Midlands (England),TLG3,West Midlands,TLG39,Wolverhampton,E08000031,Wolverhampton,E08000031,Wolverhampton,75
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH21,Luton,E06000032,Luton,E06000032,Luton,76
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH24,Bedford,E06000055,Bedford,E06000055,Bedford,77
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH25,Central Bedfordshire,E06000056,Central Bedfordshire,E06000056,Central Bedfordshire,78
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH26,North and East Hertfordshire,E07000095,Broxbourne,E07000095,Broxbourne,79
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH26,North and East Hertfordshire,E07000099,North Hertfordshire,E07000099,North Hertfordshire,80
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH26,North and East Hertfordshire,E07000241,Welwyn Hatfield,E07000241,Welwyn Hatfield,81
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH26,North and East Hertfordshire,E07000242,East Hertfordshire,E07000242,East Hertfordshire,82
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH26,North and East Hertfordshire,E07000243,Stevenage,E07000243,Stevenage,83
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH27,South West Hertfordshire,E07000096,Dacorum,E07000096,Dacorum,84
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH27,South West Hertfordshire,E07000098,Hertsmere,E07000098,Hertsmere,85
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH27,South West Hertfordshire,E07000102,Three Rivers,E07000102,Three Rivers,86
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH27,South West Hertfordshire,E07000103,Watford,E07000103,Watford,87
+TLH,East (England),TLH2,Bedfordshire and Hertfordshire,TLH27,South West Hertfordshire,E07000240,St Albans,E07000240,St Albans,88
+TLH,East (England),TLH3,Essex,TLH31,Southend-on-Sea,E06000033,Southend-on-Sea,E06000033,Southend-on-Sea,89
+TLH,East (England),TLH3,Essex,TLH32,Thurrock,E06000034,Thurrock,E06000034,Thurrock,90
+TLH,East (England),TLH3,Essex,TLH34,Essex Haven Gateway,E07000067,Braintree,E07000067,Braintree,91
+TLH,East (England),TLH3,Essex,TLH34,Essex Haven Gateway,E07000071,Colchester,E07000071,Colchester,92
+TLH,East (England),TLH3,Essex,TLH34,Essex Haven Gateway,E07000076,Tendring,E07000076,Tendring,93
+TLH,East (England),TLH3,Essex,TLH35,West Essex,E07000072,Epping Forest,E07000072,Epping Forest,94
+TLH,East (England),TLH3,Essex,TLH35,West Essex,E07000073,Harlow,E07000073,Harlow,95
+TLH,East (England),TLH3,Essex,TLH35,West Essex,E07000077,Uttlesford,E07000077,Uttlesford,96
+TLH,East (England),TLH3,Essex,TLH36,Heart of Essex,E07000068,Brentwood,E07000068,Brentwood,97
+TLH,East (England),TLH3,Essex,TLH36,Heart of Essex,E07000070,Chelmsford,E07000070,Chelmsford,98
+TLH,East (England),TLH3,Essex,TLH36,Heart of Essex,E07000074,Maldon,E07000074,Maldon,99
+TLH,East (England),TLH3,Essex,TLH37,Essex Thames Gateway,E07000066,Basildon,E07000066,Basildon,100
+TLH,East (England),TLH3,Essex,TLH37,Essex Thames Gateway,E07000069,Castle Point,E07000069,Castle Point,101
+TLH,East (England),TLH3,Essex,TLH37,Essex Thames Gateway,E07000075,Rochford,E07000075,Rochford,102
+TLH,East (England),TLH4,Cambridgeshire and Peterborough,TLH41,Peterborough,E06000031,Peterborough,E06000031,Peterborough,103
+TLH,East (England),TLH4,Cambridgeshire and Peterborough,TLH42,Cambridgeshire CC,E07000008,Cambridge,E07000008,Cambridge,104
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ14,Oxfordshire CC,E07000178,Oxford,E07000178,Oxford,105
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ14,Oxfordshire CC,E07000179,South Oxfordshire,E07000179,South Oxfordshire,106
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ14,Oxfordshire CC,E07000180,Vale of White Horse,E07000180,Vale of White Horse,107
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ14,Oxfordshire CC,E07000181,West Oxfordshire,E07000181,West Oxfordshire,108
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ15,Berkshire East,E06000036,Bracknell Forest,E06000036,Bracknell Forest,109
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ15,Berkshire East,E06000039,Slough,E06000039,Slough,110
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ15,Berkshire East,E06000040,Windsor and Maidenhead,E06000040,Windsor and Maidenhead,111
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ16,Berkshire West,E06000037,West Berkshire,E06000037,West Berkshire,112
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ16,Berkshire West,E06000038,Reading,E06000038,Reading,113
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ16,Berkshire West,E06000041,Wokingham,E06000041,Wokingham,114
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ21,Brighton and Hove,E06000043,Brighton and Hove,E06000043,Brighton and Hove,115
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ22,East Sussex CC,E07000061,Eastbourne,E07000061,Eastbourne,116
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ22,East Sussex CC,E07000062,Hastings,E07000062,Hastings,117
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ22,East Sussex CC,E07000063,Lewes,E07000063,Lewes,118
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ22,East Sussex CC,E07000064,Rother,E07000064,Rother,119
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ22,East Sussex CC,E07000065,Wealden,E07000065,Wealden,120
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ25,West Surrey,E07000207,Elmbridge,E07000207,Elmbridge,121
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ25,West Surrey,E07000209,Guildford,E07000209,Guildford,122
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ25,West Surrey,E07000212,Runnymede,E07000212,Runnymede,123
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ25,West Surrey,E07000213,Spelthorne,E07000213,Spelthorne,124
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ25,West Surrey,E07000214,Surrey Heath,E07000214,Surrey Heath,125
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ25,West Surrey,E07000216,Waverley,E07000216,Waverley,126
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ25,West Surrey,E07000217,Woking,E07000217,Woking,127
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ26,East Surrey,E07000208,Epsom and Ewell,E07000208,Epsom and Ewell,128
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ26,East Surrey,E07000210,Mole Valley,E07000210,Mole Valley,129
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ26,East Surrey,E07000211,Reigate and Banstead,E07000211,Reigate and Banstead,130
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ26,East Surrey,E07000215,Tandridge,E07000215,Tandridge,131
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ27,West Sussex (South West),E07000223,Adur,E07000223,Adur,132
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ27,West Sussex (South West),E07000224,Arun,E07000224,Arun,133
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ27,West Sussex (South West),E07000225,Chichester,E07000225,Chichester,134
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ27,West Sussex (South West),E07000229,Worthing,E07000229,Worthing,135
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ28,West Sussex (North East),E07000226,Crawley,E07000226,Crawley,136
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ28,West Sussex (North East),E07000227,Horsham,E07000227,Horsham,137
+TLJ,South East (England),TLJ2,"Surrey, East and West Sussex",TLJ28,West Sussex (North East),E07000228,Mid Sussex,E07000228,Mid Sussex,138
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ31,Portsmouth,E06000044,Portsmouth,E06000044,Portsmouth,139
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ32,Southampton,E06000045,Southampton,E06000045,Southampton,140
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ34,Isle of Wight,E06000046,Isle of Wight,E06000046,Isle of Wight,141
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ35,South Hampshire,E07000086,Eastleigh,E07000086,Eastleigh,142
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ35,South Hampshire,E07000087,Fareham,E07000087,Fareham,143
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ35,South Hampshire,E07000088,Gosport,E07000088,Gosport,144
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ35,South Hampshire,E07000090,Havant,E07000090,Havant,145
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ36,Central Hampshire,E07000085,East Hampshire,E07000085,East Hampshire,146
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ36,Central Hampshire,E07000091,New Forest,E07000091,New Forest,147
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ36,Central Hampshire,E07000093,Test Valley,E07000093,Test Valley,148
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ36,Central Hampshire,E07000094,Winchester,E07000094,Winchester,149
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ37,North Hampshire,E07000084,Basingstoke and Deane,E07000084,Basingstoke and Deane,150
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ37,North Hampshire,E07000089,Hart,E07000089,Hart,151
+TLJ,South East (England),TLJ3,Hampshire and Isle of Wight,TLJ37,North Hampshire,E07000092,Rushmoor,E07000092,Rushmoor,152
+TLJ,South East (England),TLJ4,Kent,TLJ41,Medway,E06000035,Medway,E06000035,Medway,153
+TLJ,South East (England),TLJ4,Kent,TLJ43,Kent Thames Gateway,E07000107,Dartford,E07000107,Dartford,154
+TLJ,South East (England),TLJ4,Kent,TLJ43,Kent Thames Gateway,E07000109,Gravesham,E07000109,Gravesham,155
+TLJ,South East (England),TLJ4,Kent,TLJ43,Kent Thames Gateway,E07000113,Swale,E07000113,Swale,156
+TLJ,South East (England),TLJ4,Kent,TLJ44,East Kent,E07000106,Canterbury,E07000106,Canterbury,157
+TLJ,South East (England),TLJ4,Kent,TLJ44,East Kent,E07000108,Dover,E07000108,Dover,158
+TLJ,South East (England),TLJ4,Kent,TLJ44,East Kent,E07000112,Folkestone and Hythe,E07000112,Folkestone and Hythe,159
+TLJ,South East (England),TLJ4,Kent,TLJ44,East Kent,E07000114,Thanet,E07000114,Thanet,160
+TLJ,South East (England),TLJ4,Kent,TLJ45,Mid Kent,E07000105,Ashford,E07000105,Ashford,161
+TLJ,South East (England),TLJ4,Kent,TLJ45,Mid Kent,E07000110,Maidstone,E07000110,Maidstone,162
+TLJ,South East (England),TLJ4,Kent,TLJ46,West Kent,E07000111,Sevenoaks,E07000111,Sevenoaks,163
+TLJ,South East (England),TLJ4,Kent,TLJ46,West Kent,E07000115,Tonbridge and Malling,E07000115,Tonbridge and Malling,164
+TLJ,South East (England),TLJ4,Kent,TLJ46,West Kent,E07000116,Tunbridge Wells,E07000116,Tunbridge Wells,165
+TLK,South West (England),TLK3,Cornwall and Isles of Scilly,TLK30,Cornwall and Isles of Scilly,E06000052,Cornwall,E06000052,Cornwall,166
+TLK,South West (England),TLK3,Cornwall and Isles of Scilly,TLK30,Cornwall and Isles of Scilly,E06000053,Isles of Scilly,E06000053,Isles of Scilly,167
+TLK,South West (England),TLK4,Devon,TLK41,Plymouth,E06000026,Plymouth,E06000026,Plymouth,168
+TLK,South West (England),TLK4,Devon,TLK42,Torbay,E06000027,Torbay,E06000027,Torbay,169
+TLK,South West (England),TLK4,Devon,TLK43,Devon CC,E07000040,East Devon,E07000040,East Devon,170
+TLK,South West (England),TLK4,Devon,TLK43,Devon CC,E07000041,Exeter,E07000041,Exeter,171
+TLK,South West (England),TLK4,Devon,TLK43,Devon CC,E07000042,Mid Devon,E07000042,Mid Devon,172
+TLK,South West (England),TLK4,Devon,TLK43,Devon CC,E07000043,North Devon,E07000043,North Devon,173
+TLK,South West (England),TLK4,Devon,TLK43,Devon CC,E07000044,South Hams,E07000044,South Hams,174
+TLK,South West (England),TLK4,Devon,TLK43,Devon CC,E07000045,Teignbridge,E07000045,Teignbridge,175
+TLK,South West (England),TLK4,Devon,TLK43,Devon CC,E07000046,Torridge,E07000046,Torridge,176
+TLK,South West (England),TLK4,Devon,TLK43,Devon CC,E07000047,West Devon,E07000047,West Devon,177
+TLK,South West (England),TLK5,West of England,TLK51,"Bristol, City of",E06000023,"Bristol, City of",E06000023,"Bristol, City of",178
+TLK,South West (England),TLK5,West of England,TLK52,Bath & North East Somerset and South Gloucestershire,E06000022,Bath and North East Somerset,E06000022,Bath and North East Somerset,179
+TLK,South West (England),TLK5,West of England,TLK52,Bath & North East Somerset and South Gloucestershire,E06000025,South Gloucestershire,E06000025,South Gloucestershire,180
+TLK,South West (England),TLK6,"North Somerset, Somerset and Dorset",TLK61,North Somerset,E06000024,North Somerset,E06000024,North Somerset,181
+TLK,South West (England),TLK6,"North Somerset, Somerset and Dorset",TLK62,Somerset,E06000066,Somerset,E06000066,Somerset,182
+TLK,South West (England),TLK6,"North Somerset, Somerset and Dorset",TLK63,"Bournemouth, Christchurch and Poole",E06000058,"Bournemouth, Christchurch and Poole",E06000058,"Bournemouth, Christchurch and Poole",183
+TLK,South West (England),TLK6,"North Somerset, Somerset and Dorset",TLK64,Dorset,E06000059,Dorset,E06000059,Dorset,184
+TLK,South West (England),TLK7,Gloucestershire and Wiltshire,TLK71,Swindon,E06000030,Swindon,E06000030,Swindon,185
+TLK,South West (England),TLK7,Gloucestershire and Wiltshire,TLK72,Wiltshire,E06000054,Wiltshire,E06000054,Wiltshire,186
+TLK,South West (England),TLK7,Gloucestershire and Wiltshire,TLK73,Gloucestershire CC,E07000078,Cheltenham,E07000078,Cheltenham,187
+TLK,South West (England),TLK7,Gloucestershire and Wiltshire,TLK73,Gloucestershire CC,E07000079,Cotswold,E07000079,Cotswold,188
+TLK,South West (England),TLK7,Gloucestershire and Wiltshire,TLK73,Gloucestershire CC,E07000080,Forest of Dean,E07000080,Forest of Dean,189
+TLK,South West (England),TLK7,Gloucestershire and Wiltshire,TLK73,Gloucestershire CC,E07000081,Gloucester,E07000081,Gloucester,190
+TLK,South West (England),TLK7,Gloucestershire and Wiltshire,TLK73,Gloucestershire CC,E07000082,Stroud,E07000082,Stroud,191
+TLK,South West (England),TLK7,Gloucestershire and Wiltshire,TLK73,Gloucestershire CC,E07000083,Tewkesbury,E07000083,Tewkesbury,192
+TLL,Wales,TLL3,North Wales,TLL31,Isle of Anglesey,W06000001,Isle of Anglesey,W06000001,Isle of Anglesey,193
+TLL,Wales,TLL3,North Wales,TLL32,Gwynedd,W06000002,Gwynedd,W06000002,Gwynedd,194
+TLL,Wales,TLL3,North Wales,TLL33,Conwy and Denbighshire,W06000003,Conwy,W06000003,Conwy,195
+TLL,Wales,TLL3,North Wales,TLL33,Conwy and Denbighshire,W06000004,Denbighshire,W06000004,Denbighshire,196
+TLL,Wales,TLL3,North Wales,TLL34,Flintshire and Wrexham,W06000005,Flintshire,W06000005,Flintshire,197
+TLL,Wales,TLL3,North Wales,TLL34,Flintshire and Wrexham,W06000006,Wrexham,W06000006,Wrexham,198
+TLL,Wales,TLL4,Mid and South West Wales,TLL41,Mid Wales,W06000008,Ceredigion,W06000008,Ceredigion,199
+TLL,Wales,TLL4,Mid and South West Wales,TLL41,Mid Wales,W06000023,Powys,W06000023,Powys,200
+TLL,Wales,TLL4,Mid and South West Wales,TLL42,South West Wales,W06000009,Pembrokeshire,W06000009,Pembrokeshire,201
+TLL,Wales,TLL4,Mid and South West Wales,TLL42,South West Wales,W06000010,Carmarthenshire,W06000010,Carmarthenshire,202
+TLL,Wales,TLL4,Mid and South West Wales,TLL43,Swansea,W06000011,Swansea,W06000011,Swansea,203
+TLL,Wales,TLL4,Mid and South West Wales,TLL44,Neath Port Talbot,W06000012,Neath Port Talbot,W06000012,Neath Port Talbot,204
+TLL,Wales,TLL5,South East Wales,TLL51,Central Valleys and Bridgend,W06000013,Bridgend,W06000013,Bridgend,205
+TLL,Wales,TLL5,South East Wales,TLL51,Central Valleys and Bridgend,W06000016,Rhondda Cynon Taf,W06000016,Rhondda Cynon Taf,206
+TLL,Wales,TLL5,South East Wales,TLL51,Central Valleys and Bridgend,W06000024,Merthyr Tydfil,W06000024,Merthyr Tydfil,207
+TLL,Wales,TLL5,South East Wales,TLL52,Cardiff and Vale of Glamorgan,W06000014,Vale of Glamorgan,W06000014,Vale of Glamorgan,208
+TLH,East (England),TLH4,Cambridgeshire and Peterborough,TLH42,Cambridgeshire CC,E07000009,East Cambridgeshire,E07000009,East Cambridgeshire,209
+TLH,East (England),TLH4,Cambridgeshire and Peterborough,TLH42,Cambridgeshire CC,E07000010,Fenland,E07000010,Fenland,210
+TLH,East (England),TLH4,Cambridgeshire and Peterborough,TLH42,Cambridgeshire CC,E07000011,Huntingdonshire,E07000011,Huntingdonshire,211
+TLH,East (England),TLH4,Cambridgeshire and Peterborough,TLH42,Cambridgeshire CC,E07000012,South Cambridgeshire,E07000012,South Cambridgeshire,212
+TLH,East (England),TLH5,Norfolk,TLH51,Norwich and East Norfolk,E07000144,Broadland,E07000144,Broadland,213
+TLH,East (England),TLH5,Norfolk,TLH51,Norwich and East Norfolk,E07000145,Great Yarmouth,E07000145,Great Yarmouth,214
+TLH,East (England),TLH5,Norfolk,TLH51,Norwich and East Norfolk,E07000148,Norwich,E07000148,Norwich,215
+TLH,East (England),TLH5,Norfolk,TLH52,North and West Norfolk,E07000146,King's Lynn and West Norfolk,E07000146,King's Lynn and West Norfolk,216
+TLH,East (England),TLH5,Norfolk,TLH52,North and West Norfolk,E07000147,North Norfolk,E07000147,North Norfolk,217
+TLH,East (England),TLH5,Norfolk,TLH53,Breckland and South Norfolk,E07000143,Breckland,E07000143,Breckland,218
+TLH,East (England),TLH5,Norfolk,TLH53,Breckland and South Norfolk,E07000149,South Norfolk,E07000149,South Norfolk,219
+TLH,East (England),TLH6,Suffolk,TLH61,Babergh and Mid Suffolk,E07000200,Babergh,E07000200,Babergh,220
+TLH,East (England),TLH6,Suffolk,TLH61,Babergh and Mid Suffolk,E07000203,Mid Suffolk,E07000203,Mid Suffolk,221
+TLH,East (England),TLH6,Suffolk,TLH62,Ipswich,E07000202,Ipswich,E07000202,Ipswich,222
+TLH,East (England),TLH6,Suffolk,TLH63,East Suffolk,E07000244,East Suffolk,E07000244,East Suffolk,223
+TLH,East (England),TLH6,Suffolk,TLH64,West Suffolk,E07000245,West Suffolk,E07000245,West Suffolk,224
+TLI,London,TLI3,Inner London - West,TLI33,Kensington & Chelsea and Hammersmith & Fulham,E09000013,Hammersmith and Fulham,E09000013,Hammersmith and Fulham,225
+TLI,London,TLI3,Inner London - West,TLI33,Kensington & Chelsea and Hammersmith & Fulham,E09000020,Kensington and Chelsea,E09000020,Kensington and Chelsea,226
+TLI,London,TLI3,Inner London - West,TLI34,Wandsworth,E09000032,Wandsworth,E09000032,Wandsworth,227
+TLI,London,TLI3,Inner London - West,TLI35,Westminster and City of London,E09000001,City of London,E09000001,City of London,228
+TLI,London,TLI3,Inner London - West,TLI35,Westminster and City of London,E09000033,Westminster,E09000033,Westminster,229
+TLI,London,TLI3,Inner London - West,TLI36,Camden,E09000007,Camden,E09000007,Camden,230
+TLI,London,TLI4,Inner London - East,TLI41,Hackney and Newham,E09000012,Hackney,E09000012,Hackney,231
+TLI,London,TLI4,Inner London - East,TLI41,Hackney and Newham,E09000025,Newham,E09000025,Newham,232
+TLI,London,TLI4,Inner London - East,TLI42,Tower Hamlets,E09000030,Tower Hamlets,E09000030,Tower Hamlets,233
+TLI,London,TLI4,Inner London - East,TLI43,Haringey and Islington,E09000014,Haringey,E09000014,Haringey,234
+TLI,London,TLI4,Inner London - East,TLI43,Haringey and Islington,E09000019,Islington,E09000019,Islington,235
+TLI,London,TLI4,Inner London - East,TLI44,Lewisham and Southwark,E09000023,Lewisham,E09000023,Lewisham,236
+TLI,London,TLI4,Inner London - East,TLI44,Lewisham and Southwark,E09000028,Southwark,E09000028,Southwark,237
+TLI,London,TLI4,Inner London - East,TLI45,Lambeth,E09000022,Lambeth,E09000022,Lambeth,238
+TLI,London,TLI5,Outer London - East and North East,TLI51,Bexley and Greenwich,E09000004,Bexley,E09000004,Bexley,239
+TLI,London,TLI5,Outer London - East and North East,TLI51,Bexley and Greenwich,E09000011,Greenwich,E09000011,Greenwich,240
+TLI,London,TLI5,Outer London - East and North East,TLI52,Barking & Dagenham and Havering,E09000002,Barking and Dagenham,E09000002,Barking and Dagenham,241
+TLI,London,TLI5,Outer London - East and North East,TLI52,Barking & Dagenham and Havering,E09000016,Havering,E09000016,Havering,242
+TLI,London,TLI5,Outer London - East and North East,TLI53,Redbridge and Waltham Forest,E09000026,Redbridge,E09000026,Redbridge,243
+TLI,London,TLI5,Outer London - East and North East,TLI53,Redbridge and Waltham Forest,E09000031,Waltham Forest,E09000031,Waltham Forest,244
+TLI,London,TLI5,Outer London - East and North East,TLI54,Enfield,E09000010,Enfield,E09000010,Enfield,245
+TLI,London,TLI6,Outer London - South,TLI61,Bromley,E09000006,Bromley,E09000006,Bromley,246
+TLI,London,TLI6,Outer London - South,TLI62,Croydon,E09000008,Croydon,E09000008,Croydon,247
+TLI,London,TLI6,Outer London - South,TLI63,"Merton, Kingston upon Thames and Sutton",E09000021,Kingston upon Thames,E09000021,Kingston upon Thames,248
+TLI,London,TLI6,Outer London - South,TLI63,"Merton, Kingston upon Thames and Sutton",E09000024,Merton,E09000024,Merton,249
+TLI,London,TLI6,Outer London - South,TLI63,"Merton, Kingston upon Thames and Sutton",E09000029,Sutton,E09000029,Sutton,250
+TLI,London,TLI7,Outer London - West and North West,TLI71,Barnet,E09000003,Barnet,E09000003,Barnet,251
+TLI,London,TLI7,Outer London - West and North West,TLI72,Brent,E09000005,Brent,E09000005,Brent,252
+TLI,London,TLI7,Outer London - West and North West,TLI73,Ealing,E09000009,Ealing,E09000009,Ealing,253
+TLI,London,TLI7,Outer London - West and North West,TLI74,Harrow and Hillingdon,E09000015,Harrow,E09000015,Harrow,254
+TLI,London,TLI7,Outer London - West and North West,TLI74,Harrow and Hillingdon,E09000017,Hillingdon,E09000017,Hillingdon,255
+TLI,London,TLI7,Outer London - West and North West,TLI75,Hounslow and Richmond upon Thames,E09000018,Hounslow,E09000018,Hounslow,256
+TLI,London,TLI7,Outer London - West and North West,TLI75,Hounslow and Richmond upon Thames,E09000027,Richmond upon Thames,E09000027,Richmond upon Thames,257
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ12,Milton Keynes,E06000042,Milton Keynes,E06000042,Milton Keynes,258
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ13,Buckinghamshire,E06000060,Buckinghamshire,E06000060,Buckinghamshire,259
+TLJ,South East (England),TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",TLJ14,Oxfordshire CC,E07000177,Cherwell,E07000177,Cherwell,260
+TLE,Yorkshire and The Humber,TLE2,North Yorkshire,TLE22,North Yorkshire,E06000065,North Yorkshire,E06000065,North Yorkshire,261
+TLE,Yorkshire and The Humber,TLE3,South Yorkshire,TLE32,Sheffield,E08000019,Sheffield,E08000019,Sheffield,262
+TLE,Yorkshire and The Humber,TLE3,South Yorkshire,TLE33,Barnsley,E08000016,Barnsley,E08000016,Barnsley,263
+TLE,Yorkshire and The Humber,TLE3,South Yorkshire,TLE34,Rotherham,E08000018,Rotherham,E08000018,Rotherham,264
+TLE,Yorkshire and The Humber,TLE3,South Yorkshire,TLE35,Doncaster,E08000017,Doncaster,E08000017,Doncaster,265
+TLE,Yorkshire and The Humber,TLE4,West Yorkshire,TLE41,Bradford,E08000032,Bradford,E08000032,Bradford,266
+TLE,Yorkshire and The Humber,TLE4,West Yorkshire,TLE42,Leeds,E08000035,Leeds,E08000035,Leeds,267
+TLE,Yorkshire and The Humber,TLE4,West Yorkshire,TLE44,Calderdale and Kirklees,E08000033,Calderdale,E08000033,Calderdale,268
+TLE,Yorkshire and The Humber,TLE4,West Yorkshire,TLE44,Calderdale and Kirklees,E08000034,Kirklees,E08000034,Kirklees,269
+TLE,Yorkshire and The Humber,TLE4,West Yorkshire,TLE45,Wakefield,E08000036,Wakefield,E08000036,Wakefield,270
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF11,Derby,E06000015,Derby,E06000015,Derby,271
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF12,East Derbyshire,E07000033,Bolsover,E07000033,Bolsover,272
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF12,East Derbyshire,E07000034,Chesterfield,E07000034,Chesterfield,273
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF12,East Derbyshire,E07000038,North East Derbyshire,E07000038,North East Derbyshire,274
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF13,South and West Derbyshire,E07000032,Amber Valley,E07000032,Amber Valley,275
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF13,South and West Derbyshire,E07000035,Derbyshire Dales,E07000035,Derbyshire Dales,276
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF13,South and West Derbyshire,E07000036,Erewash,E07000036,Erewash,277
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF13,South and West Derbyshire,E07000037,High Peak,E07000037,High Peak,278
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF13,South and West Derbyshire,E07000039,South Derbyshire,E07000039,South Derbyshire,279
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF14,Nottingham,E06000018,Nottingham,E06000018,Nottingham,280
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF15,North Nottinghamshire,E07000170,Ashfield,E07000170,Ashfield,281
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF15,North Nottinghamshire,E07000171,Bassetlaw,E07000171,Bassetlaw,282
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF15,North Nottinghamshire,E07000174,Mansfield,E07000174,Mansfield,283
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF15,North Nottinghamshire,E07000175,Newark and Sherwood,E07000175,Newark and Sherwood,284
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF16,South Nottinghamshire,E07000172,Broxtowe,E07000172,Broxtowe,285
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF16,South Nottinghamshire,E07000173,Gedling,E07000173,Gedling,286
+TLF,East Midlands (England),TLF1,Derbyshire and Nottinghamshire,TLF16,South Nottinghamshire,E07000176,Rushcliffe,E07000176,Rushcliffe,287
+TLF,East Midlands (England),TLF2,"Leicestershire, Rutland and Northamptonshire",TLF21,Leicester,E06000016,Leicester,E06000016,Leicester,288
+TLF,East Midlands (England),TLF2,"Leicestershire, Rutland and Northamptonshire",TLF22,Leicestershire CC and Rutland,E06000017,Rutland,E06000017,Rutland,289
+TLF,East Midlands (England),TLF2,"Leicestershire, Rutland and Northamptonshire",TLF22,Leicestershire CC and Rutland,E07000129,Blaby,E07000129,Blaby,290
+TLF,East Midlands (England),TLF2,"Leicestershire, Rutland and Northamptonshire",TLF22,Leicestershire CC and Rutland,E07000130,Charnwood,E07000130,Charnwood,291
+TLF,East Midlands (England),TLF2,"Leicestershire, Rutland and Northamptonshire",TLF22,Leicestershire CC and Rutland,E07000131,Harborough,E07000131,Harborough,292
+TLF,East Midlands (England),TLF2,"Leicestershire, Rutland and Northamptonshire",TLF22,Leicestershire CC and Rutland,E07000132,Hinckley and Bosworth,E07000132,Hinckley and Bosworth,293
+TLF,East Midlands (England),TLF2,"Leicestershire, Rutland and Northamptonshire",TLF22,Leicestershire CC and Rutland,E07000133,Melton,E07000133,Melton,294
+TLF,East Midlands (England),TLF2,"Leicestershire, Rutland and Northamptonshire",TLF22,Leicestershire CC and Rutland,E07000134,North West Leicestershire,E07000134,North West Leicestershire,295
+TLF,East Midlands (England),TLF2,"Leicestershire, Rutland and Northamptonshire",TLF22,Leicestershire CC and Rutland,E07000135,Oadby and Wigston,E07000135,Oadby and Wigston,296
+TLF,East Midlands (England),TLF2,"Leicestershire, Rutland and Northamptonshire",TLF24,West Northamptonshire,E06000062,West Northamptonshire,E06000062,West Northamptonshire,297
+TLF,East Midlands (England),TLF2,"Leicestershire, Rutland and Northamptonshire",TLF25,North Northamptonshire,E06000061,North Northamptonshire,E06000061,North Northamptonshire,298
+TLF,East Midlands (England),TLF3,Lincolnshire,TLF30,Lincolnshire CC,E07000136,Boston,E07000136,Boston,299
+TLF,East Midlands (England),TLF3,Lincolnshire,TLF30,Lincolnshire CC,E07000137,East Lindsey,E07000137,East Lindsey,300
+TLF,East Midlands (England),TLF3,Lincolnshire,TLF30,Lincolnshire CC,E07000138,Lincoln,E07000138,Lincoln,301
+TLF,East Midlands (England),TLF3,Lincolnshire,TLF30,Lincolnshire CC,E07000139,North Kesteven,E07000139,North Kesteven,302
+TLF,East Midlands (England),TLF3,Lincolnshire,TLF30,Lincolnshire CC,E07000140,South Holland,E07000140,South Holland,303
+TLF,East Midlands (England),TLF3,Lincolnshire,TLF30,Lincolnshire CC,E07000141,South Kesteven,E07000141,South Kesteven,304
+TLF,East Midlands (England),TLF3,Lincolnshire,TLF30,Lincolnshire CC,E07000142,West Lindsey,E07000142,West Lindsey,305
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG11,"Herefordshire, County of",E06000019,"Herefordshire, County of",E06000019,"Herefordshire, County of",306
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG12,Worcestershire CC,E07000234,Bromsgrove,E07000234,Bromsgrove,307
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG12,Worcestershire CC,E07000235,Malvern Hills,E07000235,Malvern Hills,308
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG12,Worcestershire CC,E07000236,Redditch,E07000236,Redditch,309
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG12,Worcestershire CC,E07000237,Worcester,E07000237,Worcester,310
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG12,Worcestershire CC,E07000238,Wychavon,E07000238,Wychavon,311
+TLG,West Midlands (England),TLG1,"Herefordshire, Worcestershire and Warwickshire",TLG12,Worcestershire CC,E07000239,Wyre Forest,E07000239,Wyre Forest,312
+TLL,Wales,TLL5,South East Wales,TLL52,Cardiff and Vale of Glamorgan,W06000015,Cardiff,W06000015,Cardiff,313
+TLL,Wales,TLL5,South East Wales,TLL53,Gwent Valleys,W06000018,Caerphilly,W06000018,Caerphilly,314
+TLL,Wales,TLL5,South East Wales,TLL53,Gwent Valleys,W06000019,Blaenau Gwent,W06000019,Blaenau Gwent,315
+TLL,Wales,TLL5,South East Wales,TLL53,Gwent Valleys,W06000020,Torfaen,W06000020,Torfaen,316
+TLL,Wales,TLL5,South East Wales,TLL54,Monmouthshire and Newport,W06000021,Monmouthshire,W06000021,Monmouthshire,317
+TLL,Wales,TLL5,South East Wales,TLL54,Monmouthshire and Newport,W06000022,Newport,W06000022,Newport,318
+TLM,Scotland,TLM0,Eastern Scotland,TLM01,Clackmannanshire and Fife,S30000003,Clackmannanshire,S12000005,Clackmannanshire,319
+TLM,Scotland,TLM0,Eastern Scotland,TLM01,Clackmannanshire and Fife,S30000042,Fife,S12000047,Fife,320
+TLM,Scotland,TLM0,Eastern Scotland,TLM02,"Perth and Kinross, and Stirling",S30000011,Stirling,S12000030,Stirling,321
+TLM,Scotland,TLM0,Eastern Scotland,TLM02,"Perth and Kinross, and Stirling",S30000043,Perth and Kinross,S12000048,Perth and Kinross,322
+TLM,Scotland,TLM0,Eastern Scotland,TLM03,Angus and Dundee City,S30000048,Angus,S12000041,Angus,323
+TLM,Scotland,TLM0,Eastern Scotland,TLM03,Angus and Dundee City,S30000049,Dundee City,S12000042,Dundee City,324
+TLM,Scotland,TLM1,East Central Scotland,TLM11,East Lothian and Midlothian,S30000005,East Lothian,S12000010,East Lothian,325
+TLM,Scotland,TLM1,East Central Scotland,TLM11,East Lothian and Midlothian,S30000006,Midlothian,S12000019,Midlothian,326
+TLM,Scotland,TLM1,East Central Scotland,TLM12,Falkirk,S30000009,Falkirk,S12000014,Falkirk,327
+TLM,Scotland,TLM1,East Central Scotland,TLM13,City of Edinburgh,S30000008,City of Edinburgh,S12000036,City of Edinburgh,328
+TLM,Scotland,TLM1,East Central Scotland,TLM14,West Lothian,S30000012,West Lothian,S12000040,West Lothian,329
+TLM,Scotland,TLM2,Highlands and Islands,TLM20,Highlands and Islands,S30000034,Arran and Cumbrae,S12000021,North Ayrshire,330
+TLM,Scotland,TLM2,Highlands and Islands,TLM20,Highlands and Islands,S30000039,Na h-Eileanan Siar,S12000013,Na h-Eileanan Siar,331
+TLM,Scotland,TLM2,Highlands and Islands,TLM20,Highlands and Islands,S30000040,Orkney Islands,S12000023,Orkney Islands,332
+TLM,Scotland,TLM2,Highlands and Islands,TLM20,Highlands and Islands,S30000041,Shetland Islands,S12000027,Shetland Islands,333
+TLM,Scotland,TLM2,Highlands and Islands,TLM20,Highlands and Islands,S30000054,Argyll and Bute,S12000035,Argyll and Bute,334
+TLM,Scotland,TLM2,Highlands and Islands,TLM20,Highlands and Islands,S30000055,Highland,S12000017,Highland,335
+TLM,Scotland,TLM2,Highlands and Islands,TLM20,Highlands and Islands,S30000056,Moray,S12000020,Moray,336
+TLM,Scotland,TLM3,West Central Scotland,TLM31,East Dunbartonshire and West Dunbartonshire,S30000014,West Dunbartonshire,S12000039,West Dunbartonshire,337
+TLM,Scotland,TLM3,West Central Scotland,TLM31,East Dunbartonshire and West Dunbartonshire,S30000050,East Dunbartonshire,S12000045,East Dunbartonshire,338
+TLM,Scotland,TLM3,West Central Scotland,TLM32,Glasgow City,S30000052,Glasgow City,S12000049,Glasgow City,339
+TLM,Scotland,TLM3,West Central Scotland,TLM33,"Inverclyde, East Renfrewshire, and Renfrewshire",S30000020,East Renfrewshire,S12000011,East Renfrewshire,340
+TLM,Scotland,TLM3,West Central Scotland,TLM33,"Inverclyde, East Renfrewshire, and Renfrewshire",S30000021,Renfrewshire,S12000038,Renfrewshire,341
+TLM,Scotland,TLM3,West Central Scotland,TLM33,"Inverclyde, East Renfrewshire, and Renfrewshire",S30000022,Inverclyde,S12000018,Inverclyde,342
+TLM,Scotland,TLM3,West Central Scotland,TLM34,North Lanarkshire,S30000053,North Lanarkshire,S12000050,North Lanarkshire,343
+TLM,Scotland,TLM5,North Eastern Scotland,TLM50,Aberdeen City and Aberdeenshire,S30000026,Aberdeen City,S12000033,Aberdeen City,344
+TLM,Scotland,TLM5,North Eastern Scotland,TLM50,Aberdeen City and Aberdeenshire,S30000027,Aberdeenshire,S12000034,Aberdeenshire,345
+TLM,Scotland,TLM9,Southern Scotland,TLM91,Scottish Borders,S30000007,Scottish Borders,S12000026,Scottish Borders,346
+TLM,Scotland,TLM9,Southern Scotland,TLM92,Dumfries and Galloway,S30000016,Dumfries and Galloway,S12000006,Dumfries and Galloway,347
+TLM,Scotland,TLM9,Southern Scotland,TLM93,North Ayrshire and East Ayrshire,S30000017,East Ayrshire,S12000008,East Ayrshire,348
+TLM,Scotland,TLM9,Southern Scotland,TLM93,North Ayrshire and East Ayrshire,S30000018,North Ayrshire mainland,S12000021,North Ayrshire,349
+TLM,Scotland,TLM9,Southern Scotland,TLM94,South Ayrshire,S30000024,South Ayrshire,S12000028,South Ayrshire,350
+TLM,Scotland,TLM9,Southern Scotland,TLM95,South Lanarkshire,S30000025,South Lanarkshire,S12000029,South Lanarkshire,351
+TLN,Northern Ireland,TLN0,Northern Ireland,TLN06,Belfast,N09000003,Belfast,N09000003,Belfast,352
+TLN,Northern Ireland,TLN0,Northern Ireland,TLN07,"Armagh City, Banbridge and Craigavon",N09000002,"Armagh City, Banbridge and Craigavon",N09000002,"Armagh City, Banbridge and Craigavon",353
+TLN,Northern Ireland,TLN0,Northern Ireland,TLN08,"Newry, Mourne and Down",N09000010,"Newry, Mourne and Down",N09000010,"Newry, Mourne and Down",354
+TLN,Northern Ireland,TLN0,Northern Ireland,TLN09,Ards and North Down,N09000011,Ards and North Down,N09000011,Ards and North Down,355
+TLN,Northern Ireland,TLN0,Northern Ireland,TLN0A,Derry City and Strabane,N09000005,Derry City and Strabane,N09000005,Derry City and Strabane,356
+TLN,Northern Ireland,TLN0,Northern Ireland,TLN0B,Mid Ulster,N09000009,Mid Ulster,N09000009,Mid Ulster,357
+TLN,Northern Ireland,TLN0,Northern Ireland,TLN0C,Causeway Coast and Glens,N09000004,Causeway Coast and Glens,N09000004,Causeway Coast and Glens,358
+TLN,Northern Ireland,TLN0,Northern Ireland,TLN0D,Antrim and Newtownabbey,N09000001,Antrim and Newtownabbey,N09000001,Antrim and Newtownabbey,359
+TLN,Northern Ireland,TLN0,Northern Ireland,TLN0E,Lisburn and Castlereagh,N09000007,Lisburn and Castlereagh,N09000007,Lisburn and Castlereagh,360
+TLN,Northern Ireland,TLN0,Northern Ireland,TLN0F,Mid and East Antrim,N09000008,Mid and East Antrim,N09000008,Mid and East Antrim,361
+TLN,Northern Ireland,TLN0,Northern Ireland,TLN0G,Fermanagh and Omagh,N09000006,Fermanagh and Omagh,N09000006,Fermanagh and Omagh,362

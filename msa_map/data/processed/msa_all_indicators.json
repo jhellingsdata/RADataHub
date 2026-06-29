@@ -1,0 +1,840 @@
+{
+  "metadata": {
+    "last_updated": "2026-06",
+    "england_benchmarks": {
+      "pop_2024": 58620101,
+      "density_2024": 449.8,
+      "gva_ph_2023": 36632,
+      "gva_growth_2018_23": 24.2,
+      "imd_pct_decile1": 10.0,
+      "rural_urban_score": 12.7
+    }
+  },
+  "msas": [
+    {
+      "id": "gmca",
+      "name": "Greater Manchester",
+      "gss_code": "E47000001",
+      "tier": "Established",
+      "deal_level": "Trailblazer",
+      "mayor": "Andy Burnham",
+      "established": "May 2017",
+      "area_km2": 1276,
+      "website": null,
+      "rural_urban_tag": "Predominantly Urban",
+      "indicators": {
+        "pop_2024": 3009664,
+        "density_2024": 2358.7,
+        "gva_ph_2023": 34017.0,
+        "gva_growth_2018_23": 32.190000000000005,
+        "imd_pct_decile1": 23.03,
+        "rural_urban_score": 0.6
+      },
+      "ranks": {
+        "pop_2024": 3,
+        "density_2024": 2,
+        "gva_ph_2023": 6,
+        "gva_growth_2018_23": 3,
+        "imd_pct_decile1": 17,
+        "rural_urban_score": 18
+      },
+      "constituent_las": [
+        "Bolton",
+        "Bury",
+        "Manchester",
+        "Oldham",
+        "Rochdale",
+        "Salford",
+        "Stockport",
+        "Tameside",
+        "Trafford",
+        "Wigan"
+      ]
+    },
+    {
+      "id": "wmca",
+      "name": "West Midlands",
+      "gss_code": "E47000007",
+      "tier": "Established",
+      "deal_level": "Trailblazer",
+      "mayor": "Richard Parker",
+      "established": "June 2016",
+      "area_km2": 902,
+      "website": null,
+      "rural_urban_tag": "Predominantly Urban",
+      "indicators": {
+        "pop_2024": 3036605,
+        "density_2024": 3367.6,
+        "gva_ph_2023": 27950.0,
+        "gva_growth_2018_23": 18.31,
+        "imd_pct_decile1": 27.11,
+        "rural_urban_score": 0.5
+      },
+      "ranks": {
+        "pop_2024": 2,
+        "density_2024": 1,
+        "gva_ph_2023": 12,
+        "gva_growth_2018_23": 20,
+        "imd_pct_decile1": 18,
+        "rural_urban_score": 20
+      },
+      "constituent_las": [
+        "Birmingham",
+        "Coventry",
+        "Dudley",
+        "Sandwell",
+        "Solihull",
+        "Walsall",
+        "Wolverhampton"
+      ]
+    },
+    {
+      "id": "neca",
+      "name": "North East",
+      "gss_code": "E47000014",
+      "tier": "Established",
+      "deal_level": "Level 4",
+      "mayor": "Kim McGuinness",
+      "established": "May 2024",
+      "area_km2": 3583,
+      "website": null,
+      "rural_urban_tag": "Predominantly Rural",
+      "indicators": {
+        "pop_2024": 2760678,
+        "density_2024": 321.7,
+        "gva_ph_2023": 25412.0,
+        "gva_growth_2018_23": 24.83,
+        "imd_pct_decile1": 18.54,
+        "rural_urban_score": 12.8
+      },
+      "ranks": {
+        "pop_2024": 4,
+        "density_2024": 14,
+        "gva_ph_2023": 18,
+        "gva_growth_2018_23": 11,
+        "imd_pct_decile1": 12,
+        "rural_urban_score": 9
+      },
+      "constituent_las": [
+        "County Durham",
+        "Gateshead",
+        "Newcastle upon Tyne",
+        "North Tyneside",
+        "Northumberland",
+        "South Tyneside",
+        "Sunderland"
+      ]
+    },
+    {
+      "id": "lcrca",
+      "name": "Liverpool City Region",
+      "gss_code": "E47000004",
+      "tier": "Established",
+      "deal_level": "Level 3",
+      "mayor": "Steve Rotheram",
+      "established": "May 2017",
+      "area_km2": 720,
+      "website": null,
+      "rural_urban_tag": "Predominantly Urban",
+      "indicators": {
+        "pop_2024": 1607084,
+        "density_2024": 2197.6,
+        "gva_ph_2023": 27297.0,
+        "gva_growth_2018_23": 29.87,
+        "imd_pct_decile1": 28.81,
+        "rural_urban_score": 0.6
+      },
+      "ranks": {
+        "pop_2024": 10,
+        "density_2024": 3,
+        "gva_ph_2023": 15,
+        "gva_growth_2018_23": 4,
+        "imd_pct_decile1": 19,
+        "rural_urban_score": 18
+      },
+      "constituent_las": [
+        "Halton",
+        "Knowsley",
+        "Liverpool",
+        "Sefton",
+        "St. Helens",
+        "Wirral"
+      ]
+    },
+    {
+      "id": "symca",
+      "name": "South Yorkshire",
+      "gss_code": "E47000002",
+      "tier": "Established",
+      "deal_level": "Level 3",
+      "mayor": "Oliver Coppard",
+      "established": "May 2018",
+      "area_km2": 1552,
+      "website": null,
+      "rural_urban_tag": "Predominantly Urban",
+      "indicators": {
+        "pop_2024": 1430623,
+        "density_2024": 922.1,
+        "gva_ph_2023": 24977.0,
+        "gva_growth_2018_23": 29.18,
+        "imd_pct_decile1": 22.22,
+        "rural_urban_score": 4.6
+      },
+      "ranks": {
+        "pop_2024": 12,
+        "density_2024": 6,
+        "gva_ph_2023": 19,
+        "gva_growth_2018_23": 5,
+        "imd_pct_decile1": 16,
+        "rural_urban_score": 17
+      },
+      "constituent_las": [
+        "Barnsley",
+        "Doncaster",
+        "Rotherham",
+        "Sheffield"
+      ]
+    },
+    {
+      "id": "wyca",
+      "name": "West Yorkshire",
+      "gss_code": "E47000003",
+      "tier": "Established",
+      "deal_level": "Level 3",
+      "mayor": "Tracy Brabin",
+      "established": "May 2021",
+      "area_km2": 2029,
+      "website": null,
+      "rural_urban_tag": "Predominantly Urban",
+      "indicators": {
+        "pop_2024": 2435236,
+        "density_2024": 1200.1,
+        "gva_ph_2023": 30665.0,
+        "gva_growth_2018_23": 26.39,
+        "imd_pct_decile1": 21.15,
+        "rural_urban_score": 5.9
+      },
+      "ranks": {
+        "pop_2024": 5,
+        "density_2024": 4,
+        "gva_ph_2023": 8,
+        "gva_growth_2018_23": 9,
+        "imd_pct_decile1": 14,
+        "rural_urban_score": 15
+      },
+      "constituent_las": [
+        "Bradford",
+        "Calderdale",
+        "Kirklees",
+        "Leeds",
+        "Wakefield"
+      ]
+    },
+    {
+      "id": "weca",
+      "name": "West of England",
+      "gss_code": "E47000009",
+      "tier": "Established",
+      "deal_level": "Level 3",
+      "mayor": "Helen Godwin",
+      "established": "June 2017",
+      "area_km2": 1326,
+      "website": null,
+      "rural_urban_tag": "Predominantly Urban",
+      "indicators": {
+        "pop_2024": 1225337,
+        "density_2024": 923.8,
+        "gva_ph_2023": 40793.0,
+        "gva_growth_2018_23": 34.06,
+        "imd_pct_decile1": 5.88,
+        "rural_urban_score": 4.9
+      },
+      "ranks": {
+        "pop_2024": 13,
+        "density_2024": 5,
+        "gva_ph_2023": 2,
+        "gva_growth_2018_23": 1,
+        "imd_pct_decile1": 8,
+        "rural_urban_score": 16
+      },
+      "constituent_las": [
+        "Bath and North East Somerset",
+        "Bristol, City of",
+        "South Gloucestershire"
+      ]
+    },
+    {
+      "id": "lcca",
+      "name": "Lancashire",
+      "gss_code": "E47000018",
+      "tier": "Established",
+      "deal_level": "Level 3",
+      "mayor": "None yet",
+      "established": "February 2025",
+      "area_km2": 2894,
+      "website": null,
+      "rural_urban_tag": "Predominantly Urban",
+      "indicators": {
+        "pop_2024": 1601645,
+        "density_2024": 522.4,
+        "gva_ph_2023": 27439.0,
+        "gva_growth_2018_23": 24.64,
+        "imd_pct_decile1": 19.26,
+        "rural_urban_score": 11.9
+      },
+      "ranks": {
+        "pop_2024": 11,
+        "density_2024": 9,
+        "gva_ph_2023": 14,
+        "gva_growth_2018_23": 12,
+        "imd_pct_decile1": 13,
+        "rural_urban_score": 13
+      },
+      "constituent_las": [
+        "Blackburn with Darwen",
+        "Blackpool",
+        "Burnley",
+        "Chorley",
+        "Fylde",
+        "Hyndburn",
+        "Lancaster",
+        "Pendle",
+        "Preston",
+        "Ribble Valley",
+        "Rossendale",
+        "South Ribble",
+        "West Lancashire",
+        "Wyre"
+      ]
+    },
+    {
+      "id": "tvca",
+      "name": "Tees Valley",
+      "gss_code": "E47000006",
+      "tier": "Existing",
+      "deal_level": "Level 3",
+      "mayor": "Ben Houchen",
+      "established": "May 2017",
+      "area_km2": 790,
+      "website": null,
+      "rural_urban_tag": "Predominantly Urban",
+      "indicators": {
+        "pop_2024": 712858,
+        "density_2024": 896.6,
+        "gva_ph_2023": 23935.0,
+        "gva_growth_2018_23": 19.139999999999997,
+        "imd_pct_decile1": 30.12,
+        "rural_urban_score": 6.0
+      },
+      "ranks": {
+        "pop_2024": 18,
+        "density_2024": 7,
+        "gva_ph_2023": 20,
+        "gva_growth_2018_23": 19,
+        "imd_pct_decile1": 20,
+        "rural_urban_score": 14
+      },
+      "constituent_las": [
+        "Darlington",
+        "Hartlepool",
+        "Middlesbrough",
+        "Redcar and Cleveland",
+        "Stockton-on-Tees"
+      ]
+    },
+    {
+      "id": "ynyca",
+      "name": "York & North Yorkshire",
+      "gss_code": "E47000012",
+      "tier": "Existing",
+      "deal_level": "Level 3",
+      "mayor": "David Skaith",
+      "established": "February 2024",
+      "area_km2": 8309,
+      "website": null,
+      "rural_urban_tag": "Predominantly Rural",
+      "indicators": {
+        "pop_2024": 844571,
+        "density_2024": 101.6,
+        "gva_ph_2023": 34100.0,
+        "gva_growth_2018_23": 32.99,
+        "imd_pct_decile1": 2.0,
+        "rural_urban_score": 33.3
+      },
+      "ranks": {
+        "pop_2024": 17,
+        "density_2024": 19,
+        "gva_ph_2023": 5,
+        "gva_growth_2018_23": 2,
+        "imd_pct_decile1": 1,
+        "rural_urban_score": 3
+      },
+      "constituent_las": [
+        "North Yorkshire",
+        "York"
+      ]
+    },
+    {
+      "id": "heyca",
+      "name": "Hull & East Yorkshire",
+      "gss_code": "E47000016",
+      "tier": "Existing",
+      "deal_level": "Level 3",
+      "mayor": "Luke Campbell",
+      "established": "February 2025",
+      "area_km2": 2455,
+      "website": null,
+      "rural_urban_tag": "Predominantly Rural",
+      "indicators": {
+        "pop_2024": 631285,
+        "density_2024": 255.0,
+        "gva_ph_2023": 26972.0,
+        "gva_growth_2018_23": 27.91,
+        "imd_pct_decile1": 21.78,
+        "rural_urban_score": 18.5
+      },
+      "ranks": {
+        "pop_2024": 19,
+        "density_2024": 16,
+        "gva_ph_2023": 16,
+        "gva_growth_2018_23": 6,
+        "imd_pct_decile1": 15,
+        "rural_urban_score": 6
+      },
+      "constituent_las": [
+        "East Riding of Yorkshire",
+        "Kingston upon Hull, City of"
+      ]
+    },
+    {
+      "id": "glcca",
+      "name": "Greater Lincolnshire",
+      "gss_code": "E47000017",
+      "tier": "Existing",
+      "deal_level": "Level 3",
+      "mayor": "Dame Andrea Jenkyns",
+      "established": "February 2025",
+      "area_km2": 6980,
+      "website": null,
+      "rural_urban_tag": "Predominantly Rural",
+      "indicators": {
+        "pop_2024": 1120749,
+        "density_2024": 160.6,
+        "gva_ph_2023": 25994.0,
+        "gva_growth_2018_23": 25.14,
+        "imd_pct_decile1": 12.4,
+        "rural_urban_score": 32.4
+      },
+      "ranks": {
+        "pop_2024": 14,
+        "density_2024": 18,
+        "gva_ph_2023": 17,
+        "gva_growth_2018_23": 10,
+        "imd_pct_decile1": 11,
+        "rural_urban_score": 4
+      },
+      "constituent_las": [
+        "Boston",
+        "East Lindsey",
+        "Lincoln",
+        "North East Lincolnshire",
+        "North Kesteven",
+        "North Lincolnshire",
+        "South Holland",
+        "South Kesteven",
+        "West Lindsey"
+      ]
+    },
+    {
+      "id": "emcca",
+      "name": "East Midlands",
+      "gss_code": "E47000013",
+      "tier": "Existing",
+      "deal_level": "Level 3",
+      "mayor": "Claire Ward",
+      "established": "May 2024",
+      "area_km2": 6164,
+      "website": null,
+      "rural_urban_tag": "Predominantly Rural",
+      "indicators": {
+        "pop_2024": 3400821,
+        "density_2024": 460.8,
+        "gva_ph_2023": 31570.0,
+        "gva_growth_2018_23": 24.26,
+        "imd_pct_decile1": 10.34,
+        "rural_urban_score": 13.4
+      },
+      "ranks": {
+        "pop_2024": 1,
+        "density_2024": 12,
+        "gva_ph_2023": 7,
+        "gva_growth_2018_23": 14,
+        "imd_pct_decile1": 10,
+        "rural_urban_score": 7
+      },
+      "constituent_las": [
+        "Amber Valley",
+        "Ashfield",
+        "Bassetlaw",
+        "Bolsover",
+        "Broxtowe",
+        "Chesterfield",
+        "Derby",
+        "Derbyshire Dales",
+        "Erewash",
+        "Gedling",
+        "High Peak",
+        "Mansfield",
+        "Newark and Sherwood",
+        "North East Derbyshire",
+        "Nottingham",
+        "Rushcliffe",
+        "South Derbyshire"
+      ]
+    },
+    {
+      "id": "cpca",
+      "name": "Cambridgeshire & Peterborough",
+      "gss_code": "E47000008",
+      "tier": "Existing",
+      "deal_level": "Level 3",
+      "mayor": "Paul Bristow",
+      "established": "May 2017",
+      "area_km2": 3389,
+      "website": null,
+      "rural_urban_tag": "Predominantly Rural",
+      "indicators": {
+        "pop_2024": 933972,
+        "density_2024": 275.5,
+        "gva_ph_2023": 37085.0,
+        "gva_growth_2018_23": 24.05,
+        "imd_pct_decile1": 4.07,
+        "rural_urban_score": 24.7
+      },
+      "ranks": {
+        "pop_2024": 16,
+        "density_2024": 15,
+        "gva_ph_2023": 3,
+        "gva_growth_2018_23": 15,
+        "imd_pct_decile1": 2,
+        "rural_urban_score": 5
+      },
+      "constituent_las": [
+        "Cambridge",
+        "East Cambridgeshire",
+        "Fenland",
+        "Huntingdonshire",
+        "Peterborough",
+        "South Cambridgeshire"
+      ]
+    },
+    {
+      "id": "sus",
+      "name": "Sussex & Brighton",
+      "gss_code": "TBC",
+      "tier": "DPP",
+      "deal_level": "DPP",
+      "mayor": "None yet",
+      "established": "2026 (expected)",
+      "area_km2": 3787,
+      "website": null,
+      "rural_urban_tag": "Predominantly Urban",
+      "indicators": {
+        "pop_2024": 1759789,
+        "density_2024": 465.2,
+        "gva_ph_2023": 29823.0,
+        "gva_growth_2018_23": 23.94,
+        "imd_pct_decile1": 4.66,
+        "rural_urban_score": 12.3
+      },
+      "ranks": {
+        "pop_2024": 8,
+        "density_2024": 11,
+        "gva_ph_2023": 9,
+        "gva_growth_2018_23": 16,
+        "imd_pct_decile1": 5,
+        "rural_urban_score": 11
+      },
+      "constituent_lad_codes": [
+        "E06000043",
+        "E07000061",
+        "E07000062",
+        "E07000063",
+        "E07000064",
+        "E07000065",
+        "E07000223",
+        "E07000224",
+        "E07000225",
+        "E07000226",
+        "E07000227",
+        "E07000228",
+        "E07000229"
+      ],
+      "constituent_las": [
+        "Adur",
+        "Arun",
+        "Brighton and Hove",
+        "Chichester",
+        "Crawley",
+        "Eastbourne",
+        "Hastings",
+        "Horsham",
+        "Lewes",
+        "Mid Sussex",
+        "Rother",
+        "Wealden",
+        "Worthing"
+      ]
+    },
+    {
+      "id": "ham",
+      "name": "Hampshire & Solent",
+      "gss_code": "TBC",
+      "tier": "DPP",
+      "deal_level": "DPP",
+      "mayor": "None yet",
+      "established": "2026 (expected)",
+      "area_km2": 3769,
+      "website": null,
+      "rural_urban_tag": "Predominantly Urban",
+      "indicators": {
+        "pop_2024": 1920959,
+        "density_2024": 509.7,
+        "gva_ph_2023": 36619.0,
+        "gva_growth_2018_23": 20.94,
+        "imd_pct_decile1": 4.29,
+        "rural_urban_score": 12.2
+      },
+      "ranks": {
+        "pop_2024": 7,
+        "density_2024": 10,
+        "gva_ph_2023": 4,
+        "gva_growth_2018_23": 18,
+        "imd_pct_decile1": 4,
+        "rural_urban_score": 12
+      },
+      "constituent_lad_codes": [
+        "E06000044",
+        "E06000045",
+        "E06000046",
+        "E07000084",
+        "E07000085",
+        "E07000086",
+        "E07000087",
+        "E07000088",
+        "E07000089",
+        "E07000090",
+        "E07000091",
+        "E07000092",
+        "E07000093",
+        "E07000094"
+      ],
+      "constituent_las": [
+        "Basingstoke and Deane",
+        "East Hampshire",
+        "Eastleigh",
+        "Fareham",
+        "Gosport",
+        "Hart",
+        "Havant",
+        "Isle of Wight",
+        "New Forest",
+        "Portsmouth",
+        "Rushmoor",
+        "Southampton",
+        "Test Valley",
+        "Winchester"
+      ]
+    },
+    {
+      "id": "che",
+      "name": "Cheshire & Warrington",
+      "gss_code": "TBC",
+      "tier": "DPP",
+      "deal_level": "DPP",
+      "mayor": "None yet",
+      "established": "2026 (expected)",
+      "area_km2": 2267,
+      "website": null,
+      "rural_urban_tag": "Predominantly Urban",
+      "indicators": {
+        "pop_2024": 1008341,
+        "density_2024": 444.8,
+        "gva_ph_2023": 42015.0,
+        "gva_growth_2018_23": 24.48,
+        "imd_pct_decile1": 5.52,
+        "rural_urban_score": 12.5
+      },
+      "ranks": {
+        "pop_2024": 15,
+        "density_2024": 13,
+        "gva_ph_2023": 1,
+        "gva_growth_2018_23": 13,
+        "imd_pct_decile1": 7,
+        "rural_urban_score": 10
+      },
+      "constituent_lad_codes": [
+        "E06000049",
+        "E06000050",
+        "E06000007"
+      ],
+      "constituent_las": [
+        "Cheshire East",
+        "Cheshire West and Chester",
+        "Warrington"
+      ]
+    },
+    {
+      "id": "cum",
+      "name": "Cumbria",
+      "gss_code": "TBC",
+      "tier": "DPP",
+      "deal_level": "DPP",
+      "mayor": "None yet",
+      "established": "2026 (expected)",
+      "area_km2": 6768,
+      "website": null,
+      "rural_urban_tag": "Predominantly Rural",
+      "indicators": {
+        "pop_2024": 510680,
+        "density_2024": 75.5,
+        "gva_ph_2023": 29808.0,
+        "gva_growth_2018_23": 26.479999999999997,
+        "imd_pct_decile1": 8.46,
+        "rural_urban_score": 47.7
+      },
+      "ranks": {
+        "pop_2024": 20,
+        "density_2024": 20,
+        "gva_ph_2023": 10,
+        "gva_growth_2018_23": 8,
+        "imd_pct_decile1": 9,
+        "rural_urban_score": 1
+      },
+      "constituent_lad_codes": [
+        "E06000063",
+        "E06000064"
+      ],
+      "constituent_las": [
+        "Cumberland",
+        "Westmorland and Furness"
+      ]
+    },
+    {
+      "id": "ess",
+      "name": "Greater Essex",
+      "gss_code": "TBC",
+      "tier": "DPP",
+      "deal_level": "DPP",
+      "mayor": "None yet",
+      "established": "TBC",
+      "area_km2": 3670,
+      "website": null,
+      "rural_urban_tag": "Predominantly Rural",
+      "indicators": {
+        "pop_2024": 1929610,
+        "density_2024": 526.7,
+        "gva_ph_2023": 28891.0,
+        "gva_growth_2018_23": 21.63,
+        "imd_pct_decile1": 4.23,
+        "rural_urban_score": 13.3
+      },
+      "ranks": {
+        "pop_2024": 6,
+        "density_2024": 8,
+        "gva_ph_2023": 11,
+        "gva_growth_2018_23": 17,
+        "imd_pct_decile1": 3,
+        "rural_urban_score": 8
+      },
+      "constituent_lad_codes": [
+        "E07000066",
+        "E07000067",
+        "E07000068",
+        "E07000069",
+        "E07000070",
+        "E07000071",
+        "E07000072",
+        "E07000073",
+        "E07000074",
+        "E07000075",
+        "E06000033",
+        "E07000076",
+        "E06000034",
+        "E07000077"
+      ],
+      "constituent_las": [
+        "Basildon",
+        "Braintree",
+        "Brentwood",
+        "Castle Point",
+        "Chelmsford",
+        "Colchester",
+        "Epping Forest",
+        "Harlow",
+        "Maldon",
+        "Rochford",
+        "Southend-on-Sea",
+        "Tendring",
+        "Thurrock",
+        "Uttlesford"
+      ]
+    },
+    {
+      "id": "nas",
+      "name": "Norfolk & Suffolk",
+      "gss_code": "TBC",
+      "tier": "DPP",
+      "deal_level": "DPP",
+      "mayor": "None yet",
+      "established": "TBC",
+      "area_km2": 9169,
+      "website": null,
+      "rural_urban_tag": "Predominantly Rural",
+      "indicators": {
+        "pop_2024": 1726590,
+        "density_2024": 188.0,
+        "gva_ph_2023": 27828.0,
+        "gva_growth_2018_23": 26.590000000000003,
+        "imd_pct_decile1": 5.39,
+        "rural_urban_score": 40.3
+      },
+      "ranks": {
+        "pop_2024": 9,
+        "density_2024": 17,
+        "gva_ph_2023": 13,
+        "gva_growth_2018_23": 7,
+        "imd_pct_decile1": 6,
+        "rural_urban_score": 2
+      },
+      "constituent_lad_codes": [
+        "E07000143",
+        "E07000144",
+        "E07000145",
+        "E07000146",
+        "E07000147",
+        "E07000148",
+        "E07000149",
+        "E07000200",
+        "E07000202",
+        "E07000203",
+        "E07000244",
+        "E07000245"
+      ],
+      "constituent_las": [
+        "Babergh",
+        "Breckland",
+        "Broadland",
+        "East Suffolk",
+        "Great Yarmouth",
+        "Ipswich",
+        "King's Lynn and West Norfolk",
+        "Mid Suffolk",
+        "North Norfolk",
+        "Norwich",
+        "South Norfolk",
+        "West Suffolk"
+      ]
+    }
+  ]
+}
