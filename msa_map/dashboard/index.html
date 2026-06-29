@@ -38,6 +38,8 @@
 
   <div id="indicators-sections"></div>
 
+  <div id="deep-dive-section"></div>
+
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -46,9 +48,9 @@
 const DATA_PATH         = '../data/processed/msa_all_indicators.json';
 const CA_GEOJSON_PATH   = '../data/processed/ca.geojson';
 const LAD_GEOJSON_PATH  = '../data/processed/lad.geojson';
-const COUNTRIES_PATH    = '../data/processed/countries.geojson';
 const DEFAULT_MSA_ID    = 'ynyca';
 const TIERS             = ['Established', 'Existing', 'DPP'];
+const CHARTS_PATH        = '../data/processed/charts';
 
 const fmtInt   = v => Math.round(v).toLocaleString('en-GB');
 const fmtDec1  = v => v.toLocaleString('en-GB', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -61,25 +63,20 @@ const fmtDec1  = v => v.toLocaleString('en-GB', { minimumFractionDigits: 1, maxi
 // rankKey looks up msa.ranks; omit to show "Pending" in the Rank column.
 const INDICATOR_CONFIG = [
   {
-    group: 'Snapshot', key: 'pop_2024', label: 'Population', sourceYear: 'ONS, mid-2024 estimate',
-    unit: '', format: fmtInt, better: 'context',
-    benchmarkKey: 'pop_2024', rankKey: 'pop_2024',
-  },
-  {
     group: 'Snapshot', key: 'density_2024', label: 'Population density', sourceYear: 'ONS, mid-2024 estimate',
     unit: 'people per km²', format: fmtDec1, better: 'context',
     benchmarkKey: 'density_2024', rankKey: 'density_2024',
+  },
+  {
+    group: 'Snapshot', key: 'rural_urban_score', label: 'Rural/urban score', sourceYear: 'ONS RUC 2021, mid-2024 population-weighted',
+    unit: '0 = fully urban, 100 = fully rural', format: fmtDec1, better: 'context',
+    benchmarkKey: 'rural_urban_score', rankKey: 'rural_urban_score',
   },
   {
     group: 'Economy', key: 'gva_ph_2023', label: 'GVA per head', sourceYear: 'ONS, 2023',
     unit: '', format: v => '£' + fmtInt(v), better: 'higher',
     benchmarkKey: 'gva_ph_2023', rankKey: 'gva_ph_2023',
     changeKey: 'gva_growth_2018_23', changeSinceLabel: 'since 2018',
-  },
-  {
-    group: 'Economy', key: 'gva_index_eng', label: 'GVA England index', sourceYear: 'ONS, 2023 · England = 100',
-    unit: '', format: fmtDec1, better: 'higher',
-    benchmarkValue: 100,
   },
   {
     group: 'Economy', key: 'gva_growth_2018_23', label: 'GVA growth 2018–23', sourceYear: 'ONS, 2018–2023',
@@ -91,18 +88,13 @@ const INDICATOR_CONFIG = [
     unit: '', format: v => fmtDec1(v) + '%', better: 'lower',
     benchmarkKey: 'imd_pct_decile1', rankKey: 'imd_pct_decile1',
   },
-  {
-    group: 'Deprivation', key: 'imd_avg_rank', label: 'IMD average rank', sourceYear: 'MHCLG, IMD 2025',
-    unit: 'national LSOA rank', format: fmtInt, better: 'higher',
-  },
 ];
 
 // ── State ──────────────────────────────────────────────────────────────────
 let DATA = null;
 let boundaryMap = null;
 let boundaryLayer = null;
-let englandLayer = null;
-let cachedCaGeo = null, cachedLadGeo = null, cachedCountriesGeo = null;
+let cachedCaGeo = null, cachedLadGeo = null;
 
 // ── Load ───────────────────────────────────────────────────────────────────
 async function loadJSON(path) {
@@ -125,7 +117,10 @@ async function init() {
   const select = document.getElementById('msa-select');
   select.addEventListener('change', e => renderProfile(e.target.value));
 
-  const defaultMsa = DATA.msas.find(m => m.id === DEFAULT_MSA_ID) || DATA.msas[0];
+  const requestedId = new URLSearchParams(window.location.search).get('msa');
+  const defaultMsa = DATA.msas.find(m => m.id === requestedId)
+                   || DATA.msas.find(m => m.id === DEFAULT_MSA_ID)
+                   || DATA.msas[0];
   select.value = defaultMsa.id;
   renderProfile(defaultMsa.id);
 }
@@ -155,6 +150,7 @@ function renderProfile(id) {
     renderAuthorityHeader(msa);
     renderIndicatorTable(msa);
     renderBoundaryMap(msa);
+    renderDeepDive(msa);
     content.classList.remove('fading');
   }, 180);
 }
@@ -174,6 +170,9 @@ function renderAuthorityHeader(msa) {
     `Deal Level: ${msa.deal_level}`,
     `Area: ${msa.area_km2.toLocaleString('en-GB')} km²`,
   ];
+  const pop = msa.indicators.pop_2024;
+  if (pop !== null && pop !== undefined) parts.push(`Population: ${fmtInt(pop)}`);
+  if (msa.rural_urban_tag) parts.push(msa.rural_urban_tag);
   let html = parts
     .map(p => `<span>${p}</span>`)
     .join('<span class="meta-sep">·</span>');
@@ -292,28 +291,114 @@ function renderIndicatorTable(msa) {
   container.appendChild(table);
 }
 
+// ── Render: deep dive (currently YNYCA only — extend DEEP_DIVES to add more) ─
+const DEEP_DIVES = {
+  ynyca: {
+    heading: 'Rurality &amp; Deprivation',
+    intro: 'A closer look at how rural/urban character and deprivation relate across YNYCA\'s 500 LSOAs.',
+    items: [
+      {
+        img: 'ynyca_lsoa_imd_map.png',
+        alt: 'Map of Index of Multiple Deprivation 2025 by LSOA across York and North Yorkshire',
+        caption: 'IMD 2025 decile by LSOA. Source: MHCLG IoD 2025, ONS LSOA boundaries 2021.',
+        text: 'Deprivation in YNYCA isn\'t a countryside story. It clusters in two specific places &mdash; Scarborough\'s coastal towns and pockets of York &mdash; and every one of the area\'s 41 most-deprived LSOAs is urban.',
+      },
+      {
+        img: 'ynyca_rurality_vs_imd_scatter.png',
+        alt: 'Scatter plot of rurality score vs IMD rank for YNYCA LSOAs',
+        caption: 'Rurality score vs national IMD rank, all 500 LSOAs. Source: ONS RUC 2021, MHCLG IoD 2025.',
+        text: 'Across all 500 LSOAs, rurality barely predicts deprivation at all (correlation: &minus;0.11). Being rural makes a place no more likely to be comfortable than disadvantaged.',
+      },
+      {
+        img: ['ynyca_york_centre_vs_imd.png', 'ynyca_ripon_centre_vs_imd.png'],
+        alt: ['Scatter plot of distance from York city centre vs IMD rank', 'Scatter plot of distance from Ripon city centre vs IMD rank'],
+        caption: 'Distance from city centre vs IMD rank, urban LSOAs only. Source: ONS RUC 2021, MHCLG IoD 2025.',
+        text: 'Zoom into York and Ripon specifically, though, and a real donut effect appears: deprivation is sharpest at the historic core and fades toward the suburbs (York +0.35, Ripon +0.71) &mdash; a city effect that none of YNYCA\'s market towns share.',
+      },
+    ],
+  },
+};
+
+function renderDeepDive(msa) {
+  const el = document.getElementById('deep-dive-section');
+  const dive = DEEP_DIVES[msa.id];
+  if (!dive) { el.innerHTML = ''; return; }
+
+  const itemsHtml = dive.items.map((item, i) => {
+    const imgs = Array.isArray(item.img) ? item.img : [item.img];
+    const alts = Array.isArray(item.alt) ? item.alt : [item.alt];
+    const imgsHtml = imgs.map((src, j) => `
+      <div class="profile-chart-wrap">
+        <img src="${CHARTS_PATH}/${src}" alt="${alts[j] || ''}" loading="lazy" />
+      </div>
+    `).join('');
+    return `
+      <div class="profile-section${i % 2 === 1 ? ' reverse' : ''}">
+        <div class="profile-charts">
+          ${imgsHtml}
+          <p class="profile-caption">${item.caption}</p>
+        </div>
+        <div class="profile-text">
+          <p class="profile-insight">${item.text}</p>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  el.innerHTML = `
+    <div class="deep-dive-heading">
+      <h2>${dive.heading}</h2>
+      <p class="profile-intro">${dive.intro}</p>
+    </div>
+    ${itemsHtml}
+  `;
+}
+
 // ── Render: boundary map ────────────────────────────────────────────────────
+// MSA boundary layer style — visible on satellite imagery (white dashed border,
+// light teal fill so the imagery shows through, rather than the solid fill used
+// when the basemap was just a flat grey England silhouette).
+const msaStyle = {
+  color:       '#FFFFFF',
+  weight:       2.5,
+  opacity:      1,
+  fillColor:   '#2A9D8F',
+  fillOpacity:  0.15,
+  dashArray:   '6, 4',
+};
+
 async function renderBoundaryMap(msa) {
   const captionEl = document.getElementById('map-caption');
 
   if (!boundaryMap) {
     boundaryMap = L.map('boundary-map', {
-      attributionControl: false,
+      attributionControl: true,
       zoomControl: true,
     });
+
+    // Layer 1 — satellite imagery base
+    L.tileLayer(
+      'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+      {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics',
+        maxZoom: 18,
+      }
+    ).addTo(boundaryMap);
+
+    // Layer 2 — roads, place names and boundaries (transparent overlay)
+    L.tileLayer(
+      'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}',
+      {
+        attribution: '',
+        maxZoom: 18,
+        opacity: 1,
+      }
+    ).addTo(boundaryMap);
   }
 
   if (boundaryLayer) { boundaryMap.removeLayer(boundaryLayer); boundaryLayer = null; }
-  if (englandLayer)  { boundaryMap.removeLayer(englandLayer);  englandLayer  = null; }
 
   try {
-    if (!cachedCountriesGeo) cachedCountriesGeo = await loadJSON(COUNTRIES_PATH);
-    englandLayer = L.geoJSON(cachedCountriesGeo, {
-      filter: f => f.properties.is_england,
-      style: { fillColor: '#D9D9D9', fillOpacity: 1, color: '#bbbbbb', weight: 0.5 },
-      interactive: false,
-    }).addTo(boundaryMap);
-
     let targetLayer;
     if (msa.gss_code === 'TBC') {
       captionEl.textContent = 'Boundary not yet statutory — approximate boundary shown using constituent local authorities.';
@@ -322,7 +407,7 @@ async function renderBoundaryMap(msa) {
       const codes = new Set(msa.constituent_lad_codes || []);
       targetLayer = L.geoJSON(cachedLadGeo, {
         filter: f => codes.has(f.properties.LAD25CD),
-        style: { fillColor: '#2A9D8F', fillOpacity: 0.75, color: '#ffffff', weight: 1 },
+        style: msaStyle,
       }).addTo(boundaryMap);
     } else {
       captionEl.textContent = 'Statutory boundary — ONS Combined Authorities (December 2025).';
@@ -330,7 +415,7 @@ async function renderBoundaryMap(msa) {
       if (!cachedCaGeo) cachedCaGeo = await loadJSON(CA_GEOJSON_PATH);
       targetLayer = L.geoJSON(cachedCaGeo, {
         filter: f => f.properties.CAUTH25CD === msa.gss_code,
-        style: { fillColor: '#2A9D8F', fillOpacity: 0.75, color: '#ffffff', weight: 1.5 },
+        style: msaStyle,
       }).addTo(boundaryMap);
     }
 

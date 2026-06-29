@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "background": "#F5F4EF"}, "layer": [{"mark": {"type": "circle", "opacity": 0.8}, "encoding": {"color": {"field": "imd_decile", "scale": {"domain": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "scheme": "redyellowgreen"}, "title": "IMD decile", "type": "ordinal"}, "size": {"field": "population", "title": "Population (mid-2023)", "type": "quantitative"}, "tooltip": [{"field": "LSOA21NM", "title": "LSOA", "type": "nominal"}, {"field": "dist_to_centre_km", "format": ".1f", "title": "Distance from centre (km)", "type": "quantitative"}, {"field": "imd_rank", "title": "IMD rank", "type": "quantitative"}, {"field": "imd_decile", "title": "IMD decile", "type": "ordinal"}], "x": {"field": "dist_to_centre_km", "title": "Distance from Ripon city centre (km)", "type": "quantitative"}, "y": {"field": "imd_rank", "scale": {"reverse": true}, "title": "\u2190 More deprived    Less deprived \u2192", "type": "quantitative"}}}, {"mark": {"type": "line", "color": "#1F3864", "strokeDash": [4, 4]}, "encoding": {"x": {"field": "dist_to_centre_km", "title": "Distance from Ripon city centre (km)", "type": "quantitative"}, "y": {"field": "imd_rank", "scale": {"reverse": true}, "title": "\u2190 More deprived    Less deprived \u2192", "type": "quantitative"}}, "transform": [{"on": "dist_to_centre_km", "regression": "imd_rank"}]}], "data": {"name": "data-082d6ba506dba2b8806d780d6385bfa8"}, "height": 420, "title": ["Ripon \u2014 distance from city centre vs deprivation (urban LSOAs only)", "corr = +0.71 within Ripon alone (n=11, p = 0.014)"], "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-082d6ba506dba2b8806d780d6385bfa8": [{"LSOA21CD": "E01027705", "LSOA21NM": "Harrogate 004A", "LAD24CD": "E06000065", "LAD24NM": "North Yorkshire", "imd_rank": 21986, "imd_decile": 7, "population": 1772, "rurality_score": 0.0, "pct_rural": 0.0, "dominant_ruc": "Urban: Nearer to a major town or city", "urban_rural_flag": "Urban", "town": "Ripon", "dist_to_centre_km": 0.8956157847344699}, {"LSOA21CD": "E01027706", "LSOA21NM": "Harrogate 004B", "LAD24CD": "E06000065", "LAD24NM": "North Yorkshire", "imd_rank": 12773, "imd_decile": 4, "population": 1765, "rurality_score": 0.0, "pct_rural": 0.0, "dominant_ruc": "Urban: Nearer to a major town or city", "urban_rural_flag": "Urban", "town": "Ripon", "dist_to_centre_km": 0.1943992483298238}, {"LSOA21CD": "E01027707", "LSOA21NM": "Harrogate 004C", "LAD24CD": "E06000065", "LAD24NM": "North Yorkshire", "imd_rank": 21505, "imd_decile": 7, "population": 1747, "rurality_score": 0.0, "pct_rural": 0.0, "dominant_ruc": "Urban: Nearer to a major town or city", "urban_rural_flag": "Urban", "town": "Ripon", "dist_to_centre_km": 1.191545307863901}, {"LSOA21CD": "E01027708", "LSOA21NM": "Harrogate 004D", "LAD24CD": "E06000065", "LAD24NM": "North Yorkshire", "imd_rank": 28602, "imd_decile": 9, "population": 1502, "rurality_score": 0.0, "pct_rural": 0.0, "dominant_ruc": "Urban: Nearer to a major town or city", "urban_rural_flag": "Urban", "town": "Ripon", "dist_to_centre_km": 1.4274047578278937}, {"LSOA21CD": "E01027709", "LSOA21NM": "Harrogate 004E", "LAD24CD": "E06000065", "LAD24NM": "North Yorkshire", "imd_rank": 31383, "imd_decile": 10, "population": 1329, "rurality_score": 0.0, "pct_rural": 0.0, "dominant_ruc": "Urban: Nearer to a major town or city", "urban_rural_flag": "Urban", "town": "Ripon", "dist_to_centre_km": 1.0622701162222472}, {"LSOA21CD": "E01027710", "LSOA21NM": "Harrogate 004F", "LAD24CD": "E06000065", "LAD24NM": "North Yorkshire", "imd_rank": 11384, "imd_decile": 4, "population": 1153, "rurality_score": 0.0, "pct_rural": 0.0, "dominant_ruc": "Urban: Nearer to a major town or city", "urban_rural_flag": "Urban", "town": "Ripon", "dist_to_centre_km": 0.9501940163768111}, {"LSOA21CD": "E01027711", "LSOA21NM": "Harrogate 004G", "LAD24CD": "E06000065", "LAD24NM": "North Yorkshire", "imd_rank": 15581, "imd_decile": 5, "population": 1291, "rurality_score": 0.0, "pct_rural": 0.0, "dominant_ruc": "Urban: Nearer to a major town or city", "urban_rural_flag": "Urban", "town": "Ripon", "dist_to_centre_km": 0.8300311885330373}, {"LSOA21CD": "E01027712", "LSOA21NM": "Harrogate 002A", "LAD24CD": "E06000065", "LAD24NM": "North Yorkshire", "imd_rank": 32037, "imd_decile": 10, "population": 2014, "rurality_score": 0.0, "pct_rural": 0.0, "dominant_ruc": "Urban: Nearer to a major town or city", "urban_rural_flag": "Urban", "town": "Ripon", "dist_to_centre_km": 2.312200821239387}, {"LSOA21CD": "E01027713", "LSOA21NM": "Harrogate 002B", "LAD24CD": "E06000065", "LAD24NM": "North Yorkshire", "imd_rank": 22532, "imd_decile": 7, "population": 1666, "rurality_score": 0.0, "pct_rural": 0.0, "dominant_ruc": "Urban: Nearer to a major town or city", "urban_rural_flag": "Urban", "town": "Ripon", "dist_to_centre_km": 0.7810639834597006}, {"LSOA21CD": "E01027714", "LSOA21NM": "Harrogate 002C", "LAD24CD": "E06000065", "LAD24NM": "North Yorkshire", "imd_rank": 26726, "imd_decile": 8, "population": 1578, "rurality_score": 0.0, "pct_rural": 0.0, "dominant_ruc": "Urban: Nearer to a major town or city", "urban_rural_flag": "Urban", "town": "Ripon", "dist_to_centre_km": 1.221059068784797}, {"LSOA21CD": "E01027715", "LSOA21NM": "Harrogate 002D", "LAD24CD": "E06000065", "LAD24NM": "North Yorkshire", "imd_rank": 28707, "imd_decile": 9, "population": 1270, "rurality_score": 0.0, "pct_rural": 0.0, "dominant_ruc": "Urban: Nearer to a major town or city", "urban_rural_flag": "Urban", "town": "Ripon", "dist_to_centre_km": 1.1901986664491646}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

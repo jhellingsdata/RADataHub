@@ -1,0 +1,22 @@
+msa_name,pct_rural,rurality_score,n_oas,tier,rank_rurality,Larger rural: Further from a major town or city,Larger rural: Nearer to a major town or city,Smaller rural: Further from a major town or city,Smaller rural: Nearer to a major town or city,Urban: Further from a major town or city,Urban: Nearer to a major town or city,population,pct_pop_rural,pop_weighted_rurality_score,rank_pop_weighted
+Cambridgeshire and Peterborough,34.2,24.8,2741,Established/Existing CA,6,4.4,14.3,3.9,11.5,13.3,52.5,933972,33.5,24.7,6
+Cheshire & Warrington,19.0,12.4,3172,DPP,12,,7.8,1.5,9.7,3.3,77.7,1008341,18.3,12.5,11
+Cumbria,49.9,48.1,1744,DPP,1,19.3,3.2,20.1,7.4,30.9,19.2,510680,49.8,47.7,1
+Devon and Torbay,42.3,37.6,3093,Established/Existing CA,3,11.1,8.9,13.6,8.6,25.2,32.6,982439,41.8,37.4,3
+East Midlands,20.8,13.7,7173,Established/Existing CA,8,2.1,9.7,2.0,6.9,2.8,76.4,2284616,20.2,13.4,8
+Greater Essex,20.5,13.1,5906,DPP,10,1.4,9.6,1.7,7.8,2.0,77.5,1929610,20.7,13.3,9
+Greater Lincolnshire,41.1,32.4,3553,Established/Existing CA,5,7.0,12.4,11.0,10.6,13.6,45.4,1120749,40.7,32.4,5
+Greater Manchester,1.0,0.6,8966,Established/Existing CA,20,,0.5,,0.6,,99.0,3009664,0.8,0.6,19
+Hampshire & Solent,17.0,12.6,6418,DPP,11,2.6,5.1,2.2,7.1,5.8,77.3,2062619,16.4,12.2,13
+Hull and East Yorkshire,24.2,18.6,2024,Established/Existing CA,7,4.7,8.5,4.8,6.2,8.7,67.0,631285,24.2,18.5,7
+Lancashire,17.0,11.8,4982,Established/Existing CA,14,0.9,8.3,1.2,6.6,7.1,75.9,1601645,16.8,11.9,14
+Liverpool City Region,1.1,0.6,5186,Established/Existing CA,19,,0.6,,0.5,,98.9,1607084,0.7,0.6,19
+Norfolk & Suffolk,45.4,40.8,5582,DPP,2,12.0,6.8,17.0,9.6,22.8,31.9,1726590,45.0,40.3,2
+North East,20.8,13.4,6806,Established/Existing CA,9,2.8,11.1,2.7,4.2,0.7,78.5,2047820,19.6,12.8,10
+South Yorkshire,8.2,4.5,4514,Established/Existing CA,18,,5.2,0.1,2.9,0.0,91.8,1430623,7.7,4.6,18
+Sussex & Brighton,17.3,12.1,5573,DPP,13,1.3,5.4,2.6,8.1,2.9,79.8,1759789,17.1,12.3,12
+Tees Valley,10.4,5.8,2294,Established/Existing CA,16,0.1,6.8,0.2,3.3,,89.6,712858,10.6,6.0,15
+West Midlands,1.0,0.5,8735,Established/Existing CA,21,,0.7,,0.3,,99.0,3036605,0.9,0.5,21
+West Yorkshire,10.7,6.2,7345,Established/Existing CA,15,0.3,6.6,0.1,3.8,0.6,88.6,2435236,9.3,5.9,16
+West of England,8.5,5.1,2921,Established/Existing CA,17,,3.8,0.3,4.3,,91.5,1000759,7.8,4.9,17
+York and North Yorkshire,43.5,34.7,2765,Established/Existing CA,4,6.9,10.4,11.2,15.0,15.2,41.3,844571,41.8,33.3,4

@@ -1,0 +1,21 @@
+Rank (pop-wtd),MSA,Pop-wtd RUC score,% pop in rural LSOA,Rank (IRR 3-dim),IRR (3-dim),Population,Density (per km2),N cities
+1,Cumbria,47.7,49.8,1,1.0,510680,75.5,1
+2,Norfolk & Suffolk,40.3,45.0,4,0.654,1726590,188.0,1
+3,York & North Yorkshire,33.3,41.8,2,0.784,844571,101.6,2
+4,Greater Lincolnshire,32.4,40.7,3,0.688,1120749,160.6,1
+5,Cambridgeshire & Peterborough,24.7,33.5,6,0.618,933972,275.5,3
+6,Hull & East Yorkshire,18.5,24.2,5,0.65,631285,255.0,1
+7,East Midlands,13.4,20.2,16,0.266,3400821,460.8,3
+8,Greater Essex,13.3,20.7,11,0.353,1929610,526.7,3
+9,North East,12.8,19.6,13,0.33,2760678,321.7,3
+10,Cheshire & Warrington,12.5,18.3,7,0.476,1008341,444.8,1
+11,Sussex & Brighton,12.3,17.1,10,0.373,1759789,465.2,2
+12,Hampshire & Solent,12.2,16.4,12,0.349,1920959,509.7,3
+13,Lancashire,11.9,16.8,9,0.376,1601645,522.4,2
+14,Tees Valley,6.0,10.6,8,0.43,712858,896.6,0
+15,West Yorkshire,5.9,9.3,17,0.187,2435236,1200.1,3
+16,West of England,4.9,7.8,14,0.324,1225337,923.8,2
+17,South Yorkshire,4.6,7.7,15,0.295,1430623,922.1,2
+18,Greater Manchester,0.6,0.8,19,0.053,3009664,2358.7,2
+18,Liverpool City Region,0.6,0.7,18,0.17,1607084,2197.6,1
+20,West Midlands,0.5,0.9,20,0.02,3036605,3367.6,4

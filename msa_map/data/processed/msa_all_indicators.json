@@ -6,7 +6,8 @@
       "density_2024": 449.8,
       "gva_ph_2023": 36632,
       "gva_growth_2018_23": 24.2,
-      "imd_pct_decile1": 10.0
+      "imd_pct_decile1": 10.0,
+      "rural_urban_score": 12.7
     }
   },
   "msas": [
@@ -20,21 +21,22 @@
       "established": "May 2017",
       "area_km2": 1276,
       "website": null,
+      "rural_urban_tag": "Predominantly Urban",
       "indicators": {
         "pop_2024": 3009664,
         "density_2024": 2358.7,
         "gva_ph_2023": 34017.0,
-        "gva_index_eng": 92.9,
         "gva_growth_2018_23": 32.190000000000005,
         "imd_pct_decile1": 23.03,
-        "imd_avg_rank": 13461.0
+        "rural_urban_score": 0.6
       },
       "ranks": {
         "pop_2024": 3,
         "density_2024": 2,
         "gva_ph_2023": 6,
         "gva_growth_2018_23": 3,
-        "imd_pct_decile1": 17
+        "imd_pct_decile1": 17,
+        "rural_urban_score": 18
       },
       "constituent_las": [
         "Bolton",
@@ -59,21 +61,22 @@
       "established": "June 2016",
       "area_km2": 902,
       "website": null,
+      "rural_urban_tag": "Predominantly Urban",
       "indicators": {
         "pop_2024": 3036605,
         "density_2024": 3367.6,
         "gva_ph_2023": 27950.0,
-        "gva_index_eng": 76.3,
         "gva_growth_2018_23": 18.31,
         "imd_pct_decile1": 27.11,
-        "imd_avg_rank": 11698.0
+        "rural_urban_score": 0.5
       },
       "ranks": {
         "pop_2024": 2,
         "density_2024": 1,
         "gva_ph_2023": 12,
         "gva_growth_2018_23": 20,
-        "imd_pct_decile1": 18
+        "imd_pct_decile1": 18,
+        "rural_urban_score": 20
       },
       "constituent_las": [
         "Birmingham",
@@ -95,21 +98,22 @@
       "established": "May 2024",
       "area_km2": 3583,
       "website": null,
+      "rural_urban_tag": "Predominantly Rural",
       "indicators": {
         "pop_2024": 2760678,
         "density_2024": 321.7,
         "gva_ph_2023": 25412.0,
-        "gva_index_eng": 69.4,
         "gva_growth_2018_23": 24.83,
         "imd_pct_decile1": 18.54,
-        "imd_avg_rank": 13375.0
+        "rural_urban_score": 12.8
       },
       "ranks": {
         "pop_2024": 4,
         "density_2024": 14,
         "gva_ph_2023": 18,
         "gva_growth_2018_23": 11,
-        "imd_pct_decile1": 12
+        "imd_pct_decile1": 12,
+        "rural_urban_score": 9
       },
       "constituent_las": [
         "County Durham",
@@ -131,21 +135,22 @@
       "established": "May 2017",
       "area_km2": 720,
       "website": null,
+      "rural_urban_tag": "Predominantly Urban",
       "indicators": {
         "pop_2024": 1607084,
         "density_2024": 2197.6,
         "gva_ph_2023": 27297.0,
-        "gva_index_eng": 74.5,
         "gva_growth_2018_23": 29.87,
         "imd_pct_decile1": 28.81,
-        "imd_avg_rank": 12509.0
+        "rural_urban_score": 0.6
       },
       "ranks": {
         "pop_2024": 10,
         "density_2024": 3,
         "gva_ph_2023": 15,
         "gva_growth_2018_23": 4,
-        "imd_pct_decile1": 19
+        "imd_pct_decile1": 19,
+        "rural_urban_score": 18
       },
       "constituent_las": [
         "Halton",
@@ -166,21 +171,22 @@
       "established": "May 2018",
       "area_km2": 1552,
       "website": null,
+      "rural_urban_tag": "Predominantly Urban",
       "indicators": {
         "pop_2024": 1430623,
         "density_2024": 922.1,
         "gva_ph_2023": 24977.0,
-        "gva_index_eng": 68.2,
         "gva_growth_2018_23": 29.18,
         "imd_pct_decile1": 22.22,
-        "imd_avg_rank": 12398.0
+        "rural_urban_score": 4.6
       },
       "ranks": {
         "pop_2024": 12,
         "density_2024": 6,
         "gva_ph_2023": 19,
         "gva_growth_2018_23": 5,
-        "imd_pct_decile1": 16
+        "imd_pct_decile1": 16,
+        "rural_urban_score": 17
       },
       "constituent_las": [
         "Barnsley",
@@ -199,21 +205,22 @@
       "established": "May 2021",
       "area_km2": 2029,
       "website": null,
+      "rural_urban_tag": "Predominantly Urban",
       "indicators": {
         "pop_2024": 2435236,
         "density_2024": 1200.1,
         "gva_ph_2023": 30665.0,
-        "gva_index_eng": 83.7,
         "gva_growth_2018_23": 26.39,
         "imd_pct_decile1": 21.15,
-        "imd_avg_rank": 14013.0
+        "rural_urban_score": 5.9
       },
       "ranks": {
         "pop_2024": 5,
         "density_2024": 4,
         "gva_ph_2023": 8,
         "gva_growth_2018_23": 9,
-        "imd_pct_decile1": 14
+        "imd_pct_decile1": 14,
+        "rural_urban_score": 15
       },
       "constituent_las": [
         "Bradford",
@@ -233,21 +240,22 @@
       "established": "June 2017",
       "area_km2": 1326,
       "website": null,
+      "rural_urban_tag": "Predominantly Urban",
       "indicators": {
         "pop_2024": 1225337,
         "density_2024": 923.8,
         "gva_ph_2023": 40793.0,
-        "gva_index_eng": 111.4,
         "gva_growth_2018_23": 34.06,
         "imd_pct_decile1": 5.88,
-        "imd_avg_rank": 20217.0
+        "rural_urban_score": 4.9
       },
       "ranks": {
         "pop_2024": 13,
         "density_2024": 5,
         "gva_ph_2023": 2,
         "gva_growth_2018_23": 1,
-        "imd_pct_decile1": 8
+        "imd_pct_decile1": 8,
+        "rural_urban_score": 16
       },
       "constituent_las": [
         "Bath and North East Somerset",
@@ -265,21 +273,22 @@
       "established": "February 2025",
       "area_km2": 2894,
       "website": null,
+      "rural_urban_tag": "Predominantly Urban",
       "indicators": {
         "pop_2024": 1601645,
         "density_2024": 522.4,
         "gva_ph_2023": 27439.0,
-        "gva_index_eng": 74.9,
         "gva_growth_2018_23": 24.64,
         "imd_pct_decile1": 19.26,
-        "imd_avg_rank": 14586.0
+        "rural_urban_score": 11.9
       },
       "ranks": {
         "pop_2024": 11,
         "density_2024": 9,
         "gva_ph_2023": 14,
         "gva_growth_2018_23": 12,
-        "imd_pct_decile1": 13
+        "imd_pct_decile1": 13,
+        "rural_urban_score": 13
       },
       "constituent_las": [
         "Blackburn with Darwen",
@@ -308,21 +317,22 @@
       "established": "May 2017",
       "area_km2": 790,
       "website": null,
+      "rural_urban_tag": "Predominantly Urban",
       "indicators": {
         "pop_2024": 712858,
         "density_2024": 896.6,
         "gva_ph_2023": 23935.0,
-        "gva_index_eng": 65.3,
         "gva_growth_2018_23": 19.139999999999997,
         "imd_pct_decile1": 30.12,
-        "imd_avg_rank": 13001.0
+        "rural_urban_score": 6.0
       },
       "ranks": {
         "pop_2024": 18,
         "density_2024": 7,
         "gva_ph_2023": 20,
         "gva_growth_2018_23": 19,
-        "imd_pct_decile1": 20
+        "imd_pct_decile1": 20,
+        "rural_urban_score": 14
       },
       "constituent_las": [
         "Darlington",
@@ -342,21 +352,22 @@
       "established": "February 2024",
       "area_km2": 8309,
       "website": null,
+      "rural_urban_tag": "Predominantly Rural",
       "indicators": {
         "pop_2024": 844571,
         "density_2024": 101.6,
         "gva_ph_2023": 34100.0,
-        "gva_index_eng": 93.1,
         "gva_growth_2018_23": 32.99,
         "imd_pct_decile1": 2.0,
-        "imd_avg_rank": 21081.0
+        "rural_urban_score": 33.3
       },
       "ranks": {
         "pop_2024": 17,
         "density_2024": 19,
         "gva_ph_2023": 5,
         "gva_growth_2018_23": 2,
-        "imd_pct_decile1": 1
+        "imd_pct_decile1": 1,
+        "rural_urban_score": 3
       },
       "constituent_las": [
         "North Yorkshire",
@@ -373,21 +384,22 @@
       "established": "February 2025",
       "area_km2": 2455,
       "website": null,
+      "rural_urban_tag": "Predominantly Rural",
       "indicators": {
         "pop_2024": 631285,
         "density_2024": 255.0,
         "gva_ph_2023": 26972.0,
-        "gva_index_eng": 73.6,
         "gva_growth_2018_23": 27.91,
         "imd_pct_decile1": 21.78,
-        "imd_avg_rank": 15867.0
+        "rural_urban_score": 18.5
       },
       "ranks": {
         "pop_2024": 19,
         "density_2024": 16,
         "gva_ph_2023": 16,
         "gva_growth_2018_23": 6,
-        "imd_pct_decile1": 15
+        "imd_pct_decile1": 15,
+        "rural_urban_score": 6
       },
       "constituent_las": [
         "East Riding of Yorkshire",
@@ -404,21 +416,22 @@
       "established": "February 2025",
       "area_km2": 6980,
       "website": null,
+      "rural_urban_tag": "Predominantly Rural",
       "indicators": {
         "pop_2024": 1120749,
         "density_2024": 160.6,
         "gva_ph_2023": 25994.0,
-        "gva_index_eng": 71.0,
         "gva_growth_2018_23": 25.14,
         "imd_pct_decile1": 12.4,
-        "imd_avg_rank": 15439.0
+        "rural_urban_score": 32.4
       },
       "ranks": {
         "pop_2024": 14,
         "density_2024": 18,
         "gva_ph_2023": 17,
         "gva_growth_2018_23": 10,
-        "imd_pct_decile1": 11
+        "imd_pct_decile1": 11,
+        "rural_urban_score": 4
       },
       "constituent_las": [
         "Boston",
@@ -442,21 +455,22 @@
       "established": "May 2024",
       "area_km2": 6164,
       "website": null,
+      "rural_urban_tag": "Predominantly Rural",
       "indicators": {
         "pop_2024": 3400821,
         "density_2024": 460.8,
         "gva_ph_2023": 31570.0,
-        "gva_index_eng": 86.2,
         "gva_growth_2018_23": 24.26,
         "imd_pct_decile1": 10.34,
-        "imd_avg_rank": 16590.0
+        "rural_urban_score": 13.4
       },
       "ranks": {
         "pop_2024": 1,
         "density_2024": 12,
         "gva_ph_2023": 7,
         "gva_growth_2018_23": 14,
-        "imd_pct_decile1": 10
+        "imd_pct_decile1": 10,
+        "rural_urban_score": 7
       },
       "constituent_las": [
         "Amber Valley",
@@ -488,21 +502,22 @@
       "established": "May 2017",
       "area_km2": 3389,
       "website": null,
+      "rural_urban_tag": "Predominantly Rural",
       "indicators": {
         "pop_2024": 933972,
         "density_2024": 275.5,
         "gva_ph_2023": 37085.0,
-        "gva_index_eng": 101.2,
         "gva_growth_2018_23": 24.05,
         "imd_pct_decile1": 4.07,
-        "imd_avg_rank": 20027.0
+        "rural_urban_score": 24.7
       },
       "ranks": {
         "pop_2024": 16,
         "density_2024": 15,
         "gva_ph_2023": 3,
         "gva_growth_2018_23": 15,
-        "imd_pct_decile1": 2
+        "imd_pct_decile1": 2,
+        "rural_urban_score": 5
       },
       "constituent_las": [
         "Cambridge",
@@ -523,21 +538,22 @@
       "established": "2026 (expected)",
       "area_km2": 3787,
       "website": null,
+      "rural_urban_tag": "Predominantly Urban",
       "indicators": {
         "pop_2024": 1759789,
         "density_2024": 465.2,
         "gva_ph_2023": 29823.0,
-        "gva_index_eng": 81.4,
         "gva_growth_2018_23": 23.94,
         "imd_pct_decile1": 4.66,
-        "imd_avg_rank": 19046.0
+        "rural_urban_score": 12.3
       },
       "ranks": {
         "pop_2024": 8,
         "density_2024": 11,
         "gva_ph_2023": 9,
         "gva_growth_2018_23": 16,
-        "imd_pct_decile1": 5
+        "imd_pct_decile1": 5,
+        "rural_urban_score": 11
       },
       "constituent_lad_codes": [
         "E06000043",
@@ -580,21 +596,22 @@
       "established": "2026 (expected)",
       "area_km2": 3769,
       "website": null,
+      "rural_urban_tag": "Predominantly Urban",
       "indicators": {
         "pop_2024": 1920959,
         "density_2024": 509.7,
         "gva_ph_2023": 36619.0,
-        "gva_index_eng": 100.0,
         "gva_growth_2018_23": 20.94,
         "imd_pct_decile1": 4.29,
-        "imd_avg_rank": 20757.0
+        "rural_urban_score": 12.2
       },
       "ranks": {
         "pop_2024": 7,
         "density_2024": 10,
         "gva_ph_2023": 4,
         "gva_growth_2018_23": 18,
-        "imd_pct_decile1": 4
+        "imd_pct_decile1": 4,
+        "rural_urban_score": 12
       },
       "constituent_lad_codes": [
         "E06000044",
@@ -639,21 +656,22 @@
       "established": "2026 (expected)",
       "area_km2": 2267,
       "website": null,
+      "rural_urban_tag": "Predominantly Urban",
       "indicators": {
         "pop_2024": 1008341,
         "density_2024": 444.8,
         "gva_ph_2023": 42015.0,
-        "gva_index_eng": 114.7,
         "gva_growth_2018_23": 24.48,
         "imd_pct_decile1": 5.52,
-        "imd_avg_rank": 21038.0
+        "rural_urban_score": 12.5
       },
       "ranks": {
         "pop_2024": 15,
         "density_2024": 13,
         "gva_ph_2023": 1,
         "gva_growth_2018_23": 13,
-        "imd_pct_decile1": 7
+        "imd_pct_decile1": 7,
+        "rural_urban_score": 10
       },
       "constituent_lad_codes": [
         "E06000049",
@@ -676,21 +694,22 @@
       "established": "2026 (expected)",
       "area_km2": 6768,
       "website": null,
+      "rural_urban_tag": "Predominantly Rural",
       "indicators": {
         "pop_2024": 510680,
         "density_2024": 75.5,
         "gva_ph_2023": 29808.0,
-        "gva_index_eng": 81.4,
         "gva_growth_2018_23": 26.479999999999997,
         "imd_pct_decile1": 8.46,
-        "imd_avg_rank": 16322.0
+        "rural_urban_score": 47.7
       },
       "ranks": {
         "pop_2024": 20,
         "density_2024": 20,
         "gva_ph_2023": 10,
         "gva_growth_2018_23": 8,
-        "imd_pct_decile1": 9
+        "imd_pct_decile1": 9,
+        "rural_urban_score": 1
       },
       "constituent_lad_codes": [
         "E06000063",
@@ -711,21 +730,22 @@
       "established": "TBC",
       "area_km2": 3670,
       "website": null,
+      "rural_urban_tag": "Predominantly Rural",
       "indicators": {
         "pop_2024": 1929610,
         "density_2024": 526.7,
         "gva_ph_2023": 28891.0,
-        "gva_index_eng": 78.9,
         "gva_growth_2018_23": 21.63,
         "imd_pct_decile1": 4.23,
-        "imd_avg_rank": 18507.0
+        "rural_urban_score": 13.3
       },
       "ranks": {
         "pop_2024": 6,
         "density_2024": 8,
         "gva_ph_2023": 11,
         "gva_growth_2018_23": 17,
-        "imd_pct_decile1": 3
+        "imd_pct_decile1": 3,
+        "rural_urban_score": 8
       },
       "constituent_lad_codes": [
         "E07000066",
@@ -770,21 +790,22 @@
       "established": "TBC",
       "area_km2": 9169,
       "website": null,
+      "rural_urban_tag": "Predominantly Rural",
       "indicators": {
         "pop_2024": 1726590,
         "density_2024": 188.0,
         "gva_ph_2023": 27828.0,
-        "gva_index_eng": 76.0,
         "gva_growth_2018_23": 26.590000000000003,
         "imd_pct_decile1": 5.39,
-        "imd_avg_rank": 16945.0
+        "rural_urban_score": 40.3
       },
       "ranks": {
         "pop_2024": 9,
         "density_2024": 17,
         "gva_ph_2023": 13,
         "gva_growth_2018_23": 7,
-        "imd_pct_decile1": 6
+        "imd_pct_decile1": 6,
+        "rural_urban_score": 2
       },
       "constituent_lad_codes": [
         "E07000143",

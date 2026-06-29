@@ -12,14 +12,22 @@ import json
 import math
 import pandas as pd
 
-BASE = "/Users/h.cantekin/Library/CloudStorage/OneDrive-LondonSchoolofEconomics/Documents/ECObsv/Main/Projects/msa_map"
+BASE = "/Users/h.cantekin/Library/CloudStorage/OneDrive-LondonSchoolofEconomics/Documents/GitHub/RADataHub/msa_map"
 
-POP_CSV        = f"{BASE}/data/processed/msa_population_ranks.csv"
-IMD_CSV        = f"{BASE}/data/processed/msa_imd_ranks.csv"
-GVA_CSV        = f"{BASE}/data/processed/msa_gva_ranks.csv"
-LAD_GEOJSON    = f"{BASE}/data/processed/lad.geojson"
-DPP_LOOKUP_CSV = f"{BASE}/data/raw/lookups/dpp_lad_lookup_manual.csv"
-OUT_PATH       = f"{BASE}/data/processed/msa_all_indicators.json"
+POP_CSV          = f"{BASE}/data/processed/msa_population_ranks.csv"
+IMD_CSV          = f"{BASE}/data/processed/msa_imd_ranks.csv"
+GVA_CSV          = f"{BASE}/data/processed/msa_gva_ranks.csv"
+RURAL_URBAN_CSV  = f"{BASE}/data/processed/msa_rural_urban_scores.csv"
+LAD_GEOJSON      = f"{BASE}/data/processed/lad.geojson"
+DPP_LOOKUP_CSV   = f"{BASE}/data/raw/lookups/dpp_lad_lookup_manual.csv"
+OUT_PATH         = f"{BASE}/data/processed/msa_all_indicators.json"
+
+# The rural/urban CSV spells three MSA names with "and" instead of "&", same as the IMD CSV.
+RURAL_URBAN_NAME_FIX = {
+    "York and North Yorkshire": "York & North Yorkshire",
+    "Hull and East Yorkshire": "Hull & East Yorkshire",
+    "Cambridgeshire and Peterborough": "Cambridgeshire & Peterborough",
+}
 
 # website: null for every MSA — filling in official CA URLs is a manual,
 # fact-checked step left to the project owner. The dashboard hides the
@@ -48,11 +56,16 @@ MSA_METADATA = {
 }
 
 ENGLAND_BENCHMARKS = {
-    "pop_2024":           58620101,
-    "density_2024":       449.8,
-    "gva_ph_2023":        36632,
-    "gva_growth_2018_23": 24.2,
-    "imd_pct_decile1":    10.0,
+    "pop_2024":               58620101,
+    "density_2024":           449.8,
+    "gva_ph_2023":            36632,
+    "gva_growth_2018_23":     24.2,
+    "imd_pct_decile1":        10.0,
+    # Population-weighted mean RUC21 rurality score (0=urban, 100=rural) across all
+    # 33,755 English LSOAs, mid-2024 SAPE population weights — see scripts/rural_urban.ipynb
+    # Section 10. Used both as the "vs England" benchmark and as the Predominantly
+    # Rural/Urban tag threshold below.
+    "rural_urban_score":      12.7,
 }
 
 
@@ -73,10 +86,12 @@ def load_indicator_frames():
     pop = pd.read_csv(POP_CSV)
     imd = pd.read_csv(IMD_CSV)
     gva = pd.read_csv(GVA_CSV)
+    rural_urban = pd.read_csv(RURAL_URBAN_CSV)
 
-    # The IMD CSV spells three MSA names with "and" instead of "&" —
-    # normalise so all three frames key identically on msa_name.
+    # The IMD and rural/urban CSVs spell three MSA names with "and" instead of "&" —
+    # normalise so all frames key identically on msa_name.
     imd["msa_name"] = imd["msa_name"].str.replace(" and ", " & ", regex=False)
+    rural_urban["msa_name"] = rural_urban["msa_name"].replace(RURAL_URBAN_NAME_FIX)
 
     # rank_pct_decile1 in the source CSV ranks 1 = highest % (most deprived,
     # worst) — backwards from every other indicator here, where 1 = best.
@@ -86,7 +101,20 @@ def load_indicator_frames():
         imd["pct_decile_1"].rank(ascending=True, method="min").astype(int)
     )
 
-    return pop.set_index("msa_name"), imd.set_index("msa_name"), gva.set_index("msa_name")
+    # rural_urban_scores.csv covers 21 MSAs (it also includes Devon and Torbay, which
+    # isn't part of this dashboard's 20-MSA roster) and ranks across all 21. Restrict to
+    # the 20 MSAs in MSA_METADATA before re-ranking, so "Rank in MSAs ... / 20" is correct.
+    rural_urban = rural_urban[rural_urban["msa_name"].isin(MSA_METADATA.keys())].copy()
+    rural_urban["rank_rural_urban_score"] = (
+        rural_urban["pop_weighted_rurality_score"].rank(ascending=False, method="min").astype(int)
+    )
+
+    return (
+        pop.set_index("msa_name"),
+        imd.set_index("msa_name"),
+        gva.set_index("msa_name"),
+        rural_urban.set_index("msa_name"),
+    )
 
 
 def load_dpp_lad_lookup():
@@ -111,8 +139,8 @@ def load_constituent_las(gss_code, lad_features):
 
 def build():
     print("── Loading indicator CSVs ───────────────────────────────────────")
-    pop_idx, imd_idx, gva_idx = load_indicator_frames()
-    print(f"   pop rows: {len(pop_idx)}  imd rows: {len(imd_idx)}  gva rows: {len(gva_idx)}")
+    pop_idx, imd_idx, gva_idx, rural_urban_idx = load_indicator_frames()
+    print(f"   pop rows: {len(pop_idx)}  imd rows: {len(imd_idx)}  gva rows: {len(gva_idx)}  rural/urban rows: {len(rural_urban_idx)}")
 
     print("\n── Loading DPP LAD lookup ────────────────────────────────────────")
     dpp_lookup = load_dpp_lad_lookup()
@@ -128,15 +156,15 @@ def build():
         pop_row = pop_idx.loc[name] if name in pop_idx.index else None
         imd_row = imd_idx.loc[name] if name in imd_idx.index else None
         gva_row = gva_idx.loc[name] if name in gva_idx.index else None
+        ru_row  = rural_urban_idx.loc[name] if name in rural_urban_idx.index else None
 
         indicators = {
             "pop_2024":           to_native(pop_row["pop_2024"])           if pop_row is not None else None,
             "density_2024":       to_native(pop_row["density_2024"])       if pop_row is not None else None,
             "gva_ph_2023":        to_native(gva_row["gva_ph_2023"])        if gva_row is not None else None,
-            "gva_index_eng":      to_native(gva_row["gva_index_eng"])      if gva_row is not None else None,
             "gva_growth_2018_23": to_native(gva_row["gva_growth_2018_23"]) if gva_row is not None else None,
             "imd_pct_decile1":    to_native(imd_row["pct_decile_1"])       if imd_row is not None else None,
-            "imd_avg_rank":       to_native(imd_row["imd_avg_rank"])       if imd_row is not None else None,
+            "rural_urban_score":  to_native(ru_row["pop_weighted_rurality_score"]) if ru_row is not None else None,
         }
 
         ranks = {
@@ -145,20 +173,35 @@ def build():
             "gva_ph_2023":        to_native(gva_row["rank_gva_ph"])           if gva_row is not None else None,
             "gva_growth_2018_23": to_native(gva_row["rank_gva_growth_1823"])  if gva_row is not None else None,
             "imd_pct_decile1":    to_native(imd_row["rank_pct_decile1_fixed"]) if imd_row is not None else None,
+            "rural_urban_score":  to_native(ru_row["rank_rural_urban_score"]) if ru_row is not None else None,
         }
 
+        # Predominantly Rural/Urban tag: compared against England's own population-weighted
+        # average rurality score (12.7, see ENGLAND_BENCHMARKS), not a literal "majority of
+        # population in a rural LSOA" threshold — empirically no MSA clears 50% on that
+        # measure (Cumbria, the most rural, sits at 49.8%), so a strict-majority rule would
+        # tag every single MSA "Urban" and defeat the point of the tag.
+        rural_urban_tag = None
+        if ru_row is not None:
+            score = to_native(ru_row["pop_weighted_rurality_score"])
+            rural_urban_tag = (
+                "Predominantly Rural" if score > ENGLAND_BENCHMARKS["rural_urban_score"]
+                else "Predominantly Urban"
+            )
+
         record = {
-            "id":           meta["id"],
-            "name":         name,
-            "gss_code":     meta["gss"],
-            "tier":         meta["tier"],
-            "deal_level":   meta["deal_level"],
-            "mayor":        meta["mayor"],
-            "established":  meta["established"],
-            "area_km2":     meta["area_km2"],
-            "website":      meta["website"],
-            "indicators":   indicators,
-            "ranks":        ranks,
+            "id":              meta["id"],
+            "name":            name,
+            "gss_code":        meta["gss"],
+            "tier":            meta["tier"],
+            "deal_level":      meta["deal_level"],
+            "mayor":           meta["mayor"],
+            "established":     meta["established"],
+            "area_km2":        meta["area_km2"],
+            "website":         meta["website"],
+            "rural_urban_tag": rural_urban_tag,
+            "indicators":      indicators,
+            "ranks":           ranks,
         }
 
         if meta["gss"] == "TBC":
