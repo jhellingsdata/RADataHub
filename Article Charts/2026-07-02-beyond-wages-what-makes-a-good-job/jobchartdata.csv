@@ -1,0 +1,22 @@
+category,value,id
+Job Quality Index,15.68882324,primary
+Job Quality Index,14.90103397,low
+Job Quality Index,16.47661251,high
+Physical Health,15.59034958,primary
+Physical Health,15.23584441,low
+Physical Health,15.86607582,high
+Education,2.079763663,primary
+Education,1.744953225,low
+Education,2.355489906,high
+Age,2.000984737,primary
+Age,1.705563762,low
+Age,2.335795175,high
+Gender,1.882816347,primary
+Gender,1.587395372,low
+Gender,2.138847858,high
+Partnership,1.272279665,primary
+Partnership,0.878385032,low
+Partnership,1.626784835,high
+Children,1.075332349,primary
+Children,0.661742984,low
+Children,1.429837518,high
