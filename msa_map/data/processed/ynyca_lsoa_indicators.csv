@@ -1,501 +1,501 @@
-LSOA21CD,LSOA21NM,LAD24CD,LAD24NM,imd_rank,imd_decile,population,rurality_score,pct_rural,dominant_ruc,urban_rural_flag,town,dist_to_centre_km
-E01013335,York 012A,E06000014,York,6410,2,1658,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.004897866844352
-E01013336,York 012B,E06000014,York,23406,7,1525,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.0523779662392636
-E01013337,York 012C,E06000014,York,30290,9,1657,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.5394559799513394
-E01013338,York 012D,E06000014,York,28421,9,2340,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.7909565955822475
-E01013339,York 012E,E06000014,York,32632,10,1633,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.139135521144163
-E01013340,York 024A,E06000014,York,33007,10,1247,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,4.5805751011852385
-E01013341,York 024B,E06000014,York,27585,9,1361,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,5.01735881807001
-E01013342,York 024C,E06000014,York,26370,8,1512,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,York,7.5945898180068685
-E01013343,York 009A,E06000014,York,24400,8,1914,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.9188234981459071
-E01013344,York 007A,E06000014,York,27153,9,1444,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.7183494431515972
-E01013345,York 009B,E06000014,York,24978,8,1723,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.0716201698433634
-E01013346,York 007B,E06000014,York,22735,7,1631,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.3744038608944051
-E01013347,York 009C,E06000014,York,4223,2,1607,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.4708152001559802
-E01013348,York 010A,E06000014,York,28389,9,1831,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.420851950576025
-E01013349,York 009D,E06000014,York,3992,2,1384,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.5572145484763495
-E01013350,York 009E,E06000014,York,7567,3,1656,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.6219313724836157
-E01013351,York 020A,E06000014,York,30315,9,1938,56.42857142857143,100.0,Larger rural: Nearer to a major town or city,Rural,York,7.70544863174386
-E01013352,York 020B,E06000014,York,30599,10,1712,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,6.384682946960846
-E01013353,York 022A,E06000014,York,14599,5,1646,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.529824494172284
-E01013354,York 022B,E06000014,York,32934,10,1354,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.671587302343967
-E01013355,York 022C,E06000014,York,31582,10,1834,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.112830833988516
-E01013356,York 022D,E06000014,York,28137,9,1335,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.937071846503431
-E01013357,York 021A,E06000014,York,33130,10,2324,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.3809601413144765
-E01013358,York 021B,E06000014,York,32781,10,1492,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.5461872433261408
-E01013359,York 022E,E06000014,York,16568,5,1569,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.0113517987177145
-E01013360,York 019A,E06000014,York,32763,10,1793,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.4868984067335416
-E01013361,York 019B,E06000014,York,27926,9,1660,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.7154260577831157
-E01013362,York 019C,E06000014,York,31066,10,2218,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.0940889812190937
-E01013363,York 019D,E06000014,York,22967,7,3636,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.6119348978063088
-E01013364,York 019E,E06000014,York,17489,6,2042,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.3497101122654707
-E01013366,York 013A,E06000014,York,8960,3,1739,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.18676136134491508
-E01013368,York 010B,E06000014,York,26139,8,2138,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.7710037978515492
-E01013369,York 013C,E06000014,York,14476,5,1680,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.41866536082838685
-E01013370,York 002A,E06000014,York,27963,9,1493,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,5.850696313904538
-E01013371,York 003A,E06000014,York,33398,10,1459,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,5.127016304401607
-E01013372,York 003B,E06000014,York,32004,10,1544,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,6.162282971877902
-E01013373,York 002B,E06000014,York,20739,7,1477,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,5.706598060145361
-E01013374,York 003C,E06000014,York,32900,10,1500,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,5.180340214574676
-E01013375,York 002C,E06000014,York,32710,10,1262,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,6.510778781365651
-E01013376,York 002D,E06000014,York,31730,10,1389,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,8.119421275241361
-E01013377,York 003D,E06000014,York,32124,10,1546,10.833333333333334,16.666666666666664,Urban: Nearer to a major town or city,Urban,York,6.453951787711943
-E01013378,York 023B,E06000014,York,30333,9,6728,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,5.000612053896396
-E01013379,York 008A,E06000014,York,33128,10,1426,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.8545873467215401
-E01013380,York 008B,E06000014,York,25599,8,1643,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.4323352396955884
-E01013381,York 014A,E06000014,York,29676,9,1650,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.208056128455827
-E01013382,York 010C,E06000014,York,15570,5,1695,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.187232587932786
-E01013383,York 010D,E06000014,York,20681,7,3091,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.0068749152813106
-E01013384,York 015A,E06000014,York,14610,5,1670,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.7367100946482221
-E01013385,York 008C,E06000014,York,10095,3,1438,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.8957595121711708
-E01013386,York 010E,E06000014,York,7111,3,1763,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.7011325264273038
-E01013387,York 008D,E06000014,York,33627,10,1603,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.1323036316451973
-E01013388,York 008E,E06000014,York,32159,10,1005,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.5815869294072185
-E01013389,York 008F,E06000014,York,31361,10,1160,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.7652747094529055
-E01013390,York 017A,E06000014,York,13831,5,1478,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.4788381154196266
-E01013391,York 017B,E06000014,York,24436,8,1952,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.3421585583945232
-E01013392,York 012F,E06000014,York,29218,9,1659,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.275302357433896
-E01013393,York 016A,E06000014,York,21880,7,1474,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.994714794429239
-E01013394,York 016B,E06000014,York,7984,3,1436,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.435326184912807
-E01013395,York 016C,E06000014,York,29706,9,1385,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.943732344594159
-E01013396,York 016D,E06000014,York,24047,8,1570,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.3853369476171835
-E01013397,York 017C,E06000014,York,30824,10,1523,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.9802529980236803
-E01013398,York 015B,E06000014,York,20350,7,1555,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.6888717573272425
-E01013399,York 015C,E06000014,York,4699,2,1763,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.8221506451803495
-E01013400,York 015D,E06000014,York,24692,8,1588,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.6170829293427995
-E01013401,York 015E,E06000014,York,21645,7,1610,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.275524094403311
-E01013402,York 014B,E06000014,York,33489,10,1676,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.121191363321019
-E01013403,York 015F,E06000014,York,24457,8,2087,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.228674500194306
-E01013404,York 004A,E06000014,York,14223,5,1707,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.683579571630965
-E01013405,York 005A,E06000014,York,32042,10,1350,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.6412332238926344
-E01013406,York 005B,E06000014,York,22604,7,2035,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.4040835331681865
-E01013407,York 004B,E06000014,York,29377,9,1418,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.9975594687165192
-E01013408,York 004C,E06000014,York,30978,10,1231,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.711765764213814
-E01013409,York 005C,E06000014,York,27779,9,1805,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.5551711024466535
-E01013410,York 004D,E06000014,York,7194,3,1396,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.3745815019231875
-E01013411,York 005D,E06000014,York,31075,10,1433,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.196088434717906
-E01013412,York 021C,E06000014,York,27968,9,2238,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.8018940685493
-E01013413,York 017D,E06000014,York,29903,9,1623,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.5926951220450074
-E01013414,York 021D,E06000014,York,30486,10,1807,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.283545920759865
-E01013416,York 013E,E06000014,York,7002,3,1504,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.0935837367592287
-E01013417,York 017E,E06000014,York,27216,9,1858,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.5741719111533297
-E01013418,York 019F,E06000014,York,17957,6,1534,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.3153654556819656
-E01013419,York 014C,E06000014,York,26223,8,2830,8.125,12.5,Urban: Nearer to a major town or city,Urban,York,4.216499430114981
-E01013420,York 014D,E06000014,York,31915,10,1968,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.755690550827342
-E01013421,York 011A,E06000014,York,27064,9,1587,61.25,100.0,Smaller rural: Nearer to a major town or city,Rural,York,6.308815041161212
-E01013422,York 011B,E06000014,York,30284,9,1844,13.0,20.0,Urban: Nearer to a major town or city,Urban,York,3.953456711006886
-E01013423,York 024D,E06000014,York,32576,10,1312,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,5.876336435351102
-E01013424,York 024E,E06000014,York,32219,10,1245,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,7.1425336360705565
-E01013425,York 024F,E06000014,York,29424,9,1537,53.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,7.028699303989554
-E01013426,York 011C,E06000014,York,29538,9,1739,10.833333333333334,16.666666666666664,Urban: Nearer to a major town or city,Urban,York,6.845764561334061
-E01013427,York 011D,E06000014,York,33319,10,1442,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.674821750708945
-E01013428,York 006A,E06000014,York,26921,8,1813,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.9653714024182494
-E01013429,York 006B,E06000014,York,30146,9,1993,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.716137828315813
-E01013430,York 006C,E06000014,York,23926,8,1755,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,5.971266810370671
-E01013431,York 006D,E06000014,York,30377,9,2291,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.752225755870395
-E01013432,York 007C,E06000014,York,32210,10,1958,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.74916297852407
-E01013433,York 007D,E06000014,York,33615,10,1366,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.9175958822013457
-E01013434,York 007E,E06000014,York,31920,10,1498,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.357053489586861
-E01013435,York 006E,E06000014,York,31186,10,1422,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.2986238992681125
-E01013436,York 001A,E06000014,York,32091,10,1726,28.75,50.0,Urban: Nearer to a major town or city,Urban,York,6.801870715758448
-E01013437,York 008G,E06000014,York,20636,7,1398,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,York,7.4177351102559825
-E01013438,York 001B,E06000014,York,24953,8,1997,52.5,100.0,Larger rural: Nearer to a major town or city,Rural,York,9.566916479051228
-E01013439,York 001C,E06000014,York,31724,10,1395,56.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,9.703187886759757
-E01013440,York 001D,E06000014,York,31740,10,1780,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,8.055052133824729
-E01013441,York 016E,E06000014,York,23062,7,1664,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.837606040254242
-E01013442,York 018A,E06000014,York,17149,6,1446,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.698646630017685
-E01013443,York 018B,E06000014,York,3485,2,1664,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.1906671054018214
-E01013444,York 018C,E06000014,York,5933,2,1538,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.043156036151346
-E01013445,York 016F,E06000014,York,7714,3,1595,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.1837072027634066
-E01013446,York 018D,E06000014,York,12292,4,1663,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.96808489651416
-E01013447,York 018E,E06000014,York,7450,3,1508,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.481066829916264
-E01013448,York 018F,E06000014,York,5847,2,1467,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.854376821001554
-E01013449,York 022F,E06000014,York,18531,6,1606,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.20886452645762
-E01013450,York 023C,E06000014,York,24349,8,1285,62.0,100.0,Smaller rural: Nearer to a major town or city,Rural,York,7.752649425084286
-E01013451,York 020C,E06000014,York,29329,9,1239,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,York,9.600591069960847
-E01013452,York 020D,E06000014,York,31180,10,1670,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,11.496132837983522
-E01027555,Craven 008A,E06000065,North Yorkshire,28023,9,1932,45.714285714285715,57.14285714285714,Larger rural: Further from a major town or city,Rural,Craven,4.265167331023146
-E01027556,Craven 007A,E06000065,North Yorkshire,25360,8,2049,70.0,100.0,Larger rural: Further from a major town or city,Rural,Craven,5.988042832260861
-E01027557,Craven 009D,E06000065,North Yorkshire,16755,5,1633,90.0,100.0,Smaller rural: Further from a major town or city,Rural,Craven,8.640336659189563
-E01027558,Craven 001A,E06000065,North Yorkshire,23829,8,1944,96.66666666666667,100.0,Smaller rural: Further from a major town or city,Rural,Craven,36.72081143756862
-E01027559,Craven 001B,E06000065,North Yorkshire,17873,6,1781,83.33333333333333,100.0,Larger rural: Further from a major town or city,Rural,Craven,37.023826231375985
-E01027560,Craven 007B,E06000065,North Yorkshire,22194,7,2548,56.42857142857143,100.0,Larger rural: Nearer to a major town or city,Rural,Craven,9.422838812566278
-E01027561,Craven 009E,E06000065,North Yorkshire,28925,9,1966,90.0,100.0,Larger rural: Further from a major town or city,Rural,Craven,3.717901409681069
-E01027562,Craven 009C,E06000065,North Yorkshire,18637,6,1608,97.14285714285714,100.0,Smaller rural: Further from a major town or city,Rural,Craven,13.231906761027762
-E01027563,Craven 007C,E06000065,North Yorkshire,21771,7,1506,80.0,100.0,Larger rural: Further from a major town or city,Rural,Craven,7.053946036942536
-E01027564,Craven 008B,E06000065,North Yorkshire,13191,4,1229,0.0,0.0,Urban: Nearer to a major town or city,Urban,Craven,6.87094022142686
-E01027565,Craven 008C,E06000065,North Yorkshire,29953,9,1575,0.0,0.0,Urban: Nearer to a major town or city,Urban,Craven,6.685240383959043
-E01027566,Craven 008D,E06000065,North Yorkshire,26823,8,1392,0.0,0.0,Urban: Nearer to a major town or city,Urban,Craven,6.304596865218759
-E01027567,Craven 009B,E06000065,North Yorkshire,22468,7,1533,85.71428571428571,100.0,Larger rural: Further from a major town or city,Rural,Craven,14.084889811993799
-E01027568,Craven 003A,E06000065,North Yorkshire,22933,7,2208,85.71428571428571,100.0,Larger rural: Further from a major town or city,Rural,Craven,15.057878661199075
-E01027569,Craven 001C,E06000065,North Yorkshire,18030,6,1436,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Craven,29.007266523204276
-E01027570,Craven 001D,E06000065,North Yorkshire,21041,7,2487,85.0,100.0,Larger rural: Further from a major town or city,Rural,Craven,36.76905631563546
-E01027571,Craven 003B,E06000065,North Yorkshire,23368,7,1910,91.42857142857143,100.0,Smaller rural: Further from a major town or city,Rural,Craven,28.093500327306227
-E01027572,Craven 003C,E06000065,North Yorkshire,21373,7,2022,82.85714285714286,100.0,Larger rural: Further from a major town or city,Rural,Craven,20.772613059964385
-E01027573,Craven 003D,E06000065,North Yorkshire,22209,7,1737,88.0,100.0,Larger rural: Further from a major town or city,Rural,Craven,19.4748472086429
-E01027574,Craven 005A,E06000065,North Yorkshire,32709,10,1857,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,2.257552660804165
-E01027575,Craven 005B,E06000065,North Yorkshire,29314,9,1825,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,0.7110534810421915
-E01027576,Craven 009F,E06000065,North Yorkshire,33153,10,1842,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,1.1700911649354746
-E01027577,Craven 005C,E06000065,North Yorkshire,23354,7,2004,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,0.241927568404261
-E01027578,Craven 006A,E06000065,North Yorkshire,16559,5,1475,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,0.4037434654685515
-E01027579,Craven 005D,E06000065,North Yorkshire,8169,3,1192,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,0.7721591461053757
-E01027580,Craven 006B,E06000065,North Yorkshire,8117,3,1095,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,2.039428032854896
-E01027582,Craven 006D,E06000065,North Yorkshire,18610,6,1604,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,1.432705411293346
-E01027583,Craven 008E,E06000065,North Yorkshire,27600,9,2003,13.333333333333334,0.0,Urban: Further from a major town or city,Urban,Craven,7.391319396363373
-E01027584,Craven 008F,E06000065,North Yorkshire,16627,5,1946,24.166666666666668,16.666666666666664,Urban: Further from a major town or city,Urban,Craven,8.684206413792541
-E01027585,Craven 009A,E06000065,North Yorkshire,20557,7,1855,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Craven,23.47092846418532
-E01027586,Craven 007D,E06000065,North Yorkshire,21259,7,1935,60.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Craven,6.322976265400222
-E01027587,Hambleton 006A,E06000065,North Yorkshire,16479,5,1364,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,12.190026394575135
-E01027588,Hambleton 006B,E06000065,North Yorkshire,26376,8,1751,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,12.119060727024808
-E01027589,Hambleton 006C,E06000065,North Yorkshire,23460,7,2126,53.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,10.36064674614968
-E01027590,Hambleton 003A,E06000065,North Yorkshire,17394,6,2939,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,3.604977038066705
-E01027591,Hambleton 001A,E06000065,North Yorkshire,20422,7,1678,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,23.506291175633816
-E01027592,Hambleton 003B,E06000065,North Yorkshire,19347,6,1748,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,11.115816050601854
-E01027593,Hambleton 006D,E06000065,North Yorkshire,17748,6,1743,85.0,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,13.781881222183216
-E01027594,Hambleton 010A,E06000065,North Yorkshire,18601,6,1957,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,29.6395366493508
-E01027595,Hambleton 010B,E06000065,North Yorkshire,27069,9,1982,53.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,30.259417273323848
-E01027596,Hambleton 010C,E06000065,North Yorkshire,28953,9,1705,53.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,28.4361595159367
-E01027597,Hambleton 001B,E06000065,North Yorkshire,27072,9,1566,56.42857142857143,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,28.395834848768708
-E01027598,Hambleton 002A,E06000065,North Yorkshire,31100,10,1656,52.142857142857146,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,24.55559615668802
-E01027599,Hambleton 001C,E06000065,North Yorkshire,10278,4,1596,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,25.629210219724083
-E01027600,Hambleton 011A,E06000065,North Yorkshire,18121,6,1917,78.125,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,25.606856584850597
-E01027601,Hambleton 010D,E06000065,North Yorkshire,24606,8,2116,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,36.87903411448289
-E01027603,Hambleton 005A,E06000065,North Yorkshire,22875,7,2063,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,8.149505800919169
-E01027604,Hambleton 005B,E06000065,North Yorkshire,23581,7,1840,70.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,4.671348657894772
-E01027605,Hambleton 013D,E06000065,North Yorkshire,21495,7,1562,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,0.5208795897081088
-E01027606,Hambleton 012E,E06000065,North Yorkshire,27103,9,1392,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,1.0766369480881999
-E01027607,Hambleton 005C,E06000065,North Yorkshire,33129,10,1147,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,2.1563899077085584
-E01027608,Hambleton 013B,E06000065,North Yorkshire,9792,3,1753,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,0.2987269948271864
-E01027609,Hambleton 012D,E06000065,North Yorkshire,7193,3,1431,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,2.746207106455224
-E01027610,Hambleton 012C,E06000065,North Yorkshire,14675,5,1570,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,0.9649752528668019
-E01027612,Hambleton 013A,E06000065,North Yorkshire,7853,3,1611,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,0.6913115975694102
-E01027613,Hambleton 003C,E06000065,North Yorkshire,16158,5,1747,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,7.258957272170287
-E01027614,Hambleton 005D,E06000065,North Yorkshire,31976,10,1251,20.0,0.0,Urban: Further from a major town or city,Urban,Hambleton,1.7239458841594155
-E01027615,Hambleton 005E,E06000065,North Yorkshire,33580,10,1138,20.0,0.0,Urban: Further from a major town or city,Urban,Hambleton,2.0909437200695677
-E01027616,Hambleton 013C,E06000065,North Yorkshire,15434,5,1483,20.0,0.0,Urban: Further from a major town or city,Urban,Hambleton,1.359834745831727
-E01027617,Hambleton 003D,E06000065,North Yorkshire,17072,6,1036,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,12.966565554465083
-E01027618,Hambleton 002B,E06000065,North Yorkshire,25991,8,2427,57.5,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,15.904248467375405
-E01027619,Hambleton 011B,E06000065,North Yorkshire,27667,9,2256,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,37.66967632567586
-E01027620,Hambleton 008A,E06000065,North Yorkshire,24967,8,1960,16.666666666666668,0.0,Urban: Further from a major town or city,Urban,Hambleton,13.892782396574628
-E01027622,Hambleton 010E,E06000065,North Yorkshire,20989,7,1969,75.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,32.375085837071275
-E01027623,Hambleton 001D,E06000065,North Yorkshire,30694,10,1189,53.75,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,21.62894597649577
-E01027624,Hambleton 002C,E06000065,North Yorkshire,30828,10,1288,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,22.483833578128916
-E01027625,Hambleton 001E,E06000065,North Yorkshire,7647,3,1795,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,21.1831650422656
-E01027626,Hambleton 002D,E06000065,North Yorkshire,23094,7,1593,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,21.396810862140146
-E01027627,Hambleton 002E,E06000065,North Yorkshire,17160,6,1748,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,17.431254916548166
-E01027628,Hambleton 007B,E06000065,North Yorkshire,17799,6,1913,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,14.663328516777922
-E01027629,Hambleton 009B,E06000065,North Yorkshire,7099,3,1500,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,13.372137868114912
-E01027630,Hambleton 008B,E06000065,North Yorkshire,17616,6,1716,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,13.067885773583894
-E01027631,Hambleton 008C,E06000065,North Yorkshire,29463,9,1322,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,13.841602203640578
-E01027632,Hambleton 008D,E06000065,North Yorkshire,24610,8,1857,28.0,20.0,Urban: Further from a major town or city,Urban,Hambleton,12.33841969018954
-E01027633,Hambleton 007C,E06000065,North Yorkshire,20490,7,1891,91.25,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,7.0751576136654775
-E01027634,Hambleton 011C,E06000065,North Yorkshire,26402,8,2087,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,31.948310772451215
-E01027635,Hambleton 009C,E06000065,North Yorkshire,20578,7,2642,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,18.26727442902526
-E01027636,Hambleton 009D,E06000065,North Yorkshire,20770,7,2013,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,21.90463889447916
-E01027637,Hambleton 008E,E06000065,North Yorkshire,16773,5,1817,86.875,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,12.257743938263435
-E01027638,Harrogate 010A,E06000065,North Yorkshire,31635,10,1254,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.1299038552174605
-E01027639,Harrogate 010B,E06000065,North Yorkshire,30941,10,1206,13.0,20.0,Urban: Nearer to a major town or city,Urban,Harrogate,3.0425186535286244
-E01027640,Harrogate 010C,E06000065,North Yorkshire,29214,9,1471,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.858394815912692
-E01027641,Harrogate 008A,E06000065,North Yorkshire,33500,10,1233,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.634740892429896
-E01027642,Harrogate 007A,E06000065,North Yorkshire,26563,8,1653,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,7.092544222627644
-E01027643,Harrogate 003A,E06000065,North Yorkshire,18614,6,1559,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,4.319180484311816
-E01027644,Harrogate 005A,E06000065,North Yorkshire,19078,6,1730,56.0,100.0,Larger rural: Nearer to a major town or city,Rural,Ripon,11.362141348869706
-E01027645,Harrogate 005B,E06000065,North Yorkshire,21361,7,2123,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Ripon,9.496762809286787
-E01027646,Harrogate 007B,E06000065,North Yorkshire,24880,8,1673,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,7.458595874034819
-E01027647,Harrogate 005C,E06000065,North Yorkshire,21694,7,1903,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,12.26742352700817
-E01027648,Harrogate 014A,E06000065,North Yorkshire,20934,7,1522,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.0500072203617137
-E01027649,Harrogate 013A,E06000065,North Yorkshire,19916,6,2430,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.4931244214352313
-E01027650,Harrogate 014B,E06000065,North Yorkshire,27409,9,1580,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.8150404378239966
-E01027651,Harrogate 013B,E06000065,North Yorkshire,7406,3,1512,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.756419578348773
-E01027652,Harrogate 015A,E06000065,North Yorkshire,28095,9,1679,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.3199509912421357
-E01027653,Harrogate 020A,E06000065,North Yorkshire,24839,8,1789,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.7960241968873225
-E01027654,Harrogate 020B,E06000065,North Yorkshire,33214,10,1165,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.2041985219065965
-E01027655,Harrogate 015B,E06000065,North Yorkshire,28918,9,1345,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.9681333070853745
-E01027656,Harrogate 019A,E06000065,North Yorkshire,25937,8,1854,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.389660062975825
-E01027657,Harrogate 013C,E06000065,North Yorkshire,17339,6,1191,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.9980514099853723
-E01027658,Harrogate 013D,E06000065,North Yorkshire,19156,6,1588,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.9862005742207006
-E01027659,Harrogate 015C,E06000065,North Yorkshire,17234,6,1790,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.699475893773576
-E01027660,Harrogate 017A,E06000065,North Yorkshire,29835,9,1530,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.4734649968552023
-E01027661,Harrogate 017B,E06000065,North Yorkshire,24726,8,1434,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.716926994199868
-E01027662,Harrogate 017C,E06000065,North Yorkshire,33728,10,1247,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.908170235789505
-E01027663,Harrogate 017D,E06000065,North Yorkshire,30594,10,1331,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,3.170457961561115
-E01027665,Harrogate 008C,E06000065,North Yorkshire,26441,8,1653,61.25,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,5.211770390753317
-E01027666,Harrogate 001A,E06000065,North Yorkshire,17555,6,1799,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,10.231710846345948
-E01027667,Harrogate 001B,E06000065,North Yorkshire,18447,6,1456,79.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,4.471379846260739
-E01027668,Harrogate 009A,E06000065,North Yorkshire,21784,7,1557,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,5.6648592878062045
-E01027669,Harrogate 009B,E06000065,North Yorkshire,19758,6,1852,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,5.238668714525998
-E01027670,Harrogate 012A,E06000065,North Yorkshire,31339,10,1968,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,7.171992720447285
-E01027671,Harrogate 012B,E06000065,North Yorkshire,33064,10,1431,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,6.110611150236897
-E01027672,Harrogate 012C,E06000065,North Yorkshire,31602,10,1674,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,4.854136740179441
-E01027673,Harrogate 009C,E06000065,North Yorkshire,17513,6,1735,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,4.361803550178209
-E01027674,Harrogate 007C,E06000065,North Yorkshire,31900,10,1314,13.0,20.0,Urban: Nearer to a major town or city,Urban,Harrogate,4.0822717820293075
-E01027675,Harrogate 007D,E06000065,North Yorkshire,31157,10,3098,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,5.931642024919827
-E01027676,Harrogate 009D,E06000065,North Yorkshire,13358,4,1792,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,5.618898484926554
-E01027677,Harrogate 015D,E06000065,North Yorkshire,26066,8,1464,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.8036817176182163
-E01027678,Harrogate 015E,E06000065,North Yorkshire,11730,4,1822,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.2643136911476338
-E01027679,Harrogate 019B,E06000065,North Yorkshire,27092,9,1529,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.5274714752745308
-E01027680,Harrogate 015F,E06000065,North Yorkshire,23392,7,1287,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.6048300239439853
-E01027681,Harrogate 006A,E06000065,North Yorkshire,18181,6,1661,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,10.861152476724012
-E01027682,Harrogate 018A,E06000065,North Yorkshire,22605,7,1714,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,7.201512132793417
-E01027683,Harrogate 016A,E06000065,North Yorkshire,27812,9,1931,53.0,100.0,Larger rural: Nearer to a major town or city,Rural,Harrogate,16.29028986992039
-E01027684,Harrogate 016B,E06000065,North Yorkshire,19361,6,1427,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,18.04773131688919
-E01027685,Harrogate 001C,E06000065,North Yorkshire,20267,7,1120,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ripon,13.910028403947297
-E01027686,Harrogate 001D,E06000065,North Yorkshire,14873,5,1069,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ripon,16.345280778082945
-E01027687,Harrogate 005D,E06000065,North Yorkshire,24923,8,2384,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,9.843463433083494
-E01027688,Harrogate 003B,E06000065,North Yorkshire,22533,7,1596,43.333333333333336,66.66666666666666,Smaller rural: Nearer to a major town or city,Rural,Ripon,5.038102604526261
-E01027689,Harrogate 011A,E06000065,North Yorkshire,18102,6,1344,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.3806742817587556
-E01027690,Harrogate 010D,E06000065,North Yorkshire,27841,9,1403,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.9362974453674051
-E01027691,Harrogate 011B,E06000065,North Yorkshire,25090,8,1497,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.1349762501406833
-E01027692,Harrogate 013E,E06000065,North Yorkshire,18049,6,1111,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.233504044314902
-E01027693,Harrogate 006B,E06000065,North Yorkshire,22177,7,1704,62.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,17.59394074696725
-E01027694,Harrogate 018B,E06000065,North Yorkshire,18706,6,1184,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,11.12715593829905
-E01027695,Harrogate 016C,E06000065,North Yorkshire,21767,7,1717,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,14.494750197257858
-E01027696,Harrogate 016D,E06000065,North Yorkshire,23931,8,2255,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,18.832692519038613
-E01027697,Harrogate 017E,E06000065,North Yorkshire,32987,10,1428,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.9541927338580014
-E01027698,Harrogate 020C,E06000065,North Yorkshire,33414,10,1533,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.3431876055495433
-E01027699,Harrogate 021A,E06000065,North Yorkshire,33103,10,1266,61.25,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,3.5482771258876444
-E01027700,Harrogate 021B,E06000065,North Yorkshire,31909,10,1694,48.75,75.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,3.379718516015879
-E01027701,Harrogate 006C,E06000065,North Yorkshire,16195,5,1591,85.0,100.0,Smaller rural: Further from a major town or city,Rural,Ripon,21.174605062066405
-E01027702,Harrogate 006D,E06000065,North Yorkshire,15800,5,1040,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Ripon,15.966338589786165
-E01027703,Harrogate 016E,E06000065,North Yorkshire,21622,7,2037,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,11.295864537150088
-E01027704,Harrogate 012D,E06000065,North Yorkshire,25810,8,1247,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,5.83906124096565
-E01027705,Harrogate 004A,E06000065,North Yorkshire,21986,7,1772,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,0.8956157847344699
-E01027706,Harrogate 004B,E06000065,North Yorkshire,12773,4,1765,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,0.1943992483298238
-E01027707,Harrogate 004C,E06000065,North Yorkshire,21505,7,1747,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,1.191545307863901
-E01027708,Harrogate 004D,E06000065,North Yorkshire,28602,9,1502,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,1.4274047578278937
-E01027709,Harrogate 004E,E06000065,North Yorkshire,31383,10,1329,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,1.0622701162222472
-E01027710,Harrogate 004F,E06000065,North Yorkshire,11384,4,1153,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,0.9501940163768111
-E01027711,Harrogate 004G,E06000065,North Yorkshire,15581,5,1291,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,0.8300311885330373
-E01027712,Harrogate 002A,E06000065,North Yorkshire,32037,10,2014,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,2.312200821239387
-E01027713,Harrogate 002B,E06000065,North Yorkshire,22532,7,1666,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,0.7810639834597006
-E01027714,Harrogate 002C,E06000065,North Yorkshire,26726,8,1578,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,1.221059068784797
-E01027715,Harrogate 002D,E06000065,North Yorkshire,28707,9,1270,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,1.1901986664491646
-E01027716,Harrogate 020D,E06000065,North Yorkshire,33531,10,1708,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.488675944865685
-E01027717,Harrogate 020E,E06000065,North Yorkshire,32748,10,1555,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.5386792334945933
-E01027718,Harrogate 020F,E06000065,North Yorkshire,32655,10,2127,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.5504684499610577
-E01027719,Harrogate 020G,E06000065,North Yorkshire,32766,10,1542,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.2400747126857894
-E01027720,Harrogate 011C,E06000065,North Yorkshire,19059,6,1890,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.2898594492827793
-E01027721,Harrogate 011D,E06000065,North Yorkshire,31282,10,1432,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.461194202148009
-E01027722,Harrogate 008D,E06000065,North Yorkshire,29800,9,1634,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.906259044281139
-E01027723,Harrogate 011E,E06000065,North Yorkshire,10430,4,1412,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.7755475859150727
-E01027724,Harrogate 021C,E06000065,North Yorkshire,21849,7,1705,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,7.380348364681994
-E01027725,Harrogate 021D,E06000065,North Yorkshire,25569,8,1549,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,7.497799578860843
-E01027726,Harrogate 014C,E06000065,North Yorkshire,21165,7,1773,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.946086523785419
-E01027727,Harrogate 014D,E06000065,North Yorkshire,22314,7,1943,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.3683130551913902
-E01027728,Harrogate 014E,E06000065,North Yorkshire,24161,8,1282,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,3.096422779421653
-E01027729,Harrogate 014F,E06000065,North Yorkshire,8587,3,1483,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.542257155035753
-E01027730,Harrogate 019C,E06000065,North Yorkshire,30422,10,1464,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.849119565945338
-E01027731,Harrogate 019D,E06000065,North Yorkshire,28428,9,1448,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.4095473026979575
-E01027732,Harrogate 019E,E06000065,North Yorkshire,31989,10,1226,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.8725085595630293
-E01027733,Harrogate 017F,E06000065,North Yorkshire,33625,10,1386,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.051356518764224
-E01027734,Harrogate 018C,E06000065,North Yorkshire,22826,7,1817,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,7.198917060417557
-E01027735,Harrogate 018D,E06000065,North Yorkshire,23239,7,1594,57.5,75.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,14.972932163865977
-E01027736,Harrogate 003C,E06000065,North Yorkshire,18417,6,1737,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,5.811454273689218
-E01027737,Harrogate 003D,E06000065,North Yorkshire,22258,7,1998,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ripon,9.052670977579252
-E01027738,Harrogate 010E,E06000065,North Yorkshire,17803,6,1278,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.90688144704348
-E01027739,Harrogate 010F,E06000065,North Yorkshire,18886,6,1054,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.5396596518377896
-E01027740,Harrogate 013F,E06000065,North Yorkshire,2291,1,1555,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.8312172932458086
-E01027741,Harrogate 010G,E06000065,North Yorkshire,18914,6,1433,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.2705270923750134
-E01027742,Richmondshire 005A,E06000065,North Yorkshire,13814,5,1301,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,27.308100679137436
-E01027743,Richmondshire 001A,E06000065,North Yorkshire,17995,6,1132,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,11.670171151384992
-E01027744,Richmondshire 006A,E06000065,North Yorkshire,17693,6,1240,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,15.279530929257907
-E01027745,Richmondshire 003A,E06000065,North Yorkshire,18474,6,1611,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,7.153540219761364
-E01027746,Richmondshire 003B,E06000065,North Yorkshire,21450,7,1433,56.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,5.172908606334506
-E01027747,Richmondshire 003C,E06000065,North Yorkshire,23996,8,1674,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,7.802108631030065
-E01027748,Richmondshire 003D,E06000065,North Yorkshire,21020,7,1153,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,7.082665314235365
-E01027749,Richmondshire 004A,E06000065,North Yorkshire,5898,2,1953,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,4.065785652141183
-E01027751,Richmondshire 001B,E06000065,North Yorkshire,22106,7,1245,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,13.535129177182675
-E01027752,Richmondshire 001C,E06000065,North Yorkshire,13709,5,1216,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,5.055576808126079
-E01027753,Richmondshire 005B,E06000065,North Yorkshire,17658,6,1220,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,34.70849716705612
-E01027756,Richmondshire 006B,E06000065,North Yorkshire,16881,6,1729,32.5,50.0,Smaller rural: Nearer to a major town or city,Urban,Richmondshire,7.382692359471851
-E01027758,Richmondshire 006D,E06000065,North Yorkshire,18039,6,1454,90.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,10.069145308817783
-E01027759,Richmondshire 001D,E06000065,North Yorkshire,18459,6,1386,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,11.0277324760636
-E01027760,Richmondshire 006E,E06000065,North Yorkshire,14065,5,1229,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,16.958674302604695
-E01027761,Richmondshire 001E,E06000065,North Yorkshire,24849,8,1195,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,7.0160466416648415
-E01027762,Richmondshire 001F,E06000065,North Yorkshire,15981,5,1356,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,10.313038953625382
-E01027763,Richmondshire 005C,E06000065,North Yorkshire,15705,5,1065,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,24.287912967330534
-E01027764,Richmondshire 005D,E06000065,North Yorkshire,15451,5,1068,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,14.688055131277322
-E01027765,Richmondshire 002A,E06000065,North Yorkshire,22359,7,1578,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,1.046332693426782
-E01027766,Richmondshire 002B,E06000065,North Yorkshire,19375,6,1158,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,0.5589737207549955
-E01027767,Richmondshire 002C,E06000065,North Yorkshire,28046,9,1405,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,1.131689821047617
-E01027768,Richmondshire 002D,E06000065,North Yorkshire,33070,10,1083,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,1.6674810244307323
-E01027769,Richmondshire 002E,E06000065,North Yorkshire,15796,5,1212,57.5,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,2.6935680075040827
-E01027770,Richmondshire 002F,E06000065,North Yorkshire,17491,6,1519,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,0.49683593414415805
-E01027771,Richmondshire 004E,E06000065,North Yorkshire,23622,7,2447,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,4.419458341706823
-E01027772,Richmondshire 004F,E06000065,North Yorkshire,21824,7,1204,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,6.080317001809067
-E01027773,Richmondshire 005E,E06000065,North Yorkshire,14346,5,1081,91.25,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,22.43625990258851
-E01027774,Ryedale 007A,E06000065,North Yorkshire,18450,6,1911,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,4.402589705166661
-E01027775,Ryedale 003A,E06000065,North Yorkshire,17522,6,1974,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,20.094475071943787
-E01027776,Ryedale 001A,E06000065,North Yorkshire,18263,6,1564,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,17.895227173817005
-E01027777,Ryedale 001B,E06000065,North Yorkshire,15049,5,1268,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,25.455716414709066
-E01027778,Ryedale 007B,E06000065,North Yorkshire,14791,5,2248,76.66666666666667,100.0,Smaller rural: Nearer to a major town or city,Rural,Ryedale,7.519400535256323
-E01027779,Ryedale 004A,E06000065,North Yorkshire,9689,3,1143,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,5.097962574558096
-E01027780,Ryedale 003B,E06000065,North Yorkshire,20047,6,2139,95.55555555555556,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,27.722296018113713
-E01027781,Ryedale 003C,E06000065,North Yorkshire,17749,6,1294,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,20.32935117916729
-E01027782,Ryedale 007C,E06000065,North Yorkshire,17215,6,1676,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,10.187291189038428
-E01027783,Ryedale 001C,E06000065,North Yorkshire,20705,7,2144,86.66666666666667,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,17.015996916680308
-E01027784,Ryedale 001D,E06000065,North Yorkshire,13965,5,1612,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,17.979265999826026
-E01027786,Ryedale 010A,E06000065,North Yorkshire,31517,10,1602,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,1.0048807992162185
-E01027787,Ryedale 009A,E06000065,North Yorkshire,11356,4,1993,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,2.6270030498738057
-E01027788,Ryedale 010B,E06000065,North Yorkshire,20484,7,1549,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,2.3252918076364733
-E01027790,Ryedale 010D,E06000065,North Yorkshire,16571,5,1986,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,2.1147855936900553
-E01027791,Ryedale 010C,E06000065,North Yorkshire,30376,9,1714,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,1.528446132913812
-E01027792,Ryedale 002A,E06000065,North Yorkshire,28653,9,2548,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,13.195862170522345
-E01027793,Ryedale 002B,E06000065,North Yorkshire,13880,5,1489,83.33333333333333,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,9.864643392558916
-E01027794,Ryedale 002C,E06000065,North Yorkshire,28400,9,1980,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,13.917988639949074
-E01027795,Ryedale 002D,E06000065,North Yorkshire,9724,3,1573,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,12.267665264017296
-E01027796,Ryedale 004B,E06000065,North Yorkshire,13897,5,1855,88.57142857142857,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,9.392818039027112
-E01027797,Ryedale 007D,E06000065,North Yorkshire,21604,7,1674,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ryedale,13.749397332273746
-E01027798,Ryedale 004C,E06000065,North Yorkshire,12616,4,1984,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,19.23373097511807
-E01027799,Ryedale 007E,E06000065,North Yorkshire,19463,6,1829,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ryedale,14.418433530606318
-E01027800,Ryedale 003D,E06000065,North Yorkshire,16362,5,1723,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,13.261676105011237
-E01027801,Ryedale 002E,E06000065,North Yorkshire,25007,8,1729,88.57142857142857,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,9.223828246567308
-E01027802,Ryedale 002F,E06000065,North Yorkshire,16735,5,1610,96.66666666666667,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,19.008849664904798
-E01027803,Ryedale 004D,E06000065,North Yorkshire,11999,4,1848,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,12.771088972245806
-E01027804,Scarborough 010A,E06000065,North Yorkshire,1015,1,1637,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.18052452376971467
-E01027805,Scarborough 006A,E06000065,North Yorkshire,1587,1,1229,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.2729091508436687
-E01027806,Scarborough 006B,E06000065,North Yorkshire,167,1,1610,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.6892611610680914
-E01027807,Scarborough 011A,E06000065,North Yorkshire,11917,4,1531,52.0,40.0,Urban: Further from a major town or city,Urban,Scarborough,6.4162520665266225
-E01027808,Scarborough 011B,E06000065,North Yorkshire,22282,7,1690,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,4.995895884022457
-E01027809,Scarborough 011C,E06000065,North Yorkshire,20691,7,1195,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.7493603727117235
-E01027810,Scarborough 008A,E06000065,North Yorkshire,8554,3,1569,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.8203359308207344
-E01027811,Scarborough 008B,E06000065,North Yorkshire,7862,3,1514,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.8810546836075827
-E01027812,Scarborough 008C,E06000065,North Yorkshire,4448,2,1805,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.5681913692104107
-E01027813,Scarborough 002A,E06000065,North Yorkshire,10556,4,1869,85.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,39.35284554358281
-E01027814,Scarborough 013A,E06000065,North Yorkshire,14899,5,1645,96.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,8.27432169919119
-E01027815,Scarborough 013B,E06000065,North Yorkshire,15656,5,1407,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,12.018937358341642
-E01027816,Scarborough 013C,E06000065,North Yorkshire,19696,6,1827,83.33333333333333,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,5.711273331414262
-E01027817,Scarborough 012A,E06000065,North Yorkshire,1510,1,1400,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,4.2032071377138625
-E01027818,Scarborough 011D,E06000065,North Yorkshire,11379,4,2001,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.9364903447463715
-E01027819,Scarborough 012B,E06000065,North Yorkshire,1804,1,2702,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.2899631551838158
-E01027820,Scarborough 012C,E06000065,North Yorkshire,1374,1,1479,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.769349025114774
-E01027821,Scarborough 004A,E06000065,North Yorkshire,17038,6,1480,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,22.977199572601545
-E01027822,Scarborough 002B,E06000065,North Yorkshire,12632,4,1367,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,29.365741230914193
-E01027823,Scarborough 004B,E06000065,North Yorkshire,12175,4,1374,84.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,25.810914853180808
-E01027824,Scarborough 009A,E06000065,North Yorkshire,6159,2,1503,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.7302410631827352
-E01027825,Scarborough 009B,E06000065,North Yorkshire,5055,2,2188,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.0185507229254664
-E01027826,Scarborough 009C,E06000065,North Yorkshire,10605,4,1378,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.9999388933123172
-E01027827,Scarborough 014A,E06000065,North Yorkshire,6840,3,1543,80.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,10.845080916783624
-E01027828,Scarborough 014B,E06000065,North Yorkshire,15334,5,2137,80.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,10.473778155180172
-E01027829,Scarborough 014C,E06000065,North Yorkshire,17911,6,1421,80.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,9.560807987001008
-E01027830,Scarborough 014D,E06000065,North Yorkshire,9972,3,1638,80.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,9.719366044176146
-E01027833,Scarborough 014E,E06000065,North Yorkshire,8829,3,1576,92.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,14.673455834441068
-E01027834,Scarborough 014F,E06000065,North Yorkshire,21614,7,1482,80.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,12.050969957337356
-E01027835,Scarborough 014G,E06000065,North Yorkshire,12274,4,1696,88.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,9.347911947830362
-E01027836,Scarborough 004E,E06000065,North Yorkshire,22758,7,2139,97.14285714285714,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,7.624766297606292
-E01027837,Scarborough 001A,E06000065,North Yorkshire,4717,2,1247,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,27.302975743811697
-E01027838,Scarborough 003A,E06000065,North Yorkshire,26821,8,1587,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,26.736105627917716
-E01027839,Scarborough 001B,E06000065,North Yorkshire,20282,7,2124,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,27.848310339256372
-E01027840,Scarborough 002C,E06000065,North Yorkshire,7335,3,1924,97.5,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,37.961962698245365
-E01027841,Scarborough 002D,E06000065,North Yorkshire,13496,4,1295,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,31.85577894437547
-E01027842,Scarborough 005A,E06000065,North Yorkshire,15682,5,1613,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.5631756070284117
-E01027843,Scarborough 005B,E06000065,North Yorkshire,13479,4,1512,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.9800000092663907
-E01027844,Scarborough 005C,E06000065,North Yorkshire,28774,9,1589,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.8216393407588924
-E01027845,Scarborough 005D,E06000065,North Yorkshire,26027,8,1695,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.6054644333301376
-E01027847,Scarborough 006D,E06000065,North Yorkshire,659,1,1882,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.1393121648960194
-E01027849,Scarborough 007A,E06000065,North Yorkshire,19064,6,1157,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.5857643997878572
-E01027850,Scarborough 007B,E06000065,North Yorkshire,4829,2,1324,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.617238367755075
-E01027851,Scarborough 008D,E06000065,North Yorkshire,15185,5,1413,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.1052242095273843
-E01027852,Scarborough 010B,E06000065,North Yorkshire,5284,2,1521,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.42451732816529897
-E01027853,Scarborough 010C,E06000065,North Yorkshire,8865,3,1112,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.7924947094516027
-E01027854,Scarborough 010D,E06000065,North Yorkshire,5785,2,1351,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.25784008185298835
-E01027855,Scarborough 005E,E06000065,North Yorkshire,25141,8,1965,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.7423619234708303
-E01027856,Scarborough 005F,E06000065,North Yorkshire,23710,8,1183,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.697064511334409
-E01027857,Scarborough 004F,E06000065,North Yorkshire,15642,5,1268,68.0,60.0,Smaller rural: Further from a major town or city,Rural,Scarborough,10.40799580567055
-E01027858,Scarborough 012D,E06000065,North Yorkshire,25771,8,1296,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.984290661833923
-E01027859,Scarborough 013D,E06000065,North Yorkshire,24641,8,1800,72.0,80.0,Larger rural: Further from a major town or city,Rural,Scarborough,5.0759093336652885
-E01027860,Scarborough 012E,E06000065,North Yorkshire,21005,7,1618,50.0,50.0,Larger rural: Further from a major town or city,Urban,Scarborough,3.59303826698724
-E01027861,Scarborough 009D,E06000065,North Yorkshire,9261,3,1335,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.1089598181022124
-E01027862,Scarborough 008E,E06000065,North Yorkshire,8167,3,1578,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.7352110261953059
-E01027863,Scarborough 009E,E06000065,North Yorkshire,27195,9,1341,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.4867955693944817
-E01027864,Scarborough 003B,E06000065,North Yorkshire,4182,2,1421,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,26.196130152301954
-E01027865,Scarborough 003C,E06000065,North Yorkshire,6386,2,1063,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,26.714413314210233
-E01027866,Scarborough 003D,E06000065,North Yorkshire,13675,5,2053,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,25.429726590944504
-E01027867,Scarborough 011E,E06000065,North Yorkshire,27044,9,1448,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.38076596473955
-E01027868,Scarborough 010E,E06000065,North Yorkshire,13138,4,2294,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.3267536028830762
-E01027871,Scarborough 001E,E06000065,North Yorkshire,17564,6,1574,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,27.97280684584918
-E01027872,Scarborough 007C,E06000065,North Yorkshire,4843,2,1362,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.7166659037189222
-E01027873,Scarborough 009F,E06000065,North Yorkshire,22418,7,1405,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.5589656256364903
-E01027874,Scarborough 007D,E06000065,North Yorkshire,462,1,1830,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.106696917956245
-E01027875,Selby 002A,E06000065,North Yorkshire,23005,7,2078,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,14.44988564074339
-E01027876,Selby 003A,E06000065,North Yorkshire,25706,8,1600,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,3.0442698600922067
-E01027877,Selby 003B,E06000065,North Yorkshire,23912,8,1984,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,3.7898024651041555
-E01027878,Selby 005A,E06000065,North Yorkshire,12836,4,1244,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.4229143180600536
-E01027879,Selby 007A,E06000065,North Yorkshire,31327,10,1218,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.2583220941954656
-E01027880,Selby 007B,E06000065,North Yorkshire,31957,10,1432,20.0,0.0,Urban: Further from a major town or city,Urban,Selby,2.4142803987634878
-E01027881,Selby 006A,E06000065,North Yorkshire,17619,6,1970,20.0,0.0,Urban: Further from a major town or city,Urban,Selby,2.7706682335653947
-E01027882,Selby 007C,E06000065,North Yorkshire,28671,9,1809,48.0,40.0,Smaller rural: Further from a major town or city,Urban,Selby,3.5472500288360007
-E01027883,Selby 008A,E06000065,North Yorkshire,20344,7,1036,85.0,100.0,Larger rural: Further from a major town or city,Rural,Selby,6.400989019339425
-E01027884,Selby 008B,E06000065,North Yorkshire,18084,6,1685,88.0,100.0,Larger rural: Further from a major town or city,Rural,Selby,9.600183570874934
-E01027885,Selby 008C,E06000065,North Yorkshire,26036,8,1968,80.0,100.0,Larger rural: Further from a major town or city,Rural,Selby,9.219315099097523
-E01027886,Selby 002B,E06000065,North Yorkshire,18956,6,1421,56.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,5.521639811012884
-E01027887,Selby 002C,E06000065,North Yorkshire,22888,7,1560,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,3.8377075873705544
-E01027888,Selby 002D,E06000065,North Yorkshire,25214,8,2014,62.5,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,9.321456964413056
-E01027889,Selby 010A,E06000065,North Yorkshire,13119,4,1799,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,9.658693775270061
-E01027890,Selby 010B,E06000065,North Yorkshire,20485,7,2440,70.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,7.534318420937485
-E01027891,Selby 009A,E06000065,North Yorkshire,18085,6,1726,62.5,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,11.87317217983006
-E01027892,Selby 009B,E06000065,North Yorkshire,10021,3,1827,58.57142857142857,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,14.8500548317672
-E01027893,Selby 009C,E06000065,North Yorkshire,27906,9,2375,57.5,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,6.450247360147647
-E01027894,Selby 007D,E06000065,North Yorkshire,23778,8,2933,80.0,100.0,Larger rural: Further from a major town or city,Rural,Selby,4.064268526763863
-E01027895,Selby 007E,E06000065,North Yorkshire,20105,6,1478,90.0,100.0,Smaller rural: Further from a major town or city,Rural,Selby,4.740613476065938
-E01027896,Selby 008D,E06000065,North Yorkshire,21511,7,1977,55.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,7.239492863346976
-E01027897,Selby 008E,E06000065,North Yorkshire,24661,8,2252,40.833333333333336,66.66666666666666,Smaller rural: Nearer to a major town or city,Rural,Selby,4.828462910952984
-E01027899,Selby 009D,E06000065,North Yorkshire,28722,9,1737,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,10.437024094995024
-E01027900,Selby 003C,E06000065,North Yorkshire,22547,7,2076,55.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,9.090181282552358
-E01027901,Selby 003D,E06000065,North Yorkshire,30567,10,1804,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,6.33130935992298
-E01027902,Selby 003E,E06000065,North Yorkshire,20534,7,1470,57.5,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,8.378784937775482
-E01027903,Selby 003F,E06000065,North Yorkshire,27214,9,1118,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,8.262122398095261
-E01027904,Selby 002E,E06000065,North Yorkshire,25893,8,2649,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,14.153894299326833
-E01027906,Selby 006B,E06000065,North Yorkshire,11466,4,1703,10.833333333333334,16.666666666666664,Urban: Nearer to a major town or city,Urban,Selby,2.8736252516776384
-E01027907,Selby 005C,E06000065,North Yorkshire,2971,1,1403,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.0701608536087013
-E01027908,Selby 005D,E06000065,North Yorkshire,5422,2,1531,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,0.6181179209290744
-E01027909,Selby 005E,E06000065,North Yorkshire,7071,3,2340,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,0.28363776426435805
-E01027913,Selby 006E,E06000065,North Yorkshire,32616,10,1183,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.927939834943964
-E01027914,Selby 004B,E06000065,North Yorkshire,32963,10,1504,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,14.055567089276716
-E01027915,Selby 004C,E06000065,North Yorkshire,21973,7,2128,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,11.88733388966889
-E01027916,Selby 004D,E06000065,North Yorkshire,16662,5,1643,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,12.01149064668182
-E01027918,Selby 001A,E06000065,North Yorkshire,14531,5,1479,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,16.934842162181113
-E01027919,Selby 001B,E06000065,North Yorkshire,25837,8,1179,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,17.686495327779454
-E01027920,Selby 001C,E06000065,North Yorkshire,27537,9,1056,53.75,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,15.963066338167074
-E01027921,Selby 001D,E06000065,North Yorkshire,20336,7,1726,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,17.00637189248485
-E01027922,Selby 001E,E06000065,North Yorkshire,30388,10,2049,58.57142857142857,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,18.401317869603876
-E01027923,Selby 010C,E06000065,North Yorkshire,17503,6,2386,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,15.0692684945594
-E01027924,Selby 010D,E06000065,North Yorkshire,20379,7,2370,62.857142857142854,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,11.802254254848114
-E01033067,York 013F,E06000014,York,6515,2,1731,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.0601601828353096
-E01033068,York 013G,E06000014,York,15353,5,1052,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.6647838525501678
-E01033069,York 013H,E06000014,York,19959,6,1015,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.8253033450856135
-E01033070,York 013I,E06000014,York,20849,7,2832,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.6432454902963721
-E01033184,Richmondshire 004H,E06000065,North Yorkshire,23696,8,2079,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,3.6511470036762135
-E01033185,Richmondshire 006F,E06000065,North Yorkshire,25127,8,1371,84.0,100.0,Larger rural: Further from a major town or city,Rural,Richmondshire,11.871116693845716
-E01033186,Richmondshire 006G,E06000065,North Yorkshire,27426,9,1417,85.0,100.0,Larger rural: Further from a major town or city,Rural,Richmondshire,11.590011826936664
-E01034761,York 023D,E06000014,York,25271,8,2017,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.373721082333077
-E01034762,York 023E,E06000014,York,24045,8,1388,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.380777346969302
-E01034956,Craven 006E,E06000065,North Yorkshire,10099,3,1458,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,1.4066958964485392
-E01034957,Craven 006F,E06000065,North Yorkshire,15348,5,1218,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,1.4259946055982313
-E01034958,Hambleton 007F,E06000065,North Yorkshire,24548,8,2791,89.5,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,9.735374884912556
-E01034959,Hambleton 009E,E06000065,North Yorkshire,24683,8,2401,16.666666666666668,0.0,Urban: Further from a major town or city,Urban,Hambleton,14.407577285631259
-E01034960,Hambleton 009F,E06000065,North Yorkshire,18685,6,1449,20.0,0.0,Urban: Further from a major town or city,Urban,Hambleton,15.965052247153459
-E01034961,Hambleton 012A,E06000065,North Yorkshire,26940,8,1713,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,1.6555278747380855
-E01034962,Hambleton 012B,E06000065,North Yorkshire,23128,7,1174,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,0.4883144114381466
-E01034963,Harrogate 008E,E06000065,North Yorkshire,29337,9,1377,53.75,100.0,Larger rural: Nearer to a major town or city,Rural,Harrogate,5.048161288047095
-E01034964,Harrogate 008F,E06000065,North Yorkshire,24544,8,3093,28.75,50.0,Urban: Nearer to a major town or city,Urban,Harrogate,3.61089142521604
-E01034965,Richmondshire 004I,E06000065,North Yorkshire,21139,7,2832,8.125,12.5,Urban: Nearer to a major town or city,Urban,Richmondshire,1.8233789265394447
-E01034966,Richmondshire 004J,E06000065,North Yorkshire,17912,6,1788,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,3.4138742263753623
-E01034967,Richmondshire 004K,E06000065,North Yorkshire,19827,6,1761,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,4.736842845795375
-E01034968,Ryedale 009B,E06000065,North Yorkshire,31364,10,1808,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,0.768302595214086
-E01034969,Ryedale 009C,E06000065,North Yorkshire,18645,6,1701,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,1.8815440601267077
-E01034970,Ryedale 009D,E06000065,North Yorkshire,10746,4,1265,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,0.19161326860184433
-E01034971,Ryedale 009E,E06000065,North Yorkshire,8480,3,1438,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,1.304460985499739
-E01034972,Scarborough 001F,E06000065,North Yorkshire,6481,2,2099,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,27.248498179705887
-E01034973,Scarborough 004G,E06000065,North Yorkshire,15754,5,1878,97.5,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,18.820433430409615
-E01034974,Scarborough 006F,E06000065,North Yorkshire,11313,4,2647,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.1726247033304706
-E01034975,Selby 004F,E06000065,North Yorkshire,30391,10,1797,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,9.551431351805611
-E01034976,Selby 004G,E06000065,North Yorkshire,26490,8,2103,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,11.533085468040447
-E01034977,Selby 004H,E06000065,North Yorkshire,21080,7,1538,53.75,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,13.273295900092483
-E01034978,Selby 004I,E06000065,North Yorkshire,28554,9,1399,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,11.337513349051758
-E01034979,Selby 005G,E06000065,North Yorkshire,18704,6,1388,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.2837119681337401
-E01034980,Selby 005H,E06000065,North Yorkshire,9804,3,1101,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,0.6773019785023354
-E01034981,Selby 005I,E06000065,North Yorkshire,9650,3,1524,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.2101017914119736
-E01034982,Selby 005J,E06000065,North Yorkshire,11271,4,1237,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,0.9881537606553235
-E01034983,Selby 005K,E06000065,North Yorkshire,26335,8,1740,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.8405464124838058
-E01034984,Selby 006F,E06000065,North Yorkshire,25970,8,2415,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,0.7973184041479914
+LSOA21CD,LSOA21NM,LAD24CD,LAD24NM,imd_rank,imd_decile,population,rurality_score,pct_rural,dominant_ruc,urban_rural_flag,town,dist_to_centre_km,dist_to_coast_km,coastal
+E01013335,York 012A,E06000014,York,6410,2,1658,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.004897866844352,7.919792266731611,Inland
+E01013336,York 012B,E06000014,York,23406,7,1525,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.0523779662392636,7.474464646261252,Inland
+E01013337,York 012C,E06000014,York,30290,9,1657,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.5394559799513394,7.874651432343944,Inland
+E01013338,York 012D,E06000014,York,28421,9,2340,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.7909565955822475,8.397530223121157,Inland
+E01013339,York 012E,E06000014,York,32632,10,1633,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.139135521144163,8.816210955484891,Inland
+E01013340,York 024A,E06000014,York,33007,10,1247,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,4.5805751011852385,3.265778928702499,Coastal (≤5 km)
+E01013341,York 024B,E06000014,York,27585,9,1361,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,5.01735881807001,2.7215611610821604,Coastal (≤5 km)
+E01013342,York 024C,E06000014,York,26370,8,1512,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,York,7.5945898180068685,0.9534707089503274,Coastal (≤5 km)
+E01013343,York 009A,E06000014,York,24400,8,1914,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.9188234981459071,8.653468839741736,Inland
+E01013344,York 007A,E06000014,York,27153,9,1444,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.7183494431515972,8.04116560729661,Inland
+E01013345,York 009B,E06000014,York,24978,8,1723,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.0716201698433634,8.665971441493282,Inland
+E01013346,York 007B,E06000014,York,22735,7,1631,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.3744038608944051,8.41652667463674,Inland
+E01013347,York 009C,E06000014,York,4223,2,1607,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.4708152001559802,9.093758517080326,Inland
+E01013348,York 010A,E06000014,York,28389,9,1831,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.420851950576025,9.145838603425958,Inland
+E01013349,York 009D,E06000014,York,3992,2,1384,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.5572145484763495,9.028667789185544,Inland
+E01013350,York 009E,E06000014,York,7567,3,1656,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.6219313724836157,9.325670619754144,Inland
+E01013351,York 020A,E06000014,York,30315,9,1938,56.42857142857143,100.0,Larger rural: Nearer to a major town or city,Rural,York,7.70544863174386,11.261907923779821,Inland
+E01013352,York 020B,E06000014,York,30599,10,1712,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,6.384682946960846,10.839154996433452,Inland
+E01013353,York 022A,E06000014,York,14599,5,1646,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.529824494172284,5.159365816233097,Inland
+E01013354,York 022B,E06000014,York,32934,10,1354,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.671587302343967,5.376428580219867,Inland
+E01013355,York 022C,E06000014,York,31582,10,1834,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.112830833988516,4.484766787769894,Coastal (≤5 km)
+E01013356,York 022D,E06000014,York,28137,9,1335,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.937071846503431,5.349556761365243,Inland
+E01013357,York 021A,E06000014,York,33130,10,2324,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.3809601413144765,4.72436029613347,Coastal (≤5 km)
+E01013358,York 021B,E06000014,York,32781,10,1492,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.5461872433261408,5.766036413144793,Inland
+E01013359,York 022E,E06000014,York,16568,5,1569,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.0113517987177145,5.781334283706521,Inland
+E01013360,York 019A,E06000014,York,32763,10,1793,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.4868984067335416,5.864850483130641,Inland
+E01013361,York 019B,E06000014,York,27926,9,1660,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.7154260577831157,6.134926560324733,Inland
+E01013362,York 019C,E06000014,York,31066,10,2218,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.0940889812190937,5.870779014101641,Inland
+E01013363,York 019D,E06000014,York,22967,7,3636,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.6119348978063088,6.870139312942151,Inland
+E01013364,York 019E,E06000014,York,17489,6,2042,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.3497101122654707,6.640171359996965,Inland
+E01013366,York 013A,E06000014,York,8960,3,1739,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.18676136134491508,7.850195281608499,Inland
+E01013368,York 010B,E06000014,York,26139,8,2138,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.7710037978515492,8.426885547324753,Inland
+E01013369,York 013C,E06000014,York,14476,5,1680,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.41866536082838685,7.917919925740555,Inland
+E01013370,York 002A,E06000014,York,27963,9,1493,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,5.850696313904538,13.582957175397286,Inland
+E01013371,York 003A,E06000014,York,33398,10,1459,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,5.127016304401607,12.84538942208328,Inland
+E01013372,York 003B,E06000014,York,32004,10,1544,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,6.162282971877902,13.871443821150663,Inland
+E01013373,York 002B,E06000014,York,20739,7,1477,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,5.706598060145361,13.4422713750293,Inland
+E01013374,York 003C,E06000014,York,32900,10,1500,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,5.180340214574676,12.918356607476225,Inland
+E01013375,York 002C,E06000014,York,32710,10,1262,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,6.510778781365651,14.233295762364957,Inland
+E01013376,York 002D,E06000014,York,31730,10,1389,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,8.119421275241361,15.849243086128572,Inland
+E01013377,York 003D,E06000014,York,32124,10,1546,10.833333333333334,16.666666666666664,Urban: Nearer to a major town or city,Urban,York,6.453951787711943,14.047734356629903,Inland
+E01013378,York 023B,E06000014,York,30333,9,6728,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,5.000612053896396,6.517434849603991,Inland
+E01013379,York 008A,E06000014,York,33128,10,1426,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.8545873467215401,8.741959824484578,Inland
+E01013380,York 008B,E06000014,York,25599,8,1643,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.4323352396955884,8.358846429110075,Inland
+E01013381,York 014A,E06000014,York,29676,9,1650,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.208056128455827,8.451799538941044,Inland
+E01013382,York 010C,E06000014,York,15570,5,1695,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.187232587932786,8.662538963939175,Inland
+E01013383,York 010D,E06000014,York,20681,7,3091,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.0068749152813106,7.959587761700462,Inland
+E01013384,York 015A,E06000014,York,14610,5,1670,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.7367100946482221,8.08356836769068,Inland
+E01013385,York 008C,E06000014,York,10095,3,1438,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.8957595121711708,9.331582536323443,Inland
+E01013386,York 010E,E06000014,York,7111,3,1763,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.7011325264273038,9.334228271579544,Inland
+E01013387,York 008D,E06000014,York,33627,10,1603,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.1323036316451973,9.193362690823323,Inland
+E01013388,York 008E,E06000014,York,32159,10,1005,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.5815869294072185,10.322228638157055,Inland
+E01013389,York 008F,E06000014,York,31361,10,1160,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.7652747094529055,9.15543398273875,Inland
+E01013390,York 017A,E06000014,York,13831,5,1478,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.4788381154196266,7.9863732147055595,Inland
+E01013391,York 017B,E06000014,York,24436,8,1952,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.3421585583945232,7.337678618438978,Inland
+E01013392,York 012F,E06000014,York,29218,9,1659,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.275302357433896,8.116395817983035,Inland
+E01013393,York 016A,E06000014,York,21880,7,1474,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.994714794429239,7.541052996827908,Inland
+E01013394,York 016B,E06000014,York,7984,3,1436,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.435326184912807,7.437640628679611,Inland
+E01013395,York 016C,E06000014,York,29706,9,1385,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.943732344594159,6.955609701290783,Inland
+E01013396,York 016D,E06000014,York,24047,8,1570,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.3853369476171835,6.829770484117823,Inland
+E01013397,York 017C,E06000014,York,30824,10,1523,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.9802529980236803,6.481029874169867,Inland
+E01013398,York 015B,E06000014,York,20350,7,1555,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.6888717573272425,7.811790350463295,Inland
+E01013399,York 015C,E06000014,York,4699,2,1763,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.8221506451803495,7.671144211973624,Inland
+E01013400,York 015D,E06000014,York,24692,8,1588,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.6170829293427995,7.28622067651943,Inland
+E01013401,York 015E,E06000014,York,21645,7,1610,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.275524094403311,7.782369966709755,Inland
+E01013402,York 014B,E06000014,York,33489,10,1676,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.121191363321019,7.548640310575303,Inland
+E01013403,York 015F,E06000014,York,24457,8,2087,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.228674500194306,7.242680478806729,Inland
+E01013404,York 004A,E06000014,York,14223,5,1707,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.683579571630965,10.417804229962416,Inland
+E01013405,York 005A,E06000014,York,32042,10,1350,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.6412332238926344,10.262933896918414,Inland
+E01013406,York 005B,E06000014,York,22604,7,2035,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.4040835331681865,9.961334365779166,Inland
+E01013407,York 004B,E06000014,York,29377,9,1418,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.9975594687165192,11.731506916888979,Inland
+E01013408,York 004C,E06000014,York,30978,10,1231,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.711765764213814,12.346677587387308,Inland
+E01013409,York 005C,E06000014,York,27779,9,1805,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.5551711024466535,11.867072540991849,Inland
+E01013410,York 004D,E06000014,York,7194,3,1396,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.3745815019231875,11.107493213238637,Inland
+E01013411,York 005D,E06000014,York,31075,10,1433,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.196088434717906,10.787673304155483,Inland
+E01013412,York 021C,E06000014,York,27968,9,2238,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.8018940685493,5.016317703095264,Inland
+E01013413,York 017D,E06000014,York,29903,9,1623,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.5926951220450074,6.1592569131047705,Inland
+E01013414,York 021D,E06000014,York,30486,10,1807,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.283545920759865,5.4578664447502865,Inland
+E01013416,York 013E,E06000014,York,7002,3,1504,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.0935837367592287,6.746737328734854,Inland
+E01013417,York 017E,E06000014,York,27216,9,1858,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.5741719111533297,6.438892866962939,Inland
+E01013418,York 019F,E06000014,York,17957,6,1534,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.3153654556819656,6.439056703944348,Inland
+E01013419,York 014C,E06000014,York,26223,8,2830,8.125,12.5,Urban: Nearer to a major town or city,Urban,York,4.216499430114981,9.666383537652345,Inland
+E01013420,York 014D,E06000014,York,31915,10,1968,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.755690550827342,8.703105744103526,Inland
+E01013421,York 011A,E06000014,York,27064,9,1587,61.25,100.0,Smaller rural: Nearer to a major town or city,Rural,York,6.308815041161212,7.343848540002359,Inland
+E01013422,York 011B,E06000014,York,30284,9,1844,13.0,20.0,Urban: Nearer to a major town or city,Urban,York,3.953456711006886,9.314089026247835,Inland
+E01013423,York 024D,E06000014,York,32576,10,1312,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,5.876336435351102,3.927964919748988,Coastal (≤5 km)
+E01013424,York 024E,E06000014,York,32219,10,1245,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,7.1425336360705565,4.371684117460821,Coastal (≤5 km)
+E01013425,York 024F,E06000014,York,29424,9,1537,53.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,7.028699303989554,3.109187002656548,Coastal (≤5 km)
+E01013426,York 011C,E06000014,York,29538,9,1739,10.833333333333334,16.666666666666664,Urban: Nearer to a major town or city,Urban,York,6.845764561334061,11.120891241744957,Inland
+E01013427,York 011D,E06000014,York,33319,10,1442,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.674821750708945,10.749871836539722,Inland
+E01013428,York 006A,E06000014,York,26921,8,1813,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.9653714024182494,9.35765863642351,Inland
+E01013429,York 006B,E06000014,York,30146,9,1993,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.716137828315813,11.095352282344217,Inland
+E01013430,York 006C,E06000014,York,23926,8,1755,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,5.971266810370671,13.069598019027586,Inland
+E01013431,York 006D,E06000014,York,30377,9,2291,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.752225755870395,10.362663424445824,Inland
+E01013432,York 007C,E06000014,York,32210,10,1958,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.74916297852407,10.49309137127282,Inland
+E01013433,York 007D,E06000014,York,33615,10,1366,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.9175958822013457,10.02559775449075,Inland
+E01013434,York 007E,E06000014,York,31920,10,1498,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.357053489586861,9.110475231102157,Inland
+E01013435,York 006E,E06000014,York,31186,10,1422,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.2986238992681125,9.54373569831001,Inland
+E01013436,York 001A,E06000014,York,32091,10,1726,28.75,50.0,Urban: Nearer to a major town or city,Urban,York,6.801870715758448,14.311732051935845,Inland
+E01013437,York 008G,E06000014,York,20636,7,1398,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,York,7.4177351102559825,14.145083607411912,Inland
+E01013438,York 001B,E06000014,York,24953,8,1997,52.5,100.0,Larger rural: Nearer to a major town or city,Rural,York,9.566916479051228,17.26814794746462,Inland
+E01013439,York 001C,E06000014,York,31724,10,1395,56.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,9.703187886759757,17.143721569479332,Inland
+E01013440,York 001D,E06000014,York,31740,10,1780,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,8.055052133824729,15.746420407106337,Inland
+E01013441,York 016E,E06000014,York,23062,7,1664,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,2.837606040254242,6.801967879712733,Inland
+E01013442,York 018A,E06000014,York,17149,6,1446,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.698646630017685,7.090206869853834,Inland
+E01013443,York 018B,E06000014,York,3485,2,1664,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.1906671054018214,6.0582710775566895,Inland
+E01013444,York 018C,E06000014,York,5933,2,1538,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.043156036151346,7.311886570690267,Inland
+E01013445,York 016F,E06000014,York,7714,3,1595,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.1837072027634066,6.79552647717126,Inland
+E01013446,York 018D,E06000014,York,12292,4,1663,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.96808489651416,6.486104526311128,Inland
+E01013447,York 018E,E06000014,York,7450,3,1508,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.481066829916264,6.388836897029815,Inland
+E01013448,York 018F,E06000014,York,5847,2,1467,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.854376821001554,5.7976678704292075,Inland
+E01013449,York 022F,E06000014,York,18531,6,1606,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.20886452645762,5.950936871820645,Inland
+E01013450,York 023C,E06000014,York,24349,8,1285,62.0,100.0,Smaller rural: Nearer to a major town or city,Rural,York,7.752649425084286,4.093202596391477,Coastal (≤5 km)
+E01013451,York 020C,E06000014,York,29329,9,1239,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,York,9.600591069960847,9.716945530643954,Inland
+E01013452,York 020D,E06000014,York,31180,10,1670,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,York,11.496132837983522,9.236204975275419,Inland
+E01027555,Craven 008A,E06000065,North Yorkshire,28023,9,1932,45.714285714285715,57.14285714285714,Larger rural: Further from a major town or city,Rural,Craven,4.265167331023146,48.689156570742625,Inland
+E01027556,Craven 007A,E06000065,North Yorkshire,25360,8,2049,70.0,100.0,Larger rural: Further from a major town or city,Rural,Craven,5.988042832260861,43.74245503744431,Inland
+E01027557,Craven 009D,E06000065,North Yorkshire,16755,5,1633,90.0,100.0,Smaller rural: Further from a major town or city,Rural,Craven,8.640336659189563,52.238848830673234,Inland
+E01027558,Craven 001A,E06000065,North Yorkshire,23829,8,1944,96.66666666666667,100.0,Smaller rural: Further from a major town or city,Rural,Craven,36.72081143756862,17.987077336541283,Inland
+E01027559,Craven 001B,E06000065,North Yorkshire,17873,6,1781,83.33333333333333,100.0,Larger rural: Further from a major town or city,Rural,Craven,37.023826231375985,17.52069397046155,Inland
+E01027560,Craven 007B,E06000065,North Yorkshire,22194,7,2548,56.42857142857143,100.0,Larger rural: Nearer to a major town or city,Rural,Craven,9.422838812566278,42.45070567196465,Inland
+E01027561,Craven 009E,E06000065,North Yorkshire,28925,9,1966,90.0,100.0,Larger rural: Further from a major town or city,Rural,Craven,3.717901409681069,51.405373215059306,Inland
+E01027562,Craven 009C,E06000065,North Yorkshire,18637,6,1608,97.14285714285714,100.0,Smaller rural: Further from a major town or city,Rural,Craven,13.231906761027762,42.11544133605115,Inland
+E01027563,Craven 007C,E06000065,North Yorkshire,21771,7,1506,80.0,100.0,Larger rural: Further from a major town or city,Rural,Craven,7.053946036942536,44.91911344610916,Inland
+E01027564,Craven 008B,E06000065,North Yorkshire,13191,4,1229,0.0,0.0,Urban: Nearer to a major town or city,Urban,Craven,6.87094022142686,47.016096724172975,Inland
+E01027565,Craven 008C,E06000065,North Yorkshire,29953,9,1575,0.0,0.0,Urban: Nearer to a major town or city,Urban,Craven,6.685240383959043,47.72045855036075,Inland
+E01027566,Craven 008D,E06000065,North Yorkshire,26823,8,1392,0.0,0.0,Urban: Nearer to a major town or city,Urban,Craven,6.304596865218759,45.518995260101406,Inland
+E01027567,Craven 009B,E06000065,North Yorkshire,22468,7,1533,85.71428571428571,100.0,Larger rural: Further from a major town or city,Rural,Craven,14.084889811993799,53.64031455359557,Inland
+E01027568,Craven 003A,E06000065,North Yorkshire,22933,7,2208,85.71428571428571,100.0,Larger rural: Further from a major town or city,Rural,Craven,15.057878661199075,37.30236225422109,Inland
+E01027569,Craven 001C,E06000065,North Yorkshire,18030,6,1436,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Craven,29.007266523204276,25.908283394896728,Inland
+E01027570,Craven 001D,E06000065,North Yorkshire,21041,7,2487,85.0,100.0,Larger rural: Further from a major town or city,Rural,Craven,36.76905631563546,24.133790772360143,Inland
+E01027571,Craven 003B,E06000065,North Yorkshire,23368,7,1910,91.42857142857143,100.0,Smaller rural: Further from a major town or city,Rural,Craven,28.093500327306227,31.540101287899656,Inland
+E01027572,Craven 003C,E06000065,North Yorkshire,21373,7,2022,82.85714285714286,100.0,Larger rural: Further from a major town or city,Rural,Craven,20.772613059964385,35.21201121283883,Inland
+E01027573,Craven 003D,E06000065,North Yorkshire,22209,7,1737,88.0,100.0,Larger rural: Further from a major town or city,Rural,Craven,19.4748472086429,33.06132743055493,Inland
+E01027574,Craven 005A,E06000065,North Yorkshire,32709,10,1857,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,2.257552660804165,50.70719885467992,Inland
+E01027575,Craven 005B,E06000065,North Yorkshire,29314,9,1825,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,0.7110534810421915,49.18696983247007,Inland
+E01027576,Craven 009F,E06000065,North Yorkshire,33153,10,1842,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,1.1700911649354746,49.4913419191615,Inland
+E01027577,Craven 005C,E06000065,North Yorkshire,23354,7,2004,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,0.241927568404261,48.501657131781734,Inland
+E01027578,Craven 006A,E06000065,North Yorkshire,16559,5,1475,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,0.4037434654685515,48.39417869663877,Inland
+E01027579,Craven 005D,E06000065,North Yorkshire,8169,3,1192,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,0.7721591461053757,48.79615774723374,Inland
+E01027580,Craven 006B,E06000065,North Yorkshire,8117,3,1095,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,2.039428032854896,49.65080429026925,Inland
+E01027582,Craven 006D,E06000065,North Yorkshire,18610,6,1604,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,1.432705411293346,47.63694078585169,Inland
+E01027583,Craven 008E,E06000065,North Yorkshire,27600,9,2003,13.333333333333334,0.0,Urban: Further from a major town or city,Urban,Craven,7.391319396363373,47.02588301596488,Inland
+E01027584,Craven 008F,E06000065,North Yorkshire,16627,5,1946,24.166666666666668,16.666666666666664,Urban: Further from a major town or city,Urban,Craven,8.684206413792541,45.89061929875152,Inland
+E01027585,Craven 009A,E06000065,North Yorkshire,20557,7,1855,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Craven,23.47092846418532,43.520210750780855,Inland
+E01027586,Craven 007D,E06000065,North Yorkshire,21259,7,1935,60.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Craven,6.322976265400222,42.41272041529963,Inland
+E01027587,Hambleton 006A,E06000065,North Yorkshire,16479,5,1364,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,12.190026394575135,35.80779714190091,Inland
+E01027588,Hambleton 006B,E06000065,North Yorkshire,26376,8,1751,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,12.119060727024808,35.83838445478223,Inland
+E01027589,Hambleton 006C,E06000065,North Yorkshire,23460,7,2126,53.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,10.36064674614968,33.84043893735856,Inland
+E01027590,Hambleton 003A,E06000065,North Yorkshire,17394,6,2939,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,3.604977038066705,21.693041579428364,Inland
+E01027591,Hambleton 001A,E06000065,North Yorkshire,20422,7,1678,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,23.506291175633816,15.422948778980427,Inland
+E01027592,Hambleton 003B,E06000065,North Yorkshire,19347,6,1748,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,11.115816050601854,17.213701362425724,Inland
+E01027593,Hambleton 006D,E06000065,North Yorkshire,17748,6,1743,85.0,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,13.781881222183216,37.057297607036794,Inland
+E01027594,Hambleton 010A,E06000065,North Yorkshire,18601,6,1957,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,29.6395366493508,25.514884320394803,Inland
+E01027595,Hambleton 010B,E06000065,North Yorkshire,27069,9,1982,53.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,30.259417273323848,24.640355627343563,Inland
+E01027596,Hambleton 010C,E06000065,North Yorkshire,28953,9,1705,53.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,28.4361595159367,26.903141815519206,Inland
+E01027597,Hambleton 001B,E06000065,North Yorkshire,27072,9,1566,56.42857142857143,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,28.395834848768708,13.390458939513959,Inland
+E01027598,Hambleton 002A,E06000065,North Yorkshire,31100,10,1656,52.142857142857146,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,24.55559615668802,9.681761024232282,Inland
+E01027599,Hambleton 001C,E06000065,North Yorkshire,10278,4,1596,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,25.629210219724083,9.983761991726931,Inland
+E01027600,Hambleton 011A,E06000065,North Yorkshire,18121,6,1917,78.125,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,25.606856584850597,28.794176161728377,Inland
+E01027601,Hambleton 010D,E06000065,North Yorkshire,24606,8,2116,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,36.87903411448289,19.23894853054174,Inland
+E01027603,Hambleton 005A,E06000065,North Yorkshire,22875,7,2063,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,8.149505800919169,29.933656273995084,Inland
+E01027604,Hambleton 005B,E06000065,North Yorkshire,23581,7,1840,70.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,4.671348657894772,25.600284909857372,Inland
+E01027605,Hambleton 013D,E06000065,North Yorkshire,21495,7,1562,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,0.5208795897081088,25.74967644667285,Inland
+E01027606,Hambleton 012E,E06000065,North Yorkshire,27103,9,1392,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,1.0766369480881999,26.208881004939535,Inland
+E01027607,Hambleton 005C,E06000065,North Yorkshire,33129,10,1147,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,2.1563899077085584,26.517889549857376,Inland
+E01027608,Hambleton 013B,E06000065,North Yorkshire,9792,3,1753,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,0.2987269948271864,25.237924583986906,Inland
+E01027609,Hambleton 012D,E06000065,North Yorkshire,7193,3,1431,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,2.746207106455224,25.061211372894327,Inland
+E01027610,Hambleton 012C,E06000065,North Yorkshire,14675,5,1570,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,0.9649752528668019,25.30188829660593,Inland
+E01027612,Hambleton 013A,E06000065,North Yorkshire,7853,3,1611,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,0.6913115975694102,24.652735890454284,Inland
+E01027613,Hambleton 003C,E06000065,North Yorkshire,16158,5,1747,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,7.258957272170287,21.0219506517632,Inland
+E01027614,Hambleton 005D,E06000065,North Yorkshire,31976,10,1251,20.0,0.0,Urban: Further from a major town or city,Urban,Hambleton,1.7239458841594155,26.77727577272815,Inland
+E01027615,Hambleton 005E,E06000065,North Yorkshire,33580,10,1138,20.0,0.0,Urban: Further from a major town or city,Urban,Hambleton,2.0909437200695677,27.316297972532688,Inland
+E01027616,Hambleton 013C,E06000065,North Yorkshire,15434,5,1483,20.0,0.0,Urban: Further from a major town or city,Urban,Hambleton,1.359834745831727,26.00692019947968,Inland
+E01027617,Hambleton 003D,E06000065,North Yorkshire,17072,6,1036,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,12.966565554465083,12.26532348757093,Inland
+E01027618,Hambleton 002B,E06000065,North Yorkshire,25991,8,2427,57.5,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,15.904248467375405,10.934688687901227,Inland
+E01027619,Hambleton 011B,E06000065,North Yorkshire,27667,9,2256,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,37.66967632567586,16.719274664745083,Inland
+E01027620,Hambleton 008A,E06000065,North Yorkshire,24967,8,1960,16.666666666666668,0.0,Urban: Further from a major town or city,Urban,Hambleton,13.892782396574628,35.796358470224035,Inland
+E01027622,Hambleton 010E,E06000065,North Yorkshire,20989,7,1969,75.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,32.375085837071275,26.099963280308323,Inland
+E01027623,Hambleton 001D,E06000065,North Yorkshire,30694,10,1189,53.75,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,21.62894597649577,10.56106367033915,Inland
+E01027624,Hambleton 002C,E06000065,North Yorkshire,30828,10,1288,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,22.483833578128916,9.201034680698235,Inland
+E01027625,Hambleton 001E,E06000065,North Yorkshire,7647,3,1795,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Hambleton,21.1831650422656,9.90946653722547,Inland
+E01027626,Hambleton 002D,E06000065,North Yorkshire,23094,7,1593,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,21.396810862140146,7.563164741876791,Inland
+E01027627,Hambleton 002E,E06000065,North Yorkshire,17160,6,1748,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,17.431254916548166,17.78347878531917,Inland
+E01027628,Hambleton 007B,E06000065,North Yorkshire,17799,6,1913,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,14.663328516777922,39.884445519739685,Inland
+E01027629,Hambleton 009B,E06000065,North Yorkshire,7099,3,1500,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,13.372137868114912,34.80524336591522,Inland
+E01027630,Hambleton 008B,E06000065,North Yorkshire,17616,6,1716,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,13.067885773583894,34.96068916954418,Inland
+E01027631,Hambleton 008C,E06000065,North Yorkshire,29463,9,1322,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,13.841602203640578,34.66845474000756,Inland
+E01027632,Hambleton 008D,E06000065,North Yorkshire,24610,8,1857,28.0,20.0,Urban: Further from a major town or city,Urban,Hambleton,12.33841969018954,35.520282442090554,Inland
+E01027633,Hambleton 007C,E06000065,North Yorkshire,20490,7,1891,91.25,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,7.0751576136654775,31.350076996233746,Inland
+E01027634,Hambleton 011C,E06000065,North Yorkshire,26402,8,2087,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Hambleton,31.948310772451215,22.449732431214375,Inland
+E01027635,Hambleton 009C,E06000065,North Yorkshire,20578,7,2642,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,18.26727442902526,36.27919387744739,Inland
+E01027636,Hambleton 009D,E06000065,North Yorkshire,20770,7,2013,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,21.90463889447916,33.93713798402431,Inland
+E01027637,Hambleton 008E,E06000065,North Yorkshire,16773,5,1817,86.875,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,12.257743938263435,30.7222688876227,Inland
+E01027638,Harrogate 010A,E06000065,North Yorkshire,31635,10,1254,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.1299038552174605,27.765737237888573,Inland
+E01027639,Harrogate 010B,E06000065,North Yorkshire,30941,10,1206,13.0,20.0,Urban: Nearer to a major town or city,Urban,Harrogate,3.0425186535286244,26.93661837303555,Inland
+E01027640,Harrogate 010C,E06000065,North Yorkshire,29214,9,1471,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.858394815912692,27.80260102369273,Inland
+E01027641,Harrogate 008A,E06000065,North Yorkshire,33500,10,1233,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.634740892429896,28.29419390250031,Inland
+E01027642,Harrogate 007A,E06000065,North Yorkshire,26563,8,1653,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,7.092544222627644,31.60514261851468,Inland
+E01027643,Harrogate 003A,E06000065,North Yorkshire,18614,6,1559,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,4.319180484311816,34.83955508741391,Inland
+E01027644,Harrogate 005A,E06000065,North Yorkshire,19078,6,1730,56.0,100.0,Larger rural: Nearer to a major town or city,Rural,Ripon,11.362141348869706,27.794524532836835,Inland
+E01027645,Harrogate 005B,E06000065,North Yorkshire,21361,7,2123,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Ripon,9.496762809286787,29.394381395552976,Inland
+E01027646,Harrogate 007B,E06000065,North Yorkshire,24880,8,1673,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,7.458595874034819,27.747523323997857,Inland
+E01027647,Harrogate 005C,E06000065,North Yorkshire,21694,7,1903,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,12.26742352700817,25.018079540140704,Inland
+E01027648,Harrogate 014A,E06000065,North Yorkshire,20934,7,1522,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.0500072203617137,25.066055095477555,Inland
+E01027649,Harrogate 013A,E06000065,North Yorkshire,19916,6,2430,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.4931244214352313,26.10208489850763,Inland
+E01027650,Harrogate 014B,E06000065,North Yorkshire,27409,9,1580,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.8150404378239966,25.63001841649674,Inland
+E01027651,Harrogate 013B,E06000065,North Yorkshire,7406,3,1512,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.756419578348773,25.22952170801197,Inland
+E01027652,Harrogate 015A,E06000065,North Yorkshire,28095,9,1679,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.3199509912421357,27.51288986619865,Inland
+E01027653,Harrogate 020A,E06000065,North Yorkshire,24839,8,1789,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.7960241968873225,27.54707579334035,Inland
+E01027654,Harrogate 020B,E06000065,North Yorkshire,33214,10,1165,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.2041985219065965,28.35208840701084,Inland
+E01027655,Harrogate 015B,E06000065,North Yorkshire,28918,9,1345,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.9681333070853745,27.521890243966595,Inland
+E01027656,Harrogate 019A,E06000065,North Yorkshire,25937,8,1854,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.389660062975825,26.33088672278408,Inland
+E01027657,Harrogate 013C,E06000065,North Yorkshire,17339,6,1191,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.9980514099853723,27.077765799148505,Inland
+E01027658,Harrogate 013D,E06000065,North Yorkshire,19156,6,1588,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.9862005742207006,26.459293275902386,Inland
+E01027659,Harrogate 015C,E06000065,North Yorkshire,17234,6,1790,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.699475893773576,26.651405890773823,Inland
+E01027660,Harrogate 017A,E06000065,North Yorkshire,29835,9,1530,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.4734649968552023,24.169823714588965,Inland
+E01027661,Harrogate 017B,E06000065,North Yorkshire,24726,8,1434,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.716926994199868,24.177407157911084,Inland
+E01027662,Harrogate 017C,E06000065,North Yorkshire,33728,10,1247,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.908170235789505,24.704353683652418,Inland
+E01027663,Harrogate 017D,E06000065,North Yorkshire,30594,10,1331,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,3.170457961561115,24.198491988303832,Inland
+E01027665,Harrogate 008C,E06000065,North Yorkshire,26441,8,1653,61.25,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,5.211770390753317,30.705999878388774,Inland
+E01027666,Harrogate 001A,E06000065,North Yorkshire,17555,6,1799,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,10.231710846345948,44.14723571878177,Inland
+E01027667,Harrogate 001B,E06000065,North Yorkshire,18447,6,1456,79.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,4.471379846260739,41.72141401699458,Inland
+E01027668,Harrogate 009A,E06000065,North Yorkshire,21784,7,1557,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,5.6648592878062045,23.739148307907918,Inland
+E01027669,Harrogate 009B,E06000065,North Yorkshire,19758,6,1852,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,5.238668714525998,24.118764968745435,Inland
+E01027670,Harrogate 012A,E06000065,North Yorkshire,31339,10,1968,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,7.171992720447285,23.585243814099996,Inland
+E01027671,Harrogate 012B,E06000065,North Yorkshire,33064,10,1431,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,6.110611150236897,22.73059530151554,Inland
+E01027672,Harrogate 012C,E06000065,North Yorkshire,31602,10,1674,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,4.854136740179441,23.15601930723094,Inland
+E01027673,Harrogate 009C,E06000065,North Yorkshire,17513,6,1735,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,4.361803550178209,24.20413958476056,Inland
+E01027674,Harrogate 007C,E06000065,North Yorkshire,31900,10,1314,13.0,20.0,Urban: Nearer to a major town or city,Urban,Harrogate,4.0822717820293075,25.497916633795388,Inland
+E01027675,Harrogate 007D,E06000065,North Yorkshire,31157,10,3098,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,5.931642024919827,25.153517478994466,Inland
+E01027676,Harrogate 009D,E06000065,North Yorkshire,13358,4,1792,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,5.618898484926554,24.43963883865655,Inland
+E01027677,Harrogate 015D,E06000065,North Yorkshire,26066,8,1464,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.8036817176182163,27.27241547780525,Inland
+E01027678,Harrogate 015E,E06000065,North Yorkshire,11730,4,1822,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.2643136911476338,26.84040189902565,Inland
+E01027679,Harrogate 019B,E06000065,North Yorkshire,27092,9,1529,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.5274714752745308,26.685916680479504,Inland
+E01027680,Harrogate 015F,E06000065,North Yorkshire,23392,7,1287,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.6048300239439853,26.97168314361089,Inland
+E01027681,Harrogate 006A,E06000065,North Yorkshire,18181,6,1661,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,10.861152476724012,37.21587567300571,Inland
+E01027682,Harrogate 018A,E06000065,North Yorkshire,22605,7,1714,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,7.201512132793417,33.7379809850959,Inland
+E01027683,Harrogate 016A,E06000065,North Yorkshire,27812,9,1931,53.0,100.0,Larger rural: Nearer to a major town or city,Rural,Harrogate,16.29028986992039,14.009617823205343,Inland
+E01027684,Harrogate 016B,E06000065,North Yorkshire,19361,6,1427,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,18.04773131688919,11.26170885025991,Inland
+E01027685,Harrogate 001C,E06000065,North Yorkshire,20267,7,1120,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ripon,13.910028403947297,43.62441618769496,Inland
+E01027686,Harrogate 001D,E06000065,North Yorkshire,14873,5,1069,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ripon,16.345280778082945,48.173599841934816,Inland
+E01027687,Harrogate 005D,E06000065,North Yorkshire,24923,8,2384,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,9.843463433083494,30.596509273717924,Inland
+E01027688,Harrogate 003B,E06000065,North Yorkshire,22533,7,1596,43.333333333333336,66.66666666666666,Smaller rural: Nearer to a major town or city,Rural,Ripon,5.038102604526261,33.194172976845024,Inland
+E01027689,Harrogate 011A,E06000065,North Yorkshire,18102,6,1344,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.3806742817587556,27.790505491889817,Inland
+E01027690,Harrogate 010D,E06000065,North Yorkshire,27841,9,1403,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.9362974453674051,28.106096505305942,Inland
+E01027691,Harrogate 011B,E06000065,North Yorkshire,25090,8,1497,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.1349762501406833,28.50025129268395,Inland
+E01027692,Harrogate 013E,E06000065,North Yorkshire,18049,6,1111,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.233504044314902,27.403738398564933,Inland
+E01027693,Harrogate 006B,E06000065,North Yorkshire,22177,7,1704,62.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,17.59394074696725,43.86849552864556,Inland
+E01027694,Harrogate 018B,E06000065,North Yorkshire,18706,6,1184,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,11.12715593829905,37.30991259771504,Inland
+E01027695,Harrogate 016C,E06000065,North Yorkshire,21767,7,1717,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,14.494750197257858,21.368419818351178,Inland
+E01027696,Harrogate 016D,E06000065,North Yorkshire,23931,8,2255,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,18.832692519038613,16.74698852786921,Inland
+E01027697,Harrogate 017E,E06000065,North Yorkshire,32987,10,1428,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.9541927338580014,25.00434167337904,Inland
+E01027698,Harrogate 020C,E06000065,North Yorkshire,33414,10,1533,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.3431876055495433,25.275768934587024,Inland
+E01027699,Harrogate 021A,E06000065,North Yorkshire,33103,10,1266,61.25,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,3.5482771258876444,25.358058819859263,Inland
+E01027700,Harrogate 021B,E06000065,North Yorkshire,31909,10,1694,48.75,75.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,3.379718516015879,24.118905073670263,Inland
+E01027701,Harrogate 006C,E06000065,North Yorkshire,16195,5,1591,85.0,100.0,Smaller rural: Further from a major town or city,Rural,Ripon,21.174605062066405,52.85376192141299,Inland
+E01027702,Harrogate 006D,E06000065,North Yorkshire,15800,5,1040,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Ripon,15.966338589786165,44.30658448495364,Inland
+E01027703,Harrogate 016E,E06000065,North Yorkshire,21622,7,2037,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,11.295864537150088,17.66955540177925,Inland
+E01027704,Harrogate 012D,E06000065,North Yorkshire,25810,8,1247,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,5.83906124096565,21.681550185589018,Inland
+E01027705,Harrogate 004A,E06000065,North Yorkshire,21986,7,1772,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,0.8956157847344699,37.51716183723918,Inland
+E01027706,Harrogate 004B,E06000065,North Yorkshire,12773,4,1765,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,0.1943992483298238,37.36582324452627,Inland
+E01027707,Harrogate 004C,E06000065,North Yorkshire,21505,7,1747,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,1.191545307863901,36.432562623299226,Inland
+E01027708,Harrogate 004D,E06000065,North Yorkshire,28602,9,1502,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,1.4274047578278937,36.55394829545453,Inland
+E01027709,Harrogate 004E,E06000065,North Yorkshire,31383,10,1329,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,1.0622701162222472,37.28988537744469,Inland
+E01027710,Harrogate 004F,E06000065,North Yorkshire,11384,4,1153,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,0.9501940163768111,36.921152478039716,Inland
+E01027711,Harrogate 004G,E06000065,North Yorkshire,15581,5,1291,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,0.8300311885330373,36.8110824420498,Inland
+E01027712,Harrogate 002A,E06000065,North Yorkshire,32037,10,2014,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,2.312200821239387,39.57968445812666,Inland
+E01027713,Harrogate 002B,E06000065,North Yorkshire,22532,7,1666,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,0.7810639834597006,37.87948237128448,Inland
+E01027714,Harrogate 002C,E06000065,North Yorkshire,26726,8,1578,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,1.221059068784797,38.684977597309675,Inland
+E01027715,Harrogate 002D,E06000065,North Yorkshire,28707,9,1270,0.0,0.0,Urban: Nearer to a major town or city,Urban,Ripon,1.1901986664491646,38.52594366379438,Inland
+E01027716,Harrogate 020D,E06000065,North Yorkshire,33531,10,1708,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.488675944865685,26.150918943629318,Inland
+E01027717,Harrogate 020E,E06000065,North Yorkshire,32748,10,1555,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.5386792334945933,26.762273996184142,Inland
+E01027718,Harrogate 020F,E06000065,North Yorkshire,32655,10,2127,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.5504684499610577,26.146215752108922,Inland
+E01027719,Harrogate 020G,E06000065,North Yorkshire,32766,10,1542,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.2400747126857894,27.013021324851913,Inland
+E01027720,Harrogate 011C,E06000065,North Yorkshire,19059,6,1890,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.2898594492827793,28.854255067447536,Inland
+E01027721,Harrogate 011D,E06000065,North Yorkshire,31282,10,1432,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.461194202148009,29.007226338601846,Inland
+E01027722,Harrogate 008D,E06000065,North Yorkshire,29800,9,1634,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.906259044281139,29.433187740989965,Inland
+E01027723,Harrogate 011E,E06000065,North Yorkshire,10430,4,1412,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.7755475859150727,28.350636326724516,Inland
+E01027724,Harrogate 021C,E06000065,North Yorkshire,21849,7,1705,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,7.380348364681994,22.66042823433595,Inland
+E01027725,Harrogate 021D,E06000065,North Yorkshire,25569,8,1549,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,7.497799578860843,19.261297466123562,Inland
+E01027726,Harrogate 014C,E06000065,North Yorkshire,21165,7,1773,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.946086523785419,25.36489594981433,Inland
+E01027727,Harrogate 014D,E06000065,North Yorkshire,22314,7,1943,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.3683130551913902,25.427405194855222,Inland
+E01027728,Harrogate 014E,E06000065,North Yorkshire,24161,8,1282,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,3.096422779421653,24.67451413738635,Inland
+E01027729,Harrogate 014F,E06000065,North Yorkshire,8587,3,1483,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.542257155035753,24.908793519916383,Inland
+E01027730,Harrogate 019C,E06000065,North Yorkshire,30422,10,1464,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.849119565945338,26.205259469950292,Inland
+E01027731,Harrogate 019D,E06000065,North Yorkshire,28428,9,1448,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.4095473026979575,25.708508191689944,Inland
+E01027732,Harrogate 019E,E06000065,North Yorkshire,31989,10,1226,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,0.8725085595630293,25.79582222839331,Inland
+E01027733,Harrogate 017F,E06000065,North Yorkshire,33625,10,1386,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.051356518764224,25.557002209541896,Inland
+E01027734,Harrogate 018C,E06000065,North Yorkshire,22826,7,1817,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,7.198917060417557,29.85303575273043,Inland
+E01027735,Harrogate 018D,E06000065,North Yorkshire,23239,7,1594,57.5,75.0,Smaller rural: Nearer to a major town or city,Rural,Harrogate,14.972932163865977,38.129900201153596,Inland
+E01027736,Harrogate 003C,E06000065,North Yorkshire,18417,6,1737,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ripon,5.811454273689218,40.08209687194912,Inland
+E01027737,Harrogate 003D,E06000065,North Yorkshire,22258,7,1998,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ripon,9.052670977579252,34.39182702705892,Inland
+E01027738,Harrogate 010E,E06000065,North Yorkshire,17803,6,1278,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.90688144704348,27.296586151862048,Inland
+E01027739,Harrogate 010F,E06000065,North Yorkshire,18886,6,1054,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.5396596518377896,27.284186050421756,Inland
+E01027740,Harrogate 013F,E06000065,North Yorkshire,2291,1,1555,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,1.8312172932458086,26.69000903508063,Inland
+E01027741,Harrogate 010G,E06000065,North Yorkshire,18914,6,1433,0.0,0.0,Urban: Nearer to a major town or city,Urban,Harrogate,2.2705270923750134,27.0927803328941,Inland
+E01027742,Richmondshire 005A,E06000065,North Yorkshire,13814,5,1301,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,27.308100679137436,44.548333393114866,Inland
+E01027743,Richmondshire 001A,E06000065,North Yorkshire,17995,6,1132,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,11.670171151384992,23.587686216166407,Inland
+E01027744,Richmondshire 006A,E06000065,North Yorkshire,17693,6,1240,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,15.279530929257907,49.095516597040024,Inland
+E01027745,Richmondshire 003A,E06000065,North Yorkshire,18474,6,1611,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,7.153540219761364,28.075070284013048,Inland
+E01027746,Richmondshire 003B,E06000065,North Yorkshire,21450,7,1433,56.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,5.172908606334506,30.066134190529496,Inland
+E01027747,Richmondshire 003C,E06000065,North Yorkshire,23996,8,1674,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,7.802108631030065,30.411154540643828,Inland
+E01027748,Richmondshire 003D,E06000065,North Yorkshire,21020,7,1153,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,7.082665314235365,29.516768690521967,Inland
+E01027749,Richmondshire 004A,E06000065,North Yorkshire,5898,2,1953,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,4.065785652141183,32.34740917266149,Inland
+E01027751,Richmondshire 001B,E06000065,North Yorkshire,22106,7,1245,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,13.535129177182675,20.34408234411345,Inland
+E01027752,Richmondshire 001C,E06000065,North Yorkshire,13709,5,1216,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,5.055576808126079,33.61215073223293,Inland
+E01027753,Richmondshire 005B,E06000065,North Yorkshire,17658,6,1220,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,34.70849716705612,36.07677823307001,Inland
+E01027756,Richmondshire 006B,E06000065,North Yorkshire,16881,6,1729,32.5,50.0,Smaller rural: Nearer to a major town or city,Urban,Richmondshire,7.382692359471851,34.00594568445483,Inland
+E01027758,Richmondshire 006D,E06000065,North Yorkshire,18039,6,1454,90.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,10.069145308817783,39.54977194531113,Inland
+E01027759,Richmondshire 001D,E06000065,North Yorkshire,18459,6,1386,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,11.0277324760636,26.461579998747204,Inland
+E01027760,Richmondshire 006E,E06000065,North Yorkshire,14065,5,1229,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,16.958674302604695,47.69689559356289,Inland
+E01027761,Richmondshire 001E,E06000065,North Yorkshire,24849,8,1195,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,7.0160466416648415,26.872604165991355,Inland
+E01027762,Richmondshire 001F,E06000065,North Yorkshire,15981,5,1356,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,10.313038953625382,33.52687729995621,Inland
+E01027763,Richmondshire 005C,E06000065,North Yorkshire,15705,5,1065,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,24.287912967330534,52.04842402280837,Inland
+E01027764,Richmondshire 005D,E06000065,North Yorkshire,15451,5,1068,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,14.688055131277322,46.379599268141824,Inland
+E01027765,Richmondshire 002A,E06000065,North Yorkshire,22359,7,1578,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,1.046332693426782,32.957982059876855,Inland
+E01027766,Richmondshire 002B,E06000065,North Yorkshire,19375,6,1158,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,0.5589737207549955,33.32516290875681,Inland
+E01027767,Richmondshire 002C,E06000065,North Yorkshire,28046,9,1405,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,1.131689821047617,32.74770464876708,Inland
+E01027768,Richmondshire 002D,E06000065,North Yorkshire,33070,10,1083,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,1.6674810244307323,32.20936612224322,Inland
+E01027769,Richmondshire 002E,E06000065,North Yorkshire,15796,5,1212,57.5,100.0,Smaller rural: Nearer to a major town or city,Rural,Richmondshire,2.6935680075040827,35.631748560228594,Inland
+E01027770,Richmondshire 002F,E06000065,North Yorkshire,17491,6,1519,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Richmondshire,0.49683593414415805,33.85414239133001,Inland
+E01027771,Richmondshire 004E,E06000065,North Yorkshire,23622,7,2447,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,4.419458341706823,35.42343378635412,Inland
+E01027772,Richmondshire 004F,E06000065,North Yorkshire,21824,7,1204,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,6.080317001809067,35.32993102019929,Inland
+E01027773,Richmondshire 005E,E06000065,North Yorkshire,14346,5,1081,91.25,100.0,Smaller rural: Further from a major town or city,Rural,Richmondshire,22.43625990258851,48.746873241335166,Inland
+E01027774,Ryedale 007A,E06000065,North Yorkshire,18450,6,1911,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,4.402589705166661,30.977953982200564,Inland
+E01027775,Ryedale 003A,E06000065,North Yorkshire,17522,6,1974,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,20.094475071943787,32.80040916856144,Inland
+E01027776,Ryedale 001A,E06000065,North Yorkshire,18263,6,1564,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,17.895227173817005,22.197788878285987,Inland
+E01027777,Ryedale 001B,E06000065,North Yorkshire,15049,5,1268,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,25.455716414709066,23.94194082674562,Inland
+E01027778,Ryedale 007B,E06000065,North Yorkshire,14791,5,2248,76.66666666666667,100.0,Smaller rural: Nearer to a major town or city,Rural,Ryedale,7.519400535256323,25.813460167710918,Inland
+E01027779,Ryedale 004A,E06000065,North Yorkshire,9689,3,1143,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,5.097962574558096,28.715328759999704,Inland
+E01027780,Ryedale 003B,E06000065,North Yorkshire,20047,6,2139,95.55555555555556,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,27.722296018113713,29.887109157398644,Inland
+E01027781,Ryedale 003C,E06000065,North Yorkshire,17749,6,1294,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,20.32935117916729,37.08502417967519,Inland
+E01027782,Ryedale 007C,E06000065,North Yorkshire,17215,6,1676,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,10.187291189038428,30.701806875384587,Inland
+E01027783,Ryedale 001C,E06000065,North Yorkshire,20705,7,2144,86.66666666666667,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,17.015996916680308,30.992564282313023,Inland
+E01027784,Ryedale 001D,E06000065,North Yorkshire,13965,5,1612,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,17.979265999826026,29.31406296261383,Inland
+E01027786,Ryedale 010A,E06000065,North Yorkshire,31517,10,1602,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,1.0048807992162185,31.300559576994672,Inland
+E01027787,Ryedale 009A,E06000065,North Yorkshire,11356,4,1993,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,2.6270030498738057,28.15312797455662,Inland
+E01027788,Ryedale 010B,E06000065,North Yorkshire,20484,7,1549,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,2.3252918076364733,29.464916410000093,Inland
+E01027790,Ryedale 010D,E06000065,North Yorkshire,16571,5,1986,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,2.1147855936900553,31.388062687860412,Inland
+E01027791,Ryedale 010C,E06000065,North Yorkshire,30376,9,1714,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,1.528446132913812,30.638039358859068,Inland
+E01027792,Ryedale 002A,E06000065,North Yorkshire,28653,9,2548,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,13.195862170522345,23.30929748261731,Inland
+E01027793,Ryedale 002B,E06000065,North Yorkshire,13880,5,1489,83.33333333333333,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,9.864643392558916,24.89320792345823,Inland
+E01027794,Ryedale 002C,E06000065,North Yorkshire,28400,9,1980,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,13.917988639949074,24.23409989684339,Inland
+E01027795,Ryedale 002D,E06000065,North Yorkshire,9724,3,1573,80.0,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,12.267665264017296,25.281376150952305,Inland
+E01027796,Ryedale 004B,E06000065,North Yorkshire,13897,5,1855,88.57142857142857,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,9.392818039027112,21.082380516289767,Inland
+E01027797,Ryedale 007D,E06000065,North Yorkshire,21604,7,1674,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ryedale,13.749397332273746,19.58474032640373,Inland
+E01027798,Ryedale 004C,E06000065,North Yorkshire,12616,4,1984,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,19.23373097511807,12.299408120058388,Inland
+E01027799,Ryedale 007E,E06000065,North Yorkshire,19463,6,1829,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Ryedale,14.418433530606318,21.758893803159346,Inland
+E01027800,Ryedale 003D,E06000065,North Yorkshire,16362,5,1723,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,13.261676105011237,34.59273914986769,Inland
+E01027801,Ryedale 002E,E06000065,North Yorkshire,25007,8,1729,88.57142857142857,100.0,Larger rural: Further from a major town or city,Rural,Ryedale,9.223828246567308,23.031235284995883,Inland
+E01027802,Ryedale 002F,E06000065,North Yorkshire,16735,5,1610,96.66666666666667,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,19.008849664904798,16.59311920895841,Inland
+E01027803,Ryedale 004D,E06000065,North Yorkshire,11999,4,1848,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Ryedale,12.771088972245806,22.588506997391875,Inland
+E01027804,Scarborough 010A,E06000065,North Yorkshire,1015,1,1637,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.18052452376971467,0.6783814675594279,Coastal (≤5 km)
+E01027805,Scarborough 006A,E06000065,North Yorkshire,1587,1,1229,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.2729091508436687,0.23665120070616183,Coastal (≤5 km)
+E01027806,Scarborough 006B,E06000065,North Yorkshire,167,1,1610,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.6892611610680914,0.5693206199408546,Coastal (≤5 km)
+E01027807,Scarborough 011A,E06000065,North Yorkshire,11917,4,1531,52.0,40.0,Urban: Further from a major town or city,Urban,Scarborough,6.4162520665266225,1.6982418088378548,Coastal (≤5 km)
+E01027808,Scarborough 011B,E06000065,North Yorkshire,22282,7,1690,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,4.995895884022457,1.8291946860137256,Coastal (≤5 km)
+E01027809,Scarborough 011C,E06000065,North Yorkshire,20691,7,1195,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.7493603727117235,0.44101733925822934,Coastal (≤5 km)
+E01027810,Scarborough 008A,E06000065,North Yorkshire,8554,3,1569,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.8203359308207344,1.1557996975667926,Coastal (≤5 km)
+E01027811,Scarborough 008B,E06000065,North Yorkshire,7862,3,1514,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.8810546836075827,1.4051849924063617,Coastal (≤5 km)
+E01027812,Scarborough 008C,E06000065,North Yorkshire,4448,2,1805,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.5681913692104107,1.064597032425962,Coastal (≤5 km)
+E01027813,Scarborough 002A,E06000065,North Yorkshire,10556,4,1869,85.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,39.35284554358281,13.851018243562285,Inland
+E01027814,Scarborough 013A,E06000065,North Yorkshire,14899,5,1645,96.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,8.27432169919119,8.522800708449138,Inland
+E01027815,Scarborough 013B,E06000065,North Yorkshire,15656,5,1407,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,12.018937358341642,12.28492413926891,Inland
+E01027816,Scarborough 013C,E06000065,North Yorkshire,19696,6,1827,83.33333333333333,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,5.711273331414262,5.864989189374728,Inland
+E01027817,Scarborough 012A,E06000065,North Yorkshire,1510,1,1400,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,4.2032071377138625,2.392090843165422,Coastal (≤5 km)
+E01027818,Scarborough 011D,E06000065,North Yorkshire,11379,4,2001,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.9364903447463715,1.4464167234823206,Coastal (≤5 km)
+E01027819,Scarborough 012B,E06000065,North Yorkshire,1804,1,2702,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.2899631551838158,1.9613357743810864,Coastal (≤5 km)
+E01027820,Scarborough 012C,E06000065,North Yorkshire,1374,1,1479,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.769349025114774,1.7470880000746636,Coastal (≤5 km)
+E01027821,Scarborough 004A,E06000065,North Yorkshire,17038,6,1480,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,22.977199572601545,6.83196938141219,Inland
+E01027822,Scarborough 002B,E06000065,North Yorkshire,12632,4,1367,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,29.365741230914193,11.287821092071578,Inland
+E01027823,Scarborough 004B,E06000065,North Yorkshire,12175,4,1374,84.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,25.810914853180808,2.283108952284702,Coastal (≤5 km)
+E01027824,Scarborough 009A,E06000065,North Yorkshire,6159,2,1503,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.7302410631827352,2.0230587268169296,Coastal (≤5 km)
+E01027825,Scarborough 009B,E06000065,North Yorkshire,5055,2,2188,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.0185507229254664,2.0406472787458427,Coastal (≤5 km)
+E01027826,Scarborough 009C,E06000065,North Yorkshire,10605,4,1378,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.9999388933123172,1.3488667213513499,Coastal (≤5 km)
+E01027827,Scarborough 014A,E06000065,North Yorkshire,6840,3,1543,80.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,10.845080916783624,0.42876190478850257,Coastal (≤5 km)
+E01027828,Scarborough 014B,E06000065,North Yorkshire,15334,5,2137,80.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,10.473778155180172,0.9677840041473911,Coastal (≤5 km)
+E01027829,Scarborough 014C,E06000065,North Yorkshire,17911,6,1421,80.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,9.560807987001008,0.5602972812656786,Coastal (≤5 km)
+E01027830,Scarborough 014D,E06000065,North Yorkshire,9972,3,1638,80.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,9.719366044176146,1.3729104842296287,Coastal (≤5 km)
+E01027833,Scarborough 014E,E06000065,North Yorkshire,8829,3,1576,92.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,14.673455834441068,2.594616110985581,Coastal (≤5 km)
+E01027834,Scarborough 014F,E06000065,North Yorkshire,21614,7,1482,80.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,12.050969957337356,2.6794164631597437,Coastal (≤5 km)
+E01027835,Scarborough 014G,E06000065,North Yorkshire,12274,4,1696,88.0,100.0,Larger rural: Further from a major town or city,Rural,Scarborough,9.347911947830362,5.117995577538773,Inland
+E01027836,Scarborough 004E,E06000065,North Yorkshire,22758,7,2139,97.14285714285714,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,7.624766297606292,1.914748265359737,Coastal (≤5 km)
+E01027837,Scarborough 001A,E06000065,North Yorkshire,4717,2,1247,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,27.302975743811697,1.0342633078520804,Coastal (≤5 km)
+E01027838,Scarborough 003A,E06000065,North Yorkshire,26821,8,1587,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,26.736105627917716,0.7383979359448629,Coastal (≤5 km)
+E01027839,Scarborough 001B,E06000065,North Yorkshire,20282,7,2124,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,27.848310339256372,1.1682199316598827,Coastal (≤5 km)
+E01027840,Scarborough 002C,E06000065,North Yorkshire,7335,3,1924,97.5,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,37.961962698245365,3.8256338919287587,Coastal (≤5 km)
+E01027841,Scarborough 002D,E06000065,North Yorkshire,13496,4,1295,100.0,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,31.85577894437547,3.368732390519812,Coastal (≤5 km)
+E01027842,Scarborough 005A,E06000065,North Yorkshire,15682,5,1613,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.5631756070284117,1.5813963206498767,Coastal (≤5 km)
+E01027843,Scarborough 005B,E06000065,North Yorkshire,13479,4,1512,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.9800000092663907,2.2927195301074796,Coastal (≤5 km)
+E01027844,Scarborough 005C,E06000065,North Yorkshire,28774,9,1589,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.8216393407588924,2.4026354239415206,Coastal (≤5 km)
+E01027845,Scarborough 005D,E06000065,North Yorkshire,26027,8,1695,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.6054644333301376,1.0634828162812457,Coastal (≤5 km)
+E01027847,Scarborough 006D,E06000065,North Yorkshire,659,1,1882,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.1393121648960194,0.4255533471533535,Coastal (≤5 km)
+E01027849,Scarborough 007A,E06000065,North Yorkshire,19064,6,1157,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.5857643997878572,0.5492301773582106,Coastal (≤5 km)
+E01027850,Scarborough 007B,E06000065,North Yorkshire,4829,2,1324,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.617238367755075,0.9728348745873302,Coastal (≤5 km)
+E01027851,Scarborough 008D,E06000065,North Yorkshire,15185,5,1413,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.1052242095273843,1.0160897588413664,Coastal (≤5 km)
+E01027852,Scarborough 010B,E06000065,North Yorkshire,5284,2,1521,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.42451732816529897,0.5189298255309232,Coastal (≤5 km)
+E01027853,Scarborough 010C,E06000065,North Yorkshire,8865,3,1112,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.7924947094516027,0.9152581983309611,Coastal (≤5 km)
+E01027854,Scarborough 010D,E06000065,North Yorkshire,5785,2,1351,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.25784008185298835,0.27633773024740377,Coastal (≤5 km)
+E01027855,Scarborough 005E,E06000065,North Yorkshire,25141,8,1965,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.7423619234708303,1.2370306847124657,Coastal (≤5 km)
+E01027856,Scarborough 005F,E06000065,North Yorkshire,23710,8,1183,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.697064511334409,2.686248679003468,Coastal (≤5 km)
+E01027857,Scarborough 004F,E06000065,North Yorkshire,15642,5,1268,68.0,60.0,Smaller rural: Further from a major town or city,Rural,Scarborough,10.40799580567055,6.47921419574011,Inland
+E01027858,Scarborough 012D,E06000065,North Yorkshire,25771,8,1296,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,3.984290661833923,3.2287346557573104,Coastal (≤5 km)
+E01027859,Scarborough 013D,E06000065,North Yorkshire,24641,8,1800,72.0,80.0,Larger rural: Further from a major town or city,Rural,Scarborough,5.0759093336652885,4.745510016353436,Coastal (≤5 km)
+E01027860,Scarborough 012E,E06000065,North Yorkshire,21005,7,1618,50.0,50.0,Larger rural: Further from a major town or city,Urban,Scarborough,3.59303826698724,3.4896240002082286,Coastal (≤5 km)
+E01027861,Scarborough 009D,E06000065,North Yorkshire,9261,3,1335,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.1089598181022124,1.5593774508859526,Coastal (≤5 km)
+E01027862,Scarborough 008E,E06000065,North Yorkshire,8167,3,1578,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,0.7352110261953059,1.202550382132424,Coastal (≤5 km)
+E01027863,Scarborough 009E,E06000065,North Yorkshire,27195,9,1341,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.4867955693944817,1.8840012943356135,Coastal (≤5 km)
+E01027864,Scarborough 003B,E06000065,North Yorkshire,4182,2,1421,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,26.196130152301954,0.4022859537586944,Coastal (≤5 km)
+E01027865,Scarborough 003C,E06000065,North Yorkshire,6386,2,1063,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,26.714413314210233,0.08977771696418263,Coastal (≤5 km)
+E01027866,Scarborough 003D,E06000065,North Yorkshire,13675,5,2053,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,25.429726590944504,0.5135942233101252,Coastal (≤5 km)
+E01027867,Scarborough 011E,E06000065,North Yorkshire,27044,9,1448,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.38076596473955,0.8131349169892977,Coastal (≤5 km)
+E01027868,Scarborough 010E,E06000065,North Yorkshire,13138,4,2294,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.3267536028830762,0.8645528095065252,Coastal (≤5 km)
+E01027871,Scarborough 001E,E06000065,North Yorkshire,17564,6,1574,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,27.97280684584918,0.5348864230295122,Coastal (≤5 km)
+E01027872,Scarborough 007C,E06000065,North Yorkshire,4843,2,1362,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,1.7166659037189222,1.4704632681056033,Coastal (≤5 km)
+E01027873,Scarborough 009F,E06000065,North Yorkshire,22418,7,1405,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.5589656256364903,2.968221165331435,Coastal (≤5 km)
+E01027874,Scarborough 007D,E06000065,North Yorkshire,462,1,1830,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.106696917956245,1.426066688390142,Coastal (≤5 km)
+E01027875,Selby 002A,E06000065,North Yorkshire,23005,7,2078,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,14.44988564074339,3.7402503240793523,Coastal (≤5 km)
+E01027876,Selby 003A,E06000065,North Yorkshire,25706,8,1600,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,3.0442698600922067,0.6609758046188783,Coastal (≤5 km)
+E01027877,Selby 003B,E06000065,North Yorkshire,23912,8,1984,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,3.7898024651041555,0.19066007919497296,Coastal (≤5 km)
+E01027878,Selby 005A,E06000065,North Yorkshire,12836,4,1244,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.4229143180600536,0.4607258027210992,Coastal (≤5 km)
+E01027879,Selby 007A,E06000065,North Yorkshire,31327,10,1218,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.2583220941954656,1.673783045254721,Coastal (≤5 km)
+E01027880,Selby 007B,E06000065,North Yorkshire,31957,10,1432,20.0,0.0,Urban: Further from a major town or city,Urban,Selby,2.4142803987634878,2.825123472891467,Coastal (≤5 km)
+E01027881,Selby 006A,E06000065,North Yorkshire,17619,6,1970,20.0,0.0,Urban: Further from a major town or city,Urban,Selby,2.7706682335653947,3.0672418799367023,Coastal (≤5 km)
+E01027882,Selby 007C,E06000065,North Yorkshire,28671,9,1809,48.0,40.0,Smaller rural: Further from a major town or city,Urban,Selby,3.5472500288360007,0.7009597865719904,Coastal (≤5 km)
+E01027883,Selby 008A,E06000065,North Yorkshire,20344,7,1036,85.0,100.0,Larger rural: Further from a major town or city,Rural,Selby,6.400989019339425,3.065399812791795,Coastal (≤5 km)
+E01027884,Selby 008B,E06000065,North Yorkshire,18084,6,1685,88.0,100.0,Larger rural: Further from a major town or city,Rural,Selby,9.600183570874934,0.9168726458067757,Coastal (≤5 km)
+E01027885,Selby 008C,E06000065,North Yorkshire,26036,8,1968,80.0,100.0,Larger rural: Further from a major town or city,Rural,Selby,9.219315099097523,0.6696342261749939,Coastal (≤5 km)
+E01027886,Selby 002B,E06000065,North Yorkshire,18956,6,1421,56.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,5.521639811012884,2.861031336613926,Coastal (≤5 km)
+E01027887,Selby 002C,E06000065,North Yorkshire,22888,7,1560,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,3.8377075873705544,0.6827365964100611,Coastal (≤5 km)
+E01027888,Selby 002D,E06000065,North Yorkshire,25214,8,2014,62.5,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,9.321456964413056,2.7243199296603358,Coastal (≤5 km)
+E01027889,Selby 010A,E06000065,North Yorkshire,13119,4,1799,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,9.658693775270061,2.926004569926428,Coastal (≤5 km)
+E01027890,Selby 010B,E06000065,North Yorkshire,20485,7,2440,70.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,7.534318420937485,0.16515513758748243,Coastal (≤5 km)
+E01027891,Selby 009A,E06000065,North Yorkshire,18085,6,1726,62.5,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,11.87317217983006,7.33726439743262,Inland
+E01027892,Selby 009B,E06000065,North Yorkshire,10021,3,1827,58.57142857142857,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,14.8500548317672,10.5952445689422,Inland
+E01027893,Selby 009C,E06000065,North Yorkshire,27906,9,2375,57.5,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,6.450247360147647,5.704794704296639,Inland
+E01027894,Selby 007D,E06000065,North Yorkshire,23778,8,2933,80.0,100.0,Larger rural: Further from a major town or city,Rural,Selby,4.064268526763863,4.183393477510703,Coastal (≤5 km)
+E01027895,Selby 007E,E06000065,North Yorkshire,20105,6,1478,90.0,100.0,Smaller rural: Further from a major town or city,Rural,Selby,4.740613476065938,2.6100109236219273,Coastal (≤5 km)
+E01027896,Selby 008D,E06000065,North Yorkshire,21511,7,1977,55.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,7.239492863346976,1.5443941982351386,Coastal (≤5 km)
+E01027897,Selby 008E,E06000065,North Yorkshire,24661,8,2252,40.833333333333336,66.66666666666666,Smaller rural: Nearer to a major town or city,Rural,Selby,4.828462910952984,2.4736277239681375,Coastal (≤5 km)
+E01027899,Selby 009D,E06000065,North Yorkshire,28722,9,1737,59.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,10.437024094995024,7.494679903736125,Inland
+E01027900,Selby 003C,E06000065,North Yorkshire,22547,7,2076,55.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,9.090181282552358,5.711435954061626,Inland
+E01027901,Selby 003D,E06000065,North Yorkshire,30567,10,1804,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,6.33130935992298,1.1329673621164722,Coastal (≤5 km)
+E01027902,Selby 003E,E06000065,North Yorkshire,20534,7,1470,57.5,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,8.378784937775482,1.684232801887604,Coastal (≤5 km)
+E01027903,Selby 003F,E06000065,North Yorkshire,27214,9,1118,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,8.262122398095261,3.321720068688604,Coastal (≤5 km)
+E01027904,Selby 002E,E06000065,North Yorkshire,25893,8,2649,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,14.153894299326833,3.8606754825563545,Coastal (≤5 km)
+E01027906,Selby 006B,E06000065,North Yorkshire,11466,4,1703,10.833333333333334,16.666666666666664,Urban: Nearer to a major town or city,Urban,Selby,2.8736252516776384,2.738161245411554,Coastal (≤5 km)
+E01027907,Selby 005C,E06000065,North Yorkshire,2971,1,1403,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.0701608536087013,0.8369417346186871,Coastal (≤5 km)
+E01027908,Selby 005D,E06000065,North Yorkshire,5422,2,1531,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,0.6181179209290744,0.5879905334142012,Coastal (≤5 km)
+E01027909,Selby 005E,E06000065,North Yorkshire,7071,3,2340,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,0.28363776426435805,0.522068153664888,Coastal (≤5 km)
+E01027913,Selby 006E,E06000065,North Yorkshire,32616,10,1183,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.927939834943964,2.0729691211526657,Coastal (≤5 km)
+E01027914,Selby 004B,E06000065,North Yorkshire,32963,10,1504,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,14.055567089276716,7.499814010500869,Inland
+E01027915,Selby 004C,E06000065,North Yorkshire,21973,7,2128,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,11.88733388966889,8.105097988725987,Inland
+E01027916,Selby 004D,E06000065,North Yorkshire,16662,5,1643,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,12.01149064668182,6.4327410784296575,Inland
+E01027918,Selby 001A,E06000065,North Yorkshire,14531,5,1479,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,16.934842162181113,4.757884701284271,Coastal (≤5 km)
+E01027919,Selby 001B,E06000065,North Yorkshire,25837,8,1179,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,17.686495327779454,5.485331641299943,Inland
+E01027920,Selby 001C,E06000065,North Yorkshire,27537,9,1056,53.75,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,15.963066338167074,3.865799783565697,Coastal (≤5 km)
+E01027921,Selby 001D,E06000065,North Yorkshire,20336,7,1726,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,17.00637189248485,4.840504907562656,Coastal (≤5 km)
+E01027922,Selby 001E,E06000065,North Yorkshire,30388,10,2049,58.57142857142857,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,18.401317869603876,6.651144358612269,Inland
+E01027923,Selby 010C,E06000065,North Yorkshire,17503,6,2386,65.0,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,15.0692684945594,7.863716490781641,Inland
+E01027924,Selby 010D,E06000065,North Yorkshire,20379,7,2370,62.857142857142854,100.0,Smaller rural: Nearer to a major town or city,Rural,Selby,11.802254254848114,3.845075396472145,Coastal (≤5 km)
+E01033067,York 013F,E06000014,York,6515,2,1731,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,1.0601601828353096,7.437453492185817,Inland
+E01033068,York 013G,E06000014,York,15353,5,1052,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.6647838525501678,7.158430765262501,Inland
+E01033069,York 013H,E06000014,York,19959,6,1015,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.8253033450856135,6.919880920466394,Inland
+E01033070,York 013I,E06000014,York,20849,7,2832,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,0.6432454902963721,7.217260991193149,Inland
+E01033184,Richmondshire 004H,E06000065,North Yorkshire,23696,8,2079,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,3.6511470036762135,36.90514772960681,Inland
+E01033185,Richmondshire 006F,E06000065,North Yorkshire,25127,8,1371,84.0,100.0,Larger rural: Further from a major town or city,Rural,Richmondshire,11.871116693845716,44.88092408402984,Inland
+E01033186,Richmondshire 006G,E06000065,North Yorkshire,27426,9,1417,85.0,100.0,Larger rural: Further from a major town or city,Rural,Richmondshire,11.590011826936664,43.59650662129802,Inland
+E01034761,York 023D,E06000014,York,25271,8,2017,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,3.373721082333077,5.060351261286571,Inland
+E01034762,York 023E,E06000014,York,24045,8,1388,0.0,0.0,Urban: Nearer to a major town or city,Urban,York,4.380777346969302,4.239939538702146,Coastal (≤5 km)
+E01034956,Craven 006E,E06000065,North Yorkshire,10099,3,1458,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,1.4066958964485392,47.1926347735187,Inland
+E01034957,Craven 006F,E06000065,North Yorkshire,15348,5,1218,20.0,0.0,Urban: Further from a major town or city,Urban,Craven,1.4259946055982313,47.166063954833746,Inland
+E01034958,Hambleton 007F,E06000065,North Yorkshire,24548,8,2791,89.5,100.0,Smaller rural: Further from a major town or city,Rural,Hambleton,9.735374884912556,34.8004450029043,Inland
+E01034959,Hambleton 009E,E06000065,North Yorkshire,24683,8,2401,16.666666666666668,0.0,Urban: Further from a major town or city,Urban,Hambleton,14.407577285631259,37.039111225518475,Inland
+E01034960,Hambleton 009F,E06000065,North Yorkshire,18685,6,1449,20.0,0.0,Urban: Further from a major town or city,Urban,Hambleton,15.965052247153459,37.56327582639394,Inland
+E01034961,Hambleton 012A,E06000065,North Yorkshire,26940,8,1713,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,1.6555278747380855,23.811327941595028,Inland
+E01034962,Hambleton 012B,E06000065,North Yorkshire,23128,7,1174,0.0,0.0,Urban: Nearer to a major town or city,Urban,Hambleton,0.4883144114381466,25.20108105834427,Inland
+E01034963,Harrogate 008E,E06000065,North Yorkshire,29337,9,1377,53.75,100.0,Larger rural: Nearer to a major town or city,Rural,Harrogate,5.048161288047095,31.586239162586622,Inland
+E01034964,Harrogate 008F,E06000065,North Yorkshire,24544,8,3093,28.75,50.0,Urban: Nearer to a major town or city,Urban,Harrogate,3.61089142521604,30.1903321888828,Inland
+E01034965,Richmondshire 004I,E06000065,North Yorkshire,21139,7,2832,8.125,12.5,Urban: Nearer to a major town or city,Urban,Richmondshire,1.8233789265394447,34.08511342405282,Inland
+E01034966,Richmondshire 004J,E06000065,North Yorkshire,17912,6,1788,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,3.4138742263753623,32.5388254180882,Inland
+E01034967,Richmondshire 004K,E06000065,North Yorkshire,19827,6,1761,0.0,0.0,Urban: Nearer to a major town or city,Urban,Richmondshire,4.736842845795375,33.39738872635825,Inland
+E01034968,Ryedale 009B,E06000065,North Yorkshire,31364,10,1808,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,0.768302595214086,30.24859374721809,Inland
+E01034969,Ryedale 009C,E06000065,North Yorkshire,18645,6,1701,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,1.8815440601267077,28.575658417256346,Inland
+E01034970,Ryedale 009D,E06000065,North Yorkshire,10746,4,1265,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,0.19161326860184433,30.203221841903066,Inland
+E01034971,Ryedale 009E,E06000065,North Yorkshire,8480,3,1438,20.0,0.0,Urban: Further from a major town or city,Urban,Ryedale,1.304460985499739,29.546611124351923,Inland
+E01034972,Scarborough 001F,E06000065,North Yorkshire,6481,2,2099,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,27.248498179705887,0.38815659691260335,Coastal (≤5 km)
+E01034973,Scarborough 004G,E06000065,North Yorkshire,15754,5,1878,97.5,100.0,Smaller rural: Further from a major town or city,Rural,Scarborough,18.820433430409615,2.7590525221565048,Coastal (≤5 km)
+E01034974,Scarborough 006F,E06000065,North Yorkshire,11313,4,2647,20.0,0.0,Urban: Further from a major town or city,Urban,Scarborough,2.1726247033304706,0.25972088904807766,Coastal (≤5 km)
+E01034975,Selby 004F,E06000065,North Yorkshire,30391,10,1797,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,9.551431351805611,6.3384205452770335,Inland
+E01034976,Selby 004G,E06000065,North Yorkshire,26490,8,2103,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,11.533085468040447,6.830129319838403,Inland
+E01034977,Selby 004H,E06000065,North Yorkshire,21080,7,1538,53.75,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,13.273295900092483,9.21000176012969,Inland
+E01034978,Selby 004I,E06000065,North Yorkshire,28554,9,1399,50.0,100.0,Larger rural: Nearer to a major town or city,Rural,Selby,11.337513349051758,8.856836723167904,Inland
+E01034979,Selby 005G,E06000065,North Yorkshire,18704,6,1388,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.2837119681337401,0.7524618505230422,Coastal (≤5 km)
+E01034980,Selby 005H,E06000065,North Yorkshire,9804,3,1101,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,0.6773019785023354,0.13650653888404862,Coastal (≤5 km)
+E01034981,Selby 005I,E06000065,North Yorkshire,9650,3,1524,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.2101017914119736,0.42247482875185055,Coastal (≤5 km)
+E01034982,Selby 005J,E06000065,North Yorkshire,11271,4,1237,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,0.9881537606553235,1.0557044476908033,Coastal (≤5 km)
+E01034983,Selby 005K,E06000065,North Yorkshire,26335,8,1740,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,1.8405464124838058,0.779843872295927,Coastal (≤5 km)
+E01034984,Selby 006F,E06000065,North Yorkshire,25970,8,2415,0.0,0.0,Urban: Nearer to a major town or city,Urban,Selby,0.7973184041479914,1.1222299405654892,Coastal (≤5 km)
