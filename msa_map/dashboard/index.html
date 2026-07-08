@@ -38,7 +38,6 @@
 
   <div id="indicators-sections"></div>
 
-  <div id="deep-dive-section"></div>
 
 </div>
 
@@ -150,7 +149,7 @@ function renderProfile(id) {
     renderAuthorityHeader(msa);
     renderIndicatorTable(msa);
     renderBoundaryMap(msa);
-    renderDeepDive(msa);
+
     content.classList.remove('fading');
   }, 180);
 }
@@ -291,68 +290,6 @@ function renderIndicatorTable(msa) {
   container.appendChild(table);
 }
 
-// ── Render: deep dive (currently YNYCA only — extend DEEP_DIVES to add more) ─
-const DEEP_DIVES = {
-  ynyca: {
-    heading: 'Rurality &amp; Deprivation',
-    intro: 'A closer look at how rural/urban character and deprivation relate across YNYCA\'s 500 LSOAs.',
-    items: [
-      {
-        img: 'ynyca_lsoa_imd_map.png',
-        alt: 'Map of Index of Multiple Deprivation 2025 by LSOA across York and North Yorkshire',
-        caption: 'IMD 2025 decile by LSOA. Source: MHCLG IoD 2025, ONS LSOA boundaries 2021.',
-        text: 'Deprivation in YNYCA isn\'t a countryside story. It clusters in two specific places &mdash; Scarborough\'s coastal towns and pockets of York &mdash; and every one of the area\'s 41 most-deprived LSOAs is urban.',
-      },
-      {
-        img: 'ynyca_rurality_vs_imd_scatter.png',
-        alt: 'Scatter plot of rurality score vs IMD rank for YNYCA LSOAs',
-        caption: 'Rurality score vs national IMD rank, all 500 LSOAs. Source: ONS RUC 2021, MHCLG IoD 2025.',
-        text: 'Across all 500 LSOAs, rurality barely predicts deprivation at all (correlation: &minus;0.11). Being rural makes a place no more likely to be comfortable than disadvantaged.',
-      },
-      {
-        img: ['ynyca_york_centre_vs_imd.png', 'ynyca_ripon_centre_vs_imd.png'],
-        alt: ['Scatter plot of distance from York city centre vs IMD rank', 'Scatter plot of distance from Ripon city centre vs IMD rank'],
-        caption: 'Distance from city centre vs IMD rank, urban LSOAs only. Source: ONS RUC 2021, MHCLG IoD 2025.',
-        text: 'Zoom into York and Ripon specifically, though, and a real donut effect appears: deprivation is sharpest at the historic core and fades toward the suburbs (York +0.35, Ripon +0.71) &mdash; a city effect that none of YNYCA\'s market towns share.',
-      },
-    ],
-  },
-};
-
-function renderDeepDive(msa) {
-  const el = document.getElementById('deep-dive-section');
-  const dive = DEEP_DIVES[msa.id];
-  if (!dive) { el.innerHTML = ''; return; }
-
-  const itemsHtml = dive.items.map((item, i) => {
-    const imgs = Array.isArray(item.img) ? item.img : [item.img];
-    const alts = Array.isArray(item.alt) ? item.alt : [item.alt];
-    const imgsHtml = imgs.map((src, j) => `
-      <div class="profile-chart-wrap">
-        <img src="${CHARTS_PATH}/${src}" alt="${alts[j] || ''}" loading="lazy" />
-      </div>
-    `).join('');
-    return `
-      <div class="profile-section${i % 2 === 1 ? ' reverse' : ''}">
-        <div class="profile-charts">
-          ${imgsHtml}
-          <p class="profile-caption">${item.caption}</p>
-        </div>
-        <div class="profile-text">
-          <p class="profile-insight">${item.text}</p>
-        </div>
-      </div>
-    `;
-  }).join('');
-
-  el.innerHTML = `
-    <div class="deep-dive-heading">
-      <h2>${dive.heading}</h2>
-      <p class="profile-intro">${dive.intro}</p>
-    </div>
-    ${itemsHtml}
-  `;
-}
 
 // ── Render: boundary map ────────────────────────────────────────────────────
 // MSA boundary layer style — visible on satellite imagery (white dashed border,

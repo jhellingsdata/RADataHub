@@ -40,7 +40,7 @@ alt.themes.enable("report_local")
 
 # --- Config ---------------------------------------------------------------
 
-DATA_DIR = Path("/Users/alonso/Desktop/York and North Yorkshire")
+DATA_DIR = Path("/Users/h.cantekin/Library/CloudStorage/OneDrive-LondonSchoolofEconomics/Documents/GitHub/RADataHub/msa_map/Business_Investment_charts")
 UNEMP_FILE = DATA_DIR / "modelled-unemployment.xlsx"
 FDI_FILE = DATA_DIR / "inward-foreign-direct-investment.xlsx"
 OUTPUT_DIR = DATA_DIR
@@ -66,6 +66,15 @@ COLORS = {
     "Tees Valley":              pallete["nominal_5"],  # #eb5c2e orange
     "Greater Manchester":       pallete["nominal_4"],  # #122b39 dark navy
     "England":                  pallete["Deemphasize_Discrete"],
+}
+
+ACRONYMS = {
+    "York and North Yorkshire": "YNYCA",
+    "West Yorkshire":           "WYCA",
+    "South Yorkshire":          "SYCA",
+    "Tees Valley":              "TVCA",
+    "Greater Manchester":       "GMCA",
+    "England":                  "England",
 }
 
 # --- Data loading ---------------------------------------------------------
@@ -113,20 +122,23 @@ COLOR_SCALE = alt.Scale(domain=PEER_ORDER, range=[COLORS[n] for n in PEER_ORDER]
 
 def layered_lines(df, x_field, y_field, y_title,
                   x_domain=None, y_domain=None,
-                  highlight_stroke=3.0, other_stroke=1.6):
+                  highlight_stroke=3.0, other_stroke=1.6,
+                  show_legend=True):
     """Line chart in three layers: non-highlight peers, dashed baseline,
     then the highlighted peer on top.
     """
     def base(source):
         x_scale = alt.Scale(domain=x_domain) if x_domain else alt.Undefined
         y_scale = alt.Scale(domain=y_domain) if y_domain else alt.Undefined
+        legend = (
+            alt.Legend(title=None, orient="top-right", symbolStrokeWidth=2)
+            if show_legend else None
+        )
         return alt.Chart(source).encode(
             x=alt.X(f"{x_field}:Q", title=None, axis=alt.Axis(format="d"),
                     scale=x_scale),
             y=alt.Y(f"{y_field}:Q", title=y_title, scale=y_scale),
-            color=alt.Color("msa:N", scale=COLOR_SCALE,
-                            legend=alt.Legend(title=None, orient="top-right",
-                                              symbolStrokeWidth=2)),
+            color=alt.Color("msa:N", scale=COLOR_SCALE, legend=legend),
         )
 
     others = df[~df["msa"].isin([HIGHLIGHT, BASELINE])]
@@ -149,6 +161,32 @@ def endpoint_labels(df, x_field, y_field, x_offset=0.4, min_gap=0.35, fmt="{:.1f
     latest["label_y"] = stagger(latest[y_field].tolist(), min_gap)
     latest["label"] = latest[y_field].map(lambda v: fmt.format(v))
     latest["label_x"] = latest[x_field] + x_offset
+
+    def text_layer(source, weight):
+        return alt.Chart(source).mark_text(
+            align="left", fontSize=11, fontWeight=weight,
+        ).encode(
+            x=alt.X("label_x:Q"),
+            y=alt.Y("label_y:Q"),
+            text="label:N",
+            color=alt.Color("msa:N", scale=COLOR_SCALE, legend=None),
+        )
+
+    hi = latest[latest["msa"] == HIGHLIGHT]
+    other = latest[latest["msa"] != HIGHLIGHT]
+    return text_layer(other, "normal") + text_layer(hi, "bold")
+
+
+def endpoint_name_labels(df, x_field, y_field, x_offset=0.3, min_gap=8):
+    """Text-mark layer showing the MSA name at the latest x for each peer,
+    staggered to avoid vertical overlap. Use instead of endpoint_labels when
+    you want direct line labels rather than a legend box.
+    """
+    latest = df.loc[df[x_field] == df[x_field].max()].copy()
+    latest = latest.set_index("msa").loc[PEER_ORDER].reset_index()
+    latest["label_y"] = stagger(latest[y_field].tolist(), min_gap)
+    latest["label_x"] = latest[x_field] + x_offset
+    latest["label"] = latest["msa"].map(ACRONYMS)
 
     def text_layer(source, weight):
         return alt.Chart(source).mark_text(
@@ -211,17 +249,20 @@ def chart_fdi():
     lines = layered_lines(
         idx_df, x_field="year", y_field="value",
         y_title="Inward FDI stock (index, 2015 = 100)",
-        x_domain=[2014.5, 2025.5],
+        x_domain=[2015, 2025.5],
+        show_legend=False,
     )
-    labels = endpoint_labels(idx_df, x_field="year", y_field="value",
-                             x_offset=0.15, min_gap=8, fmt="{:.0f}")
+    name_labels = endpoint_name_labels(
+        idx_df, x_field="year", y_field="value",
+        x_offset=0.2, min_gap=8,
+    )
     reference = alt.Chart(pd.DataFrame({"y": [100]})).mark_rule(
-        strokeDash=[2, 3], color="#999", strokeWidth=0.7
+        color="#cccccc", strokeWidth=1.2
     ).encode(y="y:Q")
 
-    left = (reference + lines + labels).properties(
+    left = (reference + lines + name_labels).properties(
         title=alt.TitleParams(
-            text="YNY FDI stock grew fastest — 157% since 2015",
+            text="YNYCA's FDI stock has grown fastest — but remains the smallest in Yorkshire",
             subtitle="Source: ONS Explore Local Statistics — Inward foreign "
                      "direct investment, published 12/05/2026. End-period "
                      "stock values.",
@@ -249,7 +290,8 @@ def chart_fdi():
     )
     def bar_label_layer(source, weight):
         return alt.Chart(source).mark_text(
-            align="left", dx=4, fontWeight=weight,
+            align="left", dx=4, fontSize=11, fontWeight=weight,
+            color=pallete["domain"],
         ).encode(
             x=alt.X("value_bn:Q"),
             y=alt.Y("msa:N", sort=sort_order),
@@ -260,10 +302,6 @@ def chart_fdi():
         bar_label_layer(bars_df[bars_df["msa"] == HIGHLIGHT], "bold")
     )
     right = (bars + bar_labels).properties(
-        title=alt.TitleParams(
-            text="…but from the smallest absolute base (2024)",
-            anchor="start", fontSize=13,
-        ),
         width=340, height=380,
     )
 
