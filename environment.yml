@@ -1,23 +1,29 @@
-name: datasci
+name: charts
 channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.11
+  - python=3.13
   - country_converter
   - pandas
+  - openpyxl
   - altair
   - vl-convert-python
   - beautifulsoup4
   - boto3
   - requests
   - selenium
+  - bs4
   - geopandas
   - ipykernel
   - notebook
   - openai
+  - anthropic
   - scikit-learn
   - scikit-optimize
   - scipy
   - seaborn
+  - python-dotenv
   - pip
+  - pip:
+      - git+https://github.com/jhellingsdata/ecostyles.git
