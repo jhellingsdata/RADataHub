@@ -1,0 +1,7 @@
+# Large raw data
+data/raw/gva/gva-by-industry-by-local-authority-time-series-v1.csv
+data/raw/agri/gva-by-industry-by-local-authority-time-series-v1.csv
+
+# macOS
+.DS_Store
+
