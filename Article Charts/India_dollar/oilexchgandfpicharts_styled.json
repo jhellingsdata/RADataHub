@@ -1,0 +1,569 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "spacing": 24,
+  "hconcat": [
+    {
+      "width": 260,
+      "height": 220,
+      "title": "Brent crude (US$ per barrel)",
+      "data": {
+        "url": "https://raw.githubusercontent.com/vkumarilse/vkumarilse.github.io/refs/heads/main/brentcrudeoilpriceeia.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "Month": "date:'%b %Y'",
+            "Brent Spot Price FOB  Dollars per Barrel": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "isValid(datum['Brent Spot Price FOB  Dollars per Barrel'])"
+        },
+        {
+          "filter": "year(datum.Month) == 2026"
+        },
+        {
+          "calculate": "datum['Brent Spot Price FOB  Dollars per Barrel']",
+          "as": "brent"
+        },
+        {
+          "sort": [
+            {
+              "field": "Month",
+              "order": "ascending"
+            }
+          ]
+        }
+      ],
+      "layer": [
+        {
+          "data": {
+            "values": [
+              {
+                "d": "2026-02-28"
+              }
+            ]
+          },
+          "mark": {
+            "type": "rule",
+            "strokeDash": [
+              4,
+              3
+            ],
+            "strokeWidth": 1.5,
+            "color": "#9CA3AF"
+          },
+          "encoding": {
+            "x": {
+              "field": "d",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "line": {
+              "strokeWidth": 2.5,
+              "color": "#DC2626"
+            },
+            "point": {
+              "filled": true,
+              "size": 50,
+              "color": "#e6224b"
+            },
+            "color": "#e6224b",
+            "interpolate": "monotone",
+            "clip": true
+          },
+          "encoding": {
+            "x": {
+              "field": "Month",
+              "type": "temporal",
+              "scale": {
+                "domain": [
+                  "2025-12-20",
+                  "2026-05-30"
+                ]
+              },
+              "axis": {
+                "values": [
+                  "2026-01-01",
+                  "2026-02-01",
+                  "2026-03-01",
+                  "2026-04-01",
+                  "2026-05-01"
+                ],
+                "format": "%b"
+              }
+            },
+            "y": {
+              "field": "brent",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  55,
+                  130
+                ]
+              },
+              "axis": {
+                "values": [
+                  60,
+                  80,
+                  100,
+                  120
+                ],
+                "labelExpr": "'$' + datum.value"
+              }
+            },
+            "tooltip": [
+              {
+                "field": "Month",
+                "type": "temporal",
+                "format": "%B %Y",
+                "title": "Month"
+              },
+              {
+                "field": "brent",
+                "type": "quantitative",
+                "format": ".1f",
+                "title": "$/barrel"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 260,
+      "height": 220,
+      "title": "Net FPI flows (US$ billion)",
+      "data": {
+        "values": [
+          {
+            "date": "2026-01-01",
+            "fpi": -3235
+          },
+          {
+            "date": "2026-02-01",
+            "fpi": 4167
+          },
+          {
+            "date": "2026-03-01",
+            "fpi": -13600
+          },
+          {
+            "date": "2026-04-01",
+            "fpi": -7559
+          },
+          {
+            "date": "2026-05-01",
+            "fpi": -3083
+          }
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "values": [
+              {
+                "d": "2026-02-28"
+              }
+            ]
+          },
+          "mark": {
+            "type": "rule",
+            "strokeDash": [
+              4,
+              3
+            ],
+            "strokeWidth": 1.5,
+            "color": "#9CA3AF"
+          },
+          "encoding": {
+            "x": {
+              "field": "d",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "color": "#D1D5DB",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "y": {
+              "datum": 0,
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "point": {
+              "filled": true,
+              "size": 50,
+              "color": "#179fdb"
+            },
+            "strokeWidth": 2.5,
+            "color": "#179fdb",
+            "interpolate": "monotone",
+            "clip": true
+          },
+          "encoding": {
+            "x": {
+              "field": "date",
+              "type": "temporal",
+              "scale": {
+                "domain": [
+                  "2025-12-20",
+                  "2026-05-10"
+                ]
+              },
+              "axis": {
+                "values": [
+                  "2026-01-01",
+                  "2026-02-01",
+                  "2026-03-01",
+                  "2026-04-01",
+                  "2026-05-01"
+                ],
+                "format": "%b"
+              }
+            },
+            "y": {
+              "field": "fpi_bn",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  -15,
+                  5
+                ]
+              },
+              "axis": {
+                "values": [
+                  -12,
+                  -8,
+                  -4,
+                  0,
+                  4
+                ],
+                "labelExpr": "'$' + format(datum.value, '.1f') + ' bn'",
+                "titleColor": "#6B7280",
+                "titleFontSize": 10,
+                "titleFontWeight": "normal"
+              }
+            },
+            "tooltip": [
+              {
+                "field": "date",
+                "type": "temporal",
+                "format": "%B %Y",
+                "title": "Month"
+              },
+              {
+                "field": "fpi_bn",
+                "type": "quantitative",
+                "format": ",.2f",
+                "title": "Net FPI (US$ bn)"
+              }
+            ]
+          }
+        }
+      ],
+      "transform": [
+        {
+          "calculate": "datum.fpi / 1000",
+          "as": "fpi_bn"
+        }
+      ]
+    },
+    {
+      "width": 260,
+      "height": 220,
+      "title": "\u20b9 per US$ (monthly average)",
+      "data": {
+        "url": "https://raw.githubusercontent.com/vkumarilse/vkumarilse.github.io/refs/heads/main/exchginrusd.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "observation_date": "date:'%d-%m-%Y'",
+            "DEXINUS": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "isValid(datum.DEXINUS)"
+        },
+        {
+          "filter": "year(datum.observation_date) == 2026"
+        }
+      ],
+      "layer": [
+        {
+          "data": {
+            "values": [
+              {
+                "d": "2026-02-28"
+              }
+            ]
+          },
+          "mark": {
+            "type": "rule",
+            "strokeDash": [
+              4,
+              3
+            ],
+            "strokeWidth": 1.5,
+            "color": "#9CA3AF"
+          },
+          "encoding": {
+            "x": {
+              "field": "d",
+              "type": "temporal"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "point": {
+              "filled": true,
+              "size": 50,
+              "color": "#36b7b4"
+            },
+            "strokeWidth": 2.5,
+            "color": "#36b7b4",
+            "interpolate": "monotone",
+            "clip": true
+          },
+          "encoding": {
+            "x": {
+              "field": "observation_date",
+              "type": "temporal",
+              "scale": {
+                "domain": [
+                  "2025-12-20",
+                  "2026-05-10"
+                ]
+              },
+              "axis": {
+                "values": [
+                  "2026-01-01",
+                  "2026-02-01",
+                  "2026-03-01",
+                  "2026-04-01",
+                  "2026-05-01"
+                ],
+                "format": "%b"
+              }
+            },
+            "y": {
+              "field": "DEXINUS",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  89,
+                  97
+                ]
+              },
+              "axis": {
+                "values": [
+                  90,
+                  92,
+                  94,
+                  96
+                ],
+                "labelExpr": "'\u20b9' + datum.value"
+              }
+            },
+            "tooltip": [
+              {
+                "field": "observation_date",
+                "type": "temporal",
+                "format": "%B %Y",
+                "title": "Month"
+              },
+              {
+                "field": "DEXINUS",
+                "type": "quantitative",
+                "format": ".2f",
+                "title": "\u20b9 per US$"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4,
+      "grid": false
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5,
+      "grid": false
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": false
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5,
+      "grid": false
+    },
+    "title": {
+      "color": "#676A86E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    }
+  },
+  "title": {
+    "text": [
+      "Source: EIA, NSDL, Federal Reserve H.10"
+    ],
+    "orient": "bottom",
+    "fontStyle": "italic",
+    "fontSize": 10,
+    "color": "#676A8680",
+    "fontWeight": "normal",
+    "frame": "group",
+    "dx": 0,
+    "offset": 7
+  },
+  "width": 450,
+  "height": 360
+}
