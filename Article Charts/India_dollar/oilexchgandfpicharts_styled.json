@@ -252,7 +252,7 @@
                   0,
                   4
                 ],
-                "labelExpr": "'$' + format(datum.value, '.1f') + ' bn'",
+                "labelExpr": "'$' + format(datum.value, '.0f') + ' bn'",
                 "titleColor": "#6B7280",
                 "titleFontSize": 10,
                 "titleFontWeight": "normal"
