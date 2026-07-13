@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "spacing": 24,
+  "spacing": 10,
   "hconcat": [
     {
-      "width": 260,
+      "width": 200,
       "height": 220,
       "title": "Brent crude (US$ per barrel)",
       "data": {
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "width": 260,
+      "width": 200,
       "height": 220,
       "title": "Net FPI flows (US$ billion)",
       "data": {
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "width": 260,
+      "width": 200,
       "height": 220,
       "title": "\u20b9 per US$ (monthly average)",
       "data": {
@@ -563,7 +563,5 @@
     "frame": "group",
     "dx": 0,
     "offset": 7
-  },
-  "width": 450,
-  "height": 360
+  }
 }
