@@ -1,0 +1,218 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json",
+  "config": {
+    "font": "Circular Std",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "discreteWidth": 400,
+      "discreteHeight": 300
+    },
+    "range": {
+      "category": [
+        "#36B7B4",
+        "#E6224B",
+        "#F4C245",
+        "#0063AF",
+        "#00A767",
+        "#179FDB",
+        "#EB5C2E"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#e6224b"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 12,
+      "labelFont": "Circular Std",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#676A86E6",
+      "subtitleColor": "#676A86",
+      "font": "Circular Std",
+      "subtitleFont": "Circular Std",
+      "anchor": "start",
+      "fontSize": 14,
+      "subtitleFontSize": 12,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 11
+    },
+    "tooltipFormat": {
+      "numberFormat": ".1f"
+    }
+  },
+
+  "encoding": {
+    "y": {
+      "field": "category",
+      "title": null,
+      "type": "nominal",
+      "sort": {"field": "wellbeing_gap", "op": "max", "order": "descending"}
+    }
+  },
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point", "on": "pointerover",
+            "fields": ["category"],
+            "clear": "false"
+          },
+          "value": [{"category": "Job Quality Index"}]
+        }
+      ],
+      "mark": {
+        "type": "bar",
+        "tooltip": {
+         "expr": "datum.note + '\\nGap: ' + format(datum.wellbeing_gap, '.1f')"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "wellbeing_gap",
+          "type": "quantitative",
+          "title": "Difference in WHO-5 wellbeing score (0-100 scale)",
+          "scale": {"domain": [0,18]}
+        },
+        "opacity": {"condition": {"param": "hover"}, "value": 0.6}
+      }
+    },
+    {
+
+      "mark": {"type": "text", "align": "right", "yOffset": -40, "lineBreak": "\n"},
+      "transform": [
+        {"filter": {"param": "hover", "empty": false}}
+      ],
+      "encoding": {
+        "text": {"field": "label"},
+        "x": {"value": "width"},
+        "y": {"value": "height"}
+      }
+    }
+  ],
+  "resolve": {"scale": {"y": "shared"}},
+  "data": {"name": "data-d33b993fa2df22690738c9d14808bc97"},
+  "height": 270,
+  "width": 400,
+  "datasets": {
+    "data-d33b993fa2df22690738c9d14808bc97": [
+      {
+        "category": "Job Quality Index",
+        "high": 16.47661251,
+        "low": 14.90103397,
+        "wellbeing_gap": 15.7,
+        "note": "Middle job quality versus bottom 10%",
+        "label": "Workers in mid-quality jobs score\n15.7 points higher than those\nin the bottom 10% of job quality."
+      },
+      {
+        "category": "Physical Health",
+        "high": 15.86607582,
+        "low": 15.23584441,
+        "wellbeing_gap": 15.6,
+        "note": "Good versus poor physical health",
+        "label": "Workers in good physical health\nscore 15.6 points higher than\nthose in poor physical health."
+      },
+      {
+        "category": "Education",
+        "high": 2.355489906,
+        "low": 1.744953225,
+        "wellbeing_gap": 2.1,
+        "note": "University-educated versus others",
+        "label": "University-educated workers\nscore 2.1 points higher than\nother workers."
+      },
+      {
+        "category": "Age",
+        "high": 2.335795175,
+        "low": 1.705563762,
+        "wellbeing_gap": 2.0,
+        "note": "Other ages versus age 45-54",
+        "label": "Workers outside age 45-54\nscore 2.0 points higher than\nworkers aged 45-54."
+      },
+      {
+        "category": "Gender",
+        "high": 2.138847858,
+        "low": 1.587395372,
+        "wellbeing_gap": 1.9,
+        "note": "Men versus women",
+        "label": "Men score 1.9 points\nhigher than women."
+      },
+      {
+        "category": "Partnership",
+        "high": 1.626784835,
+        "low": 0.878385032,
+        "wellbeing_gap": 1.3,
+        "note": "Partnered versus single",
+        "label": "Partnered workers score\n1.3 points higher than\nsingle workers."
+      },
+      {
+        "category": "Children",
+        "high": 1.429837518,
+        "low": 0.661742984,
+        "wellbeing_gap": 1.1,
+        "note": "No child under 16 versus any child under 16",
+        "label": "Workers with no child under 16\nscore 1.1 points higher than\nthose with children under 16."
+      }
+    ]
+  }
+}

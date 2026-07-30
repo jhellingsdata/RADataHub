@@ -1,0 +1,201 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.2.0.json",
+  "width": "container",
+  "height": 300,
+  "autosize": {"type": "fit", "contains": "padding"},
+  "config": {
+    "background": null,
+    "view": {"stroke": null},
+    "font": "system-ui, sans-serif"
+  },
+  "layer": [
+    {
+      "description": "Episode shading — 2022 and 2026 stress periods",
+      "data": {
+        "values": [
+          {"x1": "2022-02-01", "x2": "2022-12-31", "y1": 72, "y2": 100},
+          {"x1": "2026-02-01", "x2": "2026-05-31", "y1": 72, "y2": 100}
+        ]
+      },
+      "mark": {"type": "rect", "clip": true},
+      "encoding": {
+        "x": {
+          "field": "x1",
+          "type": "temporal",
+          "scale": {"domain": ["2022-01-01", "2026-06-01"]}
+        },
+        "x2": {"field": "x2", "type": "temporal"},
+        "y": {
+          "field": "y1",
+          "type": "quantitative",
+          "scale": {"domain": [72, 100]}
+        },
+        "y2": {"field": "y2", "type": "quantitative"},
+        "color": {"value": "#F59E0B"},
+        "opacity": {"value": 0.15},
+        "stroke": {"value": null}
+      }
+    },
+    {
+      "description": "Vertical event lines — Ukraine invasion, JPMorgan GBI-EM inclusion, Hormuz closure",
+      "data": {
+        "values": [
+          {"event_date": "2022-02-01", "event": "Ukraine invasion"},
+          {"event_date": "2026-02-01", "event": "Hormuz closure"}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "strokeDash": [4, 3],
+        "strokeWidth": 1.5,
+        "color": "#6B7280"
+      },
+      "encoding": {"x": {"field": "event_date", "type": "temporal"}}
+    },
+    {
+      "description": "Main INR/USD line — loaded from exchginrusd.csv",
+      "data": {
+        "url": "https://raw.githubusercontent.com/vkumarilse/vkumarilse.github.io/refs/heads/main/exchginrusd.csv",
+        "format": {
+          "type": "csv",
+          "parse": {"observation_date": "date:'%d-%m-%Y'", "DEXINUS": "number"}
+        }
+      },
+      "transform": [{"filter": "isValid(datum.DEXINUS)"}],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "interpolate": "monotone",
+        "clip": true,
+        "color": "#185FA5"
+      },
+      "encoding": {
+        "x": {
+          "field": "observation_date",
+          "type": "temporal",
+          "scale": {"domain": ["2022-01-01", "2026-06-01"]},
+          "axis": {
+            "values": [
+              "2022-01-01",
+              "2022-07-01",
+              "2023-01-01",
+              "2023-07-01",
+              "2024-01-01",
+              "2024-07-01",
+              "2025-01-01",
+              "2025-07-01",
+              "2026-01-01"
+            ],
+            "format": "%b '%y",
+            "labelAngle": 0,
+            "title": null,
+            "gridColor": "transparent",
+            "tickSize": 4
+          }
+        },
+        "y": {
+          "field": "DEXINUS",
+          "type": "quantitative",
+          "scale": {"domain": [72, 100]},
+          "axis": {
+            "orient": "right",
+            "values": [75, 80, 85, 90, 95, 100],
+            "labelExpr": "'₹' + datum.value",
+            "title": null,
+            "tickColor": "transparent",
+            "domainColor": "transparent",
+            "gridWidth": 1
+          }
+        }
+      }
+    },
+    {
+      "description": "Tooltip hover overlay — same source as main line",
+      "data": {
+        "url": "https://raw.githubusercontent.com/vkumarilse/vkumarilse.github.io/refs/heads/main/exchginrusd.csv",
+        "format": {
+          "type": "csv",
+          "parse": {"observation_date": "date:'%d-%m-%Y'", "DEXINUS": "number"}
+        }
+      },
+      "transform": [{"filter": "isValid(datum.DEXINUS)"}],
+      "mark": {"type": "point", "opacity": 0, "size": 100},
+      "encoding": {
+        "x": {"field": "observation_date", "type": "temporal"},
+        "y": {"field": "DEXINUS", "type": "quantitative"},
+        "tooltip": [
+          {
+            "field": "observation_date",
+            "type": "temporal",
+            "format": "%B %Y",
+            "title": "Month"
+          },
+          {
+            "field": "DEXINUS",
+            "type": "quantitative",
+            "format": ".2f",
+            "title": "₹ per US$"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Highlight dots — Dec 2022 monthly peak and May 2026 intraday record (not in CSV)",
+      "data": {
+        "values": [
+          {
+            "observation_date": "2022-12-01",
+            "DEXINUS": 82.47,
+            "note": "2022 peak"
+          },
+          {
+            "observation_date": "2026-05-20",
+            "DEXINUS": 96.89,
+            "note": "May 2026 record (intraday, RBI 2026b)"
+          }
+        ]
+      },
+      "mark": {"type": "point", "size": 55, "filled": true, "clip": true},
+      "encoding": {
+        "x": {"field": "observation_date", "type": "temporal"},
+        "y": {"field": "DEXINUS", "type": "quantitative"},
+        "color": {
+          "field": "note",
+          "scale": {"range": ["#92400E", "#B91C1C"]},
+          "legend": null
+        }
+      }
+    },
+    {
+      "description": "Value labels for the two highlight points",
+      "data": {
+        "values": [
+          {
+            "observation_date": "2022-12-01",
+            "DEXINUS": 82.47,
+            "label": "₹82.47 (2022 peak)"
+          },
+          {
+            "observation_date": "01-05-2026",
+            "DEXINUS": 96.82,
+            "label": "₹96.82 (record)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": "bold",
+        "align": "right",
+        "dx": -8,
+        "dy": -10,
+        "clip": true
+      },
+      "encoding": {
+        "x": {"field": "observation_date", "type": "temporal"},
+        "y": {"field": "DEXINUS", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    }
+  ]
+}
