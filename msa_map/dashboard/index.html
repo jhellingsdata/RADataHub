@@ -57,8 +57,6 @@ const fmtDec1  = v => v.toLocaleString('en-GB', { minimumFractionDigits: 1, maxi
 // Indicator table definitions, in display order, grouped by `group`.
 // better: 'higher' | 'lower' | 'context' — drives delta colour + comparison wording.
 // benchmarkKey/benchmarkValue → "vs England" column; omit when no benchmark exists (cell shows "Pending").
-// changeKey → "Change" column pulls a different indicator field representing change-over-time
-//   (only gva_ph_2023 has one available — gva_growth_2018_23). Omit elsewhere (cell shows "Pending").
 // rankKey looks up msa.ranks; omit to show "Pending" in the Rank column.
 const INDICATOR_CONFIG = [
   {
@@ -70,12 +68,18 @@ const INDICATOR_CONFIG = [
     group: 'Snapshot', key: 'rural_urban_score', label: 'Rural/urban score', sourceYear: 'ONS RUC 2021, mid-2024 population-weighted',
     unit: '0 = fully urban, 100 = fully rural', format: fmtDec1, better: 'context',
     benchmarkKey: 'rural_urban_score', rankKey: 'rural_urban_score',
+    technicalNote: `
+      <p>This score summarises how rural or urban an area is, based on the official ONS Rural Urban Classification (2021) of Output Areas — the smallest geography ONS publishes, each covering roughly 300 residents.</p>
+      <p>Each Output Area is scored 0&ndash;100 based on its ONS classification (0 = urban, 100 = the most rural category), then combined up to MSA level weighted by where people actually live (ONS mid-2024 population estimates), not by land area.</p>
+      <p>The &ldquo;Predominantly Rural&rdquo; / &ldquo;Predominantly Urban&rdquo; label compares an MSA's score against England's own population-weighted average (12.7) &mdash; not a strict &ldquo;over 50% of residents live somewhere rural&rdquo; rule, since no MSA in England actually meets that bar.</p>
+      <p>Because the score is population-weighted, a large rural MSA containing one major city can still land as &ldquo;Predominantly Urban&rdquo; overall, since most of its residents live in that city.</p>
+      <p class="tech-note-source">Source: ONS Rural Urban Classification 2021 &middot; ONS mid-2024 Small Area Population Estimates</p>
+    `,
   },
   {
     group: 'Economy', key: 'gva_ph_2023', label: 'GVA per head', sourceYear: 'ONS, 2023',
     unit: '', format: v => '£' + fmtInt(v), better: 'higher',
     benchmarkKey: 'gva_ph_2023', rankKey: 'gva_ph_2023',
-    changeKey: 'gva_growth_2018_23', changeSinceLabel: 'since 2018',
   },
   {
     group: 'Economy', key: 'gva_growth_2018_23', label: 'GVA growth 2018–23', sourceYear: 'ONS, 2018–2023',
@@ -195,7 +199,6 @@ function renderIndicatorTable(msa) {
         <th class="col-indicator">Indicator</th>
         <th class="col-latest">Latest</th>
         <th class="col-vs-england">vs England</th>
-        <th class="col-change">Change</th>
         <th class="col-rank">Rank in MSAs</th>
       </tr>
     </thead>
@@ -209,7 +212,7 @@ function renderIndicatorTable(msa) {
       currentGroup = cfg.group;
       const groupRow = document.createElement('tr');
       groupRow.className = 'group-row';
-      groupRow.innerHTML = `<td colspan="5">${cfg.group}</td>`;
+      groupRow.innerHTML = `<td colspan="4">${cfg.group}</td>`;
       tbody.appendChild(groupRow);
     }
 
@@ -223,7 +226,7 @@ function renderIndicatorTable(msa) {
           <div class="ind-name">${cfg.label}</div>
           <div class="ind-source">${cfg.sourceYear}</div>
         </td>
-        <td colspan="4"><span class="pending">Pending</span></td>
+        <td colspan="3"><span class="pending">Pending</span></td>
       `;
       tbody.appendChild(row);
       return;
@@ -253,34 +256,27 @@ function renderIndicatorTable(msa) {
       `;
     }
 
-    // CHANGE (time-based — only populated where a real change-over-time field exists)
-    let changeHtml = `<span class="pending">Pending</span>`;
-    if (cfg.changeKey) {
-      const changeVal = msa.indicators[cfg.changeKey];
-      if (changeVal !== null && changeVal !== undefined) {
-        const sign = changeVal >= 0 ? '+' : '−';
-        const colourClass = changeVal >= 0 ? 'pos' : 'neg';
-        changeHtml = `
-          <span class="delta ${colourClass}">${sign}${fmtDec1(Math.abs(changeVal))}%</span>
-          <div class="sub-line">${cfg.changeSinceLabel}</div>
-        `;
-      }
-    }
-
     // RANK
     const rank = cfg.rankKey ? msa.ranks[cfg.rankKey] : null;
     const rankHtml = (rank !== null && rank !== undefined)
       ? `<span class="rank-num">${rank}</span><span class="rank-denom"> / 20</span>`
       : `<span class="pending">Pending</span>`;
 
+    const technicalNoteHtml = cfg.technicalNote ? `
+      <details class="tech-note">
+        <summary>How is this calculated?</summary>
+        <div class="tech-note-body">${cfg.technicalNote}</div>
+      </details>
+    ` : '';
+
     row.innerHTML = `
       <td class="cell-indicator">
         <div class="ind-name">${cfg.label}</div>
         <div class="ind-source">${cfg.sourceYear}</div>
+        ${technicalNoteHtml}
       </td>
       <td class="cell-latest">${latestHtml}</td>
       <td class="cell-vs-england">${vsEnglandHtml}</td>
-      <td class="cell-change">${changeHtml}</td>
       <td class="cell-rank">${rankHtml}</td>
     `;
     tbody.appendChild(row);

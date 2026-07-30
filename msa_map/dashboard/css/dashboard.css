@@ -225,8 +225,7 @@ h1, h2, h3 { font-weight: inherit; }
 }
 
 #indicator-table thead th.col-latest,
-#indicator-table thead th.col-vs-england,
-#indicator-table thead th.col-change {
+#indicator-table thead th.col-vs-england {
   width: 18%;
 }
 
@@ -276,6 +275,64 @@ h1, h2, h3 { font-weight: inherit; }
   font-size: 12px;
   font-style: italic;
   color: var(--muted-text);
+}
+
+.tech-note {
+  margin-top: 8px;
+}
+
+.tech-note summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--teal);
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tech-note summary::-webkit-details-marker { display: none; }
+
+.tech-note summary::before {
+  content: '▸';
+  font-size: 10px;
+  transition: transform 0.15s ease;
+}
+
+.tech-note[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.tech-note summary:hover {
+  text-decoration: underline;
+}
+
+.tech-note-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--muted-text);
+  background: #F7F6F1;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 12px 14px;
+  margin-top: 8px;
+  max-width: 480px;
+}
+
+.tech-note-body p {
+  margin: 0 0 8px 0;
+}
+
+.tech-note-body p:last-child {
+  margin-bottom: 0;
+}
+
+.tech-note-body .tech-note-source {
+  font-style: italic;
+  font-size: 11.5px;
 }
 
 .latest-value {
