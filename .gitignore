@@ -21,6 +21,9 @@ __pycache__/
 # Ignore system-specific temporary files or backups
 *~
 
+# ignore word docs (e.g. article drafts)
+*.docx
+
 **/.DS_Store
 e4e/.DS_Store
 ChartOfTheDay/templates/cpi/geckodriver.log
