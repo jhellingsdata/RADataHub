@@ -1,29 +1,46 @@
-name: charts
+# ---------------------------------------------------------------------------
+# Legacy conda environment, kept for existing setups.
+#
+# New contributors should use uv instead - see README.md. uv is faster and
+# uses the committed uv.lock, so everyone gets identical package versions.
+#
+# This file mirrors the CORE dependency set in pyproject.toml. If you change
+# packages there, mirror the change here (or just move over to uv).
+#
+#   conda env create -f environment.yml
+#   conda activate radatahub
+# ---------------------------------------------------------------------------
+name: radatahub
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.13
-  - country_converter
-  - pandas
-  - openpyxl
-  - altair
-  - vl-convert-python
-  - beautifulsoup4
-  - boto3
-  - requests
-  - selenium
-  - bs4
-  - geopandas
-  - ipykernel
-  - notebook
-  - openai
-  - anthropic
-  - scikit-learn
-  - scikit-optimize
-  - scipy
-  - seaborn
-  - python-dotenv
+  # Charting
+  - altair>=6.2
+  - vl-convert-python>=1.9
+  - matplotlib>=3.10
+  # Data handling
+  - pandas>=2.2
+  - numpy>=2.0
+  - openpyxl>=3.1
+  - scipy>=1.15
+  # Fetching
+  - requests>=2.32
+  - beautifulsoup4>=4.13
+  # Country / region codes
+  - pycountry>=24.6
+  - country_converter>=1.2
+  # Mapping
+  - geopandas>=1.0
+  - shapely>=2.0
+  - pyproj>=3.7
+  # Notebooks
+  - ipykernel>=7.0
+  - jupyterlab>=4.4
+  # Secrets
+  - python-dotenv>=1.0
   - pip
   - pip:
-      - git+https://github.com/jhellingsdata/ecostyles.git
+      # House Altair theme - not on conda-forge, install from PyPi or git.
+      - ecostyles>=0.2.0
+      # - git+https://github.com/jhellingsdata/ecostyles.git
