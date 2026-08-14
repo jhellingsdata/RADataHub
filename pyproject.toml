@@ -1,0 +1,87 @@
+[project]
+name = "radatahub"
+version = "0.1.0"
+description = "Data and chart spec hub for ECO RA projects"
+readme = "README.md"
+requires-python = ">=3.13"
+
+# Core: everything the typical notebook in this repo needs.
+# `uv sync` installs exactly this set.
+dependencies = [
+    # Charting
+    "altair>=6.2",
+    "vl-convert-python>=1.9",       # chart.save() to PNG/SVG/PDF
+    "ecostyles",                    # house theme (git dependency, see [tool.uv.sources])
+    "matplotlib>=3.10",             # occasional non-Altair plots + geopandas .plot()
+    # Data handling
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "openpyxl>=3.1",                # pandas .read_excel()
+    "scipy>=1.15",
+    # Fetching
+    "requests>=2.32",
+    "beautifulsoup4>=4.13",
+    # Country / region codes
+    "pycountry>=24.6",
+    "country-converter>=1.2",
+    # Mapping
+    "geopandas>=1.0",
+    "shapely>=2.0",
+    "pyproj>=3.7",
+    # Notebooks
+    "ipykernel>=7.0",
+    "jupyterlab>=4.4",
+    # Secrets (keep API keys out of committed notebooks)
+    "python-dotenv>=1.0",
+]
+
+# Optional extras, installed on demand:
+#   uv sync --group scraping      (one group)
+#   uv sync --all-groups          (everything)
+[dependency-groups]
+
+# Browser automation and HTML-to-text scraping.
+scraping = [
+    "selenium>=4.30",
+    "html2text>=2024.2",
+]
+
+# Wrappers for specific statistical data providers.
+data-sources = [
+    "fredapi>=0.5",                 # US Federal Reserve (FRED)
+    "wbgapi>=1.0",                  # World Bank
+    "wbdata>=1.0",                  # World Bank (alternative client)
+    "comtradeapicall>=1.3",         # UN Comtrade
+    "census>=0.8",                  # US Census Bureau
+    "us>=3.2",                      # US state FIPS codes
+    "tabula-py>=2.10",              # tables out of PDFs (needs a Java runtime)
+]
+
+# LLM work (see misc/LLM_practical/).
+ai = [
+    "openai>=1.60",
+    "anthropic>=0.40",
+    "markitdown>=0.1",
+    "markdown>=3.7",
+    "annoy>=1.17",
+]
+
+# Long-tail packages used by only one or two notebooks.
+extras = [
+    "plotly>=6.0",
+    "kaleido>=1.0",                 # plotly static image export
+    "folium>=0.19",                 # interactive leaflet maps
+    "vega-datasets>=0.9",           # sample data for teaching notebooks
+    "cairosvg>=2.7",
+    "pillow>=11.0",
+    "statsmodels>=0.14",
+    "tqdm>=4.67",
+    "psutil>=6.0",
+]
+
+[tool.uv]
+# This repo is a collection of scripts and notebooks, not an installable package.
+package = false
+
+[tool.uv.sources]
+ecostyles = { git = "https://github.com/jhellingsdata/ecostyles.git" }

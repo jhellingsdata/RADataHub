@@ -1,6 +1,8 @@
 # Ignore Python virtual environments
 venv/
-
+*.env/
+*.venv/
+*.env
 # Ignore the __pycache__ directory
 __pycache__/
 
@@ -8,13 +10,19 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Ignore the .vscode directory
-.vscode/
+*.vscode/
+.vscode
+.vscode/settings.json
+!.vscode/settings.json
 
 # Ignore any compiled Python files
 *.pyc
 
 # Ignore system-specific temporary files or backups
 *~
+
+# ignore word docs (e.g. article drafts)
+*.docx
 
 **/.DS_Store
 e4e/.DS_Store

@@ -66,8 +66,8 @@ import requests
 # =============================================================================
 # CONFIG -- edit these
 # =============================================================================
-REPO_DIR = "/Users/alonso/Desktop/LSE/GROWTH LAB/ChartofthedayRepo/el_salvador"
-DATA_DIR = REPO_DIR                          # the two supplied CSVs live here
+REPO_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(REPO_DIR, "data")   # the two supplied CSVs live here
 CACHE_DIR = os.path.join(REPO_DIR, "data")  # optional live-fetch fallbacks
 OUTPUT_DIR = os.path.join(REPO_DIR, "output")
 
@@ -154,9 +154,9 @@ def make_header(title_text, subtitle_text=None, width=WIDTH, title_size=16, subt
     ).encode(text=alt.value(subtitle_text)).properties(width=width, height=18)
     return alt.vconcat(title, subtitle, spacing=1)
 
-def compose(header, main, footer):
-    # Removed .configure_padding({"top": 10}) which caused the crash
-    return alt.vconcat(header, main, footer, spacing=6).resolve_scale(
+def compose(main, header=None, footer=None):
+    parts = [p for p in [header, main, footer] if p is not None]
+    return alt.vconcat(*parts, spacing=6).resolve_scale(
         color="independent"
     ).configure_view(strokeWidth=0).configure_concat(spacing=4)
 def save_chart(chart, name):
@@ -316,7 +316,7 @@ def build_fig1():
                      civil_war, bukele_label, end).properties(width=WIDTH, height=HEIGHT)
     footer = make_footer("Source: World Bank, World Development Indicators.", WIDTH)
     print(f"[fig1] latest_year={latest_year} latest_ratio={latest_ratio:.2f}%")
-    return compose(header, main, footer)
+    return compose(main) #compose(header, main, footer)
 
 
 # =============================================================================
@@ -334,28 +334,38 @@ def build_fig2():
     df["order"] = df["Sector"].map(lambda s: 1 if s in HIGHLIGHT else 0)  
 
     last = df[df.Year == 2024].copy()
-    NUDGE = {}  
-    last["label_y"] = last.apply(lambda r: r["pct"] * NUDGE.get(r["Sector"], 1.0), axis=1)
+    # Absolute y-offsets in % units — adjust per-sector to separate overlapping labels
+    NUDGE = {
+        "Services":   0.01,
+        "Chemicals":  0.008,
+        "Metals":     0.008,
+        "Stone":      0.004,
+        "Electronics": 0.008,
+        "Vehicles":   0,
+        "Minerals":   0.008,
+        "Machinery":  0.004,
+    }
+    last["label_y"] = last.apply(lambda r: r["pct"] + NUDGE.get(r["Sector"], 0), axis=1)
 
-    X_DOMAIN, Y_DOMAIN = [1994, 2031], [0.0003, 0.35]
+    X_DOMAIN, Y_DOMAIN = [1994, 2031], [0, 0.28]
+    Y_TICKS = [0, 0.05, 0.10, 0.15, 0.20, 0.25]
     x = alt.X("Year:Q", scale=alt.Scale(domain=X_DOMAIN, nice=False),
               axis=alt.Axis(
-                  values=[1995, 2005, 2015, 2024], format="d", 
+                  values=[1995, 2005, 2015, 2024], format="d",
                   domain=True, domainColor=pallete["domain"], domainWidth=1, domainOpacity=0.5))
-    
-    # Native Y axis
-    y = alt.Y("pct:Q", scale=alt.Scale(type="log", domain=Y_DOMAIN, nice=False),
+
+    y = alt.Y("pct:Q", scale=alt.Scale(domain=Y_DOMAIN, nice=False),
               axis=alt.Axis(
-                  values=[0.001, 0.01, 0.1], labelExpr="format(datum.value, '~r') + '%'",
+                  values=Y_TICKS, labelExpr="format(datum.value, '.2f') + '%'",
                   title="Share of world exports (%)", grid=True,
                   domain=True, domainColor=pallete["domain"], domainWidth=1, domainOpacity=0.5))
 
     lines = alt.Chart(df).mark_line(strokeWidth=2.25).encode(
         x=x, y=y, detail="Sector:N", order="order:Q", color=alt.Color("lcol:N", scale=None))
-    labels = alt.Chart(last).mark_text(
+    labels = alt.Chart(last[last["Sector"].isin(HIGHLIGHT)]).mark_text(
         align="left", dx=6, fontWeight=LABEL_WEIGHT, fontSize=LABEL_SIZE).encode(
         x=alt.X("Year:Q", scale=alt.Scale(domain=X_DOMAIN, nice=False)),
-        y=alt.Y("label_y:Q", scale=alt.Scale(type="log", domain=Y_DOMAIN, nice=False)),
+        y=alt.Y("label_y:Q", scale=alt.Scale(domain=Y_DOMAIN, nice=False)),
         text="Sector:N", color=alt.Color("tcol:N", scale=None))
     main = (lines + labels).properties(width=WIDTH, height=HEIGHT)
 
@@ -365,7 +375,7 @@ def build_fig2():
     )
     footer = make_footer(
         "Source: Atlas of Economic Complexity. Note: log scale.", WIDTH)
-    return compose(header, main, footer)
+    return compose(main) #compose(header, main, footer)
 
 
 # =============================================================================
@@ -476,7 +486,7 @@ def build_fig3():
     )
     footer = make_footer(
         "Source: Atlas of Economic Complexity, Harvard Growth Lab.", WIDTH)
-    return compose(header, main, footer)
+    return compose(main) #compose(header, main, footer)
 
 
 # =============================================================================
@@ -563,7 +573,7 @@ def build_fig5():
     footer = make_footer("Source: World Bank, World Development Indicators. "
                          "Note: negative values indicate net emigration.", WIDTH)
     print(f"[fig5] latest_year={latest_year} latest_ratio={latest_ratio:.3f}%")
-    return compose(header, main, footer)
+    return compose(main) #compose(header, main, footer)
 
 
 # =============================================================================
@@ -652,7 +662,7 @@ def _peer_panel(indicator, cache_name, cache_col, title, subtitle=None, footer_t
     main = alt.layer(*layers).properties(width=WIDTH, height=HEIGHT)
 
     footer = make_footer(footer_text, WIDTH)
-    return compose(header, main, footer)
+    return compose(main) #compose(header, main, footer)
 
 
 def build_fig6():
@@ -754,7 +764,7 @@ def build_fig7():
     main = alt.layer(bars, zero_line, value_labels,
                      covid_label, est_label).properties(width=WIDTH, height=HEIGHT)
     footer = make_footer("Source: World Bank, World Development Indicators.", WIDTH)
-    return compose(header, main, footer)
+    return compose(main) #compose(header, main, footer)
 
 
 # =============================================================================
@@ -889,7 +899,7 @@ def build_fig9():
     main = alt.layer(bukele_rule, lines, connectors, cat_labels, bukele_label).properties(
         width=WIDTH, height=HEIGHT)
     footer = make_footer("Source: Freedom House, Freedom in the World.", WIDTH)
-    return compose(header, main, footer)
+    return compose(main) #compose(header, main, footer))
 
 
 # =============================================================================
