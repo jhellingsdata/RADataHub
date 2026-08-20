@@ -38,10 +38,14 @@
 
   <div id="indicators-sections"></div>
 
+  <div id="deep-dive-section"></div>
 
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 <script>
 // ── Config ─────────────────────────────────────────────────────────────────
 const DATA_PATH         = '../data/processed/msa_all_indicators.json';
@@ -50,6 +54,7 @@ const LAD_GEOJSON_PATH  = '../data/processed/lad.geojson';
 const DEFAULT_MSA_ID    = 'ynyca';
 const TIERS             = ['Established', 'Existing', 'DPP'];
 const CHARTS_PATH        = '../data/processed/charts';
+const CHART_SPECS_PATH   = '../data/processed/chart_specs';
 
 const fmtInt   = v => Math.round(v).toLocaleString('en-GB');
 const fmtDec1  = v => v.toLocaleString('en-GB', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
@@ -57,8 +62,6 @@ const fmtDec1  = v => v.toLocaleString('en-GB', { minimumFractionDigits: 1, maxi
 // Indicator table definitions, in display order, grouped by `group`.
 // better: 'higher' | 'lower' | 'context' — drives delta colour + comparison wording.
 // benchmarkKey/benchmarkValue → "vs England" column; omit when no benchmark exists (cell shows "Pending").
-// changeKey → "Change" column pulls a different indicator field representing change-over-time
-//   (only gva_ph_2023 has one available — gva_growth_2018_23). Omit elsewhere (cell shows "Pending").
 // rankKey looks up msa.ranks; omit to show "Pending" in the Rank column.
 const INDICATOR_CONFIG = [
   {
@@ -70,12 +73,18 @@ const INDICATOR_CONFIG = [
     group: 'Snapshot', key: 'rural_urban_score', label: 'Rural/urban score', sourceYear: 'ONS RUC 2021, mid-2024 population-weighted',
     unit: '0 = fully urban, 100 = fully rural', format: fmtDec1, better: 'context',
     benchmarkKey: 'rural_urban_score', rankKey: 'rural_urban_score',
+    technicalNote: `
+      <p>This score summarises how rural or urban an area is, based on the official ONS Rural Urban Classification (2021) of Output Areas — the smallest geography ONS publishes, each covering roughly 300 residents.</p>
+      <p>Each Output Area is scored 0&ndash;100 based on its ONS classification (0 = urban, 100 = the most rural category), then combined up to MSA level weighted by where people actually live (ONS mid-2024 population estimates), not by land area.</p>
+      <p>The &ldquo;Predominantly Rural&rdquo; / &ldquo;Predominantly Urban&rdquo; label compares an MSA's score against England's own population-weighted average (12.7) &mdash; not a strict &ldquo;over 50% of residents live somewhere rural&rdquo; rule, since no MSA in England actually meets that bar.</p>
+      <p>Because the score is population-weighted, a large rural MSA containing one major city can still land as &ldquo;Predominantly Urban&rdquo; overall, since most of its residents live in that city.</p>
+      <p class="tech-note-source">Source: ONS Rural Urban Classification 2021 &middot; ONS mid-2024 Small Area Population Estimates</p>
+    `,
   },
   {
     group: 'Economy', key: 'gva_ph_2023', label: 'GVA per head', sourceYear: 'ONS, 2023',
     unit: '', format: v => '£' + fmtInt(v), better: 'higher',
     benchmarkKey: 'gva_ph_2023', rankKey: 'gva_ph_2023',
-    changeKey: 'gva_growth_2018_23', changeSinceLabel: 'since 2018',
   },
   {
     group: 'Economy', key: 'gva_growth_2018_23', label: 'GVA growth 2018–23', sourceYear: 'ONS, 2018–2023',
@@ -149,6 +158,7 @@ function renderProfile(id) {
     renderAuthorityHeader(msa);
     renderIndicatorTable(msa);
     renderBoundaryMap(msa);
+    renderDeepDive(msa);
 
     content.classList.remove('fading');
   }, 180);
@@ -195,7 +205,6 @@ function renderIndicatorTable(msa) {
         <th class="col-indicator">Indicator</th>
         <th class="col-latest">Latest</th>
         <th class="col-vs-england">vs England</th>
-        <th class="col-change">Change</th>
         <th class="col-rank">Rank in MSAs</th>
       </tr>
     </thead>
@@ -209,7 +218,7 @@ function renderIndicatorTable(msa) {
       currentGroup = cfg.group;
       const groupRow = document.createElement('tr');
       groupRow.className = 'group-row';
-      groupRow.innerHTML = `<td colspan="5">${cfg.group}</td>`;
+      groupRow.innerHTML = `<td colspan="4">${cfg.group}</td>`;
       tbody.appendChild(groupRow);
     }
 
@@ -223,7 +232,7 @@ function renderIndicatorTable(msa) {
           <div class="ind-name">${cfg.label}</div>
           <div class="ind-source">${cfg.sourceYear}</div>
         </td>
-        <td colspan="4"><span class="pending">Pending</span></td>
+        <td colspan="3"><span class="pending">Pending</span></td>
       `;
       tbody.appendChild(row);
       return;
@@ -253,34 +262,27 @@ function renderIndicatorTable(msa) {
       `;
     }
 
-    // CHANGE (time-based — only populated where a real change-over-time field exists)
-    let changeHtml = `<span class="pending">Pending</span>`;
-    if (cfg.changeKey) {
-      const changeVal = msa.indicators[cfg.changeKey];
-      if (changeVal !== null && changeVal !== undefined) {
-        const sign = changeVal >= 0 ? '+' : '−';
-        const colourClass = changeVal >= 0 ? 'pos' : 'neg';
-        changeHtml = `
-          <span class="delta ${colourClass}">${sign}${fmtDec1(Math.abs(changeVal))}%</span>
-          <div class="sub-line">${cfg.changeSinceLabel}</div>
-        `;
-      }
-    }
-
     // RANK
     const rank = cfg.rankKey ? msa.ranks[cfg.rankKey] : null;
     const rankHtml = (rank !== null && rank !== undefined)
       ? `<span class="rank-num">${rank}</span><span class="rank-denom"> / 20</span>`
       : `<span class="pending">Pending</span>`;
 
+    const technicalNoteHtml = cfg.technicalNote ? `
+      <details class="tech-note">
+        <summary>How is this calculated?</summary>
+        <div class="tech-note-body">${cfg.technicalNote}</div>
+      </details>
+    ` : '';
+
     row.innerHTML = `
       <td class="cell-indicator">
         <div class="ind-name">${cfg.label}</div>
         <div class="ind-source">${cfg.sourceYear}</div>
+        ${technicalNoteHtml}
       </td>
       <td class="cell-latest">${latestHtml}</td>
       <td class="cell-vs-england">${vsEnglandHtml}</td>
-      <td class="cell-change">${changeHtml}</td>
       <td class="cell-rank">${rankHtml}</td>
     `;
     tbody.appendChild(row);
@@ -290,6 +292,329 @@ function renderIndicatorTable(msa) {
   container.appendChild(table);
 }
 
+
+// ── YNYCA data story ─────────────────────────────────────────────────────────
+// Scrollable 6-section data story, shown only for YNYCA (id === 'ynyca') below
+// the standard indicator table. Section/chart/technical-box IDs (C#/T#) match
+// docs/ynyca_data_story_spec.docx one-to-one — kept as data-c / data-t
+// attributes on the rendered nodes so the mapping stays traceable in devtools.
+//
+// Chart provenance (see chat history for the full audit):
+//   - C3 (main map), C5 (York/Ripon gradients) load pre-existing Vega-Lite
+//     specs (originally exported by scripts/YNYCA.ipynb as standalone HTML).
+//   - C1, C3 inset, C4, C6, C7, C8, C9, C10, C11, C12, C13 are re-exports of
+//     the exact same Altair chart objects already built in scripts/YNYCA.ipynb,
+//     scripts/imd.ipynb and scripts/brain_drain.ipynb (C1 and C10 are new
+//     charts built from data those notebooks/CSVs already produced — see
+//     "## 14. Spec exports" in YNYCA.ipynb).
+//   - C2a/C2b have no source data or chart code anywhere in the repo (ONS
+//     "Explore Local Statistics" was never pulled in) — PNG fallback only,
+//     using the reference images from the spec doc.
+const YORK_COLOR = '#2A9D8F';
+const NORTH_YORKS_COLOR = '#E8A84A';
+
+// One shared Vega-Lite config so every chart matches the site's type system.
+// Deliberately does NOT touch `range` (category/diverging/etc.) — each spec's
+// own meaningful colour scales (IMD red/blue, tier colours, gain/drain, the
+// York/North Yorkshire pairing) are set explicitly in its encoding and are
+// left alone, per the brief.
+const SITE_VEGA_CONFIG = {
+  font: 'Inter, Arial, sans-serif',
+  background: 'transparent',
+  title: {
+    font: "'Playfair Display', serif",
+    fontSize: 14,
+    fontWeight: 700,
+    subtitleFont: 'Inter, Arial, sans-serif',
+    subtitleFontSize: 10.5,
+    color: '#1A1A1A',
+    subtitleColor: '#6B6B6B',
+    anchor: 'start',
+  },
+  axis: {
+    labelFont: 'Inter, Arial, sans-serif',
+    titleFont: 'Inter, Arial, sans-serif',
+    labelColor: '#6B6B6B',
+    titleColor: '#6B6B6B',
+    labelFontSize: 11,
+    titleFontSize: 12,
+    gridColor: '#E8E7E2',
+    domainColor: '#E8E7E2',
+    tickColor: '#E8E7E2',
+  },
+  legend: {
+    labelFont: 'Inter, Arial, sans-serif',
+    titleFont: 'Inter, Arial, sans-serif',
+    labelColor: '#6B6B6B',
+    titleColor: '#6B6B6B',
+    labelFontSize: 11,
+  },
+  view: { stroke: null },
+};
+
+const VEGA_EMBED_OPTS = {
+  actions: { export: true, source: false, compiled: false, editor: false },
+  renderer: 'svg',
+  config: SITE_VEGA_CONFIG,
+};
+
+const specCache = {};
+async function loadSpec(name) {
+  if (!specCache[name]) {
+    specCache[name] = loadJSON(`${CHART_SPECS_PATH}/${name}.json`);
+  }
+  return specCache[name];
+}
+
+// Embeds one chart panel: { spec: 'file_basename' } for an interactive
+// Vega-Lite chart, or { png: 'file_basename' } for a static fallback image.
+async function embedChartPanel(containerId, panel) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+
+  if (panel.png) {
+    el.innerHTML = `<img src="${CHARTS_PATH}/${panel.png}.png" alt="${panel.alt || ''}" loading="lazy" />`;
+    return;
+  }
+
+  el.classList.add('is-loading');
+  try {
+    const rawSpec = await loadSpec(panel.spec);
+    const spec = JSON.parse(JSON.stringify(rawSpec)); // clone — don't mutate the cached spec
+    delete spec.config; // site config (below) fully replaces the spec's own baked-in theme
+    // c6_imd_domain_table is a hand-built "table" of literal mark_text/mark_rect
+    // positions computed in pixels against its original fixed width (it isn't a
+    // real encoding-driven layout) — stretching it to the container breaks the
+    // column alignment, so it keeps its authored width instead.
+    if (!panel.fixedWidth) spec.width = 'container';
+    await vegaEmbed(`#${containerId}`, spec, VEGA_EMBED_OPTS);
+  } catch (err) {
+    console.error(`Chart embed failed for ${containerId} (${panel.spec}):`, err);
+    el.innerHTML = `<span class="pending">Chart could not be loaded.</span>`;
+  } finally {
+    el.classList.remove('is-loading');
+  }
+}
+
+const YNYCA_STORY = [
+  {
+    level: 1, num: '1', c: 'C1', title: 'Rural and vast',
+    text: `YNYCA is the 3rd most rural of the 20 MSAs. 42% of residents live in rural areas, and two
+      national parks — the Yorkshire Dales and North York Moors — cover much of its 8,300&nbsp;km²
+      (the largest MSA by area). Rurality is not a backdrop; it drives the deprivation, connectivity
+      and growth stories that follow.`,
+    charts: [{ spec: 'c1_rurality_lollipop', caption: 'Rurality index by MSA — YNYCA highlighted as 3rd most rural.' }],
+    source: 'ONS 2021 Rural–Urban Classification (Output Area); ONS mid-2024 population estimates.',
+  },
+  {
+    level: 1, num: '2', c: 'C3', title: 'Deprivation',
+    text: `On the standard composite measure, YNYCA is the least-deprived MSA on average, with
+      relatively little variation across areas. But the average hides three distinct pockets of
+      disadvantage — coastal, inner-city and rural — and it systematically understates the rural kind.`,
+    charts: [
+      { spec: 'c3_main_map', caption: 'National IMD decile by LSOA across YNYCA.' },
+      { spec: 'c3_inset_york', caption: 'City of York, zoomed.' },
+    ],
+    source: 'ONS English Indices of Deprivation, 2025.',
+    tech: 't1',
+  },
+  {
+    level: 2, num: '2a', c: 'C4', title: 'Coastal — the sharpest exception',
+    text: `The coast breaks the pattern. Scarborough and Whitby are among England's most deprived
+      coastal communities. In Scarborough, 28% of LSOAs fall in the most-deprived national quintile
+      — a clear outlier among YNYCA's urban districts.`,
+    charts: [
+      { spec: 'c4_scarborough_map', caption: 'Scarborough district — deprivation by LSOA.' },
+      { spec: 'c4_district_bar', caption: 'Deprivation profile of YNYCA’s urban districts.' },
+    ],
+    source: 'ONS English Indices of Deprivation, 2025. (1 LSOA ≈ 1,500 people / 650 households.)',
+  },
+  {
+    level: 2, num: '2b', c: 'C5', title: 'Inner-city — the donut effect',
+    text: `In the cities, York and Ripon, deprivation forms a "donut" — an
+      inner ring of disadvantage surrounded by a relatively affluent outer ring.`,
+    charts: [
+      { spec: 'c5_town_gradient_bar', caption: 'Inner-city deprivation gradient across YNYCA’s towns — Pearson r, distance from centre vs national IMD rank.' },
+    ],
+    source: 'ONS English Indices of Deprivation, 2025.',
+  },
+  {
+    level: 2, num: '2c', c: 'C6', title: 'Rural — hidden by the composite',
+    text: `The composite measure is weakest exactly where YNYCA is most exposed. It understates rural
+      deprivation (McLennan et al., 2025): YNYCA scores poorly on the living-environment domain —
+      indoor housing conditions and geographic barriers to services such as travel time and distance.`,
+    charts: [{ spec: 'c6_imd_domain_table', fixedWidth: true, caption: 'YNYCA’s rank and worst-quintile share by IMD domain.' }],
+    source: 'IoD 2025, File 7.',
+    tech: 't2',
+  },
+  {
+    level: 1, num: '3', c: 'C8', title: 'Output and growth',
+    text: `Across the 20 MSAs, YNYCA sits mid-table on the level of economic output — but it is
+      growing fast.`,
+    charts: [{ spec: 'c8_gva_level', caption: 'GVA per head vs total GVA, YNYCA highlighted among 20 MSAs.' }],
+    source: 'ONS Regional GVA (Balanced) per head, Table 2.',
+    tech: 't4',
+  },
+  {
+    level: 2, num: '3a', c: 'C9', title: 'Growth — overtaking England',
+    text: `YNYCA is the 3rd fastest-growing English MSA — behind only Greater Manchester and the West
+      of England — and the strongest-growing of any Yorkshire MSA, pulling above the England average.`,
+    charts: [{ spec: 'c9_gva_growth_indexed', caption: 'GVA per head growth, YNYCA vs England and comparator MSAs (2013 = 100).' }],
+    source: 'ONS Regional GVA (Balanced) per head, Table 2. Current prices.',
+  },
+  {
+    level: 2, num: '3b', c: 'C10', title: 'York vs North Yorkshire — a persistent gap',
+    text: `The headline growth hides a persistent internal gap: York consistently outperforms North
+      Yorkshire on GVA per capita, and the gap has not closed.`,
+    charts: [{ spec: 'c10_gva_york_vs_ny', caption: 'GVA per head, City of York vs North Yorkshire, over time.' }],
+    source: 'ONS Regional GVA (Balanced) by ITL3, current prices.',
+  },
+  {
+    level: 1, num: '4', c: 'C11', title: 'Graduates: brain gain, an anchor city, and rural drain',
+    text: `YNYCA ranks 5th of 20 MSAs for net graduate gain, at +9%. But that headline is almost
+      entirely York.`,
+    charts: [{ spec: 'c11_net_gain_by_msa', caption: 'Net brain-gain rate by MSA — YNYCA 5th (+9%).' }],
+    source: 'ONS Graduate Retention Study.',
+    tech: 't5',
+  },
+  {
+    level: 2, num: '4a', c: 'C12', title: 'York is an anchor city',
+    text: `York does the work of a national university city. It ranks 7th of 933 English towns for
+      inward graduate migration — top 1%, alongside Cambridge, Bath and Oxford — and retains 61% of
+      its own graduates. Strip York out, and YNYCA flips to a −26% brain drain.`,
+    charts: [{ spec: 'c12_anchor_city_effect', caption: 'Net graduate gain with vs without the anchor city.' }],
+    source: 'ONS Graduate Retention Study. Primary university towns excluded for the open dots.',
+    tech: 't6',
+  },
+  {
+    level: 2, num: '4b', c: 'C13', title: 'Brain drain — a distinctly rural problem',
+    text: `Beyond York, the picture is rural drain. 15 of 17 towns with data are net exporters of
+      graduates, concentrated in the most rural and isolated places — and 3 in 5 leaving graduates
+      leave Yorkshire altogether.`,
+    charts: [{ spec: 'c13_town_brain_drain', caption: 'Net graduate flow by town.' }],
+    source: 'ONS Graduate Retention Study (17 towns with available data).',
+    tech: 't7',
+  },
+];
+
+const YNYCA_TECH_BOXES = {
+  t1: {
+    title: 'Least deprived: the numbers',
+    body: `
+      <p>YNYCA has 10 LSOAs in the nationally most-deprived decile — 2.0%, versus the 10.0% expected under an even national spread.</p>
+      <p>Ranks 1st (least deprived) on the average national IMD rank of its LSOAs, and 1st on the lowest share in the most-deprived decile (2.0%).</p>
+      <p>The "least deprived on average" finding is robust to population-weighting.</p>
+      <p>Within rural areas, remoteness predicts deprivation: rurality explains over a quarter of the variation in deprivation rank across rural LSOAs (r = −0.51, p &lt; 0.001) — far stronger than across YNYCA as a whole (r = −0.11). It is driven by isolated rural communities, not coastal proximity, which is not significant once urban areas are excluded.</p>
+    `,
+  },
+  t2: {
+    title: 'Why the composite understates rural deprivation',
+    body: `
+      <p>YNYCA ranks 1st (least deprived) overall — but the composite is dominated by income and employment indicators (45% of total weight combined), the areas where YNYCA's rural economy performs relatively well.</p>
+      <p>On the domains that define rural quality of life, YNYCA is near the bottom:</p>
+      <p>Geographic barriers: rank 17/20; 44% of communities in the worst national quintile — residents travel unusually far for services.</p>
+      <p>Indoors living: rank 16/20; 35% in the worst quintile — a separate story, about the condition and heatability of rural housing stock.</p>
+      <p>Living environment overall: 30% in the worst quintile — including air quality and road traffic.</p>
+      <p>Concentration bias: low population density spreads deprivation thinly across geography, suppressing average scores even where individual communities face serious disadvantage. The IoD 2025 strengthened the geographic-barriers and indoors-living sub-domains precisely to capture what the composite misses in rural England.</p>
+      <p class="tech-note-source">Indoors living = quality and physical condition of housing within a neighbourhood.</p>
+    `,
+  },
+  t3: {
+    title: 'Data note',
+    body: `<p>Treat working-from-home figures drawn from the 2021 Census with caution — the Covid period distorts them.</p>`,
+  },
+  t4: {
+    title: 'How MSA GVA is built',
+    body: `
+      <p>ONS publishes no GVA figure for Combined Authorities. It publishes at ITL3 level — sub-regional units at roughly county / large-district scale (e.g. one ITL3 covers West Yorkshire, but Greater Manchester splits into five).</p>
+      <p>GVA per head, per MSA: identify the ITL3s that fall within each MSA boundary, take each ITL3's GVA per head from ONS Table 2 (Regional GVA Balanced), then average across ITL3s weighted by population, so larger ITL3s count proportionally more.</p>
+      <p>Total GVA: no official MSA figure exists, so it is approximated as GVA per head × mid-2023 population — order-of-magnitude only, and flagged as indicative on the chart. The indexed growth series (2013 = 100) is the cleaner comparison.</p>
+      <p>Some ITL3s straddle two MSAs; each is assigned to the MSA it most overlaps.</p>
+    `,
+  },
+  t5: {
+    title: 'How the brain-gain rate is built',
+    body: `
+      <p>Per town: graduates arriving minus graduates leaving, scaled to a headcount gained/lost; summed across an MSA's towns and divided by the MSA's total graduate cohort — so larger graduate towns weigh more than small market towns. (Formula: Σ net graduates gained/lost ÷ Σ total graduates.)</p>
+      <p>Source: ONS Graduate Retention Study — a GCSE cohort tracked from 2008–11 to where they lived in 2018–19, across England's 1,104 built-up areas.</p>
+      <p>University cities can exceed +100% because they attract far more graduates than their own local cohort ever produced.</p>
+      <p>Caveats: pre-Covid, pre-remote-work cohort. Suppressed (very small) towns are excluded; they tend to be slightly higher-drain, biasing MSA rates a touch upward. The West of England's +77% is genuine but reflects three co-located university cities in a compact geography.</p>
+    `,
+  },
+  t6: {
+    title: 'York’s pull, and the robustness check',
+    body: `
+      <p>York in detail: inward rate 44.7% (attracts graduates equal to 44.7% of its own local cohort); retention 61.0% (share of York-origin graduates who end up living in York); net gain +1.034 (the only YNYCA town with a positive net graduate gain); non-mover retention 76.6% (of those who didn't leave for university, 76.6% stayed).</p>
+      <p>The dot plot removes each MSA's single dominant university city. Some MSAs keep other university towns (e.g. Greater Manchester keeps Salford, West Yorkshire keeps Huddersfield), so open dots are not pure non-university rates — except YNYCA, where York is the sole university town.</p>
+      <p>Robustness: excluding every university-flagged town, Greater Manchester, West Yorkshire, Cambridgeshire & Peterborough and the North East cluster tightly at −10% to −11%; YNYCA's hinterland sits at −26%, more than twice as negative. York's dominance holds either way. (West of England is not comparable here — only 22% of its graduates are in non-university towns.)</p>
+    `,
+  },
+  t7: {
+    title: 'Reading the town-level picture',
+    body: `
+      <p>True MSA-level retention is probably higher than the town view suggests: York's large inward rate partly catches YNYCA graduates relocating internally to the economic centre, not only arrivals from outside the MSA.</p>
+      <p>Catterick Garrison (53%) and Richmond (44%) are military / isolated towns that pull the mean up.</p>
+    `,
+  },
+};
+
+function renderDeepDive(msa) {
+  const container = document.getElementById('deep-dive-section');
+  container.innerHTML = '';
+  if (msa.id !== 'ynyca') return;
+
+  const embedQueue = [];
+  let chartCounter = 0;
+
+  YNYCA_STORY.forEach((block, blockIdx) => {
+    const section = document.createElement('div');
+    section.className = 'story-block' + (block.level === 2 ? ' sub' : '');
+    section.dataset.c = block.c;
+
+    const headingTag = block.level === 1 ? 'h2' : 'h3';
+    const reverse = block.level === 1 ? (blockIdx % 2 === 1) : (blockIdx % 2 === 0);
+
+    const chartWraps = block.charts.map(panel => {
+      const id = `story-chart-${chartCounter++}`;
+      embedQueue.push({ id, panel });
+      return `
+        <div class="profile-chart-wrap">
+          <div id="${id}" class="vega-chart-embed"></div>
+          ${panel.caption ? `<div class="profile-caption">${panel.caption}</div>` : ''}
+        </div>
+      `;
+    }).join('');
+
+    const techBox = block.tech ? YNYCA_TECH_BOXES[block.tech] : null;
+    const techBoxHtml = techBox ? `
+      <details class="tech-note story-tech-note" data-t="${block.tech}">
+        <summary>Method &amp; detail — ${techBox.title}</summary>
+        <div class="tech-note-body">${techBox.body}</div>
+      </details>
+    ` : '';
+
+    section.innerHTML = `
+      <div class="story-heading">
+        <span class="story-num">${block.num}</span>
+        <${headingTag}>${block.title}</${headingTag}>
+      </div>
+      <div class="profile-section${reverse ? ' reverse' : ''}${block.stacked ? ' stacked' : ''}">
+        <div class="profile-text">
+          <p class="profile-insight">${block.text}</p>
+        </div>
+        <div class="profile-charts">
+          <div class="chart-row">${chartWraps}</div>
+          <div class="profile-caption">Source: ${block.source}</div>
+        </div>
+      </div>
+      ${techBoxHtml}
+    `;
+    container.appendChild(section);
+  });
+
+  // Embed after the DOM nodes exist, in parallel.
+  embedQueue.forEach(({ id, panel }) => embedChartPanel(id, panel));
+}
 
 // ── Render: boundary map ────────────────────────────────────────────────────
 // MSA boundary layer style — visible on satellite imagery (white dashed border,

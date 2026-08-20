@@ -1,0 +1,175 @@
+lad_code,lad_name,migration_concentration,pct_higher_ed,country
+E06000001,Hartlepool,0.23,33.33,England
+E06000002,Middlesbrough,0.72,36.85,England
+E06000003,Redcar and Cleveland,0.17,36.01,England
+E06000004,Stockton-on-Tees,0.37,43.1,England
+E06000005,Darlington,0.45,37.18,England
+E06000006,Halton,0.28,35.2,England
+E06000007,Warrington,0.54,41.53,England
+E06000008,Blackburn with Darwen,1.11,20.17,England
+E06000009,Blackpool,0.46,34.0,England
+E06000010,Kingston upon Hull,0.76,28.72,England
+E06000011,East Riding of Yorkshire,0.28,41.82,England
+E06000012,North East Lincolnshire,0.38,30.51,England
+E06000013,North Lincolnshire,0.55,27.09,England
+E06000014,York,0.61,53.54,England
+E06000015,Derby,1.16,32.58,England
+E06000016,Leicester,2.5,25.46,England
+E06000017,Rutland,0.45,47.97,England
+E06000018,Nottingham,1.43,37.73,England
+E06000019,Herefordshire,0.49,39.41,England
+E06000020,Telford and Wrekin,0.67,33.01,England
+E06000021,Stoke-on-Trent,0.77,31.41,England
+E06000022,Bath and North East Somerset,0.7,53.3,England
+E06000023,Bristol,1.12,48.39,England
+E06000024,North Somerset,0.49,44.99,England
+E06000025,South Gloucestershire,0.62,50.84,England
+E06000026,Plymouth,0.54,40.43,England
+E06000027,Torbay,0.41,40.18,England
+E06000030,Swindon,1.21,37.67,England
+E06000031,Peterborough,1.72,29.84,England
+E06000032,Luton,2.41,32.62,England
+E06000033,Southend-on-Sea,0.75,43.01,England
+E06000034,Thurrock,1.32,45.98,England
+E06000035,Medway,0.85,43.38,England
+E06000036,Bracknell Forest,1.05,50.35,England
+E06000037,West Berkshire,0.71,52.4,England
+E06000038,Reading,1.98,48.91,England
+E06000039,Slough,2.83,38.19,England
+E06000040,Windsor and Maidenhead,1.28,55.5,England
+E06000041,Wokingham,1.12,62.13,England
+E06000042,Milton Keynes,1.57,47.67,England
+E06000043,Brighton and Hove,1.14,53.41,England
+E06000044,Portsmouth,1.0,42.72,England
+E06000045,Southampton,1.42,44.0,England
+E06000046,Isle of Wight,0.35,44.69,England
+E06000047,County Durham,0.25,46.1,England
+E06000049,Cheshire East,0.48,44.87,England
+E06000050,Cheshire West and Chester,0.42,47.3,England
+E06000051,Shropshire,0.34,41.94,England
+E06000052,Cornwall,0.31,43.79,England
+E06000053,Isles of Scilly,0.29,57.89,England
+E06000054,Wiltshire,0.58,42.8,England
+E06000055,Bedford,1.3,36.96,England
+E06000056,Central Bedfordshire,0.67,48.01,England
+E06000057,Northumberland,0.2,46.31,England
+E06000058,"Bournemouth, Christchurch and Poole",0.9,45.8,England
+E06000059,Dorset,0.37,43.39,England
+E06000060,Buckinghamshire,1.01,49.18,England
+E06000061,North Northamptonshire,0.92,33.99,England
+E06000062,West Northamptonshire,1.12,37.66,England
+E08000001,Bolton,0.98,26.08,England
+E08000002,Bury,0.7,34.09,England
+E08000003,Manchester,1.83,40.92,England
+E08000004,Oldham,0.99,21.27,England
+E08000005,Rochdale,0.92,26.93,England
+E08000006,Salford,1.11,45.12,England
+E08000007,Stockport,0.56,49.84,England
+E08000008,Tameside,0.61,31.44,England
+E08000009,Trafford,0.89,53.71,England
+E08000010,Wigan,0.36,36.84,England
+E08000011,Knowsley,0.3,44.19,England
+E08000012,Liverpool,0.85,42.58,England
+E08000013,St. Helens,0.29,39.67,England
+E08000014,Sefton,0.37,37.31,England
+E08000015,Wirral,0.32,43.83,England
+E08000016,Barnsley,0.38,31.17,England
+E08000017,Doncaster,0.61,28.05,England
+E08000018,Rotherham,0.4,30.01,England
+E08000019,Sheffield,0.86,41.67,England
+E08000021,Newcastle upon Tyne,0.98,46.41,England
+E08000022,North Tyneside,0.32,50.24,England
+E08000023,South Tyneside,0.26,39.04,England
+E08000024,Sunderland,0.3,45.67,England
+E08000025,Birmingham,1.64,31.15,England
+E08000026,Coventry,1.65,37.32,England
+E08000027,Dudley,0.47,31.2,England
+E08000028,Sandwell,1.44,24.7,England
+E08000029,Solihull,0.61,52.52,England
+E08000030,Walsall,0.89,27.75,England
+E08000031,Wolverhampton,1.37,28.65,England
+E08000032,Bradford,1.17,23.55,England
+E08000033,Calderdale,0.51,31.43,England
+E08000034,Kirklees,0.77,27.23,England
+E08000035,Leeds,0.93,41.24,England
+E08000036,Wakefield,0.5,32.37,England
+E08000037,Gateshead,0.42,41.82,England
+E09000001,City of London,2.7,76.16,England
+E09000002,Barking and Dagenham,2.7,42.19,England
+E09000003,Barnet,2.65,49.16,England
+E09000004,Bexley,1.3,50.68,England
+E09000005,Brent,3.41,36.59,England
+E09000006,Bromley,1.24,59.31,England
+E09000007,Camden,2.64,60.26,England
+E09000008,Croydon,2.16,44.54,England
+E09000009,Ealing,3.09,41.08,England
+E09000010,Enfield,2.55,33.84,England
+E09000011,Greenwich,2.33,52.91,England
+E09000012,Hackney,2.48,50.23,England
+E09000013,Hammersmith and Fulham,2.67,60.31,England
+E09000014,Haringey,2.78,40.88,England
+E09000015,Harrow,3.12,43.57,England
+E09000016,Havering,1.19,48.7,England
+E09000017,Hillingdon,2.38,42.4,England
+E09000018,Hounslow,3.03,43.05,England
+E09000019,Islington,2.38,59.52,England
+E09000020,Kensington and Chelsea,3.07,63.71,England
+E09000021,Kingston upon Thames,2.03,57.04,England
+E09000022,Lambeth,2.3,49.49,England
+E09000023,Lewisham,2.21,49.14,England
+E09000024,Merton,2.51,50.37,England
+E09000025,Newham,3.31,40.16,England
+E09000026,Redbridge,2.7,43.06,England
+E09000027,Richmond upon Thames,1.71,65.4,England
+E09000028,Southwark,2.46,54.62,England
+E09000029,Sutton,1.72,53.77,England
+E09000030,Tower Hamlets,2.86,51.9,England
+E09000031,Waltham Forest,2.41,39.57,England
+E09000032,Wandsworth,2.26,59.54,England
+E09000033,Westminster,3.17,60.57,England
+E10000003,Cambridgeshire,1.1,57.46,England
+E10000006,Cumbria,0.28,42.67,England
+E10000007,Derbyshire,0.27,42.14,England
+E10000008,Devon,0.41,47.77,England
+E10000011,East Sussex,0.58,46.4,England
+E10000012,Essex,0.61,48.23,England
+E10000013,Gloucestershire,0.58,44.96,England
+E10000014,Hampshire,0.63,46.6,England
+E10000015,Hertfordshire,1.1,51.05,England
+E10000016,Kent,0.74,46.31,England
+E10000017,Lancashire,0.53,31.97,England
+E10000018,Leicestershire,0.57,41.38,England
+E10000019,Lincolnshire,0.58,31.48,England
+E10000020,Norfolk,0.55,39.83,England
+E10000023,North Yorkshire,0.37,41.64,England
+E10000024,Nottinghamshire,0.47,42.15,England
+E10000025,Oxfordshire,1.1,54.6,England
+E10000027,Somerset,0.49,41.83,England
+E10000028,Staffordshire,0.37,38.45,England
+E10000029,Suffolk,0.61,39.16,England
+E10000030,Surrey,1.07,55.1,England
+E10000031,Warwickshire,0.73,44.83,England
+E10000032,West Sussex,0.76,43.6,England
+E10000034,Worcestershire,0.47,38.64,England
+W06000001,Isle of Anglesey,0.2,42.62,Wales
+W06000002,Gwynedd,0.32,48.57,Wales
+W06000003,Conwy,0.3,44.9,Wales
+W06000004,Denbighshire,0.27,43.39,Wales
+W06000005,Flintshire,0.38,32.57,Wales
+W06000006,Wrexham,0.46,35.61,Wales
+W06000008,Ceredigion,0.4,47.03,Wales
+W06000009,Pembrokeshire,0.28,42.15,Wales
+W06000010,Carmarthenshire,0.29,39.9,Wales
+W06000011,Swansea,0.54,45.32,Wales
+W06000012,Neath Port Talbot,0.21,33.33,Wales
+W06000013,Bridgend,0.25,41.29,Wales
+W06000014,Vale of Glamorgan,0.34,51.29,Wales
+W06000015,Cardiff,0.97,46.7,Wales
+W06000016,Rhondda Cynon Taf,0.22,42.3,Wales
+W06000018,Caerphilly,0.18,40.02,Wales
+W06000019,Blaenau Gwent,0.19,29.57,Wales
+W06000020,Torfaen,0.21,36.97,Wales
+W06000021,Monmouthshire,0.31,51.54,Wales
+W06000022,Newport,0.72,38.01,Wales
+W06000023,Powys,0.28,39.32,Wales
+W06000024,Merthyr Tydfil,0.33,31.4,Wales

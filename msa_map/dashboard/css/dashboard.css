@@ -225,8 +225,7 @@ h1, h2, h3 { font-weight: inherit; }
 }
 
 #indicator-table thead th.col-latest,
-#indicator-table thead th.col-vs-england,
-#indicator-table thead th.col-change {
+#indicator-table thead th.col-vs-england {
   width: 18%;
 }
 
@@ -276,6 +275,64 @@ h1, h2, h3 { font-weight: inherit; }
   font-size: 12px;
   font-style: italic;
   color: var(--muted-text);
+}
+
+.tech-note {
+  margin-top: 8px;
+}
+
+.tech-note summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--teal);
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tech-note summary::-webkit-details-marker { display: none; }
+
+.tech-note summary::before {
+  content: '▸';
+  font-size: 10px;
+  transition: transform 0.15s ease;
+}
+
+.tech-note[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.tech-note summary:hover {
+  text-decoration: underline;
+}
+
+.tech-note-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--muted-text);
+  background: #F7F6F1;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 12px 14px;
+  margin-top: 8px;
+  max-width: 480px;
+}
+
+.tech-note-body p {
+  margin: 0 0 8px 0;
+}
+
+.tech-note-body p:last-child {
+  margin-bottom: 0;
+}
+
+.tech-note-body .tech-note-source {
+  font-style: italic;
+  font-size: 11.5px;
 }
 
 .latest-value {
@@ -430,4 +487,124 @@ h1, h2, h3 { font-weight: inherit; }
   .profile-text {
     aspect-ratio: auto;
   }
+}
+
+/* ── YNYCA data story ─────────────────────────────────────────────────── */
+.story-block {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+}
+.story-block:first-child { border-top: none; padding-top: 8px; }
+
+.story-block.sub {
+  padding: 28px 0 0;
+  border-top: none;
+}
+
+.story-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+
+.story-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--teal);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.story-block.sub .story-num {
+  background: transparent;
+  color: var(--teal);
+  border: 1.5px solid var(--teal);
+}
+
+.story-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.story-heading h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.story-block .profile-section { padding-top: 22px; }
+
+.story-lede {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--muted-text);
+  max-width: 780px;
+  margin: 10px 0 0;
+  line-height: 1.6;
+}
+
+/* multiple chart panels within one section, side by side on wide screens */
+.chart-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.chart-row .profile-chart-wrap {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.vega-chart-embed {
+  width: 100%;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+.vega-chart-embed .vega-embed { width: 100%; }
+.vega-chart-embed.is-loading::before {
+  content: 'Loading chart…';
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--muted-text);
+}
+
+.story-tech-note { margin-top: 20px; }
+.story-tech-note .tech-note-body { max-width: 700px; }
+.story-tech-note .tech-note-body p { margin-bottom: 10px; }
+
+@media (max-width: 900px) {
+  .chart-row { flex-direction: column; }
+}
+
+/* Full-width stacked layout — for sections whose chart is too tall/dense for
+   the side-by-side .profile-section pattern (its .profile-text column relies
+   on aspect-ratio:1/1, which fights a chart several times taller than wide). */
+.story-block .profile-section.stacked {
+  flex-direction: column;
+  align-items: stretch;
+}
+.story-block .profile-section.stacked .profile-text {
+  aspect-ratio: auto;
+  width: 100%;
+  max-width: 720px;
+  padding: 0;
+  background: transparent;
+}
+.story-block .profile-section.stacked .profile-charts {
+  width: 100%;
 }
