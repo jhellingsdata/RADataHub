@@ -1,0 +1,1583 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "background": "white",
+  "config": {
+    "axisX": {
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelAlign": "center",
+      "labelAngle": 0,
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickColor": "#122b39",
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridColor": "#122b39",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickColor": "#122b39",
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    },
+    "concat": {
+      "spacing": 11
+    },
+    "font": "Circular Std",
+    "mark": {
+      "line": {
+        "interpolate": "linear"
+      }
+    },
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "view": {
+      "height": 300,
+      "stroke": null,
+      "strokeWidth": 0,
+      "width": 400
+    }
+  },
+  "datasets": {
+    "data-08c43d6b87549db0071944cdb6fe6067": [
+      {
+        "country": "United Kingdom",
+        "country_da": "Storbritannien",
+        "group": "Western",
+        "n2017_k": 16,
+        "n2018_k": 17,
+        "n2019_k": 17,
+        "res_lab": "17,000",
+        "row": 1.0,
+        "v2017": 90,
+        "v2018": 88,
+        "v2019": 101
+      }
+    ],
+    "data-1dd6b3da96a8827f704a96c4eb74a37c": [
+      {
+        "lab": "\u221220,000",
+        "x": -20.0
+      },
+      {
+        "lab": "+50,000",
+        "x": 50.0
+      },
+      {
+        "lab": "+100,000",
+        "x": 100.0
+      }
+    ],
+    "data-3239b7fc6694f235be052e9149bb11f3": [
+      {
+        "t": "British migrants are Denmark's second-highest net contributors"
+      }
+    ],
+    "data-44d911c735b08d3fbace416b62da5e4d": [
+      {
+        "row": -1.05,
+        "t": "COUNTRY OF ORIGIN"
+      }
+    ],
+    "data-50fc40164121a3b9b12e0982e731916e": [
+      {
+        "row": -1.05,
+        "t": "RESIDENTS"
+      }
+    ],
+    "data-5c7812563dbc4f592e14dd62e6eee0c4": [
+      {
+        "t": "Source: Danish Ministry of Finance, September 2023 revision."
+      }
+    ],
+    "data-6449f9d8211f7aa4f8a02a7ddbbcb8db": [
+      {
+        "lab": "\u221220,000",
+        "x": -20.0
+      },
+      {
+        "lab": "0",
+        "x": 0.0
+      },
+      {
+        "lab": "+50,000",
+        "x": 50.0
+      },
+      {
+        "lab": "+100,000",
+        "x": 100.0
+      }
+    ],
+    "data-873a953a2e0a4036ab32c1980cd8ae13": [
+      {
+        "country": "France",
+        "country_da": "Frankrig",
+        "group": "Western",
+        "n2017_k": 7,
+        "n2018_k": 7,
+        "n2019_k": 7,
+        "res_lab": "7,000",
+        "row": 0.0,
+        "v2017": 86,
+        "v2018": 90,
+        "v2019": 102
+      },
+      {
+        "country": "United States",
+        "country_da": "USA",
+        "group": "Western",
+        "n2017_k": 10,
+        "n2018_k": 10,
+        "n2019_k": 10,
+        "res_lab": "10,000",
+        "row": 2.0,
+        "v2017": 82,
+        "v2018": 68,
+        "v2019": 100
+      },
+      {
+        "country": "Netherlands",
+        "country_da": "Nederlandene",
+        "group": "Western",
+        "n2017_k": 8,
+        "n2018_k": 8,
+        "n2019_k": 8,
+        "res_lab": "8,000",
+        "row": 3.0,
+        "v2017": 81,
+        "v2018": 69,
+        "v2019": 81
+      },
+      {
+        "country": "India",
+        "country_da": "Indien",
+        "group": "Other non-Western",
+        "n2017_k": 12,
+        "n2018_k": 13,
+        "n2019_k": 14,
+        "res_lab": "14,000",
+        "row": 4.0,
+        "v2017": 60,
+        "v2018": 60,
+        "v2019": 69
+      },
+      {
+        "country": "Italy",
+        "country_da": "Italien",
+        "group": "Western",
+        "n2017_k": 9,
+        "n2018_k": 9,
+        "n2019_k": 9,
+        "res_lab": "9,000",
+        "row": 5.0,
+        "v2017": 50,
+        "v2018": 53,
+        "v2019": 63
+      },
+      {
+        "country": "Sweden",
+        "country_da": "Sverige",
+        "group": "Western",
+        "n2017_k": 16,
+        "n2018_k": 17,
+        "n2019_k": 17,
+        "res_lab": "17,000",
+        "row": 6.0,
+        "v2017": 51,
+        "v2018": 46,
+        "v2019": 55
+      },
+      {
+        "country": "Spain",
+        "country_da": "Spanien",
+        "group": "Western",
+        "n2017_k": 6,
+        "n2018_k": 7,
+        "n2019_k": 7,
+        "res_lab": "7,000",
+        "row": 7.0,
+        "v2017": 32,
+        "v2018": 40,
+        "v2019": 49
+      },
+      {
+        "country": "Germany",
+        "country_da": "Tyskland",
+        "group": "Western",
+        "n2017_k": 33,
+        "n2018_k": 34,
+        "n2019_k": 34,
+        "res_lab": "34,000",
+        "row": 8.0,
+        "v2017": 25,
+        "v2018": 22,
+        "v2019": 34
+      },
+      {
+        "country": "Norway",
+        "country_da": "Norge",
+        "group": "Western",
+        "n2017_k": 17,
+        "n2018_k": 17,
+        "n2019_k": 17,
+        "res_lab": "17,000",
+        "row": 9.0,
+        "v2017": 21,
+        "v2018": 22,
+        "v2019": 30
+      },
+      {
+        "country": "China",
+        "country_da": "Kina",
+        "group": "Other non-Western",
+        "n2017_k": 14,
+        "n2018_k": 14,
+        "n2019_k": 15,
+        "res_lab": "15,000",
+        "row": 10.0,
+        "v2017": 10,
+        "v2018": 13,
+        "v2019": 24
+      },
+      {
+        "country": "Lithuania",
+        "country_da": "Litauen",
+        "group": "Western",
+        "n2017_k": 14,
+        "n2018_k": 15,
+        "n2019_k": 15,
+        "res_lab": "15,000",
+        "row": 11.0,
+        "v2017": 12,
+        "v2018": 15,
+        "v2019": 24
+      },
+      {
+        "country": "Poland",
+        "country_da": "Polen",
+        "group": "Western",
+        "n2017_k": 46,
+        "n2018_k": 48,
+        "n2019_k": 48,
+        "res_lab": "48,000",
+        "row": 12.0,
+        "v2017": 10,
+        "v2018": 10,
+        "v2019": 20
+      },
+      {
+        "country": "Ukraine",
+        "country_da": "Ukraine",
+        "group": "Other non-Western",
+        "n2017_k": 11,
+        "n2018_k": 12,
+        "n2019_k": 14,
+        "res_lab": "14,000",
+        "row": 13.0,
+        "v2017": 7,
+        "v2018": 9,
+        "v2019": 19
+      },
+      {
+        "country": "Romania",
+        "country_da": "Rumaenien",
+        "group": "Western",
+        "n2017_k": 28,
+        "n2018_k": 30,
+        "n2019_k": 32,
+        "res_lab": "32,000",
+        "row": 14.0,
+        "v2017": 3,
+        "v2018": 5,
+        "v2019": 13
+      },
+      {
+        "country": "Hungary",
+        "country_da": "Ungarn",
+        "group": "Western",
+        "n2017_k": 6,
+        "n2018_k": 6,
+        "n2019_k": 6,
+        "res_lab": "6,000",
+        "row": 15.0,
+        "v2017": -2,
+        "v2018": 2,
+        "v2019": 11
+      },
+      {
+        "country": "Iceland",
+        "country_da": "Island",
+        "group": "Western",
+        "n2017_k": 9,
+        "n2018_k": 9,
+        "n2019_k": 9,
+        "res_lab": "9,000",
+        "row": 16.0,
+        "v2017": -2,
+        "v2018": -2,
+        "v2019": 8
+      },
+      {
+        "country": "Russia",
+        "country_da": "Rusland",
+        "group": "Other non-Western",
+        "n2017_k": 7,
+        "n2018_k": 7,
+        "n2019_k": 8,
+        "res_lab": "8,000",
+        "row": 17.0,
+        "v2017": -14,
+        "v2018": -9,
+        "v2019": 4
+      },
+      {
+        "country": "Thailand",
+        "country_da": "Thailand",
+        "group": "Other non-Western",
+        "n2017_k": 12,
+        "n2018_k": 13,
+        "n2019_k": 13,
+        "res_lab": "13,000",
+        "row": 18.0,
+        "v2017": -13,
+        "v2018": -8,
+        "v2019": 3
+      },
+      {
+        "country": "Bulgaria",
+        "country_da": "Bulgarien",
+        "group": "Western",
+        "n2017_k": 10,
+        "n2018_k": 10,
+        "n2019_k": 11,
+        "res_lab": "11,000",
+        "row": 19.0,
+        "v2017": -20,
+        "v2018": -10,
+        "v2019": 1
+      }
+    ],
+    "data-912f5d83eaaccc67c3ab045ff76b4d60": [
+      {
+        "c": "rgba(18, 43, 57, 0.42)",
+        "lab": "2017",
+        "sz": 34,
+        "x": 0.0
+      },
+      {
+        "c": "#179fdb",
+        "lab": "2019",
+        "sz": 92,
+        "x": 66.0
+      }
+    ],
+    "data-a9bff83aeb886fdef5a8589a38327c3f": [
+      {
+        "t": "Net fiscal contribution per person, DKK, 20 highest-ranked countries of origin, 2017 and 2019"
+      }
+    ],
+    "data-c71722202cec99574d5a3f0f40637e0d": [
+      {
+        "country": "France",
+        "country_da": "Frankrig",
+        "group": "Western",
+        "n2017_k": 7,
+        "n2018_k": 7,
+        "n2019_k": 7,
+        "res_lab": "7,000",
+        "row": 0.0,
+        "v2017": 86,
+        "v2018": 90,
+        "v2019": 102
+      },
+      {
+        "country": "United Kingdom",
+        "country_da": "Storbritannien",
+        "group": "Western",
+        "n2017_k": 16,
+        "n2018_k": 17,
+        "n2019_k": 17,
+        "res_lab": "17,000",
+        "row": 1.0,
+        "v2017": 90,
+        "v2018": 88,
+        "v2019": 101
+      },
+      {
+        "country": "United States",
+        "country_da": "USA",
+        "group": "Western",
+        "n2017_k": 10,
+        "n2018_k": 10,
+        "n2019_k": 10,
+        "res_lab": "10,000",
+        "row": 2.0,
+        "v2017": 82,
+        "v2018": 68,
+        "v2019": 100
+      },
+      {
+        "country": "Netherlands",
+        "country_da": "Nederlandene",
+        "group": "Western",
+        "n2017_k": 8,
+        "n2018_k": 8,
+        "n2019_k": 8,
+        "res_lab": "8,000",
+        "row": 3.0,
+        "v2017": 81,
+        "v2018": 69,
+        "v2019": 81
+      },
+      {
+        "country": "India",
+        "country_da": "Indien",
+        "group": "Other non-Western",
+        "n2017_k": 12,
+        "n2018_k": 13,
+        "n2019_k": 14,
+        "res_lab": "14,000",
+        "row": 4.0,
+        "v2017": 60,
+        "v2018": 60,
+        "v2019": 69
+      },
+      {
+        "country": "Italy",
+        "country_da": "Italien",
+        "group": "Western",
+        "n2017_k": 9,
+        "n2018_k": 9,
+        "n2019_k": 9,
+        "res_lab": "9,000",
+        "row": 5.0,
+        "v2017": 50,
+        "v2018": 53,
+        "v2019": 63
+      },
+      {
+        "country": "Sweden",
+        "country_da": "Sverige",
+        "group": "Western",
+        "n2017_k": 16,
+        "n2018_k": 17,
+        "n2019_k": 17,
+        "res_lab": "17,000",
+        "row": 6.0,
+        "v2017": 51,
+        "v2018": 46,
+        "v2019": 55
+      },
+      {
+        "country": "Spain",
+        "country_da": "Spanien",
+        "group": "Western",
+        "n2017_k": 6,
+        "n2018_k": 7,
+        "n2019_k": 7,
+        "res_lab": "7,000",
+        "row": 7.0,
+        "v2017": 32,
+        "v2018": 40,
+        "v2019": 49
+      },
+      {
+        "country": "Germany",
+        "country_da": "Tyskland",
+        "group": "Western",
+        "n2017_k": 33,
+        "n2018_k": 34,
+        "n2019_k": 34,
+        "res_lab": "34,000",
+        "row": 8.0,
+        "v2017": 25,
+        "v2018": 22,
+        "v2019": 34
+      },
+      {
+        "country": "Norway",
+        "country_da": "Norge",
+        "group": "Western",
+        "n2017_k": 17,
+        "n2018_k": 17,
+        "n2019_k": 17,
+        "res_lab": "17,000",
+        "row": 9.0,
+        "v2017": 21,
+        "v2018": 22,
+        "v2019": 30
+      },
+      {
+        "country": "China",
+        "country_da": "Kina",
+        "group": "Other non-Western",
+        "n2017_k": 14,
+        "n2018_k": 14,
+        "n2019_k": 15,
+        "res_lab": "15,000",
+        "row": 10.0,
+        "v2017": 10,
+        "v2018": 13,
+        "v2019": 24
+      },
+      {
+        "country": "Lithuania",
+        "country_da": "Litauen",
+        "group": "Western",
+        "n2017_k": 14,
+        "n2018_k": 15,
+        "n2019_k": 15,
+        "res_lab": "15,000",
+        "row": 11.0,
+        "v2017": 12,
+        "v2018": 15,
+        "v2019": 24
+      },
+      {
+        "country": "Poland",
+        "country_da": "Polen",
+        "group": "Western",
+        "n2017_k": 46,
+        "n2018_k": 48,
+        "n2019_k": 48,
+        "res_lab": "48,000",
+        "row": 12.0,
+        "v2017": 10,
+        "v2018": 10,
+        "v2019": 20
+      },
+      {
+        "country": "Ukraine",
+        "country_da": "Ukraine",
+        "group": "Other non-Western",
+        "n2017_k": 11,
+        "n2018_k": 12,
+        "n2019_k": 14,
+        "res_lab": "14,000",
+        "row": 13.0,
+        "v2017": 7,
+        "v2018": 9,
+        "v2019": 19
+      },
+      {
+        "country": "Romania",
+        "country_da": "Rumaenien",
+        "group": "Western",
+        "n2017_k": 28,
+        "n2018_k": 30,
+        "n2019_k": 32,
+        "res_lab": "32,000",
+        "row": 14.0,
+        "v2017": 3,
+        "v2018": 5,
+        "v2019": 13
+      },
+      {
+        "country": "Hungary",
+        "country_da": "Ungarn",
+        "group": "Western",
+        "n2017_k": 6,
+        "n2018_k": 6,
+        "n2019_k": 6,
+        "res_lab": "6,000",
+        "row": 15.0,
+        "v2017": -2,
+        "v2018": 2,
+        "v2019": 11
+      },
+      {
+        "country": "Iceland",
+        "country_da": "Island",
+        "group": "Western",
+        "n2017_k": 9,
+        "n2018_k": 9,
+        "n2019_k": 9,
+        "res_lab": "9,000",
+        "row": 16.0,
+        "v2017": -2,
+        "v2018": -2,
+        "v2019": 8
+      },
+      {
+        "country": "Russia",
+        "country_da": "Rusland",
+        "group": "Other non-Western",
+        "n2017_k": 7,
+        "n2018_k": 7,
+        "n2019_k": 8,
+        "res_lab": "8,000",
+        "row": 17.0,
+        "v2017": -14,
+        "v2018": -9,
+        "v2019": 4
+      },
+      {
+        "country": "Thailand",
+        "country_da": "Thailand",
+        "group": "Other non-Western",
+        "n2017_k": 12,
+        "n2018_k": 13,
+        "n2019_k": 13,
+        "res_lab": "13,000",
+        "row": 18.0,
+        "v2017": -13,
+        "v2018": -8,
+        "v2019": 3
+      },
+      {
+        "country": "Bulgaria",
+        "country_da": "Bulgarien",
+        "group": "Western",
+        "n2017_k": 10,
+        "n2018_k": 10,
+        "n2019_k": 11,
+        "res_lab": "11,000",
+        "row": 19.0,
+        "v2017": -20,
+        "v2018": -10,
+        "v2019": 1
+      }
+    ],
+    "data-cab89ea18155dec7d772e8112aba6047": [
+      {
+        "x": 0.0
+      }
+    ],
+    "data-e4403b0215d1572abbe8387d8cae7150": [
+      {
+        "row": -0.65
+      }
+    ],
+    "data-fef479c91c8655c2fe1d9a467c937d78": [
+      {
+        "y": 0.5,
+        "y2": 1.5
+      }
+    ]
+  },
+  "padding": {
+    "bottom": 16,
+    "left": 24,
+    "right": 24,
+    "top": 22
+  },
+  "spacing": 11,
+  "vconcat": [
+    {
+      "data": {
+        "name": "data-3239b7fc6694f235be052e9149bb11f3"
+      },
+      "encoding": {
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        },
+        "x": {
+          "value": 0
+        },
+        "y": {
+          "value": 0
+        }
+      },
+      "height": 26,
+      "mark": {
+        "align": "left",
+        "baseline": "top",
+        "color": "#122b39",
+        "fontSize": 19,
+        "fontWeight": 700,
+        "lineBreak": "\n",
+        "type": "text"
+      },
+      "width": 690
+    },
+    {
+      "data": {
+        "name": "data-a9bff83aeb886fdef5a8589a38327c3f"
+      },
+      "encoding": {
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        },
+        "x": {
+          "value": 0
+        },
+        "y": {
+          "value": 0
+        }
+      },
+      "height": 22,
+      "mark": {
+        "align": "left",
+        "baseline": "top",
+        "color": "rgba(18, 43, 57, 0.75)",
+        "fontSize": 12.5,
+        "fontWeight": 400,
+        "lineBreak": "\n",
+        "type": "text"
+      },
+      "width": 690
+    },
+    {
+      "data": {
+        "name": "data-912f5d83eaaccc67c3ab045ff76b4d60"
+      },
+      "height": 20,
+      "layer": [
+        {
+          "encoding": {
+            "color": {
+              "field": "c",
+              "scale": null,
+              "type": "nominal"
+            },
+            "size": {
+              "field": "sz",
+              "scale": null,
+              "type": "quantitative"
+            },
+            "x": {
+              "axis": null,
+              "field": "x",
+              "scale": {
+                "domain": [
+                  0,
+                  690
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "value": 10
+            }
+          },
+          "mark": {
+            "filled": true,
+            "opacity": 1,
+            "type": "point"
+          }
+        },
+        {
+          "encoding": {
+            "text": {
+              "field": "lab",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": null,
+              "field": "x",
+              "scale": {
+                "domain": [
+                  0,
+                  690
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "value": 10
+            }
+          },
+          "mark": {
+            "align": "left",
+            "baseline": "middle",
+            "color": "rgba(18, 43, 57, 0.55)",
+            "dx": 12,
+            "fontSize": 11,
+            "type": "text"
+          }
+        }
+      ],
+      "width": 690
+    },
+    {
+      "hconcat": [
+        {
+          "height": 440,
+          "layer": [
+            {
+              "data": {
+                "name": "data-fef479c91c8655c2fe1d9a467c937d78"
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "x2": {
+                  "value": 190
+                },
+                "y": {
+                  "axis": null,
+                  "field": "y",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                },
+                "y2": {
+                  "field": "y2"
+                }
+              },
+              "mark": {
+                "fill": "#179fdb",
+                "fillOpacity": 0.1,
+                "stroke": null,
+                "type": "rect"
+              }
+            },
+            {
+              "data": {
+                "name": "data-e4403b0215d1572abbe8387d8cae7150"
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "x2": {
+                  "value": 190
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "color": "#122b39",
+                "opacity": 0.18,
+                "strokeWidth": 1,
+                "type": "rule"
+              }
+            },
+            {
+              "data": {
+                "name": "data-44d911c735b08d3fbace416b62da5e4d"
+              },
+              "encoding": {
+                "text": {
+                  "field": "t",
+                  "type": "nominal"
+                },
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "align": "left",
+                "baseline": "middle",
+                "color": "rgba(18, 43, 57, 0.55)",
+                "fontSize": 10,
+                "fontWeight": 700,
+                "type": "text"
+              }
+            },
+            {
+              "data": {
+                "name": "data-873a953a2e0a4036ab32c1980cd8ae13"
+              },
+              "encoding": {
+                "text": {
+                  "field": "country",
+                  "type": "nominal"
+                },
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "align": "left",
+                "baseline": "middle",
+                "color": "#122b39",
+                "fontSize": 12,
+                "fontWeight": 400,
+                "type": "text"
+              }
+            },
+            {
+              "data": {
+                "name": "data-08c43d6b87549db0071944cdb6fe6067"
+              },
+              "encoding": {
+                "text": {
+                  "field": "country",
+                  "type": "nominal"
+                },
+                "x": {
+                  "value": 0
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "align": "left",
+                "baseline": "middle",
+                "color": "#122b39",
+                "fontSize": 12.5,
+                "fontWeight": 700,
+                "type": "text"
+              }
+            }
+          ],
+          "width": 190
+        },
+        {
+          "height": 440,
+          "layer": [
+            {
+              "data": {
+                "name": "data-fef479c91c8655c2fe1d9a467c937d78"
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "x2": {
+                  "value": 68
+                },
+                "y": {
+                  "axis": null,
+                  "field": "y",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                },
+                "y2": {
+                  "field": "y2"
+                }
+              },
+              "mark": {
+                "fill": "#179fdb",
+                "fillOpacity": 0.1,
+                "stroke": null,
+                "type": "rect"
+              }
+            },
+            {
+              "data": {
+                "name": "data-e4403b0215d1572abbe8387d8cae7150"
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "x2": {
+                  "value": 68
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "color": "#122b39",
+                "opacity": 0.18,
+                "strokeWidth": 1,
+                "type": "rule"
+              }
+            },
+            {
+              "data": {
+                "name": "data-50fc40164121a3b9b12e0982e731916e"
+              },
+              "encoding": {
+                "text": {
+                  "field": "t",
+                  "type": "nominal"
+                },
+                "x": {
+                  "value": 68
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "align": "right",
+                "baseline": "middle",
+                "color": "rgba(18, 43, 57, 0.55)",
+                "fontSize": 10,
+                "fontWeight": 700,
+                "type": "text"
+              }
+            },
+            {
+              "data": {
+                "name": "data-873a953a2e0a4036ab32c1980cd8ae13"
+              },
+              "encoding": {
+                "text": {
+                  "field": "res_lab",
+                  "type": "nominal"
+                },
+                "x": {
+                  "value": 68
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "align": "right",
+                "baseline": "middle",
+                "color": "rgba(18, 43, 57, 0.55)",
+                "fontSize": 11,
+                "fontWeight": 400,
+                "type": "text"
+              }
+            },
+            {
+              "data": {
+                "name": "data-08c43d6b87549db0071944cdb6fe6067"
+              },
+              "encoding": {
+                "text": {
+                  "field": "res_lab",
+                  "type": "nominal"
+                },
+                "x": {
+                  "value": 68
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "align": "right",
+                "baseline": "middle",
+                "color": "#122b39",
+                "fontSize": 11.5,
+                "fontWeight": 700,
+                "type": "text"
+              }
+            }
+          ],
+          "width": 68
+        },
+        {
+          "height": 440,
+          "layer": [
+            {
+              "data": {
+                "name": "data-fef479c91c8655c2fe1d9a467c937d78"
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "x2": {
+                  "value": 404
+                },
+                "y": {
+                  "axis": null,
+                  "field": "y",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                },
+                "y2": {
+                  "field": "y2"
+                }
+              },
+              "mark": {
+                "fill": "#179fdb",
+                "fillOpacity": 0.1,
+                "stroke": null,
+                "type": "rect"
+              }
+            },
+            {
+              "data": {
+                "name": "data-e4403b0215d1572abbe8387d8cae7150"
+              },
+              "encoding": {
+                "x": {
+                  "value": 0
+                },
+                "x2": {
+                  "value": 404
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "color": "#122b39",
+                "opacity": 0.18,
+                "strokeWidth": 1,
+                "type": "rule"
+              }
+            },
+            {
+              "data": {
+                "name": "data-6449f9d8211f7aa4f8a02a7ddbbcb8db"
+              },
+              "encoding": {
+                "text": {
+                  "field": "lab",
+                  "type": "nominal"
+                },
+                "x": {
+                  "axis": null,
+                  "field": "x",
+                  "scale": {
+                    "domain": [
+                      -30,
+                      116
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                },
+                "y": {
+                  "value": 15
+                }
+              },
+              "mark": {
+                "align": "center",
+                "baseline": "bottom",
+                "color": "rgba(18, 43, 57, 0.55)",
+                "fontSize": 10,
+                "type": "text"
+              }
+            },
+            {
+              "data": {
+                "name": "data-6449f9d8211f7aa4f8a02a7ddbbcb8db"
+              },
+              "encoding": {
+                "text": {
+                  "field": "lab",
+                  "type": "nominal"
+                },
+                "x": {
+                  "axis": null,
+                  "field": "x",
+                  "scale": {
+                    "domain": [
+                      -30,
+                      116
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                },
+                "y": {
+                  "value": 435
+                }
+              },
+              "mark": {
+                "align": "center",
+                "baseline": "bottom",
+                "color": "rgba(18, 43, 57, 0.55)",
+                "fontSize": 10,
+                "type": "text"
+              }
+            },
+            {
+              "data": {
+                "name": "data-1dd6b3da96a8827f704a96c4eb74a37c"
+              },
+              "encoding": {
+                "x": {
+                  "axis": null,
+                  "field": "x",
+                  "scale": {
+                    "domain": [
+                      -30,
+                      116
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                },
+                "y": {
+                  "value": 24
+                },
+                "y2": {
+                  "value": 420
+                }
+              },
+              "mark": {
+                "color": "#122b39",
+                "opacity": 0.28,
+                "strokeDash": [
+                  1,
+                  5
+                ],
+                "strokeWidth": 1,
+                "type": "rule"
+              }
+            },
+            {
+              "data": {
+                "name": "data-cab89ea18155dec7d772e8112aba6047"
+              },
+              "encoding": {
+                "x": {
+                  "axis": null,
+                  "field": "x",
+                  "scale": {
+                    "domain": [
+                      -30,
+                      116
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                },
+                "y": {
+                  "value": 24
+                },
+                "y2": {
+                  "value": 420
+                }
+              },
+              "mark": {
+                "color": "#122b39",
+                "opacity": 0.55,
+                "strokeWidth": 1,
+                "type": "rule"
+              }
+            },
+            {
+              "data": {
+                "name": "data-c71722202cec99574d5a3f0f40637e0d"
+              },
+              "encoding": {
+                "x": {
+                  "axis": null,
+                  "field": "v2017",
+                  "scale": {
+                    "domain": [
+                      -30,
+                      116
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                },
+                "x2": {
+                  "field": "v2019"
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "color": "rgba(18, 43, 57, 0.3)",
+                "strokeWidth": 1.8,
+                "type": "rule"
+              }
+            },
+            {
+              "data": {
+                "name": "data-c71722202cec99574d5a3f0f40637e0d"
+              },
+              "encoding": {
+                "x": {
+                  "axis": null,
+                  "field": "v2017",
+                  "scale": {
+                    "domain": [
+                      -30,
+                      116
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "color": "rgba(18, 43, 57, 0.42)",
+                "filled": true,
+                "opacity": 1,
+                "size": 34,
+                "type": "point"
+              }
+            },
+            {
+              "data": {
+                "name": "data-c71722202cec99574d5a3f0f40637e0d"
+              },
+              "encoding": {
+                "x": {
+                  "axis": null,
+                  "field": "v2019",
+                  "scale": {
+                    "domain": [
+                      -30,
+                      116
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "color": "#179fdb",
+                "filled": true,
+                "opacity": 1,
+                "size": 92,
+                "type": "point"
+              }
+            },
+            {
+              "data": {
+                "name": "data-08c43d6b87549db0071944cdb6fe6067"
+              },
+              "encoding": {
+                "x": {
+                  "axis": null,
+                  "field": "v2019",
+                  "scale": {
+                    "domain": [
+                      -30,
+                      116
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                },
+                "y": {
+                  "axis": null,
+                  "field": "row",
+                  "scale": {
+                    "domain": [
+                      20.35,
+                      -1.55
+                    ],
+                    "nice": false
+                  },
+                  "type": "quantitative"
+                }
+              },
+              "mark": {
+                "color": "#179fdb",
+                "filled": true,
+                "opacity": 1,
+                "size": 140,
+                "stroke": "#122b39",
+                "strokeWidth": 1.6,
+                "type": "point"
+              }
+            }
+          ],
+          "width": 404
+        }
+      ],
+      "spacing": 14
+    },
+    {
+      "data": {
+        "name": "data-5c7812563dbc4f592e14dd62e6eee0c4"
+      },
+      "encoding": {
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        },
+        "x": {
+          "value": 0
+        },
+        "y": {
+          "value": 0
+        }
+      },
+      "height": 30,
+      "mark": {
+        "align": "left",
+        "baseline": "top",
+        "color": "rgba(18, 43, 57, 0.6)",
+        "fontSize": 9.5,
+        "fontWeight": 400,
+        "lineBreak": "\n",
+        "type": "text"
+      },
+      "width": 690
+    }
+  ]
+}

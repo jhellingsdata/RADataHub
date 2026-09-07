@@ -1,0 +1,615 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {
+      "line": {
+        "interpolate": "linear"
+      }
+    },
+    "view": {
+      "stroke": null,
+      "width": 400,
+      "height": 300,
+      "strokeWidth": 0
+    },
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    },
+    "axis": {
+      "grid": false
+    }
+  },
+  "layer": [
+    {
+      "layer": [
+        {
+          "data": {
+            "name": "data-76e28f7ee8fcc08fb3b4e4343302933a"
+          },
+          "mark": {
+            "type": "bar",
+            "color": "#179fdb"
+          },
+          "encoding": {
+            "x": {
+              "axis": null,
+              "field": "yes_pct",
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "x2": {
+              "field": "left"
+            },
+            "y": {
+              "axis": {
+                "domain": false,
+                "labelFontSize": 12,
+                "labelPadding": 10,
+                "ticks": false,
+                "title": null
+              },
+              "field": "constituency",
+              "scale": {
+                "domain": [
+                  "Iceland",
+                  " ",
+                  "Reykjavík North",
+                  "Reykjavík South",
+                  "Southwest",
+                  "South",
+                  "Northeast",
+                  "Northwest"
+                ],
+                "paddingInner": 0.42
+              },
+              "sort": [
+                "Iceland",
+                " ",
+                "Reykjavík North",
+                "Reykjavík South",
+                "Southwest",
+                "South",
+                "Northeast",
+                "Northwest"
+              ],
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-76e28f7ee8fcc08fb3b4e4343302933a"
+          },
+          "mark": {
+            "type": "bar",
+            "color": "#122b39"
+          },
+          "encoding": {
+            "x": {
+              "axis": null,
+              "field": "yes_pct",
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "x2": {
+              "field": "right"
+            },
+            "y": {
+              "axis": {
+                "domain": false,
+                "labelFontSize": 12,
+                "labelPadding": 10,
+                "ticks": false,
+                "title": null
+              },
+              "field": "constituency",
+              "scale": {
+                "domain": [
+                  "Iceland",
+                  " ",
+                  "Reykjavík North",
+                  "Reykjavík South",
+                  "Southwest",
+                  "South",
+                  "Northeast",
+                  "Northwest"
+                ],
+                "paddingInner": 0.42
+              },
+              "sort": [
+                "Iceland",
+                " ",
+                "Reykjavík North",
+                "Reykjavík South",
+                "Southwest",
+                "South",
+                "Northeast",
+                "Northwest"
+              ],
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-f119b9e25464a0a1228622dc90c5b9a4"
+          },
+          "mark": {
+            "type": "rule",
+            "color": "white",
+            "opacity": 0.9,
+            "strokeWidth": 1.2
+          },
+          "encoding": {
+            "x": {
+              "axis": null,
+              "field": "yes_pct",
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-76e28f7ee8fcc08fb3b4e4343302933a"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "color": "white",
+            "dx": 10,
+            "fontSize": 12,
+            "fontWeight": 500
+          },
+          "encoding": {
+            "text": {
+              "field": "yes_label",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": null,
+              "field": "left",
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "domain": false,
+                "labelFontSize": 12,
+                "labelPadding": 10,
+                "ticks": false,
+                "title": null
+              },
+              "field": "constituency",
+              "scale": {
+                "domain": [
+                  "Iceland",
+                  " ",
+                  "Reykjavík North",
+                  "Reykjavík South",
+                  "Southwest",
+                  "South",
+                  "Northeast",
+                  "Northwest"
+                ],
+                "paddingInner": 0.42
+              },
+              "sort": [
+                "Iceland",
+                " ",
+                "Reykjavík North",
+                "Reykjavík South",
+                "Southwest",
+                "South",
+                "Northeast",
+                "Northwest"
+              ],
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-76e28f7ee8fcc08fb3b4e4343302933a"
+          },
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "color": "white",
+            "dx": -10,
+            "fontSize": 12,
+            "fontWeight": 500
+          },
+          "encoding": {
+            "text": {
+              "field": "no_label",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": null,
+              "field": "right",
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "domain": false,
+                "labelFontSize": 12,
+                "labelPadding": 10,
+                "ticks": false,
+                "title": null
+              },
+              "field": "constituency",
+              "scale": {
+                "domain": [
+                  "Iceland",
+                  " ",
+                  "Reykjavík North",
+                  "Reykjavík South",
+                  "Southwest",
+                  "South",
+                  "Northeast",
+                  "Northwest"
+                ],
+                "paddingInner": 0.42
+              },
+              "sort": [
+                "Iceland",
+                " ",
+                "Reykjavík North",
+                "Reykjavík South",
+                "Southwest",
+                "South",
+                "Northeast",
+                "Northwest"
+              ],
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-42ea2203f993acc19427372d0f63078e"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "bottom",
+            "color": "#179fdb",
+            "fontSize": 13,
+            "fontWeight": 600
+          },
+          "encoding": {
+            "text": {
+              "datum": "Yes"
+            },
+            "x": {
+              "axis": null,
+              "field": "left",
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "value": -10
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-42ea2203f993acc19427372d0f63078e"
+          },
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "bottom",
+            "color": "#122b39",
+            "fontSize": 13,
+            "fontWeight": 600
+          },
+          "encoding": {
+            "text": {
+              "datum": "No"
+            },
+            "x": {
+              "axis": null,
+              "field": "right",
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "value": -10
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-f119b9e25464a0a1228622dc90c5b9a4"
+          },
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "bottom",
+            "color": "rgba(24, 42, 56, 0.6)",
+            "fontSize": 11
+          },
+          "encoding": {
+            "text": {
+              "datum": "50%"
+            },
+            "x": {
+              "axis": null,
+              "field": "yes_pct",
+              "scale": {
+                "domain": [
+                  0,
+                  100
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "value": -10
+            }
+          }
+        }
+      ],
+      "title": {
+        "text": "Iceland says no to reopening EU talks",
+        "anchor": "start",
+        "dy": -6,
+        "fontSize": 19,
+        "fontWeight": 600,
+        "offset": 32,
+        "subtitle": [
+          "Share of valid votes for and against restarting EU accession negotiations, nationally and by constituency."
+        ],
+        "subtitleColor": "rgba(24, 42, 56, 0.75)",
+        "subtitleFontSize": 13,
+        "subtitleLineHeight": 18
+      }
+    },
+    {
+      "data": {
+        "name": "data-42ea2203f993acc19427372d0f63078e"
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "color": "rgba(24, 42, 56, 0.6)",
+        "dy": 18,
+        "fontSize": 10.5,
+        "lineBreak": "\n",
+        "lineHeight": 14
+      },
+      "encoding": {
+        "text": {
+          "datum": "Source: RÚV, all votes counted, 30 August 2026. Official results pending declaration by Landskjörstjórn."
+        },
+        "x": {
+          "value": 0
+        },
+        "y": {
+          "value": "height"
+        }
+      }
+    }
+  ],
+  "height": 290,
+  "padding": {
+    "left": 6,
+    "right": 18,
+    "top": 6,
+    "bottom": 10
+  },
+  "width": 580,
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-76e28f7ee8fcc08fb3b4e4343302933a": [
+      {
+        "constituency": "Iceland",
+        "constituency_is": "Ísland",
+        "yes_pct": 47.2,
+        "no_pct": 52.8,
+        "level": "national",
+        "yes_label": "47.2%",
+        "no_label": "52.8%",
+        "left": 0.0,
+        "right": 100.0
+      },
+      {
+        "constituency": "Reykjavík North",
+        "constituency_is": "Reykjavíkurkjördæmi norður",
+        "yes_pct": 57.5,
+        "no_pct": 42.5,
+        "level": "constituency",
+        "yes_label": "57.5%",
+        "no_label": "42.5%",
+        "left": 0.0,
+        "right": 100.0
+      },
+      {
+        "constituency": "Reykjavík South",
+        "constituency_is": "Reykjavíkurkjördæmi suður",
+        "yes_pct": 54.5,
+        "no_pct": 45.5,
+        "level": "constituency",
+        "yes_label": "54.5%",
+        "no_label": "45.5%",
+        "left": 0.0,
+        "right": 100.0
+      },
+      {
+        "constituency": "Southwest",
+        "constituency_is": "Suðvesturkjördæmi",
+        "yes_pct": 47.0,
+        "no_pct": 53.0,
+        "level": "constituency",
+        "yes_label": "47.0%",
+        "no_label": "53.0%",
+        "left": 0.0,
+        "right": 100.0
+      },
+      {
+        "constituency": "South",
+        "constituency_is": "Suðurkjördæmi",
+        "yes_pct": 39.5,
+        "no_pct": 60.5,
+        "level": "constituency",
+        "yes_label": "39.5%",
+        "no_label": "60.5%",
+        "left": 0.0,
+        "right": 100.0
+      },
+      {
+        "constituency": "Northeast",
+        "constituency_is": "Norðausturkjördæmi",
+        "yes_pct": 38.8,
+        "no_pct": 61.2,
+        "level": "constituency",
+        "yes_label": "38.8%",
+        "no_label": "61.2%",
+        "left": 0.0,
+        "right": 100.0
+      },
+      {
+        "constituency": "Northwest",
+        "constituency_is": "Norðvesturkjördæmi",
+        "yes_pct": 37.1,
+        "no_pct": 62.9,
+        "level": "constituency",
+        "yes_label": "37.1%",
+        "no_label": "62.9%",
+        "left": 0.0,
+        "right": 100.0
+      }
+    ],
+    "data-f119b9e25464a0a1228622dc90c5b9a4": [
+      {
+        "yes_pct": 50.0
+      }
+    ],
+    "data-42ea2203f993acc19427372d0f63078e": [
+      {
+        "constituency": "Iceland",
+        "constituency_is": "Ísland",
+        "yes_pct": 47.2,
+        "no_pct": 52.8,
+        "level": "national",
+        "yes_label": "47.2%",
+        "no_label": "52.8%",
+        "left": 0.0,
+        "right": 100.0
+      }
+    ]
+  }
+}
