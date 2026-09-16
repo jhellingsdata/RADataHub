@@ -1,0 +1,1359 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {
+      "line": {
+        "interpolate": "linear"
+      }
+    },
+    "view": {
+      "stroke": null,
+      "width": 400,
+      "height": 300,
+      "strokeWidth": 0
+    },
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    },
+    "axis": {
+      "labelFontSize": 11
+    }
+  },
+  "vconcat": [
+    {
+      "vconcat": [
+        {
+          "hconcat": [
+            {
+              "layer": [
+                {
+                  "data": {
+                    "name": "data-6b9793a2584e7f163165878c2d8f224f"
+                  },
+                  "mark": {
+                    "type": "line",
+                    "strokeWidth": 2.2
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": true,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": true,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                },
+                {
+                  "data": {
+                    "name": "data-78c25e12450be6c2f09bd478868a999f"
+                  },
+                  "mark": {
+                    "type": "point",
+                    "filled": true,
+                    "size": 48
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": true,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": true,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                },
+                {
+                  "data": {
+                    "name": "data-78c25e12450be6c2f09bd478868a999f"
+                  },
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "middle",
+                    "dx": 8,
+                    "fontSize": 11,
+                    "fontWeight": 700
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "text": {
+                      "field": "score",
+                      "format": ".0f",
+                      "type": "quantitative"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": true,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": true,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                },
+                {
+                  "data": {
+                    "name": "data-78c25e12450be6c2f09bd478868a999f"
+                  },
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "middle",
+                    "dx": 8,
+                    "dy": 14,
+                    "fontSize": 11
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "text": {
+                      "field": "series",
+                      "type": "nominal"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": true,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": true,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                }
+              ],
+              "height": 300,
+              "title": {
+                "text": "Reading",
+                "anchor": "start",
+                "color": "#364b57",
+                "fontSize": 13,
+                "offset": 8
+              },
+              "width": 215
+            },
+            {
+              "layer": [
+                {
+                  "data": {
+                    "name": "data-a4de910f52c3e58d1688921732f3b016"
+                  },
+                  "mark": {
+                    "type": "line",
+                    "strokeWidth": 2.2
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": false,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": false,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                },
+                {
+                  "data": {
+                    "name": "data-a31effbbf4e306da1b759cd2b6438082"
+                  },
+                  "mark": {
+                    "type": "point",
+                    "filled": true,
+                    "size": 48
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": false,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": false,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                },
+                {
+                  "data": {
+                    "name": "data-a31effbbf4e306da1b759cd2b6438082"
+                  },
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "middle",
+                    "dx": 8,
+                    "fontSize": 11,
+                    "fontWeight": 700
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "text": {
+                      "field": "score",
+                      "format": ".0f",
+                      "type": "quantitative"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": false,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": false,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                },
+                {
+                  "data": {
+                    "name": "data-a31effbbf4e306da1b759cd2b6438082"
+                  },
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "middle",
+                    "dx": 8,
+                    "dy": 14,
+                    "fontSize": 11
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "text": {
+                      "field": "series",
+                      "type": "nominal"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": false,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": false,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                }
+              ],
+              "height": 300,
+              "title": {
+                "text": "Mathematics",
+                "anchor": "start",
+                "color": "#364b57",
+                "fontSize": 13,
+                "offset": 8
+              },
+              "width": 215
+            },
+            {
+              "layer": [
+                {
+                  "data": {
+                    "name": "data-64d0fcf823cc27d3bdee9ef6b6465661"
+                  },
+                  "mark": {
+                    "type": "line",
+                    "strokeWidth": 2.2
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": false,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": false,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                },
+                {
+                  "data": {
+                    "name": "data-81fc6a5d62d45db59b9b5ac2be3ac93e"
+                  },
+                  "mark": {
+                    "type": "point",
+                    "filled": true,
+                    "size": 48
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": false,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": false,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                },
+                {
+                  "data": {
+                    "name": "data-81fc6a5d62d45db59b9b5ac2be3ac93e"
+                  },
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "middle",
+                    "dx": 8,
+                    "fontSize": 11,
+                    "fontWeight": 700
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "text": {
+                      "field": "score",
+                      "format": ".0f",
+                      "type": "quantitative"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": false,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": false,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                },
+                {
+                  "data": {
+                    "name": "data-81fc6a5d62d45db59b9b5ac2be3ac93e"
+                  },
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "middle",
+                    "dx": 8,
+                    "dy": 14,
+                    "fontSize": 11
+                  },
+                  "encoding": {
+                    "color": {
+                      "field": "series",
+                      "legend": null,
+                      "scale": {
+                        "domain": [
+                          "UK",
+                          "OECD-23"
+                        ],
+                        "range": [
+                          "#179fdb",
+                          "#122b39"
+                        ]
+                      },
+                      "type": "nominal"
+                    },
+                    "text": {
+                      "field": "series",
+                      "type": "nominal"
+                    },
+                    "x": {
+                      "axis": {
+                        "format": "d",
+                        "labelAngle": 0,
+                        "labelFontSize": 11,
+                        "title": null,
+                        "values": [
+                          2005,
+                          2015,
+                          2025
+                        ]
+                      },
+                      "field": "cycle",
+                      "scale": {
+                        "domain": [
+                          1998,
+                          2038
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    },
+                    "y": {
+                      "axis": {
+                        "domain": false,
+                        "format": "d",
+                        "labelFontSize": 11,
+                        "labels": false,
+                        "tickCount": 4,
+                        "ticks": false,
+                        "title": null
+                      },
+                      "field": "score",
+                      "scale": {
+                        "domain": [
+                          460,
+                          520
+                        ],
+                        "nice": false
+                      },
+                      "type": "quantitative"
+                    }
+                  }
+                }
+              ],
+              "height": 300,
+              "title": {
+                "text": "Science",
+                "anchor": "start",
+                "color": "#364b57",
+                "fontSize": 13,
+                "offset": 8
+              },
+              "width": 215
+            }
+          ],
+          "resolve": {
+            "scale": {
+              "color": "shared",
+              "y": "shared"
+            }
+          },
+          "spacing": 18
+        }
+      ],
+      "title": {
+        "text": "The UK held its ground as OECD scores fell away",
+        "anchor": "start",
+        "fontSize": 19,
+        "offset": 12,
+        "subtitle": [
+          "Mean PISA score by cycle, UK and the OECD-23 comparator"
+        ],
+        "subtitleColor": "#596b74",
+        "subtitleFontSize": 12,
+        "subtitlePadding": 7
+      }
+    }
+  ],
+  "title": {
+    "text": [
+      "Source: OECD (2026), PISA 2025 Results (Volume I)."
+    ],
+    "anchor": "start",
+    "color": "#65757e",
+    "fontSize": 10,
+    "fontWeight": 400,
+    "lineHeight": 13,
+    "offset": 18,
+    "orient": "bottom"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-6b9793a2584e7f163165878c2d8f224f": [
+      {
+        "domain": "Reading",
+        "series": "UK",
+        "cycle": 2006,
+        "score": 495.08351000000005
+      },
+      {
+        "domain": "Reading",
+        "series": "UK",
+        "cycle": 2009,
+        "score": 494.18201000000005
+      },
+      {
+        "domain": "Reading",
+        "series": "UK",
+        "cycle": 2012,
+        "score": 499.32312
+      },
+      {
+        "domain": "Reading",
+        "series": "UK",
+        "cycle": 2015,
+        "score": 497.97193000000004
+      },
+      {
+        "domain": "Reading",
+        "series": "UK",
+        "cycle": 2018,
+        "score": 503.92811000000006
+      },
+      {
+        "domain": "Reading",
+        "series": "UK",
+        "cycle": 2022,
+        "score": 494.40463000000005
+      },
+      {
+        "domain": "Reading",
+        "series": "UK",
+        "cycle": 2025,
+        "score": 494.23095000000006
+      },
+      {
+        "domain": "Reading",
+        "series": "OECD-23",
+        "cycle": 2000,
+        "score": 499.53403000000003
+      },
+      {
+        "domain": "Reading",
+        "series": "OECD-23",
+        "cycle": 2003,
+        "score": 497.41581
+      },
+      {
+        "domain": "Reading",
+        "series": "OECD-23",
+        "cycle": 2006,
+        "score": 495.46594000000005
+      },
+      {
+        "domain": "Reading",
+        "series": "OECD-23",
+        "cycle": 2009,
+        "score": 499.39752000000004
+      },
+      {
+        "domain": "Reading",
+        "series": "OECD-23",
+        "cycle": 2012,
+        "score": 501.3647
+      },
+      {
+        "domain": "Reading",
+        "series": "OECD-23",
+        "cycle": 2015,
+        "score": 497.24891
+      },
+      {
+        "domain": "Reading",
+        "series": "OECD-23",
+        "cycle": 2018,
+        "score": 492.83733000000007
+      },
+      {
+        "domain": "Reading",
+        "series": "OECD-23",
+        "cycle": 2022,
+        "score": 481.93197000000004
+      },
+      {
+        "domain": "Reading",
+        "series": "OECD-23",
+        "cycle": 2025,
+        "score": 465.82952000000006
+      }
+    ],
+    "data-78c25e12450be6c2f09bd478868a999f": [
+      {
+        "domain": "Reading",
+        "series": "UK",
+        "cycle": 2025,
+        "score": 494.23095000000006
+      },
+      {
+        "domain": "Reading",
+        "series": "OECD-23",
+        "cycle": 2025,
+        "score": 465.82952000000006
+      }
+    ],
+    "data-a4de910f52c3e58d1688921732f3b016": [
+      {
+        "domain": "Mathematics",
+        "series": "UK",
+        "cycle": 2006,
+        "score": 495.44416000000007
+      },
+      {
+        "domain": "Mathematics",
+        "series": "UK",
+        "cycle": 2009,
+        "score": 492.41408
+      },
+      {
+        "domain": "Mathematics",
+        "series": "UK",
+        "cycle": 2012,
+        "score": 493.93423
+      },
+      {
+        "domain": "Mathematics",
+        "series": "UK",
+        "cycle": 2015,
+        "score": 492.47853000000003
+      },
+      {
+        "domain": "Mathematics",
+        "series": "UK",
+        "cycle": 2018,
+        "score": 501.76990000000006
+      },
+      {
+        "domain": "Mathematics",
+        "series": "UK",
+        "cycle": 2022,
+        "score": 488.97509
+      },
+      {
+        "domain": "Mathematics",
+        "series": "UK",
+        "cycle": 2025,
+        "score": 487.57374000000004
+      },
+      {
+        "domain": "Mathematics",
+        "series": "OECD-23",
+        "cycle": 2003,
+        "score": 502.12499
+      },
+      {
+        "domain": "Mathematics",
+        "series": "OECD-23",
+        "cycle": 2006,
+        "score": 501.06524
+      },
+      {
+        "domain": "Mathematics",
+        "series": "OECD-23",
+        "cycle": 2009,
+        "score": 501.66896
+      },
+      {
+        "domain": "Mathematics",
+        "series": "OECD-23",
+        "cycle": 2012,
+        "score": 498.67532000000006
+      },
+      {
+        "domain": "Mathematics",
+        "series": "OECD-23",
+        "cycle": 2015,
+        "score": 495.51943000000006
+      },
+      {
+        "domain": "Mathematics",
+        "series": "OECD-23",
+        "cycle": 2018,
+        "score": 496.35019000000005
+      },
+      {
+        "domain": "Mathematics",
+        "series": "OECD-23",
+        "cycle": 2022,
+        "score": 480.28995000000003
+      },
+      {
+        "domain": "Mathematics",
+        "series": "OECD-23",
+        "cycle": 2025,
+        "score": 469.38280000000003
+      }
+    ],
+    "data-a31effbbf4e306da1b759cd2b6438082": [
+      {
+        "domain": "Mathematics",
+        "series": "UK",
+        "cycle": 2025,
+        "score": 487.57374000000004
+      },
+      {
+        "domain": "Mathematics",
+        "series": "OECD-23",
+        "cycle": 2025,
+        "score": 469.38280000000003
+      }
+    ],
+    "data-64d0fcf823cc27d3bdee9ef6b6465661": [
+      {
+        "domain": "Science",
+        "series": "UK",
+        "cycle": 2006,
+        "score": 514.77355
+      },
+      {
+        "domain": "Science",
+        "series": "UK",
+        "cycle": 2009,
+        "score": 513.71024
+      },
+      {
+        "domain": "Science",
+        "series": "UK",
+        "cycle": 2012,
+        "score": 514.12932
+      },
+      {
+        "domain": "Science",
+        "series": "UK",
+        "cycle": 2015,
+        "score": 509.22150000000005
+      },
+      {
+        "domain": "Science",
+        "series": "UK",
+        "cycle": 2018,
+        "score": 504.66747000000004
+      },
+      {
+        "domain": "Science",
+        "series": "UK",
+        "cycle": 2022,
+        "score": 499.67021000000005
+      },
+      {
+        "domain": "Science",
+        "series": "UK",
+        "cycle": 2025,
+        "score": 511.35575000000006
+      },
+      {
+        "domain": "Science",
+        "series": "OECD-23",
+        "cycle": 2006,
+        "score": 502.74367000000007
+      },
+      {
+        "domain": "Science",
+        "series": "OECD-23",
+        "cycle": 2009,
+        "score": 505.74124000000006
+      },
+      {
+        "domain": "Science",
+        "series": "OECD-23",
+        "cycle": 2012,
+        "score": 504.73098000000005
+      },
+      {
+        "domain": "Science",
+        "series": "OECD-23",
+        "cycle": 2015,
+        "score": 496.9809
+      },
+      {
+        "domain": "Science",
+        "series": "OECD-23",
+        "cycle": 2018,
+        "score": 493.46277000000003
+      },
+      {
+        "domain": "Science",
+        "series": "OECD-23",
+        "cycle": 2022,
+        "score": 490.86388000000005
+      },
+      {
+        "domain": "Science",
+        "series": "OECD-23",
+        "cycle": 2025,
+        "score": 485.93596
+      }
+    ],
+    "data-81fc6a5d62d45db59b9b5ac2be3ac93e": [
+      {
+        "domain": "Science",
+        "series": "UK",
+        "cycle": 2025,
+        "score": 511.35575000000006
+      },
+      {
+        "domain": "Science",
+        "series": "OECD-23",
+        "cycle": 2025,
+        "score": 485.93596
+      }
+    ]
+  }
+}

@@ -1,0 +1,1001 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {
+      "line": {
+        "interpolate": "linear"
+      }
+    },
+    "view": {
+      "stroke": null,
+      "width": 400,
+      "height": 300,
+      "strokeWidth": 0
+    },
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "vconcat": [
+    {
+      "layer": [
+        {
+          "data": {
+            "name": "data-f7e38f231e60df2262f0c5ffd1362967"
+          },
+          "mark": {
+            "type": "rule",
+            "color": "#122b39",
+            "opacity": 0.55,
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "y": {
+              "axis": {
+                "format": ".1f",
+                "title": null,
+                "values": [
+                  -0.2,
+                  0,
+                  0.2,
+                  0.4,
+                  0.6,
+                  0.8
+                ]
+              },
+              "field": "value",
+              "scale": {
+                "domain": [
+                  -0.22,
+                  0.85
+                ]
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-1e818b3bd854ed60725bddb955dfc2c9"
+          },
+          "mark": {
+            "type": "bar",
+            "color": "#179fdb",
+            "width": 13
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "format": "%b %Y",
+                "grid": false,
+                "labelFontSize": 11,
+                "title": null,
+                "values": [
+                  {
+                    "year": 2024,
+                    "month": 7,
+                    "date": 1
+                  },
+                  {
+                    "year": 2024,
+                    "month": 10,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 1,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 4,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 7,
+                    "date": 1
+                  }
+                ]
+              },
+              "field": "date",
+              "scale": {
+                "domain": [
+                  "2024-06-14",
+                  "2026-09-06"
+                ]
+              },
+              "type": "temporal"
+            },
+            "y": {
+              "axis": {
+                "format": ".1f",
+                "title": null,
+                "values": [
+                  -0.2,
+                  0,
+                  0.2,
+                  0.4,
+                  0.6,
+                  0.8
+                ]
+              },
+              "field": "value",
+              "scale": {
+                "domain": [
+                  -0.22,
+                  0.85
+                ]
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-02753a28e1060be342d558a41037400b"
+          },
+          "mark": {
+            "type": "line",
+            "color": "#122b39",
+            "strokeWidth": 2.5
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "format": "%b %Y",
+                "grid": false,
+                "labelFontSize": 11,
+                "title": null,
+                "values": [
+                  {
+                    "year": 2024,
+                    "month": 7,
+                    "date": 1
+                  },
+                  {
+                    "year": 2024,
+                    "month": 10,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 1,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 4,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 7,
+                    "date": 1
+                  }
+                ]
+              },
+              "field": "date",
+              "scale": {
+                "domain": [
+                  "2024-06-14",
+                  "2026-09-06"
+                ]
+              },
+              "type": "temporal"
+            },
+            "y": {
+              "axis": {
+                "format": ".1f",
+                "title": null,
+                "values": [
+                  -0.2,
+                  0,
+                  0.2,
+                  0.4,
+                  0.6,
+                  0.8
+                ]
+              },
+              "field": "value",
+              "scale": {
+                "domain": [
+                  -0.22,
+                  0.85
+                ]
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-40b51fcdc31892130969aca2b8679039"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "color": "#122b39",
+            "dx": 8,
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "text": {
+              "value": "0.40"
+            },
+            "x": {
+              "axis": {
+                "format": "%b %Y",
+                "grid": false,
+                "labelFontSize": 11,
+                "title": null,
+                "values": [
+                  {
+                    "year": 2024,
+                    "month": 7,
+                    "date": 1
+                  },
+                  {
+                    "year": 2024,
+                    "month": 10,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 1,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 4,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 7,
+                    "date": 1
+                  }
+                ]
+              },
+              "field": "date",
+              "scale": {
+                "domain": [
+                  "2024-06-14",
+                  "2026-09-06"
+                ]
+              },
+              "type": "temporal"
+            },
+            "y": {
+              "axis": {
+                "format": ".1f",
+                "title": null,
+                "values": [
+                  -0.2,
+                  0,
+                  0.2,
+                  0.4,
+                  0.6,
+                  0.8
+                ]
+              },
+              "field": "value",
+              "scale": {
+                "domain": [
+                  -0.22,
+                  0.85
+                ]
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-c6fc2e0a06094e278c9435885193724d"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "color": "#179fdb",
+            "dx": 8,
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "text": {
+              "value": "0.17"
+            },
+            "x": {
+              "axis": {
+                "format": "%b %Y",
+                "grid": false,
+                "labelFontSize": 11,
+                "title": null,
+                "values": [
+                  {
+                    "year": 2024,
+                    "month": 7,
+                    "date": 1
+                  },
+                  {
+                    "year": 2024,
+                    "month": 10,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 1,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 4,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 10,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 4,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 7,
+                    "date": 1
+                  }
+                ]
+              },
+              "field": "date",
+              "scale": {
+                "domain": [
+                  "2024-06-14",
+                  "2026-09-06"
+                ]
+              },
+              "type": "temporal"
+            },
+            "y": {
+              "axis": {
+                "format": ".1f",
+                "title": null,
+                "values": [
+                  -0.2,
+                  0,
+                  0.2,
+                  0.4,
+                  0.6,
+                  0.8
+                ]
+              },
+              "field": "value",
+              "scale": {
+                "domain": [
+                  -0.22,
+                  0.85
+                ]
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "layer": [
+            {
+              "data": {
+                "name": "data-adf8b40dffcb1227f91e97d86a3553ca"
+              },
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "color": "#122b39",
+                "fontSize": 12,
+                "fontWeight": "bold"
+              },
+              "encoding": {
+                "text": {
+                  "value": "All GDP growth"
+                },
+                "x": {
+                  "axis": {
+                    "format": "%b %Y",
+                    "grid": false,
+                    "labelFontSize": 11,
+                    "title": null,
+                    "values": [
+                      {
+                        "year": 2024,
+                        "month": 7,
+                        "date": 1
+                      },
+                      {
+                        "year": 2024,
+                        "month": 10,
+                        "date": 1
+                      },
+                      {
+                        "year": 2025,
+                        "month": 1,
+                        "date": 1
+                      },
+                      {
+                        "year": 2025,
+                        "month": 4,
+                        "date": 1
+                      },
+                      {
+                        "year": 2025,
+                        "month": 7,
+                        "date": 1
+                      },
+                      {
+                        "year": 2025,
+                        "month": 10,
+                        "date": 1
+                      },
+                      {
+                        "year": 2026,
+                        "month": 1,
+                        "date": 1
+                      },
+                      {
+                        "year": 2026,
+                        "month": 4,
+                        "date": 1
+                      },
+                      {
+                        "year": 2026,
+                        "month": 7,
+                        "date": 1
+                      }
+                    ]
+                  },
+                  "field": "date",
+                  "scale": {
+                    "domain": [
+                      "2024-06-14",
+                      "2026-09-06"
+                    ]
+                  },
+                  "type": "temporal"
+                },
+                "y": {
+                  "axis": {
+                    "format": ".1f",
+                    "title": null,
+                    "values": [
+                      -0.2,
+                      0,
+                      0.2,
+                      0.4,
+                      0.6,
+                      0.8
+                    ]
+                  },
+                  "field": "value",
+                  "scale": {
+                    "domain": [
+                      -0.22,
+                      0.85
+                    ]
+                  },
+                  "type": "quantitative"
+                }
+              }
+            },
+            {
+              "data": {
+                "name": "data-699c1bdb68a7d4c00a31236afc6942e0"
+              },
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "color": "#179fdb",
+                "fontSize": 12,
+                "fontWeight": "bold"
+              },
+              "encoding": {
+                "text": {
+                  "value": "Information and communication"
+                },
+                "x": {
+                  "axis": {
+                    "format": "%b %Y",
+                    "grid": false,
+                    "labelFontSize": 11,
+                    "title": null,
+                    "values": [
+                      {
+                        "year": 2024,
+                        "month": 7,
+                        "date": 1
+                      },
+                      {
+                        "year": 2024,
+                        "month": 10,
+                        "date": 1
+                      },
+                      {
+                        "year": 2025,
+                        "month": 1,
+                        "date": 1
+                      },
+                      {
+                        "year": 2025,
+                        "month": 4,
+                        "date": 1
+                      },
+                      {
+                        "year": 2025,
+                        "month": 7,
+                        "date": 1
+                      },
+                      {
+                        "year": 2025,
+                        "month": 10,
+                        "date": 1
+                      },
+                      {
+                        "year": 2026,
+                        "month": 1,
+                        "date": 1
+                      },
+                      {
+                        "year": 2026,
+                        "month": 4,
+                        "date": 1
+                      },
+                      {
+                        "year": 2026,
+                        "month": 7,
+                        "date": 1
+                      }
+                    ]
+                  },
+                  "field": "date",
+                  "scale": {
+                    "domain": [
+                      "2024-06-14",
+                      "2026-09-06"
+                    ]
+                  },
+                  "type": "temporal"
+                },
+                "y": {
+                  "axis": {
+                    "format": ".1f",
+                    "title": null,
+                    "values": [
+                      -0.2,
+                      0,
+                      0.2,
+                      0.4,
+                      0.6,
+                      0.8
+                    ]
+                  },
+                  "field": "value",
+                  "scale": {
+                    "domain": [
+                      -0.22,
+                      0.85
+                    ]
+                  },
+                  "type": "quantitative"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "height": 280,
+      "title": {
+        "text": "Information and communication is adding steadily more to UK growth",
+        "anchor": "start",
+        "dx": 0,
+        "fontSize": 16,
+        "offset": 18,
+        "subtitle": "Contribution to three-month on three-month GDP growth, UK, percentage points",
+        "subtitleColor": "#596b74",
+        "subtitleFontSize": 13
+      },
+      "width": 560
+    }
+  ],
+  "title": {
+    "text": [
+      "Source: ONS, Contributions to monthly GDP, released 11 September 2026. Information and",
+      "communication is SIC 2007 section J. ONS reports that many of the largest-turnover businesses",
+      "in it are involved in AI and cloud computing, but says the exact impact is difficult to",
+      "quantify. Early estimates of GDP are subject to revision."
+    ],
+    "anchor": "start",
+    "color": "#65757e",
+    "dx": 2,
+    "fontSize": 10,
+    "fontWeight": "normal",
+    "offset": 14,
+    "orient": "bottom"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-f7e38f231e60df2262f0c5ffd1362967": [
+      {
+        "value": 0.0
+      }
+    ],
+    "data-1e818b3bd854ed60725bddb955dfc2c9": [
+      {
+        "date": "2024-07-01T00:00:00",
+        "value": 0.11
+      },
+      {
+        "date": "2024-08-01T00:00:00",
+        "value": 0.1
+      },
+      {
+        "date": "2024-09-01T00:00:00",
+        "value": 0.05
+      },
+      {
+        "date": "2024-10-01T00:00:00",
+        "value": 0.07
+      },
+      {
+        "date": "2024-11-01T00:00:00",
+        "value": 0.03
+      },
+      {
+        "date": "2024-12-01T00:00:00",
+        "value": 0.06
+      },
+      {
+        "date": "2025-01-01T00:00:00",
+        "value": 0.08
+      },
+      {
+        "date": "2025-02-01T00:00:00",
+        "value": 0.12
+      },
+      {
+        "date": "2025-03-01T00:00:00",
+        "value": 0.14
+      },
+      {
+        "date": "2025-04-01T00:00:00",
+        "value": 0.12
+      },
+      {
+        "date": "2025-05-01T00:00:00",
+        "value": 0.1
+      },
+      {
+        "date": "2025-06-01T00:00:00",
+        "value": 0.06
+      },
+      {
+        "date": "2025-07-01T00:00:00",
+        "value": 0.08
+      },
+      {
+        "date": "2025-08-01T00:00:00",
+        "value": 0.04
+      },
+      {
+        "date": "2025-09-01T00:00:00",
+        "value": 0.02
+      },
+      {
+        "date": "2025-10-01T00:00:00",
+        "value": 0.0
+      },
+      {
+        "date": "2025-11-01T00:00:00",
+        "value": 0.03
+      },
+      {
+        "date": "2025-12-01T00:00:00",
+        "value": 0.05
+      },
+      {
+        "date": "2026-01-01T00:00:00",
+        "value": 0.06
+      },
+      {
+        "date": "2026-02-01T00:00:00",
+        "value": 0.06
+      },
+      {
+        "date": "2026-03-01T00:00:00",
+        "value": 0.09
+      },
+      {
+        "date": "2026-04-01T00:00:00",
+        "value": 0.13
+      },
+      {
+        "date": "2026-05-01T00:00:00",
+        "value": 0.17
+      },
+      {
+        "date": "2026-06-01T00:00:00",
+        "value": 0.18
+      },
+      {
+        "date": "2026-07-01T00:00:00",
+        "value": 0.17
+      }
+    ],
+    "data-02753a28e1060be342d558a41037400b": [
+      {
+        "date": "2024-07-01T00:00:00",
+        "value": 0.33
+      },
+      {
+        "date": "2024-08-01T00:00:00",
+        "value": 0.09
+      },
+      {
+        "date": "2024-09-01T00:00:00",
+        "value": 0.09
+      },
+      {
+        "date": "2024-10-01T00:00:00",
+        "value": 0.19
+      },
+      {
+        "date": "2024-11-01T00:00:00",
+        "value": 0.23
+      },
+      {
+        "date": "2024-12-01T00:00:00",
+        "value": 0.35
+      },
+      {
+        "date": "2025-01-01T00:00:00",
+        "value": 0.42
+      },
+      {
+        "date": "2025-02-01T00:00:00",
+        "value": 0.61
+      },
+      {
+        "date": "2025-03-01T00:00:00",
+        "value": 0.58
+      },
+      {
+        "date": "2025-04-01T00:00:00",
+        "value": 0.52
+      },
+      {
+        "date": "2025-05-01T00:00:00",
+        "value": 0.25
+      },
+      {
+        "date": "2025-06-01T00:00:00",
+        "value": 0.14
+      },
+      {
+        "date": "2025-07-01T00:00:00",
+        "value": 0.1
+      },
+      {
+        "date": "2025-08-01T00:00:00",
+        "value": 0.16
+      },
+      {
+        "date": "2025-09-01T00:00:00",
+        "value": 0.03
+      },
+      {
+        "date": "2025-10-01T00:00:00",
+        "value": -0.13
+      },
+      {
+        "date": "2025-11-01T00:00:00",
+        "value": -0.11
+      },
+      {
+        "date": "2025-12-01T00:00:00",
+        "value": 0.05
+      },
+      {
+        "date": "2026-01-01T00:00:00",
+        "value": 0.26
+      },
+      {
+        "date": "2026-02-01T00:00:00",
+        "value": 0.44
+      },
+      {
+        "date": "2026-03-01T00:00:00",
+        "value": 0.63
+      },
+      {
+        "date": "2026-04-01T00:00:00",
+        "value": 0.75
+      },
+      {
+        "date": "2026-05-01T00:00:00",
+        "value": 0.61
+      },
+      {
+        "date": "2026-06-01T00:00:00",
+        "value": 0.41
+      },
+      {
+        "date": "2026-07-01T00:00:00",
+        "value": 0.4
+      }
+    ],
+    "data-40b51fcdc31892130969aca2b8679039": [
+      {
+        "date": "2026-07-01T00:00:00",
+        "value": 0.4
+      }
+    ],
+    "data-c6fc2e0a06094e278c9435885193724d": [
+      {
+        "date": "2026-07-01T00:00:00",
+        "value": 0.17
+      }
+    ],
+    "data-adf8b40dffcb1227f91e97d86a3553ca": [
+      {
+        "date": "2024-07-20T00:00:00",
+        "value": 0.8
+      }
+    ],
+    "data-699c1bdb68a7d4c00a31236afc6942e0": [
+      {
+        "date": "2024-07-20T00:00:00",
+        "value": 0.7
+      }
+    ]
+  }
+}

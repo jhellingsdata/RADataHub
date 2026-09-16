@@ -1,0 +1,558 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {
+      "line": {
+        "interpolate": "linear"
+      }
+    },
+    "view": {
+      "stroke": null,
+      "width": 400,
+      "height": 300,
+      "strokeWidth": 0
+    },
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    },
+    "axis": {
+      "labelFontSize": 11
+    }
+  },
+  "vconcat": [
+    {
+      "layer": [
+        {
+          "data": {
+            "name": "data-2070bc969ecb909b85ae711fdf71280d"
+          },
+          "mark": {
+            "type": "bar",
+            "cornerRadius": 5.5,
+            "height": 11
+          },
+          "encoding": {
+            "color": {
+              "condition": {
+                "test": "datum.is_uk",
+                "value": "#a8c0de"
+              },
+              "value": "#d6d4d4"
+            },
+            "tooltip": [
+              {
+                "field": "economy",
+                "type": "nominal"
+              },
+              {
+                "field": "p10",
+                "type": "quantitative"
+              },
+              {
+                "field": "mean",
+                "type": "quantitative"
+              },
+              {
+                "field": "p90",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Science score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "p10",
+              "scale": {
+                "domain": [
+                  310,
+                  710
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "x2": {
+              "field": "p90"
+            },
+            "y": {
+              "axis": {
+                "labelFontSize": 12,
+                "title": null
+              },
+              "field": "code",
+              "sort": [
+                "SGP",
+                "JPN",
+                "EST",
+                "KOR",
+                "UK",
+                "CAN",
+                "USA",
+                "DEU",
+                "FRA",
+                "ITA",
+                "DNK"
+              ],
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-2070bc969ecb909b85ae711fdf71280d"
+          },
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "shape": "diamond",
+            "size": 90
+          },
+          "encoding": {
+            "color": {
+              "condition": {
+                "test": "datum.is_uk",
+                "value": "#179fdb"
+              },
+              "value": "#122b39"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Science score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "mean",
+              "scale": {
+                "domain": [
+                  310,
+                  710
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "labelFontSize": 12,
+                "title": null
+              },
+              "field": "code",
+              "sort": [
+                "SGP",
+                "JPN",
+                "EST",
+                "KOR",
+                "UK",
+                "CAN",
+                "USA",
+                "DEU",
+                "FRA",
+                "ITA",
+                "DNK"
+              ],
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-2070bc969ecb909b85ae711fdf71280d"
+          },
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "middle",
+            "color": "#4d606a",
+            "dx": -8,
+            "fontSize": 10
+          },
+          "encoding": {
+            "text": {
+              "field": "p10",
+              "format": ".0f",
+              "type": "quantitative"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Science score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "p10",
+              "scale": {
+                "domain": [
+                  310,
+                  710
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "labelFontSize": 12,
+                "title": null
+              },
+              "field": "code",
+              "sort": [
+                "SGP",
+                "JPN",
+                "EST",
+                "KOR",
+                "UK",
+                "CAN",
+                "USA",
+                "DEU",
+                "FRA",
+                "ITA",
+                "DNK"
+              ],
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-2070bc969ecb909b85ae711fdf71280d"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "color": "#4d606a",
+            "dx": 8,
+            "fontSize": 10
+          },
+          "encoding": {
+            "text": {
+              "field": "p90",
+              "format": ".0f",
+              "type": "quantitative"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Science score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "p90",
+              "scale": {
+                "domain": [
+                  310,
+                  710
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "labelFontSize": 12,
+                "title": null
+              },
+              "field": "code",
+              "sort": [
+                "SGP",
+                "JPN",
+                "EST",
+                "KOR",
+                "UK",
+                "CAN",
+                "USA",
+                "DEU",
+                "FRA",
+                "ITA",
+                "DNK"
+              ],
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-ba64c470580afa4e3eb920310df3b1c7"
+          },
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "bottom",
+            "color": "#179fdb",
+            "dy": -11,
+            "fontSize": 11,
+            "fontWeight": 700
+          },
+          "encoding": {
+            "text": {
+              "field": "mean",
+              "format": ".0f",
+              "type": "quantitative"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Science score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "mean",
+              "scale": {
+                "domain": [
+                  310,
+                  710
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "labelFontSize": 12,
+                "title": null
+              },
+              "field": "code",
+              "sort": [
+                "SGP",
+                "JPN",
+                "EST",
+                "KOR",
+                "UK",
+                "CAN",
+                "USA",
+                "DEU",
+                "FRA",
+                "ITA",
+                "DNK"
+              ],
+              "type": "nominal"
+            }
+          }
+        }
+      ],
+      "height": 400,
+      "title": {
+        "text": "Where UK science students sit, from the weakest tenth to the strongest",
+        "anchor": "start",
+        "fontSize": 17,
+        "offset": 14,
+        "subtitle": [
+          "Science score at the 10th and 90th percentile, with the mean marked as a diamond, 2025. Sorted by mean score."
+        ],
+        "subtitleColor": "#596b74",
+        "subtitleFontSize": 12,
+        "subtitlePadding": 7
+      },
+      "width": 560
+    }
+  ],
+  "title": {
+    "text": [
+      "Source: OECD (2026), PISA 2025 Results (Volume I), Table I.B1.2 (stat.link/mrq53f), published 8 September 2026.",
+      "Bar ends are the published 10th and 90th percentile scores; the distance between them is not a figure OECD publishes.",
+      "Selected economies shown, of 91 in the table. Labels are ISO three-letter codes. Figures cover the whole United Kingdom."
+    ],
+    "anchor": "start",
+    "color": "#65757e",
+    "fontSize": 10,
+    "fontWeight": 400,
+    "lineHeight": 13,
+    "offset": 18,
+    "orient": "bottom"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-2070bc969ecb909b85ae711fdf71280d": [
+      {
+        "economy": "Canada",
+        "flagged": true,
+        "mean": 510.05482000000006,
+        "p10": 378.64748000000003,
+        "p90": 636.2585600000001,
+        "code": "CAN",
+        "is_uk": false
+      },
+      {
+        "economy": "Denmark",
+        "flagged": false,
+        "mean": 477.54101,
+        "p10": 351.14163,
+        "p90": 599.64684,
+        "code": "DNK",
+        "is_uk": false
+      },
+      {
+        "economy": "Estonia",
+        "flagged": false,
+        "mean": 527.11708,
+        "p10": 409.84217,
+        "p90": 639.52543,
+        "code": "EST",
+        "is_uk": false
+      },
+      {
+        "economy": "France",
+        "flagged": false,
+        "mean": 483.42120000000006,
+        "p10": 342.43771000000004,
+        "p90": 614.8975800000001,
+        "code": "FRA",
+        "is_uk": false
+      },
+      {
+        "economy": "Germany",
+        "flagged": false,
+        "mean": 485.52144000000004,
+        "p10": 341.55083,
+        "p90": 630.06331,
+        "code": "DEU",
+        "is_uk": false
+      },
+      {
+        "economy": "Italy",
+        "flagged": false,
+        "mean": 482.98206000000005,
+        "p10": 360.45125,
+        "p90": 600.78178,
+        "code": "ITA",
+        "is_uk": false
+      },
+      {
+        "economy": "Japan",
+        "flagged": false,
+        "mean": 537.5862400000001,
+        "p10": 400.97468000000003,
+        "p90": 661.3790300000001,
+        "code": "JPN",
+        "is_uk": false
+      },
+      {
+        "economy": "Korea",
+        "flagged": false,
+        "mean": 526.10531,
+        "p10": 384.06162,
+        "p90": 653.7533900000001,
+        "code": "KOR",
+        "is_uk": false
+      },
+      {
+        "economy": "Singapore",
+        "flagged": false,
+        "mean": 559.8505600000001,
+        "p10": 410.59858,
+        "p90": 686.6289700000001,
+        "code": "SGP",
+        "is_uk": false
+      },
+      {
+        "economy": "United Kingdom",
+        "flagged": false,
+        "mean": 511.35575000000006,
+        "p10": 373.79959,
+        "p90": 646.48107,
+        "code": "UK",
+        "is_uk": true
+      },
+      {
+        "economy": "United States",
+        "flagged": true,
+        "mean": 501.58324000000005,
+        "p10": 351.39512,
+        "p90": 649.3159300000001,
+        "code": "USA",
+        "is_uk": false
+      }
+    ],
+    "data-ba64c470580afa4e3eb920310df3b1c7": [
+      {
+        "economy": "United Kingdom",
+        "flagged": false,
+        "mean": 511.35575000000006,
+        "p10": 373.79959,
+        "p90": 646.48107,
+        "code": "UK",
+        "is_uk": true
+      }
+    ]
+  }
+}

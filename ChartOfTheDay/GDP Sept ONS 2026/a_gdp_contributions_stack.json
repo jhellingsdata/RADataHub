@@ -1,0 +1,762 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {
+      "line": {
+        "interpolate": "linear"
+      }
+    },
+    "view": {
+      "stroke": null,
+      "width": 400,
+      "height": 300,
+      "strokeWidth": 0
+    },
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "vconcat": [
+    {
+      "layer": [
+        {
+          "data": {
+            "name": "data-f7e38f231e60df2262f0c5ffd1362967"
+          },
+          "mark": {
+            "type": "rule",
+            "color": "#122b39",
+            "opacity": 0.55,
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "y": {
+              "axis": {
+                "format": ".1f",
+                "labelExpr": "format(datum.value, '.1f') + '%'",
+                "title": "",
+                "values": [
+                  -0.2,
+                  0,
+                  0.2,
+                  0.4,
+                  0.6,
+                  0.8
+                ]
+              },
+              "field": "value",
+              "scale": {
+                "domain": [
+                  -0.22,
+                  0.85
+                ]
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-f002563be7c66537344029d193fe02da"
+          },
+          "mark": {
+            "type": "bar",
+            "width": 22
+          },
+          "encoding": {
+            "color": {
+              "field": "sector",
+              "legend": {
+                "direction": "horizontal",
+                "labelFontSize": 12,
+                "legendX": -58,
+                "legendY": -30,
+                "orient": "none",
+                "symbolSize": 120,
+                "symbolType": "square",
+                "title": null
+              },
+              "scale": {
+                "domain": [
+                  "Services",
+                  "Production",
+                  "Construction"
+                ],
+                "range": [
+                  "#179fdb",
+                  "#e6224b",
+                  "#36b7b4"
+                ]
+              },
+              "type": "nominal"
+            },
+            "order": {
+              "field": "sector",
+              "sort": "ascending",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "format": "%b %Y",
+                "grid": false,
+                "labelFontSize": 11,
+                "title": null,
+                "values": [
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 7,
+                    "date": 1
+                  }
+                ]
+              },
+              "field": "date",
+              "scale": {
+                "domain": [
+                  "2025-06-12",
+                  "2026-08-14"
+                ]
+              },
+              "type": "temporal"
+            },
+            "y": {
+              "axis": {
+                "format": ".1f",
+                "labelExpr": "format(datum.value, '.1f') + '%'",
+                "title": "",
+                "values": [
+                  -0.2,
+                  0,
+                  0.2,
+                  0.4,
+                  0.6,
+                  0.8
+                ]
+              },
+              "field": "value",
+              "scale": {
+                "domain": [
+                  -0.22,
+                  0.85
+                ]
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-46405fd7d46f49656a7eb2e197821f15"
+          },
+          "mark": {
+            "type": "line",
+            "color": "#122b39",
+            "point": {
+              "color": "#122b39",
+              "size": 30
+            },
+            "strokeWidth": 2.5
+          },
+          "encoding": {
+            "color": {
+              "field": "series",
+              "legend": {
+                "labelFontSize": 12,
+                "legendX": 204,
+                "legendY": -32,
+                "orient": "none",
+                "symbolSize": 200,
+                "symbolStrokeWidth": 2.5,
+                "symbolType": "stroke",
+                "title": null
+              },
+              "scale": {
+                "domain": [
+                  "GDP (%)"
+                ],
+                "range": [
+                  "#122b39"
+                ]
+              },
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "format": "%b %Y",
+                "grid": false,
+                "labelFontSize": 11,
+                "title": null,
+                "values": [
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 7,
+                    "date": 1
+                  }
+                ]
+              },
+              "field": "date",
+              "scale": {
+                "domain": [
+                  "2025-06-12",
+                  "2026-08-14"
+                ]
+              },
+              "type": "temporal"
+            },
+            "y": {
+              "axis": {
+                "format": ".1f",
+                "labelExpr": "format(datum.value, '.1f') + '%'",
+                "title": "",
+                "values": [
+                  -0.2,
+                  0,
+                  0.2,
+                  0.4,
+                  0.6,
+                  0.8
+                ]
+              },
+              "field": "value",
+              "scale": {
+                "domain": [
+                  -0.22,
+                  0.85
+                ]
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-bd0430cc97619ec697358053d8ed7c7b"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "color": "#122b39",
+            "dx": 8,
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "text": {
+              "value": "0.4%"
+            },
+            "x": {
+              "axis": {
+                "format": "%b %Y",
+                "grid": false,
+                "labelFontSize": 11,
+                "title": null,
+                "values": [
+                  {
+                    "year": 2025,
+                    "month": 7,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 9,
+                    "date": 1
+                  },
+                  {
+                    "year": 2025,
+                    "month": 11,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 1,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 3,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 5,
+                    "date": 1
+                  },
+                  {
+                    "year": 2026,
+                    "month": 7,
+                    "date": 1
+                  }
+                ]
+              },
+              "field": "date",
+              "scale": {
+                "domain": [
+                  "2025-06-12",
+                  "2026-08-14"
+                ]
+              },
+              "type": "temporal"
+            },
+            "y": {
+              "axis": {
+                "format": ".1f",
+                "labelExpr": "format(datum.value, '.1f') + '%'",
+                "title": "",
+                "values": [
+                  -0.2,
+                  0,
+                  0.2,
+                  0.4,
+                  0.6,
+                  0.8
+                ]
+              },
+              "field": "value",
+              "scale": {
+                "domain": [
+                  -0.22,
+                  0.85
+                ]
+              },
+              "type": "quantitative"
+            }
+          }
+        }
+      ],
+      "height": 272,
+      "resolve": {
+        "scale": {
+          "color": "independent"
+        }
+      },
+      "title": {
+        "text": "The services sector contributed to UK growth over the three months to July",
+        "anchor": "start",
+        "dx": -29,
+        "fontSize": 17,
+        "offset": 18,
+        "subtitle": "Sector contributions to three-month on three-month GDP growth, UK",
+        "subtitleColor": "#596b74",
+        "subtitleFontSize": 13
+      },
+      "width": 560
+    }
+  ],
+  "title": {
+    "text": [
+      "Source: ONS, Contributions to monthly GDP, released 11 September 2026."
+    ],
+    "anchor": "start",
+    "color": "#65757e",
+    "dx": 2,
+    "fontSize": 10,
+    "fontWeight": "normal",
+    "offset": 14,
+    "orient": "bottom"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-f7e38f231e60df2262f0c5ffd1362967": [
+      {
+        "value": 0.0
+      }
+    ],
+    "data-f002563be7c66537344029d193fe02da": [
+      {
+        "date": "2025-07-01T00:00:00",
+        "sector": "Services",
+        "value": 0.23
+      },
+      {
+        "date": "2025-08-01T00:00:00",
+        "sector": "Services",
+        "value": 0.19
+      },
+      {
+        "date": "2025-09-01T00:00:00",
+        "sector": "Services",
+        "value": 0.16
+      },
+      {
+        "date": "2025-10-01T00:00:00",
+        "sector": "Services",
+        "value": 0.0
+      },
+      {
+        "date": "2025-11-01T00:00:00",
+        "sector": "Services",
+        "value": 0.02
+      },
+      {
+        "date": "2025-12-01T00:00:00",
+        "sector": "Services",
+        "value": 0.05
+      },
+      {
+        "date": "2026-01-01T00:00:00",
+        "sector": "Services",
+        "value": 0.22
+      },
+      {
+        "date": "2026-02-01T00:00:00",
+        "sector": "Services",
+        "value": 0.44
+      },
+      {
+        "date": "2026-03-01T00:00:00",
+        "sector": "Services",
+        "value": 0.62
+      },
+      {
+        "date": "2026-04-01T00:00:00",
+        "sector": "Services",
+        "value": 0.68
+      },
+      {
+        "date": "2026-05-01T00:00:00",
+        "sector": "Services",
+        "value": 0.52
+      },
+      {
+        "date": "2026-06-01T00:00:00",
+        "sector": "Services",
+        "value": 0.4
+      },
+      {
+        "date": "2026-07-01T00:00:00",
+        "sector": "Services",
+        "value": 0.48
+      },
+      {
+        "date": "2025-07-01T00:00:00",
+        "sector": "Production",
+        "value": -0.14
+      },
+      {
+        "date": "2025-08-01T00:00:00",
+        "sector": "Production",
+        "value": -0.04
+      },
+      {
+        "date": "2025-09-01T00:00:00",
+        "sector": "Production",
+        "value": -0.14
+      },
+      {
+        "date": "2025-10-01T00:00:00",
+        "sector": "Production",
+        "value": -0.1
+      },
+      {
+        "date": "2025-11-01T00:00:00",
+        "sector": "Production",
+        "value": -0.06
+      },
+      {
+        "date": "2025-12-01T00:00:00",
+        "sector": "Production",
+        "value": 0.16
+      },
+      {
+        "date": "2026-01-01T00:00:00",
+        "sector": "Production",
+        "value": 0.2
+      },
+      {
+        "date": "2026-02-01T00:00:00",
+        "sector": "Production",
+        "value": 0.13
+      },
+      {
+        "date": "2026-03-01T00:00:00",
+        "sector": "Production",
+        "value": 0.03
+      },
+      {
+        "date": "2026-04-01T00:00:00",
+        "sector": "Production",
+        "value": 0.03
+      },
+      {
+        "date": "2026-05-01T00:00:00",
+        "sector": "Production",
+        "value": 0.03
+      },
+      {
+        "date": "2026-06-01T00:00:00",
+        "sector": "Production",
+        "value": 0.0
+      },
+      {
+        "date": "2026-07-01T00:00:00",
+        "sector": "Production",
+        "value": -0.06
+      },
+      {
+        "date": "2025-07-01T00:00:00",
+        "sector": "Construction",
+        "value": 0.01
+      },
+      {
+        "date": "2025-08-01T00:00:00",
+        "sector": "Construction",
+        "value": 0.01
+      },
+      {
+        "date": "2025-09-01T00:00:00",
+        "sector": "Construction",
+        "value": 0.01
+      },
+      {
+        "date": "2025-10-01T00:00:00",
+        "sector": "Construction",
+        "value": -0.03
+      },
+      {
+        "date": "2025-11-01T00:00:00",
+        "sector": "Construction",
+        "value": -0.07
+      },
+      {
+        "date": "2025-12-01T00:00:00",
+        "sector": "Construction",
+        "value": -0.15
+      },
+      {
+        "date": "2026-01-01T00:00:00",
+        "sector": "Construction",
+        "value": -0.15
+      },
+      {
+        "date": "2026-02-01T00:00:00",
+        "sector": "Construction",
+        "value": -0.11
+      },
+      {
+        "date": "2026-03-01T00:00:00",
+        "sector": "Construction",
+        "value": 0.01
+      },
+      {
+        "date": "2026-04-01T00:00:00",
+        "sector": "Construction",
+        "value": 0.07
+      },
+      {
+        "date": "2026-05-01T00:00:00",
+        "sector": "Construction",
+        "value": 0.08
+      },
+      {
+        "date": "2026-06-01T00:00:00",
+        "sector": "Construction",
+        "value": 0.02
+      },
+      {
+        "date": "2026-07-01T00:00:00",
+        "sector": "Construction",
+        "value": -0.03
+      }
+    ],
+    "data-46405fd7d46f49656a7eb2e197821f15": [
+      {
+        "date": "2025-07-01T00:00:00",
+        "value": 0.1,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2025-08-01T00:00:00",
+        "value": 0.16,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2025-09-01T00:00:00",
+        "value": 0.03,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2025-10-01T00:00:00",
+        "value": -0.13,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2025-11-01T00:00:00",
+        "value": -0.11,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2025-12-01T00:00:00",
+        "value": 0.05,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2026-01-01T00:00:00",
+        "value": 0.26,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2026-02-01T00:00:00",
+        "value": 0.44,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2026-03-01T00:00:00",
+        "value": 0.63,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2026-04-01T00:00:00",
+        "value": 0.75,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2026-05-01T00:00:00",
+        "value": 0.61,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2026-06-01T00:00:00",
+        "value": 0.41,
+        "series": "GDP (%)"
+      },
+      {
+        "date": "2026-07-01T00:00:00",
+        "value": 0.4,
+        "series": "GDP (%)"
+      }
+    ],
+    "data-bd0430cc97619ec697358053d8ed7c7b": [
+      {
+        "date": "2026-07-01T00:00:00",
+        "value": 0.4,
+        "series": "GDP (%)"
+      }
+    ]
+  }
+}

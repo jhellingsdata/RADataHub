@@ -1,0 +1,600 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {
+      "line": {
+        "interpolate": "linear"
+      }
+    },
+    "view": {
+      "stroke": null,
+      "width": 400,
+      "height": 300,
+      "strokeWidth": 0
+    },
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "vconcat": [
+    {
+      "layer": [
+        {
+          "data": {
+            "name": "data-38eb8f2cb7a5a324b3939571e093cbee"
+          },
+          "mark": {
+            "type": "rule",
+            "color": "#122b39",
+            "opacity": 0.55,
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "axis": null,
+              "field": "pp",
+              "scale": {
+                "domain": [
+                  -0.09,
+                  0.22
+                ]
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-467c580a28d68cbca610c813441efa18"
+          },
+          "mark": {
+            "type": "bar",
+            "height": 13
+          },
+          "encoding": {
+            "color": {
+              "field": "sign",
+              "legend": null,
+              "scale": {
+                "domain": [
+                  "up",
+                  "down"
+                ],
+                "range": [
+                  "#179fdb",
+                  "#e6224b"
+                ]
+              },
+              "type": "nominal"
+            },
+            "x": {
+              "axis": null,
+              "field": "pp",
+              "scale": {
+                "domain": [
+                  -0.09,
+                  0.22
+                ]
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "domain": false,
+                "labelFontSize": 11,
+                "labelLimit": 260,
+                "labelPadding": 8,
+                "title": null
+              },
+              "field": "industry",
+              "scale": {
+                "domain": [
+                  "Professional and scientific",
+                  "Information and communication",
+                  "Admin and support services",
+                  "Manufacturing",
+                  "Other services",
+                  "Transport and storage",
+                  "Arts and recreation",
+                  "Health and social work",
+                  "Finance and insurance",
+                  "Real estate",
+                  "Public administration and defence",
+                  "Agriculture, forestry and fishing",
+                  "Accommodation and food",
+                  "Households as employers",
+                  "Education",
+                  "Mining and quarrying",
+                  "Construction",
+                  "Electricity and gas supply",
+                  "Wholesale and retail",
+                  "Water and waste"
+                ],
+                "paddingInner": 0.28
+              },
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-92903556a0fa34e99af64585ed732f02"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "color": "#122b39",
+            "dx": 5,
+            "fontSize": 11
+          },
+          "encoding": {
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": null,
+              "field": "pp",
+              "scale": {
+                "domain": [
+                  -0.09,
+                  0.22
+                ]
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "domain": false,
+                "labelFontSize": 11,
+                "labelLimit": 260,
+                "labelPadding": 8,
+                "title": null
+              },
+              "field": "industry",
+              "scale": {
+                "domain": [
+                  "Professional and scientific",
+                  "Information and communication",
+                  "Admin and support services",
+                  "Manufacturing",
+                  "Other services",
+                  "Transport and storage",
+                  "Arts and recreation",
+                  "Health and social work",
+                  "Finance and insurance",
+                  "Real estate",
+                  "Public administration and defence",
+                  "Agriculture, forestry and fishing",
+                  "Accommodation and food",
+                  "Households as employers",
+                  "Education",
+                  "Mining and quarrying",
+                  "Construction",
+                  "Electricity and gas supply",
+                  "Wholesale and retail",
+                  "Water and waste"
+                ],
+                "paddingInner": 0.28
+              },
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-c06b0e87e186807772088e860f5cbd10"
+          },
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "middle",
+            "color": "#122b39",
+            "dx": -5,
+            "fontSize": 11
+          },
+          "encoding": {
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": null,
+              "field": "pp",
+              "scale": {
+                "domain": [
+                  -0.09,
+                  0.22
+                ]
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "domain": false,
+                "labelFontSize": 11,
+                "labelLimit": 260,
+                "labelPadding": 8,
+                "title": null
+              },
+              "field": "industry",
+              "scale": {
+                "domain": [
+                  "Professional and scientific",
+                  "Information and communication",
+                  "Admin and support services",
+                  "Manufacturing",
+                  "Other services",
+                  "Transport and storage",
+                  "Arts and recreation",
+                  "Health and social work",
+                  "Finance and insurance",
+                  "Real estate",
+                  "Public administration and defence",
+                  "Agriculture, forestry and fishing",
+                  "Accommodation and food",
+                  "Households as employers",
+                  "Education",
+                  "Mining and quarrying",
+                  "Construction",
+                  "Electricity and gas supply",
+                  "Wholesale and retail",
+                  "Water and waste"
+                ],
+                "paddingInner": 0.28
+              },
+              "type": "nominal"
+            }
+          }
+        }
+      ],
+      "height": 430,
+      "title": {
+        "text": "Professional services and IT drove UK growth",
+        "anchor": "start",
+        "dx": 0,
+        "fontSize": 17,
+        "offset": 18,
+        "subtitle": "Industry contributions to the UK's 0.4% growth, three months to July 2026, percentage points",
+        "subtitleColor": "#596b74",
+        "subtitleFontSize": 13
+      },
+      "width": 330
+    }
+  ],
+  "title": {
+    "text": [
+      "Source: ONS, Contributions to monthly GDP, released 11 September 2026. SIC 2007",
+      "sections. Sector aggregates are excluded, so no industry is counted twice.",
+      "Components may not sum to the total. Early estimates of GDP are subject to revision."
+    ],
+    "anchor": "start",
+    "color": "#65757e",
+    "dx": 2,
+    "fontSize": 10,
+    "fontWeight": "normal",
+    "offset": 14,
+    "orient": "bottom"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-38eb8f2cb7a5a324b3939571e093cbee": [
+      {
+        "pp": 0.0
+      }
+    ],
+    "data-467c580a28d68cbca610c813441efa18": [
+      {
+        "industry": "Professional and scientific",
+        "pp": 0.18,
+        "label": "0.18",
+        "sign": "up"
+      },
+      {
+        "industry": "Information and communication",
+        "pp": 0.17,
+        "label": "0.17",
+        "sign": "up"
+      },
+      {
+        "industry": "Admin and support services",
+        "pp": 0.07,
+        "label": "0.07",
+        "sign": "up"
+      },
+      {
+        "industry": "Manufacturing",
+        "pp": 0.04,
+        "label": "0.04",
+        "sign": "up"
+      },
+      {
+        "industry": "Other services",
+        "pp": 0.03,
+        "label": "0.03",
+        "sign": "up"
+      },
+      {
+        "industry": "Transport and storage",
+        "pp": 0.03,
+        "label": "0.03",
+        "sign": "up"
+      },
+      {
+        "industry": "Arts and recreation",
+        "pp": 0.02,
+        "label": "0.02",
+        "sign": "up"
+      },
+      {
+        "industry": "Health and social work",
+        "pp": 0.02,
+        "label": "0.02",
+        "sign": "up"
+      },
+      {
+        "industry": "Finance and insurance",
+        "pp": 0.01,
+        "label": "0.01",
+        "sign": "up"
+      },
+      {
+        "industry": "Real estate",
+        "pp": 0.01,
+        "label": "0.01",
+        "sign": "up"
+      },
+      {
+        "industry": "Public administration and defence",
+        "pp": 0.0,
+        "label": "0.00",
+        "sign": "up"
+      },
+      {
+        "industry": "Agriculture, forestry and fishing",
+        "pp": 0.0,
+        "label": "0.00",
+        "sign": "up"
+      },
+      {
+        "industry": "Accommodation and food",
+        "pp": 0.0,
+        "label": "0.00",
+        "sign": "up"
+      },
+      {
+        "industry": "Households as employers",
+        "pp": 0.0,
+        "label": "0.00",
+        "sign": "up"
+      },
+      {
+        "industry": "Education",
+        "pp": -0.02,
+        "label": "\u22120.02",
+        "sign": "down"
+      },
+      {
+        "industry": "Mining and quarrying",
+        "pp": -0.03,
+        "label": "\u22120.03",
+        "sign": "down"
+      },
+      {
+        "industry": "Construction",
+        "pp": -0.03,
+        "label": "\u22120.03",
+        "sign": "down"
+      },
+      {
+        "industry": "Electricity and gas supply",
+        "pp": -0.03,
+        "label": "\u22120.03",
+        "sign": "down"
+      },
+      {
+        "industry": "Wholesale and retail",
+        "pp": -0.05,
+        "label": "\u22120.05",
+        "sign": "down"
+      },
+      {
+        "industry": "Water and waste",
+        "pp": -0.05,
+        "label": "\u22120.05",
+        "sign": "down"
+      }
+    ],
+    "data-92903556a0fa34e99af64585ed732f02": [
+      {
+        "industry": "Professional and scientific",
+        "pp": 0.18,
+        "label": "0.18",
+        "sign": "up"
+      },
+      {
+        "industry": "Information and communication",
+        "pp": 0.17,
+        "label": "0.17",
+        "sign": "up"
+      },
+      {
+        "industry": "Admin and support services",
+        "pp": 0.07,
+        "label": "0.07",
+        "sign": "up"
+      },
+      {
+        "industry": "Manufacturing",
+        "pp": 0.04,
+        "label": "0.04",
+        "sign": "up"
+      },
+      {
+        "industry": "Other services",
+        "pp": 0.03,
+        "label": "0.03",
+        "sign": "up"
+      },
+      {
+        "industry": "Transport and storage",
+        "pp": 0.03,
+        "label": "0.03",
+        "sign": "up"
+      },
+      {
+        "industry": "Arts and recreation",
+        "pp": 0.02,
+        "label": "0.02",
+        "sign": "up"
+      },
+      {
+        "industry": "Health and social work",
+        "pp": 0.02,
+        "label": "0.02",
+        "sign": "up"
+      },
+      {
+        "industry": "Finance and insurance",
+        "pp": 0.01,
+        "label": "0.01",
+        "sign": "up"
+      },
+      {
+        "industry": "Real estate",
+        "pp": 0.01,
+        "label": "0.01",
+        "sign": "up"
+      },
+      {
+        "industry": "Public administration and defence",
+        "pp": 0.0,
+        "label": "0.00",
+        "sign": "up"
+      },
+      {
+        "industry": "Agriculture, forestry and fishing",
+        "pp": 0.0,
+        "label": "0.00",
+        "sign": "up"
+      },
+      {
+        "industry": "Accommodation and food",
+        "pp": 0.0,
+        "label": "0.00",
+        "sign": "up"
+      },
+      {
+        "industry": "Households as employers",
+        "pp": 0.0,
+        "label": "0.00",
+        "sign": "up"
+      }
+    ],
+    "data-c06b0e87e186807772088e860f5cbd10": [
+      {
+        "industry": "Education",
+        "pp": -0.02,
+        "label": "\u22120.02",
+        "sign": "down"
+      },
+      {
+        "industry": "Mining and quarrying",
+        "pp": -0.03,
+        "label": "\u22120.03",
+        "sign": "down"
+      },
+      {
+        "industry": "Construction",
+        "pp": -0.03,
+        "label": "\u22120.03",
+        "sign": "down"
+      },
+      {
+        "industry": "Electricity and gas supply",
+        "pp": -0.03,
+        "label": "\u22120.03",
+        "sign": "down"
+      },
+      {
+        "industry": "Wholesale and retail",
+        "pp": -0.05,
+        "label": "\u22120.05",
+        "sign": "down"
+      },
+      {
+        "industry": "Water and waste",
+        "pp": -0.05,
+        "label": "\u22120.05",
+        "sign": "down"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2811 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {
+      "line": {
+        "interpolate": "linear"
+      }
+    },
+    "view": {
+      "stroke": null,
+      "width": 400,
+      "height": 300,
+      "strokeWidth": 0
+    },
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    },
+    "axis": {
+      "labelFontSize": 11
+    }
+  },
+  "vconcat": [
+    {
+      "layer": [
+        {
+          "data": {
+            "name": "data-1c40288560bae26dac9460ee516eb9cf"
+          },
+          "mark": {
+            "type": "rule",
+            "color": "#94a0a6",
+            "strokeDash": [
+              3,
+              4
+            ],
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "maths",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-1c40288560bae26dac9460ee516eb9cf"
+          },
+          "mark": {
+            "type": "rule",
+            "color": "#94a0a6",
+            "strokeDash": [
+              3,
+              4
+            ],
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "reading",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-c9410d3f799c07f4b56623c368df6461"
+          },
+          "mark": {
+            "type": "rule",
+            "color": "#a8c0de",
+            "strokeWidth": 0.9
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "maths",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "x2": {
+              "field": "lead_x"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "reading",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "lead_y"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-9d5eb7b645fd91ccaac85a9ef27e75c0"
+          },
+          "mark": {
+            "type": "rule",
+            "color": "#179fdb",
+            "strokeWidth": 0.9
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "maths",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "x2": {
+              "field": "lead_x"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "reading",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "lead_y"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-9a50f968e2498eaea535ea4d9f4a1483"
+          },
+          "mark": {
+            "type": "circle",
+            "color": "#d6d4d4",
+            "size": 62
+          },
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "economy",
+                "type": "nominal"
+              },
+              {
+                "field": "maths",
+                "type": "quantitative"
+              },
+              {
+                "field": "reading",
+                "type": "quantitative"
+              },
+              {
+                "field": "science",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "maths",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "reading",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-2036db6c3df5ddade9d0345170a1a50c"
+          },
+          "mark": {
+            "type": "circle",
+            "color": "#122b39",
+            "size": 62
+          },
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "economy",
+                "type": "nominal"
+              },
+              {
+                "field": "maths",
+                "type": "quantitative"
+              },
+              {
+                "field": "reading",
+                "type": "quantitative"
+              },
+              {
+                "field": "science",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "maths",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "reading",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-a4ac3356ef78b0ead8a8ad3e944a651f"
+          },
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "bottom",
+            "color": "#122b39",
+            "fontSize": 11
+          },
+          "encoding": {
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "lab_x",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "lab_y",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-7c0f32259fa608b797d5c13653d71b8e"
+          },
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "top",
+            "color": "#122b39",
+            "fontSize": 11
+          },
+          "encoding": {
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "lab_x",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "lab_y",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-a8d5cd7697b18048820322713737fedb"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "color": "#122b39",
+            "fontSize": 11
+          },
+          "encoding": {
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "lab_x",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "lab_y",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-61fcdeab03b25864839d1aff808b25ac"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "color": "#122b39",
+            "fontSize": 11
+          },
+          "encoding": {
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "lab_x",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "lab_y",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-2f03a49d36994e0dc094a363621621cb"
+          },
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "bottom",
+            "color": "#122b39",
+            "fontSize": 11
+          },
+          "encoding": {
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "lab_x",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "lab_y",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-a6648d9f65fe83b454c8cc43b764923a"
+          },
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "baseline": "middle",
+            "color": "#122b39",
+            "fontSize": 11
+          },
+          "encoding": {
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "lab_x",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "lab_y",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-1b8eac12ae0c3ad35e5c7e1d746ad0eb"
+          },
+          "mark": {
+            "type": "circle",
+            "color": "#179fdb",
+            "size": 115
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "maths",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "reading",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-9d5eb7b645fd91ccaac85a9ef27e75c0"
+          },
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "bottom",
+            "color": "#179fdb",
+            "fontSize": 14,
+            "fontWeight": 700
+          },
+          "encoding": {
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "lab_x",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "lab_y",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-1c40288560bae26dac9460ee516eb9cf"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "color": "#4d606a",
+            "dx": 6,
+            "fontSize": 11,
+            "text": "OECD average, maths: 463"
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Mathematics score",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "maths",
+              "scale": {
+                "domain": [
+                  275,
+                  625
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "value": 6
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-1c40288560bae26dac9460ee516eb9cf"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "bottom",
+            "color": "#4d606a",
+            "dx": 2,
+            "dy": -6,
+            "fontSize": 11,
+            "text": "OECD average, reading: 461"
+          },
+          "encoding": {
+            "x": {
+              "value": 4
+            },
+            "y": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "Reading score",
+                "titleAlign": "left",
+                "titleAngle": 0,
+                "titleBaseline": "bottom",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titleX": 0,
+                "titleY": -10
+              },
+              "field": "reading",
+              "scale": {
+                "domain": [
+                  275,
+                  550
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        }
+      ],
+      "height": 440,
+      "title": {
+        "text": "UK 15-year-olds outscore the OECD average in both maths and reading",
+        "anchor": "start",
+        "fontSize": 18,
+        "offset": 14,
+        "subtitle": [
+          "Mean PISA score, 2025. Each dot is one of 90 countries and economies with results in both domains."
+        ],
+        "subtitleColor": "#596b74",
+        "subtitleFontSize": 12,
+        "subtitlePadding": 7
+      },
+      "width": 620
+    }
+  ],
+  "title": {
+    "text": [
+      "Source: OECD (2026), PISA 2025 Results (Volume I)"
+    ],
+    "anchor": "start",
+    "color": "#65757e",
+    "fontSize": 10,
+    "fontWeight": 400,
+    "lineHeight": 13,
+    "offset": 18,
+    "orient": "bottom"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-1c40288560bae26dac9460ee516eb9cf": [
+      {
+        "maths": 463,
+        "reading": 461
+      }
+    ],
+    "data-c9410d3f799c07f4b56623c368df6461": [
+      {
+        "economy": "B-S-J-Z (China)",
+        "maths": 612.42966,
+        "maths_se": 2.5464700000000002,
+        "reading": 526.5182500000001,
+        "reading_se": 1.9851,
+        "science": 597.0437900000001,
+        "science_se": 2.15606,
+        "flagged": false,
+        "is_uk": false,
+        "code": "CHN (B-S-J-Z)",
+        "is_peer": true,
+        "label": "CHN (B-S-J-Z)",
+        "off_x": -12.0,
+        "off_y": 0.0,
+        "align": "right",
+        "baseline": "middle",
+        "lab_x": 600.42966,
+        "lab_y": 526.5182500000001,
+        "lead_x": 603.06966,
+        "lead_y": 526.5182500000001
+      },
+      {
+        "economy": "Canada",
+        "maths": 485.33767000000006,
+        "maths_se": 1.9128500000000002,
+        "reading": 489.82555,
+        "reading_se": 1.7807600000000001,
+        "science": 510.05482000000006,
+        "science_se": 1.78909,
+        "flagged": true,
+        "is_uk": false,
+        "code": "CAN",
+        "is_peer": true,
+        "label": "CAN",
+        "off_x": 18.0,
+        "off_y": -18.0,
+        "align": "left",
+        "baseline": "top",
+        "lab_x": 503.33767000000006,
+        "lab_y": 471.82555,
+        "lead_x": 499.3776700000001,
+        "lead_y": 475.78555
+      },
+      {
+        "economy": "Denmark",
+        "maths": 470.62750000000005,
+        "maths_se": 2.10883,
+        "reading": 460.00949,
+        "reading_se": 2.3729600000000004,
+        "science": 477.54101,
+        "science_se": 2.3902900000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": "DNK",
+        "is_peer": true,
+        "label": "DNK",
+        "off_x": 12.0,
+        "off_y": 0.0,
+        "align": "left",
+        "baseline": "middle",
+        "lab_x": 482.62750000000005,
+        "lab_y": 460.00949,
+        "lead_x": 479.98750000000007,
+        "lead_y": 460.00949
+      },
+      {
+        "economy": "Estonia",
+        "maths": 507.89573,
+        "maths_se": 2.2875300000000003,
+        "reading": 499.24425,
+        "reading_se": 2.5338800000000004,
+        "science": 527.11708,
+        "science_se": 2.33436,
+        "flagged": false,
+        "is_uk": false,
+        "code": "EST",
+        "is_peer": true,
+        "label": "EST",
+        "off_x": 0.0,
+        "off_y": -12.0,
+        "align": "center",
+        "baseline": "top",
+        "lab_x": 507.89573,
+        "lab_y": 487.24425,
+        "lead_x": 507.89573,
+        "lead_y": 489.88425
+      },
+      {
+        "economy": "France",
+        "maths": 457.65501000000006,
+        "maths_se": 2.9950900000000003,
+        "reading": 456.33453000000003,
+        "reading_se": 3.2442300000000004,
+        "science": 483.42120000000006,
+        "science_se": 3.2059400000000005,
+        "flagged": false,
+        "is_uk": false,
+        "code": "FRA",
+        "is_peer": true,
+        "label": "FRA",
+        "off_x": -18.0,
+        "off_y": 18.0,
+        "align": "right",
+        "baseline": "bottom",
+        "lab_x": 439.65501000000006,
+        "lab_y": 474.33453000000003,
+        "lead_x": 443.61501000000004,
+        "lead_y": 470.37453000000005
+      },
+      {
+        "economy": "Germany",
+        "maths": 463.80565,
+        "maths_se": 3.0461600000000004,
+        "reading": 465.28206000000006,
+        "reading_se": 3.5622100000000003,
+        "science": 485.52144000000004,
+        "science_se": 3.5211200000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": "DEU",
+        "is_peer": true,
+        "label": "DEU",
+        "off_x": -12.0,
+        "off_y": 0.0,
+        "align": "right",
+        "baseline": "middle",
+        "lab_x": 451.80565,
+        "lab_y": 465.28206000000006,
+        "lead_x": 454.44565,
+        "lead_y": 465.28206000000006
+      },
+      {
+        "economy": "Italy",
+        "maths": 467.76261000000005,
+        "maths_se": 2.84566,
+        "reading": 474.28961000000004,
+        "reading_se": 2.5982800000000004,
+        "science": 482.98206000000005,
+        "science_se": 2.4788200000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": "ITA",
+        "is_peer": true,
+        "label": "ITA",
+        "off_x": 12.0,
+        "off_y": 0.0,
+        "align": "left",
+        "baseline": "middle",
+        "lab_x": 479.76261000000005,
+        "lab_y": 474.28961000000004,
+        "lead_x": 477.12261000000007,
+        "lead_y": 474.28961000000004
+      },
+      {
+        "economy": "Japan",
+        "maths": 525.3758,
+        "maths_se": 4.204070000000001,
+        "reading": 502.71450000000004,
+        "reading_se": 3.7778300000000002,
+        "science": 537.5862400000001,
+        "science_se": 3.8059200000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": "JPN",
+        "is_peer": true,
+        "label": "JPN",
+        "off_x": 0.0,
+        "off_y": 12.0,
+        "align": "center",
+        "baseline": "bottom",
+        "lab_x": 525.3758,
+        "lab_y": 514.7145,
+        "lead_x": 525.3758,
+        "lead_y": 512.0745000000001
+      },
+      {
+        "economy": "Korea",
+        "maths": 522.2978400000001,
+        "maths_se": 3.95806,
+        "reading": 500.56065000000007,
+        "reading_se": 3.44578,
+        "science": 526.10531,
+        "science_se": 3.3696400000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": "KOR",
+        "is_peer": true,
+        "label": "KOR",
+        "off_x": -8.6,
+        "off_y": 8.6,
+        "align": "right",
+        "baseline": "bottom",
+        "lab_x": 513.69784,
+        "lab_y": 509.1606500000001,
+        "lead_x": 515.5898400000001,
+        "lead_y": 507.2686500000001
+      },
+      {
+        "economy": "Singapore",
+        "maths": 562.8974800000001,
+        "maths_se": 1.5715500000000002,
+        "reading": 534.90002,
+        "reading_se": 1.9405400000000002,
+        "science": 559.8505600000001,
+        "science_se": 1.7129,
+        "flagged": false,
+        "is_uk": false,
+        "code": "SGP",
+        "is_peer": true,
+        "label": "SGP",
+        "off_x": -12.0,
+        "off_y": 0.0,
+        "align": "right",
+        "baseline": "middle",
+        "lab_x": 550.8974800000001,
+        "lab_y": 534.90002,
+        "lead_x": 553.5374800000001,
+        "lead_y": 534.90002
+      },
+      {
+        "economy": "United States",
+        "maths": 462.84782,
+        "maths_se": 5.39684,
+        "reading": 489.51893,
+        "reading_se": 5.836790000000001,
+        "science": 501.58324000000005,
+        "science_se": 5.816520000000001,
+        "flagged": true,
+        "is_uk": false,
+        "code": "USA",
+        "is_peer": true,
+        "label": "USA",
+        "off_x": -12.0,
+        "off_y": 0.0,
+        "align": "right",
+        "baseline": "middle",
+        "lab_x": 450.84782,
+        "lab_y": 489.51893,
+        "lead_x": 453.48782,
+        "lead_y": 489.51893
+      }
+    ],
+    "data-9d5eb7b645fd91ccaac85a9ef27e75c0": [
+      {
+        "economy": "United Kingdom",
+        "maths": 487.57374000000004,
+        "maths_se": 2.1993,
+        "reading": 494.23095000000006,
+        "reading_se": 2.0213900000000002,
+        "science": 511.35575000000006,
+        "science_se": 2.10211,
+        "flagged": false,
+        "is_uk": true,
+        "code": NaN,
+        "is_peer": false,
+        "label": "UK",
+        "off_x": 0.0,
+        "off_y": 12.0,
+        "align": "center",
+        "baseline": "bottom",
+        "lab_x": 487.57374000000004,
+        "lab_y": 506.23095000000006,
+        "lead_x": 487.57374000000004,
+        "lead_y": 503.5909500000001
+      }
+    ],
+    "data-9a50f968e2498eaea535ea4d9f4a1483": [
+      {
+        "economy": "Albania",
+        "maths": 432.81719000000004,
+        "maths_se": 2.89515,
+        "reading": 407.64096,
+        "reading_se": 2.56977,
+        "science": 434.62710000000004,
+        "science_se": 2.7101200000000003,
+        "flagged": true,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Argentina",
+        "maths": 366.8142,
+        "maths_se": 2.66346,
+        "reading": 388.70426000000003,
+        "reading_se": 2.69153,
+        "science": 392.93391,
+        "science_se": 2.9888000000000003,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Armenia",
+        "maths": 375.79968,
+        "maths_se": 1.9513600000000002,
+        "reading": 348.28569000000005,
+        "reading_se": 1.50259,
+        "science": 368.63314,
+        "science_se": 1.7763300000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Australia",
+        "maths": 477.52665,
+        "maths_se": 1.9151600000000002,
+        "reading": 490.86328000000003,
+        "reading_se": 1.8518400000000002,
+        "science": 509.10633,
+        "science_se": 1.88528,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Austria",
+        "maths": 477.19387000000006,
+        "maths_se": 2.5758,
+        "reading": 467.21167,
+        "reading_se": 2.55479,
+        "science": 496.91267000000005,
+        "science_se": 2.7242400000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Azerbaijan",
+        "maths": 422.39533000000006,
+        "maths_se": 3.9786900000000003,
+        "reading": 373.57061000000004,
+        "reading_se": 2.83651,
+        "science": 408.56354000000005,
+        "science_se": 3.2037700000000005,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Belgium",
+        "maths": 479.68612,
+        "maths_se": 2.8086,
+        "reading": 466.32805,
+        "reading_se": 3.03581,
+        "science": 489.70971000000003,
+        "science_se": 2.8550500000000003,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Brazil",
+        "maths": 376.76794,
+        "maths_se": 1.74801,
+        "reading": 408.00829000000004,
+        "reading_se": 2.0144900000000003,
+        "science": 408.54046000000005,
+        "science_se": 1.93317,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Brunei Darussalam",
+        "maths": 435.18273000000005,
+        "maths_se": 0.8529300000000001,
+        "reading": 425.68088000000006,
+        "reading_se": 0.9199600000000001,
+        "science": 439.45387000000005,
+        "science_se": 0.8198900000000001,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Bulgaria",
+        "maths": 405.07756,
+        "maths_se": 4.034000000000001,
+        "reading": 386.64479000000006,
+        "reading_se": 3.9460900000000003,
+        "science": 420.79373000000004,
+        "science_se": 4.053330000000001,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Cambodia",
+        "maths": 365.84172,
+        "maths_se": 1.6686800000000002,
+        "reading": 347.22631,
+        "reading_se": 1.50048,
+        "science": 381.93511,
+        "science_se": 1.6906200000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Chile",
+        "maths": 402.64522000000005,
+        "maths_se": 2.1761000000000004,
+        "reading": 435.65582000000006,
+        "reading_se": 2.75951,
+        "science": 442.36060000000003,
+        "science_se": 2.49519,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Chinese Taipei",
+        "maths": 546.18912,
+        "maths_se": 3.1154400000000004,
+        "reading": 507.78799000000004,
+        "reading_se": 2.94505,
+        "science": 539.7016900000001,
+        "science_se": 3.00803,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Colombia",
+        "maths": 380.52867000000003,
+        "maths_se": 2.78141,
+        "reading": 399.26735,
+        "reading_se": 3.3084100000000003,
+        "science": 413.73094000000003,
+        "science_se": 3.29367,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Costa Rica",
+        "maths": 387.09124,
+        "maths_se": 2.25097,
+        "reading": 416.0353,
+        "reading_se": 2.75558,
+        "science": 423.96958,
+        "science_se": 2.5696600000000003,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Croatia",
+        "maths": 455.29170000000005,
+        "maths_se": 1.8155000000000001,
+        "reading": 453.38734000000005,
+        "reading_se": 1.7813,
+        "science": 476.30089000000004,
+        "science_se": 1.7672100000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Cyprus",
+        "maths": 411.78134000000006,
+        "maths_se": 1.3748300000000002,
+        "reading": 379.42867,
+        "reading_se": 1.2793700000000001,
+        "science": 411.18474000000003,
+        "science_se": 1.4657900000000001,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Czechia",
+        "maths": 477.14804000000004,
+        "maths_se": 2.59863,
+        "reading": 468.35668000000004,
+        "reading_se": 2.67601,
+        "science": 490.27834,
+        "science_se": 2.58609,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Dominican Republic",
+        "maths": 338.82949,
+        "maths_se": 1.69283,
+        "reading": 345.54215000000005,
+        "reading_se": 2.51011,
+        "science": 360.8466,
+        "science_se": 2.32246,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Dushanbe (Tajikistan)",
+        "maths": 382.13727000000006,
+        "maths_se": 0.97906,
+        "reading": 368.08382,
+        "reading_se": 1.16148,
+        "science": 333.76479,
+        "science_se": 1.4187400000000001,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Ecuador",
+        "maths": 365.83936000000006,
+        "maths_se": 1.72171,
+        "reading": 384.99799,
+        "reading_se": 2.2962800000000003,
+        "science": 393.42125000000004,
+        "science_se": 2.1619,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "El Salvador",
+        "maths": 346.24980000000005,
+        "maths_se": 1.80156,
+        "reading": 366.43167000000005,
+        "reading_se": 2.28304,
+        "science": 384.6732,
+        "science_se": 2.17614,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Finland",
+        "maths": 468.69454,
+        "maths_se": 2.2006900000000003,
+        "reading": 474.29731000000004,
+        "reading_se": 2.12025,
+        "science": 504.37245,
+        "science_se": 2.26064,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Georgia",
+        "maths": 416.3627,
+        "maths_se": 2.93751,
+        "reading": 384.17862,
+        "reading_se": 2.48478,
+        "science": 422.11866000000003,
+        "science_se": 2.6520300000000003,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Greece",
+        "maths": 423.85217000000006,
+        "maths_se": 2.92445,
+        "reading": 422.66261000000003,
+        "reading_se": 3.1906600000000003,
+        "science": 434.28491,
+        "science_se": 2.9383800000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Guatemala",
+        "maths": 334.30248,
+        "maths_se": 1.9333700000000003,
+        "reading": 337.08081000000004,
+        "reading_se": 2.4980800000000003,
+        "science": 351.23403,
+        "science_se": 2.5258900000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Hong Kong (China)",
+        "maths": 521.7077700000001,
+        "maths_se": 2.9099700000000004,
+        "reading": 480.12066000000004,
+        "reading_se": 3.1986800000000004,
+        "science": 495.62666,
+        "science_se": 3.0470200000000003,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Hungary",
+        "maths": 459.48854000000006,
+        "maths_se": 2.5084000000000004,
+        "reading": 452.30629000000005,
+        "reading_se": 2.33754,
+        "science": 479.91184000000004,
+        "science_se": 2.4439800000000003,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Iceland",
+        "maths": 449.73034,
+        "maths_se": 1.46788,
+        "reading": 422.28514,
+        "reading_se": 1.6164100000000001,
+        "science": 441.38044,
+        "science_se": 1.64969,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Indonesia",
+        "maths": 363.90169000000003,
+        "maths_se": 2.1007900000000004,
+        "reading": 365.20527000000004,
+        "reading_se": 2.45276,
+        "science": 388.67379000000005,
+        "science_se": 2.3186500000000003,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Ireland",
+        "maths": 479.8747,
+        "maths_se": 1.8344300000000002,
+        "reading": 500.44715,
+        "reading_se": 2.03452,
+        "science": 499.59669,
+        "science_se": 2.1706800000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Israel",
+        "maths": 433.37492000000003,
+        "maths_se": 3.10413,
+        "reading": 435.83778,
+        "reading_se": 3.5238500000000004,
+        "science": 442.00883000000005,
+        "science_se": 3.3512800000000005,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Jordan",
+        "maths": 387.5613,
+        "maths_se": 2.19124,
+        "reading": 362.59825,
+        "reading_se": 2.08839,
+        "science": 406.93542,
+        "science_se": 2.4789000000000003,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Kazakhstan",
+        "maths": 413.71493000000004,
+        "maths_se": 1.7477600000000002,
+        "reading": 384.79808,
+        "reading_se": 1.51879,
+        "science": 419.54755000000006,
+        "science_se": 1.59427,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Kenya",
+        "maths": 325.93541000000005,
+        "maths_se": 2.6947900000000002,
+        "reading": 320.21398000000005,
+        "reading_se": 2.65314,
+        "science": 334.94936,
+        "science_se": 2.92172,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Kosovo",
+        "maths": 350.43948,
+        "maths_se": 1.32854,
+        "reading": 340.46438,
+        "reading_se": 1.2916200000000002,
+        "science": 357.01476,
+        "science_se": 1.2990400000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Kurdistan Region (Iraq)",
+        "maths": 338.75739000000004,
+        "maths_se": 1.7730800000000002,
+        "reading": 311.53031000000004,
+        "reading_se": 2.0251200000000003,
+        "science": 352.19140000000004,
+        "science_se": 1.7890400000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Kyrgyzstan",
+        "maths": 363.80642,
+        "maths_se": 1.9783800000000002,
+        "reading": 344.3976,
+        "reading_se": 2.39211,
+        "science": 362.52939000000003,
+        "science_se": 2.1803500000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Latvia",
+        "maths": 460.49274,
+        "maths_se": 1.7023100000000002,
+        "reading": 429.67871,
+        "reading_se": 2.0281700000000003,
+        "science": 468.36741000000006,
+        "science_se": 2.05396,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Lebanon",
+        "maths": 377.13808000000006,
+        "maths_se": 3.0241700000000002,
+        "reading": 330.90273,
+        "reading_se": 3.3391,
+        "science": 372.00568000000004,
+        "science_se": 3.4527600000000005,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Lithuania",
+        "maths": 470.49147000000005,
+        "maths_se": 1.87433,
+        "reading": 464.05377000000004,
+        "reading_se": 1.91423,
+        "science": 487.73903,
+        "science_se": 1.7807600000000001,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Luxembourg",
+        "maths": 458.14300000000003,
+        "maths_se": 0.8803300000000001,
+        "reading": 443.23219000000006,
+        "reading_se": 1.0539,
+        "science": 473.77035000000006,
+        "science_se": 1.05451,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Macao (China)",
+        "maths": 549.3016200000001,
+        "maths_se": 1.1471900000000002,
+        "reading": 501.05358000000007,
+        "reading_se": 1.15548,
+        "science": 540.8138600000001,
+        "science_se": 1.1273600000000001,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Malaysia",
+        "maths": 397.42258000000004,
+        "maths_se": 2.1980600000000003,
+        "reading": 392.77186,
+        "reading_se": 2.1576400000000002,
+        "science": 419.20273000000003,
+        "science_se": 2.15916,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Malta",
+        "maths": 439.08271,
+        "maths_se": 1.7833500000000002,
+        "reading": 414.62566000000004,
+        "reading_se": 1.60789,
+        "science": 452.52701,
+        "science_se": 1.54688,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Mauritius",
+        "maths": 406.85479000000004,
+        "maths_se": 3.6681900000000005,
+        "reading": 405.33343,
+        "reading_se": 3.5020400000000005,
+        "science": 438.16395000000006,
+        "science_se": 4.19413,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Mexico",
+        "maths": 387.58717,
+        "maths_se": 1.85817,
+        "reading": 407.93756,
+        "reading_se": 2.15977,
+        "science": 413.56537000000003,
+        "science_se": 2.00143,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Moldova",
+        "maths": 410.13014000000004,
+        "maths_se": 2.5569800000000003,
+        "reading": 403.70106000000004,
+        "reading_se": 2.89801,
+        "science": 421.94704,
+        "science_se": 2.8449400000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Mongolia",
+        "maths": 418.64226,
+        "maths_se": 2.29449,
+        "reading": 374.25273000000004,
+        "reading_se": 1.74944,
+        "science": 424.03375000000005,
+        "science_se": 2.12886,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Montenegro",
+        "maths": 411.05801,
+        "maths_se": 1.11695,
+        "reading": 418.37127000000004,
+        "reading_se": 1.21567,
+        "science": 435.18445,
+        "science_se": 1.31231,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Morocco",
+        "maths": 354.75514000000004,
+        "maths_se": 2.9551700000000003,
+        "reading": 321.12710000000004,
+        "reading_se": 3.48335,
+        "science": 357.97978,
+        "science_se": 3.3258400000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Netherlands",
+        "maths": 483.27027000000004,
+        "maths_se": 2.8882800000000004,
+        "reading": 441.34494,
+        "reading_se": 2.89487,
+        "science": 485.45141000000007,
+        "science_se": 2.82147,
+        "flagged": true,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "New Zealand",
+        "maths": 479.61907,
+        "maths_se": 2.16515,
+        "reading": 497.04447000000005,
+        "reading_se": 2.4203900000000003,
+        "science": 509.39792000000006,
+        "science_se": 2.31097,
+        "flagged": true,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "North Macedonia",
+        "maths": 379.79204000000004,
+        "maths_se": 0.9707800000000001,
+        "reading": 357.44372000000004,
+        "reading_se": 0.9933400000000001,
+        "science": 378.49815,
+        "science_se": 1.03898,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Norway",
+        "maths": 451.78008000000005,
+        "maths_se": 2.02015,
+        "reading": 452.8013,
+        "reading_se": 2.0868700000000002,
+        "science": 470.21226,
+        "science_se": 2.0224900000000003,
+        "flagged": true,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Palestinian Authority",
+        "maths": 354.33698000000004,
+        "maths_se": 1.77553,
+        "reading": 349.87623,
+        "reading_se": 1.8664600000000002,
+        "science": 358.73953,
+        "science_se": 1.94727,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Paraguay",
+        "maths": 333.73066,
+        "maths_se": 1.58776,
+        "reading": 352.21577,
+        "reading_se": 2.02789,
+        "science": 355.24408000000005,
+        "science_se": 1.9713100000000001,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Peru",
+        "maths": 382.43938,
+        "maths_se": 2.44829,
+        "reading": 390.13724,
+        "reading_se": 2.9088800000000004,
+        "science": 405.60048000000006,
+        "science_se": 2.52937,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Philippines",
+        "maths": 370.63089,
+        "maths_se": 1.6984700000000001,
+        "reading": 366.91855000000004,
+        "reading_se": 2.371,
+        "science": 373.31850000000003,
+        "science_se": 2.28703,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Poland",
+        "maths": 484.12092,
+        "maths_se": 2.7584000000000004,
+        "reading": 481.53744000000006,
+        "reading_se": 2.8471400000000004,
+        "science": 495.06703000000005,
+        "science_se": 2.7425,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Portugal",
+        "maths": 459.94304000000005,
+        "maths_se": 3.4547900000000005,
+        "reading": 462.02744,
+        "reading_se": 3.2280900000000003,
+        "science": 481.71602,
+        "science_se": 3.5177300000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Qatar",
+        "maths": 416.16179000000005,
+        "maths_se": 1.34722,
+        "reading": 418.02844000000005,
+        "reading_se": 1.35345,
+        "science": 434.39970000000005,
+        "science_se": 1.34026,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Romania",
+        "maths": 419.12421000000006,
+        "maths_se": 4.53293,
+        "reading": 412.94947,
+        "reading_se": 3.97826,
+        "science": 424.70915,
+        "science_se": 4.15019,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Rwanda",
+        "maths": 311.64827,
+        "maths_se": 3.02509,
+        "reading": 300.94391,
+        "reading_se": 2.0149500000000002,
+        "science": 317.28649,
+        "science_se": 3.4961,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Saudi Arabia",
+        "maths": 389.88586000000004,
+        "maths_se": 2.40002,
+        "reading": 387.28413,
+        "reading_se": 2.3810200000000004,
+        "science": 413.43007000000006,
+        "science_se": 2.6454600000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Serbia",
+        "maths": 416.7354,
+        "maths_se": 2.9969,
+        "reading": 414.59850000000006,
+        "reading_se": 3.3726800000000003,
+        "science": 428.99464000000006,
+        "science_se": 2.92876,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Slovak Republic",
+        "maths": 469.09830000000005,
+        "maths_se": 2.4458200000000003,
+        "reading": 447.96713000000005,
+        "reading_se": 2.56108,
+        "science": 474.87211,
+        "science_se": 2.5045800000000003,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Slovenia",
+        "maths": 459.83559,
+        "maths_se": 1.18578,
+        "reading": 444.74764000000005,
+        "reading_se": 1.29403,
+        "science": 483.72204000000005,
+        "science_se": 1.2773500000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Spain",
+        "maths": 457.44885000000005,
+        "maths_se": 1.6868200000000002,
+        "reading": 451.35575000000006,
+        "reading_se": 1.9380300000000001,
+        "science": 477.12730000000005,
+        "science_se": 1.9043100000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Sweden",
+        "maths": 464.25122000000005,
+        "maths_se": 2.5086600000000003,
+        "reading": 466.43629000000004,
+        "reading_se": 3.1495200000000003,
+        "science": 485.11066000000005,
+        "science_se": 2.9938700000000003,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Switzerland",
+        "maths": 499.14704000000006,
+        "maths_se": 2.59294,
+        "reading": 470.0529,
+        "reading_se": 2.9209300000000002,
+        "science": 501.23764000000006,
+        "science_se": 2.59131,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Thailand",
+        "maths": 406.76478000000003,
+        "maths_se": 2.87827,
+        "reading": 391.82964000000004,
+        "reading_se": 3.0112,
+        "science": 432.24049,
+        "science_se": 3.1885800000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "T\u00fcrkiye",
+        "maths": 461.54657000000003,
+        "maths_se": 2.39744,
+        "reading": 472.09549000000004,
+        "reading_se": 2.3062500000000004,
+        "science": 494.26907000000006,
+        "science_se": 2.3050200000000003,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Ukrainian regions (17 of 27)",
+        "maths": 430.99203000000006,
+        "maths_se": 2.55628,
+        "reading": 418.4229,
+        "reading_se": 2.49562,
+        "science": 448.08230000000003,
+        "science_se": 2.49101,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "United Arab Emirates",
+        "maths": 452.58868,
+        "maths_se": 2.15876,
+        "reading": 432.81079000000005,
+        "reading_se": 1.6169000000000002,
+        "science": 458.06699000000003,
+        "science_se": 1.9743800000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Uruguay",
+        "maths": 404.87885000000006,
+        "maths_se": 1.9451800000000001,
+        "reading": 423.21268000000003,
+        "reading_se": 2.04774,
+        "science": 444.54929000000004,
+        "science_se": 1.8163200000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Viet Nam",
+        "maths": 443.18598000000003,
+        "maths_se": 4.24258,
+        "reading": 391.53666000000004,
+        "reading_se": 3.6585500000000004,
+        "science": 457.42088,
+        "science_se": 3.92831,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      },
+      {
+        "economy": "Zambia",
+        "maths": 313.63332,
+        "maths_se": 9.27476,
+        "reading": 324.87812,
+        "reading_se": 8.1965,
+        "science": 336.95473000000004,
+        "science_se": 10.99202,
+        "flagged": false,
+        "is_uk": false,
+        "code": NaN,
+        "is_peer": false,
+        "label": NaN
+      }
+    ],
+    "data-2036db6c3df5ddade9d0345170a1a50c": [
+      {
+        "economy": "B-S-J-Z (China)",
+        "maths": 612.42966,
+        "maths_se": 2.5464700000000002,
+        "reading": 526.5182500000001,
+        "reading_se": 1.9851,
+        "science": 597.0437900000001,
+        "science_se": 2.15606,
+        "flagged": false,
+        "is_uk": false,
+        "code": "CHN (B-S-J-Z)",
+        "is_peer": true,
+        "label": "CHN (B-S-J-Z)"
+      },
+      {
+        "economy": "Canada",
+        "maths": 485.33767000000006,
+        "maths_se": 1.9128500000000002,
+        "reading": 489.82555,
+        "reading_se": 1.7807600000000001,
+        "science": 510.05482000000006,
+        "science_se": 1.78909,
+        "flagged": true,
+        "is_uk": false,
+        "code": "CAN",
+        "is_peer": true,
+        "label": "CAN"
+      },
+      {
+        "economy": "Denmark",
+        "maths": 470.62750000000005,
+        "maths_se": 2.10883,
+        "reading": 460.00949,
+        "reading_se": 2.3729600000000004,
+        "science": 477.54101,
+        "science_se": 2.3902900000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": "DNK",
+        "is_peer": true,
+        "label": "DNK"
+      },
+      {
+        "economy": "Estonia",
+        "maths": 507.89573,
+        "maths_se": 2.2875300000000003,
+        "reading": 499.24425,
+        "reading_se": 2.5338800000000004,
+        "science": 527.11708,
+        "science_se": 2.33436,
+        "flagged": false,
+        "is_uk": false,
+        "code": "EST",
+        "is_peer": true,
+        "label": "EST"
+      },
+      {
+        "economy": "France",
+        "maths": 457.65501000000006,
+        "maths_se": 2.9950900000000003,
+        "reading": 456.33453000000003,
+        "reading_se": 3.2442300000000004,
+        "science": 483.42120000000006,
+        "science_se": 3.2059400000000005,
+        "flagged": false,
+        "is_uk": false,
+        "code": "FRA",
+        "is_peer": true,
+        "label": "FRA"
+      },
+      {
+        "economy": "Germany",
+        "maths": 463.80565,
+        "maths_se": 3.0461600000000004,
+        "reading": 465.28206000000006,
+        "reading_se": 3.5622100000000003,
+        "science": 485.52144000000004,
+        "science_se": 3.5211200000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": "DEU",
+        "is_peer": true,
+        "label": "DEU"
+      },
+      {
+        "economy": "Italy",
+        "maths": 467.76261000000005,
+        "maths_se": 2.84566,
+        "reading": 474.28961000000004,
+        "reading_se": 2.5982800000000004,
+        "science": 482.98206000000005,
+        "science_se": 2.4788200000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": "ITA",
+        "is_peer": true,
+        "label": "ITA"
+      },
+      {
+        "economy": "Japan",
+        "maths": 525.3758,
+        "maths_se": 4.204070000000001,
+        "reading": 502.71450000000004,
+        "reading_se": 3.7778300000000002,
+        "science": 537.5862400000001,
+        "science_se": 3.8059200000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": "JPN",
+        "is_peer": true,
+        "label": "JPN"
+      },
+      {
+        "economy": "Korea",
+        "maths": 522.2978400000001,
+        "maths_se": 3.95806,
+        "reading": 500.56065000000007,
+        "reading_se": 3.44578,
+        "science": 526.10531,
+        "science_se": 3.3696400000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": "KOR",
+        "is_peer": true,
+        "label": "KOR"
+      },
+      {
+        "economy": "Singapore",
+        "maths": 562.8974800000001,
+        "maths_se": 1.5715500000000002,
+        "reading": 534.90002,
+        "reading_se": 1.9405400000000002,
+        "science": 559.8505600000001,
+        "science_se": 1.7129,
+        "flagged": false,
+        "is_uk": false,
+        "code": "SGP",
+        "is_peer": true,
+        "label": "SGP"
+      },
+      {
+        "economy": "United States",
+        "maths": 462.84782,
+        "maths_se": 5.39684,
+        "reading": 489.51893,
+        "reading_se": 5.836790000000001,
+        "science": 501.58324000000005,
+        "science_se": 5.816520000000001,
+        "flagged": true,
+        "is_uk": false,
+        "code": "USA",
+        "is_peer": true,
+        "label": "USA"
+      }
+    ],
+    "data-a4ac3356ef78b0ead8a8ad3e944a651f": [
+      {
+        "economy": "Japan",
+        "maths": 525.3758,
+        "maths_se": 4.204070000000001,
+        "reading": 502.71450000000004,
+        "reading_se": 3.7778300000000002,
+        "science": 537.5862400000001,
+        "science_se": 3.8059200000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": "JPN",
+        "is_peer": true,
+        "label": "JPN",
+        "off_x": 0.0,
+        "off_y": 12.0,
+        "align": "center",
+        "baseline": "bottom",
+        "lab_x": 525.3758,
+        "lab_y": 514.7145,
+        "lead_x": 525.3758,
+        "lead_y": 512.0745000000001
+      }
+    ],
+    "data-7c0f32259fa608b797d5c13653d71b8e": [
+      {
+        "economy": "Estonia",
+        "maths": 507.89573,
+        "maths_se": 2.2875300000000003,
+        "reading": 499.24425,
+        "reading_se": 2.5338800000000004,
+        "science": 527.11708,
+        "science_se": 2.33436,
+        "flagged": false,
+        "is_uk": false,
+        "code": "EST",
+        "is_peer": true,
+        "label": "EST",
+        "off_x": 0.0,
+        "off_y": -12.0,
+        "align": "center",
+        "baseline": "top",
+        "lab_x": 507.89573,
+        "lab_y": 487.24425,
+        "lead_x": 507.89573,
+        "lead_y": 489.88425
+      }
+    ],
+    "data-a8d5cd7697b18048820322713737fedb": [
+      {
+        "economy": "Denmark",
+        "maths": 470.62750000000005,
+        "maths_se": 2.10883,
+        "reading": 460.00949,
+        "reading_se": 2.3729600000000004,
+        "science": 477.54101,
+        "science_se": 2.3902900000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": "DNK",
+        "is_peer": true,
+        "label": "DNK",
+        "off_x": 12.0,
+        "off_y": 0.0,
+        "align": "left",
+        "baseline": "middle",
+        "lab_x": 482.62750000000005,
+        "lab_y": 460.00949,
+        "lead_x": 479.98750000000007,
+        "lead_y": 460.00949
+      },
+      {
+        "economy": "Italy",
+        "maths": 467.76261000000005,
+        "maths_se": 2.84566,
+        "reading": 474.28961000000004,
+        "reading_se": 2.5982800000000004,
+        "science": 482.98206000000005,
+        "science_se": 2.4788200000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": "ITA",
+        "is_peer": true,
+        "label": "ITA",
+        "off_x": 12.0,
+        "off_y": 0.0,
+        "align": "left",
+        "baseline": "middle",
+        "lab_x": 479.76261000000005,
+        "lab_y": 474.28961000000004,
+        "lead_x": 477.12261000000007,
+        "lead_y": 474.28961000000004
+      }
+    ],
+    "data-61fcdeab03b25864839d1aff808b25ac": [
+      {
+        "economy": "Canada",
+        "maths": 485.33767000000006,
+        "maths_se": 1.9128500000000002,
+        "reading": 489.82555,
+        "reading_se": 1.7807600000000001,
+        "science": 510.05482000000006,
+        "science_se": 1.78909,
+        "flagged": true,
+        "is_uk": false,
+        "code": "CAN",
+        "is_peer": true,
+        "label": "CAN",
+        "off_x": 18.0,
+        "off_y": -18.0,
+        "align": "left",
+        "baseline": "top",
+        "lab_x": 503.33767000000006,
+        "lab_y": 471.82555,
+        "lead_x": 499.3776700000001,
+        "lead_y": 475.78555
+      }
+    ],
+    "data-2f03a49d36994e0dc094a363621621cb": [
+      {
+        "economy": "France",
+        "maths": 457.65501000000006,
+        "maths_se": 2.9950900000000003,
+        "reading": 456.33453000000003,
+        "reading_se": 3.2442300000000004,
+        "science": 483.42120000000006,
+        "science_se": 3.2059400000000005,
+        "flagged": false,
+        "is_uk": false,
+        "code": "FRA",
+        "is_peer": true,
+        "label": "FRA",
+        "off_x": -18.0,
+        "off_y": 18.0,
+        "align": "right",
+        "baseline": "bottom",
+        "lab_x": 439.65501000000006,
+        "lab_y": 474.33453000000003,
+        "lead_x": 443.61501000000004,
+        "lead_y": 470.37453000000005
+      },
+      {
+        "economy": "Korea",
+        "maths": 522.2978400000001,
+        "maths_se": 3.95806,
+        "reading": 500.56065000000007,
+        "reading_se": 3.44578,
+        "science": 526.10531,
+        "science_se": 3.3696400000000004,
+        "flagged": false,
+        "is_uk": false,
+        "code": "KOR",
+        "is_peer": true,
+        "label": "KOR",
+        "off_x": -8.6,
+        "off_y": 8.6,
+        "align": "right",
+        "baseline": "bottom",
+        "lab_x": 513.69784,
+        "lab_y": 509.1606500000001,
+        "lead_x": 515.5898400000001,
+        "lead_y": 507.2686500000001
+      }
+    ],
+    "data-a6648d9f65fe83b454c8cc43b764923a": [
+      {
+        "economy": "B-S-J-Z (China)",
+        "maths": 612.42966,
+        "maths_se": 2.5464700000000002,
+        "reading": 526.5182500000001,
+        "reading_se": 1.9851,
+        "science": 597.0437900000001,
+        "science_se": 2.15606,
+        "flagged": false,
+        "is_uk": false,
+        "code": "CHN (B-S-J-Z)",
+        "is_peer": true,
+        "label": "CHN (B-S-J-Z)",
+        "off_x": -12.0,
+        "off_y": 0.0,
+        "align": "right",
+        "baseline": "middle",
+        "lab_x": 600.42966,
+        "lab_y": 526.5182500000001,
+        "lead_x": 603.06966,
+        "lead_y": 526.5182500000001
+      },
+      {
+        "economy": "Germany",
+        "maths": 463.80565,
+        "maths_se": 3.0461600000000004,
+        "reading": 465.28206000000006,
+        "reading_se": 3.5622100000000003,
+        "science": 485.52144000000004,
+        "science_se": 3.5211200000000002,
+        "flagged": false,
+        "is_uk": false,
+        "code": "DEU",
+        "is_peer": true,
+        "label": "DEU",
+        "off_x": -12.0,
+        "off_y": 0.0,
+        "align": "right",
+        "baseline": "middle",
+        "lab_x": 451.80565,
+        "lab_y": 465.28206000000006,
+        "lead_x": 454.44565,
+        "lead_y": 465.28206000000006
+      },
+      {
+        "economy": "Singapore",
+        "maths": 562.8974800000001,
+        "maths_se": 1.5715500000000002,
+        "reading": 534.90002,
+        "reading_se": 1.9405400000000002,
+        "science": 559.8505600000001,
+        "science_se": 1.7129,
+        "flagged": false,
+        "is_uk": false,
+        "code": "SGP",
+        "is_peer": true,
+        "label": "SGP",
+        "off_x": -12.0,
+        "off_y": 0.0,
+        "align": "right",
+        "baseline": "middle",
+        "lab_x": 550.8974800000001,
+        "lab_y": 534.90002,
+        "lead_x": 553.5374800000001,
+        "lead_y": 534.90002
+      },
+      {
+        "economy": "United States",
+        "maths": 462.84782,
+        "maths_se": 5.39684,
+        "reading": 489.51893,
+        "reading_se": 5.836790000000001,
+        "science": 501.58324000000005,
+        "science_se": 5.816520000000001,
+        "flagged": true,
+        "is_uk": false,
+        "code": "USA",
+        "is_peer": true,
+        "label": "USA",
+        "off_x": -12.0,
+        "off_y": 0.0,
+        "align": "right",
+        "baseline": "middle",
+        "lab_x": 450.84782,
+        "lab_y": 489.51893,
+        "lead_x": 453.48782,
+        "lead_y": 489.51893
+      }
+    ],
+    "data-1b8eac12ae0c3ad35e5c7e1d746ad0eb": [
+      {
+        "economy": "United Kingdom",
+        "maths": 487.57374000000004,
+        "maths_se": 2.1993,
+        "reading": 494.23095000000006,
+        "reading_se": 2.0213900000000002,
+        "science": 511.35575000000006,
+        "science_se": 2.10211,
+        "flagged": false,
+        "is_uk": true,
+        "code": NaN,
+        "is_peer": false,
+        "label": "UK"
+      }
+    ]
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "config": {
+    "font": "Circular Std",
+    "mark": {
+      "line": {
+        "interpolate": "linear"
+      }
+    },
+    "view": {
+      "stroke": null,
+      "width": 400,
+      "height": 300,
+      "strokeWidth": 0
+    },
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": [
+        "#E6224B",
+        "#E54753",
+        "#C9C9C9",
+        "#179FDB",
+        "#122B39"
+      ],
+      "heatmap": [
+        "#C9C9C9",
+        "#179FDB",
+        "#0063AF",
+        "#122B39"
+      ],
+      "ordinal": [
+        "#00A767",
+        "#36B7B4",
+        "#179FDB",
+        "#0063AF",
+        "#243B5A"
+      ]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    },
+    "axis": {
+      "labelFontSize": 11
+    }
+  },
+  "vconcat": [
+    {
+      "layer": [
+        {
+          "data": {
+            "name": "data-5ff7d4a37ff555e3a67fa3e3a924fb61"
+          },
+          "mark": {
+            "type": "bar",
+            "height": 16
+          },
+          "encoding": {
+            "color": {
+              "condition": {
+                "test": "datum.is_uk",
+                "value": "#179fdb"
+              },
+              "value": "#a8c0de"
+            },
+            "tooltip": [
+              {
+                "field": "economy",
+                "type": "nominal"
+              },
+              {
+                "field": "share",
+                "type": "quantitative"
+              }
+            ],
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "% of 15-year-olds",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "share",
+              "scale": {
+                "domain": [
+                  0,
+                  17
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "labelFontSize": 12,
+                "title": null
+              },
+              "field": "code",
+              "sort": [
+                "SGP",
+                "B-S-J-Z",
+                "JPN",
+                "KOR",
+                "USA",
+                "UK",
+                "EST",
+                "CAN",
+                "DEU",
+                "FRA",
+                "ITA",
+                "DNK"
+              ],
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-5ff7d4a37ff555e3a67fa3e3a924fb61"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 6,
+            "fontSize": 11
+          },
+          "encoding": {
+            "color": {
+              "condition": {
+                "test": "datum.is_uk",
+                "value": "#179fdb"
+              },
+              "value": "#4d606a"
+            },
+            "text": {
+              "field": "share",
+              "format": ".1f",
+              "type": "quantitative"
+            },
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "% of 15-year-olds",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "share",
+              "scale": {
+                "domain": [
+                  0,
+                  17
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "axis": {
+                "labelFontSize": 12,
+                "title": null
+              },
+              "field": "code",
+              "sort": [
+                "SGP",
+                "B-S-J-Z",
+                "JPN",
+                "KOR",
+                "USA",
+                "UK",
+                "EST",
+                "CAN",
+                "DEU",
+                "FRA",
+                "ITA",
+                "DNK"
+              ],
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-243db3f31d203c4c60ce49a909bdaa88"
+          },
+          "mark": {
+            "type": "rule",
+            "color": "#7d8a92",
+            "strokeDash": [
+              3,
+              4
+            ],
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "% of 15-year-olds",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "share",
+              "scale": {
+                "domain": [
+                  0,
+                  17
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "data-243db3f31d203c4c60ce49a909bdaa88"
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "bottom",
+            "color": "#4d606a",
+            "dx": 5,
+            "fontSize": 11,
+            "text": "OECD average: 2.6%"
+          },
+          "encoding": {
+            "x": {
+              "axis": {
+                "format": "d",
+                "tickCount": 5,
+                "title": "% of 15-year-olds",
+                "titleColor": "#122b39",
+                "titleFontSize": 12,
+                "titlePadding": 10
+              },
+              "field": "share",
+              "scale": {
+                "domain": [
+                  0,
+                  17
+                ],
+                "nice": false
+              },
+              "type": "quantitative"
+            },
+            "y": {
+              "value": 394
+            }
+          }
+        }
+      ],
+      "height": 400,
+      "title": {
+        "text": "How many UK teenagers excel in science, reading and maths at once",
+        "anchor": "start",
+        "fontSize": 17,
+        "offset": 14,
+        "subtitle": [
+          "Share of 15-year-olds who are top performers in science, reading and mathematics at the same time, 2025."
+        ],
+        "subtitleColor": "#596b74",
+        "subtitleFontSize": 12,
+        "subtitlePadding": 7
+      },
+      "width": 560
+    }
+  ],
+  "title": {
+    "text": [
+      "Source: OECD (2026), PISA 2025 Results (Volume I), Table I.B1.2 (stat.link/mrq53f), published 8 September 2026.",
+      "Top performer means proficiency Level 5 or 6. Labels are ISO three-letter codes; B-S-J-Z is Beijing, Shanghai, Jiangsu and Zhejiang (China).",
+      "Selected economies shown, of 90 in the table. Figures cover the whole United Kingdom; the four UK nations report separately."
+    ],
+    "anchor": "start",
+    "color": "#65757e",
+    "fontSize": 10,
+    "fontWeight": 400,
+    "lineHeight": 13,
+    "offset": 18,
+    "orient": "bottom"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "datasets": {
+    "data-5ff7d4a37ff555e3a67fa3e3a924fb61": [
+      {
+        "economy": "B-S-J-Z (China)",
+        "flagged": false,
+        "share": 9.92833,
+        "code": "B-S-J-Z",
+        "is_uk": false
+      },
+      {
+        "economy": "Canada",
+        "flagged": true,
+        "share": 4.346640000000001,
+        "code": "CAN",
+        "is_uk": false
+      },
+      {
+        "economy": "Denmark",
+        "flagged": false,
+        "share": 1.3117,
+        "code": "DNK",
+        "is_uk": false
+      },
+      {
+        "economy": "Estonia",
+        "flagged": false,
+        "share": 5.1226400000000005,
+        "code": "EST",
+        "is_uk": false
+      },
+      {
+        "economy": "France",
+        "flagged": false,
+        "share": 1.9025,
+        "code": "FRA",
+        "is_uk": false
+      },
+      {
+        "economy": "Germany",
+        "flagged": false,
+        "share": 3.1169200000000004,
+        "code": "DEU",
+        "is_uk": false
+      },
+      {
+        "economy": "Italy",
+        "flagged": false,
+        "share": 1.5308700000000002,
+        "code": "ITA",
+        "is_uk": false
+      },
+      {
+        "economy": "Japan",
+        "flagged": false,
+        "share": 7.6759900000000005,
+        "code": "JPN",
+        "is_uk": false
+      },
+      {
+        "economy": "Korea",
+        "flagged": false,
+        "share": 5.76437,
+        "code": "KOR",
+        "is_uk": false
+      },
+      {
+        "economy": "Singapore",
+        "flagged": false,
+        "share": 15.267930000000002,
+        "code": "SGP",
+        "is_uk": false
+      },
+      {
+        "economy": "United Kingdom",
+        "flagged": false,
+        "share": 5.42001,
+        "code": "UK",
+        "is_uk": true
+      },
+      {
+        "economy": "United States",
+        "flagged": true,
+        "share": 5.70713,
+        "code": "USA",
+        "is_uk": false
+      }
+    ],
+    "data-243db3f31d203c4c60ce49a909bdaa88": [
+      {
+        "share": 2.6
+      }
+    ]
+  }
+}
