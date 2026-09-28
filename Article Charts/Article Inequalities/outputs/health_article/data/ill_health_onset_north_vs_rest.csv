@@ -1,0 +1,7 @@
+measure,area,effect,significant,label,value
+Change in probability of staying in work (pp),England,-1.45,True,−1.45 pp,-1.45
+Change in probability of staying in work (pp),North,-2.4,True,−2.4 pp,-2.4
+Change in probability of staying in work (pp),Rest of England,-1.16,True,−1.16 pp,-1.16
+Change in monthly pay (%),England,-2.3,True,−2.3%,-0.023
+Change in monthly pay (%),North,-6.6,True,−6.6%,-0.066
+Change in monthly pay (%),Rest of England,-2.4,False,−2.4% (n.s.),-0.024

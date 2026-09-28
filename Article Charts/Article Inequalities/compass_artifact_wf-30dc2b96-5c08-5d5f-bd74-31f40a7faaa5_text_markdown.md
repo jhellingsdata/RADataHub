@@ -1,0 +1,160 @@
+# Research support pack: "How do health inequalities shape regional economic performance in the UK?"
+
+**Bottom line:** Every headline figure in the article traces to a real, named primary source and almost all are downloadable as chartable tables — but three items need author attention before publication: (a) the "19.4 / 20.3 fewer years" HLE gaps are **derivations** from ONS decile figures (the ONS-published inequality measure is the slope index of inequality, 19.3 male / 20.1 female); (b) **Bryan et al. 2022** actually reports finding *no* significant north/south geographical variation, so it does not support the "similar geographical variation for mental health" claim as cited; and (c) the GMCA "highest average annual productivity growth of any UK ITL2 area" claim is **contested** by The Productivity Institute (which ranks Greater Manchester 7th on productivity growth, 1st on GVA growth). Reference date 23 September 2026. Editorial rules applied throughout: retrieval only, primary sources, explicit geography, derivations flagged.
+
+---
+
+## TL;DR
+
+- **Sourcing is solid and chartable.** The ONS healthy-life-expectancy (15 April 2026), subregional productivity (SRPROD01), regional labour market (HI00), the Health Equity North reports, and the Bryan/Dodd/Britteon journal articles all exist, are correctly cited, and (except the think-tank reports, which give prose figures only) come with downloadable tables. The single best chartable, whole-UK productivity map dataset is ONS **SRPROD01 at ITL3**, joined to the **ONS ITL January 2021 BGC** boundary on `ITL321CD`.
+- **Three claims need a fix before publishing:** the 19.4/20.3-year HLE gaps require arithmetic (use ONS endpoints + SII instead); Bryan et al. 2022 finds *no* significant geographic variation for mental health (citation mismatch); and the GMCA "highest ITL2 productivity growth" line is disputed in the peer/institute literature.
+- **The "MSA" map has one defensible route only:** attach **already-published** metro productivity — Centre for Cities Data Tool (63 Primary Urban Areas) or OECD Metropolitan database (Functional Urban Areas, whole-UK) — because those bodies publish productivity *directly* at metro level. Building metros by dissolving LAD polygons and summing LAD productivity yourself is arithmetic aggregation and **out of bounds** under your rules.
+
+---
+
+## Key Findings
+
+1. **All 14 cited works were located and verified as real primary or named-institute sources.** URLs and exact table/dataset names are in the verification table below.
+2. **The ONS HLE decile figures match the article exactly** (males 49.8 vs 69.2; females 48.2 vs 68.5). The *gaps* (19.4/20.3) are not printed by ONS; the ONS inequality statistic is the slope index of inequality: **19.3 (male), 20.1 (female)** HLE years.
+3. **The ONS Apr–Jun 2026 regional labour-market figures are correct for English regions** but carry a geography subtlety: across the *whole UK*, the highest inactivity rate was Northern Ireland (26.4%), not the North East. The article's 25.1% (North East) is correct as the highest *English* region.
+4. **Two think-tank flagship reports (Health for Wealth 2025; the Universal Credit return-to-work report) publish their headline numbers only in prose/PDF, not as data tables** — so £18.4bn, £6.6bn and £11.9bn can appear in copy but not as a chart sourced to those reports.
+5. **The GMCA productivity-growth superlative is contested**, and the "28%" figure is best understood as ~cumulative real GVA growth 2015–2023, not a GMCA "2015–2025" statistic.
+
+---
+
+## Details
+
+### 1. Source verification table
+
+| # | Claim (short) | Source & release | Working URL | Data downloadable? | Geography | Reference period |
+|---|---|---|---|---|---|---|
+| 1 | HLE by deprivation decile, England (49.8/69.2; 48.2/68.5) | **ONS, "Healthy life expectancy by national area deprivation, England and Wales: between 2013 to 2015 and 2022 to 2024"**, released **15 April 2026** | https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/healthylifeexpectancybynationalareadeprivationenglandandwales/latest | **Yes** — "Healthy life expectancy by national area deprivation, England, time series" (XLSX) on the related-data page | **England**; national IMD deciles (LSOA clusters), IMD 2019 | 2022–2024 (3-yr pooled); final |
+| 2 | North higher mortality & morbidity | **Simpson et al. 2025a = "Health for Wealth 2025"** (Health Equity North / NHSA), published **20 Nov 2025** | https://www.healthequitynorth.co.uk/app/uploads/HEALTH-FOR-WEALTH-2025-REV.pdf | Report PDF — **prose figures only** | England, North (NE, NW, Yorks & Humber) vs rest | 2025 report |
+| 3 | Productivity: Inner London West +54%; ~half of ITL2 ≥10% below; Tower Hamlets ≈3× Powys | **ONS "Regional and subregional productivity in the UK: June 2023" article + SRPROD01 dataset**, released **20 July 2023**. Latest edition: **"Regional and subregional labour productivity, UK: 2023"**, data **19 June 2025** (dataset **SRPROD01**), with **correction 30 Oct 2025** to chained-volume tables A5/B5 | Article: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/articles/regionalandsubregionalproductivityintheuk/latest ; dataset: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/datasets/subregionalproductivitylabourproductivitygvaperhourworkedandgvaperfilledjobindicesbyuknuts2andnuts3subregions | **Yes** (XLSX) | **UK**; ITL2 (41) and ITL3 (179), **ITL 2021 vintage** | 2021 reference year for the cited figures |
+| 4 | Employment 71.1% (NE)–78.3% (E of England); inactivity 18.4% (SE)–25.1% (NE) | **ONS "Labour market in the regions of the UK", dataset HI00**, latest release **18 August 2026** | https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/regionallabourmarket/latest | **Yes** (HI00 XLSX) | **UK countries + English regions (ITL1)** | **Apr–Jun 2026**; official statistics *in development*, LFS volatility caveat |
+| 5 | Health-related inactivity ~50% higher in North; >2/5 explained by health | **Simpson et al. 2025a (Health for Wealth 2025)** | as #2 | Prose PDF | England, North vs rest | 2025 |
+| 6 | Northerners more likely to leave work after ill-health onset; "similar" for mental health | 2025a (as #2) **+ Bryan, Rice, Roberts, Sechel (2022), "Mental Health and Employment: A Bounding Approach Using Panel Data", *Oxford Bulletin of Economics and Statistics* 84(5):1018–1051, DOI 10.1111/obes.12489** | https://onlinelibrary.wiley.com/doi/10.1111/obes.12489 | Journal (paywalled); working-paper PDF at York HEDG | England; UKHLS individuals | 2022 |
+| 7 | Disability-employment gap 17–43pp across local areas | **Bryan, Bryce, Roberts, Sechel (2026), "The geography of the disability employment gap: a new decomposition of spatial variation", *Regional Studies*, DOI 10.1080/00343404.2026.2681662** (earlier: Sheffield Economics WP 2024002) | https://www.tandfonline.com/doi/full/10.1080/00343404.2026.2681662 | **Yes** — area estimates in supplemental data (Table A1) | **Great Britain**, **ITL3** | 2014–2019 pooled |
+| 8 | £18.4bn from closing North health gap; £6.6bn from NE mental-health gap | **2025a (Health for Wealth 2025)** + **Mignon et al. 2026** (Health Equity North paper, published **24 June 2026**, lead author Doriane Mignon) | https://www.healthequitynorth.co.uk/better-mental-health-could-encourage-economic-prosperity-in-englands-underprivileged-regions/ | Prose PDF; Mignon journal supplement may hold data | England; ~7,000 small areas (Mignon) | 2011–2019 (Mignon); modelled counterfactuals |
+| 9 | Talking Therapies: −10.5 days ⇒ −1.5pp employment gap; up to £335m | **Dodd, Munford, Sutton, Francetic (2025), "The effect of area-level waiting times for psychological therapies on individual-level labour market outcomes", *Labour Economics* vol 96, S0927537125000727** | https://www.sciencedirect.com/science/article/pii/S0927537125000727 | Journal (paywalled) | England; UKHLS 2015–2019, area-level waits | 2025 |
+| 10 | Helping 5% of sick/disabled UC (25–64) ⇒ ~£11.9bn 2026–2029 | **Bambra, Munford, Baxter et al. (2025), "Estimating the savings and financial benefits to the UK government of return-to-work for people in receipt of Universal Credit"**, Health Equity North, published **15 Oct 2025** | https://www.healthequitynorth.co.uk/app/uploads/RTW-REPORT-FINAL-1.pdf | Prose PDF (also parliamentary written evidence) | UK; UC caseload | modelled 2026–2029 |
+| 11 | Income & welfare reform contributors; social/political determinants | **Simpson et al. 2025b = Simpson, Albani, Munford, Bambra, "Left behind? … regional deprivation amplification …", *Health & Place* 94:103478, July 2025, DOI 10.1016/j.healthplace.2025.103478**; Bambra (2019) | https://pubmed.ncbi.nlm.nih.gov/40339500/ | **Yes** — journal supplementary data | England; 20% most deprived LAs, north vs rest | 2004–2020 |
+| 12 | >6× difference in youth job availability | **IPPR (2026), "Local Youth Opportunity Index"**, published **16 Sept 2026** | https://www.ippr.org/media-office/new-local-youth-opportunity-index-reveals-sixfold-gap-in-job-vacancies-across-britain-fuelling-neet-crisis | Index in report; **built on ONS online job adverts by LA (SOC), Jul 2025–Jun 2026** (that ONS source is downloadable) | **Britain**, local authority (London boroughs excluded) | Jul 2025–Jun 2026 |
+| 13 | GM devolution & life expectancy; GM +28% 2015–25; highest ITL2 productivity growth | **Britteon et al. (2022), *Lancet Public Health* 7(10)** + **GMCA, "Economic growth in Greater Manchester" (Jan 2026)** | https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667(22)00198-0/fulltext ; https://www.greatermanchester-ca.gov.uk/media/dwen3ltn/ifs-gm-economic-growth-paper-web-final-accessible.pdf | Britteon: journal; GMCA: prose PDF | GM; England control (Britteon); ITL2 (GMCA) | 2006–2019 (Britteon); 2015–2023 (GMCA) |
+| 14 | Health for Wealth 2018 & 2025; HEN website | **Bambra, Munford, Brown et al. (2018), "Health for Wealth: Building a Healthier Northern Powerhouse for UK Productivity", NHSA** | https://www.thenhsa.co.uk/app/uploads/2018/11/NHSA-REPORT-FINAL.pdf | Prose PDF (£13.2bn) | Northern Powerhouse vs rest of England | 2018 |
+
+**Verbatim anchors (for copy, no computation needed):**
+- ONS HLE (15 April 2026): *"Healthy life expectancy (HLE) at birth in the most deprived areas of England was 49.8 years (68% of life) for males, and 48.2 years (62%) for females … in the least deprived areas, HLE was 69.2 years (83%) for males and 68.5 years (79%) for females."* Slope index of inequality for HLE: **19.3 (male), 20.1 (female)**.
+- ONS labour market (HI00, released 18 August 2026), Apr–Jun 2026: *"The highest employment rate in the UK was in the East of England (78.3%), while the lowest was in the North East (71.1%) … the highest economic inactivity rate was in Northern Ireland (26.4%), while the lowest was in the South East (18.4%)."*
+- ONS productivity (2022 article, 2021 data): *"In 2021, Inner London West continued to have the highest labour productivity … 54% above the UK average … Around half of ITL2 subregions (20 out of 41) had labour productivity 10% or more below the UK average"* and *"Tower Hamlets in London had the highest productivity of the ITL3 subregions, with labour productivity over three times higher than that of the lowest ITL3 subregion, Powys in Wales."*
+- Health for Wealth 2025: *"If the health of the North were matched to the rest of the country, it could generate an additional £18.4bn a year"*; *"Health-related economic inactivity is currently 50% higher in the North than in the rest of England. Regional health inequalities account for over 40% of this gap"* (and, in the report's economic-inactivity comparison, "8.4% v. 5.6%"). NHSA press release: *"particularly in regions such as the North East, where improving population mental health alone could add £6.6bn to the economy."* Munford (HEN, 20 Nov 2025): *"For every £1 spent, society can expect to see a return of around £14 in broader health and socio-economic benefits."*
+- Bryan et al. 2026: *"The disability employment gap in Britain (2014–19) was 31 percentage points (pp), but ranged from 17 pp to 43 pp locally"* — *"17 pp in Buckinghamshire … to 43 pp in North Lanarkshire."*
+- Dodd et al. 2025: *"A one standard deviation (10.5 days) decrease in median area-level waiting time leads to a 1.5 percentage point decrease in the gap in probability of employment between individuals in good and poor mental health."*
+- Bambra et al. 2025: *"Getting 5% of over-25s workless due to sickness or disability back into work would save £11.9 billion."*
+- IPPR 2026: Rotherham 46 vs Cotswolds 288 suitable vacancies per 1,000 young people (≈6.3× — this ratio is IPPR-published, not your derivation).
+
+---
+
+### 2. Three chart ideas (visually distinct)
+
+#### Chart idea 1 — Healthy life expectancy by deprivation decile, England (dumbbell / range chart)
+- **Single message:** People in England's most deprived areas can expect roughly two decades fewer years in good health than those in the least deprived areas.
+- **Argument evidenced:** Claim 1.
+- **Exact source:** ONS, *Healthy life expectancy by national area deprivation, England, time series* dataset (part of the bulletin "…between 2013 to 2015 and 2022 to 2024", released 15 April 2026). Download from the bulletin's related-data page: `https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthinequalities/bulletins/healthylifeexpectancybynationalareadeprivationenglandandwales/between2013to2015and2022to2024/relateddata` (XLSX, "Healthy life expectancy by national area deprivation, England time series"). No series codes; sheets are keyed by sex, decile, measure (LE/HLE) and period.
+- **Geography tier & coverage:** England; national IMD deciles (clusters of LSOAs), IMD 2019. Decile 1 = most deprived 10%.
+- **Chart form:** Dumbbell/range chart — one row per decile (1→10), a dot for males and a dot for females (or two panels), connecting bars showing the good-health years. Dumbbell chosen because the story is the *distance* between deciles, read instantly. **Palette:** `nominal_1` (male), `nominal_2` (female); `Deemphasize_Discrete` for the connecting rules; `accent` to highlight decile 1 vs decile 10.
+- **Verbatim annotations (no computation):** Male HLE 49.8 (decile 1) vs 69.2 (decile 10); female 48.2 vs 68.5. Slope index of inequality: 19.3 (male), 20.1 (female). Male HLE fell 2.2 years and female 3.2 years in the most deprived areas vs 2019–2021.
+- **Traps/caveats:** 2020 COVID deaths are included; LSOA mid-year population estimates are under revision so ONS flags future revision; period is 3-year pooled 2022–2024; changes are vs the non-overlapping 2019–2021 period.
+- **Derivation flag:** The article's **19.4 / 20.3-year gaps are derivations** (decile 10 minus decile 1). **Out of bounds** — instead plot the published endpoints and label the ONS-published SII (19.3 / 20.1).
+
+#### Chart idea 2 — Output per hour worked across UK ITL3 subregions (beeswarm / strip small-multiple)
+- **Single message:** UK productivity is extraordinarily uneven — a few London subregions sit far above the national average while most rural and coastal areas fall well below it.
+- **Argument evidenced:** Claim 3.
+- **Exact source:** ONS, **SRPROD01 — "Subregional productivity: labour productivity indices by UK ITL2 and ITL3 subregions"**. For the 2021 figures cited in the article, use the **2023 edition** (released 20 July 2023). For the newest data, use the edition released **19 June 2025** (2023 reference year). Download: `https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/datasets/subregionalproductivitylabourproductivitygvaperhourworkedandgvaperfilledjobindicesbyuknuts2andnuts3subregions`. Use the "GVA per hour worked, current price index (UK=100)" tables (A-series).
+- **Geography tier & coverage:** UK; ITL3 (179 areas in the 2021 vintage), groupable by ITL1 country/region. ITL2 = 41 areas.
+- **Chart form:** Beeswarm/strip scatter — one dot per ITL3 area on a horizontal UK=100 axis, faceted (small multiple) by ITL1 region. This is a non-bar, distribution-revealing form that shows the long right tail (London) without implying causation. **Palette:** `Deemphasize_Continuous` for the mass of dots; `bar.accent_1` for Tower Hamlets, `bar.accent_2` for Powys, `Other_3` for the UK=100 reference line; or `nominal_1`–`nominal_6` if colouring by region.
+- **Verbatim annotations:** Inner London West 54% above UK average (2021); around half of ITL2 (20 of 41) ≥10% below; Tower Hamlets "over three times higher than … Powys" (2021).
+- **Traps/caveats:** **Correction of 30 Oct 2025** to chained-volume tables A5/B5 for ITL2/ITL3 and combined authorities (current-price tables A1–A4/B1–B4 unaffected) — use current-price index tables for the cited figures. Index basis (UK=100). **ITL vintage break:** the article's figures are ITL 2021 (179 ITL3); the ONS **2025 ITL update** moves to 182 ITL3 areas and realigns ITL2 to mayoral combined authorities — do not mix vintages.
+- **Derivation flag:** None if you use published index values and ONS's own published comparisons ("54% above", "three times"). Ranking areas by the published index is acceptable *display ordering* of a published value table.
+
+#### Chart idea 3 — The disability-employment gap by ITL3 area, Great Britain (choropleth map OR ranked dot plot)
+- **Single message:** A disabled person's chance of being in work depends heavily on where they live — the employment gap runs from 17 to 43 percentage points across Britain.
+- **Argument evidenced:** Claim 7 (and the "place matters" thread of Claims 5–6).
+- **Exact source:** Bryan, Bryce, Roberts, Sechel (2026), *Regional Studies*, DOI 10.1080/00343404.2026.2681662 — **supplemental data online (Table A1)** with ITL3 estimates; built on ONS Annual Population Survey 2014–2019. (Working-paper twin: University of Sheffield Economics WP 2024002.)
+- **Geography tier & coverage:** **Great Britain**, **ITL3**. Northern Ireland is excluded (GB only).
+- **Chart form:** Choropleth (ITL3) *or* a ranked dot plot of the highest/lowest areas. Choropleth chosen because the spatial clustering (Scotland/Wales/northern England high; South East low) is the point. **Palette:** `Deemphasize_Continuous` as the sequential scale; `accent` for the extreme areas (Buckinghamshire, North Lanarkshire). If dot plot: `bar.other` for the field, `bar.accent_1`/`bar.accent_2` for the extremes.
+- **Verbatim annotations:** GB average 31pp; Buckinghamshire 17pp (lowest); North Lanarkshire 43pp (highest); top-5 also East Ayrshire & North Ayrshire mainland (42), Bridgend & Neath Port Talbot (42), Dumfries & Galloway (41), Durham (40).
+- **Traps/caveats:** Pooled 2014–2019 period (pre-pandemic); GB only; these are academic estimates in supplemental data, **not** ONS official statistics — label as such. If mapping, join Table A1 area names/codes to ITL3 boundaries (note the paper uses ITL3 groupings that merge some small areas, e.g. "East Ayrshire & North Ayrshire mainland").
+- **Derivation flag:** None if you plot the published area-level estimates.
+
+*(These three are deliberately distinct: a dumbbell, a distribution beeswarm/strip, and a map/ranked-dot — one of which, Chart 3, is a spatial small-multiple/choropleth showing the health–economy relationship across areas without asserting causation.)*
+
+---
+
+### 3. Maps
+
+#### 3a. Health-article productivity map (whole-UK, chartable, no aggregation)
+- **Data:** ONS **SRPROD01** "Subregional productivity: labour productivity indices by UK ITL2 and ITL3 subregions" — recommend **ITL3** (179 areas, 2021 vintage) for whole-UK coverage in a single join. Use GVA-per-hour current-price index (UK=100). Edition: 19 June 2025 (2023 data) or 20 July 2023 (2021 data as cited). If you prefer LAD granularity, ONS also publishes "Subregional productivity: labour productivity indices by local authority district" (same release).
+- **Boundary file:** ONS Open Geography Portal — **"International Territorial Level (ITL) geography hierarchy boundaries, January 2021, UK"**, resolution **BGC (generalised 20 m, clipped to coastline for GB; extent-of-the-realm for Northern Ireland)**. Portal: `https://geoportal.statistics.gov.uk/` (search "ITL 2021 boundaries"; GeoJSON/Shapefile via the layer's "I want to use this → View API Resources"). data.gov.uk mirror: `https://www.data.gov.uk/dataset/d2742510-eb92-489c-8333-240506a4bcb9/`.
+- **Join field:** `ITL321CD` (ITL3) or `ITL221CD` (ITL2). SRPROD01 uses matching ITL codes.
+- **Vintage-matching warning (critical):**
+  - The article's productivity figures are **ITL 2021** (179 ITL3). Join *only* to the **January 2021** ITL boundary. The **ONS 2025 ITL update** (adopted in the 1998–2023 Regional GDP release) creates **182 ITL3 areas** and realigns ITL2 to mayoral combined authorities — a different code set that will **not** join cleanly to 2021 data.
+  - **LAD maps** are exposed to boundary/code changes: the **2023 reorganisations** (North Yorkshire → single unitary; Cumbria → Westmorland and Furness + Cumberland; Somerset → single unitary) changed LAD codes; further LGR through 2024–2026 continues to change codes. **Match the LAD data vintage to the LAD boundary vintage** (e.g. LAD Dec 2023 data ↔ LAD 2023 BGC boundary). ITL3 is the safer join because it is more stable than LAD.
+
+#### 3b. The "MSA" (metropolitan statistical area) problem
+There is no official UK "MSA" geography and no official GeoJSON. Candidate definitions, viability, and — decisively — where productivity is *published directly* (so you avoid aggregation):
+
+| Definition | Boundary/lookup available? | Productivity published *at that unit*? | UK coverage |
+|---|---|---|---|
+| **OECD Functional Urban Areas (FUAs)** | Yes — OECD FUA geographic files + FUA-to-local-unit correspondence (oecd.org "Definition of Cities and Functional Urban Areas"); GHSL-OECD FUA 2019 boundaries on data.europa.eu | **Yes** — OECD Metropolitan database publishes **GDP per worker** for UK FUAs ≥250k (annual, 2000–recent) | **Whole UK** (incl. NI & Scotland) |
+| **Centre for Cities Primary Urban Areas (PUAs)** | Yes — PUA-to-LAD composition tables (PDF, e.g. 2022-PUA-Table.pdf; "Primary Urban Areas: Spatial definitions" PDF) | **Yes** — Centre for Cities **Data Tool** publishes GVA, output per worker/productivity, jobs, wages for **63 PUAs** directly | **GB** (English cities = PUA; Welsh/Scottish cities = LAD proxy; Glasgow = 5-LAD aggregate; Belfast defined but PUA data is English-only) |
+| **ONS Travel to Work Areas (2011)** | Yes — TTWA 2011 boundaries + LAD-to-TTWA lookup on Open Geography Portal; **no 2021-census TTWA update published as of Sept 2026** (ONS still "considering" it) | **No** ONS productivity at TTWA | **UK** (228 areas) |
+| **ONS Built Up Areas (2022)** | Yes — BUA 2022 boundaries + BUA-to-LAD/MSOA lookups on Open Geography Portal | **No** productivity at BUA | **England & Wales only** |
+| **Major Towns and Cities / Towns & Cities analysis** | Yes (Open Geography Portal) | **No** direct productivity | E&W-centric |
+
+- **Published lookups (URLs):** Centre for Cities PUA composition — `https://www.centreforcities.org/wp-content/uploads/2022/08/2022-PUA-Table.pdf` and `https://www.centreforcities.org/city-by-city/puas/` (each PUA listed with its constituent local authorities; structure = PUA name → list of LAD names). OECD FUA correspondence — via `https://www.oecd.org/en/data/datasets/oecd-definition-of-cities-and-functional-urban-areas.html` (FUA code → constituent LAU/local-unit codes, plus geographic files). ONS TTWA lookup — Open Geography Portal (LAD→TTWA, mid-2019 SAPE-based 2021-LA-by-2011-TTWA ad-hoc also exists).
+- **Recommendation (single most defensible route):** Use a source that **publishes productivity at the metro unit itself** so no aggregation is needed:
+  1. **Preferred for whole-UK coverage:** **OECD Metropolitan database — GDP per worker for UK FUAs.** It covers the entire UK (NI and Scotland handled within the OECD FUA framework) and the productivity value is published per FUA. Cite OECD Regional/Metropolitan Statistics and use OECD FUA boundary files for the map.
+  2. **Preferred for city-level detail / familiarity:** **Centre for Cities Data Tool**, which publishes output-per-worker/productivity for 63 PUAs directly (download per indicator from `https://www.centreforcities.org/data/data-tool/`). Map by dissolving LAD polygons **using the Centre for Cities PUA-to-LAD lookup** — the dissolve is *geometry only*; the productivity number is taken as published, so no statistical aggregation occurs.
+- **Where derivation would be required (out of bounds):** If you instead take ONS LAD or ITL3 productivity and **sum/average it across the LADs that make up a metro**, that is arithmetic aggregation and is **not permitted** under your rules. So: dissolving polygons to draw the shape is fine; combining the underlying productivity values yourself is not. Only OECD (FUA) and Centre for Cities (PUA) give you a pre-published metro productivity number.
+- **Coverage catch to state on the chart:** OECD FUAs = whole UK; PUAs = GB with English-only PUA productivity (Scottish/Welsh cities use LAD proxies, Glasgow/Belfast are multi-LAD aggregates); TTWAs = UK but no productivity; BUAs = England & Wales only. Note whether NI/Scotland are included or proxied in whichever you pick.
+
+---
+
+### 4. Timeliness and agenda
+
+- **UK Autumn Budget 2026: confirmed for Wednesday 28 October 2026** (Chancellor's letter to the Treasury Select Committee, 31 July 2026; OBR "Autumn 2026 forecast date announced", `https://obr.uk/`). As of 23 Sept 2026 it is announced but **not yet held** — a strong hook for productivity/inactivity charts. *(Secondary sources also reference a mid-2026 change of government; treat that political framing as agenda signal, not data.)*
+- **ONS regional labour market (HI00):** released monthly — a fresh edition typically lands mid-month, so an October release will refresh Claim 4 near the Budget.
+- **ONS subregional productivity (SRPROD01):** annual; last data release 19 June 2025 — a 2026 edition would be the natural refresh; watch for adoption of the ITL 2025 vintage (182 ITL3).
+- **ONS HLE by deprivation:** the 15 April 2026 release is current; next release "to be announced."
+- **Health for Wealth 2025:** published 20 Nov 2025 — its anniversary and the Budget window align for the North–South health/productivity narrative.
+- **IPPR Local Youth Opportunity Index:** 16 Sept 2026 — very recent; use as agenda signal for the youth-jobs chart. *(Newspaper coverage of all the above — FT/BBC/Guardian — is agenda signal only, not a data source.)*
+
+---
+
+## Recommendations
+
+**Stage 1 — publish now with clean sourcing (low risk):**
+1. Build **Chart 1 (HLE dumbbell)** from the ONS 15 April 2026 time series, plotting the published decile endpoints and labelling the **SII (19.3 / 20.1)** rather than the article's derived 19.4/20.3. Ask the author to change the copy's gap figures to "around 19–20 years" or to cite the SII, since the exact 19.4/20.3 are derivations.
+2. Build **Chart 2 (ITL3 productivity beeswarm)** from SRPROD01 current-price index tables. Use the 2021-vintage edition to match the article's cited numbers; annotate with ONS's own "54%", "20 of 41", "three times Powys" wording.
+
+**Stage 2 — resolve two citation issues before those elements go live (medium risk):**
+3. **Bryan et al. 2022:** the paper states it finds *no* significant north/south geographical variation in the mental-health–employment effect. Ask the authors whether they meant a different Bryan reference (e.g. the 2026 geography-of-DEG paper) for the "similar geographical variation for mental health" clause. Do **not** chart geographic mental-health variation to Bryan 2022.
+4. **GMCA productivity superlative:** the "highest average annual productivity growth of any UK ITL2 area" is GMCA's framing (+2.0% GVA/hour since 2015) and is **contested** — The Productivity Institute (PIP094 "The Manchester Model", June 2026; PIP097, July 2026) reports GM had the **highest GVA growth but ~7th-highest productivity growth** 2015–2023, and notes GVA per hour rose 42.0% in GM vs 28.1% UK. If you chart GM's standout status, frame it as **GVA growth** (well-evidenced: ~28–31% cumulative, fastest ITL2) rather than an uncontested productivity-growth crown, and attribute the productivity claim explicitly to GMCA with the TPI caveat noted.
+
+**Stage 3 — for the maps:**
+5. For the **health-article map**, use **SRPROD01 at ITL3 + ONS ITL Jan 2021 BGC**, join on `ITL321CD`, and lock the data and boundary to the **same ITL vintage**. Avoid LAD unless you match the exact LAD boundary year to the data year.
+6. For the **second article's MSA map**, adopt **OECD FUA GDP-per-worker** (whole-UK, published per unit) as the primary route, or **Centre for Cities PUA productivity** if English-city detail matters more than UK completeness. Explicitly state coverage (NI/Scotland handling) on the graphic. Do not aggregate LAD productivity yourself.
+
+**Benchmarks that would change these recommendations:** a new SRPROD01 edition adopting ITL 2025 (switch boundary vintage to 2025, 182 ITL3); publication of a 2021-census TTWA update (would make TTWA a viable UK-wide metro geometry, though still without published productivity); an ONS metro/FUA productivity series (would remove the need for OECD/Centre for Cities); author confirmation on the Bryan 2022 citation (would unlock or kill a mental-health geography chart).
+
+---
+
+## Caveats
+
+- **Derivations you must not compute:** the 19.4/20.3-year HLE gaps (use endpoints + SII); any North-vs-rest ratios, differences, growth rates, or rankings not printed verbatim in a source. Ordering a published value table for display is acceptable; computing a new ratio or rank from scores is not.
+- **Think-tank headline numbers are prose-only:** £18.4bn, £6.6bn, £11.9bn, £13.2bn and the 50%/40% inactivity statements appear in Health Equity North/NHSA PDFs as text, not downloadable tables — they can be quoted in copy but not sourced to a chartable dataset from those reports. They are explicitly **modelled counterfactuals, not forecasts**.
+- **Geography precision reminders:** HLE claim = **England**; disability-employment gap = **Great Britain** (excludes NI); productivity = **UK**; labour-market HI00 = **UK countries + English regions**; the article's 25.1% North East inactivity is the highest **English** region (UK-wide highest is Northern Ireland at 26.4%) — state "English regions" explicitly.
+- **Provisional/revised flags:** HI00 labour-market data are "official statistics in development" with elevated LFS volatility; SRPROD01 carries the 30 Oct 2025 correction to chained-volume tables A5/B5; PAYE-based regional figures for the latest month are provisional.
+- **GMCA "28%":** not a verbatim GMCA "2015–2025" figure; it corresponds to ~cumulative real GVA growth 2015–2023 (~3.1%/yr) and appears explicitly in Deloitte's 2025 Crane Survey (a non-primary source). The GMCA "Economic growth in Greater Manchester" document is GMCA-authored (the filename slug "ifs-gm" is misleading — do **not** cite it as an Institute for Fiscal Studies report).
+- **Could not verify from a primary source:** the **Little (2009)** reference (disability-employment gap, earlier evidence) was not located; and the precise text of **Dodd et al. 2025's £335m** "14 therapists per commissioning region" illustrative cost-offset (the −10.5 days / −1.5pp result is confirmed verbatim; the £335m figure is reported as being in the paper but I could not extract the exact sentence from behind the paywall). Confirm both against the source PDFs before publishing those specific numbers.
