@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"font": "Circular Std", "text": {"color": "#676A86", "align": "left", "baseline": "middle", "dx": 7, "dy": 0, "fontSize": 11}, "view": {"stroke": "transparent", "continuousWidth": 400, "continuousHeight": 300, "discreteWidth": 400, "discreteHeight": 300, "fill": "transparent"}, "range": {"category": ["#36B7B4", "#E6224B", "#F4C245", "#0063AF", "#00A767", "#179FDB", "#EB5C2E"], "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"], "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"], "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]}, "bar": {"color": "#179fdb"}, "line": {"color": "#e6224b"}, "rule": {"color": "#676A86"}, "area": {"opacity": 0.3}, "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95}, "geoshape": {"stroke": "white", "strokeWidth": 0.3}, "rect": {"fill": "#d6d4d4", "opacity": 0.3}, "axis": {"labelColor": "#676A86", "labelFontSize": 11, "labelFont": "Circular Std", "labelOpacity": 0.7, "tickColor": "#676A86", "tickOpacity": 0.5, "domainColor": "#676A86", "domainOpacity": 0.5, "gridColor": "#676A86", "gridDash": [2, 2], "gridOpacity": 0.5, "title": null, "titleColor": "#676A86", "titleOpacity": 0.8, "tickSize": 4}, "axisXDiscrete": {"grid": false, "labelAngle": 0, "tickCount": 10, "tickOpacity": 0.5, "title": null}, "axisYDiscrete": {"ticks": false, "labelPadding": 5}, "axisXTemporal": {"grid": false, "ticks": true}, "axisXQuantitative": {"grid": true}, "axisYQuantitative": {"gridColor": "#676A86", "gridDash": [1, 5], "gridOpacity": 0.5, "ticks": false, "labelPadding": 5, "tickCount": 8, "titleAngle": 0, "titleAlign": "left", "titleBaseline": "bottom", "titleX": 0, "titleY": -5}, "title": {"color": "#676A86E6", "subtitleColor": "#676A86", "font": "Circular Std", "subtitleFont": "Circular Std", "anchor": "start", "fontSize": 14, "subtitleFontSize": 12, "subtitlePadding": 4, "offset": 0, "frame": "group"}, "legend": {"titleColor": "#122b39", "title": null, "labelColor": "#122b39", "labelFontSize": 11}, "background": "white"}, "layer": [{"data": {"name": "data-a0a55d106695e8d630baff0f16eee66d"}, "mark": {"type": "rule", "color": "#122b39", "strokeWidth": 1}, "encoding": {"y": {"field": "y", "type": "quantitative"}}}, {"data": {"name": "data-dfc58880b403e5400292b55b7bc38700"}, "mark": {"type": "bar", "cornerRadius": 2, "size": 80}, "encoding": {"color": {"field": "neg", "legend": null, "scale": {"domain": [false, true], "range": ["#36B7B4", "#E6224B"]}, "type": "nominal"}, "x": {"axis": {"domain": false, "labelAngle": 0, "labelFontSize": 11, "labelLimit": 140, "labelPadding": 8, "ticks": false}, "field": "scenario", "sort": ["March 2026 OBR forecast", "EY baseline forecast", "EY adverse scenario", "OBR upside scenario"], "title": null, "type": "nominal"}, "y": {"axis": {"grid": true, "gridColor": "#d9dce3", "gridDash": [3, 3], "values": [-15, -5, 5, 15, 25, 35, 45]}, "field": "balance", "scale": {"domain": [-15, 45]}, "title": "Current budget balance, 2029-30 (\u00a3bn)", "type": "quantitative"}}, "transform": [{"filter": "((datum.scenario === 'March 2026 OBR forecast') || (datum.scenario === pick))"}]}, {"data": {"name": "data-dfc58880b403e5400292b55b7bc38700"}, "mark": {"type": "text", "baseline": "bottom", "dy": -6, "fontSize": 15, "fontWeight": "bold"}, "encoding": {"color": {"field": "neg", "legend": null, "scale": {"domain": [false, true], "range": ["#36B7B4", "#E6224B"]}, "type": "nominal"}, "text": {"field": "lab", "type": "nominal"}, "x": {"field": "scenario", "sort": ["March 2026 OBR forecast", "EY baseline forecast", "EY adverse scenario", "OBR upside scenario"], "type": "nominal"}, "y": {"field": "balance", "type": "quantitative"}}, "transform": [{"filter": "((datum.scenario === 'March 2026 OBR forecast') || (datum.scenario === pick))"}, {"filter": "(datum.balance >= 0)"}]}, {"data": {"name": "data-dfc58880b403e5400292b55b7bc38700"}, "mark": {"type": "text", "baseline": "top", "dy": 6, "fontSize": 15, "fontWeight": "bold"}, "encoding": {"color": {"field": "neg", "legend": null, "scale": {"domain": [false, true], "range": ["#36B7B4", "#E6224B"]}, "type": "nominal"}, "text": {"field": "lab", "type": "nominal"}, "x": {"field": "scenario", "sort": ["March 2026 OBR forecast", "EY baseline forecast", "EY adverse scenario", "OBR upside scenario"], "type": "nominal"}, "y": {"field": "balance", "type": "quantitative"}}, "transform": [{"filter": "((datum.scenario === 'March 2026 OBR forecast') || (datum.scenario === pick))"}, {"filter": "(datum.balance < 0)"}]}], "height": 340, "params": [{"name": "pick", "bind": {"input": "select", "options": ["EY baseline forecast", "EY adverse scenario", "OBR upside scenario"], "name": "Compare against: "}, "value": "EY baseline forecast"}], "width": 440, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-a0a55d106695e8d630baff0f16eee66d": [{"y": 0}], "data-dfc58880b403e5400292b55b7bc38700": [{"scenario": "March 2026 OBR forecast", "balance": 24, "neg": false, "lab": "\u00a324bn"}, {"scenario": "EY baseline forecast", "balance": 11, "neg": false, "lab": "\u00a311bn"}, {"scenario": "EY adverse scenario", "balance": -7, "neg": true, "lab": "\u2212\u00a37bn"}, {"scenario": "OBR upside scenario", "balance": 37, "neg": false, "lab": "\u00a337bn"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
