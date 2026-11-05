@@ -1,0 +1,876 @@
+,country,year,debt,scenario,assumption
+0,United Kingdom,2026,103.565,r-g -2pp,r−g −2 pp
+1,United Kingdom,2027,103.1057002681165,r-g -2pp,r−g −2 pp
+2,United Kingdom,2028,102.82853819952338,r-g -2pp,r−g −2 pp
+3,United Kingdom,2029,102.73023531628142,r-g -2pp,r−g −2 pp
+4,United Kingdom,2030,102.80757215305434,r-g -2pp,r−g −2 pp
+5,United Kingdom,2031,103.05738719488183,r-g -2pp,r−g −2 pp
+6,United Kingdom,2032,103.4765758340729,r-g -2pp,r−g −2 pp
+7,United Kingdom,2033,104.06208934587504,r-g -2pp,r−g −2 pp
+8,United Kingdom,2034,104.81093388258122,r-g -2pp,r−g −2 pp
+9,United Kingdom,2035,105.72016948574318,r-g -2pp,r−g −2 pp
+10,United Kingdom,2036,106.78690911616472,r-g -2pp,r−g −2 pp
+11,United Kingdom,2037,108.00831770135518,r-g -2pp,r−g −2 pp
+12,United Kingdom,2038,109.3816112001287,r-g -2pp,r−g −2 pp
+13,United Kingdom,2039,110.90405568404078,r-g -2pp,r−g −2 pp
+14,United Kingdom,2040,112.57296643535895,r-g -2pp,r−g −2 pp
+15,United Kingdom,2041,114.38570706126987,r-g -2pp,r−g −2 pp
+16,United Kingdom,2042,116.33968862403088,r-g -2pp,r−g −2 pp
+17,United Kingdom,2043,118.43236878677871,r-g -2pp,r−g −2 pp
+18,United Kingdom,2044,120.66125097471355,r-g -2pp,r−g −2 pp
+19,United Kingdom,2045,123.02388355138206,r-g -2pp,r−g −2 pp
+20,United Kingdom,2046,125.51785900978703,r-g -2pp,r−g −2 pp
+21,United Kingdom,2047,128.1408131780572,r-g -2pp,r−g −2 pp
+22,United Kingdom,2048,130.890424439415,r-g -2pp,r−g −2 pp
+23,United Kingdom,2049,133.76441296618484,r-g -2pp,r−g −2 pp
+24,United Kingdom,2050,136.76053996758932,r-g -2pp,r−g −2 pp
+25,United Kingdom,2026,103.565,r-g -1pp,r−g −1 pp
+26,United Kingdom,2027,104.1413502681165,r-g -1pp,r−g −1 pp
+27,United Kingdom,2028,104.88696000220455,r-g -1pp,r−g −1 pp
+28,United Kingdom,2029,105.80047512653638,r-g -1pp,r−g −1 pp
+29,United Kingdom,2030,106.88055239799007,r-g -1pp,r−g −1 pp
+30,United Kingdom,2031,108.12585931938861,r-g -1pp,r−g −1 pp
+31,United Kingdom,2032,109.53507405353245,r-g -1pp,r−g −1 pp
+32,United Kingdom,2033,111.10688533791965,r-g -1pp,r−g −1 pp
+33,United Kingdom,2034,112.83999240014823,r-g -1pp,r−g −1 pp
+34,United Kingdom,2035,114.73310487399547,r-g -1pp,r−g −1 pp
+35,United Kingdom,2036,116.78494271616843,r-g -1pp,r−g −1 pp
+36,United Kingdom,2037,118.9942361237205,r-g -1pp,r−g −1 pp
+37,United Kingdom,2038,121.35972545212864,r-g -1pp,r−g −1 pp
+38,United Kingdom,2039,123.88016113402601,r-g -1pp,r−g −1 pp
+39,United Kingdom,2040,126.5543035985847,r-g -1pp,r−g −1 pp
+40,United Kingdom,2041,129.3809231915434,r-g -1pp,r−g −1 pp
+41,United Kingdom,2042,132.35880009587493,r-g -1pp,r−g −1 pp
+42,United Kingdom,2043,135.48672425308828,r-g -1pp,r−g −1 pp
+43,United Kingdom,2044,138.76349528516045,r-g -1pp,r−g −1 pp
+44,United Kingdom,2045,142.18792241709252,r-g -1pp,r−g −1 pp
+45,United Kingdom,2046,145.75882440008562,r-g -1pp,r−g −1 pp
+46,United Kingdom,2047,149.47502943533127,r-g -1pp,r−g −1 pp
+47,United Kingdom,2048,153.33537509841145,r-g -1pp,r−g −1 pp
+48,United Kingdom,2049,157.33870826430348,r-g -1pp,r−g −1 pp
+49,United Kingdom,2050,161.48388503298486,r-g -1pp,r−g −1 pp
+50,United Kingdom,2026,103.565,r-g +0pp,r−g base
+51,United Kingdom,2027,105.1770002681165,r-g +0pp,r−g base
+52,United Kingdom,2028,106.96609480488571,r-g +0pp,r−g base
+53,United Kingdom,2029,108.93263779884497,r-g +0pp,r−g base
+54,United Kingdom,2030,111.07698414690863,r-g +0pp,r−g base
+55,United Kingdom,2031,113.39948945578492,r-g +0pp,r−g base
+56,United Kingdom,2032,115.90051004339544,r-g +0pp,r−g base
+57,United Kingdom,2033,118.58040294029769,r-g +0pp,r−g base
+58,United Kingdom,2034,121.43952589111022,r-g +0pp,r−g base
+59,United Kingdom,2035,124.47823735594088,r-g +0pp,r−g base
+60,United Kingdom,2036,127.69689651181767,r-g +0pp,r−g base
+61,United Kingdom,2037,131.09586325412272,r-g +0pp,r−g base
+62,United Kingdom,2038,134.67549819802886,r-g +0pp,r−g base
+63,United Kingdom,2039,138.43616267993934,r-g +0pp,r−g base
+64,United Kingdom,2040,142.3782187589301,r-g +0pp,r−g base
+65,United Kingdom,2041,146.50202921819536,r-g +0pp,r−g base
+66,United Kingdom,2042,150.80795756649565,r-g +0pp,r−g base
+67,United Kingdom,2043,155.296368039609,r-g +0pp,r−g base
+68,United Kingdom,2044,159.9676256017851,r-g +0pp,r−g base
+69,United Kingdom,2045,164.82209594720203,r-g +0pp,r−g base
+70,United Kingdom,2046,169.86014550142627,r-g +0pp,r−g base
+71,United Kingdom,2047,175.08214142287548,r-g +0pp,r−g base
+72,United Kingdom,2048,180.48845160428408,r-g +0pp,r−g base
+73,United Kingdom,2049,186.07944467417198,r-g +0pp,r−g base
+74,United Kingdom,2050,191.85548999831616,r-g +0pp,r−g base
+75,United Kingdom,2026,103.565,r-g +1pp,r−g +1 pp
+76,United Kingdom,2027,106.21265026811649,r-g +1pp,r−g +1 pp
+77,United Kingdom,2028,109.06594260756687,r-g +1pp,r−g +1 pp
+78,United Kingdom,2029,112.12734472320714,r-g +1pp,r−g +1 pp
+79,United Kingdom,2030,115.3993539323516,r-g +1pp,r−g +1 pp
+80,United Kingdom,2031,118.88449752012228,r-g +1pp,r−g +1 pp
+81,United Kingdom,2032,122.5853330990627,r-g +1pp,r−g +1 pp
+82,United Kingdom,2033,126.5044489730669,r-g +1pp,r−g +1 pp
+83,United Kingdom,2034,130.64446450567564,r-g +1pp,r−g +1 pp
+84,United Kingdom,2035,135.0080304927922,r-g +1pp,r−g +1 pp
+85,United Kingdom,2036,139.59782953987062,r-g +1pp,r−g +1 pp
+86,United Kingdom,2037,144.41657644363048,r-g +1pp,r−g +1 pp
+87,United Kingdom,2038,149.46701857835194,r-g +1pp,r−g +1 pp
+88,United Kingdom,2039,154.75193628680657,r-g +1pp,r−g +1 pp
+89,United Kingdom,2040,160.27414327587914,r-g +1pp,r−g +1 pp
+90,United Kingdom,2041,166.0364870169371,r-g +1pp,r−g +1 pp
+91,United Kingdom,2042,172.04184915100421,r-g +1pp,r−g +1 pp
+92,United Kingdom,2043,178.29314589879664,r-g +1pp,r−g +1 pp
+93,United Kingdom,2044,184.79332847567906,r-g +1pp,r−g +1 pp
+94,United Kingdom,2045,191.5453835116006,r-g +1pp,r−g +1 pp
+95,United Kingdom,2046,198.55233347606963,r-g +1pp,r−g +1 pp
+96,United Kingdom,2047,205.81723710822882,r-g +1pp,r−g +1 pp
+97,United Kingdom,2048,213.3431898520904,r-g +1pp,r−g +1 pp
+98,United Kingdom,2049,221.1333242969948,r-g +1pp,r−g +1 pp
+99,United Kingdom,2050,229.19081062335457,r-g +1pp,r−g +1 pp
+100,United Kingdom,2026,103.565,r-g +2pp,r−g +2 pp
+101,United Kingdom,2027,107.2483002681165,r-g +2pp,r−g +2 pp
+102,United Kingdom,2028,111.18650341024805,r-g +2pp,r−g +2 pp
+103,United Kingdom,2029,115.38521728962299,r-g +2pp,r−g +2 pp
+104,United Kingdom,2030,119.85017314246068,r-g +2pp,r−g +2 pp
+105,United Kingdom,2031,124.58722829217727,r-g +2pp,r−g +2 pp
+106,United Kingdom,2032,129.60236892330414,r-g +2pp,r−g +2 pp
+107,United Kingdom,2033,134.9017129164323,r-g +2pp,r−g +2 pp
+108,United Kingdom,2034,140.49151274552574,r-g +2pp,r−g +2 pp
+109,United Kingdom,2035,146.37815843897573,r-g +2pp,r−g +2 pp
+110,United Kingdom,2036,152.56818060579812,r-g +2pp,r−g +2 pp
+111,United Kingdom,2037,159.0682535284071,r-g +2pp,r−g +2 pp
+112,United Kingdom,2038,165.88519832342996,r-g +2pp,r−g +2 pp
+113,United Kingdom,2039,173.02598617205985,r-g +2pp,r−g +2 pp
+114,United Kingdom,2040,180.49774162147605,r-g +2pp,r−g +2 pp
+115,United Kingdom,2041,188.3077459588959,r-g +2pp,r−g +2 pp
+116,United Kingdom,2042,196.4634406598555,r-g +2pp,r−g +2 pp
+117,United Kingdom,2043,204.9724309123527,r-g +2pp,r−g +2 pp
+118,United Kingdom,2044,213.84248921852134,r-g +2pp,r−g +2 pp
+119,United Kingdom,2045,223.08155907554217,r-g +2pp,r−g +2 pp
+120,United Kingdom,2046,232.69775873753395,r-g +2pp,r−g +2 pp
+121,United Kingdom,2047,242.69938506020605,r-g +2pp,r−g +2 pp
+122,United Kingdom,2048,253.09491743009343,r-g +2pp,r−g +2 pp
+123,United Kingdom,2049,263.8930217802348,r-g +2pp,r−g +2 pp
+124,United Kingdom,2050,275.10255469419576,r-g +2pp,r−g +2 pp
+125,United States,2026,125.781,r-g -2pp,r−g −2 pp
+126,United States,2027,127.09757891309027,r-g -2pp,r−g −2 pp
+127,United States,2028,128.80095400318282,r-g -2pp,r−g −2 pp
+128,United States,2029,130.8826157543836,r-g -2pp,r−g −2 pp
+129,United States,2030,133.33424186014827,r-g -2pp,r−g −2 pp
+130,United States,2031,136.14769310467636,r-g -2pp,r−g −2 pp
+131,United States,2032,139.31500933491512,r-g -2pp,r−g −2 pp
+132,United States,2033,142.8284055211789,r-g -2pp,r−g −2 pp
+133,United States,2034,146.68026790443517,r-g -2pp,r−g −2 pp
+134,United States,2035,150.86315022835004,r-g -2pp,r−g −2 pp
+135,United States,2036,155.36977005422906,r-g -2pp,r−g −2 pp
+136,United States,2037,160.19300515702903,r-g -2pp,r−g −2 pp
+137,United States,2038,165.3258900006577,r-g -2pp,r−g −2 pp
+138,United States,2039,170.76161229081677,r-g -2pp,r−g −2 pp
+139,United States,2040,176.49350960368264,r-g -2pp,r−g −2 pp
+140,United States,2041,182.51506608875573,r-g -2pp,r−g −2 pp
+141,United States,2042,188.8199092442475,r-g -2pp,r−g −2 pp
+142,United States,2043,195.4018067634087,r-g -2pp,r−g −2 pp
+143,United States,2044,202.25466345023864,r-g -2pp,r−g −2 pp
+144,United States,2045,209.3725182030486,r-g -2pp,r−g −2 pp
+145,United States,2046,216.74954106438702,r-g -2pp,r−g −2 pp
+146,United States,2047,224.38003033586625,r-g -2pp,r−g −2 pp
+147,United States,2048,232.2584097564632,r-g -2pp,r−g −2 pp
+148,United States,2049,240.37922574289732,r-g -2pp,r−g −2 pp
+149,United States,2050,248.73714469072013,r-g -2pp,r−g −2 pp
+150,United States,2026,125.781,r-g -1pp,r−g −1 pp
+151,United States,2027,128.35538891309028,r-g -1pp,r−g −1 pp
+152,United States,2028,131.31464607231374,r-g -1pp,r−g −1 pp
+153,United States,2029,134.6541530587168,r-g -1pp,r−g −1 pp
+154,United States,2030,138.3693468743733,r-g -1pp,r−g −1 pp
+155,United States,2031,142.45571927733218,r-g -1pp,r−g −1 pp
+156,United States,2032,146.90881612454584,r-g -1pp,r−g −1 pp
+157,United States,2033,151.7242367226832,r-g -1pp,r−g −1 pp
+158,United States,2034,156.8976331867332,r-g -1pp,r−g −1 pp
+159,United States,2035,162.42470980630486,r-g -1pp,r−g −1 pp
+160,United States,2036,168.30122241953194,r-g -1pp,r−g −1 pp
+161,United States,2037,174.52297779449057,r-g -1pp,r−g −1 pp
+162,United States,2038,181.08583301803998,r-g -1pp,r−g −1 pp
+163,United States,2039,187.98569489199704,r-g -1pp,r−g −1 pp
+164,United States,2040,195.2185193365569,r-g -1pp,r−g −1 pp
+165,United States,2041,202.78031080087234,r-g -1pp,r−g −1 pp
+166,United States,2042,210.66712168070626,r-g -1pp,r−g −1 pp
+167,United States,2043,218.87505174307242,r-g -1pp,r−g −1 pp
+168,United States,2044,227.4002475577805,r-g -1pp,r−g −1 pp
+169,United States,2045,236.23890193580232,r-g -1pp,r−g −1 pp
+170,United States,2046,245.3872533743782,r-g -1pp,r−g −1 pp
+171,United States,2047,254.84158550878138,r-g -1pp,r−g −1 pp
+172,United States,2048,264.59822657066206,r-g -1pp,r−g −1 pp
+173,United States,2049,274.65354885289037,r-g -1pp,r−g −1 pp
+174,United States,2050,285.00396818082226,r-g -1pp,r−g −1 pp
+175,United States,2026,125.781,r-g +0pp,r−g base
+176,United States,2027,129.6131989130903,r-g +0pp,r−g base
+177,United States,2028,133.85349434144464,r-g +0pp,r−g base
+178,United States,2029,138.50107009203256,r-g +0pp,r−g base
+179,United States,2030,143.5551116042096,r-g +0pp,r−g base
+180,United States,2031,149.01480594645253,r-g +0pp,r−g base
+181,United States,2032,154.87934181310126,r-g +0pp,r−g base
+182,United States,2033,161.14790952110698,r-g +0pp,r−g base
+183,United States,2034,167.81970100678697,r-g +0pp,r−g base
+184,United States,2035,174.89390982258584,r-g +0pp,r−g base
+185,United States,2036,182.3697311338434,r-g +0pp,r−g base
+186,United States,2037,190.24636171556872,r-g +0pp,r−g base
+187,United States,2038,198.5229999492209,r-g +0pp,r−g base
+188,United States,2039,207.198845819496,r-g +0pp,r−g base
+189,United States,2040,216.27310091112085,r-g +0pp,r−g base
+190,United States,2041,225.7449684056527,r-g +0pp,r−g base
+191,United States,2042,235.6136530782858,r-g +0pp,r−g base
+192,United States,2043,245.87836129466388,r-g +0pp,r−g base
+193,United States,2044,256.5383010076995,r-g +0pp,r−g base
+194,United States,2045,267.5926817543993,r-g +0pp,r−g base
+195,United States,2046,279.04071465269595,r-g +0pp,r−g base
+196,United States,2047,290.88161239828634,r-g +0pp,r−g base
+197,United States,2048,303.11458926147577,r-g +0pp,r−g base
+198,United States,2049,315.7388610840291,r-g +0pp,r−g base
+199,United States,2050,328.7536452760276,r-g +0pp,r−g base
+200,United States,2026,125.781,r-g +1pp,r−g +1 pp
+201,United States,2027,130.8710089130903,r-g +1pp,r−g +1 pp
+202,United States,2028,136.41749881057555,r-g +1pp,r−g +1 pp
+203,United States,2029,142.424121540331,r-g +1pp,r−g +1 pp
+204,United States,2030,148.89455816501473,r-g +1pp,r−g +1 pp
+205,United States,2031,155.8325191957862,r-g +1pp,r−g +1 pp
+206,United States,2032,163.24174482789414,r-g +1pp,r−g +1 pp
+207,United States,2033,171.1260051781492,r-g +1pp,r−g +1 pp
+208,United States,2034,179.4891005242966,r-g +1pp,r−g +1 pp
+209,United States,2035,188.33486154630342,r-g +1pp,r−g +1 pp
+210,United States,2036,197.66714956957657,r-g +1pp,r−g +1 pp
+211,United States,2037,207.48985681012618,r-g +1pp,r−g +1 pp
+212,United States,2038,217.8069066216905,r-g +1pp,r−g +1 pp
+213,United States,2039,228.62225374483756,r-g +1pp,r−g +1 pp
+214,United States,2040,239.9398845580601,r-g +1pp,r−g +1 pp
+215,United States,2041,251.7638173308787,r-g +1pp,r−g +1 pp
+216,United States,2042,264.09810247897013,r-g +1pp,r−g +1 pp
+217,United States,2043,276.9468228213365,r-g +1pp,r−g +1 pp
+218,United States,2044,290.3140938395321,r-g +1pp,r−g +1 pp
+219,United States,2045,304.2040639389636,r-g +1pp,r−g +1 pp
+220,United States,2046,318.62091471228075,r-g +1pp,r−g +1 pp
+221,United States,2047,333.5688612048748,r-g +1pp,r−g +1 pp
+222,United States,2048,349.0521521824998,r-g +1pp,r−g +1 pp
+223,United States,2049,365.0750704010361,r-g +1pp,r−g +1 pp
+224,United States,2050,381.64193287841096,r-g +1pp,r−g +1 pp
+225,United States,2026,125.781,r-g +2pp,r−g +2 pp
+226,United States,2027,132.1288189130903,r-g +2pp,r−g +2 pp
+227,United States,2028,139.00665947970646,r-g +2pp,r−g +2 pp
+228,United States,2029,146.424062089612,r-g +2pp,r−g +2 pp
+229,United States,2030,154.39073885958612,r-g +2pp,r−g +2 pp
+230,United States,2031,162.91657672451004,r-g +2pp,r−g +2 pp
+231,United States,2032,172.01164058409285,r-g +2pp,r−g +2 pp
+232,United States,2033,181.68617650623844,r-g +2pp,r−g +2 pp
+233,United States,2034,191.95061498807294,r-g +2pp,r−g +2 pp
+234,United States,2035,202.8155742756707,r-g +2pp,r−g +2 pp
+235,United States,2036,214.29186374353552,r-g +2pp,r−g +2 pp
+236,United States,2037,226.39048733491217,r-g +2pp,r−g +2 pp
+237,United States,2038,239.12264706402388,r-g +2pp,r−g +2 pp
+238,United States,2039,252.49974658134985,r-g +2pp,r−g +2 pp
+239,United States,2040,266.533394803078,r-g +2pp,r−g +2 pp
+240,United States,2041,281.2354096058875,r-g +2pp,r−g +2 pp
+241,United States,2042,296.6178215882379,r-g +2pp,r−g +2 pp
+242,United States,2043,312.69287789936084,r-g +2pp,r−g +2 pp
+243,United States,2044,329.47304613717426,r-g +2pp,r−g +2 pp
+244,United States,2045,346.9710183163586,r-g +2pp,r−g +2 pp
+245,United States,2046,365.1997149078585,r-g +2pp,r−g +2 pp
+246,United States,2047,384.1722889510957,r-g +2pp,r−g +2 pp
+247,United States,2048,403.9021302402015,r-g +2pp,r−g +2 pp
+248,United States,2049,424.40286958560137,r-g +2pp,r−g +2 pp
+249,United States,2050,445.6883831523088,r-g +2pp,r−g +2 pp
+250,Japan,2026,204.351,r-g -2pp,r−g −2 pp
+251,Japan,2027,199.1778781543122,r-g -2pp,r−g −2 pp
+252,Japan,2028,194.42697872753567,r-g -2pp,r−g −2 pp
+253,Japan,2029,190.08352393500851,r-g -2pp,r−g −2 pp
+254,Japan,2030,186.13325321453203,r-g -2pp,r−g −2 pp
+255,Japan,2031,182.56240512358443,r-g -2pp,r−g −2 pp
+256,Japan,2032,179.3576998701322,r-g -2pp,r−g −2 pp
+257,Japan,2033,176.50632245486298,r-g -2pp,r−g −2 pp
+258,Japan,2034,173.99590640344044,r-g -2pp,r−g −2 pp
+259,Japan,2035,171.8145180681299,r-g -2pp,r−g −2 pp
+260,Japan,2036,169.95064147886742,r-g -2pp,r−g −2 pp
+261,Japan,2037,168.39316372454132,r-g -2pp,r−g −2 pp
+262,Japan,2038,167.13136084592884,r-g -2pp,r−g −2 pp
+263,Japan,2039,166.15488422238002,r-g -2pp,r−g −2 pp
+264,Japan,2040,165.4537474349676,r-g -2pp,r−g −2 pp
+265,Japan,2041,165.0183135894268,r-g -2pp,r−g −2 pp
+266,Japan,2042,164.83928308279215,r-g -2pp,r−g −2 pp
+267,Japan,2043,164.9076817982019,r-g -2pp,r−g −2 pp
+268,Japan,2044,165.21484971288453,r-g -2pp,r−g −2 pp
+269,Japan,2045,165.75242990486547,r-g -2pp,r−g −2 pp
+270,Japan,2046,166.5123579444393,r-g -2pp,r−g −2 pp
+271,Japan,2047,167.48685165694022,r-g -2pp,r−g −2 pp
+272,Japan,2048,168.66840124381582,r-g -2pp,r−g −2 pp
+273,Japan,2049,170.04975974946302,r-g -2pp,r−g −2 pp
+274,Japan,2050,171.62393386172477,r-g -2pp,r−g −2 pp
+275,Japan,2026,204.351,r-g -1pp,r−g −1 pp
+276,Japan,2027,201.2213881543122,r-g -1pp,r−g −1 pp
+277,Japan,2028,198.4111797590788,r-g -1pp,r−g −1 pp
+278,Japan,2029,195.91238972803845,r-g -1pp,r−g −1 pp
+279,Japan,2030,193.7172326020863,r-g -1pp,r−g −1 pp
+280,Japan,2031,191.81811755859516,r-g -1pp,r−g −1 pp
+281,Japan,2032,190.20764354550352,r-g -1pp,r−g −1 pp
+282,Japan,2033,188.87859453705136,r-g -1pp,r−g −1 pp
+283,Japan,2034,187.82393490812274,r-g -1pp,r−g −1 pp
+284,Japan,2035,187.03680492422953,r-g -1pp,r−g −1 pp
+285,Japan,2036,186.51051634424584,r-g -1pp,r−g −1 pp
+286,Japan,2037,186.23854813307398,r-g -1pp,r−g −1 pp
+287,Japan,2038,186.2145422814936,r-g -1pp,r−g −1 pp
+288,Japan,2039,186.43229973051496,r-g -1pp,r−g −1 pp
+289,Japan,2040,186.88577639762298,r-g -1pp,r−g −1 pp
+290,Japan,2041,187.56907930236548,r-g -1pp,r−g −1 pp
+291,Japan,2042,188.47646278880163,r-g -1pp,r−g −1 pp
+292,Japan,2043,189.60232484238907,r-g -1pp,r−g −1 pp
+293,Japan,2044,190.94120349894905,r-g -1pp,r−g −1 pp
+294,Japan,2045,192.48777334340724,r-g -1pp,r−g −1 pp
+295,Japan,2046,194.23684209606617,r-g -1pp,r−g −1 pp
+296,Japan,2047,196.18334728422082,r-g -1pp,r−g −1 pp
+297,Japan,2048,198.3223529969838,r-g -1pp,r−g −1 pp
+298,Japan,2049,200.64904672123996,r-g -1pp,r−g −1 pp
+299,Japan,2050,203.1587362567019,r-g -1pp,r−g −1 pp
+300,Japan,2026,204.351,r-g +0pp,r−g base
+301,Japan,2027,203.2648981543122,r-g +0pp,r−g base
+302,Japan,2028,202.43625099062191,r-g +0pp,r−g base
+303,Japan,2029,201.8611966886992,r-g +0pp,r−g base
+304,Japan,2030,201.53593135561752,r-g +0pp,r−g base
+305,Japan,2031,201.4567081568443,r-g +0pp,r−g base
+306,Japan,2032,201.61983646036484,r-g +0pp,r−g base
+307,Japan,2033,202.0216809936448,r-g +0pp,r−g base
+308,Japan,2034,202.65866101323778,r-g +0pp,r−g base
+309,Japan,2035,203.52724948684906,r-g +0pp,r−g base
+310,Japan,2036,204.62397228766838,r-g +0pp,r−g base
+311,Japan,2037,205.94540740078762,r-g +0pp,r−g base
+312,Japan,2038,207.48818414152228,r-g +0pp,r−g base
+313,Japan,2039,209.24898238545813,r-g +0pp,r−g base
+314,Japan,2040,211.22453181004715,r-g +0pp,r−g base
+315,Japan,2041,213.41161114757952,r-g +0pp,r−g base
+316,Japan,2042,215.8070474493611,r-g +0pp,r−g base
+317,Japan,2043,218.4077153609282,r-g +0pp,r−g base
+318,Japan,2044,221.21053640813398,r-g +0pp,r−g base
+319,Japan,2045,224.21247829394386,r-g +0pp,r−g base
+320,Japan,2046,227.41055420577882,r-g +0pp,r−g base
+321,Japan,2047,230.80182213324846,r-g +0pp,r−g base
+322,Japan,2048,234.38338419611824,r-g +0pp,r−g base
+323,Japan,2049,238.15238598235723,r-g +0pp,r−g base
+324,Japan,2050,242.10601589611483,r-g +0pp,r−g base
+325,Japan,2026,204.351,r-g +1pp,r−g +1 pp
+326,Japan,2027,205.3084081543122,r-g +1pp,r−g +1 pp
+327,Japan,2028,206.50219242216502,r-g +1pp,r−g +1 pp
+328,Japan,2029,207.93117092299082,r-g +1pp,r−g +1 pp
+329,Japan,2030,209.59416768562468,r-g +1pp,r−g +1 pp
+330,Japan,2031,211.4900126187576,r-g +1pp,r−g +1 pp
+331,Japan,2032,213.61754148153702,r-g +1pp,r−g +1 pp
+332,Japan,2033,215.97559585431475,r-g +1pp,r−g +1 pp
+333,Japan,2034,218.56302310954084,r-g +1pp,r−g +1 pp
+334,Japan,2035,221.378676382803,r-g +1pp,r−g +1 pp
+335,Japan,2036,224.42141454401107,r-g +1pp,r−g +1 pp
+336,Japan,2037,227.69010216872528,r-g +1pp,r−g +1 pp
+337,Japan,2038,231.18360950962813,r-g +1pp,r−g +1 pp
+338,Japan,2039,234.90081246813867,r-g +1pp,r−g +1 pp
+339,Japan,2040,238.84059256616885,r-g +1pp,r−g +1 pp
+340,Japan,2041,243.0018369180211,r-g +1pp,r−g +1 pp
+341,Japan,2042,247.38343820242628,r-g +1pp,r−g +1 pp
+342,Japan,2043,251.98429463472164,r-g +1pp,r−g +1 pp
+343,Japan,2044,256.8033099391677,r-g +1pp,r−g +1 pp
+344,Japan,2045,261.8393933214038,r-g +1pp,r−g +1 pp
+345,Japan,2046,267.0914594410409,r-g +1pp,r−g +1 pp
+346,Japan,2047,272.558428384392,r-g +1pp,r−g +1 pp
+347,Japan,2048,278.2392256373386,r-g +1pp,r−g +1 pp
+348,Japan,2049,284.1327820583326,r-g +1pp,r−g +1 pp
+349,Japan,2050,290.23803385153394,r-g +1pp,r−g +1 pp
+350,Japan,2026,204.351,r-g +2pp,r−g +2 pp
+351,Japan,2027,207.3519181543122,r-g +2pp,r−g +2 pp
+352,Japan,2028,210.60900405370813,r-g +2pp,r−g +2 pp
+353,Japan,2029,214.12353853691326,r-g +2pp,r−g +2 pp
+354,Japan,2030,217.89680884684662,r-g +2pp,r−g +2 pp
+355,Japan,2031,221.93010866264186,r-g +2pp,r−g +2 pp
+356,Japan,2032,226.22473813182827,r-g +2pp,r−g +2 pp
+357,Japan,2033,230.7820039026728,r-g +2pp,r−g +2 pp
+358,Japan,2034,235.60321915668382,r-g +2pp,r−g +2 pp
+359,Japan,2035,240.68970364127708,r-g +2pp,r−g +2 pp
+360,Japan,2036,246.0427837026055,r-g +2pp,r−g +2 pp
+361,Japan,2037,251.66379231855277,r-g +2pp,r−g +2 pp
+362,Japan,2038,257.554069131892,r-g +2pp,r−g +2 pp
+363,Japan,2039,263.7149604836101,r-g +2pp,r−g +2 pp
+364,Japan,2040,270.147819446399,r-g +2pp,r−g +2 pp
+365,Japan,2041,276.85400585831405,r-g +2pp,r−g +2 pp
+366,Japan,2042,283.8348863566009,r-g +2pp,r−g +2 pp
+367,Japan,2043,291.09183441169137,r-g +2pp,r−g +2 pp
+368,Japan,2044,298.62623036136955,r-g +2pp,r−g +2 pp
+369,Japan,2045,306.4394614451083,r-g +2pp,r−g +2 pp
+370,Japan,2046,314.5329218385779,r-g +2pp,r−g +2 pp
+371,Japan,2047,322.9080126883271,r-g +2pp,r−g +2 pp
+372,Japan,2048,331.5661421466373,r-g +2pp,r−g +2 pp
+373,Japan,2049,340.50872540655115,r-g +2pp,r−g +2 pp
+374,Japan,2050,349.7371847370768,r-g +2pp,r−g +2 pp
+375,Germany,2026,64.609,r-g -2pp,r−g −2 pp
+376,Germany,2027,65.6526831136382,r-g -2pp,r−g −2 pp
+377,Germany,2028,66.81200884750547,r-g -2pp,r−g −2 pp
+378,Germany,2029,68.08350792299493,r-g -2pp,r−g −2 pp
+379,Germany,2030,69.4638151398579,r-g -2pp,r−g −2 pp
+380,Germany,2031,70.9496662538532,r-g -2pp,r−g −2 pp
+381,Germany,2032,72.53789494806685,r-g -2pp,r−g −2 pp
+382,Germany,2033,74.22542989509229,r-g -2pp,r−g −2 pp
+383,Germany,2034,76.00929190734517,r-g -2pp,r−g −2 pp
+384,Germany,2035,77.88659117286868,r-g -2pp,r−g −2 pp
+385,Germany,2036,79.85452457406468,r-g -2pp,r−g −2 pp
+386,Germany,2037,81.91037308686302,r-g -2pp,r−g −2 pp
+387,Germany,2038,84.05149925791562,r-g -2pp,r−g −2 pp
+388,Germany,2039,86.27534475747484,r-g -2pp,r−g −2 pp
+389,Germany,2040,88.57942800568549,r-g -2pp,r−g −2 pp
+390,Germany,2041,90.96134187008802,r-g -2pp,r−g −2 pp
+391,Germany,2042,93.41875143219669,r-g -2pp,r−g −2 pp
+392,Germany,2043,95.9493918210803,r-g -2pp,r−g −2 pp
+393,Germany,2044,98.55106611193561,r-g -2pp,r−g −2 pp
+394,Germany,2045,101.22164328770347,r-g -2pp,r−g −2 pp
+395,Germany,2046,103.95905626183651,r-g -2pp,r−g −2 pp
+396,Germany,2047,106.76129996038375,r-g -2pp,r−g −2 pp
+397,Germany,2048,109.62642946161279,r-g -2pp,r−g −2 pp
+398,Germany,2049,112.55255819144315,r-g -2pp,r−g −2 pp
+399,Germany,2050,115.53785617301683,r-g -2pp,r−g −2 pp
+400,Germany,2026,64.609,r-g -1pp,r−g −1 pp
+401,Germany,2027,66.2987731136382,r-g -1pp,r−g −1 pp
+402,Germany,2028,68.10170387864186,r-g -1pp,r−g −1 pp
+403,Germany,2029,70.01552914198363,r-g -1pp,r−g −1 pp
+404,Germany,2030,72.03803101369678,r-g -1pp,r−g −1 pp
+405,Germany,2031,74.16703596161388,r-g -1pp,r−g −1 pp
+406,Germany,2032,76.40041392421085,r-g -1pp,r−g −1 pp
+407,Germany,2033,78.73607744119408,r-g -1pp,r−g −1 pp
+408,Germany,2034,81.17198080147585,r-g -1pp,r−g −1 pp
+409,Germany,2035,83.7061192081902,r-g -1pp,r−g −1 pp
+410,Germany,2036,86.33652796040846,r-g -1pp,r−g −1 pp
+411,Germany,2037,89.06128165122057,r-g -1pp,r−g −1 pp
+412,Germany,2038,91.87849338185464,r-g -1pp,r−g −1 pp
+413,Germany,2039,94.78631399151423,r-g -1pp,r−g −1 pp
+414,Germany,2040,97.78293130261885,r-g -1pp,r−g −1 pp
+415,Germany,2041,100.86656938113957,r-g -1pp,r−g −1 pp
+416,Germany,2042,104.03548781172809,r-g -1pp,r−g −1 pp
+417,Germany,2043,107.28798098734303,r-g -1pp,r−g −1 pp
+418,Germany,2044,110.6223774130839,r-g -1pp,r−g −1 pp
+419,Germany,2045,114.03703902394815,r-g -1pp,r−g −1 pp
+420,Germany,2046,117.53036051623333,r-g -1pp,r−g −1 pp
+421,Germany,2047,121.10076869231101,r-g -1pp,r−g −1 pp
+422,Germany,2048,124.74672181850534,r-g -1pp,r−g −1 pp
+423,Germany,2049,128.46670899581397,r-g -1pp,r−g −1 pp
+424,Germany,2050,132.25924954321465,r-g -1pp,r−g −1 pp
+425,Germany,2026,64.609,r-g +0pp,r−g base
+426,Germany,2027,66.9448631136382,r-g +0pp,r−g base
+427,Germany,2028,69.40432070977825,r-g +0pp,r−g base
+428,Germany,2029,71.98613684359509,r-g +0pp,r−g base
+429,Germany,2030,74.68908792971196,r-g +0pp,r−g base
+430,Germany,2031,77.51196261860586,r-g +0pp,r−g base
+431,Germany,2032,80.45356167424904,r-g +0pp,r−g base
+432,Germany,2033,83.51269785297401,r-g +0pp,r−g base
+433,Germany,2034,86.68819578354993,r-g +0pp,r−g base
+434,Germany,2035,89.97889184845829,r-g +0pp,r−g base
+435,Germany,2036,93.38363406635577,r-g +0pp,r−g base
+436,Germany,2037,96.90128197571248,r-g +0pp,r−g base
+437,Germany,2038,100.53070651961384,r-g +0pp,r−g base
+438,Germany,2039,104.2707899317144,r-g +0pp,r−g base
+439,Germany,2040,108.12042562333215,r-g +0pp,r−g base
+440,Germany,2041,112.07851807167194,r-g +0pp,r−g base
+441,Germany,2042,116.14398270916652,r-g +0pp,r−g base
+442,Germany,2043,120.31574581392437,r-g +0pp,r−g base
+443,Germany,2044,124.59274440127285,r-g +0pp,r−g base
+444,Germany,2045,128.97392611638605,r-g +0pp,r−g base
+445,Germany,2046,133.45824912798633,r-g +0pp,r−g base
+446,Germany,2047,138.04468202310883,r-g +0pp,r−g base
+447,Germany,2048,142.7322037029183,r-g +0pp,r−g base
+448,Germany,2049,147.5198032795679,r-g +0pp,r−g base
+449,Germany,2050,152.4064799740892,r-g +0pp,r−g base
+450,Germany,2026,64.609,r-g +1pp,r−g +1 pp
+451,Germany,2027,67.59095311363821,r-g +1pp,r−g +1 pp
+452,Germany,2028,70.71985934091462,r-g +1pp,r−g +1 pp
+453,Germany,2029,73.99571868182925,r-g +1pp,r−g +1 pp
+454,Germany,2030,77.41853113638207,r-g +1pp,r−g +1 pp
+455,Germany,2031,80.9882967045731,r-g +1pp,r−g +1 pp
+456,Germany,2032,84.70501538640235,r-g +1pp,r−g +1 pp
+457,Germany,2033,88.5686871818698,r-g +1pp,r−g +1 pp
+458,Germany,2034,92.57931209097546,r-g +1pp,r−g +1 pp
+459,Germany,2035,96.73689011371933,r-g +1pp,r−g +1 pp
+460,Germany,2036,101.0414212501014,r-g +1pp,r−g +1 pp
+461,Germany,2037,105.49290550012167,r-g +1pp,r−g +1 pp
+462,Germany,2038,110.09134286378016,r-g +1pp,r−g +1 pp
+463,Germany,2039,114.83673334107685,r-g +1pp,r−g +1 pp
+464,Germany,2040,119.72907693201175,r-g +1pp,r−g +1 pp
+465,Germany,2041,124.76837363658485,r-g +1pp,r−g +1 pp
+466,Germany,2042,129.95462345479618,r-g +1pp,r−g +1 pp
+467,Germany,2043,135.2878263866457,r-g +1pp,r−g +1 pp
+468,Germany,2044,140.7679824321334,r-g +1pp,r−g +1 pp
+469,Germany,2045,146.39509159125933,r-g +1pp,r−g +1 pp
+470,Germany,2046,152.16915386402346,r-g +1pp,r−g +1 pp
+471,Germany,2047,158.09016925042582,r-g +1pp,r−g +1 pp
+472,Germany,2048,164.15813775046638,r-g +1pp,r−g +1 pp
+473,Germany,2049,170.37305936414515,r-g +1pp,r−g +1 pp
+474,Germany,2050,176.73493409146212,r-g +1pp,r−g +1 pp
+475,Germany,2026,64.609,r-g +2pp,r−g +2 pp
+476,Germany,2027,68.23704311363821,r-g +2pp,r−g +2 pp
+477,Germany,2028,72.048319772051,r-g +2pp,r−g +2 pp
+478,Germany,2029,76.04466231068614,r-g +2pp,r−g +2 pp
+479,Germany,2030,80.22792138834582,r-g +2pp,r−g +2 pp
+480,Germany,2031,84.59996617042032,r-g +2pp,r−g +2 pp
+481,Germany,2032,89.16268451395376,r-g +2pp,r−g +2 pp
+482,Germany,2033,93.91798315456076,r-g +2pp,r−g +2 pp
+483,Germany,2034,98.86778789521202,r-g +2pp,r−g +2 pp
+484,Germany,2035,104.014043796908,r-g +2pp,r−g +2 pp
+485,Germany,2036,109.35871537125915,r-g +2pp,r−g +2 pp
+486,Germany,2037,114.90378677499201,r-g +2pp,r−g +2 pp
+487,Germany,2038,120.65126200640043,r-g +2pp,r−g +2 pp
+488,Germany,2039,126.60316510376113,r-g +2pp,r−g +2 pp
+489,Germany,2040,132.76154034573364,r-g +2pp,r−g +2 pp
+490,Germany,2041,139.12845245376408,r-g +2pp,r−g +2 pp
+491,Germany,2042,145.70598679651303,r-g +2pp,r−g +2 pp
+492,Germany,2043,152.4962495963277,r-g +2pp,r−g +2 pp
+493,Germany,2044,159.50136813777868,r-g +2pp,r−g +2 pp
+494,Germany,2045,166.7234909782824,r-g +2pp,r−g +2 pp
+495,Germany,2046,174.16478816082935,r-g +2pp,r−g +2 pp
+496,Germany,2047,181.82745142884,r-g +2pp,r−g +2 pp
+497,Germany,2048,189.71369444316895,r-g +2pp,r−g +2 pp
+498,Germany,2049,197.8257530012794,r-g +2pp,r−g +2 pp
+499,Germany,2050,206.16588525860917,r-g +2pp,r−g +2 pp
+500,France,2026,118.404,r-g -2pp,r−g −2 pp
+501,France,2027,118.61523440059761,r-g -2pp,r−g −2 pp
+502,France,2028,118.92694404497972,r-g -2pp,r−g −2 pp
+503,France,2029,119.33691847778304,r-g -2pp,r−g −2 pp
+504,France,2030,119.84299587366233,r-g -2pp,r−g −2 pp
+505,France,2031,120.4430619674299,r-g -2pp,r−g −2 pp
+506,France,2032,121.1350490077322,r-g -2pp,r−g −2 pp
+507,France,2033,121.91693473374549,r-g -2pp,r−g −2 pp
+508,France,2034,122.7867413743841,r-g -2pp,r−g −2 pp
+509,France,2035,123.74253466952631,r-g -2pp,r−g −2 pp
+510,France,2036,124.782422912773,r-g -2pp,r−g −2 pp
+511,France,2037,125.90455601526591,r-g -2pp,r−g −2 pp
+512,France,2038,127.10712459010159,r-g -2pp,r−g −2 pp
+513,France,2039,128.38835905688853,r-g -2pp,r−g −2 pp
+514,France,2040,129.74652876600376,r-g -2pp,r−g −2 pp
+515,France,2041,131.1799411421161,r-g -2pp,r−g −2 pp
+516,France,2042,132.68694084655158,r-g -2pp,r−g −2 pp
+517,France,2043,134.26590895808712,r-g -2pp,r−g −2 pp
+518,France,2044,135.9152621717665,r-g -2pp,r−g −2 pp
+519,France,2045,137.63345201534258,r-g -2pp,r−g −2 pp
+520,France,2046,139.41896408295761,r-g -2pp,r−g −2 pp
+521,France,2047,141.27031728568275,r-g -2pp,r−g −2 pp
+522,France,2048,143.18606311854555,r-g -2pp,r−g −2 pp
+523,France,2049,145.16478494368297,r-g -2pp,r−g −2 pp
+524,France,2050,147.20509728926504,r-g -2pp,r−g −2 pp
+525,France,2026,118.404,r-g -1pp,r−g −1 pp
+526,France,2027,119.79927440059762,r-g -1pp,r−g −1 pp
+527,France,2028,121.28292790898571,r-g -1pp,r−g −1 pp
+528,France,2029,122.85389997587076,r-g -1pp,r−g −1 pp
+529,France,2030,124.51114277855082,r-g -1pp,r−g −1 pp
+530,France,2031,126.25362106819635,r-g -1pp,r−g −1 pp
+531,France,2032,128.08031201896375,r-g -1pp,r−g −1 pp
+532,France,2033,129.9902050789196,r-g -1pp,r−g −1 pp
+533,France,2034,131.98230182275358,r-g -1pp,r−g −1 pp
+534,France,2035,134.05561580625917,r-g -1pp,r−g −1 pp
+535,France,2036,136.20917242256036,r-g -1pp,r−g −1 pp
+536,France,2037,138.44200876006354,r-g -1pp,r−g −1 pp
+537,France,2038,140.75317346211432,r-g -1pp,r−g −1 pp
+538,France,2039,143.14172658833812,r-g -1pp,r−g −1 pp
+539,France,2040,145.60673947764485,r-g -1pp,r−g −1 pp
+540,France,2041,148.14729461287754,r-g -1pp,r−g −1 pp
+541,France,2042,150.76248548708506,r-g -1pp,r−g −1 pp
+542,France,2043,153.4514164713997,r-g -1pp,r−g −1 pp
+543,France,2044,156.2132026845002,r-g -1pp,r−g −1 pp
+544,France,2045,159.04696986364115,r-g -1pp,r−g −1 pp
+545,France,2046,161.95185423723004,r-g -1pp,r−g −1 pp
+546,France,2047,164.92700239893347,r-g -1pp,r−g −1 pp
+547,France,2048,167.9715711832941,r-g -1pp,r−g −1 pp
+548,France,2049,171.08472754284,r-g -1pp,r−g −1 pp
+549,France,2050,174.265648426669,r-g -1pp,r−g −1 pp
+550,France,2026,118.404,r-g +0pp,r−g base
+551,France,2027,120.98331440059764,r-g +0pp,r−g base
+552,France,2028,123.6625925729917,r-g +0pp,r−g base
+553,France,2029,126.4416345896386,r-g +0pp,r−g base
+554,France,2030,129.32024092284982,r-g +0pp,r−g base
+555,France,2031,132.29821244399227,r-g +0pp,r−g base
+556,France,2032,135.37535042269005,r-g +0pp,r−g base
+557,France,2033,138.55145652602806,r-g +0pp,r−g base
+558,France,2034,141.82633281775702,r-g +0pp,r−g base
+559,France,2035,145.19978175750015,r-g +0pp,r−g base
+560,France,2036,148.67160619996145,r-g +0pp,r−g base
+561,France,2037,152.24160939413542,r-g +0pp,r−g base
+562,France,2038,155.90959498251868,r-g +0pp,r−g base
+563,France,2039,159.6753670003228,r-g +0pp,r−g base
+564,France,2040,163.53872987468895,r-g +0pp,r−g base
+565,France,2041,167.499488423904,r-g +0pp,r−g base
+566,France,2042,171.55744785661827,r-g +0pp,r−g base
+567,France,2043,175.71241377106472,r-g +0pp,r−g base
+568,France,2044,179.96419215427989,r-g +0pp,r−g base
+569,France,2045,184.3125893813263,r-g +0pp,r−g base
+570,France,2046,188.75741221451622,r-g +0pp,r−g base
+571,France,2047,193.2984678026374,r-g +0pp,r−g base
+572,France,2048,197.93556368017994,r-g +0pp,r−g base
+573,France,2049,202.66850776656503,r-g +0pp,r−g base
+574,France,2050,207.497108365375,r-g +0pp,r−g base
+575,France,2026,118.404,r-g +1pp,r−g +1 pp
+576,France,2027,122.16735440059762,r-g +1pp,r−g +1 pp
+577,France,2028,126.06593803699765,r-g +1pp,r−g +1 pp
+578,France,2029,130.10083274308653,r-g +1pp,r−g +1 pp
+579,France,2030,134.27312900742172,r-g +1pp,r−g +1 pp
+580,France,2031,138.58392604246924,r-g +1pp,r−g +1 pp
+581,France,2032,143.03433185439476,r-g +1pp,r−g +1 pp
+582,France,2033,147.62546331341332,r-g +1pp,r−g +1 pp
+583,France,2034,152.35844622470165,r-g +1pp,r−g +1 pp
+584,France,2035,157.23441539987792,r-g +1pp,r−g +1 pp
+585,France,2036,162.25451472905323,r-g +1pp,r−g +1 pp
+586,France,2037,167.41989725345957,r-g +1pp,r−g +1 pp
+587,France,2038,172.73172523865878,r-g +1pp,r−g +1 pp
+588,France,2039,178.19117024833722,r-g +1pp,r−g +1 pp
+589,France,2040,183.7994132186907,r-g +1pp,r−g +1 pp
+590,France,2041,189.55764453340464,r-g +1pp,r−g +1 pp
+591,France,2042,195.46706409923394,r-g +1pp,r−g +1 pp
+592,France,2043,201.52888142218748,r-g +1pp,r−g +1 pp
+593,France,2044,207.7443156843223,r-g +1pp,r−g +1 pp
+594,France,2045,214.1145958211518,r-g +1pp,r−g +1 pp
+595,France,2046,220.64096059967358,r-g +1pp,r−g +1 pp
+596,France,2047,227.32465869702116,r-g +1pp,r−g +1 pp
+597,France,2048,234.16694877974516,r-g +1pp,r−g +1 pp
+598,France,2049,241.16909958372855,r-g +1pp,r−g +1 pp
+599,France,2050,248.33238999474148,r-g +1pp,r−g +1 pp
+600,France,2026,118.404,r-g +2pp,r−g +2 pp
+601,France,2027,123.35139440059763,r-g +2pp,r−g +2 pp
+602,France,2028,128.49296430100364,r-g +2pp,r−g +2 pp
+603,France,2029,133.83220486021457,r-g +2pp,r−g +2 pp
+604,France,2030,139.37267415008895,r-g +2pp,r−g +2 pp
+605,France,2031,145.1179942877787,r-g +2pp,r−g +2 pp
+606,France,2032,151.07185258854452,r-g +2pp,r−g +2 pp
+607,France,2033,157.23800273932173,r-g +2pp,r−g +2 pp
+608,France,2034,163.62026599341056,r-g +2pp,r−g +2 pp
+609,France,2035,170.2225323866706,r-g +2pp,r−g +2 pp
+610,France,2036,177.04876197560696,r-g +2pp,r−g +2 pp
+611,France,2037,184.10298609774182,r-g +2pp,r−g +2 pp
+612,France,2038,191.3893086546727,r-g +2pp,r−g +2 pp
+613,France,2039,198.91190741822598,r-g +2pp,r−g +2 pp
+614,France,2040,206.67503536012083,r-g +2pp,r−g +2 pp
+615,France,2041,214.68302200556744,r-g +2pp,r−g +2 pp
+616,France,2042,222.9402748112297,r-g +2pp,r−g +2 pp
+617,France,2043,231.45128056799152,r-g +2pp,r−g +2 pp
+618,France,2044,240.22060682897268,r-g +2pp,r−g +2 pp
+619,France,2045,249.25290336324912,r-g +2pp,r−g +2 pp
+620,France,2046,258.55290363574017,r-g +2pp,r−g +2 pp
+621,France,2047,268.12542631373367,r-g +2pp,r−g +2 pp
+622,France,2048,277.9753768005287,r-g +2pp,r−g +2 pp
+623,France,2049,288.10774879668367,r-g +2pp,r−g +2 pp
+624,France,2050,298.527625889367,r-g +2pp,r−g +2 pp
+625,Italy,2026,138.384,r-g -2pp,r−g −2 pp
+626,Italy,2027,135.37105537511408,r-g -2pp,r−g −2 pp
+627,Italy,2028,132.53591418396536,r-g -2pp,r−g −2 pp
+628,Italy,2029,129.87555376818023,r-g -2pp,r−g −2 pp
+629,Italy,2030,127.38700285457756,r-g -2pp,r−g −2 pp
+630,Italy,2031,125.06734068162024,r-g -2pp,r−g −2 pp
+631,Italy,2032,122.91369614071728,r-g -2pp,r−g −2 pp
+632,Italy,2033,120.92324693212377,r-g -2pp,r−g −2 pp
+633,Italy,2034,119.09321873519046,r-g -2pp,r−g −2 pp
+634,Italy,2035,117.4208843927191,r-g -2pp,r−g −2 pp
+635,Italy,2036,115.90356310918388,r-g -2pp,r−g −2 pp
+636,Italy,2037,114.53861966258285,r-g -2pp,r−g −2 pp
+637,Italy,2038,113.32346362968812,r-g -2pp,r−g −2 pp
+638,Italy,2039,112.25554862446671,r-g -2pp,r−g −2 pp
+639,Italy,2040,111.33237154944817,r-g -2pp,r−g −2 pp
+640,Italy,2041,110.55147185981903,r-g -2pp,r−g −2 pp
+641,Italy,2042,109.9104308400277,r-g -2pp,r−g −2 pp
+642,Italy,2043,109.40687089268691,r-g -2pp,r−g −2 pp
+643,Italy,2044,109.03845483956502,r-g -2pp,r−g −2 pp
+644,Italy,2045,108.80288523446029,r-g -2pp,r−g −2 pp
+645,Italy,2046,108.69790368775645,r-g -2pp,r−g −2 pp
+646,Italy,2047,108.72129020246066,r-g -2pp,r−g −2 pp
+647,Italy,2048,108.870862521529,r-g -2pp,r−g −2 pp
+648,Italy,2049,109.14447548628729,r-g -2pp,r−g −2 pp
+649,Italy,2050,109.54002040575878,r-g -2pp,r−g −2 pp
+650,Italy,2026,138.384,r-g -1pp,r−g −1 pp
+651,Italy,2027,136.75489537511407,r-g -1pp,r−g −1 pp
+652,Italy,2028,135.2637778577165,r-g -1pp,r−g −1 pp
+653,Italy,2029,133.90968153805477,r-g -1pp,r−g −1 pp
+654,Italy,2030,132.6916472677448,r-g -1pp,r−g −1 pp
+655,Italy,2031,131.60872261244108,r-g -1pp,r−g −1 pp
+656,Italy,2032,130.6599618048386,r-g -1pp,r−g −1 pp
+657,Italy,2033,129.84442569800342,r-g -1pp,r−g −1 pp
+658,Italy,2034,129.16118171903017,r-g -1pp,r−g −1 pp
+659,Italy,2035,128.60930382302385,r-g -1pp,r−g −1 pp
+660,Italy,2036,128.18787244740366,r-g -1pp,r−g −1 pp
+661,Italy,2037,127.89597446652692,r-g -1pp,r−g −1 pp
+662,Italy,2038,127.73270314663041,r-g -1pp,r−g −1 pp
+663,Italy,2039,127.6971581010873,r-g -1pp,r−g −1 pp
+664,Italy,2040,127.78844524597707,r-g -1pp,r−g −1 pp
+665,Italy,2041,128.00567675596673,r-g -1pp,r−g −1 pp
+666,Italy,2042,128.34797102050055,r-g -1pp,r−g −1 pp
+667,Italy,2043,128.81445260029673,r-g -1pp,r−g −1 pp
+668,Italy,2044,129.40425218414845,r-g -1pp,r−g −1 pp
+669,Italy,2045,130.1165065460273,r-g -1pp,r−g −1 pp
+670,Italy,2046,130.95035850248706,r-g -1pp,r−g −1 pp
+671,Italy,2047,131.90495687036574,r-g -1pp,r−g −1 pp
+672,Italy,2048,132.97945642478336,r-g -1pp,r−g −1 pp
+673,Italy,2049,134.17301785743416,r-g -1pp,r−g −1 pp
+674,Italy,2050,135.4848077351705,r-g -1pp,r−g −1 pp
+675,Italy,2026,138.384,r-g +0pp,r−g base
+676,Italy,2027,138.13873537511407,r-g +0pp,r−g base
+677,Italy,2028,138.01931833146762,r-g +0pp,r−g base
+678,Italy,2029,138.02612641180428,r-g +0pp,r−g base
+679,Italy,2030,138.1595382914961,r-g +0pp,r−g base
+680,Italy,2031,138.41993378194107,r-g +0pp,r−g base
+681,Italy,2032,138.80769383397146,r-g +0pp,r−g base
+682,Italy,2033,139.32320054127206,r-g +0pp,r−g base
+683,Italy,2034,139.96683714380865,r-g +0pp,r−g base
+684,Italy,2035,140.73898803126696,r-g +0pp,r−g base
+685,Italy,2036,141.64003874650174,r-g +0pp,r−g base
+686,Italy,2037,142.6703759889963,r-g +0pp,r−g base
+687,Italy,2038,143.83038761833248,r-g +0pp,r−g base
+688,Italy,2039,145.12046265767074,r-g +0pp,r−g base
+689,Italy,2040,146.5409912972411,r-g +0pp,r−g base
+690,Italy,2041,148.0923648978443,r-g +0pp,r−g base
+691,Italy,2042,149.77497599436342,r-g +0pp,r−g base
+692,Italy,2043,151.58921829928616,r-g +0pp,r−g base
+693,Italy,2044,153.53548670623778,r-g +0pp,r−g base
+694,Italy,2045,155.61417729352436,r-g +0pp,r−g base
+695,Italy,2046,157.8256873276869,r-g +0pp,r−g base
+696,Italy,2047,160.170415267066,r-g +0pp,r−g base
+697,Italy,2048,162.64876076537738,r-g +0pp,r−g base
+698,Italy,2049,165.26112467529776,r-g +0pp,r−g base
+699,Italy,2050,168.00790905206202,r-g +0pp,r−g base
+700,Italy,2026,138.384,r-g +1pp,r−g +1 pp
+701,Italy,2027,139.5225753751141,r-g +1pp,r−g +1 pp
+702,Italy,2028,140.80253560521876,r-g +1pp,r−g +1 pp
+703,Italy,2029,142.2257186934289,r-g +1pp,r−g +1 pp
+704,Italy,2030,143.79398653689984,r-g +1pp,r−g +1 pp
+705,Italy,2031,145.50922523745004,r-g +1pp,r−g +1 pp
+706,Italy,2032,147.37334541622147,r-g +1pp,r−g +1 pp
+707,Italy,2033,149.38828253243102,r-g +1pp,r−g +1 pp
+708,Italy,2034,151.55599720626537,r-g +1pp,r−g +1 pp
+709,Italy,2035,153.87847554597369,r-g +1pp,r−g +1 pp
+710,Italy,2036,156.35772947921234,r-g +1pp,r−g +1 pp
+711,Italy,2037,158.99579708869717,r-g +1pp,r−g +1 pp
+712,Italy,2038,161.7947429522194,r-g +1pp,r−g +1 pp
+713,Italy,2039,164.75665848708152,r-g +1pp,r−g +1 pp
+714,Italy,2040,167.88366229901095,r-g +1pp,r−g +1 pp
+715,Italy,2041,171.17790053560955,r-g +1pp,r−g +1 pp
+716,Italy,2042,174.64154724439805,r-g +1pp,r−g +1 pp
+717,Italy,2043,178.27680473551487,r-g +1pp,r−g +1 pp
+718,Italy,2044,182.08590394913034,r-g +1pp,r−g +1 pp
+719,Italy,2045,186.0711048276369,r-g +1pp,r−g +1 pp
+720,Italy,2046,190.23469669267814,r-g +1pp,r−g +1 pp
+721,Italy,2047,194.57899862707902,r-g +1pp,r−g +1 pp
+722,Italy,2048,199.10635986174123,r-g +1pp,r−g +1 pp
+723,Italy,2049,203.8191601675681,r-g +1pp,r−g +1 pp
+724,Italy,2050,208.71981025248485,r-g +1pp,r−g +1 pp
+725,Italy,2026,138.384,r-g +2pp,r−g +2 pp
+726,Italy,2027,140.90641537511408,r-g +2pp,r−g +2 pp
+727,Italy,2028,143.6134296789699,r-g +2pp,r−g +2 pp
+728,Italy,2029,146.5092886869285,r-g +2pp,r−g +2 pp
+729,Italy,2030,149.59833582718423,r-g +2pp,r−g +2 pp
+730,Italy,2031,152.88501442677997,r-g +2pp,r−g +2 pp
+731,Italy,2032,156.3738700092805,r-g +2pp,r−g +2 pp
+732,Italy,2033,160.06955264529262,r-g +2pp,r−g +2 pp
+733,Italy,2034,163.9768193570471,r-g +2pp,r−g +2 pp
+734,Italy,2035,168.10053657828607,r-g +2pp,r−g +2 pp
+735,Italy,2036,172.44568267072762,r-g +2pp,r−g +2 pp
+736,Italy,2037,177.01735049840943,r-g +2pp,r−g +2 pp
+737,Italy,2038,181.82075006124202,r-g +2pp,r−g +2 pp
+738,Italy,2039,186.86121118913385,r-g +2pp,r−g +2 pp
+739,Italy,2040,192.14418629808128,r-g +2pp,r−g +2 pp
+740,Italy,2041,197.67525320964862,r-g +2pp,r−g +2 pp
+741,Italy,2042,203.46011803529612,r-g +2pp,r−g +2 pp
+742,Italy,2043,209.5046181270476,r-g +2pp,r−g +2 pp
+743,Italy,2044,215.81472509602344,r-g +2pp,r−g +2 pp
+744,Italy,2045,222.39654790039984,r-g +2pp,r−g +2 pp
+745,Italy,2046,229.256336004391,r-g +2pp,r−g +2 pp
+746,Italy,2047,236.40048260988803,r-g +2pp,r−g +2 pp
+747,Italy,2048,243.83552796242563,r-g +2pp,r−g +2 pp
+748,Italy,2049,251.56816273318566,r-g +2pp,r−g +2 pp
+749,Italy,2050,259.6052314787873,r-g +2pp,r−g +2 pp
+750,Canada,2026,110.733,r-g -2pp,r−g −2 pp
+751,Canada,2027,110.55572294554656,r-g -2pp,r−g −2 pp
+752,Canada,2028,110.54292576300102,r-g -2pp,r−g −2 pp
+753,Canada,2029,110.69049645556568,r-g -2pp,r−g −2 pp
+754,Canada,2030,110.99442582636279,r-g -2pp,r−g −2 pp
+755,Canada,2031,111.45080490843652,r-g -2pp,r−g −2 pp
+756,Canada,2032,112.05582245900499,r-g -2pp,r−g −2 pp
+757,Canada,2033,112.80576251635578,r-g -2pp,r−g −2 pp
+758,Canada,2034,113.69700201781939,r-g -2pp,r−g −2 pp
+759,Canada,2035,114.72600847729296,r-g -2pp,r−g −2 pp
+760,Canada,2036,115.88933772082625,r-g -2pp,r−g −2 pp
+761,Canada,2037,117.18363167881778,r-g -2pp,r−g −2 pp
+762,Canada,2038,118.60561623340608,r-g -2pp,r−g −2 pp
+763,Canada,2039,120.15209911967624,r-g -2pp,r−g −2 pp
+764,Canada,2040,121.81996787933619,r-g -2pp,r−g −2 pp
+765,Canada,2041,123.6061878655512,r-g -2pp,r−g −2 pp
+766,Canada,2042,125.50780029765743,r-g -2pp,r−g −2 pp
+767,Canada,2043,127.52192036450754,r-g -2pp,r−g −2 pp
+768,Canada,2044,129.64573537523296,r-g -2pp,r−g −2 pp
+769,Canada,2045,131.8765029562368,r-g -2pp,r−g −2 pp
+770,Canada,2046,134.21154929326212,r-g -2pp,r−g −2 pp
+771,Canada,2047,136.64826741740836,r-g -2pp,r−g −2 pp
+772,Canada,2048,139.18411553399753,r-g -2pp,r−g −2 pp
+773,Canada,2049,141.8166153932185,r-g -2pp,r−g −2 pp
+774,Canada,2050,144.54335070150552,r-g -2pp,r−g −2 pp
+775,Canada,2026,110.733,r-g -1pp,r−g −1 pp
+776,Canada,2027,111.66305294554657,r-g -1pp,r−g −1 pp
+777,Canada,2028,112.7392030424565,r-g -1pp,r−g −1 pp
+778,Canada,2029,113.95925883345933,r-g -1pp,r−g −1 pp
+779,Canada,2030,115.32106173314368,r-g -1pp,r−g −1 pp
+780,Canada,2031,116.82248553487933,r-g -1pp,r−g −1 pp
+781,Canada,2032,118.46143592513552,r-g -1pp,r−g −1 pp
+782,Canada,2033,120.23585000508442,r-g -1pp,r−g −1 pp
+783,Canada,2034,122.14369581938064,r-g -1pp,r−g −1 pp
+784,Canada,2035,124.182971892009,r-g -1pp,r−g −1 pp
+785,Canada,2036,126.35170676909448,r-g -1pp,r−g −1 pp
+786,Canada,2037,128.64795856857023,r-g -1pp,r−g −1 pp
+787,Canada,2038,131.0698145366004,r-g -1pp,r−g −1 pp
+788,Canada,2039,133.6153906106567,r-g -1pp,r−g −1 pp
+789,Canada,2040,136.28283098914872,r-g -1pp,r−g −1 pp
+790,Canada,2041,139.07030770750993,r-g -1pp,r−g −1 pp
+791,Canada,2042,141.97602022064225,r-g -1pp,r−g −1 pp
+792,Canada,2043,144.9981949916242,r-g -1pp,r−g −1 pp
+793,Canada,2044,148.13508508658794,r-g -1pp,r−g −1 pp
+794,Canada,2045,151.38496977567377,r-g -1pp,r−g −1 pp
+795,Canada,2046,154.74615413996992,r-g -1pp,r−g −1 pp
+796,Canada,2047,158.21696868434816,r-g -1pp,r−g −1 pp
+797,Canada,2048,161.7957689561073,r-g -1pp,r−g −1 pp
+798,Canada,2049,165.48093516933662,r-g -1pp,r−g −1 pp
+799,Canada,2050,169.27087183491406,r-g -1pp,r−g −1 pp
+800,Canada,2026,110.733,r-g +0pp,r−g base
+801,Canada,2027,112.77038294554657,r-g +0pp,r−g base
+802,Canada,2028,114.95762692191197,r-g +0pp,r−g base
+803,Canada,2029,117.29398262394209,r-g +0pp,r−g base
+804,Canada,2030,119.77870449300862,r-g +0pp,r−g base
+805,Canada,2031,122.41105069827638,r-g +0pp,r−g base
+806,Canada,2032,125.19028311806439,r-g +0pp,r−g base
+807,Canada,2033,128.1156673213,r-g +0pp,r−g base
+808,Canada,2034,131.18647254906602,r-g +0pp,r−g base
+809,Canada,2035,134.40197169623977,r-g +0pp,r−g base
+810,Canada,2036,137.76144129322418,r-g +0pp,r−g base
+811,Canada,2037,141.26416148777025,r-g +0pp,r−g base
+812,Canada,2038,144.90941602689014,r-g +0pp,r−g base
+813,Canada,2039,148.696492238861,r-g +0pp,r−g base
+814,Canada,2040,152.62468101531857,r-g +0pp,r−g base
+815,Canada,2041,156.69327679344042,r-g +0pp,r−g base
+816,Canada,2042,160.9015775382182,r-g +0pp,r−g base
+817,Canada,2043,165.24888472481865,r-g +0pp,r−g base
+818,Canada,2044,169.73450332103266,r-g +0pp,r−g base
+819,Canada,2045,174.35774176981215,r-g +0pp,r−g base
+820,Canada,2046,179.11791197189433,r-g +0pp,r−g base
+821,Canada,2047,184.01432926851265,r-g +0pp,r−g base
+822,Canada,2048,189.04631242419447,r-g +0pp,r−g base
+823,Canada,2049,194.21318360964443,r-g +0pp,r−g base
+824,Canada,2050,199.5142683847137,r-g +0pp,r−g base
+825,Canada,2026,110.733,r-g +1pp,r−g +1 pp
+826,Canada,2027,113.87771294554656,r-g +1pp,r−g +1 pp
+827,Canada,2028,117.19819740136741,r-g +1pp,r−g +1 pp
+828,Canada,2029,120.69533222501391,r-g +1pp,r−g +1 pp
+829,Canada,2030,124.37000066832522,r-g +1pp,r−g +1 pp
+830,Canada,2031,128.22309039939964,r-g +1pp,r−g +1 pp
+831,Canada,2032,132.255493524676,r-g +1pp,r−g +1 pp
+832,Canada,2033,136.4681066111253,r-g +1pp,r−g +1 pp
+833,Canada,2034,140.86183070855344,r-g +1pp,r−g +1 pp
+834,Canada,2035,145.43757137201527,r-g +1pp,r−g +1 pp
+835,Canada,2036,150.19623868434095,r-g +1pp,r−g +1 pp
+836,Canada,2037,155.13874727877484,r-g +1pp,r−g +1 pp
+837,Canada,2038,160.26601636172745,r-g +1pp,r−g +1 pp
+838,Canada,2039,165.57896973564138,r-g +1pp,r−g +1 pp
+839,Canada,2040,171.07853582197146,r-g +1pp,r−g +1 pp
+840,Canada,2041,176.7656476842797,r-g +1pp,r−g +1 pp
+841,Canada,2042,182.64124305144608,r-g +1pp,r−g +1 pp
+842,Canada,2043,188.70626434099486,r-g +1pp,r−g +1 pp
+843,Canada,2044,194.96165868253794,r-g +1pp,r−g +1 pp
+844,Canada,2045,201.4083779413353,r-g +1pp,r−g +1 pp
+845,Canada,2046,208.04737874197318,r-g +1pp,r−g +1 pp
+846,Canada,2047,214.87962249216082,r-g +1pp,r−g +1 pp
+847,Canada,2048,221.90607540664598,r-g +1pp,r−g +1 pp
+848,Canada,2049,229.1277085312501,r-g +1pp,r−g +1 pp
+849,Canada,2050,236.54549776702382,r-g +1pp,r−g +1 pp
+850,Canada,2026,110.733,r-g +2pp,r−g +2 pp
+851,Canada,2027,114.98504294554655,r-g +2pp,r−g +2 pp
+852,Canada,2028,119.46091448082286,r-g +2pp,r−g +2 pp
+853,Canada,2029,124.16397203467487,r-g +2pp,r−g +2 pp
+854,Canada,2030,129.09762339738123,r-g +2pp,r−g +2 pp
+855,Canada,2031,134.26532747607473,r-g +2pp,r−g +2 pp
+856,Canada,2032,139.67059506149522,r-g +2pp,r−g +2 pp
+857,Canada,2033,145.31698960624357,r-g +2pp,r−g +2 pp
+858,Canada,2034,151.2081280147097,r-g +2pp,r−g +2 pp
+859,Canada,2035,157.3476814448494,r-g +2pp,r−g +2 pp
+860,Canada,2036,163.73937612198773,r-g +2pp,r−g +2 pp
+861,Canada,2037,170.38699416482973,r-g +2pp,r−g +2 pp
+862,Canada,2038,177.29437442386092,r-g +2pp,r−g +2 pp
+863,Canada,2039,184.46541333232412,r-g +2pp,r−g +2 pp
+864,Canada,2040,191.90406576996085,r-g +2pp,r−g +2 pp
+865,Canada,2041,199.61434593970867,r-g +2pp,r−g +2 pp
+866,Canada,2042,207.60032825754925,r-g +2pp,r−g +2 pp
+867,Canada,2043,215.86614825570402,r-g +2pp,r−g +2 pp
+868,Canada,2044,224.41600349937767,r-g +2pp,r−g +2 pp
+869,Canada,2045,233.25415451725297,r-g +2pp,r−g +2 pp
+870,Canada,2046,242.38492574594298,r-g +2pp,r−g +2 pp
+871,Canada,2047,251.8127064886099,r-g +2pp,r−g +2 pp
+872,Canada,2048,261.54195188796336,r-g +2pp,r−g +2 pp
+873,Canada,2049,271.57718391385373,r-g +2pp,r−g +2 pp
+874,Canada,2050,281.922992365679,r-g +2pp,r−g +2 pp
