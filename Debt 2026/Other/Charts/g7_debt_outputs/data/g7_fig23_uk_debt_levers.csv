@@ -1,0 +1,7 @@
+lever,route,effect
+Austerity: balance +1 pt of GDP,Real routes,-24.6
+Growth: +1 pt a year,Real routes,-30.4
+"Inflation: +1 pt, rates catch up",Nominal routes,-6.9
+"Inflation: +1 pt, rates stay fixed",Nominal routes,-30.4
+Default: 20% haircut,Nominal routes,-21.7
+"Default: haircut, borrowing costs +1 pt",Nominal routes,9.8
