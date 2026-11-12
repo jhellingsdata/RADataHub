@@ -1,0 +1,64 @@
+country,scenario,year,debt
+Canada,Unchanged policy,2030,119.77870449300862
+Canada,Unchanged policy,2040,152.62468101531857
+Canada,Unchanged policy,2050,199.5142683847137
+Canada,Gradual adjustment,2030,109.82857961800862
+Canada,Gradual adjustment,2040,94.27114691307844
+Canada,Gradual adjustment,2050,95.12376141736516
+Canada,Adjustment + ageing frozen,2030,108.23608257383312
+Canada,Adjustment + ageing frozen,2040,77.82481965121603
+Canada,Adjustment + ageing frozen,2050,48.90035940525682
+France,Unchanged policy,2030,129.32024092284982
+France,Unchanged policy,2040,163.53872987468895
+France,Unchanged policy,2050,207.497108365375
+France,Gradual adjustment,2030,119.34022093084982
+France,Gradual adjustment,2040,104.20413180617068
+France,Gradual adjustment,2050,99.78618717277581
+France,Adjustment + ageing frozen,2030,118.29109727127846
+France,Adjustment + ageing frozen,2040,93.26136967672022
+France,Adjustment + ageing frozen,2050,68.72775522772625
+Germany,Unchanged policy,2030,74.68908792971196
+Germany,Unchanged policy,2040,108.12042562333215
+Germany,Unchanged policy,2050,152.4064799740892
+Germany,Gradual adjustment,2030,64.78858892971195
+Germany,Gradual adjustment,2040,51.35762929849181
+Germany,Gradual adjustment,2050,53.26226195493016
+Germany,Adjustment + ageing frozen,2030,63.33367977508997
+Germany,Adjustment + ageing frozen,2040,36.576563972345184
+Germany,Adjustment + ageing frozen,2050,12.377908061407997
+Italy,Unchanged policy,2030,138.1595382914961
+Italy,Unchanged policy,2040,146.5409912972411
+Italy,Unchanged policy,2050,168.00790905206202
+Italy,Gradual adjustment,2030,128.1294932644961
+Italy,Gradual adjustment,2040,85.52552163030695
+Italy,Gradual adjustment,2050,54.456636845848685
+Italy,Adjustment + ageing frozen,2030,126.85985631243202
+Italy,Adjustment + ageing frozen,2040,72.05991554450972
+Italy,Adjustment + ageing frozen,2050,15.59360409021967
+Japan,Unchanged policy,2030,201.53593135561752
+Japan,Unchanged policy,2040,211.22453181004715
+Japan,Unchanged policy,2050,242.10601589611483
+Japan,Gradual adjustment,2030,191.6848097306175
+Japan,Gradual adjustment,2040,155.998703411685
+Japan,Gradual adjustment,2050,147.87017077611108
+Japan,Adjustment + ageing frozen,2030,189.30908216601935
+Japan,Adjustment + ageing frozen,2040,132.25082777755256
+Japan,Adjustment + ageing frozen,2050,83.19610949762131
+United Kingdom,Unchanged policy,2030,111.07698414690863
+United Kingdom,Unchanged policy,2040,142.3782187589301
+United Kingdom,Unchanged policy,2050,191.85548999831616
+United Kingdom,Gradual adjustment,2030,101.05696413890863
+United Kingdom,Gradual adjustment,2040,81.70357667400759
+United Kingdom,Gradual adjustment,2050,79.50396676391291
+United Kingdom,Adjustment + ageing frozen,2030,99.31478057358503
+United Kingdom,Adjustment + ageing frozen,2040,63.288023055107196
+United Kingdom,Adjustment + ageing frozen,2050,26.53421086287841
+United States,Unchanged policy,2030,143.5551116042096
+United States,Unchanged policy,2040,216.27310091112085
+United States,Unchanged policy,2050,328.7536452760276
+United States,Gradual adjustment,2030,133.57509161220963
+United States,Gradual adjustment,2040,156.93850284260256
+United States,Gradual adjustment,2050,221.04272408342848
+United States,Adjustment + ageing frozen,2030,129.4257893876765
+United States,Adjustment + ageing frozen,2040,113.65968929948203
+United States,Adjustment + ageing frozen,2050,98.20608839764449
